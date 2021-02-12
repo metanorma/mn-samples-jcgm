@@ -1,0 +1,682 @@
+
+[[annexC]]
+[appendix,obligation=normative]
+== Termes et concepts statistiques fondamentaux
+
+[[scls_C-1]]
+=== Origine des définitions
+
+Les définitions des termes statistiques fondamentaux donnés dans cette annexe proviennent de la Norme internationale ((ISO 3534))-1:1993 footnoteblock:[f10] <<ISO_3534-1>>. Cette norme doit être la source consultée en priorité pour les définitions de termes qui ne seraient pas inclus ci-après dans le texte. Certains de ces termes et leurs concepts sousjacents sont explicités en <<scls_C-3>> à la suite de leur présentation formelle en <<scls_C-2>> pour que l'utilisation du présent _Guide_ soit plus facile. Cependant, <<scls_C-3>>, qui inclut aussi les définitions de certains termes voisins, n'est pas directement fondé sur l'ISO 3534-1:1993.
+
+[[f10]]
+[NOTE]
+--
+*Note de bas de page à la version 2008:*
+
+L'ISO 3534-1:1993 a été annulée et remplacée par l'ISO 3534-1:2006. Il est à noter que certains termes et définitions ont été révisés. Pour plus d'informations, voir la dernière édition.
+--
+
+[[scls_C-2]]
+=== Définitions
+
+Comme à l'<<cls_2>> et en <<annexB>>, l'utilisation de parenthèses autour de mots de certains termes signifie que ces mots peuvent être omis s'il n'y a pas d'ambiguïté à craindre.
+
+Les termes <<scls_C-2-1>> à <<scls_C-2-14>> sont définis en termes de propriétés de populations. Les définitions des termes <<scls_C-2-15>> à <<scls_C-2-31>> sont relatifs à un ensemble d'observations (voir Référence <<ISO_3534-1>>).
+
+
+[[scls_C-2-1]]
+==== ((probabilité))
+
+nombre réel dans l'intervalle de 0 à 1, associé à un événement ((aléatoire))
+
+NOTE: Il peut se rapporter à une fréquence relative d'une occurrence dans une longue série ou à un degré de croyance qu'un événement se produira. Pour un haut degré de croyance, la ((probabilité)) est proche de 1.
+
+// [ISO 3534-1:1993, definition 1.1]
+[.source]
+<<ISO_3534-1>>, definition 1.1
+
+[[scls_C-2-2]]
+==== variable aléatoire
+
+index-range:varAle[(((variable aléatoire)))]variable pouvant prendre n'importe quelle valeur d'un ensemble déterminé de valeurs, et à laquelle est associée une _loi de ((probabilité))_ [ISO 3534-1:1993, définition 1.3 (<<scls_C-2-3>>)]
+
+NOTE: Une variable ((aléatoire)) qui ne peut prendre que des valeurs isolées est dite «discrète». Une variable ((aléatoire)) qui peut prendre toutes valeurs à l'intérieur d'un intervalle fini ou infini est dite «continue».
+
+NOTE: La ((probabilité)) d'un événement stem:["A"] est notée stem:["Pr"("A")] ou stem:[ii(P)("A")].[[varAle]]
+
+// [ISO 3534-1:1993, definition 1.2]
+[.source]
+<<ISO_3534-1>>, definition 1.2
+
+Commentaire du _Guide_: le symbole stem:["Pr"("A")] est utilisé dans ce _Guide_ à la place du symbole stem:[ii(P)_r("A")] utilisé dans l'ISO 3534-1:1993.
+
+
+[[scls_C-2-3]]
+==== ((loi de probabilité)) (d'une variable ((aléatoire)))(((probabilité)))
+
+fonction déterminant la ((probabilité)) qu'une variable ((aléatoire)) prenne une valeur donnée quelconque ou appartienne à un ensemble donné de valeurs
+
+NOTE: La ((probabilité)) couvrant l'ensemble des valeurs de la variable est égale à 1.
+
+// [ISO 3534-1:1993, definition 1.3]
+[.source]
+<<ISO_3534-1>>, definition 1.3
+
+[[scls_C-2-4]]
+==== fonction de répartition
+
+index-range:fonRep[(((fonction de répartition)))]fonction donnant pour toute valeur stem:[x], la ((probabilité)) que la variable ((aléatoire)) stem:[ii(X)] soit inférieure ou égale à stem:[x]:[[fonRep]]
+
+[stem%unnumbered]
+++++
+ii(F)(x) = "Pr"(ii(X) <= x)
+++++
+
+// [ISO 3534-1:1993, definition 1.4]
+[.source]
+<<ISO_3534-1>>, definition 1.4
+
+
+[[scls_C-2-5]]
+==== fonction de densité de ((probabilité)) (pour une variable ((aléatoire)) continue)
+
+index-range:fonProb[(((fonction de densité de probabilité)))]dérivée (lorsqu'elle existe) de la fonction de répartition:[[fonProb]](((probabilité)))(((probabilité élémentaire)))
+
+[stem%unnumbered]
+++++
+f(x) = " d"ii(F)(x)" d"x
+++++
+
+[[note_C-2-5]]
+[NOTE]
+====
+stem:[f(x)" d"x] s'appelle la «((probabilité)) élémentaire»:
+
+[stem%unnumbered]
+++++
+f(x)" d"x = "Pr"(x < ii(X) < x + "d"x)
+++++
+====
+
+// [ISO 3534-1:1993, definition 1.5]
+[.source]
+<<ISO_3534-1>>, definition 1.5
+
+Commentaire du _Guide_ pour la version française: le terme «densité de ((probabilité))», d'usage courant, est utilisé dans le _Guide_.
+
+[[scls_C-2-6]]
+==== fonction de masse
+
+index-range:fonMass[(((fonction de masse)))]fonction donnant, pour chaque valeur stem:[x_i] d'une variable ((aléatoire)) discrète stem:[ii(X)], la ((probabilité)) stem:[p_i] que cette variable ((aléatoire)) soit égale à stem:[x_i]:[[fonMass]]
+
+[stem%unnumbered]
+++++
+p_i = "Pr"(ii(X) = x_i)
+++++
+
+// [ISO 3534-1:1993, definition 1.6]
+[.source]
+<<ISO_3534-1>>, definition 1.6
+
+
+[[scls_C-2-7]]
+==== paramètre
+
+index-range:parametre[(((paramètre)))]grandeur utilisée pour décrire la loi de ((probabilité)) d'une variable ((aléatoire))[[parametre]]
+
+// [ISO 3534-1:1993, definition 1.12]
+[.source]
+<<ISO_3534-1>>, definition 1.12
+
+
+[[scls_C-2-8]]
+==== corrélation
+
+index-range:correlation[(((corrélation)))]liaison entre deux ou plusieurs variables aléatoires(((aléatoire))) à l'intérieur d'une loi
+
+NOTE: La plupart des mesures statistiques de corrélation ne mesurent que le degré de liaison linéaire.[[correlation]]
+
+// [ISO 3534-1:1993, definition 1.13]
+[.source]
+<<ISO_3534-1>>, definition 1.13
+
+[[scls_C-2-9]]
+==== espérance mathématique (d'une variable ((aléatoire)) ou d'une loi de ((probabilité)))
+*alt:[valeur espérée]*
+*alt:[moyenne]*
+
+. index-range:espMath[(((espérance mathématique (ou valeur espérée))))]Pour une variable ((aléatoire)) discrète stem:[ii(X)] prenant des valeurs stem:[x_i] avec des ((probabilité))s stem:[p_i], l'espérance mathématique, si elle existe, est(((moyenne)))
++
+--
+[stem%unnumbered]
+++++
+ii(mu) = ii(E)(ii(X)) = sum p_i x_i
+++++
+
+la somme étant étendue à toutes les valeurs de stem:[x_i] susceptibles d'être prises par stem:[ii(X)].
+--
+
+. Pour une variable ((aléatoire)) continue stem:[ii(X)] ayant pour fonction de densité de ((probabilité)) stem:[f(x)], l'espérance mathématique, si elle existe, est
++
+--
+[stem%unnumbered]
+++++
+ii(mu) = ii(E)(ii(X)) = int x f(x)" d"x
+++++
+
+l'intégrale étant étendue au domaine de variation de stem:[ii(X)].
+--
+
+// [ISO 3534-1:1993, definition 1.18]
+[.source]
+<<ISO_3534-1>>, definition 1.18
+
+
+[[scls_C-2-10]]
+==== variable aléatoire centrée
+
+index-range:varAlCen[(((variable aléatoire centrée)))]variable ((aléatoire)) dont l'espérance mathématique(((espérance mathématique (ou valeur espérée)))) est égale à zéro
+
+NOTE: Si la variable ((aléatoire)) stem:[ii(X)] a pour espérance mathématique(((espérance mathématique (ou valeur espérée)))) stem:[ii(mu)], la variable ((aléatoire)) centrée correspondante est (stem:[ii(X) - ii(mu)]).[[espMath]][[varAlCen]]
+
+// [ISO 3534-1:1993, definition 1.21]
+[.source]
+<<ISO_3534-1>>, definition 1.21
+
+
+[[scls_C-2-11]]
+==== ((variance)) (d'une variable ((aléatoire)) ou d'une loi de ((probabilité)))
+
+espérance mathématique(((espérance mathématique (ou valeur espérée)))) du carré de la _variable ((aléatoire)) centrée_ [ISO 3534-1:1993, définition 1.21 (<<scls_C-2-10>>)]:
+
+[stem%unnumbered]
+++++
+ii(sigma)^2 = ii(V)(ii(X)) = ii(E){[ii(X) - ii(E)(ii(X))]^2}
+++++
+
+// [ISO 3534-1:1993, definition 1.22]
+[.source]
+<<ISO_3534-1>>, definition 1.22
+
+
+[[scls_C-2-12]]
+==== écart-type (d'une variable ((aléatoire)) ou d'une loi de ((probabilité)))
+
+index-range:ecart3[(((écart-type)))]racine carrée positive de la variance:[[ecart3]]
+
+[stem%unnumbered]
+++++
+ii(sigma) = sqrt(ii(V)(ii(X)))
+++++
+
+// [ISO 3534-1:1993, definition 1.23]
+[.source]
+<<ISO_3534-1>>, definition 1.23
+
+
+[[scls_C-2-13]]
+==== moment footnote:[Si, dans la définition des moments, les grandeurs stem:[ii(X)], stem:[ii(X) - a], stem:[ii(Y)], stem:[ii(Y) - b], etc., sont remplacées par leurs valeurs absolues, c'est-à-dire stem:[|ii(X)|], stem:[|ii(X) - a|], stem:[|ii(Y)|], stem:[|ii(Y) - b|], etc., on définit d'autres moments appelés «moments absolus».] centré d'ordre stem:[q]
+
+dans une loi de ((probabilité)) à une variable, espérance mathématique(((espérance mathématique (ou valeur espérée)))) de la stem:[q]ième puissance de la variable ((aléatoire)) centrée (stem:[ii(X) - ii(mu)]):
+
+[stem%unnumbered]
+++++
+ii(E)[(ii(X) - ii(mu))^q]
+++++
+
+NOTE: Le moment centré d'ordre 2(((moment centré d'ordre stem:[q]))) est la _variance_ [ISO 3534-1:1993, définition 1.22 (<<scls_C-2-11>>)] de la variable ((aléatoire)) stem:[ii(X)].
+
+//[ISO 3534-1:1993, definition 1.28]
+[.source]
+<<ISO_3534-1,definition 1.28>>
+
+
+[[scls_C-2-14]]
+==== loi normale
+*alt:[loi de Laplace-Gauss]*
+
+index-range:loiNorm[(((loi normale)))]loi de ((probabilité)) d'une variable ((aléatoire)) continue stem:[ii(X)], dont la densité de ((probabilité)) est(((loi de Laplace-Gauss)))
+
+[stem%unnumbered]
+++++
+f(x) = 1/{ii(sigma) sqrt(2 pi)} exp[-1/2 ({x-ii(mu)}/ii(sigma))^2]
+++++
+
+pour stem:[-oo < x < +oo].
+
+NOTE: stem:[ii(mu)] est l'espérance mathématique et stem:[ii(sigma)] l'écart-type de la loi normale.[[loiNorm]]
+
+// [ISO 3534-1:1993, definition 1.37]
+[.source]
+<<ISO_3534-1>>, definition 1.37
+
+
+[[scls_C-2-15]]
+==== caractère
+
+propriété qui permet d'identifier ou de différencier des individus d'une population donnée
+
+NOTE: Le caractère peut être soit quantitatif (par variables), soit qualitatif (par attributs).
+
+// [ISO 3534-1:1993, definition 2.2]
+[.source]
+<<ISO_3534-1>>, definition 2.2
+
+
+[[scls_C-2-16]]
+==== population
+
+index-range:population[(((population)))]totalité des individus pris en considération
+
+NOTE: Dans le cas d'une variable ((aléatoire)), la _loi de ((probabilité))_ [ISO 3534-1:1993, définition 1.3 (<<scls_C-2-3>>)] est considérée comme définissant la population de cette variable.[[population]]
+
+// [ISO 3534-1:1993, definition 2.3]
+[.source]
+<<ISO_3534-1>>, definition 2.3
+
+
+[[scls_C-2-17]]
+==== effectif
+
+nombre d'apparitions d'un type donné d'événements ou nombre d'observations appartenant à une classe spécifiée
+
+
+[[scls_C-2-18]]
+==== distribution d'effectif
+
+index-range:distEff[(((distribution d'effectif)))]relation empirique entre les valeurs d'un caractère et leurs effectifs ou leurs fréquences(((fréquence)))
+
+NOTE: La distribution peut être présentée graphiquement sous la forme d'un _histogramme_ (ISO 3534-1:1993, définition 2.17), d'un _diagramme en bâtons_ (ISO 3534-1:1993, définition 2.18), d'un _polygone d'effectif cumulé_ (ISO 3534-1:1993, définition 2.19), ou d'une _table d'effectifs à double entrée_ (ISO 3534-1:1993, définition 2.22).[[distEff]]
+
+// [ISO 3534-1:1993, definition 2.15]
+[.source]
+<<ISO_3534-1>>, definition 2.15
+
+Commentaire du _Guide_ pour la version française: le terme «((distribution de fréquence))», d'usage courant, est utilisé dans le _Guide_.
+
+[[scls_C-2-19]]
+==== moyenne arithmétique
+*alt:[moyenne]*
+
+index-range:moyArit[(((moyenne arithmétique)))]somme des valeurs divisée par le nombre de valeurs
+
+NOTE: Le terme anglais «mean» est utilisé généralement en référence au paramètre d'une population et le terme «average» en référence à un calcul sur des données d'un échantillon.
+
+NOTE: La moyenne d'un échantillon ((aléatoire)) simple pris dans une population est un ((estimateur)) sans biais de la moyenne de cette population. Cependant, d'autres estimateurs, tels que la moyenne géométrique ou harmonique, ou la médiane ou le mode sont parfois utilisés.[[moyArit]]
+
+// [ISO 3534-1:1993, definition 2.26]
+[.source]
+<<ISO_3534-1>>, definition 2.26
+
+
+[[scls_C-2-20]]
+==== variance
+
+index-range:variance[(((variance)))]mesure de dispersion qui est la somme des carrés des écarts des observations par rapport à leur moyenne divisée par un nombre égal au nombre d'observations moins un
+
+[example]
+====
+Pour stem:[n] observations stem:[x_1, x_2,...,x_n] de moyenne
+
+[stem%unnumbered]
+++++
+bar(x) = (1//n) sum x_i
+++++
+
+la variance est
+
+[stem%unnumbered]
+++++
+s^2 = 1/{n -1} sum (x_i - bar(x))^2
+++++
+====
+
+NOTE: La variance de l'échantillon est un ((estimateur)) sans biais de la variance de la population.
+
+NOTE: La variance est stem:[n//(n - 1)] fois le moment centré d'ordre 2 (voir note de l'ISO 3534-1:1993, définition 2.39).[[variance]]
+
+// [ISO 3534-1:1993, definition 2.33]
+[.source]
+<<ISO_3534-1>>, definition 2.33
+
+Commentaire du _Guide_: la variance définie ici est désignée de manière plus appropriée par «((estimation)) sur échantillon de la variance de la population». La variance d'un échantillon est habituellement définie comme le moment centré d'ordre 2 de l'échantillon (voir <<scls_C-2-13>> et <<scls_C-2-22>>).
+
+
+[[scls_C-2-21]]
+==== écart-type
+
+index-range:ecart[(((écart-type)))]racine carrée positive de la variance
+
+[[note_C-2-21]]
+NOTE: L'écart-type de l'échantillon est un ((estimateur)) biaisé de l'écart-type de la population.[[ecart]]
+
+// [ISO 3534-1:1993, definition 2.34]
+[.source]
+<<ISO_3534-1>>, definition 2.34
+
+
+[[scls_C-2-22]]
+==== moment centré d'ordre stem:[q]
+
+index-range:momCen[(((moment centré d'ordre stem:[q])))]dans la distribution d'un caractère unique, moyenne arithmétique de la stem:[q]ième puissance de la différence entre les valeurs observées et leur moyenne stem:[bar(x)]:
+
+[stem%unnumbered]
+++++
+1/n sum_i (x_i - bar(x))^q
+++++
+
+où stem:[n] est le nombre d'observations
+
+NOTE: Le moment centré d'ordre 1 est égal à zéro.[[momCen]]
+
+// [ISO 3534-1:1993, definition 2.37]
+[.source]
+<<ISO_3534-1>>, definition 2.37
+
+
+[[scls_C-2-23]]
+==== statistique
+
+index-range:statistique[(((statistique)))]fonction de variables aléatoires(((aléatoire))) d'échantillons
+
+NOTE: Une statistique, en tant que fonction de variables aléatoires(((aléatoire))), est également une variable ((aléatoire)) et, comme telle, elle admet différentes valeurs selon les échantillons. La valeur de la statistique obtenue en utilisant les résultats d'essais dans cette fonction peut être utilisée dans un test statistique ou comme ((estimation)) d'un paramètre d'une population tel que la moyenne ou l'écart-type.[[statistique]]
+
+// [ISO 3534-1:1993, definition 2.45]
+[.source]
+<<ISO_3534-1>>, definition 2.45
+
+
+[[scls_C-2-24]]
+==== estimation
+
+index-range:estimation[(((estimation)))]opération ayant pour but, à partir des résultats d'essais dans un échantillon, d'attribuer des valeurs numériques aux paramètres d'une loi prise comme modèle statistique de la population dont est issu l'échantillon
+
+NOTE: Le résultat de cette opération peut être exprimé sous la forme d'une valeur unique, point ((estimateur)) [voir l'ISO 3534-1:1993, définition 2.51 (<<scls_C-2-26>>)] ou sous la forme d'un intervalle ((estimateur)) [voir l'ISO 3534-1:1993, définitions 2.57 (<<scls_C-2-27>>) et 2.58 (<<scls_C-2-28>>)].[[estimation]]
+
+// [ISO 3534-1:1993, definition 2.49]
+[.source]
+<<ISO_3534-1>>, definition 2.49
+
+
+[[scls_C-2-25]]
+==== estimateur
+
+index-range:estimateur[(((estimateur)))]statistique utilisée pour estimer un paramètre d'une population[[estimateur]]
+
+// [ISO 3534-1:1993, definition 2.50]
+[.source]
+<<ISO_3534-1>>, definition 2.50
+
+
+[[scls_C-2-26]]
+==== estimation
+
+index-range:estimation2[(((estimation)))]valeur d'un estimateur obtenue comme résultat d'une opération d'estimation[[estimation2]]
+
+// [ISO 3534-1:1993, definition 2.51]
+[.source]
+<<ISO_3534-1>>, definition 2.51
+
+
+[[scls_C-2-27]]
+==== intervalle de confiance bilatéral
+
+index-range:intBi[(((intervalle de confiance bilatéral)))]quand stem:[ii(T)_1] et stem:[ii(T)_2] sont deux fonctions des valeurs observées telles que, stem:[ii(theta)] étant un paramètre de population à estimer, la ((probabilité)) stem:["Pr"(ii(T)_1 <= ii(theta) <= ii(T)_2)] soit au moins égale à (stem:[1 - ii(alpha)]) [où (stem:[1 - ii(alpha)]) est un nombre fixé, positif et inférieur à 1], l'intervalle entre stem:[ii(T)_1] et stem:[ii(T)_2] est un ((intervalle de confiance bilatéral))(((intervalle de confiance))) à (stem:[1 - ii(alpha)]) pour stem:[ii(theta)]
+
+NOTE: Les limites stem:[ii(T)_1] et stem:[ii(T)_2] de l'intervalle de confiance sont des _statistiques_ [ISO 3534-1:1993, définition 2.45 (<<scls_C-2-23>>)] qui, comme telles, auront en général des valeurs différentes d'échantillon en échantillon.
+
+NOTE: Dans une longue série d'échantillons, la fréquence des cas où la valeur vraie du paramètre de la population stem:[ii(theta)] est contenue par l'((intervalle de confiance)), est égale ou supérieure à (stem:[1 - ii(alpha)]).[[intBi]]
+
+// [ISO 3534-1:1993, definition 2.57]
+[.source]
+<<ISO_3534-1>>, definition 2.57
+
+
+[[scls_C-2-28]]
+==== intervalle de confiance unilatéral
+
+index-range:intUni[(((intervalle de confiance unilatéral)))]quand stem:[ii(T)] est une fonction des valeurs observées telle que, stem:[ii(theta)] étant un paramètre de la population à estimer, la ((probabilité)) stem:["Pr"(ii(T) >= ii(theta))] [ou la ((probabilité)) stem:["Pr"(ii(T) <= ii(theta))]] soit au moins égale à (stem:[1 - ii(alpha)]) [où (stem:[1 - ii(alpha)]) est un nombre fixé, positif et inférieur à 1], l'intervalle s'étendant depuis la plus petite valeur de stem:[ii(theta)] jusqu'à stem:[ii(T)] (ou l'intervalle s'étendant de stem:[ii(T)] jusqu'à la plus grande valeur possible de stem:[ii(theta)]) est un ((intervalle de confiance unilatéral)) à (stem:[1 - ii(alpha)]) pour stem:[ii(theta)]
+
+NOTE: La limite stem:[ii(T)] de l'intervalle de confiance est une _statistique_ [ISO 3534-1:1993, définition 2.45 (<<scls_C-2-23>>)] qui, comme telle, aura généralement des valeurs différentes d'échantillon en échantillon.
+
+NOTE: Voir Note 2 de l'ISO 3534-1:1993, définition 2.57 (<<scls_C-2-27>>).[[intUni]]
+
+// [ISO 3534-1:1993, definition 2.58]
+[.source]
+<<ISO_3534-1>>, definition 2.58
+
+
+[[scls_C-2-29]]
+==== niveau de confiance*
+
+index-range:nivConf[(((niveau de confiance)))]valeur (stem:[1 - ii(alpha)]) de la ((probabilité)) associée à un intervalle de confiance ou à un intervalle statistique de dispersion. [Voir l'ISO 3534-1:1993, définitions 2.57 (<<scls_C-2-27>>), 2.58 (<<scls_C-2-28>>) et 2.61 (<<scls_C-2-30>>).]
+
+NOTE (stem:[1 - ii(alpha)]) est souvent exprimé comme un pourcentage.[[nivConf]]
+
+// [ISO 3534-1:1993, definition 2.59]
+[.source]
+<<ISO_3534-1>>, definition 2.59
+
+Commentaire du _Guide_ pour la version française: voir le paragraphe <<scls_6-2-2>> pour la signification de l'astérisque.
+
+[[scls_C-2-30]]
+==== intervalle statistique de dispersion
+
+index-range:intStaDis[(((intervalle statistique de dispersion)))]intervalle pour lequel on peut affirmer, avec un niveau de confiance donné, qu'il contient au moins une proportion également donnée de la population
+
+NOTE: Lorsque les deux limites sont définies par des statistiques, l'intervalle est bilatéral. Lorsque l'une des deux limites est infinie ou est constituée par une borne de la variable, l'intervalle est unilatéral.
+
+NOTE: Également appelé «((intervalle statistique de tolérance))». Ce terme ne devrait pas être utilisé car il risque de causer une confusion avec «intervalle de tolérance» qui est défini dans l'ISO 3534-2.[[intStaDis]]
+
+// [ISO 3534-1:1993, definition 2.61]
+[.source]
+<<ISO_3534-1>>, definition 2.61
+
+
+[[scls_C-2-31]]
+==== degrés de liberté
+
+index-range:degDeLib[(((degrés de liberté)))]en général, le nombre de termes de la somme moins le nombre de contraintes sur les termes de la somme[[degDeLib]]
+
+// [ISO 3534-1:1993, definition 2.85]
+[.source]
+<<ISO_3534-1>>, definition 2.85
+
+
+[[scls_C-3]]
+=== Élaboration de termes et de concepts
+
+[[scls_C-3-1]]
+==== Espérance mathématique
+
+index-range:espMath2[(((espérance mathématique (ou valeur espérée))))]L'espérance mathématique d'une fonction stem:[g(z)] de la ((variable aléatoire)) stem:[p(z)] qui a la densité de ((probabilité)) stem:[z] est définie par
+
+[stem%unnumbered]
+++++
+ii(E) [g(z)] = int g(z) p(z)" d"z
+++++
+
+avec stem:[int p(z)"d"z = 1] en raison de la définition de stem:[p(z)]. L'espérance mathématique de la ((variable aléatoire)) stem:[z], notée stem:[ii(mu)_z], et qui est aussi appelée valeur espérée(((espérance mathématique (ou valeur espérée)))) ou ((moyenne)) de stem:[z], est donnée par
+
+[stem%unnumbered]
+++++
+ii(mu)_z -= ii(E)(z) = int z p(z)" d"z
+++++
+
+Elle est statistiquement estimée par stem:[bar(z)], moyenne arithmétique de stem:[n] observations indépendantes stem:[z_i] de la ((variable aléatoire)) stem:[z], qui a pour densité de ((probabilité)) stem:[p(z)]:[[espMath2]]
+
+[stem%unnumbered]
+++++
+bar(z) = 1/n sum_{i=1}^n z_i
+++++
+
+
+[[scls_C-3-2]]
+==== Variance
+
+La variance d'une ((variable aléatoire)) est l'espérance mathématique(((espérance mathématique (ou valeur espérée)))) de son écart quadratique par rapport à son espérance mathématique. Ainsi, la variance d'une ((variable aléatoire)) stem:[z] de densité de ((probabilité)) stem:[p(z)] est donnée par
+
+[stem%unnumbered]
+++++
+ii(sigma)^2(z) = int (z - ii(mu)_z)^2 p(z) " d"z
+++++
+
+où stem:[ii(mu)_z] est l'espérance mathématique(((espérance mathématique (ou valeur espérée)))) de stem:[z]. La variance stem:[ii(sigma)^2(z)] peut être estimée par
+
+[stem%unnumbered]
+++++
+s^2(z_i) = 1/{n-1} sum_{j=1}^n (z_j - bar(z))^2
+++++
+
+où
+
+[stem%unnumbered]
+++++
+bar(z) = 1/n sum_{i=1}^n z_i
+++++
+
+et où les stem:[z_i] sont stem:[n] observations indépendantes de stem:[z].
+
+NOTE: Le facteur stem:[n - 1] dans l'expression de stem:[s^2(z_i)] provient de la ((corrélation)) entre stem:[z_i] et stem:[bar(z)] et reflète le fait qu'il y a seulement stem:[n - 1] éléments indépendants dans l'ensemble stem:[{z_i - bar(z)}].
+
+[NOTE]
+====
+Si l'espérance mathématique(((espérance mathématique (ou valeur espérée)))) stem:[ii(mu)_z] de stem:[z] est connue, la variance peut être estimée par
+
+[stem%unnumbered]
+++++
+s^2(z_i) = 1/n sum_{i=1}^n (z_i - ii(mu)_z)^2
+++++
+
+La ((variance)) de la moyenne arithmétique des observations est, bien plus que la ((variance)) des observations individuelles, la mesure correcte de l'incertitude d'un résultat de mesure. On doit distinguer soigneusement la ((variance)) d'une variable stem:[z] de la ((variance de la moyenne)) stem:[bar(z)]. La ((variance de la moyenne)) arithmétique d'une série de stem:[n] observations indépendantes stem:[z_i] de stem:[z] est donnée par stem:[ii(sigma)^2(bar(z)) = ii(sigma)^2 (z_i)//n] et elle est estimée par la ((variance expérimentale de la moyenne))
+
+[stem%unnumbered]
+++++
+s^2(bar(z)) = {s^2(z_i)}/n = 1/{n(n-1)} sum_{i=1}^n (z_i - bar(z))^2
+++++
+
+====
+
+
+[[scls_C-3-3]]
+==== Écart-type
+
+index-range:ecart2[(((écart-type)))]L'écart-type est la racine carrée de la variance. Alors qu'une incertitude-type de Type A(((incertitude-type de Type A))) est obtenue en prenant la racine carrée de la variance évaluée statistiquement, il est souvent plus commode lorsqu'on évalue une incertitude-type de Type B(((incertitude-type de Type B))) d'évaluer d'abord un écart-type équivalent obtenu de manière non statistique puis d'obtenir la variance équivalente en élevant l'écart-type au carré.[[ecart2]]
+
+
+[[scls_C-3-4]]
+==== Covariance
+
+index-range:cov2[(((covariance de deux moyennes arithmétiques)))]index-range:cov[(((covariance)))]La covariance de deux variables aléatoires(((aléatoire)))(((variable aléatoire))) est une mesure de leur dépendance mutuelle. La covariance de deux variables aléatoires(((aléatoire))) stem:[y] et stem:[z] est définie par
+
+[stem%unnumbered]
+++++
+"cov"(y,z) = "cov"(z, y) = ii(E){[y - ii(E)(y)] [z - ii(E)(z)]}
+++++
+
+qui entraîne
+
+[stem%unnumbered]
+++++
+"cov"(y,z) = "cov"(z,y)
+++++
+
+[stem%unnumbered]
+++++
+= int int (y - ii(mu)_y)(z - ii(mu)_z) p(y,z)" d"y "d"z
+++++
+
+[stem%unnumbered]
+++++
+= int int y z p(y,z) " d"y "d"z - ii(mu)_y ii(mu)_z
+++++
+
+
+où stem:[p(y,z)] est la densité de ((probabilité)) jointe des deux variables stem:[y] et stem:[z]. La covariance stem:["cov"(y,z)] [aussi notée stem:[ii(upsilon)(y,z)] peut être estimée par stem:[s(y_i,z_i)] obtenue de stem:[n] paires indépendantes d'observations simultanées(((observations indépendantes simultanées, paires d'))) stem:[y_i] et stem:[z_i] de stem:[y] et stem:[z],
+
+[stem%unnumbered]
+++++
+s(y_i,z_i) = 1/{n-1} sum_{j=1}^n (y_j - bar(y))(z_j - bar(z))
+++++
+
+avec
+
+[stem%unnumbered]
+++++
+bar(y) = 1/n sum_{i=1}^n y_i
+++++
+
+et
+
+[stem%unnumbered]
+++++
+bar(z) = 1/n sum_{i=1}^n z_i
+++++
+
+NOTE: La covariance estimée de deux moyennes stem:[bar(y)] et stem:[bar(z)] est donnée par stem:[s(bar(y),bar(z)) = s(y_i,z_i)//n].[[cov2]][[cov]]
+
+
+[[scls_C-3-5]]
+==== Matrice de covariance
+
+Pour une loi de ((probabilité)) à plusieurs variables, la matrice stem:[ii(bb(V))] dont les éléments sont égaux aux variances et covariances des variables est appelée ((matrice de covariance)). Les éléments diagonaux, stem:[ii(upsilon)(z,z) -= ii(sigma)^2(z)] ou stem:[s(z_i,z_i) -= s^2(z_i)], sont les variances, tandis que les éléments non diagonaux, stem:[ii(upsilon)(y, z)] ou stem:[s(y_i, z_i)], sont les covariances.
+
+
+[[scls_C-3-6]]
+==== Coefficient de corrélation
+
+Le ((coefficient de corrélation)) est une mesure de la dépendance mutuelle relative de deux variables, égal au rapport de leurs covariances à la racine carrée du produit de leurs variances. Ainsi
+
+[stem%unnumbered]
+++++
+ii(rho)(y,z) = ii(rho)(z,y) = {ii(upsilon)(y,z)}/{sqrt(ii(upsilon)(y,y) ii(upsilon)(z,z))} = {ii(upsilon)(y,z)}/{ii(sigma)(y) ii(sigma)(z)}
+++++
+
+avec les estimations
+
+[stem%unnumbered]
+++++
+r(y_i,z_i) = r(z_i,y_i) = {s(y_i,z_i)}/{sqrt(s(y_i,y_i)s(z_i,z_i))} = {s(y_i,z_i)}/{s(y_i)s(z_i)}
+++++
+
+Le ((coefficient de corrélation)) est un nombre tel que stem:[-1 <= ii(rho) <= +1] ou stem:[-1 <= r(y_i,z_i) <= +1].
+
+NOTE: Comme stem:[ii(rho)] et stem:[r] sont des nombres dans l'intervalle de −1 à +1 bornes comprises, alors que les covariances sont habituellement des grandeurs ayant une dimension physique et un ordre de grandeur peu commodes, les coefficients de ((corrélation)) sont généralement plus utiles que les covariances.
+
+[[note2_C-3-6]]
+NOTE: Pour des lois de ((probabilité)) à plusieurs variables, on donne habituellement la ((matrice des coefficients de corrélation))(((corrélation))) au lieu de la matrice de covariance. Puisque stem:[ii(rho)(y,y) = 1] et stem:[r(y_i, y_i) = 1], les éléments diagonaux de cette matrice sont égaux à 1.
+
+[[note3_C-3-6]]
+[NOTE]
+====
+Si les estimations d'entrée stem:[x_i] et stem:[x_j] sont corrélées (voir <<scls_5-2-2>>) et si une variation stem:[ii(delta)_i] de stem:[x_j] produit une variation stem:[ii(delta)_j] de stem:[x_j], le ((coefficient de corrélation)) associé à stem:[x_i] et stem:[x_j] est alors estimé approximativement par
+
+[stem%unnumbered]
+++++
+r(x_i,x_j) ~~ u(x_i) ii(delta)_j//[u(x_j) ii(delta)_i]
+++++
+
+Cette relation peut servir de base pour estimer expérimentalement(((covariance, évaluation expérimentale de la))) les coefficients de ((corrélation)). Elle peut aussi être utilisée pour calculer la variation approximative d'une estimation d'entrée due à la variation d'une autre estimation d'entrée si l'on connaît leur ((coefficient de corrélation)).
+====
+
+[[scls_C-3-7]]
+==== Indépendance
+
+index-range:independance[(((indépendance)))]Deux variables aléatoires(((aléatoire)))(((variable aléatoire))) sont statistiquement indépendantes si leur loi de ((probabilité)) jointe est le produit de leurs lois de ((probabilité)) individuelles.
+
+NOTE: Si deux variables aléatoires(((aléatoire))) sont indépendantes, leur covariance et leur ((coefficient de corrélation)) sont nuls mais l'inverse n'est pas nécessairement vrai.[[independance]]
+
+
+[[scls_C-3-8]]
+==== Loi de stem:[t]; loi de Student
+
+La ((loi de stem:[t])) ou ((loi de Student)) est la loi de ((probabilité)) d'une ((variable aléatoire)) continue stem:[t] dont la densité de ((probabilité)) est
+
+[stem%unnumbered]
+++++
+p(t,ii(nu)) = 1/{sqrt(pi ii(nu))} {Gamma ({ii(nu)+1}/2)}/{Gamma(ii(nu)/2)} (1 - {t^2}/ii(nu))^{-(ii(nu)+1)//2} , " " " " -oo < t < +oo
+++++
+
+où stem:[Gamma] est la fonction gamma et stem:[ii(nu) > 0]. L'espérance mathématique(((espérance mathématique (ou valeur espérée)))) de la ((loi de stem:[t])) est égale à zéro et sa variance est stem:[ii(nu)//(ii(nu) -2)] pour stem:[ii(nu) > 2]. Quand stem:[ii(nu) -> oo], la ((loi de stem:[t])) s'approche d'une loi normale avec stem:[ii(mu) = 0] et stem:[ii(sigma) = 1] (voir <<scls_C-2-14>>).
+
+La loi de ((probabilité)) de la variable stem:[(bar(z) - ii(mu)_z)//s(bar(z))] est la ((loi de stem:[t])) si la variable ((aléatoire)) stem:[z] est distribuée normalement avec une espérance mathématique(((espérance mathématique (ou valeur espérée)))) stem:[ii(mu)_z], où stem:[bar(z)] est la moyenne arithmétique de stem:[n] observations indépendantes stem:[z_i] de stem:[z], stem:[s(z_i)] est l'écart-type expérimental des stem:[n] observations, et stem:[s(bar(z)) = s (z_i)//sqrt(n)] est l'écart-type expérimental de la moyenne stem:[z] avec stem:[ii(nu) = n - 1] ((degrés de liberté)).

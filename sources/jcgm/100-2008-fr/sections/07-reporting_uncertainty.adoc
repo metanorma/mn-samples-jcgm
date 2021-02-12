@@ -1,0 +1,116 @@
+
+[[cls_7]]
+== Expression de l'incertitude
+
+[[scls_7-1]]
+=== Conseils généraux
+
+[[scls_7-1-1]]
+==== {blank}
+
+index-range:incExp[(((incertitude, expression de l')))]En général, lorsqu'on monte dans la hiérarchie de la mesure(((hiérarchie de mesure))), on exige davantage de détails sur la manière dont le résultat de mesure et son incertitude(((résultat de mesure et son incertitude, disponibilité de l'information décrivant un))) ont été obtenus. Cependant, à tout niveau de cette hiérarchie, y compris pour les activités commerciales et réglementaires sur les marchés, l'ingénierie dans l'industrie, les installations d'étalonnage de niveau élémentaire, la recherche et le développement industriels, la recherche fondamentale, les étalons primaires et les laboratoires d'étalonnage industriels, les laboratoires primaires nationaux et le BIPM, toute l'information nécessaire pour la réévaluation du mesurage doit être disponible pour ceux qui pourraient en avoir besoin. La différence principale consiste en ce qu'aux niveaux inférieurs de la chaîne hiérarchique, l'information nécessaire pourra être davantage disponible sous la forme de rapports publiés, de systèmes d'étalonnage ou d'essais, de spécifications d'essais, de certificats d'étalonnage et d'essais, de manuels d'instructions, de normes internationales ou nationales et de réglementations locales.
+
+[[scls_7-1-2]]
+==== {blank}
+
+Lorsqu'on fournit les détails d'un mesurage, y compris la façon d'évaluer l'incertitude du résultat par référence à des documents publiés, comme c'est souvent le cas lorsqu'un certificat comporte des résultats d'étalonnage, il est impératif que ces documents soient tenus à jour afin qu'ils soient compatibles avec la ((procédure de mesure)) réellement utilisée.
+
+
+[[scls_7-1-3]]
+==== {blank}
+
+De nombreux mesurages sont effectués chaque jour dans l'industrie et le commerce sans compte rendu explicite relatif à leur incertitude(((incertitude, manque de compte rendu explicite de l'))). Il en est cependant beaucoup qui sont effectués avec des instruments sujets à étalonnage périodique ou à inspection légale. S'il est reconnu que les instruments sont conformes à leurs spécifications ou aux documents normatifs existants applicables, on peut déduire les incertitudes de leurs indications à partir de ces spécifications ou de ces documents normatifs.
+
+
+[[scls_7-1-4]]
+==== {blank}
+
+En pratique, la quantité d'information nécessaire pour documenter un résultat de mesure dépend de l'usage prévu; cependant, le principe de base reste inchangé: lorsqu'on exprime le résultat d'un mesurage et son incertitude, il vaut mieux pécher par excès d'information plutôt que par défaut. Par exemple, on doit:
+
+. décrire clairement les méthodes utilisées pour calculer le résultat de mesure et son incertitude(((résultat de mesure et son incertitude, disponibilité de l'information décrivant un))) à partir des observations expérimentales et des données d'entrée;
+. faire la liste de toutes les composantes de l'incertitude et documenter complètement la manière dont elles ont été évaluées;
+. présenter l'analyse des résultats de telle façon que chacune de ses étapes importantes puisse être suivie facilement et que le calcul du résultat fourni puisse être répété de manière indépendante si nécessaire;
+. donner toutes les corrections et les constantes utilisées pour l'analyse, ainsi que leurs sources.(((résultat de mesure et son incertitude, expression en détail d'un)))
+
+Un test de la liste précédente consiste à se demander: «ai-je bien fourni assez d'information, d'une manière suffisamment claire, pour que mon résultat puisse être remis à jour ultérieurement si une information ou des données nouvelles devenaient disponibles»?[[incExp]]
+
+
+[[scls_7-2]]
+=== Conseils spécifiques
+
+[[scls_7-2-1]]
+==== {blank}
+
+Lorsqu'on exprime le résultat d'un mesurage et que la mesure de l'incertitude est l'incertitude-type composée stem:[u_{"c"}(y)], on doit:
+
+. décrire complètement la manière dont le mesurande stem:[ii(Y)] est défini;
+. donner l'estimation stem:[y] du mesurande stem:[ii(Y)] et son incertitude-type composée(((incertitude-type composée, expression de l'))) stem:[u_{"c"}(y)]; les unités utilisées pour stem:[y] et stem:[u_{"c"}(y)] doivent toujours être données;
+. introduire l'incertitude-type composée relative(((incertitude-type composée relative))) stem:[u_{"c"}(y)//|y|] lorsque cela est approprié (avec la condition stem:[|y| != 0];
+. donner l'information décrite en <<scls_7-2-7>> ou faire référence à un document publié qui la comporte.
+
+Si cela est jugé utile pour les usagers potentiels du résultat de mesure, par exemple pour aider au calcul ultérieur de facteurs d'élargissement ou pour aider à la compréhension du mesurage, on peut indiquer:
+
+* le nombre effectif de degrés de liberté(((degrés de liberté de composantes de Type A seulement (nombre effectif de))))(((degrés de liberté de composantes de Type B seulement (nombre effectif de)))) estimés stem:[ii(nu)_{"eff"}] (voir <<scls_G-4>>);
+* les incertitudes-types composées stem:[u_{"cA"}(y)] et stem:[u_{"cB"}(y)] respectivement de Type A(((incertitude-type composée à partir de composantes de Type A seulement))) et de Type B(((incertitude-type composée à partir de composantes de Type B seulement))) et leurs nombres effectifs de degrés de liberté estimés stem:[ii(nu)_{"effA"}] et stem:[ii(nu)_{"effB"}] (voir <<note3_G-4-1>>).
+
+
+[[scls_7-2-2]]
+==== {blank}
+
+Lorsque la mesure de l'incertitude est stem:[u_{"c"}(y)], il est préférable d'énoncer le résultat numérique du mesurage de l'une des quatre manières suivantes pour éviter toute fausse interprétation (on suppose que la grandeur dont on exprime la valeur est un étalon de valeur nominale 100 g de masse stem:[m_{"S"}]; les mots entre parenthèses peuvent être omis pour plus de concision si stem:[u_{"c"}] est défini par ailleurs dans le document qui exprime le résultat.)
+
+. «stem:[m_{"S"} = 100.02147" "rm(g)] avec (une incertitude-type composée)(((incertitude-type composée, expression de l'))) stem:[u_{"c"} = 0.35" "rm(mg)].»
+. «stem:[m_{"S"}= 100.02147(35) " "rm(g)], où le nombre entre parenthèses est la valeur numérique de (l'incertitude-type composée) stem:[u_{"c"}] qui porte sur les deux derniers chiffres correspondants du résultat fourni.»
+. «stem:[m_{"S"} = 100.02147(0.00035) " "rm(g)], où le nombre entre parenthèses est la valeur numérique de (l'incertitudetype composée) stem:[u_{"c"}] exprimée avec l'unité du résultat fourni.»
+. [[item_7-2-2d]]«stem:[m_{"S"} = (100.02147 pm 0.00035)" "rm(g)], où le nombre qui suit le symbole stem:[pm] est la valeur numérique de (l'incertitude-type composée) uc et non un intervalle de confiance.»(((incertitude, formulation pour l'expression d'un)))
+
+NOTE: La forme avec stem:[pm] doit être évitée à chaque fois que possible parce qu'elle est traditionnellement utilisée pour indiquer un intervalle correspondant à un niveau de confiance élevé et peut en conséquence être confondue avec l'incertitude élargie (voir <<scls_7-2-4>>). De plus, bien que l'objectif de la négation à la fin de <<item_7-2-2d>> soit de prévenir une telle confusion, le fait d'écrire stem:[ii(Y) = y pm u_{"c"}(y)] pourrait encore être mal interprété comme signifiant, surtout si la fin de phrase est omise accidentellement, qu'une incertitude élargie avec stem:[k = 1] est prévue et que l'intervalle stem:[y - u_{"c"}(y) <= ii(Y) <= y + u_{"c"}(y)] a un niveau de confiance spécifié stem:[p], c'est-à-dire celui qui est associé à la loi normale (voir <<scls_G-1-3>>). Comme indiqué en <<scls_6-3-2>> et dans l'<<annexG>>, cette interprétation stem:[u_{"c"}(y)] est habituellement difficile à justifier.
+
+
+[[scls_7-2-3]]
+==== {blank}
+
+Lorsqu'on exprime le résultat d'un mesurage et que la mesure de l'incertitude est l'incertitude élargie stem:[ii(U) = k u_{"c"}(y)], on doit:
+
+. décrire complètement la manière dont le mesurande stem:[ii(Y)] est défini;
+. énoncer le résultat du mesurage sous la forme stem:[ii(Y) = y pm ii(U)] et donner les unités pour stem:[y] et stem:[ii(U)];
+. introduire l'((incertitude élargie relative))(((incertitude élargie, expression de l'))) stem:[ii(U)//|y|] lorsque cela est approprié (avec la condition stem:[|y| != 0]);
+. donner la valeur de stem:[k] utilisée pour obtenir stem:[ii(U)] [ou, pour la commodité de l'utilisateur du résultat, donner la valeur de stem:[k] et aussi celle de stem:[u_{"c"}(y)]];
+. donner le niveau de confiance approximatif associé à l'intervalle stem:[y pm ii(U)] et préciser la manière dont il a été déterminé;
+. donner l'information décrite en <<scls_7-2-7>> ou faire référence à un document publié qui la comporte.
+
+
+[[scls_7-2-4]]
+==== {blank}
+
+Lorsque la mesure de l'incertitude est stem:[ii(U)], il est préférable, pour une clarté maximale, d'énoncer le résultat numérique du mesurage comme dans l'exemple suivant. (Les mots entre parenthèses peuvent être omis pour plus de concision si stem:[ii(U)], stem:[u_{"c"}], et stem:[k] sont définis par ailleurs dans le document qui exprime le résultat.)
+
+«stem:[m_{"S"} = (100.02147 pm 0.00079)" "rm(g)], où le nombre qui suit le symbole stem:[pm] est la valeur numérique de (l'incertitude élargie)(((incertitude élargie, expression de l'))) stem:[ii(U) = k u_{"c"}], avec stem:[ii(U)] déterminé à partir de (l'incertitude-type composée) stem:[u_{"c"} = 0.35" "rm(mg)] et (du facteur d'élargissement) stem:[k = 2.26] sur la base de la loi de stem:[t] pour stem:[ii(nu) = 9] degrés de liberté, et définit un intervalle estimé avoir un niveau de confiance de 95 pour-cent.»(((incertitude, formulation pour l'expression d'un)))
+
+
+[[scls_7-2-5]]
+==== {blank}
+
+Si un mesurage détermine simultanément plus d'un mesurande, c'est-à-dire s'il fournit deux ou plusieurs estimations de sortie(((estimation de sortie)))(((estimations de sortie corrélées ou grandeurs de sortie corrélées))) stem:[y_i] (voir <<scls_H-2>>, <<scls_H-3>>, et <<scls_H-4>>), il faut alors donner en plus des stem:[y_i] et stem:[u_{"c"}(y_i)], les éléments stem:[u(y_i,y_j)] de la ((matrice de covariance)) ou les éléments stem:[r(y_i,y_j)] de la matrice des *coefficients de corrélation*(((matrice des coefficients de
+corrélation))) (<<note2_C-3-6>>) et de préférence les deux.
+
+
+[[scls_7-2-6]]
+==== {blank}
+
+Les valeurs numériques de l'estimation stem:[y] et de son incertitude-type stem:[u_{"c"}(y)] ou de son incertitude élargie stem:[ii(U)] ne doivent pas être données avec un nombre excessif de chiffres. Il suffit habituellement de fournir stem:[u_{"c"}(y)] et stem:[ii(U)] [ainsi que les incertitudes-type stem:[u(x_i)] des estimations d'entrée stem:[x_i]] avec deux chiffres significatifs(((coefficient de corrélation, chiffres significatifs pour un))) au plus bien que, dans certains cas, il puisse être nécessaire de retenir des chiffres supplémentaires pour éviter la propagation des erreurs d'arrondissage dans les calculs ultérieurs.
+
+En énonçant les résultats finals, il peut parfois être approprié d'arrondir les incertitudes au chiffre(((incertitudes, nombre de chiffres significatifs pour les))) supérieur plutôt qu'au chiffre le plus proche. Par exemple, stem:[u_{"c"}(y) = 10.47" "rm(m)Omega]  pourrait être arrondi à stem:[11" "rm(m Omega)]. Cependant, le bon sens doit prévaloir et une valeur comme stem:[u(x_i) = 28.05" "rm(kHz)] doit être arrondie à la valeur inférieure, stem:[28" "rm(kHz)]. Les estimations d'entrée et de sortie doivent être arrondies en accord avec leurs incertitudes; par exemple, si stem:[y = 10.05762" "rm(Omega)] avec stem:[u_{"c"}(y) = 27" "rm(m Omega)], y doit être arrondi à stem:[10.058" "rm(Omega)]. Les coefficients de corrélation doivent être donnés avec trois chiffres significatifs(((coefficient de corrélation, chiffres significatifs pour un))) si leurs valeurs absolues sont proches de l'unité.(((incertitudes, arrondissage des)))
+
+
+[[scls_7-2-7]]
+==== {blank}
+
+Dans le rapport détaillé qui décrit le mode d'obtention du résultat d'un mesurage et de son incertitude, on doit suivre les recommandations de <<scls_7-1-4>> et, en conséquence
+
+. donner la valeur de chaque estimation d'entrée stem:[x_i] et de son incertitude-type stem:[u(x_i)] en décrivant comment elles ont été obtenues;
+. donner les covariances estimées ou les coefficients de corrélation estimés (de préférence les deux) associés à toutes les estimations d'entrée qui sont corrélées et donner les méthodes utilisées pour les obtenir;
+. donner les degrés de liberté pour l'incertitude-type de chaque estimation d'entrée et la manière dont ils sont obtenus;
+. donner la relation fonctionnelle stem:[ii(Y) = f(ii(X)_1, ii(X)_2,..., ii(X)_N)] et, lorsqu'elles sont jugées utiles, les dérivées partielles ou les ((coefficients de sensibilité)) stem:[del f//del x_i]. Toutefois, il faut donner tout coefficient de ce type déterminé expérimentalement.(((résultat de mesure et son incertitude, expression en détail d'un)))
+
+NOTE: Parce que la relation fonctionnelle stem:[f] peut être extrêmement complexe ou peut ne pas exister sous une forme explicite mais seulement comme programme d'ordinateur, il est quelquefois impossible de donner stem:[f] et ses dérivées. On peut alors décrire la fonction stem:[f] en termes généraux ou indiquer le programme utilisé à l'aide d'une référence appropriée. Dans ces cas-là, il est important que la manière dont l'estimation stem:[y] du mesurande stem:[ii(Y)] et son incertitude-type composée stem:[u_{"c"}(y)] ont été obtenues soit claire.

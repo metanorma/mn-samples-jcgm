@@ -1,0 +1,80 @@
+[.preface]
+== Préliminaire
+
+Le présent _Guide_ établit les règles générales pour l'évaluation et l'expression de l'incertitude de mesure, règles prévues pour s'appliquer à un large éventail de mesurages. Ce _Guide_ est fondé sur la Recommandation 1 (CI-1981)(((Recommandation 1 (CI-1981), CIPM))) du Comité international des poids et mesures \(((CIPM))) et sur la Recommandation INC-1(((Recommandation INC-1 (1980)))) (1980) du Groupe de travail sur l'expression des incertitudes(((Groupe de travail sur l'évaluation des incertitudes))). Ce groupe de travail avait été constitué par le Bureau international des poids et mesures \(((BIPM))) pour répondre à une demande du ((CIPM)). La Recommandation du ((CIPM)) est la seule recommandation concernant l'expression de l'incertitude de mesure qui ait été avalisée par une organisation intergouvernementale.
+
+Le présent _Guide_ a été préparé par un groupe de travail mixte composé d'experts désignés par le ((BIPM)), la Commission électrotechnique internationale(((CEI))), l'Organisation internationale de normalisation \(((ISO))) et l'Organisation internationale de métrologie légale \(((OIML))).
+
+Les sept organisations footnoteblock:[f1] suivantes ont apporté leur soutien à l'élaboration du présent _Guide_ et il est publié en leur nom:
+
+[[f1]]
+[NOTE]
+--
+*Note de bas de page à la version 2008:*
+
+En 2005, la Coopération internationale sur l'agrément des laboratoires d'essais (ILAC) a rejoint officiellement les sept organisations internationales fondatrices.
+--
+
+((BIPM)):: Bureau International des Poids et Mesures
+
+((CEI)):: Commission électronique internationale
+
+((FICC)):: Fédération internationale de chimie clinique footnoteblock:[f2]
+
+[[f2]]
+[NOTE]
+--
+*Note de bas de page à la version 2008:*
+
+Le nom de cette organisation a changé depuis 1995. Il s'écrit maintenant: +
+IFCC: Fédération internationale de chimie clinique et de médecine de laboratoire
+--
+
+((ISO)):: Organisation internationale de normalisation
+
+OlML:: Organisation internationale de métrologie légale
+
+((UICPA)):: Union internationale de chimie pure et appliquée
+
+((UIPPA)):: Union internationale de physique pure et appliquée
+
+Les utilisateurs du présent _Guide_ sont invités à adresser leurs commentaires et leurs demandes de clarification à l'une des sept organisations de tutelle dont les adresses postales sont données sur la page 2 de couverture footnoteblock:[f3].
+
+[[f3]]
+[NOTE]
+--
+*Note de bas de page à la version 2008:*
+
+Des liens vers les adresses des huit organisations membres du JCGM (Comité commun pour les guides en métrologie) peuvent être trouvés à l'adresse http://www.bipm.org/en/committees/jc/jcgm.
+--
+
+[[foreword]]
+.Foreword
+
+Le Comité international des poids et mesures \(((CIPM))), la plus haute autorité mondiale en métrologie, a reconnu en 1977 le manque de consensus international dans l'expression de l'incertitude de mesure. Il a demandé au Bureau international des poids et mesures \(((BIPM))) de traiter le problème de concert avec les ((laboratoires de métrologie)) nationaux et d'émettre une recommandation.
+
+Le ((BIPM)) a préparé un questionnaire détaillé couvrant les problèmes en cause et l'a diffusé à 32 ((laboratoires de métrologie)) nationaux reconnus comme s'intéressant au sujet (et, pour information, à cinq organisations internationales). Au début de 1979, 21 laboratoires avaient répondu <<CIPM1980>> footnoteblock:[f4]. Presque tous les laboratoires reconnaissaient l'importance d'arriver à une procédure acceptée internationalement pour exprimer l'incertitude de mesure et pour combiner les composantes individuelles de l'incertitude en une seule incertitude globale. Toutefois, il n'y avait pas de consensus apparent sur la méthode à utiliser. En conséquence, le ((BIPM)) a organisé une réunion qui avait pour objectif d'arriver à une procédure uniforme et généralement acceptable pour la spécification de l'incertitude. Des experts de 11 laboratoires nationaux de métrologie ont participé à cette réunion. Ce Groupe de travail sur l'expression des incertitudes a préparé la Recommandation INC-1(((Recommandation INC-1 (1980)))) (1980), Expression des incertitudes expérimentales <<KAARLS1981>>. Le ((CIPM)) a approuvé la Recommandation en 1981 <<CIPM1982>> et l'a reconfirmée en 1986 <<CIPM1987>>.
+
+[[f4]]
+[NOTE]
+--
+Voir la <<bibliography>>.
+
+*Note de bas de page à la version 2008:*
+
+Lors de l'élaboration de la présente version 2008 du GUM, seules les corrections jugées nécessaires par rapport à la version papier de 1995 ont été introduites par le JCGM/WG 1. Elles concernent les paragraphes 4.2.2, 4.2.4, 5.1.2, B.2.17, C.3.2, C.3.4, E.4.3, H.4.3, H.5.2.5 et H.6.2.
+--
+
+Le ((CIPM)) s'en est remis à l'Organisation internationale de normalisation \(((ISO))) pour développer un guide détaillé fondé sur la Recommandation du Groupe de travail(((Groupe de travail sur l'évaluation des incertitudes))) (qui est un bref canevas plutôt qu'une prescription détaillée), l'ISO pouvant mieux, en effet, refléter les besoins provenant des larges intérêts de l'industrie et du commerce.
+
+C'est le groupe technique consultatif (TAG 4)(((ISO Groupe consultatif technique
+sur la métrologie (ISO/TAG 4))))(((ISO/TAG 4))) sur la métrologie qui a été chargé de cette responsabilité, car l'une de ses tâches consiste à coordonner l'élaboration de lignes directrices relatives aux problèmes de mesurage qui sont d'intérêt commun à l'ISO et aux six organisations qui participent, avec l'ISO, au travail du TAG 4, à savoir: la Commission électrotechnique internationale(((CEI))), partenaire de l'ISO pour la normalisation au niveau mondial; le ((CIPM)) et l'Organisation internationale de métrologie légale \(((OIML))), qui sont les deux organisations mondiales de la métrologie; l'Union internationale de chimie pure et appliquée \(((UICPA))) et l'Union internationale de physique pure et appliquée \(((UIPPA))), qui représentent la chimie et la physique; et la Fédération internationale de chimie clinique \(((FICC))).
+
+Le TAG 4 a constitué à son tour le Groupe de travail(((Groupe de travail sur l'évaluation des incertitudes))) 3 \(((ISO/TAG 4/GT 3)))(((ISO/TAG 4/GT 3, mandat de l'))) composé d'experts désignés par le ((BIPM)), la ((CEI)), l'ISO et l'((OIML)) et nommés par le Président du TAG 4. Son mandat est le suivant:
+
+Développer un guide, fondé sur la recommandation du Groupe de travail ((BIPM)) sur l'expression des incertitudes, qui fournisse des règles pour l'expression de l'incertitude de mesure, utilisables en normalisation, dans l'étalonnage, dans l'accréditation des laboratoires et dans les services de métrologie.
+
+L'objectif d'un tel guide est de
+
+* contribuer à une information complète sur la manière dont on aboutit à l'expression de l'incertitude;
+* fournir une base pour la comparaison internationale des résultats de mesure.

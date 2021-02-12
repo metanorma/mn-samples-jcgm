@@ -1,0 +1,422 @@
+
+[[annexG]]
+[appendix]
+== Degrés de liberté et niveaux de confiance(((niveau de confiance)))
+
+[[scls_G-1]]
+=== Introduction
+
+[[scls_G-1-1]]
+==== {blank}
+
+Cette annexe aborde la question générale de l'obtention d'une ((incertitude élargie)) stem:[ii(U)_p = k_p u_{"c"}(y)] à partir de l'estimation stem:[y] du mesurande stem:[ii(Y)], et de l'incertitude-type composée stem:[u_{"c"}(y)] de cette estimation. À partir de cette ((incertitude élargie)), on définit un intervalle stem:[y - ii(U)_p <= ii(Y) <= y + ii(U)_p] qui correspond à une probabilité ou à un ((niveau de confiance)) stem:[p], spécifiés et élevés. Cette annexe traite donc de la manière d'arriver à déterminer le ((facteur d'élargissement)) stem:[k_p] qui produit, autour du résultat de mesurage stem:[y], un intervalle dont on puisse s'attendre à ce qu'il comprenne une fraction spécifiée stem:[p], élevée, de la distribution des valeurs qui pourraient être attribuées raisonnablement au mesurande stem:[ii(Y)] (voir <<cls_6>>).
+
+[[scls_G-1-2]]
+==== {blank}
+
+Dans la plupart des situations pratiques de mesure, le calcul d'un intervalle correspondant à un niveau de confiance spécifié, au mieux, ne peut qu'être approximatif comme, en fait, l'estimation de la plupart des composantes individuelles de l'incertitude dans ces situations. Même si l'on obtient un écart-type expérimental de la moyenne à partir d'un nombre d'((observations répétées)) aussi élevé que 30 pour une grandeur décrite par une loi normale, cet écart-type a lui-même une incertitude d'environ 13 pour-cent (voir <<table_E-1>> de l'<<annexE>>).
+
+Dans de nombreux cas, cela n'a pas de sens d'essayer de faire la distinction entre, par exemple, un intervalle ayant un niveau de confiance de 95 pour-cent (une chance sur 20 pour que la valeur du mesurande stem:[ii(Y)] soit située en dehors de l'intervalle) et un intervalle de 94 pour-cent ou 96 pour-cent (respectivement 1 chance sur 17 et 1 chance sur 25). Il est particulièrement difficile d'obtenir des intervalles légitimes qui correspondent réellement à des niveaux de confiance égaux ou supérieurs à 99 pour-cent (1 chance sur 100), même si l'on suppose qu'aucun effet systématique n'a été sous-estimé, parce que l'on possède en général très peu d'information sur les portions les plus extrêmes des «queues» des lois de ((probabilité)) des grandeurs d'entrée.
+
+
+[[scls_G-1-3]]
+==== {blank}
+
+Pour obtenir la valeur du ((facteur d'élargissement)) stem:[k_p] qui donne un intervalle correspondant à un ((niveau de confiance)) spécifié stem:[p], il est nécessaire d'avoir une connaissance détaillée de la loi de ((probabilité)) caractérisée par le résultat de mesure et son incertitude-type composée. Par exemple, pour une grandeur stem:[z] décrite par une ((loi normale)) d'espérance mathématique stem:[ii(mu)_z] et d'écart-type stem:[ii(sigma)], il est facile de calculer la valeur de stem:[k_p] qui donne un intervalle stem:[ii(mu)_z pm k_p ii(sigma)] comprenant la fraction stem:[p] de la loi et donc a une ((probabilité)) ou un ((niveau de confiance)) stem:[p]. La <<table_G-1>> donne quelques exemples.
+
+
+[[table_G-1]]
+.Valeur du ((facteur d'élargissement)) stem:[k_p] qui donne un intervalle correspondant au niveau de confiance stem:[p], en supposant la loi normale
+[cols="2*^"]
+|===
+| Niveau de confiance stem:[p] +
+(pourcentage) | Facteur d'élargissement stem:[k_p]
+
+| stem:[68.27] | stem:[1]
+| stem:[90] | stem:[1.645]
+| stem:[95] | stem:[1.960]
+| stem:[95.45] | stem:[2]
+| stem:[99] | stem:[2.576]
+| stem:[99.73] | stem:[3]
+|===
+
+
+NOTE: En comparaison, si stem:[z] est décrit par une loi de ((probabilité)) rectangulaire d'espérance mathématique stem:[ii(mu)_z] et d'écart-type stem:[ii(sigma) = a//sqrt(3)], où stem:[a] est la demi-largeur de la loi, le niveau de confiance stem:[p] est 57,74 pour-cent pour stem:[k_p = 1]; 95 pour-cent pour stem:[k_p = 1.65]; 99 pour-cent pour stem:[k_p = 1.71]; 100 pour-cent pour stem:[k_p >= sqrt(3) ~~ 1.73]; la ((loi rectangulaire)) est «plus étroite» que la loi normale, dans le sens où elle est bornée et ne possède pas de «queues».
+
+
+[[scls_G-1-4]]
+==== {blank}
+
+Si l'on connaît les lois de probabilité des grandeurs d'entrée stem:[ii(X)_1,ii(X)_2,...,ii(X)_N] dont dépend le mesurande stem:[ii(Y)] [leurs espérances mathématiques, leurs variances et leurs moments de degrés plus élevés (voir <<scls_C-2-13>> et <<scls_C-2-22>>) si les lois ne sont pas normales] et si stem:[ii(Y)] est une fonction linéaire des grandeurs d'entrée stem:[ii(Y) = c_1 ii(X)_1 + c_2 ii(X)_2 +...+ c_N ii(X)_N], la ((loi de probabilité)) de stem:[ii(Y)] peut alors être obtenue par le produit de convolution(((convolution,de lois de probabilité))) des lois de probabilité individuelles [10]. Les valeurs de stem:[k_p] qui produisent des intervalles correspondant à des niveaux de confiance spécifiés stem:[p] peuvent alors être calculées à partir des lois convoluées résultantes.
+
+
+[[scls_G-1-5]]
+==== {blank}
+
+Si la relation fonctionnelle entre stem:[ii(Y)] et ses grandeurs d'entrée n'est pas linéaire et si le développement en ((série de Taylor)) limité au premier ordre n'est pas une approximation convenable de cette relation (voir <<scls_5-1-2>> et <<scls_5-1-5>>), la ((loi de probabilité)) de stem:[ii(Y)] ne peut pas être obtenue en convoluant(((convolution,de lois de probabilité))) les lois des grandeurs d'entrée. Il faut, dans ce cas-là, utiliser d'autres méthodes, analytiques ou numériques.(((relation fonctionnelle non linéaire)))
+
+
+[[scls_G-1-6]]
+==== {blank}
+
+En pratique, d'une part les paramètres qui caractérisent les lois de probabilité des grandeurs d'entrée sont habituellement des estimations; d'autre part il n'est pas réaliste de s'attendre à ce que le niveau de confiance correspondant à un intervalle donné puisse être connu avec un niveau élevé d'exactitude; enfin la convolution(((convolution,de lois de probabilité))) des lois de probabilité est une opération complexe; en conséquence, cette convolution est rarement mise en oeuvre lorsqu'on désire calculer l'intervalle correspondant à un niveau de confiance spécifié. On utilise à la place des approximations fondées sur le ((théorème central limite)).
+
+
+[[scls_G-2]]
+=== Théorème central limite(((théorème central limite)))
+
+[[scls_G-2-1]]
+==== {blank}
+
+Si stem:[ii(Y) = c_1 ii(X)_1 + c_2 ii(X)_2 + ... + c_N ii(X)_N = sum_{i=1}^ii(N) c_i ii(X)_i] et si tous les stem:[ii(X)_i] sont caractérisés par des lois normales, la loi convoluée résultante de stem:[ii(Y)] sera aussi normale. Il est souvent possible, cependant, de faire l'approximation d'une ((loi normale)) pour stem:[ii(X)_i] même si les lois de stem:[ii(Y)] ne sont pas normales, en raison du ((théorème central limite)). Ce théorème énonce que la loi de stem:[ii(Y)] sera _approximativement normale_, avec une espérance mathématique stem:[ii(E)(ii(Y))= sum_{i=1}^ii(N) c_i ii(E)(ii(X)_i)] et une variance stem:[ii(sigma)^2 (ii(Y)) = sum_{i=1}^ii(N)  c_i^2 ii(sigma)^2(ii(X)_i)], où stem:[ii(E)(ii(X)_i)] est l'espérance mathématique de stem:[ii(X)_i] et stem:[ii(sigma)^2(ii(X)_i)] est la variance de stem:[ii(X)_i], si les stem:[ii(X)_i] sont indépendants et stem:[ii(sigma)^2(Y)] est beaucoup plus grand que toute composante stem:[c_i^2 ii(sigma)^2(bar(X)_i)] pour un stem:[ii(X)_i] dont la loi n'est pas normale.
+
+
+[[scls_G-2-2]]
+==== {blank}
+
+Le ((théorème central limite)) a une grande portée parce qu'il montre le rôle très important joué par les variances des lois de probabilité des grandeurs d'entrée par rapport au rôle des moments plus élevés de ces lois, pour la détermination de la forme de la loi convoluée résultante de stem:[ii(Y)]. Il implique en outre que la loi convoluée converge vers une ((loi normale)) avec l'augmentation du nombre des grandeurs d'entrée qui contribuent à stem:[ii(sigma)^2(ii(Y))], que la convergence sera d'autant plus rapide que les valeurs des stem:[c_i^2 ii(sigma)^2(ii(X)_i)] seront plus proches les unes des autres (ce qui équivaut en pratique à ce que chaque estimation d'entrée stem:[x_i] contribue par une incertitude comparable à l'incertitude de l'estimation stem:[y] du mesurande stem:[ii(Y)]), et que plus les lois des stem:[ii(X)_i] seront proches de la normalité, moins il sera nécessaire d'en avoir un grand nombre pour obtenir une ((loi normale)) pour stem:[ii(Y)].
+
+[example]
+La ((loi rectangulaire)) (voir <<scls_4-3-7>> et <<scls_4-4-5>>) est un exemple extrême d'une loi non-normale, mais la convolution(((convolution,de lois de probabilité))) d'un nombre aussi faible que trois lois rectangulaires d'égale largeur est approximativement normale. Si la demi-largeur de chacune des ces trois lois rectangulaires est stem:[a] et, en conséquence la variance stem:[a^2//3], la variance de la loi convoluée est stem:[ii(sigma)^2 = a^2]. Les intervalles à 95 pour-cent et à 99 pour-cent de la loi convoluée sont définis respectivement par stem:[1.937 ii(sigma)] et stem:[2.379 ii(sigma)], alors que les intervalles correspondants pour une ((loi normale)) de même écart-type stem:[ii(sigma)] sont définis par stem:[1.960 ii(sigma)] et stem:[2.576 ii(sigma)] (voir <<table_G-1>>) [10].
+
+NOTE: Pour tout intervalle de niveau de confiance stem:[p] supérieur à environ 91,7 pour-cent, la valeur de stem:[k_p] pour une ((loi normale)) est supérieure à la valeur correspondante de la loi résultant de la convolution(((convolution,de lois de probabilité))) de lois rectangulaires, quels qu'en soient le nombre et la largeur.
+
+NOTE: On déduit du ((théorème central limite)) que la loi de probabilité de la moyenne arithmétique stem:[bar(q)] de stem:[n] observations stem:[q_k] d'une variable ((aléatoire)) stem:[q] d'espérance mathématique stem:[ii(mu)_q] et d'écart-type fini stem:[ii(sigma)] tend vers une ((loi normale)) de moyenne stem:[ii(mu)_q] et d'écart-type stem:[ii(sigma)//sqrt(n)] quand stem:[n -> oo], quelle que soit la loi de probabilité de stem:[q].
+
+
+[[scls_G-2-3]]
+==== {blank}
+
+Une conséquence pratique du ((théorème central limite)) est la suivante: lorsqu'on peut démontrer que ses hypothèses de validité sont approximativement satisfaites, en particulier si l'incertitude-type composée stem:[u_{"c"}(y)] n'est pas dominée par une composante d'incertitude-type obtenue par une évaluation de Type A fondée sur quelques observations seulement, ou par une composante d'incertitude-type obtenue par évaluation de Type B fondée sur une ((loi rectangulaire)) supposée, on utilisera pour stem:[k_p], en première approximation raisonnable, une valeur provenant de la ((loi normale)) pour le calcul d'une ((incertitude élargie)) stem:[ii(U)_p = k_p u_{"c"}(y)] fournissant un intervalle de ((niveau de confiance)) stem:[p]. Le <<table_G-1>> donne les valeurs les plus communément utilisées dans ce but.
+
+
+[[scls_G-3]]
+=== La ((loi de stem:[t])) et les ((degrés de liberté))
+
+[[scls_G-3-1]]
+==== {blank}
+
+Pour obtenir une approximation qui soit meilleure que par la simple utilisation d'une valeur de stem:[k_p] déduite de la loi normale, comme en <<scls_G-2-3>>, on doit savoir que le calcul d'un intervalle de niveau de confiance spécifié nécessite, non la loi de la variable stem:[[ii(Y)-ii(E)(ii(Y))\]//ii(sigma)(ii(Y))], mais la loi de la variable stem:[(y - ii(Y))//u_{"c"}(y)]. La raison provient du fait qu'en pratique, tout ce dont on dispose est stem:[y], estimation de stem:[ii(Y)] obtenue de stem:[y = sum_{i=1}^ii(N) c_i x_i], où stem:[x_i] est l'estimation de stem:[ii(X)_i]; et la variance composée associée à stem:[y], stem:[u_{"c"}^2(y)], évaluée à partir de stem:[u_{"c"}^2(y) = sum_{i=1}^ii(N) c_i^2 u^2(x_i)] où stem:[u(x_i)] est l'incertitude-type (écart-type estimé) de l'estimation stem:[x_i].
+
+NOTE: Pour être totalement correct, dans l'expression stem:[(y - ii(Y))//u_{"c"}(y)], il faudrait remplacer stem:[ii(Y)] par stem:[ii(E)(ii(Y))]. Pour simplifier, cette distinction n'a été faite qu'en très peu d'endroits du présent _Guide_. En général, le même symbole a été utilisé pour la grandeur physique, la variable ((aléatoire)) qui représente cette grandeur et l'espérance mathématique de cette variable (voir <<scls_4-1-1>>, notes).
+
+
+[[scls_G-3-2]]
+==== {blank}
+
+Si une ((variable aléatoire)) stem:[z] d'espérance mathématique stem:[ii(mu)_z] et d'écart-type stem:[ii(sigma)] suit une loi normale et si stem:[bar(z)] est la moyenne arithmétique de stem:[n] observations indépendantes stem:[z_k] de stem:[z] avec stem:[s(bar(z))] écart-type expérimental de stem:[bar(z)] [voir <<eq_3>> et <<eq_5>> de <<scls_4-2>>], alors la loi de la variable stem:[t = (bar(z) - ii(mu)_z)// s(bar(z))] est la *loi de* stem:[t](((facteur stem:[t]))) ou *((loi de Student))* (<<scls_C-3-8>>) à stem:[nu = n - 1] ((degrés de liberté)).
+
+En conséquence, si le mesurande stem:[ii(Y)] est simplement une grandeur unique stem:[ii(X)] suivant une loi normale stem:[ii(Y) = ii(X)]; et si stem:[ii(X)] est estimé par la moyenne arithmétique stem:[bar(ii(X))] de stem:[n] ((observations répétées)) indépendantes stem:[ii(X)_k] de stem:[ii(X)], avec un écart-type expérimental de la moyenne stem:[s(bar(ii(X)))], alors la meilleure estimation de stem:[ii(Y)] est stem:[y = bar(ii(X))] et l'écart-type expérimental de cette estimation est stem:[u_{"c"}(y) = s(bar(ii(X)))]. Alors stem:[t = (bar(z) - ii(mu)_z)//s(bar(z)) = (bar(ii(X)) - ii(X))//s(bar(ii(X))) = (y - ii(Y))//u_{"c"}(y)] est distribué selon la ((loi de stem:[t]))(((facteur stem:[t]))) avec
+
+
+[stem,subsequence=I]
+++++
+"Pr" [-t_p(ii(nu)) <= t <= t_p(ii(nu))] = p
+++++
+
+ou
+
+[stem,subsequence=I]
+++++
+"Pr" [-t_p(ii(nu)) <= (y - ii(Y))//u_{"c"}(y) <= t_p(ii(nu))] = p
+++++
+
+qui peut aussi s'écrire sous la forme
+
+[stem,subsequence=I]
+++++
+"Pr" [y - t_p(ii(nu)) u_{"c"}(y) <= ii(Y) <= y + t_p(ii(nu)) u_{"c"}(y)] = p
+++++
+
+Dans ces expressions, stem:["Pr"[\]] signifie «((probabilité)) de» et le ((facteur stem:[t])), stem:[t_p(ii(nu))] est la valeur de stem:[t] pour une valeur donnée du paramètre stem:[ii(nu)] — nombre de ((degrés de liberté)) (voir <<scls_G-3-3>>) — de sorte que la fraction stem:[p] de la ((loi de stem:[t])) soit comprise dans l'intervalle de stem:[-t_p(ii(nu))] à stem:[+t_p(ii(nu))]. En conséquence, l'((incertitude élargie))
+
+[stem,subsequence=I]
+++++
+ii(U)_p = k_p u_{"c"}(y) = t_p (ii(nu)) u_{"c"}(y)
+++++
+
+définit un intervalle de stem:[y - ii(U)_p] à stem:[y + ii(U)_p], écrit par commodité stem:[ii(Y) = y pm ii(U)_p], dont on peut s'attendre à ce qu'il comprenne une fraction stem:[p] de la distribution des valeurs qui pourraient être attribuées raisonnablement à stem:[ii(Y)], et stem:[p] est la ((probabilité)) ou ((niveau de confiance)) de l'intervalle.
+
+
+[[scls_G-3-3]]
+==== {blank}
+
+Le nombre de ((degrés de liberté))(((degrés de liberté d'une incertitude de Type A))) stem:[ii(nu)] est égal à stem:[n-1] pour une grandeur unique estimée par la moyenne arithmétique de stem:[n] observations indépendantes, comme en <<scls_G-3-2>>. Si les stem:[n] observations indépendantes sont utilisées pour déterminer à la fois la pente et l'ordonnée à l'origine d'une droite par la ((méthode des moindres)) carrés, le nombre de ((degrés de liberté)) de leurs incertitudes-types respectives est stem:[ii(nu) = n - 2]. Pour un ajustement par ((méthode des moindres)) carrés de stem:[m] paramètres pour stem:[n] données, le nombre de ((degrés de liberté))(((degrés de liberté d'une incertitude de Type A))) de l'incertitude-type de chaque paramètre est stem:[ii(nu) = n-m] (voir Référence [15] pour un complément de présentation sur les ((degrés de liberté)))(((degrés de liberté d'une incertitude de Type A))).
+
+
+[[scls_G-3-4]]
+==== {blank}
+
+Une sélection des valeurs de stem:[t_p(ii(nu))] pour différentes valeurs de stem:[ii(nu)] et de stem:[p] est donnée dans le <<table_G-2>> à la fin de cette annexe. Lorsque stem:[ii(nu) -> oo], la ((loi de stem:[t]))(((facteur stem:[t]))) tend vers une loi normale et stem:[t_p(ii(nu)) ~~ (1 + 2//ii(nu))^{1//2} k_p], où stem:[k_p] est le ((facteur d'élargissement)) nécessaire pour obtenir un intervalle de ((niveau de confiance)) stem:[p] pour une variable distribuée normalement. Ainsi, dans le <<table_G-2>>, la valeur de stem:[t_p(oo)] pour une valeur donnée de stem:[p] est égale à la valeur de stem:[k_p] pour la même valeur de stem:[p], dans le <<table_G-1>>.
+
+[NOTE]
+====
+La loi de stem:[t](((facteur stem:[t]))) est souvent donnée en fractiles, c'est-à-dire que les valeurs du fractile stem:[t_{1-ii(alpha)}] sont données avec stem:[1 - ii(alpha)] égal à la probabilité cumulée et la relation
+
+[stem%unnumbered]
+++++
+1 - ii(alpha) = int_{-oo}^{t_1 - ii(alpha)} f(t,ii(nu))" d"t
+++++
+
+définit le fractile, où stem:[f] est la densité de probabilité de stem:[t](((facteur stem:[t]))). Ainsi, stem:[t_p] et stem:[t_1 - ii(alpha)] sont reliés par stem:[p = 1 - 2 ii(alpha)]. Par exemple, la valeur du fractile stem:[t_{0.975}](((fractiles de la loi de stem:[t]))), pour lequel stem:[1 - ii(alpha) = 0.975] et stem:[ii(alpha) = 0.025], est le même que stem:[t_p(ii(nu))] pour stem:[p = 0.95].
+====
+
+
+[[scls_G-4]]
+=== Nombre effectif de degrés de liberté(((degrés de liberté (nombre effectif de))))
+
+[[scls_G-4-1]]
+==== {blank}
+
+La ((loi de stem:[t]))(((facteur stem:[t]))) ne décrit pas en général la loi de la variable stem:[(y - ii(Y))//u_{"c"}(y)] si stem:[u_{"c"}^2(y)] est la somme de deux ou plusieurs composantes de variance estimées stem:[u_i^2(y) = c_i^2 u^2(x_i)] (voir <<scls_5-1-3>>), même si chaque stem:[x_i] est l'estimation d'une grandeur d'entrée stem:[ii(X)_i] normalement distribuée. Il est cependant possible de faire l'approximation de la loi de cette variable par une ((loi de stem:[t]))(((facteur stem:[t]))) avec un nombre effectif de ((degrés de liberté))(((degrés de liberté (nombre effectif de)))) stem:[ii(nu)_{"eff"}] obtenu par la ((formule de Welch-Satterthwaite)) <<WELCH1947>>, <<FAIRFIELD1936>>, <<SATTERTHWAITE1946>>
+
+[[eq_G-2a]]
+[stem,subsequence=J]
+++++
+{u_{"c"}^4(y)}/{ii(nu)_{"eff"}} = sum_{i=1}^ii(N) {u_i^4(y)}/{ii(nu)_i}
+++++
+
+ou
+
+[[eq_G-2b]]
+[stem,subsequence=J]
+++++
+ii(nu)_{"eff"} = {u_{"c"}^4(y)}/{sum_{i=1}^ii(N) {u_i^4(y)}/{ii(nu)_i}}
+++++
+
+avec
+
+[[eq_G-2c]]
+[stem,subsequence=J]
+++++
+ii(nu)_{"eff"} <= sum_{i=1}^ii(N) ii(nu)_i
+++++
+
+où stem:[u_{"c"}^2(y) = sum_{i=1}^ii(N) u_i^2(y)] (voir <<scls_5-1-3>>). L'((incertitude élargie)) stem:[ii(U)_p = k_p u_{"c"}(y) = t_p (ii(nu)_{"eff"}) u_{"c"}(y)] fournit alors un intervalle stem:[ii(Y) = y pm ii(U)_p] de ((niveau de confiance)) approximatif stem:[p].
+
+NOTE: Si la valeur de stem:[ii(nu)_{"eff"}] obtenue à partir de l'Équation <<eq_G-2b>> n'est pas un nombre entier, ce qui sera habituellement le cas en pratique, la valeur correspondante de stem:[t_p] peut être obtenue, à partir du <<table_G-2>> par interpolation ou par troncature de stem:[ii(nu)_{"eff"}] au plus proche entier inférieur.
+
+NOTE: Si une estimation d'entrée stem:[x_i] est elle-même obtenue à partir de deux ou plusieurs estimations, la valeur de stem:[ii(nu)_i] à utiliser avec stem:[u_i^4(y) = [c_i^2 u^2(x_i)\]^2] au dénominateur de l'<<eq_G-2b>> est alors le nombre effectif de ((degrés de liberté)) calculé par une expression équivalente à l'<<eq_G-2b>>.
+
+[[note3_G-4-1]]
+NOTE: En fonction des besoins des utilisateurs potentiels d'un résultat de mesure, il peut être utile, en complément à stem:[ii(nu)_{"eff"}], de calculer et de donner aussi les valeurs de stem:[ii(nu)_{"effA"}] et stem:[ii(nu)_{"effB"}],(((degrés de liberté de composantes de Type A seulement (nombre effectif de))))(((degrés de liberté de composantes de Type B seulement (nombre effectif de)))) calculées à partir de l'<<eq_G-2b>> en traitant séparément les incertitudes-types obtenues par les évaluations de Type A et de Type B. Si l'on note respectivement stem:[u_{"cA"}^2(y)] et stem:[u_{"cB"}^2(y)] les contributions à stem:[u_{"c"}^2(y)] des incertitudes-types de Type A et de Type B, les différentes grandeurs sont reliées par(((incertitude-type composée à partir de composantes de Type A seulement)))(((incertitude-type composée à partir de composantes de Type B seulement)))
+
+[stem%unnumbered]
+++++
+u_{"c"}^2(y) = u_{"cA"}^2(y) + u_{"cB"}^2(y)
+++++
+
+[stem%unnumbered]
+++++
+{u_{"c"}^4(y)}/{ii(nu)_{"eff"}} = {u_{"cA"}^4(y)}/{ii(nu)_{"effA"}} + {u_{"cB"}^4(y)}/{ii(nu)_{"effB"}}
+++++
+
+
+[example]
+====
+Supposons que stem:[ii(Y) = f (ii(X)_1, ii(X)_2, ii(X)_3) = b ii(X)_1 ii(X)_2 ii(X)_3] et que les grandeurs d'entrée stem:[x_1], stem:[x_2], stem:[x_3] étant normalement distribuées, leurs estimations stem:[ii(X)_1], stem:[ii(X)_2], stem:[ii(X)_3] soient respectivement les moyennes arithmétiques de stem:[n_1 = 10], stem:[n_2 = 5], et stem:[n_3 = 15] ((observations répétées)) indépendantes, avec les incertitudes-types relatives stem:[u(x_1)//x_1 = 0.25] pour-cent, stem:[u(x_2)//x_2= 0.57] pour-cent, et stem:[u(x_3)//x_3 = 0.82] pour-cent. Dans ce cas, stem:[c_i = del f // del ii(X)_i = ii(Y) // ii(X)_i] (évalué à stem:[x_1], stem:[x_2], stem:[x_3] — voir <<note1_5-1-3>>), stem:[[u_{"c"}(y)//y\]^2 = sum_{i=1}^3 [u(x_i)//x_i\]^2 = (1.03" "rm(pour-cent))^2] (voir <<note2_5-1-6>>), et l'<<eq_G-2b>> devient:
+
+[stem%unnumbered]
+++++
+ii(nu)_{"eff"} = {[u_{"c"}(y)//y]^4}/{sum_{i=1}^3 {[u(x_i)//x_i]^4}/{ii(nu)_i}}
+++++
+
+Alors
+
+[stem%unnumbered]
+++++
+ii(nu)_{"eff"} = {1.03^4}/{{0.25^4}/{10-1} + {0.57^4}/{5-1} + {0.82^4}/{15-1}} = 19.0
+++++
+
+La valeur de stem:[t_p] pour stem:[p = 95] pour-cent et stem:[ii(nu) = 19] est (<<table_G-2>>) stem:[t_{95}(19) = 2.09]; l'((incertitude élargie)) relative pour ce ((niveau de confiance)) est alors stem:[ii(U)_{95} = 2.09 xx (1.03" "rm(pour-cent)) = 2.2" "rm(pour-cent)]. On peut alors énoncer que stem:[ii(Y) = y pm ii(U)_{95} = y(1 pm 0.022)] (stem:[y] déterminé à partir de stem:[y = b x_1 x_2 x_3]), ou que stem:[0.978 y <= ii(Y) <= 1.022 y], et que le ((niveau de confiance)) à associer à l'intervalle est approximativement égal à 95 pour-cent.
+====
+
+
+[[scls_G-4-2]]
+==== {blank}
+
+stem:[u_{"c"}(y)] dépend en pratique des incertitudes-types stem:[u(x_i)] des estimations d'entrée de grandeurs distribuées, les unes normalement et les autres non normalement, et les stem:[u(x_i)] sont obtenus à partir de distributions, les unes de fréquence et les autres de lois de probabilité _a priori_(((loi _a priori_))) (c'est-à-dire d'évaluation les unes de Type A et les autres de Type B)(((degrés de liberté d'une incertitude de Type B))). Une constatation analogue s'applique à l'estimation stem:[y] et aux estimations d'entrée stem:[x_i] dont dépend stem:[y]. Cependant, la ((loi de stem:[t])) peut être une approximation de la loi de probabilité de la fonction stem:[t = (y - ii(Y))//u_{"c"}(y)] si on la développe en ((série de Taylor)) autour de son espérance mathématique. C'est ce qui est essentiellement fait, à l'approximation d'ordre le plus bas, par la ((formule de Welch-Satterthwaite)), <<eq_G-2a>> ou <<eq_G-2b>>.
+
+La question se pose de savoir quel est le nombre de ((degrés de liberté))(((degrés de liberté d'une incertitude de Type B))) à affecter à une incertitude-type obtenue par une évaluation de Type B lorsqu'on calcule stem:[ii(nu)_{"eff"}] par l'<<eq_G-2b>>. Puisque la définition convenable du nombre de ((degrés de liberté)) admet que stem:[ii(nu)], tel qu'il apparaît dans la ((loi de stem:[t])), est une mesure de l'incertitude de la variance stem:[s^2(bar(z))], on peut utiliser l'<<eq_E-7>> de <<scls_E-4-3>> pour définir le nombre de ((degrés de liberté)) stem:[ii(nu)_i],
+
+[[eq_G-3]]
+[stem]
+++++
+ii(nu)_i ~~ 1/2 {u^2(x_i)}/{ii(sigma)^2 [u(x_i)]} ~~ 1/2 [{Delta u(x_i)}/{u(x_i)}]^{-2}
+++++
+
+La grandeur entre les grands crochets est l'incertitude relative de stem:[u(x_i)]; pour une évaluation de Type B de l'incertitude-type, c'est une grandeur subjective dont la valeur s'obtient par un jugement scientifique fondé sur l'ensemble des informations disponibles.
+
+[[example_G-4-2]]
+[example]
+D'après ce que l'on sait de la manière dont l'estimation d'entrée stem:[x_i] et son incertitude-type stem:[u(x_i)] ont été évaluées, on est conduit à juger que la valeur de stem:[u(x_i)] est fiable à environ 25 pour-cent. Cela peut être considéré comme signifiant que l'incertitude relative est stem:[Delta u(x_i)//u(x_i) = 0.25] et en conséquence, à partir de l'<<eq_G-3>>, que stem:[ii(nu)_i = (0.25)^{-2}//2 = 8]. Si l'on estimait que la valeur de stem:[u(x_i)] est fiable à 50 pour-cent seulement, stem:[ii(nu)_i] serait alors égal à 2. (Voir aussi <<table_E-1>> de <<annexE>>.)
+
+
+[[scls_G-4-3]]
+==== {blank}
+
+Dans la présentation de <<scls_4-3>> et <<scls_4-4>> pour l'évaluation de Type B(((degrés de liberté d'une incertitude de Type B))) de l'incertitude-type à partir d'une loi de probabilité _a priori_(((loi _a priori_))), on a supposé implicitement que la valeur de stem:[u(x_i)] résultant d'une telle évaluation est exactement connue. Par exemple, lorsque stem:[u(x_i)] est obtenu à partir d'une loi de probabilité rectangulaire(((loi rectangulaire))) de demi-largeur supposée stem:[a = (a_+ - a_-)//2] comme en <<scls_4-3-7>> et <<scls_4-4-5>>, stem:[u(x_i) = a//sqrt(3)] est considéré comme une constante sans incertitude parce que c'est ainsi que l'on considère stem:[a_+] et stem:[a_-], et en conséquence stem:[a] (mais voir <<note2_4-3-9>>). Cela entraîne, à partir de l'<<eq_G-3>>, que stem:[ii(nu)_i -> oo] ou stem:[1//ii(nu)_i -> 0], mais cela n'entraîne pas de difficulté pour l'évaluation de l'<<eq_G-2b>>. De plus, le fait de supposer que stem:[ii(nu)_i -> oo] n'est pas nécessairement irréaliste; il est de pratique courante de choisir stem:[a_-] et stem:[a_+] de telle sorte que la probabilité pour que la grandeur en cause soit située en dehors de l'intervalle de stem:[a_-] à stem:[a_+] soit extrêmement faible.
+
+
+[[scls_G-5]]
+=== Autres considérations
+
+[[scls_G-5-1]]
+==== {blank}
+
+Une expression, trouvée dans la littérature sur l'incertitude de mesure et souvent utilisée pour obtenir une incertitude supposée fournir un intervalle ayant un niveau de confiance de 95 pour-cent, peut s'écrire
+
+[[eq_G-4]]
+[stem]
+++++
+ii(U)'_{95} = [t_{95}^2 (ii(nu)'_{"eff"})s^2 + 3u^2]^{1//2}
+++++
+
+stem:[t_{95}(ii(nu)'_{"eff"})] correspond ici à la loi de stem:[t] pour stem:[ii(nu)'_{"eff"}] ((degrés de liberté)) et stem:[p = 95] pour-cent; stem:[ii(nu)'_{"eff"}] est le nombre effectif de ((degrés de liberté))(((degrés de liberté (nombre effectif de)))) calculé à partir de la ((formule de Welch-Satterthwaite)) [<<eq_G-2b>>] en prenant _seulement_ en compte les composantes d'incertitude-type si qui ont été évaluées statistiquement à partir d'((observations répétées)) dans le mesurage _en cours_; stem:[s^2 = sum c_i^2 s_i^2]; stem:[c_i -= del f//del x_i]; et stem:[u^2 = sum u_j^2(y) = sum c_j^2 (a_j^2//3)] compte pour _toutes_ les autres composantes d'incertitude, avec stem:[+a_j] et stem:[-a_j] limites supérieure et inférieure de stem:[ii(X)_j] supposées exactement connues, par rapport à sa meilleure estimation stem:[x_j] (c'est-à-dire, stem:[x_j - a_j <= ii(X)_j <= x_j + a_j]).
+
+NOTE: Une composante fondée sur des ((observations répétées)) qui auraient été faites _en dehors_ du mesurage en cours est traitée de la même façon que toute autre composante incluse dans stem:[u^2]. On supposera dorénavant que de telles composantes, si elles sont présentes, sont négligeables pour pouvoir faire une comparaison significative entre l'<<eq_G-4>> et l'Équation <<eq_G-5>> du paragraphe suivant.
+
+
+[[scls_G-5-2]]
+==== {blank}
+
+Si l'on évalue selon les méthodes recommandées en <<eq_G-3>> et <<eq_G-4>> une ((incertitude élargie)) qui fournit un intervalle de niveau de confiance de 95 pour-cent, l'expression résultante qui remplace l'<<eq_G-4>> est
+
+[[eq_G-5]]
+[stem]
+++++
+ii(U)_{95} = t_{95} (ii(nu)_{"eff"})(s^2 + u^2)^{1//2}
+++++
+
+où stem:[ii(nu)_{"eff"}] est calculé à partir de l'<<eq_G-2b>> et où le calcul inclut _toutes_ les composantes d'incertitude.
+
+Dans la plupart des cas, la valeur de stem:[ii(U)_{95}] obtenue par l'<<eq_G-5>> sera plus grande que la valeur de stem:[ii(U)'_{95}] obtenue par l'<<eq_G-4>> si l'on suppose que, lors de l'évaluation de l'<<eq_G-5>>, toutes les variances de Type B sont obtenues à partir de lois rectangulaires _a priori_ avec des demi-largeurs qui sont les mêmes que les limites stem:[a_j] utilisées pour calculer stem:[u^2] dans l'<<eq_G-4>>. Cela peut être compris en constatant que, bien que stem:[t_{95}(ii(nu)'_{"eff"})] soit la plupart du temps quelque peu plus grand que stem:[t_{95}(ii(nu)_{"eff"})], les deux facteurs sont proches de 2, et que dans l'<<eq_G-5>> stem:[u^2] est multiplié par stem:[t_p^2(ii(nu)_{"eff"}) ~~ 4] alors que dans l'<<eq_G-4>> il est multiplié par 3. Bien que les deux expressions donnent des valeurs égales pour stem:[ii(U)'_{95}] et stem:[ii(U)_{95}] lorsque stem:[u^2" << "s^2], stem:[ii(U)'_{95}] sera inférieur à stem:[ii(U)_{95}] jusqu'à atteindre 13 pour-cent de sa valeur lorsque stem:[u^2 " >> " s^2]. Ainsi, l'<<eq_G-4>> donne en général une incertitude qui fournit un intervalle ayant un niveau de confiance _plus faible_ que l'intervalle fourni par l'((incertitude élargie)) calculée à partir de l'<<eq_G-5>>.
+
+NOTE: Aux limites stem:[u^2//s^2 -> oo] et stem:[ii(nu)_{"eff"} -> oo], stem:[ii(U)'_{95} -> 1.732u] tandis que stem:[ii(U)_{95} -> 1.960u]. Dans ce cas, stem:[ii(U)'_{95}] fournit un intervalle ayant un niveau de confiance de 91,7 pour-cent seulement alors que stem:[ii(U)_{95}] fournit un intervalle de 95 pour-cent. En pratique, on tend vers cette situation lorsque les composantes obtenues à partir d'estimations de limites supérieure et inférieure sont dominantes, importantes en nombre et donnent des valeurs comparables pour les stem:[u_j^2(y) = c_j^2 a_j^2//3].
+
+NOTE: Pour une ((loi normale)), le ((facteur d'élargissement)) stem:[k = sqrt(3) ~~ 1.732] fournit un intervalle avec un niveau de confiance stem:[p = 91.673...] pour-cent. Cette valeur de stem:[p] est robuste dans le sens que, comparée à toute autre valeur, elle est indépendante, de manière optimale, de petits écarts à la normalité des grandeurs d'entrée.
+
+[[scls_G-5-3]]
+==== {blank}
+
+On peut avoir parfois une grandeur d'entrée stem:[ii(X)_i] distribuée de manière asymétrique(((incertitude élargie pour une loi asymétrique)))(((loi asymétrique))): les écarts par rapport à son espérance mathématique sont plus probables dans un sens que dans l'autre (voir <<scls_4-3-8>>). Bien que cela n'amène pas de différence pour l'évaluation de l'incertitude-type stem:[u(x_i)] de l'estimation stem:[x_i] de stem:[ii(X)_i], donc de l'évaluation de stem:[u_{"c"}(y)], cela peut modifier la détermination de stem:[ii(U)].
+
+Il est habituellement commode de donner un intervalle symétrique stem:[ii(Y) = y pm ii(U)], sauf si l'intervalle est tel qu'il y ait un signe et celles de l'autre. Si l'asymétrie de stem:[ii(X)_i] entraîne seulement une faible asymétrie pour la loi de probabilité caractérisée par le résultat de mesure stem:[y] et par son incertitude-type composée stem:[u_{"c"}(y)], la perte de probabilité obtenue d'un côté en donnant un intervalle symétrique est compensée par le gain en probabilité de l'autre côté. On peut, en alternative, donner un intervalle symétrique en probabilité (et donc asymétrique en stem:[ii(U)]): la probabilité pour que stem:[ii(Y)] soit situé en dessous de la limite inférieure stem:[y - ii(U)_-] est égale à la probabilité pour que stem:[ii(Y)] soit situé au-dessus de la limite supérieure stem:[y + ii(U)_+]. Mais pour donner de telles limites, il faut fournir davantage d'information que les seules estimations stem:[y] et stem:[u_{"c"}(y)] [et, en conséquence, plus d'information que les seules estimations stem:[x_i] et stem:[u(x_i)] de chaque grandeur d'entrée stem:[ii(X)_i]].
+
+[[scls_G-5-4]]
+==== {blank}
+
+L'évaluation de l'((incertitude élargie)) stem:[ii(U)_p] donnée ici en fonction de stem:[u_{"c"}(y)], stem:[ii(nu)_{"eff"}], et du facteur stem:[t _p (ii(nu)_{"eff"})] de la ((loi de stem:[t]))(((facteur stem:[t]))) est seulement une approximation et elle a ses limitations. La loi stem:[(y - Y)//u_{"c"}(y)] suit une ((loi de stem:[t]))(((facteur stem:[t]))) seulement si la loi de stem:[ii(Y)] est normale, si l'estimation stem:[y] et son incertitude-type composée stem:[u_{"c"}(y)] sont indépendantes et si la loi de stem:[u_{"c"}^2(y)] est une loi de stem:[ii(chi)^2]. L'introduction de stem:[ii(nu)_{"eff"}], <<eq_G-2b>>, correspond seulement au dernier problème et fournit une loi de stem:[ii(chi)^2] approchée pour stem:[u_{"c"}^2(y)]; l'autre partie du problème, qui provient de la non-normalité de la loi de stem:[ii(Y)], nécessite de prendre en compte, en plus de la variance, des moments de degré plus élevé.
+
+
+[[scls_G-6]]
+=== Résumé et conclusions
+
+[[scls_G-6-1]]
+==== {blank}
+
+Le ((facteur d'élargissement)) stem:[k_p] qui fournit un intervalle ayant un ((niveau de confiance)) stem:[p] proche d'un niveau spécifié ne peut être trouvé que si l'on dispose d'une connaissance étendue de la loi de probabilité de chaque grandeur d'entrée et si ces lois sont composées pour obtenir la loi de la grandeur de sortie. Les estimations d'entrée stem:[x_i] et leurs incertitudes-types stem:[u(x_i)] sont par elles-mêmes insuffisantes pour atteindre cet objectif.
+
+[[scls_G-6-2]]
+==== {blank}
+
+Parce que les calculs volumineux nécessaires pour composer les lois de probabilité sont rarement justifiés par l'étendue et la fiabilité de l'information disponible, on peut accepter une approximation de la loi de la grandeur de sortie. En raison du ((théorème central limite)), il est habituellement suffisant de supposer que la loi de probabilité de stem:[(y-ii(Y))//u_{"c"}(y)] est la ((loi de stem:[t]))(((facteur stem:[t]))) et de prendre stem:[k_p = t_p(ii(nu)_{"eff"})], avec le ((facteur stem:[t])) fondé sur un nombre de ((degrés de liberté)) stem:[ii(nu)_{"eff"}] de stem:[u_{"c"}(y)] obtenu à partir de la ((formule de Welch-Satterthwaite)), <<eq_G-2b>>.
+
+
+[[scls_G-6-3]]
+==== {blank}
+
+L'obtention de stem:[ii(nu)_{"eff"}] de l'<<eq_G-2b>> nécessite de connaître le nombre de ((degrés de liberté))(((degrés de liberté d'une incertitude de Type A))) stem:[ii(nu)_i] de chaque composante de l'incertitude-type. Pour une composante obtenue par une évaluation de Type A, stem:[ii(nu)_i] est obtenu par le nombre d'((observations répétées)) indépendantes sur lesquelles est fondée l'estimation d'entrée correspondante et par le nombre de grandeurs indépendantes déterminées à partir de ces observations (voir <<scls_G-3-3>>). Pour une composante obtenue par une évaluation de Type B(((degrés de liberté d'une incertitude de Type B))), stem:[ii(nu)_i] est obtenu à partir de la fiabilité que l'on peut attacher à la valeur de cette composante [voir <<scls_G-4-2>> et <<eq_G-3>>].
+
+
+[[scls_G-6-4]]
+==== {blank}
+
+La séquence suivante est alors un résumé de la méthode préférentielle qui permet de calculer une ((incertitude élargie)) stem:[ii(U)_p = k_p u_{"c"}(y)] dans le but de fournir un intervalle stem:[ii(Y) = y pm ii(U)_p] ayant un ((niveau de confiance)) approximatif stem:[p]:
+
+. Déterminer stem:[y] et stem:[u_{"c"}(y)] comme indiqué aux <<cls_4>> et <<cls_5>>.
+. Calculer stem:[ii(nu)_{"eff"}] à partir de la ((formule de Welch-Satterthwaite)), <<eq_G-2b>> (reproduite ci-après pour la commodité):
++
+--
+[stem%unnumbered]
+++++
+ii(nu)_{"eff"} = {u_{"c"}^4(y)}/{sum_{i=1}^ii(N) {u_i^4(y)}/{ii(nu)_i}}
+++++
+
+Si stem:[u(x_i)] est obtenu par une évaluation de Type A, déterminer stem:[ii(nu)_i] comme précisé en <<scls_G-3-3>>. Si stem:[u(x_i)] est obtenu par une évaluation de Type B(((degrés de liberté d'une incertitude de Type B))) et si l'on peut le traiter comme s'il était connu exactement, ce qui est souvent le cas en pratique, stem:[ii(nu)_i -> oo]; sinon, estimer stem:[ii(nu)_i] par l'<<eq_G-3>>.
+--
+
+. Déterminer le facteur stem:[t_p (ii(nu)_{"eff"})] pour le niveau de confiance désiré stem:[p] à partir du <<table_G-2>>. Si stem:[ii(nu)_{"eff"}] n'est pas un entier, interpoler ou faire une troncature de stem:[ii(nu)_{"eff"}] à l'entier inférieur le plus proche.
+. Prendre stem:[k_p = t_p (ii(nu)_{"eff"})] et calculer stem:[ii(U)_p = k_p u_{"c"}(y)].
+
+
+[[scls_G-6-5]]
+==== {blank}
+
+Dans certaines situations, qui ne devraient pas se produire trop fréquemment en pratique, les conditions exigées par le ((théorème central limite)) peuvent ne pas être satisfaites correctement et l'approche de <<scls_G-6-4>> peut conduire à un résultat inacceptable. Par exemple, si stem:[u_{"c"}(y)] est borné par une composante d'incertitude évaluée à partir d'une ((loi rectangulaire)) dont les limites sont supposées être exactement connues, il est possible [si stem:[t_p (ii(nu)_{"eff"}) > sqrt(3)]] que stem:[y + ii(U)_p] et stem:[y - ii(U)_p], limites supérieure et inférieure de l'intervalle défini par stem:[ii(U)_p], puissent se situer en dehors des limites de la loi de probabilité de la grandeur de sortie stem:[ii(Y)]. On doit traiter individuellement de tels cas, qui sont souvent justiciables d'un traitement analytique par approximation (impliquant, par exemple, la convolution(((convolution,de lois de probabilité))) d'une loi normale avec une ((loi rectangulaire)) <<DIETRICH1991>>).
+
+
+[[scls_G-6-6]]
+==== {blank}
+
+Pour de nombreux mesurages pratiques dans une large étendue de domaines, les conditions
+suivantes prédominent:
+
+* l'estimation stem:[y] du mesurande stem:[ii(Y)] est obtenue à partir des estimations stem:[x_i] d'un nombre significatif de grandeurs d'entrée stem:[ii(X)_i] qui peuvent être décrites par des lois de probabilité raisonnables telles que des lois normales ou rectangulaires;
+* les incertitudes-types stem:[u(x_i)] de ces estimations, qui peuvent être obtenues par des évaluations de Type A ou de Type B, contribuent de manière comparable à l'incertitude-type composée stem:[u_{"c"}(y)] du résultat de mesure stem:[y];
+* l'approximation linéaire supposée par la loi de propagation de l'incertitude est convenable (voir <<scls_5-1-2>> et <<scls_E-3-1>>);
+* l'incertitude de stem:[u_{"c"}(y)] est raisonnablement faible parce que son nombre effectif de ((degrés de liberté))(((degrés de liberté (nombre effectif de)))) stem:[ii(nu)_{"eff"}] est significativement élevé, disons supérieur à 10.
+
+Dans ces conditions, on peut supposer que la loi de probabilité caractérisée par le résultat de mesure et son incertitude-type composée est normale en raison du ((théorème central limite)); et stem:[u_{"c"}(y)] peut être considéré comme une estimation raisonnablement fiable de l'écart-type de cette loi normale en raison de la valeur significativement élevée de stem:[ii(nu)_{"eff"}]. Alors, en se fondant sur les développements présentés dans cette annexe, y compris ceux qui mettent en évidence la nature approximative du processus d'évaluation de l'incertitude(((incertitude, loi de propagation de l'))) et sur le fait qu'il serait illusoire de vouloir distinguer entre des intervalles ayant des niveaux de confiance qui diffèrent de un à deux pour-cent, on peut faire ce qui suit:
+
+* prendre stem:[k = 2] et supposer que stem:[ii(U) = 2 u_{"c"}(y)] définit un intervalle ayant un niveau de confiance d'environ 95 pour-cent;
+
+ou, pour des applications plus critiques,
+
+* prendre stem:[k = 3] et supposer que stem:[ii(U) = 3 u_{"c"}(y)] définit un intervalle ayant un niveau de confiance d'environ 99 pour-cent.
+
+Cette approche devrait convenir à de nombreux mesurages courants; cependant son applicabilité à un mesurage particulier dépendra de la manière dont stem:[k = 2] sera proche de stem:[t_{95}(ii(nu)_{"eff"})] ou stem:[k = 3] de stem:[t_{99}(ii(nu)_{"eff"})]; c'est-à-dire de la manière dont le niveau de confiance de l'intervalle défini par stem:[ii(U) = 2 u_{"c"}(y)] ou stem:[ii(U) = 3 u_{"c"}(y)] sera proche respectivement de 95 pour-cent ou de 99 pour-cent. Bien que pour stem:[ii(nu)_{"eff"} = 11], stem:[k = 2] et stem:[k = 3] sousestiment stem:[t_{95}(11)] et stem:[t_{99}(11)] de, respectivement environ 10 pour-cent et 4 pour-cent seulement (voir <<table_G-2>>), cela peut ne pas être acceptable dans certains cas. De plus, pour toutes les valeurs de stem:[ii(nu)_{"eff"}] un tant soit peu supérieures à 13, stem:[k = 3] conduit à un intervalle de niveau de confiance supérieur à 99 pour-cent. (Voir <<table_G-2>>, qui montre aussi que pour stem:[ii(nu)_{"eff"} -> oo] les niveaux de confiance des intervalles produits par stem:[k = 2] et stem:[k = 3] sont respectivement de 95,45 pour-cent et 99,73 pour-cent.) Ainsi, en pratique, c'est la valeur de stem:[ii(nu)_{"eff"}] et ce qu'on attend de l'((incertitude élargie)) qui déterminera si cette approche peut être utilisée.
+
+[[table_G-2]]
+.Valeur de stem:[t_p(nu)] de la loi de stem:[t](((facteur stem:[t]))) pour stem:[ii(nu)] ((degrés de liberté)), qui définit un intervalle de stem:[−t_p(ii(nu))] à stem:[+t_p(nu)] comprenant la fraction stem:[p] de la loi
+[cols="7*^"]
+|===
+.2+h| Nombre de ((degrés de liberté)) +
+stem:[ii(nu)]
+6+h| Fraction stem:[p] en pourcentage
+
+h| stem:[68.27] footnote:noteG2[Pour une grandeur stem:[z] décrite par une loi normale d'espérance mathématique stem:[ii(mu)_z] et d'écart-type stem:[ii(sigma)], l'intervalle stem:[ii(mu)_z pm k ii(sigma)] comprend respectivement p = 68,27 pour-cent, 95,45 pour-cent et 99,73 pour-cent de la loi pour stem:[k = 1], stem:[2] et stem:[3]]. h| 90 h| 95 h| stem:[95.45] footnote:noteG2[] h| 99 h| stem:[99.73] footnote:noteG2[]
+
+| 1 | stem:[1.84] | stem:[6.31] | stem:[12.71] | stem:[13.97] | stem:[63.66] | stem:[235.80]
+| 2 | stem:[1.32] | stem:[2.92] | stem:[4.30] | stem:[4.53] | stem:[9.92] | stem:[19.21]
+| 3 | stem:[1.20] | stem:[2.35] | stem:[3.18] | stem:[3.31] | stem:[5.84] | stem:[9.22]
+| 4 | stem:[1.14] | stem:[2.13] | stem:[2.78] | stem:[2.87] | stem:[4.60] | stem:[6.62]
+| 5 | stem:[1.11] | stem:[2.02] | stem:[2.57] | stem:[2.65] | stem:[4.03] | stem:[5.51]
+7+|&nbsp;
+| 6 | stem:[1.09] | stem:[1.94] | stem:[2.45] | stem:[2.52] | stem:[3.71] | stem:[4.90]
+| 7 | stem:[1.08] | stem:[1.89] | stem:[2.36] | stem:[2.43] | stem:[3.50] | stem:[4.53]
+| 8 | stem:[1.07] | stem:[1.86] | stem:[2.31] | stem:[2.37] | stem:[3.36] | stem:[4.28]
+| 9 | stem:[1.06] | stem:[1.83] | stem:[2.26] | stem:[2.32] | stem:[3.25] | stem:[4.09]
+| 10 | stem:[1.05] | stem:[1.81] | stem:[2.23] | stem:[2.28] | stem:[3.17] | stem:[3.96]
+| 11 | stem:[1.05] | stem:[1.80] | stem:[2.20] | stem:[2.25] | stem:[3.11] | stem:[3.85]
+| 12 | stem:[1.04] | stem:[1.78] | stem:[2.18] | stem:[2.23] | stem:[3.05] | stem:[3.76]
+| 13 | stem:[1.04] | stem:[1.77] | stem:[2.16] | stem:[2.21] | stem:[3.01] | stem:[3.69]
+| 14 | stem:[1.04] | stem:[1.76] | stem:[2.14] | stem:[2.20] | stem:[2.98] | stem:[3.64]
+| 15 | stem:[1.03] | stem:[1.75] | stem:[2.13] | stem:[2.18] | stem:[2.95] | stem:[3.59]
+7+|&nbsp;
+| 16 | stem:[1.03] | stem:[1.75] | stem:[2.12] | stem:[2.17] | stem:[2.92] | stem:[3.54]
+| 17 | stem:[1.03] | stem:[1.74] | stem:[2.11] | stem:[2.16] | stem:[2.90] | stem:[3.51]
+| 18 | stem:[1.03] | stem:[1.73] | stem:[2.10] | stem:[2.15] | stem:[2.88] | stem:[3.48]
+| 19 | stem:[1.03] | stem:[1.73] | stem:[2.09] | stem:[2.14] | stem:[2.86] | stem:[3.45]
+| 20 | stem:[1.03] | stem:[1.72] | stem:[2.09] | stem:[2.13] | stem:[2.85] | stem:[3.42]
+7+|&nbsp;
+| 25 | stem:[1.02] | stem:[1.71] | stem:[2.06] | stem:[2.11] | stem:[2.79] | stem:[3.33]
+| 30 | stem:[1.02] | stem:[1.70] | stem:[2.04] | stem:[2.09] | stem:[2.75] | stem:[3.27]
+| 35 | stem:[1.01] | stem:[1.70] | stem:[2.03] | stem:[2.07] | stem:[2.72] | stem:[3.23]
+| 40 | stem:[1.01] | stem:[1.68] | stem:[2.02] | stem:[2.06] | stem:[2.70] | stem:[3.20]
+| 45 | stem:[1.01] | stem:[1.68] | stem:[2.01] | stem:[2.06] | stem:[2.69] | stem:[3.18]
+7+|&nbsp;
+| 50 | stem:[1.01] | stem:[1.68] | stem:[2.01] | stem:[2.05] | stem:[2.68] | stem:[3.16]
+| 100 | stem:[1.005] | stem:[1.660] | stem:[1.984] | stem:[2.025] | stem:[2.626] | stem:[3.077]
+| stem:[oo] | stem:[1.000] | stem:[1.645] | stem:[1.960] | stem:[2.000] | stem:[2.576] | stem:[3.000]
+|===

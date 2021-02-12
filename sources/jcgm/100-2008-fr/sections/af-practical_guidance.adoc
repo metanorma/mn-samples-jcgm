@@ -1,0 +1,416 @@
+
+[[annexF]]
+[appendix]
+== Conseils pratiques pour l'évaluation des composantes de l'incertitude
+
+Cette annexe donne des conseils complémentaires pour l'évaluation des composantes de l'incertitude, principalement d'une nature pratique; ils ont pour but de venir en complément des conseils déjà donnés à l'<<cls_4>>.
+
+[[scls_F-1]]
+=== Composantes évaluées à partir d'((observations répétées)): évaluation de Type A de l'incertitude-type
+
+[[scls_F-1-1]]
+==== Hasard et ((observations répétées))(((hasard)))
+
+[[scls_F-1-1-1]]
+====== {blank}
+
+Les incertitudes déterminées à partir d'((observations répétées)) sont souvent opposées à celles qui sont évaluées par d'autres moyens comme étant «objectives», «statistiquement rigoureuses», etc. Cela implique à tort qu'elles peuvent être évaluées simplement en appliquant des formules statistiques aux observations et que leur évaluation(((évaluation de Type A de l'incertitude))) ne nécessite pas l'application de jugement.
+
+
+[[scls_F-1-1-2]]
+====== {blank}
+
+On doit d'abord se demander, «dans quelle mesure les ((observations répétées)) sont-elles bien des répétitions du mode opératoire totalement indépendantes?»(((répétitions indépendantes))) Si la totalité des observations porte sur un échantillon unique et si l'échantillonnage fait partie du mode opératoire parce que le mesurande est la propriété d'un matériau (par opposition à la propriété d'une éprouvette donnée du matériau), les observations ne sont alors pas répétées de manière indépendante; à la variance observée des ((observations répétées)) faites sur l'échantillon unique, on doit ajouter une évaluation d'une composante de variance provenant de différences possibles entre échantillons.
+
+Si la mise à zéro d'un instrument fait partie du mode opératoire, le réglage du zéro de l'instrument doit faire partie de chaque répétition, même s'il y a une dérive négligeable pendant la période où l'on effectue les observations, parce qu'il existe potentiellement une composante de l'incertitude que l'on peut attribuer à la mise à zéro et déterminable statistiquement.
+
+De manière analogue, si l'on doit lire un baromètre, il faut le faire en principe pour chaque répétition du mesurage (de préférence après l'avoir déréglé et lui avoir donné le temps de retrouver son équilibre), parce qu'il peut y avoir une variation, et de l'indication et de la lecture, même si la pression atmosphérique est constante.
+
+
+[[scls_F-1-1-3]]
+====== {blank}
+
+On doit se demander ensuite si la totalité des influences supposées être aléatoires(((aléatoire))) est bien réellement ((aléatoire)). Les moyennes et variances des lois sont-elles bien constantes? Ou peut-être y a-t-il une dérive dans la valeur d'une grandeur d'influence non mesurée pendant la période des ((observations répétées))? Si l'on dispose d'un nombre suffisant d'observations, on peut calculer les moyennes arithmétiques des résultats des première et deuxième moitiés de la période, ainsi que leurs écarts-types expérimentaux puis comparer les deux moyennes entre elles pour juger si leur différence est statistiquement significative et en déduire s'il y a un effet fonction du temps.(((grandeurs d'influence aléatoires)))(((hasard)))
+
+
+[[scls_F-1-1-4]]
+====== {blank}
+
+Si les valeurs liées aux alimentations du laboratoire (tension et fréquence de l'alimentation électrique, pression et température de l'eau, pression d'azote, etc.) sont des grandeurs d'influence(((grandeurs d'influence aléatoires))), il y a normalement dans leurs variations une composante fortement ((aléatoire)) sur laquelle il n'est pas possible de passer.(((évaluation de Type A de l'incertitude)))
+
+
+[[scls_F-1-1-5]]
+====== {blank}
+
+Si le dernier chiffre significatif d'une indication numérique varie continuellement durant une observation en raison du «bruit», il est parfois difficile de ne pas choisir involontairement des valeurs personnellement privilégiées de ce chiffre. Il est préférable de mettre en place un moyen pour geler l'indication à un instant arbitraire et d'enregistrer ce résultat.(((hasard)))
+
+
+[[scls_F-1-2]]
+==== Corrélations
+
+La plupart des éléments de ce paragraphe sont aussi applicables aux évaluations de Type B de l'incertitude-type.
+
+
+[[scls_F-1-2-1]]
+====== {blank}
+
+La ((covariance)) associée aux estimations des deux grandeurs d'entrée stem:[ii(X)_i] et stem:[ii(X)_j] peut être prise égale à zéro ou traitée comme non significative si
+
+. stem:[ii(X)_i] et stem:[ii(X)_j] sont _non corrélés_ (les variables aléatoires(((aléatoire)))(((variable aléatoire))), non les grandeurs physiques qui sont supposées être invariantes — voir <<note1_4-1-1>>), par exemple parce qu'elles ont été mesurées de manière répétée mais non simultanément dans des essais indépendants _différents_ ou parce qu'elles représentent des grandeurs résultant d'évaluations _différentes_ faites indépendamment, ou si
+. l'une des grandeurs stem:[ii(X)_i] ou stem:[ii(X)_j] peut être traitée comme une constante, ou si
+. on possède une information insuffisante pour évaluer la ((covariance)) associée aux estimations de stem:[ii(X)_i] et stem:[ii(X)_j].
+
+NOTE: Dans d'autres cas tels que l'<<example_5-2-2>> de la résistance de référence de la <<note1_5-2-2>>, il apparaît que les grandeurs d'entrée sont complètement corrélées et que les incertitudes-types de leurs estimations se combinent linéairement.
+
+NOTE: Des essais différents peuvent ne pas être indépendants si, par exemple, on utilise le même instrument pour chacun d'eux (voir <<scls_F-1-2-3>>).
+
+
+[[scls_F-1-2-2]]
+====== {blank}
+
+Le fait que deux grandeurs d'entrée observées de manière répétée et simultanée soient corrélées peut être déterminé à l'aide de l'<<eq_17>> de <<scls_5-2-3>>. Par exemple, si la fréquence d'un oscillateur avec une compensation nulle ou faible de la température est une grandeur d'entrée, si la température ambiante est aussi une grandeur d'entrée et si elles sont observées simultanément, il peut y avoir une ((corrélation)) significative mise en évidence par la ((covariance)) calculée de la fréquence de l'oscillateur et de la température ambiante.(((observations indépendantes simultanées, paires d')))(((procédure de mesure)))
+
+
+[[scls_F-1-2-3]]
+====== {blank}
+
+En pratique, les grandeurs d'entrée sont souvent corrélées parce qu'on utilise dans l'estimation de leurs valeurs le même étalon physique, le même instrument de mesure, la même donnée de référence ou encore la même méthode de mesure, avec une incertitude significative. Sans perte de généralité, supposons que deux grandeurs d'entrée stem:[ii(X)_1] et stem:[ii(X)_2] estimées par stem:[x_1] et stem:[x_2] dépendent d'un ensemble de variables non corrélées stem:[ii(Q)_1, ii(Q)_2,..., ii(Q)_L]. On a alors stem:[ii(X)_1 = F(ii(Q)_1, ii(Q)_2,..., ii(Q)_L)] et stem:[ii(X)_2 = G(ii(Q)_1, ii(Q)_2,..., ii(Q)_L)], avec certaines variables pouvant apparaître seulement dans l'une ou l'autre des fonctions. Si stem:[u^2(q_l)] est la variance associée à l'estimation stem:[q_l] de stem:[ii(Q)_l], alors la variance estimée associée à stem:[x_1] est, à partir de l'<<eq_10>>,
+
+[[eq_F-1]]
+[stem]
+++++
+u^2(x_1) = sum_{l=1}^ii(L) ({del ii(F)}/{del q_l})^2 u^2 (q_l)
+++++
+
+avec une expression analogue pour stem:[u^2(x_2)]. La ((covariance)) associée à stem:[x_1] et stem:[x_2] est donnée par
+
+[[eq_F-2]]
+[stem]
+++++
+u(x_1,x_2) = sum_{l=1}^ii(L) {del ii(F)}/{del q_l} {del ii(G)}/{del q_l} u^2(q_l)
+++++
+
+Parce que ce sont seulement les termes pour lesquels stem:[del ii(F)// del q_l != 0] et stem:[del ii(G)// del q_l != 0] pour un stem:[l] donné qui contribuent à la somme, la ((covariance)) est nulle s'il n'y a pas de variable commune à la fois à stem:[ii(F)] et à stem:[ii(G)].
+
+Le ((coefficient de corrélation)) estimé stem:[r(x_1, x_2)] associé aux deux estimations stem:[x_1] et stem:[x_2] est déterminé à partir de stem:[u(x_1, x_2)] [<<eq_F-2>>] et de l'<<eq_14>>, avec stem:[u(x_1)] calculé à partir de l'<<eq_F-1>> et stem:[u(x_2)] à partir d'une expression analogue. [Voir aussi l'<<eq_H-9>> de <<scls_H-2-3>>.] Il est aussi possible, pour la covariance estimée associée à deux grandeurs d'entrée, d'avoir à la fois une composante statistique [voir l'<<eq_17>> de <<scls_5-2-3>>] et une composante évaluée comme cela est expliqué dans le présent paragraphe.
+
+
+[[example1_F-1-2-3]]
+[example]
+====
+Une résistance étalon stem:[ii(R)_{"S"}] est utilisée dans le même mesurage pour déterminer à la fois une intensité de courant électrique stem:[ii(I)] et une température stem:[t]. Le courant est déterminé en mesurant, avec un voltmètre numérique, la différence de potentiel aux bornes de l'étalon; la température est déterminée en mesurant, avec un pont de résistances et l'étalon, la résistance stem:[ii(R)_t(t)] d'un capteur de température étalonné dont la relation température-résistance est donnée par stem:[t = a ii(R)_t^2 (t) - t_0], dans la plage stem:[15" "rm(°C) <= t <= 30" "rm(°C)], a et stem:[t_0] étant des constantes connues. L'intensité de courant électrique est alors déterminée par la relation stem:[ii(I) = ii(V)_{"S"}//ii(R)_{"S"}] et la température par la relation stem:[t = a ii(beta)^2(t) ii(R)_{"S"}^2 - t_0], où stem:[ii(beta)(t)] est égal au rapport mesuré stem:[ii(R)_t(t)//ii(R)_{"S"}], fourni par le pont.
+
+Comme la grandeur stem:[ii(R)_{"S"}] est la seule qui soit commune aux expressions donnant stem:[ii(I)] et stem:[t], l'<<eq_F-2>> donne pour la ((covariance)) de stem:[ii(I)] et stem:[t]
+
+
+[stem%unnumbered]
+++++
+u(ii(I),t) = {del ii(I)}/{del ii(R)_{"S"}} {del t}/{del ii(R)_{"S"}} u^2(ii(R)_{"S"}) = (- {ii(V)_{"S"}}/{ii(R)_{"S"}^2}) [2a ii(beta)^2(t) ii(R)_{"S"}] u^2(ii(R)_{"S"}) = - {2 ii(I)(t + t_0)}/{ii(R)_{"S"}^2} u^2 (ii(R)_{"S"})
+++++
+
+(Pour simplifier la notation, le même symbole est utilisé dans cet exemple à la fois pour la grandeur d'entrée et pour son estimation.)
+
+Pour obtenir la valeur numérique de la ((covariance)), on substitue dans cette expression les valeurs numériques des grandeurs mesurées stem:[ii(I)] et stem:[t], et les valeurs de stem:[ii(R)_{"S"}] et de stem:[u(ii(R)_{"S"})] données dans le certificat d'étalonnage de la résistance étalon. Il est clair que l'unité de stem:[u(ii(I),t)] est stem:[ii(A) * rm(°C)] puisque la dimension de la variance relative stem:[[u(ii(R)_{"S"})//ii(R)_{"S"}\]^2] est égale à un (c'est-à-dire que cette dernière est une grandeur dite sans dimension).
+
+Supposons de plus qu'une grandeur stem:[ii(P)] soit reliée aux grandeurs d'entrée stem:[ii(I)] et stem:[t] par stem:[ii(P) = ii(C)_0 I^2//(ii(T)_0 + t)], où stem:[ii(C)_0] et stem:[ii(T)_0] sont des constantes connues d'incertitude négligeable [stem:[u^2(ii(C)_0) ~~ 0, u^2(ii(T)_0) ~~ 0]]. L'<<eq_13>> donne alors pour la variance de stem:[ii(P)] en fonction des variances de stem:[ii(I)] et de stem:[t] et de leur ((covariance))
+
+[stem%unnumbered]
+++++
+{u^2(ii(P))}/{ii(P)^2} = 4 {u^2(ii(I))}/{ii(I)^2} - 4 {u(ii(I),t)}/{ii(I)(ii(T)_0 + t)} + {u^2(t)}/{(ii(T)_0 + t)^2}
+++++
+
+Les variances stem:[u^2(ii(I))] et stem:[u^2(t)] sont obtenues en appliquant l'<<eq_10>> de <<scls_5-1-2>> à la relation stem:[ii(I) = ii(V)_{"S"}//ii(R)_{"S"}] et stem:[t= alpha beta^2(t)ii(R)_"S"^2-t_0]. On obtient
+
+[stem%unnumbered]
+++++
+u^2(ii(I))//ii(I)^2 = u^2 (ii(V)_{"S"})//ii(V)_{"S"}^2 + u^2 (ii(R)_{"S"})//ii(R)_{"S"}^2
+++++
+
+[stem%unnumbered]
+++++
+u^2(t) = 4 (t - t_0)^2 u^2 (ii(beta))//ii(beta)^2 + 4(t + t_0)^2 u^2 (ii(R)_{"S"})//ii(R)_{"S"}^2
+++++
+
+où, par simplification, on suppose que les incertitudes des constantes stem:[t_0] et a sont aussi négligeables. Ces expressions peuvent être facilement évaluées puisque stem:[u^2(ii(V)_{"S"})] et stem:[u^2(ii(beta))] peuvent être respectivement déterminés à partir de lectures répétées du voltmètre et du pont de résistance. Il faut naturellement tenir compte de toutes les incertitudes qui dépendent des instruments de mesure eux-mêmes et des modes opératoires utilisés lorsqu'on détermine stem:[u^2(ii(V)_{"S"})] et stem:[u^2(ii(beta))].
+====
+
+
+[[example2_F-1-2-3]]
+[example]
+====
+Dans l'<<example_5-2-2>> de la <<note1_5-2-2>>, supposons que l'étalonnage(((étalonnage, comparaison d'))) de chaque résistance soit représenté par stem:[ii(R)_i = ii(alpha)_i ii(R)_{"S"}], avec l'incertitude-type stem:[u(ii(alpha)_i)] du rapport mesuré stem:[ii(alpha)_i] obtenue à partir d'((observations répétées)). Supposons de plus que stem:[ii(alpha)_i ~~ 1] pour chaque résistance et que stem:[u(ii(alpha)_i)] soit essentiellement le même pour chaque étalonnage, de sorte que stem:[u(ii(alpha)_i) ~~ u(ii(alpha))]. Alors les <<eq_F-1>> et <<eq_F-2>> donnent stem:[u ^2(ii(R)_i) = ii(R)_{"S"}^2 u^2(ii(alpha)) + u^2(ii(R)_{"S"})] et stem:[u(ii(R)_i, ii(R)_j) = u^2(ii(R)_{"S"})]. Cela entraîne par l'<<eq_14>> de <<scls_5-2-2>> que le ((coefficient de corrélation)) de deux résistances quelconques (stem:[i != j]) est
+
+[stem%unnumbered]
+++++
+r(ii(R)_i,ii(R)_j) -= r_{ij} = {1 + [{u(ii(alpha))}/{u(ii(R)_{"S"})//ii(R)_{"S"}}]^2}^{-1}
+++++
+
+Puisque stem:[u(ii(R)_{"S"})//ii(R)_{"S"} = 10^{-4}], si stem:[u(ii(alpha)) = 100 xx 10^{-6}], stem:[r_{ij} ~~ 0.5]; stem:[u(ii(alpha)) = 10 xx 10^{-6}], stem:[r_{ij} ~~ 0.990]; et si stem:[u(ii(alpha)) = 1 xx 10^{-6}], stem:[r_{ij} ~~ 1.000]. Alors quand stem:[u(ii(alpha)) -> 0], stem:[r_{ij} -> 1], et stem:[u(ii(R)_i) -> u(ii(R)_{"S"})].
+====
+
+NOTE: En général, dans les étalonnages par comparaison analogues à cet exemple, les valeurs estimées des objets étalonnés sont corrélées, avec un degré de ((corrélation)) qui dépend du rapport entre l'incertitude de la comparaison et l'incertitude de l'étalon de référence. Lorsque l'incertitude de la comparaison est négligeable par rapport à l'incertitude de l'étalon, ce qui se produit souvent en pratique, les coefficients de ((corrélation)) sont égaux à +1 et l'incertitude de chaque objet étalonné est la même que celle de l'étalon.
+
+
+[[scls_F-1-2-4]]
+====== {blank}
+
+On peut se passer d'introduire la ((covariance)) stem:[u(x_i,x_j)] si l'ensemble de départ des grandeurs d'entrée stem:[ii(X)_1, ii(X)_2,...,ii(X)_N] dont dépend le mesurande stem:[ii(Y)] [voir <<eq_1>>] est redéfini de façon à introduire comme grandeurs d'entrée indépendantes additionnelles les grandeurs stem:[ii(Q)_l] qui sont communes à deux ou plus des stem:[ii(X)_i] de départ (il peut être nécessaire d'effectuer des mesurages complémentaires pour établir complètement la relation entre stem:[ii(Q)_l] et les stem:[ii(X)_i] concernés). Néanmoins, il peut être plus commode, dans certaines situations, de retenir les covariances plutôt que d'accroître le nombre de grandeurs d'entrée. Un traitement analogue peut être appliqué sur les covariances observées résultant d'observations simultanées répétées [voir <<eq_17>>], mais la mise en évidence des grandeurs d'entrée complémentaires appropriées est souvent artificielle, sans raisons physiques.
+
+[example]
+====
+Si, dans l'<<example1_F-1-2-3>> en <<scls_F-1-2-3>> les expressions pour stem:[ii(I)] et stem:[t] en fonction de stem:[ii(R)_"S"] sont introduites dans l'expression de stem:[ii(P)], le résultat est
+
+[stem%unnumbered]
+++++
+ii(P) = {ii(C)_0 ii(V)_{"S"}^2}/{ii(R)_{"S"}^2 [ii(T)_0 + a ii(beta)^2(t) ii(R)_{"S"}^2 - t_0]}
+++++
+
+et l'on évite la ((corrélation))(((corrélation, élimination d'une))) entre stem:[ii(I)] et stem:[t], quitte à remplacer les grandeurs d'entrée stem:[ii(I)] et stem:[t] par les grandeurs stem:[ii(V)_{"S"}], stem:[ii(R)_{"S"}], et stem:[ii(beta)]. Comme ces grandeurs ne sont pas corrélées, la variance de stem:[ii(P)] peut être obtenue à partir de l'<<eq_10>> de <<scls_5-1-2>>.
+====
+
+[[scls_F-2]]
+=== Composantes évaluées par d'autres moyens: évaluation de Type B(((évaluation de Type B de l'incertitude))) de l'incertitude-type
+
+[[scls_F-2-1]]
+==== La ((nécessité d'évaluations de Type B))
+
+Si un laboratoire de mesure disposait de ressources et d'un temps illimités, il pourrait effectuer une recherche statistique exhaustive de toutes les causes concevables d'incertitude(((incertitude, évaluation stastitique de l', par variation des grandeurs d'entrée))), par exemple par l'utilisation d'instruments de différents types et de différents fabricants, avec différentes méthodes de mesure, avec différents modes d'application de la méthode, et différentes approximations dans les modèles théoriques du mesurage. Les incertitudes associées à toutes ces causes pourraient alors être évaluées par l'analyse statistique de séries d'observations et l'incertitude due à chaque cause pourrait être caractérisée par un écart-type évalué statistiquement. En d'autres termes, toutes les composantes de l'incertitude seraient obtenues par des évaluations de Type A. Comme une telle étude n'est pas envisageable économiquement, de nombreuses composantes de l'incertitude doivent être évaluées par tous les autres moyens praticables.
+
+
+[[scls_F-2-2]]
+==== Lois mathématiquement déterminées(((loi déterminée mathématiquement)))
+
+[[scls_F-2-2-1]]
+===== La résolution d'une indication numérique
+
+Le dispositif indicateur d'un instrument numérique(((incertitude à la résolution d'une indication numérique))) est une source d'incertitude. Par exemple, si les indications répétées étaient toutes identiques, l'incertitude du mesurage attribuable à la répétabilité ne serait pas égale à zéro parce que la même indication serait obtenue pour une étendue de signaux d'entrée sur l'instrument balayant un intervalle connu. Si la résolution du dispositif indicateur est stem:[ii(delta) x], la valeur du signal d'entrée qui produit une indication donnée stem:[ii(X)] peut se situer avec une égale ((probabilité)) à n'importe quel endroit de l'intervalle allant de stem:[ii(X) - ii(delta) x//2] à stem:[ii(X) + ii(delta) x//2]. Le signal d'entrée est alors décrit par une loi de ((probabilité)) rectangulaire (voir <<scls_4-3-7>> et <<scls_4-4-5>>), de largeur stem:[ii(delta) x] et de variance stem:[u^2 = (ii(delta) x)^2//12], entraînant une incertitude-type de stem:[u = 0.29 ii(delta) x] pour toute indication.
+
+Ainsi, un instrument de pesage ayant un dispositif indicateur dont le chiffre significatif le plus petit est égal à stem:[1" "rm(g)] a une variance due à la résolution du dispositif égale à stem:[u^2 = (1//12)" "rm(g)^2] une incertitude-type égale à stem:[u = (1//sqrt(12))" "rm(g) = 0.29" "rm(g)].
+
+
+[[scls_F-2-2-2]]
+===== Hystérésis
+
+index-range:hysteresis[(((incertitude due à l'hystérésis)))]Certains types d'hystérésis peuvent entraîner un type analogue d'incertitude. L'indication d'un instrument peut différer d'une quantité fixe et connue selon que les lectures successives se font par valeurs croissantes ou décroissantes. L'opérateur prudent prend note du sens des lectures successives et fait les corrections appropriées. Mais le sens de l'hystérésis n'est pas toujours observable: il peut y avoir des oscillations cachées de l'instrument autour d'un point d'équilibre de sorte que l'indication dépende du sens final d'approche de ce point. Si la largeur de l'étendue des lectures possibles dues à cette cause est stem:[ii(delta) x], la variance est de nouveau stem:[u^2 = (ii(delta) x)^2//12], et l'incertitude-type due à l'hystérésis est stem:[u = 0.29 ii(delta) x].[[hysteresis]]
+
+[[scls_F-2-2-3]]
+===== Calculs à précision limitée
+
+L'arrondissage ou la troncature des nombres qui se produit dans les réductions automatiques de données par les ordinateurs peut aussi être une source d'incertitude(((incertitude due aux calculs à précision limitée))). Considérons par exemple un ordinateur avec une longueur de mots de 16 bits. Si, au cours du calcul, un nombre correspondant à cette longueur de mots est soustrait d'un autre nombre dont il diffère seulement par le 16e bit, il reste seulement un bit significatif. De tels cas peuvent se produire dans l'évaluation d'algorithmes «mal conditionnés» et ils peuvent être difficiles à prévoir. On peut obtenir une détermination empirique de l'incertitude en augmentant par petits incréments la grandeur d'entrée la plus importante pour le calcul (il y en a souvent une qui est proportionnelle à l'ordre de grandeur de la grandeur de sortie) jusqu'à une variation de la grandeur de sortie; la plus petite variation de la grandeur de sortie obtenue de cette façon peut être prise comme une mesure de l'incertitude; si elle est stem:[ii(delta) x], la variance est stem:[u^2 = (ii(delta) x)^2//12] et stem:[u = 0.29 ii(delta) x].
+
+NOTE: On peut vérifier l'évaluation de l'incertitude en comparant le résultat du calcul effectué sur une machine à longueur de mot limitée au résultat du même calcul effectué sur une machine possédant une longueur de mot significativement plus grande.
+
+
+[[scls_F-2-3]]
+==== Valeurs d'entrée d'origine extérieure(((valeur d'entrée ou grandeur d'entrée d'origine extérieure)))
+
+[[scls_F-2-3-1]]
+====== {blank}
+
+Une valeur _d'origine extérieure_ pour une grandeur(((valeur d'entrée ou grandeur d'entrée d'origine extérieure))) d'entrée est une valeur qui n'a pas été estimée au cours d'un mesurage donné mais qui a été obtenue par ailleurs comme le résultat d'une évaluation indépendante. Une telle valeur d'origine extérieure est fréquemment accompagnée par des indications sur son incertitude. Par exemple, l'incertitude peut être donnée sous forme d'un écart-type, d'un multiple d'écart-type, par la demi-largeur d'un intervalle d'un niveau de confiance donné, ou par des limites maximales. On peut aussi donner des limites supérieure et inférieure, ou bien il peut aussi arriver qu'aucune information ne soit fournie sur l'incertitude. Dans ce dernier cas, les utilisateurs de la valeur doivent employer leur propre connaissance sur l'ordre de grandeur probable de l'incertitude, selon la nature de la grandeur, la fiabilité de l'origine, les incertitudes obtenues en pratique pour de telles grandeurs, etc.
+
+NOTE: C'est par commodité que la présentation sur l'incertitude des grandeurs d'entrée d'origine extérieure est donnée dans ce paragraphe sur l'évaluation de Type B de l'incertitude-type; l'incertitude d'une telle grandeur peut comporter des composantes obtenues par des évaluations de Type A ou des composantes obtenues à la fois par des évaluations de Type A et de Type B. Comme il n'est pas nécessaire de faire la distinction entre les composantes évaluées par les deux différentes méthodes lorsqu'on calcule une incertitude-type composée, il n'est pas nécessaire de connaître la composition de l'incertitude d'une grandeur d'origine extérieure.
+
+
+[[scls_F-2-3-2]]
+====== {blank}
+
+Certains laboratoires d'étalonnage ont adopté en pratique l'expression de «l'incertitude» sous la forme de limites supérieure et inférieure qui définissent un intervalle ayant un niveau de confiance «minimal»(((niveau de confiance minimal))), par exemple «au moins» 95 pour-cent. Cela peut être considéré comme un exemple de ce que l'on a appelé une incertitude «sûre»(((incertitude sûre))) (voir <<scls_E-1-2>>), laquelle ne peut pas être transformée en une incertitude-type sans savoir comment l'intervalle a été calculé. Si l'information fournie est suffisante, l'incertitude-type peut être recalculée en accord avec les règles de ce _Guide_; sinon, une évaluation indépendante de l'incertitude doit être faite par tous les moyens disponibles.
+
+[[scls_F-2-3-3]]
+====== {blank}
+
+Certaines incertitudes sont simplement données comme limites(((limites d'une grandeurd'entrée))) extrêmes entre lesquelles _toutes_ les valeurs de la grandeur sont soi-disant situées. La pratique courante est de supposer que toutes les valeurs entre ces limites sont également probables (loi de ((probabilité)) rectangulaire), mais il ne faudrait pas adopter une telle hypothèse s'il y avait des raisons de s'attendre à ce que les valeurs situées à l'intérieur et au voisinage des limites soient moins probables que celles situées au voisinage du centre de l'intervalle compris entre ces limites. Une ((loi rectangulaire)) de demi-largeur stem:[a] a une variance égale à stem:[a^2//3]; une ((loi normale)) pour laquelle stem:[a] est la demi-largeur de l'intervalle ayant un niveau de confiance de stem:[99.73] pour-cent a une variance égale à stem:[a^2//9]. Il peut être prudent d'adopter un compromis entre ces valeurs, par exemple en supposant que la loi soit triangulaire(((loi triangulaire))), avec une variance égale à stem:[a^2//6] (voir <<scls_4-3-9>> et <<scls_4-4-6>>).
+
+
+[[scls_F-2-4]]
+==== Valeur d'entrée mesurée
+
+[[scls_F-2-4-1]]
+===== Observation unique, instruments étalonnés
+
+Si une estimation d'entrée a été obtenue à partir d'une observation unique avec un instrument déterminé qui a été étalonné par rapport à un étalon de faible incertitude, l'incertitude de l'estimation est principalement une incertitude de répétabilité(((incertitude d'une observation unique d'un instrument étalonné))). La variance de mesurages répétés avec le même instrument peut avoir été obtenue lors d'une occasion antérieure, non nécessairement à la même valeur précise de lecture mais à une valeur suffisamment proche pour être utilisable et il peut être admis d'en déduire la variance applicable à la valeur d'entrée en question. Si l'on ne dispose pas d'une telle information, une estimation doit être faite, en prenant pour base la nature de l'appareil ou de l'instrument de mesure, les variances connues d'autres instruments de construction analogue, etc.
+
+
+[[scls_F-2-4-2]]
+===== Observation unique, instruments vérifiés
+
+Tous les instruments de mesure ne sont pas accompagnés d'un certificat d'étalonnage ou d'une ((courbe d'étalonnage)). La plupart des instruments, cependant, sont construits sur la base d'une norme écrite et ils sont vérifiés, pour leur conformité à cette norme, soit par le fabricant, soit par une autorité indépendante. Habituellement, la norme contient les exigences métrologiques, souvent sous la forme d'«erreurs maximales admissibles», auxquelles il est exigé que l'instrument soit conforme. La conformité de l'instrument à ces exigences est déterminée par comparaison à un instrument de référence dont l'incertitude maximale permise est habituellement spécifiée dans la norme. Cette incertitude est alors une composante de l'incertitude de l'instrument vérifié.(((incertitude d'une observation unique d'un instrument vérifié)))(((incertitude, maximum permis d')))
+
+Si l'on ne connaît rien sur la courbe d'erreur(((courbe d'erreur d'un instrument vérifié))) ((caractéristique)) de l'instrument vérifié, il faut supposer qu'il y a une probabilité égale que l'erreur(((erreur maximale admissible))) ait n'importe quelle valeur dans les limites permises, c'est-à-dire que l'on ait une loi de probabilité rectangulaire. Cependant, certains types d'instruments ont des courbes ((caractéristique))s telles que les erreurs sont, par exemple, vraisemblablement toujours positives dans une partie de la plage de mesure et négatives dans d'autres parties. On peut parfois déduire ce genre d'information d'une étude de la norme.
+
+
+[[scls_F-2-4-3]]
+===== Grandeurs sous contrôle
+
+index-range:granCtrl[(((grandeur sous contrôle)))]Les mesurages sont souvent effectués dans des conditions de référence contrôlées qui sont supposées rester constantes au cours d'une série de mesurages. Par exemple, des mesurages peuvent être effectués sur des éprouvettes placées dans un bain à circulation d'huile dont la température est régulée par un thermostat. La température du bain peut être mesurée au moment de chaque mesurage sur une éprouvette, mais si la température du bain est cyclique, la température instantanée de l'éprouvette peut ne pas être celle indiquée par le thermomètre dans le bain. Le calcul des fluctuations de température de l'éprouvette et de leur variance, sur la base de la théorie du transfert de chaleur, est hors du domaine de ce _Guide_ mais il doit être fait à partir d'un cycle de température connu ou supposé pour le bain. Ce cycle peut être observé à l'aide d'un thermocouple de précision et d'un enregistreur de température mais, à défaut, on pourra en déduire une approximation à partir de la connaissance que l'on peut avoir sur la nature des régulations.[[granCtrl]](((incertitude d'une grandeur sous contrôle)))
+
+
+[[scls_F-2-4-4]]
+===== Distributions asymétriques de valeurs possibles
+
+Il y a des occasions où toutes les valeurs possibles d'une grandeur se situent d'un seul côté d'une valeur limite unique. Par exemple, lorsqu'on mesure la hauteur verticale fixe stem:[h] (le mesurande) d'une colonne de liquide dans un manomètre, l'axe du dispositif de mesure de la hauteur peut s'écarter de la verticalité d'un petit angle stem:[beta]. La distance stem:[l] déterminée par le dispositif sera toujours _supérieure_ à stem:[h]; il n'y a pas de valeurs inférieures à stem:[h] possibles, puisque stem:[h] est égal à la projection stem:[l cos beta], entraînant stem:[l = h//cos beta], et toutes les valeurs de stem:[cos beta] sont inférieures à un. Cette erreur appelée «erreur en cosinus» peut aussi se produire de telle façon que la projection stem:[l = h' cos beta] d'un mesurande stem:[h'] soit égale à la distance observée stem:[l], c'est-à-dire stem:[l = h' cos beta], et que la distance observée soit toujours _inférieure_ au mesurande.(((loi asymétrique)))
+
+Si l'on introduit une nouvelle variable stem:[ii(delta) = 1 - cos beta] les deux situations différentes sont, en supposant stem:[beta ~~ 0] ou stem:[ii(delta) " << " 1] ce qui est habituellement le cas en pratique,
+
+[[eq_F-3a]]
+[stem,subsequence=D]
+++++
+h = bar(l) (1 - ii(delta))
+++++
+
+[[eq_F-3b]]
+[stem,subsequence=D]
+++++
+h' = bar(l) (1 + ii(delta))
+++++
+
+avec stem:[bar(l)], meilleure estimation de stem:[l], égal à la moyenne arithmétique de stem:[n] ((observations répétées)) indépendantes stem:[l_k] de stem:[l] avec la variance estimée stem:[u^2(bar(l))] [voir <<eq_3>> et <<eq_5>> de <<scls_4-2>>]. On en déduit alors, à partir des <<eq_F-3a>> et <<eq_F-3b>> que pour obtenir une estimation de stem:[h] ou stem:[h'] il faut une estimation du facteur de correction stem:[ii(delta)], que pour obtenir l'incertitude-type composée de l'estimation de stem:[h] ou stem:[h'] il faut aussi stem:[u^2(ii(delta))], variance estimée de stem:[ii(delta)]. Plus spécifiquement, l'application de l'<<eq_10>> de <<scls_5-1-2>> aux <<eq_F-3a>> et <<eq_F-3b>> donne pour stem:[u_{"c"}^2(h)] et stem:[u_{"c"}^2(h')] (signes − et +, respectivement)
+
+[[eq_F-4]]
+[[eq_F-4a]]
+[latexmath,subsequence=E]
+++++
+u_{"c"}^2 = (1 \mp ii(\delta))^2 u^2(\bar{l}) + {\bar{l}}^2 u^2 (ii(\delta))
+++++
+
+[[eq_F-4b]]
+[stem,subsequence=E]
+++++
+~~ u^2(bar(l)) + bar(l)^2 u^2(ii(delta))
+++++
+
+Pour obtenir l'estimation de la valeur espérée de stem:[ii(delta)] et de la variance de stem:[ii(delta)], supposons que l'axe du dispositif utilisé pour mesurer la hauteur de la colonne de liquide dans le manomètre soit assujetti à rester dans un plan vertical et que les valeurs de l'angle d'inclinaison stem:[ii(beta)] autour de sa valeur espérée, égale à zéro, soient distribuées normalement avec une variance stem:[ii(sigma)^2]. Bien que stem:[ii(beta)] puisse avoir des valeurs à la fois positives et négatives, stem:[ii(delta) = 1 - cos ii(beta)] est positif pour toutes les valeurs de stem:[ii(beta)]. Si l'on suppose qu'il n'y a pas d'assujettissement pour le désalignement de l'axe du dispositif, l'orientation de l'axe peut varier dans un angle solide puisqu'il peut se désaligner dans un azimut quelconque mais stem:[ii(beta)] reste toujours un angle positif.
+
+Dans le cas de l'assujettissement de stem:[ii(beta)] à un plan vertical, cas unidimensionnel, la *((probabilité élémentaire))* stem:[p(ii(beta)) "d" ii(beta)] (<<note_C-2-5>>) est proportionnelle à stem:[{exp[-ii(beta)^2//(2ii(sigma)^2)\]}"d"ii(beta)]; dans le cas bidimensionnel ou non assujetti, la ((probabilité élémentaire)) est proportionnelle à stem:[{exp[-ii(beta)^2//(2ii(sigma)^2)\]}sin ii(beta) "d"ii(beta)]. Dans les deux cas, les densités de probabilité stem:[p(ii(delta))] sont les expressions nécessaires pour déterminer l'espérance mathématique et la variance de stem:[ii(delta)] à utiliser dans les Équations <<eq_F-3a>> et <<eq_F-4a>>. Elles peuvent être aisément obtenues à partir de ces probabilités élémentaires parce que l'angle stem:[ii(beta)] peut être supposé petit et qu'on peut alors développer stem:[ii(delta) = 1 - cos ii(beta)] et stem:[sin ii(beta)] à l'ordre le plus bas de stem:[ii(beta)]. Cela donne stem:[ii(delta) ~~ ii(beta)^2//2], stem:[sin ii(beta) ~~ ii(beta) = sqrt(2 ii(delta))], et stem:[d ii(beta) = d ii(delta)//sqrt(2ii(delta))]. Les densités de probabilité sont alors
+
+[[eq_F-5a]]
+[stem,subsequence=F]
+++++
+p(ii(delta)) = 1/{ii(sigma) sqrt(pi ii(delta))} exp(-ii(delta)//ii(sigma)^2)
+++++
+
+pour une dimension,
+
+[[eq_F-5b]]
+[stem,subsequence=F]
+++++
+p(ii(delta)) = 1/{ii(sigma)^2} exp(-ii(delta)//ii(sigma)^2)
+++++
+
+pour deux dimensions, avec
+
+[stem%unnumbered]
+++++
+int_0^{oo} p(ii(delta))" d"ii(delta) = 1
+++++
+
+Les Équations <<eq_F-5a>> et <<eq_F-5b>>, qui montrent que la valeur la plus probable de la correction stem:[ii(delta)] dans les deux cas est égale à zéro, donnent dans le cas unidimensionnel stem:[ii(E)(ii(delta)) = ii(sigma)^2//2] et stem:["var"(ii(delta)) = ii(sigma)^4//2] pour l'espérance mathématique et la variance de stem:[ii(delta)]; et dans le cas bidimensionnel stem:[ii(E)(ii(delta)) =ii(sigma)^2] et stem:["var"(ii(delta)) = ii(sigma)^4]. Les Équations <<eq_F-3a>>, <<eq_F-3b>>, et <<eq_F-4b>> deviennent alors
+
+[[eq_F-6a]]
+[stem,subsequence=G]
+++++
+h = bar(l) [1 - (d//2)u^2 (ii(beta))]
+++++
+
+[[eq_F-6b]]
+[stem,subsequence=G]
+++++
+h' = bar(l) [1 + (d//2)u^2 (ii(beta))]
+++++
+
+[[eq_F-6c]]
+[stem,subsequence=G]
+++++
+u_{"c"}^2(h) = u_{"c"}^2(h') = u^2(bar(l)) + (d//2)bar(l)^2 u^4 (ii(beta))
+++++
+
+où stem:[d] est le nombre de dimensions (stem:[d = 1] or stem:[2]) et stem:[u(ii(beta))] est l'incertitude-type de l'angle stem:[ii(beta)], prise comme étant la meilleure estimation de l'écart-type stem:[ii(sigma)] d'une loi supposée normale, évaluée à partir de la totalité de l'information disponible concernant le mesurage (évaluation de Type B). C'est un exemple d'un cas où l'estimation de la valeur d'un mesurande dépend de l'_incertitude_ d'une grandeur d'entrée.
+
+Bien que les Équations <<eq_F-6a>> à <<eq_F-6c>> soient spécifiques de la loi normale, on peut effectuer l'analyse en supposant d'autres lois pour stem:[ii(beta)]. Par exemple, si l'on suppose que stem:[ii(beta)] suit une ((loi rectangulaire)) symétrique avec stem:[+ii(beta)_0] et stem:[-ii(beta)_0] comme limites supérieure et inférieure dans le cas unidimensionnel et stem:[+ii(beta)_0] et 0 dans le cas bidimensionnel, stem:[ii(E)(ii(delta)) = ii(beta)_0^2//6] et stem:["var"(ii(delta)) = ii(beta)_0^4//45] pour une dimension et stem:[ii(E)(ii(delta)) = ii(beta)_0^2//4] et stem:["var"(ii(delta)) = ii(beta)_0^4//48] pour deux dimensions.
+
+NOTE: On a là une situation où le développement de la fonction stem:[ii(Y) = f(ii(X)_1, ii(X)_2,..., ii(X)_N)] en série de Taylor du premier ordre pour obtenir stem:[u_{"c"}^2(y)], <<eq_10>> de <<scls_5-1-2>>, est insuffisant en raison de la non-linéarité(((linéarisation d'une relation fonctionnelle))) de stem:[f]: stem:[bar(cos ii(beta)) != cos bar(ii(beta))] (voir <<note_5-1-2>> et <<scls_H-2-4>>). Bien que l'on puisse effectuer entièrement l'analyse avec stem:[ii(beta)], l'introduction de la variable stem:[ii(delta)] simplifie le problème.(((relation fonctionnelle non linéaire)))
+
+Un autre exemple d'une situation où toutes les valeurs possibles d'une grandeur sont réunies d'un seul côté d'une limite unique consiste en la détermination par titration de la concentration d'un composant dans une solution lorsque le point final est indiqué par le déclenchement d'un signal; la quantité de réactif ajouté est toujours supérieure à celle qui serait juste nécessaire pour déclencher le signal; elle n'est jamais inférieure. La quantité de réactif en excès par rapport à celle correspondant au point équivalent est une variable nécessaire dans la réduction des données et, dans ce cas ainsi que dans les cas analogues, la procédure consiste à supposer une loi de probabilité appropriée pour le réactif en excès et à l'utiliser pour obtenir l'espérance mathématique et la variance de l'excès.
+
+[example]
+Si l'on suppose une ((loi rectangulaire)) de limite inférieure zéro et de limite supérieure stem:[ii(C)_0] pour le réactif en excès stem:[z], l'espérance mathématique de l'excès est alors stem:[ii(C)_0//2] et la variance associée stem:[ii(C)_0^2//12]. Si la densité de probabilité de l'excès est supposée être normale avec stem:[0 <= z < oo], c'est-à-dire stem:[p(z) = (ii(sigma) sqrt(pi//2))^{-1} exp[-z^2//(2 ii(sigma)^2)\]], l'espérance mathématique est alors égale à stem:[ii(sigma) sqrt(2//pi)] et la variance à stem:[ii(sigma)^2(1 - 2//pi)].
+
+
+[[scls_F-2-4-5]]
+===== Incertitude lorsque les corrections ne sont pas appliquées à partir d'une courbe d'étalonnage
+
+index-range:incApp[(((incertitude lorsqu'on n'applique pas une correction)))]La <<note_6-3-1>> présente le cas où une correction(((correction, non applicable d'une))) connue stem:[b] pour un effet systématique significatif n'est pas appliquée au résultat donné d'un mesurage mais, au lieu de cela, est prise en compte par un élargissement de l'«incertitude» attribuée au résultat. On peut par exemple remplacer une incertitude élargie stem:[ii(U)] par stem:[ii(U) + b], ou stem:[ii(U)] est une incertitude élargie obtenue avec l'hypothèse stem:[b = 0]. Cette pratique est parfois suivie pour les situations où s'appliquent toutes les conditions suivantes: le mesurande stem:[ii(Y)] est défini sur une étendue de valeurs d'un paramètre stem:[t], comme dans le cas d'une ((courbe d'étalonnage)) pour un capteur de température; stem:[ii(U)] et stem:[b] dépendent aussi de stem:[t]; et il y a seulement une unique valeur d'«incertitude» à attribuer à toutes les estimations stem:[y(t)] du mesurande sur l'étendue des valeurs possibles de stem:[t]. Dans de telles situations, le résultat du mesurage est souvent donné sous la forme stem:[ii(Y)(t) = y(t) pm [ii(U)_{"max"} + b_{"max"}\]], où l'indice «max» indique que l'on utilise la valeur maximale de stem:[ii(U)] et la valeur maximale de la correction connue stem:[b] sur l'étendue des valeurs de stem:[t].
+
+Bien que ce _Guide_ recommande d'appliquer les corrections aux résultats de mesure pour les effets systématiques reconnus comme significatifs, cela peut ne pas toujours être faisable dans une telle situation en raison du coût inacceptable que cela entraînerait pour calculer et appliquer une correction individuelle puis calculer et appliquer une incertitude individuelle pour chaque valeur de stem:[y(t)]. 
+
+Une approche relativement simple de ce problème, compatible avec les principes de ce _Guide_ est la suivante:
+
+Calculer une correction moyenne _unique_ stem:[bar(b)] à partir de
+
+[stem,subsequence=H]
+++++
+bar(b) = 1/{t_2 - t_1} int_{t_1}^{t_2} b(t)" d"t
+++++
+
+où stem:[t_1] et stem:[t_2] définissent l'étendue à laquelle on s'intéresse pour le paramètre stem:[t], et prendre comme meilleure estimation de stem:[bar(ii(Y))(t)], stem:[y'(t) = y(t) + bar(b)], où stem:[y(t)] est la meilleure estimation non corrigée de stem:[ii(Y)(t)]. La variance associée à la correction moyenne stem:[bar(b)] sur l'intervalle en cause est donnée par
+
+[stem,subsequence=H]
+++++
+u^2(bar(b)) = 1/{t_2 - t_1} int_{t_1}^{t_2} [b(t) - bar(b)]^2 " d"t
+++++
+
+en ne prenant pas en compte l'incertitude de la détermination réelle de la correction stem:[b(t)]. La variance moyenne de la correction stem:[b(t)] due à sa détermination réelle est donnée par
+
+[stem,subsequence=H]
+++++
+bar(u^2 [b(t)]) = 1/{t_2 - t_1} int_{t_1}^{t_2} u^2 [b(t)]" d"t
+++++
+
+où stem:[u^2[b(t)\]] est la variance de la correction stem:[b(t)]. De manière analogue, la variance moyenne de stem:[y(t)] provenant de toutes les sources d'incertitude autres que la correction stem:[b(t)] est obtenue à partir de
+
+[stem,subsequence=H]
+++++
+bar(u^2 [y(t)]) = 1/{t_2 - t_1} int_{t_1}^{t_2} u^2 [y(t)]" d"t
+++++
+
+où stem:[u^2[y(t)\]] est la variance de stem:[y(t)] due à toutes les sources d'incertitude autres que stem:[b(t)]. La valeur unique de l'incertitude-type à utiliser pour toutes les estimations stem:[y'(t) = y(t) + bar(b)] du mesurande stem:[ii(Y)(t)] est alors la racine carrée de la variance composée
+
+[stem,subsequence=H]
+++++
+u_{"c"}^2(y') =  bar(u^2[y(t)]) + bar(u^2 [b(t)]) + u^2(bar(b))
+++++
+
+On peut obtenir une incertitude élargie stem:[ii(U)] en multipliant stem:[u_{"c"}(y')] par un facteur d'élargissement stem:[k] choisi de manière convenable stem:[ii(U) = k u_{"c"}(y')], ce qui donne stem:[ii(Y)(t) =  y'(t) pm ii(U) = y(t) + bar(b) pm ii(U)]. Il faut cependant savoir qu'on a utilisé la même correction moyenne pour toutes les valeurs de stem:[t] et non la correction convenable pour chaque valeur de stem:[t] et il faut indiquer clairement ce que représente stem:[ii(U)].[[incApp]]
+
+
+[[scls_F-2-5]]
+==== Incertitude due à la méthode de mesure(((incertitude de la méthode de mesure)))
+
+[[scls_F-2-5-1]]
+====== {blank}
+
+La composante d'incertitude la plus difficile à évaluer est peut-être celle qui est associée à la méthode de mesure, en particulier s'il a été montré que l'on obtient des résultats de variabilité plus faible par application de cette méthode que par toute autre méthode connue. Mais il est probable qu'il existe d'autres méthodes, certaines encore inconnues ou impraticables pour une raison ou une autre, qui donneraient systématiquement des résultats différents de validité apparemment égale. Cela entraîne une loi de probabilité _a priori_ et non pas une loi dont on puisse aisément extraire des échantillons à traiter statistiquement. Alors, même si l'incertitude de la méthode peut être l'incertitude dominante(((incertitude de la méthode de mesure))), la seule information souvent disponible pour évaluer son incertitude-type provient de ce que l'on connaît du monde physique. (Voir aussi <<scls_E-4-4>>.)
+
+NOTE: La détermination du même mesurande par différentes méthodes, soit dans un même laboratoire, soit dans différents laboratoires, ou par une même méthode dans différents laboratoires, peut souvent fournir une information valable sur l'incertitude attribuable à une méthode particulière. En général, l'échange d'étalons ou de matériaux de référence entre laboratoires pour un mesurage indépendant est un moyen commode pour évaluer la fiabilité des évaluations d'incertitude et pour identifier des effets systématiques non mis en évidence au préalable.
+
+
+[[scls_F-2-6]]
+==== Incertitude due à l'échantillon(((incertitude due à l'échantillon)))
+
+[[scls_F-2-6-1]]
+====== {blank}
+
+De nombreux mesurages comportent la comparaison d'un objet inconnu à un étalon connu, de ((caractéristique))s analogues, pour étalonner l'objet inconnu. On peut donner en exemple des calibres à bouts, certains thermomètres, des jeux de masses marquées, des résistances et des matériaux de haute pureté. Le plus souvent dans de tels cas, la méthode de mesure n'est pas spécialement influencée ou perturbée par le traitement de l'échantillon ou par sa sélection (c'est-à-dire par l'échantillon particulier à étalonner), ou par les effets de diverses grandeurs d'influence liées à l'environnement, parce que l'échantillon inconnu et l'étalon répondent en général à ces variables d'une façon identique et souvent prévisible.
+
+
+[[scls_F-2-6-2]]
+====== {blank}
+
+Dans certaines situations pratiques de mesure, l'échantillonnage et le traitement de l'éprouvette jouent un rôle bien plus important. Cela est souvent le cas pour l'analyse chimique des matériaux naturels. Contrairement aux matériaux fabriqués par l'homme, pour lesquels l'homogénéité peut avoir été prouvée au-delà du niveau inférieur à celui qui est exigé pour le mesurage, les matériaux naturels manquent souvent beaucoup d'homogénéité. Cette hétérogénéité conduit à deux composantes complémentaires de l'incertitude. L'évaluation de la première composante nécessite de déterminer jusqu'à quel point l'échantillon sélectionné représente correctement le matériau de base à analyser. L'évaluation de la deuxième composante nécessite de déterminer dans quelle mesure les constituants secondaires (non analysés) influencent le mesurage et sont correctement traités par la méthode de mesure.
+
+
+[[scls_F-2-6-3]]
+====== {blank}
+
+Dans certains cas, une conception soignée de l'essai rend possible d'évaluer statistiquement l'incertitude due à l'échantillon (voir <<scls_H-5>> et <<scls_H-5-3-2>>). D'une manière habituelle, cependant, et spécialement lorsque les grandeurs d'influence liées à l'environnement ont des effets significatifs sur l'échantillon, il faut faire appel pour évaluer l'incertitude aux compétences et aux connaissances de l'analyste, dérivées de son expérience, et de la totalité de l'information pratiquement disponible.

@@ -1,0 +1,95 @@
+
+[[bibliography]]
+[bibliography]
+== Bibliography
+
+* [[[CIPM1980,1]]], CIPM (1980), _BIPM Proc.-verb. Com. int. poids et mesures_ *48*, C1-C30 (en français); BIPM (1980), Rapport BIPM-80/3, _Report on the BIPM enquiry on error statements_, Bur. Intl. Poids et Mesures (Sèvres, France) (en anglais)
+
+* [[[KAARLS1981,2]]], KAARLS, R. (1981), _BIPM Proc.-verb. Com. int. poids et mesures_ *49*, A1-A12 (en français); Giacomo, P. (1981), _Metrologia_ *17*, 73 -74 (en anglais)
+
+NOTE: La traduction en langue anglaise de la Recommandation INC-1 (1980) donnée en <<scls_0-7>> de l'<<cls_0>> à la version anglaise de ce _Guide_ est celle de la version finale de la Recommandation et elle est extraite d'un rapport interne du BIPM. Elle est en accord avec le texte français de la Recommandation qui fait autorité et qui est donné dans _BIPM Proc.-verb. Com. int. poids et mesures_ *49* et reproduit en <<scls_A-1>>, <<annexA>> de ce _Guide_. La traduction anglaise de la Recommandation INC-1 (1980) donnée dans _Metrologia_ *17* est celle d'un projet et elle diffère légèrement de la traduction donnée dans le rapport interne du BIPM et, en conséquence, de celle donnée en <<scls_0-7>> (version anglaise du _Guide_).
+
+* [[[CIPM1982,3]]], CIPM (1981), _BIPM Proc.-verb. Com. int. poids et mesures_ *49*, 8-9, 26 (en français); Giacomo, P. (1982), _Metrologia_ *18*, 43-44 (en anglais)
+
+* [[[CIPM1987,4]]], CIPM (1986), _BIPM Proc.-verb. Com. int. poids et mesures_ *54*, 14, 35 (en français); Giacomo, P. (1987), _Metrologia_ *24*, 49-50 (en anglais)
+
+* [[[ISO5725,(5)ISO 5725:1986]]]
+
+NOTE: Cette norme est actuellement en révision footnoteblock:[f12]. Le projet révisé a un nouveau titre, «Exactitude (justesse et fidélité) de méthodes de mesure et de résultats» et il comporte six parties.
+
+[[f12]]
+[NOTE]
+--
+*Note de bas de page à la version 2008:*
+
+[align=left]
+L'ISO 5725:1986 a été remplacée par une norme en six parties. L'ISO 5725 comprend les parties suivantes, sous le titre général _Exactitude (justesse et fidélité) des résultats et méthodes de mesure_: +
+_Partie 1: Principes généraux et définitions_ +
+_Partie 2: Méthode de base pour la détermination de la répétabilité et de la reproductibilité d'une méthode de mesure normalisée_ +
+_Partie 3: Mesures intermédiaires de la fidélité d'une méthode de mesure normalisée_ +
+_Partie 4: Méthodes de base pour la détermination de la justesse d'une méthode de mesure normalisée_ +
+_Partie 5: Méthodes alternatives pour la détermination de la fidélité d'une méthode de mesure normalisée_ +
+_Partie 6: Utilisation dans la pratique des valeurs d'exactitude]._
+--
+
+* [[[International1993,6]]], _Vocabulaire international des termes fondamentaux et généraux de métrologie_, deuxième édition, 1993 footnoteblock:[f13], Organisation internationale de normalisation (Genève, Suisse)
+
+[[f13]]
+[NOTE]
+--
+*Note de bas de page à la version 2008:*
+
+La troisième édition du vocabulaire a été publiée en 2008, sous le titre JCGM 200:2008, _Vocabulaire international de métrologie — Concepts fondamentaux et généraux et termes associés (VIM)_.
+--
+
+NOTE: L'abréviation du titre de ce vocabulaire est VIM.
+
+NOTE: Les définitions des termes donnés en Annexe B proviennent du texte français de ce vocabulaire, sous sa forme publiée, moyennant une correction pour le terme «distribution» (de probabilité), correctement appelé «loi» (de probabilité).
+
+NOTE: La seconde édition du VIM est publiée par l'Organisation internationale de normalisation (ISO) au nom des sept organisations suivantes qui participent au travail du Groupe technique consultatif 4 de I'ISO (TAG 4), groupe chargé de la mise au point du VIM: le Bureau international des poids et mesures (BIPM), la Commission électrotechnique internationale(((CEI))), la Fédération internationale de chimie clinique (FICC), I'ISO, l'Union internationale de chimie pure et appliquée (UICPA), l'Union internationale de physique pure et appliquée (UIPPA) et l'Organisation internationale de métrologie légale (OIML).
+
+NOTE: La première édition du VIM a été publiée par l'ISO en 1984 au nom du BIPM, de la ((CEI)), de I'ISO et de l'OIML.
+
+* [[[ISO_3534-1,7]]], ISO 3534-1:1993, footnoteblock:[f14] _Statistiques — Vocabulaire et symboles — Partie 1: Probabilité et termes statistiques généraux_, Organisation internationale de normalisation (Genève, Suisse)
+
+[[f14]]
+[NOTE]
+--
+*Note de bas de page à la version 2008:*
+
+L'ISO 3534-1:2006 annule et remplace l'ISO 3534-1:1993. Il est à noter que certains termes et définitions ont été révisés. Pour plus d'informations, voir la dernière édition.
+--
+
+* [[[FULLER1987,8]]], FULLER, W.A. (1987), _Measurement error models_, John Wiley (New York, N.Y.)
+
+* [[[ALLAN1987,9]]], ALLAN, D.W. (1987), _IEEE Trans. Instrum. Meas._ *IM-36*, 646-654
+
+* [[[DIETRICH1991,10]]], DIETRICH, C.F. (1991), _Uncertainty, calibration and probability_, second edition, Adam-Hilger (Bristol)
+
+* [[[M1979,11]]], MÜLLER, J.W. (1979), _Nucl. Instrum. Meth._ *163*, 241-251
+
+* [[[M1984,12]]], MÜLLER, J.W. (1984), dans _Precision measurement and fundamental constants II_, Taylor, B. N., and Phillips, W. D., eds., Natl. Bur. Stand. (U.S.) Spec. Publ. 617, US GPO (Washington, D.C.), 375-381
+
+* [[[JEFFREYS1983,13]]], JEFFREYS, H. (1983), _Theory of probability_, troisième édition, Oxford University Press (Oxford)
+
+* [[[PRESS1989,14]]], PRESS, S.J. (1989), _Bayesian statistics: principles, models, and applications_, John Wiley (New York, N.Y.)
+
+* [[[BOX1978,15]]], BOX, G.E.P., HUNTER, W.G., and HUNTER, J.S. (1978), _Statistics for experimenters_, John Wiley (New York, N.Y.)
+
+* [[[WELCH1947,16]]], WELCH, B.L. (1936), _J. R. Stat. Soc. Suppl._ *3*, 29-48; (1938), _Biometrika_ *29*, 350-362; (1947), _ibid._ *34*, 28-35
+
+* [[[FAIRFIELD1936,17]]], FAIRFIELD-SMITH, H. (1936), _J. Counc. Sci. Indust. Res. (Australia)_ *9*(3), 211
+
+* [[[SATTERTHWAITE1946,18]]], SATTERTHWAITE, F.E. (1941), _Psychometrika_ *6*, 309-316; (1946) _Biometrics Bull._ *2*(6), 110-114
+
+* [[[ISO1989,19]]], ISO Guide 35:1989, footnoteblock:[f15] _Certification des matériaux de référence — Principes généraux et statistiques_, deuxième édition, Organisation internationale de normalisation (Genève, Suisse)
+
+[[f15]]
+[NOTE]
+--
+*Note de bas de page à la version 2008:*
+
+Le Guide ISO 35:2006 annule et remplace le Guide ISO 35:1989. Pour plus d'informations, voir la dernière édition.
+--
+
+* [[[BARKER1985,20]]], BARKER, T.B. (1985), _Quality by experimental design_, Marcel Dekker (New York, N.Y.)

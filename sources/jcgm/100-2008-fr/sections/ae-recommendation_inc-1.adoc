@@ -1,0 +1,316 @@
+
+[[annexE]]
+[appendix,obligation=normative]
+== Motivation et fondements de la Recommandation INC-1 (1980)
+
+Cette annexe présente brièvement à la fois la motivation et les fondements statistiques de la Recommandation INC-1 (1980) du Groupe de travail sur l'expression des incertitudes, sur laquelle s'appuie ce _Guide_. Pour plus de détails, voir <<CIPM1980>>, <<KAARLS1981>>, <<M1979>>, <<M1984>>.(((Recommandation INC-1 (1980))))
+
+
+[[scls_E-1]]
+=== «Sûr», «((aléatoire))» et «systématique»
+
+[[scls_E-1-1]]
+==== {blank}
+
+Ce _Guide_ présente une méthode largement applicable pour évaluer et exprimer l'incertitude lors du mesurage. Il fournit une valeur de l'incertitude réaliste plutôt que «sûre», en se fondant sur le concept qu'il n'y a pas de différence de nature entre une composante d'incertitude(((incertitude d'une correction)))(((incertitude sûre))) qui provient d'un ((effet aléatoire)) et une autre composante qui provient d'une correction pour un ((effet systématique)) (voir <<scls_3-2-2>> et <<scls_3-2-3>>). La méthode se trouve de ce fait en désaccord avec certaines méthodes plus anciennes qui ont en commun les deux idées suivantes.
+
+
+[[scls_E-1-2]]
+==== {blank}
+
+La première idée est que l'incertitude déclarée devait être «sûre» ou «conservatoire», ce qui signifie qu'elle ne devait jamais risquer d'être sous-estimée. En fait, parce que l'évaluation de l'incertitude(((incertitude sûre))) d'un résultat de mesure est problématique, cette idée conduisait souvent à l'élargir délibérément.
+
+
+[[scls_E-1-3]]
+==== {blank}
+
+La seconde idée est que les influences responsables de l'incertitude pouvaient toujours être reconnues soit «((aléatoire))s», soit «systématiques», ces deux catégories étant de nature différente. Les incertitudes associées à chaque catégorie devaient être composées de la manière qui leur était propre et devaient être exprimées séparément (ou composées d'une certaine manière spécifiée lorsqu'on exigeait un nombre unique). En fait, la méthode de composition des incertitudes était souvent conçue pour satisfaire l'exigence de sûreté.
+
+
+[[scls_E-2]]
+=== Justification pour des évaluations réalistes de l'incertitude(((évaluations réalistes de l'incertitude, justification pour des)))
+
+[[scls_E-2-1]]
+==== {blank}
+
+Lorsqu'on rend compte de la valeur d'un mesurande, on doit donner la meilleure estimation de sa valeur et la meilleure évaluation(((évaluations réalistes de l'incertitude, justification pour des))) de l'incertitude(((incertitude sûre))) de cette estimation parce que, si l'incertitude devait s'écarter de sa valeur correcte, il ne serait normalement pas possible de décider de la direction vers laquelle elle devrait s'en écarter d'une manière «sûre». Une sous-évaluation des incertitudes pourrait entraîner un excès de confiance dans les valeurs dont il est question, avec parfois des conséquences gênantes, sinon désastreuses. Une surévaluation délibérée des incertitudes pourrait aussi avoir des répercussions indésirables. Elle pourrait entraîner les utilisateurs d'équipements de mesure à acheter des instruments plus chers que nécessaire ou inciter inutilement à mettre au rebut des produits coûteux ou à rejeter les services d'un laboratoire d'étalonnage.
+
+[[scls_E-2-2]]
+==== {blank}
+
+Cela ne veut pas dire que ceux qui utilisent un résultat de mesure ne puissent pas appliquer leur propre facteur multiplicatif à l'incertitude donnée, pour obtenir une incertitude élargie qui définisse un intervalle ayant un niveau de confiance spécifié et qui satisfasse leurs propres besoins. Cela ne veut pas dire non plus que, dans certaines circonstances, les organismes fournisseurs de résultats de mesure ne puissent pas appliquer couramment un facteur conduisant à une incertitude élargie analogue, pour satisfaire les besoins d'une classe particulière d'utilisateurs de leurs résultats. Cependant, de tels facteurs (qui doivent toujours être donnés) doivent s'appliquer à l'incertitude telle qu'elle est déterminée par une méthode réaliste et seulement _après_ que l'incertitude a été ainsi déterminée, de sorte que l'intervalle défini par l'incertitude élargie ait le niveau de confiance requis et que l'opération puisse être aisément inversée.
+
+[[scls_E-2-3]]
+==== {blank}
+
+Ceux qui s'occupent de mesurage doivent souvent incorporer à leurs analyses les résultats de mesurages effectués par d'autres personnes, chacun de ces autres résultats ayant sa propre incertitude(((incertitude sûre))). En évaluant l'incertitude de leur propre résultat de mesure, ils ont besoin de la meilleure valeur, non d'une valeur «sûre» de l'incertitude pour chaque résultat incorporé provenant d'une autre origine. Pour donner l'incertitude de leur propre résultat, il leur faut de plus pouvoir composer d'une manière logique et simple ces incertitudes importées avec les incertitudes de leurs propres observations. La Recommandation INC-1(((Recommandation INC-1 (1980)))) (1980) fournit ce moyen.(((évaluations réalistes de l'incertitude, justification pour des)))
+
+
+[[scls_E-3]]
+=== Justification pour le traitement identique de toutes les composantes de l'incertitude(((incertitude d'une correction)))
+
+Le but de ce paragraphe est d'illustrer par un exemple simple comment ce _Guide_ traite exactement de la même façon les composantes de l'incertitude provenant d'effets aléatoires(((effet aléatoire)))((aléatoire)) et celles provenant des corrections estimées d'effets systématiques, lorsqu'on évalue l'incertitude du résultat d'un mesurage. C'est ainsi qu'il sert d'exemple au point de vue adopté dans ce _Guide_ et cité en <<scls_E-1-1>>, c'est-à-dire que toutes les composantes de l'incertitude sont de même nature et doivent être traitées de manière identique. Le point de départ de la présentation est une démonstration simplifiée de l'expression mathématique pour la propagation des écarts-types(((écarts-types, propagation des))), appelée dans ce _Guide_ loi de propagation de l'incertitude.(((incertitude, loi de propagation de l')))
+
+
+[[scls_E-3-1]]
+==== {blank}
+
+Supposons que la grandeur de sortie stem:[z = f (w_1,w_2,...,w_N)] dépende de stem:[ii(N)] grandeurs d'entrée stem:[w_1, w_2,...,w_N], où chaque stem:[w_i] est décrit par une loi de probabilité convenable. Le développement de stem:[f] autour des espérances mathématiques des stem:[w_i], stem:[ii(E)(w_i) -= ii(mu)_i], en ((série de Taylor)) du premier ordre donne, pour les petites variations de stem:[z] autour de stem:[ii(mu)_z] en fonction des petites variations de stem:[w_i] autour de stem:[ii(mu)_i],
+
+[[eq_E-1]]
+[stem]
+++++
+z - ii(mu)_z = sum_{i=1}^ii(N) {del f}/{del w_i} (w_i - ii(mu)_i)
+++++
+
+où tous les ((termes de degré plus élevé)) sont supposés être négligeables et avec stem:[ii(mu)_z = f(ii(mu)_1,ii(mu)_2,...,ii(mu)_N)]. Le carré de la différence stem:[z - ii(mu)_z] est alors donné par
+
+[[eq_E-2a]]
+[stem,subsequence=C]
+++++
+(z - ii(mu)_z)^2 = (sum_{i=1}^ii(N) {del f}/{del w_i} (w_i - ii(mu)_i))^2
+++++
+
+qui peut être écrit sous la forme
+
+[[eq_E-2b]]
+[stem,subsequence=C]
+++++
+(z - ii(mu)_z)^2 = sum_{i=1}^ii(N) ({del f}/{del w_i})^2 (w_i - ii(mu)_i)^2 + 2 sum_{i=1}^{ii(N)-1} sum_{j=i+1}^ii(N) {del f}/{del w_i} {del f}/{del w_j} (w_i - ii(mu)_i) (w_j - ii(mu)_i)
+++++
+
+L'espérance mathématique du carré de la différence stem:[(z - ii(mu))^2] est la variance de stem:[z], soit stem:[ii(E)[(z -ii(mu)_z)^2\] = ii(sigma)^2], et alors l'<<eq_E-2b>> conduit à
+
+[[eq_E-3]]
+[stem]
+++++
+ii(sigma)_z^2 = sum_{i=1}^ii(N) ({del f}/{del w_i})^2 ii(sigma)^2 + 2 sum_{i=1}^{ii(N)-1} sum_{j=i+1}^ii(N) {del f}/{del w_i} {del f}/{del w_j} ii(sigma)_i ii(sigma)_j ii(rho)_{ij}
+++++
+
+Dans cette expression, stem:[ii(sigma)_i^2 = ii(E)[(w_i - ii(mu)_i)^2\]] est la variance de stem:[w_i] et stem:[ii(rho)_{ij} = ii(upsilon)(w_i, w_j)//(ii(sigma)_i^2 σ_j^2)^{1//2}] est le ((coefficient de corrélation)) de stem:[w_i] et stem:[w_j], où stem:[ii(upsilon)(w_i, w_j) = ii(E)[(w_i - ii(mu)_i)(w_j - ii(mu)_j)\]] est la covariance de stem:[w_i] et stem:[w_j].
+
+
+NOTE: stem:[ii(sigma)_z^2] et stem:[ii(sigma)_i^2] sont respectivement les moments centrés d'ordre 2(((moment centré d'ordre stem:[q]))) (voir <<scls_C-2-13>> et <<scls_C-2-22>>) des lois de probabilité de stem:[z] et de stem:[w_i]. Une loi de probabilité peut être complètement déterminée par son espérance mathématique, sa variance et ses moments centrés d'ordre plus élevé.
+
+NOTE: <<eq_13>> [de même que l'<<eq_15>>] utilisée pour calculer l'incertitude-type composée est identique à l'<<eq_E-3>> à part le fait que l'<<eq_13>> est exprimée en termes d'estimations de variances, d'écarts-types et de coefficients de corrélation.(((incertitude, loi de propagation de l')))
+
+
+[[scls_E-3-2]]
+==== {blank}
+
+Dans la terminologie traditionnelle, l'<<eq_E-3>> est souvent appelée «loi générale de propagation des erreurs»(((écarts-types, propagation des)))(((incertitude, loi de propagation de l')))(((propagation des erreurs, loi générale de))), appellation qui s'applique mieux à une expression de la forme stem:[Delta z = sum_{i=1}^ii(N) (del f//del w_i)Delta w_i] où stem:[Delta z] est la variation de stem:[z] due à de (petites) variations de stem:[Delta w_i] [voir <<eq_E-8>>]. Comme on l'a fait dans ce _Guide_, le fait d'appeler l'<<eq_E-3>> loi de propagation de l'incertitude(((incertitude, écart-type comme mesure de l'))) est approprié parce que cette équation montre comment se composent les incertitudes des grandeurs d'entrée stem:[w_i], prises égales aux écarts-types des lois de probabilité des stem:[w_i], pour donner l'incertitude de la grandeur de sortie stem:[z] si cette incertitude est prise égale à l'écart-type de la loi de probabilité de stem:[z].
+
+
+[[scls_E-3-3]]
+==== {blank}
+
+L'<<eq_E-3>> s'applique aussi à la propagation de multiples des écarts-types(((écarts-types, propagation de multiples des))) parce que si l'on remplace chaque écart-type stem:[ii(sigma)_i] par un multiple stem:[k ii(sigma)_i], avec le même stem:[k] pour chaque stem:[ii(sigma)_i], l'écart-type de la grandeur de sortie stem:[z] est remplacé par stem:[k ii(sigma)_z]. Elle ne s'applique pas, cependant, à la propagation des intervalles de confiance(((intervalle de confiance)))(((intervalles de confiance, propagation des))). Si chaque stem:[ii(sigma)_i] est remplacé par une grandeur stem:[ii(delta)_i] qui définit un intervalle correspondant à un niveau de confiance donné stem:[p], la grandeur résultante pour stem:[z], stem:[ii(delta)_z], ne définira pas un intervalle correspondant à la même valeur de stem:[p] sauf si tous les stem:[w_i] suivent des lois normales(((loi normale))). L'<<eq_E-3>> n'implique aucune hypothèse sur la normalité des lois de probabilité des grandeurs stem:[w_i] Plus spécifiquement, si, dans l'<<eq_10>> de <<scls_5-1-2>>, chaque incertitude-type stem:[u(x_i)] est évaluée à partir d'((observations répétées)) indépendantes et multipliée par le ((facteur stem:[t])) correspondant à son nombre de ((degrés de liberté)) pour une valeur particulière de stem:[p] (disons stem:[p = 95] pour-cent), l'incertitude de l'estimation stem:[y] ne définira pas un intervalle correspondant à cette valeur de stem:[p] (voir <<scls_G-3>> et <<scls_G-4>>).
+
+NOTE: L'exigence de normalité pour la propagation des intervalles de confiance en utilisant l'<<eq_E-3>> peut être l'une des raisons de la séparation historique des composantes de l'incertitude déduites d'((observations répétées)), supposées être normalement distribuées, de celles qui étaient évaluées simplement par des limites supérieure et inférieure.
+
+
+[[scls_E-3-4]]
+==== {blank}
+
+Considérons l'exemple suivant: stem:[z] dépend seulement d'une grandeur d'entrée stem:[w], stem:[z = f(w)], où stem:[w] est estimé par la moyenne des stem:[n] valeurs stem:[w_k] des stem:[w]; ces stem:[n] valeurs sont obtenues à partir de stem:[n] ((observations répétées)) indépendantes stem:[q_k] d'une ((variable aléatoire)) stem:[q]; et stem:[w_k] et stem:[q_k] sont reliés par
+
+[[eq_E-4]]
+[stem]
+++++
+w_k = ii(alpha) + ii(beta) q_k
+++++
+
+Dans cette équation, stem:[ii(alpha)] représente un décalage ou une dérive «((systématique))», constant, commun à chaque observation et stem:[ii(beta)] est un facteur d'échelle commun. Le décalage et le facteur d'échelle, bien que fixés au cours des observations, sont supposés être caractérisés par des lois de probabilité _a priori_(((loi _a priori_))), où stem:[ii(alpha)] et stem:[ii(beta)] sont les meilleures estimations des espérances mathématiques de ces lois.
+
+La meilleure estimation de stem:[w] est la moyenne arithmétique stem:[bar(w)] obtenue de
+
+[[eq_E-5]]
+[stem]
+++++
+bar(w) = 1/n sum_{k=1}^n w_k = 1/n sum_{k=1}^n (ii(alpha) + ii(beta) q_k)
+++++
+
+La grandeur stem:[z] est alors estimée par stem:[f(bar(w)) = f(ii(alpha), ii(beta), q_1, q_2,...,q_n)] et l'estimation stem:[u^2(z)] de sa variance stem:[ii(sigma)^2(z)] est obtenue à partir de l'<<eq_E-3>>. Si l'on suppose par simplicité que stem:[z = w] de sorte que la meilleure estimation de stem:[z] soit stem:[z = f(bar(w)) = bar(w)], alors l'estimation stem:[u^2(z)] peut être trouvée facilement. En remarquant à partir de l'<<eq_E-5>> que
+
+[stem%unnumbered]
+++++
+{del f}/{del ii(alpha)} = 1
+++++
+
+[stem%unnumbered]
+++++
+{del f}/{del ii(beta)} = 1/n sum_{k=1}^n q_k = bar(q)
+++++
+
+et
+
+[stem%unnumbered]
+++++
+{del f}/{del q_k} = {ii(beta)}/n ,
+++++
+
+en appelant respectivement stem:[u^2(ii(alpha))] et stem:[u^2(ii(beta))] les variances estimées de stem:[ii(alpha)] et de stem:[ii(beta)] et en supposant que les observations individuelles ne sont pas corrélées, on trouve, à partir de l'<<eq_E-3>>
+
+[[eq_E-6]]
+[stem]
+++++
+u^2(z) = u^2(ii(alpha)) + bar(q)^2 u^2(ii(beta)) + ii(beta)^2 {s^2(q_k)}/n
+++++
+
+où stem:[s^2(q_k)] est la variance expérimentale des observations stem:[q_k] calculée selon l'<<eq_4>>, et où stem:[s^2(q_k)//n = s^2(bar(q))] est la variance expérimentale de la moyenne stem:[bar(q)] [<<eq_5>>].
+
+
+[[scls_E-3-5]]
+==== {blank}
+
+Dans la terminologie traditionnelle, le troisième terme du membre de droite de l'<<eq_E-6>> est appelé contribution «((aléatoire))» à la variance estimée stem:[u^2(z)] parce qu'il décroît normalement lorsque le nombre d'observations stem:[n] augmente, tandis que les deux premiers termes sont appelés contributions «((systématique))s» parce qu'ils ne dépendent pas de stem:[n].
+
+De façon plus significative, pour certains traitements traditionnels de l'incertitude de mesure, l'<<eq_E-6>> serait contestable parce que l'on n'y fait pas de distinction entre les incertitudes provenant d'effets systématiques et celles provenant d'effets aléatoires(((aléatoire))). En particulier, la composition de variances obtenues à partir de lois de ((probabilité)) _a priori_(((loi _a priori_))) avec celles obtenues à partir de distributions de fréquence((fréquence relative)) est déconseillée parce que le concept de ((probabilité)) est considéré comme s'appliquant _seulement_ aux événements qui peuvent être répétés un grand nombre de fois, essentiellement dans les mêmes conditions, la ((probabilité)) stem:[p] d'un événement (stem:[0 <= p <= 1]) indiquant la _fréquence_ avec laquelle se produit l'événement.
+
+Par contraste avec ce point de vue de la ((probabilité)) fondée sur la fréquence(((distribution de fréquence))), un autre point de vue aussi valable est que la ((probabilité)) est une mesure du _degré de croyance_ en ce qu'un événement se produise [13, 14]. Par exemple, supposons que l'on ait une chance de gagner une petite somme d'argent stem:[ii(D)] et que l'on soit un parieur rationnel. Notre ((degré de croyance)) dans l'apparition de l'événement stem:[ii(A)] est stem:[p = 0.5] si nous sommes indifférents à ces deux choix de pari:
+
+. recevoir stem:[ii(D)] si l'événement stem:[ii(A)] se produit mais rien s'il ne se produit pas;
+. recevoir stem:[ii(D)] si l'événement stem:[ii(A)] ne se produit pas mais rien s'il se produit.
+
+La Recommandation INC-1 (1980) sur laquelle est fondé ce _Guide_ adopte implicitement une telle approche de la ((probabilité)) puisqu'elle considère les expressions telles que l'<<eq_E-6>> comme le moyen convenable de calculer l'incertitude-type composée du résultat d'un mesurage.
+
+
+[[scls_E-3-6]]
+==== {blank}
+
+En adoptant une interprétation de la ((probabilité)) fondée sur le ((degré de croyance)), l'écart-type (incertitude-type) et la loi de propagation de l'incertitude [<<eq_E-3>>] comme bases pour l'évaluation et l'expression de l'incertitude de mesure, comme cela a été fait dans ce _Guide_, on bénéficie de trois avantages distincts:
+
+. la loi de propagation de l'incertitude(((incertitude, classement en catégories des composantes de l')))(((incertitude, loi de propagation de l'))) permet l'incorporation aisée de l'((incertitude-type composée)) d'un résultat unique dans l'évaluation de l'((incertitude-type composée)) d'un autre résultat pour lequel le premier est utilisé;
+. l'((incertitude-type composée)) peut servir de base pour le calcul d'intervalles qui correspondent de façon réaliste à leurs niveaux de confiance exigés; et
+. [[item_E-3-6c]]il n'est pas nécessaire de classer les composantes en «((aléatoire))s» ou «systématiques»(((systématique))) (ou de toute autre manière) lorsqu'on évalue l'incertitude parce que toutes les composantes de l'incertitude sont traitées de la même façon.
+
+L'avantage <<item_E-3-6c>> est particulièrement appréciable parce qu'un tel classement est souvent source de confusion; une composante d'incertitude n'est ni «((aléatoire))», ni «((systématique))». Sa nature est conditionnée par l'usage qui est fait de la grandeur correspondante, ou, plus formellement, par le contexte dans lequel apparaît la grandeur dans le modèle mathématique qui décrit le mesurage. En conséquence, lorsque la grandeur correspondante est utilisée dans un contexte différent, une composante «((aléatoire))» peut devenir une composante «((systématique))» et vice-versa.
+
+
+[[scls_E-3-7]]
+==== {blank}
+
+Pour la raison donnée en <<item_E-3-6c>> ci-dessus, la Recommandation INC-1(((Recommandation INC-1 (1980)))) (1980) ne classe pas les composantes de l'incertitude en «((aléatoire))s» ou «systématiques»(((systématique))). En fait, pour autant que le calcul de l'incertitude-type composée d'un résultat de mesure soit concerné, il n'est pas nécessaire de classer les composantes de l'incertitude(((incertitude, classement en catégories des composantes de l'))); il n'y a donc aucun besoin réel pour quelque schéma de classement que ce soit. Cependant, parce qu'il est parfois commode de disposer de catégories convenables dans la communication et la présentation des idées, la Recommandation INC-1 (1980) fournit un schéma de classification des deux _méthodes_ distinctes par lesquelles on peut évaluer les composantes de l'incertitude, soit «A»(((évaluation de Type A de l'incertitude))) et «B»(((évaluation de Type B de l'incertitude))) (voir <<scls_0-7>>,<<scls_2-3-2>>, et <<scls_2-3-3>>).
+
+Le fait de classer les méthodes utilisées pour évaluer les composantes de l'incertitude(((incertitude, groupement des composantes de l'))) évite le principal problème associé à la classification des composantes elles-mêmes, c'est-à-dire la dépendance de la classification d'une composante par rapport à la manière dont la grandeur correspondante est utilisée. De plus, la classification des méthodes plutôt que des composantes n'exclut pas le rassemblement des composantes individuelles évaluées par les deux méthodes en groupes spécifiques pour un usage particulier dans un mesurage donné, par exemple lorsqu'on compare la variabilité observée expérimentalement à celle prévue théoriquement pour les valeurs de sortie d'un système de mesure complexe (voir <<scls_3-4-3>>).
+
+
+[[scls_E-4]]
+=== Écart-type comme mesure de l'incertitude(((incertitude, écart-type comme mesure de l')))
+
+[[scls_E-4-1]]
+==== {blank}
+
+L'<<eq_E-3>> exige que l'incertitude(((incertitude sûre)))(((incertitude, écart-type comme mesure de l'))) de l'estimation d'une grandeur d'entrée soit évaluée sous forme d'((incertitude-type)), c'est-à-dire sous forme d'écart-type estimé, quelle que soit la manière dont elle est obtenue. Si, au lieu de cela, on évalue une quelconque alternative considérée comme plus sûre, celle-ci ne peut être utilisée dans l'<<eq_E-3>>. En particulier, si la «((limite d'erreur maximale))» (le plus grand écart concevable par rapport à la meilleure estimation supposée) est utilisée dans l'<<eq_E-3>>, l'incertitude résultante aura une signification mal définie et sera inutilisable par quiconque voudra l'introduire dans des calculs ultérieurs d'incertitudes pour d'autres grandeurs (voir <<scls_E-3-3>>).
+
+[[scls_E-4-2]]
+==== {blank}
+
+Lorsque l'incertitude-type d'une grandeur d'entrée ne peut pas être évaluée par l'analyse des résultats d'un nombre convenable d'((observations répétées)), on doit adopter une ((loi de probabilité)) fondée sur une connaissance beaucoup plus restreinte que ce qu'on pourrait souhaiter. Cependant, cela ne rend pas la loi sans validité ni sans réalité. Comme toutes les lois de probabilité, elle exprime la connaissance disponible.
+
+[[scls_E-4-3]]
+==== {blank}
+
+Les évaluations fondées sur des ((observations répétées)) ne sont pas nécessairement supérieures à celles qui sont obtenues par d'autres moyens. Considérons stem:[s(bar(q))], écart-type expérimental de la moyenne de stem:[n] observations indépendantes stem:[q_k] d'une variable ((aléatoire)) stem:[q] distribuée normalement [voir <<eq_5>> de <<scls_4-2-3>>]. La grandeur stem:[s(bar(q))] est une statistique (voir <<scls_C-2-23>>) qui estime stem:[ii(sigma)(bar(q))], écart-type de la loi de probabilité de stem:[bar(q)], c'est-à-dire l'écart-type de la loi des valeurs de stem:[bar(q)] qui seraient obtenues si le mesurage était répété un nombre infini de fois. La variance stem:[ii(sigma)^2[s(bar(q))\]] de stem:[s(bar(q))] est donnée approximativement par
+
+[[eq_E-7]]
+[stem]
+++++
+ii(sigma)^2 [s(bar(q))] ~~ ii(sigma)^2 (bar(q))//(2 ii(nu))
+++++
+
+où stem:[ii(nu) = n - 1] est le nombre de ((degrés de liberté)) de stem:[s(bar(q))] (voir <<scls_G-3-3>>). Alors, l'écart-type relatif de stem:[s(bar(q))], qui est donné par le rapport stem:[ii(sigma) [s(bar(q))\]//ii(sigma)(bar(q))] et qui peut être considéré comme une mesure de l'incertitude relative de stem:[s(bar(q))], est approximativement égal à stem:[[2(n -1)\]^{-1//2}]. Cette «incertitude de l'incertitude»(((incertitude de l'écart-type expérimental de la moyenne)))(((incertitude due à un échantillonnage limité))) de stem:[bar(q)], qui résulte pour des raisons purement statistiques de l'effectif limité de l'échantillon, peut être étonnamment grande; pour stem:[n = 10] observations, elle est égale à 24 pour-cent. Le <<table_E-1>> donne cette valeur et quelques autres et elle montre que l'écart-type d'un écart-type estimé statistiquement n'est pas négligeable pour les valeurs pratiques de stem:[n]. En conséquence, on peut conclure que les évaluations de Type A de l'incertitude-type ne sont pas nécessairement plus fiables que les évaluations de Type B et que, dans de nombreuses situations pratiques de mesure où le nombre d'observations est limité, les composantes obtenues par des évaluations de Type B peuvent être mieux connues que les composantes obtenues à partir d'évaluations de Type A.
+
+[[table_E-1]]
+.stem:[ii(sigma)[s(bar(q))\]//ii(sigma)(bar(q))], écart-type relatif de l'écart-type expérimental de la moyenne stem:[bar(q)] de stem:[n] observations indépendantes d'une variable ((aléatoire)) stem:[q], distribuée selon une loi normale, par rapport à l'écart-type de cette moyenne <<item_tabe1a>><<item_tabe1b>>
+[cols="2*^"]
+|===
+| Nombre d'observations +
+stem:[n]
+| stem:[ii(sigma)[s(bar(q))\]//ii(sigma)(bar(q))] +
+(pourcentage)
+
+| 2 | 76
+| 3 | 52
+| 4 | 42
+| 5 | 36
+| 10 | 24
+| 20 | 16
+| 30 | 13
+| 50 | 10
+
+2+a|
+. [[item_tabe1a]]Les valeurs données ont été calculées à partir de l'expression exacte de stem:[ii(sigma)[s(bar(q))\]//ii(sigma)(bar(q))], et non à partir de l'expression approchée stem:[[2(n-1)\]^{-1//2}].
+
+. [[item_tabe1b]] Dans l'expression stem:[ii(sigma)[s(bar(q))\]//ii(sigma)(bar(q))], le dénominateur stem:[ii(sigma)(bar(q))] est l'espérance mathématique stem:[ii(E)[ii(S)//sqrt(n)\]] et le numérateur stem:[ii(sigma)[s(bar(q))\]] est la racine carrée de la variance stem:[ii(V)[ii(S)//sqrt(n)\]], où stem:[ii(S)] est une variable ((aléatoire)) égale à l'écart-type de stem:[n] variables aléatoires(((aléatoire))) indépendantes stem:[ii(X)_1,..., ii(X)_n] ayant chacune une distribution normale de valeur moyenne stem:[ii(mu)] et de variance stem:[ii(sigma)^2]:
++
+--
+[stem%unnumbered]
+++++
+ii(S) = sqrt(1/{n-1} sum_{i=1}^n (ii(X)_i - bar(ii(X)))^2) , " " " " bar(ii(X)) = 1/n sum_{i=1}^n ii(X)_i
+++++
+
+L'espérance mathématique et la variance de stem:[ii(S)] sont données par:
+
+[stem%unnumbered]
+++++
+ii(E)[ii(S)] = sqrt(2/{n-1}) {Gamma (n//2)}/{Gamma [(n-1)//2]} ii(sigma), " " " " ii(V)[ii(S)] = ii(sigma)^2 - ii(E)[ii(S)]^2,
+++++
+
+où stem:[Gamma(x)] est la fonction gamma. Noter que stem:[ii(E)[ii(S)\] < ii(sigma)] pour un nombre fini stem:[n].
+--
+|===
+
+
+[[scls_E-4-4]]
+==== {blank}
+
+Alors que les incertitudes associées à l'application d'une méthode de mesure particulière sont des paramètres statistiques caractérisant des variables aléatoires(((aléatoire))), on a prétendu qu'il existe des cas d'«((effet systématique)) véritable» pour lesquels l'incertitude(((incertitude, écart-type comme mesure de l'))) doit être traitée différemment. On peut donner en exemple un biais de valeur fixe inconnue qui serait le même pour toutes les déterminations par une même méthode, décalage dû à une imperfection possible dans le principe même de la méthode ou dans une de ses hypothèses sous-jacentes. Mais si l'on constate la possibilité d'existence d'un tel biais et si sa valeur est supposée pouvoir être significative, il peut alors être décrit par une loi de probabilité, même si elle est bâtie simplement, fondée sur la connaissance qui a permis d'arriver à la conclusion que le biais pourrait exister et être significatif. Ainsi, si l'on considère la probabilité comme étant une mesure du degré de confiance qu'un événement se produise, la contribution d'un tel ((effet systématique)) peut être incluse dans l'incertitude-type composée d'un résultat de mesure en l'évaluant comme une incertitude-type d'une loi de probabilité _a priori_ et en le traitant de la même manière que toute autre incertitude-type d'une grandeur d'entrée.
+
+[example]
+La spécification d'un mode opératoire particulier nécessite qu'une certaine grandeur d'entrée soit calculée à partir d'un développement en série de puissances spécifiques dont les termes de plus haut degré ne sont pas connus exactement. L'((effet systématique)) dû au fait de ne pas pouvoir traiter exactement ces termes entraîne un biais fixe inconnu qui ne peut être échantillonné par répétition du mode opératoire. En conséquence, l'incertitude associée à l'effet ne peut être évaluée et incluse dans l'incertitude du résultat de mesure final si l'on suit strictement une interprétation de la probabilité fondée sur la fréquence. De plus, l'interprétation de la probabilité sur la base du ((degré de croyance)) permet à l'incertitude caractérisant l'effet d'être évaluée à partir d'une loi de probabilité _a priori_ (déduite de la connaissance disponible concernant les termes connus de manière inexacte) et de l'inclure dans le calcul de l'incertitude-type composée du résultat de mesure comme toute autre incertitude.
+
+
+
+[[scls_E-5]]
+=== Une comparaison entre les deux points de vue sur l'incertitude
+
+[[scls_E-5-1]]
+==== {blank}
+
+index-range:compPoint[(((incertitude, comparaison entre les deux points de vue sur l')))]Le point focal de ce _Guide_ concerne le résultat de mesure et son incertitude évaluée, plus que les grandeurs inconnues valeur «vraie» et erreur (voir <<annexD>>). En adoptant le point de vue opérationnel que le résultat d'un mesurage est simplement la valeur à attribuer au mesurande et que l'incertitude de ce résultat est une mesure de la dispersion des valeurs qui pourraient être raisonnablement attribuées au mesurande, ce _Guide_ rompt en fait la liaison souvent déroutante entre l'incertitude et les grandeurs inconnues valeur «vraie» et erreur(((erreur de mesure)))(((valeur vraie d'une grandeur))).
+
+
+[[scls_E-5-2]]
+==== {blank}
+
+Cette liaison peut être comprise en interprétant la démonstration de l'<<eq_E-3>>, la loi de propagation de l'incertitude, du point de vue de la valeur «vraie» et de l'erreur. Dans ce cas, stem:[ii(mu)_i] est considéré comme la valeur «vraie» unique, inconnue, de la grandeur d'entrée stem:[w_i] et chaque stem:[w_i] est supposé être relié à sa valeur «vraie» stem:[ii(mu)_i] par stem:[w_i = ii(mu)_i + ii(epsilon)_i], où stem:[ii(epsilon)_i] est l'erreur sur stem:[w_i]. L'espérance mathématique de la loi de probabilité de chaque stem:[ii(epsilon)_i] est supposée être égale à zéro, stem:[ii(E)(ii(epsilon)_i) = 0], avec la variance stem:[ii(E)(ii(epsilon)_i^2) = ii(sigma)_i^2]. L'<<eq_E-1>> devient alors
+
+[[eq_E-8]]
+[stem]
+++++
+ii(epsilon)_z = sum_{i=1}^ii(N) {del f}/{del w_i} ii(epsilon)_i
+++++
+
+où stem:[ii(epsilon)_z = z - ii(mu)_z] est l'erreur sur stem:[z] et stem:[ii(mu)_z] est la valeur «vraie» de stem:[z]. Si l'on prend alors l'espérance mathématique du carré de stem:[ii(epsilon)_z], on obtient une équation formellement identique à l'<<eq_E-3>> mais où stem:[ii(sigma)_z^2 = ii(E)(ii(epsilon)_z^2)] est la variance de stem:[ii(epsilon)_z] et stem:[ii(rho)_{ij} = ii(upsilon)(ii(epsilon)_i,ii(epsilon)_j)//(ii(sigma)_i^2ii(sigma)_j^2)^{1//2}] est le ((coefficient de corrélation)) de stem:[ii(epsilon)_i] et stem:[ii(epsilon)_j], où stem:[ii(upsilon)(ii(epsilon)_i, ii(epsilon)_j) = ii(E)(ii(epsilon)_iii(epsilon)_j)] est la covariance de stem:[ii(epsilon)_i] et stem:[ii(epsilon)_j]. Les variances et les covariances sont alors associées aux erreurs sur les grandeurs d'entrée plutôt qu'aux grandeurs d'entrée elles-mêmes.
+
+[[note_E-5-2]]
+NOTE: On suppose que la probabilité est considérée comme une mesure du ((degré de croyance)) de l'apparition d'un événement, ce qui implique qu'une erreur systématique puisse être traitée de la même façon qu'une erreur aléatoire et que stem:[ii(epsilon)_i] représente l'une ou l'autre.
+
+
+[[scls_E-5-3]]
+==== {blank}
+
+En pratique, la différence de point de vue ne conduit pas à une différence sur la valeur numérique du résultat de mesure ou sur l'incertitude affectée à ce résultat.
+
+Tout d'abord, dans les deux cas, les meilleures estimations disponibles des grandeurs d'entrée stem:[w_i] sont utilisées pour obtenir la meilleure estimation stem:[z] à partir de la fonction stem:[f]; cela n'entraîne pas de différence _dans les calculs_ selon que les meilleures estimations sont considérées comme les valeurs les plus vraisemblables à attribuer aux grandeurs en question ou comme les meilleures estimations de leurs valeurs «vraies».
+
+Ensuite, parce que stem:[ii(epsilon)_i = w_i - ii(mu)_i], et parce que les stem:[ii(mu)_i] représentent des valeurs fixées, uniques, et, en conséquence sans incertitude, les variances et écarts-types des stem:[ii(epsilon)_i] et stem:[w_i] sont identiques. Cela signifie que, dans les deux cas, les incertitudes-types utilisées comme estimations des écarts-types stem:[ii(sigma)_i] pour obtenir l'incertitude-type composée du résultat de mesure sont identiques et donneront la même valeur numérique pour cette incertitude. Encore une fois, cela n'entraîne pas de différence dans _les calculs_ selon qu'une incertitude-type est considérée comme une mesure de la dispersion de la loi de probabilité d'une grandeur d'entrée ou comme une mesure de la dispersion de la loi de probabilité de l'erreur sur cette grandeur.
+
+NOTE Si l'hypothèse de la <<note_E-5-2>> n'avait pas été faite, les développements de ce paragraphe ne s'appliqueraient que si toutes les estimations des grandeurs d'entrée et les incertitudes de ces estimations étaient obtenues à partir de l'analyse statistique d'((observations répétées)), c'est-à-dire d'évaluations de Type A.
+
+
+[[scls_E-5-4]]
+==== {blank}
+
+Bien que l'approche fondée sur la valeur «vraie» et l'erreur(((erreur et incertitude, confusion entre)))(((valeur vraie d'une grandeur))) fournisse les mêmes résultats numériques que l'approche suivie dans ce _Guide_ (sous réserve que l'hypothèse de la <<note_E-5-2>> soit faite), le concept d'incertitude développé dans ce _Guide_ élimine la confusion entre erreur et incertitude (voir <<annexD>>). À vrai dire, l'approche opérationnelle du présent _Guide_, où l'accent est mis sur la valeur observée (ou estimée) d'une grandeur et sur la variabilité observée (ou estimée) de cette valeur rend entièrement inutile tout recours au concept d'erreur.[[compPoint]]

@@ -1,0 +1,115 @@
+
+[[cls_2]]
+== Définitions
+
+[[scls_2-1]]
+=== Termes métrologiques généraux
+
+Les définitions d'un certain nombre de termes métrologiques généraux concernant ce _Guide_, tels que «grandeur mesurable», «mesurande» et «erreur de mesure» sont donnés en <<annexB>>. Ces définitions sont extraites du _Vocabulaire international des termes généraux et fondamentaux de métrologie_ \(((VIM))) footnoteblock:[f6] <<International1993>>. En complément, l'<<annexC>> donne les définitions d'un certain nombre de termes statistiques fondamentaux provenant principalement de la Norme internationale ((ISO 3534-1)) <<ISO_3534-1>>. À partir de l'<<cls_3>>, lorsqu'un de ces termes métrologiques ou statistiques (ou un terme apparenté) est utilisé pour la première fois dans le texte, il est imprimé en caractères gras et la référence du paragraphe dans lequel il est défini est donnée entre parenthèses.
+
+[[f6]]
+[NOTE]
+--
+*Note de bas de page à la version 2008:*
+
+La troisième édition du vocabulaire a été publiée en 2008, sous le titre JCGM 200:2008, _Vocabulaire international de métrologie -- Concepts fondamentaux et généraux et termes associés \(((VIM)))._
+--
+
+En raison de son importance pour ce _Guide_, la définition du terme métrologique général «incertitude de mesure» est donnée à la fois en <<annexB>> et en <<scls_2-2-3>>. Les définitions des termes les plus importants, spécifiques de ce _Guide_, sont données de <<scls_2-3-1>> à <<scls_2-3-6>>. Dans tous ces paragraphes et dans les <<annexB>> et <<annexC>>, l'utilisation de parenthèses pour les mots de certains termes signifie que ces mots peuvent être omis s'il n'y a pas risque de confusion.
+
+
+[[scls_2-2]]
+=== Le terme «incertitude»
+
+Le concept d'incertitude(((incertitude de mesure))) est développé ultérieurement à l'<<cls_3>> et en <<annexD>>.
+
+
+[[scls_2-2-1]]
+==== {blank}
+
+Le mot «incertitude»(((incertitude de mesure))) signifie doute. Ainsi, dans son sens le plus large, «incertitude de mesure» signifie doute sur la validité du résultat d'un mesurage. Comme on ne dispose pas de plusieurs mots pour ce _concept général_ d'incertitude et pour les grandeurs spécifiques qui fournissent des _mesures quantitatives_ du concept, par exemple l'écart-type, l'utilisation du mot «incertitude» s'impose pour ces deux sens différents.
+
+
+[[scls_2-2-2]]
+==== {blank}
+
+Dans ce _Guide_, le mot «incertitude»(((incertitude de mesure))) sans adjectif se réfère à la fois au concept général d'incertitude et à l'expression quantitative d'une mesure de ce concept. Un adjectif approprié est utilisé pour une mesure spécifique déterminée.
+
+
+[[scls_2-2-3]]
+==== {blank}
+
+La définition formelle du terme «((incertitude de mesure))» mise au point pour ce _Guide_ et adoptée par le ((VIM)):1993, définition 3.9 <<International1993>> est la suivante:
+
+*incertitude (de mesure)* +
+paramètre, associé au résultat d'un mesurage, qui caractérise la dispersion des valeurs qui pourraient raisonnablement être attribuées au mesurande
+
+NOTE: Le paramètre peut être, par exemple, un écart-type (ou un multiple de celui-ci) ou la demi-largeur d'un intervalle de ((niveau de confiance)) déterminé.
+
+NOTE: L'incertitude de mesure comprend, en général, plusieurs composantes. Certaines peuvent être évaluées à partir de la distribution statistique des résultats de séries de mesurages et peuvent être caractérisées par des écarts-types expérimentaux. Les autres composantes, qui peuvent aussi être caractérisées par des écarts-types, sont évaluées en admettant des lois de probabilité, d'après l'expérience acquise ou d'après d'autres informations.
+
+NOTE: Il est entendu que le résultat du mesurage est la meilleure estimation de la valeur du mesurande, et que toutes les composantes de l'incertitude, y compris celles qui proviennent d'effets systématiques, telles que les composantes associées aux corrections et aux étalons de référence, contribuent à la dispersion.
+
+
+[[scls_2-2-4]]
+==== {blank}
+
+La définition de l'((incertitude de mesure)) donnée en <<scls_2-2-3>> est une définition opérationnelle qui se focalise sur le résultat de mesure et son incertitude évaluée. Elle n'est cependant pas incompatible avec d'autres concepts d'incertitude de mesure tels que
+
+* mesure de l'erreur(((erreur de mesure))) possible sur la valeur estimée du mesurande telle que fournie par le résultat d'un mesurage;
+* estimation caractérisant l'étendue des valeurs dans laquelle se situe la valeur vraie d'une grandeur mesurée (((VIM)):1984, définition 3.09).
+
+Bien que ces deux concepts traditionnels soient valables en tant qu'idéaux, ils se focalisent sur des grandeurs _inconnues_: respectivement l'«erreur» du résultat d'un mesurage et la «valeur vraie» du mesurande(((valeur vraie d'une grandeur))) (par opposition avec sa valeur estimée). Quoi qu'il en soit, quel que soit le _concept_ d'incertitude que l'on adopte, une composante d'incertitude est toujours _évaluée_ en utilisant les mêmes données et l'information associée. (Voir aussi <<scls_E-5>>.)
+
+
+[[scls_2-3]]
+=== Termes spécifiques à ce _Guide_
+
+En général, les termes qui sont spécifiques à ce _Guide_ sont définis lorsqu'ils apparaissent dans le texte pour la première fois. Cependant, les définitions des termes les plus importants sont données ci-après pour permettre de s'y référer aisément.
+
+NOTE: Ces termes sont explicités ultérieurement selon les références suivantes: pour <<scls_2-3-2>>, voir <<scls_3-3-3>> et <<scls_4-2>>; pour <<scls_2-3-3>>, voir <<scls_3-3-3>> et <<scls_4-3>>; pour <<scls_2-3-4>>, voir <<cls_5>> et <<eq_10>> et <<eq_13>>; et, pour <<scls_2-3-5>> et <<scls_2-3-6>>, voir <<cls_6>>.
+
+
+[[scls_2-3-1]]
+==== incertitude-type
+
+index-range:incTyp[(((incertitude-type)))]incertitude du résultat d'un mesurage exprimée sous la forme d'un écart-type[[incTyp]]
+
+
+[[scls_2-3-2]]
+==== évaluation de Type A (de l'incertitude)
+
+index-range:evA[(((évaluation de Type A de l'incertitude)))]méthode d'évaluation de l'incertitude par l'analyse statistique de séries d'observations[[evA]]
+
+
+[[scls_2-3-3]]
+==== évaluation de Type B (de l'incertitude)
+
+index-range:evB[(((évaluation de Type B de l'incertitude)))]méthode d'évaluation de l'incertitude par des moyens autres que l'analyse statistique de séries d'observations[[evB]]
+
+
+[[scls_2-3-4]]
+==== incertitude-type composée
+
+index-range:incTypCom[(((incertitude-type composée)))]incertitude-type du résultat d'un mesurage, lorsque ce résultat est obtenu à partir des valeurs d'autres grandeurs, égale à la racine carrée d'une somme de termes, ces termes étant les variances ou covariances de ces autres grandeurs, pondérées selon la variation du résultat de mesure en fonction de celle de ces grandeurs[[incTypCom]]
+
+
+[[scls_2-3-5]]
+==== incertitude élargie
+
+index-range:incerElar[(((incertitude élargie)))]grandeur définissant un intervalle, autour du résultat d'un mesurage, dont on puisse s'attendre à ce qu'il comprenne une fraction élevée de la distribution des valeurs qui pourraient être attribuées raisonnablement au mesurande
+
+NOTE: La fraction peut être considérée comme la ((probabilité)) ou le ((niveau de confiance)) de l'intervalle.
+
+[[note2_2-3-5]]
+NOTE: L'association d'un ((niveau de confiance)) spécifique à l'intervalle défini par l'incertitude élargie nécessite des hypothèses explicites ou implicites sur la loi de ((probabilité)) caractérisée par le résultat de mesure et son incertitude-type composée. Le ((niveau de confiance)) qui peut être attribué à cet intervalle ne peut être connu qu'avec la même validité que celle qui se rattache à ces hypothèses.
+
+NOTE: L'incertitude élargie est appelée _((incertitude globale))_ au paragraphe 5 de la Recommandation INC-1 (1980).[[incerElar]]
+
+
+[[scls_2-3-6]]
+==== facteur d'élargissement
+
+index-range:facEla[(((facteur d'élargissement)))]facteur numérique utilisé comme multiplicateur de l'incertitude-type composée pour obtenir l'incertitude élargie
+
+NOTE: Un facteur d'élargissement, stem:[k], a sa valeur typiquement comprise entre 2 et 3.[[facEla]]

@@ -1,0 +1,293 @@
+
+[[cls_5]]
+== Détermination de l'((incertitude-type composée))
+
+[[scls_5-1]]
+=== Grandeurs d'entrée non corrélées
+
+Ce paragraphe traite le cas où toutes les grandeurs d'entrée sont *indépendantes*(((indépendance))) (<<scls_C-3-7>>). Le cas où il existe une relation entre deux grandeurs d'entrée ou plus, c'est-à-dire où elles sont interdépendantes ou *corrélées* (<<scls_C-3-8>>), est développé en <<scls_5-2>>.
+
+
+[[scls_5-1-1]]
+==== {blank}
+
+L'incertitude-type de stem:[y], où stem:[y] est l'estimation du mesurande stem:[ii(Y)], donc le résultat du mesurage, est obtenue par une composition appropriée des incertitudes-types des estimations d'entrée stem:[x_1,x_2,..., x_N] (voir <<scls_4-1>>). Cette _((incertitude-type composée))_ de l'estimation stem:[y] est notée stem:[u_{"c"}(y)].
+
+NOTE: Pour des raisons semblables à celles qui sont données dans la <<note_4-3-1>>, les symboles stem:[u_{"c"}(y)] et stem:[u_{"c"}^2(y)] sont utilisés dans tous les cas.
+
+
+[[scls_5-1-2]]
+==== {blank}
+
+L'((incertitude-type composée)) stem:[u_c(y)] est la racine carrée de la ((variance composée)) stem:[u_c^2(y)], donnée par
+
+[[eq_10]]
+[stem]
+++++
+u_{"c"}^2(y) = sum_{i=1}^ii(N) ({del f}/{del x_i})^2 u^2(x_i)
+++++
+
+où stem:[f] est la fonction donnée dans l'<<eq_1>>. Chaque stem:[u(x_i)] est une incertitude-type évaluée comme décrit en <<scls_4-2>> (évaluation de Type A) ou comme en <<scls_4-3>> (évaluation de Type B). L'incertitude-type(((incertitude, loi de propagation de l'))) composée stem:[u_"c"(y)] est un écart-type estimé et caractérise la dispersion des valeurs qui pourraient être raisonnablement attribuées au mesurande stem:[ii(Y)] (voir <<scls_2-2-3>>).
+
+L'<<eq_10>> et sa contrepartie pour les grandeurs d'entrée corrélées, l'<<eq_13>>, fondées toutes les deux sur une approximation en ((série de Taylor)) du premier ordre de stem:[ii(Y) = f(ii(X)_1, ii(X)_2, ..., ii(X)_N)], expriment ce qui est appelé dans ce _Guide_ la _loi de propagation de l'incertitude_ (voir <<scls_E-3-1>> et <<scls_E-3-2>>).
+
+[[note_5-1-2]]
+[NOTE]
+====
+Lorsque la non-linéarité de stem:[f] devient significative, il faut inclure des termes d'ordre plus élevé dans le développement en ((série de Taylor)) pour l'expression de stem:[u_c^2(y)], <<eq_10>>. Lorsque la loi de chaque stem:[ii(X)_i] est normale, les termes les plus importants d'ordre immédiatement plus élevé à ajouter aux termes de l'<<eq_10>> sont(((termes de degré plus élevé)))
+
+[stem%unnumbered]
+++++
+sum_{i=1}^ii(N) sum_{j=1}^ii(N) [1/2 ({del^2 f}/{del x_i del x_j})^2 + {del f}/{del x_i} {del^3 f}/{del x_i del x_j^2}] u^2(x_i) u^2(x_j)
+++++
+
+Voir <<scls_H-1>> pour un exemple d'une situation où il est nécessaire de prendre en compte la contribution de termes de stem:[u_"c"(y)] d'ordre plus élevé.(((relation fonctionnelle non linéaire)))
+====
+
+[[scls_5-1-3]]
+==== {blank}
+
+Les ((dérivées partielles)) stem:[del f//del x_i] sont égales à stem:[del f//del ii(X)_i] évaluées à stem:[ii(X)_i = x_i] (voir <<note1_5-1-3>> ci-dessous). Ces dérivées, souvent appelées ((coefficients de sensibilité)), décrivent comment varie l'estimation de sortie stem:[y] en fonction des variations dans les valeurs des estimations d'entrée stem:[x_1, x_2,..., x_N]. En particulier, la variation sur stem:[y] produite par une petite variation stem:[Delta x_i] sur l'estimation d'entrée stem:[x_i] est donnée par stem:[(Delta y)_i = (del f//del x_i)(Delta x_i)]. Si cette variation est due à l'incertitude-type de l'estimation stem:[x_i], la variation correspondante de stem:[y] est stem:[(del f//del x_i) u(x_i)]. La ((variance composée)) stem:[u_{"c"}^2(y)] peut alors être considérée comme une somme de termes dont chacun représente la variance estimée associée à l'estimation de sortie stem:[y] due à la variance estimée associée à chaque estimation d'entrée stem:[x_i]. Cela suggère d'écrire l'<<eq_10>> sous la forme
+
+[[eq_11a]]
+[stem,subsequence=B]
+++++
+u_{"c"}^2(y) = sum_{i=1}^ii(N) [c_i u(x_i)]^2 -= sum_{i=1}^ii(N) u_i^2(y)
+++++
+
+où
+
+[[eq_11b]]
+[stem,subsequence=B]
+++++
+c_i -= del f//del x_i, " " " " u_i(y) -= |c_i|u(x_i)
+++++
+
+[[note1_5-1-3]]
+[NOTE]
+====
+En toute rigueur, les dérivées partielles sont stem:[del f//del x_i = del f//del ii(X)_i] évaluées pour les espérances mathématiques des stem:[ii(X)_i]. En pratique cependant, les dérivées partielles sont estimées par
+
+[stem%unnumbered]
+++++
+{del f}/{del x_i} = {del f}/{del ii(X)_i} :|:_{x_1,x_2,...,x_N}
+++++
+====
+
+[[note2_5-1-3]]
+[NOTE]
+====
+L'((incertitude-type composée)) stem:[u_{"c"}(y)] peut être calculée numériquement(((incertitude-type composée, calcul numérique de l'))) en remplaçant stem:[c_i u(x_i)] dans l'<<eq_11a>> par
+
+[stem%unnumbered]
+++++
+ii(Z)_i = 1/2 {f[x_1,...,x_i + u(x_i),...,x_N] - f[x_1,...,x_i - u(x_i),...,x_N]}
+++++
+
+C'est-à-dire que stem:[u_i(y)] est évalué numériquement en calculant la variation de stem:[y] due à une variation de stem:[x_i] de stem:[+u(x_i)] et de stem:[-u(x_i)]. La valeur de stem:[u_i(y)] peut alors être prise comme étant égale à stem:[|ii(Z)_i|] et la valeur du coefficient de sensibilité correspondant stem:[c_i] comme stem:[ii(Z)_i//u(x_i)].
+====
+
+[example]
+====
+Pour l'exemple de <<scls_4-1-1>>, en utilisant par simplicité de notation le même symbole pour la grandeur et son estimation,
+
+[stem%unnumbered]
+++++
+c_1 -= del ii(P)//del ii(V) = 2ii(V)//{ii(R)_0 [1 + ii(alpha)(t - t_0)]} = 2 ii(P)//ii(V)
+++++
+
+[stem%unnumbered]
+++++
+c_2 -= del ii(P)//del ii(R)_0 = -ii(V)^2//{ii(R)_0^2 [1 + ii(alpha)(t - t_0)]} = -ii(P)//ii(R)_0
+++++
+
+[stem%unnumbered]
+++++
+c_3 -= del ii(P)//del ii(alpha) = -ii(V)^2 (t - t_0)//{ii(R)_0[1 + ii(alpha)(t - t_0)]^2} = -ii(P)(t - t_0)//[1 + ii(alpha)(t - t_0)]
+++++
+
+[stem%unnumbered]
+++++
+c_4 -= del ii(P)//del t = -ii(V)^2 ii(alpha)//{ii(R)_0[1 + ii(alpha)(t - t_0)]^2} = -ii(P) ii(alpha)//[1 + ii(alpha)(t - t_0)]
+++++
+
+et
+
+[stem%unnumbered]
+++++
+u^2(ii(P)) = ({del ii(P)}/{del ii(V)})^2 u^2(ii(V)) + ({del ii(P)}/{del ii(R)_0})^2 u^2(ii(R)_0) + ({del ii(P)}/{del ii(alpha)})^2 u^2(ii(alpha)) + ({del ii(P)}/{del t})^2 u^2(t)
+++++
+
+[stem%unnumbered]
+++++
+= [c_1 u(ii(V))]^2 + [c_2 u(ii(R)_0)]^2 + [c_3 u(ii(alpha))]^2 + [c_4 u(t)]^2
+++++
+
+[stem%unnumbered]
+++++
+= u_1^2(ii(P)) + u_2^2(ii(P)) + u_3^2(ii(P)) + u_4^2(ii(P))
+++++
+====
+
+
+[[scls_5-1-4]]
+==== {blank}
+
+Au lieu d'être calculés à partir de la fonction stem:[f], les ((coefficients de sensibilité)) stem:[del f//del x_i] sont parfois déterminés expérimentalement(((coefficients de sensibilité, détermination expérimentale des))): on mesure la variation de stem:[ii(Y)] produite par une variation d'un stem:[ii(X)_i] donné tout en maintenant constantes les autres grandeurs d'entrée. Dans ce cas, la connaissance de la fonction stem:[f] (ou une partie de celle-ci lorsqu'on détermine seulement de cette façon certains ((coefficients de sensibilité))) est, en conséquence, réduite à un développement empirique en ((série de Taylor)) du premier ordre sur la base des ((coefficients de sensibilité)) mesurés.
+
+
+[[scls_5-1-5]]
+==== {blank}
+
+Si l'<<eq_1>> pour le mesurande stem:[ii(Y)] est développée autour des valeurs nominales stem:[ii(X)_{i,0}] des grandeurs d'entrée stem:[ii(X)_i], alors, au premier ordre (qui est habituellement une approximation convenable), stem:[ii(Y) = ii(Y)_0 + c_1 ii(delta)_1 + c_2 ii(delta)_2 + ... + c_N ii(delta)_N], où stem:[ii(Y)_0 = f(ii(X)_{1,0}, ii(X)_{2,0},..., ii(X)_{N,0})], stem:[c_i = (del f//del ii(X)_i)] évalués à stem:[ii(X)_i = ii(X)_{i,0}], et stem:[ii(delta)_i = ii(X)_i - ii(X)_{i,0}]. En conséquence, pour les besoins d'une analyse d'incertitude, on obtient habituellement une approximation d'un mesurande par une fonction linéaire de ses variables en transformant ses grandeurs d'entrée stem:[ii(X)_i] en stem:[ii(delta)_i] (voir <<scls_E-3-1>>).
+
+[example]
+====
+À partir de l'<<example2_4-3-7>> de <<scls_4-3-7>>, l'estimation de la valeur du mesurande stem:[ii(V)] est stem:[ii(V) = bar(ii(V)) + Delta bar(ii(V))], avec stem:[bar(ii(V)) = 0.928571" "rm(V)], stem:[u(bar(ii(V)))=12" "rm(muV)], la correction additive stem:[Delta bar(ii(V)) = 0], et stem:[u (Delta bar(ii(V))) = 8.7" "rm(muV)]. Puisque stem:[del ii(V)//del bar(ii(V)) = 1], et que stem:[del ii(V)//del (Delta (bar(ii(V)))) = 1], la ((variance composée)) associée à stem:[ii(V)] est donnée par
+
+[stem%unnumbered]
+++++
+u_{"c"}^2 (ii{V}) = u^2 (bar(ii(V))) + u^2 (Delta bar(ii(V))) = (12" "rm(muV))^2 + (8.7" "rm(muV))^2 = 219 xx 10^{-12}" "rm(V)^2
+++++
+
+et l'((incertitude-type composée)) est stem:[u_{"c"}(ii(V)) = 15" "rm(muV)], qui correspond à une ((incertitude-type composée)) relative stem:[u_{"c"}(ii(V))//ii(V)] de stem:[16 xx 10^{-6}] (voir <<scls_5-1-6>>). C'est un exemple du cas où le mesurande est déjà une fonction linéaire(((linéarisation d'une relation fonctionnelle))) des grandeurs dont il dépend, avec les coefficients stem:[c_i = +1]. On déduit de l'<<eq_10>> que si stem:[ii(Y) = c_1ii(X)_1 + c_2ii(X)_2 +... + c_Nii(X)_N] et si les constantes stem:[c_i = +1] ou stem:[-1], alors stem:[u_{"c"}^2 (y) = sum_{i=1}^{ii(N)} u^2 (x_i)].
+====
+
+
+[[scls_5-1-6]]
+==== {blank}
+
+Si stem:[ii(Y)] est de la forme stem:[ii(Y) = c ii(X)_1^{p1} ii(X)_2^{p2} ... ii(X)_N^{pN}] et si les exposants stem:[p_i] sont des nombres connus, positifs ou négatifs, d'incertitudes négligeables, la ((variance composée)), <<eq_10>> peut être exprimée sous la forme
+
+[[eq_12]]
+[stem]
+++++
+[u_{"c"} (y)//y]^2 = sum_{i=1}^ii(N) [p_i u(x_i)//x_i]^2
+++++
+
+C'est une forme analogue à l'<<eq_11a>> mais avec la ((variance composée)) stem:[u_{"c"}^2(y)] exprimée sous la forme d'une ((variance composée)) relative stem:[[u_{"c"}(y)//y\]^2] et avec la variance estimée stem:[u^2(x_i)] associée à chaque estimation d'entrée exprimée sous la forme d'une _((variance relative))_(((variance relative composée))) estimée stem:[[u(x_i)//x_i\]^2]. [L'_((incertitude-type composée)) relative_(((incertitude-type composée relative))) est stem:[u_{"c"}(y)//|y|] et l'_((incertitude-type relative))_ de chaque estimation d'entrée est stem:[u(x_i)//|x_i|], stem:[|y| != 0] et stem:[|x_i| != 0].]
+
+NOTE: Lorsque stem:[ii(Y)] prend cette forme, sa transformation en une fonction linéaire des variables (voir <<scls_5-1-5>>) est aisément obtenue en posant stem:[ii(X)_i = ii(X)_{i,0} (1 + ii(delta)_i)]; il en résulte la relation approchée suivante: stem:[(ii(Y) - ii(Y)_0) ii(Y)_0 = sum_{i=1}^ii(N) p_i ii(delta)_i]. D'autre part, la transformation logarithmique stem:[ii(Z) = ln ii(Y)] et stem:[ii(W)_i = ln ii(X)_i] conduit à une linéarisation(((linéarisation d'une relation fonctionnelle))) exacte pour les nouvelles variables: stem:[ii(Z) = ln c + sum_{i=1}^ii(N)  p_i ii(W)_i].
+
+[[note2_5-1-6]]
+NOTE: Si chaque stem:[p_i] vaut +1 ou −1, l'<<eq_12>> devient stem:[[u_{"c"}(y)//y\]^2 = sum_{i=1}^ii(N) [u(x_i)//x_i\]], qui montre que, dans ce cas spécial, la ((variance composée)) relative associée à l'estimation stem:[y] est simplement égale à la somme des variances relatives estimées associées aux estimations d'entrée stem:[x_i].
+
+[[scls_5-2]]
+=== Grandeurs d'entrée corrélées
+
+[[scls_5-2-1]]
+==== {blank}
+
+L'<<eq_10>> et celles qui s'en déduisent, telles <<eq_11a>> et <<eq_12>>, ont leur validité limitée au cas où les grandeurs d'entrée stem:[ii(X)_i] sont indépendantes ou non corrélées (il s'agit des variables aléatoires(((aléatoire))), non des grandeurs physiques supposées être invariantes — voir <<note1_4-1-1>>). Si certains des stem:[ii(X)_i] sont corrélés significativement, il faut prendre en compte les corrélations.
+
+
+[[scls_5-2-2]]
+==== {blank}
+
+Lorsque les grandeurs d'entrée sont corrélées, l'expression convenable pour la ((variance composée)) stem:[u_{"c"}^2(y)] associée au résultat d'un mesurage est
+
+[[eq_13]]
+[stem]
+++++
+u_{"c"}^2(y) = sum_{i=1}^ii(N) sum_{j=1}^ii(N) {del f}/{del x_i} {del f}/{del x_j} u(x_i,x_j) = sum_{i=1}^ii(N) ({del f}/{del x_i})^2 u^2(x_i) + 2 sum_{i=1}^{N-1} sum_{j=i+1}^ii(N) {del f}/{del x_j} {del f}/{del x_j} u(x_i,x_j)
+++++
+
+où stem:[x_i] et stem:[x_j] sont les estimations de stem:[ii(X)_i] et stem:[ii(X)_j] et stem:[u(x_i,x_j) = u(x_j,x_i)] est la ((covariance)) estimée associée à stem:[x_i] et stem:[x_j]. Le degré de ((corrélation)) entre stem:[x_i] et stem:[x_j] est caractérisé par le *coefficient de corrélation* estimé (<<scls_C-3-6>>)
+
+[[eq_14]]
+[stem]
+++++
+r(x_i,x_j) = {u(x_i,x_j)}/{u(x_i)u(x_j)}
+++++
+
+où stem:[r (x_i,x_j) = r (x_j, x_i)], et stem:[-1 <= r(x_i,x_j) <= +1]. Si les estimations stem:[x_i] et stem:[x_j] sont indépendantes, stem:[r(x_i,x_j) = 0] et une variation pour l'un des deux n'entraîne pas une variation prévisible pour l'autre. (Voir <<scls_C-2-8>>, <<scls_C-3-6>>, et <<scls_C-3-7>> pour une présentation complémentaire.)
+
+En utilisant les coefficients de ((corrélation)), qui sont plus facilement interprétables que les covariances, le terme de ((covariance)) de l'<<eq_13>> peut s'écrire
+
+[[eq_15]]
+[stem]
+++++
+2 sum_{i=1}^{N-1} sum_{j=i+1}^ii(N) {del f}/{del x_i} {del f}/{del x_j} u(x_i) u(x_j) r(x_i,x_j)
+++++
+
+En tenant compte de l'<<eq_11b>>, l'<<eq_13>>  devient alors
+
+[[eq_16]]
+[stem]
+++++
+u_{"c"}^2(y) = sum_{i=1}^ii(N) c_i^2 u^2(x_i) + 2 sum_{i=1}^{N-1} sum_{j=i+1}^ii(N) c_i c_j u(x_i) u(x_j) r(x_i,x_j)
+++++
+
+[[note1_5-2-2]]
+[NOTE]
+====
+Dans le cas tout à fait spécial où la totalité des estimations d'entrée est corrélée avec des coefficients de ((corrélation)) stem:[r(x_i,x_j)= +1], l'<<eq_16>> se réduit à
+
+[stem%unnumbered]
+++++
+u_{"c"}^2(y) = [sum_{i=1}^ii(N) c_i u(x_i)]^2 = [sum_{i=1}^ii(N) {del f}/{del x_i} u(x_i)]^2
+++++
+
+L'((incertitude-type composée)) stem:[u_{"c"}(y)] est alors simplement une _somme linéaire_ de termes représentant les variations de la grandeur de sortie stem:[y] générées par une variation de chaque estimation d'entrée stem:[x_i] égale à son incertitude-type stem:[u(x_i)] (voir <<scls_5-1-3>>). [Cette somme linéaire ne doit pas être confondue avec la loi générale de propagation de l'erreur bien qu'elle présente une forme analogue; les incertitudes-types ne sont pas des erreurs (voir <<scls_E-3-2>>).](((matrice de covariance)))(((propagation des erreurs, loi générale de)))
+====
+
+[[example_5-2-2]]
+[example]
+Dix résistances, chacune de valeur nominale stem:[ii(R)_i = 1000" "rm(Omega)], sont étalonnées avec une incertitude négligeable lors de leur comparaison à la même résistance stem:[ii(R)_s] de stem:[1000" "rm(Omega)] caractérisée par une incertitude-type stem:[u(ii(R)_s) = 100" "rm(m)Omega] donnée dans son certificat d'étalonnage. Les résistances sont connectées en série avec des fils de résistance négligeable pour obtenir une résistance de référence stem:[ii(R)_"ref"] de valeur nominale de stem:[10" "rm(k)Omega]. Alors stem:[ii(R)_{"ref"} = f (ii(R)_i) = sum_{i=1}^10 ii(R)_i]. Puisque stem:[r(x_i,x_j) = r(ii(R)_i,ii(R)_j) = +1] pour chaque paire de résistances (voir <<example2_F-1-2-3>>), l'équation de cette note s'applique. Puisque l'on a pour chaque résistance stem:[del f // del x_i = del ii(R)_{"ref"}// del ii(R)_i = 1], et stem:[u(x_i) = u(ii(R)_i) = u(ii(R)_s)] (voir <<scls_F-1-2-3>>, cette équation donne pour l'((incertitude-type composée)) de stem:[ii(R)_{"ref"}], stem:[u_{"c"}(ii(R)_{"ref"}) = sum_{i=1}^10 u (ii(R)_s) = 10 xx (100" "rm(m Omega)) = 1" "rm(Omega)]. Le résultat stem:[u_{"c"}(ii(R)_{"ref"}) = [sum_{i=1}^10 u^2 (ii(R)_s)\]^{1//2} = 0.32" "rm(Omega)] obtenu à partir de l'<<eq_10>> serait incorrect car il ne prendrait pas en compte le fait que la totalité des valeurs d'étalonnage des dix résistances est corrélée.
+
+
+[[note2_5-2-2]]
+NOTE: Les variances estimées stem:[u^2(x_i)] et les covariances estimées stem:[u(x_i, x_j)] peuvent être considérées comme les éléments d'une matrice de ((covariance)) d'éléments stem:[u_{ij}]. Les éléments diagonaux stem:[u_{i i}] de la matrice sont les variances stem:[u^2(x_i)], tandis que les éléments non diagonaux stem:[u_(ij)(i != j)] sont les covariances stem:[u(x_i,x_j) = u(x_j,x_i)]. Si deux estimations d'entrée ne sont pas corrélées, leur ((covariance)) associée ainsi que les éléments correspondants stem:[u_{ij}] et stem:[u_{ji}] de la matrice de ((covariance)) sont égaux à zéro. Si les estimations d'entrée sont toutes non corrélées, tous les éléments non diagonaux sont nuls et la matrice de ((covariance)) est diagonale. (Voir aussi <<scls_C-3-5>>.)
+
+[NOTE]
+====
+Dans le but d'une évaluation numérique, l'<<eq_16>> peut s'écrire
+
+[stem%unnumbered]
+++++
+u_{"c"}^2(y) = sum_{i=1}^ii(N) sum_{j=1}^ii(N) ii(Z)_i ii(Z)_j r(x_i,x_j)
+++++
+
+où stem:[ii(Z)_i] est donné en <<note2_5-1-3>>.
+====
+
+[NOTE]
+====
+Si les stem:[ii(X)_i] de la forme spéciale considérée en <<scls_5-1-6>> sont corrélés, il faut alors ajouter les termes(((incertitude-type composée, calcul numérique de l')))
+
+[stem%unnumbered]
+++++
+2 sum_{i=1}^{N-1} sum_{j=i+1}^ii(N) [p_i u(x_i)//x_i][p_j u(x_j)//x_j] r(x_i,r_j)
+++++
+
+au membre de droite de l'<<eq_12>>.
+====
+
+[[scls_5-2-3]]
+==== {blank}
+
+Considérons deux moyennes arithmétiques stem:[bar(q)] et stem:[bar(r)] qui estiment les espérances mathématiques stem:[ii(mu)_q] et stem:[ii(mu)_r] de deux grandeurs stem:[q] et stem:[r] variant au hasard et supposons que stem:[bar(q)] et stem:[bar(r)] soient calculés à partir de stem:[n] paires indépendantes d'observations simultanées(((observations indépendantes simultanées, paires d'))) de stem:[q] et stem:[r] faites dans les mêmes conditions de mesure (voir <<scls_B-2-15>>). Alors, la ((covariance))(((covariance de deux moyennes arithmétiques))) (voir <<scls_C-3-4>>) de stem:[bar(q)] et stem:[bar(r)] est estimée par
+
+[[eq_17]]
+[stem]
+++++
+s(bar(q),bar(r)) = 1/{n(n-1)} sum_{k=1}^n (q_k - bar(q))(r_k - bar(r))
+++++
+
+où stem:[q_k] et stem:[r_k] sont les observations individuelles des grandeurs stem:[q] et stem:[r] et où stem:[bar(q)] et stem:[bar(r)] sont calculés à partir des observations selon l'<<eq_3>>. Si les observations sont en fait non corrélées, on peut s'attendre à ce que la ((covariance)) calculée soit proche de zéro.
+
+Ainsi, la ((covariance)) estimée de deux grandeurs d'entrée corrélées stem:[ii(X)_i] et stem:[ii(X)_j] qui sont estimées par les moyennes stem:[bar(X)_i] et stem:[bar(X)_j] déterminées à partir de paires indépendantes d'observations simultanées répétées(((observations répétées))) est donnée par stem:[u(x_i,x_j) = s(bar(X)_i,bar(X)_j)], avec stem:[s(bar(X)_i,bar(X)_j)] calculé selon l'<<eq_17>>. Cette application de l'<<eq_17>> est une évaluation de Type A de la ((covariance))(((évaluation de la covariance de Type A))). Le ((coefficient de corrélation)) estimé de stem:[bar(X)_i] et stem:[bar(X)_j] est obtenu à partir de l'<<eq_14>>: stem:[r(x_i,x_j) = r(bar(X)_i,bar(X)_j) = s(bar(X)_i,bar(X)_j)//[ s(bar(X)_i) s(bar(X)_j)\]]
+
+NOTE: Des exemples où il faut utiliser les covariances telles que calculées à partir de l'<<eq_17>> sont donnés en <<scls_H-2>> et <<scls_H-4>>.
+
+
+[[scls_5-2-4]]
+==== {blank}
+
+Il peut y avoir une ((corrélation))(((corrélation, élimination d'une))) significative entre deux grandeurs d'entrée si l'on utilise pour leur détermination le même instrument de mesure, le même étalon physique ou la même donnée de référence ayant une incertitude-type significative. Par exemple, si l'on utilise un thermomètre donné pour déterminer une correction de température nécessaire pour l'estimation de la valeur d'une grandeur d'entrée stem:[ii(X)_i] et si le même thermomètre est utilisé pour déterminer une correction de température similaire nécessaire pour l'estimation de la grandeur d'entrée stem:[ii(X)_j], les deux grandeurs d'entrée pourraient être corrélées de manière significative. Cependant, si, dans cet exemple, stem:[ii(X)_i] et stem:[ii(X)_j] sont redéfinis comme grandeurs non corrigées et que les grandeurs qui définissent la courbe d'étalonnage pour le thermomètre sont incluses comme grandeurs d'entrée additionnelles avec des incertitudes-types indépendantes, la ((corrélation)) entre stem:[ii(X)_i] et stem:[ii(X)_j] disparaît. (Voir <<scls_F-1-2-3>> et <<scls_F-1-2-4>> pour une présentation plus complète.)
+
+
+[[scls_5-2-5]]
+==== {blank}
+
+Les corrélations entre grandeurs d'entrée ne peuvent être ignorées si elles sont présentes et significatives. Les covariances associées doivent être évaluées expérimentalement, si cela est possible, en faisant varier les grandeurs d'entrée corrélées (voir <<note3_C-3-6>>) ou en utilisant l'ensemble des informations disponibles sur la variabilité corrélée des grandeurs en question (évaluation de Type B(((ensemble d'informations pour une évaluation de Type B)))(((évaluation de la covariance de Type B))) de la ((covariance)))(((covariance, évaluation expérimentale de la))). La perspicacité fondée sur l'expérience et les connaissances générales (voir <<scls_4-3-1>> et <<scls_4-3-2>>) est spécialement nécessaire lorsqu'on estime le degré de ((corrélation))(((corrélation, élimination d'une))) entre des grandeurs d'entrée provenant des effets communs d'influences telles que la température ambiante, la pression atmosphérique et le degré hygrométrique. Par chance, dans de nombreux cas, les effets de ces grandeurs d'influence présentent une interdépendance négligeable et les grandeurs d'entrée affectées peuvent être supposées non corrélées. S'il n'est pas possible de supposer qu'elles ne sont pas corrélées, on peut cependant éviter ces corrélations en introduisant ces grandeurs d'influence communes comme grandeurs d'entrée indépendantes additionnelles, comme indiqué en <<scls_5-2-4>>.

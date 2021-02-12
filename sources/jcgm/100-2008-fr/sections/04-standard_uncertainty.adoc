@@ -1,0 +1,459 @@
+
+[[cls_4]]
+== Évaluation de l'incertitude-type
+
+On pourra trouver en <<annexF>> des conseils complémentaires, principalement de nature pratique, pour l'évaluation des composantes de l'incertitude.
+
+
+[[scls_4-1]]
+=== Modélisation du mesurage(((modèle mathématique de mesure)))
+
+[[scls_4-1-1]]
+==== {blank}
+
+Dans de nombreux cas, un mesurande stem:[ii(Y)] n'est pas mesuré directement mais il est déterminé à partir de stem:[ii(N)] autres grandeurs stem:[ii(X)_1, ii(X)_2,..., ii(X)_N] à travers une ((relation fonctionnelle)) stem:[f]:(((modèle mathématique de mesure)))
+
+[[eq_1]]
+[stem]
+++++
+ii(Y) = f(ii(X)_1,ii(X)_2,...,ii(X)_N)
+++++
+
+[[note1_4-1-1]]
+NOTE: Par économie de notation, on utilise dans ce _Guide_ le même symbole pour la grandeur physique (le mesurande) et pour la ((variable aléatoire)) (voir <<scls_4-2-1>>) qui représente le résultat possible d'une observation de cette grandeur. Lorsqu'on énonce que stem:[ii(X)_i] possède une ((loi de probabilité)) particulière, le symbole est utilisé dans son deuxième sens; on suppose que la grandeur physique elle-même peut être caractérisée en première approximation par une valeur unique (voir <<scls_1-2>> et <<scls_3-1-3>>).
+
+NOTE: Dans une série d'observations, la kième valeur observée de stem:[ii(X)_i] est notée stem:[ii(X)_{i,k}]; ainsi, si une résistance est notée stem:[ii(R)], la kième valeur observée de la résistance est notée stem:[ii(R)_k].
+
+NOTE: L'estimation de stem:[ii(X)_i] (à proprement parler, de son espérance mathématique)(((espérance mathématique (ou valeur espérée)))) est notée stem:[x_i].
+
+[[example_4-1-1]]
+[example]
+====
+Si l'on applique une différence de potentiel stem:[ii(V)] aux bornes d'une résistance dont la valeur dépend de la température, de résistance stem:[ii(R)_0] à la température définie stem:[t_0] et de coefficient linéaire de température stem:[ii(alpha)], la puissance stem:[ii(P)] (le mesurande) dissipée par la résistance à la température stem:[t] est fonction de stem:[ii(V)], stem:[ii(R)_0], stem:[ii(alpha)], et stem:[t] selon
+
+[stem%unnumbered]
+++++
+ii(P) = f (ii(V),ii(R)_0,ii(alpha),t) = ii(V)^2//{ii(R)_0 [1 + ii(alpha) (t - t_0)]}
+++++
+
+NOTE: D'autres méthodes de mesure de stem:[ii(P)] seraient modélisées par des expressions mathématiques différentes.
+====
+
+
+[[scls_4-1-2]]
+==== {blank}
+
+Les _grandeurs d'entrée_ stem:[ii(X)_1, ii(X)_2, ..., ii(X)_N] dont dépend la ((grandeur de sortie)) stem:[ii(Y)] peuvent elles-mêmes être envisagées comme mesurandes et peuvent elles-mêmes dépendre d'autres grandeurs, y compris les corrections et facteurs de correction pour les effets systématiques, aboutissant de ce fait à une ((relation fonctionnelle)) compliquée stem:[f] qui peut ne jamais être écrite explicitement. De plus, la fonction stem:[f] peut être déterminée expérimentalement (voir <<scls_5-1-4>>) ou exister seulement sous forme d'algorithme qui doit être évalué numériquement. Telle qu'elle apparaît dans ce _Guide_, la fonction stem:[f] doit être interprétée dans le contexte le plus large, en particulier comme la fonction qui contient toutes les grandeurs susceptibles de contribuer à une composante significative de l'incertitude du résultat de mesure, y compris toutes les corrections.(((modèle mathématique de mesure)))
+
+En conséquence, si les données indiquent que cette fonction stem:[f] ne modélise pas le mesurage au degré imposé par l'exactitude exigée pour le résultat de mesure, des grandeurs d'entrée additionnelles doivent être introduites dans stem:[f] pour éliminer le manque d'adéquation (voir <<scls_3-4-2>>). Cela peut nécessiter l'introduction d'une ((grandeur d'entrée)) reflétant la connaissance incomplète d'un phénomène qui affecte le mesurande. Dans l'<<example_4-1-1>>, il peut être nécessaire d'introduire des grandeurs d'entrée additionnelles pour tenir compte d'une distribution de température reconnue comme non uniforme le long de la résistance, d'un coefficient de température non linéaire de la résistance, ou d'un effet possible de la pression atmosphérique.
+
+NOTE: Quoi qu'il en soit, l'<<eq_1>> peut être aussi simple que stem:[ii(Y) = ii(X)_1 − ii(X)_2]. Cette expression modélise, par exemple, la comparaison de deux déterminations de la même grandeur stem:[X].
+
+
+[[scls_4-1-3]]
+==== {blank}
+
+L'ensemble des grandeurs d'entrée(((grandeurs d'entrée, classement en catégories des))) stem:[ii(X)_1, ii(X)_2, ..., ii(X)_N] peut être caractérisé par:
+
+* les grandeurs dont les valeurs _et les incertitudes_ sont directement déterminees au cours du mesurage. Ces valeurs et incertitudes peuvent être obtenues, par exemple, à partir d'une observation unique, ou à partir d'((observations répétées)), ou par un jugement fondé sur l'expérience. Elles peuvent impliquer la détermination de corrections pour les lectures d'instruments et de corrections dues aux grandeurs d'influence telles que la température ambiante, la pression atmosphérique ou l'humidité;
+* les grandeurs dont les valeurs _et les incertitudes_ sont introduites dans le mesurage à partir de sources extérieures, telles que les grandeurs associées à des étalons, à des matériaux de référence certifiés et à des valeurs de référence provenant de la littérature. 
+
+
+[[scls_4-1-4]]
+==== {blank}
+
+Une estimation du mesurande stem:[ii(Y)], notée stem:[y], est obtenue à partir de l'<<eq_1>> en utilisant les estimations d'entrée stem:[x_1, x_2, ..., x_N] pour les valeurs des stem:[ii(N)] grandeurs stem:[ii(X)_1, ii(X)_2, ..., ii(X)_N]. Ainsi, l'_((estimation de sortie))_ stem:[y], qui est le résultat du mesurage, est donnée par
+
+[[eq_2]]
+[stem]
+++++
+y = f(x_1, x_2,..., x_N)
+++++
+
+[[note_4-1-4]]
+[NOTE]
+====
+Dans certains cas, l'estimation stem:[y] peut être obtenue à partir de
+
+[stem%unnumbered]
+++++
+y = bar(ii(Y)) = 1/n sum_{k=1}^n ii(Y)_k = 1/n sum_{k=1}^n f(ii(X)_{1,k}, ii(X)_{2,k},..., ii(X)_{N,k})
+++++
+
+C'est-à-dire que stem:[y] est pris comme étant la ((moyenne arithmétique)) (voir <<scls_4-2-1>>) de stem:[n] déterminations indépendantes stem:[ii(Y)_k] de stem:[ii(Y)], chaque détermination ayant la même incertitude et chacune étant fondée sur un ensemble complet de valeurs observées de stem:[ii(N)] grandeurs d'entrée stem:[ii(X)_i] obtenues en même temps. Plutôt que de faire stem:[y = f(bar(ii(X))_1, bar(ii(X))_2,..., bar(ii(X))_N)], où
+
+[stem%unnumbered]
+++++
+bar(ii(X))_i = 1/n sum_{k=1}^n ii(X)_{i,k}
+++++
+
+est la ((moyenne arithmétique)) des observations individuelles stem:[ii(X)_(i,k)], cette manière de calculer la moyenne peut être préférable lorsque stem:[f] est une fonction non linéaire(((relation fonctionnelle non linéaire))) des grandeurs d'entrée stem:[ii(X)_1, ii(X)_2, ..., ii(X)_N] mais les deux approches sont identiques si stem:[f] est une fonction linéaire des stem:[ii(X)_i] (voir <<scls_H-2>> et <<scls_H-4>>).
+====
+
+
+[[scls_4-1-5]]
+==== {blank}
+
+L'écart-type estimé associé à l'((estimation de sortie)) ou au résultat de mesure stem:[y], appelé _((incertitude-type composée))_ et noté stem:[u_c(y)], est déterminé à partir de l'écart-type estimé associé à chaque ((estimation d'entrée)) stem:[x_i], appelée _((incertitude-type))_ et notée stem:[u(x_i)] (voir <<scls_3-3-5>> et <<scls_3-3-6>>).
+
+
+[[scls_4-1-6]]
+==== {blank}
+
+Chaque ((estimation d'entrée)) stem:[x_i] et son ((incertitude-type)) associée stem:[u(x_i)] sont obtenues à partir d'une loi des valeurs possibles de la grandeur d'entrée stem:[ii(X)_i]. Cette ((loi de probabilité)) peut être fondée sur une ((distribution de fréquence)), c'est-à-dire sur une série d'observations stem:[ii(X)_(i,k)] des stem:[ii(X)_i], ou ce peut être une ((loi _a priori_)). Les évaluations de Type A(((évaluation de Type A de l'incertitude))) de composantes de l'((incertitude-type)) sont fondées sur des distributions de fréquence alors que les évaluations de Type B(((évaluation de Type B de l'incertitude))) sont fondées sur des lois _a priori_. On doit reconnaître que, dans les deux cas, les lois sont des modèles utilisés pour représenter l'état de notre connaissance.
+
+
+[[scls_4-2]]
+=== Évaluation de Type A de l'incertitude-type(((évaluation de Type A de l'incertitude)))
+
+[[scls_4-2-1]]
+==== {blank}
+
+Dans la plupart des cas, la meilleure estimation disponible de l'espérance mathématique(((espérance mathématique (ou valeur espérée)))) stem:[ii(mu)_q] d'une grandeur stem:[q] qui varie au hasard [c'est-à-dire d'une *((variable aléatoire))* (<<scls_C-2-2>>)] et pour laquelle on a obtenu stem:[n] observations indépendantes stem:[q_k] dans les mêmes conditions de mesure (voir <<scls_B-2-15>>), est la *((moyenne arithmétique))* (<<scls_C-2-19>>) des stem:[n] observations:
+
+[[eq_3]]
+[stem]
+++++
+bar(q) = 1/n sum_{k=1}^n q_k
+++++
+
+Ainsi, pour une grandeur d'entrée stem:[ii(X)_i] estimée à partir de stem:[n] ((observations répétées)) indépendantes stem:[ii(X)_(i,k)], la ((moyenne arithmétique)) stem:[bar(ii(X))_i] obtenue par l'<<eq_3>> est utilisée comme ((estimation d'entrée)) stem:[x_i] dans l'<<eq_2>> pour déterminer le résultat de mesure stem:[y]; on prend donc stem:[x_i = bar(ii(X))_i]. Les estimations d'entrée non évaluées par des ((observations répétées)) doivent être obtenues par d'autres méthodes, telles que celles de la seconde catégorie de <<scls_4-1-3>>.(((évaluation de Type A de l'incertitude)))
+
+
+[[scls_4-2-2]]
+==== {blank}
+
+Les valeurs des observations individuelles stem:[q_k] diffèrent en raison des variations aléatoires des grandeurs d'influence(((grandeur d'influence))) ou des effets aléatoires(((effet aléatoire))) (voir <<scls_3-2-2>>). La ((variance)) expérimentale des observations(((variance expérimentale (ou estimation de variance)))), qui estime la ((variance)) stem:[ii(sigma)^2] de la loi de probabilité de stem:[q], est donnée par
+
+[[eq_4]]
+[stem]
+++++
+s^2 (q_k) = 1/{n - 1} sum_{j=1}^n (q_j - bar(q))^2
+++++
+
+Cette estimation de la ((variance)) et sa racine carrée stem:[s(q_k)], appelée *((écart-type expérimental))* (<<scls_B-2-17>>), caractérisent la variabilité des valeurs observées stem:[q_k], ou, plus spécifiquement, leur dispersion autour de leur moyenne stem:[bar(q)].
+
+
+[[scls_4-2-3]]
+==== {blank}
+
+La meilleure estimation de stem:[ii(sigma)^2 (bar(q)) = ii(sigma)^2//n], ((variance de la moyenne))(((variance))), est donnée par
+
+[[eq_5]]
+[stem]
+++++
+s^2 (bar(q)) = {s^2(q_k)}/n
+++++
+
+La ((variance expérimentale de la moyenne)) stem:[s^2(bar(q))] et l'*((écart-type expérimental de la moyenne))* stem:[s(bar(q))] (<<note2_B-2-17>>), égal à la racine carrée de stem:[s^2(bar(q))], quantifient la manière dont stem:[bar(q)] estime au mieux l'espérance mathématique(((espérance mathématique (ou valeur espérée)))) stem:[ii(mu)_q] de stem:[q] et l'une ou l'autre peuvent être utilisés comme mesure de l'incertitude de stem:[bar(q)].
+
+Alors, pour une grandeur d'entrée stem:[ii(X)_i] déterminée à partir de stem:[n] ((observations répétées)) indépendantes stem:[ii(X)_(i,k)], l'((incertitude-type)) stem:[u(x_i)] de son estimation stem:[x_i = bar(ii(X))_i] est stem:[u(x_i) = s(bar(ii(X))_i)], avec stem:[s^2 (bar(ii(X))_i)] calculé selon l'<<eq_5>>. Par commodité, stem:[u^2(x_i) = s^2(bar(ii(X))_i)] et stem:[u(x_i) = s(bar(ii(X))_i)] sont parfois appelés respectivement _((variance de Type A))_ et _((incertitude-type)) de Type A_(((incertitude-type de Type A))).
+
+[[note1_4-2-3]]
+NOTE: Le nombre d'observations stem:[n] doit être suffisamment grand pour garantir que stem:[bar(q)] fournisse une estimation fiable de l'espérance mathématique(((espérance mathématique (ou valeur espérée)))) stem:[ii(mu)_q] de la 
+((variable aléatoire)) stem:[q], et pour que stem:[s^2(bar(q))] fournisse une estimation fiable de la ((variance)) stem:[ii(sigma)^2(bar(q)) = ii(sigma)^2//n] (voir <<note_4-3-2>>). La différence entre stem:[s^2(bar(q))] et stem:[ii(sigma)^2(bar(q))] doit être prise en considération lorsqu'on bâtit des intervalles de confiance(((intervalle de confiance))) (voir <<scls_6-2-2>>). Dans ce cas, si la ((loi de probabilité)) de stem:[q] est une ((loi normale)) (voir <<scls_4-3-4>>), la différence est prise en compte à travers la ((loi de stem:[t])) (voir <<scls_G-3-2>>).
+
+NOTE: Bien que la ((variance)) stem:[s^2(bar(q))] soit une grandeur plus fondamentale, l'écart-type stem:[s(bar(q))] est en pratique plus commode car il a la même dimension que stem:[q] et une valeur plus parlante que celle de la ((variance)).
+
+
+[[scls_4-2-4]]
+==== {blank}
+
+Pour un mesurage bien caractérisé et sous ((contrôle statistique)), on peut avoir à sa disposition une estimation de la variance composée ou provenant d'un ensemble accumulé de résultats, stem:[s_p^2] (ou l'écart-type expérimental correspondant stem:[s_p]). Dans un tel cas, lorsqu'on détermine la valeur d'un mesurande stem:[q] à partir de stem:[n] observations indépendantes, la ((variance expérimentale de la moyenne)) arithmétique(((moyenne arithmétique))) stem:[bar(q)] des observations est mieux estimée par stem:[s_p^2//n] que par stem:[s^2(q_k)//n] et l'incertitude-type de la moyenne est stem:[u = s_p//sqrt(n)] . (Voir aussi la <<note_H-3-6>>.)(((variance provenant d'un ensemble de données, estimation de la (ou estimation de l'écart-type expérimental provenant d'un ensemble de données))))
+
+[[scls_4-2-5]]
+==== {blank}
+
+On obtient souvent une estimation stem:[x_i] d'une grandeur d'entrée stem:[ii(X)_i] à partir d'une courbe ajustée sur des résultats expérimentaux par la ((méthode des moindres)) carrés. La variance estimée et l'incertitude-type résultante des paramètres d'ajustement ((caractéristique))s de la courbe et de tout point prédit peuvent habituellement être calculées par des procédures statistiques bien connues (voir <<scls_H-3>> et <<FULLER1987>>).
+
+
+[[scls_4-2-6]]
+==== {blank}
+
+Le nombre de *((degrés de liberté))* (<<scls_C-2-31>>) stem:[nu_i] de stem:[u(x_i)] (voir <<scls_G-3>>), égal à stem:[n − 1] dans le cas simple où stem:[x_i = bar(ii(X))_i] et stem:[u(x_i) = s(bar(ii(X))_i)] sont calculés à partir de stem:[n] observations indépendantes comme en <<scls_4-2-1>> et <<scls_4-2-3>>, doit toujours être donné lorsque les évaluations de Type A des composantes d'incertitude sont fournies.
+
+
+[[scls_4-2-7]]
+==== {blank}
+
+S'il existe une corrélation entre les variations aléatoires(((aléatoire)))(((variations aléatoires corrélées))) des observations d'une grandeur d'entrée, par exemple en fonction du temps, la moyenne et l'((écart-type expérimental de la moyenne)) donnés en <<scls_4-2-1>> et <<scls_4-2-3>> peuvent être des *estimateurs*(((estimateur))) (<<scls_C-2-25>>) impropres des *statistiques*(((statistique))) (<<scls_C-2-23>>) recherchées. Dans de tels cas, les observations doivent être analysées par des méthodes statistiques spécialement conçues pour traiter une série de mesurages aléatoires(((aléatoire))) corrélés.
+
+NOTE: On utilise de telles méthodes spéciales pour traiter les mesurages d'étalons de fréquence. Il est cependant possible, pour d'autres grandeurs métrologiques, lorsqu'on passe de mesurages à court terme à des mesurages à long terme, que l'hypothèse de variations aléatoires(((aléatoire))) non corrélées ne soit plus valable et qu'on puisse aussi utiliser ces méthodes spéciales pour traiter ces mesurages. (Voir Référence <<ALLAN1987>>, par exemple, pour une présentation détaillée de la ((variance d'Allan)).)
+
+
+[[scls_4-2-8]]
+==== {blank}
+
+La présentation de l'évaluation de Type A(((évaluation de Type A de l'incertitude))) de l'incertitude-type donnée de <<scls_4-2-1>> à <<scls_4-2-7>> ne prétend pas être exhaustive; il existe de nombreuses situations, certaines relativement complexes, qui peuvent être traitées par les méthodes statistiques. Un exemple important concerne l'utilisation de modèles d'étalonnage, souvent fondés sur la méthode des moindres carrés, pour évaluer les incertitudes provenant de variations aléatoires(((aléatoire))), à la fois à court et à long terme, des résultats de comparaisons d'objets matériels de valeur inconnue, tels que des cales étalons ou des masses marquées, avec des étalons de référence de valeur connue. Dans de telles situations de mesures relativement simples, les composantes de l'incertitude(((incertitude, évaluation stastitique de l', par variation des grandeurs d'entrée))) peuvent fréquemment être évaluées par l'analyse statistique de données obtenues en utilisant des plans d'expérience consistant en des séquences emboîtées de mesurages du mesurande pour un certain nombre de valeurs différentes des grandeurs dont il dépend — cette technique est appelée ((analyse de variance)) (voir <<scls_H-5>>).
+
+NOTE: À des niveaux inférieurs de la ((chaîne d'étalonnage)), pour lesquels on suppose souvent que les étalons de référence sont exactement connus parce qu'ils ont été étalonnés par un laboratoire d'étalonnage national ou primaire, l'incertitude d'un résultat d'étalonnage peut être une simple incertitude-type de Type A évaluée à partir de l'écart-type expérimental, cet écart-type qui caractérise le mesurage étant évalué à partir d'un ensemble cumulé de résultats.(((unité, utilisation d'une valeur adoptée pour un étalon comme)))(((variance provenant d'un ensemble de données, estimation de la (ou estimation de l'écart-type expérimental provenant d'un ensemble de données))))
+
+
+
+[[scls_4-3]]
+=== Évaluation de Type B de l'incertitude-type(((évaluation de Type B de l'incertitude)))
+
+[[scls_4-3-1]]
+==== {blank}
+
+Pour une estimation stem:[x_i] d'une grandeur d'entrée stem:[ii(X)_i] qui n'a pas été obtenue à partir d'((observations répétées)), la variance estimée associée stem:[u^2(x_i)] ou l'incertitude-type stem:[u(x_i)] est évaluée par un jugement scientifique fondé sur toutes les informations disponibles au sujet de la variabilité possible de stem:[ii(X)_i]. L'ensemble d'informations(((ensemble d'informations pour une évaluation de Type B))) accumulées peut comprendre:
+
+* des résultats de mesures antérieures;
+* l'expérience ou la connaissance générale du comportement et des propriétés des matériaux et instruments utilisés;
+* les spécifications du fabricant;
+* les données fournies par des certificats d'étalonnage ou autres certificats;
+* l'incertitude assignée à des valeurs de référence provenant d'ouvrages et manuels.
+
+Par commodité, stem:[u^2(x_i)] et stem:[u(x_i)] évalués de cette façon sont parfois appelés respectivement _((variance de Type B))_ et _incertitude-type de Type B_.(((évaluation de Type B de l'incertitude)))(((incertitude-type de Type B)))
+
+[[note_4-3-1]]
+NOTE: Lorsque stem:[x_i] est obtenu à partir d'une loi a priori, la variance associée devrait être écrite correctement stem:[u^2(ii(X)_i)], mais, par souci de simplification, stem:[u^2(x_i)] et stem:[u(x_i)] sont utilisés tout au long de ce _Guide_.
+
+
+[[scls_4-3-2]]
+==== {blank}
+
+L'utilisation correcte de l'ensemble des informations disponibles pour une évaluation de Type B de l'incertitude-type fait appel à la perspicacité fondée sur l'expérience et les connaissances générales, et c'est une compétence qui peut s'apprendre par la pratique. On doit avoir en mémoire qu'une évaluation de Type B(((ensemble d'informations pour une évaluation de Type B))) d'incertitude-type peut être aussi fiable qu'une évaluation de Type A(((évaluation de Type A de l'incertitude))), notamment dans une situation de mesure où une évaluation de Type A est fondée sur un nombre relativement faible d'observations statistiquement indépendantes.
+
+
+[[note_4-3-2]]
+NOTE: Si la loi de probabilité de stem:[q] en <<note1_4-2-3>> est normale, alors stem:[ii(sigma)[s(bar(q))\]//ii(sigma)(bar(q))], écart-type relatif de stem:[s(bar(q))] par rapport à stem:[ii(sigma)(bar(q))], est approximativement égal à stem:[[2(n − 1)\]^(−1//2)]. En prenant alors stem:[ii(sigma)[s(bar(q))\]] comme l'incertitude de stem:[s(bar(q))], l'incertitude(((incertitude de l'écart-type expérimental de la moyenne)))(((incertitude due à un échantillonnage limité))) relative sur stem:[s(bar(q))] est de 24 pour-cent pour stem:[n = 10] (soit 10 observations) et est de 10 pour-cent pour stem:[n = 50]. (Des valeurs supplémentaires sont données dans le <<table_E-1>> de l'<<annexE>>.)
+
+
+[[scls_4-3-3]]
+==== {blank}
+
+Si l'on obtient l'estimation stem:[x_i] à partir d'une spécification de fabricant, d'un certificat d'étalonnage, d'une publication ou d'une autre source et que son incertitude indiquée est donnée comme étant un multiple déterminé d'un écart-type, l'incertitude-type stem:[u(x_i)] est simplement égale au quotient de la valeur indiquée par le facteur multiplicatif et la variance estimée stem:[u^2(x_i)] est égale au carré de ce quotient.
+
+[example]
+Un certificat d'étalonnage indique que la masse stem:[m_"S"] d'un étalon de masse en acier inoxydable de valeur nominale égale à un kilogramme est de 1 000,000 325 g et que «l'incertitude sur cette valeur est égale à stem:[240" "rm(mug)] au niveau de 3 écarts-types». L'incertitude-type de l'étalon de masse est alors simplement stem:[u(m_"S") = (240" "rm(mug))//3 = 80" "rm(mug)]. Cela correspond à une incertitude-type relative stem:[u(m_"S")//m_"S"] égale à stem:[80 xx 10^(−9)] (voir <<scls_5-1-6>>). La variance estimée est stem:[u^2(m_{"S"}) = (80 mu"g")^2 = 6.4 xx 10^{-9}" "rm(g)^2].
+
+NOTE: Dans de nombreux cas, on ne dispose d'aucune ou de presque aucune information sur les composantes individuelles qui ont permis d'obtenir l'incertitude indiquée. C'est généralement sans importance pour l'expression de l'incertitude selon les pratiques de ce _Guide_ puisque toutes les incertitudes-types sont traitées de la même façon lorsqu'on calcule l'incertitude-type composée d'un résultat de mesure (voir <<cls_5>>).
+
+
+[[scls_4-3-4]]
+==== {blank}
+
+L'incertitude fournie pour stem:[x_i] n'est pas nécessairement donnée comme un multiple d'un écart-type comme en <<scls_4-3-3>>. L'incertitude fournie peut définir un intervalle correspondant à un ((niveau de confiance)) de 90, 95 ou 99 pour-cent (voir <<scls_6-2-2>>). Sauf indication contraire, on peut supposer qu'une *((loi normale))* (<<scls_C-2-14>>) a été utilisée pour calculer l'incertitude fournie et retrouver l'incertitude-type de stem:[x_i] en divisant la valeur de l'incertitude fournie par le facteur approprié pour la ((loi normale)). Les facteurs correspondant aux trois niveaux de confiance ci-dessus sont 1,64; 1,96 et 2,58 (voir aussi <<table_G-1>> dans l'<<annexG>>).
+
+NOTE: Une telle hypothèse n'est pas nécessaire si l'incertitude a été donnée en suivant les recommandations de ce _Guide_ concernant l'expression de l'incertitude, ces recommandations soulignant que le ((facteur d'élargissement)) utilisé doit toujours être donné (voir <<scls_7-2-3>>).
+
+[example]
+Un certificat d'étalonnage indique que la valeur stem:[ii(R)_"S"] d'une résistance étalon de valeur nominale égale à dix ohms est de stem:[10.000742" "rm(Omega) pm 129" "rm(mu)rm(Omega)] à 23 °C et que «l'incertitude indiquée de stem:[129" "mu Omega] définit un intervalle au ((niveau de confiance)) de 99 pour-cent». L'incertitude-type sur la valeur de la résistance peut être prise égale à stem:[u(ii(R)_{"S"}) = (129" "rm(mu)rm(Omega))//2.58 = 50" "rm(mu)rm(Omega)], qui correspond à une incertitude-type relative stem:[u(ii(R)_{"S"})//ii(R)_{"S"}] de stem:[5.0 xx 10^{-6}] (voir <<scls_5-1-6>>). La variance estimée est stem:[u^2(ii(R)_{"S"}) = (50" "rm(mu)rm(Omega))^2 = 2.5 xx 10^{-9}" "rm(Omega)^2].
+
+
+[[scls_4-3-5]]
+==== {blank}
+
+Considérons le cas où, sur la base des informations disponibles, on peut énoncer qu'«il y a une chance sur deux pour que la valeur de la grandeur d'entrée stem:[ii(X)_i] soit située dans l'intervalle compris entre stem:[a_−] et stem:[a_+]» (en d'autres termes, la probabilité pour que stem:[ii(X)_i] soit situé dans cet intervalle est égale à 0,5, ou 50 pour-cent). Si l'on peut supposer que les valeurs possibles de stem:[ii(X)_i] sont distribuées approximativement selon une ((loi normale)), alors la meilleure estimation stem:[x_i] de stem:[ii(X)_i] peut être prise au milieu de l'intervalle. De plus, si la demi-largeur de l'intervalle est notée stem:[a = (a_+ − a_−)//2], on peut prendre stem:[u(x_i) = 1.48a], parce que, pour une ((loi normale)) d'espérance mathématique(((espérance mathématique (ou valeur espérée)))) stem:[ii(mu)] et d'écart-type stem:[ii(sigma)], l'intervalle stem:[ii(mu) pm ii(sigma)//1.48] recouvre approximativement 50 pour-cent de la loi.
+
+[example]
+Un mécanicien qui détermine les dimensions d'une pièce estime que sa longueur se situe, avec une probabilité de stem:[0.5], dans l'intervalle compris entre stem:[10.07" "rm(mm)] et stem:[10.15" "rm(mm)] et donne stem:[l = (10.11 pm 0.04)" "rm(mm)]; cela signifie que stem:[pm 0.04" "rm(mm)] définit un intervalle ayant un ((niveau de confiance)) de 50 pour-cent. a est alors égal à stem:[0.04" "rm(mm)]; en supposant une ((loi normale)) pour les valeurs possibles de stem:[l], l'incertitude-type sur la longueur est stem:[u(l) = 1.48 xx 0.04" "rm(mm) ~~ 0.06" "rm(mm)], et la variance estimée est stem:[u^2(l) = (1.48 xx 0.04" mm")^2 = 3.5 xx 10^{-3}" mm"^2].
+
+[[scls_4-3-6]]
+==== {blank}
+
+Considérons un cas analogue à celui de <<scls_4-3-5>> mais où, sur la base des informations disponibles, on peut énoncer qu'«il y a environ deux chances sur trois pour que la valeur stem:[ii(X)_i] soit située dans l'intervalle compris entre stem:[a_−] et stem:[a_+]» (en d'autres termes, la probabilité pour que stem:[ii(X)_i] soit situé dans cet intervalle est de l'ordre de stem:[0.67]). On peut alors prendre raisonnablement stem:[u(x_i) = a], parce que, pour une ((loi normale)) d'espérance mathématique(((espérance mathématique (ou valeur espérée)))) stem:[ii(mu)] et d'écart-type stem:[ii(sigma)], l'intervalle stem:[ii(mu) pm ii(sigma)] recouvre environ stem:[68.3] pour-cent de la loi.
+
+NOTE: Si l'on utilisait le fractile normal stem:[0.96742] correspondant à la probabilité stem:[p = 2//3], c'est-à-dire si l'on écrivait stem:[u(x_i) = a//0.96742 = 1.033a], on donnerait à la valeur de u(xi) une signification bien plus précise que ce qui est manifestement justifié.
+
+
+[[scls_4-3-7]]
+==== {blank}
+
+Dans d'autres cas, on peut seulement estimer des limites(((limites d'une grandeurd'entrée))) (inférieure et supérieure) pour stem:[ii(X)_i], en particulier pour énoncer que «la probabilité pour que la valeur de stem:[ii(X)_i] soit située dans l'intervalle compris entre stem:[a_−] et stem:[a_+] pour toutes les applications pratiques est égale à 1 et est essentiellement égale à zéro en dehors de cet intervalle». Si l'on ne possède _aucune connaissance spécifique_ sur les valeurs possibles de stem:[ii(X)_i] à l'intérieur de l'intervalle, on peut seulement supposer que stem:[ii(X)_i] se situe d'une manière également probable en tout point de l'intervalle [distribution uniforme ou rectangulaire des valeurs possibles — voir <<scls_4-4-5>> et <<fig_2a>>]. Alors stem:[x_i], espérance mathématique(((espérance mathématique (ou valeur espérée)))) de stem:[ii(X)_i], est le milieu de l'intervalle stem:[x_i = (a_− + a_+)//2], avec la variance associée
+
+[[eq_6]]
+[stem]
+++++
+u^2(x_i) = (a_+ - a_-)^2//12
+++++
+
+Si l'on note stem:[2a] la différence entre les deux limites, stem:[a_+ − a_−], l'<<eq_6>> devient alors
+
+[[eq_7]]
+[stem]
+++++
+u^2 (x_i) = a^2//3
+++++
+
+NOTE: Lorsqu'une composante d'incertitude déterminée de cette manière contribue significativement à l'incertitude d'un résultat de mesure, il est prudent d'obtenir des données complémentaires pour son évaluation ultérieure.
+
+[[example1_4-3-7]]
+[example]
+Un manuel donne la valeur du coefficient de dilatation linéique du cuivre pur à 20 °C, stem:[alpha_{20}("Cu")] comme étant égal à stem:[16.52 xx 10^{-6}" "rm(°C)^{-1}] et énonce simplement que «l'erreur sur cette valeur ne devrait pas dépasser stem:[0.40 xx 10^{-6}" "rm(°C)^{-1}]». Sur la base de cette information limitée, il n'est pas déraisonnable de supposer que la valeur de stem:[alpha_{20}("Cu")] est située avec une probabilité égale dans l'intervalle compris entre stem:[16.12 xx 10^{-6}" "rm(°C)^{-1}] et stem:[16.92 xx 10^{-6}" "rm(°C)^{-1}], et qu'il est très peu vraisemblable que stem:[alpha_{20}("Cu")] soit situé en dehors de cet intervalle. La variance de cette loi rectangulaire symétrique des valeurs possibles de stem:[alpha_{20}("Cu")] de demi-largeur stem:[a = 0.40 xx 10^{-6}" °C"^{-1}] est alors, à partir de l'<<eq_7>>, stem:[u^2(alpha_{20}) = (0.40 xx 10^{-6}" "rm(°C)^{-1})^2//3 = 53.3 xx 10^{-15}" "rm(°C)^{-2}], et l'incertitude-type est stem:[u(alpha_{20})=(0.40 xx 10^{-6}" "rm(°C)^{-1})//sqrt(3) = 0.23 xx 10^{-6}" "rm(°C)^{-1}].
+
+[[example2_4-3-7]]
+[example]
+Les spécifications d'un fabricant pour un voltmètre numérique indiquent qu'«entre un et deux ans après l'étalonnage de l'instrument, son exactitude sur le calibre 1 V est égale à stem:[14 xx 10^{-6}]fois la lecture plus stem:[2 xx 10^{-6}] fois le calibre». Supposons que l'instrument soit utilisé 20 mois après étalonnage pour mesurer une différence de potentiel stem:[ii(V)] sur son calibre stem:[1" "rm(V)] et que l'on trouve la ((moyenne arithmétique)) d'un nombre d'((observations répétées)) indépendantes être égale à stem:[ii(V) = 0.928571" "rm(V)] avec une incertitude-type de Type A égale à stem:[u(bar(ii(V))) = 12" "mu rm(V)]. L'évaluation de Type B de l'incertitude-type se déduit des spécifications du fabricant si l'on suppose que l'exactitude indiquée fournit les limites symétriques d'une correction additive à stem:[bar(ii(V))], stem:[Delta bar(ii(V))], d'espérance mathématique(((espérance mathématique (ou valeur espérée)))) égale à zéro et pouvant se situer avec une probabilité égale à n'importe quel endroit entre ces limites. La demi-largeur a de la loi rectangulaire symétrique des valeurs possibles de stem:[Delta bar(ii(V))], est alors stem:[a = (14 xx 10^{-6}) xx (0.928571" "rm(V)) + (2 xx 10^{-6}) xx (1" "rm(V)) = 15" "rm(muV)] et, à partir de l'<<eq_7>>, stem:[u^2(Delta bar(ii(V))) = 75 " "rm(muV)^2] et stem:[u(Delta bar(ii(V))) = 8.7" "rm(muV)]. L'estimation de la valeur du mesurande stem:[ii(V)], notée par simplification avec le même symbole stem:[V], est donnée par stem:[ii(V) = bar(ii(V)) + Delta bar(ii(V)) = 0.928571" "rm(V)]. On peut obtenir l'incertitude-type composée de cette estimation par la composition de l'incertitude-type de Type A de stem:[bar(ii(V))] égale à stem:[12" "rm(muV)], avec l'incertitude-type de Type B de stem:[Delta bar(ii(V))] , égale à stem:[8.7" "rm(muV)]. La méthode générale de composition des composantes de l'incertitude-type est donnée à l'<<cls_5>>, avec cet exemple particulier traité en <<scls_5-1-5>>.
+
+
+[[scls_4-3-8]]
+==== {blank}
+
+En <<scls_4-3-7>>, les limites supérieure et inférieure stem:[a_+] et stem:[a_−] pour la grandeur d'entrée stem:[ii(X)_i] peuvent ne pas être symétriques par rapport à sa meilleure estimation stem:[x_i]; plus spécifiquement, si la limite inférieure est écrite stem:[a_− = x_i − b_−] et la limite supérieure stem:[a_+ = x_i + b_+], alors stem:[b_− != b_+]. Puisque, dans ce cas, stem:[x_i] (supposé être l'espérance mathématique(((espérance mathématique (ou valeur espérée)))) de stem:[ii(X)_i]) n'est pas au centre de l'intervalle de stem:[a_−] à stem:[a_+], la loi de probabilité de stem:[ii(X)_i] ne peut pas être uniforme sur tout l'intervalle. On peut cependant ne pas avoir suffisamment d'information disponible pour choisir une loi convenable; différents modèles conduiront à différentes expressions de la variance. En l'absence de cette information, l'approximation la plus simple est
+
+[[eq_8]]
+[stem]
+++++
+u^2(x_i) = {(b_+ + b_-)^2}/12 = {(a_+ - a_-)^2}/12
+++++
+
+qui est la variance d'une loi rectangulaire de largeur totale stem:[b_+ + b_−]. (Des lois asymétriques(((loi asymétrique))) sont aussi développées en <<scls_F-2-4-4>> et <<scls_G-5-3>>.)
+
+[example]
+Si la littérature donne la valeur du coefficient pour l'<<example1_4-3-7>> comme étant égale à stem:[alpha_{20}("Cu") = 16.52 xx 10^{-6}" "rm(°C)^{-1}] et s'il est fait état que «la plus petite valeur possible est stem:[16.40 xx 10^{-6}" "rm(°C)^{-1}]" et la plus grande valeur possible est stem:[16.40 xx 10^{-6}" "rm(°C)^{-1}]», alors stem:[b_- = 0.12 xx 10^{-6}" "rm(°C)^{-1}] et, de l'<<eq_8>>, on obtient stem:[u(alpha_{20}) = 0.15 xx 10^{-6}" °C"^{-1}].
+
+NOTE: Dans de nombreuses situations pratiques de mesure où les limites sont asymétriques, il peut être approprié d'appliquer une correction de valeur stem:[(b_+ - b_-)//2] à l'estimation stem:[x_i], de sorte que la nouvelle estimation stem:[x'_i] de stem:[ii(X)_i] se situe au milieu des limites: stem:[x'_i = (a_- + a_+)//2]. Cela ramène la situation au cas de <<scls_4-3-7>>, avec de nouvelles valeurs stem:[b'_+ = b'_{-} = (b_+ + b_-)//2 = (a_+ - a_-)//2 = a].
+
+NOTE: Sur la base du principe du maximum d'entropie(((principe de l'entropie maximale))), la ((densité de probabilité)) pour le cas asymétrique peut être prise égale à stem:[p(ii(X)_i) = ii(A)" "exp[- ii(lambda) (ii(X)_i - x_i)], avec stem:[ii(A) = [b - exp(ii(lambda) b_-) + b + exp(- ii(lambda) b_+)\]^{-1}] et stem:[ii(lambda) = {exp[ii(lambda) (b_- + b_+)\]-1}//{b_ exp[ii(lambda)(b_- + b_+)] + b_+}]. Cela conduit à la variance stem:[u^2(x_i) = b_ + b_- - (b_ + -b_-)//ii(lambda)]; pour stem:[b_+ > b_-], stem:[ii(lambda) > 0] et pour stem:[b_+ < b_-], stem:[ii(lambda) < 0].
+
+
+[[scls_4-3-9]]
+==== {blank}
+
+En <<scls_4-3-7>>, parce qu'il n'y avait pas de connaissance spécifique sur les valeurs possibles de stem:[ii(X)_i] à l'intérieur de ses limites(((limites d'une grandeurd'entrée))) estimées stem:[a_−] à stem:[a_+], on aurait pu seulement supposer que stem:[ii(X)_i] avait la même ((probabilité)) de prendre n'importe quelle valeur à l'intérieur de ces limites et une ((probabilité)) nulle en dehors. De telles discontinuités sous forme de fonction échelon pour une loi de ((probabilité)) se rencontrent rarement en physique. Dans de nombreux cas, il est plus réaliste de s'attendre à ce que les valeurs autour des limites soient sensiblement inférieures à celles situées vers le milieu. Il est alors raisonnable de remplacer la ((loi rectangulaire)) symétrique par une ((loi trapézoïdale)) symétrique de pentes égales (un trapèze isocèle), avec la base de largeur stem:[a_+ − a_− = 2a], et le sommet de largeur stem:[2a ii(beta)], avec stem:[0 <= ii(beta) <= 1]. Lorsque stem:[ii(beta) -> 1] cette ((loi trapézoïdale)) tend vers la ((loi rectangulaire)) de <<scls_4-3-7>>, alors que pour stem:[ii(beta) = 0] c'est une ((loi triangulaire)) [voir <<scls_4-4-6>> et <<fig_2b>>)]. En supposant une telle ((loi trapézoïdale)) pour stem:[ii(X)_i], on trouve que l'espérance mathématique(((espérance mathématique (ou valeur espérée)))) de stem:[ii(X)_i] est stem:[x_i = (a_- + a_+)//2] et sa variance est
+
+[[eq_9a]]
+[stem,subsequence=A]
+++++
+u^2 (x_i) = a^2 (1 + ii(beta)^2)//6
+++++
+
+qui devient, pour la ((loi triangulaire)), stem:[ii(beta) = 0],
+
+[[eq_9b]]
+[stem,subsequence=A]
+++++
+u^2 (x_i)= a^2//6
+++++
+
+
+NOTE: Pour une ((loi normale)) d'espérance mathématique(((espérance mathématique (ou valeur espérée)))) stem:[ii(mu)] et d'écart-type stem:[ii(sigma)], l'intervalle stem:[ii(mu) pm 3 ii(sigma)] recouvre approximativement 99,73 pour-cent des valeurs possibles de la loi. Si les limites supérieure et inférieure stem:[a_+] et stem:[a_−] définissent alors des limites à 99,73 pour-cent plutôt qu'à 100 pour-cent et si l'on peut supposer stem:[ii(X)_i] comme étant approximativement distribué normalement plutôt que de ne pas avoir de renseignement spécifique sur stem:[ii(X)_i] entre les limites comme en <<scls_4-3-7>>, alors stem:[u^2(x_i) = a^2//9]. Par comparaison, la variance d'une loi rectangulaire symétrique de demi-largeur stem:[a] est égale à stem:[a^2//3] [<<eq_7>>] et celle d'une ((loi triangulaire)) symétrique de demi-largeur a est stem:[a^2//6] [<<eq_9b>>]. Il est surprenant de constater que l'ordre de grandeur des variances des trois lois est similaire en regard des grandes différences sur la quantité d'informations qui les justifie.
+
+
+[[note2_4-3-9]]
+NOTE: La loi trapézoïdale est équivalente à la convolution(((convolution,de lois de probabilité))) de deux lois rectangulaires <<DIETRICH1991>>, de demi-largeur stem:[a_1] égale à la demi-largeur moyenne du trapèze, stem:[a_1 = a (1 + ii(beta))//2], l'autre de demi-largeur stem:[a_2] égale à la largeur moyenne de l'une des portions triangulaires du trapèze, stem:[a_2 = a (1 - ii(beta))//2]. La variance de la loi est stem:[u^2 = a_1^2//3 + a_2^2//3]. La loi résultante peut être interprétée comme une loi rectangulaire dont la largeur stem:[2 a_1] possède elle-même une incertitude représentée par une loi rectangulaire de largeur stem:[2 a_2] et modélise le fait que les limites sur une grandeur d'entrée ne sont pas connues exactement. Mais, même si stem:[a_2] atteint 30 pour-cent de stem:[a_1], stem:[u] dépasse stem:[a_1//sqrt(3)] de moins de 5 pour-cent.
+
+
+[[scls_4-3-10]]
+==== {blank}
+
+Il est important de ne pas compter deux fois les mêmes composantes de l'incertitude. Si une composante d'incertitude(((incertitude, décompte double des composantes de l'))) provenant d'un effet particulier est obtenue par une évaluation de Type B, elle ne doit être introduite comme composante indépendante dans le calcul de l'incertitude-type composée du résultat de mesure que dans la limite où l'effet ne contribue pas à la variabilité observée des observations. L'incertitude due à la partie de l'effet qui contribue à la variabilité observée est déjà incluse dans la composante de l'incertitude obtenue par l'analyse statistique des observations.
+
+
+[[scls_4-3-11]]
+==== {blank}
+
+Les exemples de l'évaluation de Type B(((évaluation de Type B de l'incertitude))) de l'incertitude-type de <<scls_4-3-3>> à <<scls_4-3-9>> sont seulement proposés à titre indicatif. De plus, il faut fonder le plus possible les évaluations de l'incertitude sur des données quantitatives, comme cela est souligné en <<scls_3-4-1>> et <<scls_3-4-2>>.
+
+
+[[scls_4-4]]
+=== Illustration graphique de l'évaluation de l'incertitude-type(((incertitude-type, illustration graphique de l'évaluation de l')))
+
+[[scls_4-4-1]]
+==== {blank}
+
+La <<fig_1>> représente l'estimation de la valeur d'une grandeur d'entrée stem:[ii(X)_i] et l'évaluation de l'incertitude de cette estimation à partir de la loi inconnue des valeurs mesurées possibles de stem:[ii(X)_i], ou à partir de la ((loi de probabilité)) de stem:[ii(X)_i], échantillonnée par des ((observations répétées)).(((évaluation de Type A de l'incertitude)))
+
+
+[[scls_4-4-2]]
+==== {blank}
+
+Dans la <<fig_1a>>, on suppose que la grandeur d'entrée stem:[ii(X)_i] est une température stem:[t] et que sa loi inconnue est normale(((loi normale))) avec une espérance mathématique(((espérance mathématique (ou valeur espérée)))) stem:[ii(mu)_t = 100" "rm(°C)] et un écart-type stem:[ii(sigma) = 1.5" "rm(°C)]. Sa ((densité de probabilité)) (voir <<scls_C-2-14>>) est alors
+
+
+[stem%unnumbered]
+++++
+p(t) = 1/{ii(sigma) sqrt(2pi)} exp[- 1/2 ({t - ii(mu)_t}/ii(sigma))^2]
+++++
+
+NOTE: La définition d'une ((densité de probabilité)) stem:[p(z)] nécessite que la relation stem:[int p(z)"d"z = 1] soit satisfaite.
+
+
+[[scls_4-4-3]]
+==== {blank}
+
+La <<fig_1b>> présente un ((histogramme)) de stem:[n = 20] ((observations répétées)) stem:[t_k] de la température stem:[t] qui sont supposées avoir été prises au hasard à partir de la loi de la <<fig_1a>>. Pour obtenir l'((histogramme)), les 20 observations ou échantillons, dont les valeurs sont données au <<table_1>>, sont groupés en intervalles de largeur stem:[1" "rm(°C)]. (La préparation d'un ((histogramme)) n'est évidemment pas nécessaire pour l'analyse statistique des données.)(((évaluation de Type A de l'incertitude)))
+
+[[fig_1]]
+.Illustration graphique de l'évaluation de l'incertitude-type d'une grandeur d'entrée à partir d'((observations répétées))
+====
+[[fig_1a]]
+image::figure1a.png[]
+
+[[fig_1b]]
+image::figure1b.png[]
+====
+
+[[table_1]]
+.Vingt ((observations répétées)) de la température t groupées en intervalles de stem:[1" "rm(°C)]
+[cols="3*"]
+|===
+2+| Intervalle +
+stem:[t_1 <= t < t_2]
+.2+| Température +
+stem:[t//rm(°C)]
+| stem:[t_1//"°C"] | stem:[t_2//rm(°C)]
+
+| stem:[94.5] | stem:[95.5] | --
+| stem:[95.5] | stem:[96.5] | --
+| stem:[96.5] | stem:[97.5] | stem:[96.90]
+| stem:[97.5] | stem:[98.5] | stem:[98.18]; stem:[98.25]
+| stem:[98.5] | stem:[99.5] | stem:[98.61]; stem:[99.03]; stem:[99.49]
+| stem:[99.5] | stem:[100.5] | stem:[99.56]; stem:[99.74]; stem:[99.89]; stem:[100.07]; stem:[100.33]; stem:[100.42]
+| stem:[100.5] | stem:[101.5] | stem:[100.68]; stem:[100.95]; stem:[101.11]; stem:[101.20]
+| stem:[101.5] | stem:[102.5] | stem:[101.57]; stem:[101.84]; stem:[102.36]
+| stem:[102.5] | stem:[103.5] | stem:[102.72]
+| stem:[103.5] | stem:[104.5] | --
+| stem:[104.5] | stem:[105.5] | --
+|===
+
+La ((moyenne arithmétique)) stem:[bar(t)] des stem:[n = 20] observations, calculée selon l'<<eq_3>> est stem:[bar(t) = 100.145" "rm(°C) ~~ 100.14" "rm(°C)] et elle est supposée être la meilleure estimation de l'espérance mathématique(((espérance mathématique (ou valeur espérée)))) stem:[ii(mu)_t] de stem:[t] sur la base des données disponibles. L'écart-type expérimental stem:[s(t_k)] calculé selon l'<<eq_4>> est stem:[s(t_k) = 1.489" "rm(°C) ~~ 1.49" "rm(°C)], et l'((écart-type expérimental de la moyenne)) stem:[s(bar(t))] calculé selon l'<<eq_5>> et qui est l'incertitude-type stem:[u(bar(t))] de la moyenne stem:[bar(t)], est stem:[u(bar(t)) = s(bar(t)) = s(t_k)//sqrt(20) = 0.333" °C" ~~ 0.33" "rm(°C)]. (En vue de calculs ultérieurs, on a intérêt à conserver tous les chiffres.)
+
+NOTE: Bien que les données du <<table_1>> ne soient pas invraisemblables si l'on considère l'utilisation généralisée de thermomètres électroniques numériques à haute résolution, elles sont données pour illustration et ne doivent pas être nécessairement interprétées comme décrivant un mesurage réel.
+
+
+[[scls_4-4-4]]
+==== {blank}
+
+La <<fig_2>> représente l'estimation de la valeur d'une grandeur d'entrée stem:[ii(X)_i] et l'évaluation de l'incertitude de cette estimation à partir d'une ((loi _a priori_)) des valeurs possibles de stem:[ii(X)_i], ou d'une ((loi de probabilité)) de stem:[ii(X)_i], sur la base de la totalité des informations disponibles. Pour les deux cas présentés, on suppose de nouveau que la grandeur d'entrée est une température stem:[t].(((évaluation de Type B de l'incertitude)))
+
+
+[[scls_4-4-5]]
+==== {blank}
+
+Dans le cas illustré par la <<fig_2a>>, on suppose que l'on possède peu d'information sur la grandeur d'entrée stem:[t] et que tout ce que l'on peut faire est de supposer que stem:[t] est décrit par une loi de probabilité _a priori_ rectangulaire(((loi rectangulaire))) symétrique de limite inférieure stem:[a_− = 96" "rm(°C)], et de limite supérieure(((limites d'une grandeurd'entrée))) stem:[a_+ = 104" "rm(°C)], avec une demi-largeur égale alors à stem:[a = (a_+ - a_-)//2 = 4" "rm(°C)] (voir <<scls_4-3-7>>). La ((densité de probabilité)) de stem:[t] est alors
+
+[stem%unnumbered]
+++++
+{:(p(t) = 1//(2a)," pour ",a_(-) <= t <= a_+),(p(t) = 0," pour ",t<a_(-)" ou "t>a^+):}
+++++
+
+Comme indiqué en <<scls_4-3-7>>, la meilleure estimation de stem:[t] est son espérance mathématique(((espérance mathématique (ou valeur espérée)))) stem:[ii(mu)_t = (a_+ + a_-)//2 = 100" "rm(°C)], selon <<scls_C-3-1>>. L'incertitude-type de cette estimation est stem:[u(ii(mu)_t) = a//sqrt(3) ~~ 2.3" "rm(°C)], selon <<scls_C-3-2>> [voir <<eq_7>>].
+
+[[fig_2]]
+.Illustration graphique de l'évaluation de l'incertitude-type d'une grandeur d'entrée à partir d'une loi _a priori_
+====
+[[fig_2a]]
+image::figure2a.png[]
+
+[[fig_2b]]
+image::figure2b.png[]
+====
+
+[[scls_4-4-6]]
+==== {blank}
+
+Pour le cas illustré par la <<fig_2b>>, on suppose que l'information disponible concernant stem:[t] est moins limitée et que stem:[t] peut être décrit par une loi de probabilité _a priori_ triangulaire symétrique, de même limite inférieure stem:[a_− = 96" "rm(°C)], de même limite supérieure(((limites d'une grandeurd'entrée))) stem:[a_+ = 104" "rm(°C)] et, donc, de même demi-largeur stem:[a = (a_+ - a_-)//2 = 4" "rm(°C)] comme en <<scls_4-4-5>> (voir <<scls_4-3-9>>). La ((densité de probabilité)) de stem:[t] est alors
+
+[stem%unnumbered]
+++++
+{:(p(t) = (t - a_-)//a^2," pour ",a_(-) <= t <= (a_+ + a_-)//2),
+(p(t) = (a_+ - t)//a^2," pour ",(a_+ + a_-)//2 <= t <= a_+),
+(p(t) = 0," pour ",t<a_(-)" ou "t>a_+):}
+++++
+
+Comme cela est indiqué en <<scls_4-3-9>>, l'espérance mathématique(((espérance mathématique (ou valeur espérée)))) de stem:[t] est stem:[ii(mu)_t = (a_+ + a_-)//2 = 100" "rm(°C)], selon <<scls_C-3-1>>. L'incertitude-type de cette estimation est stem:[u(ii(mu)_t) = a//sqrt(6) ~~ 1.6" "rm(°C)], selon <<scls_C-3-2>> [voir <<eq_9b>>].
+
+La valeur ci-dessus, stem:[u(ii(mu)_t) = 1.6" "rm(°C)], peut être comparée à stem:[u(ii(mu)_t) = 2.3" "rm(°C)] obtenu en <<scls_4-4-5>> à partir d'une ((loi rectangulaire)) de même largeur de stem:[8" "rm(°C)]; elle peut être aussi comparée à σstem:[ii(sigma) = 1.5" °C"] de la ((loi normale)) de la <<fig_1a>> pour laquelle la largeur de stem:[-2.58 ii(sigma)] à stem:[+2.58 ii(sigma)], qui comprend 99 pour-cent de la loi, est de l'ordre de stem:[8" "rm(°C)], et elle peut enfin être comparée à stem:[u(t) = 0.33" "rm(°C)] obtenu en <<scls_4-4-3>> à partir de 20 observations supposées avoir été prises au hasard à partir de la même ((loi normale)).(((évaluation de Type B de l'incertitude)))

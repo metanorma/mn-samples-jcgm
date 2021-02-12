@@ -1,0 +1,495 @@
+
+[[annexB]]
+[appendix,obligation=normative]
+== Termes métrologiques généraux
+
+[[scls_B-1]]
+=== Origine des définitions
+
+Les définitions des termes métrologiques généraux ayant rapport avec ce _Guide_ et données ci-après proviennent du _Vocabulaire international des termes généraux et fondamentaux de métrologie_ (en abrégé VIM), deuxième édition, 1993 footnoteblock:[f8] <<International1993>>, publié par l'Organisation internationale de normalisation \(((ISO))) au nom des sept organisations qui ont apporté leur soutien à sa mise au point et nommé les experts qui l'ont préparé: le Bureau international des poids et mesures \(((BIPM))), la Commission électrotechnique internationale(((CEI))), la Fédération internationale de chimie clinique \(((FICC))), l'ISO, l'Union internationale de chimie pure et appliquée \(((UICPA))), l'Union internationale de physique pure et appliquée \(((UIPPA))) et l'Organisation internationale de métrologie légale \(((OIML))). Le VIM doit être la source consultée en priorité pour les définitions de termes qui ne seraient pas inclus ci-après dans cette annexe ou dans le texte du _Guide_.
+
+[[f8]]
+[NOTE]
+--
+*Note de bas de page à la version 2008:*
+
+La troisième édition du vocabulaire a été publiée en 2008, sous le titre JCGM 200:2008, _Vocabulaire international de métrologie — Concepts fondamentaux et généraux et termes associés (VIM)._
+--
+
+NOTE: Certains termes et concepts statistiques fondamentaux sont donnés en <<annexC>>, tandis que les termes «valeur vraie», «erreur» et «incertitude» sont développés de manière plus approfondie en <<annexD>>.
+
+[[scls_B-2]]
+=== Définitions
+
+Comme pour l'<<cls_2>>, dans les définitions suivantes, l'utilisation de parenthèses autour de mots de certains termes signifie que ces mots peuvent être omis s'il n'y a pas d'ambiguïté à craindre.
+
+Les termes en caractères gras dans certaines notes correspondent à des termes métrologiques complémentaires définis dans ces notes sous forme implicite ou explicite (voir <<International1993>>).
+
+
+[[scls_B-2-1]]
+==== grandeur (mesurable)
+
+attribut d'un phénomène, d'un corps ou d'une substance, qui est susceptible d'être distingué qualitativement et déterminé quantitativement
+
+[[note1_B-2-1]]
+NOTE: Le terme «grandeur» peut se rapporter à une grandeur dans un sens général (voir <<example1_B-2-1>>) ou à une *((grandeur particulière))* (voir <<example2_B-2-1>>).
+
+[[example1_B-2-1]]
+[example]
+Grandeurs dans un sens général: longueur, temps, masse, température, résistance électrique, concentration en quantité de matière.(((grandeur mesurable)))
+
+[[example2_B-2-1]]
+[example]
+====
+Grandeurs particulières:
+
+* longueur d'une tige donnée
+* résistance électrique d'un échantillon donné de fil
+* concentration en quantité de matière d'éthanol dans un échantillon donné de vin.
+====
+
+NOTE: Les grandeurs qui peuvent être classées les unes par rapport aux autres en ordre croissant (ou décroissant) sont appelées *grandeurs de même nature*.
+
+[NOTE]
+====
+Les grandeurs de même nature peuvent être groupées ensemble en *catégories de grandeurs*, par exemple:
+
+* travail, chaleur, énergie
+* épaisseur, circonférence, longueur d'onde.
+====
+
+NOTE: Des *symboles de grandeurs* sont donnés dans l'ISO 31 footnoteblock:[f9].
+
+[[f9]]
+[NOTE]
+--
+*Note de bas de page à la version 2008:*
+
+L'ISO 31 (toutes les parties) est en cours de révision sous la référence ISO 80000 ou ((CEI)) 80000. (Certaines parties ont déjà été publiées.)
+--
+
+// [VIM:1993, definition 1.1]
+[.source]
+<<International1993>>, definition 1.1
+
+
+[[scls_B-2-2]]
+==== valeur (d'une grandeur)
+
+index-range:valGran[(((valeur d'une grandeur)))]expression quantitative d'une grandeur particulière, généralement sous la forme d'une unité de mesure multipliée par un nombre
+
+[example]
+Longueur d'une tige: 5,34 m ou 534 cm.
+
+[example]
+Masse d'un corps: 0,152 kg ou 152 g.
+
+[example]
+Quantité de matière d'un échantillon d'eau (H~2~O): 0,012 mol ou 12 mmol.
+
+NOTE: La valeur d'une grandeur peut être positive, négative ou nulle.
+
+NOTE: La valeur d'une grandeur peut être exprimée de plus d'une façon.
+
+NOTE: Les valeurs des grandeurs de dimension un sont généralement exprimées sous la forme de nombres.
+
+NOTE: Certaines grandeurs, pour lesquelles on ne sait pas définir leur rapport à une unité, peuvent être exprimées par référence à une échelle de repérage ou à un procédé de mesure spécifié ou aux deux.[[valGran]]
+
+// [VIM:1993, definition 1.18]
+[.source]
+<<International1993>>, definition 1.18
+
+
+[[scls_B-2-3]]
+==== valeur vraie (d'une grandeur)
+
+index-range:valVra[(((valeur vraie d'une grandeur)))]valeur compatible avec la définition d'une grandeur particulière donnée
+
+NOTE: C'est une valeur que l'on obtiendrait par un mesurage parfait.
+
+NOTE: Toute valeur vraie est par nature indéterminée.
+
+NOTE: L'article indéfini «une» plutôt que l'article défini «la» est utilisé en conjonction avec «valeur vraie» parce qu'il peut y avoir plusieurs valeurs correspondant à la définition d'une grandeur particulière donnée.[[valVra]]
+
+// [VIM:1993, definition 1.19]
+[.source]
+<<International1993>>, definition 1.19
+
+Commentaire du _Guide_: voir <<annexD>>, en particulier <<scls_D-3-5>> qui expose la raison pour laquelle le terme «valeur vraie» n'est pas utilisé dans le présent _Guide_ et pourquoi les termes «valeur vraie d'un mesurande» (ou d'une grandeur) et «valeur d'un mesurande» (ou d'une grandeur) sont considérés comme équivalents.
+
+
+[[scls_B-2-4]]
+==== valeur conventionnellement vraie (d'une grandeur)
+
+index-range:valConv[(((valeur conventionnellement vraie d'une grandeur)))]valeur attribuée à une grandeur particulière et reconnue, parfois par convention, comme la représentant avec une incertitude appropriée pour un usage donné
+
+[example]
+En un lieu donné, la valeur attribuée à la grandeur réalisée par un étalon de référence peut être prise comme étant une valeur conventionnellement vraie.
+
+[example]
+Valeur recommandée par CODATA (1986) pour la constante d'Avogadro, stem:[ii(N)_A:" "6.0221367 xx 10^{23}" "rm(mol)^{-1}].
+
+
+NOTE: La valeur conventionnellement vraie est quelquefois appelée *valeur assignée, meilleure estimation* de la valeur, *valeur convenue* ou *valeur de référence*; le terme «valeur de référence», dans ce sens, ne doit pas être confondu avec le même terme utilisé dans le sens de la note dans le ((VIM)):1993, définition 5.7.
+
+NOTE: On utilise souvent un grand nombre de résultats de mesures d'une grandeur pour établir une valeur conventionnellement vraie.[[valConv]]
+
+// [VIM:1993, definition 1.20]
+[.source]
+<<International1993>>, definition 1.20
+
+Commentaire du _Guide_: voir le commentaire du _Guide_ pour <<scls_B-2-3>>.
+
+
+[[scls_B-2-5]]
+==== mesurage
+
+index-range:mesurage[(((mesurage)))]ensemble d'opérations ayant pour but de déterminer une valeur d'une grandeur
+
+NOTE: Le déroulement des opérations peut être automatique.[[mesurage]]
+
+// [VIM:1993, definition 2.1]
+[.source]
+<<International1993>>, definition 2.1
+
+
+[[scls_B-2-6]]
+==== principe de mesure
+
+index-range:prinMes[(((principe de mesure)))]base scientifique d'un mesurage
+
+[example]
+L'effet thermoélectrique utilisé pour le mesurage de la température.
+
+[example]
+L'effet Josephson utilisé pour le mesurage de la tension électrique.
+
+[example]
+L'effet Doppler utilisé pour le mesurage de la vitesse.
+
+[example]
+L'effet Raman utilisé pour le mesurage du nombre d'onde des vibrations moléculaires.[[prinMes]]
+
+// [VIM:1993, definition 2.3]
+[.source]
+<<International1993>>, definition 2.3
+
+
+[[scls_B-2-7]]
+==== méthode de mesure
+
+index-range:methMes[(((méthode de mesure)))]succession logique des opérations, décrites d'une manière générique, mises en oeuvre lors de l'exécution de mesurages
+
+[NOTE]
+====
+La méthode de mesure peut être qualifiée de diverses façons telles que:
+
+* méthode de substitution
+* méthode différentielle
+* méthode de zéro.[[methMes]]
+====
+
+// [VIM:1993, definition 2.4]
+[.source]
+<<International1993>>, definition 2.4
+
+
+[[scls_B-2-8]]
+==== mode opératoire (de mesure)
+
+ensemble des opérations, décrites d'une manière spécifique, mises en oeuvre lors de l'exécution de mesurages particuliers selon une méthode donnée
+
+NOTE: Le mode opératoire est habituellement décrit dans un document qui est quelquefois appelé lui-même «mode opératoire» et qui donne assez de détails pour qu'un opérateur puisse effectuer un mesurage sans avoir besoin d'autres informations.(((procédure de mesure)))
+
+// [VIM:1993, definition 2.5]
+[.source]
+<<International1993>>, definition 2.5
+
+
+[[scls_B-2-9]]
+==== mesurande
+
+index-range:mesurande[(((mesurande)))]grandeur particulière soumise à mesurage
+
+[example]
+Pression de vapeur d'un échantillon donné d'eau à 20 °C.
+
+NOTE: La définition du mesurande peut nécessiter des indications relatives à des grandeurs telles que le temps, la température et la pression.[[mesurande]]
+
+// [VIM:1993, definition 2.6]
+[.source]
+<<International1993>>, definition 2.6
+
+
+[[scls_B-2-10]]
+==== grandeur d'influence
+
+index-range:granInf[(((grandeur d'influence)))]grandeur qui n'est pas le mesurande mais qui a un effet sur le résultat du mesurage
+
+[example]
+Température d'un micromètre lors de la mesure d'une longueur.
+
+[example]
+Fréquence lors de la mesure de l'amplitude d'une tension électrique alternative.
+
+[example]
+Concentration en bilirubine lors de la mesure de la concentration en hémoglobine dans un échantillon de plasma sanguin humain.[[granInf]]
+
+// [VIM:1993, definition 2.7]
+[.source]
+<<International1993>>, definition 2.7
+
+Commentaire du _Guide_: la définition de la grandeur d'influence doit se comprendre comme incluant les valeurs associées aux étalons, aux matériaux de référence, et aux données de référence, valeurs dont peut dépendre le résultat d'un mesurage, aussi bien que les phénomènes tels que les fluctuations à court terme de l'instrument de mesure et les grandeurs telles que la température ambiante, la pression atmosphérique et l'humidité.
+
+
+[[scls_B-2-11]]
+==== résultat d'un mesurage
+
+index-range:resMes[(((résultat d'un mesurage)))]valeur attribuée à un mesurande, obtenue par mesurage[[resMes]]
+
+[NOTE]
+====
+Lorsqu'on donne un résultat, on indiquera clairement si l'on se réfère:
+
+* à l'indication
+* au résultat brut
+* au résultat corrigé
+
+et si cela comporte une moyenne obtenue à partir de plusieurs valeurs.
+====
+
+NOTE: Une expression complète du résultat d'un mesurage comprend des informations sur l'incertitude de mesure.
+
+// [VIM:1993, definition 3.1]
+[.source]
+<<International1993>>, definition 3.1
+
+
+[[scls_B-2-12]]
+==== résultat brut
+
+résultat d'un mesurage avant correction de l'erreur systématique(((résultat non corrigé)))
+
+// [VIM:1993, definition 3.3]
+[.source]
+<<International1993>>, definition 3.3
+
+
+[[scls_B-2-13]]
+==== résultat corrigé
+
+index-range:resCorr[(((résultat corrigé)))]résultat d'un mesurage après correction de l'erreur systématique[[resCorr]]
+
+// [VIM:1993, definition 3.4]
+[.source]
+<<International1993>>, definition 3.4
+
+
+[[scls_B-2-14]]
+==== exactitude de mesure
+
+index-range:exactitude[(((exactitude de mesure)))]étroitesse de l'accord entre le résultat d'un mesurage et une valeur vraie du mesurande
+
+NOTE: Le concept d'«exactitude» est qualitatif.
+
+NOTE: Le terme «*((précision))*» ne doit pas être utilisé pour «exactitude».[[exactitude]]
+
+// [VIM:1993, definition 3.5]
+[.source]
+<<International1993>>, definition 3.5
+
+Commentaire du _Guide_: voir le commentaire du _Guide_ pour <<scls_B-2-3>>.
+
+
+[[scls_B-2-15]]
+==== répétabilité (des résultats de mesurage)
+
+étroitesse de l'accord entre les résultats des mesurages successifs du même mesurande, mesurages effectués dans la totalité des mêmes conditions de mesure(((répétabilité des résultats de mesure)))
+
+[[note1_B-2-15]]
+NOTE: Ces conditions sont appelées *((conditions de répétabilité))*.
+
+[NOTE]
+====
+Les ((conditions de répétabilité)) comprennent:
+
+* même mode opératoire
+* même observateur
+* même instrument de mesure utilisé dans les mêmes conditions
+* même lieu
+* répétition durant une courte période de temps.
+====
+
+NOTE: La répétabilité peut s'exprimer quantitativement à l'aide des ((caractéristique))s de dispersion des résultats.
+
+// [VIM:1993, definition 3.6]
+[.source]
+<<International1993>>, definition 3.6
+
+
+[[scls_B-2-16]]
+==== reproductibilité (des résultats de mesurage)
+
+index-range:reprod[(((reproductibilité des résultats de mesure)))]étroitesse de l'accord entre les résultats des mesurages du même mesurande, mesurages effectués en faisant varier les conditions de mesure
+
+NOTE: Pour qu'une expression de la reproductibilité soit valable, il est nécessaire de spécifier les conditions que l'on fait varier.
+
+[NOTE]
+====
+Les conditions que l'on fait varier peuvent comprendre:
+
+* principe de mesure
+* méthode de mesure
+* observateur
+* instrument de mesure
+* étalon de référence
+* lieu
+* conditions d'utilisation
+* temps.
+====
+
+NOTE: La reproductibilité peut s'exprimer quantitativement à l'aide des ((caractéristique))s de dispersion des résultats.
+
+NOTE: Les résultats considérés ici sont habituellement les résultats corrigés.[[reprod]]
+
+// [VIM:1993, definition 3.7]
+[.source]
+<<International1993>>, definition 3.7
+
+
+[[scls_B-2-17]]
+==== écart-type expérimental
+
+index-range:ecart4[(((écart-type expérimental)))]pour une série de stem:[n] mesurages du même mesurande, grandeur stem:[s(q_k)] caractérisant la dispersion des résultats, donnée par la formule:
+
+[stem%unnumbered]
+++++
+s(q_k) = sqrt({sum_{j=1}^n (q_j - bar(q))^2}/{n-1})
+++++
+
+stem:[q_k] étant le résultat du stem:[k]ième mesurage et stem:[bar(q)] la moyenne arithmétique des stem:[n] résultats considérés
+
+[[note1_B-2-17]]
+NOTE: En considérant la série de stem:[n] valeurs comme échantillon d'une loi de probabilité, stem:[bar(q)] est un estimateur sans biais de la moyenne stem:[ii(mu)_q] et stem:[s^2(q_k)] est un estimateur sans biais de la variance stem:[ii(sigma)^2] de cette loi.
+
+[[note2_B-2-17]]
+NOTE: L'expression stem:[s(q_k)//sqrt(n)] est une estimation de l'écart-type de la loi de stem:[bar(q)] et est appelée écart-type *expérimental de la moyenne*(((écart-type expérimental de la moyenne))).
+
+NOTE: L'((écart-type expérimental de la moyenne)) est parfois appelé à tort *erreur de la moyenne*.
+
+NOTE: Adapté du VIM:1993, définition 3.8.
+
+Commentaire du _Guide_: certains symboles utilisés dans le VIM ont été changés pour être cohérent avec les notations utilisées en <<scls_4-2>> de ce _Guide_.
+
+Commentaire du _Guide_ pour la version française: le VIM emploie le terme «distribution» dans les <<note1_B-2-17>> et <<note2_B-2-17>>. En matière de probabilité, le terme «loi» est plus correct.[[ecart4]]
+
+
+[[scls_B-2-18]]
+==== incertitude (de mesure)
+
+index-range:incMes[(((incertitude de mesure)))]paramètre, associé au résultat d'un mesurage, qui caractérise la dispersion des valeurs qui pourraient raisonnablement être attribuées au mesurande
+
+NOTE: Le paramètre peut être, par exemple, un écart-type (ou un multiple de celui-ci) ou la demi-largeur d'un intervalle de niveau de confiance déterminé.
+
+[[note2_B-2-18]]
+NOTE: L'incertitude de mesure comprend, en général, plusieurs composantes. Certaines peuvent être évaluées à partir de la distribution statistique des résultats de séries de mesurages et peuvent être caractérisées par des écarts-types expérimentaux. Les autres composantes, qui peuvent aussi être caractérisées par des écarts-types, sont évaluées en admettant des lois de probabilité, d'après l'expérience acquise ou d'après d'autres informations.
+
+NOTE: Il est entendu que le résultat du mesurage est la meilleure estimation de la valeur du mesurande, et que toutes les composantes de l'incertitude, y compris celles qui proviennent d'effets systématiques, telles que les composantes associées aux corrections et aux étalons de référence, contribuent à la dispersion.[[incMes]]
+
+// [VIM:1993, definition 3.9]
+[.source]
+<<International1993>>, definition 3.9
+
+Commentaire du _Guide_: il est signalé dans le VIM que cette définition et les notes sont identiques à celles de ce _Guide_ (voir <<scls_2-2-3>>).
+
+Commentaire du _Guide_ pour la version française: en <<note2_B-2-18>>, le VIM emploie le terme «distribution de probabilité». Le terme «loi de probabilité» est plus correct.
+
+
+[[scls_B-2-19]]
+==== erreur (de mesure)
+
+index-range:errDeMes[(((erreur de mesure)))]résultat d'un mesurage moins une valeur vraie du ((mesurande))
+
+NOTE: Étant donné qu'une valeur vraie ne peut pas être déterminée, dans la pratique on utilise une valeur conventionnellement vraie [voir VIM:1993, définitions 1.19 (<<scls_B-2-3>>) et 1.20 (<<scls_B-2-4>>)].
+
+NOTE: Lorsqu'il est nécessaire de faire la distinction entre «l'erreur» et «l'erreur relative», la première est parfois appelée «*erreur absolue de mesure*». Il ne faut pas confondre avec la *valeur absolue de l'erreur*, qui est le module de l'erreur.[[errDeMes]]
+
+// [VIM:1993, definition 3.10]
+[.source]
+<<International1993>>, definition 3.10
+
+Commentaire du _Guide_: si le résultat d'un mesurage dépend des valeurs de grandeurs autres que le mesurande, les erreurs des valeurs mesurées de ces grandeurs contribuent à l'erreur sur le résultat du mesurage. Voir aussi le commentaire du _Guide_ pour <<scls_B-2-22>> et <<scls_B-2-3>>.
+
+
+[[scls_B-2-20]]
+==== erreur relative
+
+index-range:errRel[(((erreur relative)))]rapport de l'erreur de mesure à une valeur vraie du mesurande
+
+NOTE: Étant donné qu'une valeur vraie ne peut pas être déterminée, dans la pratique on utilise une valeur conventionnellement vraie [voir VIM:1993, définitions 1.19 (<<scls_B-2-3>>) et 1.20 (<<scls_B-2-4>>)].[[errRel]]
+
+// [VIM:1993, definition 3.12]
+[.source]
+<<International1993>>, definition 3.12
+
+Commentaire du _Guide_: voir le commentaire du _Guide_ pour <<scls_B-2-3>>.
+
+
+[[scls_B-2-21]]
+==== ((erreur aléatoire))
+
+résultat d'un mesurage moins la moyenne d'un nombre infini de mesurages du même mesurande, effectués dans les ((conditions de répétabilité))
+
+NOTE: L'((erreur aléatoire)) est égale à l'erreur moins l'erreur systématique.
+
+NOTE: Comme on ne peut faire qu'un nombre fini de mesurages, il est seulement possible de déterminer une estimation de l'((erreur aléatoire)).
+
+// [VIM:1993, definition 3.13]
+[.source]
+<<International1993>>, definition 3.13
+
+Commentaire du _Guide_: voir aussi le commentaire du _Guide_ pour <<scls_B-2-22>>.
+
+
+[[scls_B-2-22]]
+==== erreur systématique
+
+index-range:errSys[(((erreur systématique)))]moyenne qui résulterait d'un nombre infini de mesurages du même mesurande, effectués dans les ((conditions de répétabilité)), moins une valeur vraie du mesurande
+
+NOTE: L'erreur systématique est égale à l'erreur moins l'((erreur aléatoire)).
+
+NOTE: Comme la valeur vraie, l'erreur systématique et ses causes ne peuvent pas être connues complètement.
+
+NOTE: Pour un instrument de mesure, voir «erreur de justesse» (VIM:1993, définition 5.25).[[errSys]]
+
+// [VIM:1993, definition 3.14]
+[.source]
+<<International1993>>, definition 3.14
+
+Commentaire du _Guide_: l'erreur sur le résultat d'un mesurage (voir <<scls_B-2-19>>) peut souvent être considérée comme provenant d'un certain nombre d'effets systématiques et aléatoires(((aléatoire))) qui contribuent aux composantes individuelles de l'erreur sur le résultat. Voir aussi les commentaires du _Guide_ pour <<scls_B-2-19>> et <<scls_B-2-3>>.
+
+
+[[scls_B-2-23]]
+==== correction
+
+index-range:correction[(((correction)))]valeur ajoutée algébriquement au résultat brut d'un mesurage pour compenser une erreur systématique
+
+NOTE: La ((correction)) est égale à l'opposé de l'erreur systématique estimée.
+
+NOTE: Puisque l'erreur systématique ne peut pas être connue parfaitement, la compensation ne peut pas être complète.[[correction]]
+
+// [VIM:1993, definition 3.15]
+[.source]
+<<International1993>>, definition 3.15
+
+
+[[scls_B-2-24]]
+==== facteur de correction
+
+index-range:facCorr[(((facteur de correction)))]facteur numérique par lequel on multiplie le résultat brut d'un mesurage pour compenser une erreur systématique
+
+NOTE: Puisque l'erreur systématique ne peut pas être connue parfaitement, la compensation ne peut pas être complète.[[facCorr]]
+
+// [VIM:1993, definition 3.16]
+[.source]
+<<International1993>>, definition 3.16

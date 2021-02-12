@@ -1,0 +1,229 @@
+
+[[cls_3]]
+== Concepts fondamentaux
+
+On peut trouver une présentation complémentaire des concepts fondamentaux dans l'<<annexD>> centrée sur les idées de valeur «vraie», d'erreur et d'incertitude et qui comprend des illustrations graphiques de ces concepts, ainsi que dans l'<<annexE>> qui approfondit les motifs et les fondements statistiques de la Recommandation INC-1 (1980), base de ce _Guide_. L'<<annexJ>> est une liste des principaux symboles mathématiques utilisés tout au long du _Guide_.
+
+
+[[scls_3-1]]
+=== Mesurage(((mesurage)))
+
+[[scls_3-1-1]]
+==== {blank}
+
+L'objectif d'un *((mesurage))* (<<scls_B-2-5>>) consiste à déterminer la valeur (<<scls_B-2-2>>) du *((mesurande))* (<<scls_B-2-9>>), c'estàdire la valeur de la *((grandeur particulière))*(((valeur d'une grandeur))) (<<note1_B-2-1>>) à mesurer. En conséquence, un mesurage commence par une définition appropriée du mesurande, de la *((méthode de mesure))* (<<scls_B-2-7>>) et de la *((procédure de mesure))* (<<scls_B-2-8>>).(((mesurande, valeur du)))
+
+NOTE: Le terme «valeur vraie» (voir <<annexD>>) n'est pas utilisé dans ce _Guide_ pour la raison donnée en <<scls_D-3-5>>; on considère que les termes «valeur d'un mesurande» (ou d'une grandeur) et «valeur vraie d'un mesurande» (ou d'une grandeur) sont deux termes équivalents(((valeur vraie d'une grandeur))).
+
+
+[[scls_3-1-2]]
+==== {blank}
+
+En général, le *((résultat d'un mesurage))* (<<scls_B-2-11>>) est seulement une approximation ou *((estimation))* (<<scls_C-2-26>>) de la valeur du mesurande et, de ce fait, est seulement complet lorsqu'il est accompagné par une expression de l'*incertitude* (<<scls_B-2-18>>) de cette ((estimation)).(((mesurande, valeur du)))
+
+
+[[scls_3-1-3]]
+==== {blank}
+
+Dans la pratique, la spécification ou la définition exigée pour le ((mesurande)) est dictée par l'*((exactitude de mesure))* (<<scls_B-2-14>>) exigée pour le mesurage. Le mesurande doit être défini de façon suffisamment complète en rapport avec l'exactitude exigée de sorte que sa valeur soit unique pour tous les objectifs pratiques associés au mesurage. C'est dans ce sens qu'on utilise l'expression «valeur du mesurande» dans ce _Guide_.(((mesurande, valeur du)))
+
+[example]
+Si l'on doit déterminer la longueur nominale d'une barre d'acier de longueur un mètre au micromètre près, sa spécification doit comprendre la température et la pression auxquelles la longueur est définie. Le mesurande peut alors être spécifié comme, par exemple, la longueur de la barre à 25,00 °C footnoteblock:[f7] et 101 325 Pa (avec, en plus, tout autre paramètre de définition jugé nécessaire, tel que la manière de supporter la barre). Cependant, si l'on ne doit déterminer la longueur de la barre qu'au millimètre près, sa spécification ne nécessitera pas la définition d'une température, ou d'une pression, ou de tout autre paramètre.
+
+[[f7]]
+[NOTE]
+--
+*Note de bas de page à la version 2008:*
+
+Conformément à la Résolution 10 de la 22e CGPM (2003), «... le symbole du séparateur décimal pourra être le point sur la ligne ou la virgule sur la ligne...». Le JCGM a décidé d'adopter, dans ses documents en anglais, le point sur la ligne. Cependant, dans le présent document, la virgule sur la ligne a été retenue par souci de cohérence avec la version imprimée.
+--
+
+NOTE: Une définition incomplète du mesurande peut entraîner une composante d'incertitude suffisamment grande pour qu'il soit nécessaire de l'inclure dans l'évaluation de l'incertitude du résultat de mesure(((incertitude due à une définition incomplète du mesurande))) (voir <<scls_D-1-1>>, <<scls_D-3-4>> et <<scls_D-6-2>>).
+
+[[scls_3-1-4]]
+==== {blank}
+
+Dans de nombreux cas, le résultat d'un mesurage est déterminé sur la base de séries d'observations obtenues dans des *((conditions de répétabilité))* (<<note1_B-2-15>>).
+
+
+[[scls_3-1-5]]
+==== {blank}
+
+Les variations entre les ((observations répétées)) sont supposées se produire parce que les *grandeurs d'influence*(((grandeur d'influence))) (<<scls_B-2-10>>) qui peuvent affecter le résultat de mesure ne sont pas maintenues parfaitement constantes.
+
+
+[[scls_3-1-6]]
+==== {blank}
+
+Le modèle mathématique du mesurage(((modèle mathématique de mesure))) qui transforme l'ensemble des ((observations répétées)) en résultat de mesure est d'importance critique parce que, en plus des observations, il comporte généralement les différentes grandeurs d'influence(((grandeur d'influence))) qui ne sont pas connues exactement. La nature imparfaite de la connaissance contribue à l'incertitude du résultat de mesure comme le font les variations des ((observations répétées)) et toute incertitude associée au modèle mathématique lui-même.
+
+
+[[scls_3-1-7]]
+==== {blank}
+
+Ce _Guide_ traite le mesurande comme un scalaire (une grandeur unique). L'extension à un ensemble de mesurandes interdépendants, déterminés simultanément par le même mesurage, nécessite de remplacer le mesurande scalaire et sa *((variance))* (<<scls_C-2-11>>, <<scls_C-2-20>>, <<scls_C-3-2>>) par un mesurande vectoriel et une *((matrice de covariance))* (<<scls_C-3-5>>). Ce _Guide_ n'envisage ce remplacement que dans les exemples (voir <<scls_H-2>>, <<scls_H-3>> et <<scls_H-4>>).
+
+
+[[scls_3-2]]
+=== Erreurs, effets et corrections(((erreur de mesure)))
+
+[[scls_3-2-1]]
+==== {blank}
+
+Un mesurage présente, en général, des imperfections qui occasionnent une *erreur* (<<scls_B-2-19>>) pour le résultat de mesure. On envisage traditionnellement qu'une erreur possède deux composantes, à savoir une composante *((aléatoire))* (<<scls_B-2-21>>) et une composante *systématique* (<<scls_B-2-22>>).
+
+NOTE: Le concept d'erreur est idéal et les erreurs(((erreur de mesure))) ne peuvent pas être connues exactement.
+
+
+[[scls_3-2-2]]
+==== {blank}
+
+L'((erreur aléatoire)) provient probablement de variations temporelles et spatiales non prévisibles ou stochastiques de grandeurs d'influence. Les effets de telles variations, appelés ci-après _effets aléatoires_(((effet aléatoire)))(((aléatoire))), entraînent des variations pour les ((observations répétées)) du mesurande. Bien qu'il ne soit pas possible de compenser l'((erreur aléatoire)) d'un résultat de mesure, elle peut généralement être réduite en augmentant le nombre d'observations. Son *espérance mathématique(((espérance mathématique (ou valeur espérée))))* ou *valeur espérée* (<<scls_C-2-9>>, <<scls_C-3-1>>) est égale à zéro.
+
+NOTE: L'écart-type expérimental de la moyenne arithmétique d'une série d'observations (voir <<scls_4-2-3>>) _n'est pas_ l'((erreur aléatoire)) de la moyenne, bien qu'on le désigne ainsi dans certaines publications. Mais c'est, en fait, une mesure de l'_incertitude_ de la moyenne due aux effets aléatoires(((aléatoire))). La valeur exacte de l'erreur sur la moyenne provenant de ces effets ne peut pas être connue.
+
+NOTE: Ce _Guide_ prend grand soin de distinguer les termes «erreur» et «incertitude». Ils ne sont pas synonymes mais représentent des concepts complètement différents. Ils ne doivent pas être confondus ou utilisés à tort l'un pour l'autre.(((erreur de mesure)))(((erreur et incertitude, confusion entre)))
+
+
+[[scls_3-2-3]]
+==== {blank}
+
+L'((erreur systématique)), comme l'((erreur aléatoire)), ne peut pas être éliminée mais, elle aussi, peut souvent être réduite. Si une ((erreur systématique)) se produit sur un résultat de mesure à partir d'un effet reconnu d'une ((grandeur d'influence)), effet appelé ci-après _effet systématique_, l'effet peut être quantifié et, s'il est significatif par rapport à l'exactitude requise du mesurage, une *correction* (<<scls_B-2-23>>) ou un *((facteur de correction))*(((correction))) (<<scls_B-2-24>>) peut être appliqué pour compenser l'effet. On suppose qu'après ((correction)) l'espérance mathématique(((espérance mathématique (ou valeur espérée)))) de l'erreur qui provient d'un ((effet systématique)) est égale à zéro.
+
+NOTE: L'incertitude d'une ((correction))(((incertitude d'une correction))) appliquée à un résultat de mesure pour compenser un ((effet systématique)) n'est pas l'((erreur systématique)) due à cet effet, souvent appelée biais(((bias))), sur le résultat de mesure, bien qu'elle soit parfois désignée ainsi. Au lieu de cela, c'est la mesure de l'_incertitude_ du résultat due à une connaissance incomplète de la valeur exigée pour la correction. L'erreur(((erreur de mesure)))(((erreur et incertitude, confusion entre))) provenant d'une compensation imparfaite d'un ((effet systématique)) ne peut pas être connue exactement. Les termes «erreur» et «incertitude» doivent être utilisés correctement et il faut prendre soin de les distinguer l'un de l'autre.
+
+
+[[scls_3-2-4]]
+==== {blank}
+
+On suppose que le résultat d'un mesurage a été corrigé pour tous les effets systématiques reconnus comme significatifs et qu'on a fait tous ses efforts pour leur identification.
+
+[example]
+On applique une ((correction)) due à l'impédance finie d'un voltmètre utilisé pour déterminer la différence de potentiel (le mesurande) aux bornes d'une résistance d'impédance élevée, pour réduire l'((effet systématique)) sur le résultat du mesurage provenant de l'effet dû au branchement du voltmètre. Cependant, les valeurs des impédances du voltmètre et de la résistance, qui sont utilisées pour estimer la valeur de la correction et qui sont obtenues à partir d'autres mesurages, présentent elles-mêmes une incertitude. Ces incertitudes sont utilisées pour évaluer la composante de l'incertitude sur la détermination de la différence de potentiel provenant de la ((correction)), donc de l'((effet systématique)) dû à l'impédance finie du voltmètre.
+
+NOTE: Les instruments et systèmes de mesure sont souvent ajustés ou étalonnés par utilisation d'étalons et de matériaux de référence pour éliminer les effets systématiques. Il n'en reste pas moins que les incertitudes associées à ces étalons et matériaux de référence doivent être prises en considération.
+
+NOTE: Le cas où une ((correction))(((correction, non applicable d'une))) due à un ((effet systématique)) reconnu comme significatif n'est pas appliquée est présenté dans la <<note_6-3-1>> et en <<scls_F-2-4-5>>.
+
+
+[[scls_3-3]]
+=== Incertitude(((incertitude de mesure)))
+
+[[scls_3-3-1]]
+==== {blank}
+
+L'incertitude(((incertitude d'une correction)))(((incertitude de mesure))) du résultat d'un mesurage reflète l'impossibilité de connaître exactement la valeur du mesurande (voir <<scls_2-2>>). Le résultat d'un mesurage(((erreur de mesure))) après correction des effets systématiques reconnus reste encore seulement une estimation de la valeur du mesurande en raison de l'incertitude provenant des effets aléatoires(((effet aléatoire)))(((aléatoire))) et de la correction imparfaite du résultat pour les effets systématiques.
+
+NOTE: Le résultat d'un mesurage (après correction) peut, sans qu'on le sache, être très proche de la valeur du mesurande (et, en conséquence, avoir une erreur négligeable) même s'il possède une incertitude élevée. C'est pourquoi l'incertitude du résultat d'un mesurage ne doit pas être confondue avec l'erreur résiduelle inconnue.
+
+
+[[scls_3-3-2]]
+==== {blank}
+
+Il existe dans la pratique de nombreuses sources possibles d'incertitude(((incertitude de mesure)))(((incertitude, sources d'))) dans un mesurage, comprenant:
+
+. [[item_3-3-2a]]définition incomplète du mesurande;
+. réalisation imparfaite de la définition du mesurande;
+. échantillonnage non représentatif — l'échantillon mesuré peut ne pas représenter le mesurande défini;
+. connaissance insuffisante des effets des conditions d'environnement sur le mesurage ou mesurage imparfait des conditions d'environnement;
+. biais dû à l'observateur pour la lecture des instruments analogiques;
+. résolution finie de l'instrument ou seuil de mobilité;
+. valeurs inexactes des étalons et matériaux de référence;
+. valeurs inexactes des constantes et autres paramètres obtenus de sources extérieures et utilisés dans l'algorithme de traitement des données;
+. [[item_3-3-2i]]approximations et hypothèses introduites dans la méthode et dans la procédure de mesure;
+. [[item_3-3-2j]]variations entre les ((observations répétées)) du mesurande dans des conditions apparemment identiques.
+
+Ces sources ne sont pas nécessairement indépendantes, et certaines des sources <<item_3-3-2a>> à <<item_3-3-2i>> peuvent contribuer à la source <<item_3-3-2j>>. Naturellement, un ((effet systématique)) non mis en évidence ne peut pas être pris en compte dans l'évaluation de l'incertitude du résultat d'un mesurage mais il contribue à son erreur.(((erreur de mesure)))
+
+
+[[scls_3-3-3]]
+==== {blank}
+
+La Recommandation INC-1(((Recommandation INC-1 (1980)))) (1980) du Groupe de travail sur l'expression des incertitudes(((Groupe de travail sur l'évaluation des incertitudes)))(((incertitude d'une correction))) classe les composantes de l'incertitude en deux catégories fondées sur leur méthode d'évaluation, «A» et «B» (voir <<scls_0-7>>, <<scls_2-3-2>> et <<scls_2-3-3>>). Ces catégories s'appliquent à l'_incertitude_ et ne constituent pas des substituts aux mots «((aléatoire))» et «((systématique))». L'incertitude d'une correction(((incertitude d'une correction))) pour un ((effet systématique)) connu peut être obtenue dans certains cas par une évaluation de Type A(((évaluation de Type A de l'incertitude))) et, dans d'autres cas, par une évaluation de Type B(((évaluation de Type B de l'incertitude))); il peut en être de même pour l'incertitude(((incertitude, classement en catégories des composantes de l'))) qui caractérise un ((effet aléatoire)).
+
+NOTE: Dans certaines publications, les composantes de l'incertitude sont réparties en «((aléatoire))s» et «systématiques» et sont respectivement associées aux erreurs provenant d'effets aléatoires(((aléatoire))) et d'effets systématiques connus. Un tel classement des composantes de l'incertitude peut être ambigu lorsqu'on l'applique généralement. Par exemple, une composante «((aléatoire))» de l'incertitude pour un mesurage donné peut devenir une composante «systématique» de l'incertitude(((incertitude, groupement des composantes de l'))) dans un autre mesurage pour lequel on utilise le résultat du premier mesurage comme donnée d'entrée. Différencier les _méthodes_ d'évaluation des composantes de l'incertitude plutôt que les _composantes_ elles-mêmes évite cette ambiguïté. En même temps, cela n'empêche pas de rassembler ultérieurement des composantes individuelles évaluées par les deux méthodes différentes dans des groupes conçus pour être utilisés pour un objectif particulier (voir <<scls_3-4-3>>).
+
+
+[[scls_3-3-4]]
+==== {blank}
+
+L'objectif de la classification en Type A et en Type B est d'indiquer les deux différentes manières d'évaluer les composantes de l'incertitude; elle n'a pour but que de clarifier la présentation; cette classification ne signifie pas qu'il existe une différence quelconque de nature entre les composantes résultant des deux types d'évaluation. Les deux types d'évaluation sont fondés sur des *lois de probabilité*(((loi de probabilité))) (<<scls_C-2-3>>), et les composantes de l'incertitude(((incertitude, classement en catégories des composantes de l'))) résultant de l'un comme de l'autre type sont quantifiées par des variances ou des écarts-types.
+
+
+[[scls_3-3-5]]
+==== {blank}
+
+La variance estimée stem:[u^2] qui caractérise une composante de l'incertitude obtenue par une évaluation de Type A(((évaluation de Type A de l'incertitude))) est calculée à partir de séries d'((observations répétées)) et est la variance habituelle estimée statistiquement stem:[s^2] (voir <<scls_4-2>>). L'*écart-type* estimé (<<scls_C-2-12>>, <<scls_C-2-21>>, <<scls_C-3-3>>) stem:[u], racine carrée de stem:[u^2], est donc stem:[u = s] et, par commodité, est parfois appelé _((incertitude-type)) de Type A_. Pour une composante de l'incertitude obtenue par une évaluation de Type B(((évaluation de Type B de l'incertitude))), la variance estimée stem:[u^2] est évaluée par utilisation des connaissances disponibles (voir <<scls_4-3>>) et l'écart-type estimé stem:[u] est parfois appelé _((incertitude-type)) de Type B_.
+
+On obtient donc une ((incertitude-type)) de Type A(((incertitude-type de Type A))) à partir d'une *((fonction de densité de probabilité)) ((probabilité))* (<<scls_C-2-5>>) (ou simplement *densité de ((probabilité))*) déduite d'une *((distribution d'effectif))* (<<scls_C-2-18>>) (ou ((distribution de fréquence))) observée alors qu'on obtient une ((incertitude-type)) de Type B(((incertitude-type de Type B))) à partir d'une densité de ((probabilité)) supposée, fondée sur le ((degré de croyance)) en ce qu'un événement se produise [souvent appelé *((probabilité))* (<<scls_C-2-1>>) subjective]. Les deux approches utilisent des interprétations classiques de la ((probabilité))(((probabilité subjective))).
+
+NOTE: Une évaluation de Type B d'une composante de l'incertitude est habituellement fondée sur un ensemble d'informations(((ensemble d'informations pour une évaluation de Type B))) relativement fiables (voir <<scls_4-3-1>>).
+
+
+[[scls_3-3-6]]
+==== {blank}
+
+Lorsque le résultat d'un mesurage est obtenu à partir des valeurs de plusieurs autres grandeurs, l'((incertitude-type))(((incertitude, loi de propagation de l'))) de ce résultat est appelée _((incertitude-type)) composée_ et notée stem:[u_c]. C'est l'écart-type estimé associé au résultat et il est égal à la racine carrée de la ((variance composée)) obtenue à partir de toutes les composantes de variances et *covariances* (<<scls_C-3-4>>), de quelque manière qu'elles soient évaluées, en utilisant ce qui, dans ce _Guide_, est appelé la _loi de propagation de l'incertitude_ (voir <<cls_5>>).
+
+
+[[scls_3-3-7]]
+==== {blank}
+
+Pour satisfaire les besoins de certaines applications industrielles et commerciales ainsi que les exigences dans les domaines de la santé et de la sécurité, une _((incertitude élargie))_ stem:[ii(U)] s'obtient par la multiplication de l'incertitude-type composée(((incertitude-type composée))) uc par un _((facteur d'élargissement))_ stem:[k]. L'objectif poursuivi avec cette ((incertitude élargie)) stem:[ii(U)] est de fournir, autour du résultat d'un mesurage, un intervalle dont on puisse s'attendre à ce qu'il comprenne une fraction élevée de la distribution des valeurs qui pourraient être attribuées raisonnablement au mesurande. Le choix du facteur stem:[k], qui est habituellement compris entre 2 et 3, est fondé sur la ((probabilité)) ou le ((niveau de confiance)) exigé pour l'intervalle (voir <<cls_6>>).
+
+NOTE: Le ((facteur d'élargissement)) stem:[k] doit toujours être donné pour que l'incertitude-type de la grandeur mesurée puisse être retrouvée et utilisée dans le calcul de l'incertitude-type composée d'autres résultats de mesure qui pourraient dépendre de cette grandeur.
+
+
+[[scls_3-4]]
+=== Considérations pratiques
+
+[[scls_3-4-1]]
+==== {blank}
+
+Si on fait varier la totalité des grandeurs dont dépend le résultat d'un mesurage, son incertitude(((incertitude, évaluation stastitique de l', par variation des grandeurs d'entrée))) peut être évaluée par des moyens statistiques. Cependant, comme cela est rarement possible en pratique faute de temps et de ressources suffisantes, l'incertitude d'un résultat de mesure est habituellement évaluée par utilisation d'un modèle mathématique du mesurage(((modèle mathématique de mesure))) et de la loi de propagation de l'incertitude(((incertitude, loi de propagation de l'))). L'hypothèse qu'un mesurage peut être modélisé mathématiquement, jusqu'au degré imposé par l'exactitude(((exactitude de mesure))) requise pour le mesurage, est donc implicite dans ce _Guide_.
+
+
+[[scls_3-4-2]]
+==== {blank}
+
+Comme le modèle mathématique(((modèle mathématique de mesure))) peut être incomplet, il faudrait pouvoir faire varier toutes les grandeurs mises en jeu, de la manière la plus complète possible pratiquement, pour que l'évaluation de l'incertitude(((incertitude, évaluation stastitique de l', par variation des grandeurs d'entrée))) puisse être fondée le plus possible sur des données observées. À chaque fois que cela est réalisable, on utilisera des modèles empiriques du mesurage fondés sur des données quantitatives obtenues pendant de longues périodes ou sur l'utilisation d'étalons de surveillance ou de cartes de contrôles qui puissent indiquer si un mesurage est sous ((contrôle statistique)). Toutes ces dispositions doivent faire partie des efforts qui ont pour but d'obtenir des évaluations fiables de l'incertitude. Le modèle mathématique doit toujours être révisé lorsque les données observées, y compris le résultat de déterminations indépendantes du même mesurande, démontrent que le modèle est incomplet. Un essai bien conçu peut grandement faciliter des évaluations fiables de l'incertitude et c'est une part importante de l'art de la mesure.
+
+
+[[scls_3-4-3]]
+==== {blank}
+
+Pour décider si un système de mesure fonctionne correctement, la variabilité observée expérimentalement de ses valeurs de sortie, telle que mesurée par leur écart-type observé, est souvent comparée avec l'écart-type prédit, obtenu par combinaison des diverses composantes de l'incertitude(((incertitude, groupement des composantes de l'))) qui caractérisent le mesurage. Dans ces cas-là, on considérera seulement les composantes (qu'elles soient obtenues par des évaluations de Type A ou de Type B) qui pourraient contribuer à la variabilité, observée expérimentalement, de ces valeurs de sortie.
+
+NOTE: Une telle analyse peut être facilitée en rassemblant en deux groupes séparés et correctement identifiés les composantes qui contribuent à la variabilité et celles qui n'y contribuent pas.
+
+
+[[scls_3-4-4]]
+==== {blank}
+
+Dans certains cas, il n'est pas nécessaire d'inclure l'((incertitude d'une correction))(((correction, non applicable d'une)))(((incertitude lorsqu'on n'applique pas une correction))) pour un ((effet systématique)) dans l'évaluation de l'incertitude d'un résultat de mesure. Bien que l'incertitude ait été évaluée, elle peut être ignorée si sa contribution à l'incertitude-type composée du résultat de mesure est insignifiante. Si la valeur de la correction elle-même est insignifiante par rapport à l'incertitude-type composée, elle peut, elle aussi, être ignorée.
+
+
+[[scls_3-4-5]]
+==== {blank}
+
+Il arrive souvent en pratique, spécialement dans le domaine de la ((métrologie légale)), qu'un dispositif soit essayé par comparaison avec un étalon et que les incertitudes associées à l'étalon et à la procédure de comparaison soient négligeables par rapport à l'exactitude exigée pour l'essai. C'est le cas, par exemple, de l'utilisation d'un ensemble bien étalonné d'étalons de masses marquées pour déterminer l'exactitude d'une balance commerciale. Dans ces cas-là, on peut envisager le mesurage comme étant la ((détermination de l'erreur)) du dispositif en essai, parce que les composantes de l'incertitude sont suffisamment petites pour pouvoir être ignorées. (Voir aussi <<scls_F-2-4-2>>.)
+
+
+[[scls_3-4-6]]
+==== {blank}
+
+L'estimation de la valeur d'un mesurande fournie par le résultat d'un mesurage s'exprime parfois en fonction de la valeur adoptée pour un étalon plutôt qu'en fonction de l'unité correspondante du ((Système international d'unités (SI))). Dans ces cas-là, l'ordre de grandeur de l'incertitude qu'on peut attribuer au résultat de mesure peut être significativement plus petit que lorsqu'on exprime le résultat avec l'unité SI correspondante. (En fait, cela revient à redéfinir le mesurande comme étant le rapport de la valeur de la grandeur à mesurer à la valeur adoptée pour l'étalon.)(((unité, utilisation d'une valeur adoptée pour un étalon comme)))
+
+[example]
+Un étalon de tension à diode de Zener de haute qualité est étalonné par comparaison à une référence de tension à effet Josephson fondée sur la valeur de la constante de Josephson recommandée par le ((CIPM)) pour l'utilisation internationale. L'incertitude-type composée relative stem:[u_c(ii(V)_"S")//ii(V)_"S"] (voir <<scls_5-1-6>>) de la différence de potentiel étalonnée stem:[ii(V)_"S"] de l'étalon Zener est stem:[2 xx 10^(−8)] lorsqu'on exprime stem:[ii(V)_"S"] en fonction de la valeur recommandée, mais stem:[u_c(ii(V)_"S")//ii(V)_"S"] est stem:[4 xx 10^(−7)] lorsqu'on exprime stem:[ii(V)_"S"] en fonction de l'unité SI de différence de potentiel, volt (V), en raison de l'incertitude supplémentaire associée à la valeur en unité SI de la constante de Josephson.
+
+
+[[scls_3-4-7]]
+==== {blank}
+
+Des ((valeurs aberrantes)) dans l'enregistrement ou l'analyse des résultats d'observations peuvent introduire une erreur inconnue significative pour le résultat d'un mesurage. Des ((valeurs aberrantes)) importantes peuvent habituellement être mises en évidence par un examen approprié des résultats; des valeurs faiblement aberrantes peuvent être masquées ou apparaître, éventuellement, comme des variations aléatoires. Les mesures de l'incertitude ne prétendent pas prendre en compte de telles fautes.
+
+[[scls_3-4-8]]
+==== {blank}
+
+Bien que ce _Guide_ fournisse un cadre pour l'estimation de l'incertitude(((incertitude fournie, qualité et utilité de l'))), il ne peut remplacer ni la réflexion critique ni l'honnêteté intellectuelle ni la compétence professionnelle. L'évaluation de l'incertitude n'est jamais une tâche de routine ni une opération purement mathématique; elle dépend de la connaissance détaillée de la nature du mesurande et du mesurage. La qualité et l'utilité de l'incertitude fournie pour le résultat d'un mesurage dépendent, en fin de compte, de la compréhension, de l'analyse critique et de l'intégrité de ceux qui contribuent à son évaluation.

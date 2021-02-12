@@ -1,0 +1,272 @@
+
+[[annexJ]]
+[appendix, obligation=normative]
+== Liste des principaux symboles 
+
+footnoteblock:[f11]
+
+[[f11]]
+[NOTE]
+--
+*Note de bas de page à la version 2008:*
+
+Au moment de la publication initiale du GUM, une règle rédactionnelle interdisait l'utilisation de la lettre I pour désigner une annexe. C'est pourquoi la numérotation des annexes saute directement de H à J.
+--
+
+[cols="2*",options="unnumbered"]
+|===
+| stem:[a] a| demi-largeur d'une loi rectangulaire des valeurs possibles d'une grandeur d'entrée stem:[ii(X)_i]:
+
+[stem%unnumbered]
+++++
+a = (a_{+} - a_{-})//2
+++++
+
+| stem:[a_+] | limite supérieure d'une grandeur d'entrée stem:[ii(X)_i]
+| stem:[a_-] | limite inférieure d'une grandeur d'entrée stem:[ii(X)_i]
+
+| stem:[b_+] a| limite supérieure de l'écart entre une grandeur d'entrée stem:[ii(X)_i] et son estimation stem:[x_i]:
+
+[stem%unnumbered]
+++++
+b_+ = a_+ - x_i
+++++
+
+
+| stem:[b_-]
+a| limite inférieure de l'écart entre une grandeur d'entrée stem:[ii(X)_i] et son estimation stem:[x_i]:
+
+[stem%unnumbered]
+++++
+b_- = x_i - a_-
+++++
+
+
+| stem:[c_i] a| dérivée partielle ou coefficient de sensibilité:
+[stem%unnumbered]
+++++
+c_i -= del f//del x_i
+++++
+
+| stem:[f]
+| relation fonctionnelle entre un mesurande stem:[ii(Y)] et les grandeurs d'entrée stem:[ii(X)_i] dont stem:[ii(Y)] dépend et entre l'estimation de sortie stem:[y] et les estimations d'entrée stem:[x_i] dont stem:[y] dépend
+
+| stem:[del f//del x_i] a| dérivée partielle par rapport à une grandeur d'entrée stem:[ii(X)_i] de la relation fonctionnelle stem:[f] entre un mesurande stem:[ii(Y)] et les grandeurs d'entrée stem:[ii(X)_i] dont stem:[ii(Y)] dépend, relation évaluée pour les estimations stem:[x_i] des stem:[ii(X)_i]
+
+[stem%unnumbered]
+++++
+del f // del x_i = {: del f// del ii(X)_i \|_{x_1,x_2,...,x_N}
+++++
+
+| stem:[k] | facteur d'élargissement utilisé pour calculer l'incertitude élargie stem:[ii(U) = ku_{"c"} (y)] d'une estimation de sortie stem:[y] à partir de son incertitude-type composée stem:[u_{"c"}(y)], où stem:[ii(U)] définit un intervalle stem:[ii(Y) = y pm ii(U)] ayant un niveau de confiance élevé
+
+| stem:[k_p] | facteur d'élargissement utilisé pour calculer l'incertitude élargie stem:[ii(U)_p = k_p u_{"c"}(y)] d'une estimation de sortie stem:[y] à partir de son incertitude-type composée stem:[u_{"c"}(y)], où stem:[ii(U)_p] définit un intervalle stem:[ii(Y) = y pm ii(U)_p] ayant un niveau de confiance spécifié stem:[p] élevé
+
+| stem:[n] | nombre d'observations répétées
+
+| stem:[ii(N)] | nombre de grandeurs d'entrées stem:[ii(X)_i] dont dépend un mesurande stem:[ii(Y)]
+
+| stem:[p]
+a| probabilité; niveau de confiance:
+[stem%unnumbered]
+++++
+0 <= p <= 1
+++++
+
+| stem:[q] | grandeur variant de manière ((aléatoire)), décrite par une loi de probabilité
+
+.2+| stem:[bar(q)]
+| moyenne arithmétique de stem:[n] observations répétées indépendantes stem:[q_k] d'une grandeur stem:[q] variant de manière ((aléatoire))
+| estimation de l'espérance mathématique ou de la moyenne stem:[ii(mu)_q] de la loi de probabilité de stem:[q]
+
+| stem:[q_k] | stem:[k]ième observation répétée indépendante d'une grandeur stem:[q] variant de manière ((aléatoire))
+
+| stem:[r(x_i,x_j)]
+a| ((coefficient de corrélation)) estimé, associé aux estimations d'entrée stem:[x_i] et stem:[x_j] qui estiment les grandeurs d'entrée stem:[ii(X)_i] et stem:[ii(X)_j]:
+
+[stem%unnumbered]
+++++
+r (x_i,x_j) = u (x_i,x_j)// [u(x_i) u(x_j)]
+++++
+
+
+| stem:[r(bar(ii(X))_i,bar(ii(X))_j)]
+a| ((coefficient de corrélation)) estimé des moyennes d'entrée stem:[bar(ii(X))_i] et stem:[bar(ii(X))_j], déterminées à partir de stem:[n] paires indépendantes d'observations simultanées répétées stem:[ii(X)_{i,k}] et stem:[ii(X)_{j,k}] de stem:[ii(X)_i] et stem:[ii(X)_j]:
+
+[stem%unnumbered]
+++++
+r(bar(ii(X))_i,bar(ii(X))_j) = s(bar(ii(X))_i,bar(ii(X))_j)//[s(bar(ii(X))_i)s(bar(ii(X))_j)]
+++++
+
+| stem:[r(y_i,y_j)] | ((coefficient de corrélation)) estimé associé aux estimations de sortie stem:[y_i] et stem:[y_j] lorsqu'on détermine deux ou plusieurs mesurandes ou grandeurs de sortie dans le même mesurage
+
+| stem:[s_{"p"}^2] | estimation de la variance composée ou estimée sur un ensemble de données
+
+| stem:[s_{"p"}] | écart-type expérimental estimé sur un ensemble de données, égal à la racine carrée de stem:[s_{"p"}^2]
+
+.3+| stem:[s^2(bar(q))]
+| variance expérimentale de la moyenne stem:[bar(q)]
+a| estimation de la variance stem:[ii(sigma)^2//n] de stem:[bar(q)]:
+
+[stem%unnumbered]
+++++
+s^2 (bar(q)) = s^2 (q_k)//n
+++++
+| variance estimée obtenue par une évaluation de Type A
+
+.3+| stem:[s(bar(q))]
+| écart-type expérimental de la moyenne stem:[bar(q)], égal à la racine carrée de stem:[s^2(bar(q))]
+| estimateur biaisé de stem:[ii(sigma)(bar(q))] (voir <<note_C-2-21>>)
+| incertitude-type obtenue par une évaluation de Type A
+
+.2+| stem:[s^2(q_k)]
+| variance expérimentale déterminée à partir de stem:[n] observations répétées indépendantes stem:[q_k] de stem:[q]
+| estimation de la variance stem:[ii(sigma)^2] de la loi de probabilité de stem:[q]
+
+.2+| stem:[s(q_k)]
+| écart-type expérimental, égal à la racine carrée de stem:[s^2(q_k)]
+| estimateur biaisé de l'écart-type stem:[ii(sigma)] de la loi de probabilité de stem:[q]
+
+
+.2+| stem:[s^2(bar(ii(X))_i)]
+| variance expérimentale de la moyenne d'entrée stem:[bar(ii(X))_i], déterminée à partir de stem:[n] observations répétées indépendantes stem:[ii(X)_{i,k}] de stem:[ii(X)_i]
+| variance estimée obtenue par une évaluation de Type A
+
+.2+| stem:[s(bar(ii(X))_i)]
+| écart-type expérimental de la moyenne d'entrée stem:[bar(ii(X))_i], égal à la racine carrée de stem:[s^2(bar(ii(X))_i)]
+| incertitude-type obtenue par une évaluation de Type A
+
+.2+| stem:[s(bar(q),bar(r))]
+| estimation de la covariance des moyennes stem:[bar(q)] et stem:[bar(r)] qui estiment les espérances mathématiques stem:[ii(mu)_q] et stem:[ii(mu)_r] de deux grandeurs stem:[q] et stem:[r], variant de manière ((aléatoire)), déterminées à partir de stem:[n] paires indépendantes d'observations simultanées répétées stem:[q_k] et stem:[r_k] de stem:[q] et stem:[r]
+| covariance estimée obtenue par une évaluation de Type A
+
+.2+| stem:[s(bar(ii(X))_i,bar(ii(X))_j)]
+| estimation de la covariance des moyennes d'entrée stem:[bar(ii(X))_i] et stem:[bar(ii(X))_j], déterminées à partir de stem:[n] paires indépendantes d'observations simultanées répétées stem:[ii(X)_{i,k}] et stem:[ii(X)_{j,k}] de stem:[ii(X)_i] et stem:[ii(X)_j]
+| covariance estimée obtenue par une évaluation de Type A
+
+| stem:[t_p(ii(nu))] | facteur stem:[t] de la loi de stem:[t] pour stem:[ii(nu)] degrés de liberté, correspondant à une probabilité donnée stem:[p]
+
+| stem:[t_p(ii(nu)_{"eff"})] | facteur stem:[t] de la loi de stem:[t] pour stem:[ii(nu)_{"eff"}] degrés de liberté, correspondant à une probabilité donnée stem:[p], utilisé pour calculer une incertitude élargie stem:[ii(U)_p]
+
+| stem:[u^2(x_i)]
+a| variance estimée associée à l'estimation d'entrée stem:[x_i] qui estime la grandeur d'entrée stem:[ii(X)_i]
+
+NOTE: Lorsqu'on détermine stem:[x_i] à partir de la moyenne arithmétique de stem:[n] observations répétées indépendantes, stem:[u^2 (x_i) = s^2(bar(X)_i)] est une variance estimée obtenue par une évaluation de Type A.
+
+| stem:[u(x_i)]
+a| incertitude-type d'une estimation d'entrée stem:[x_i] qui estime une grandeur d'entrée stem:[ii(X)_i], égale à la racine carrée de stem:[u^2(x_i)]
+
+NOTE: Lorsqu'on détermine stem:[x_i] à partir de la moyenne de n observations répétées indépendantes, stem:[u(x_i) = s(bar(X)_i)] est une incertitude-type obtenue par une évaluation de Type A.
+
+| stem:[u(x_i,x_j)]
+a| covariance estimée associée à deux estimations d'entrée stem:[x_i] et stem:[x_j] qui estiment les grandeurs d'entrée stem:[ii(X)_i] et stem:[ii(X)_j]
+
+NOTE: Lorsqu'on détermine stem:[x_i] et stem:[x_j] à partir de stem:[n] paires indépendantes d'observations simultanées répétées, stem:[u(x_i,x_j) = s(bar(X)_i,bar(X)_j)] est une covariance estimée obtenue par une évaluation de Type A.
+
+| stem:[u_{"c"}^2(y)] | variance composée associée à une estimation de sortie stem:[y]
+
+| stem:[u_{"c"}(y)] | incertitude-type composée d'une estimation de sortie stem:[y], égale à la racine carrée de stem:[u_{"c"}^2(y)]
+
+| stem:[u_{"cA"}(y)] | incertitude-type composée d'une estimation de sortie stem:[y] déterminée à partir d'incertitudes-types et de covariances estimées obtenues seulement à partir d'évaluations de Type A
+
+| stem:[u_{"cB"}(y)] | incertitude-type composée d'une estimation de sortie stem:[y] déterminée à partir d'incertitudes-types et de covariances estimées obtenues seulement à partir d'évaluations de Type B
+
+| stem:[u_{"c"}(y_i)] | incertitude-type composée d'une estimation de sortie stem:[y_i] lorsqu'on détermine deux ou plusieurs mesurandes ou grandeurs de sortie pendant le même mesurage
+
+| stem:[u_i^2(y)]
+a| composante de la variance composée stem:[u_{"c"}^2(y)] associée à l'estimation de sortie stem:[y] produite par la variance estimée stem:[u^2(x_i)] associée à l'estimation d'entrée stem:[x_i]:
+
+[stem%unnumbered]
+++++
+u_i^2(y) -= [c_i u(x_i)]^2
+++++
+
+| stem:[u_i(y)]
+a| composante de l'incertitude-type composée stem:[u_{"c"}(y)] de l'estimation de sortie stem:[y] produite par l'incertitude-type de l'estimation d'entrée stem:[x_i]:
+
+[stem%unnumbered]
+++++
+u_i (y) -= abs(c_i) u(x_i)
+++++
+
+| stem:[u(y_i, y_j)] | covariance estimée associée aux estimations de sortie stem:[y_i] et stem:[y_j] déterminées pendant le même mesurage
+
+| stem:[u(x_i)//\|x_i\|] | incertitude-type relative de l'estimation d'entrée stem:[x_i]
+
+| stem:[u_{"c"}(y)//\|y\|] | incertitude-type composée relative de l'estimation de sortie stem:[y]
+
+| stem:[[u(x_i)//x_i\]^2] | variance relative estimée associée à l'estimation d'entrée stem:[x_i]
+
+| stem:[[u_{"c"}(y)//y\]^2] | variance composée relative associée à l'estimation de sortie stem:[y]
+
+| stem:[{u(x_i,x_j)}/{abs(x_i x_j)}] | covariance relative estimée associée aux estimations d'entrée stem:[x_i] et stem:[x_j]
+
+| stem:[ii(U)]
+a| incertitude élargie de l'estimation de sortie stem:[y], égale au produit du facteur d'élargissement stem:[k] par l'incertitude-type composée stem:[u_{"c"}(y)] de stem:[y: ii(U) = ku_"c"(y)], qui définit un intervalle stem:[ii(Y) = y pm ii(U)] ayant un niveau de confiance élevé
+
+[stem%unnumbered]
+++++
+ii(U) = k u_{"c"} (y)
+++++
+
+| stem:[ii(U)_p] 
+a| incertitude élargie de l'estimation de sortie stem:[y], égale au produit du facteur d'élargissement stem:[k_p] par l'incertitude-type composée stem:[u_{"c"}(y)] de stem:[y: ii(U)_p = k_pu"c"(y)], qui définit un intervalle stem:[Y = y pm ii(U)_p] ayant un niveau de confiance spécifié stem:[p] élevé
+
+[stem%unnumbered]
+++++
+ii(U)_p = k_p u_{"c"} (y)
+++++
+
+| stem:[x_i]
+a| estimation de la grandeur d'entrée stem:[ii(X)_i]
+
+NOTE: Lorsque stem:[x_i] est déterminé à partir de la moyenne arithmétique de stem:[n] observations répétées indépendantes, on a stem:[x_i = bar(X)_i].
+
+| stem:[ii(X)_i]
+a| stem:[i]ième grandeur d'entrée dont dépend le mesurande stem:[ii(Y)]
+
+NOTE: stem:[ii(X)_i] peut être la grandeur physique ou la variable ((aléatoire)) (voir <<note1_4-1-1>>).
+
+| stem:[bar(X)_i] | estimation de la valeur de la grandeur d'entrée stem:[ii(X)_i], égale à la moyenne arithmétique de stem:[n] observations répétées indépendantes stem:[ii(X)_{i,k}] de stem:[ii(X)_i]
+
+| stem:[ii(X)_{i,k}] | stem:[k]ième observation répétée indépendante de stem:[ii(X)_i]
+
+.3+| stem:[y]
+| estimation du mesurande stem:[ii(Y)]
+| résultat d'un mesurage
+| estimation de sortie
+
+| stem:[y_i] | estimation du mesurande stem:[ii(Y)_i] lorsqu'on détermine deux ou plusieurs mesurandes pendant le même mesurage
+
+| stem:[ii(Y)] | un mesurande
+
+| stem:[{Delta u(x_i)}/{u(x_i)}] | incertitude relative estimée de l'incertitude-type stem:[u(x_i)] de l'estimation d'entrée stem:[x_i]
+
+| stem:[ii(mu)_q] | espérance mathématique ou moyenne de la loi de probabilité d'une grandeur stem:[q] variant de manière ((aléatoire))
+
+| stem:[ii(nu)] | nombre de degrés de liberté (en général)
+
+| stem:[ii(nu)_i] | nombre de degrés de liberté ou nombre effectif de degrés de liberté d'une incertitude-type stem:[u (x_i)] d'une estimation d'entrée stem:[x_i]
+
+| stem:[ii(nu)_{"eff"}] | nombre effectif de degrés de liberté de stem:[u_{"c"}(y)], utilisé pour obtenir stem:[t_p(ii(nu)_{"eff"})] pour le calcul de l'incertitude élargie stem:[ii(U)_p]
+
+| stem:[ii(nu)_{"effA"}] | nombre effectif de degrés de liberté d'une incertitude-type composée déterminé à partir d'incertitudes-types obtenues seulement par des évaluations de Type A
+
+| stem:[ii(nu)_{"effB"}] | nombre effectif de degrés de liberté d'une incertitude-type composée déterminé à partir d'incertitudes-types obtenues seulement par des évaluations de Type B
+
+| stem:[ii(sigma)^2] | variance d'une loi de probabilité, par exemple d'une grandeur stem:[q] variant de manière ((aléatoire)), estimée par stem:[s^2(q_k)]
+
+.2+| stem:[ii(sigma)]
+| écart-type de stem:[q] , égal à la racine carrée de stem:[ii(sigma)^2]
+| stem:[s(q_k)] est un estimateur biaisé de stem:[ii(sigma)]
+
+| stem:[ii(sigma)^2(bar(q))] | variance de stem:[bar(q)], égale à stem:[ii(sigma)^2//n], estimée par stem:[s^2(bar(q)) = s^2 (q_k)//n]
+
+.2+| stem:[ii(sigma)(bar(q))]
+| écart-type de stem:[bar(q)], égal à la racine carrée de stem:[ii(sigma)^2(bar(q))]
+| stem:[s(bar(q))] est un estimateur biaisé de stem:[ii(sigma)(bar(q))]
+
+| stem:[ii(sigma)^2[s(bar(q))\]] | variance de l'écart-type expérimental stem:[s(bar(q))] de stem:[bar(q)]
+
+| stem:[ii(sigma)[s(bar(q))\]] | écart-type de l'écart-type expérimental stem:[s(bar(q))] de stem:[bar(q)], égal à la racine carrée de stem:[ii(sigma)^2[s(bar(q))\]] 
+|===

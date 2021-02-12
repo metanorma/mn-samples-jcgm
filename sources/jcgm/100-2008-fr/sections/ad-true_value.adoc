@@ -1,0 +1,138 @@
+
+[[annexD]]
+[appendix,obligation=normative]
+== Valeur «vraie», erreur et incertitude
+
+Le terme *valeur vraie*(((valeur vraie d'une grandeur))) (<<scls_B-2-3>>) a été traditionnellement utilisé dans les publications sur l'incertitude(((incertitude de mesure))), mais non dans ce _Guide_ pour les raisons présentées dans cette annexe. Parce que les termes «mesurande», «erreur» et «incertitude» sont fréquemment mal interprétés, cette annexe fournit aussi une présentation complémentaire des idées qui les sous-tendent, en complément à la présentation donnée à l'<<cls_3>>. Deux illustrent pourquoi le concept d'incertitude adopté dans ce _Guide_ est fondé sur le résultat de mesure et son incertitude évaluée plutôt que sur les grandeurs inconnues valeur «vraie» et erreur(((erreur de mesure))).
+
+
+[[scls_D-1]]
+=== Le ((mesurande))
+
+[[scls_D-1-1]]
+==== {blank}
+
+Lorsqu'on réalise un mesurage, la première étape consiste à spécifier le ((mesurande)), c'est-à-dire la grandeur à mesurer; le mesurande ne peut pas être spécifié par une valeur mais seulement par la description d'une grandeur. En principe cependant, un mesurande ne pourrait être _complètement_ décrit qu'avec une quantité infinie d'information. En conséquence, dans la mesure où cela laisse une certaine latitude d'interprétation, les lacunes de la définition du mesurande introduisent, dans l'incertitude du résultat d'un mesurage(((incertitude due à une définition incomplète du mesurande))), une composante d'incertitude qui peut ou non être significative par rapport à l'exactitude requise pour le mesurage.
+
+
+[[scls_D-1-2]]
+==== {blank}
+
+La définition d'un mesurande spécifie ordinairement certains états et conditions physiques.
+
+[example]
+La célérité du son dans l'air sec de composition (fraction molaire) stem:["N"_2 = 0.7808], stem:["O"_2 = 0.2095], stem:["Ar" = 0.00935] et stem:["CO"_2 = 0.00035] à la température stem:[ii(T) = 273.15" "rm(K)] et à la pression stem:[p = 101325" "rm(Pa)].
+
+
+[[scls_D-2]]
+=== La ((grandeur réalisée))
+
+[[scls_D-2-1]]
+==== {blank}
+
+De manière idéale, la ((grandeur réalisée)) pour le mesurage devrait être totalement conforme à la définition du ((mesurande)). Il arrive cependant souvent qu'on ne puisse réaliser une telle grandeur et le mesurage est effectué sur une grandeur qui est une approximation du mesurande.
+
+[[scls_D-3]]
+=== La valeur «vraie»(((valeur vraie d'une grandeur))) et la valeur corrigée
+
+[[scls_D-3-1]]
+==== {blank}
+
+Le résultat du mesurage de la ((grandeur réalisée)) est corrigé de la différence entre cette grandeur et le mesurande, pour ramener le résultat de mesure à ce qu'il aurait été si la ((grandeur réalisée)) avait en fait satisfait complètement à la définition du mesurande. Le résultat du mesurage de la ((grandeur réalisée)) est aussi corrigé de tous les autres effets systématiques reconnus comme significatifs. Bien que le résultat final corrigé(((résultat corrigé))) soit parfois considéré comme la meilleure estimation de la valeur «vraie» (((valeur vraie d'une grandeur)))du mesurande, le résultat est en réalité simplement la meilleure estimation de la valeur de la grandeur que l'on veut mesurer.
+
+
+[[scls_D-3-2]]
+==== {blank}
+
+À titre d'exemple, supposons que le mesurande soit l'épaisseur d'une feuille donnée d'un matériau à une température spécifiée. L'éprouvette est portée à une température proche de la température spécifiée et son épaisseur est mesurée à un endroit particulier avec un micromètre. L'épaisseur du matériau, à cet endroit et à cette température, sous la pression exercée par le micromètre, est la grandeur réalisée.
+
+
+[[scls_D-3-3]]
+==== {blank}
+
+On détermine, au moment de la mesure, la température du matériau et la pression appliquée. On corrige alors le résultat non corrigé du mesurage de la ((grandeur réalisée)) en prenant en compte la courbe d'étalonnage du micromètre, l'écart de température de l'éprouvette par rapport à la température spécifiée et la légère compression de l'éprouvette sous la pression appliquée.
+
+[[scls_D-3-4]]
+==== {blank}
+
+Le ((résultat corrigé)) peut être appelé meilleure estimation de la valeur «vraie», «vraie»(((valeur vraie d'une grandeur))) dans le sens où c'est la valeur d'une grandeur censée satisfaire pleinement à la définition du ((mesurande)); mais si le micromètre avait été appliqué à un endroit différent de la feuille de matériau, la grandeur réalisée aurait été différente, avec une valeur «vraie» différente. Cependant, cette valeur «vraie» aurait été compatible avec la définition du mesurande parce que cette dernière ne spécifie pas que l'épaisseur doit être déterminée à un endroit particulier de la feuille. Ainsi, dans ce cas, en raison d'une définition incomplète du mesurande, la valeur «vraie» présente une incertitude(((incertitude due à une définition incomplète du mesurande))) qui peut être évaluée à partir de mesurages réalisés en différents emplacements de la feuille. À un niveau donné, tout mesurande possède une telle incertitude «intrinsèque»(((incertitude intrinsèque))) qui peut être estimée en principe d'une façon ou d'une autre. C'est l'((incertitude minimale)) avec laquelle on peut déterminer un mesurande et chaque mesurage qui atteint une telle incertitude peut être considéré comme le meilleur mesurage possible du mesurande(((mesurande, meilleur mesurage possible du))). Pour obtenir une valeur de la grandeur en question avec une incertitude plus petite, il faut que le mesurande soit défini plus complètement.(((mesurande, différentes valeurs du)))
+
+NOTE: Dans l'exemple, la spécification du mesurande laisse dans l'ombre bien d'autres paramètres dont on peut penser qu'ils risquent d'affecter l'épaisseur: la pression atmosphérique, l'humidité, la position de la feuille dans le champ gravitationnel, la manière dont elle est maintenue, etc.
+
+NOTE: Bien qu'il faille définir un mesurande suffisamment en détail pour que toute incertitude provenant des lacunes de sa définition soit négligeable par rapport à l'exactitude requise pour le mesurage, on doit reconnaître que cela ne peut pas toujours se faire. La définition peut, par exemple, être incomplète parce qu'elle ne spécifie pas certains paramètres dont les effets ont été supposés à tort négligeables; ou elle peut impliquer des conditions qui ne peuvent jamais être totalement remplies et pour lesquelles il est difficile de prendre en compte les lacunes de la réalisation. Ainsi, pour l'exemple de <<scls_D-1-2>>, la célérité du son implique des ondes planes progressives d'amplitude faible, évanescente. Pour autant que le mesurage ne remplisse pas ces conditions, il est nécessaire de prendre en considération la diffraction et les effets non linéaires.
+
+NOTE: Une spécification insuffisante du mesurande peut entraîner des divergences entre les résultats de mesurages effectués dans différents laboratoires sur une grandeur qui est censément la même.
+
+
+[[scls_D-3-5]]
+==== {blank}
+
+Dans ce _Guide_, on évite l'emploi des termes «valeur vraie d'un mesurande», ou «valeur vraie d'une grandeur» (souvent abrégés en «valeur vraie»), parce que le mot «vrai» est considéré comme redondant. «Mesurande» (voir <<scls_B-2-9>>) signifie «grandeur particulière soumise à mesurage», donc «valeur d'un mesurande» signifie «valeur d'une grandeur particulière soumise à mesurage». Puisque «grandeur particulière» se comprend généralement comme signifiant une grandeur, définie ou spécifiée (voir <<note1_B-2-1>>), l'adjectif «vrai» n'est pas nécessaire dans «valeur vraie d'un mesurande» [ou dans «valeur vraie d'une grandeur», la valeur «vraie» du mesurande (ou de la grandeur) est simplement la valeur du mesurande (ou de la grandeur)]. De plus, comme cela a été indiqué dans la présentation ci-dessus, une valeur «vraie» unique n'est qu'un concept idéalisé.
+
+
+[[scls_D-4]]
+=== Erreur
+
+index-range:erreur[(((erreur de mesure)))]Un résultat de mesure corrigé n'est pas la valeur du mesurande — en d'autres termes, il est erroné — en raison des imperfections du mesurage de la ((grandeur réalisée)), depuis les variations aléatoires(((aléatoire))) des observations (effets aléatoires(((aléatoire)))), jusqu'à la détermination insuffisante des corrections pour les effets systématiques et à la connaissance incomplète de certains phénomènes physiques (entraînant aussi des effets systématiques). Ni la valeur de la ((grandeur réalisée)) ni celle du mesurande ne peuvent jamais être connues exactement; tout ce qu'on peut connaître est leurs valeurs estimées. Dans l'exemple ci-dessus, l'épaisseur mesurée de la feuille peut être entachée d'erreur, c'est-à-dire peut différer de la valeur du mesurande (l'épaisseur de la feuille) parce que chacun des points suivants peut se combiner pour contribuer à l'erreur inconnue du résultat de mesure:(((résultat corrigé)))
+
+. petites différences entre les indications du micromètre lorsqu'on l'applique à plusieurs reprises à la même ((grandeur réalisée));
+. étalonnage imparfait du micromètre;
+. mesurage imparfait de la température et de la pression exercée;
+. connaissance incomplète des effets de la température, de la pression atmosphérique et de l'humidité sur l'éprouvette ou sur le micromètre ou sur les deux.[[erreur]]
+
+
+[[scls_D-5]]
+=== Incertitude(((incertitude de mesure)))
+
+[[scls_D-5-1]]
+==== {blank}
+
+Alors que les valeurs exactes des contributions à l'erreur d'un résultat de mesurage ne sont pas connues et ne peuvent pas l'être, les _incertitudes_(((incertitude de mesure))) associées aux effets aléatoires(((aléatoire))) et systématiques responsables de l'erreur peuvent être évaluées. Mais, même si les incertitudes évaluées sont faibles, il n'y a, pour autant, aucune garantie que l'erreur sur le résultat de mesure soit faible, parce que, dans la détermination d'une correction ou dans l'évaluation des lacunes d'une connaissance, on peut aussi négliger un ((effet systématique)) qui n'aurait pas été reconnu. Ainsi, l'incertitude du résultat d'un mesurage n'indique pas nécessairement la proximité vraisemblable du résultat de mesure et de la valeur du mesurande; c'est simplement une estimation de la proximité vraisemblable du résultat et de la meilleure valeur, en accord avec les connaissances actuellement disponibles.
+
+
+[[scls_D-5-2]]
+==== {blank}
+
+L'((incertitude de mesure)) est donc une expression du fait que, pour un mesurande donné et un résultat de mesure donné de ce mesurande, il n'y a pas une valeur, mais un nombre infini de valeurs dispersées autour du résultat, qui sont compatibles avec toutes les observations et les données, avec la connaissance que l'on peut avoir du monde physique et qui peuvent être attribuées au mesurande avec des degrés de crédibilité divers.
+
+[[scls_D-5-3]]
+==== {blank}
+
+Heureusement, dans de nombreuses situations pratiques de mesurages, la majeure partie de la discussion présentée dans cette annexe ne s'applique pas. C'est le cas par exemple lorsque le mesurande est suffisament bien défini, lorsque les étalons ou les instruments sont étalonnés en utilisant des étalons de référence bien connus, traçables par rapport aux étalons nationaux, et lorsque les incertitudes(((incertitude de mesure))) des corrections d'étalonnage sont négligeables par rapport aux incertitudes dues aux effets aléatoires(((aléatoire))) sur les indications des instruments, ou au nombre limité d'observations (voir <<scls_E-4-3>>). Il n'en reste pas moins qu'une connaissance incomplète des grandeurs d'influence et de leurs effets peut souvent contribuer d'une manière significative à l'incertitude sur le résultat d'un mesurage.
+
+[[scls_D-6]]
+=== Représentation graphique
+
+[[scls_D-6-1]]
+==== {blank}
+
+La <<fig_D-1>> décrit certaines des idées présentées à l'<<cls_3>> du présent _Guide_ et dans cette annexe. Elle illustre pourquoi le présent _Guide_ se focalise sur l'incertitude(((incertitude d'une correction)))(((incertitude de mesure))) et non sur l'erreur. En général, l'erreur exacte du résultat d'un mesurage n'est pas et ne peut pas être connue. Tout ce qu'on peut faire est d'estimer les valeurs des grandeurs d'entrée, y compris les corrections pour les effets systématiques reconnus, avec leur ((incertitude-type)) (écart-type estimé), soit à partir de lois de probabilité(((probabilité subjective))) inconnues échantillonnées par des observations répétées, soit à partir de lois subjectives ou _a priori_(((loi _a priori_))) sur la base de l'ensemble des informations disponibles, puis calculer le résultat de mesure à partir des valeurs estimées des grandeurs d'entrée et l'((incertitude-type composée)) de ce résultat à partir des incertitudes-types de ces valeurs estimées. C'est seulement lorsqu'il y a une base solide pour croire que tout cela a été fait correctement, sans oublier aucun ((effet systématique)) significatif, que l'on peut supposer que le résultat de mesure est une estimation fiable de la valeur du mesurande et que son ((incertitude-type)) composée est une mesure fiable de son erreur(((erreur de mesure))) _possible_.
+
+NOTE: Dans la <<fig_D-1a>>, les observations sont présentées dans un but d'illustration sous forme d'((histogramme)) [voir <<scls_4-4-3>> et <<fig_1b>>].
+
+NOTE: La correction pour une erreur est égale à l'estimation de l'erreur changée de signe. Ainsi, dans la <<fig_D-1>> aussi bien que dans la <<fig_D-2>>, une flèche qui représente la correction pour une erreur a même longueur mais pointe dans la direction opposée à la flèche qui représenterait l'erreur elle-même, et vice-versa. La légende de la figure précise si une flèche donnée représente une correction ou une erreur.
+
+
+[[scls_D-6-2]]
+==== {blank}
+
+La <<fig_D-2>> décrit certaines des idées déjà présentées dans la <<fig_D-1>>, mais d'une autre façon. De plus, elle décrit aussi l'idée qu'il peut y avoir de nombreuses valeurs du mesurande si la définition du mesurande est incomplète [entrée _g)_ sur la <<fig_D-2>>]. L'incertitude(((incertitude de mesure)))(((incertitude due à une définition incomplète du mesurande))) provenant de cette définition incomplète, mesurée par la variance, est évaluée par des mesurages(((erreur de mesure))) de réalisations multiples du mesurande, en utilisant la même méthode, les mêmes instruments, etc. (voir <<scls_D-3-4>>).
+
+NOTE: Dans la colonne intitulée «Variance», les variances sont supposées être les variances stem:[u_i^2(y)] définies dans l'<<eq_11a>> de <<scls_5-1-3>>; c'est pourquoi elles s'additionnent linéairement comme cela est montré sur la figure.
+
+
+[[fig_D-1]]
+.Illustration graphique de la valeur, de l'erreur et de l'incertitude
+====
+[[fig_D-1a]]
+.Concepts fondés sur des grandeurs observables
+image::figureD1a.png[]
+
+[[fig_D-1b]]
+.Concepts idéaux fondés sur des grandeurs qui ne peuvent être connues
+image::figureD1b.png[]
+====
+
+[[fig_D-2]]
+.Illustration graphique des valeurs, de l'erreur et de l'incertitude
+image::figureD2.png[]

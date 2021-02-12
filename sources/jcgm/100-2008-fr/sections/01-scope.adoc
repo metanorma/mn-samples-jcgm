@@ -1,0 +1,43 @@
+
+[[cls_1]]
+== Domaine d'application
+
+[[scls_1-1]]
+=== {blank}
+
+Ce _Guide_ établit les règles générales pour l'évaluation et l'expression de l'incertitude(((incertitude de mesure))) pour les mesurages qui peuvent être effectués à des niveaux variés d'exactitude et dans de nombreux domaines — de la boutique du commerçant à la recherche fondamentale. C'est pourquoi les principes de ce _Guide_ sont prévus pour s'appliquer à un large spectre de mesurages y compris ceux qui sont exigés pour:(((mesurages, spectre de, auxquels ce _Guide_ s'applique)))
+
+* aider à la gestion et à l'assurance de la qualité en production,
+* satisfaire aux lois et réglementations et les appliquer,
+* mener des recherches fondamentales et des recherches et développement appliqués en science et ingénierie,
+* étalonner des étalons et instruments et réaliser des essais dans le cadre d'un système de mesure national pour obtenir la traçabilité aux étalons nationaux,
+* développer, maintenir et comparer des étalons physiques de référence internationaux et nationaux, en y incluant les matériaux de référence.
+
+
+[[scls_1-2]]
+=== {blank}
+
+Ce _Guide_ concerne en premier lieu l'expression de l'incertitude de mesure d'une grandeur physique bien définie — le ((mesurande)) — qui peut être caractérisée en première approximation par une valeur unique. Si le phénomène auquel on s'intéresse peut seulement se représenter par une distribution de valeurs ou s'il est fonction d'un ou de plusieurs paramètres, tel le temps, les mesurandes nécessaires à sa description sont alors l'ensemble des grandeurs décrivant cette distribution ou cette fonctionnalité.
+
+
+[[scls_1-3]]
+=== {blank}
+
+Ce _Guide_ s'applique aussi à l'évaluation et à l'expression de l'incertitude associée aux études conceptuelles et à l'analyse théorique d'essais, de méthodes de mesure et de composantes et systèmes complexes. Comme un résultat de mesure(((résultat d'un mesurage))) et son incertitude peuvent être de nature conceptuelle et entièrement fondés sur des données hypothétiques, c'est dans ce contexte plus large qu'on doit interpréter le terme «résultat de mesure» tel qu'il est utilisé dans ce _Guide_.
+
+
+[[scls_1-4]]
+=== {blank}
+
+Ce _Guide_ fournit des règles générales pour l'évaluation et l'expression de l'incertitude de mesure plutôt que des instructions détaillées, spécifiques à une technique. De plus, il ne traite pas de la manière d'utiliser, pour différents objectifs, l'incertitude d'un résultat de mesure particulier, une fois qu'elle est évaluée, par exemple, tirer des conclusions sur la compatibilité de ce résultat avec d'autres résultats analogues, établir des limites de tolérance pour un procédé de fabrication, décider si l'on peut adopter de manière sûre une certaine ligne de conduite. En conséquence, il peut s'avérer nécessaire de développer des normes spéciales fondées sur ce _Guide_ pour traiter les problèmes particuliers de domaines de mesure spécifiques ou les utilisations diverses des expressions quantitatives de l'incertitude. footnoteblock:[f5] Ces normes peuvent être des versions simplifiées du présent _Guide_, mais elles doivent comprendre le degré de détail approprié au niveau d'exactitude et de complexité des mesurages et utilisations concernés.
+
+[[f5]]
+[NOTE]
+--
+*Note de bas de page à la version 2008:*
+
+Depuis la publication initiale de ce _Guide_, plusieurs documents d'application générale ou spécifique ont été publiés. À titre d'information, des recueils non exhaustifs de ces documents peuvent être consultés à l'adresse http://www.bipm.org/en/committees/jc/jcgm/wg1_bibliography.html.
+--
+
+
+NOTE: Il peut se présenter des situations pour lesquelles on peut penser que le concept d'incertitude de mesure n'est pas totalement applicable, par exemple pour la détermination de la fidélité d'une méthode d'essai (voir Référence <<ISO5725>>, par exemple).

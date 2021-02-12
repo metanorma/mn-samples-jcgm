@@ -1,0 +1,68 @@
+
+[[cls_0]]
+== Introduction
+
+[[scls_0-1]]
+=== {blank}
+
+Lorsqu'on rend compte du résultat d'un mesurage d'une grandeur physique, il faut obligatoirement donner une indication quantitative sur la qualité du résultat pour que ceux qui l'utiliseront puissent estimer sa fiabilité. En l'absence d'une telle indication, les résultats de mesure ne peuvent pas être comparés, soit entre eux, soit par rapport à ces valeurs de référence données dans une spécification ou une norme. Aussi est-il nécessaire qu'il existe une procédure facilement applicable, aisément compréhensible et largement acceptée pour caractériser la qualité du résultat d'un mesurage, c'est-à-dire pour évaluer et exprimer son _incertitude_(((incertitude de mesure))).
+
+
+[[scls_0-2]]
+=== {blank}
+
+Le concept d'_incertitude_ comme attribut quantifiable est relativement nouveau dans l'histoire de la mesure bien que l'_erreur_ et l'_((analyse des erreurs))_ soient des concepts depuis longtemps pratiqués dans la science de la mesure, c'est-à-dire en métrologie. On reconnaît maintenant largement que, lorsqu'on a évalué la totalité des composantes de l'erreur(((erreur de mesure))) connues ou soupçonnées et que les corrections appropriées ont été appliquées, il subsiste encore une incertitude(((incertitude de mesure))) sur la validité du résultat exprimé, c'est-à-dire un doute sur la manière dont le résultat de mesure représente correctement la valeur de la grandeur mesurée.
+
+[[scls_0-3]]
+=== {blank}
+
+De même que l'utilisation quasi universelle du ((Système international d'unités (SI))) a apporté la cohérence pour tous les mesurages scientifiques et technologiques, de même un consensus universel sur l'évaluation et l'expression de l'incertitude de mesure permettrait la compréhension aisée et l'interprétation correcte d'un vaste spectre de résultats de mesure en science, ingénierie, commerce, industrie et réglementation. À notre époque de développement mondial du commerce, il est impératif que la méthode d'évaluation et d'expression des incertitudes soit uniforme dans le monde entier pour pouvoir comparer facilement des mesurages effectués dans des pays différents.
+
+
+[[scls_0-4]]
+=== {blank}
+
+La méthode idéale d'évaluation et d'expression de l'incertitude(((incertitude, méthode idéale pour évaluer et exprimer l')))(((incertitude, méthode universelle d'évaluation et d'expression de l'))) du résultat d'un mesurage devrait être:
+
+* _universelle_: la méthode devrait pouvoir s'appliquer à tous les types de mesurages et à tous les types de données d'entrée utilisées dans les mesurages.
+
+La grandeur effectivement utilisée pour exprimer l'incertitude(((incertitude, grandeur logique en elle-même pour exprimer l')))(((incertitude, grandeur transférable pour exprimer l'))) devrait être:
+
+* _logique en elle-même_: elle devrait pouvoir se déduire directement des composantes constitutives tout en étant indépendante du groupement de ces composantes ou de leur décomposition en souscomposantes;
+
+* _transférable_: l'incertitude évaluée pour un résultat devrait pouvoir être utilisée directement comme composante dans l'évaluation de l'incertitude d'un autre mesurage où l'on utilise le premier résultat.
+
+De plus, dans de nombreuses applications industrielles et commerciales de même que dans les domaines de la santé et de la sécurité, il est souvent nécessaire de fournir, autour du résultat d'un mesurage, un intervalle dont on puisse s'attendre à ce qu'il comprenne une fraction élevée de la distribution des valeurs qui pourraient raisonnablement être attribuées au mesurande. Aussi, la méthode idéale d'évaluation et d'expression de l'incertitude de mesure devrait pouvoir fournir aisément un tel intervalle, en particulier avec une ((probabilité)) ou un ((niveau de confiance)) qui corresponde d'une manière réaliste à ce qui est exigé.
+
+
+[[scls_0-5]]
+=== {blank}
+
+L'approche de base de ce _Guide_ est celle qui est esquissée dans la Recommandation INC-1 (1980) <<KAARLS1981>> du Groupe de travail sur l'expression des incertitudes(((Groupe de travail sur l'évaluation des incertitudes))), constitué par le ((BIPM)) en réponse à une demande du ((CIPM)) (voir <<foreword>>). Cette approche, dont la justification est développée en <<annexE>>, satisfait toutes les exigences exposées ci-dessus. Cela n'est pas le cas pour la plupart des autres méthodes d'usage courant. La Recommandation INC-1 (1980) a été approuvée et réaffirmée par le ((CIPM)) dans ses propres Recommandations 1 (CI-1981)(((Recommandation 1 (CI-1981), CIPM))) <<CIPM1982>> et 1 (CI-1986)(((Recommandation 1 (CI-1986), CIPM))) <<CIPM1987>>. Le texte original en français des Recommandations du ((CIPM)) est donné en <<annexA>> (voir respectivement <<scls_A-2>> et <<scls_A-3>>). Comme la Recommandation INC-1(((Recommandation INC-1 (1980)))) (1980) sert de fondement au présent document, elle est donnée ci-après en <<scls_0-7>>. L'original français, qui fait autorité, est donné en <<scls_A-1>> dans les deux versions, française et anglaise, du _Guide_.
+
+
+[[scls_0-6]]
+=== {blank}
+
+L’Article 8 du présent _Guide_ donne un résumé succinct de la procédure spécifiée pour évaluer et exprimer l'incertitude de mesure et l'<<annexH>> présente en détail un certain nombre d'exemples. Les autres annexes traitent des termes généraux de métrologie (<<annexB>>), des termes et concepts statistiques fondamentaux (<<annexC>>), de la valeur «vraie», de l'erreur et de l'incertitude (<<annexD>>), des suggestions pratiques pour évaluer les composantes de l'incertitude (<<annexF>>), des degrés de liberté et niveaux de confiance (<<annexG>>), des symboles mathématiques principaux utilisés dans le document (<<annexJ>>), et des références bibliographiques (<<bibliography>>). Un <<index-alphabetique,Index alphabétique>> complète le document.
+
+
+[[scls_0-7]]
+=== {blank}
+
+*Recommandation INC-1 (1980)*(((Recommandation INC-1 (1980)))) Expression des incertitudes expérimentales
+
+. L'incertitude d'un résultat de mesure comprend généralement plusieurs composantes qui peuvent être groupées en deux catégories d'après la méthode utilisée pour estimer leur valeur numérique:
++
+--
+.. celles qui sont évaluées à l'aide de méthodes statistiques,
+.. celles qui sont évaluées par d'autres moyens.
+
+Il n'y a pas toujours une correspondance simple entre le classement dans les catégories A ou B et le caractère «((aléatoire))» ou «systématique» utilisé antérieurement pour classer les incertitudes. L'expression «incertitude systématique» est susceptible de conduire à des erreurs d'interprétation: elle doit être évitée.
+
+Toute description détaillée de l'incertitude devrait comprendre une liste complète de ses composantes et indiquer pour chacune la méthode utilisée pour lui attribuer une valeur numérique.
+--
+. Les composantes de la catégorie A sont caractérisées par les variances estimées stem:[s_i^2] (ou les «écarts-types» estimés stem:[s_i]) et les nombres stem:[nu_i] de degrés de liberté. Le cas échéant, les covariances estimées doivent être données.
+. Les composantes de la catégorie B devraient être caractérisées par les variances estimées stem:[u_j^2], qui peuvent être considérées comme des approximations des variances correspondantes dont on admet l'existence. Les termes stem:[u_j^2] peuvent être traités comme des variances et les termes stem:[u_j] comme des écarts-types. Le cas échéant, les covariances doivent être traitées de façon analogue.
+. L'incertitude composée devrait être caractérisée par la valeur obtenue en appliquant la méthode usuelle de combinaison des variances. L'incertitude composée ainsi que ses composantes devraient être exprimées sous la forme d'«écarts-types».
+. Si, pour des utilisations particulières, on est amené à multiplier par un facteur l'incertitude composée afin d'obtenir une incertitude globale, la valeur numérique de ce facteur doit toujours être donnée.

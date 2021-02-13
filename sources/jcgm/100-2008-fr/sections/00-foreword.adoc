@@ -32,7 +32,7 @@ IFCC: Fédération internationale de chimie clinique et de médecine de laborato
 
 ((ISO)):: Organisation internationale de normalisation
 
-OlML:: Organisation internationale de métrologie légale
+((OIML)):: Organisation internationale de métrologie légale
 
 ((UICPA)):: Union internationale de chimie pure et appliquée
 

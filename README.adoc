@@ -1,20 +1,20 @@
-= Metanorma BIPM samples
+= Metanorma JCGM samples
 
-image:https://github.com/metanorma/mn-samples-bipm/workflows/ubuntu/badge.svg["Build Status", link="https://github.com/metanorma/mn-samples-bipm/actions?workflow=ubuntu"]
-image:https://github.com/metanorma/mn-samples-bipm/workflows/macos/badge.svg["Build Status", link="https://github.com/metanorma/mn-samples-bipm/actions?workflow=macos"]
-image:https://github.com/metanorma/mn-samples-bipm/workflows/windows/badge.svg["Build Status", link="https://github.com/metanorma/mn-samples-bipm/actions?workflow=windows"]
-image:https://github.com/metanorma/mn-samples-bipm/workflows/docker/badge.svg["Build Status", link="https://github.com/metanorma/mn-samples-bipm/actions?workflow=docker"]
+image:https://github.com/metanorma/mn-samples-jcgm/workflows/ubuntu/badge.svg["Build Status", link="https://github.com/metanorma/mn-samples-jcgm/actions?workflow=ubuntu"]
+image:https://github.com/metanorma/mn-samples-jcgm/workflows/macos/badge.svg["Build Status", link="https://github.com/metanorma/mn-samples-jcgm/actions?workflow=macos"]
+image:https://github.com/metanorma/mn-samples-jcgm/workflows/windows/badge.svg["Build Status", link="https://github.com/metanorma/mn-samples-jcgm/actions?workflow=windows"]
+image:https://github.com/metanorma/mn-samples-jcgm/workflows/docker/badge.svg["Build Status", link="https://github.com/metanorma/mn-samples-jcgm/actions?workflow=docker"]
 
 This document is available in its rendered forms here:
 
-* https://metanorma.github.io/mn-samples-bipm/[Metanorma BIPM samples (HTML)]
+* https://metanorma.github.io/mn-samples-jcgm/[Metanorma JCGM samples (HTML)]
 
 
 == Fetching the document
 
 [source,sh]
 ----
-git clone https://github.com/metanorma/mn-samples-bipm/
+git clone https://github.com/metanorma/mn-samples-jcgm/
 ----
 
 == Installing Build Tools

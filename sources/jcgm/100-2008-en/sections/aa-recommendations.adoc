@@ -1,6 +1,6 @@
 
 [[annexA]]
-[appendix]
+[appendix,obligation=normative]
 == Recommendations of Working Group and CIPM
 
 [[scls_A-1]]
@@ -13,10 +13,11 @@ Expression des incertitudes expérimentales
 *Recommandation INC-1 (1980)*
 
 . L'incertitude d'un résultat de mesure comprend généralement plusieurs composantes qui peuvent être groupées en deux catégories d'après la méthode utilisée pour estimer leur valeur numérique:
-.. celles qui sont évaluées à l'aide de méthodes statistiques,
-.. celles qui sont évaluées par d'autres moyens.
 +
 --
+.. celles qui sont évaluées à l'aide de méthodes statistiques,
+.. celles qui sont évaluées par d'autres moyens.
+
 Il n'y a pas toujours une correspondance simple entre le classement dans les catégories A ou B et le caractère «aléatoire» ou «systématique» utilisé antérieurement pour classer les incertitudes. L'expression «incertitude systématique» est susceptible de conduire à des erreurs d'interprétation; elle doit être évitée.
 
 Toute description détaillée de l'incertitude devrait comprendre une liste complète de ses composantes et indiquer pour chacune la méthode utilisée pour lui attribuer une valeur numérique.

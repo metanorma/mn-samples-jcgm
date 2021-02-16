@@ -259,13 +259,13 @@ There are occasions when all possible values of a quantity lie to one side of a 
 If a new variable stem:[ii(delta) = 1 - cos ii(beta)] is introduced, the two different situations are, assuming stem:[ii(beta) ~~ 0] or stem:[ii(delta) " << " 1] as is usually the case in practice,
 
 [[eq_F-3a]]
-[stem]
+[stem,subsequence=D]
 ++++
 h = bar(l) (1 - ii(delta))
 ++++
 
 [[eq_F-3b]]
-[stem]
+[stem,subsequence=D]
 ++++
 h' = bar(l) (1 + ii(delta))
 ++++
@@ -274,13 +274,13 @@ Here stem:[l], the best estimate of stem:[l], is the arithmetic mean or average 
 
 [[eq_F-4]]
 [[eq_F-4a]]
-[latexmath]
+[latexmath,subsequence=E]
 ++++
 u_{"c"}^2 = (1 \mp \delta)^2 u^2(\bar{l}) + {\bar{l}}^2 u^2 (\delta)
 ++++
 
 [[eq_F-4b]]
-[stem]
+[stem,subsequence=E]
 ++++
 ~~ u^2(bar(l)) + bar(l)^2 u^2(ii(delta))
 ++++
@@ -291,7 +291,7 @@ In the constrained or one-dimensional case, the *probability element* stem:[p(ii
 stem:[ii(delta) = 1 - cos ii(beta)] and stem:[sin ii(beta)] may be expanded to lowest order in stem:[ii(beta)]. This yields stem:[ii(delta) ~~ ii(beta)^2//2], stem:[sin ii(beta) ~~ ii(beta) = sqrt(2 ii(delta))], and stem:[d ii(beta) = d ii(delta) // sqrt(2ii(delta))]. The probability density functions are then
 
 [[eq_F-5a]]
-[stem]
+[stem,subsequence=F]
 ++++
 p(ii(delta)) = 1/{ii(sigma) sqrt(pi ii(delta))} exp(-ii(delta)//ii(sigma)^2)
 ++++
@@ -299,7 +299,7 @@ p(ii(delta)) = 1/{ii(sigma) sqrt(pi ii(delta))} exp(-ii(delta)//ii(sigma)^2)
 in one dimension
 
 [[eq_F-5b]]
-[stem]
+[stem,subsequence=F]
 ++++
 p(ii(ii(delta))) = 1/{ii(sigma)^2} exp(-ii(delta)//ii(sigma)^2)
 ++++
@@ -316,19 +316,19 @@ int_0^{oo} p(ii(ii(delta)))" d"ii(ii(delta)) = 1
 <<eq_F-5a>> and <<eq_F-5b>>, which show that the most probable value of the correction stem:[ii(delta)] in both cases is zero, give in the one-dimensional case stem:[ii(E)(ii(delta)) = ii(sigma)^2//2] and stem:["var"(ii(delta)) = ii(sigma)^4//2] for the expectation and the variance of stem:[ii(delta)]; and in the two-dimensional case stem:[E(ii(delta)) =ii(sigma)^2] and stem:["var"(ii(delta)) = ii(sigma)^4]. <<eq_F-3a>>, <<eq_F-3b>>, and <<eq_F-4b>> become then
 
 [[eq_F-6a]]
-[stem]
+[stem,subsequence=G]
 ++++
 h = bar(l) [1 - (d//2)u^2 (ii(beta))]
 ++++
 
 [[eq_F-6b]]
-[stem]
+[stem,subsequence=G]
 ++++
 h' = bar(l) [1 + (d//2)u^2 (ii(beta))]
 ++++
 
 [[eq_F-6c]]
-[stem]
+[stem,subsequence=G]
 ++++
 u_{"c"}^2(h) = u_{"c"}^2(h') = u^2(bar(l)) + (d//2)bar(l)^2 u^4 (ii(beta))
 ++++
@@ -356,7 +356,7 @@ A comparatively simple approach to this problem that is consistent with the prin
 
 Compute a _single_ mean correction stem:[bar(b)] from
 
-[stem]
+[stem,subsequence=H]
 ++++
 bar(b) = 1/{t_2 - t_1} int_{t_1}^{t_2} b(t)" d"t
 ++++
@@ -364,28 +364,28 @@ bar(b) = 1/{t_2 - t_1} int_{t_1}^{t_2} b(t)" d"t
 
 where stem:[t_1] and stem:[t_2] define the range of interest of the parameter stem:[t], and take the best estimate of stem:[Y(t)] to be stem:[y'(t) = y(t) + bar(b)], where stem:[y(t)] is the best uncorrected estimate of stem:[bar(Y)(t)]. The variance associated with the mean correction stem:[bar(b)] over the range of interest is given by
 
-[stem]
+[stem,subsequence=H]
 ++++
 u^2(bar(b)) = 1/{t_2 - t_1} int_{t_1}^{t_2} [b(t) - bar(b)]^2 " d"t
 ++++
 
 not taking into account the uncertainty of the actual determination of the correction stem:[b(t)]. The mean variance of the correction stem:[b(t)] due to its actual determination is given by
 
-[stem]
+[stem,subsequence=H]
 ++++
 bar(u^2 [b(t)]) = 1/{t_2 - t_1} int_{t_1}^{t_2} u^2 [b(t)]" d"t
 ++++
 
 where stem:[u^2[b(t)\]] is the variance of the correction stem:[b(t)]. Similarly, the mean variance of stem:[y(t)] arising from all sources of uncertainty other than the correction stem:[b(t)] is obtained from
 
-[stem]
+[stem,subsequence=H]
 ++++
 bar(u^2 [y(t)]) = 1/{t_2 - t_1} int_{t_1}^{t_2} u^2 [y(t)]" d"t
 ++++
 
 where stem:[u^2[y(t)\]] is the variance of stem:[y(t)] due to all uncertainty sources other than stem:[b(t)]. The single value of standard uncertainty to be used for _all_ estimates stem:[y'(t) = y(t) + bar(b)] of the measurand stem:[ii(Y)(t)] is then the positive square root of
 
-[stem]
+[stem,subsequence=H]
 ++++
 u_{"c"}^2(y') =  bar(u^2[y(t)]) + bar(u^2 [b(t)]) + u^2(bar(b))
 ++++

@@ -7,17 +7,30 @@ This _Guide_ establishes general rules for evaluating and expressing uncertainty
 
 This _Guide_ was prepared by a joint working group consisting of experts nominated by the BIPM, the International Electrotechnical Commission (IEC), the International Organization for Standardization (ISO), and the International Organization of Legal Metrology (OIML).
 
-The following seven organizations footnote:[*Footnote to the 2008 version:* +
-In 2005, the International Laboratory Accreditation Cooperation (ILAC) officially joined the seven founding international organizations.]
-supported the development of this _Guide_, which is published in their name:
+The following seven organizations footnoteblock:[f1] supported the development of this _Guide_, which is published in their name:
+
+[[f1]]
+[NOTE]
+--
+*Footnote to the 2008 version:*
+
+In 2005, the International Laboratory Accreditation Cooperation (ILAC) officially joined the seven founding international organizations.
+--
 
 BIPM:: Bureau International des Poids et Mesures
 
 IEC:: International Electrotechnical Commission
 
-IFCC:: International Federation of Clinical Chemistry footnote:[*Footnote to the 2008 version:* +
+IFCC:: International Federation of Clinical Chemistry footnoteblock:[f2]
+
+[[f2]]
+[NOTE]
+--
+*Footnote to the 2008 version:*
+
 The name of this organization has changed since 1995. It is now: +
-IFCC: International Federation of Clinical Chemistry and Laboratory Medicine]
+IFCC: International Federation of Clinical Chemistry and Laboratory Medicine
+--
 
 ISO:: International Organization for Standardization
 
@@ -27,9 +40,15 @@ IUPAP:: International Union of Pure and Applied Physics
 
 OIML:: International Organization of Legal Metrology
 
-Users of this _Guide_ are invited to send their comments and requests for clarification to any of the seven supporting organizations, the mailing addresses of which are given on the inside front cover footnote:[*Footnote to the 2008 version:* +
-Links to the addresses of the eight organizations presently involved in the JCGM (Joint Committee for Guides in Metrology) are given on http://www.bipm.org/en/committees/jc/jcgm.].
+Users of this _Guide_ are invited to send their comments and requests for clarification to any of the seven supporting organizations, the mailing addresses of which are given on the inside front cover footnoteblock:[f3].
 
+[[f3]]
+[NOTE]
+--
+*Footnote to the 2008 version:*
+
+Links to the addresses of the eight organizations presently involved in the JCGM (Joint Committee for Guides in Metrology) are given on http://www.bipm.org/en/committees/jc/jcgm.
+--
 
 [[foreword]]
 .Foreword
@@ -37,9 +56,18 @@ Links to the addresses of the eight organizations presently involved in the JCGM
 In 1977, recognizing the lack of international consensus on the expression of uncertainty in measurement, the world's highest authority in metrology, the Comité International des Poids et Mesures (CIPM), requested the Bureau International des Poids et Mesures (BIPM) to address the problem in conjunction with the national standards laboratories and to make a recommendation.
 
 The BIPM prepared a detailed questionnaire covering the issues involved and distributed it to 32 national metrology laboratories known to have an interest in the subject (and, for information, to five international organizations). By early 1979 responses were received from 21 laboratories <<CIPM1980>>
-footnote:[See the <<bibliography>>. +
-*Footnote to the 2008 version:* +
-In producing this 2008 version of the GUM, necessary corrections only to the printed 1995 version have been introduced by JCGM/WG 1. These corrections occur in subclauses 4.2.2, 4.2.4, 5.1.2, B.2.17, C.3.2, C.3.4, E.4.3, H.4.3, H.5.2.5 and H.6.2.].
+footnoteblock:[f4].
+
+[[f4]]
+[NOTE]
+--
+See the <<bibliography>>.
+
+*Footnote to the 2008 version:*
+
+In producing this 2008 version of the GUM, necessary corrections only to the printed 1995 version have been introduced by JCGM/WG 1. These corrections occur in subclauses 4.2.2, 4.2.4, 5.1.2, B.2.17, C.3.2, C.3.4, E.4.3, H.4.3, H.5.2.5 and H.6.2.
+--
+
 Almost all believed that it was important to arrive at an internationally accepted procedure for expressing measurement uncertainty and for combining individual uncertainty components into a single total uncertainty. However, a consensus was not apparent on the method to be used. The BIPM then convened a meeting for the purpose of arriving at a uniform and generally acceptable procedure for the specification of uncertainty; it was attended by experts from 11 national standards laboratories. This Working Group on the Statement of Uncertainties developed Recommendation INC-1 (1980), Expression of Experimental Uncertainties <<KAARLS1981>>. The CIPM approved the Recommendation in 1981 <<CIPM1982>> and reaffirmed it in 1986 <<CIPM1987>>.
 
 The task of developing a detailed guide based on the Working Group Recommendation (which is a brief outline rather than a detailed prescription) was referred by the CIPM to the International Organization for Standardization (ISO), since ISO could better reflect the needs arising from the broad interests of industry and commerce.

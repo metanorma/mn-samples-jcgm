@@ -1,13 +1,20 @@
 
 [[annexC]]
-[appendix]
+[appendix,obligation=normative]
 == Basic statistical terms and concepts
 
 [[scls_C-1]]
 === Source of definitions
 
-The definitions of the basic statistical terms given in this annex are taken from International Standard ISO 3534-1:1993 footnote:[*Footnote to the 2008 version:* ISO 3534-1:1993 has been cancelled and replaced by ISO 3534-1:2006. Note that some of the terms and definitions have been revised. For further information, see the latest edition.] <<ISO_3534-1>>. This should be the first source consulted for the definitions of terms not included here. Some of these terms and their underlying concepts are elaborated upon in <<scls_C-3>> following the presentation of their formal definitions in <<scls_C-2>> in order to facilitate further the use of this _Guide_. However, <<scls_C-3>>, which also includes the definitions of some related terms, is not based directly on ISO 3534-1:1993.
+The definitions of the basic statistical terms given in this annex are taken from International Standard ISO 3534-1:1993 footnoteblock:[fC-1] <<ISO_3534-1>>. This should be the first source consulted for the definitions of terms not included here. Some of these terms and their underlying concepts are elaborated upon in <<scls_C-3>> following the presentation of their formal definitions in <<scls_C-2>> in order to facilitate further the use of this _Guide_. However, <<scls_C-3>>, which also includes the definitions of some related terms, is not based directly on ISO 3534-1:1993.
 
+[[fC-1]]
+[NOTE]
+--
+*Footnote to the 2008 version:*
+
+ISO 3534-1:1993 has been cancelled and replaced by ISO 3534-1:2006. Note that some of the terms and definitions have been revised. For further information, see the latest edition.
+--
 
 [[scls_C-2]]
 === Definitions
@@ -26,7 +33,7 @@ NOTE: It can be related to a long-run relative frequency of occurrence or to a d
 
 // [ISO 3534-1:1993, definition 1.1]
 [.source]
-<<ISO_3534-1,definition 1.1>>
+<<ISO_3534-1>>, definition 1.1
 
 [[scls_C-2-2]]
 ==== random variable
@@ -36,13 +43,13 @@ a variable that may take any of the values of a specified set of values and with
 
 NOTE: A random variable that may take only isolated values is said to be "discrete". A random variable which may take any value within a finite or infinite interval is said to be "continuous".
 
-NOTE: The probability of an event A is denoted by stem:["Pr"(A)] or stem:[P(A)].
+NOTE: The probability of an event A is denoted by stem:["Pr"(ii(A))] or stem:[ii(P)(ii(A))].
 
 // [ISO 3534-1:1993, definition 1.2]
 [.source]
-<<ISO_3534-1,definition 1.2>>
+<<ISO_3534-1>>, definition 1.2
 
-_Guide_ Comment: The symbol stem:["Pr"(A)] is used in this _Guide_ in place of the symbol stem:["Pr"(A)] used in ISO 3534-1:1993.
+_Guide_ Comment: The symbol stem:["Pr"(ii(A))] is used in this _Guide_ in place of the symbol stem:["Pr"(ii(A))] used in ISO 3534-1:1993.
 
 
 [[scls_C-2-3]]
@@ -54,21 +61,21 @@ NOTE: The probability on the whole set of values of the random variable equals 1
 
 // [ISO 3534-1:1993, definition 1.3]
 [.source]
-<<ISO_3534-1,definition 1.3>>
+<<ISO_3534-1>>, definition 1.3
 
 [[scls_C-2-4]]
 ==== distribution function
 
-a function giving, for every value stem:[x], the probability that the random variable stem:[X] be less than or equal to stem:[x]:
+a function giving, for every value stem:[x], the probability that the random variable stem:[ii(X)] be less than or equal to stem:[x]:
 
 [stem%unnumbered]
 ++++
-F (x) = "Pr"(X <= x)
+ii(F)(x) = "Pr"(ii(X) <= x)
 ++++
 
 // [ISO 3534-1:1993, definition 1.4]
 [.source]
-<<ISO_3534-1,definition 1.4>>
+<<ISO_3534-1>>, definition 1.4
 
 
 [[scls_C-2-5]]
@@ -78,7 +85,7 @@ the derivative (when it exists) of the distribution function:
 
 [stem%unnumbered]
 ++++
-f(x) = " d"F(x)" d"x
+f(x) = " d"ii(F)(x)" d"x
 ++++
 
 [[note_C-2-5]]
@@ -88,28 +95,28 @@ stem:[f(x)" d"x] is the "probability element":
 
 [stem%unnumbered]
 ++++
-f(x)" d"x = "Pr"(x < X < x + "d"x)
+f(x)" d"x = "Pr"(x < ii(X) < x + "d"x)
 ++++
 ====
 
 // [ISO 3534-1:1993, definition 1.5]
 [.source]
-<<ISO_3534-1,definition 1.5>>
+<<ISO_3534-1>>, definition 1.5
 
 
 [[scls_C-2-6]]
 ==== probability mass function
 
-a function giving, for each value stem:[x_i] of a discrete random variable stem:[X], the probability stem:[p_i] that the random variable equals stem:[x_i]:
+a function giving, for each value stem:[x_i] of a discrete random variable stem:[ii(X)], the probability stem:[p_i] that the random variable equals stem:[x_i]:
 
 [stem%unnumbered]
 ++++
-p_i = "Pr"(X = x_i)
+p_i = "Pr"(ii(X) = x_i)
 ++++
 
 // [ISO 3534-1:1993, definition 1.6]
 [.source]
-<<ISO_3534-1,definition 1.1>>
+<<ISO_3534-1>>, definition 1.6
 
 
 [[scls_C-2-7]]
@@ -119,7 +126,7 @@ a quantity used in describing the probability distribution of a random variable
 
 // [ISO 3534-1:1993, definition 1.12]
 [.source]
-<<ISO_3534-1,definition 1.12>>
+<<ISO_3534-1>>, definition 1.12
 
 
 [[scls_C-2-8]]
@@ -131,38 +138,38 @@ NOTE: Most statistical measures of correlation measure only the degree of linear
 
 // [ISO 3534-1:1993, definition 1.13]
 [.source]
-<<ISO_3534-1,definition 1.13>>
+<<ISO_3534-1>>, definition 1.13
 
 [[scls_C-2-9]]
 ==== expectation (of a random variable or of a probability distribution)
 alt:[expected value]
 alt:[mean]
 
-. For a discrete random variable stem:[X] taking the values stem:[x_i] with the probabilities stem:[p_i], the expectation, if it exists, is
+. For a discrete random variable stem:[ii(X)] taking the values stem:[x_i] with the probabilities stem:[p_i], the expectation, if it exists, is
 +
 --
 [stem%unnumbered]
 ++++
-mu = E(X) = sum p_i x_i
+ii(mu) = ii(E)(ii(X)) = sum p_i x_i
 ++++
 
-the sum being extended over all the values stem:[x_i] which can be taken by stem:[X].
+the sum being extended over all the values stem:[x_i] which can be taken by stem:[ii(X)].
 --
 
-. For a continuous random variable stem:[X] having the probability density function stem:[f(x)], the expectation, if it exists, is
+. For a continuous random variable stem:[ii(X)] having the probability density function stem:[f(x)], the expectation, if it exists, is
 +
 --
 [stem%unnumbered]
 ++++
-mu = E(X) = int x f(x)" d"x
+ii(mu) = ii(E)(ii(X)) = int x f(x)" d"x
 ++++
 
-the integral being extended over the interval(s) of variation of stem:[X].
+the integral being extended over the interval(s) of variation of stem:[ii(X)].
 --
 
 // [ISO 3534-1:1993, definition 1.18]
 [.source]
-<<ISO_3534-1,definition 1.18>>
+<<ISO_3534-1>>, definition 1.18
 
 
 [[scls_C-2-10]]
@@ -170,11 +177,11 @@ the integral being extended over the interval(s) of variation of stem:[X].
 
 a random variable the expectation of which equals zero
 
-NOTE: If the random variable stem:[X] has an expectation equal to stem:[mu], the corresponding centred random variable is (stem:[X - mu]).
+NOTE: If the random variable stem:[ii(X)] has an expectation equal to stem:[ii(mu)], the corresponding centred random variable is (stem:[ii(X) - ii(mu)]).
 
 // [ISO 3534-1:1993, definition 1.21]
 [.source]
-<<ISO_3534-1,definition 1.21>>
+<<ISO_3534-1>>, definition 1.21
 
 
 [[scls_C-2-11]]
@@ -184,12 +191,12 @@ the expectation of the square of the _centred random variable_ [ISO 3534-1:1993,
 
 [stem%unnumbered]
 ++++
-sigma^2 = V(X) = E{[X - E(X)]^2}
+ii(sigma)^2 = ii(V)(ii(X)) = ii(E){[ii(X) - ii(E)(ii(X))]^2}
 ++++
 
 // [ISO 3534-1:1993, definition 1.22]
 [.source]
-<<ISO_3534-1,definition 1.22>>
+<<ISO_3534-1>>, definition 1.22
 
 
 [[scls_C-2-12]]
@@ -199,49 +206,49 @@ the positive square root of the variance:
 
 [stem%unnumbered]
 ++++
-sigma = sqrt(V(X))
+ii(sigma) = sqrt(ii(V)(ii(X)))
 ++++
 
 // [ISO 3534-1:1993, definition 1.23]
 [.source]
-<<ISO_3534-1,definition 1.23>>
+<<ISO_3534-1>>, definition 1.23
 
 
 [[scls_C-2-13]]
-==== central moment footnote:[If, in the definition of the moments, the quantities stem:[X], stem:[X - a], stem:[Y], stem:[Y - b], etc. are replaced by their absolute values, i.e. stem:[|X|], stem:[|X - a|], stem:[|Y|], stem:[|Y - b|], etc., other moments called "absolute moments" are defined.] of order stem:[q]
+==== central moment footnote:[If, in the definition of the moments, the quantities stem:[ii(X)], stem:[ii(X) - a], stem:[ii(Y)], stem:[ii(Y) - b], etc. are replaced by their absolute values, i.e. stem:[abs(ii(X))], stem:[abs(ii(X) - a)], stem:[abs(ii(Y))], stem:[abs(ii(Y) - b)], etc., other moments called "absolute moments" are defined.] of order stem:[q]
 
-in a univariate distribution, the expectation of the __q__th power of the centred random variable (stem:[X - mu]):
+in a univariate distribution, the expectation of the stem:[q]th power of the centred random variable (stem:[ii(X) - ii(mu)]):
 
 [stem%unnumbered]
 ++++
-E (X - mu)^q
+ii(E)[(ii(X) - ii(mu))^q]
 ++++
 
-NOTE: The central moment of order 2 is the _variance_ [ISO 3534-1:1993, definition 1.22 (<<scls_C-2-11>>)] of the random variable stem:[X].
+NOTE: The central moment of order 2 is the _variance_ [ISO 3534-1:1993, definition 1.22 (<<scls_C-2-11>>)] of the random variable stem:[ii(X)].
 
 //[ISO 3534-1:1993, definition 1.28]
 [.source]
-<<ISO_3534-1,definition 1.28>>
+<<ISO_3534-1>>, definition 1.28
 
 
 [[scls_C-2-14]]
 ==== normal distribution
 alt:[Laplace-Gauss distribution]
 
-the probability distribution of a continuous random variable stem:[X], the probability density function of which is
+the probability distribution of a continuous random variable stem:[ii(X)], the probability density function of which is
 
 [stem%unnumbered]
 ++++
-f(x) = 1/{sigma sqrt(2 pi)} exp[-1/2 ({x-mu}/sigma)^2]
+f(x) = 1/{ii(sigma) sqrt(2 pi)} exp[-1/2 ({x-ii(mu)}/ii(sigma))^2]
 ++++
 
 for stem:[-oo < x < +oo].
 
-NOTE: stem:[mu] is the expectation and stem:[sigma] is the standard deviation of the normal distribution.
+NOTE: stem:[ii(mu)] is the expectation and stem:[ii(sigma)] is the standard deviation of the normal distribution.
 
 // [ISO 3534-1:1993, definition 1.37]
 [.source]
-<<ISO_3534-1,definition 1.37>>
+<<ISO_3534-1>>, definition 1.37
 
 
 [[scls_C-2-15]]
@@ -253,7 +260,7 @@ NOTE: The characteristic may be either quantitative (by variables) or qualitativ
 
 // [ISO 3534-1:1993, definition 2.2]
 [.source]
-<<ISO_3534-1,definition 2.2>>
+<<ISO_3534-1>>, definition 2.2
 
 
 [[scls_C-2-16]]
@@ -265,25 +272,28 @@ NOTE: In the case of a random variable, the _probability distribution_ [ISO 3534
 
 // [ISO 3534-1:1993, definition 2.3]
 [.source]
-<<ISO_3534-1,definition 2.3>>
+<<ISO_3534-1>>, definition 2.3
 
 
 [[scls_C-2-17]]
 ==== frequency
 
-the number of occurrences of a given type of event or the number of observations falling into a specified class [ISO 3534-1:1993, definition 2.11]
+the number of occurrences of a given type of event or the number of observations falling into a specified class
 
+// [ISO 3534-1:1993, definition 2.11]
+[.source]
+<<ISO_3534-1>>, definition 2.11
 
 [[scls_C-2-18]]
 ==== frequency distribution
 
 the empirical relationship between the values of a characteristic and their frequencies or their relative frequencies
 
-NOTE: The distribution may be graphically presented as a _histogram_ (ISO 3534 -1:1993, definition 2.17), _bar chart_ (ISO 3534 -1:1993, definition 2.18), _cumulative frequency polygon_ (ISO 3534-1:1993, definition 2.19), or as a _two-way__table_ (ISO 3534-1:1993, definition 2.22).
+NOTE: The distribution may be graphically presented as a _histogram_ (ISO 3534 -1:1993, definition 2.17), _bar chart_ (ISO 3534 -1:1993, definition 2.18), _cumulative frequency polygon_ (ISO 3534-1:1993, definition 2.19), or as a _two-way table_ (ISO 3534-1:1993, definition 2.22).
 
 // [ISO 3534-1:1993, definition 2.15]
 [.source]
-<<ISO_3534-1,definition 2.15>>
+<<ISO_3534-1>>, definition 2.15
 
 
 [[scls_C-2-19]]
@@ -298,7 +308,7 @@ NOTE: The average of a simple random sample taken from a population is an unbias
 
 // [ISO 3534-1:1993, definition 2.26]
 [.source]
-<<ISO_3534-1,definition 2.26>>
+<<ISO_3534-1>>, definition 2.26
 
 
 [[scls_C-2-20]]
@@ -329,7 +339,7 @@ NOTE: The variance is stem:[n//(n - 1)] times the central moment of order 2 (see
 
 // [ISO 3534-1:1993, definition 2.33]
 [.source]
-<<ISO_3534-1,definition 2.33>>
+<<ISO_3534-1>>, definition 2.33
 
 _Guide_ Comment: The variance defined here is more appropriately designated the "sample estimate of thepopulation variance". The variance of a sample is usually defined to be the central moment of order 2 of the sample (see <<scls_C-2-13>> and <<scls_C-2-22>>).
 
@@ -344,13 +354,13 @@ NOTE: The sample standard deviation is a biased estimator of the population stan
 
 // [ISO 3534-1:1993, definition 2.34]
 [.source]
-<<ISO_3534-1,definition 2.34>>
+<<ISO_3534-1>>, definition 2.34
 
 
 [[scls_C-2-22]]
 ==== central moment of order stem:[q]
 
-in a distribution of a single characteristic, the arithmetic mean of the __q__th power of the difference between the observed values and their average stem:[bar(x)]:
+in a distribution of a single characteristic, the arithmetic mean of the stem:[q]th power of the difference between the observed values and their average stem:[bar(x)]:
 
 [stem%unnumbered]
 ++++
@@ -363,7 +373,7 @@ NOTE: The central moment of order 1 is equal to zero.
 
 // [ISO 3534-1:1993, definition 2.37]
 [.source]
-<<ISO_3534-1,definition 2.37>>
+<<ISO_3534-1>>, definition 2.37
 
 
 [[scls_C-2-23]]
@@ -375,7 +385,7 @@ NOTE: A statistic, as a function of random variables, is also a random variable 
 
 // [ISO 3534-1:1993, definition 2.45]
 [.source]
-<<ISO_3534-1,definition 2.45>>
+<<ISO_3534-1>>, definition 2.45
 
 
 [[scls_C-2-24]]
@@ -387,7 +397,7 @@ NOTE: A result of this operation may be expressed as a single value [point estim
 
 // [ISO 3534-1:1993, definition 2.49]
 [.source]
-<<ISO_3534-1,definition 2.49>>
+<<ISO_3534-1>>, definition 2.49
 
 
 [[scls_C-2-25]]
@@ -397,7 +407,7 @@ a statistic used to estimate a population parameter
 
 // [ISO 3534-1:1993, definition 2.50]
 [.source]
-<<ISO_3534-1,definition 2.50>>
+<<ISO_3534-1>>, definition 2.50
 
 
 [[scls_C-2-26]]
@@ -407,48 +417,48 @@ the value of an estimator obtained as a result of an estimation
 
 // [ISO 3534-1:1993, definition 2.51]
 [.source]
-<<ISO_3534-1,definition 2.51>>
+<<ISO_3534-1>>, definition 2.51
 
 
 [[scls_C-2-27]]
 ==== two-sided confidence interval
 
-when stem:[T_1] and stem:[T_2] are two functions of the observed values such that, stem:[theta] being a population parameter to be estimated, the probability stem:["Pr"(T_1 <= theta <= T_2)] is at least equal to (stem:[1 - alpha]) [where (stem:[1 - alpha]) is a fixed number, positive and less than 1], the interval between stem:[T_1] and stem:[T_2] is a two-sided (stem:[1 - alpha]) confidence interval for stem:[theta]
+when stem:[ii(T)_1] and stem:[ii(T)_2] are two functions of the observed values such that, stem:[ii(theta)] being a population parameter to be estimated, the probability stem:["Pr"(ii(T)_1 <= ii(theta) <= ii(T)_2)] is at least equal to (stem:[1 - ii(alpha)]) [where (stem:[1 - ii(alpha)]) is a fixed number, positive and less than 1], the interval between stem:[ii(T)_1] and stem:[ii(T)_2] is a two-sided (stem:[1 - ii(alpha)]) confidence interval for stem:[ii(theta)]
 
-NOTE: The limits stem:[T_1] and stem:[T_2] of the confidence interval are _statistics_ [ISO 3534-1:1993, definition 2.45 (<<scls_C-2-23>>)] and as such will generally assume different values from sample to sample.
+NOTE: The limits stem:[ii(T)_1] and stem:[ii(T)_2] of the confidence interval are _statistics_ [ISO 3534-1:1993, definition 2.45 (<<scls_C-2-23>>)] and as such will generally assume different values from sample to sample.
 
-NOTE: In a long series of samples, the relative frequency of cases where the true value of the population parameter stem:[theta] is covered by the confidence interval is greater than or equal to (stem:[1 - alpha]).
+NOTE: In a long series of samples, the relative frequency of cases where the true value of the population parameter stem:[ii(theta)] is covered by the confidence interval is greater than or equal to (stem:[1 - ii(alpha)]).
 
 // [ISO 3534-1:1993, definition 2.57]
 [.source]
-<<ISO_3534-1,definition 2.57>>
+<<ISO_3534-1>>, definition 2.57
 
 
 [[scls_C-2-28]]
 ==== one-sided confidence interval
 
-when stem:[T] is a function of the observed values such that, stem:[theta] being a population parameter to be estimated, the probability stem:["Pr"(T >= theta)] [or the probability stem:["Pr"(T <= theta)]] is at least equal to (stem:[1 - alpha]) [where (stem:[1 - alpha]) is a fixed number, positive and less than 1], the interval from the smallest possible value of theta up to stem:[T] (or the interval from stem:[T] up to the largest possible value of stem:[theta]) is a one-sided (stem:[1 - alpha]) confidence interval for stem:[theta]
+when stem:[ii(T)] is a function of the observed values such that, stem:[ii(theta)] being a population parameter to be estimated, the probability stem:["Pr"(ii(T) >= ii(theta))] [or the probability stem:["Pr"(ii(T) <= ii(theta))]] is at least equal to (stem:[1 - ii(alpha)]) [where (stem:[1 - ii(alpha)]) is a fixed number, positive and less than 1], the interval from the smallest possible value of stem:[ii(theta)] up to stem:[ii(T)] (or the interval from stem:[ii(T)] up to the largest possible value of stem:[ii(theta)]) is a one-sided (stem:[1 - ii(alpha)]) confidence interval for stem:[ii(theta)]
 
-NOTE: The limit stem:[T] of the confidence interval is a _statistic_ [ISO 3534-1:1993, definition 2.45 (<<scls_C-2-23>>)] and as such will generally assume different values from sample to sample.
+NOTE: The limit stem:[ii(T)] of the confidence interval is a _statistic_ [ISO 3534-1:1993, definition 2.45 (<<scls_C-2-23>>)] and as such will generally assume different values from sample to sample.
 
 NOTE: See Note 2 of ISO 3534-1:1993, definition 2.57 (<<scls_C-2-27>>).
 
 // [ISO 3534-1:1993, definition 2.58]
 [.source]
-<<ISO_3534-1,definition 2.58>>
+<<ISO_3534-1>>, definition 2.58
 
 
 [[scls_C-2-29]]
 ==== confidence coefficient
 alt:[confidence level]
 
-the value (stem:[1 - alpha]) of the probability associated with a confidence interval or a statistical coverage interval [See ISO 3534-1:1993, definitions 2.57 (<<scls_C-2-27>>), 2.58 (<<scls_C-2-28>>) and 2.61 (<<scls_C-2-30>>).]
+the value (stem:[1 - ii(alpha)]) of the probability associated with a confidence interval or a statistical coverage interval [See ISO 3534-1:1993, definitions 2.57 (<<scls_C-2-27>>), 2.58 (<<scls_C-2-28>>) and 2.61 (<<scls_C-2-30>>).]
 
-NOTE: (stem:[1 - alpha]) is often expressed as a percentage.
+NOTE: (stem:[1 - ii(alpha)]) is often expressed as a percentage.
 
 // [ISO 3534-1:1993, definition 2.59]
 [.source]
-<<ISO_3534-1,definition 2.59>>
+<<ISO_3534-1>>, definition 2.59
 
 
 [[scls_C-2-30]]
@@ -462,7 +472,7 @@ NOTE: Also called "statistical tolerance interval". This term should not be used
 
 // [ISO 3534-1:1993, definition 2.61]
 [.source]
-<<ISO_3534-1,definition 2.61>>
+<<ISO_3534-1>>, definition 2.61
 
 
 [[scls_C-2-31]]
@@ -472,7 +482,7 @@ in general, the number of terms in a sum minus the number of constraints on the 
 
 // [ISO 3534-1:1993, definition 2.85]
 [.source]
-<<ISO_3534-1,definition 2.85>>
+<<ISO_3534-1>>, definition 2.85
 
 
 [[scls_C-3]]
@@ -485,14 +495,14 @@ The expectation of a function stem:[g(z)] over a probability density function st
 
 [stem%unnumbered]
 ++++
-E [g(z)] = int g(z) p(z)" d"z
+ii(E)[g(z)] = int g(z) p(z)" d"z
 ++++
 
-where, from the definition of stem:[p(z)], stem:[int p(z)" d"z = 1]. The expectation of the random variable stem:[z], denoted by stem:[mu_z], and which is also termed the expected value or the mean of stem:[z], is given by
+where, from the definition of stem:[p(z)], stem:[int p(z)" d"z = 1]. The expectation of the random variable stem:[z], denoted by stem:[ii(mu)_z], and which is also termed the expected value or the mean of stem:[z], is given by
 
 [stem%unnumbered]
 ++++
-mu_z -= E(z) = int z p(z)" d"z
+ii(mu)_z -= ii(E)(z) = int z p(z)" d"z
 ++++
 
 It is estimated statistically by stem:[bar(z)], the arithmetic mean or average of stem:[n] independent observations stem:[z_i] of therandom variable stem:[z], the probability density function of which is stem:[p(z)]:
@@ -510,10 +520,10 @@ The variance of a random variable is the expectation of its quadratic deviation 
 
 [stem%unnumbered]
 ++++
-sigma^2(z) = int (z - mu_z)^2 p(z) " d"z
+ii(sigma)^2(z) = int (z - ii(mu)_z)^2 p(z) " d"z
 ++++
 
-where stem:[mu_z] is the expectation of stem:[z]. The variance stem:[sigma^2(z)] may be estimated by
+where stem:[ii(mu)_z] is the expectation of stem:[z]. The variance stem:[ii(sigma)^2(z)] may be estimated by
 
 [stem%unnumbered]
 ++++
@@ -529,18 +539,18 @@ bar(z) = 1/n sum_{i=1}^n z_i
 
 and the stem:[z_i] are stem:[n] independent observations of stem:[z].
 
-NOTE: The factor stem:[n - 1] in the expression for stem:[s^2(z_i)] arises from the correlation between stem:[z_i] and stem:[z] and reflects the fact that there are only stem:[n - 1] independent items in the set stem:[{ z_i - z }].
+NOTE: The factor stem:[n - 1] in the expression for stem:[s^2(z_i)] arises from the correlation between stem:[z_i] and stem:[bar(z)] and reflects the fact that there are only stem:[n - 1] independent items in the set stem:[{ z_i - bar(z) }].
 
 [NOTE]
 ====
-If the expectation stem:[mu_z] of stem:[z] is known, the variance may be estimated by
+If the expectation stem:[ii(mu)_z] of stem:[z] is known, the variance may be estimated by
 
 [stem%unnumbered]
 ++++
-s^2(z_i) = 1/n sum_{i=1}^n (z_i - mu_z)^2
+s^2(z_i) = 1/n sum_{i=1}^n (z_i - ii(mu)_z)^2
 ++++
 
-The variance of the arithmetic mean or average of the observations, rather than the variance of the individual observations, is the proper measure of the uncertainty of a measurement result. The variance of a variable stem:[z] should be carefully distinguished from the variance of the mean stem:[z]. The variance of the arithmetic mean of a series of stem:[n] independent observations stem:[z_i] of stem:[z] is given by stem:[sigma^2(bar(z)) = sigma^2 (z_i)//n] and is estimated by the experimental variance of the mean
+The variance of the arithmetic mean or average of the observations, rather than the variance of the individual observations, is the proper measure of the uncertainty of a measurement result. The variance of a variable stem:[z] should be carefully distinguished from the variance of the mean stem:[bar(z)]. The variance of the arithmetic mean of a series of stem:[n] independent observations stem:[z_i] of stem:[z] is given by stem:[ii(sigma)^2(bar(z)) = ii(sigma)^2 (z_i)//n] and is estimated by the experimental variance of the mean
 
 [stem%unnumbered]
 ++++
@@ -563,7 +573,7 @@ The covariance of two random variables is a measure of their mutual dependence. 
 
 [stem%unnumbered]
 ++++
-"cov"(y,z) = "cov"(z, y) = E{[y - E(y)] [z - E(z)]}
+"cov"(y,z) = "cov"(z, y) = ii(E){[y - ii(E)(y)] [z - ii(E)(z)]}
 ++++
 
 which leads to
@@ -571,12 +581,12 @@ which leads to
 [stem%unnumbered]
 ++++
 {:({:"cov"(y,z):},{:= "cov"(z,y):}),
-({:"":},{:= int int (y - mu_y)(z - mu_z) p(y,z)" d"y "d"z:}),
-({:"":},{:= int int y z p(y,z) " d"y "d"z - mu_y mu_z:}):}
+({:"":},{:= int int (y - ii(mu)_y)(z - ii(mu)_z) p(y,z)" d"y "d"z:}),
+({:"":},{:= int int y z p(y,z) " d"y "d"z - ii(mu)_y ii(mu)_z:}):}
 ++++
 
 
-where stem:[p(y,z)] is the joint probability density function of the two variables stem:[y] and stem:[z]. The covariance stem:["cov"(y,z)] [also denoted by stem:[v(y,z)] may be estimated by stem:[s(y_i,z_i)] obtained from stem:[n] independent pairs of simultaneous observations stem:[y_i] and stem:[z_i] of stem:[y] and stem:[z],
+where stem:[p(y,z)] is the joint probability density function of the two variables stem:[y] and stem:[z]. The covariance stem:["cov"(y,z)] [also denoted by stem:[ii(nu)(y,z)] may be estimated by stem:[s(y_i,z_i)] obtained from stem:[n] independent pairs of simultaneous observations stem:[y_i] and stem:[z_i] of stem:[y] and stem:[z],
 
 [stem%unnumbered]
 ++++
@@ -603,7 +613,7 @@ NOTE: The estimated covariance of the two means stem:[bar(y)] and stem:[bar(z)] 
 [[scls_C-3-5]]
 ==== Covariance matrix
 
-For a multivariate probability distribution, the matrix stem:[bb(V)] with elements equal to the variances and covariances of the variables is termed the covariance matrix. The diagonal elements, stem:[upsilon(z,z) -= sigma^2(z)] or stem:[s(z_i,z_i) -= s^2(z_i)], are the variances, while the off-diagonal elements, stem:[upsilon(y, z)] or stem:[s(y_i, z_i)], are the covariances.
+For a multivariate probability distribution, the matrix stem:[ii(bb(V))] with elements equal to the variances and covariances of the variables is termed the covariance matrix. The diagonal elements, stem:[ii(upsilon)(z,z) -= ii(sigma)^2(z)] or stem:[s(z_i,z_i) -= s^2(z_i)], are the variances, while the off-diagonal elements, stem:[ii(upsilon)(y, z)] or stem:[s(y_i, z_i)], are the covariances.
 
 
 [[scls_C-3-6]]
@@ -613,7 +623,7 @@ The correlation coefficient is a measure of the relative mutual dependence of tw
 
 [stem%unnumbered]
 ++++
-rho(y,z) = rho(z,y) = {upsilon(y,z)}/{sqrt(upsilon(y,y) upsilon(z,z))} = {upsilon(y,z)}/{sigma(y) sigma(z)}
+ii(rho)(y,z) = ii(rho)(z,y) = {ii(upsilon)(y,z)}/{sqrt(ii(upsilon)(y,y) ii(upsilon)(z,z))} = {ii(upsilon)(y,z)}/{ii(sigma)(y) ii(sigma)(z)}
 ++++
 
 with estimates
@@ -623,21 +633,21 @@ with estimates
 r(y_i,z_i) = r(z_i,y_i) = {s(y_i,z_i)}/{sqrt(s(y_i,y_i)s(z_i,z_i))} = {s(y_i,z_i)}/{s(y_i)s(z_i)}
 ++++
 
-The correlation coefficient is a pure number such that stem:[-1 <= rho <= +1] or stem:[-1 <= r(y_i,z_i) <= +1].
+The correlation coefficient is a pure number such that stem:[-1 <= ii(rho) <= +1] or stem:[-1 <= r(y_i,z_i) <= +1].
 
-NOTE: Because stem:[rho] and stem:[r] are pure numbers in the range -1 to +1 inclusive, while covariances are usually quantities with inconvenient physical dimensions and magnitudes, correlation coefficients are generally more useful than covariances.
+NOTE: Because stem:[ii(rho)] and stem:[r] are pure numbers in the range -1 to +1 inclusive, while covariances are usually quantities with inconvenient physical dimensions and magnitudes, correlation coefficients are generally more useful than covariances.
 
 [[note2_C-3-6]]
-NOTE: For multivariate probability distributions, the correlation coefficient matrix is usually given in place of the covariance matrix. Since stem:[rho(y,y) = 1] and stem:[r(y_i, y_i) = 1], the diagonal elements of this matrix are unity.
+NOTE: For multivariate probability distributions, the correlation coefficient matrix is usually given in place of the covariance matrix. Since stem:[ii(rho)(y,y) = 1] and stem:[r(y_i, y_i) = 1], the diagonal elements of this matrix are unity.
 
 [[note3_C-3-6]]
 [NOTE]
 ====
-If the input estimates stem:[x_i] and stem:[x_j] are correlated (see <<scls_5-2-2>>) and if a change stem:[delta_i] in stem:[x_i] produces a change stem:[delta_j] in stem:[x_j], then the correlation coefficient associated with stem:[x_i] and stem:[x_j] is estimated approximately by
+If the input estimates stem:[x_i] and stem:[x_j] are correlated (see <<scls_5-2-2>>) and if a change stem:[delta_i] in stem:[x_i] produces a change stem:[ii(delta)_j] in stem:[x_j], then the correlation coefficient associated with stem:[x_i] and stem:[x_j] is estimated approximately by
 
 [stem%unnumbered]
 ++++
-r(x_i,x_j) ~~ u(x_i) delta_j//[u(x_j) delta_i]
+r(x_i,x_j) ~~ u(x_i) ii(delta)_j//[u(x_j) ii(delta)_i]
 ++++
 
 This relation can serve as a basis for estimating correlation coefficients experimentally. It can also be used to calculate the approximate change in one input estimate due to a change in another if their correlation coefficient is known.
@@ -658,9 +668,9 @@ The stem:[t]-distribution or Student's distribution is the probability distribut
 
 [stem%unnumbered]
 ++++
-p(t,v) = 1/{sqrt(pi v)} {Gamma ({v+1}/2)}/{Gamma(v/2)} (1 - {t^2}/v)^{-(v+1)//2} , " " " " -oo < t < +oo
+p(t,ii(nu)) = 1/{sqrt(pi ii(nu))} {Gamma ({ii(nu)+1}/2)}/{Gamma(ii(nu)/2)} (1 - {t^2}/ii(nu))^{-(ii(nu)+1)//2} , " " " " -oo < t < +oo
 ++++
 
-where stem:[Gamma] is the gamma function and stem:[v > 0]. The expectation of the stem:[t]-distribution is zero and its variance is stem:[v//(v -2)] for stem:[v > 2]. As stem:[v -> oo], the stem:[t]-distribution approaches a normal distribution with stem:[mu = 0] and stem:[sigma = 1] (see <<scls_C-2-14>>).
+where stem:[Gamma] is the gamma function and stem:[ii(nu) > 0]. The expectation of the stem:[t]-distribution is zero and its variance is stem:[ii(nu)//(ii(nu) -2)] for stem:[ii(nu) > 2]. As stem:[ii(nu) -> oo], the stem:[t]-distribution approaches a normal distribution with stem:[ii(mu) = 0] and stem:[ii(sigma) = 1] (see <<scls_C-2-14>>).
 
-The probability distribution of the variable stem:[(bar(z) - mu_z)//s(z)] is the stem:[t]-distribution if the random variable stem:[z] is normally distributed with expectation stem:[mu_z], where stem:[z] is the arithmetic mean of stem:[n] independent observations stem:[z_i] of stem:[z], stem:[s(z_i)] is the experimental standard deviation of the stem:[n] observations, and stem:[s(bar(z)) = s (z_i)//sqrt(n)] is the experimental standard deviation of the mean stem:[bar(z)] with stem:[v = n - 1] degrees of freedom.
+The probability distribution of the variable stem:[(bar(z) - ii(mu)_z)//s(z)] is the stem:[t]-distribution if the random variable stem:[z] is normally distributed with expectation stem:[ii(mu)_z], where stem:[z] is the arithmetic mean of stem:[n] independent observations stem:[z_i] of stem:[z], stem:[s(z_i)] is the experimental standard deviation of the stem:[n] observations, and stem:[s(bar(z)) = s (z_i)//sqrt(n)] is the experimental standard deviation of the mean stem:[bar(z)] with stem:[ii(nu) = n - 1] degrees of freedom.

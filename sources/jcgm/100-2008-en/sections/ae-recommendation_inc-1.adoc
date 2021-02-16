@@ -67,7 +67,8 @@ z - ii(mu)_z = sum_{i=1}^ii(N) {del f}/{del w_i} (w_i - ii(mu)_i)
 
 where all higher-order terms are assumed to be negligible and stem:[ii(mu)_z = f(ii(mu)_1,ii(mu)_2,...,ii(mu)_N)]. The square of the deviation stem:[z - ii(mu)_z] is then given by
 
-[stem]
+[[eq_E-2a]]
+[stem,subsequence=C]
 ++++
 (z - ii(mu)_z)^2 = (sum_{i=1}^ii(N) {del f}/{del w_i} (w_i - ii(mu)_i))^2
 ++++
@@ -75,7 +76,7 @@ where all higher-order terms are assumed to be negligible and stem:[ii(mu)_z = f
 which may be written as
 
 [[eq_E-2b]]
-[stem]
+[stem,subsequence=C]
 ++++
 (z - ii(mu)_z)^2 = sum_{i=1}^ii(N) ({del f}/{del w_i})^2 (w_i - ii(mu)_i)^2 + 2 sum_{i=1}^{ii(N)-1} sum_{j=i+1}^ii(N) {del f}/{del w_i} {del f}/{del w_j} (w_i - ii(mu)_i) (w_j - ii(mu)_i)
 ++++

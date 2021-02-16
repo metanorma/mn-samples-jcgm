@@ -1,12 +1,20 @@
 
 [[annexB]]
-[appendix]
+[appendix,obligation=normative]
 == General metrological terms
 
 [[scls_B-1]]
 === Source of definitions
 
-The definitions of the general metrological terms relevant to this _Guide_ that are given here have been taken from the _International vocabulary of basic and general terms in metrology_ (abbreviated VIM), second edition, 1993 footnote:[*Footnote to the 2008 version:* The third edition of the vocabulary was published in 2008, under the title JCGM 200:2008, _International vocabulary of metrology -- Basic and general concepts and associated terms (VIM)_.] <<International1993>>, published by the International Organization for Standardization (ISO), in the name of the seven organizations that supported its development and nominated the experts who prepared it: the Bureau International des Poids et Mesures (BIPM), the International Electrotechnical Commission (IEC), the International Federation of Clinical Chemistry (IFCC), ISO, the International Union of Pure and Applied Chemistry (IUPAC), the International Union of Pure and Applied Physics (IUPAP), and the International Organization of Legal Metrology (OIML). The VIM should be the first source consulted for the definitions of terms not included either here or in the text.
+The definitions of the general metrological terms relevant to this _Guide_ that are given here have been taken from the _International vocabulary of basic and general terms in metrology_ (abbreviated VIM), second edition, 1993 footnoteblock:[fB-1] <<International1993>>, published by the International Organization for Standardization (ISO), in the name of the seven organizations that supported its development and nominated the experts who prepared it: the Bureau International des Poids et Mesures (BIPM), the International Electrotechnical Commission (IEC), the International Federation of Clinical Chemistry (IFCC), ISO, the International Union of Pure and Applied Chemistry (IUPAC), the International Union of Pure and Applied Physics (IUPAP), and the International Organization of Legal Metrology (OIML). The VIM should be the first source consulted for the definitions of terms not included either here or in the text.
+
+[[fB-1]]
+[NOTE]
+--
+*Footnote to the 2008 version:*
+
+The third edition of the vocabulary was published in 2008, under the title JCGM 200:2008, _International vocabulary of metrology -- Basic and general concepts and associated terms (VIM)_.
+--
 
 NOTE: Some basic statistical terms and concepts are given in <<annexC>>, while the terms "true value", "error", and "uncertainty" are further discussed in <<annexD>>.
 
@@ -51,11 +59,19 @@ Quantities of the same kind may be grouped together into *categories of quantiti
 * thickness, circumference, wavelength.
 ====
 
-NOTE: *Symbols for quantities* are given in ISO 31 footnote:[*Footnote to the 2008 version:* The ISO 31 series is under revision as a series of ISO 80000 and IEC 80000 documents. (Some of these documents have already been published.)].
+NOTE: *Symbols for quantities* are given in ISO 31 footnoteblock:[fB2-2].
+
+[[fB2-2]]
+[NOTE]
+--
+*Footnote to the 2008 version:*
+
+The ISO 31 series is under revision as a series of ISO 80000 and IEC 80000 documents. (Some of these documents have already been published.)
+--
 
 // [VIM:1993, definition 1.1]
 [.source]
-<<International1993,definition 1.1>>
+<<International1993>>, definition 1.1
 
 
 [[scls_B-2-2]]
@@ -82,7 +98,7 @@ NOTE: A quantity that cannot be expressed as a unit of measurement multiplied by
 
 // [VIM:1993, definition 1.18]
 [.source]
-<<International1993,definition 1.18>>
+<<International1993>>, definition 1.18
 
 
 [[scls_B-2-3]]
@@ -98,7 +114,7 @@ NOTE: The indefinite article "a", rather than the definite article "the", is use
 
 // [VIM:1993, definition 1.19]
 [.source]
-<<International1993,definition 1.19>>
+<<International1993>>, definition 1.19
 
 _Guide_ Comment: See <<annexD>>, in particular <<scls_D-3-5>>, _for_ the reasons why the term "true value" is not used in this _Guide_ and why the terms "true value of a measurand" (or of a quantity) and "value of a measurand" (or of aquantity) are viewed as equivalent.
 
@@ -112,7 +128,7 @@ value attributed to a particular quantity and accepted, sometimes by convention,
 At a given location, the value assigned to the quantity realized by a reference standard may be taken as a conventional true value.
 
 [example]
-The CODATA (1986) recommended value for the Avogadro constant: stem:[6.0221367 xx 10^{23}" mol"^{-1}].
+The CODATA (1986) recommended value for the Avogadro constant: stem:[6.0221367 xx 10^{23}" "rm(mol)^{-1}].
 
 
 NOTE: "Conventional true value" is sometimes called *assigned value*, *best estimate* of the value, *conventional value* or *reference value*. "Reference value", in this sense, should not be confused with "reference value" in the senseused in the Note to VIM:1993, definition 5.7.
@@ -121,7 +137,7 @@ NOTE: Frequently, a number of results of measurements of a quantity is used to e
 
 // [VIM:1993, definition 1.20]
 [.source]
-<<International1993,definition 1.20>>
+<<International1993>>, definition 1.20
 
 _Guide_ Comment: See the _Guide_ Comment to <<scls_B-2-3>>.
 
@@ -135,7 +151,7 @@ NOTE: The operations may be performed automatically.
 
 // [VIM:1993, definition 2.1]
 [.source]
-<<International1993,definition 2.1>>
+<<International1993>>, definition 2.1
 
 
 [[scls_B-2-6]]
@@ -157,7 +173,7 @@ The Raman effect applied to the measurement of the wave number of molecular vibr
 
 // [VIM:1993, definition 2.3]
 [.source]
-<<International1993,definition 2.3>>
+<<International1993>>, definition 2.3
 
 
 [[scls_B-2-7]]
@@ -176,7 +192,7 @@ Methods of measurement may be qualified in various ways such as:
 
 // [VIM:1993, definition 2.4]
 [.source]
-<<International1993,definition 2.4>>
+<<International1993>>, definition 2.4
 
 
 [[scls_B-2-8]]
@@ -188,7 +204,7 @@ NOTE: A measurement procedure is usually recorded in a document that is sometime
 
 // [VIM:1993, definition 2.5]
 [.source]
-<<International1993,definition 2.5>>
+<<International1993>>, definition 2.5
 
 
 [[scls_B-2-9]]
@@ -203,7 +219,7 @@ NOTE: The specification of a measurand may require statements about quantities s
 
 // [VIM:1993, definition 2.6]
 [.source]
-<<International1993,definition 2.6>>
+<<International1993>>, definition 2.6
 
 
 [[scls_B-2-10]]
@@ -222,7 +238,7 @@ Bilirubin concentration in the measurement of haemoglobin concentration in a sam
 
 // [VIM:1993, definition 2.7]
 [.source]
-<<International1993,definition 2.7>>
+<<International1993>>, definition 2.7
 
 _Guide_ Comment: The definition of influence quantity is understood to include values associated with measurement standards, reference materials, and reference data upon which the result of a measurement may depend, as well as phenomena such as short-term measuring instrument fluctuations and quantities such as ambient temperature, barometric pressure and humidity.
 
@@ -247,7 +263,7 @@ NOTE: A complete statement of the result of a measurement includes information a
 
 // [VIM:1993, definition 3.1]
 [.source]
-<<International1993,definition 3.1>>
+<<International1993>>, definition 3.1
 
 
 [[scls_B-2-12]]
@@ -257,7 +273,7 @@ result of a measurement before correction for systematic error
 
 // [VIM:1993, definition 3.3]
 [.source]
-<<International1993,definition 3.3>>
+<<International1993>>, definition 3.3
 
 
 [[scls_B-2-13]]
@@ -267,7 +283,7 @@ result of a measurement after correction for systematic error
 
 // [VIM:1993, definition 3.4]
 [.source]
-<<International1993,definition 3.4>>
+<<International1993>>, definition 3.4
 
 
 [[scls_B-2-14]]
@@ -281,7 +297,7 @@ NOTE: The term *precision* should not be used for "accuracy".
 
 // [VIM:1993, definition 3.5]
 [.source]
-<<International1993,definition 3.5>>
+<<International1993>>, definition 3.5
 
 _Guide_ Comment: See the _Guide_ Comment to <<scls_B-2-3>>.
 
@@ -309,7 +325,7 @@ NOTE: Repeatability may be expressed quantitatively in terms of the dispersion c
 
 // [VIM:1993, definition 3.6]
 [.source]
-<<International1993,definition 3.6>>
+<<International1993>>, definition 3.6
 
 
 [[scls_B-2-16]]
@@ -339,7 +355,7 @@ NOTE: Results are here usually understood to be corrected results.
 
 // [VIM:1993, definition 3.7]
 [.source]
-<<International1993,definition 3.7>>
+<<International1993>>, definition 3.7
 
 
 [[scls_B-2-17]]
@@ -352,9 +368,9 @@ for a series of stem:[n] measurements of the same measurand, the quantity stem:[
 s(q_k) = sqrt({sum_{j=1}^n (q_j - bar(q))^2}/{n-1})
 ++++
 
-stem:[q_k] being the result of the __k__th measurement and stem:[bar(q)] being the arithmetic mean of the stem:[n] results considered
+stem:[q_k] being the result of the stem:[k]th measurement and stem:[bar(q)] being the arithmetic mean of the stem:[n] results considered
 
-NOTE: Considering the series of stem:[n] values as a sample of a distribution, stem:[bar(q)] is an unbiased estimate of the mean stem:[mu_q], and stem:[s^2(q_k)] is an unbiased estimate of the variance stem:[sigma^2], of that distribution.
+NOTE: Considering the series of stem:[n] values as a sample of a distribution, stem:[bar(q)] is an unbiased estimate of the mean stem:[ii(mu)_q], and stem:[s^2(q_k)] is an unbiased estimate of the variance stem:[ii(sigma)^2], of that distribution.
 
 [[note2_B-2-17]]
 NOTE: The expression stem:[s(q_k)//sqrt(n)] is an estimate of the standard deviation of the distribution of stem:[bar(q)] and is called the *experimental standard deviation of the mean*.
@@ -379,7 +395,7 @@ NOTE: It is understood that the result of the measurement is the best estimate o
 
 // [VIM:1993, definition 3.9]
 [.source]
-<<International1993,definition 3.9>>
+<<International1993>>, definition 3.9
 
 _Guide_ Comment: It is pointed out in the VIM that this definition and the notes are identical to those in this _Guide_ (see <<scls_2-2-3>>).
 
@@ -395,7 +411,7 @@ NOTE: When it is necessary to distinguish "error" from "relative error", the for
 
 // [VIM:1993, definition 3.10]
 [.source]
-<<International1993,definition 3.10>>
+<<International1993>>, definition 3.10
 
 _Guide_ Comment: If the result of a measurement depends on the values of quantities other than the measurand, the errors of the measured values of these quantities contribute to the error of the result of the measurement. Also see the _Guide_ Comment to <<scls_B-2-22>> and to <<scls_B-2-3>>.
 
@@ -409,7 +425,7 @@ NOTE: Since a true value cannot be determined, in practice a conventional true v
 
 // [VIM:1993, definition 3.12]
 [.source]
-<<International1993,definition 3.12>>
+<<International1993>>, definition 3.12
 
 _Guide_ Comment: See the _Guide_ Comment to <<scls_B-2-3>>.
 
@@ -425,7 +441,7 @@ NOTE: Because only a finite number of measurements can be made, it is possible t
 
 // [VIM:1993, definition 3.13]
 [.source]
-<<International1993,definition 3.13>>
+<<International1993>>, definition 3.13
 
 _Guide_ Comment: See the _Guide_ Comment to <<scls_B-2-22>>.
 
@@ -443,7 +459,7 @@ NOTE: For a measuring instrument, see "bias" (VIM:1993, definition 5.25).
 
 // [VIM:1993, definition 3.14]
 [.source]
-<<International1993,definition 3.14>>
+<<International1993>>, definition 3.14
 
 _Guide_ Comment: The error of the result of a measurement (see <<scls_B-2-19>>) _may_ often be considered as arising from a number of random and systematic effects that contribute individual components of error to the error of the result. Also see the _Guide_ Comment to <<scls_B-2-19>> and to <<scls_B-2-3>>.
 
@@ -459,7 +475,7 @@ NOTE: Since the systematic error cannot be known perfectly. the compensation can
 
 // [VIM:1993, definition 3.15]
 [.source]
-<<International1993,definition 3.15>>
+<<International1993>>, definition 3.15
 
 
 [[scls_B-2-24]]
@@ -471,4 +487,4 @@ NOTE: Since the systematic error cannot be known perfectly, the compensation can
 
 // [VIM:1993, definition 3.16]
 [.source]
-<<International1993,definition 3.16>>
+<<International1993>>, definition 3.16

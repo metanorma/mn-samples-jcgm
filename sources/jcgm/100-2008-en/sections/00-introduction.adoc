@@ -60,7 +60,7 @@ There is not always a simple correspondence between the classification into cate
 
 Any detailed report of the uncertainty should consist of a complete list of the components, specifying for each the method used to obtain its numerical value.
 
-. The components in category A are characterized by the estimated variances stem:[s_i^2], (or the estimated "standard deviations" stem:[s_i]) and the number of degrees of freedom stem:[nu_i]. Where appropriate, the covariances should be given.
+. The components in category A are characterized by the estimated variances stem:[s_i^2], (or the estimated "standard deviations" stem:[s_i]) and the number of degrees of freedom stem:[ii(nu)_i]. Where appropriate, the covariances should be given.
 . The components in category B should be characterized by quantities stem:[u_j^2], which may be considered as approximations to the corresponding variances, the existence of which is assumed. The quantities stem:[u_j^2] may be treated like variances and the quantities stem:[u_j] like standard deviations. Where appropriate,the covariances should be treated in a similar way.
 . The combined uncertainty should be characterized by the numerical value obtained by applying the usual method for the combination of variances. The combined uncertainty and its components should be expressed in the form of "standard deviations".
 . If, for particular applications, it is necessary to multiply the combined uncertainty by a factor to obtain an overall uncertainty, the multiplying factor used must always be stated.

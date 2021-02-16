@@ -44,15 +44,15 @@ A test of the foregoing list is to ask oneself "Have I provided enough informati
 
 When reporting the result of a measurement, and when the measure of uncertainty is the combined standard uncertainty stem:[u_{"c"}(y)], one should
 
-. give a full description of how the measurand stem:[Y] is defined;
-. give the estimate stem:[y] of the measurand stem:[Y] and its combined standard uncertainty stem:[u_{"c"}(y)]; the units of stem:[y] and stem:[u_{"c"}(y)] should always be given;
+. give a full description of how the measurand stem:[ii(Y)] is defined;
+. give the estimate stem:[y] of the measurand stem:[ii(Y)] and its combined standard uncertainty stem:[u_{"c"}(y)]; the units of stem:[y] and stem:[u_{"c"}(y)] should always be given;
 . include the relative combined standard uncertainty stem:[u_{"c"}(y)//|y|], stem:[|y| != 0], when appropriate;
 . give the information outlined in <<scls_7-2-7>> or refer to a published document that contains it.
 
 If it is deemed useful for the intended users of the measurement result, for example, to aid in future calculations of coverage factors or to assist in understanding the measurement, one may indicate
 
-* the estimated effective degrees of freedom stem:[nu_{"eff"}] (see <<scls_G-4>>);
-* the Type A and Type B combined standard uncertainties stem:[u_{"cA"}(y)] and stem:[u_{"cB"}(y)] and their estimated effective degrees of freedom stem:[nu_{"effA"}] and stem:[nu_{"effB"}] (see <<note3_G-4-1>>).
+* the estimated effective degrees of freedom stem:[ii(nu)_{"eff"}] (see <<scls_G-4>>);
+* the Type A and Type B combined standard uncertainties stem:[u_{"cA"}(y)] and stem:[u_{"cB"}(y)] and their estimated effective degrees of freedom stem:[ii(nu)_{"effA"}] and stem:[ii(nu)_{"effB"}] (see <<note3_G-4-1>>).
 
 
 [[scls_7-2-2]]
@@ -60,47 +60,47 @@ If it is deemed useful for the intended users of the measurement result, for exa
 
 When the measure of uncertainty is stem:[u_{"c"}(y)], it is preferable to state the numerical result of the measurement in one of the following four ways in order to prevent misunderstanding. (The quantity whose value is being reported is assumed to be a nominally 100 g standard of mass stem:[m_{"S"}]; the words in parentheses may be omitted for brevity if stem:[u_{"c"}] is defined elsewhere in the document reporting the result.)
 
-. "stem:[m_{"S"} = 100.02147" g"] with (a combined standard uncertainty) stem:[u_{"c"} = 0.35" mg"]."
-. "stem:[m_{"S"}= 100.02147(35) " g"], where the number in parentheses is the numerical value of (the combined standard uncertainty) stem:[u_{"c"}] referred to the corresponding last digits of the quoted result."
-. "stem:[m_{"S"} = 100.02147(0.00035) " g"], where the number in parentheses is the numerical value of (the combined standard uncertainty) stem:[u_{"c"}] expressed in the unit of the quoted result."
-. [[item_7-2-2d]]"stem:[m_{"S"} = (100.02147 pm 0.00035)" g"], where the number following the symbol stem:[pm] is the numerical value of (the combined standard uncertainty) stem:[u_{"c"}] and not a confidence interval."
+. "stem:[m_{"S"} = 100.02147" "rm(g)] with (a combined standard uncertainty) stem:[u_{"c"} = 0.35" "rm(mg)]."
+. "stem:[m_{"S"}= 100.02147(35) " "rm(g)], where the number in parentheses is the numerical value of (the combined standard uncertainty) stem:[u_{"c"}] referred to the corresponding last digits of the quoted result."
+. "stem:[m_{"S"} = 100.02147(0.00035) " "rm(g)], where the number in parentheses is the numerical value of (the combined standard uncertainty) stem:[u_{"c"}] expressed in the unit of the quoted result."
+. [[item_7-2-2d]]"stem:[m_{"S"} = (100.02147 pm 0.00035)" "rm(g)], where the number following the symbol stem:[pm] is the numerical value of (the combined standard uncertainty) stem:[u_{"c"}] and not a confidence interval."
 
-NOTE: The stem:[pm] format should be avoided whenever possible because it has traditionally been used to indicate an interval corresponding to a high level of confidence and thus may be confused with expanded uncertainty (see <<scls_7-2-4>>). Further, although the purpose of the caveat in <<item_7-2-2d>> is to prevent such confusion, writing stem:[Y = y pm u_{"c"}(y)] might still be misunderstood to imply, especially if the caveat is accidentally omitted, that an expanded uncertainty with stem:[k = 1] is intended and that the interval stem:[y - u_{"c"}(y) <= Y <= y + u_{"c"}(y)] has a specified level of confidence stem:[p], namely, that associated with the normal distribution (see <<scls_G-1-3>>). As indicated in <<scls_6-3-2>> and <<annexG>>, interpreting stem:[u_{"c"}(y)] in this way is usually difficult to justify.
+NOTE: The stem:[pm] format should be avoided whenever possible because it has traditionally been used to indicate an interval corresponding to a high level of confidence and thus may be confused with expanded uncertainty (see <<scls_7-2-4>>). Further, although the purpose of the caveat in <<item_7-2-2d>> is to prevent such confusion, writing stem:[ii(Y) = y pm u_{"c"}(y)] might still be misunderstood to imply, especially if the caveat is accidentally omitted, that an expanded uncertainty with stem:[k = 1] is intended and that the interval stem:[y - u_{"c"}(y) <= ii(Y) <= y + u_{"c"}(y)] has a specified level of confidence stem:[p], namely, that associated with the normal distribution (see <<scls_G-1-3>>). As indicated in <<scls_6-3-2>> and <<annexG>>, interpreting stem:[u_{"c"}(y)] in this way is usually difficult to justify.
 
 
 [[scls_7-2-3]]
 ==== {blank}
 
-When reporting the result of a measurement, and when the measure of uncertainty is the expanded uncertainty stem:[U = k u_{"c"}(y)], one should
+When reporting the result of a measurement, and when the measure of uncertainty is the expanded uncertainty stem:[ii(U) = k u_{"c"}(y)], one should
 
-. give a full description of how the measurand stem:[Y] is defined;
-. state the result of the measurement as stem:[Y = y pm U] and give the units of stem:[y] and stem:[U];
-. include the relative expanded uncertainty stem:[U//|y|], stem:[|y| != 0], when appropriate;
-. give the value of stem:[k] used to obtain stem:[U] [or, for the convenience of the user of the result, give both stem:[k] and stem:[u_{"c"}(y)]];
-. give the approximate level of confidence associated with the interval stem:[y pm U] and state how it was determined;
+. give a full description of how the measurand stem:[ii(Y)] is defined;
+. state the result of the measurement as stem:[ii(Y) = y pm ii(U)] and give the units of stem:[y] and stem:[ii(U)];
+. include the relative expanded uncertainty stem:[ii(U)//|y|], stem:[|y| != 0], when appropriate;
+. give the value of stem:[k] used to obtain stem:[ii(U)] [or, for the convenience of the user of the result, give both stem:[k] and stem:[u_{"c"}(y)]];
+. give the approximate level of confidence associated with the interval stem:[y pm ii(U)] and state how it was determined;
 . give the information outlined in <<scls_7-2-7>> or refer to a published document that contains it.
 
 
 [[scls_7-2-4]]
 ==== {blank}
 
-When the measure of uncertainty is stem:[U], it is preferable, for maximum clarity, to state the numerical result of the measurement as in the following example. (The words in parentheses may be omitted for brevity if stem:[U], stem:[u_{"c"}], and stem:[k] are defined elsewhere in the document reporting the result.)
+When the measure of uncertainty is stem:[ii(U)], it is preferable, for maximum clarity, to state the numerical result of the measurement as in the following example. (The words in parentheses may be omitted for brevity if stem:[ii(U)], stem:[u_{"c"}], and stem:[k] are defined elsewhere in the document reporting the result.)
 
-"stem:[m_{"S"} = (100.02147 pm 0.00079)" g"], where the number following the symbol stem:[pm] is the numerical value of (an expanded uncertainty) stem:[U = k u_{"c"}], with stem:[U] determined from (a combined standard uncertainty) stem:[u_{"c"} = 0.35" mg"] and (a coverage factor) stem:[k = 2], 26 based on the stem:[t]-distribution for stem:[v = 9] degrees of freedom, and defines an interval estimated to have a level of confidence of 95 percent."
+"stem:[m_{"S"} = (100.02147 pm 0.00079)" "rm(g)], where the number following the symbol stem:[pm] is the numerical value of (an expanded uncertainty) stem:[ii(U) = k u_{"c"}], with stem:[U] determined from (a combined standard uncertainty) stem:[u_{"c"} = 0.35" "rm(mg)] and (a coverage factor) stem:[k = 2], 26 based on the stem:[t]-distribution for stem:[ii(nu) = 9] degrees of freedom, and defines an interval estimated to have a level of confidence of 95 percent."
 
 
 [[scls_7-2-5]]
 ==== {blank}
 
-If a measurement determines simultaneously more than one measurand, that is, if it provides two or more output estimates stem:[y_i] (see <<scls_H-2>>,<<scls_H-3>>, and <<scls_H-4>>), then, in addition to giving stem:[y_i] and stem:[u_{"c"}(y_i)], give the covariance matrix elements stem:[u(y_i,y_j)] or the elements stem:[r(y_i,y_j)] of the *correlation coefficient matrix* (<<note2_C-3-6>>)(and preferably both).
+If a measurement determines simultaneously more than one measurand, that is, if it provides two or more output estimates stem:[y_i] (see <<scls_H-2>>,<<scls_H-3>>, and <<scls_H-4>>), then, in addition to giving stem:[y_i] and stem:[u_{"c"}(y_i)], give the covariance matrix elements stem:[u(y_i,y_j)] or the elements stem:[r(y_i,y_j)] of the *correlation coefficient matrix* (<<note2_C-3-6>>) (and preferably both).
 
 
 [[scls_7-2-6]]
 ==== {blank}
 
-The numerical values of the estimate stem:[y] and its standard uncertainty stem:[u_{"c"}(y)] or expanded uncertainty stem:[U] should not be given with an excessive number of digits. It usually suffices to quote stem:[u_{"c"}(y)] and stem:[U] [as well as the standard uncertainties stem:[u(x_i)] of the input estimates stem:[x_i]] to at most two significant digits, although in some cases it may be necessary to retain additional digits to avoid round-off errors in subsequent calculations.
+The numerical values of the estimate stem:[y] and its standard uncertainty stem:[u_{"c"}(y)] or expanded uncertainty stem:[ii(U)] should not be given with an excessive number of digits. It usually suffices to quote stem:[u_{"c"}(y)] and stem:[ii(U)] [as well as the standard uncertainties stem:[u(x_i)] of the input estimates stem:[x_i]] to at most two significant digits, although in some cases it may be necessary to retain additional digits to avoid round-off errors in subsequent calculations.
 
-In reporting final results, it may sometimes be appropriate to round uncertainties up rather than to the nearest digit. For example, stem:[u_{"c"}(y) = 10.47" m"Omega] might be rounded up to stem:[11" m" Omega]. However, common sense should prevail and a value such as stem:[u(x_i) = 28.05" kHz"] should be rounded down to 28 kHz. Output and input estimates should be rounded to be consistent with their uncertainties; for example, if stem:[y = 10.05762" "Omega] with stem:[u_{"c"}(y) = 27" m"Omega], stem:[y] should be rounded to stem:[10.058" "Omega]. Correlation coefficients should be given with three-digit accuracy if theirabsolute values are near unity.
+In reporting final results, it may sometimes be appropriate to round uncertainties up rather than to the nearest digit. For example, stem:[u_{"c"}(y) = 10.47" "rm(m Omega)] might be rounded up to stem:[11" "rm(m Omega)]. However, common sense should prevail and a value such as stem:[u(x_i) = 28.05" "rm(kHz)] should be rounded down to 28 kHz. Output and input estimates should be rounded to be consistent with their uncertainties; for example, if stem:[y = 10.05762" "rm(Omega)] with stem:[u_{"c"}(y) = 27" "rm(m Omega)], stem:[y] should be rounded to stem:[10.058" "rm(Omega)]. Correlation coefficients should be given with three-digit accuracy if theirabsolute values are near unity.
 
 
 [[scls_7-2-7]]
@@ -111,6 +111,6 @@ In the detailed report that describes how the result of a measurement and its un
 . give the value of each input estimate stem:[x_i] and its standard uncertainty stem:[u(x_i)] together with a description of how they were obtained;
 . give the estimated covariances or estimated correlation coefficients (preferably both) associated with all input estimates that are correlated, and the methods used to obtain them;
 . give the degrees of freedom for the standard uncertainty of each input estimate and how it was obtained;
-. give the functional relationship stem:[Y = f(X_1, X_2,..., X_N)] and, when they are deemed useful, the partial derivatives or sensitivity coefficients stem:[partial f//partial x_i]. However, any such coefficients determined experimentally should be given.
+. give the functional relationship stem:[ii(Y) = f(ii(X)_1, ii(X)_2,..., ii(X)_N)] and, when they are deemed useful, the partial derivatives or sensitivity coefficients stem:[del f//del x_i]. However, any such coefficients determined experimentally should be given.
 
-NOTE: Since the functional relationship stem:[f] may be extremely complex or may not exist explicitly but only as a computer program, it may not always be possible to give stem:[f] and its derivatives. The function stem:[f] may then be described in general terms or the program used may be cited by an appropriate reference. In such cases, it is important that it be clear how the estimate stem:[y] of the measurand stem:[Y] and its combined standard uncertainty stem:[u_{"c"}(y)] were obtained.
+NOTE: Since the functional relationship stem:[f] may be extremely complex or may not exist explicitly but only as a computer program, it may not always be possible to give stem:[f] and its derivatives. The function stem:[f] may then be described in general terms or the program used may be cited by an appropriate reference. In such cases, it is important that it be clear how the estimate stem:[y] of the measurand stem:[ii(Y)] and its combined standard uncertainty stem:[u_{"c"}(y)] were obtained.

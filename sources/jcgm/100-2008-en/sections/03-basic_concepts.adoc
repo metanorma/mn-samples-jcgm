@@ -28,7 +28,15 @@ In general, the *result of a measurement* (<<scls_B-2-11>>) is only an approxima
 In practice, the required specification or definition of the measurand is dictated by the required *accuracy of measurement* (<<scls_B-2-14>>). The measurand should be defined with sufficient completeness withrespect to the required accuracy so that for all practical purposes associated with the measurement its value is unique. It is in this sense that the expression "value of the measurand" is used in this _Guide_.
 
 [example]
-If the length of a nominally one-metre long steel bar is to be determined to micrometre accuracy, its specification should include the temperature and pressure at which the length is defined. Thus the measurand should be specified as, for example, the length of the bar at 25.00 °C footnote:[*Footnote to the 2008 version:* According to Resolution 10 of the 22nd CGPM (2003) "... the symbol for the decimal marker shall be either the point on the line or the comma on the line...". The JCGM has decided to adopt, in its documents in English, the point on the line. However, in this document, the decimal comma has been retained for consistency with the 1995 printed version.] and stem:[101325" Pa"] (plus any other defining parameters deemed necessary, such as the way the bar is to be supported). However, if the length is to be determined to only millimetre accuracy, its specification would not require a defining temperature or pressure or a value for any other defining parameter.
+If the length of a nominally one-metre long steel bar is to be determined to micrometre accuracy, its specification should include the temperature and pressure at which the length is defined. Thus the measurand should be specified as, for example, the length of the bar at 25.00 °C footnoteblock:[f3-1-3] and stem:[101325" "rm(Pa)] (plus any other defining parameters deemed necessary, such as the way the bar is to be supported). However, if the length is to be determined to only millimetre accuracy, its specification would not require a defining temperature or pressure or a value for any other defining parameter.
+
+[[f3-1-3]]
+[NOTE]
+--
+*Footnote to the 2008 version:*
+
+According to Resolution 10 of the 22nd CGPM (2003) "... the symbol for the decimal marker shall be either the point on the line or the comma on the line...". The JCGM has decided to adopt, in its documents in English, the point on the line. However, in this document, the decimal comma has been retained for consistency with the 1995 printed version.
+--
 
 NOTE: Incomplete definition of the measurand can give rise to a component of uncertainty sufficiently large that it must be included in the evaluation of the uncertainty of the measurement result (see <<scls_D-1-1>>, <<scls_D-3-4>>, and <<scls_D-6-2>>).
 
@@ -162,7 +170,7 @@ The standard uncertainty of the result of a measurement, when that result is obt
 [[scls_3-3-7]]
 ==== {blank}
 
-To meet the needs of some industrial and commercial applications, as well as requirements in the areas of health and safety, an _expanded uncertainty_ stem:[U] is obtained by multiplying the combined standard uncertainty stem:[u_{"c"}] by a _coverage factor_ stem:[k]. The intended purpose of stem:[U] is to provide an interval about the result of a measurement that may be expected to encompass a large fraction of the distribution of values that could reasonably be attributed to the measurand. The choice of the factor stem:[k], which is usually in the range 2 to 3, is based on the coverage probability or level of confidence required of the interval (see <<cls_6>>).
+To meet the needs of some industrial and commercial applications, as well as requirements in the areas of health and safety, an _expanded uncertainty_ stem:[ii(U)] is obtained by multiplying the combined standard uncertainty stem:[u_{"c"}] by a _coverage factor_ stem:[k]. The intended purpose of stem:[ii(U)] is to provide an interval about the result of a measurement that may be expected to encompass a large fraction of the distribution of values that could reasonably be attributed to the measurand. The choice of the factor stem:[k], which is usually in the range 2 to 3, is based on the coverage probability or level of confidence required of the interval (see <<cls_6>>).
 
 NOTE: The coverage factor stem:[k] is always to be stated, so that the standard uncertainty of the measured quantity can be recovered for use in calculating the combined standard uncertainty of other measurement results that may depend on that quantity.
 
@@ -208,7 +216,7 @@ It often occurs in practice, especially in the domain of legal metrology, that a
 The estimate of the value of a measurand provided by the result of a measurement is sometimes expressed in terms of the adopted value of a measurement standard rather than in terms of the relevant unit of the International System of Units (SI). In such cases, the magnitude of the uncertainty ascribable to the measurement result may be significantly smaller than when that result is expressed in the relevant SI unit. (In effect, the measurand has been redefined to be the ratio of the value of the quantity to be measured to the adopted value of the standard.)
 
 [example]
-A high-quality Zener voltage standard is calibrated by comparison with a Josephson effect voltage reference based on the conventional value of the Josephson constant recommended for international use by the CIPM. The relative combined standard uncertainty stem:[u_{"c"}(V_{"S"})//V_{"S"}] (see <<scls_5-1-6>>) of the calibrated potential difference stem:[V_{"S"}] of the Zener standard is stem:[2 xx 10^{-8}] when stem:[V_{"S"}] is reported in terms of the conventional value, but stem:[u_{"c"}(V_{"S"})//V_{"S"}] is stem:[4 xx 10^{-7}] when stem:[V_{"S"}] is reported in terms of the SI unit of potential difference, the volt (V), because of the additional uncertainty associated with the SI value of the Josephson constant.
+A high-quality Zener voltage standard is calibrated by comparison with a Josephson effect voltage reference based on the conventional value of the Josephson constant recommended for international use by the CIPM. The relative combined standard uncertainty stem:[u_{"c"}(ii(V)_{"S"})//ii(V)_{"S"}] (see <<scls_5-1-6>>) of the calibrated potential difference stem:[ii(V)_{"S"}] of the Zener standard is stem:[2 xx 10^{-8}] when stem:[ii(V)_{"S"}] is reported in terms of the conventional value, but stem:[u_{"c"}(ii(V)_{"S"})//ii(V)_{"S"}] is stem:[4 xx 10^{-7}] when stem:[ii(V)_{"S"}] is reported in terms of the SI unit of potential difference, the volt (V), because of the additional uncertainty associated with the SI value of the Josephson constant.
 
 
 [[scls_3-4-7]]

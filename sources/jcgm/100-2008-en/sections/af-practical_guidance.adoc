@@ -1,6 +1,6 @@
 
 [[annexF]]
-[appendix]
+[appendix, obligation=normative]
 == Practical guidance on evaluating uncertainty components
 
 This annex gives additional suggestions for evaluating uncertainty components, mainly of a practical nature, that are intended to complement the suggestions already given in <<cls_4>>.
@@ -55,11 +55,11 @@ Much of the discussion in this subclause is also applicable to Type B evaluation
 [[scls_F-1-2-1]]
 ====== {blank}
 
-The covariance associated with the estimates of two input quantities stem:[X_i] and stem:[X_j] may be taken to bezero or treated as insignificant if
+The covariance associated with the estimates of two input quantities stem:[ii(X)_i] and stem:[ii(X)_j] may be taken to bezero or treated as insignificant if
 
-. stem:[X_i] and stem:[X_j] are _uncorrelated_ (the random variables, not the physical quantities that are assumed to be invariants -- see <<note1_4-1-1>>), for example, because they have been repeatedly but not simultaneously measured in _different_ independent experiments or because they represent resultant quantities of _different_ evaluations that have been made independently, or if
-. either of the quantities stem:[X_i] or stem:[X_j] can be treated as a constant, or if
-. there is insufficient information to evaluate the covariance associated with the estimates of stem:[X_i] and stem:[X_j].
+. stem:[ii(X)_i] and stem:[ii(X)_j] are _uncorrelated_ (the random variables, not the physical quantities that are assumed to be invariants -- see <<note1_4-1-1>>), for example, because they have been repeatedly but not simultaneously measured in _different_ independent experiments or because they represent resultant quantities of _different_ evaluations that have been made independently, or if
+. either of the quantities stem:[ii(X)_i] or stem:[ii(X)_j] can be treated as a constant, or if
+. there is insufficient information to evaluate the covariance associated with the estimates of stem:[ii(X)_i] and stem:[ii(X)_j].
 
 NOTE: On the other hand, in certain cases, such as the reference-resistance <<example_5-2-2>> of <<note1_5-2-2>>, it is apparent that the input quantities are fully correlated and that the standard uncertainties of their estimates combine linearly.
 
@@ -75,12 +75,12 @@ Whether or not two repeatedly and simultaneously observed input quantities are c
 [[scls_F-1-2-3]]
 ====== {blank}
 
-In practice, input quantities are often correlated because the same physical measurement standard, measuring instrument, reference datum, or even measurement method having a significant uncertainty is used in the estimation of their values. Without loss of generality, suppose two input quantities stem:[X_1] and stem:[X_2] estimated by stem:[x_1] and stem:[x_2] depend on a set of uncorrelated variables stem:[Q_1, Q_2,..., Q_L]. Thus stem:[X_1 = F(Q_1, Q_2,..., Q_L)] and stem:[X_2 = G(Q_1, Q_2,..., Q_L)], although some of these variables may actually appear onlyin one function and not in the other. If stem:[u^2(q_l)] is the estimated variance associated with the estimate stem:[q_l] of stem:[Q_l], then the estimated variance associated with stem:[x_1] is, from <<eq_10>> in <<scls_5-1-2>>,
+In practice, input quantities are often correlated because the same physical measurement standard, measuring instrument, reference datum, or even measurement method having a significant uncertainty is used in the estimation of their values. Without loss of generality, suppose two input quantities stem:[ii(X)_1] and stem:[ii(X)_2] estimated by stem:[x_1] and stem:[x_2] depend on a set of uncorrelated variables stem:[ii(Q)_1, ii(Q)_2,..., ii(Q)_L]. Thus stem:[ii(X)_1 = F(ii(Q)_1, ii(Q)_2,..., ii(Q)_L)] and stem:[ii(X)_2 = G(ii(Q)_1, ii(Q)_2,..., ii(Q)_L)], although some of these variables may actually appear onlyin one function and not in the other. If stem:[u^2(q_l)] is the estimated variance associated with the estimate stem:[q_l] of stem:[ii(Q)_l], then the estimated variance associated with stem:[x_1] is, from <<eq_10>> in <<scls_5-1-2>>,
 
 [[eq_F-1]]
 [stem]
 ++++
-u^2(x_1) = sum_{l=1}^L ({partial F}/{partial q_l})^2 u^2 (q_l)
+u^2(x_1) = sum_{l=1}^ii(L) ({del ii(F)}/{del q_l})^2 u^2 (q_l)
 ++++
 
 with a similar expression for stem:[u^2(x_2)]. The estimated covariance associated with stem:[x_1] and stem:[x_2] is given by
@@ -88,65 +88,65 @@ with a similar expression for stem:[u^2(x_2)]. The estimated covariance associat
 [[eq_F-2]]
 [stem]
 ++++
-u(x_1,x_2) = sum_{l=1}^L {partial F}/{partial q_l} {partial G}/{partial q_l} u^2(q_l)
+u(x_1,x_2) = sum_{l=1}^ii(L) {del ii(F)}/{del q_l} {del ii(G)}/{del q_l} u^2(q_l)
 ++++
 
-Because only those terms for which stem:[partial F// partial q_l != 0] and stem:[partial G// partial q_l != 0] for a given stem:[l] contribute to the sum, the covariance is zero if no variable is common to both stem:[F] and stem:[G].
+Because only those terms for which stem:[del ii(F)// del q_l != 0] and stem:[del ii(G)// del q_l != 0] for a given stem:[l] contribute to the sum, the covariance is zero if no variable is common to both stem:[ii(F)] and stem:[ii(G)].
 
 The estimated correlation coefficient stem:[r(x_1, x_2)] associated with the two estimates stem:[x_1] and stem:[x_2] is determined from stem:[u(x_1, x_2)] [<<eq_F-2>>] _and_ <<eq_14>> in <<scls_5-2-2>>, with stem:[u(x_1)] calculated from <<eq_F-1>> and stem:[u(x_2)] from asimilar expression. [See also <<eq_H-9>>.] It is also possible for the estimated covariance associated with two input estimates to have both a statistical component [see <<eq_17>>] and a component arising as discussed in this subclause.
 
 [[example1_F-1-2-3]]
 [example]
 ====
-A standard resistor stem:[R_{"S"}] is used in the same measurement to determine both a current stem:[I] and a temperature stem:[t]. The current is determined by measuring, with a digital voltmeter, the potential difference across the terminals of the standard; the temperature is determined by measuring, with a resistance bridge and the standard, the resistance stem:[R_t(t)] of a calibrated resistive temperature sensor whose temperature-resistance relation in the range stem:[15" °C" <= t <= 30" °C"] is stem:[t = a R_t^2 (t) - t_0], where stem:[a] and stem:[t_0] are known constants. Thus the current is determined through the relation stem:[I = V_{"S"}//R_{"S"}] and the temperature through the relation stem:[t = a beta^2(t) R_{"S"}^2 - t_0], where stem:[beta(t)] is the measured ratio stem:[R_t(t)//R_{"S"}] provided by the bridge.
+A standard resistor stem:[ii(R)_{"S"}] is used in the same measurement to determine both a current stem:[ii(I)] and a temperature stem:[t]. The current is determined by measuring, with a digital voltmeter, the potential difference across the terminals of the standard; the temperature is determined by measuring, with a resistance bridge and the standard, the resistance stem:[ii(R)_t(t)] of a calibrated resistive temperature sensor whose temperature-resistance relation in the range stem:[15" "rm(°C) <= t <= 30" "rm(°C)] is stem:[t = a ii(R)_t^2 (t) - t_0], where stem:[a] and stem:[t_0] are known constants. Thus the current is determined through the relation stem:[ii(I) = ii(V)_{"S"}//ii(R)_{"S"}] and the temperature through the relation stem:[t = a ii(beta)^2(t) ii(R)_{"S"}^2 - t_0], where stem:[ii(beta)(t)] is the measured ratio stem:[ii(R)_t(t)//ii(R)_{"S"}] provided by the bridge.
 
-Since only the quantity stem:[R_{"S"}] is common to the expression for stem:[I] and stem:[t], <<eq_F-2>> yields for the covariance of stem:[I] and stem:[t]
+Since only the quantity stem:[ii(R)_{"S"}] is common to the expression for stem:[ii(I)] and stem:[t], <<eq_F-2>> yields for the covariance of stem:[ii(I)] and stem:[t]
 
 [stem%unnumbered]
 ++++
-u(I,t) = {partial I}/{partial R_{"S"}} {partial t}/{partial R_{"S"}} u^2(R_{"S"}) = (- {V_{"S"}}/{R_{"S"}^2}) [2a beta^2(t) R_{"S"}] u^2(R_{"S"}) = - {2 I(t + t_0)}/{R_{"S"}^2} u^2 (R_{"S"})
+u(ii(I),t) = {del ii(I)}/{del ii(R)_{"S"}} {del t}/{del ii(R)_{"S"}} u^2(ii(R)_{"S"}) = (- {ii(V)_{"S"}}/{ii(R)_{"S"}^2}) [2a ii(beta)^2(t) ii(R)_{"S"}] u^2(ii(R)_{"S"}) = - {2 I(t + t_0)}/{ii(R)_{"S"}^2} u^2 (ii(R)_{"S"})
 ++++
 
 
 (For simplicity of notation, in this example the same symbol is used for both the input quantity and its estimate.)
 
-To obtain the numerical value of the covariance, one substitutes into this expression the numerical values of the measured quantities stem:[I] and stem:[t], and the values of stem:[R_{"S"}] and stem:[u(R_{"S"})] given in the standard resistor's calibration certificate. The unit of stem:[u(I,t)] is clearly stem:[A cdot "°C"] since the dimension of the relative variance stem:[[u(R_{"S"})//R_{"S"}\]^2] is one (that is, the latter is a so-called dimensionless quantity).
+To obtain the numerical value of the covariance, one substitutes into this expression the numerical values of the measured quantities stem:[ii(I)] and stem:[t], and the values of stem:[ii(R)_{"S"}] and stem:[u(ii(R)_{"S"})] given in the standard resistor's calibration certificate. The unit of stem:[u(ii(I),t)] is clearly stem:[ii(A) * rm(°C)] since the dimension of the relative variance stem:[[u(ii(R)_{"S"})//ii(R)_{"S"}\]^2] is one (that is, the latter is a so-called dimensionless quantity).
 
-Further, let a quantity stem:[P] be related to the input quantities stem:[I] and stem:[t] by stem:[P = C_0 I^2//(T_0 + t)], where stem:[C_0] and stem:[T_0] are known constants with negligible uncertainties [stem:[u^2(C_0) ~~ 0, u^2(T_0) ~~ 0]]. <<eq_13>> in <<scls_5-2-2>> then yields for the variance of stem:[P] in terms of the variances of stem:[I] and stem:[t] and their covariance
-
-[stem%unnumbered]
-++++
-{u^2(P)}/{P^2} = 4 {u^2(I)}/{I^2} - 4 {u(I,t)}/{I(T_0 + t)} + {u^2(t)}/{(T_0 + t)^2}
-++++
-
-The variances stem:[u^2(I)] and stem:[u^2(t)] are obtained by the application of <<eq_10>> of <<scls_5-1-2>> to the relations stem:[I = V_{"S"}//R_{"S"}] and
-
+Further, let a quantity stem:[ii(P)] be related to the input quantities stem:[ii(I)] and stem:[t] by stem:[ii(P) = ii(C)_0 I^2//(ii(T)_0 + t)], where stem:[ii(C)_0] and stem:[ii(T)_0] are known constants with negligible uncertainties [stem:[u^2(ii(C)_0) ~~ 0, u^2(ii(T)_0) ~~ 0]]. <<eq_13>> in <<scls_5-2-2>> then yields for the variance of stem:[ii(P)] in terms of the variances of stem:[ii(I)] and stem:[t] and their covariance
 
 [stem%unnumbered]
 ++++
-u^2(I)//I^2 = u^2 (V_{"S"})//V_{"S"}^2 + u^2 (R_{"S"})//R_{"S"}^2
+{u^2(ii(P))}/{ii(P)^2} = 4 {u^2(ii(I))}/{ii(I)^2} - 4 {u(ii(I),t)}/{ii(I)(ii(T)_0 + t)} + {u^2(t)}/{(ii(T)_0 + t)^2}
+++++
+
+The variances stem:[u^2(I)] and stem:[u^2(t)] are obtained by the application of <<eq_10>> of <<scls_5-1-2>> to the relations stem:[ii(I) = ii(V)_{"S"}//ii(R)_{"S"}] and stem:[t = a ii(beta)(t) ii(R)_"S" − t_0]. The results are
+
+
+[stem%unnumbered]
+++++
+u^2(ii(I))//ii(I)^2 = u^2 (ii(V)_{"S"})//ii(V)_{"S"}^2 + u^2 (ii(R)_{"S"})//ii(R)_{"S"}^2
 ++++
 
 [stem%unnumbered]
 ++++
-u^2(t) = 4 (t - t_0)^2 u^2 (beta)//beta^2 + 4(t + t_0)^2 u^2 (R_{"S"})//R_{"S"}^2
+u^2(t) = 4 (t - t_0)^2 u^2 (ii(beta))//ii(beta)^2 + 4(t + t_0)^2 u^2 (ii(R)_{"S"})//ii(R)_{"S"}^2
 ++++
 
-where for simplicity it is assumed that the uncertainties of the constants stem:[t_0] and stem:[a] are also negligible. These expressions can be readily evaluated since stem:[u^2(V_{"S"})] and stem:[u^2(beta)] may be determined, respectively, from the repeated readings of the voltmeter and of the resistance bridge. Of course, any uncertainties inherent in the instruments themselves and in the measurement procedures employed must also be taken into account when stem:[u^2(V_{"S"})] and stem:[u^2(beta)] are determined.
+where for simplicity it is assumed that the uncertainties of the constants stem:[t_0] and stem:[a] are also negligible. These expressions can be readily evaluated since stem:[u^2(ii(V)_{"S"})] and stem:[u^2(ii(beta))] may be determined, respectively, from the repeated readings of the voltmeter and of the resistance bridge. Of course, any uncertainties inherent in the instruments themselves and in the measurement procedures employed must also be taken into account when stem:[u^2(ii(V)_{"S"})] and stem:[u^2(ii(beta))] are determined.
 ====
 
 
 [[example2_F-1-2-3]]
 [example]
 ====
-In the <<example_5-2-2>> of <<note1_5-2-2>>, let the calibration of each resistor be represented by stem:[R_i = alpha_i R_{"S"}], with stem:[u(alpha_i)] the standard uncertainty of the measured ratio stem:[alpha_i] as obtained from repeated observations. Further, let stem:[alpha_i ~~ 1] for eachresistor, and let stem:[u(alpha_i)] be essentially the same for each calibration so that stem:[u(alpha_i) ~~ u(alpha)]. Then <<eq_F-1>> and <<eq_F-2>> yield stem:[u ^2(R_i) = R_{"S"}^2 u^2(alpha) + u^2(R_{"S"})] and stem:[u(R_i, R_j) = u^2(R_{"S"})]. This implies through <<eq_14>> in <<scls_5-2-2>> that the correlationcoefficient of any two resistors (stem:[i != j]) is
+In the <<example_5-2-2>> of <<note1_5-2-2>>, let the calibration of each resistor be represented by stem:[ii(R)_i = ii(alpha)_i ii(R)_{"S"}], with stem:[u(ii(alpha)_i)] the standard uncertainty of the measured ratio stem:[ii(alpha)_i] as obtained from repeated observations. Further, let stem:[ii(alpha)_i ~~ 1] for eachresistor, and let stem:[u(ii(alpha)_i)] be essentially the same for each calibration so that stem:[u(ii(alpha)_i) ~~ u(ii(alpha))]. Then <<eq_F-1>> and <<eq_F-2>> yield stem:[u ^2(ii(R)_i) = ii(R)_{"S"}^2 u^2(ii(alpha)) + u^2(ii(R)_{"S"})] and stem:[u(ii(R)_i, ii(R)_j) = u^2(ii(R)_{"S"})]. This implies through <<eq_14>> in <<scls_5-2-2>> that the correlationcoefficient of any two resistors (stem:[i != j]) is
 
 [stem%unnumbered]
 ++++
-r(R_i,R_j) -= r_{ij} = {1 + [{u(alpha)}/{u(R_{"S"})//R_{"S"}}]^2}^{-1}
+r(ii(R)_i,ii(R)_j) -= r_{ij} = {1 + [{u(ii(alpha))}/{u(ii(R)_{"S"})//ii(R)_{"S"}}]^2}^{-1}
 ++++
 
-Since stem:[u(R_{"S"})//R_{"S"} = 10^{-4}], if stem:[u(alpha) = 100 xx 10^{-6}], stem:[r_{ij} ~~ 0.5]; if stem:[u(alpha) = 10 xx 10^{-6}], stem:[r_{ij} ~~ 0.990]; and if stem:[u(alpha) = 1 xx 10^{-6}], stem:[r_{ij} ~~ 1.000]. Thus as stem:[u(alpha) -> 0], stem:[r_{ij} -> 1], and stem:[u(R_i) -> u(R_{"S"})].
+Since stem:[u(ii(R)_{"S"})//ii(R)_{"S"} = 10^{-4}], if stem:[u(ii(alpha)) = 100 xx 10^{-6}], stem:[r_{ij} ~~ 0.5]; if stem:[u(ii(alpha)) = 10 xx 10^{-6}], stem:[r_{ij} ~~ 0.990]; and if stem:[u(ii(alpha)) = 1 xx 10^{-6}], stem:[r_{ij} ~~ 1.000]. Thus as stem:[u(ii(alpha)) -> 0], stem:[r_{ij} -> 1], and stem:[u(ii(R)_i) -> u(ii(R)_{"S"})].
 ====
 
 
@@ -156,18 +156,18 @@ NOTE: In general, in comparison calibrations such as this example, the estimated
 [[scls_F-1-2-4]]
 ====== {blank}
 
-The need to introduce the covariance stem:[u(x_i,x_j)] can be bypassed if the original set of input quantities stem:[X_1, X_2,...,X_N] upon which the measurand stem:[Y] depends [see <<eq_1>> in <<scls_4-1>>] is redefined in such a way as to include as additional independent input quantities those quantities stem:[Q_l] that are common to two or more of the original stem:[X_i]. (It may be necessary to perform additional measurements to establish fully the relationship between stem:[Q_l] and the affected stem:[X_i].) Nonetheless, in some situations it may be more convenient to retain covariances rather than to increase the number of input quantities. A similar process can be carried out on the observed covariances of simultaneous repeated observations [see <<eq_17>> in <<scls_5-2-3>>], but the identification of the appropriate additional input quantities is often _ad hoc_ and nonphysical.
+The need to introduce the covariance stem:[u(x_i,x_j)] can be bypassed if the original set of input quantities stem:[ii(X)_1, ii(X)_2,...,ii(X)_N] upon which the measurand stem:[ii(Y)] depends [see <<eq_1>> in <<scls_4-1>>] is redefined in such a way as to include as additional independent input quantities those quantities stem:[ii(Q)_l] that are common to two or more of the original stem:[ii(X)_i]. (It may be necessary to perform additional measurements to establish fully the relationship between stem:[ii(Q)_l] and the affected stem:[ii(X)_i].) Nonetheless, in some situations it may be more convenient to retain covariances rather than to increase the number of input quantities. A similar process can be carried out on the observed covariances of simultaneous repeated observations [see <<eq_17>> in <<scls_5-2-3>>], but the identification of the appropriate additional input quantities is often _ad hoc_ and nonphysical.
 
 [example]
 ====
-If, in <<example1_F-1-2-3>> of <<scls_F-1-2-3>>, the expressions for stem:[I] and stem:[t] in terms of stem:[R_{"S"}] are introduced into the expression for stem:[P], the result is
+If, in <<example1_F-1-2-3>> of <<scls_F-1-2-3>>, the expressions for stem:[ii(I)] and stem:[t] in terms of stem:[ii(R)_{"S"}] are introduced into the expression for stem:[ii(P)], the result is
 
 [stem%unnumbered]
 ++++
-P = {C_0 V_{"S"}^2}/{R_{"S"}^2 [T_0 + a beta^2(t) R_{"S"}^2 - t_0]}
+ii(P) = {ii(C)_0 ii(V)_{"S"}^2}/{ii(R)_{"S"}^2 [ii(T)_0 + a ii(beta)^2(t) ii(R)_{"S"}^2 - t_0]}
 ++++
 
-and the correlation between stem:[I] and stem:[t] is avoided at the expense of replacing the input quantities stem:[I] and stem:[t] with the quantities stem:[V_{"S"}], stem:[R_{"S"}], and stem:[beta]. Since these quantities are uncorrelated, the variance of stem:[P] can be obtained from <<eq_10>> in <<scls_5-1-2>>.
+and the correlation between stem:[ii(I)] and stem:[t] is avoided at the expense of replacing the input quantities stem:[ii(I)] and stem:[t] with the quantities stem:[ii(V)_{"S"}], stem:[ii(R)_{"S"}], and stem:[ii(beta)]. Since these quantities are uncorrelated, the variance of stem:[ii(P)] can be obtained from <<eq_10>> in <<scls_5-1-2>>.
 ====
 
 [[scls_F-2]]
@@ -185,22 +185,22 @@ If a measurement laboratory had limitless time and resources, it could conduct a
 [[scls_F-2-2-1]]
 ===== The resolution of a digital indication
 
-One source of uncertainty of a digital instrument is the resolution of its indicating device. For example, even if the repeated indications were all identical, the uncertainty of the measurement attributable to repeatability would not be zero, for there is a range of input signals to the instrument spanning a known interval that would give the same indication. If the resolution of the indicating device is stem:[delta x], the value of the stimulus that produces a given indication stem:[X] can lie with equal probability anywhere in the interval stem:[X - delta x//2] to stem:[X + delta x//2]. The stimulus is thus described by a rectangular probability distribution (see <<scls_4-3-7>> and <<scls_4-4-5>>) of width stem:[delta x] with variance stem:[u^2 = (delta x)^2//12], implying a standard uncertainty of stem:[u = 0.29 delta x] for any indication.
+One source of uncertainty of a digital instrument is the resolution of its indicating device. For example, even if the repeated indications were all identical, the uncertainty of the measurement attributable to repeatability would not be zero, for there is a range of input signals to the instrument spanning a known interval that would give the same indication. If the resolution of the indicating device is stem:[ii(delta) x], the value of the stimulus that produces a given indication stem:[X] can lie with equal probability anywhere in the interval stem:[ii(X) - ii(delta) x//2] to stem:[X + ii(delta) x//2]. The stimulus is thus described by a rectangular probability distribution (see <<scls_4-3-7>> and <<scls_4-4-5>>) of width stem:[ii(delta) x] with variance stem:[u^2 = (ii(delta) x)^2//12], implying a standard uncertainty of stem:[u = 0.29 ii(delta) x] for any indication.
 
-Thus a weighing instrument with an indicating device whose smallest significant digit is 1 g has a variance due to the resolution of the device of stem:[u^2 = (1//12)" g"^2] and a standard uncertainty of stem:[u = (1//sqrt(12))" g" = 0.29" g"].
+Thus a weighing instrument with an indicating device whose smallest significant digit is 1 g has a variance due to the resolution of the device of stem:[u^2 = (1//12)" "rm(g)^2] and a standard uncertainty of stem:[u = (1//sqrt(12))" "rm(g) = 0.29" "rm(g)].
 
 
 [[scls_F-2-2-2]]
 ===== Hysteresis
 
-Certain kinds of hysteresis can cause a similar kind of uncertainty. The indication of an instrument may differ by a fixed and known amount according to whether successive readings are rising or falling. The prudent operator takes note of the direction of successive readings and makes the appropriate correction. But the direction of the hysteresis is not always observable: there may be hidden oscillations within the instrument about an equilibrium point so that the indication depends on the direction from which that point is finally approached. If the range of possible readings from that cause is stem:[delta x], the variance is again stem:[u^2 = (delta x)^2//12], and the standard uncertainty due to hysteresis is stem:[u = 0.29 delta x].
+Certain kinds of hysteresis can cause a similar kind of uncertainty. The indication of an instrument may differ by a fixed and known amount according to whether successive readings are rising or falling. The prudent operator takes note of the direction of successive readings and makes the appropriate correction. But the direction of the hysteresis is not always observable: there may be hidden oscillations within the instrument about an equilibrium point so that the indication depends on the direction from which that point is finally approached. If the range of possible readings from that cause is stem:[ii(delta) x], the variance is again stem:[u^2 = (ii(delta) x)^2//12], and the standard uncertainty due to hysteresis is stem:[u = 0.29 ii(delta) x].
 
 
 [[scls_F-2-2-3]]
 ===== Finite-precision arithmetic
 
 The rounding or truncation of numbers arising in automated data reduction by computer can also be a source of uncertainty. Consider, for example, a computer with a word length of 16 bits. If, in the course of computation, a number having this word length is subtracted from another from which it differs only in the 16th bit, only one significant bit remains. Such events can occur in the evaluation of "ill-conditioned" algorithms, and they can be difficult to predict. One may obtain an empirical determination of the uncertainty by increasing the most important input quantity to the calculation (there is frequently one that is proportional to
-the magnitude of the output quantity) by small increments until the output quantity changes; the smallest change in the output quantity that can be obtained by such means may be taken as a measure of the uncertainty; if it is stem:[delta x], the variance is stem:[u^2 = (delta x)^2//12] and stem:[u = 0.29 delta x].
+the magnitude of the output quantity) by small increments until the output quantity changes; the smallest change in the output quantity that can be obtained by such means may be taken as a measure of the uncertainty; if it is stem:[ii(delta) x], the variance is stem:[u^2 = (ii(delta) x)^2//12] and stem:[u = 0.29 ii(delta) x].
 
 NOTE: One may check the uncertainty evaluation by comparing the result of the computation carried out on the limited word-length machine with the result of the same computation carried out on a machine with a significantly larger word length.
 
@@ -211,7 +211,7 @@ NOTE: One may check the uncertainty evaluation by comparing the result of the co
 [[scls_F-2-3-1]]
 ====== {blank}
 
-An_imported_value for an input quantity is one that has not been estimated in the course of a given measurement but has been obtained elsewhere as the result of an independent evaluation. Frequently such an imported value is accompanied by some kind of statement about its uncertainty. For example, the uncertainty may be given as a standard deviation, a multiple of a standard deviation, or the half-width of an interval having a stated level of confidence. Alternatively, upper and lower bounds may be given, or no information may be provided about the uncertainty. In the latter case, those who use the value must employ their own knowledge about the likely magnitude of the uncertainty, given the nature of the quantity, the reliability of the source, the uncertainties obtained in practice for such quantities, etc.
+An _imported_value for an input quantity is one that has not been estimated in the course of a given measurement but has been obtained elsewhere as the result of an independent evaluation. Frequently such an imported value is accompanied by some kind of statement about its uncertainty. For example, the uncertainty may be given as a standard deviation, a multiple of a standard deviation, or the half-width of an interval having a stated level of confidence. Alternatively, upper and lower bounds may be given, or no information may be provided about the uncertainty. In the latter case, those who use the value must employ their own knowledge about the likely magnitude of the uncertainty, given the nature of the quantity, the reliability of the source, the uncertainties obtained in practice for such quantities, etc.
 
 NOTE: The discussion of the uncertainty of imported input quantities is included in this subclause on Type B evaluation of standard uncertainty for convenience; the uncertainty of such a quantity could be composed of components obtained from Type A evaluations or components obtained from both Type A and Type B evaluations. Since it is unnecessary to distinguish between components evaluated by the two different methods in order to calculate a combined standard uncertainty, it is unnecessary to know the composition of the uncertainty of an imported quantity.
 
@@ -225,7 +225,7 @@ Some calibration laboratories have adopted the practice of expressing "uncertain
 [[scls_F-2-3-3]]
 ====== {blank}
 
-Some uncertainties are given simply as maximum bounds within which _all_ values of the quantity are said to lie. It is a common practice to assume that all values within those bounds are equally probable (a rectangular probability distribution), but such a distribution should not be assumed if there is reason to expect that values within but close to the bounds are less likely than those nearer the centre of the bounds. A rectangular distribution of half-width stem:[a] has a variance of stem:[a^2//3]; a normal distribution for which stem:[a] is the half -width of an interval having a level of confidence of stem:[99.73] percent has a variance of stem:[a^2//9]. It may be prudent to adopt a compromise between those values, for example, by assuming a triangular distribution for which the variance is a^2/6 (see <<scls_4-3-9>> and <<scls_4-4-6>>).
+Some uncertainties are given simply as maximum bounds within which _all_ values of the quantity are said to lie. It is a common practice to assume that all values within those bounds are equally probable (a rectangular probability distribution), but such a distribution should not be assumed if there is reason to expect that values within but close to the bounds are less likely than those nearer the centre of the bounds. A rectangular distribution of half-width stem:[a] has a variance of stem:[a^2//3]; a normal distribution for which stem:[a] is the half -width of an interval having a level of confidence of stem:[99.73] percent has a variance of stem:[a^2//9]. It may be prudent to adopt a compromise between those values, for example, by assuming a triangular distribution for which the variance is stem:[a^2//6] (see <<scls_4-3-9>> and <<scls_4-4-6>>).
 
 
 [[scls_F-2-4]]
@@ -254,23 +254,23 @@ Measurements are frequently made under controlled reference conditions that are 
 [[scls_F-2-4-4]]
 ===== Asymmetric distributions of possible values
 
-There are occasions when all possible values of a quantity lie to one side of a single limiting value. For example, when measuring the fixed vertical height stem:[h] (the measurand) of a column of liquid in a manometer, the axis of the height-measuring device may deviate from verticality by a small angle stem:[beta]. The distance stem:[l] determined by the device will always be _larger_ than stem:[h]; no values less than stem:[h] are possible. This is because stem:[h] is equal to the projection stem:[l cos beta], implying stem:[l = h//cos beta], and all values of stem:[cos beta] are less than one; no values greater than one are possible. This so-called "cosine error" can also occur in such a way that the projection stem:[h' cos beta] of a measurand stem:[h'] is equal to the observed distance stem:[l], that is, stem:[l = h' cos beta], and the observed distance is always _less_ than the measurand.
+There are occasions when all possible values of a quantity lie to one side of a single limiting value. For example, when measuring the fixed vertical height stem:[h] (the measurand) of a column of liquid in a manometer, the axis of the height-measuring device may deviate from verticality by a small angle stem:[ii(beta)]. The distance stem:[l] determined by the device will always be _larger_ than stem:[h]; no values less than stem:[h] are possible. This is because stem:[h] is equal to the projection stem:[l cos ii(beta)], implying stem:[l = h//cos ii(beta)], and all values of stem:[cos ii(beta)] are less than one; no values greater than one are possible. This so-called "cosine error" can also occur in such a way that the projection stem:[h' cos ii(beta)] of a measurand stem:[h'] is equal to the observed distance stem:[l], that is, stem:[l = h' cos ii(beta)], and the observed distance is always _less_ than the measurand.
 
-If a new variable stem:[delta = 1 - cos beta] is introduced, the two different situations are, assuming stem:[beta ~~ 0] or stem:[delta " << " 1] as is usually the case in practice,
+If a new variable stem:[ii(delta) = 1 - cos ii(beta)] is introduced, the two different situations are, assuming stem:[ii(beta) ~~ 0] or stem:[ii(delta) " << " 1] as is usually the case in practice,
 
 [[eq_F-3a]]
 [stem]
 ++++
-h = bar(l) (1 - delta)
+h = bar(l) (1 - ii(delta))
 ++++
 
 [[eq_F-3b]]
 [stem]
 ++++
-h' = bar(l) (1 + delta)
+h' = bar(l) (1 + ii(delta))
 ++++
 
-Here stem:[l], the best estimate of stem:[l], is the arithmetic mean or average of stem:[n] independent repeated observations stem:[l_k] of stem:[l] with estimated variance stem:[u^2(l)] [see <<eq_3>> and <<eq_5>> in <<scls_4-2>>]. Thus it follows from <<eq_F-3a>> and <<eq_F-3b>> that to obtain an estimate of stem:[h] or stem:[h'] requires an estimate of the correction factor stem:[delta], while to obtain the combined standard uncertainty of the estimate of stem:[h] or stem:[h'] requires stem:[u^2(delta)], the estimated variance of stem:[delta]. More specifically, application of <<eq_10>> in <<scls_5-1-2>> to <<eq_F-3a>> and <<eq_F-3b>> yields for stem:[u_{"c"}^2(h)] and stem:[u_{"c"}^2(h')] (stem:[-] and stem:[+] signs, respectively)
+Here stem:[l], the best estimate of stem:[l], is the arithmetic mean or average of stem:[n] independent repeated observations stem:[l_k] of stem:[l] with estimated variance stem:[u^2(bar(l))] [see <<eq_3>> and <<eq_5>> in <<scls_4-2>>]. Thus it follows from <<eq_F-3a>> and <<eq_F-3b>> that to obtain an estimate of stem:[h] or stem:[h'] requires an estimate of the correction factor stem:[ii(delta)], while to obtain the combined standard uncertainty of the estimate of stem:[h] or stem:[h'] requires stem:[u^2(ii(delta))], the estimated variance of stem:[ii(delta)]. More specifically, application of <<eq_10>> in <<scls_5-1-2>> to <<eq_F-3a>> and <<eq_F-3b>> yields for stem:[u_{"c"}^2(h)] and stem:[u_{"c"}^2(h')] (stem:[-] and stem:[+] signs, respectively)
 
 [[eq_F-4]]
 [[eq_F-4a]]
@@ -282,18 +282,18 @@ u_{"c"}^2 = (1 \mp \delta)^2 u^2(\bar{l}) + {\bar{l}}^2 u^2 (\delta)
 [[eq_F-4b]]
 [stem]
 ++++
-~~ u^2(bar(l)) + bar(l)^2 u^2(delta)
+~~ u^2(bar(l)) + bar(l)^2 u^2(ii(delta))
 ++++
 
-To obtain estimates of the expected value of stem:[delta] and the variance of stem:[delta], assume that the axis of the device used to measure the height of the column of liquid in the manometer is constrained to be fixed in a vertical plane and that the distribution of the values of the angle of inclination stem:[beta] about its expected value of zero is a normal distribution with variance stem:[sigma^2]. Although stem:[beta] can have both positive and negative values, stem:[delta = 1 - cos beta] is positive for all values of stem:[beta]. If the misalignment of the axis of the device is assumed to be unconstrained, the orientation of the axis can vary over a solid angle since it is capable of misalignment in azimuth as well, but stem:[beta] is then always a positive angle.
+To obtain estimates of the expected value of stem:[ii(delta)] and the variance of stem:[ii(delta)], assume that the axis of the device used to measure the height of the column of liquid in the manometer is constrained to be fixed in a vertical plane and that the distribution of the values of the angle of inclination stem:[ii(beta)] about its expected value of zero is a normal distribution with variance stem:[ii(sigma)^2]. Although stem:[ii(beta)] can have both positive and negative values, stem:[ii(delta) = 1 - cos ii(beta)] is positive for all values of stem:[ii(beta)]. If the misalignment of the axis of the device is assumed to be unconstrained, the orientation of the axis can vary over a solid angle since it is capable of misalignment in azimuth as well, but stem:[ii(beta)] is then always a positive angle.
 
-In the constrained or one-dimensional case, the *probability element* stem:[p(beta) d beta] (<<note_C-2-5>>) is proportional to stem:[{exp[-beta^2//(2sigma^2)\]}dbeta]; in the unconstrained or two-dimensional case, the probability element is proportional to stem:[{exp[-beta^2/(2sigma^2)\]}sin beta dbeta]. The probability density functions stem:[p(delta)] in the two cases are the expressions required to determine the expectation and variance of stem:[delta] for use in <<eq_F-3a>> and <<eq_F-4a>>. They may readily be obtained from these probability elements because the angle stem:[beta] may be assumed small, and hence
-stem:[delta = 1 - cos beta] and stem:[sin beta] may be expanded to lowest order in stem:[beta]. This yields stem:[delta ~~ beta^2//2], stem:[sin beta ~~ beta = 2 delta], and stem:[d beta = d delta 2delta]. The probability density functions are then
+In the constrained or one-dimensional case, the *probability element* stem:[p(ii(beta)) d ii(beta)] (<<note_C-2-5>>) is proportional to stem:[{exp[-ii(beta)^2//(2ii(sigma)^2)\]}dii(beta)]; in the unconstrained or two-dimensional case, the probability element is proportional to stem:[{exp[-ii(beta)^2/(2ii(sigma)^2)\]}sin ii(beta) dii(beta)]. The probability density functions stem:[p(ii(delta))] in the two cases are the expressions required to determine the expectation and variance of stem:[ii(delta)] for use in <<eq_F-3a>> and <<eq_F-4a>>. They may readily be obtained from these probability elements because the angle stem:[ii(beta)] may be assumed small, and hence
+stem:[ii(delta) = 1 - cos ii(beta)] and stem:[sin ii(beta)] may be expanded to lowest order in stem:[ii(beta)]. This yields stem:[ii(delta) ~~ ii(beta)^2//2], stem:[sin ii(beta) ~~ ii(beta) = sqrt(2 ii(delta))], and stem:[d ii(beta) = d ii(delta) // sqrt(2ii(delta))]. The probability density functions are then
 
 [[eq_F-5a]]
 [stem]
 ++++
-p(delta) = 1/{sigma sqrt(pi delta)} exp(-delta//sigma^2)
+p(ii(delta)) = 1/{ii(sigma) sqrt(pi ii(delta))} exp(-ii(delta)//ii(sigma)^2)
 ++++
 
 in one dimension
@@ -301,7 +301,7 @@ in one dimension
 [[eq_F-5b]]
 [stem]
 ++++
-p(delta) = 1/{sigma^2} exp(-delta//sigma^2)
+p(ii(ii(delta))) = 1/{ii(sigma)^2} exp(-ii(delta)//ii(sigma)^2)
 ++++
 
 in two dimensions
@@ -310,45 +310,45 @@ where
 
 [stem%unnumbered]
 ++++
-int_0^{oo} p(delta)" d"delta = 1
+int_0^{oo} p(ii(ii(delta)))" d"ii(ii(delta)) = 1
 ++++
 
-<<eq_F-5a>> and <<eq_F-5b>>, which show that the most probable value of the correction stem:[delta] in both cases is zero, give in the one-dimensional case stem:[E(delta) = sigma^2//2] and stem:["var"(delta) = sigma^4//2] for the expectation and the variance of stem:[delta]; and in the two-dimensional case stem:[E(delta) =sigma^2] and stem:["var"(delta) = sigma^4]. <<eq_F-3a>>, <<eq_F-3b>>, and <<eq_F-4b>> become then
+<<eq_F-5a>> and <<eq_F-5b>>, which show that the most probable value of the correction stem:[ii(delta)] in both cases is zero, give in the one-dimensional case stem:[ii(E)(ii(delta)) = ii(sigma)^2//2] and stem:["var"(ii(delta)) = ii(sigma)^4//2] for the expectation and the variance of stem:[ii(delta)]; and in the two-dimensional case stem:[E(ii(delta)) =ii(sigma)^2] and stem:["var"(ii(delta)) = ii(sigma)^4]. <<eq_F-3a>>, <<eq_F-3b>>, and <<eq_F-4b>> become then
 
 [[eq_F-6a]]
 [stem]
 ++++
-h = bar(l) [1 - (d//2)u^2 (beta)]
+h = bar(l) [1 - (d//2)u^2 (ii(beta))]
 ++++
 
 [[eq_F-6b]]
 [stem]
 ++++
-h' = bar(l) [1 + (d//2)u^2 (beta)]
+h' = bar(l) [1 + (d//2)u^2 (ii(beta))]
 ++++
 
 [[eq_F-6c]]
 [stem]
 ++++
-u_{"c"}^2(h) = u_{"c"}^2(h') = u^2(bar(l)) + (d//2)bar(l)^2 u^4 (beta)
+u_{"c"}^2(h) = u_{"c"}^2(h') = u^2(bar(l)) + (d//2)bar(l)^2 u^4 (ii(beta))
 ++++
 
-where stem:[d] is the dimensionality (stem:[d = 1] or 2) and stem:[u(beta)] is the standard uncertainty of the angle stem:[beta], taken to be the best estimate of the standard deviation stem:[sigma] of an assumed normal distribution and to be evaluated from all of the information available concerning the measurement (Type B evaluation). This is an example of a case where the estimate of the value of a measurand depends on the _uncertainty_ of an input quantity.
+where stem:[d] is the dimensionality (stem:[d = 1] or 2) and stem:[u(ii(beta))] is the standard uncertainty of the angle stem:[ii(beta)], taken to be the best estimate of the standard deviation stem:[ii(sigma)] of an assumed normal distribution and to be evaluated from all of the information available concerning the measurement (Type B evaluation). This is an example of a case where the estimate of the value of a measurand depends on the _uncertainty_ of an input quantity.
 
-Although <<eq_F-6a>> to <<eq_F-6c>> are specific to the normal distribution, the analysis can be carried out assuming other distributions for stem:[beta]. For example, if one assumes for stem:[beta] a symmetric rectangular distribution with upper and lower bounds of stem:[+beta_0] and stem:[-beta_0] in the one-dimensional case and stem:[+beta_0] and zero in the two-dimensional case, stem:[E(delta) = beta_0^2//6] and stem:["var"(delta) = beta_0^4//45] in one dimension; and stem:[E(delta) = beta_0^2//4] and stem:["var"(delta) = beta_0^4//48] in two dimensions.
+Although <<eq_F-6a>> to <<eq_F-6c>> are specific to the normal distribution, the analysis can be carried out assuming other distributions for stem:[ii(beta)]. For example, if one assumes for stem:[ii(beta)] a symmetric rectangular distribution with upper and lower bounds of stem:[+ii(beta)_0] and stem:[-ii(beta)_0] in the one-dimensional case and stem:[+ii(beta)_0] and zero in the two-dimensional case, stem:[ii(E)(ii(delta)) = ii(beta)_0^2//6] and stem:["var"(ii(delta)) = ii(beta)_0^4//45] in one dimension; and stem:[E(ii(delta)) = ii(beta)_0^2//4] and stem:["var"(ii(delta)) = ii(beta)_0^4//48] in two dimensions.
 
-NOTE: This is a situation where the expansion of the function stem:[Y = f(X_1, X_2,..., X_N)] in a first-order Taylor series to obtain stem:[u_{"c"}^2(y)], <<eq_10>> in <<scls_5-1-2>>, is inadequate because of the nonlinearity of stem:[f]: stem:[cos beta != cos beta] (see <<note_5-1-2>>, and <<scls_H-2-4>>). Although the analysis can be carried out entirely in terms of stem:[beta], introducing the variable stem:[delta] simplifies the problem.
+NOTE: This is a situation where the expansion of the function stem:[ii(Y) = f(ii(X)_1, ii(X)_2,..., ii(X)_N)] in a first-order Taylor series to obtain stem:[u_{"c"}^2(y)], <<eq_10>> in <<scls_5-1-2>>, is inadequate because of the nonlinearity of stem:[f]: stem:[bar(cos ii(beta)) != cos bar(ii(beta))] (see <<note_5-1-2>>, and <<scls_H-2-4>>). Although the analysis can be carried out entirely in terms of stem:[ii(beta)], introducing the variable stem:[ii(delta)] simplifies the problem.
 
 Another example of a situation where all possible values of a quantity lie to one side of a single limiting value is the determination by titration of the concentration of a component in a solution where the end point is indicated by the triggering of a signal; the amount of reagent added is always more than that necessary to trigger the signal; it is never less. The excess titrated beyond the limit point is a required variable in the data reduction, and the procedure in this (and in similar) cases is to assume an appropriate probability distribution for the excess and to use it to obtain the expected value of the excess and its variance.
 
 [example]
-If a rectangular distribution of lower bound zero and upper bound stem:[C_0] is assumed for the excess stem:[z], then the expected value of the excess is stem:[C_0//2] with associated variance stem:[C_0^2//12]. If the probability density function of the excess is taken as that of a normal distribution with stem:[0 <= z < oo], that is, stem:[p(z) = (sigma sqrt(pi//2))^{-1} exp[-z^2//(2 sigma^2)], then the expected value is stem:[sigma sqrt(2//pi)] with variance stem:[sigma^2(1 - 2//pi)].
+If a rectangular distribution of lower bound zero and upper bound stem:[ii(C)_0] is assumed for the excess stem:[z], then the expected value of the excess is stem:[ii(C)_0//2] with associated variance stem:[ii(C)_0^2//12]. If the probability density function of the excess is taken as that of a normal distribution with stem:[0 <= z < oo], that is, stem:[p(z) = (ii(sigma) sqrt(pi//2))^{-1} exp[-z^2//(2 ii(sigma)^2)], then the expected value is stem:[ii(sigma) sqrt(2//pi)] with variance stem:[ii(sigma)^2(1 - 2//pi)].
 
 
 [[scls_F-2-4-5]]
 ===== Uncertainty when corrections from a calibration curve are not applied
 
-The <<note_6-3-1>> discusses the case where a known correction stem:[b] for a significant systematic effect is not applied to the reported result of a measurement but instead is taken into account by enlarging the "uncertainty" assigned to the result. An example is replacement of an expanded uncertainty stem:[U] with stem:[U + b], where stem:[U] is an expanded uncertainty obtained under the assumption stem:[b = 0]. This practice is sometimes followed in situations where all of the following conditions apply: the measurand stem:[Y] is defined over a range of values of a parameter stem:[t], as in the case of a calibration curve for a temperature sensor; stem:[U] and stem:[b] also depend on stem:[t]; and only a single value of "uncertainty" is to be given for all estimates stem:[y(t)] of the measurand over the range of possible values of stem:[t]. In such situations the result of the measurement is often reported as stem:[Y(t) = y(t) pm [U_{"max"} + b_{"max"}\]], where the subscript "max" indicates that the maximum value of stem:[U] and the maximum value of the known correction stem:[b] over the range of values of stem:[t] are used.
+The <<note_6-3-1>> discusses the case where a known correction stem:[b] for a significant systematic effect is not applied to the reported result of a measurement but instead is taken into account by enlarging the "uncertainty" assigned to the result. An example is replacement of an expanded uncertainty stem:[ii(U)] with stem:[ii(U) + b], where stem:[ii(U)] is an expanded uncertainty obtained under the assumption stem:[b = 0]. This practice is sometimes followed in situations where all of the following conditions apply: the measurand stem:[ii(Y)] is defined over a range of values of a parameter stem:[t], as in the case of a calibration curve for a temperature sensor; stem:[ii(U)] and stem:[b] also depend on stem:[t]; and only a single value of "uncertainty" is to be given for all estimates stem:[y(t)] of the measurand over the range of possible values of stem:[t]. In such situations the result of the measurement is often reported as stem:[ii(Y)(t) = y(t) pm [ii(U)_{"max"} + b_{"max"}\]], where the subscript "max" indicates that the maximum value of stem:[ii(U)] and the maximum value of the known correction stem:[b] over the range of values of stem:[t] are used.
 
 Although this _Guide_ recommends that corrections be applied to measurement results for known significant systematic effects, this may not always be feasible in such a situation because of the unacceptable expense that would be incurred in calculating and applying an individual correction, and in calculating and using an individual uncertainty, for each value of stem:[y(t)].
 
@@ -362,7 +362,7 @@ bar(b) = 1/{t_2 - t_1} int_{t_1}^{t_2} b(t)" d"t
 ++++
 
 
-where stem:[t_1] and stem:[t_2] define the range of interest of the parameter stem:[t], and take the best estimate of stem:[Y(t)] to be stem:[y'(t) = y(t) + b], where stem:[y(t)] is the best uncorrected estimate of stem:[Y(t)]. The variance associated with the mean correction stem:[b] over the range of interest is given by
+where stem:[t_1] and stem:[t_2] define the range of interest of the parameter stem:[t], and take the best estimate of stem:[Y(t)] to be stem:[y'(t) = y(t) + bar(b)], where stem:[y(t)] is the best uncorrected estimate of stem:[bar(Y)(t)]. The variance associated with the mean correction stem:[bar(b)] over the range of interest is given by
 
 [stem]
 ++++
@@ -383,14 +383,14 @@ where stem:[u^2[b(t)\]] is the variance of the correction stem:[b(t)]. Similarly
 bar(u^2 [y(t)]) = 1/{t_2 - t_1} int_{t_1}^{t_2} u^2 [y(t)]" d"t
 ++++
 
-where stem:[u^2[y(t)\]] is the variance of stem:[y(t)] due to all uncertainty sources other than stem:[b(t)]. The single value of standard uncertainty to be used for _all_ estimates stem:[y'(t) = y(t) + b] of the measurand stem:[Y(t)] is then the positive square root of
+where stem:[u^2[y(t)\]] is the variance of stem:[y(t)] due to all uncertainty sources other than stem:[b(t)]. The single value of standard uncertainty to be used for _all_ estimates stem:[y'(t) = y(t) + bar(b)] of the measurand stem:[ii(Y)(t)] is then the positive square root of
 
 [stem]
 ++++
 u_{"c"}^2(y') =  bar(u^2[y(t)]) + bar(u^2 [b(t)]) + u^2(bar(b))
 ++++
 
-An expanded uncertainty stem:[U] may be obtained by multiplying stem:[u_{"c"}(y')] by an appropriately chosen coverage factor stem:[k], stem:[U = k u_{"c"}(y')], yielding stem:[Y(t) =  y'(t) pm U = y(t) + b pm U]. However, the use of the same average correction for allvalues of stem:[t] rather than the correction appropriate for each value of stem:[t] must be recognized and a clear statement given as to what stem:[U] represents.
+An expanded uncertainty stem:[ii(U)] may be obtained by multiplying stem:[u_{"c"}(y')] by an appropriately chosen coverage factor stem:[k], stem:[ii(U) = k u_{"c"}(y')], yielding stem:[ii(Y)(t) =  y'(t) pm ii(U) = y(t) + bar(b) pm ii(U)]. However, the use of the same average correction for allvalues of stem:[t] rather than the correction appropriate for each value of stem:[t] must be recognized and a clear statement given as to what stem:[ii(U)] represents.
 
 
 [[scls_F-2-5]]

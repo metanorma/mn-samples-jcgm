@@ -28,6 +28,14 @@ This _Guide_ is also applicable to evaluating and expressing the uncertainty ass
 [[scls_1-4]]
 === {blank}
 
-This _Guide_ provides general rules for evaluating and expressing uncertainty in measurement rather than detailed, technology-specific instructions. Further, it does not discuss how the uncertainty of a particular measurement result, once evaluated, may be used for different purposes, for example, to draw conclusions about the compatibility of that result with other similar results, to establish tolerance limits in a manufacturing process, or to decide if a certain course of action may be safely undertaken. It may therefore be necessary to develop particular standards based on this _Guide_ that deal with the problems peculiar to specific fields of measurement or with the various uses of quantitative expressions of uncertainty. footnote:[*Footnote to the 2008 version:* Since the initial publication of this _Guide_, several general and specific applications documents derived from this document have been published. For information purposes, nonexhaustive compilations of these documents can be found on http://www.bipm.org/en/committees/jc/jcgm/wg1_bibliography.html.]These standards may be simplified versions of this _Guide_ but should include the detail that is appropriate to the level of accuracy and complexity of the measurements and uses addressed.
+This _Guide_ provides general rules for evaluating and expressing uncertainty in measurement rather than detailed, technology-specific instructions. Further, it does not discuss how the uncertainty of a particular measurement result, once evaluated, may be used for different purposes, for example, to draw conclusions about the compatibility of that result with other similar results, to establish tolerance limits in a manufacturing process, or to decide if a certain course of action may be safely undertaken. It may therefore be necessary to develop particular standards based on this _Guide_ that deal with the problems peculiar to specific fields of measurement or with the various uses of quantitative expressions of uncertainty. footnoteblock:[f1-4]. These standards may be simplified versions of this _Guide_ but should include the detail that is appropriate to the level of accuracy and complexity of the measurements and uses addressed.
+
+[[f1-4]]
+[NOTE]
+--
+*Footnote to the 2008 version:*
+
+Since the initial publication of this _Guide_, several general and specific applications documents derived from this document have been published. For information purposes, nonexhaustive compilations of these documents can be found on http://www.bipm.org/en/committees/jc/jcgm/wg1_bibliography.html.
+--
 
 NOTE: There may be situations in which the concept of uncertainty of measurement is believed not to be fully applicable, such as when the precision of a test method is determined (see Reference <<ISO1986>> for example).

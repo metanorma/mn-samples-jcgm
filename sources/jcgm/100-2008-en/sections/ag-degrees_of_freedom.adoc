@@ -381,13 +381,13 @@ whose bounds are assumed to be exactly known, it is possible [if stem:[t_p (ii(n
 
 For many practical measurements in a broad range of fields, the following conditions prevail:
 
-the estimate stem:[y] of the measurand stem:[ii(Y)] is obtained from estimates stem:[x_i] of a significant number of input quantities stem:[ii(X)_i] that are describable by well-behaved probability distributions, such as the normal and rectangulardistributions;
+* the estimate stem:[y] of the measurand stem:[ii(Y)] is obtained from estimates stem:[x_i] of a significant number of input quantities stem:[ii(X)_i] that are describable by well-behaved probability distributions, such as the normal and rectangulardistributions;
 
-the standard uncertainties stem:[u(x_i)] of these estimates, which may be obtained from either Type A or Type B evaluations, contribute comparable amounts to the combined standard uncertainty stem:[u_{"c"}(y)] of the measurement result stem:[y];
+* the standard uncertainties stem:[u(x_i)] of these estimates, which may be obtained from either Type A or Type B evaluations, contribute comparable amounts to the combined standard uncertainty stem:[u_{"c"}(y)] of the measurement result stem:[y];
 
-the linear approximation implied by the law of propagation of uncertainty is adequate (see <<scls_5-1-2>> and <<scls_E-3-1>>);
+* the linear approximation implied by the law of propagation of uncertainty is adequate (see <<scls_5-1-2>> and <<scls_E-3-1>>);
 
-the uncertainty of stem:[u_{"c"}(y)] is reasonably small because its effective degrees of freedom stem:[ii(nu)_{"eff"}] has a significant magnitude, say greater than 10.
+* the uncertainty of stem:[u_{"c"}(y)] is reasonably small because its effective degrees of freedom stem:[ii(nu)_{"eff"}] has a significant magnitude, say greater than 10.
 
 Under these circumstances, the probability distribution characterized by the measurement result and its combined standard uncertainty can be assumed to be normal because of the Central Limit Theorem; and stem:[u_{"c"}(y)] can be taken as a reasonably reliable estimate of the standard deviation of that normal distribution because of the significant size of stem:[ii(nu)_{"eff"}]. Then, based on the discussion given in this annex, including that emphasizing the approximate nature of the uncertainty evaluation process and the impracticality of trying to distinguish between intervals having levels of confidence that differ by one or two percent, one may do the following:
 

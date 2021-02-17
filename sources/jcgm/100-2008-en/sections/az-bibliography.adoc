@@ -22,9 +22,7 @@ NOTE: This standard is currently footnoteblock:[fb1] being revised. The revision
 --
 *Footnote to the 2008 version:*
 
-ISO 5725:1986 has been replaced by a series of six parts. ISO 5725 consists of the following parts, under the general title _Accuracy (trueness and precision) of measurement methods and results_:
-
-[align=left]
+ISO 5725:1986 has been replaced by a series of six parts. ISO 5725 consists of the following parts, under the general title _Accuracy (trueness and precision) of measurement methods and results_: +
 _Part 1: General principles and definitions_ +
 _Part 2: Basic method for the determination of repeatability and reproducibility of a standard measurement method_ +
 _Part 3: Intermediate measures of the precision of a standard measurement method_ +

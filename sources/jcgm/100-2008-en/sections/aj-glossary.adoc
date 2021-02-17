@@ -1,21 +1,29 @@
 
 [[annexJ]]
-[appendix]
-== Glossary of principal symbols footnote:[*Footnote to the 2008 version:* When the GUM was first published, there was an editorial rule in effect which prohibited the use of an Annex I. That is why the annexes go from Annex H directly to Annex J.]
+[appendix, obligation=normative]
+== Glossary of principal symbols footnoteblock:[aj]
+
+[[aj]]
+[NOTE]
+--
+*Footnote to the 2008 version:*
+
+When the GUM was first published, there was an editorial rule in effect which prohibited the use of an Annex I. That is why the annexes go from Annex H directly to Annex J.
+--
 
 [cosl="2*",options="unnumbered"]
 |===
-| stem:[a] a| half-width of a rectangular distribution of possible values of input quantity stem:[X_i]:
+| stem:[a] a| half-width of a rectangular distribution of possible values of input quantity stem:[ii(X)_i]:
 
 [stem%unnumbered]
 ++++
 a = (a_{+} - a_{-})//2
 ++++
 
-| stem:[a_+] | upper bound, or upper limit, of input quantity stem:[X_i]
-| stem:[a_-] | lower bound, or lower limit, of input quantity stem:[X_i]
+| stem:[a_+] | upper bound, or upper limit, of input quantity stem:[ii(X)_i]
+| stem:[a_"-"] | lower bound, or lower limit, of input quantity stem:[ii(X)_i]
 
-| stem:[b_+] a| upper bound, or upper limit, of the deviation of input quantity stem:[X_i] from its estimate stem:[x_i]:
+| stem:[b_+] a| upper bound, or upper limit, of the deviation of input quantity stem:[ii(X)_i] from its estimate stem:[x_i]:
 
 [stem%unnumbered]
 ++++
@@ -23,41 +31,41 @@ b_+ = a_+ - x_i
 ++++
 
 
-| stem:[b_-]
-a| lower bound, or lower limit, of the deviation of input quantity stem:[X_i] from its estimate stem:[x_i]:
+| stem:[b_"-"]
+a| lower bound, or lower limit, of the deviation of input quantity stem:[ii(X)_i] from its estimate stem:[x_i]:
 
 [stem%unnumbered]
 ++++
-b_- = x_i - a_-
+b_"-" = x_i - a_"-"
 ++++
 
 
 | stem:[c_i] a| partial derivative or sensitivity coefficient:
 [stem%unnumbered]
 ++++
-c_i -= partial f//partial x_i
+c_i -= del f//del x_i
 ++++
 
 | stem:[f]
-| functional relationship between measurand stem:[Y] and input quantities stem:[X_i] on which stem:[Y] depends, and between output estimate stem:[y] and input estimates stem:[x_i] on which stem:[y] depends
+| functional relationship between measurand stem:[ii(Y)] and input quantities stem:[ii(X)_i] on which stem:[ii(Y)] depends, and between output estimate stem:[y] and input estimates stem:[x_i] on which stem:[y] depends
 
 
-| stem:[partial f//partial x_i] a| partial derivative with respect to input quantity stem:[X_i] of functional relationship stem:[f] between measurand stem:[Y] and input quantities stem:[X_i] on which stem:[Y] depends, evaluated with estimates stem:[x_i] for the stem:[X_i]:
+| stem:[del f//del x_i] a| partial derivative with respect to input quantity stem:[ii(X)_i] of functional relationship stem:[f] between measurand stem:[ii(Y)] and input quantities stem:[ii(X)_i] on which stem:[ii(Y)] depends, evaluated with estimates stem:[x_i] for the stem:[ii(X)_i]:
 
 [stem%unnumbered]
 ++++
-partial f // partial x_i = {: partial f// partial X_i \|_{x_1,x_2,...,x_N}
+del f // del x_i = {: del f// del ii(X)_i \|_{x_1,x_2,...,x_N}
 ++++
 
-| stem:[k] | coverage factor used to calculate expanded uncertainty stem:[U = ku_{"c"} (y)] of output estimate stem:[y] from its combined standard uncertainty stem:[u_{"c"}(y)], where stem:[U] defines an interval stem:[Y = y pm U] having a high level of confidence
+| stem:[k] | coverage factor used to calculate expanded uncertainty stem:[ii(U) = ku_{"c"} (y)] of output estimate stem:[y] from its combined standard uncertainty stem:[u_{"c"}(y)], where stem:[ii(U)] defines an interval stem:[ii(Y) = y pm ii(U)] having a high level of confidence
 
 
-| stem:[k_p] | coverage factor used to calculate expanded uncertainty stem:[U_p = k_p u_{"c"}(y)] of output estimate stem:[y] from its combined standard uncertainty stem:[u_{"c"}(y)], where stem:[U_p] defines an interval stem:[Y = y pm U_p] having a high, specified level of confidence stem:[p]
+| stem:[k_p] | coverage factor used to calculate expanded uncertainty stem:[ii(U)_p = k_p u_{"c"}(y)] of output estimate stem:[y] from its combined standard uncertainty stem:[u_{"c"}(y)], where stem:[ii(U)_p] defines an interval stem:[ii(Y) = y pm ii(U)_p] having a high, specified level of confidence stem:[p]
 
 
 | stem:[n] | number of repeated observations
 
-| stem:[N] | number of input quantities stem:[X_i] on which measurand stem:[Y] depends
+| stem:[ii(N)] | number of input quantities stem:[ii(X)_i] on which measurand stem:[ii(Y)] depends
 
 | stem:[p]
 a| probability; level of confidence:
@@ -70,13 +78,13 @@ a| probability; level of confidence:
 
 .2+| stem:[bar(q)]
 | arithmetic mean or average of stem:[n] independent repeated observations stem:[q_k] of randomly-varying quantity stem:[q]
-| estimate of the expectation or mean stem:[mu_q] of the probability distribution of stem:[q]
+| estimate of the expectation or mean stem:[ii(mu)_q] of the probability distribution of stem:[q]
 
 
-| stem:[q_k] | __k__th independent repeated observation of randomly-varying quantity stem:[q]
+| stem:[q_k] | stem:[k]th independent repeated observation of randomly-varying quantity stem:[q]
 
 | stem:[r(x_i,x_j)]
-a| estimated correlation coefficient associated with input estimates stem:[x_i] and stem:[x_j] that estimate input quantities stem:[X_i] and stem:[X_j]:
+a| estimated correlation coefficient associated with input estimates stem:[x_i] and stem:[x_j] that estimate input quantities stem:[ii(X)_i] and stem:[ii(X)_j]:
 
 [stem%unnumbered]
 ++++
@@ -84,13 +92,13 @@ r (x_i,x_j) = u (x_i,x_j)// [u(x_i) u(x_j)]
 ++++
 
 
-| stem:[r(bar(X)_i,bar(X)_j)]
-a| estimated correlation coefficient of input means stem:[bar(X)_i] and stem:[bar(X)_j], determined from stem:[n] independent
-pairs of repeated simultaneous observations stem:[X_{i,k}] and stem:[X_{j,k}] of stem:[X_i] and stem:[X_j]:
+| stem:[r(bar(ii(X))_i,bar(ii(X))_j)]
+a| estimated correlation coefficient of input means stem:[bar(ii(X))_i] and stem:[bar(ii(X))_j], determined from stem:[n] independent
+pairs of repeated simultaneous observations stem:[ii(X)_{i,k}] and stem:[ii(X)_{j,k}] of stem:[ii(X)_i] and stem:[ii(X)_j]:
 
 [stem%unnumbered]
 ++++
-r(bar(X)_i,bar(X)_j) = s(bar(X)_i,bar(X)_j)//[s(bar(X)_i)s(bar(X)_j)]
+r(bar(ii(X))_i,bar(ii(X))_j) = s(bar(ii(X))_i,bar(ii(X))_j)//[s(bar(ii(X))_i)s(bar(ii(X))_j)]
 ++++
 
 
@@ -104,7 +112,7 @@ measurands or output quantities are determined in the same measurement
 
 .3+| stem:[s^2(bar(q))]
 | experimental variance of the mean stem:[q]
-a| estimate of the variance stem:[sigma^2//n] of stem:[bar(q)]:
+a| estimate of the variance stem:[ii(sigma)^2//n] of stem:[bar(q)]:
 
 [stem%unnumbered]
 ++++
@@ -115,67 +123,67 @@ s^2 (bar(q)) = s^2 (q_k)//n
 
 .3+| stem:[s(bar(q))]
 | experimental standard deviation of the mean stem:[bar(q)], equal to the positive square root of stem:[s^2(bar(q))]
-| biased estimator of stem:[sigma(bar(q))] (see <<note_C-2-21>>)
+| biased estimator of stem:[ii(sigma)(bar(q))] (see <<note_C-2-21>>)
 | standard uncertainty obtained from a Type A evaluation
 
 
 .2+| stem:[s^2(q_k)]
 | experimental variance determined from stem:[n] independent repeated observations stem:[q_k] of stem:[q]
-| estimate of the variance stem:[sigma^2] of the probability distribution of stem:[q]
+| estimate of the variance stem:[ii(sigma)^2] of the probability distribution of stem:[q]
 
 
 .2+| stem:[s(q_k)]
 | experimental standard deviation, equal to the positive square root of stem:[s^2(q_k)]
-| biased estimator of the standard deviation stem:[sigma] of the probability distribution of stem:[q]
+| biased estimator of the standard deviation stem:[ii(sigma)] of the probability distribution of stem:[q]
 
 
-.2+| stem:[s^2(bar(X)_i)]
-| experimental variance of input mean stem:[bar(X)_i], determined from stem:[n] independent repeated observations stem:[X_{i,k}] of stem:[X_i]
+.2+| stem:[s^2(bar(ii(X))_i)]
+| experimental variance of input mean stem:[bar(ii(X))_i], determined from stem:[n] independent repeated observations stem:[ii(X)_{i,k}] of stem:[ii(X)_i]
 | estimated variance obtained from a Type A evaluation
 
 
-.2+| stem:[s(bar(X)_i)]
-| experimental standard deviation of input mean stem:[bar(X)_i], equal to the positive square root of stem:[s^2(bar(X)_i)]
+.2+| stem:[s(bar(ii(X))_i)]
+| experimental standard deviation of input mean stem:[bar(ii(X))_i], equal to the positive square root of stem:[s^2(bar(ii(X))_i)]
 | standard uncertainty obtained from a Type A evaluation
 
 
 .2+| stem:[s(bar(q),bar(r))]
-| estimate of the covariance of means stem:[bar(q)] and stem:[bar(r)] that estimate the expectations stem:[mu_q] and stem:[mu_r] of two
+| estimate of the covariance of means stem:[bar(q)] and stem:[bar(r)] that estimate the expectations stem:[ii(mu)_q] and stem:[ii(mu)_r] of two
 randomly-varying quantities stem:[q] and stem:[r], determined from stem:[n] independent pairs of repeated simultaneous observations stem:[q_k] and stem:[r_k] of stem:[q] and stem:[r]
 | estimated covariance obtained from a Type A evaluation
 
 
-.2+| stem:[s(bar(X)_i,bar(X)_j]
-| estimate of the covariance of input means stem:[bar(X)_i] and stem:[bar(X)_j], determined from stem:[n] independent pairs of
-repeated simultaneous observations stem:[X_{i,k}] and stem:[X_{j,k}] of stem:[X_i] and stem:[X_j]
+.2+| stem:[s(bar(ii(X))_i,bar(ii(X))_j)]
+| estimate of the covariance of input means stem:[bar(ii(X))_i] and stem:[bar(ii(X))_j], determined from stem:[n] independent pairs of
+repeated simultaneous observations stem:[ii(X)_{i,k}] and stem:[ii(X)_{j,k}] of stem:[ii(X)_i] and stem:[ii(X)_j]
 |estimated covariance obtained from a Type A evaluation
 
 
-| stem:[t_p(nu)] | stem:[t]-factor from the stem:[t]-distribution for stem:[nu] degrees of freedom corresponding to a given probability stem:[p]
+| stem:[t_p(ii(nu))] | stem:[t]-factor from the stem:[t]-distribution for stem:[ii(nu)] degrees of freedom corresponding to a given probability stem:[p]
 
-| stem:[t_p(nu_{"eff"})] | stem:[t]-factor from the stem:[t]-distribution for stem:[nu_{"eff"}] degrees of freedom corresponding to a given probability stem:[p],
-used to calculate expanded uncertainty stem:[U_p]
+| stem:[t_p(ii(nu)_{"eff"})] | stem:[t]-factor from the stem:[t]-distribution for stem:[ii(nu)_{"eff"}] degrees of freedom corresponding to a given probability stem:[p],
+used to calculate expanded uncertainty stem:[ii(U)_p]
 
 | stem:[u^2(x_i)]
-a| estimated variance associated with input estimate stem:[x_i] that estimates input quantity stem:[X_i]
+a| estimated variance associated with input estimate stem:[x_i] that estimates input quantity stem:[ii(X)_i]
 
 NOTE: When stem:[x_i] is determined from the arithmetic mean or average of stem:[n] independent repeated
-observations, stem:[u^2 (x_i) = s^2(bar(X)_i)] is an estimated variance obtained from a Type A evaluation.
+observations, stem:[u^2 (x_i) = s^2(bar(ii(X))_i)] is an estimated variance obtained from a Type A evaluation.
 
 
 | stem:[u(x_i)]
-a| standard uncertainty of input estimate stem:[x_i] that estimates input quantity stem:[X_i], equal to the positive
+a| standard uncertainty of input estimate stem:[x_i] that estimates input quantity stem:[ii(X)_i], equal to the positive
 square root of stem:[u^2(x_i)]
 
 NOTE: When stem:[x_i] is determined from the arithmetic mean or average of stem:[n] independent repeated
-observations, stem:[u(x_i) = s(bar(X)_i)] is a standard uncertainty obtained from a Type A evaluation.
+observations, stem:[u(x_i) = s(bar(ii(X))_i)] is a standard uncertainty obtained from a Type A evaluation.
 
 
 | stem:[u(x_i,x_j)]
-a| estimated covariance associated with two input estimates stem:[x_i] and stem:[x_j] that estimate input quantities stem:[X_i] and stem:[X_j]
+a| estimated covariance associated with two input estimates stem:[x_i] and stem:[x_j] that estimate input quantities stem:[ii(X)_i] and stem:[ii(X)_j]
 
 NOTE: When stem:[x_i] and stem:[x_j] are determined from stem:[n] independent pairs of repeated simultaneous observations,
-stem:[u(x_i,x_j) = s(bar(X)_i,bar(X)_j)] is an estimated covariance obtained from a Type A evaluation.
+stem:[u(x_i,x_j) = s(bar(ii(X))_i,bar(ii(X))_j)] is an estimated covariance obtained from a Type A evaluation.
 
 
 | stem:[u_{"c"}^2(y)] | combined variance associated with output estimate stem:[y]
@@ -197,7 +205,7 @@ estimated variance stem:[u^2(x_i)] associated with input estimate stem:[x_i]:
 
 [stem%unnumbered]
 ++++
-u_i (y) -= c_i u(x_i)
+u_i(y) -= [c_i u(x_i)]^2
 ++++
 
 | stem:[u_i(y)]
@@ -206,7 +214,7 @@ standard uncertainty of input estimate stem:[x_i]:
 
 [stem%unnumbered]
 ++++
-u_i(y) -= [c_i u(x_i)]^2
+u_i (y) -= abs(c_i) u(x_i)
 ++++
 
 
@@ -221,87 +229,88 @@ measurement
 
 | stem:[[u_{"c"}(y)//y\]^2] | relative combined variance associated with output estimate stem:[y]
 
-| stem:[{u(x_i,x_j)}/{\|x_i x_j\|}] | estimated relative covariance associated with input estimates stem:[x_i] and stem:[x_j]
+| stem:[{u(x_i,x_j)}/{abs(x_i x_j)}] | estimated relative covariance associated with input estimates stem:[x_i] and stem:[x_j]
 
 
-| stem:[U]
-a| expanded uncertainty of output estimate stem:[y] that defines an interval stem:[Y = y pm U] having a high level
+| stem:[ii(U)]
+a| expanded uncertainty of output estimate stem:[y] that defines an interval stem:[ii(Y) = y pm ii(U)] having a high level
 of confidence, equal to coverage factor stem:[k] times the combined standard uncertainty stem:[u_{"c"}(y)] of stem:[y]:
+
 [stem%unnumbered]
 ++++
-U = k u_{"c"} (y)
+ii(U) = k u_{"c"} (y)
 ++++
 
 
-| stem:[U_p] 
-a| expanded uncertainty of output estimate stem:[y] that defines an interval stem:[Y = y pm U_p] having a high,
+| stem:[ii(U)_p] 
+a| expanded uncertainty of output estimate stem:[y] that defines an interval stem:[ii(Y) = y pm ii(U)_p] having a high,
 specified level of confidence stem:[p], equal to coverage factor stem:[k_p] times the combined standard
 uncertainty stem:[u_{"c"}(y)] of stem:[y]:
 [stem%unnumbered]
 ++++
-U_p = k_p u_{"c"} (y)
+ii(U)_p = k_p u_{"c"} (y)
 ++++
 
 
 | stem:[x_i]
-a| estimate of input quantity stem:[X_i]
+a| estimate of input quantity stem:[ii(X)_i]
 
 NOTE: When stem:[x_i] is determined from the arithmetic mean or average of stem:[n] independent repeated
-observations, stem:[x_i = bar(X)_i]
+observations, stem:[x_i = bar(ii(X))_i]
 
 
-| stem:[X_i]
-a| __i__th input quantity on which measurand stem:[Y] depends
+| stem:[ii(X)_i]
+a| stem:[i]th input quantity on which measurand stem:[ii(Y)] depends
 
-NOTE: stem:[X_i] may be the physical quantity or the random variable (see <<note1_4-1-1>>).
+NOTE: stem:[ii(X)_i] may be the physical quantity or the random variable (see <<note1_4-1-1>>).
 
 
-| stem:[bar(X)_i] | estimate of the value of input quantity stem:[X_i], equal to the arithmetic mean or average of stem:[n]
-independent repeated observations stem:[X_{i,k}] of stem:[X_i]
+| stem:[bar(ii(X))_i] | estimate of the value of input quantity stem:[ii(X)_i], equal to the arithmetic mean or average of stem:[n]
+independent repeated observations stem:[ii(X)_{i,k}] of stem:[ii(X)_i]
 
-| stem:[X_{i,k}] | __k__th independent repeated observation of stem:[X_i]
+| stem:[ii(X)_{i,k}] | stem:[k]th independent repeated observation of stem:[ii(X)_i]
 
 .3+| stem:[y]
-| estimate of measurand stem:[Y]
+| estimate of measurand stem:[ii(Y)]
 | result of a measurement
 | output estimate
 
 
-| stem:[y_i] | estimate of measurand stem:[Y_i] when two or more measurands are determined in the same measurement
+| stem:[y_i] | estimate of measurand stem:[ii(Y)_i] when two or more measurands are determined in the same measurement
 
-| stem:[Y] | a measurand
+| stem:[ii(Y)] | a measurand
 
 | stem:[{Delta u(x_i)}/{u(x_i)}] | estimated relative uncertainty of standard uncertainty stem:[u(x_i)] of input estimate stem:[x_i]
 
-| stem:[mu_q] | expectation or mean of the probability distribution of randomly-varying quantity stem:[q]
+| stem:[ii(mu)_q] | expectation or mean of the probability distribution of randomly-varying quantity stem:[q]
 
-| stem:[nu] | degrees of freedom (general)
+| stem:[ii(nu)] | degrees of freedom (general)
 
-| stem:[nu_i] | degrees of freedom, or effective degrees of freedom, of standard uncertainty stem:[u (x_i)] of input estimate stem:[x_i]
+| stem:[ii(nu)_i] | degrees of freedom, or effective degrees of freedom, of standard uncertainty stem:[u (x_i)] of input estimate stem:[x_i]
 
-| stem:[nu_{"eff"}] | effective degrees of freedom of stem:[u_{"c"}(y)], used to obtain stem:[t_p(nu_{"eff"})] for calculating expanded uncertainty stem:[U_p]
+| stem:[ii(nu)_{"eff"}] | effective degrees of freedom of stem:[u_{"c"}(y)], used to obtain stem:[t_p(ii(nu)_{"eff"})] for calculating expanded uncertainty stem:[ii(U)_p]
 
-| stem:[nu_{"effA"}] | effective degrees of freedom of a combined standard uncertainty determined from standard
+| stem:[ii(nu)_{"effA"}] | effective degrees of freedom of a combined standard uncertainty determined from standard
 uncertainties obtained from Type A evaluations alone
 
-| stem:[nu_{"effB"}] | effective degrees of freedom of a combined standard uncertainty determined from standard
+| stem:[ii(nu)_{"effB"}] | effective degrees of freedom of a combined standard uncertainty determined from standard
 uncertainties obtained from Type B evaluations alone
 
-| stem:[sigma^2] | variance of a probabiIity distribution of (for example) a randomly-varying quantity stem:[q], estimated
+| stem:[ii(sigma)^2] | variance of a probabiIity distribution of (for example) a randomly-varying quantity stem:[q], estimated
 by stem:[s^2(q_k)]
 
-.2+| stem:[sigma]
-| standard deviation of a probability distribution, equal to the positive square root of stem:[sigma^2]
-| stem:[s(q_k)] is a biased estimator of stem:[sigma]
+.2+| stem:[ii(sigma)]
+| standard deviation of a probability distribution, equal to the positive square root of stem:[ii(sigma)^2]
+| stem:[s(q_k)] is a biased estimator of stem:[ii(sigma)]
 
-| stem:[sigma^2(bar(q))] | variance of stem:[bar(q)], equal to stem:[sigma^2//n], estimated by stem:[s^2(bar(q)) = s^2 (q_k)//n]
+| stem:[ii(sigma)^2(bar(q))] | variance of stem:[bar(q)], equal to stem:[ii(sigma)^2//n], estimated by stem:[s^2(bar(q)) = s^2 (q_k)//n]
 
-.2+| stem:[sigma(bar(q))]
-| standard deviation of stem:[bar(q)], equal to the positive square root of stem:[sigma^2(bar(q))]
-| stem:[s(bar(q))] is a biased estimator of stem:[sigma(bar(q))]
+.2+| stem:[ii(sigma)(bar(q))]
+| standard deviation of stem:[bar(q)], equal to the positive square root of stem:[ii(sigma)^2(bar(q))]
+| stem:[s(bar(q))] is a biased estimator of stem:[ii(sigma)(bar(q))]
 
-| stem:[sigma^2[s(bar(q))\]] | variance of experimental standard deviation stem:[s(bar(q))] of stem:[bar(q)]
+| stem:[ii(sigma)^2[s(bar(q))\]] | variance of experimental standard deviation stem:[s(bar(q))] of stem:[bar(q)]
 
-| stem:[sigma[s(bar(q))] | standard deviation of experimental standard deviation stem:[s(bar(q))] of stem:[bar(q)], equal to the positive square
-root of stem:[sigma^2[s(bar(q))\]] 
+| stem:[ii(sigma)[s(bar(q))] | standard deviation of experimental standard deviation stem:[s(bar(q))] of stem:[bar(q)], equal to the positive square
+root of stem:[ii(sigma)^2[s(bar(q))\]] 
 |===

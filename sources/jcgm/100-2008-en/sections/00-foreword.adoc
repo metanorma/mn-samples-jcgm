@@ -61,8 +61,7 @@ footnoteblock:[f4].
 [[f4]]
 [NOTE]
 --
-See the <<bibliography>>.
-
+See the <<bibliography>>. +
 *Footnote to the 2008 version:*
 
 In producing this 2008 version of the GUM, necessary corrections only to the printed 1995 version have been introduced by JCGM/WG 1. These corrections occur in subclauses 4.2.2, 4.2.4, 5.1.2, B.2.17, C.3.2, C.3.4, E.4.3, H.4.3, H.5.2.5 and H.6.2.

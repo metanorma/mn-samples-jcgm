@@ -1635,7 +1635,7 @@ As indicated in <<scls_H-6-2>>, stem:[ii(Delta)_c] is the correction for the dif
 [[eq_H-36]]
 [stem]
 ++++
-u^2(ii(Delta)_{"c"} = {s_{"av"}^2 (bar(z)_{"S"})}/m + {s_{"av"}^2 (bar(z))}/n)
+u^2(ii(Delta)_{"c"}) = {s_{"av"}^2 (bar(z)_{"S"})}/m + {s_{"av"}^2 (bar(z))}/n
 ++++
 
 where

@@ -15,7 +15,7 @@ Y = f(bb(X)),
 ++++
 
 
-where stem:[ii(Y)] is a scalar output quantity and stem:[bb(X)] represents the stem:[N] input quantities stem:[(X_1,...,X_N )^{sf(T)}]. Each stem:[X_i] is regarded as a random variable with possible values stem:[xi_i] and expectation stem:[x_i]. stem:[ii(Y)] is a random variable with possible values stem:[eta] and expectation stem:[y].
+where stem:[ii(Y)] is a scalar output quantity and stem:[bb(X)] represents the stem:[ii(N)] input quantities stem:[(ii(X)_1,...,ii(X)_N )^{sf(T)}]. Each stem:[ii(X)_i] is regarded as a random variable with possible values stem:[xi_i] and expectation stem:[x_i]. stem:[ii(Y)] is a random variable with possible values stem:[eta] and expectation stem:[y].
 
 NOTE: The same symbol is used for a physical quantity and the random variable that represents that quantity (cf. <<JCGM-100,clause=4.1.1 note 1>>).
 
@@ -32,6 +32,8 @@ h(Y,bb(X)) = 0,
 which implicitly relates stem:[bb(X)] and stem:[ii(Y)]. In any case, to apply the described Monte Carlo method, it is only necessary that stem:[ii(Y)] can be formed corresponding to any meaningful stem:[bb(X)].
 ====
 
+
+[[scls_4-2]]
 === {blank}
 
 This Supplement departs from the symbols often used for 'PDF' and 'distribution function' <<ISO3534>>. The GUM uses the generic symbol stem:[f] to refer to a model and a PDF. Little confusion arises in the GUM as a consequence of this usage. The situation in this Supplement is different. The concepts of model, PDF, and distribution function are central to following and implementing the guidance provided. Therefore, in place of the symbols stem:[f] and stem:[F] to denote a PDF and a distribution function, respectively, the symbols g and G are used. These symbols are indexed appropriately to denote the quantity concerned. The symbol stem:[f] is reserved for the model.
@@ -41,12 +43,12 @@ NOTE: The definitions in <<cls_3>> that relate to PDFs and distributions are ada
 
 === {blank}
 
-In this Supplement, a PDF is assigned to a quantity, which may be a single, scalar quantity stem:[ii(X)] or a vector quantity stem:[bb(X)]. In the scalar case, the PDF for stem:[ii(X)] is denoted by stem:[g_X (xi)], where stem:[xi] is a variable describing the possible values of stem:[ii(X)]. This stem:[ii(X)] is considered as a random variable with expectation stem:[ii(E)(ii(X))] and variance stem:[V (X)] (see <<scls_3-6>> and <<scls_3-7>>).
+In this Supplement, a PDF is assigned to a quantity, which may be a single, scalar quantity stem:[ii(X)] or a vector quantity stem:[bb(X)]. In the scalar case, the PDF for stem:[ii(X)] is denoted by stem:[g_X (xi)], where stem:[xi] is a variable describing the possible values of stem:[ii(X)]. This stem:[ii(X)] is considered as a random variable with expectation stem:[ii(E)(ii(X))] and variance stem:[V(ii(X))] (see <<scls_3-6>> and <<scls_3-7>>).
 
 
 === {blank}
 
-In the vector case, the PDF for stem:[bb(X)] is denoted by stem:[g_X (xi)], where stem:[bb(xi) = (xi_1,..., xi_N )^{sf(T)}] is a vector variable describing the possible values of the vector quantity stem:[bb(X)]. This stem:[bb(X)] is considered as a random vector variable with (vector) expectation stem:[E(bb(X))] and covariance matrix stem:[V(bb(X))].
+In the vector case, the PDF for stem:[bb(X)] is denoted by stem:[g_X (xi)], where stem:[bb(xi) = (xi_1,..., xi_N )^{sf(T)}] is a vector variable describing the possible values of the vector quantity stem:[bb(X)]. This stem:[bb(X)] is considered as a random vector variable with (vector) expectation stem:[ii(E)(bb(X))] and covariance matrix stem:[ii(V)(bb(X))].
 
 
 === {blank}
@@ -66,7 +68,7 @@ The PDF for stem:[ii(Y)] is denoted by stem:[g_Y (eta)] and the distribution fun
 
 === {blank}
 
-In the body of this Supplement, a quantity is generally denoted by an upper case letter and the expectation of the quantity or an estimate of the quantity by the corresponding lower case letter. For example, the expectation or an estimate of a quantity stem:[ii(Y)] would be denoted by stem:[y]. Such a notation is largely inappropriate for physical quantities, because of the established use of specific symbols, e.g. T for temperature and stem:[t] for time. Therefore, in some of the examples (<<cls_9>>), a different notation is used. There, a quantity is denoted by its conventional symbol and its expectation or an estimate of it by that symbol hatted. For instance, the quantity representing the deviation of the length of a gauge block being calibrated from nominal length (see <<scls_9-5>>) is denoted by stem:[delta L] and an estimate of stem:[delta L] by stem:[hat(delta L)].
+In the body of this Supplement, a quantity is generally denoted by an upper case letter and the expectation of the quantity or an estimate of the quantity by the corresponding lower case letter. For example, the expectation or an estimate of a quantity stem:[ii(Y)] would be denoted by stem:[y]. Such a notation is largely inappropriate for physical quantities, because of the established use of specific symbols, e.g. T for temperature and stem:[t] for time. Therefore, in some of the examples (<<cls_9>>), a different notation is used. There, a quantity is denoted by its conventional symbol and its expectation or an estimate of it by that symbol hatted. For instance, the quantity representing the deviation of the length of a gauge block being calibrated from nominal length (see <<scls_9-5>>) is denoted by stem:[delta ii(L)] and an estimate of stem:[delta ii(L)] by stem:[hat(delta ii(L))].
 
 NOTE: A hatted symbol is generally used in the statistical literature to denote an estimate.
 

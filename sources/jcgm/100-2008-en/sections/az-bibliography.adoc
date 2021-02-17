@@ -15,11 +15,35 @@ NOTE: The English translation of Recommendation INC-1 (1980) given in the <<cls_
 
 * [[[ISO1986,5]]], ISO 5725:1986, _Precision of test methods -- Determination of repeatability and reproducibility for a standard test method by inter-laboratory tests_, International Organization for Standardization (Geneva,Switzerland)
 
-NOTE: This standard is currently footnote:[*Footnote to the 2008 version:* ISO 5725:1986 has been replaced by a series of six parts. ISO 5725 consists of the following parts, under the general title _Accuracy (trueness and precision) of measurement methods and results_: _Part 1: General principles and definitions_ _Part 2: Basic method for the determination of repeatability and reproducibility of a standard measurement method_ _Part 3: Intermediate measures of the precision of a standard measurement method_ _Part 4: Basic methods for the determination of the trueness of a standard measurement method_ _Part 5: Alternative methods for the determination of the precision of a standard measurement method_ _Part 6: Use in practice of accuracy values_] being revised. The revision has a new title, "Accuracy (trueness and precision) of measurement methods and results", and it is composed of six parts.
+NOTE: This standard is currently footnoteblock:[fb1] being revised. The revision has a new title, "Accuracy (trueness and precision) of measurement methods and results", and it is composed of six parts.
 
-* [[[International1993,6]]], _International vocabulary of basic and general terms in metrology_, second edition, 1993, footnote:[*Footnote to the 2008 version:* The third edition of the vocabulary was published in 2008, under the title JCGM 200:2008, _International vocabulary of metrology -- Basic and general concepts and associated terms (VIM)_.] InternationalOrganization for Standardization (Geneva, Switzerland)
+[[fb1]]
+[NOTE]
+--
+*Footnote to the 2008 version:*
 
-The abbreviation of the title of this vocabulary is VIM.
+ISO 5725:1986 has been replaced by a series of six parts. ISO 5725 consists of the following parts, under the general title _Accuracy (trueness and precision) of measurement methods and results_:
+
+[align=left]
+_Part 1: General principles and definitions_ +
+_Part 2: Basic method for the determination of repeatability and reproducibility of a standard measurement method_ +
+_Part 3: Intermediate measures of the precision of a standard measurement method_ +
+_Part 4: Basic methods for the determination of the trueness of a standard measurement method_ +
+_Part 5: Alternative methods for the determination of the precision of a standard measurement method_ +
+_Part 6: Use in practice of accuracy values_
+--
+
+* [[[International1993,6]]], _International vocabulary of basic and general terms in metrology_, second edition, 1993, footnoteblock:[fb2]* International Organization for Standardization (Geneva, Switzerland)
+
+[[fb2]]
+[NOTE]
+--
+Footnote to the 2008 version:*
+
+The third edition of the vocabulary was published in 2008, under the title JCGM 200:2008, _International vocabulary of metrology -- Basic and general concepts and associated terms (VIM)_.
+--
+
+NOTE: The abbreviation of the title of this vocabulary is VIM.
 
 NOTE: The definitions of terms given in <<annexB>> are taken from the revised English text of the VIM in its final form prior to publication.
 

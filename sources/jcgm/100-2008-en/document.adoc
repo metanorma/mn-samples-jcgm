@@ -4,7 +4,7 @@
 :edition: 1
 :revdate:
 :language: en
-:doctype: jcgm-guide
+:doctype: guide
 :docstage: in-force
 :docsubstage: 60
 :title-en: Evaluation of measurement data
@@ -62,4 +62,6 @@ include::sections/ah-examples.adoc[]
 include::sections/aj-glossary.adoc[]
 
 include::sections/az-bibliography.adoc[]
+
+include::sections/azz-index.adoc[]
 

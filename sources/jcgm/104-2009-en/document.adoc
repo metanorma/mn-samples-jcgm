@@ -4,7 +4,7 @@
 :edition: 1
 :revdate:
 :language: en
-:doctype: jcgm-guide
+:doctype: guide
 :docstage: in-force
 :docsubstage: 60
 :title-en: Evaluation of measurement data

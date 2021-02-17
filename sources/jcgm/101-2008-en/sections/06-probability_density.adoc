@@ -35,7 +35,7 @@ Information relevant to the assignment of PDFs to the stem:[X_i] is contained in
 
 ==== {blank}
 
-Comprehensive guidance on the assignment of PDFs individually or jointly to the stem:[X_i] is beyond the scope of this Supplement. Such assigned PDFs encode the knowledge and expertise of the metrologist who formulates the model and who is ultimately responsible for the quality of the final results.
+Comprehensive guidance on the assignment of PDFs individually or jointly to the stem:[ii(X)_i] is beyond the scope of this Supplement. Such assigned PDFs encode the knowledge and expertise of the metrologist who formulates the model and who is ultimately responsible for the quality of the final results.
 
 
 ==== {blank}
@@ -141,7 +141,7 @@ xi = a + (b - a)r.
 [[scls_6-4-3-1]]
 ===== {blank}
 
-A quantity stem:[ii(X)] is known to lie between limits stem:[A] and stem:[B] with stem:[A < B], where the midpoint stem:[(A + B)//2] of the interval defined by these limits is fixed and the length stem:[B - A] of the interval is not known exactly. stem:[A] is known to lie in the interval stem:[a +- d] and stem:[B] in stem:[b +- d], where stem:[a], stem:[b] and stem:[d], with stem:[d > 0] and stem:[a + d < b - d], are specified. If no other information is available concerning stem:[ii(X)], stem:[A] and stem:[B], the principle of maximum entropy can be applied to assign to stem:[ii(X)] a "curvilinear trapezoid" (a rectangular distribution with inexactly prescribed limits).
+A quantity stem:[ii(X)] is known to lie between limits stem:[ii(A)] and stem:[ii(B)] with stem:[ii(A) < ii(B)], where the midpoint stem:[(ii(A) + ii(B))//2] of the interval defined by these limits is fixed and the length stem:[ii(B) - ii(A)] of the interval is not known exactly. stem:[ii(A)] is known to lie in the interval stem:[a +- d] and stem:[ii(B)] in stem:[b +- d], where stem:[a], stem:[b] and stem:[d], with stem:[d > 0] and stem:[a + d < b - d], are specified. If no other information is available concerning stem:[ii(X)], stem:[ii(A)] and stem:[ii(B)], the principle of maximum entropy can be applied to assign to stem:[ii(X)] a "curvilinear trapezoid" (a rectangular distribution with inexactly prescribed limits).
 
 
 ===== {blank}
@@ -494,7 +494,7 @@ stem:[ii(Z)] has expectation 1/2 and variance 1/8. The distribution <<eq9,(9)>> 
 
 [stem%unnumbered]
 ++++
-G_Z (z) = 1/pi arcsin (2z - 1) + 1/2.
+ii(G)_{ii(Z)} (z) = 1/pi arcsin (2z - 1) + 1/2.
 ++++
 
 It is a special case of the beta distribution with both parameters equal to one half.
@@ -598,14 +598,14 @@ stem:[ii(X)] has expectation and covariance matrix
 
 [stem%unnumbered]
 ++++
-E(bb(X)) = x, " " V (bb(X)) = bb(U_x).
+ii(E)(bb(X)) = x, " " ii(V) (bb(X)) = bb(U_x).
 ++++
 
 
 [[scls_6-4-8-4]]
 ===== {blank}
 
-To sample from stem:[N(x,U_x)], make N draws stem:[z_i], stem:[i = 1,...,N], independently from the standard Gaussian distribution N(0, 1) (see <<scls_C-4>>), and form
+To sample from stem:[N(bb(x),bb(U_x))], make stem:[ii(N)] draws stem:[z_i], stem:[i = 1,...,ii(N)], independently from the standard Gaussian distribution stem:[N(0, 1)] (see <<scls_C-4>>), and form
 
 [stem%unnumbered]
 ++++
@@ -622,7 +622,7 @@ NOTE: The only joint PDFs considered explicitly in this Supplement are multivari
 
 [NOTE]
 ====
-The multivariate Gaussian PDF <<eq11>> reduces to the product of N univariate Gaussian PDFs when there are no covariance effects. In that case
+The multivariate Gaussian PDF <<eq11>> reduces to the product of stem:[ii(N)] univariate Gaussian PDFs when there are no covariance effects. In that case
 
 [stem%unnumbered]
 ++++
@@ -723,7 +723,7 @@ xi = bar(x) + s/{sqrt(n)} t.
 [[scls_6-4-9-6]]
 ===== {blank}
 
-If instead of a standard deviation stem:[s] calculated from a single series of indications, a pooled standard deviation stem:[s_p] with stem:[nu_p] degrees of freedom obtained from stem:[Q] such sets,
+If instead of a standard deviation stem:[s] calculated from a single series of indications, a pooled standard deviation stem:[s_p] with stem:[nu_p] degrees of freedom obtained from stem:[ii(Q)] such sets,
 
 [stem%unnumbered]
 ++++
@@ -748,7 +748,7 @@ x = bar(x) = 1/n sum_{i=1}^n x_i, " " u(x) = sqrt(nu_{"p"}/{nu_{"p"} - 2}) s_{"p
 [[scls_6-4-9-7]]
 ===== {blank}
 
-If the source of information about a quantity stem:[ii(X)] is a calibration certificate <<JCGM-100,clause=4.3.1>> in which a best estimate stem:[x], the expanded uncertainty stem:[U_p], the coverage factor stem:[k_p] and the effective degrees of freedom stem:[nu_{"eff"}] are stated, then a scaled and shifted stem:[t]-distribution stem:[t_{nu} (x, (U_p//k_p)^2)] with stem:[nu = nu_{"eff"}] degrees of freedom should be assigned to stem:[ii(X)].
+If the source of information about a quantity stem:[ii(X)] is a calibration certificate <<JCGM-100,clause=4.3.1>> in which a best estimate stem:[x], the expanded uncertainty stem:[ii(U)_p], the coverage factor stem:[k_p] and the effective degrees of freedom stem:[nu_{"eff"}] are stated, then a scaled and shifted stem:[t]-distribution stem:[t_{nu} (x, (ii(U)_p//k_p)^2)] with stem:[nu = nu_{"eff"}] degrees of freedom should be assigned to stem:[ii(X)].
 
 
 ===== {blank}
@@ -804,7 +804,7 @@ NOTE: Further information regarding the assignment of PDFs to non-negative quant
 
 ===== {blank}
 
-Suppose the quantity stem:[ii(X)] is the average number of objects present in a sample of a fixed size (e.g. the average number of particles in an air sample taken from a clean room, or the average number of photons emitted by a source in a specified time interval). Suppose stem:[q] is the number of objects counted in a sample of the specified size, and the counted number is assumed to be a quantity with unknown expectation having a Poisson distribution. Then, according to Bayes' theorem, after assigning a constant prior distribution to the expectation, a gamma distribution G(q + 1, 1) would be assigned to stem:[ii(X)].
+Suppose the quantity stem:[ii(X)] is the average number of objects present in a sample of a fixed size (e.g. the average number of particles in an air sample taken from a clean room, or the average number of photons emitted by a source in a specified time interval). Suppose stem:[q] is the number of objects counted in a sample of the specified size, and the counted number is assumed to be a quantity with unknown expectation having a Poisson distribution. Then, according to Bayes' theorem, after assigning a constant prior distribution to the expectation, a gamma distribution stem:[G(q + 1, 1)] would be assigned to stem:[ii(X)].
 
 
 ===== {blank}
@@ -839,7 +839,7 @@ To sample from stem:[G(q + 1, 1)], make stem:[q + 1] draws stem:[r_i], stem:[i =
 xi = - ln prod_{i=1}^{q+1} r_i.
 ++++
 
-NOTE: If the counting is performed over several samples (according to the same Poisson distribution), and stem:[q_i] is the number of objects counted in the __i__th sample, of size stem:[S], then the distribution for the average number of objects in a sample of size stem:[S = sum_i S_i] is stem:[G(alpha,beta)] with stem:[alpha = 1 + sum_i q_i] and stem:[beta = 1]. <<eq14>> and <<eq15>> apply with stem:[q = sum_i q_i].
+NOTE: If the counting is performed over several samples (according to the same Poisson distribution), and stem:[q_i] is the number of objects counted in the __i__th sample, of size stem:[ii(S)_i], then the distribution for the average number of objects in a sample of size stem:[ii(S) = sum_i ii(S)_i] is stem:[G(alpha,beta)] with stem:[alpha = 1 + sum_i q_i] and stem:[beta = 1]. <<eq14>> and <<eq15>> apply with stem:[q = sum_i q_i].
 
 NOTE: The gamma distribution is a generalization of the chi-squared distribution and is used to characterize information associated with variances.
 

@@ -27,7 +27,7 @@ function giving, for every value stem:[xi], the probability that the random vari
 
 [stem%unnumbered]
 ++++
-G_x (xi) = "Pr"(X <= xi)
+G_x (xi) = "Pr"(ii(X) <= xi)
 ++++
 
 // &#x200c;[Adapted from ISO 3534-1:1993 1.4; GUM:1995 C.2.4]
@@ -50,7 +50,7 @@ stem:[g_X (xi) "d"xi] is the "probability element"
 
 [stem%unnumbered]
 ++++
-g_X (xi) "d"xi = "Pr"(xi < X < xi + "d"xi).
+g_X (xi) "d"xi = "Pr"(xi < ii(X) < xi + "d"xi).
 ++++
 ====
 
@@ -65,7 +65,7 @@ probability distribution of a continuous random variable stem:[ii(X)] having the
 
 [stem%unnumbered]
 ++++
-g_X (xi) = 1 /{sigma sqrt(2 pi)} exp[- 1/2 ({xi - mu}/sigma)^2]
+g_X (xi) = 1 /{sigma sqrt(2 pi)} exp[- 1/2 ({xi - ii(mu)}/sigma)^2],
 ++++
 
 for stem:[-infty < xi < +infty]
@@ -87,11 +87,11 @@ probability distribution of a continuous random variable stem:[ii(X)] having the
 
 [stem%unnumbered]
 ++++
-g_x(xi) = Gamma((nu + 1)//2) / {sqrt(pi nu)Gamma (nu//2)} (1 + xi^2/nu)^{-(nu+1)//2},
+g_x(xi) = (Gamma((nu + 1)//2)) / {sqrt(pi nu)Gamma (nu//2)} (1 + xi^2/nu)^{-(nu+1)//2},
 ++++
 
 
-for stem:[-oo < xi < +oo], with parameter stem:[nu], a positive integer, the degrees of freedom of the distribution, where
+for stem:[-oo < xi < +oo], with parameter stem:[ii(nu)], a positive integer, the degrees of freedom of the distribution, where
 
 [stem%unnumbered]
 ++++
@@ -115,11 +115,11 @@ NOTE: Not all random variables have an expectation.
 
 [NOTE]
 ====
-The expectation of the random variable stem:[ii(Z) = F(X)], for a given function stem:[F(X)], is
+The expectation of the random variable stem:[ii(Z) = ii(F)(ii(X))], for a given function stem:[ii(F)(ii(X))], is
 
 [stem%unnumbered]
 ++++
-E(Z) = E(F(X)) = int_{-oo}^{oo} F(xi) g_X (xi) " d"xi.
+ii(E)(ii(Z)) = ii(E)(ii(F)(ii(X))) = int_{-oo}^{oo} ii(F)(xi) g_X (xi) " d"xi.
 ++++
 ====
 
@@ -148,21 +148,21 @@ expectation of the __r__th power of a random variable, namely
 
 [stem%unnumbered]
 ++++
-E(X^r) = int_{-oo}^{oo} xi^r g_X (xi) " d"xi
+ii(E)(ii(X)^r) = int_{-oo}^{oo} xi^r g_X (xi) " d"xi
 ++++
 
-NOTE: The central moment of order stem:[r] is the expectation of the random variable stem:[ii(Z) = [X - ii(E)(ii(X))\]^r].
+NOTE: The central moment of order stem:[r] is the expectation of the random variable stem:[ii(Z) = [ii(X) - ii(E)(ii(X))\]^r].
 
 NOTE: The expectation stem:[ii(E)(ii(X))] is the first moment. The variance stem:[ii(V)(ii(X))] is the central moment of order 2.
 
 
 === covariance
 
-property of a pair of random variables, which, for two continuous random variables stem:[X_1] and stem:[X_2] characterized by a joint (multivariate) PDF stem:[g_{bb(X)} (bb(xi))], where stem:[X = (X_1, X_2)^T] and stem:[xi = (xi_1, xi_2)^T], is given by
+property of a pair of random variables, which, for two continuous random variables stem:[ii(X)_1] and stem:[ii(X)_2] characterized by a joint (multivariate) PDF stem:[g_{bb(X)} (bb(xi))], where stem:[ii(X) = (ii(X)_1, ii(X)_2)^T] and stem:[xi = (xi_1, xi_2)^T], is given by
 
 [stem%unnumbered]
 ++++
-"Cov"(X_1,X_2) = int_{-oo}^{oo} int_{-oo}{oo} [xi_1 - E(X_1)][xi_2 - E(X_2)] g_X (xi) " d"xi_1 " d"xi_2
+"Cov"(ii(X)_1,ii(X)_2) = int_{-oo}^{oo} int_{-oo}{oo} [xi_1 - ii(E)(ii(X)_1)][xi_2 - ii(E)(ii(X)_2)] g_X (xi) " d"xi_1 " d"xi_2
 ++++
 
 NOTE: Not all pairs of random variables have a covariance.
@@ -179,7 +179,7 @@ NOTE: An uncertainty matrix stem:[bb(U)_x] of dimension stem:[ii(N) xx ii(N)] as
 bb(U_x) = [(u(x_1,x_1),cdots,u(x_1,x_N)),(vdots,ddots,vdots),(u(x_N,x_1),cdots,u(x_N,x_N))],
 ++++
 
-where stem:[u(x_i, x_i) = u^2(x_i)] is the variance (squared standard uncertainty) associated with stem:[x_i] and stem:[u(x_i, x_j)] is the covariance associated with stem:[x_i] and stem:[x_j]. stem:[u(x_i, x_j) = 0] if elements stem:[X_i] and stem:[X_j] of stem:[bb(X)] are uncorrelated.
+where stem:[u(x_i, x_i) = u^2(x_i)] is the variance (squared standard uncertainty) associated with stem:[x_i] and stem:[u(x_i, x_j)] is the covariance associated with stem:[x_i] and stem:[x_j]. stem:[u(x_i, x_j) = 0] if elements stem:[ii(X)_i] and stem:[ii(X)_j] of stem:[bb(X)] are uncorrelated.
 
 NOTE: Covariances are also known as mutual uncertainties.
 

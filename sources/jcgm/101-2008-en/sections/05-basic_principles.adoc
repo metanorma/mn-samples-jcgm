@@ -10,7 +10,7 @@ The main stages of uncertainty evaluation constitute formulation, propagation, a
 
 . [[item_5-1-1a]]_Formulation_:
 .. define the output quantity stem:[ii(Y)], the quantity intended to be measured (the measurand);
-.. determine the input quantities stem:[bb(X) = (X_1,..., X_N )^{sf(T)}] upon which stem:[ii(Y)] depends;
+.. determine the input quantities stem:[bb(X) = (ii(X)_1,..., ii(X)_N )^{sf(T)}] upon which stem:[ii(Y)] depends;
 .. develop a model relating stem:[ii(Y)] and stem:[ii(X)];
 .. on the basis of available knowledge assign PDFs—Gaussian (normal), rectangular (uniform), etc.—to the stem:[ii(X)_i]. Assign instead a joint PDF to those stem:[ii(X)_i] that are not independent;
 
@@ -70,7 +70,7 @@ where stem:[delta(cdot)] denotes the Dirac delta function. This multiple integra
 
 ==== {blank}
 
-An estimate stem:[y] of stem:[ii(Y)] is the expectation stem:[ii(E)(ii(Y)]. The standard uncertainty stem:[u(y)] associated with stem:[y] is given by the standard deviation of stem:[ii(Y)], the positive square root of the variance V (Y ) of stem:[ii(Y)].
+An estimate stem:[y] of stem:[ii(Y)] is the expectation stem:[ii(E)(ii(Y))]. The standard uncertainty stem:[u(y)] associated with stem:[y] is given by the standard deviation of stem:[ii(Y)], the positive square root of the variance V (Y ) of stem:[ii(Y)].
 
 
 [[scls_5-3-2]]
@@ -138,11 +138,11 @@ An appropriate method has to be chosen for the propagation stage. If it can be d
 [[scls_5-4-4]]
 ==== {blank}
 
-The propagation of the PDFs stem:[g_{X_i} (xi_i)], stem:[i = 1,..., N], for the input quantities stem:[ii(X)_i] through the model to provide the PDF stem:[g_Y (eta)] for the output quantity stem:[ii(Y)] is illustrated in <<fig2>> for stem:[N = 3] independent stem:[ii(X)_i]. <<fig2>> may be compared to <<fig3>> for the law of propagation of uncertainty. In <<fig2>>, the stem:[g_{X_i} (xi_i)], stem:[i = 1, 2, 3], are Gaussian, triangular, and Gaussian, respectively. stem:[g_Y(eta)] is indicated as being asymmetric, as generally arises for non-linear models or asymmetric stem:[g_{X_i} (xi_i)].
+The propagation of the PDFs stem:[g_{X_i} (xi_i)], stem:[i = 1,..., ii(N)], for the input quantities stem:[ii(X)_i] through the model to provide the PDF stem:[g_Y (eta)] for the output quantity stem:[ii(Y)] is illustrated in <<fig2>> for stem:[N = 3] independent stem:[ii(X)_i]. <<fig2>> may be compared to <<fig3>> for the law of propagation of uncertainty. In <<fig2>>, the stem:[g_{X_i} (xi_i)], stem:[i = 1, 2, 3], are Gaussian, triangular, and Gaussian, respectively. stem:[g_Y(eta)] is indicated as being asymmetric, as generally arises for non-linear models or asymmetric stem:[g_{X_i} (xi_i)].
 
 
 [[fig2]]
-.Illustration of the propagation of distributions for N = 3 independent input quantities (<<scls_5-4-4>>)
+.Illustration of the propagation of distributions for stem:[ii(N) = 3] independent input quantities (<<scls_5-4-4>>)
 image::figure2.png[]
 
 
@@ -213,9 +213,9 @@ NOTE: The summaries of the stem:[ii(X)_i] also include, where appropriate, the d
 [[scls_5-6-3]]
 ==== {blank}
 
-The propagation and summarizing stages of the GUM uncertainty framework (stages <<item_5-1-1b>> and <<item_5-1-1c>> in <<scls_5-1-1>>) constitute the following computational steps. Also see <<fig3>>, which illustrates the law of propagation of uncertainty for a model having stem:[N = 3] independent input quantities stem:[X = (X_1, X_2, X_3)^{sf(T)}], which are estimated by stem:[x_i] with associated standard uncertainties stem:[u(x_i)], stem:[i = 1, 2, 3]. The output quantity stem:[ii(Y)] is estimated by stem:[y], with associated standard uncertainty stem:[u(y)].
+The propagation and summarizing stages of the GUM uncertainty framework (stages <<item_5-1-1b>> and <<item_5-1-1c>> in <<scls_5-1-1>>) constitute the following computational steps. Also see <<fig3>>, which illustrates the law of propagation of uncertainty for a model having stem:[ii(N) = 3] independent input quantities stem:[bb(X) = (ii(X)_1, ii(X)_2, ii(X)_3)^{sf(T)}], which are estimated by stem:[x_i] with associated standard uncertainties stem:[u(x_i)], stem:[i = 1, 2, 3]. The output quantity stem:[ii(Y)] is estimated by stem:[y], with associated standard uncertainty stem:[u(y)].
 
-. Obtain from the PDFs for the input quantities stem:[bb(X) = (X_1,..., X_N)^{sf(T)}] the expectations stem:[x = (x_1,..., x_N)^{sf(T)}] and the standard deviations (standard uncertainties) stem:[u(x) = [u(x_1),..., u(x_N )\]^{sf(T)}]. Use instead the joint PDF for stem:[ii(X)] if pairs of the stem:[ii(X)_i] are not independent (in which case they have non-zero covariance).
+. Obtain from the PDFs for the input quantities stem:[bb(X) = (ii(X)_1,..., ii(X)_N)^{sf(T)}] the expectations stem:[x = (x_1,..., x_N)^{sf(T)}] and the standard deviations (standard uncertainties) stem:[u(x) = [u(x_1),..., u(x_N )\]^{sf(T)}]. Use instead the joint PDF for stem:[ii(X)] if pairs of the stem:[ii(X)_i] are not independent (in which case they have non-zero covariance).
 . Set the degrees of freedom (infinite or finite) associated with each stem:[u(x_i)].
 . For each pair stem:[i], stem:[j] for which stem:[ii(X)_i] and stem:[ii(X)_j] are not independent, obtain from the joint PDF for stem:[ii(X)_i] and stem:[ii(X)_j] the covariance (mutual uncertainty) stem:[u(x_i, x_j)] associated with stem:[x_i] and stem:[x_j] .
 . Form the partial derivatives of first order of stem:[f(bb(X))] with respect to stem:[bb(X)].
@@ -227,7 +227,7 @@ The propagation and summarizing stages of the GUM uncertainty framework (stages 
 
 
 [[fig3]]
-.Illustration of the law of propagation of uncertainty for stem:[N = 3] independent input quantities (<<scls_5-4-4>>, <<scls_5-6-3>>)
+.Illustration of the law of propagation of uncertainty for stem:[ii(N) = 3] independent input quantities (<<scls_5-4-4>>, <<scls_5-6-3>>)
 image::figure3.png[]
 
 
@@ -314,7 +314,7 @@ MCM provides a general approach to obtain an approximate numerical representatio
 
 ==== {blank}
 
-Since stem:[G_Y (eta)] encodes all the information known about stem:[ii(Y)], any property of stem:[ii(Y)] such as expectation, variance and coverage intervals can be approximated using G. The quality of these calculated results improves as the number of times the PDFs are sampled increases.
+Since stem:[G_Y (eta)] encodes all the information known about stem:[ii(Y)], any property of stem:[ii(Y)] such as expectation, variance and coverage intervals can be approximated using stem:[bb(G)]. The quality of these calculated results improves as the number of times the PDFs are sampled increases.
 
 
 ==== {blank}
@@ -324,7 +324,7 @@ Expectations and variances (and higher moments) can be determined directly from 
 
 ==== {blank}
 
-If stem:[y_r], for stem:[r = 1,..., ii(M)], represent stem:[ii(M)] model values sampled independently from a probability distribution for stem:[ii(Y)], then the expectation stem:[ii(E)(ii(Y)] and variance stem:[V (Y)] can be approximated using the stem:[y_r]. In general, the moments of stem:[ii(Y)] (including stem:[ii(E)(ii(Y)] and stem:[V(Y)]) are approximated by those of the sampled model values. Let stem:[ii(M)_{y_0}] denote the number of stem:[y_r] that are no greater than stem:[y_0], any prescribed number. The probability stem:["Pr"(Y <= y_0)] is approximated by stem:[M_{y_0}//ii(M)]. In this way, the stem:[y_r] provide a step function (histogram-like) approximation to the distribution function stem:[G_Y (eta)].
+If stem:[y_r], for stem:[r = 1,..., ii(M)], represent stem:[ii(M)] model values sampled independently from a probability distribution for stem:[ii(Y)], then the expectation stem:[ii(E)(ii(Y)] and variance stem:[ii(V)(ii(Y))] can be approximated using the stem:[y_r]. In general, the moments of stem:[ii(Y)] (including stem:[ii(E)(ii(Y)] and stem:[ii(V)(ii(Y))]) are approximated by those of the sampled model values. Let stem:[ii(M)_{y_0}] denote the number of stem:[y_r] that are no greater than stem:[y_0], any prescribed number. The probability stem:["Pr"(Y <= y_0)] is approximated by stem:[M_{y_0}//ii(M)]. In this way, the stem:[y_r] provide a step function (histogram-like) approximation to the distribution function stem:[ii(G)_Y (eta)].
 
 
 ==== {blank}
@@ -340,9 +340,9 @@ NOTE: It is remotely possible that equalities exist amongst the stem:[y_r], in w
 MCM as an implementation of the propagation of distributions is shown diagrammatically in <<fig4>> for stem:[ii(M)] provided in advance (see <<scls_7-9>> otherwise). MCM can be stated as a step-by-step procedure:
 
 . select the number stem:[ii(M)] of Monte Carlo trials to be made. See <<scls_7-2>>;
-. generate stem:[ii(M)] vectors, by sampling from the assigned PDFs, as realizations of the (set of N) input quantities stem:[ii(X)_i]. See <<scls_7-3>>;
+. generate stem:[ii(M)] vectors, by sampling from the assigned PDFs, as realizations of the (set of stem:[ii(N)]) input quantities stem:[ii(X)_i]. See <<scls_7-3>>;
 . for each such vector, form the corresponding model value of stem:[ii(Y)], yielding stem:[ii(M)] model values. See <<scls_7-4>>;
-. sort these stem:[ii(M)] model values into strictly increasing order, using the sorted model values to provide G. See <<scls_7-5>>;
+. sort these stem:[ii(M)] model values into strictly increasing order, using the sorted model values to provide stem:[bb(G)]. See <<scls_7-5>>;
 . [[item_5-9-6e]]use stem:[bb(G)] to form an estimate stem:[y] of stem:[ii(Y)] and the standard uncertainty stem:[u(y)] associated with stem:[y]. See <<scls_7-6>>;
 . [[item_5-9-6f]]use stem:[bb(G)] to form an appropriate coverage interval for stem:[ii(Y)], for a stipulated coverage probability stem:[p]. See <<scls_7-7>>.
 
@@ -350,7 +350,7 @@ MCM as an implementation of the propagation of distributions is shown diagrammat
 NOTE: Subclause <<scls_6-4>> and <<annexC>> provide information on sampling from probability distributions.
 
 [[note2_5-9-6]]
-NOTE: Mathematically, the average of the stem:[ii(M)] model values is a realization of a random variable with expectation stem:[ii(E)(ii(Y)] and variance stem:[V(Y)//ii(M)]. Thus, the closeness of agreement between this average and stem:[ii(E)(ii(Y)] can be expected to be proportional to stem:[ii(M)^{-1//2}].
+NOTE: Mathematically, the average of the stem:[ii(M)] model values is a realization of a random variable with expectation stem:[ii(E)(ii(Y)] and variance stem:[ii(V)(ii(Y))//ii(M)]. Thus, the closeness of agreement between this average and stem:[ii(E)(ii(Y)] can be expected to be proportional to stem:[ii(M)^{-1//2}].
 
 NOTE: Step <<item_5-9-6e>> can equally be carried out by using the stem:[ii(M)] model values of stem:[ii(Y)] unsorted. It is necessary to sort these model values to determine the coverage interval in step <<item_5-9-6f>>.
 
@@ -382,9 +382,9 @@ image::figure4.png[]
 .. unimodal (single-peaked), and
 .. [[item_5-10-1c3]]strictly increasing (or zero) to the left of the mode and strictly decreasing (or zero) to the right of the mode;
 
-. [[item_5-10-1d]]stem:[E(Y)] and stem:[V(Y)] exist;
+. [[item_5-10-1d]]stem:[ii(E)(ii(Y))] and stem:[ii(V)(ii(Y))] exist;
 
-. [[item_5-10-1e]]a sufficiently large value of stem:[M] is used.
+. [[item_5-10-1e]]a sufficiently large value of stem:[ii(M)] is used.
 
 
 NOTE: Regarding condition <<item_5-10-1a>>, no condition on the derivatives of stem:[f] is required.
@@ -393,7 +393,7 @@ NOTE: Conditions <<item_5-10-1a>> and <<item_5-10-1b>> are necessary to ensure t
 
 NOTE: Condition <<item_5-10-1c>> is needed only if the shortest coverage interval is to be determined. In that case, the condition is necessary to ensure that the shortest coverage interval corresponding to a stipulated coverage probability is unique. The mode may occur at an endpoint of the interval over which this PDF is strictly positive, in which case one of the two conditions in <<item_5-10-1c3>> is vacuous.
 
-NOTE: Condition <<item_5-10-1d>> is needed for (stochastic) convergence of MCM as the number stem:[M] of trials (see <<scls_7-2>>) increases.
+NOTE: Condition <<item_5-10-1d>> is needed for (stochastic) convergence of MCM as the number stem:[ii(M)] of trials (see <<scls_7-2>>) increases.
 
 NOTE: Condition <<item_5-10-1e>> is necessary to ensure that the summarizing information is reliable. See <<scls_8-2>>.
 

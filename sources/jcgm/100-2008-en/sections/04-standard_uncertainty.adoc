@@ -310,7 +310,7 @@ NOTE: In many practical measurement situations where the bounds are asymmetric, 
 
 NOTE: Based on the principle of maximum entropy, the probability density function in the asymmetric case
 may be shown to be stem:[p(ii(X)_i) = ii(A) exp[- ii(lambda) (ii(X)_i - x_i)], with stem:[ii(A) = [b_"-" exp(ii(lambda) b_"-") + b_+ exp(- ii(lambda) b_+)\]^{-1}] and
-stem:[ii(lambda) = {exp[ii(lambda) (b_"-" + b_+)\]-1}//{b_ exp[ii(lambda)(b_"-" + b_+)] + b_+}]. This leads to the variance stem:[u^2(x_i) = b_+ b_"-" - (b_ + -b_"-")//ii(lambda)]; for stem:[b_+ > b_"-"], stem:[ii(lambda) > 0] and for stem:[b_+ < b_"-"], stem:[ii(lambda) < 0].
+stem:[ii(lambda) = {exp[ii(lambda) (b_"-" + b_+)\]-1}//{b_"-" exp[ii(lambda)(b_"-" + b_+)] + b_+}]. This leads to the variance stem:[u^2(x_i) = b_+ b_"-" - (b_+ + -b_"-")//ii(lambda)]; for stem:[b_+ > b_"-"], stem:[ii(lambda) > 0] and for stem:[b_+ < b_"-"], stem:[ii(lambda) < 0].
 
 
 [[scls_4-3-9]]

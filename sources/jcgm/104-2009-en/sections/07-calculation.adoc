@@ -6,145 +6,145 @@
 
 ==== {blank}
 
-The propagation stage of uncertainty evaluation is known as the _propagation of distributions_ <<JCGM1012008,clause=5.2>>, various approaches for which are available, including
+The propagation stage of uncertainty evaluation is known as the _propagation of distributions_(((propagation,of distributions))) <<JCGM1012008,clause=5.2>>, various approaches for which are available, including
 
-. [[item_7-1-1a]]the GUM uncertainty framework, constituting the application of the law of propagation of uncertainty, and the characterization of the output quantity stem:[ii(Y)] by a Gaussian or a stem:[t]-distribution (see <<scls_7-2>>),
+. [[item_7-1-1a]]the ((GUM uncertainty framework)), constituting the application of the ((law of propagation of uncertainty)), and the characterization of the output quantity(((quantity,output))) stem:[ii(Y)] by a Gaussian or a stem:[t]-distribution(((probability distribution,stem:[t])))(((probability distribution,Gaussian))) (see <<scls_7-2>>),
 
-. [[item_7-1-1b]]analytic methods, in which mathematical analysis is used to derive an algebraic form for the probability distribution for stem:[ii(Y)] (see <<scls_7-3>>), and
+. [[item_7-1-1b]]analytic methods(((analytic method))), in which mathematical analysis is used to derive an algebraic form for the ((probability distribution))(((probability distribution,distribution function))) for stem:[ii(Y)] (see <<scls_7-3>>), and
 
-. [[item_7-1-1c]]a Monte Carlo method (MCM), in which an approximation to the distribution function for stem:[ii(Y)] is established numerically by making random draws from the probability distributions for the input quantities, and evaluating the model at the resulting values (see <<scls_7-4>>).
-
-
-==== {blank}
-
-For any particular uncertainty evaluation problem, approach <<item_7-1-1a>>, <<item_7-1-1b>> or <<item_7-1-1c>> (or some other approach) is used, <<item_7-1-1a>> being generally approximate, <<item_7-1-1b>> exact, and <<item_7-1-1c>> providing a solution with a numerical accuracy that can be controlled.
+. [[item_7-1-1c]]a ((Monte Carlo method)) (MCM), in which an approximation to the distribution function for stem:[ii(Y)] is established numerically by making random draws from the ((probability distribution))s for the input quantities(((quantity,input))), and evaluating the model(((measurement model,evaluation))) at the resulting values (see <<scls_7-4>>).
 
 
 ==== {blank}
 
-The application of approaches <<item_7-1-1a>> and <<item_7-1-1c>> to measurement functions with any number of output quantities, and general measurement models, is considered in <<scls_7-5>>.
+For any particular uncertainty evaluation problem(((uncertainty evaluation,problem))), approach <<item_7-1-1a>>, <<item_7-1-1b>> or <<item_7-1-1c>> (or some other approach) is used, <<item_7-1-1a>> being generally approximate, <<item_7-1-1b>> exact, and <<item_7-1-1c>> providing a solution with a numerical accuracy that can be controlled.
+
+
+==== {blank}
+
+The application of approaches <<item_7-1-1a>> and <<item_7-1-1c>> to measurement functions with any number of output quantities, and general measurement models(((measurement model,general form))), is considered in <<scls_7-5>>.
 
 
 [[scls_7-2]]
-=== The GUM uncertainty framework
+=== The ((GUM uncertainty framework))
 
 [[scls_7-2-1]]
 ==== {blank}
 
-The GUM uncertainty framework <<JCGM1002008,clause=(GUM) 3.4.8, 5.1>> (depicted in <<fig7>>) uses
+The ((GUM uncertainty framework)) <<JCGM1002008,clause=(GUM) 3.4.8, 5.1>> (depicted in <<fig7>>) uses
 
-. the best estimates stem:[x_i] of the input quantities stem:[ii(X)_i],
+. the best estimates(((estimate,best))) stem:[x_i] of the input quantities stem:[ii(X)_i],
 . the standard uncertainties stem:[u(x_i)] associated with the stem:[x_i], and
-. the sensitivity coefficients stem:[c_i] (see <<scls_4-14>>)
+. the ((sensitivity coefficient))s stem:[c_i] (see <<scls_4-14>>)
 
-to form an estimate stem:[y] of the output quantity stem:[ii(Y)] and the associated standard uncertainty stem:[u(y)].
-
-
-==== {blank}
-
-A variant <<JCGM1002008,clause=(GUM) 5.2>> of <<scls_7-2-1>> applies when the input quantities are mutually dependent (not indicated in <<fig7>>). By regarding the probability distribution for stem:[ii(Y)] as Gaussian, a coverage interval for stem:[ii(Y)] corresponding to a specified coverage probability is also determined <<JCGM1002008,clause=(GUM) G.2>>. When the degrees of freedom <<ISO_3534-1,clause=2.54>> relating to any stem:[u(x_i)] is finite, an (effective) degrees of freedom relating to stem:[u(y)] is determined, and the probability distribution for stem:[ii(Y)] taken as a stem:[t]-distribution.
+to form an ((estimate)) stem:[y] of the output quantity(((quantity,output))) stem:[ii(Y)] and the associated ((standard uncertainty)) stem:[u(y)].
 
 
 ==== {blank}
 
-There are many circumstances where the GUM uncertainty framework <<JCGM1002008,clause=(GUM) 5>> can be applied and leads to valid statements of uncertainty. If the measurement function is linear in the input quantities and the probability distributions for these quantities are Gaussian, the GUM uncertainty framework provides exact results <<JCGM1012008,clause=5.7>>. Even when these conditions do not hold, the approach can often work sufficiently well for practical purposes <<JCGM1012008,clause=5.8>>.
+A variant <<JCGM1002008,clause=(GUM) 5.2>> of <<scls_7-2-1>> applies when the input quantities are mutually dependent(((quantity,dependent))) (not indicated in <<fig7>>). By regarding the ((probability distribution)) for stem:[ii(Y)] as Gaussian(((probability distribution,Gaussian))), a ((coverage interval)) for stem:[ii(Y)] corresponding to a specified ((coverage probability)) is also determined <<JCGM1002008,clause=(GUM) G.2>>. When the ((degrees of freedom)) <<ISO_3534-1,clause=2.54>> relating to any stem:[u(x_i)] is finite, an (effective) degrees of freedom(((degrees of freedom,effective))) relating to stem:[u(y)] is determined, and the ((probability distribution)) for stem:[ii(Y)] taken as a stem:[t]-distribution(((probability distribution,stem[t]))).
+
+
+==== {blank}
+
+There are many circumstances where the ((GUM uncertainty framework)) <<JCGM1002008,clause=(GUM) 5>> can be applied and leads to valid statements of uncertainty. If the measurement function is linear(((measurement function,linear))) in the input quantities(((quantity,input))) and the ((probability distribution))s for these quantities are Gaussian(((probability distribution,Gaussian))), the GUM uncertainty framework provides exact results <<JCGM1012008,clause=5.7>>. Even when these conditions(((GUM uncertainty framework,conditions on use))) do not hold, the approach can often work sufficiently well for practical purposes <<JCGM1012008,clause=5.8>>.
 
 
 [[scls_7-2-4]]
 ==== {blank}
 
-There are situations where the GUM uncertainty framework might not be satisfactory, including those where
+There are situations where the ((GUM uncertainty framework)) might not be satisfactory, including those where
 
-. the measurement function is non-linear,
-. the probability distributions for the input quantities are asymmetric,
+. the measurement function is non-linear(((measurement function,non-linear))),
+. the ((probability distribution))s for the input quantities are asymmetric,
 . the uncertainty contributions stem:[|c_1| u(x_1),..., |c_{ii(N)}| u(x_{ii(N)})] (see <<scls_4-14>>) are not of approximately the same magnitude <<JCGM1002008,clause=(GUM) G.2.2>>, and
-. the probability distribution for the output quantity is either asymmetric, or not a Gaussian or a stem:[t]-distribution.
+. the ((probability distribution)) for the output quantity(((quantity,output))) is either asymmetric(((probability distribution,asymmetric))), or not a Gaussian or a stem:[t]-distribution.
 
-Sometimes it is hard to establish in advance that the circumstances hold for the GUM uncertainty framework to apply.
+Sometimes it is hard to establish in advance that the circumstances hold for the ((GUM uncertainty framework))(((GUM uncertainty framework,conditions on use))) to apply.
 
 
 [[fig7]]
-.Measurement uncertainty evaluation using the GUM uncertainty framework, where the top-left part of the figure (bounded by broken lines) relates to obtaining an estimate y of the output quantity stem:[ii(Y)] and the associated standard uncertainty stem:[u(y)], and the remainder relates to the determination of a coverage interval for stem:[ii(Y)]
+.Measurement uncertainty evaluation using the ((GUM uncertainty framework)), where the top-left part of the figure (bounded by broken lines) relates to obtaining an ((estimate)) y of the output quantity stem:[ii(Y)] and the associated standard uncertainty stem:[u(y)], and the remainder relates to the determination of a ((coverage interval)) for stem:[ii(Y)]
 image::figure7.png[]
 
 
 ==== {blank}
 
-The use of the GUM uncertainty framework becomes more difficult when forming partial derivatives (or numerical approximations to them) for a measurement model that is complicated, as needed by the law of propagation of uncertainty (possibly with higher-order terms) <<JCGM1002008,clause=(GUM) 5>>. A valid and sometimes more readily applicable treatment is obtained by applying a suitable Monte Carlo implementation of the propagation of distributions (see <<scls_7-4>>).
+The use of the ((GUM uncertainty framework)) becomes more difficult when forming ((partial derivative))s (or numerical approximations to them) for a measurement model that is complicated(((measurement model,complicated))), as needed by the law of propagation of uncertainty (possibly with higher-order terms)(((law of propagation of uncertainty,higher-order terms))) <<JCGM1002008,clause=(GUM) 5>>. A valid and sometimes more readily applicable treatment is obtained by applying a suitable Monte Carlo implementation(((Monte Carlo method))) of the propagation of distributions(((propagation,of distributions))) (see <<scls_7-4>>).
 
 
 [[scls_7-3]]
-=== Analytic methods
+=== Analytic methods(((analytic method)))
 
 [[scls_7-3-1]]
 ==== {blank}
 
-Analytic methods by which an algebraic form for the probability distribution for the output quantity can be obtained do not introduce any approximation, but can be applied only in relatively simple cases. A treatment of such methods is available <<Casella2001>>, <<Dietrich1991>>. Some cases that can be so handled for a general number stem:[ii(N)] of input quantities are linear measurement functions (expression <<eq3,(3)>>), where the probability distributions for all input quantities are Gaussian, or all are rectangular with the same width. An instance with two input quantities (stem:[ii(N) = 2]), for which the probability distributions for the input quantities are rectangular, and the probability distribution for the output quantity is trapezoidal <<Cox-Harris2006>> is illustrated in <<fig3>>.
+Analytic methods by which an algebraic form for the ((probability distribution)) for the output quantity can be obtained do not introduce any approximation, but can be applied only in relatively simple cases. A treatment of such methods is available <<Casella2001>>, <<Dietrich1991>>. Some cases that can be so handled for a general number stem:[ii(N)] of input quantities(((quantity,input))) are linear measurement functions(((measurement function,linear))) (expression <<eq3,(3)>>), where the ((probability distribution))s for all input quantities are Gaussian(((probability distribution,Gaussian))), or all are rectangular with the same width. An instance with two input quantities(((quantity,input))) (stem:[ii(N) = 2]), for which the ((probability distribution))s for the input quantities are rectangular(((probability distribution,rectangular))), and the ((probability distribution)) for the output quantity(((quantity,output))) is trapezoidal(((probability distribution,trapezoidal))) <<Cox-Harris2006>> is illustrated in <<fig3>>.
 
 
 [[scls_7-3-2]]
 ==== {blank}
 
-Cases where there is one input quantity (stem:[ii(N) = 1]) can often be treated analytically, using a formula <<Rice1995>>, pages 57-61, to derive algebraically a probability distribution for the output quantity. Such cases arise in the transformation of measurement units, for example from linear to logarithmic units <<Cox-Harris2006>>, pages 95-98.
+Cases where there is one input quantity (stem:[ii(N) = 1]) can often be treated analytically, using a formula <<Rice1995>>, pages 57-61, to derive algebraically a ((probability distribution)) for the output quantity. Such cases arise in the transformation of measurement units((("measurement units, transformation"))), for example from linear to logarithmic units <<Cox-Harris2006>>, pages 95-98.
 
 
 ==== {blank}
 
-An advantage of an algebraic solution is that it provides insight through displaying the dependence of the probability distribution for the output quantity on parameters of the probability distributions for the input quantities.
+An advantage of an algebraic solution is that it provides insight through displaying the dependence of the ((probability distribution)) for the output quantity(((quantity,output))) on parameters of the ((probability distribution))s for the input quantities.
 
 
 [[scls_7-4]]
-=== Monte Carlo method
+=== ((Monte Carlo method))
 
 ==== {blank}
 
-<<JCGM1012008>> provides detailed information on MCM as an implementation of the propagation of distributions <<JCGM1012008,clause=5.9>>. MCM has fewer conditions associated with its use than the GUM uncertainty framework <<JCGM1012008,clause=5.10>>. <<fig8>> illustrates the procedure. <<JCGM1012008>> gives examples to compare MCM with the use of the GUM uncertainty framework <<JCGM1012008,clause=9>>.
-
-
-==== {blank}
-
-<<JCGM1012008>> provides an adaptive MCM procedure, in which the number of Monte Carlo trials is determined automatically by utilizing a measure of convergence of the overall process <<JCGM1012008,clause=7.9>>.
+<<JCGM1012008>> provides detailed information on MCM as an implementation of the propagation of distributions(((propagation,of distributions))) <<JCGM1012008,clause=5.9>>. MCM has fewer conditions associated with its use than the ((GUM uncertainty framework)) <<JCGM1012008,clause=5.10>>. <<fig8>> illustrates the procedure. <<JCGM1012008>> gives examples to compare MCM with the use of the ((GUM uncertainty framework))(((GUM uncertainty framework,compared with Monte Carlo method)))(((Monte Carlo method,comparison with the GUM uncertainty framework)))(((Monte Carlo method,conditions on use)))(((Monte Carlo method,examples))) <<JCGM1012008,clause=9>>.
 
 
 ==== {blank}
 
-In <<JCGM1012008>> there is a procedure that uses MCM to decide whether the application of the GUM uncertainty framework in any particular case is valid <<JCGM1012008,clause=8>>.
+<<JCGM1012008>> provides an adaptive MCM(((Monte Carlo method,adaptive))) procedure, in which the number of Monte Carlo trials(((Monte Carlo method,number of trials))) is determined automatically by utilizing a measure of convergence of the overall process <<JCGM1012008,clause=7.9>>.
+
+
+==== {blank}
+
+In <<JCGM1012008>> there is a procedure that uses MCM to decide whether the application of the ((GUM uncertainty framework))(((GUM uncertainty framework,validition using MCM))) in any particular case is valid <<JCGM1012008,clause=8>>.
 
 
 [[fig8]]
-.Measurement uncertainty evaluation using a Monte Carlo method, where the part of the figure to the left of the broken line relates to obtaining an estimate y of the output quantity stem:[ii(Y)] and the associated standard uncertainty stem:[u(y)], and the remainder relates to the determination of a coverage interval for stem:[ii(Y)]
+.Measurement uncertainty evaluation using a Monte Carlo method, where the part of the figure to the left of the broken line relates to obtaining an ((estimate)) y of the output quantity stem:[ii(Y)] and the associated standard uncertainty stem:[u(y)], and the remainder relates to the determination of a ((coverage interval)) for stem:[ii(Y)]
 image::figure8.png[]
 
 
 [[scls_7-5]]
-=== Measurement models with any number of output quantities
+=== Measurement models with any number of output quantities(((quantity,output)))(((measurement model,with any number of output quantities)))
 
 ==== {blank}
 
-In order to evaluate the uncertainties and covariances associated with estimates of the output quantities for measurement models with any number of output quantities, both the GUM uncertainty framework and MCM, as treated in <<JCGM1012008>>, require extension. The GUM <<JCGM1002008,clause=(GUM) F.1.2.3>> outlines such an extension of the GUM uncertainty framework, but considers it further only in examples.
+In order to evaluate the uncertainties and ((covariance))s associated with ((estimate))s of the output quantities(((quantity,output))) for measurement models(((measurement model))) with any number of output quantities, both the ((GUM uncertainty framework)) and MCM(((Monte Carlo method))), as treated in <<JCGM1012008>>, require extension. The GUM <<JCGM1002008,clause=(GUM) F.1.2.3>> outlines such an extension of the ((GUM uncertainty framework)), but considers it further only in examples.
 
 
 [[scls_7-5-2]]
 ==== {blank}
 
-In JCGM 102 <<bipm_supp2>> it is stated that the law of propagation of uncertainty, a main constituent of the GUM uncertainty framework, can succinctly be expressed in an equivalent matrix form when applied to a measurement model having a single output quantity. The matrix expression has the advantage of being suitable as a basis for implementation in software, and for extension to more general types of measurement model.
+In JCGM 102 <<bipm_supp2>> it is stated that the ((law of propagation of uncertainty)), a main constituent of the ((GUM uncertainty framework)), can succinctly be expressed in an equivalent ((matrix form)) when applied to a ((measurement model)) having a single output quantity(((quantity,output))). The matrix expression has the advantage of being suitable as a basis for implementation in software(((software implementation))), and for extension to more general types of ((measurement model)).
 
 
 ==== {blank}
 
-That extension is given in JCGM 102 for a measurement function having any number of output quantities. The extension to any number of output quantities in a general measurement model (see <<scls_3-16>>) is also treated in JCGM 102.
+That extension is given in JCGM 102 for a measurement function having any number of output quantities. The extension to any number of output quantities(((quantity,output))) in a general ((measurement model))(((measurement model,with any number of output quantities))) (see <<scls_3-16>>) is also treated in JCGM 102.
 
 
 ==== {blank}
 
-JCGM 102 also applies MCM to measurement models with any number of output quantities. A discrete representation of the probability distribution for the output quantities is provided. Expressions are given for the estimates of the output quantities, the standard uncertainties associated with these estimates, and the covariances associated with pairs of these estimates in terms of that representation.
+JCGM 102 also applies MCM(((Monte Carlo method))) to measurement models with any number of output quantities(((measurement model,with any number of output quantities))). A discrete representation of the ((probability distribution))(((probability distribution,discrete representation))) for the output quantities(((quantity,output))) is provided. Expressions are given for the ((estimate))s of the output quantities, the standard uncertainties(((standard uncertainty))) associated with these ((estimate))s, and the ((covariance))s associated with pairs of these ((estimate))s in terms of that representation.
 
 
 ==== {blank}
 
-In addition to obtaining estimates of the output quantities, together with the associated standard uncertainties and covariances, it might be required to obtain a region containing the output quantities with a specified (coverage) probability. It is natural to consider the extension to regions of the probabilistically symmetric coverage interval and the shortest coverage interval. However, there is no natural counterpart of a probabilistically symmetric coverage interval in the form of a coverage region, whereas there is for a shortest coverage interval. The determination of a smallest coverage region is generally a difficult task.
+In addition to obtaining ((estimate))s of the output quantities, together with the associated standard uncertainties(((standard uncertainty))) and ((covariance))s, it might be required to obtain a _region_ containing the output quantities(((quantity,output))) with a specified (coverage) probability(((coverage probability))). It is natural to consider the extension to regions of the probabilistically symmetric coverage interval(((coverage interval,probabilistically symmetric))) and the shortest ((coverage interval)). However, there is no natural counterpart of a probabilistically symmetric ((coverage interval)) in the form of a ((coverage region)), whereas there is for a shortest coverage interval(((coverage interval,shortest))). The determination of a smallest coverage region(((coverage region,smallest))) is generally a difficult task.
 
 
 ==== {blank}
 
-In some circumstances, it is reasonable to provide an _approximate_ coverage region having simple geometric shape. Two particular forms of coverage region are considered in this regard. One form results from characterizing the output quantities by a joint Gaussian distribution, for example on the basis of the central limit theorem <<JCGM1002008,clause=(GUM) G.2>>, in which case the smallest coverage region is bounded by a hyper-ellipsoid. The other form constitutes a hyper-rectangular coverage region. Procedures for obtaining these forms are provided in JCGM 102.
+In some circumstances, it is reasonable to provide an _approximate_ coverage region(((coverage region,approximate))) having simple geometric shape. Two particular forms of ((coverage region)) are considered in this regard. One form results from characterizing the output quantities(((quantity,output))) by a joint Gaussian distribution(((probability distribution,joint Gaussian))), for example on the basis of the ((central limit theorem)) <<JCGM1002008,clause=(GUM) G.2>>, in which case the smallest coverage region(((coverage region,smallest))) is bounded by a ((hyper-ellipsoid)). The other form constitutes a hyper-rectangular coverage region(((coverage region,hyper-rectangular))). Procedures for obtaining these forms are provided in JCGM 102.

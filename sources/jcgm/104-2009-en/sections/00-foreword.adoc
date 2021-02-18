@@ -11,8 +11,8 @@ The present document has been prepared by Working Group 1 of the JCGM, and has b
 
 This document constitutes one part in a series of JCGM documents under the generic heading _Evaluation of measurement data_. The parts in the series are
 
-* JCGM 100:2008. Evaluation of measurement data -- Guide to the expression of uncertainty in measurement (GUM) (see clause 2),
-* JCGM 101:2008. Evaluation of measurement data -- Supplement 1 to the "Guide to the expression of uncertainty in measurement" -- Propagation of distributions using a Monte Carlo method (see clause 2),
+* JCGM 100:2008. Evaluation of measurement data -- Guide to the expression of uncertainty in measurement (GUM) (see <<cls_2>>),
+* JCGM 101:2008. Evaluation of measurement data -- Supplement 1 to the "Guide to the expression of uncertainty in measurement" -- Propagation of distributions using a Monte Carlo method (see <<cls_2>>),
 * JCGM 102. Evaluation of measurement data -- Supplement 2 to the "Guide to the expression of uncertainty in measurement" -- Models with any number of output quantities,
 * JCGM 103. Evaluation of measurement data -- Supplement 3 to the "Guide to the expression of uncertainty in measurement" -- Modelling,
 * JCGM 104. Evaluation of measurement data -- An introduction to the "Guide to the expression of uncertainty in measurement" and related documents [this document],

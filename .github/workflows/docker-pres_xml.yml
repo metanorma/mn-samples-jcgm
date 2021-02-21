@@ -17,7 +17,7 @@ jobs:
       - run: |
           curl -L --retry 3 https://raw.githubusercontent.com/metanorma/metanorma-build-scripts/master/gemfile-to-bundle-add.sh | bash
 
-      - run: metanorma site generate . -o published -c metanorma.yml
+      - run: metanorma site generate . -o published -c metanorma.yml --agree-to-terms
 
       - uses: actions/upload-artifact@master
         if: github.ref == 'refs/heads/master'

@@ -37,4 +37,4 @@ jobs:
           curl -L https://raw.githubusercontent.com/metanorma/metanorma-linux-setup/master/ubuntu.sh | sudo bash
           sudo chown -R $USER:$(id -gn $USER) $HOME/.config
 
-      - run: metanorma site generate . -o published -c metanorma.yml
+      - run: metanorma site generate . -o published -c metanorma.yml --agree-to-terms

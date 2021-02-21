@@ -31,4 +31,4 @@ jobs:
 
       - run: cinst --no-progress -y metanorma yq
 
-      - run: metanorma site generate . -o published -c metanorma.yml
+      - run: metanorma site generate . -o published -c metanorma.yml --agree-to-terms

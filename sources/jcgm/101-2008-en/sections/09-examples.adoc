@@ -60,10 +60,10 @@ This example considers the additive model
 [[eq21]]
 [stem]
 ++++
-Y = X_1 + X_2 + X_3 + X_4,
+ii(Y) = ii(X)_1 + ii(X)_2 + ii(X)_3 + ii(X)_4,
 ++++
 
-a special case of the generic linear model considered in the GUM, for three different sets of PDFs stem:[g_{X_i} (xi_i)] assigned to the input quantities stem:[ii(X)_i], regarded as independent. The stem:[ii(X)_i] and hence the output quantity stem:[ii(Y)] have dimension 1. For the first set, each stem:[g_{X_i} (xi_i)] is a standard Gaussian PDF (with stem:[ii(X)_i] having expectation zero and standard deviation unity). For the second set, each stem:[g_{X_i} (xi_i)] is a rectangular PDF, also with stem:[ii(X)_i] having expectation zero and standard deviation unity. The third set is identical to the second except that the PDF for stem:[g_{X_4} (xi_4)] has a standard deviation of ten.
+a special case of the generic linear model considered in the GUM, for three different sets of PDFs stem:[g_{ii(X)_i} (xi_i)] assigned to the input quantities stem:[ii(X)_i], regarded as independent. The stem:[ii(X)_i] and hence the output quantity stem:[ii(Y)] have dimension 1. For the first set, each stem:[g_{ii(X)_i} (xi_i)] is a standard Gaussian PDF (with stem:[ii(X)_i] having expectation zero and standard deviation unity). For the second set, each stem:[g_{ii(X)_i} (xi_i)] is a rectangular PDF, also with stem:[ii(X)_i] having expectation zero and standard deviation unity. The third set is identical to the second except that the PDF for stem:[g_{ii(X)_4} (xi_4)] has a standard deviation of ten.
 
 NOTE: Further information concerning additive models, such as the model <<eq21,(21)>>, where the PDFs are Gaussian or rectangular or a combination of both, is available <<Dietrich1991>>.
 
@@ -91,7 +91,7 @@ The law of propagation of uncertainty <<JCGM-100,clause=5.1.2>> gives the estima
 
 ===== {blank}
 
-The application of MCM (<<cls_7>>) with stem:[M = 10^5] trials gives stem:[y = 0.0], stem:[u(y) = 2.0] and the probabilistically symmetric 95 % coverage interval [-3.9, 3.9]. Two further applications of the method, with stem:[M = 10^6] trials, agree with these results to within the numerical tolerance used. These two further applications (different random samplings being made from the PDFs) were made to demonstrate the variation in the results obtained. The fourth and fifth numerical values of stem:[ii(M)] (stem:[1.23 xx 10^6] and stem:[1.02 xx 10^6]) are the numbers of trials for two applications of the adaptive Monte Carlo procedure (see <<scls_7-9>>) with the use of a numerical tolerance of stem:[delta//5] (see <<scls_8-2>>).
+The application of MCM (<<cls_7>>) with stem:[ii(M) = 10^5] trials gives stem:[y = 0.0], stem:[u(y) = 2.0] and the probabilistically symmetric 95 % coverage interval [-3.9, 3.9]. Two further applications of the method, with stem:[ii(M) = 10^6] trials, agree with these results to within the numerical tolerance used. These two further applications (different random samplings being made from the PDFs) were made to demonstrate the variation in the results obtained. The fourth and fifth numerical values of stem:[ii(M)] (stem:[1.23 xx 10^6] and stem:[1.02 xx 10^6]) are the numbers of trials for two applications of the adaptive Monte Carlo procedure (see <<scls_7-9>>) with the use of a numerical tolerance of stem:[delta//5] (see <<scls_8-2>>).
 
 
 [[scls_9-2-2-5]]
@@ -103,7 +103,7 @@ The PDF for stem:[ii(Y)] obtained analytically is the Gaussian PDF with expectat
 [[scls_9-2-2-6]]
 ===== {blank}
 
-<<fig6>> shows the (Gaussian) PDF for stem:[ii(Y)] resulting from the GUM uncertainty framework. It also shows one of the approximations (scaled frequency distribution (histogram) of stem:[M = 10^6] model values of stem:[ii(Y)]) constituting the discrete representation G (see <<scls_7-5>>) to this PDF provided by MCM. The endpoints of the probabilistically symmetric 95 % coverage interval provided by both methods are shown as vertical lines. The PDF and the approximation are visually indistinguishable, as are the respective coverage intervals. For this example, such agreement would be ex-pected (for a sufficiently large value of stem:[M]), because all the conditions hold for the application of the GUM uncertainty framework (see <<scls_5-7>>).
+<<fig6>> shows the (Gaussian) PDF for stem:[ii(Y)] resulting from the GUM uncertainty framework. It also shows one of the approximations (scaled frequency distribution (histogram) of stem:[ii(M) = 10^6] model values of stem:[ii(Y)]) constituting the discrete representation G (see <<scls_7-5>>) to this PDF provided by MCM. The endpoints of the probabilistically symmetric 95 % coverage interval provided by both methods are shown as vertical lines. The PDF and the approximation are visually indistinguishable, as are the respective coverage intervals. For this example, such agreement would be ex-pected (for a sufficiently large value of stem:[ii(M)]), because all the conditions hold for the application of the GUM uncertainty framework (see <<scls_5-7>>).
 
 
 [[table2]]
@@ -147,7 +147,7 @@ The magnitudes stem:[d_{"low"}] and stem:[d_{"high"}] of the endpoint difference
 
 
 [[fig7]]
-.The length of the 95 % coverage interval, as a function of the probability at its left-hand endpoint, for the discrete representation G of the distribution function obtained by applying MCM to the model <<eq21,(21)>> (<<scls_9-2-2-8>>, <<scls_9-4-2-2-11>>)
+.The length of the 95 % coverage interval, as a function of the probability at its left-hand endpoint, for the discrete representation stem:[ii(G)] of the distribution function obtained by applying MCM to the model <<eq21,(21)>> (<<scls_9-2-2-8>>, <<scls_9-4-2-2-11>>)
 image::figure7.png[]
 
 
@@ -174,7 +174,7 @@ By following the analogous steps of <<scls_9-2-2-3>> to <<scls_9-2-2-5>>, the re
 .As <<table2>>, but for rectangular PDFs, with the stem:[ii(X)_i] having the same expectations and standard deviations (<<scls_9-2-3-2>>, <<scls_9-2-3-3>>, <<scls_9-2-3-4>>)
 [cols="8*",options="header"]
 |===
-| Method | stem:[M] | stem:[y] | stem:[u(y)] | Probabilistically symmetric 95 % coverage interval | stem:[d_{"low"}] | stem:[d_{"high"}] | GUF validated (stem:[delta = 0.05])?
+| Method | stem:[ii(M)] | stem:[y] | stem:[u(y)] | Probabilistically symmetric 95 % coverage interval | stem:[d_{"low"}] | stem:[d_{"high"}] | GUF validated (stem:[delta = 0.05])?
 
 | GUF | | 0.00 | 2.00 | [–3.92, 3.92] | | |
 | MCM | stem:[10^5] | 0.00 | 2.01 | [–3.90, 3.89] | | |
@@ -274,7 +274,7 @@ where stem:[delta m_R] is the mass of a small weight of density stem:[rho_R] add
 
 ===== {blank}
 
-It is usual to work in terms of conventional masses. The conventional mass stem:[m_{W,c}] of stem:[W] is the mass of a (hypothetical) weight of density stem:[rho_0 = 8000 " "rm(kg/m)^3] that balances W in air at density stem:[rho_{a_0} = 1.2 " "rm(kg/m)^3]. Thus,
+It is usual to work in terms of conventional masses. The conventional mass stem:[m_{W,c}] of stem:[W] is the mass of a (hypothetical) weight of density stem:[rho_0 = 8000 " "rm(kg/m)^3] that balances stem:[W] in air at density stem:[rho_{a_0} = 1.2 " "rm(kg/m)^3]. Thus,
 
 [stem%unnumbered]
 ++++
@@ -429,7 +429,7 @@ MCM makes no such (implied) approximation to the model.
 
 ===== {blank}
 
-During the calibration of a microwave power meter, the power meter and a standard power meter are connected in turn to a stable signal generator. The power absorbed by each meter will in general be different because their complex input voltage reflection coefficients are not identical. The ratio stem:[ii(Y)] of the power stem:[P_M] absorbed by the meter being calibrated and that, stem:[P_S], by the standard meter is <<Ridler2001>>
+During the calibration of a microwave power meter, the power meter and a standard power meter are connected in turn to a stable signal generator. The power absorbed by each meter will in general be different because their complex input voltage reflection coefficients are not identical. The ratio stem:[ii(Y)] of the power stem:[ii(P)_{ii(M)}] absorbed by the meter being calibrated and that, stem:[ii(P)_S], by the standard meter is <<Ridler2001>>
 
 [[eq25]]
 [stem]
@@ -442,12 +442,12 @@ where stem:[Gamma_{"G"}] is the voltage reflection coefficient of the signal gen
 
 ===== {blank}
 
-Consider the case where the standard and the signal generator are reflectionless, i.e. stem:[Gamma_{"S"} = Gamma_{"G"} = 0], and measured values are obtained of the real and imaginary parts stem:[X_1] and stem:[X_2] of stem:[Gamma_M = X_1 + j X_2], where stem:[j^2 = -1]. Since stem:[|Gamma_M|^2 = X_1^2 + X_2^2], formula <<eq25>> becomes
+Consider the case where the standard and the signal generator are reflectionless, i.e. stem:[Gamma_{"S"} = Gamma_{"G"} = 0], and measured values are obtained of the real and imaginary parts stem:[ii(X)_1] and stem:[ii(X)_2] of stem:[Gamma_M = ii(X)_1 + j ii(X)_2], where stem:[j^2 = -1]. Since stem:[|Gamma_M|^2 = ii(X)_1^2 + ii(X)_2^2], formula <<eq25>> becomes
 
 [[eq26]]
 [stem]
 ++++
-Y = 1 - X_1^2 - X_2^2.
+ii(Y) = 1 - ii(X)_1^2 - ii(X)_2^2.
 ++++
 
 
@@ -460,7 +460,7 @@ NOTE: In practice the electrical engineer may sometimes have difficulty in quant
 
 ===== {blank}
 
-On the basis of <<scls_6-4-8-1>>, stem:[bb(X) = (X_1, X_2)^{sf(T)}] is assigned a bivariate Gaussian PDF in stem:[ii(X)_1] and stem:[ii(X)_2], with expectation and covariance matrix
+On the basis of <<scls_6-4-8-1>>, stem:[bb(X) = (ii(X)_1, ii(X)_2)^{sf(T)}] is assigned a bivariate Gaussian PDF in stem:[ii(X)_1] and stem:[ii(X)_2], with expectation and covariance matrix
 
 [[eq27]]
 [stem]
@@ -476,7 +476,7 @@ Because the magnitudes of stem:[ii(X)_1] and stem:[ii(X)_2] in expression <<eq26
 [[eq28]]
 [stem]
 ++++
-delta Y = 1 - Y = X_1^2 + X_2^2,
+delta ii(Y) = 1 - ii(Y) = ii(X)_1^2 + ii(X)_2^2,
 ++++
 
 taken as the model of measurement. For physical reasons, stem:[0 <= Y <= 1], and hence stem:[0 <= delta Y <= 1].
@@ -542,7 +542,7 @@ MCM is applied in each case with stem:[ii(M) = 10^6] trials.
 [[scls_9-4-2-2-1]]
 ====== {blank}
 
-For the input estimate stem:[x_1 = 0], higher-order terms must be used when applying the law of propagation of uncertainty, because the partial derivatives of stem:[delta ii(Y)] with respect to stem:[ii(X)_1] and stem:[ii(X)_2], evaluated at stem:[X_1 = x_1 and X_2 = x_2], are identically zero when stem:[x_1 = x_2 = 0]. Thus, if the law of propagation of uncertainty with first-order terms only were applied, the resulting standard uncertainty would incorrectly be computed as zero.
+For the input estimate stem:[x_1 = 0], higher-order terms must be used when applying the law of propagation of uncertainty, because the partial derivatives of stem:[delta ii(Y)] with respect to stem:[ii(X)_1] and stem:[ii(X)_2], evaluated at stem:[ii(X)_1 = x_1 and ii(X)_2 = x_2], are identically zero when stem:[x_1 = x_2 = 0]. Thus, if the law of propagation of uncertainty with first-order terms only were applied, the resulting standard uncertainty would incorrectly be computed as zero.
 
 NOTE: A similar difficulty would arise for stem:[x_1] close to zero.
 
@@ -787,25 +787,25 @@ The length of a nominally 50 mm gauge block is determined by comparing it with a
 [[eq29]]
 [stem]
 ++++
-d = L (1 + alpha theta) - L_s(1 + alpha_s theta_s)
+d = ii(L) (1 + alpha theta) - ii(L)_s(1 + alpha_s theta_s)
 ++++
 
-where L is the length at stem:[20 " °C"] of the gauge block being calibrated, stem:[L_s] is the length of the reference standard at stem:[20 " °C"] as given in its calibration certificate, stem:[alpha] and stem:[alpha_s] are the coefficients of thermal expansion, respectively, of the gauge being calibrated and the reference standard, and stem:[theta] and stem:[theta_s] are the deviations in temperature from the stem:[20 " °C"] reference temperature, respectively, of the gauge block being calibrated and the reference standard.
+where stem:[ii(L)] is the length at stem:[20 " °C"] of the gauge block being calibrated, stem:[ii(L)_s] is the length of the reference standard at stem:[20 " °C"] as given in its calibration certificate, stem:[alpha] and stem:[alpha_s] are the coefficients of thermal expansion, respectively, of the gauge being calibrated and the reference standard, and stem:[theta] and stem:[theta_s] are the deviations in temperature from the stem:[20 " °C"] reference temperature, respectively, of the gauge block being calibrated and the reference standard.
 
 
 NOTE: The GUM refers to a gauge block as an end gauge.
 
-NOTE: The symbol L for the length of a gauge block is used in this Supplement in place of the symbol stem:[cc(l)] used in the GUM for that quantity.
+NOTE: The symbol stem:[ii(L)] for the length of a gauge block is used in this Supplement in place of the symbol stem:[cc(l)] used in the GUM for that quantity.
 
 
 ===== {blank}
 
-From <<eq29>> the output quantity L is given by
+From <<eq29>> the output quantity stem:[ii(L)] is given by
 
 [[eq30]]
 [stem]
 ++++
-L = {L_s (1 + alpha_ theta_s) + d} / {1 + alpha theta},
+ii(L) = {ii(L)_s (1 + alpha_ theta_s) + d} / {1 + alpha theta},
 ++++
 
 from which, to an approximation adequate for most practical purposes,
@@ -813,7 +813,7 @@ from which, to an approximation adequate for most practical purposes,
 [[eq31]]
 [stem]
 +++++
-L = L_s + d + L_s(alpha_s theta_s - alpha theta).
+ii(L) = ii(L)_s + d + ii(L)_s(alpha_s theta_s - alpha theta).
 +++++
 
 If the difference in temperature between the gauge block being calibrated and the reference standard is written as stem:[delta theta = theta - theta_s], and the difference in their thermal expansion coefficients as stem:[delta alpha = alpha - alpha_s], models <<eq30>> and <<eq31>> become, respectively,
@@ -821,7 +821,7 @@ If the difference in temperature between the gauge block being calibrated and th
 [[eq32]]
 [stem]
 ++++
-L = {L_s [1 + alpha_s (theta - delta theta)] + d} / {1 + (alpha_s + delta alpha)theta}
+ii(L) = {ii(L)_s [1 + alpha_s (theta - delta theta)] + d} / {1 + (alpha_s + delta alpha)theta}
 ++++
 
 and
@@ -829,7 +829,7 @@ and
 [[eq33]]
 [stem]
 ++++
-L = L_s + d - L_s(theta delta alpha + alpha_s delta theta).
+ii(L) = ii(L)_s + d - ii(L)_s(theta delta alpha + alpha_s delta theta).
 ++++
 
 
@@ -840,10 +840,10 @@ The difference stem:[d] in the lengths of the gauge block being calibrated and t
 [[eq34]]
 [stem]
 ++++
-d = D + d_1 + d_2,
+d = ii(D) + d_1 + d_2,
 ++++
 
-where stem:[D] is a quantity of which the average of the five indications is a realization, and stem:[d_1] and stem:[d_2] are quantities describing, respectively, the random and systematic effects associated with using the comparator.
+where stem:[ii(D)] is a quantity of which the average of the five indications is a realization, and stem:[d_1] and stem:[d_2] are quantities describing, respectively, the random and systematic effects associated with using the comparator.
 
 
 ===== {blank}
@@ -862,11 +862,11 @@ where stem:[theta_0] is a quantity representing the average temperature deviatio
 
 ===== {blank}
 
-Substituting <<eq34>> and <<eq35>> into <<eq32>> and <<eq33>>, and working with the quantity stem:[delta L] representing the deviation of L from the nominal length
+Substituting <<eq34>> and <<eq35>> into <<eq32>> and <<eq33>>, and working with the quantity stem:[delta ii(L)] representing the deviation of stem:[ii(L)] from the nominal length
 
 [stem%unnumbered]
 ++++
-L_{"nom"} = 50 " "rm{mm}
+ii(L)_{"nom"} = 50 " "rm{mm}
 ++++
 
 of the gauge block, gives
@@ -874,7 +874,7 @@ of the gauge block, gives
 [[eq36]]
 [stem]
 ++++
-delta L = {L_s [1 + alpha_s (theta_0 + Delta - delta theta)] + D + d_1 + d_2} / {1 + (alpha_s + delta alpha)(theta_0 + Delta)}
+delta ii(L) = {ii(L)_s [1 + alpha_s (theta_0 + Delta - delta theta)] + ii(D) + d_1 + d_2} / {1 + (alpha_s + delta alpha)(theta_0 + Delta)}
 ++++
 
 and
@@ -882,7 +882,7 @@ and
 [[eq37]]
 [stem]
 ++++
-delta L = L_s + D + d_1 + d_2 - L_s[delta alpha (theta_0 + Delta) + alpha_s delta theta] - L_{"nom"}
+delta ii(L) = ii(L)_s + ii(D) + d_1 + d_2 - ii(L)_s[delta alpha (theta_0 + Delta) + alpha_s delta theta] - ii(L)_{"nom"}
 ++++
 
 as models for the measurement problem.
@@ -890,7 +890,7 @@ as models for the measurement problem.
 
 ===== {blank}
 
-The treatment here of the measurement problem is in terms of the models <<eq36,(36)>> and <<eq37,(37)>> with output quantity stem:[delta L] and input quantities stem:[L_s], stem:[D], stem:[d_1], stem:[d_2], stem:[alpha_s], stem:[theta_0], stem:[Delta], stem:[delta alpha] and stem:[delta theta]. It differs from that given in GUM example H.1 in that in the GUM the models <<eq34,(34)>> and <<eq35,(35)>> above are treated as sub-models to models <<eq32,(32)>> and <<eq33,(33)>>, i.e. the GUM uncertainty framework is applied to each model <<eq34,(34)>> and <<eq35,(35)>>, with the results obtained used to provide information about the input quantities stem:[d] and stem:[theta] in models <<eq32,(32)>> and <<eq33,(33)>>. The treatment here avoids having to use the results obtained from MCM applied to the sub-models <<eq34,(34)>> and <<eq35,(35)>> to provide information about the distributions for the input quantities stem:[d] and stem:[theta] in expressions <<eq32,(32)>> and <<eq33,(33)>>.
+The treatment here of the measurement problem is in terms of the models <<eq36,(36)>> and <<eq37,(37)>> with output quantity stem:[delta ii(L)] and input quantities stem:[ii(L)_s], stem:[ii(D)], stem:[d_1], stem:[d_2], stem:[alpha_s], stem:[theta_0], stem:[Delta], stem:[delta alpha] and stem:[delta theta]. It differs from that given in GUM example H.1 in that in the GUM the models <<eq34,(34)>> and <<eq35,(35)>> above are treated as sub-models to models <<eq32,(32)>> and <<eq33,(33)>>, i.e. the GUM uncertainty framework is applied to each model <<eq34,(34)>> and <<eq35,(35)>>, with the results obtained used to provide information about the input quantities stem:[d] and stem:[theta] in models <<eq32,(32)>> and <<eq33,(33)>>. The treatment here avoids having to use the results obtained from MCM applied to the sub-models <<eq34,(34)>> and <<eq35,(35)>> to provide information about the distributions for the input quantities stem:[d] and stem:[theta] in expressions <<eq32,(32)>> and <<eq33,(33)>>.
 
 
 ==== Formulation: assignment of PDFs
@@ -925,29 +925,29 @@ In the following subclauses the available information about each input quantity 
 
 ======  Information
 
-The calibration certificate for the reference standard gives stem:[hat(L_s) = 50.000623" " rm(mm)] as its length at stem:[20 " °C"] <<JCGM-100,clause=H.1.5>>. It gives stem:[U_p = 0.075 " "murm(m)] as the expanded uncertainty of the reference standard and states that it was obtained using a coverage factor of stem:[k_p = 3] <<JCGM-100,clause=H.1.3.1>>. The certificate states that the effective degrees of freedom associated with the combined standard uncertainty, from which the quoted expanded uncertainty was obtained, is stem:[nu_{"eff"} (u(hat(L_s))) = 18] <<JCGM-100,clause=H.1.6>>.
+The calibration certificate for the reference standard gives stem:[hat(L_s) = 50.000623" " rm(mm)] as its length at stem:[20 " °C"] <<JCGM-100,clause=H.1.5>>. It gives stem:[ii(U)_p = 0.075 " "murm(m)] as the expanded uncertainty of the reference standard and states that it was obtained using a coverage factor of stem:[k_p = 3] <<JCGM-100,clause=H.1.3.1>>. The certificate states that the effective degrees of freedom associated with the combined standard uncertainty, from which the quoted expanded uncertainty was obtained, is stem:[nu_{"eff"} (u(hat(L_s))) = 18] <<JCGM-100,clause=H.1.6>>.
 
 
 ======  Interpretation
 
-Assign a scaled and shifted stem:[t]-distribution stem:[t_{nu} (mu, sigma^2)] (see <<scls_6-4-9-7>>) to stem:[L_s], with
+Assign a scaled and shifted stem:[t]-distribution stem:[t_{nu} (mu, sigma^2)] (see <<scls_6-4-9-7>>) to stem:[ii(L)_s], with
 
 [stem%unnumbered]
 ++++
-mu = 50000623 " mn", " " sigma = U_{"p"}/k_{"p"} = 75/3 " nm" = 25 " nm", " " nu = 18.
+mu = 50000623 " mn", " " sigma = ii(U)_{"p"}/k_{"p"} = 75/3 " nm" = 25 " nm", " " nu = 18.
 ++++
 
 
-===== Average length difference stem:[D]
+===== Average length difference stem:[ii(D)]
 
 ======  Information
 
-The average stem:[hat D] of the five indications of the difference in lengths between the gauge block being calibrated and the reference standard is 215 nm <<JCGM-100,clause=H.1.5>>. The pooled experimental standard deviation characterizing the comparison of stem:[L] and stem:[L_s] was determined from 25 indications, obtained independently, of the difference in lengths of two standard gauge blocks, and equalled 13 nm <<JCGM-100,clause=H.1.3.2>>.
+The average stem:[hat ii(D)] of the five indications of the difference in lengths between the gauge block being calibrated and the reference standard is 215 nm <<JCGM-100,clause=H.1.5>>. The pooled experimental standard deviation characterizing the comparison of stem:[ii(L)] and stem:[ii(L)_s] was determined from 25 indications, obtained independently, of the difference in lengths of two standard gauge blocks, and equalled 13 nm <<JCGM-100,clause=H.1.3.2>>.
 
 
 ======  Interpretation
 
-Assign a scaled and shifted stem:[t]-distribution stem:[t_{nu}(mu, sigma^2)] (see <<scls_6-4-9-2>> and <<scls_6-4-9-6>>) to stem:[D], with
+Assign a scaled and shifted stem:[t]-distribution stem:[t_{nu}(mu, sigma^2)] (see <<scls_6-4-9-2>> and <<scls_6-4-9-6>>) to stem:[ii(D)], with
 
 [stem%unnumbered]
 ++++
@@ -1113,7 +1113,7 @@ The application of MCM
 [[scls_9-5-4-1]]
 ===== {blank}
 
-<<table11>> gives the results obtained for the approximate model <<eq37,(37)>> using the information summarized in <<table10>>. <<fig17>> shows the PDFs for stem:[delta L] obtained from the application of the GUM uncertainty framework (solid curve) and MCM (scaled frequency distribution). The distribution obtained from the GUM uncertainty framework is a stem:[t]-distribution with stem:[nu = 16] degrees of freedom. The endpoints of the shortest 99 % coverage intervals for stem:[delta L] obtained from the PDFs, which are indicated as vertical lines, are visually indistinguishable.
+<<table11>> gives the results obtained for the approximate model <<eq37,(37)>> using the information summarized in <<table10>>. <<fig17>> shows the PDFs for stem:[delta ii(L)] obtained from the application of the GUM uncertainty framework (solid curve) and MCM (scaled frequency distribution). The distribution obtained from the GUM uncertainty framework is a stem:[t]-distribution with stem:[nu = 16] degrees of freedom. The endpoints of the shortest 99 % coverage intervals for stem:[delta ii(L)] obtained from the PDFs, which are indicated as vertical lines, are visually indistinguishable.
 
 
 ===== {blank}
@@ -1124,7 +1124,7 @@ stem:[1.26 xx 10^6] trials were taken by the adaptive Monte Carlo procedure. The
 .Results obtained for the approximate model <<eq37,(37)>> using the information summarized in <<table10>> (<<scls_9-5-4-1>>, <<scls_9-5-4-3>>)
 [cols="4*",options="header"]
 |===
-| Method | stem:[hat(delta L)//rm(nm)] | stem:[u(hat(delta L))//rm(nm)] | Shortest 99 % coverage interval for stem:[delta L//rm(nm)]
+| Method | stem:[hat(delta ii(L))//rm(nm)] | stem:[u(hat(delta ii(L)))//rm(nm)] | Shortest 99 % coverage interval for stem:[delta L//rm(nm)]
 
 | GUF | 838 | 32 | [745, 931]
 | MCM | 838 | 36 | [745, 932]
@@ -1132,7 +1132,7 @@ stem:[1.26 xx 10^6] trials were taken by the adaptive Monte Carlo procedure. The
 
 
 [[fig17]]
-.PDFs for stem:[delta L] obtained using the GUM uncertainty framework (continuous bell-shaped curve) and MCM (scaled histogram) for the approximate model <<eq37,(37)>> using the information summarized in <<table10>> (<<scls_9-5-4-1>>)
+.PDFs for stem:[delta ii(L)] obtained using the GUM uncertainty framework (continuous bell-shaped curve) and MCM (scaled histogram) for the approximate model <<eq37,(37)>> using the information summarized in <<table10>> (<<scls_9-5-4-1>>)
 image::figure17.png[]
 
 
@@ -1144,6 +1144,6 @@ Results obtained for the non-linear model <<eq36,(36)>> are identical to the res
 
 ===== {blank}
 
-There are some modest differences in the results obtained. stem:[u(hat(delta L))] was 4 nm greater for the application of MCM than for the GUM uncertainty framework. The length of the 99 % coverage interval for stem:[delta L] was 1 nm greater.
+There are some modest differences in the results obtained. stem:[u(hat(delta ii(L)))] was 4 nm greater for the application of MCM than for the GUM uncertainty framework. The length of the 99 % coverage interval for stem:[delta ii(L)] was 1 nm greater.
 
 These results apply equally to the non-linear and the approximate models. Whether such differences are important has to be judged in terms of the manner in which the results are to be used.

@@ -5,7 +5,7 @@
 
 ==== {blank}
 
-This clause gives guidance on the assignment, in some common circumstances, of PDFs to the input quantities stem:[X_i] in the formulation stage of uncertainty evaluation. Such an assignment can be based on Bayes' theorem <<Gelman2004>> or the principle of maximum entropy <<Cox-Harris2006>>, <<Jaynes1989>>, <<Weise1992>>, <<Woger1987>>.
+This clause gives guidance on the assignment, in some common circumstances, of PDFs to the input quantities stem:[ii(X)_i] in the formulation stage of uncertainty evaluation. Such an assignment can be based on Bayes' theorem <<Gelman2004>> or the principle of maximum entropy <<Cox-Harris2006>>, <<Jaynes1989>>, <<Weise1992>>, <<Woger1987>>.
 
 
 NOTE: In some circumstances, another approach for assigning a PDF may be useful. In any case, as in any scientific discipline, the reason for the decision should be recorded.
@@ -23,7 +23,7 @@ When the stem:[X_i] are independent, PDFs stem:[g_{X_i} (xi_i)] are assigned ind
 
 ==== {blank}
 
-When some of the stem:[X_i] are mutually independent, PDFs are assigned individually to them and a joint PDF to the remainder.
+When some of the stem:[ii(X)_i] are mutually independent, PDFs are assigned individually to them and a joint PDF to the remainder.
 
 NOTE: It may be possible to remove some or all dependencies by re-expressing relevant input quantities in terms of more fundamental independent input quantities on which the original input quantities depend <<JCGM-100,clause=F1.2.4, H.1.2>>. Such changes can simplify both the application of the law of propagation of uncertainty and the propagation of distributions. Details and examples are available <<EA1999>>,
 
@@ -222,9 +222,9 @@ s^2 = sum_{i=1}^n (x_i hat(x))^2//(n-1)
 a| image::figure-table1-7.png[]
 | <<scls_6-4-9-2>>
 
-| Best estimate stem:[x], expanded uncertainty stem:[U_{"p"}], coverage factor stem:[k_{"p"}] and effective degrees of freedom stem:[nu_{"eff"}]
+| Best estimate stem:[x], expanded uncertainty stem:[ii(U)_{"p"}], coverage factor stem:[k_{"p"}] and effective degrees of freedom stem:[nu_{"eff"}]
 a| Scaled and shifted stem:[t]: +
-stem:[t_{nu_{"eff"}}(x,(U_{"p"}//k_{"p"})^2)]
+stem:[t_{nu_{"eff"}}(x,(ii(U)_{"p"}//k_{"p"})^2)]
 a| image::figure-table1-8.png[]
 | <<scls_6-4-9-7>>
 
@@ -312,7 +312,7 @@ Hence stem:[u(x) = (0.0036)^{1//2} = 0.060 " "rm(V)], which can be compared with
 
 ===== {blank}
 
-The assignment of a symmetric trapezoidal distribution to a quantity is discussed in the GUM <<JCGM-100,clause=4.3.9>>. Suppose a quantity stem:[ii(X)] is defined as the sum of two independent quantities stem:[ii(X)_1] and stem:[ii(X)_2]. Suppose, for stem:[i = 1] and stem:[i = 2], stem:[X_i] is assigned a rectangular distribution stem:[R(a_i, b_i)] with lower limit stem:[a_i] and upper limit stem:[b_i]. Then the distribution for stem:[ii(X)] is a symmetric trapezoidal distribution stem:["Trap"(a, b, beta)] with lower limit stem:[a], upper limit stem:[b], and stem:[a] parameter stem:[beta] equal to the ratio of the semi-width of the top of the trapezoid to that of the base. The parameters of this trapezoidal distribution are related to those of the rectangular distributions by
+The assignment of a symmetric trapezoidal distribution to a quantity is discussed in the GUM <<JCGM-100,clause=4.3.9>>. Suppose a quantity stem:[ii(X)] is defined as the sum of two independent quantities stem:[ii(X)_1] and stem:[ii(X)_2]. Suppose, for stem:[i = 1] and stem:[i = 2], stem:[ii(X)_i] is assigned a rectangular distribution stem:[R(a_i, b_i)] with lower limit stem:[a_i] and upper limit stem:[b_i]. Then the distribution for stem:[ii(X)] is a symmetric trapezoidal distribution stem:["Trap"(a, b, beta)] with lower limit stem:[a], upper limit stem:[b], and stem:[a] parameter stem:[beta] equal to the ratio of the semi-width of the top of the trapezoid to that of the base. The parameters of this trapezoidal distribution are related to those of the rectangular distributions by
 
 [[eq5]]
 [stem]

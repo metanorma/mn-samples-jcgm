@@ -15,7 +15,7 @@ The variance of a quantity stem:[ii(X)] can be expressed in terms of expectation
 
 [stem%unnumbered]
 ++++
-ii(V)(ii(X)) = E(X^2) - [ii(E)(ii(X))]^2.
+ii(V)(ii(X)) = ii(E)(X^2) - [ii(E)(ii(X))]^2.
 ++++
 
 Thus,
@@ -25,7 +25,7 @@ Thus,
 E(X^2) = [ii(E)(ii(X))]^2 + ii(V)(ii(X)) = x^2 + u^2(x),
 ++++
 
-where stem:[x] is the best estimate of stem:[ii(X)] and stem:[u(x)] the standard uncertainty associated with stem:[x]. Thus, for the model <<eq28,(28)>>, viz. stem:[delta ii(Y) = 1 - ii(Y) = X_1^2 + X_2^2],
+where stem:[x] is the best estimate of stem:[ii(X)] and stem:[u(x)] the standard uncertainty associated with stem:[x]. Thus, for the model <<eq28,(28)>>, viz. stem:[delta ii(Y) = 1 - ii(Y) = ii(X)_1^2 + ii(X)_2^2],
 
 [stem%unnumbered]
 ++++
@@ -47,7 +47,7 @@ The standard uncertainty associated with stem:[delta y] can be obtained from
 u^2 (delta y) = u^2 (x_1^2) + u^2(x_2^2) + 2u(x_1^2, x_2^2),
 ++++
 
-where, for stem:[i = 1] and stem:[i = 2], stem:[u^2(x_i^2) = V (X_i^2)], and stem:[u(x_1^2, x_2^2) = rm(Cov)(X_1^2, X_2^2)]. Then, applying Price's Theorem for Gaussian distributions <<Papoulis1965>>, <<Price1958>>
+where, for stem:[i = 1] and stem:[i = 2], stem:[u^2(x_i^2) = ii(V) (ii(X)_i^2)], and stem:[u(x_1^2, x_2^2) = rm(Cov)(ii(X)_1^2, ii(X)_2^2)]. Then, applying Price's Theorem for Gaussian distributions <<Papoulis1965>>, <<Price1958>>
 
 [[eqf1]]
 [stem]
@@ -149,7 +149,7 @@ G_Y (eta) = 1 - exp(- eta/{2u^2(x_1)}), " " eta >= 0.
 
 ==== {blank}
 
-Let stem:[delta y_{alpha}] be that stem:[eta] in <<eqf3>> corresponding to stem:[G_Y (eta) = alpha] for any stem:[alpha] satisfying stem:[0 <= alpha <= 1-p]. Then
+Let stem:[delta y_{alpha}] be that stem:[eta] in <<eqf3>> corresponding to stem:[ii(G)_Y (eta) = alpha] for any stem:[alpha] satisfying stem:[0 <= alpha <= 1-p]. Then
 
 [stem%unnumbered]
 ++++
@@ -174,7 +174,7 @@ H(alpha) = -2u^2(x_1)ln(1 - p/{1 - alpha}).
 
 ==== {blank}
 
-The shortest stem:[100p " %"] coverage interval is given by determining stem:[alpha] to minimize stem:[ii(H)(alpha)] (see <<scls_5-3-4>>). Since stem:[ii(H)(alpha)] is a strictly increasing function of stem:[alpha] for stem:[0 <= alpha <= 1 - p], stem:[H(alpha)] is minimized when stem:[alpha = 0]. Thus, the shortest stem:[100p " %"] coverage interval for stem:[delta ii(Y)] is
+The shortest stem:[100p " %"] coverage interval is given by determining stem:[alpha] to minimize stem:[ii(H)(alpha)] (see <<scls_5-3-4>>). Since stem:[ii(H)(alpha)] is a strictly increasing function of stem:[alpha] for stem:[0 <= alpha <= 1 - p], stem:[ii(H)(alpha)] is minimized when stem:[alpha = 0]. Thus, the shortest stem:[100p " %"] coverage interval for stem:[delta ii(Y)] is
 
 [stem%unnumbered]
 ++++

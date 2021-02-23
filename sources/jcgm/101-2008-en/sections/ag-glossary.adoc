@@ -33,15 +33,15 @@ stem:[e]:: base of the natural logarithm
 
 stem:[ii(E)(ii(X))]:: expectation of a random variable stem:[ii(X)]
 
-stem:[E(bb(X))]:: vector expectation of a vector random variable stem:[bb(X)]
+stem:[ii(E)(bb(X))]:: vector expectation of a vector random variable stem:[bb(X)]
 
-stem:[E(X^r)]:: __r__th moment of a random variable stem:[ii(X)]
+stem:[ii(E)(ii(X)^r)]:: __r__th moment of a random variable stem:[ii(X)]
 
 stem:["Ex"(lambda)]:: exponential distribution with parameter stem:[lambda]
 
-stem:[f]:: mathematical model of measurement, expressed as a functional relationship between an output quan-tity stem:[ii(Y)] and the input quantities stem:[X_1,...,X_N] on which stem:[ii(Y)] depends
+stem:[f]:: mathematical model of measurement, expressed as a functional relationship between an output quan-tity stem:[ii(Y)] and the input quantities stem:[ii(X)_1,...,ii(X)_N] on which stem:[ii(Y)] depends
 
-stem:[bb(G)]:: discrete representation of the distribution function stem:[G_Y(eta)] for the output quantity stem:[ii(Y)] from a Monte Carlo procedure
+stem:[bb(G)]:: discrete representation of the distribution function stem:[ii(G)_Y(eta)] for the output quantity stem:[ii(Y)] from a Monte Carlo procedure
 
 stem:[G(alpha,beta)]:: gamma distribution with parameters stem:[alpha] and stem:[beta]
 
@@ -49,15 +49,15 @@ stem:[g_X (xi)]::  probability density function with variable stem:[xi] for the 
 
 stem:[g_{bb(X)} (bb(xi))]::  joint (multivariate) probability density function with vector variable stem:[xi] for the vector input quantity stem:[ii(X)]
 
-stem:[g_{X_i}(xi_i)]:: probability density function with variable stem:[xi_i] for the input quantity stem:[ii(X)_i]
+stem:[g_{ii(X)_i}(xi_i)]:: probability density function with variable stem:[xi_i] for the input quantity stem:[ii(X)_i]
 
 stem:[G_Y (eta)]:: distribution function with variable stem:[eta] for the output quantity stem:[ii(Y)]
 
-stem:[G_Y (eta)]:: continuous approximation to the distribution function stem:[G_Y (eta)] for the output quantity stem:[ii(Y)]
+stem:[G_Y (eta)]:: continuous approximation to the distribution function stem:[ii(G)_Y (eta)] for the output quantity stem:[ii(Y)]
 
 stem:[tilde(g)_Y (eta)]:: probability density function with variable stem:[eta] for the output quantity stem:[ii(Y)]
 
-stem:[tilde(g)_Y (eta)]:: derivative of stem:[G_Y (eta)] with respect to stem:[eta], providing a numerical approximation to the probability density function stem:[g_Y(eta)] for the output quantity stem:[ii(Y)]
+stem:[tilde(g)_Y (eta)]:: derivative of stem:[ii(G)_Y (eta)] with respect to stem:[eta], providing a numerical approximation to the probability density function stem:[g_Y(eta)] for the output quantity stem:[ii(Y)]
 
 stem:[J]:: smallest integer greater than or equal to stem:[100//(1 - p)]
 
@@ -83,7 +83,7 @@ stem:[Pr(z)]:: probability of the event stem:[z]
 
 stem:[p]:: coverage probability
 
-stem:[p]:: integer part of stem:[pM + 1//2]
+stem:[p]:: integer part of stem:[pii(M) + 1//2]
 
 stem:[q]:: number of objects counted in a sample of specified size
 
@@ -143,7 +143,7 @@ stem:[w]:: semi-width stem:[(b - a)//2] of an interval stem:[[a,b\]]
 
 stem:[ii(X)]:: input quantity, regarded as a random variable
 
-stem:[ii(X)]:: vector stem:[(X_1,..., X_N )^T] of input quantities, regarded as random variables, on which the output quantity stem:[ii(Y)] depends
+stem:[ii(X)]:: vector stem:[(ii(X)_1,..., ii(X)_N )^T] of input quantities, regarded as random variables, on which the output quantity stem:[ii(Y)] depends
 
 stem:[X_i]:: __i__th input quantity, regarded as a random variable, on which the output quantity stem:[ii(Y)] depends
 
@@ -159,7 +159,7 @@ stem:[x_i]:: __i__th indication in a series
 
 stem:[x_{i,r}]:: __r__th Monte Carlo draw from the probability density function for stem:[ii(X)_i]
 
-stem:[bb(x)_r]:: __r__th Monte Carlo draw, containing values stem:[x_{1,r},..., x_{N,r}], drawn from the probability density functions for the N input quantities stem:[ii(X)_1,..., ii(X)_N] or from the joint probability density function for stem:[ii(X)]
+stem:[bb(x)_r]:: __r__th Monte Carlo draw, containing values stem:[x_{1,r},..., x_{ii(N),r}], drawn from the probability density functions for the stem:[ii(N)] input quantities stem:[ii(X)_1,..., ii(X)_N] or from the joint probability density function for stem:[bb(X)]
 
 stem:[ii(Y)]:: (scalar) output quantity, regarded as a random variable
 

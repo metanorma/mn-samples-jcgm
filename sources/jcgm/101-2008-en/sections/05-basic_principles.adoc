@@ -70,7 +70,7 @@ where stem:[delta(cdot)] denotes the Dirac delta function. This multiple integra
 
 ==== {blank}
 
-An estimate stem:[y] of stem:[ii(Y)] is the expectation stem:[ii(E)(ii(Y))]. The standard uncertainty stem:[u(y)] associated with stem:[y] is given by the standard deviation of stem:[ii(Y)], the positive square root of the variance V (Y ) of stem:[ii(Y)].
+An estimate stem:[y] of stem:[ii(Y)] is the expectation stem:[ii(E)(ii(Y))]. The standard uncertainty stem:[u(y)] associated with stem:[y] is given by the standard deviation of stem:[ii(Y)], the positive square root of the variance stem:[ii(V)(ii(Y))]  of stem:[ii(Y)].
 
 
 [[scls_5-3-2]]
@@ -314,7 +314,7 @@ MCM provides a general approach to obtain an approximate numerical representatio
 
 ==== {blank}
 
-Since stem:[G_Y (eta)] encodes all the information known about stem:[ii(Y)], any property of stem:[ii(Y)] such as expectation, variance and coverage intervals can be approximated using stem:[bb(G)]. The quality of these calculated results improves as the number of times the PDFs are sampled increases.
+Since stem:[ii(G)_Y (eta)] encodes all the information known about stem:[ii(Y)], any property of stem:[ii(Y)] such as expectation, variance and coverage intervals can be approximated using stem:[bb(G)]. The quality of these calculated results improves as the number of times the PDFs are sampled increases.
 
 
 ==== {blank}
@@ -324,12 +324,12 @@ Expectations and variances (and higher moments) can be determined directly from 
 
 ==== {blank}
 
-If stem:[y_r], for stem:[r = 1,..., ii(M)], represent stem:[ii(M)] model values sampled independently from a probability distribution for stem:[ii(Y)], then the expectation stem:[ii(E)(ii(Y)] and variance stem:[ii(V)(ii(Y))] can be approximated using the stem:[y_r]. In general, the moments of stem:[ii(Y)] (including stem:[ii(E)(ii(Y)] and stem:[ii(V)(ii(Y))]) are approximated by those of the sampled model values. Let stem:[ii(M)_{y_0}] denote the number of stem:[y_r] that are no greater than stem:[y_0], any prescribed number. The probability stem:["Pr"(Y <= y_0)] is approximated by stem:[M_{y_0}//ii(M)]. In this way, the stem:[y_r] provide a step function (histogram-like) approximation to the distribution function stem:[ii(G)_Y (eta)].
+If stem:[y_r], for stem:[r = 1,..., ii(M)], represent stem:[ii(M)] model values sampled independently from a probability distribution for stem:[ii(Y)], then the expectation stem:[ii(E)(ii(Y)] and variance stem:[ii(V)(ii(Y))] can be approximated using the stem:[y_r]. In general, the moments of stem:[ii(Y)] (including stem:[ii(E)(ii(Y)] and stem:[ii(V)(ii(Y))]) are approximated by those of the sampled model values. Let stem:[ii(M)_{y_0}] denote the number of stem:[y_r] that are no greater than stem:[y_0], any prescribed number. The probability stem:["Pr"(ii(Y) <= y_0)] is approximated by stem:[M_{y_0}//ii(M)]. In this way, the stem:[y_r] provide a step function (histogram-like) approximation to the distribution function stem:[ii(G)_Y (eta)].
 
 
 ==== {blank}
 
-Each stem:[y_r] is obtained by sampling at random from each of the PDFs for the stem:[ii(X)_i] and evaluating the model at the sampled values so obtained. G, the primary output from MCM, constitutes the stem:[y_r] arranged in strictly increasing order.
+Each stem:[y_r] is obtained by sampling at random from each of the PDFs for the stem:[ii(X)_i] and evaluating the model at the sampled values so obtained. stem:[bb(G)], the primary output from MCM, constitutes the stem:[y_r] arranged in strictly increasing order.
 
 NOTE: It is remotely possible that equalities exist amongst the stem:[y_r], in which case suitable minute perturbations made to the stem:[y_r] would enable the stem:[y_r] to be arranged in strictly increasing order. See <<scls_7-5-1>>.
 

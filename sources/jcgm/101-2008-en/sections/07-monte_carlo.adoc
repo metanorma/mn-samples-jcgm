@@ -13,14 +13,14 @@ This clause gives information about the implementation of a Monte Carlo method f
 
 ==== {blank}
 
-A value of stem:[M], the number of Monte Carlo trials, i.e. the number of model evaluations to be made, needs to be selected. It can be chosen a priori, in which case there will be no direct control over the quality of the numerical results provided by MCM. The reason is that the number of trials needed to provide these results to a prescribed numerical tolerance will depend on the "shape" of the PDF for the output quantity and on the coverage probability required. Also, the calculations are stochastic in nature, being based on random sampling.
+A value of stem:[ii(M)], the number of Monte Carlo trials, i.e. the number of model evaluations to be made, needs to be selected. It can be chosen a priori, in which case there will be no direct control over the quality of the numerical results provided by MCM. The reason is that the number of trials needed to provide these results to a prescribed numerical tolerance will depend on the "shape" of the PDF for the output quantity and on the coverage probability required. Also, the calculations are stochastic in nature, being based on random sampling.
 
 NOTE: A value of stem:[ii(M) = 10^6] can often be expected to deliver a 95 % coverage interval for the output quantity such that this length is correct to one or two significant decimal digits.
 
 
 ==== {blank}
 
-The choice of a value of stem:[M] that is large compared with stem:[1//(1-p)], e.g. stem:[ii(M)] at least stem:[10^4] times greater than stem:[1//(1-p)], should be made. It can then be expected that G will provide a reasonable discrete representation of stem:[G_Y (eta)] in the regions near the endpoints of a stem:[100p " %"] coverage interval for stem:[ii(Y)].
+The choice of a value of stem:[ii(M)] that is large compared with stem:[1//(1-p)], e.g. stem:[ii(M)] at least stem:[10^4] times greater than stem:[1//(1-p)], should be made. It can then be expected that G will provide a reasonable discrete representation of stem:[G_Y (eta)] in the regions near the endpoints of a stem:[100p " %"] coverage interval for stem:[ii(Y)].
 
 
 ==== {blank}
@@ -65,16 +65,16 @@ NOTE: Model and derivative evaluations are made when applying the law of propaga
 [[scls_7-5-1]]
 ==== {blank}
 
-A discrete representation stem:[bb(G)] of the distribution function stem:[G_Y (eta)] for the output quantity stem:[ii(Y)] can be obtained as follows:
+A discrete representation stem:[bb(G)] of the distribution function stem:[ii(G)_Y (eta)] for the output quantity stem:[ii(Y)] can be obtained as follows:
 
-. [[item_7-5-1a]]sort the model values stem:[y_r], stem:[r = 1,..., M], provided by MCM into non-decreasing order. Denote the sorted model values by stem:[y_{(r)}], stem:[r = 1,..., ii(M)];
+. [[item_7-5-1a]]sort the model values stem:[y_r], stem:[r = 1,..., ii(M)], provided by MCM into non-decreasing order. Denote the sorted model values by stem:[y_{(r)}], stem:[r = 1,..., ii(M)];
 
-. [[item_7-5-1b]]if necessary, make minute numerical perturbations to any replicate model values stem:[y_{(r)}] in such a way that the resulting complete set of stem:[y_{(r)}], stem:[r = 1,..., M], form a strictly increasing sequence (cf. condition <<item_5-10-1b>> in <<scls_5-10-1>>);
+. [[item_7-5-1b]]if necessary, make minute numerical perturbations to any replicate model values stem:[y_{(r)}] in such a way that the resulting complete set of stem:[y_{(r)}], stem:[r = 1,..., ii(M)], form a strictly increasing sequence (cf. condition <<item_5-10-1b>> in <<scls_5-10-1>>);
 
 . [[item_7-5-1c]]take stem:[bb(G)] as the set stem:[y_{(r)}], stem:[r = 1,..., ii(M)].
 
 
-NOTE: With reference to step <<item_7-5-1a>>, a sorting algorithm taking a number of operations proportional to stem:[M ln M] should be used <<Scowen1965>>. A naive algorithm would take a time proportional to stem:[M^2], making the computation time unnecessarily long. See <<scls_7-8>>.
+NOTE: With reference to step <<item_7-5-1a>>, a sorting algorithm taking a number of operations proportional to stem:[ii(M) ln ii(M)] should be used <<Scowen1965>>. A naive algorithm would take a time proportional to stem:[ii(M)^2], making the computation time unnecessarily long. See <<scls_7-8>>.
 
 NOTE: In step <<item_7-5-1a>>, the term "non-decreasing" rather than "increasing" is used because of possible equalities among the model values stem:[y_r].
 
@@ -94,7 +94,7 @@ The stem:[y_{(r)}] (or stem:[y_r]), when assembled into a histogram (with suitab
 
 ==== {blank}
 
-A continuous approximation to stem:[G_Y (eta)] is sometimes useful. <<annexD>> contains a means for obtaining such an approximation.
+A continuous approximation to stem:[ii(G)_Y (eta)] is sometimes useful. <<annexD>> contains a means for obtaining such an approximation.
 
 
 [[scls_7-6]]
@@ -132,7 +132,7 @@ For the many circumstances in metrology in which stem:[u(y)] is much smaller tha
 
 NOTE: In some special circumstances, such as when one of the input quantities has been assigned a PDF based on the stem:[t]-distribution with fewer than three degrees of freedom, the expectation and standard deviation of stem:[ii(Y)], as described by the PDF stem:[g_Y (eta)], might not exist. <<eq16>> and <<eq17>> might not then provide meaningful results. A coverage interval for stem:[ii(Y)] (see <<scls_7-7>>) can, however, be formed, since G is meaningful and can be determined.
 
-NOTE: stem:[tilde(y)] will not in general agree with the model evaluated at the best estimates of the input quantities, since, for a non-linear model stem:[f(bb(X))], stem:[E(Y) = E(f(bb(X))) != f(E(bb(X)))] (cf. <<JCGM-100,clause=4.1.4>>). Irrespective of whether stem:[f] is linear or non-linear, in the limit as stem:[M] tends to infinity, stem:[tilde(y)] approaches stem:[E(f(bb(X)))] when stem:[E(f(bb(X)))] exists.
+NOTE: stem:[tilde(y)] will not in general agree with the model evaluated at the best estimates of the input quantities, since, for a non-linear model stem:[f(bb(X))], stem:[ii(E)(ii(Y)) = ii(E)(f(bb(X))) != f(ii(E)(bb(X)))] (cf. <<JCGM-100,clause=4.1.4>>). Irrespective of whether stem:[f] is linear or non-linear, in the limit as stem:[ii(M)] tends to infinity, stem:[tilde(y)] approaches stem:[ii(E)(f(bb(X)))] when stem:[ii(E)(f(bb(X)))] exists.
 
 
 [[scls_7-7]]
@@ -140,14 +140,14 @@ NOTE: stem:[tilde(y)] will not in general agree with the model evaluated at the 
 
 ==== {blank}
 
-A coverage interval for stem:[ii(Y)] can be determined from the discrete representation stem:[bb(G)] of stem:[G_Y (eta)] in an analogous manner to that in <<scls_5-3-2>> given stem:[G_Y (eta)].
+A coverage interval for stem:[ii(Y)] can be determined from the discrete representation stem:[bb(G)] of stem:[G_Y (eta)] in an analogous manner to that in <<scls_5-3-2>> given stem:[ii(G)_Y (eta)].
 
 
 ==== {blank}
 
-Let stem:[q = pM], if stem:[pM] is an integer. Otherwise, take stem:[q] to be the integer part of stem:[pM + 1//2]. Then stem:[[y_{"low"},y_{"high"}\]] is a stem:[100p " %"] coverage interval for stem:[ii(Y)], where, for any stem:[r = 1,..., ii(M) - q], stem:[y_{"low"} = y_{(r)}] and stem:[y_{"high"} = y_{(r+q)}]. The probabilistically symmetric stem:[100p " %"] coverage interval is given by taking stem:[r = (M - q)//2], if stem:[(M - q)//2] is an integer, or the integer part of stem:[(M - q + 1)//2], otherwise. The shortest stem:[100p " %"] coverage interval is given by determining stem:[r^∗] such that, for stem:[r = 1,..., ii(M) - q, y_{(r^∗ + q)} - y_{(r^*)} <= y_{(r+q)} - y_{(r)}].
+Let stem:[q = pii(M)], if stem:[pii(M)] is an integer. Otherwise, take stem:[q] to be the integer part of stem:[pii(M) + 1//2]. Then stem:[[y_{"low"},y_{"high"}\]] is a stem:[100p " %"] coverage interval for stem:[ii(Y)], where, for any stem:[r = 1,..., ii(M) - q], stem:[y_{"low"} = y_{(r)}] and stem:[y_{"high"} = y_{(r+q)}]. The probabilistically symmetric stem:[100p " %"] coverage interval is given by taking stem:[r = (ii(M) - q)//2], if stem:[(ii(M) - q)//2] is an integer, or the integer part of stem:[(ii(M) - q + 1)//2], otherwise. The shortest stem:[100p " %"] coverage interval is given by determining stem:[r^∗] such that, for stem:[r = 1,..., ii(M) - q, y_{(r^∗ + q)} - y_{(r^*)} <= y_{(r+q)} - y_{(r)}].
 
-NOTE: Because of the randomness in MCM, some of these stem:[M - q] interval lengths will be shorter than they would be on average, and some longer. So, by choosing the least such length, (the approximation to) the shortest stem:[100p " %"] coverage interval tends to be marginally shorter than that which would have been calculated from stem:[G_Y (eta)], with the consequence that the typical coverage probability is less than stem:[100p " %"]. For large stem:[ii(M)], this coverage probability is negligibly less than stem:[100p " %"].
+NOTE: Because of the randomness in MCM, some of these stem:[ii(M) - q] interval lengths will be shorter than they would be on average, and some longer. So, by choosing the least such length, (the approximation to) the shortest stem:[100p " %"] coverage interval tends to be marginally shorter than that which would have been calculated from stem:[ii(G)_Y (eta)], with the consequence that the typical coverage probability is less than stem:[100p " %"]. For large stem:[ii(M)], this coverage probability is negligibly less than stem:[100p " %"].
 
 [example]
 stem:[10^5] numbers were drawn from a pseudo-random number generator for the rectangular distribution in the interval stem:[[0,1\]], and the shortest 95 % coverage interval formed as above. This exercise was carried out stem:[1000] times. The average coverage probability was 94.92 % and the standard deviation of the stem:[1000] coverage probabilities 0.06 %.
@@ -160,7 +160,7 @@ stem:[10^5] numbers were drawn from a pseudo-random number generator for the rec
 
 The computation time for MCM is dominated by that required for the following three steps:
 
-. make stem:[ii(M)] draws from the PDF for each input quantity stem:[X_i] (or the joint PDF for stem:[bb(X)]);
+. make stem:[ii(M)] draws from the PDF for each input quantity stem:[ii(X)_i] (or the joint PDF for stem:[bb(X)]);
 . make stem:[ii(M)] corresponding evaluations of the model;
 . [[item_7-8-1c]]sort the resulting stem:[ii(M)] model values into non-decreasing order.
 
@@ -173,7 +173,7 @@ The times taken in the three steps are directly proportional to (a) stem:[ii(M)]
 [[scls_7-8-3]]
 ==== {blank}
 
-If the model is simple and the input quantities are independent, the time in step <<item_7-8-1c>> can be expected to dominate, and the overall time taken is typically a few seconds for stem:[ii(M) = 10^6] on a personal computer operating at several GHz. Otherwise, let stem:[T_1] be the time taken to make one draw from the PDFs for the input quantities and stem:[T_2] that to make one evaluation of the model. Then, the overall time can be taken as essentially stem:[M xx (T_1 + T_2)], which, if the model is complicated, is dominated by the term stem:[M T_2].
+If the model is simple and the input quantities are independent, the time in step <<item_7-8-1c>> can be expected to dominate, and the overall time taken is typically a few seconds for stem:[ii(M) = 10^6] on a personal computer operating at several GHz. Otherwise, let stem:[ii(T)_1] be the time taken to make one draw from the PDFs for the input quantities and stem:[T_2] that to make one evaluation of the model. Then, the overall time can be taken as essentially stem:[ii(M) xx (ii(T)_1 + ii(T)_2)], which, if the model is complicated, is dominated by the term stem:[ii(M) ii(T)_2].
 
 [[note1_7-8-3]]
 NOTE: If the model is simple and stem:[ii(M)] very large, e.g. stem:[10^8] or stem:[10^9], the sorting time may be excessive compared with the time taken to make the stem:[ii(M)] model evaluations. In such a case, calculations can instead be based on an approximation to stem:[g_Y (eta)] derived from a suitable histogram of the stem:[y_r].
@@ -185,10 +185,10 @@ An indication of the computation time required for an application of MCM can be 
 
 [stem%unnumbered]
 ++++
-Y = cos X_1 + sin X_2 + tan^{-1} X_3 + exp(X_4) + X_5^(1//3).
+ii(Y) = cos X_1 + sin X_2 + tan^{-1} X_3 + exp(X_4) + X_5^(1//3).
 ++++
 
-Assign a Gaussian PDF to each input quantity stem:[X_i]. Make stem:[M = 10^6] Monte Carlo trials. The relative computation times for (a) generating 5M random Gaussian numbers, (b) forming stem:[ii(M)] model values and \(c) sorting the stem:[ii(M)] model values were respectively 20 %, 20 % and 60 %, with a total computation time of a few seconds on a personal computer operating at several GHz.
+Assign a Gaussian PDF to each input quantity stem:[ii(X)_i]. Make stem:[ii(M) = 10^6] Monte Carlo trials. The relative computation times for (a) generating 5M random Gaussian numbers, (b) forming stem:[ii(M)] model values and \(c) sorting the stem:[ii(M)] model values were respectively 20 %, 20 % and 60 %, with a total computation time of a few seconds on a personal computer operating at several GHz.
 ====
 
 
@@ -225,7 +225,7 @@ The estimate of the output quantity for a nominally 100 g measurement standard o
 As <<ex1_7-9-2>> except that only one significant decimal digit in stem:[u(y)] is regarded as meaningful. Thus, stem:[n_{"dig"} = 1] and stem:[u(y) = 0.0004" "rm(g) = 4 xx 10^{-4}" "rm(g)], giving stem:[c = 4] and stem:[cc(l) = -4]. Hence, stem:[delta = 1/2 xx 10^{-4}] stem:[g = 0.00005" "rm(g)].
 
 [example]
-In a temperature measurement, stem:[u(y) = 2 K]. Then, stem:[n_{"dig"} = 1] and stem:[u(y) = 2 x 10^0 K], giving stem:[c = 2] and stem:[cc(l) = 0]. Thus, stem:[delta = 1/2 xx 10^0] stem:[K = 0.5 K].
+In a temperature measurement, stem:[u(y) = 2 ii(K)]. Then, stem:[n_{"dig"} = 1] and stem:[u(y) = 2 x 10^0 K], giving stem:[c = 2] and stem:[cc(l) = 0]. Thus, stem:[delta = 1/2 xx 10^0] stem:[K = 0.5 K].
 
 
 ==== Objective of adaptive procedure
@@ -254,10 +254,10 @@ A practical approach, involving carrying out a sequence of applications of MCM, 
 --
 [stem%unnumbered]
 ++++
-M = max(J, 10^4),
+ii(M) = max(ii(J), 10^4),
 ++++
 
-where stem:[J] is the smallest integer greater than or equal to stem:[100//(1 - p)];
+where stem:[ii(J)] is the smallest integer greater than or equal to stem:[100//(1 - p)];
 --
 
 . set stem:[h = 1], denoting the first application of MCM in the sequence;
@@ -303,18 +303,18 @@ NOTE: The factor 2 used in step <<item_7-9-4k>> is based on regarding the averag
 
 [NOTE]
 ====
-An alternative, non-adaptive approach for a 95 % probabilistically symmetric coverage interval, which can be obtained using the statistics of the binomial distribution <<David1981>>, is as follows. Select stem:[M = 10^5] or stem:[M = 10^6]. Form the interval stem:[[y_{(r)}, y_{(s)}\]], where, for stem:[M = 10^5], stem:[r = 2420] and stem:[s = 97581], or, for stem:[M = 10^6], stem:[r = 24747] and stem:[s = 975254]. This interval is a 95 % statistical coverage interval at the level of confidence 0.99 <<JCGM-100,clause=C.2.30>> <<Willink2004>>, i.e. the coverage probability will be no less than 95 % in at least 99 % of uses of MCM. The average coverage probability of such an interval will be stem:[(s - r)//(M + 1)], which is greater than 95 % by an amount that becomes smaller as stem:[ii(M)] is increased, viz. 95.16 % for stem:[M = 10^5] and 95.05 % for stem:[M = 10^6]. (There are other possibilities for stem:[r] and stem:[s]; they do not have to sum to stem:[M + 1]. A sufficient condition <<David1981,clause=2.6>> is that stem:[s - r] satisfies
+An alternative, non-adaptive approach for a 95 % probabilistically symmetric coverage interval, which can be obtained using the statistics of the binomial distribution <<David1981>>, is as follows. Select stem:[ii(M) = 10^5] or stem:[ii(M) = 10^6]. Form the interval stem:[[y_{(r)}, y_{(s)}\]], where, for stem:[ii(M) = 10^5], stem:[r = 2420] and stem:[s = 97581], or, for stem:[ii(M) = 10^6], stem:[r = 24747] and stem:[s = 975254]. This interval is a 95 % statistical coverage interval at the level of confidence 0.99 <<JCGM-100,clause=C.2.30>> <<Willink2004>>, i.e. the coverage probability will be no less than 95 % in at least 99 % of uses of MCM. The average coverage probability of such an interval will be stem:[(s - r)//(ii(M) + 1)], which is greater than 95 % by an amount that becomes smaller as stem:[ii(M)] is increased, viz. 95.16 % for stem:[ii(M) = 10^5] and 95.05 % for stem:[ii(M) = 10^6]. (There are other possibilities for stem:[r] and stem:[s]; they do not have to sum to stem:[ii(M) + 1]. A sufficient condition <<David1981,clause=2.6>> is that stem:[s - r] satisfies
 
 [stem%unnumbered]
 ++++
-sum_{j=s-r}^{ii(M)} C_j p^j (1 - p)^{ii(M)-j} < 1 - 0.99,
+sum_{j=s-r}^{ii(M)} ii(C)_j p^j (1 - p)^{ii(M)-j} < 1 - 0.99,
 ++++
 
 where
 
 [stem%unnumbered]
 ++++
-""^{ii(M)} C_j = {ii(M)!} / {j! (M - j)!},
+""^{ii(M)} ii(C)_j = {ii(M)!} / {j! (ii(M) - j)!},
 ++++
 
 the best result being when this inequality is just satisfied.) These results can be extended to other coverage probabilities (and other choices of stem:[ii(M)]).

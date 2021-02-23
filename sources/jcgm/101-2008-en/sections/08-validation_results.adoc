@@ -29,13 +29,13 @@ A comparison procedure has the following objective: determine whether the covera
 [[eq19]]
 [stem]
 ++++
-d_{"low"} = |y - U_{"p"} - y_{"low"}|,
+d_{"low"} = |y - ii(U)_{"p"} - y_{"low"}|,
 ++++
 
 [[eq20]]
 [stem]
 ++++
-d_{"high"} = |y + U_{"p"} - y_{"high"}|,
+d_{"high"} = |y + ii(U)_{"p"} - y_{"high"}|,
 ++++
 
 viz. the absolute differences of the respective endpoints of the two coverage intervals. Then, if both stem:[d_{"low"}] and stem:[d_{"high"}] are no larger than stem:[delta], the comparison is favourable and the GUM uncertainty framework has been validated in this instance.
@@ -47,6 +47,6 @@ NOTE: The choice of stem:[100p" "%] coverage interval will influence the compari
 [[scls_8-2]]
 === Obtaining results from a Monte Carlo method for validation purposes
 
-A sufficient number stem:[M] of Monte Carlo trials (see <<scls_7-2>>) should be performed in obtaining MCM results for the validation purposes of <<scls_8-1>>. Let stem:[n_{"dig"}] denote the number of significant decimal digits required in stem:[u(y)] (see <<scls_7-9-1>>) when validating the GUM uncertainty framework using MCM. Let stem:[delta] denote the numerical tolerance associated with stem:[u(y)] (see <<scls_7-9-2>>). Then it is recommended that the adaptive Monte Carlo procedure (see <<scls_7-9-4>>) be used to provide MCM results to a numerical tolerance of stem:[delta//5]. Such results can be obtained by replacing stem:[delta] by stem:[delta//5] in step <<item_7-9-4k>> of that procedure.
+A sufficient number stem:[ii(M)] of Monte Carlo trials (see <<scls_7-2>>) should be performed in obtaining MCM results for the validation purposes of <<scls_8-1>>. Let stem:[n_{"dig"}] denote the number of significant decimal digits required in stem:[u(y)] (see <<scls_7-9-1>>) when validating the GUM uncertainty framework using MCM. Let stem:[delta] denote the numerical tolerance associated with stem:[u(y)] (see <<scls_7-9-2>>). Then it is recommended that the adaptive Monte Carlo procedure (see <<scls_7-9-4>>) be used to provide MCM results to a numerical tolerance of stem:[delta//5]. Such results can be obtained by replacing stem:[delta] by stem:[delta//5] in step <<item_7-9-4k>> of that procedure.
 
-NOTE: It can be expected that the use of a numerical tolerance of stem:[delta//5] would require a value of stem:[M] of the order of 25 times that for a numerical tolerance of stem:[delta]. Such a value of stem:[ii(M)] might present efficiency problems for some computers in operating with vector arrays of dimension stem:[ii(M)]. In such a case, calculations can instead be based on an approximation to stem:[g_Y (eta)] derived from a suitable histogram of the stem:[y_r], in which the cell frequencies in the histogram are updated as the Monte Carlo calculation proceeds. Cf. <<scls_7-8-3>> <<note1_7-8-3>>.
+NOTE: It can be expected that the use of a numerical tolerance of stem:[delta//5] would require a value of stem:[ii(M)] of the order of 25 times that for a numerical tolerance of stem:[delta]. Such a value of stem:[ii(M)] might present efficiency problems for some computers in operating with vector arrays of dimension stem:[ii(M)]. In such a case, calculations can instead be based on an approximation to stem:[g_Y (eta)] derived from a suitable histogram of the stem:[y_r], in which the cell frequencies in the histogram are updated as the Monte Carlo calculation proceeds. Cf. <<scls_7-8-3>> <<note1_7-8-3>>.

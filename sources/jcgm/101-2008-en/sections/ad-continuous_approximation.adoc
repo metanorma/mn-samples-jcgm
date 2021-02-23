@@ -7,7 +7,7 @@
 [[scls_D-1]]
 === {blank}
 
-It is sometimes useful to work with a continuous approximation stem:[tilde(G)_Y (eta)], say, to the distribution function for the output quantity stem:[ii(Y)], rather than the discrete representation stem:[bb(G)] of <<scls_7-5>>.
+It is sometimes useful to work with a continuous approximation stem:[tilde(ii(G))_Y (eta)], say, to the distribution function for the output quantity stem:[ii(Y)], rather than the discrete representation stem:[bb(G)] of <<scls_7-5>>.
 
 
 [NOTE]
@@ -22,10 +22,10 @@ Working with a continuous approximation means, for instance, that
 [[scls_D-2]]
 === {blank}
 
-In order to form stem:[tilde(G)_Y(eta)], consider the discrete representation stem:[bb(G) = {y_{(r)}], stem:[r = 1,..., ii(M)}] of stem:[G_Y (eta)] in <<scls_7-5-1>>, after replacing replicate model values of stem:[y_{(r)}] as necessary (step b) in that subclause). Then, carry out the following steps:
+In order to form stem:[tilde(ii(G))_Y(eta)], consider the discrete representation stem:[bb(G) = {y_{(r)}], stem:[r = 1,..., ii(M)}] of stem:[ii(G)_Y (eta)] in <<scls_7-5-1>>, after replacing replicate model values of stem:[y_{(r)}] as necessary (step b) in that subclause). Then, carry out the following steps:
 
-. assign uniformly spaced cumulative probabilities stem:[p_r = (r - 1//2)//M], stem:[r = 1,...,M], to the stem:[y_{(r)}] <<Cox-Harris2006>>. The numerical values stem:[p_r, r = 1,...,M], are the midpoints of stem:[ii(M)] contiguous probability intervals of width stem:[1//ii(M)] between zero and one;
-. form stem:[tilde(G)_Y (eta)] as the (continuous) strictly increasing piecewise-linear function joining the stem:[ii(M)] points stem:[(y_{(r)},p_r)], stem:[r = 1,...,M]:
+. assign uniformly spaced cumulative probabilities stem:[p_r = (r - 1//2)//ii(M)], stem:[r = 1,...,ii(M)], to the stem:[y_{(r)}] <<Cox-Harris2006>>. The numerical values stem:[p_r, r = 1,...,ii(M)], are the midpoints of stem:[ii(M)] contiguous probability intervals of width stem:[1//ii(M)] between zero and one;
+. form stem:[tilde(ii(G))_Y (eta)] as the (continuous) strictly increasing piecewise-linear function joining the stem:[ii(M)] points stem:[(y_{(r)},p_r)], stem:[r = 1,...,M]:
 +
 --
 [[eqd1]]
@@ -35,22 +35,22 @@ tilde(G)_Y (eta) = {r - 1//2}/{ii(M)} + {eta - y(r)}/{ii(M)(y_{(r+1)}) - y_{(r)}
 ++++
 --
 
-NOTE: The form (<<scls_D-1>>) provides a convenient basis for sampling from stem:[tilde(G)_Y(eta)] for purposes of a further stage of uncertainty evaluation. See <<scls_C-2>> for sampling inversely from a distribution function. Some software libraries and packages provide facilities for piecewise-linear interpolation. Since stem:[tilde(G)_Y(eta)] is piecewise linear, so is its inverse, and such facilities can readily be applied.
+NOTE: The form (<<scls_D-1>>) provides a convenient basis for sampling from stem:[tilde(ii(G))_Y(eta)] for purposes of a further stage of uncertainty evaluation. See <<scls_C-2>> for sampling inversely from a distribution function. Some software libraries and packages provide facilities for piecewise-linear interpolation. Since stem:[tilde(ii(G))_Y(eta)] is piecewise linear, so is its inverse, and such facilities can readily be applied.
 
 
 [[scls_D-3]]
 === {blank}
 
-<<figd1>> illustrates stem:[tilde(G)_Y(eta)] obtained using MCM based on stem:[ii(M) = 50] sampled values from a Gaussian PDF stem:[g_Y (eta)] with stem:[ii(Y)] having expectation 3 and standard deviation 1.
+<<figd1>> illustrates stem:[tilde(ii(G))_Y(eta)] obtained using MCM based on stem:[ii(M) = 50] sampled values from a Gaussian PDF stem:[g_Y (eta)] with stem:[ii(Y)] having expectation 3 and standard deviation 1.
 
 [[figd1]]
-.An approximation stem:[tilde(G)_Y (eta)] to the distribution function stem:[G_Y (eta)] (<<scls_D-3>>). "Unit" denotes any unit
+.An approximation stem:[tilde(ii(G))_Y (eta)] to the distribution function stem:[ii(G)_Y (eta)] (<<scls_D-3>>). "Unit" denotes any unit
 image::figured1.png[]
 
 
 === {blank}
 
-Consider stem:[tilde(g)Y(eta) = tilde(G')_Y (eta)], with stem:[tilde(G)_Y (eta)] given in <<eqd1>>. The function stem:[tilde(g)_Y (eta)] is piecewise constant with breakpoints at stem:[eta = y_{(1)},..., y_{(M)}]. The expectation stem:[tilde(y)] and standard deviation stem:[u(tilde(y))] of stem:[ii(Y)], described by stem:[tilde(g)_Y(eta)], are taken, respectively, as an estimate of stem:[ii(Y)] and the standard uncertainty associated with that estimate. stem:[tilde(y)] and stem:[u(tilde(y))] are given by
+Consider stem:[tilde(g)Y(eta) = tilde(G')_Y (eta)], with stem:[tilde(ii(G))_Y (eta)] given in <<eqd1>>. The function stem:[tilde(g)_Y (eta)] is piecewise constant with breakpoints at stem:[eta = y_{(1)},..., y_{(ii(M))}]. The expectation stem:[tilde(y)] and standard deviation stem:[u(tilde(y))] of stem:[ii(Y)], described by stem:[tilde(g)_Y(eta)], are taken, respectively, as an estimate of stem:[ii(Y)] and the standard uncertainty associated with that estimate. stem:[tilde(y)] and stem:[u(tilde(y))] are given by
 
 [[eqd2]]
 [stem]
@@ -73,7 +73,7 @@ NOTE: For a sufficiently large numerical value of stem:[ii(M)] (stem:[10^5], say
 
 === {blank}
 
-Let stem:[alpha] denote any value between zero and stem:[1 - p], where stem:[p] is the required coverage probability (e.g. 0.95). The endpoints of a stem:[100p " %"] coverage interval can be obtained from stem:[tilde(G)(eta)] by inverse linear interpolation. To determine the lower endpoint stem:[y_{"low"}] such that stem:[alpha = tile(G)_Y (y_{"low"})], identify the index stem:[r] for which the points stem:[(y_{(r)}, p_r)] and stem:[(y_{(r+1)}, p_{r+1})] satisfy
+Let stem:[alpha] denote any value between zero and stem:[1 - p], where stem:[p] is the required coverage probability (e.g. 0.95). The endpoints of a stem:[100p " %"] coverage interval can be obtained from stem:[tilde(ii(G))(eta)] by inverse linear interpolation. To determine the lower endpoint stem:[y_{"low"}] such that stem:[alpha = tile(ii(G))_Y (y_{"low"})], identify the index stem:[r] for which the points stem:[(y_{(r)}, p_r)] and stem:[(y_{(r+1)}, p_{r+1})] satisfy
 
 [stem%unnumbered]
 ++++
@@ -88,7 +88,7 @@ y_{"low"} = y_{(r)} + (y_{(r+1)} - y_{(r)}) {alpha - p_r}/{p_{r+1} - p_r}.
 ++++
 
 
-Similarly, the upper endpoint stem:[y_{"high"}], determined such that stem:[p + alpha = tilde(G)_Y (y_{"high"})], is calculated from
+Similarly, the upper endpoint stem:[y_{"high"}], determined such that stem:[p + alpha = tilde(ii(G))_Y (y_{"high"})], is calculated from
 
 [stem%unnumbered]
 ++++
@@ -110,9 +110,9 @@ The choice stem:[alpha = 0.025] gives the coverage interval defined by the 0.025
 
 === {blank}
 
-The shortest coverage interval can generally be obtained from stem:[tilde(G)_Y (eta)] by determining stem:[alpha] such that stem:[tilde(G)_Y^{-1} (p + alpha) - tilde(G)_Y^{-1} (alpha), = ii(H)(alpha)], say, is a minimum. A straightforward numerical approach to determining the minimum is to evaluate stem:[ii(H)(alpha)] for a large number of uniformly spaced choices stem:[{alpha_k}] of stem:[alpha] between zero and stem:[1 - p], and choose stem:[alpha_{cc(l)}] from the set stem:[{alpha_k}] that yields the minimum from the set stem:[{H(alpha_k)}].
+The shortest coverage interval can generally be obtained from stem:[tilde(ii(G))_Y (eta)] by determining stem:[alpha] such that stem:[tilde(ii(G))_Y^{-1} (p + alpha) - tilde(ii(G))_Y^{-1} (alpha), = ii(H)(alpha)], say, is a minimum. A straightforward numerical approach to determining the minimum is to evaluate stem:[ii(H)(alpha)] for a large number of uniformly spaced choices stem:[{alpha_k}] of stem:[alpha] between zero and stem:[1 - p], and choose stem:[alpha_{cc(l)}] from the set stem:[{alpha_k}] that yields the minimum from the set stem:[{ii(H)(alpha_k)}].
 
 
 === {blank}
 
-The computation of a coverage interval is facilitated if stem:[pM] is an integer. Then, the numerical value of stem:[alpha], such that stem:[ii(H)(alpha)] is a minimum, is equal to stem:[r^∗//M], where stem:[r^∗] is the index stem:[r] such that the interval length stem:[y_{(r+pM)} - y_{(r)}], over stem:[r = 1,..., (1 - p)M], is least.
+The computation of a coverage interval is facilitated if stem:[pii(M)] is an integer. Then, the numerical value of stem:[alpha], such that stem:[ii(H)(alpha)] is a minimum, is equal to stem:[r^∗//ii(M)], where stem:[r^∗] is the index stem:[r] such that the interval length stem:[y_{(r+pii(M))} - y_{(r)}], over stem:[r = 1,..., (1 - p)ii(M)], is least.

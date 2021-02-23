@@ -27,12 +27,12 @@ NOTE: Generators other than those given in this annex can be used. Their statist
 A draw from any strictly increasing, univariate continuous distribution function stem:[G_X (xi)] can be made by transforming a draw from a rectangular distribution:
 
 . draw a random number stem:[rho] from the rectangular distribution stem:[R(0, 1)];
-. [[item_c-2b]]determine stem:[xi] satisfying stem:[G_X (xi) = rho].
+. [[item_c-2b]]determine stem:[xi] satisfying stem:[ii(G)_X (xi) = rho].
 
-NOTE: The inversion required in step <<item_c-2b>>, that is forming stem:[xi = G_X^{-1} (rho)], may be possible analytically. Otherwise it can be carried out numerically.
+NOTE: The inversion required in step <<item_c-2b>>, that is forming stem:[xi = ii(G)_X^{-1} (rho)], may be possible analytically. Otherwise it can be carried out numerically.
 
 [example]
-As an instance of analytical inversion, consider the exponential PDF for stem:[ii(X)], with stem:[ii(X)] having expectation stem:[x (> 0)], viz. stem:[g_X (xi) = exp(-xi//x)//x], for stem:[xi >= 0], and zero otherwise (see <<scls_6-4-10>>). Then, by integration, stem:[G_X (xi) = 1 - exp(-xi//x)], for stem:[xi >= 0], and zero otherwise. Hence stem:[xi = -x ln(1 - rho)]. This result can be simplified slightly by using the fact that if a variable stem:[Q] has the rectangular distribution stem:[R(0, 1)], then so has stem:[1 - Q]. Hence, stem:[xi = -x ln rho].
+As an instance of analytical inversion, consider the exponential PDF for stem:[ii(X)], with stem:[ii(X)] having expectation stem:[x (> 0)], viz. stem:[g_X (xi) = exp(-xi//x)//x], for stem:[xi >= 0], and zero otherwise (see <<scls_6-4-10>>). Then, by integration, stem:[ii(G)_X (xi) = 1 - exp(-xi//x)], for stem:[xi >= 0], and zero otherwise. Hence stem:[xi = -x ln(1 - rho)]. This result can be simplified slightly by using the fact that if a variable stem:[ii(Q)] has the rectangular distribution stem:[R(0, 1)], then so has stem:[1 - ii(Q)]. Hence, stem:[xi = -x ln rho].
 
 NOTE: Numerically, stem:[xi] can generally be determined by solving the "zero-of-a-function" problem stem:[G_X (xi) - rho = 0]. Upper and lower bounds for stem:[xi] are typically easily found, in which case a recognized "bracketing" algorithm such as bisection or, more efficiently, a combination of linear interpolation and bisection <<Dekker1969>>, for example, can be used to determine stem:[xi].
 
@@ -204,20 +204,20 @@ a|
 
 ==== {blank}
 
-The most important multivariate distribution is the multivariate (or joint) Gaussian distribution stem:[N(mu,V)], where stem:[mu] is a vector of expectations of dimension stem:[n xx 1] and stem:[V] a covariance matrix of dimension stem:[ii(N) xx ii(N)].
+The most important multivariate distribution is the multivariate (or joint) Gaussian distribution stem:[N(bb(mu),bb(V))], where stem:[bb(mu)] is a vector of expectations of dimension stem:[n xx 1] and stem:[ii(V)] a covariance matrix of dimension stem:[ii(N) xx ii(N)].
 
 
 [[scls_C-5-2]]
 ==== {blank}
 
-Draws from stem:[N(mu, V)] <<Salter2000>>, <<Strang1997>> can be obtained using the procedure in <<tablec4>>.
+Draws from stem:[N(bb(mu), bb(V))] <<Salter2000>>, <<Strang1997>> can be obtained using the procedure in <<tablec4>>.
 
 NOTE: If stem:[bb(V)] is positive definite (i.e. all its eigenvalues are strictly positive), the Cholesky factor stem:[bb(R)] is unique <<Higham1996,page=204>>.
 
-NOTE: If stem:[bb(V)] is not positive definite, perhaps because of numerical rounding errors or other sources, stem:[bb(R)] may not exist. Moreover, in cases where one or more of the eigenvalues of stem:[bb(V)] is very small (but positive), the software implementation of the Cholesky factorization algorithm used may be unable to form stem:[bb(R)] because of the effects of floating-point errors. In either of these situations it is recommended that stem:[bb(V)] is "repaired", i.e. as small a change as possible is made to V such that the Cholesky factor R for the modified matrix is well defined. The resulting factor is exact for a covariance matrix that numerically is close to the original stem:[bb(V)]. A simple repair procedure is available <<Strang1997,page=322>> for this purpose, and is embodied in the MULTNORM generator <<Salter2000>>.
+NOTE: If stem:[bb(V)] is not positive definite, perhaps because of numerical rounding errors or other sources, stem:[bb(R)] may not exist. Moreover, in cases where one or more of the eigenvalues of stem:[bb(V)] is very small (but positive), the software implementation of the Cholesky factorization algorithm used may be unable to form stem:[bb(R)] because of the effects of floating-point errors. In either of these situations it is recommended that stem:[bb(V)] is "repaired", i.e. as small a change as possible is made to stem:[bb(V)] such that the Cholesky factor stem:[bb(R)] for the modified matrix is well defined. The resulting factor is exact for a covariance matrix that numerically is close to the original stem:[bb(V)]. A simple repair procedure is available <<Strang1997,page=322>> for this purpose, and is embodied in the MULTNORM generator <<Salter2000>>.
 
 
-NOTE: If stem:[bb(V)] is semi-positive definite, the eigendecomposition stem:[bb(V) = bb(Q wedge Q)^{sf(T)}], where stem:[Q] is an orthogonal matrix and stem:[^^] a diagonal matrix, can be formed. Then stem:[bb(^^)^{1//2} bb(Q)^{sf(T)}] can be used to obtain draws from stem:[N(0, V)], even if stem:[V] is rank deficient.
+NOTE: If stem:[bb(V)] is semi-positive definite, the eigendecomposition stem:[bb(V) = bb(Q wedge Q)^{sf(T)}], where stem:[bb(Q)] is an orthogonal matrix and stem:[^^] a diagonal matrix, can be formed. Then stem:[bb(^^)^{1//2} bb(Q)^{sf(T)}] can be used to obtain draws from stem:[N(bb(0), bb(V))], even if stem:[bb(V)] is rank deficient.
 
 
 [[tablec4]]

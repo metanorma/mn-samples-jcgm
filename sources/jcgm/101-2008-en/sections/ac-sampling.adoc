@@ -178,7 +178,7 @@ For 64-bit computers, step <<item_comp-a>> of Computation, including (i) and (ii
 [[scls_C-4]]
 === Gaussian distribution
 
-The procedure in <<tablec3>> provides draws from the standard Gaussian distribution stem:[N(0, 1)] using the Box-Muller transform <<Box1958>>. A draw from the Gaussian distribution stem:[N(mu,sigma^2)] is given by stem:[mu + sigma z], where stem:[z] is a draw from stem:[N(0, 1)].
+The procedure in <<tablec3>> provides draws from the standard Gaussian distribution stem:[N(0, 1)] using the Box-Muller transform <<Box1958>>. A draw from the Gaussian distribution stem:[N(ii(mu),ii(sigma)^2)] is given by stem:[ii(mu) + ii(sigma) z], where stem:[z] is a draw from stem:[N(0, 1)].
 
 
 [[tablec3]]

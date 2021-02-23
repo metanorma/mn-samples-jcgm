@@ -655,7 +655,7 @@ stem:[t]-distributions typically arise in two circumstances: the evaluation of a
 [[scls_6-4-9-2]]
 ===== {blank}
 
-Suppose that a series of stem:[n] indications stem:[x_1,..., x_n] is available, regarded as being obtained independently from a quantity with unknown expectation stem:[mu_0] and unknown variance stem:[sigma_0^2] having Gaussian distribution stem:["N"(mu_0,sigma_0^2)]. The desired input quantity stem:[ii(X)] is taken to be equal to stem:[mu_0]. Then, assigning a non-informative joint prior distribution to stem:[mu_0] and stem:[sigma_0^2], and using Bayes' theorem, the marginal PDF for stem:[ii(X)] is a scaled and shifted stem:[t]-distribution stem:[t_{nu}(bar(x), s^2//n)] with stem:[nu = n - 1] degrees of freedom, where
+Suppose that a series of stem:[n] indications stem:[x_1,..., x_n] is available, regarded as being obtained independently from a quantity with unknown expectation stem:[mu_0] and unknown variance stem:[ii(sigma)_0^2] having Gaussian distribution stem:["N"(mu_0,sigma_0^2)]. The desired input quantity stem:[ii(X)] is taken to be equal to stem:[mu_0]. Then, assigning a non-informative joint prior distribution to stem:[mu_0] and stem:[ii(sigma)_0^2], and using Bayes' theorem, the marginal PDF for stem:[ii(X)] is a scaled and shifted stem:[t]-distribution stem:[t_{nu}(bar(x), s^2//n)] with stem:[nu = n - 1] degrees of freedom, where
 
 [stem%unnumbered]
 ++++

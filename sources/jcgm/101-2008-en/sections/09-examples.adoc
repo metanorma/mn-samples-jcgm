@@ -327,7 +327,7 @@ NOTE: Applying the law of propagation of uncertainty to the "exact" model <<eq23
 [[scls_9-3-1-4]]
 ===== {blank}
 
-The only information available concerning stem:[m_{R,c}] and stem:[delta m_{R,c}] is a best estimate and an associated standard uncertainty for each of these quantities. Accordingly, following <<scls_6-4-7-1>>, a Gaussian distribution is assigned to each of these quantities, with these best estimates used as the expectations of the corresponding quantities and the associated standard uncertainties as the standard deviations. The only information available concerning stem:[rho_a], stem:[rho_W] and stem:[rho_R] is lower and upper limits for each of these quantities. Accordingly, following <<scls_6-4-2-1>>, a rectangular distribution is assigned to each of these quantities, with limits equal to the endpoints of the distribution. <<table5>> summarizes the input quantities and the PDFs assigned. In the table, a Gaussian distribution stem:[N(mu, sigma^2)] is described in terms of expectation stem:[mu] and standard deviation stem:[sigma], and a rectangular distribution stem:[R(a, b)] with endpoints stem:[a] and stem:[b(a < b)] in terms of expectation stem:[(a + b)//2] and semi-width stem:[(b - a)//2].
+The only information available concerning stem:[m_{R,c}] and stem:[delta m_{R,c}] is a best estimate and an associated standard uncertainty for each of these quantities. Accordingly, following <<scls_6-4-7-1>>, a Gaussian distribution is assigned to each of these quantities, with these best estimates used as the expectations of the corresponding quantities and the associated standard uncertainties as the standard deviations. The only information available concerning stem:[rho_a], stem:[rho_W] and stem:[rho_R] is lower and upper limits for each of these quantities. Accordingly, following <<scls_6-4-2-1>>, a rectangular distribution is assigned to each of these quantities, with limits equal to the endpoints of the distribution. <<table5>> summarizes the input quantities and the PDFs assigned. In the table, a Gaussian distribution stem:[N(ii(mu), ii(sigma)^2)] is described in terms of expectation stem:[ii(mu)] and standard deviation stem:[ii(sigma)], and a rectangular distribution stem:[R(a, b)] with endpoints stem:[a] and stem:[b(a < b)] in terms of expectation stem:[(a + b)//2] and semi-width stem:[(b - a)//2].
 
 
 NOTE: The quantity stem:[rho_{a_0}] in the mass calibration model <<eq24,(24)>> is assigned the value stem:[1.2 " "rm(kg/m)^3] with no associated uncertainty.
@@ -338,10 +338,10 @@ NOTE: The quantity stem:[rho_{a_0}] in the mass calibration model <<eq24,(24)>> 
 [cols="6*",options="header"]
 |===
 ^| stem:[X_i] ^| Distribution 4+^| Parameters
-| | ^h| Expectation stem:[mu] ^h| Standard deviation stem:[sigma] ^h| Expectation stem:[x = (a + b)//2] ^h| Semi-width stem:[(b - a)//2]
+| | ^h| Expectation stem:[ii(mu)] ^h| Standard deviation stem:[ii(sigma)] ^h| Expectation stem:[x = (a + b)//2] ^h| Semi-width stem:[(b - a)//2]
 
-| stem:[m_{R,c}] | stem:[N(mu,sigma^2)] | stem:[100000000 " "rm(mg)] | stem:[0.050 " "rm(mg)] | |
-| stem:[delta m_{R,c}] | stem:[N(mu,sigma^2)] | 1.234 mg | 0.020 mg | |
+| stem:[m_{R,c}] | stem:[N(ii(mu),ii(sigma)^2)] | stem:[100000000 " "rm(mg)] | stem:[0.050 " "rm(mg)] | |
+| stem:[delta m_{R,c}] | stem:[N(ii(mu),ii(sigma)^2)] | 1.234 mg | 0.020 mg | |
 | stem:[rho_a] | stem:[R(a,b)] | | | stem:[1.20 " "rm(kg/m)^3] | stem:[0.10 " "rm(kg/m)^2]
 | stem:[rho_W] | stem:[R(a,b)] | | | stem:[8 xx 10^3 " "rm(kg/m)^3] | stem:[1 xx 10^3 " "rm(kg/m)^3]
 | stem:[rho_R] | stem:[R(a,b)] | | | stem:[8.00 xx 10^3 " "rm(kg/m)^3] | stem:[0.05 xx 10^3 " "rm(kg/m)^3]
@@ -907,14 +907,14 @@ In the following subclauses the available information about each input quantity 
 |===
 | Quantity | PDF 6+| Parameters
 
-| | | stem:[mu] | stem:[sigma] | stem:[nu] | stem:[a] | stem:[b] | stem:[d]
+| | | stem:[ii(mu)] | stem:[ii(sigma)] | stem:[nu] | stem:[a] | stem:[b] | stem:[d]
 
-| stem:[L_s] | stem:[t_{nu} (mu, sigma^2)] | stem:[50000623 " " rm(nm)] | 25 nm | 18 | | | 
-| stem:[D] | stem:[t_{nu} (mu, sigma^2)] | 215 nm | 6 nm | 24 | | | 
-| stem:[d_1] | stem:[t_{nu} (mu, sigma^2)] | 0 nm | 4 nm | 5  | | |
-| stem:[d_2] | stem:[t_{nu} (mu, sigma^2)] | 0 nm | 7 nm | 8  | | |
+| stem:[L_s] | stem:[t_{nu} (ii(mu), ii(sigma)^2)] | stem:[50000623 " " rm(nm)] | 25 nm | 18 | | | 
+| stem:[D] | stem:[t_{nu} (ii(mu), ii(sigma)^2)] | 215 nm | 6 nm | 24 | | | 
+| stem:[d_1] | stem:[t_{nu} (ii(mu), ii(sigma)^2)] | 0 nm | 4 nm | 5  | | |
+| stem:[d_2] | stem:[t_{nu} (ii(mu), ii(sigma)^2)] | 0 nm | 7 nm | 8  | | |
 | stem:[alpha_s] | stem:[R(a,b)] | | | | stem:[9.5 xx 10^{-6} " °C"^{-1}] | |
-| stem:[theta_0] | stem:[N(mu,sigma^2)] | stem:[-0.1 " °C"] | stem:[0.2 " °C"] | | | |
+| stem:[theta_0] | stem:[N(ii(mu),ii(sigma)^2)] | stem:[-0.1 " °C"] | stem:[0.2 " °C"] | | | |
 | stem:[Delta] | stem:[U(a,b)] | | | | stem:[-0.5 " °C"] | stem:[0.5 " °C"] |
 | stem:[delta alpha] | stem:["CTrap"(a,b,d)] | | | | stem:[-1.0 xx 10^{-6} " °C"^{-1}] | stem:[1.0 xx 10^{-6} " °C"^{-1}] | stem:[1.0 xx 10^{-6} " °C"^{-1}]
 | stem:[delta theta] | stem:["CTrap"(a,b,d)] | | | | stem:[-0.050 " °C"] | stem:[0.050 " °C"] | stem:[0.025 " °C"]
@@ -930,11 +930,11 @@ The calibration certificate for the reference standard gives stem:[hat(L_s) = 50
 
 ======  Interpretation
 
-Assign a scaled and shifted stem:[t]-distribution stem:[t_{nu} (mu, sigma^2)] (see <<scls_6-4-9-7>>) to stem:[ii(L)_s], with
+Assign a scaled and shifted stem:[t]-distribution stem:[t_{nu} (ii(mu), ii(sigma)^2)] (see <<scls_6-4-9-7>>) to stem:[ii(L)_s], with
 
 [stem%unnumbered]
 ++++
-mu = 50000623 " mn", " " sigma = ii(U)_{"p"}/k_{"p"} = 75/3 " nm" = 25 " nm", " " nu = 18.
+mu = 50000623 " mn", " " ii(sigma) = ii(U)_{"p"}/k_{"p"} = 75/3 " nm" = 25 " nm", " " nu = 18.
 ++++
 
 
@@ -947,11 +947,11 @@ The average stem:[hat ii(D)] of the five indications of the difference in length
 
 ======  Interpretation
 
-Assign a scaled and shifted stem:[t]-distribution stem:[t_{nu}(mu, sigma^2)] (see <<scls_6-4-9-2>> and <<scls_6-4-9-6>>) to stem:[ii(D)], with
+Assign a scaled and shifted stem:[t]-distribution stem:[t_{nu}(ii(mu), ii(sigma)^2)] (see <<scls_6-4-9-2>> and <<scls_6-4-9-6>>) to stem:[ii(D)], with
 
 [stem%unnumbered]
 ++++
-mu = 215 " nm", " " sigma = 13/{sqrt(5)} " nm" = 6 nm, " " nu = 24.
+mu = 215 " nm", " " ii(sigma) = 13/{sqrt(5)} " nm" = 6 nm, " " nu = 24.
 ++++
 
 
@@ -964,11 +964,11 @@ According to the calibration certificate of the comparator used to compare stem:
 
 ======  Interpretation
 
-Assign a scaled and shifted stem:[t]-distribution stem:[t_{nu}(mu, sigma^2)] (see <<scls_6-4-9-7>>) to stem:[d_1], with
+Assign a scaled and shifted stem:[t]-distribution stem:[t_{nu}(ii(mu), ii(sigma)^2)] (see <<scls_6-4-9-7>>) to stem:[d_1], with
 
 [stem%unnumbered]
 ++++
-mu = 0" "rm(nm), " " sigma = {U_{0.95}} / {k_{0.95}} = 10/2.57 " " rm(nm) = 4" "rm(nm)," " nu = 5.
+ii(mu) = 0" "rm(nm), " " ii(sigma) = {U_{0.95}} / {k_{0.95}} = 10/2.57 " " rm(nm) = 4" "rm(nm)," " nu = 5.
 ++++
 
 Here, stem:[k_{0.95}] is obtained from table G.2 of the GUM with stem:[nu = 5] degrees of freedom and stem:[p = 0.95].
@@ -983,11 +983,11 @@ The uncertainty of the comparator due to systematic effects is given in the cert
 
 ======  Interpretation
 
-Assign a scaled and shifted stem:[t]-distribution stem:[t_{nu}(mu,sigma^2)] (see <<scls_6-4-9-7>>) to stem:[d_2], with
+Assign a scaled and shifted stem:[t]-distribution stem:[t_{nu}(ii(mu),ii(sigma)^2)] (see <<scls_6-4-9-7>>) to stem:[d_2], with
 
 [stem%unnumbered]
 ++++
-mu = 50000623 " "rm(nm), " " sigma = {U_p}/{k_p} = 75/3 " "rm(nm) = 25 " "rm(nm), " " nu = 18.
+ii(mu) = 50000623 " "rm(nm), " " ii(sigma) = {U_p}/{k_p} = 75/3 " "rm(nm) = 25 " "rm(nm), " " nu = 18.
 ++++
 
 
@@ -1020,11 +1020,11 @@ The temperature of the test bed is reported as stem:[(19.9 +- 0.5) " °C"]. The 
 
 ======  Interpretation
 
-Assign a Gaussian distribution stem:[N(mu,sigma^2)] (see <<scls_6-4-7>>) to stem:[theta_0], with
+Assign a Gaussian distribution stem:[N(ii(mu),ii(sigma)^2)] (see <<scls_6-4-7>>) to stem:[theta_0], with
 
 [stem%unnumbered]
 ++++
-mu = - 0.1 " °C", " " sigma = 0.2 " °C"
+ii(mu) = - 0.1 " °C", " " ii(sigma) = 0.2 " °C"
 ++++
 
 NOTE: There is no information about the source of the evaluation of the uncertainty and so a Gaussian distribution is assigned. Also see <<scls_9-5-2-6-2>> note, regarding such information.

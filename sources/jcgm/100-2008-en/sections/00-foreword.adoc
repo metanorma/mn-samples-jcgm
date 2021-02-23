@@ -3,9 +3,9 @@
 [.preface]
 == Preliminary content
 
-This _Guide_ establishes general rules for evaluating and expressing uncertainty in measurement that are intended to be applicable to a broad spectrum of measurements. The basis of the _Guide_ is Recommendation 1 (CI-1981) of the Comité International des Poids et Mesures (CIPM) and Recommendation INC-1 (1980) of the Working Group on the Statement of Uncertainties. The Working Group was convened by the Bureau International des Poids et Mesures (BIPM) in response to a request of the CIPM. The ClPM Recommendation is the only recommendation concerning the expression of uncertainty in measurement adopted by an intergovernmental organization.
+This _Guide_ establishes general rules for evaluating and expressing uncertainty in measurement that are intended to be applicable to a broad spectrum of measurements. The basis of the _Guide_ is Recommendation 1 (CI-1981)((("Recommendation 1 (CI-1981), CIPM"))) of the Comité International des Poids et Mesures (CIPM) and ((Recommendation INC-1 (1980))) of the ((Working Group on the Statement of Uncertainties)). The Working Group was convened by the Bureau International des Poids et Mesures (BIPM) in response to a request of the ((CIPM)). The CIPM Recommendation is the only recommendation concerning the expression of uncertainty in measurement adopted by an intergovernmental organization.
 
-This _Guide_ was prepared by a joint working group consisting of experts nominated by the BIPM, the International Electrotechnical Commission (IEC), the International Organization for Standardization (ISO), and the International Organization of Legal Metrology (OIML).
+This _Guide_ was prepared by a joint working group consisting of experts nominated by the ((BIPM)), the International Electrotechnical Commission (IEC), the International Organization for Standardization (ISO), and the International Organization of Legal Metrology (OIML).
 
 The following seven organizations footnoteblock:[f1] supported the development of this _Guide_, which is published in their name:
 
@@ -17,11 +17,11 @@ The following seven organizations footnoteblock:[f1] supported the development o
 In 2005, the International Laboratory Accreditation Cooperation (ILAC) officially joined the seven founding international organizations.
 --
 
-BIPM:: Bureau International des Poids et Mesures
+((BIPM)):: Bureau International des Poids et Mesures
 
-IEC:: International Electrotechnical Commission
+((IEC)):: International Electrotechnical Commission
 
-IFCC:: International Federation of Clinical Chemistry footnoteblock:[f2]
+((IFCC)):: International Federation of Clinical Chemistry footnoteblock:[f2]
 
 [[f2]]
 [NOTE]
@@ -32,13 +32,13 @@ The name of this organization has changed since 1995. It is now: +
 IFCC: International Federation of Clinical Chemistry and Laboratory Medicine
 --
 
-ISO:: International Organization for Standardization
+((ISO)):: International Organization for Standardization
 
-IUPAC:: International Union of Pure and Applied Chemistry
+((IUPAC)):: International Union of Pure and Applied Chemistry
 
-IUPAP:: International Union of Pure and Applied Physics
+((IUPAP)):: International Union of Pure and Applied Physics
 
-OIML:: International Organization of Legal Metrology
+((OIML)):: International Organization of Legal Metrology
 
 Users of this _Guide_ are invited to send their comments and requests for clarification to any of the seven supporting organizations, the mailing addresses of which are given on the inside front cover footnoteblock:[f3].
 
@@ -55,7 +55,7 @@ Links to the addresses of the eight organizations presently involved in the JCGM
 
 In 1977, recognizing the lack of international consensus on the expression of uncertainty in measurement, the world's highest authority in metrology, the Comité International des Poids et Mesures (CIPM), requested the Bureau International des Poids et Mesures (BIPM) to address the problem in conjunction with the national standards laboratories and to make a recommendation.
 
-The BIPM prepared a detailed questionnaire covering the issues involved and distributed it to 32 national metrology laboratories known to have an interest in the subject (and, for information, to five international organizations). By early 1979 responses were received from 21 laboratories <<CIPM1980>>
+The ((BIPM)) prepared a detailed questionnaire covering the issues involved and distributed it to 32 national metrology laboratories known to have an interest in the subject (and, for information, to five international organizations). By early 1979 responses were received from 21 laboratories <<CIPM1980>>
 footnoteblock:[f4].
 
 [[f4]]
@@ -67,15 +67,15 @@ See the <<bibliography>>. +
 In producing this 2008 version of the GUM, necessary corrections only to the printed 1995 version have been introduced by JCGM/WG 1. These corrections occur in subclauses 4.2.2, 4.2.4, 5.1.2, B.2.17, C.3.2, C.3.4, E.4.3, H.4.3, H.5.2.5 and H.6.2.
 --
 
-Almost all believed that it was important to arrive at an internationally accepted procedure for expressing measurement uncertainty and for combining individual uncertainty components into a single total uncertainty. However, a consensus was not apparent on the method to be used. The BIPM then convened a meeting for the purpose of arriving at a uniform and generally acceptable procedure for the specification of uncertainty; it was attended by experts from 11 national standards laboratories. This Working Group on the Statement of Uncertainties developed Recommendation INC-1 (1980), Expression of Experimental Uncertainties <<KAARLS1981>>. The CIPM approved the Recommendation in 1981 <<CIPM1982>> and reaffirmed it in 1986 <<CIPM1987>>.
+Almost all believed that it was important to arrive at an internationally accepted procedure for expressing measurement uncertainty and for combining individual uncertainty components into a single total uncertainty. However, a consensus was not apparent on the method to be used. The BIPM then convened a meeting for the purpose of arriving at a uniform and generally acceptable procedure for the specification of uncertainty; it was attended by experts from 11 national standards laboratories. This ((Working Group on the Statement of Uncertainties)) developed ((Recommendation INC-1 (1980))), Expression of Experimental Uncertainties <<KAARLS1981>>. The ((CIPM)) approved the Recommendation in 1981 <<CIPM1982>> and reaffirmed it in 1986 <<CIPM1987>>.
 
 The task of developing a detailed guide based on the Working Group Recommendation (which is a brief outline rather than a detailed prescription) was referred by the CIPM to the International Organization for Standardization (ISO), since ISO could better reflect the needs arising from the broad interests of industry and commerce.
 
-Responsibility was assigned to the ISO Technical Advisory Group on Metrology (TAG 4) because one of its tasks is to coordinate the development of guidelines on measurement topics that are of common interest to ISO and the six organizations that participate with ISO in the work of TAG 4: the International Electrotechnical Commission (IEC), the partner of ISO in worldwide standardization; the CIPM and the International Organization of Legal Metrology (OIML), the two worldwide metrology organizations; the International Union of Pure and Applied Chemistry (IUPAC) and the International Union of Pure and Applied Physics (IUPAP), the two international unions that represent chemistry and physics; and the International Federation of Clinical Chemistry (IFCC).
+Responsibility was assigned to the ISO Technical Advisory Group on Metrology (TAG 4) because one of its tasks is to coordinate the development of guidelines on measurement topics that are of common interest to ISO and the six organizations that participate with ISO in the work of TAG 4: the International Electrotechnical Commission (IEC), the partner of ISO in worldwide standardization; the CIPM and the International Organization of Legal Metrology (OIML), the two worldwide metrology organizations; the International Union of Pure and Applied Chemistry (IUPAC) and the International Union of Pure and Applied Physics (IUPAP), the two international unions that represent chemistry and physics; and the International Federation of Clinical Chemistry (IFCC).(((IUPAC)))(((IUPAP)))(((IEC)))(((IFCC)))(((ISO)))(((ISO/TAG 4)))(((OIML)))
 
-TAG 4 in turn established Working Group 3 (ISO/TAG 4/WG 3) composed of experts nominated by the BIPM, IEC, ISO, and OIML and appointed by the Chairman of TAG 4. It was assigned the following terms of reference:
+TAG 4 in turn established ((Working Group 3 (ISO/TAG 4/WG 3))) composed of experts nominated by the BIPM, IEC, ISO, and OIML and appointed by the Chairman of TAG 4. It was assigned the following terms of reference:(((ISO/TAG 4/WG 3)))((("ISO/TAG 4/WG 3, terms of reference of")))(((ISO Technical Advisory Group on Metrology (ISO/TAG 4))))
 
-To develop a guidance document based upon the recommendation of the BIPM Working Group on the Statement of Uncertainties which provides rules on the expression of measurement uncertainty for use within standardization, calibration, laboratory accreditation, and metrology services;
+To develop a guidance document based upon the recommendation of the BIPM Working Group on the Statement of Uncertainties which provides rules on the expression of measurement uncertainty for use within standardization, calibration, laboratory accreditation, and metrology services;((("laboratories, national metrology or standards")))
 
 The purpose of such guidance is
 

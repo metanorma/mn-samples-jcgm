@@ -5,7 +5,7 @@
 [[scls_1-1]]
 === {blank}
 
-This _Guide_ establishes general rules for evaluating and expressing uncertainty in measurement thatcan be followed at various levels of accuracy and in many fields -- from the shop floor to fundamental research. Therefore, the principles of this _Guide_ are intended to be applicable to a broad spectrum of measurements, including those required for:
+This _Guide_ establishes general rules for evaluating and expressing uncertainty in measurement thatcan be followed at various levels of accuracy and in many fields -- from the shop floor to fundamental research. Therefore, the principles of this _Guide_ are intended to be applicable to a broad spectrum of measurements, including those required for:((("measurements, spectrum of, to which the principles of the _Guide_ apply")))(((uncertainty of measurement)))
 
 * maintaining quality control and quality assurance in production; complying with and enforcing laws and regulations;
 * conducting basic research, and applied research and development, in science and engineering;
@@ -16,13 +16,13 @@ This _Guide_ establishes general rules for evaluating and expressing uncertainty
 [[scls_1-2]]
 === {blank}
 
-This _Guide_ is primarily concerned with the expression of uncertainty in the measurement of a well-defined physical quantity -- the measurand -- that can be characterized by an essentially unique value. If the phenomenon of interest can be represented only as a distribution of values or is dependent on one or more parameters, such as time, then the measurands required for its description are the set of quantities describing that distribution or that dependence.
+This _Guide_ is primarily concerned with the expression of uncertainty in the measurement of a well-defined physical quantity -- the ((measurand)) -- that can be characterized by an essentially unique value. If the phenomenon of interest can be represented only as a distribution of values or is dependent on one or more parameters, such as time, then the measurands required for its description are the set of quantities describing that distribution or that dependence.
 
 
 [[scls_1-3]]
 === {blank}
 
-This _Guide_ is also applicable to evaluating and expressing the uncertainty associated with the conceptual design and theoretical analysis of experiments, methods of measurement, and complex components and systems. Because a measurement result and its uncertainty may be conceptual and based entirely on hypothetical data, the term "result of a measurement" as used in this _Guide_ should be interpreted in this broader context.
+This _Guide_ is also applicable to evaluating and expressing the uncertainty associated with the conceptual design and theoretical analysis of experiments, methods of measurement, and complex components and systems. Because a measurement result and its uncertainty may be conceptual and based entirely on hypothetical data, the term "((result of a measurement))" as used in this _Guide_ should be interpreted in this broader context.
 
 
 [[scls_1-4]]

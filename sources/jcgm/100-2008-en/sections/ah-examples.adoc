@@ -109,7 +109,7 @@ u (l_{"S"}) = (0.075" "rm(mu m))//3 = 25" "rm(nm)
 [[scls_H-1-3-2]]
 ===== Uncertainty of the measured difference in lengths, u(d)
 
-The pooled experimental standard deviation characterizing the comparison of stem:[l] and stem:[l_{"S"}] was determined from the variability of 25 independent repeated observations of the difference in lengths of two standard end gauges and was found to be 13 nm. In the comparison of this example, five repeated observations were taken. The standard uncertainty associated with the arithmetic mean of these readings is then (see <<scls_4-2-4>>)
+The pooled experimental standard deviation characterizing the comparison of stem:[l] and stem:[l_{"S"}] was determined from the variability of 25 independent repeated observations of the difference in lengths of two standard end gauges and was found to be 13 nm. In the comparison of this example, five repeated observations were taken. The standard uncertainty associated with the arithmetic mean of these readings is then (see <<scls_4-2-4>>)((("variance, pooled estimate of (or pooled experimental standard deviation)")))
 
 [stem%unnumbered]
 ++++
@@ -312,7 +312,7 @@ stem:[l = 50.000838" "rm(mm)] with a combined standard uncertainty stem:[u_{"c"}
 Suppose that one is required to obtain an expanded uncertainty stem:[ii(U)_{99} = k_{99} u_{"c"}(l)] that provides an interval having a level of confidence of approximately 99 percent. The procedure to use is that summarized in <<scls_G-6-4>>, and the required degrees of freedom are indicated in <<table_H-1>>. These were obtained as follows:
 
 . [[item_H-1-6a]]_Uncertainty of the calibration of the standard_, stem:[u(l_{"S"})] [<<scls_H-1-3-1>>]. The calibration certificate states that theeffective degrees of freedom of the combined standard uncertainty from which the quoted expanded uncertainty was obtained is stem:[ii(nu)_{"eff"}(l_{"S"}) = 18].
-. [[item_H-1-6b]]_Uncertainty of the measured difference in lengths_, stem:[u(d)] [<<scls_H-1-3-2>>]. Although stem:[bar(d)] was obtained from five repeated observations, because stem:[u(bar(d))] was obtained from a pooled experimental standard deviation based on 25 observations, the degrees of freedom of stem:[u(bar(d))] is stem:[ii(nu)(bar(d)) = 25 - 1 = 24] (see <<note_H-3-6>>). The degrees of freedom of stem:[u(d_1)], the uncertainty due to random effects on the comparator, is stem:[ii(nu)(d_1) = 6 - 1 = 5] because stem:[d_1] was obtained from six repeated measurements. The stem:[pm 0.02" "rm(mu m)] uncertainty for systematic effects on the comparator may be assumed to be reliable to 25 percent, and thus the degrees of freedom from <<eq_G-3>> in <<scls_G-4-2>> is stem:[ii(nu)(d_2) = 8] (see the <<example_G-4-2>> of <<scls_G-4-2>>). The effective degrees of freedom of stem:[u(d)], stem:[ii(nu)_{"eff"}(d)], is then obtained from <<eq_G-2b>> in <<scls_G-4-1>>:
+. [[item_H-1-6b]]_Uncertainty of the measured difference in lengths_, stem:[u(d)] [<<scls_H-1-3-2>>]. Although stem:[bar(d)] was obtained from five repeated observations, because stem:[u(bar(d))] was obtained from a pooled experimental standard deviation based on 25 observations, the degrees of freedom of stem:[u(bar(d))] is stem:[ii(nu)(bar(d)) = 25 - 1 = 24] (see <<note_H-3-6>>). The degrees of freedom of stem:[u(d_1)], the uncertainty due to random effects on the comparator, is stem:[ii(nu)(d_1) = 6 - 1 = 5] because stem:[d_1] was obtained from six repeated measurements. The stem:[pm 0.02" "rm(mu m)] uncertainty for systematic effects on the comparator may be assumed to be reliable to 25 percent, and thus the degrees of freedom from <<eq_G-3>> in <<scls_G-4-2>> is stem:[ii(nu)(d_2) = 8] (see the <<example_G-4-2>> of <<scls_G-4-2>>). The effective degrees of freedom of stem:[u(d)], stem:[ii(nu)_{"eff"}(d)], is then obtained from <<eq_G-2b>> in <<scls_G-4-1>>:(((degrees of freedom of a pooled estimate of variance (or of a pooled experimental standard deviation))))
 +
 --
 [stem%unnumbered]
@@ -338,7 +338,7 @@ stem:[l = (50.000838 pm 0.000093)" "rm(mm)], where the number following the symb
 [[scls_H-1-7]]
 ==== Second-order terms
 
-The <<note_5-1-2>> points out that <<eq_10>>, which is used in this example to obtain the combined standard uncertainty stem:[u_{"c"}(l)], must be augmented when the nonlinearity of the function stem:[ii(Y) = f (ii(X)_1, ii(X)_2,..., ii(X)_N)] is so significant that the higher-order terms in the Taylor series expansion cannot be neglected. Such is the case in this example, and therefore the evaluation of stem:[u_{"c"}(l)] as presented up to this point is not complete. Application to <<eq_H-3>> of the expression given in the <<note_5-1-2>> yields in fact two distinct non-negligible second-order terms to be added to <<eq_H-5>>. These terms, which arise from the quadratic term in the expression of the <<note_5-1-2>>, are
+The <<note_5-1-2>> points out that <<eq_10>>, which is used in this example to obtain the combined standard uncertainty stem:[u_{"c"}(l)], must be augmented when the nonlinearity of the function((("functional relationship, nonlinear"))) stem:[ii(Y) = f (ii(X)_1, ii(X)_2,..., ii(X)_N)] is so significant that the ((higher-order terms)) in the ((Taylor series)) expansion cannot be neglected. Such is the case in this example, and therefore the evaluation of stem:[u_{"c"}(l)] as presented up to this point is not complete. Application to <<eq_H-3>> of the expression given in the <<note_5-1-2>> yields in fact two distinct non-negligible second-order terms to be added to <<eq_H-5>>. These terms, which arise from the quadratic term in the expression of the <<note_5-1-2>>, are
 
 [stem%unnumbered]
 ++++
@@ -385,7 +385,7 @@ ii(R) = ii(V)/ii(I) cos ii(phi); " " " " ii(X) = ii(V)/ii(I) sin ii(phi): " " " 
 
 Consider that five independent sets of simultaneous observations of the three input quantities stem:[ii(V)], stem:[ii(I)], and stem:[ii(phi)] are obtained under similar conditions (see <<scls_B-2-15>>), resulting in the data given in <<table_H-2>>. The arithmetic means of the observations and the experimental standard deviations of those means calculated from <<eq_3>> and <<eq_5>> are also given. The means are taken as the best estimates of the expected values of the input quantities, and the experimental standard deviations are the standard uncertainties of those means.
 
-Because the means stem:[bar(ii(V))], stem:[bar(ii(I))], and stem:[bar(ii(phi))] are obtained from simultaneous observations, they are correlated and the correlations must be taken into account in the evaluation of the standard uncertainties of the measurands stem:[ii(R)], stem:[ii(X)], and stem:[ii(Z)]. The required correlation coefficients are readily obtained from <<eq_14>> in <<scls_5-2-2>> using values of stem:[s(bar(ii(V)),bar(ii(I)))], stem:[s(bar(ii(V)),bar(ii(phi)))], and stem:[s(bar(ii(I)),bar(ii(phi)))] calculated from <<eq_17>> in <<scls_5-2-3>>. The results are included in <<table_H-2>>, where it should be recalled that stem:[r(x_i,x_j) = r(x_j,x_i)] and stem:[r(x_i,x_i) = 1].
+Because the means stem:[bar(ii(V))], stem:[bar(ii(I))], and stem:[bar(ii(phi))] are obtained from simultaneous observations((("observations, independent pairs of simultaneous"))), they are correlated and the correlations must be taken into account in the evaluation of the standard uncertainties of the measurands stem:[ii(R)], stem:[ii(X)], and stem:[ii(Z)]. The required ((correlation coefficient))s are readily obtained from <<eq_14>> in <<scls_5-2-2>> using values of stem:[s(bar(ii(V)),bar(ii(I)))], stem:[s(bar(ii(V)),bar(ii(phi)))], and stem:[s(bar(ii(I)),bar(ii(phi)))] calculated from <<eq_17>> in <<scls_5-2-3>>. The results are included in <<table_H-2>>, where it should be recalled that stem:[r(x_i,x_j) = r(x_j,x_i)] and stem:[r(x_i,x_i) = 1].
 
 
 [[table_H-2]]
@@ -435,7 +435,7 @@ r (bar(ii(I)),bar(ii(phi))) = -0.65
 
 Approach 1 is summarized in <<table_H-3>>.
 
-The values of the three measurands stem:[ii(R)], stem:[ii(X)], and stem:[ii(Z)] are obtained from the relations given in <<eq_H-7>> using the mean values stem:[bar(ii(V))], stem:[bar(ii(I))], and stem:[bar(ii(phi))] of <<table_H-2>> for stem:[ii(V)], stem:[ii(I)], and stem:[ii(phi)]. The standard uncertainties of stem:[ii(R)], stem:[ii(X)], and stem:[ii(Z)] are obtained from <<eq_16>> in <<scls_5-2-2>> since, as pointed out above, the input quantities stem:[bar(ii(V))], stem:[bar(ii(I))], and stem:[bar(ii(phi))] are correlated. As an example, consider stem:[ii(Z) = bar(ii(V))//bar(ii(I))]. Identifying stem:[bar(ii(V))] with stem:[x_1], stem:[bar(ii(I))] with stem:[x_2], and stem:[f] with stem:[ii(Z) = bar(ii(V))//bar(ii(I))], <<eq_16>> in <<scls_5-2-2>> yields for the combined standard uncertainty of stem:[ii(Z)]
+The values of the three measurands stem:[ii(R)], stem:[ii(X)], and stem:[ii(Z)] are obtained from the relations given in <<eq_H-7>> using the mean values stem:[bar(ii(V))], stem:[bar(ii(I))], and stem:[bar(ii(phi))] of <<table_H-2>> for stem:[ii(V)], stem:[ii(I)], and stem:[ii(phi)]. The standard uncertainties of stem:[ii(R)], stem:[ii(X)], and stem:[ii(Z)] are obtained from <<eq_16>> in <<scls_5-2-2>> since, as pointed out above, the input quantities stem:[bar(ii(V))], stem:[bar(ii(I))], and stem:[bar(ii(phi))] are correlated(((correlated output estimates or quantities))). As an example, consider stem:[ii(Z) = bar(ii(V))//bar(ii(I))]. Identifying stem:[bar(ii(V))] with stem:[x_1], stem:[bar(ii(I))] with stem:[x_2], and stem:[f] with stem:[ii(Z) = bar(ii(V))//bar(ii(I))], <<eq_16>> in <<scls_5-2-2>> yields for the combined standard uncertainty of stem:[ii(Z)]
 
 [[eq_H-8a]]
 [stem,subsequence=L]
@@ -459,7 +459,7 @@ u_{"c","r"}^2 (bar(ii(Z))) = u_{"r"}^2 (bar(ii(V))) + u_{"r"}^2 (bar(ii(I))) - 2
 
 where stem:[u(bar(ii(V))) = s(bar(ii(V)))], stem:[u(bar(ii(I))) = s(bar(ii(I)))], and the subscript "r" in the last expression indicates that stem:[u] is a relative uncertainty. Substitution of the appropriate values from <<table_H-2>> into <<eq_H-8a>> then gives stem:[u_{"c"}(ii(Z)) = 0.236" "rm(Omega)].
 
-Because the three measurands or output quantities depend on the same input quantities, they too are correlated. The elements of the covariance matrix that describes this correlation may be written in general as
+Because the three measurands or output quantities depend on the same input quantities, they too are correlated. The elements of the ((covariance matrix)) that describes this correlation may be written in general as
 
 [[eq_H-9]]
 [stem]
@@ -467,7 +467,7 @@ Because the three measurands or output quantities depend on the same input quant
 u(y_l,y_m) = sum_{i=1}^ii(N) sum_{j=1}^ii(N) {del y_l}/{del x_i} {del y_m}/{del x_j} u(x_i) u(x_j) r(x_i,x_j)
 ++++
 
-where stem:[y_l = f_l(x_1, x_2,..., x_N)] and stem:[y_m = f_m(x_1, x_2,..., x_N)]. <<eq_H-9>> is a generalization of <<eq_F-2>> in <<scls_F-1-2-3>> when the stem:[q_l] in that expression are correlated. The estimated correlation coefficients of the output quantities are given by stem:[r(y_l, y_m) = u(y_l, y_m)//u(y_l)u(y_m)], as indicated in <<eq_14>> in <<scls_5-2-2>>. It should be recognized that the diagonal elements of the covariance matrix, stem:[u(y_l,y_l) -= u^2(y_l)], are the estimated variances of the output quantities stem:[y_l] (see <<note2_5-2-2>>) and that for stem:[m = l], <<eq_H-9>> is identical to <<eq_16>> in <<scls_5-2-2>>.
+where stem:[y_l = f_l(x_1, x_2,..., x_N)] and stem:[y_m = f_m(x_1, x_2,..., x_N)]. <<eq_H-9>> is a generalization of <<eq_F-2>> in <<scls_F-1-2-3>> when the stem:[q_l] in that expression are correlated. The estimated ((correlation coefficient))s of the output quantities are given by stem:[r(y_l, y_m) = u(y_l, y_m)//u(y_l)u(y_m)], as indicated in <<eq_14>> in <<scls_5-2-2>>. It should be recognized that the diagonal elements of the ((covariance matrix)), stem:[u(y_l,y_l) -= u^2(y_l)], are the estimated variances of the output quantities stem:[y_l] (see <<note2_5-2-2>>) and that for stem:[m = l], <<eq_H-9>> is identical to <<eq_16>> in <<scls_5-2-2>>.
 
 To apply <<eq_H-9>> to this example, the following identifications are made:
 
@@ -478,7 +478,7 @@ To apply <<eq_H-9>> to this example, the following identifications are made:
 ({:y_3 = ii(Z):},{:x_3 = bar(ii(phi)):},{:"":}):}
 ++++
 
-The results of the calculations of stem:[ii(R)], stem:[ii(X)], and stem:[ii(Z)] and of their estimated variances and correlation coefficients are given in <<table_H-3>>.
+The results of the calculations of stem:[ii(R)], stem:[ii(X)], and stem:[ii(Z)] and of their estimated variances and ((correlation coefficient))s are given in <<table_H-3>>.
 
 
 [[table_H-3]]
@@ -534,9 +534,9 @@ r(y_2,y_3) = r(ii(X),ii(Z)) = 0.993
 
 Approach 2 is summarized in <<table_H-4>>.
 
-Since the data have been obtained as five sets of observations of the three input quantities stem:[ii(V)], stem:[ii(I)], and stem:[ii(phi)], it is possible to compute a value for stem:[ii(R)], stem:[ii(X)], and stem:[ii(Z)] from _each set_ of input data, and then take the arithmetic mean of the five individual values to obtain the best estimates of stem:[ii(R)], stem:[ii(X)], and stem:[ii(Z)]. The experimental standard deviation of each mean (which is its combined standard uncertainty) is then calculated from the five individual values in the usual way [<<eq_5>> in <<scls_4-2-3>>]; and the estimated covariances of the three means are calculated by applying <<eq_17>> in <<scls_5-2-3>> directly to the five individual values from which each mean is obtained. There are no differences in the output values, standard uncertainties, and estimated covarianc es provided by the two approaches except for second-order effects associated with replacing terms such as stem:[bar(ii(V))//bar(ii(I))] and stem:[cos{bar(ii(phi))}] by stem:[bar(ii(V)//ii(I))] and stem:[bar(cos ii(phi))].
+Since the data have been obtained as five sets of observations((("observations, independent pairs of simultaneous"))) of the three input quantities stem:[ii(V)], stem:[ii(I)], and stem:[ii(phi)], it is possible to compute a value for stem:[ii(R)], stem:[ii(X)], and stem:[ii(Z)] from _each set_ of input data, and then take the arithmetic mean(((covariance of two arithmetic means))) of the five individual values to obtain the best estimates of stem:[ii(R)], stem:[ii(X)], and stem:[ii(Z)]. The experimental standard deviation of each mean (which is its combined standard uncertainty) is then calculated from the five individual values in the usual way [<<eq_5>> in <<scls_4-2-3>>]; and the estimated covariances of the three means are calculated by applying <<eq_17>> in <<scls_5-2-3>> directly to the five individual values from which each mean is obtained. There are no differences in the output values, standard uncertainties, and estimated covarianc es provided by the two approaches except for second-order effects associated with replacing terms such as stem:[bar(ii(V))//bar(ii(I))] and stem:[cos{bar(ii(phi))}] by stem:[bar(ii(V)//ii(I))] and stem:[bar(cos ii(phi))].
 
-To demonstrate this approach, <<table_H-4>> gives the values of stem:[ii(R)], stem:[ii(X)] and stem:[ii(Z)] calculated from each of the five sets of observations. The arithmetic means, standard uncertainties, and estimated correlation coefficients are then directly computed from these individual values. The numerical results obtained in this way are negligibly different from the results given in <<table_H-3>>.
+To demonstrate this approach, <<table_H-4>> gives the values of stem:[ii(R)], stem:[ii(X)] and stem:[ii(Z)] calculated from each of the five sets of observations. The arithmetic means, standard uncertainties, and estimated ((correlation coefficient))s are then directly computed from these individual values. The numerical results obtained in this way are negligibly different from the results given in <<table_H-3>>.(((correlated output estimates or quantities)))
 
 
 [[table_H-4]]
@@ -583,7 +583,7 @@ r (y_2,y_3) = r(bar(ii(X)),bar(ii(Z))) = 0.993
 
 In the terminology of the <<note_4-1-4>>, approach 2 is an example of obtaining the estimate stem:[y] from
 stem:[bar(ii(Y)) = (sum_{k=1}^n ii(Y)_k) // n], while approach 1 is an example of obtaining stem:[y] from stem:[y = f(bar(ii(X))_1, bar(ii(X))_2,...,bar(ii(X))_N)]. As pointed out
-in that note, in general, the two approaches will give _identical_ results if stem:[f] is a linear function of its input quantities (provided that the experimentally observed correlation coefficients are taken into account when implementing approach 1). If stem:[f] is not a linear function, then the results of approach 1 will differ from those of approach 2 depending on the degree of nonlinearity and the estimated variances and covariances of the stem:[ii(X)_i]. This may be seen from the expression
+in that note, in general, the two approaches will give _identical_ results if stem:[f] is a linear function of its input quantities (provided that the experimentally observed ((correlation coefficient))s are taken into account when implementing approach 1). If stem:[f] is not a linear function, then the results of approach 1 will differ from those of approach 2 depending on the degree of nonlinearity((("functional relationship, nonlinear"))) and the estimated variances and covariances of the stem:[ii(X)_i]. This may be seen from the expression
 
 [[eq_H-10]]
 [stem]
@@ -591,11 +591,11 @@ in that note, in general, the two approaches will give _identical_ results if st
 y = f(bar(ii(X))_1, bar(ii(X))_2,...,bar(ii(X))_N) + 1/2 sum_{i=1}^ii(N) sum_{j=1}^ii(N) {del^2 f}/{del bar(ii(X))_i del bar(ii(X))_j} u(bar(ii(X))_i, bar(ii(X))_j) + ...
 ++++
 
-where the second term on the right-hand side is the second-order term in the Taylor series expansion of stem:[f] in terms of the stem:[bar(ii(X))_i] (see also <<note_5-1-2>>). In the present case, approach 2 is preferred because it avoids the approximation stem:[y = f(bar(ii(X))_1, bar(ii(X))_2,..., bar(ii(X))_N)] and better reflects the measurement procedure used -- the data were in fact collected in sets.
+where the second term on the right-hand side is the second-order term in the ((Taylor series)) expansion of stem:[f] in terms of the stem:[bar(ii(X))_i] (see also <<note_5-1-2>>). In the present case, approach 2 is preferred because it avoids the approximation stem:[y = f(bar(ii(X))_1, bar(ii(X))_2,..., bar(ii(X))_N)] and better reflects the measurement procedure used -- the data were in fact collected in sets.
 
 On the other hand, approach 2 would be inappropriate if the data of <<table_H-2>> represented stem:[n_1 = 5] observations of the potential difference stem:[ii(V)], followed by stem:[n_2 = 5] observations of the current stem:[ii(I)], and then followed by stem:[n_3 = 5] observations of the phase stem:[ii(phi)], and would be impossible if stem:[x = n_1 != n_2 != n_3]. (It is in fact poor measurement procedure to carry out the measurements in this way since the potential difference across a fixed impedance and the current through it are directly related.)
 
-If the data of <<table_H-2>> are reinterpreted in this manner so that approach 2 is inappropriate, and if correlations among the quantities stem:[ii(V)], stem:[ii(I)], and stem:[ii(phi)] are assumed to be absent, then the observed correlation coefficients have no significance and should be set equal to zero. If this is done in <<table_H-2>>, <<eq_H-9>> reduces to the equivalent of <<eq_F-2>> in <<scls_F-1-2-3>>, namely,
+If the data of <<table_H-2>> are reinterpreted in this manner so that approach 2 is inappropriate, and if correlations among the quantities stem:[ii(V)], stem:[ii(I)], and stem:[ii(phi)] are assumed to be absent, then the observed ((correlation coefficient))s have no significance and should be set equal to zero. If this is done in <<table_H-2>>, <<eq_H-9>> reduces to the equivalent of <<eq_F-2>> in <<scls_F-1-2-3>>, namely,
 
 [[eq_H-11]]
 [stem]
@@ -663,7 +663,7 @@ r(y_2, y_3) = r(ii(X), ii(Z)) = 0.878
 [[scls_H-3]]
 === Calibration of a thermometer
 
-This example illustrates the use of the method of least squares to obtain a linear calibration curve and how the parameters of the fit, the intercept and slope, and their estimated variances and covariance, are used to obtain from the curve the value and standard uncertainty of a predicted correction.
+This example illustrates the use of the method of least squares((("least squares, method of"))) to obtain a linear calibration curve((("calibration curve, linear"))) and how the parameters of the fit, the intercept and slope, and their estimated variances and covariance, are used to obtain from the curve the value and standard uncertainty of a predicted correction.
 
 
 [[scls_H-3-1]]
@@ -677,20 +677,20 @@ A thermometer is calibrated by comparing stem:[n = 11] temperature readings stem
 b(t) = y_1 + y_2 (t - t_0)
 ++++
 
-is fitted to the measured corrections and temperatures by the method of least squares. The parameters stem:[y_1] and stem:[y_2], which are respectively the intercept and slope of the calibration curve, are the two measurands or outputquantities to be determined. The temperature stem:[t_0] is a conveniently chosen exact reference temperature; it is not an independent parameter to be determined by the least-squares fit. Once stem:[y_1] and stem:[y_2] are found, along with their estimated variances and covariance, <<eq_H-12>> can be used to predict the value and standard uncertainty of the correction to be applied to the thermometer for any value stem:[t] of the temperature.
+is fitted to the measured corrections and temperatures by the method of least squares((("least squares, method of"))). The parameters stem:[y_1] and stem:[y_2], which are respectively the intercept and slope of the calibration curve, are the two measurands or outputquantities to be determined. The temperature stem:[t_0] is a conveniently chosen exact reference temperature; it is not an independent parameter to be determined by the least-squares fit. Once stem:[y_1] and stem:[y_2] are found, along with their estimated variances and covariance, <<eq_H-12>> can be used to predict the value and standard uncertainty of the correction to be applied to the thermometer for any value stem:[t] of the temperature.
 
 
 [[scls_H-3-2]]
 ==== Least-squares fitting
 
-Based on the method of least squares and under the assumptions made in <<scls_H-3-1>> above, the output quantities stem:[y_1] and stem:[y_2] and their estimated variances and covariance are obtained by minimizing the sum
+Based on the method of least squares((("least squares, method of"))) and under the assumptions made in <<scls_H-3-1>> above, the output quantities stem:[y_1] and stem:[y_2] and their estimated variances and covariance are obtained by minimizing the sum
 
 [stem%unnumbered]
 ++++
 S = sum_{k=1}^n [b_k - y_1 - y_2 (t_k - t_0)]^2
 ++++
 
-This leads to the following equations for stem:[y_1], stem:[y_2], their experimental variances stem:[s^2(y_1)] and stem:[s^2(y_2)], and their estimated correlation coefficient stem:[r(y_1, y_2) = s(y_1, y_2)//s(y_1)s(y_2)], where stem:[s(y_1, y_2)] is their estimated covariance:
+This leads to the following equations for stem:[y_1], stem:[y_2], their experimental variances stem:[s^2(y_1)] and stem:[s^2(y_2)], and their estimated ((correlation coefficient)) stem:[r(y_1, y_2) = s(y_1, y_2)//s(y_1)s(y_2)], where stem:[s(y_1, y_2)] is their estimated covariance:
 
 [[eq_H-13a]]
 [stem,subsequence=M]
@@ -734,7 +734,7 @@ s^2 = {sum [b_k - b(t_k)]^2}/{n - 2}
 ii(D) = n sum ii(theta)_k^2 - (sum ii(theta)_k)^2 = n sum (ii(theta)_k - bar(ii(theta)))^2 = n sum (t_k - bar(t))^2
 ++++
 
-where all sums are from stem:[k = 1] to stem:[n], stem:[ii(theta)_k = t_k - t_0], stem:[bar(ii(theta)) = (sum ii(theta)_k)//n], and stem:[bar(t) = (sum t_k)//n]; stem:[[b_k - b(t_k)\]] is the difference between the measured or observed correction stem:[b_k] at the temperature stem:[t_k] and the correction stem:[b(t_k)] predicted by the fitted curve stem:[b(t) = y_1 + y_2(t - t_0)] at stem:[t_k]. The variance stem:[s^2] is a measure of the overall uncertainty of the fit, where the factor stem:[n - 2] reflects the fact that because two parameters, stem:[y_1] and stem:[y_2], are determined by the stem:[n] observations, the degrees of freedom of stem:[s^2] is stem:[ii(nu) = n - 2] (see <<scls_G-3-3>>).
+where all sums are from stem:[k = 1] to stem:[n], stem:[ii(theta)_k = t_k - t_0], stem:[bar(ii(theta)) = (sum ii(theta)_k)//n], and stem:[bar(t) = (sum t_k)//n]; stem:[[b_k - b(t_k)\]] is the difference between the measured or observed correction stem:[b_k] at the temperature stem:[t_k] and the correction stem:[b(t_k)] predicted by the fitted curve stem:[b(t) = y_1 + y_2(t - t_0)] at stem:[t_k]. The variance stem:[s^2] is a measure of the overall uncertainty of the fit, where the factor stem:[n - 2] reflects the fact that because two parameters, stem:[y_1] and stem:[y_2], are determined by the stem:[n] observations, the degrees of freedom of stem:[s^2] is stem:[ii(nu) = n - 2] (see <<scls_G-3-3>>).(((correlated output estimates or quantities)))
 
 
 [[scls_H-3-3]]
@@ -749,7 +749,7 @@ The data to be fitted are given in the second and third columns of <<table_H-6>>
 ({:r(y_1,y_2) = -0.930:},{:s = 0.0035" "rm(°C):}):}
 ++++
 
-The fact that the slope stem:[y_2] is more than three times larger than its standard uncertainty provides some indication that a calibration curve and not a fixed average correction is required.
+The fact that the slope stem:[y_2] is more than three times larger than its standard uncertainty provides some indication that a calibration curve and not a fixed average correction is required.((("uncertainty, statistical evaluation of, by varying input quantities")))
 
 
 [[table_H-6]]
@@ -840,9 +840,9 @@ Thus the correction at stem:[30" "rm(°C)] is stem:[- 0.1494" "rm(°C)], with a 
 
 
 [[scls_H-3-5]]
-==== Elimination of the correlation between the slope and intercept
+==== Elimination of the correlation between the slope and intercept((("correlation, elimination of")))
 
-<<eq_H-13e>> for the correlation coefficient stem:[r(y_1,y_2)] implies that if stem:[t_0] is so chosen that
+<<eq_H-13e>> for the ((correlation coefficient)) stem:[r(y_1,y_2)] implies that if stem:[t_0] is so chosen that
 stem:[sum_{k=1}^n ii(theta)_k = sum_{k=1}^n (t_k - t_0) = 0], then stem:[r(y_1,y_2) = 0] and stem:[y_1] and stem:[y_2] will be uncorrelated, thereby simplifying the
 computation of the standard uncertainty of a predicted correction. Since stem:[sum_{k=1}^n ii(theta)_k = 0] when stem:[t_0 = bar(t) = (sum_{k=1}^n t_k)//n],
 and stem:[bar(t) = 24.0085" "rm(°C)] in the present case, repeating the least-squares fit with
@@ -925,7 +925,7 @@ The least-squares method can be used to fit higher-order curves to data points, 
 [[note_H-3-6]]
 [NOTE]
 ====
-A pooled estimate of variance stem:[s_{"p"}^2] based on stem:[ii(N)] series of independent observations of the same random variable is obtained from
+A pooled estimate of variance stem:[s_{"p"}^2] based on stem:[ii(N)] series of independent observations of the same random variable is obtained from((("variance, experimental (or estimate of)")))((("variance, pooled estimate of (or pooled experimental standard deviation)")))
 
 [stem%unnumbered]
 ++++
@@ -934,7 +934,7 @@ s_{"p"}^2 = {sum_{i=1}^{ii(N)} ii(nu)_i s_i^2}/{sum_{i=1}^{ii(N)} ii(nu)_i}
 
 where stem:[s_i^2] is the experimental variance of the __i__th series of stem:[n_i] independent repeated observations [<<eq_4>> in
 <<scls_4-2-2>>] and has degrees of freedom stem:[ii(nu)_i = n_i - 1]. The degrees of freedom of stem:[s_{"p"}] is stem:[ii(nu) = sum_{i=1}^{ii(N)} ii(nu)_i]. The experimental variance
-stem:[s_{"p"}^2//m]) (and the experimental standard deviation stem:[s_{"p"}//sqrt(m)]) of the arithmetic mean of stem:[m] independent observations characterized by the pooled estimate of variance stem:[s_{"p"}^2] also has stem:[ii(nu)] degrees of freedom.
+stem:[s_{"p"}^2//m]) (and the experimental standard deviation stem:[s_{"p"}//sqrt(m)]) of the arithmetic mean of stem:[m] independent observations characterized by the pooled estimate of variance stem:[s_{"p"}^2] also has stem:[ii(nu)] degrees of freedom.(((degrees of freedom of a pooled estimate of variance (or of a pooled experimental standard deviation))))
 ====
 --
 
@@ -1065,11 +1065,11 @@ ii(R)_{"S"} = [(ii(C)_x - ii(C)_{"B"})//ii(T)_0] e^{ii(lambda) t_{"S"}}
 ++++
 
 
-The arithmetic means stem:[bar(ii(R))_{"S"}], stem:[bar(ii(R))_x], and stem:[bar(ii(R))], and their experimental standard deviations stem:[s(bar(ii(R))_{"S"})], stem:[s(bar(ii(R))_x)], and stem:[s(bar(ii(R)))], are calculated in the usual way [<<eq_3>> and <<eq_5>> in <<scls_4-2>>]. The correlation coefficient stem:[r(bar(ii(R))_x, bar(ii(R))_{"S"})] is calculated from <<eq_17>> in <<scls_5-2-3>> and <<eq_14>> in <<scls_5-2-2>>.
+The arithmetic means(((covariance of two arithmetic means))) stem:[bar(ii(R))_{"S"}], stem:[bar(ii(R))_x], and stem:[bar(ii(R))], and their experimental standard deviations stem:[s(bar(ii(R))_{"S"})], stem:[s(bar(ii(R))_x)], and stem:[s(bar(ii(R)))], are calculated in the usual way [<<eq_3>> and <<eq_5>> in <<scls_4-2>>]. The ((correlation coefficient)) stem:[r(bar(ii(R))_x, bar(ii(R))_{"S"})] is calculated from <<eq_17>> in <<scls_5-2-3>> and <<eq_14>> in <<scls_5-2-2>>.
 
-Because of the comparatively small variability of the values of stem:[ii(R)_x] and of stem:[ii(R)_{"S"}], the ratio of means stem:[bar(ii(R))_x//bar(ii(R))_{"S"}] and the standard uncertainty stem:[u(bar(ii(R))_x//bar(ii(R))_{"S"})] of this ratio are, respectively, very nearly the same as the mean ratio stem:[bar(ii(R))] and its experimental standard deviation stem:[s(bar(ii(R)))] as given in the last column of <<table_H-8>> [see <<scls_H-2-4>> and <<eq_H-10>> therein]. However, in calculating the standard uncertainty stem:[u(bar(ii(R))_x // bar(ii(R))_{"S"})], the correlation between stem:[ii(R)_x] and stem:[ii(R)_{"S"}] as represented by the correlation coefficient stem:[r(bar(ii(R))_x, bar(ii(R))_{"S"})] must betaken into account using<<eq_16>> in <<scls_5-2-2>>. [That equation yields for the relative estimated variance of stem:[bar(ii(R))_x//bar(ii(R))_{"S"}] the last three terms of <<eq_H-22b>>.]
+Because of the comparatively small variability of the values of stem:[ii(R)_x] and of stem:[ii(R)_{"S"}], the ratio of means stem:[bar(ii(R))_x//bar(ii(R))_{"S"}] and the standard uncertainty stem:[u(bar(ii(R))_x//bar(ii(R))_{"S"})] of this ratio are, respectively, very nearly the same as the mean ratio stem:[bar(ii(R))] and its experimental standard deviation stem:[s(bar(ii(R)))] as given in the last column of <<table_H-8>> [see <<scls_H-2-4>> and <<eq_H-10>> therein]. However, in calculating the standard uncertainty stem:[u(bar(ii(R))_x // bar(ii(R))_{"S"})], the correlation between stem:[ii(R)_x] and stem:[ii(R)_{"S"}] as represented by the ((correlation coefficient)) stem:[r(bar(ii(R))_x, bar(ii(R))_{"S"})] must betaken into account using<<eq_16>> in <<scls_5-2-2>>. [That equation yields for the relative estimated variance of stem:[bar(ii(R))_x//bar(ii(R))_{"S"}] the last three terms of <<eq_H-22b>>.]((("observations, independent pairs of simultaneous")))
 
-It should be recognized that the respective experimental standard deviations of stem:[ii(R)_x] and of stem:[ii(R)_{"S"}], stem:[sqrt(6) s(bar(ii(R))_x)] and stem:[sqrt(6) s(bar(ii(R))_{"S"})], indicate a variability in these quantities that is two to three times larger than the variability implied by the Poisson statistics of the counting process; the latter is included in the observed variability of the counts and need not be accounted for separately.
+It should be recognized that the respective experimental standard deviations of stem:[ii(R)_x] and of stem:[ii(R)_{"S"}], stem:[sqrt(6) s(bar(ii(R))_x)] and stem:[sqrt(6) s(bar(ii(R))_{"S"})], indicate a variability in these quantities that is two to three times larger than the variability implied by the Poisson statistics of the counting process; the latter is included in the observed variability of the counts and need not be accounted for separately.(((correlated output estimates or quantities)))
 
 
 [[table_H-8]]
@@ -1284,7 +1284,7 @@ Nevertheless, the difference between the values of stem:[ii(A)_x] resulting from
 [[scls_H-5]]
 === Analysis of variance
 
-This example provides a brief introduction to analysis of variance (ANOVA) methods. These statistical techniques are used to identify and quantify individual _random effects_ in a measurement so that they may be properly taken into account when the uncertainty of the result of the measurement is evaluated. Although ANOVA methods are applicable to a wide range of measurements, for example, the calibration of reference standards, such as Zener voltage standards and standards of mass, and the certification of reference materials, ANOVA methods by themselves cannot identify systematic effects that might be present.
+This example provides a brief introduction to analysis of variance (ANOVA) methods. These statistical techniques are used to identify and quantify individual _random effects_ in a measurement so that they may be properly taken into account when the uncertainty of the result of the measurement is evaluated. Although ((ANOVA)) methods are applicable to a wide range of measurements, for example, the calibration of reference standards, such as Zener voltage standards and standards of mass, and the certification of reference materials((("reference materials, certification of"))), ANOVA methods by themselves cannot identify systematic effects that might be present.
 
 There are many different models included under the general name of ANOVA. Because of its importance, the specific model discussed in this example is the balanced nested design. The numerical illustration of this model involves the calibration of a Zener voltage standard; the analysis should be relevant to a variety of practical measurement situations.
 
@@ -1364,7 +1364,7 @@ is the experimental variance of the stem:[ii(J) = 10] daily means (there is only
 [[scls_H-5-2-2]]
 ====== {blank}
 
-The consistency of the within-day variability and between-day variability of the observations canbe investigated by comparing two independent estimates of stem:[ii(sigma)_W^2], the within-day component of variance (that is, the variance of observations made on the same day).
+The consistency of the within-day variability and between-day variability of the observations canbe investigated by comparing two independent estimates of stem:[ii(sigma)_W^2], the within-day component of variance (that is, the variance of observations made on the same day).((("variance, pooled estimate of (or pooled experimental standard deviation)")))
 
 The first estimate of stem:[ii(sigma)_W^2], denoted by stem:[s_a^2], is obtained from the observed variation of the daily means stem:[bar(ii(V))_j]. Since stem:[bar(ii(V))_j] is the average of stem:[ii(K)] observations, its estimated variance stem:[s^2 (bar(ii(V))_j)], under the assumption that the between-day component of variance is zero, estimates stem:[ii(sigma)_W^2//ii(K)]. It then follows from <<eq_H-25d>> that
 
@@ -1386,13 +1386,13 @@ s_{"b"}^2 = bar(s^2(ii(V)_{jk})) = 1/ii(J) sum_{j=1}^ii(J) s^2 (ii(V)_{jk}) = 1/
 
 which is an estimate of stem:[ii(sigma)_W^2] having stem:[ii(nu)_{"b"} = ii(J)(ii(K) - 1) = 40] degrees of freedom.
 
-The estimates of stem:[ii(sigma)_W^2] given by <<eq_H-26a>> and <<eq_H-26b>> are stem:[s_{"a"}^2 = (128" "rm(mu V))^2] and stem:[s_{"b"}^2 = (85" "rm(mu V))^2], respectively (see <<table_H-9>>). Since the estimate stem:[s_{"a"}^2] is based on the variability of the daily means while the estimate stem:[s_{"b"}^2] is based on the variability of the daily observations, their difference indicates the possible presence of an effect that varies from one day to another but that remains relatively constant when observations are made on any single day. The stem:[ii(F)]-test is used to test this possibility, and thus the assumption that the between-day component of variance is zero.
+The estimates of stem:[ii(sigma)_W^2] given by <<eq_H-26a>> and <<eq_H-26b>> are stem:[s_{"a"}^2 = (128" "rm(mu V))^2] and stem:[s_{"b"}^2 = (85" "rm(mu V))^2], respectively (see <<table_H-9>>). Since the estimate stem:[s_{"a"}^2] is based on the variability of the daily means while the estimate stem:[s_{"b"}^2] is based on the variability of the daily observations, their difference indicates the possible presence of an effect that varies from one day to another but that remains relatively constant when observations are made on any single day. The ((stem:[ii(F)]-test)) is used to test this possibility, and thus the assumption that the between-day component of variance is zero.
 
 
 [[scls_H-5-2-3]]
 ====== {blank}
 
-The stem:[ii(F)]-distribution is the probability distribution of the ratio stem:[ii(F)(ii(nu)_{"a"},ii(nu)_{"b"}) = s_{"a"}^2(ii(nu)_{"a"})//s_{"b"}^2(ii(nu)_{"b"})] of two independent estimates, stem:[s_{"a"}^2 (ii(nu)_{"a"})] and stem:[s_{"b"}^2 (ii(nu)_{"b"})], of the variance stem:[ii(sigma)^2] of a normally distributed random variable <<BOX1978>>. The parameters stem:[ii(nu)_{"a"}] and stem:[ii(nu)_{"b"}] are the respective degrees of freedom of the two estimates and stem:[0 <= ii(F)(ii(nu)_{"a"},ii(nu)_{"b"}) < oo]. Values of stem:[ii(F)] are tabulated for different values of stem:[ii(nu)_{"a"}] and stem:[ii(nu)_{"b"}] and various quantiles of the stem:[ii(F)]-distribution. A value of stem:[F(ii(nu)_{"a"}, ii(nu)_{"b"}) > ii(F)_{0.95}] or stem:[F(ii(nu)_{"a"}, ii(nu)_{"b"}) > ii(F)_{0.975}] (the critical value) is usually interpreted as indicating that stem:[s_{"a"}^2 (ii(nu)_{"a"})] is larger than stem:[s_{"b"}^2 (ii(nu)_{"b"})] by a statistically significant amount; and that the probability of a value of stem:[ii(F)] as large as that observed, if the two estimates were estimates of the same variance, is less than stem:[0.05] or stem:[0.025], respectively. (Other critical values may also be chosen, such as stem:[ii(F)_{0.99}].)
+The ((stem:[ii(F)]-distribution)) is the probability distribution of the ratio stem:[ii(F)(ii(nu)_{"a"},ii(nu)_{"b"}) = s_{"a"}^2(ii(nu)_{"a"})//s_{"b"}^2(ii(nu)_{"b"})] of two independent estimates, stem:[s_{"a"}^2 (ii(nu)_{"a"})] and stem:[s_{"b"}^2 (ii(nu)_{"b"})], of the variance stem:[ii(sigma)^2] of a normally distributed random variable <<BOX1978>>. The parameters stem:[ii(nu)_{"a"}] and stem:[ii(nu)_{"b"}] are the respective degrees of freedom of the two estimates and stem:[0 <= ii(F)(ii(nu)_{"a"},ii(nu)_{"b"}) < oo]. Values of stem:[ii(F)] are tabulated for different values of stem:[ii(nu)_{"a"}] and stem:[ii(nu)_{"b"}] and various quantiles of the stem:[ii(F)]-distribution. A value of stem:[F(ii(nu)_{"a"}, ii(nu)_{"b"}) > ii(F)_{0.95}] or stem:[F(ii(nu)_{"a"}, ii(nu)_{"b"}) > ii(F)_{0.975}] (the critical value) is usually interpreted as indicating that stem:[s_{"a"}^2 (ii(nu)_{"a"})] is larger than stem:[s_{"b"}^2 (ii(nu)_{"b"})] by a statistically significant amount; and that the probability of a value of stem:[ii(F)] as large as that observed, if the two estimates were estimates of the same variance, is less than stem:[0.05] or stem:[0.025], respectively. (Other critical values may also be chosen, such as stem:[ii(F)_{0.99}].)
 
 
 [%landscape]
@@ -1426,7 +1426,7 @@ s_{"a"}^2 = ii(K)s^2 (bar(ii(V))_j) = 5(57" "rm(muV))^2 = (128" "rm(muV))^2 " " 
 [[scls_H-5-2-4]]
 ====== {blank}
 
-The application of the stem:[ii(F)]-test to the present numerical example yields
+The application of the ((stem:[ii(F)]-test)) to the present numerical example yields
 
 [stem]
 ++++
@@ -1439,7 +1439,7 @@ with stem:[ii(nu)_a = ii(J) - 1 = 9] degrees of freedom in the numerator and ste
 [[scls_H-5-2-5]]
 ====== {blank}
 
-If the existence of a between-day effect is rejected because the difference between stem:[s_{"a"}^2] and stem:[s_{"b"}^2] is not viewed as statistically significant (an imprudent decision because it could lead to an underestimate of the uncertainty), the estimated variance stem:[s^2(bar(ii(V)))] of stem:[bar(ii(V))] should be calculated from <<eq_H-24b>>. That relation is equivalent to pooling the estimates stem:[s_{"a"}^2] and stem:[s_{"b"}^2] (that is, taking a weighted average of stem:[s_{"a"}^2] and stem:[s_{"b"}^2], each weighted by its respective degrees of freedom stem:[ii(nu)_{"a"}] and stem:[ii(nu)_{"b"}] -- see <<note_H-3-6>>) to obtain the best estimate of the variance of the observations; and dividing that estimate by stem:[ii(JK)], the number of observations, to obtain the best estimate stem:[s^2(bar(ii(V)))] of the variance of the mean of the observations. Following this procedure one obtains
+If the existence of a between-day effect is rejected because the difference between stem:[s_{"a"}^2] and stem:[s_{"b"}^2] is not viewed as statistically significant (an imprudent decision because it could lead to an underestimate of the uncertainty), the estimated variance stem:[s^2(bar(ii(V)))] of stem:[bar(ii(V))] should be calculated from <<eq_H-24b>>. That relation is equivalent to pooling the estimates stem:[s_{"a"}^2] and stem:[s_{"b"}^2] (that is, taking a weighted average of stem:[s_{"a"}^2] and stem:[s_{"b"}^2], each weighted by its respective degrees of freedom stem:[ii(nu)_{"a"}] and stem:[ii(nu)_{"b"}] -- see <<note_H-3-6>>) to obtain the best estimate of the variance of the observations; and dividing that estimate by stem:[ii(JK)], the number of observations, to obtain the best estimate stem:[s^2(bar(ii(V)))] of the variance of the mean of the observations. Following this procedure one obtains((("variance, pooled estimate of (or pooled experimental standard deviation)")))
 
 [[eq_H-28a]]
 [stem,subsequence=W]
@@ -1530,20 +1530,20 @@ In a real measurement an apparent between-day effect should be further investiga
 
 
 [[scls_H-5-3]]
-==== The role of ANOVA in measurement
+==== The role of ANOVA in measurement((("measurement, role of ANOVA in")))
 
 [[scls_H-5-3-1]]
 ====== {blank}
 
-This voltage standard example illustrates what is generally termed a balanced, one-stage nested design. It is a one-stage nested design because there is one level of "nesting" of the observations with one factor, the day on which observations are made, being varied in the measurement. It is balanced because the same number of observations is made on each day. The analysis presented in the example can be used to determine if there is an "operator effect", an "instrument effect", a "laboratory effect", a "sample effect", or even a "method effect" in a particular measurement. Thus in the example, one might imagine replacing the observations made on the stem:[ii(J)] different days by observations made on the same day but by stem:[ii(J)] different operators; the between-day component of variance becomes then a component of variance associated with different operators.
+This voltage standard example illustrates what is generally termed a balanced, one-stage nested design((("design, balanced nested"))). It is a one-stage nested design because there is one level of "nesting" of the observations with one factor, the day on which observations are made, being varied in the measurement. It is balanced because the same number of observations is made on each day. The analysis presented in the example can be used to determine if there is an "operator effect", an "instrument effect", a "laboratory effect", a "sample effect", or even a "method effect" in a particular measurement. Thus in the example, one might imagine replacing the observations made on the stem:[ii(J)] different days by observations made on the same day but by stem:[ii(J)] different operators; the between-day component of variance becomes then a component of variance associated with different operators.
 
 
 [[scls_H-5-3-2]]
 ====== {blank}
 
-As noted in <<scls_H-5>>, ANOVA methods are widely used in the certification of reference materials (RMs) by interlaboratory testing. Such certification usually involves having a number of independent, equally competent laboratories measure samples of a material for the property for which the material is to be certified. It is generally assumed that the differences between individual results, both within and between laboratories, are statistical in nature regardless of the causes. Each laboratory mean is considered an unbiased estimate of the property of the material, and usually the unweighted mean of the laboratory means is assumed to be the best estimate of that property.
+As noted in <<scls_H-5>>, ANOVA methods are widely used in the certification of reference materials((("reference materials, certification of"))) (RMs) by interlaboratory testing. Such certification usually involves having a number of independent, equally competent laboratories measure samples of a material for the property for which the material is to be certified. It is generally assumed that the differences between individual results, both within and between laboratories, are statistical in nature regardless of the causes. Each laboratory mean is considered an unbiased estimate of the property of the material, and usually the unweighted mean of the laboratory means is assumed to be the best estimate of that property.
 
-An RM certification might involve stem:[ii(I)] different laboratories, each of which measures the requisite property of stem:[ii(J)] different samples of the material, with each measurement of a sample consisting of stem:[ii(K)] independent repeatedobservations. Thus the total number of observations is stem:[ii(IJK)] and the total number of samples is stem:[ii(IJ)]. This is an example of a balanced, two- stage nested design analogous to the one-stage voltage-standard example above. In this case, there are two levels of "nesting" of the observations with two different factors, sample and laboratory, being varied in the measurement. The design is balanced because each sample is observed the same number of times (stem:[ii(K)]) in each laboratory and each laboratory measures the same number of samples (stem:[ii(J)]). In further analogy with the voltage-standard example, in the RM case the purpose of the analysis of the data is to investigate the possible existence of a between-samples effect and a between-laboratories effect, and to determine the proper uncertainty to assign to the best estimate of the value of the property to be certified. In keeping with the previous paragraph, that estimate is assumed to be the mean of the stem:[ii(I)] laboratory means, which is also the mean of the stem:[ii(IJK)] observations.
+An RM certification might involve stem:[ii(I)] different laboratories, each of which measures the requisite property of stem:[ii(J)] different samples of the material, with each measurement of a sample consisting of stem:[ii(K)] independent repeatedobservations. Thus the total number of observations is stem:[ii(IJK)] and the total number of samples is stem:[ii(IJ)]. This is an example of a balanced, two- stage nested design analogous to the one-stage voltage-standard example above. In this case, there are two levels of "nesting" of the observations with two different factors, sample and laboratory, being varied in the measurement. The design((("design, balanced nested"))) is balanced because each sample is observed the same number of times (stem:[ii(K)]) in each laboratory and each laboratory measures the same number of samples (stem:[ii(J)]). In further analogy with the voltage-standard example, in the RM case the purpose of the analysis of the data is to investigate the possible existence of a between-samples effect and a between-laboratories effect, and to determine the proper uncertainty to assign to the best estimate of the value of the property to be certified. In keeping with the previous paragraph, that estimate is assumed to be the mean of the stem:[ii(I)] laboratory means, which is also the mean of the stem:[ii(IJK)] observations.
 
 
 [[scls_H-5-3-3]]
@@ -1557,7 +1557,7 @@ Nonetheless, as indicated in <<scls_3-4-1>>, varying all input quantities is rar
 [[scls_H-6]]
 === Measurements on a reference scale: hardness
 
-Hardness is an example of a physical concept that cannot be quantified without reference to a method of measurement; it has no unit that is independent of such a method. The quantity "hardness" is unlike classical measurable quantities in that it cannot be entered into algebraic equations to define other measurable quantities (though it is sometimes used in empirical equations that relate hardness to another property for a category of materials). Its magnitude is determined by a conventional measurement, that of a linear dimension of an indentation in a block of the material of interest, or _sample block_. The measurement is made according to a written standard, which includes a description of the "indentor", the construction of the machine by which the indentor is applied, and the way in which the machine is to be operated. There is more than one written standard, so there is more than one scale of hardness.
+Hardness is an example of a physical concept that cannot be quantified without reference to a method of measurement((("method of measurement, unit dependent on the"))); it has no unit that is independent of such a method. The quantity "hardness" is unlike classical measurable quantities in that it cannot be entered into algebraic equations to define other measurable quantities (though it is sometimes used in empirical equations that relate hardness to another property for a category of materials). Its magnitude is determined by a conventional measurement, that of a linear dimension of an indentation in a block of the material of interest, or _sample block_. The measurement is made according to a written standard, which includes a description of the "indentor", the construction of the machine by which the indentor is applied, and the way in which the machine is to be operated. There is more than one written standard, so there is more than one scale of hardness.
 
 The hardness reported is a function (depending on the scale) of the linear dimension that is measured. In the example given in this subclause, it is a linear function of the arithmetic mean or average of the depths of five repeated indentations, but for some other scales the function is nonlinear.
 
@@ -1617,7 +1617,7 @@ where for simplicity of notation stem:[h -= h_{"Rockwell C"}].
 [[scls_H-6-3-1]]
 ===== Uncertainty of the average depth of indentation stem:[bar(d)] of the sample block, stem:[u(bar(d))]
 
-_Uncertainty of repeated observations_. Strict repetition of an observation is not possible because a new indentation cannot be made on the site of an earlier one. Since each indentation must be made on a different site, any variation in the results includes the effect of variations in hardness between different sites. Thus stem:[u(bar(d))], the standard uncertainty of the average of the depths of five indentations in the sample block by the calibration machine, is taken as stem:[s_{"p"}(d_k)// sqrt(5)], where stem:[s_{"p"}(d_k)] is the pooled experimental standard deviation of the depths of indentations determined by "repeated" measurements on a block known to have very uniform hardness (see <<scls_4-2-4>>).
+_Uncertainty of repeated observations_. Strict repetition of an observation is not possible because a new indentation cannot be made on the site of an earlier one. Since each indentation must be made on a different site, any variation in the results includes the effect of variations in hardness between different sites. Thus stem:[u(bar(d))], the standard uncertainty of the average of the depths of five indentations in the sample block by the calibration machine, is taken as stem:[s_{"p"}(d_k)// sqrt(5)], where stem:[s_{"p"}(d_k)] is the pooled experimental standard deviation of the depths of indentations determined by "repeated" measurements on a block known to have very uniform hardness (see <<scls_4-2-4>>).((("variance, pooled estimate of (or pooled experimental standard deviation)")))
 
 _Uncertainty of indication_. Although the correction to stem:[bar(d)] due to the display of the calibration machine is zero, there is an uncertainty in stem:[bar(d)] due to the uncertainty of the indication of depth due to the resolution stem:[ii(delta)] of the display given by stem:[u^2(ii(delta)) = ii(delta)^2//12] (see <<scls_F-2-2-1>>). The estimated variance of stem:[bar(d)] is thus
 
@@ -1646,7 +1646,7 @@ stem:[m] series of indentations stem:[z_{"S",ik}] made by the standard machine;
 stem:[s_{"av"}^2(bar(z)) = [sum_{i=1}^n s^2 (bar(z)_i)]//n]:: is the average of the experimental variances of the means of each of the stem:[n] series of indentations stem:[z_{ik}] made by the calibration machine.
 
 
-NOTE: The variances stem:[s_{"av"}^2(bar(z)_{"S"})] and stem:[s_{"av"}^2(bar(z))] are pooled estimates of variance -- see the discussion of <<eq_H-26b>>.
+NOTE: The variances stem:[s_{"av"}^2(bar(z)_{"S"})] and stem:[s_{"av"}^2(bar(z))] are pooled estimates of variance -- see the discussion of <<eq_H-26b>>.((("variance, pooled estimate of (or pooled experimental standard deviation)")))
 
 
 

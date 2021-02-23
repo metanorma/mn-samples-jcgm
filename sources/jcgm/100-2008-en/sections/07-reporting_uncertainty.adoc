@@ -1,6 +1,6 @@
 
 [[cls_7]]
-== Reporting uncertainty
+== Reporting uncertainty((("uncertainty, reporting")))
 
 [[scls_7-1]]
 === General guidance
@@ -8,25 +8,25 @@
 [[scls_7-1-1]]
 ==== {blank}
 
-In general, as one moves up the measurement hierarchy, more details are required on how a measurement result and its uncertainty were obtained. Nevertheless, at any level of this hierarchy, including commercial and regulatory activities in the marketplace, engineering work in industry, lower-echelon calibration facilities, industrial research and development, academic research, industrial primary standards and calibration laboratories, and the national standards laboratories and the BIPM, all of the information necessary for the re-evaluation of the measurement should be available to others who may have need of it. The primary difference is that at the lower levels of the hierarchical chain, more of the necessary information may be made available in the form of published calibration and test system reports, test specifications, calibration and test certificates, instruction manuals, international standards, national standards, and local regulations.
+In general, as one moves up the ((measurement hierarchy)), more details are required on how a measurement result and its uncertainty were obtained. Nevertheless, at any level of this hierarchy, including commercial and regulatory activities in the marketplace, engineering work in industry, lower-echelon calibration facilities, industrial research and development, academic research, industrial primary standards and calibration laboratories, and the national standards laboratories and the ((BIPM)), all of the information necessary for the re-evaluation of the measurement should be available to others who may have need of it. The primary difference is that at the lower levels of the hierarchical chain, more of the necessary information may be made available in the form of published calibration and test system reports, test specifications, calibration and test certificates, instruction manuals, international standards, national standards, and local regulations.((("measurement result and its uncertainty, availability of information describing a")))
 
 
 [[scls_7-1-2]]
 ==== {blank}
 
-When the details of a measurement, including how the uncertainty of the result was evaluated, are provided by referring to published documents, as is often the case when calibration results are reported on a certificate, it is imperative that these publications be kept up-to-date so that they are consistent with the measurement procedure actually in use.
+When the details of a measurement, including how the uncertainty of the result was evaluated, are provided by referring to published documents, as is often the case when calibration results are reported on a certificate, it is imperative that these publications be kept up-to-date so that they are consistent with the ((measurement procedure)) actually in use.
 
 
 [[scls_7-1-3]]
 ==== {blank}
 
-Numerous measurements are made every day in industry and commerce without any explicit report of uncertainty. However, many are performed with instruments subject to periodic calibration or legal inspection. If the instruments are known to be in conformance with their specifications or with the existing normative documents that apply, the uncertainties of their indications may be inferred from these specifications or from these normative documents.
+Numerous measurements are made every day in industry and commerce without any explicit report of uncertainty. However, many are performed with instruments subject to periodic calibration or legal inspection. If the instruments are known to be in conformance with their specifications or with the existing normative documents that apply, the uncertainties of their indications may be inferred from these specifications or from these normative documents.((("measurement result and its uncertainty, availability of information describing a")))((("uncertainty, lack of an explicit report of")))
 
 
 [[scls_7-1-4]]
 ==== {blank}
 
-Although in practice the amount of information necessary to document a measurement result depends on its intended use, the basic principle of what is required remains unchanged: when reporting the result of a measurement and its uncertainty, it is preferable to err on the side of providing too much information rather than too little. For example, one should
+Although in practice the amount of information necessary to document a measurement result depends on its intended use, the basic principle of what is required remains unchanged: when reporting the result of a measurement and its uncertainty, it is preferable to err on the side of providing too much information rather than too little. For example, one should((("measurement result and its uncertainty, reporting in detail a")))
 
 . describe clearly the methods used to calculate the measurement result and its uncertainty from the experimental observations and input data;
 . list all uncertainty components and document fully how they were evaluated;
@@ -52,20 +52,20 @@ When reporting the result of a measurement, and when the measure of uncertainty 
 If it is deemed useful for the intended users of the measurement result, for example, to aid in future calculations of coverage factors or to assist in understanding the measurement, one may indicate
 
 * the estimated effective degrees of freedom stem:[ii(nu)_{"eff"}] (see <<scls_G-4>>);
-* the Type A and Type B combined standard uncertainties stem:[u_{"cA"}(y)] and stem:[u_{"cB"}(y)] and their estimated effective degrees of freedom stem:[ii(nu)_{"effA"}] and stem:[ii(nu)_{"effB"}] (see <<note3_G-4-1>>).
+* the Type A(((combined standard uncertainty from Type A components alone)))((("degrees of freedom, effective, of Type A components alone")))(((Type A combined standard uncertainty))) and Type B(((combined standard uncertainty from Type B components alone)))((("degrees of freedom, effective, of Type B components alone")))(((Type B combined standard uncertainty))) combined standard uncertainties stem:[u_{"cA"}(y)] and stem:[u_{"cB"}(y)] and their estimated effective degrees of freedom stem:[ii(nu)_{"effA"}] and stem:[ii(nu)_{"effB"}] (see <<note3_G-4-1>>).((("combined standard uncertainty, relative")))((("combined standard uncertainty, reporting")))
 
 
 [[scls_7-2-2]]
 ==== {blank}
 
-When the measure of uncertainty is stem:[u_{"c"}(y)], it is preferable to state the numerical result of the measurement in one of the following four ways in order to prevent misunderstanding. (The quantity whose value is being reported is assumed to be a nominally 100 g standard of mass stem:[m_{"S"}]; the words in parentheses may be omitted for brevity if stem:[u_{"c"}] is defined elsewhere in the document reporting the result.)
+When the measure of uncertainty is stem:[u_{"c"}(y)], it is preferable to state the numerical result of the measurement in one of the following four ways in order to prevent misunderstanding. (The quantity whose value is being reported is assumed to be a nominally 100 g standard of mass stem:[m_{"S"}]; the words in parentheses may be omitted for brevity if stem:[u_{"c"}] is defined elsewhere in the document reporting the result.)((("measurement result and its uncertainty, formats for reporting a")))
 
 . "stem:[m_{"S"} = 100.02147" "rm(g)] with (a combined standard uncertainty) stem:[u_{"c"} = 0.35" "rm(mg)]."
 . "stem:[m_{"S"}= 100.02147(35) " "rm(g)], where the number in parentheses is the numerical value of (the combined standard uncertainty) stem:[u_{"c"}] referred to the corresponding last digits of the quoted result."
 . "stem:[m_{"S"} = 100.02147(0.00035) " "rm(g)], where the number in parentheses is the numerical value of (the combined standard uncertainty) stem:[u_{"c"}] expressed in the unit of the quoted result."
 . [[item_7-2-2d]]"stem:[m_{"S"} = (100.02147 pm 0.00035)" "rm(g)], where the number following the symbol stem:[pm] is the numerical value of (the combined standard uncertainty) stem:[u_{"c"}] and not a confidence interval."
 
-NOTE: The stem:[pm] format should be avoided whenever possible because it has traditionally been used to indicate an interval corresponding to a high level of confidence and thus may be confused with expanded uncertainty (see <<scls_7-2-4>>). Further, although the purpose of the caveat in <<item_7-2-2d>> is to prevent such confusion, writing stem:[ii(Y) = y pm u_{"c"}(y)] might still be misunderstood to imply, especially if the caveat is accidentally omitted, that an expanded uncertainty with stem:[k = 1] is intended and that the interval stem:[y - u_{"c"}(y) <= ii(Y) <= y + u_{"c"}(y)] has a specified level of confidence stem:[p], namely, that associated with the normal distribution (see <<scls_G-1-3>>). As indicated in <<scls_6-3-2>> and <<annexG>>, interpreting stem:[u_{"c"}(y)] in this way is usually difficult to justify.
+NOTE: The stem:[pm] format should be avoided whenever possible because it has traditionally been used to indicate an interval corresponding to a high level of confidence and thus may be confused with expanded uncertainty (see <<scls_7-2-4>>). Further, although the purpose of the caveat in <<item_7-2-2d>> is to prevent such confusion, writing stem:[ii(Y) = y pm u_{"c"}(y)] might still be misunderstood to imply, especially if the caveat is accidentally omitted, that an expanded uncertainty with stem:[k = 1] is intended and that the interval stem:[y - u_{"c"}(y) <= ii(Y) <= y + u_{"c"}(y)] has a specified level of confidence stem:[p], namely, that associated with the normal distribution (see <<scls_G-1-3>>). As indicated in <<scls_6-3-2>> and <<annexG>>, interpreting stem:[u_{"c"}(y)] in this way is usually difficult to justify.((("combined standard uncertainty, reporting")))
 
 
 [[scls_7-2-3]]
@@ -75,16 +75,16 @@ When reporting the result of a measurement, and when the measure of uncertainty 
 
 . give a full description of how the measurand stem:[ii(Y)] is defined;
 . state the result of the measurement as stem:[ii(Y) = y pm ii(U)] and give the units of stem:[y] and stem:[ii(U)];
-. include the relative expanded uncertainty stem:[ii(U)//|y|], stem:[|y| != 0], when appropriate;
+. include the relative expanded uncertainty((("expanded uncertainty, relative"))) stem:[ii(U)//|y|], stem:[|y| != 0], when appropriate;
 . give the value of stem:[k] used to obtain stem:[ii(U)] [or, for the convenience of the user of the result, give both stem:[k] and stem:[u_{"c"}(y)]];
 . give the approximate level of confidence associated with the interval stem:[y pm ii(U)] and state how it was determined;
-. give the information outlined in <<scls_7-2-7>> or refer to a published document that contains it.
+. give the information outlined in <<scls_7-2-7>> or refer to a published document that contains it.((("expanded uncertainty, reporting")))
 
 
 [[scls_7-2-4]]
 ==== {blank}
 
-When the measure of uncertainty is stem:[ii(U)], it is preferable, for maximum clarity, to state the numerical result of the measurement as in the following example. (The words in parentheses may be omitted for brevity if stem:[ii(U)], stem:[u_{"c"}], and stem:[k] are defined elsewhere in the document reporting the result.)
+When the measure of uncertainty is stem:[ii(U)], it is preferable, for maximum clarity, to state the numerical result of the measurement as in the following example. (The words in parentheses may be omitted for brevity if stem:[ii(U)], stem:[u_{"c"}], and stem:[k] are defined elsewhere in the document reporting the result.)((("measurement result and its uncertainty, formats for reporting a")))
 
 "stem:[m_{"S"} = (100.02147 pm 0.00079)" "rm(g)], where the number following the symbol stem:[pm] is the numerical value of (an expanded uncertainty) stem:[ii(U) = k u_{"c"}], with stem:[U] determined from (a combined standard uncertainty) stem:[u_{"c"} = 0.35" "rm(mg)] and (a coverage factor) stem:[k = 2], 26 based on the stem:[t]-distribution for stem:[ii(nu) = 9] degrees of freedom, and defines an interval estimated to have a level of confidence of 95 percent."
 
@@ -92,7 +92,7 @@ When the measure of uncertainty is stem:[ii(U)], it is preferable, for maximum c
 [[scls_7-2-5]]
 ==== {blank}
 
-If a measurement determines simultaneously more than one measurand, that is, if it provides two or more output estimates stem:[y_i] (see <<scls_H-2>>,<<scls_H-3>>, and <<scls_H-4>>), then, in addition to giving stem:[y_i] and stem:[u_{"c"}(y_i)], give the covariance matrix elements stem:[u(y_i,y_j)] or the elements stem:[r(y_i,y_j)] of the *correlation coefficient matrix* (<<note2_C-3-6>>) (and preferably both).
+If a measurement determines simultaneously more than one measurand, that is, if it provides two or more output estimates stem:[y_i] (see <<scls_H-2>>,<<scls_H-3>>, and <<scls_H-4>>), then, in addition to giving stem:[y_i] and stem:[u_{"c"}(y_i)], give the covariance matrix elements stem:[u(y_i,y_j)] or the elements stem:[r(y_i,y_j)] of the *correlation coefficient matrix* (<<note2_C-3-6>>) (and preferably both).(((correlated output estimates or quantities)))(((correlation coefficient matrix)))(((covariance matrix)))
 
 
 [[scls_7-2-6]]
@@ -100,13 +100,13 @@ If a measurement determines simultaneously more than one measurand, that is, if 
 
 The numerical values of the estimate stem:[y] and its standard uncertainty stem:[u_{"c"}(y)] or expanded uncertainty stem:[ii(U)] should not be given with an excessive number of digits. It usually suffices to quote stem:[u_{"c"}(y)] and stem:[ii(U)] [as well as the standard uncertainties stem:[u(x_i)] of the input estimates stem:[x_i]] to at most two significant digits, although in some cases it may be necessary to retain additional digits to avoid round-off errors in subsequent calculations.
 
-In reporting final results, it may sometimes be appropriate to round uncertainties up rather than to the nearest digit. For example, stem:[u_{"c"}(y) = 10.47" "rm(m Omega)] might be rounded up to stem:[11" "rm(m Omega)]. However, common sense should prevail and a value such as stem:[u(x_i) = 28.05" "rm(kHz)] should be rounded down to 28 kHz. Output and input estimates should be rounded to be consistent with their uncertainties; for example, if stem:[y = 10.05762" "rm(Omega)] with stem:[u_{"c"}(y) = 27" "rm(m Omega)], stem:[y] should be rounded to stem:[10.058" "rm(Omega)]. Correlation coefficients should be given with three-digit accuracy if theirabsolute values are near unity.
+In reporting final results, it may sometimes be appropriate to round uncertainties((("uncertainties, rounding of"))) up rather than to the nearest digit. For example, stem:[u_{"c"}(y) = 10.47" "rm(m Omega)] might be rounded up to stem:[11" "rm(m Omega)]. However, common sense should prevail and a value such as stem:[u(x_i) = 28.05" "rm(kHz)] should be rounded down to 28 kHz. Output and input estimates should be rounded to be consistent with their uncertainties; for example, if stem:[y = 10.05762" "rm(Omega)] with stem:[u_{"c"}(y) = 27" "rm(m Omega)], stem:[y] should be rounded to stem:[10.058" "rm(Omega)]. Correlation coefficients should be given with three-digit accuracy if theirabsolute values are near unity.((("correlation coefficient, significant digits for a")))((("uncertainties, significant digits for")))
 
 
 [[scls_7-2-7]]
 ==== {blank}
 
-In the detailed report that describes how the result of a measurement and its uncertainty were obtained, one should follow the recommendations of <<scls_7-1-4>> and thus
+In the detailed report that describes how the result of a measurement and its uncertainty were obtained, one should follow the recommendations of <<scls_7-1-4>> and thus((("measurement result and its uncertainty, reporting in detail a")))
 
 . give the value of each input estimate stem:[x_i] and its standard uncertainty stem:[u(x_i)] together with a description of how they were obtained;
 . give the estimated covariances or estimated correlation coefficients (preferably both) associated with all input estimates that are correlated, and the methods used to obtain them;

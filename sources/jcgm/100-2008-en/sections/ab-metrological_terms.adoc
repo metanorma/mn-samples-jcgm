@@ -6,7 +6,7 @@
 [[scls_B-1]]
 === Source of definitions
 
-The definitions of the general metrological terms relevant to this _Guide_ that are given here have been taken from the _International vocabulary of basic and general terms in metrology_ (abbreviated VIM), second edition, 1993 footnoteblock:[fB-1] <<International1993>>, published by the International Organization for Standardization (ISO), in the name of the seven organizations that supported its development and nominated the experts who prepared it: the Bureau International des Poids et Mesures (BIPM), the International Electrotechnical Commission (IEC), the International Federation of Clinical Chemistry (IFCC), ISO, the International Union of Pure and Applied Chemistry (IUPAC), the International Union of Pure and Applied Physics (IUPAP), and the International Organization of Legal Metrology (OIML). The VIM should be the first source consulted for the definitions of terms not included either here or in the text.
+The definitions of the general metrological terms relevant to this _Guide_ that are given here have been taken from the _International vocabulary of basic and general terms in metrology_ (abbreviated ((VIM))), second edition, 1993 footnoteblock:[fB-1] <<International1993>>, published by the International Organization for Standardization (ISO), in the name of the seven organizations that supported its development and nominated the experts who prepared it: the Bureau International des Poids et Mesures (BIPM), the International Electrotechnical Commission (IEC), the International Federation of Clinical Chemistry (IFCC), ISO, the International Union of Pure and Applied Chemistry \(((IUPAC))), the International Union of Pure and Applied Physics \(((IUPAP))), and the International Organization of Legal Metrology (OIML). The VIM should be the first source consulted for the definitions of terms not included either here or in the text.
 
 [[fB-1]]
 [NOTE]
@@ -28,12 +28,12 @@ The terms in boldface in some notes are additional metrological terms defined in
 
 
 [[scls_B-2-1]]
-==== (measurable) quantity
+==== (measurable) quantity(((measurable quantity)))
 
 attribute of a phenomenon, body or substance that may be distinguished qualitatively and determined quantitatively
 
 [[note1_B-2-1]]
-NOTE: The term quantity may refer to a quantity in a general sense (see <<example1_B-2-1>>) or to a *particular quantity* (see <<example2_B-2-1>>).
+NOTE: The term quantity may refer to a quantity in a general sense (see <<example1_B-2-1>>) or to a *((particular quantity))* (see <<example2_B-2-1>>).
 
 [[example1_B-2-1]]
 [example]
@@ -75,7 +75,7 @@ The ISO 31 series is under revision as a series of ISO 80000 and IEC 80000 docum
 
 
 [[scls_B-2-2]]
-==== value (of a quantity)
+==== value (of a quantity)(((value of a quantity)))
 
 magnitude of a particular quantity generally expressed as a unit of measurement multiplied by a number
 
@@ -102,7 +102,7 @@ NOTE: A quantity that cannot be expressed as a unit of measurement multiplied by
 
 
 [[scls_B-2-3]]
-==== true value (of a quantity)
+==== true value (of a quantity)(((true value of a quantity)))
 
 value consistent with the definition of a given particular quantity
 
@@ -120,7 +120,7 @@ _Guide_ Comment: See <<annexD>>, in particular <<scls_D-3-5>>, _for_ the reasons
 
 
 [[scls_B-2-4]]
-==== conventional true value (of a quantity)
+==== conventional true value (of a quantity)(((conventional true value of a quantity)))
 
 value attributed to a particular quantity and accepted, sometimes by convention, as having an uncertainty appropriate for a given purpose
 
@@ -143,7 +143,7 @@ _Guide_ Comment: See the _Guide_ Comment to <<scls_B-2-3>>.
 
 
 [[scls_B-2-5]]
-==== measurement
+==== ((measurement))
 
 set of operations having the object of determining a value of a quantity
 
@@ -155,7 +155,7 @@ NOTE: The operations may be performed automatically.
 
 
 [[scls_B-2-6]]
-==== principle of measurement
+==== ((principle of measurement))
 
 scientific basis of a measurement
 
@@ -177,7 +177,7 @@ The Raman effect applied to the measurement of the wave number of molecular vibr
 
 
 [[scls_B-2-7]]
-==== method of measurement
+==== ((method of measurement))
 
 logical sequence of operations, described generically, used in the performance of measurements
 
@@ -196,7 +196,7 @@ Methods of measurement may be qualified in various ways such as:
 
 
 [[scls_B-2-8]]
-==== measurement procedure
+==== ((measurement procedure))
 
 set of operations, described specifically, used in the performance of particular measurements according to a given method
 
@@ -223,7 +223,7 @@ NOTE: The specification of a measurand may require statements about quantities s
 
 
 [[scls_B-2-10]]
-==== influence quantity
+==== ((influence quantity))
 
 quantity that is not the measurand but that affects the result of the measurement
 
@@ -244,7 +244,7 @@ _Guide_ Comment: The definition of influence quantity is understood to include v
 
 
 [[scls_B-2-11]]
-==== result of a measurement
+==== ((result of a measurement))
 
 value attributed to a measurand, obtained by measurement
 
@@ -267,7 +267,7 @@ NOTE: A complete statement of the result of a measurement includes information a
 
 
 [[scls_B-2-12]]
-==== uncorrected result
+==== ((uncorrected result))
 
 result of a measurement before correction for systematic error
 
@@ -277,7 +277,7 @@ result of a measurement before correction for systematic error
 
 
 [[scls_B-2-13]]
-==== corrected result
+==== ((corrected result))
 
 result of a measurement after correction for systematic error
 
@@ -287,13 +287,13 @@ result of a measurement after correction for systematic error
 
 
 [[scls_B-2-14]]
-==== accuracy of measurement
+==== ((accuracy of measurement))
 
 closeness of the agreement between the result of a measurement and a true value of the measurand
 
 NOTE: "Accuracy" is a qualitative concept.
 
-NOTE: The term *precision* should not be used for "accuracy".
+NOTE: The term *((precision))* should not be used for "accuracy".
 
 // [VIM:1993, definition 3.5]
 [.source]
@@ -303,12 +303,12 @@ _Guide_ Comment: See the _Guide_ Comment to <<scls_B-2-3>>.
 
 
 [[scls_B-2-15]]
-==== repeatability (of results of measurements)
+==== repeatability (of results of measurements)(((repeatability of results of measurements)))
 
 closeness of the agreement between the results of successive measurements of the same measurand carried out under the same conditions of measurement
 
 [[note1_B-2-15]]
-NOTE: These conditions are called *repeatability conditions*.
+NOTE: These conditions are called *((repeatability conditions))*.
 
 [NOTE]
 ====
@@ -329,7 +329,7 @@ NOTE: Repeatability may be expressed quantitatively in terms of the dispersion c
 
 
 [[scls_B-2-16]]
-==== reproducibility (of results of measurements)
+==== reproducibility (of results of measurements)(((reproducibility of results of measurements)))
 
 closeness of the agreement between the results of measurements of the same measurand carried out under changed conditions of measurement
 
@@ -359,7 +359,7 @@ NOTE: Results are here usually understood to be corrected results.
 
 
 [[scls_B-2-17]]
-==== experimental standard deviation
+==== experimental standard deviation((("standard deviation, experimental")))
 
 for a series of stem:[n] measurements of the same measurand, the quantity stem:[s(q_k)] characterizing the dispersion of the results and given by the formula:
 
@@ -373,7 +373,7 @@ stem:[q_k] being the result of the stem:[k]th measurement and stem:[bar(q)] bein
 NOTE: Considering the series of stem:[n] values as a sample of a distribution, stem:[bar(q)] is an unbiased estimate of the mean stem:[ii(mu)_q], and stem:[s^2(q_k)] is an unbiased estimate of the variance stem:[ii(sigma)^2], of that distribution.
 
 [[note2_B-2-17]]
-NOTE: The expression stem:[s(q_k)//sqrt(n)] is an estimate of the standard deviation of the distribution of stem:[bar(q)] and is called the *experimental standard deviation of the mean*.
+NOTE: The expression stem:[s(q_k)//sqrt(n)] is an estimate of the standard deviation of the distribution of stem:[bar(q)] and is called the *experimental standard deviation of the mean*.((("standard deviation of the mean, experimental")))
 
 NOTE: "Experimental standard deviation of the mean" is sometimes incorrectly called *standard error of the mean*.
 
@@ -383,7 +383,7 @@ _Guide_ Comment: Some of the symbols used in the VIM have been changed in order 
 
 
 [[scls_B-2-18]]
-==== uncertainty (of measurement)
+==== uncertainty (of measurement)(((uncertainty of measurement)))
 
 parameter, associated with the result of a measurement, that characterizes the dispersion of the values that could reasonably be attributed to the measurand
 
@@ -403,11 +403,11 @@ _Guide_ Comment: It is pointed out in the VIM that this definition and the notes
 [[scls_B-2-19]]
 ==== error (of measurement)
 
-result of a measurement minus a true value of the measurand
+result of a measurement minus a true value of the ((measurand))
 
 NOTE: Since a true value cannot be determined, in practice a conventional true value is used [see VIM:1993, definitions 1.19 (<<scls_B-2-3>>) and 1.20 (<<scls_B-2-4>>)].
 
-NOTE: When it is necessary to distinguish "error" from "relative error", the former is sometimes called *absolute error of measurement*. This should not be confused with *absolute value of error*, which is the modulus of the error.
+NOTE: When it is necessary to distinguish "error" from "relative error", the former is sometimes called *absolute ((error of measurement))*. This should not be confused with *absolute value of error*, which is the modulus of the error.
 
 // [VIM:1993, definition 3.10]
 [.source]
@@ -417,7 +417,7 @@ _Guide_ Comment: If the result of a measurement depends on the values of quantit
 
 
 [[scls_B-2-20]]
-==== relative error
+==== ((relative error))
 
 error of measurement divided by a true value of the measurand
 
@@ -447,7 +447,7 @@ _Guide_ Comment: See the _Guide_ Comment to <<scls_B-2-22>>.
 
 
 [[scls_B-2-22]]
-==== systematic error
+==== ((systematic error))
 
 mean that would result from an infinite number of measurements of the same measurand carried out under repeatability conditions minus a true value of the measurand
 
@@ -465,7 +465,7 @@ _Guide_ Comment: The error of the result of a measurement (see <<scls_B-2-19>>) 
 
 
 [[scls_B-2-23]]
-==== correction
+==== ((correction))
 
 value added algebraically to the uncorrected result of a measurement to compensate for systematic error
 

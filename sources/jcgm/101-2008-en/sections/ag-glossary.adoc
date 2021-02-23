@@ -71,7 +71,7 @@ stem:[N]:: number of input quantities stem:[ii(X)_1,..., ii(X)_N]
 
 stem:[N(0, 1)]:: standard Gaussian distribution
 
-stem:["N"(mu,sigma^2)]:: Gaussian distribution with parameters stem:[mu] and stem:[sigma^2]
+stem:["N"(ii(mu),ii(sigma)^2)]:: Gaussian distribution with parameters stem:[ii(mu)] and stem:[ii(sigma)^2]
 
 stem:["N"(bb(mu),bb(V))]:: multivariate Gaussian distribution with parameters stem:[bb(mu)] and stem:[bb(V)]
 
@@ -109,7 +109,7 @@ stem:["Trap"(a,b,beta)]:: trapezoidal distribution over the interval stem:[[a,b\
 
 stem:[t_{nu}]:: central stem:[t]-distribution with stem:[nu] degrees of freedom
 
-stem:[t_{nu} (mu, sigma^2)]:: scaled and shifted stem:[t]-distribution with parameters stem:[mu] and stem:[sigma^2], and stem:[nu] degrees of freedom
+stem:[t_{nu} (ii(mu), ii(sigma)^2)]:: scaled and shifted stem:[t]-distribution with parameters stem:[ii(mu)] and stem:[ii(sigma)^2], and stem:[nu] degrees of freedom
 
 stem:[U(0,1)]:: standard arc sine (U-shaped) distribution over the interval stem:[[0,1\]]
 
@@ -197,7 +197,7 @@ stem:[lambda_1]:: top semi-width of the trapezoid for a trapezoidal distribution
 
 stem:[lambda_2]:: base semi-width of the trapezoid for a trapezoidal distribution
 
-stem:[mu]:: expectation of a quantity characterized by a probability distribution
+stem:[ii(mu)]:: expectation of a quantity characterized by a probability distribution
 
 stem:[nu]:: degrees of freedom of a stem:[t]-distribution or a chi-squared distribution
 
@@ -211,9 +211,9 @@ stem:[bb(xi)]:: vector variable stem:[(xi_1,..., xi_N )^{sf(T)}] describing the 
 
 stem:[xi_i]:: variable describing the possible values of the input quantity stem:[ii(X)_i]
 
-stem:[sigma]:: standard deviation of a quantity characterized by a probability distribution
+stem:[ii(sigma)]:: standard deviation of a quantity characterized by a probability distribution
 
-stem:[sigma^2]:: variance (squared standard deviation) of a quantity characterized by a probability distribution
+stem:[ii(sigma)^2]:: variance (squared standard deviation) of a quantity characterized by a probability distribution
 
 stem:[Phi]:: phase of a quantity that cycles sinusoidally
 

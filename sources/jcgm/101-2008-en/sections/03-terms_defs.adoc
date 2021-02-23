@@ -41,7 +41,7 @@ derivative, when it exists, of the distribution function
 
 [stem%unnumbered]
 ++++
-g_X (xi) = "d"G_X (xi)//"d"xi
+g_X (xi) = "d"ii(G)_X (xi)//"d"xi
 ++++
 
 [NOTE]
@@ -65,13 +65,13 @@ probability distribution of a continuous random variable stem:[ii(X)] having the
 
 [stem%unnumbered]
 ++++
-g_X (xi) = 1 /{sigma sqrt(2 pi)} exp[- 1/2 ({xi - ii(mu)}/sigma)^2],
+g_X (xi) = 1 /{ii(sigma) sqrt(2 pi)} exp[- 1/2 ({xi - ii(mu)}/ii(sigma))^2],
 ++++
 
 for stem:[-infty < xi < +infty]
 
 
-NOTE: stem:[mu] is the expectation and stem:[sigma] is the standard deviation of stem:[ii(X)].
+NOTE: stem:[ii(mu)] is the expectation and stem:[ii(sigma)] is the standard deviation of stem:[ii(X)].
 
 // &#x200c;[Adapted from ISO 3534-1:1993 1.37; GUM:1995 C.2.14]
 [.source]

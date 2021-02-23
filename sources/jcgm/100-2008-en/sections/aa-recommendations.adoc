@@ -4,9 +4,9 @@
 == Recommendations of Working Group and CIPM
 
 [[scls_A-1]]
-=== Recommendation INC-1 (1980)
+=== ((Recommendation INC-1 (1980)))
 
-The Working Group on the Statement of Uncertainties (see <<foreword>>) was convened in October 1980 by the Bureau International des Poids et Mesures (BIPM) in response to a request of the Comité International des Poids et Mesures (CIPM). It prepared a detailed report for consideration by the CIPM that concluded with Recommendation INC-1 (1980) <<KAARLS1981>>. The English translation of this Recommendation is given in <<scls_0-7>> of this _Guide_ and the French text, which is authoritative, is as follows <<KAARLS1981>>:
+The ((Working Group on the Statement of Uncertainties)) (see <<foreword>>) was convened in October 1980 by the Bureau International des Poids et Mesures (BIPM) in response to a request of the Comité International des Poids et Mesures (CIPM). It prepared a detailed report for consideration by the CIPM that concluded with Recommendation INC-1 (1980) <<KAARLS1981>>. The English translation of this Recommendation is given in <<scls_0-7>> of this _Guide_ and the French text, which is authoritative, is as follows <<KAARLS1981>>:(((BIPM)))(((CIPM)))
 
 Expression des incertitudes expérimentales
 
@@ -29,9 +29,9 @@ Toute description détaillée de l'incertitude devrait comprendre une liste comp
 
 
 [[scls_A-2]]
-=== Recommendation 1 (CI-1981)
+=== Recommendation 1 (CI-1981)((("Recommendation 1 (CI-1981), CIPM")))
 
-The CIPM reviewed the report submitted to it by the Working Group on the Statement of Uncertainties and adopted the following recommendation at its 70th meeting held in October 1981 <<CIPM1982>>:
+The ((CIPM)) reviewed the report submitted to it by the ((Working Group on the Statement of Uncertainties)) and adopted the following recommendation at its 70th meeting held in October 1981 <<CIPM1982>>:
 
 *Recommendation 1 (CI-1981)*
 
@@ -43,7 +43,7 @@ _considering_
 
 * the need to find an agreed way of expressing measurement uncertainty in metrology,
 * the effort that has been devoted to this by many organizations over many years,
-* the encouraging progress made in finding an acceptable solution, which has resulted from the discussions of the Working Group on the Expression of Uncertainties which met at BIPM in 1980,
+* the encouraging progress made in finding an acceptable solution, which has resulted from the discussions of the Working Group on the Expression of Uncertainties which met at ((BIPM)) in 1980,
 
 _recognizes_
 
@@ -52,15 +52,15 @@ _recognizes_
 _recommends_
 
 * that the proposals of the Working Group be diffused widely;
-* that BIPM attempt to apply the principles therein to international comparisons carried out under its auspices in the years to come;
+* that ((BIPM)) attempt to apply the principles therein to international comparisons carried out under its auspices in the years to come;
 * that other interested organizations be encouraged to examine and test these proposals and let their comments be known to BIPM;
 * that after two or three years BIPM report back on the application of these proposals.
 
 
 [[scls_A-3]]
-=== Recommendation 1 (CI-1986)
+=== Recommendation 1 (CI-1986)((("Recommendation 1 (CI-1986), CIPM")))
 
-The CIPM further considered the matter of the expression of uncertainties at its 75th meeting held in October 1986 and adopted the following recommendation <<CIPM1987>>:
+The ((CIPM)) further considered the matter of the expression of uncertainties at its 75th meeting held in October 1986 and adopted the following recommendation <<CIPM1987>>:(((combined standard uncertainty and Comités Consultatifs)))(((combined standard uncertainty and international comparisons)))
 
 *Recommendation 1 (CI-1986)*
 
@@ -68,10 +68,10 @@ Expression of uncertainties in work carried out under the auspices of the CIPM
 
 The Comité International des Poids et Mesures,
 
-_considering_ the adoption by the Working Group on the Statement of Uncertainties of Recommendation INC-1 (1980) and the adoption by the CIPM of Recommendation 1 (CI-1981),
+_considering_ the adoption by the ((Working Group on the Statement of Uncertainties)) of ((Recommendation INC-1 (1980))) and the adoption by the CIPM of Recommendation 1 (CI-1981)((("Recommendation 1 (CI-1981), CIPM"))),
 
 _considering_ that certain members of Comités Consultatifs may want clarification of this Recommendationfor the purposes of work that falls under their purview, especially for international comparisons,
 
-_recognizes_ that paragraph 5 of Recommendation INC-1 (1980) relating to particular applications, especially those having commercial significance, is now being considered by a working group of the International Standards Organization (ISO) common to the ISO, OIML and IEC, with the concurrence and cooperation of the CIPM,
+_recognizes_ that paragraph 5 of Recommendation INC-1 (1980) relating to particular applications, especially those having commercial significance, is now being considered by a working group of the International Standards Organization (ISO) common to the ((ISO)), ((OIML)) and ((IEC)), with the concurrence and cooperation of the CIPM,
 
 _requests_ that paragraph 4 of Recommendation INC-1 (1980) should be applied by all participants ingiving the results of all international comparisons or other work done under the auspices of the CIPM and the Comités Consultatifs and that the combined uncertainty of type A and type B uncertainties in terms of _one standard deviation_ should be given.

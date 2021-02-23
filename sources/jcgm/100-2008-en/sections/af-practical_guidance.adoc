@@ -7,21 +7,21 @@ This annex gives additional suggestions for evaluating uncertainty components, m
 
 
 [[scls_F-1]]
-=== Components evaluated from repeated observations: Type A evaluation of standard uncertainty
+=== Components evaluated from repeated observations: Type A evaluation of standard uncertainty((("observations, repeated")))(((Type A evaluation of uncertainty)))
 
 [[scls_F-1-1]]
-==== Randomness and repeated observations
+==== Randomness and repeated observations((("observations, repeated")))(((randomness)))
 
 [[scls_F-1-1-1]]
 ====== {blank}
 
-Uncertainties determined from repeated observations are often contrasted with those evaluated by other means as being "objective", "statistically rigorous", etc. That incorrectly implies that they can be evaluated merely by the application of statistical formulae to the observations and that their evaluation does not require the application of some judgement.
+Uncertainties determined from repeated observations are often contrasted with those evaluated by other means as being "objective", "statistically rigorous", etc. That incorrectly implies that they can be evaluated merely by the application of statistical formulae to the observations and that their evaluation does not require the application of some judgement.((("observations, repeated")))(((Type A evaluation of uncertainty)))
 
 
 [[scls_F-1-1-2]]
 ====== {blank}
 
-It must first be asked, "To what extent are the repeated observations completely independent repetitions of the measurement procedure?" If all of the observations are on a single sample, and if sampling is part of the measurement procedure because the measurand is the property of a material (as opposed to the property of a given specimen of the material), then the observations have not been independently repeated; an evaluation of a component of variance arising from possible differences among samples must be added to the observed variance of the repeated observations made on the single sample.
+It must first be asked, "To what extent are the repeated observations completely ((independent repetitions)) of the ((measurement procedure))?" If all of the observations are on a single sample, and if sampling is part of the measurement procedure because the measurand is the property of a material (as opposed to the property of a given specimen of the material), then the observations have not been independently repeated; an evaluation of a component of variance arising from possible differences among samples must be added to the observed variance of the repeated observations made on the single sample.((("observations, repeated")))(((Type A evaluation of uncertainty)))
 
 If zeroing an instrument is part of the measurement procedure, the instrument ought to be rezeroed as part of every repetition, even if there is negligible drift during the period in which observations are made, for there is potentially a statistically determinable uncertainty attributable to zeroing.
 
@@ -31,19 +31,19 @@ Similarly, if a barometer has to be read, it should in principle be read for eac
 [[scls_F-1-1-3]]
 ====== {blank}
 
-Second, it must be asked whether all of the influences that are assumed to be random really are random. Are the means and variances of their distributions constant, or is there perhaps a drift in the value of an unmeasured influence quantity during the period of repeated observations? If there is a sufficient number of observations, the arithmetic means of the results of the first and second halves of the period and their experimental standard deviations may be calculated and the two means compared with each other in order to judge whether the difference between them is statistically significant and thus if there is an effect varying with time.
+Second, it must be asked whether all of the influences((("influence quantities, random"))) that are assumed to be random really are random(((randomness))). Are the means and variances of their distributions constant, or is there perhaps a drift in the value of an unmeasured influence quantity during the period of repeated observations? If there is a sufficient number of observations, the arithmetic means of the results of the first and second halves of the period and their experimental standard deviations may be calculated and the two means compared with each other in order to judge whether the difference between them is statistically significant and thus if there is an effect varying with time.(((Type A evaluation of uncertainty)))
 
 
 [[scls_F-1-1-4]]
 ====== {blank}
 
-If the values of "common services" in the laboratory (electric-supply voltage and frequency, water pressure and temperature, nitrogen pressure, etc.) are influence quantities, there is normally a strongly nonrandom element in their variations that cannot be overlooked.
+If the values of "common services" in the laboratory (electric-supply voltage and frequency, water pressure and temperature, nitrogen pressure, etc.) are influence quantities, there is normally a strongly nonrandom element in their variations that cannot be overlooked.((("influence quantities, random")))(((randomness)))(((Type A evaluation of uncertainty)))
 
 
 [[scls_F-1-1-5]]
 ====== {blank}
 
-If the least significant figure of a digital indication varies continually during an observation due to "noise", it is sometimes difficult not to select unknowingly personally preferred values of that digit. It is better to arrange some means of freezing the indication at an arbitrary instant and recording the frozen result.
+If the least significant figure of a digital indication varies continually during an observation due to "noise", it is sometimes difficult not to select unknowingly personally preferred values of that digit. It is better to arrange some means of freezing the indication at an arbitrary instant and recording the frozen result.(((randomness)))
 
 
 [[scls_F-1-2]]
@@ -55,9 +55,9 @@ Much of the discussion in this subclause is also applicable to Type B evaluation
 [[scls_F-1-2-1]]
 ====== {blank}
 
-The covariance associated with the estimates of two input quantities stem:[ii(X)_i] and stem:[ii(X)_j] may be taken to bezero or treated as insignificant if
+The ((covariance)) associated with the estimates of two input quantities stem:[ii(X)_i] and stem:[ii(X)_j] may be taken to bezero or treated as insignificant if
 
-. stem:[ii(X)_i] and stem:[ii(X)_j] are _uncorrelated_ (the random variables, not the physical quantities that are assumed to be invariants -- see <<note1_4-1-1>>), for example, because they have been repeatedly but not simultaneously measured in _different_ independent experiments or because they represent resultant quantities of _different_ evaluations that have been made independently, or if
+. stem:[ii(X)_i] and stem:[ii(X)_j] are _uncorrelated_ (the ((random variable))s, not the physical quantities that are assumed to be invariants -- see <<note1_4-1-1>>), for example, because they have been repeatedly but not simultaneously measured in _different_ independent experiments or because they represent resultant quantities of _different_ evaluations that have been made independently, or if
 . either of the quantities stem:[ii(X)_i] or stem:[ii(X)_j] can be treated as a constant, or if
 . there is insufficient information to evaluate the covariance associated with the estimates of stem:[ii(X)_i] and stem:[ii(X)_j].
 
@@ -69,7 +69,7 @@ NOTE: Different experiments may not be independent if, for example, the same ins
 [[scls_F-1-2-2]]
 ====== {blank}
 
-Whether or not two repeatedly and simultaneously observed input quantities are correlated maybe determined by means of <<eq_17>> in <<scls_5-2-3>>. For example, if the frequency of an oscillator uncompensated or poorly compensated for temperature is an input quantity, if ambient temperature is also an input quantity, and if they are observed simultaneously, there may be a significant correlation revealed by the calculated covariance of the frequency of the oscillator and the ambient temperature.
+Whether or not two repeatedly and simultaneously((("observations, independent pairs of simultaneous"))) observed input quantities are correlated maybe determined by means of <<eq_17>> in <<scls_5-2-3>>. For example, if the frequency of an oscillator uncompensated or poorly compensated for temperature is an input quantity, if ambient temperature is also an input quantity, and if they are observed simultaneously, there may be a significant ((correlation)) revealed by the calculated ((covariance)) of the frequency of the oscillator and the ambient temperature.
 
 
 [[scls_F-1-2-3]]
@@ -93,7 +93,7 @@ u(x_1,x_2) = sum_{l=1}^ii(L) {del ii(F)}/{del q_l} {del ii(G)}/{del q_l} u^2(q_l
 
 Because only those terms for which stem:[del ii(F)// del q_l != 0] and stem:[del ii(G)// del q_l != 0] for a given stem:[l] contribute to the sum, the covariance is zero if no variable is common to both stem:[ii(F)] and stem:[ii(G)].
 
-The estimated correlation coefficient stem:[r(x_1, x_2)] associated with the two estimates stem:[x_1] and stem:[x_2] is determined from stem:[u(x_1, x_2)] [<<eq_F-2>>] _and_ <<eq_14>> in <<scls_5-2-2>>, with stem:[u(x_1)] calculated from <<eq_F-1>> and stem:[u(x_2)] from asimilar expression. [See also <<eq_H-9>>.] It is also possible for the estimated covariance associated with two input estimates to have both a statistical component [see <<eq_17>>] and a component arising as discussed in this subclause.
+The estimated ((correlation coefficient)) stem:[r(x_1, x_2)] associated with the two estimates stem:[x_1] and stem:[x_2] is determined from stem:[u(x_1, x_2)] [<<eq_F-2>>] _and_ <<eq_14>> in <<scls_5-2-2>>, with stem:[u(x_1)] calculated from <<eq_F-1>> and stem:[u(x_2)] from asimilar expression. [See also <<eq_H-9>>.] It is also possible for the estimated covariance associated with two input estimates to have both a statistical component [see <<eq_17>>] and a component arising as discussed in this subclause.
 
 [[example1_F-1-2-3]]
 [example]
@@ -110,7 +110,7 @@ u(ii(I),t) = {del ii(I)}/{del ii(R)_{"S"}} {del t}/{del ii(R)_{"S"}} u^2(ii(R)_{
 
 (For simplicity of notation, in this example the same symbol is used for both the input quantity and its estimate.)
 
-To obtain the numerical value of the covariance, one substitutes into this expression the numerical values of the measured quantities stem:[ii(I)] and stem:[t], and the values of stem:[ii(R)_{"S"}] and stem:[u(ii(R)_{"S"})] given in the standard resistor's calibration certificate. The unit of stem:[u(ii(I),t)] is clearly stem:[ii(A) * rm(°C)] since the dimension of the relative variance stem:[[u(ii(R)_{"S"})//ii(R)_{"S"}\]^2] is one (that is, the latter is a so-called dimensionless quantity).
+To obtain the numerical value of the ((covariance)), one substitutes into this expression the numerical values of the measured quantities stem:[ii(I)] and stem:[t], and the values of stem:[ii(R)_{"S"}] and stem:[u(ii(R)_{"S"})] given in the standard resistor's calibration certificate. The unit of stem:[u(ii(I),t)] is clearly stem:[ii(A) * rm(°C)] since the dimension of the relative variance stem:[[u(ii(R)_{"S"})//ii(R)_{"S"}\]^2] is one (that is, the latter is a so-called dimensionless quantity).
 
 Further, let a quantity stem:[ii(P)] be related to the input quantities stem:[ii(I)] and stem:[t] by stem:[ii(P) = ii(C)_0 I^2//(ii(T)_0 + t)], where stem:[ii(C)_0] and stem:[ii(T)_0] are known constants with negligible uncertainties [stem:[u^2(ii(C)_0) ~~ 0, u^2(ii(T)_0) ~~ 0]]. <<eq_13>> in <<scls_5-2-2>> then yields for the variance of stem:[ii(P)] in terms of the variances of stem:[ii(I)] and stem:[t] and their covariance
 
@@ -139,7 +139,7 @@ where for simplicity it is assumed that the uncertainties of the constants stem:
 [[example2_F-1-2-3]]
 [example]
 ====
-In the <<example_5-2-2>> of <<note1_5-2-2>>, let the calibration of each resistor be represented by stem:[ii(R)_i = ii(alpha)_i ii(R)_{"S"}], with stem:[u(ii(alpha)_i)] the standard uncertainty of the measured ratio stem:[ii(alpha)_i] as obtained from repeated observations. Further, let stem:[ii(alpha)_i ~~ 1] for eachresistor, and let stem:[u(ii(alpha)_i)] be essentially the same for each calibration so that stem:[u(ii(alpha)_i) ~~ u(ii(alpha))]. Then <<eq_F-1>> and <<eq_F-2>> yield stem:[u ^2(ii(R)_i) = ii(R)_{"S"}^2 u^2(ii(alpha)) + u^2(ii(R)_{"S"})] and stem:[u(ii(R)_i, ii(R)_j) = u^2(ii(R)_{"S"})]. This implies through <<eq_14>> in <<scls_5-2-2>> that the correlationcoefficient of any two resistors (stem:[i != j]) is
+In the <<example_5-2-2>> of <<note1_5-2-2>>, let the calibration of each resistor be represented by stem:[ii(R)_i = ii(alpha)_i ii(R)_{"S"}], with stem:[u(ii(alpha)_i)] the standard uncertainty of the measured ratio stem:[ii(alpha)_i] as obtained from repeated observations. Further, let stem:[ii(alpha)_i ~~ 1] for eachresistor, and let stem:[u(ii(alpha)_i)] be essentially the same for each calibration so that stem:[u(ii(alpha)_i) ~~ u(ii(alpha))]. Then <<eq_F-1>> and <<eq_F-2>> yield stem:[u ^2(ii(R)_i) = ii(R)_{"S"}^2 u^2(ii(alpha)) + u^2(ii(R)_{"S"})] and stem:[u(ii(R)_i, ii(R)_j) = u^2(ii(R)_{"S"})]. This implies through <<eq_14>> in <<scls_5-2-2>> that the ((correlation coefficient)) of any two resistors (stem:[i != j]) is(((covariance)))
 
 [stem%unnumbered]
 ++++
@@ -150,13 +150,13 @@ Since stem:[u(ii(R)_{"S"})//ii(R)_{"S"} = 10^{-4}], if stem:[u(ii(alpha)) = 100 
 ====
 
 
-NOTE: In general, in comparison calibrations such as this example, the estimated values of the calibrated items are correlated, with the degree of correlation depending upon the ratio of the uncertainty of the comparison to the uncertainty of the reference standard. When, as often occurs in practice, the uncertainty of the comparison is negligible with respect to the uncertainty of the standard, the correlation coefficients are equal to stem:[+1] and the uncertainty of each calibrated item is the same as that of the standard.
+NOTE: In general, in comparison calibrations such as this example, the estimated values of the calibrated items are correlated, with the degree of ((correlation)) depending upon the ratio of the uncertainty of the comparison to the uncertainty of the reference standard. When, as often occurs in practice, the uncertainty of the comparison is negligible with respect to the uncertainty of the standard, the ((correlation coefficient))s are equal to stem:[+1] and the uncertainty of each calibrated item is the same as that of the standard.((("calibration, comparison")))
 
 
 [[scls_F-1-2-4]]
 ====== {blank}
 
-The need to introduce the covariance stem:[u(x_i,x_j)] can be bypassed if the original set of input quantities stem:[ii(X)_1, ii(X)_2,...,ii(X)_N] upon which the measurand stem:[ii(Y)] depends [see <<eq_1>> in <<scls_4-1>>] is redefined in such a way as to include as additional independent input quantities those quantities stem:[ii(Q)_l] that are common to two or more of the original stem:[ii(X)_i]. (It may be necessary to perform additional measurements to establish fully the relationship between stem:[ii(Q)_l] and the affected stem:[ii(X)_i].) Nonetheless, in some situations it may be more convenient to retain covariances rather than to increase the number of input quantities. A similar process can be carried out on the observed covariances of simultaneous repeated observations [see <<eq_17>> in <<scls_5-2-3>>], but the identification of the appropriate additional input quantities is often _ad hoc_ and nonphysical.
+The need to introduce the ((covariance)) stem:[u(x_i,x_j)] can be bypassed if the original set of input quantities stem:[ii(X)_1, ii(X)_2,...,ii(X)_N] upon which the measurand stem:[ii(Y)] depends [see <<eq_1>> in <<scls_4-1>>] is redefined in such a way as to include as additional independent input quantities those quantities stem:[ii(Q)_l] that are common to two or more of the original stem:[ii(X)_i]. (It may be necessary to perform additional measurements to establish fully the relationship between stem:[ii(Q)_l] and the affected stem:[ii(X)_i].) Nonetheless, in some situations it may be more convenient to retain covariances rather than to increase the number of input quantities. A similar process can be carried out on the observed covariances of simultaneous repeated observations [see <<eq_17>> in <<scls_5-2-3>>], but the identification of the appropriate additional input quantities is often _ad hoc_ and nonphysical.((("correlation, elimination of")))
 
 [example]
 ====
@@ -167,25 +167,25 @@ If, in <<example1_F-1-2-3>> of <<scls_F-1-2-3>>, the expressions for stem:[ii(I)
 ii(P) = {ii(C)_0 ii(V)_{"S"}^2}/{ii(R)_{"S"}^2 [ii(T)_0 + a ii(beta)^2(t) ii(R)_{"S"}^2 - t_0]}
 ++++
 
-and the correlation between stem:[ii(I)] and stem:[t] is avoided at the expense of replacing the input quantities stem:[ii(I)] and stem:[t] with the quantities stem:[ii(V)_{"S"}], stem:[ii(R)_{"S"}], and stem:[ii(beta)]. Since these quantities are uncorrelated, the variance of stem:[ii(P)] can be obtained from <<eq_10>> in <<scls_5-1-2>>.
+and the ((correlation)) between stem:[ii(I)] and stem:[t] is avoided at the expense of replacing the input quantities stem:[ii(I)] and stem:[t] with the quantities stem:[ii(V)_{"S"}], stem:[ii(R)_{"S"}], and stem:[ii(beta)]. Since these quantities are uncorrelated, the variance of stem:[ii(P)] can be obtained from <<eq_10>> in <<scls_5-1-2>>.
 ====
 
 [[scls_F-2]]
-=== Components evaluated by other means: Type B evaluation of standard uncertainty
+=== Components evaluated by other means: Type B evaluation of standard uncertainty(((Type B evaluation of uncertainty)))
 
 [[scls_F-2-1]]
-==== The need for Type B evaluations
+==== The need for Type B evaluations((("Type B evaluations, need for")))
 
-If a measurement laboratory had limitless time and resources, it could conduct an exhaustive statistical investigation of every conceivable cause of uncertainty, for example, by using many different makes and kinds of instruments, different methods of measurement, different applications of the method, and different approximations in its theoretical models of the measurement. The uncertainties associated with all of these causes could then be evaluated by the statistical analysis of series of observations and the uncertainty of each cause would be characterized by a statistically evaluated standard deviation. In other words, all of the uncertainty components would be obtained from Type A evaluations. Since such an investigation is not an economic practicality, many uncertainty components must be evaluated by whatever other means is practical.
+If a measurement laboratory had limitless time and resources, it could conduct an exhaustive statistical investigation of every conceivable cause of uncertainty, for example, by using many different makes and kinds of instruments, different methods of measurement, different applications of the method, and different approximations in its theoretical models of the measurement. The uncertainties associated with all of these causes could then be evaluated by the statistical analysis of series of observations and the uncertainty of each cause would be characterized by a statistically evaluated standard deviation. In other words, all of the uncertainty components would be obtained from Type A evaluations. Since such an investigation is not an economic practicality, many uncertainty components must be evaluated by whatever other means is practical.((("uncertainty, statistical evaluation of, by varying input quantities")))
 
 
 [[scls_F-2-2]]
-==== Mathematically determinate distributions
+==== Mathematically determinate distributions((("distributions, mathematically determinate")))
 
 [[scls_F-2-2-1]]
 ===== The resolution of a digital indication
 
-One source of uncertainty of a digital instrument is the resolution of its indicating device. For example, even if the repeated indications were all identical, the uncertainty of the measurement attributable to repeatability would not be zero, for there is a range of input signals to the instrument spanning a known interval that would give the same indication. If the resolution of the indicating device is stem:[ii(delta) x], the value of the stimulus that produces a given indication stem:[X] can lie with equal probability anywhere in the interval stem:[ii(X) - ii(delta) x//2] to stem:[X + ii(delta) x//2]. The stimulus is thus described by a rectangular probability distribution (see <<scls_4-3-7>> and <<scls_4-4-5>>) of width stem:[ii(delta) x] with variance stem:[u^2 = (ii(delta) x)^2//12], implying a standard uncertainty of stem:[u = 0.29 ii(delta) x] for any indication.
+One source of uncertainty of a digital instrument(((uncertainty due to resolution of a digital indication))) is the resolution of its indicating device. For example, even if the repeated indications were all identical, the uncertainty of the measurement attributable to repeatability would not be zero, for there is a range of input signals to the instrument spanning a known interval that would give the same indication. If the resolution of the indicating device is stem:[ii(delta) x], the value of the stimulus that produces a given indication stem:[X] can lie with equal probability anywhere in the interval stem:[ii(X) - ii(delta) x//2] to stem:[X + ii(delta) x//2]. The stimulus is thus described by a rectangular probability distribution((("distribution, rectangular"))) (see <<scls_4-3-7>> and <<scls_4-4-5>>) of width stem:[ii(delta) x] with variance stem:[u^2 = (ii(delta) x)^2//12], implying a standard uncertainty of stem:[u = 0.29 ii(delta) x] for any indication.
 
 Thus a weighing instrument with an indicating device whose smallest significant digit is 1 g has a variance due to the resolution of the device of stem:[u^2 = (1//12)" "rm(g)^2] and a standard uncertainty of stem:[u = (1//sqrt(12))" "rm(g) = 0.29" "rm(g)].
 
@@ -193,66 +193,66 @@ Thus a weighing instrument with an indicating device whose smallest significant 
 [[scls_F-2-2-2]]
 ===== Hysteresis
 
-Certain kinds of hysteresis can cause a similar kind of uncertainty. The indication of an instrument may differ by a fixed and known amount according to whether successive readings are rising or falling. The prudent operator takes note of the direction of successive readings and makes the appropriate correction. But the direction of the hysteresis is not always observable: there may be hidden oscillations within the instrument about an equilibrium point so that the indication depends on the direction from which that point is finally approached. If the range of possible readings from that cause is stem:[ii(delta) x], the variance is again stem:[u^2 = (ii(delta) x)^2//12], and the standard uncertainty due to hysteresis is stem:[u = 0.29 ii(delta) x].
+Certain kinds of hysteresis(((uncertainty due to hysteresis))) can cause a similar kind of uncertainty. The indication of an instrument may differ by a fixed and known amount according to whether successive readings are rising or falling. The prudent operator takes note of the direction of successive readings and makes the appropriate correction. But the direction of the hysteresis is not always observable: there may be hidden oscillations within the instrument about an equilibrium point so that the indication depends on the direction from which that point is finally approached. If the range of possible readings from that cause is stem:[ii(delta) x], the variance is again stem:[u^2 = (ii(delta) x)^2//12], and the standard uncertainty due to hysteresis is stem:[u = 0.29 ii(delta) x].
 
 
 [[scls_F-2-2-3]]
 ===== Finite-precision arithmetic
 
 The rounding or truncation of numbers arising in automated data reduction by computer can also be a source of uncertainty. Consider, for example, a computer with a word length of 16 bits. If, in the course of computation, a number having this word length is subtracted from another from which it differs only in the 16th bit, only one significant bit remains. Such events can occur in the evaluation of "ill-conditioned" algorithms, and they can be difficult to predict. One may obtain an empirical determination of the uncertainty by increasing the most important input quantity to the calculation (there is frequently one that is proportional to
-the magnitude of the output quantity) by small increments until the output quantity changes; the smallest change in the output quantity that can be obtained by such means may be taken as a measure of the uncertainty; if it is stem:[ii(delta) x], the variance is stem:[u^2 = (ii(delta) x)^2//12] and stem:[u = 0.29 ii(delta) x].
+the magnitude of the output quantity) by small increments until the output quantity changes; the smallest change in the output quantity that can be obtained by such means may be taken as a measure of the uncertainty; if it is stem:[ii(delta) x], the variance is stem:[u^2 = (ii(delta) x)^2//12] and stem:[u = 0.29 ii(delta) x].(((probability)))
 
 NOTE: One may check the uncertainty evaluation by comparing the result of the computation carried out on the limited word-length machine with the result of the same computation carried out on a machine with a significantly larger word length.
 
 
 [[scls_F-2-3]]
-==== Imported input values
+==== Imported input values(((imported input value or quantity)))
 
 [[scls_F-2-3-1]]
 ====== {blank}
 
-An _imported_value for an input quantity is one that has not been estimated in the course of a given measurement but has been obtained elsewhere as the result of an independent evaluation. Frequently such an imported value is accompanied by some kind of statement about its uncertainty. For example, the uncertainty may be given as a standard deviation, a multiple of a standard deviation, or the half-width of an interval having a stated level of confidence. Alternatively, upper and lower bounds may be given, or no information may be provided about the uncertainty. In the latter case, those who use the value must employ their own knowledge about the likely magnitude of the uncertainty, given the nature of the quantity, the reliability of the source, the uncertainties obtained in practice for such quantities, etc.
+An _imported_value for an input quantity(((imported input value or quantity))) is one that has not been estimated in the course of a given measurement but has been obtained elsewhere as the result of an independent evaluation. Frequently such an imported value is accompanied by some kind of statement about its uncertainty. For example, the uncertainty may be given as a standard deviation, a multiple of a standard deviation, or the half-width of an interval having a stated level of confidence. Alternatively, upper and lower bounds may be given, or no information may be provided about the uncertainty. In the latter case, those who use the value must employ their own knowledge about the likely magnitude of the uncertainty, given the nature of the quantity, the reliability of the source, the uncertainties obtained in practice for such quantities, etc.
 
-NOTE: The discussion of the uncertainty of imported input quantities is included in this subclause on Type B evaluation of standard uncertainty for convenience; the uncertainty of such a quantity could be composed of components obtained from Type A evaluations or components obtained from both Type A and Type B evaluations. Since it is unnecessary to distinguish between components evaluated by the two different methods in order to calculate a combined standard uncertainty, it is unnecessary to know the composition of the uncertainty of an imported quantity.
+NOTE: The discussion of the uncertainty of imported input quantities is included in this subclause on Type B evaluation of standard uncertainty for convenience; the uncertainty of such a quantity could be composed of components obtained from Type A evaluations or components obtained from both Type A and Type B evaluations. Since it is unnecessary to distinguish between components evaluated by the two different methods in order to calculate a combined standard uncertainty, it is unnecessary to know the composition of the uncertainty of an imported quantity.((("distribution, rectangular")))
 
 
 [[scls_F-2-3-2]]
 ====== {blank}
 
-Some calibration laboratories have adopted the practice of expressing "uncertainty" in the form of upper and lower limits that define an interval having a "minimum" level of confidence, for example, "at least" 95 percent. This may be viewed as an example of a so-called "safe" uncertainty (see <<scls_E-1-2>>), and it cannot be converted to a standard uncertainty without a knowledge of how it was calculated. If sufficient information is given, it may be recalculated in accordance with the rules of this _Guide_; otherwise an independent assessment of the uncertainty must be made by whatever means are available.
+Some calibration laboratories have adopted the practice of expressing "uncertainty" in the form of upper and lower limits that define an interval having a "minimum" level of confidence((("level of confidence, minimum"))), for example, "at least" 95 percent. This may be viewed as an example of a so-called "safe" uncertainty (see <<scls_E-1-2>>), and it cannot be converted to a standard uncertainty without a knowledge of how it was calculated. If sufficient information is given, it may be recalculated in accordance with the rules of this _Guide_; otherwise an independent assessment of the uncertainty must be made by whatever means are available.((("uncertainty, safe")))
 
 
 [[scls_F-2-3-3]]
 ====== {blank}
 
-Some uncertainties are given simply as maximum bounds within which _all_ values of the quantity are said to lie. It is a common practice to assume that all values within those bounds are equally probable (a rectangular probability distribution), but such a distribution should not be assumed if there is reason to expect that values within but close to the bounds are less likely than those nearer the centre of the bounds. A rectangular distribution of half-width stem:[a] has a variance of stem:[a^2//3]; a normal distribution for which stem:[a] is the half -width of an interval having a level of confidence of stem:[99.73] percent has a variance of stem:[a^2//9]. It may be prudent to adopt a compromise between those values, for example, by assuming a triangular distribution for which the variance is stem:[a^2//6] (see <<scls_4-3-9>> and <<scls_4-4-6>>).
+Some uncertainties are given simply as maximum bounds(((bounds on an input quantity))) within which _all_ values of the quantity are said to lie. It is a common practice to assume that all values within those bounds are equally probable (a rectangular probability distribution)((("distribution, rectangular"))), but such a distribution should not be assumed if there is reason to expect that values within but close to the bounds are less likely than those nearer the centre of the bounds. A rectangular distribution of half-width stem:[a] has a variance of stem:[a^2//3]; a ((normal distribution)) for which stem:[a] is the half -width of an interval having a level of confidence of stem:[99.73] percent has a variance of stem:[a^2//9]. It may be prudent to adopt a compromise between those values, for example, by assuming a triangular distribution((("distribution, triangular"))) for which the variance is stem:[a^2//6] (see <<scls_4-3-9>> and <<scls_4-4-6>>).
 
 
 [[scls_F-2-4]]
 ==== Measured input values
 
 [[scls_F-2-4-1]]
-===== Single observation, calibrated instruments
+===== Single observation, calibrated instruments(((uncertainty of a single observation of a calibrated instrument)))
 
 If an input estimate has been obtained from a single observation with a particular instrument that has been calibrated against a standard of small uncertainty, the uncertainty of the estimate is mainly one of repeatability. The variance of repeated measurements by the instrument may have been obtained on an earlier occasion, not necessarily at precisely the same value of the reading but near enough to be useful, and it may be possible to assume the variance to be applicable to the input value in question. If no such information is available, an estimate must be made based on the nature of the measuring apparatus or instrument, the known variances of other instruments of similar construction, etc.
 
 
 [[scls_F-2-4-2]]
-===== Single observation, verified instruments
+===== Single observation, verified instruments(((uncertainty of a single observation of a verified instrument)))
 
-Not all measuring instruments are accompanied by a calibration certificate or a calibration curve. Most instruments, however, are constructed to a written standard and verified, either by the manufacturer or by an independent authority, to conform to that standard. Usually the standard contains metrological requirements, often in the form of "maximum permissible errors", to which the instrument is required to conform. The compliance of the instrument with these requirements is determined by comparison with a reference instrument whose maximum allowed uncertainty is usually specified in the standard. This uncertainty is then a component of the uncertainty of the verified instrument.
+Not all measuring instruments are accompanied by a calibration certificate or a ((calibration curve)). Most instruments, however, are constructed to a written standard and verified, either by the manufacturer or by an independent authority, to conform to that standard. Usually the standard contains metrological requirements, often in the form of "maximum permissible errors", to which the instrument is required to conform. The compliance of the instrument with these requirements is determined by comparison with a reference instrument whose maximum allowed uncertainty is usually specified in the standard. This uncertainty is then a component of the uncertainty of the verified instrument.(((error curve of a verified instrument)))((("uncertainty, maximum allowed")))
 
-If nothing is known about the characteristic error curve of the verified instrument it must be assumed that there is an equal probability that the error has any value within the permitted limits, that is, a rectangular probability distribution. However, certain types of instruments have characteristic curves such that the errors are, for example, likely always to be positive in part of the measuring range and negative in other parts. Sometimes such information can be deduced from a study of the written standard.
+If nothing is known about the characteristic error curve of the verified instrument it must be assumed that there is an equal probability that the error has any value within the permitted limits, that is, a rectangular probability distribution. However, certain types of instruments have characteristic curves such that the errors are, for example, likely always to be positive in part of the measuring range and negative in other parts. Sometimes such information can be deduced from a study of the written standard.((("error, maximum permissible")))
 
 
 [[scls_F-2-4-3]]
-===== Controlled quantities
+===== Controlled quantities(((uncertainty of a controlled quantity)))
 
-Measurements are frequently made under controlled reference conditions that are assumed to remain constant during the course of a series of measurements. For example, measurements may be performed on specimens in a stirred oil bath whose temperature is controlled by a thermostat. The temperature of the bath may be measured at the time of each measurement on a specimen, but if the temperature of the bath is cycling, the instantaneous temperature of the specimen may not be the temperature indicated by the thermometer in the bath. The calculation of the temperature fluctuations of the specimen based on heat-transfer theory, and of their variance, is beyond the scope of this _Guide_, but it must start from a known or assumed temperature cycle for the bath. That cycle may be observed by a fine thermocouple and a temperature recorder, but failing that, an approximation of it may be deduced from a knowledge of the nature of the controls.
+Measurements are frequently made under controlled((("quantity, controlled"))) reference conditions that are assumed to remain constant during the course of a series of measurements. For example, measurements may be performed on specimens in a stirred oil bath whose temperature is controlled by a thermostat. The temperature of the bath may be measured at the time of each measurement on a specimen, but if the temperature of the bath is cycling, the instantaneous temperature of the specimen may not be the temperature indicated by the thermometer in the bath. The calculation of the temperature fluctuations of the specimen based on heat-transfer theory, and of their variance, is beyond the scope of this _Guide_, but it must start from a known or assumed temperature cycle for the bath. That cycle may be observed by a fine thermocouple and a temperature recorder, but failing that, an approximation of it may be deduced from a knowledge of the nature of the controls.
 
 
 [[scls_F-2-4-4]]
-===== Asymmetric distributions of possible values
+===== Asymmetric distributions of possible values((("distribution, asymmetric")))
 
 There are occasions when all possible values of a quantity lie to one side of a single limiting value. For example, when measuring the fixed vertical height stem:[h] (the measurand) of a column of liquid in a manometer, the axis of the height-measuring device may deviate from verticality by a small angle stem:[ii(beta)]. The distance stem:[l] determined by the device will always be _larger_ than stem:[h]; no values less than stem:[h] are possible. This is because stem:[h] is equal to the projection stem:[l cos ii(beta)], implying stem:[l = h//cos ii(beta)], and all values of stem:[cos ii(beta)] are less than one; no values greater than one are possible. This so-called "cosine error" can also occur in such a way that the projection stem:[h' cos ii(beta)] of a measurand stem:[h'] is equal to the observed distance stem:[l], that is, stem:[l = h' cos ii(beta)], and the observed distance is always _less_ than the measurand.
 
@@ -287,7 +287,7 @@ u_{"c"}^2 = (1 \mp \delta)^2 u^2(\bar{l}) + {\bar{l}}^2 u^2 (\delta)
 
 To obtain estimates of the expected value of stem:[ii(delta)] and the variance of stem:[ii(delta)], assume that the axis of the device used to measure the height of the column of liquid in the manometer is constrained to be fixed in a vertical plane and that the distribution of the values of the angle of inclination stem:[ii(beta)] about its expected value of zero is a normal distribution with variance stem:[ii(sigma)^2]. Although stem:[ii(beta)] can have both positive and negative values, stem:[ii(delta) = 1 - cos ii(beta)] is positive for all values of stem:[ii(beta)]. If the misalignment of the axis of the device is assumed to be unconstrained, the orientation of the axis can vary over a solid angle since it is capable of misalignment in azimuth as well, but stem:[ii(beta)] is then always a positive angle.
 
-In the constrained or one-dimensional case, the *probability element* stem:[p(ii(beta)) d ii(beta)] (<<note_C-2-5>>) is proportional to stem:[{exp[-ii(beta)^2//(2ii(sigma)^2)\]}dii(beta)]; in the unconstrained or two-dimensional case, the probability element is proportional to stem:[{exp[-ii(beta)^2/(2ii(sigma)^2)\]}sin ii(beta) dii(beta)]. The probability density functions stem:[p(ii(delta))] in the two cases are the expressions required to determine the expectation and variance of stem:[ii(delta)] for use in <<eq_F-3a>> and <<eq_F-4a>>. They may readily be obtained from these probability elements because the angle stem:[ii(beta)] may be assumed small, and hence
+In the constrained or one-dimensional case, the *((probability element))* stem:[p(ii(beta)) d ii(beta)] (<<note_C-2-5>>) is proportional to stem:[{exp[-ii(beta)^2//(2ii(sigma)^2)\]}dii(beta)]; in the unconstrained or two-dimensional case, the probability element is proportional to stem:[{exp[-ii(beta)^2/(2ii(sigma)^2)\]}sin ii(beta) dii(beta)]. The ((probability density function))s stem:[p(ii(delta))] in the two cases are the expressions required to determine the expectation and variance of stem:[ii(delta)] for use in <<eq_F-3a>> and <<eq_F-4a>>. They may readily be obtained from these probability elements because the angle stem:[ii(beta)] may be assumed small, and hence
 stem:[ii(delta) = 1 - cos ii(beta)] and stem:[sin ii(beta)] may be expanded to lowest order in stem:[ii(beta)]. This yields stem:[ii(delta) ~~ ii(beta)^2//2], stem:[sin ii(beta) ~~ ii(beta) = sqrt(2 ii(delta))], and stem:[d ii(beta) = d ii(delta) // sqrt(2ii(delta))]. The probability density functions are then
 
 [[eq_F-5a]]
@@ -337,7 +337,7 @@ where stem:[d] is the dimensionality (stem:[d = 1] or 2) and stem:[u(ii(beta))] 
 
 Although <<eq_F-6a>> to <<eq_F-6c>> are specific to the normal distribution, the analysis can be carried out assuming other distributions for stem:[ii(beta)]. For example, if one assumes for stem:[ii(beta)] a symmetric rectangular distribution with upper and lower bounds of stem:[+ii(beta)_0] and stem:[-ii(beta)_0] in the one-dimensional case and stem:[+ii(beta)_0] and zero in the two-dimensional case, stem:[ii(E)(ii(delta)) = ii(beta)_0^2//6] and stem:["var"(ii(delta)) = ii(beta)_0^4//45] in one dimension; and stem:[E(ii(delta)) = ii(beta)_0^2//4] and stem:["var"(ii(delta)) = ii(beta)_0^4//48] in two dimensions.
 
-NOTE: This is a situation where the expansion of the function stem:[ii(Y) = f(ii(X)_1, ii(X)_2,..., ii(X)_N)] in a first-order Taylor series to obtain stem:[u_{"c"}^2(y)], <<eq_10>> in <<scls_5-1-2>>, is inadequate because of the nonlinearity of stem:[f]: stem:[bar(cos ii(beta)) != cos bar(ii(beta))] (see <<note_5-1-2>>, and <<scls_H-2-4>>). Although the analysis can be carried out entirely in terms of stem:[ii(beta)], introducing the variable stem:[ii(delta)] simplifies the problem.
+NOTE: This is a situation where the expansion of the function stem:[ii(Y) = f(ii(X)_1, ii(X)_2,..., ii(X)_N)] in a first-order Taylor series to obtain stem:[u_{"c"}^2(y)], <<eq_10>> in <<scls_5-1-2>>, is inadequate because of the nonlinearity of stem:[f]: stem:[bar(cos ii(beta)) != cos bar(ii(beta))] (see <<note_5-1-2>>, and <<scls_H-2-4>>). Although the analysis can be carried out entirely in terms of stem:[ii(beta)], introducing the variable stem:[ii(delta)] simplifies the problem.((("functional relationship, linearization of a")))((("functional relationship, nonlinear")))
 
 Another example of a situation where all possible values of a quantity lie to one side of a single limiting value is the determination by titration of the concentration of a component in a solution where the end point is indicated by the triggering of a signal; the amount of reagent added is always more than that necessary to trigger the signal; it is never less. The excess titrated beyond the limit point is a required variable in the data reduction, and the procedure in this (and in similar) cases is to assume an appropriate probability distribution for the excess and to use it to obtain the expected value of the excess and its variance.
 
@@ -346,7 +346,7 @@ If a rectangular distribution of lower bound zero and upper bound stem:[ii(C)_0]
 
 
 [[scls_F-2-4-5]]
-===== Uncertainty when corrections from a calibration curve are not applied
+===== Uncertainty when corrections from a ((calibration curve)) are not applied(((uncertainty when a correction is not applied)))
 
 The <<note_6-3-1>> discusses the case where a known correction stem:[b] for a significant systematic effect is not applied to the reported result of a measurement but instead is taken into account by enlarging the "uncertainty" assigned to the result. An example is replacement of an expanded uncertainty stem:[ii(U)] with stem:[ii(U) + b], where stem:[ii(U)] is an expanded uncertainty obtained under the assumption stem:[b = 0]. This practice is sometimes followed in situations where all of the following conditions apply: the measurand stem:[ii(Y)] is defined over a range of values of a parameter stem:[t], as in the case of a calibration curve for a temperature sensor; stem:[ii(U)] and stem:[b] also depend on stem:[t]; and only a single value of "uncertainty" is to be given for all estimates stem:[y(t)] of the measurand over the range of possible values of stem:[t]. In such situations the result of the measurement is often reported as stem:[ii(Y)(t) = y(t) pm [ii(U)_{"max"} + b_{"max"}\]], where the subscript "max" indicates that the maximum value of stem:[ii(U)] and the maximum value of the known correction stem:[b] over the range of values of stem:[t] are used.
 
@@ -394,18 +394,18 @@ An expanded uncertainty stem:[ii(U)] may be obtained by multiplying stem:[u_{"c"
 
 
 [[scls_F-2-5]]
-==== Uncertainty of the method of measurement
+==== Uncertainty of the method of measurement(((uncertainty of the method of measurement)))
 
 [[scls_F-2-5-1]]
 ====== {blank}
 
-Perhaps the most difficult uncertainty component to evaluate is that associated with the method of measurement, especially if the application of that method has been shown to give results with less variability than those of any other that is known. But it is likely that there are other methods, some of them as yet unknown or in some way impractical, that would give systematically different results of apparently equal validity. This implies an _a priori_ probability distribution, not a distribution from which samples can be readily drawn and treated statistically. Thus, even though the uncertainty of the method may be the dominant one, the only information often available for evaluating its standard uncertainty is one's existing knowledge of the physical world. (See also <<scls_E-4-4>>.)
+Perhaps the most difficult uncertainty component to evaluate is that associated with the method of measurement, especially if the application of that method has been shown to give results with less variability than those of any other that is known. But it is likely that there are other methods, some of them as yet unknown or in some way impractical, that would give systematically different results of apparently equal validity. This implies an _a priori_ probability distribution, not a distribution from which samples can be readily drawn and treated statistically. Thus, even though the uncertainty of the method may be the dominant one, the only information often available for evaluating its standard uncertainty is one's existing knowledge of the physical world. (See also <<scls_E-4-4>>.)(((uncertainty of the method of measurement)))
 
 NOTE: Determining the same measurand by different methods, either in the same laboratory or in different laboratories, or by the same method in different laboratories, can often provide valuable information about the uncertainty attributable to a particular method. In general, the exchange of measurement standards or reference materials between laboratories for independent measurement is a useful way of assessing the reliability of evaluations of uncertainty and of identifying previously unrecognized systematic effects.
 
 
 [[scls_F-2-6]]
-==== Uncertainty of the sample
+==== Uncertainty of the sample(((uncertainty of the sample)))
 
 [[scls_F-2-6-1]]
 ====== {blank}

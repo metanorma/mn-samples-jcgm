@@ -274,7 +274,7 @@ where stem:[delta m_R] is the mass of a small weight of density stem:[ii(rho)_R]
 
 ===== {blank}
 
-It is usual to work in terms of conventional masses. The conventional mass stem:[m_{W,c}] of stem:[W] is the mass of a (hypothetical) weight of density stem:[ii(rho)_0 = 8000 " "rm(kg/m)^3] that balances stem:[W] in air at density stem:[ii(rho)_{a_0} = 1.2 " "rm(kg/m)^3]. Thus,
+It is usual to work in terms of conventional masses. The conventional mass stem:[m_{W,c}] of stem:[W] is the mass of a (hypothetical) weight of density stem:[ii(rho)_0 = 8000 " "rm(kg//m)^3] that balances stem:[W] in air at density stem:[ii(rho)_{a_0} = 1.2 " "rm(kg//m)^3]. Thus,
 
 [stem%unnumbered]
 ++++
@@ -874,7 +874,7 @@ of the gauge block, gives
 [[eq36]]
 [stem]
 ++++
-delta ii(L) = {ii(L)_s [1 + alpha_s (ii(theta)_0 + ii(Delta) - delta ii(theta))] + ii(D) + d_1 + d_2} / {1 + (alpha_s + delta alpha)(ii(theta)_0 + ii(Delta))}
+delta ii(L) = {ii(L)_s [1 + alpha_s (ii(theta)_0 + ii(Delta) - delta ii(theta))] + ii(D) + d_1 + d_2} / {1 + (alpha_s + delta alpha)(ii(theta)_0 + ii(Delta))} - ii(L)_{"nom"}
 ++++
 
 and
@@ -913,7 +913,7 @@ In the following subclauses the available information about each input quantity 
 | stem:[ii(D)] | stem:[t_{nu} (ii(mu), ii(sigma)^2)] | 215 nm | 6 nm | 24 | | | 
 | stem:[d_1] | stem:[t_{nu} (ii(mu), ii(sigma)^2)] | 0 nm | 4 nm | 5  | | |
 | stem:[d_2] | stem:[t_{nu} (ii(mu), ii(sigma)^2)] | 0 nm | 7 nm | 8  | | |
-| stem:[alpha_s] | stem:[R(a,b)] | | | | stem:[9.5 xx 10^{-6} " °C"^{-1}] | |
+| stem:[alpha_s] | stem:[R(a,b)] | | | | stem:[9.5 xx 10^{-6} " °C"^{-1}] | stem:[13.5 xx 10^{-6}" °C"^{-1}] |
 | stem:[ii(theta)_0] | stem:[N(ii(mu),ii(sigma)^2)] | stem:[-0.1 " °C"] | stem:[0.2 " °C"] | | | |
 | stem:[ii(Delta)] | stem:[U(a,b)] | | | | stem:[-0.5 " °C"] | stem:[0.5 " °C"] |
 | stem:[delta alpha] | stem:["CTrap"(a,b,d)] | | | | stem:[-1.0 xx 10^{-6} " °C"^{-1}] | stem:[1.0 xx 10^{-6} " °C"^{-1}] | stem:[1.0 xx 10^{-6} " °C"^{-1}]
@@ -987,7 +987,7 @@ Assign a scaled and shifted stem:[t]-distribution stem:[t_{nu}(ii(mu),ii(sigma)^
 
 [stem%unnumbered]
 ++++
-ii(mu) = 50000623 " "rm(nm), " " ii(sigma) = {U_p}/{k_p} = 75/3 " "rm(nm) = 25 " "rm(nm), " " nu = 18.
+ii(mu) = 0 " "rm(nm), " " ii(sigma) = {U_p}/{k_p} = 20/3 " "rm(nm) = 7 " "rm(nm), " " nu = 8.
 ++++
 
 

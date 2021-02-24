@@ -120,7 +120,7 @@ stem:[ii(X)] has expectation and variance
 [[eq2]]
 [stem]
 ++++
-ii(E)(ii(X)) = {a + b}/2, " " ii(V)(ii(X)) = {(b - a)^2}/12.
+ii(E)(ii(X)) = {a + b}/2, " " " " " " " " ii(V)(ii(X)) = {(b - a)^2}/12.
 ++++
 
 
@@ -217,7 +217,7 @@ stem:[N(bb(x), bb(U_x))]
 
 | Series of indications stem:[x_1,..., x_n] sampled independently from a quantity having a Gaussian distribution, with unknown expectation and unknown variance
 a| Scaled and shifted stem:[t]: +
-stem:[t_{n-1}(hat(x),s^2//n)] with stem:[hat(x) = sum_{i=1}^n x_i//n], +
+stem:[t_{n-1}(bar(x),s^2//n)] with stem:[hat(x) = sum_{i=1}^n x_i//n], +
 stem:[s^2 = sum_{i=1}^n (x_i hat(x))^2//(n-1)]
 a| image::figure-table1-7.png[]
 | <<scls_6-4-9-2>>
@@ -231,14 +231,14 @@ a| image::figure-table1-8.png[]
 
 | Best estimate stem:[x] of non-negative quantity
 | Exponential: +
-stem:[Ex(1/x)]
+stem:[rm(Ex)(1//x)]
 a| image::figure-table1-9.png[]
 | <<scls_6-4-10>>
 
 
 | Number stem:[q] of objects counted
 | Gamma: +
-stem:[G(q + 1, 1)]
+stem:[ii(G)(q + 1, 1)]
 a| image::figure-table1-10.png[]
 | <<scls_6-4-11>>
 |===
@@ -266,7 +266,7 @@ stem:[ii(X)] has expectation and variance
 [[eq4]]
 [stem]
 ++++
-ii(E)(ii(X)) = {a+b}/2, " " ii(V)(ii(X)) = (b-a)^2/12 + d^2/9.
+ii(E)(ii(X)) = {a+b}/2, " " " " " " " " ii(V)(ii(X)) = (b-a)^2/12 + d^2/9.
 ++++
 
 NOTE: The variance in <<eq4>> is always greater than the variance holding for exact limits in <<eq2>>, i.e. when stem:[d = 0].
@@ -282,7 +282,7 @@ To sample from stem:["CTrap"(a, b, d)], make two draws stem:[r_1] and stem:[r_2]
 
 [stem%unnumbered]
 ++++
-a_s = (a - d) + 2dr_1, " " " " b_s = (a + b) - a_s,
+a_s = (a - d) + 2dr_1, " " " " " " " " b_s = (a + b) - a_s,
 ++++
 
 and
@@ -673,14 +673,14 @@ The PDF for stem:[ii(X)] is
 [[eq12]]
 [stem]
 ++++
-g_X (xi) = {ii(Gamma) (n//2)}/{ii(Gamma)((n-1)//2)sqrt((n - 1)pi)} times 1/{s//sqrt(n)} (1 + 1/{n - 1} ({xi - bar(x)}/{s//sqrt(n)}))^{-n//2},
+g_X (xi) = {Gamma (n//2)}/{Gamma((n-1)//2)sqrt((n - 1)pi)} times 1/{s//sqrt(n)} (1 + 1/{n - 1} ({xi - bar(x)}/{s//sqrt(n)}))^{-n//2},
 ++++
 
 where
 
 [stem%unnumbered]
 ++++
-ii(Gamma) (z) = int_{0}^{oo} t^{z - 1} e^{-t} " d"t, " " " " z > 0
+Gamma (z) = int_{0}^{oo} t^{z - 1} e^{-t} " d"t, " " " " z > 0
 ++++
 
 is the gamma function.
@@ -735,7 +735,7 @@ is used, the degrees of freedom stem:[nu = n - 1] of the scaled and shifted stem
 
 [stem%unnumbered]
 ++++
-g_X (xi) = {ii(Gamma)((nu_{"p"} + 1)//2)}/{ii(Gamma)(nu_{"p"}//2)sqrt(nu_{"p"} pi)} times 1/{s_{"p"}//sqrt(n)}[1 + 1/{nu_{"p"}}({xi - bar(x)}/{s_{"p"}//sqrt(n)})^2]^{-(nu_{"p"} + 1)//2}
+g_X (xi) = {Gamma((nu_{"p"} + 1)//2)}/{Gamma(nu_{"p"}//2)sqrt(nu_{"p"} pi)} times 1/{s_{"p"}//sqrt(n)}[1 + 1/{nu_{"p"}}({xi - bar(x)}/{s_{"p"}//sqrt(n)})^2]^{-(nu_{"p"} + 1)//2}
 ++++
 
 and <<eq13>> by

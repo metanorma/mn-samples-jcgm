@@ -326,7 +326,7 @@ Expectations and variances (and higher moments) can be determined directly from 
 
 ==== {blank}
 
-If stem:[y_r], for stem:[r = 1,..., ii(M)], represent stem:[ii(M)] model values sampled independently from a probability distribution for stem:[ii(Y)], then the expectation stem:[ii(E)(ii(Y)] and variance stem:[ii(V)(ii(Y))] can be approximated using the stem:[y_r]. In general, the moments of stem:[ii(Y)] (including stem:[ii(E)(ii(Y)] and stem:[ii(V)(ii(Y))]) are approximated by those of the sampled model values. Let stem:[ii(M)_{y_0}] denote the number of stem:[y_r] that are no greater than stem:[y_0], any prescribed number. The probability stem:["Pr"(ii(Y) <= y_0)] is approximated by stem:[M_{y_0}//ii(M)]. In this way, the stem:[y_r] provide a step function (histogram-like) approximation to the distribution function stem:[ii(G)_Y (ii(eta))].
+If stem:[y_r], for stem:[r = 1,..., ii(M)], represent stem:[ii(M)] model values sampled independently from a probability distribution for stem:[ii(Y)], then the expectation stem:[ii(E)(ii(Y))] and variance stem:[ii(V)(ii(Y))] can be approximated using the stem:[y_r]. In general, the moments of stem:[ii(Y)] (including stem:[ii(E)(ii(Y))] and stem:[ii(V)(ii(Y))]) are approximated by those of the sampled model values. Let stem:[ii(M)_{y_0}] denote the number of stem:[y_r] that are no greater than stem:[y_0], any prescribed number. The probability stem:["Pr"(ii(Y) <= y_0)] is approximated by stem:[M_{y_0}//ii(M)]. In this way, the stem:[y_r] provide a step function (histogram-like) approximation to the distribution function stem:[ii(G)_Y (ii(eta))].
 
 
 ==== {blank}

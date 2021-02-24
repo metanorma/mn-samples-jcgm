@@ -20,20 +20,20 @@ NOTE: A value of stem:[ii(M) = 10^6] can often be expected to deliver a 95 % cov
 
 ==== {blank}
 
-The choice of a value of stem:[ii(M)] that is large compared with stem:[1//(1-p)], e.g. stem:[ii(M)] at least stem:[10^4] times greater than stem:[1//(1-p)], should be made. It can then be expected that G will provide a reasonable discrete representation of stem:[G_Y (eta)] in the regions near the endpoints of a stem:[100p " %"] coverage interval for stem:[ii(Y)].
+The choice of a value of stem:[ii(M)] that is large compared with stem:[1//(1-p)], e.g. stem:[ii(M)] at least stem:[10^4] times greater than stem:[1//(1-p)], should be made. It can then be expected that G will provide a reasonable discrete representation of stem:[G_Y (ii(eta))] in the regions near the endpoints of a stem:[100p " %"] coverage interval for stem:[ii(Y)].
 
 
 ==== {blank}
 
 Because there is no guarantee that this or any specific pre-assigned number will suffice, a procedure that selects stem:[ii(M)] adaptively, i.e. as the trials progress, can be used. Some guidance in this regard is available <<Berthouex1994>>. Subclause <<scls_7-9>> provides such a procedure, a property of which is that the number of trials taken is economically consistent with the expectation of achieving a required numerical tolerance.
 
-NOTE: If the model is complicated, e.g. involving the solution of a finite-element model, because of large computing times it may not be possible to use a sufficiently large value of stem:[ii(M)] to obtain adequate distributional knowledge of the output quantity. In such a case an approximate approach would be to regard stem:[g_Y (eta)] as Gaussian (as in the GUM) and proceed as follows. A relatively small value of stem:[ii(M)], 50 or 100, for example, would be used. The average and standard deviation of the resulting stem:[ii(M)] model values of stem:[ii(Y)] would be taken as stem:[y] and stem:[u(y)], respectively. Given this information, a Gaussian PDF stem:[g_Y(eta) = N(y,u^2(y))] would be assigned to characterize the knowledge of stem:[ii(Y)] (see <<scls_6-4-7>>) and a desired coverage interval for stem:[ii(Y)] calculated. Although this use of a small value of stem:[ii(M)] is inevitably less reliable than that of a large value in that it does not provide an approximation to the PDF for stem:[ii(Y)], it does take account of model non-linearity.
+NOTE: If the model is complicated, e.g. involving the solution of a finite-element model, because of large computing times it may not be possible to use a sufficiently large value of stem:[ii(M)] to obtain adequate distributional knowledge of the output quantity. In such a case an approximate approach would be to regard stem:[g_Y (ii(eta))] as Gaussian (as in the GUM) and proceed as follows. A relatively small value of stem:[ii(M)], 50 or 100, for example, would be used. The average and standard deviation of the resulting stem:[ii(M)] model values of stem:[ii(Y)] would be taken as stem:[y] and stem:[u(y)], respectively. Given this information, a Gaussian PDF stem:[g_Y(ii(eta)) = N(y,u^2(y))] would be assigned to characterize the knowledge of stem:[ii(Y)] (see <<scls_6-4-7>>) and a desired coverage interval for stem:[ii(Y)] calculated. Although this use of a small value of stem:[ii(M)] is inevitably less reliable than that of a large value in that it does not provide an approximation to the PDF for stem:[ii(Y)], it does take account of model non-linearity.
 
 
 [[scls_7-3]]
 === Sampling from probability distributions
 
-In an implementation of MCM, stem:[ii(M)] vectors stem:[bb(x)_r], stem:[r = 1,...,ii(M)] (see <<scls_7-2>>), are drawn from the PDFs stem:[g_{X_i} (xi_i)] for the N input quantities stem:[X_i]. Draws would be made from the joint (multivariate) PDF stem:[g_X (xi)] if appropriate. Recommendations concerning the manner in which this sampling can be carried out are given in <<annexC>>for the commonest distributions, viz. the rectangular, Gaussian, stem:[t], and multivariate Gaussian. Also see <<scls_6-4>>. It is possible to draw at random from any other distribution. See <<scls_C-2>>. Some such distributions could be approximations to distributions based on Monte Carlo results from a previous uncertainty calculation (see <<scls_6-5>>, <<scls_7-5>> and <<annexD>>).
+In an implementation of MCM, stem:[ii(M)] vectors stem:[bb(x)_r], stem:[r = 1,...,ii(M)] (see <<scls_7-2>>), are drawn from the PDFs stem:[g_{ii(X)_i} (xi_i)] for the N input quantities stem:[ii(X)_i]. Draws would be made from the joint (multivariate) PDF stem:[g_X (xi)] if appropriate. Recommendations concerning the manner in which this sampling can be carried out are given in <<annexC>>for the commonest distributions, viz. the rectangular, Gaussian, stem:[t], and multivariate Gaussian. Also see <<scls_6-4>>. It is possible to draw at random from any other distribution. See <<scls_C-2>>. Some such distributions could be approximations to distributions based on Monte Carlo results from a previous uncertainty calculation (see <<scls_6-5>>, <<scls_7-5>> and <<annexD>>).
 
 NOTE: For the results of MCM to be statistically valid, it is necessary that the pseudo-random number generators used to draw from the distributions required have appropriate properties. Some tests of randomness of the numbers produced by a generator are indicated in <<scls_C-3-2>>.
 
@@ -44,7 +44,7 @@ NOTE: For the results of MCM to be statistically valid, it is necessary that the
 [[scls_7-4-1]]
 ==== {blank}
 
-The model is evaluated for each of the stem:[ii(M)] draws from the PDFs for the N input quantities. Specifically, denote the stem:[ii(M)] draws by stem:[bb(x)_1,...,bb(x)_M], where the __r__th draw stem:[bb(x)_r] contains stem:[x_{1,r},..., x_{N,r}], with stem:[x_{i,r}] a draw from the PDF for stem:[X_i]. Then, the model values are
+The model is evaluated for each of the stem:[ii(M)] draws from the PDFs for the N input quantities. Specifically, denote the stem:[ii(M)] draws by stem:[bb(x)_1,...,bb(x)_M], where the __r__th draw stem:[bb(x)_r] contains stem:[x_{1,r},..., x_{N,r}], with stem:[x_{i,r}] a draw from the PDF for stem:[ii(X)_i]. Then, the model values are
 
 [stem%unnumbered]
 ++++
@@ -54,7 +54,7 @@ y_r = f(bb(x)_r), r = 1,...,ii(M).
 
 ==== {blank}
 
-The necessary modifications are made to <<scls_7-4-1>> if the stem:[X_i] are not independent and hence a joint PDF is assigned to them.
+The necessary modifications are made to <<scls_7-4-1>> if the stem:[ii(X)_i] are not independent and hence a joint PDF is assigned to them.
 
 NOTE: Model and derivative evaluations are made when applying the law of propagation of uncertainty, using exact derivatives, at the best estimates of the input quantities. Model evaluations only are made when applying the law of propagation of uncertainty when numerical (finite-difference) approximations to derivatives are used. These evaluations are made, if the GUM recommendation <<JCGM-100,clause=5.1.3 note 2>> is adopted, at the best estimates of the input quantities and at points perturbed by stem:[+-] one standard uncertainty from each estimate in turn. With MCM, model evaluations are made in the neighbourhood of these best estimates, viz. at points that can be expected to be up to several standard uncertainties away from these estimates. The fact that model evaluations are made at different points according to the approach used may raise issues regarding the numerical procedure used to evaluate the model, e.g. ensuring its convergence (where iterative schemes are used) and numerical stability. The user should ensure that, where appropriate, the numerical methods used to evaluate stem:[f] are valid for a sufficiently large region containing these best estimates. Only occasionally would it be expected that this aspect is critical.
 
@@ -65,7 +65,7 @@ NOTE: Model and derivative evaluations are made when applying the law of propaga
 [[scls_7-5-1]]
 ==== {blank}
 
-A discrete representation stem:[bb(G)] of the distribution function stem:[ii(G)_Y (eta)] for the output quantity stem:[ii(Y)] can be obtained as follows:
+A discrete representation stem:[bb(G)] of the distribution function stem:[ii(G)_Y (ii(eta))] for the output quantity stem:[ii(Y)] can be obtained as follows:
 
 . [[item_7-5-1a]]sort the model values stem:[y_r], stem:[r = 1,..., ii(M)], provided by MCM into non-decreasing order. Denote the sorted model values by stem:[y_{(r)}], stem:[r = 1,..., ii(M)];
 
@@ -89,12 +89,12 @@ NOTE: If stem:[ii(Y)] is to become an input quantity for a further uncertainty c
 
 ==== {blank}
 
-The stem:[y_{(r)}] (or stem:[y_r]), when assembled into a histogram (with suitable cell widths) form a frequency distribution that, when normalized to have unit area, provides an approximation to the PDF stem:[g_Y (eta)] for stem:[ii(Y)]. Calculations are not generally carried out in terms of this histogram, the resolution of which depends on the choice of cell widths, but in terms of G. The histogram can, however, be useful as an aid to understanding the nature of the PDF, e.g. the extent of its asymmetry. See, however, <<scls_7-8-3>> <<note1_7-8-3>> regarding the use of a large numerical value of stem:[ii(M)].
+The stem:[y_{(r)}] (or stem:[y_r]), when assembled into a histogram (with suitable cell widths) form a frequency distribution that, when normalized to have unit area, provides an approximation to the PDF stem:[g_Y (ii(eta))] for stem:[ii(Y)]. Calculations are not generally carried out in terms of this histogram, the resolution of which depends on the choice of cell widths, but in terms of G. The histogram can, however, be useful as an aid to understanding the nature of the PDF, e.g. the extent of its asymmetry. See, however, <<scls_7-8-3>> <<note1_7-8-3>> regarding the use of a large numerical value of stem:[ii(M)].
 
 
 ==== {blank}
 
-A continuous approximation to stem:[ii(G)_Y (eta)] is sometimes useful. <<annexD>> contains a means for obtaining such an approximation.
+A continuous approximation to stem:[ii(G)_Y (ii(eta))] is sometimes useful. <<annexD>> contains a means for obtaining such an approximation.
 
 
 [[scls_7-6]]
@@ -130,7 +130,7 @@ u^2(tilde(y)) = {ii(M)}/{ii(M) - 1} (1/{ii(M)} sum_{r=1}^{ii(M)} y_r^2 - tilde(y
 For the many circumstances in metrology in which stem:[u(y)] is much smaller than stem:[|y|] (in which case the stem:[y_r] have a number of leading decimal digits in common) the latter formula suffers numerically from subtractive cancellation (involving a mean square less a squared mean). This effect can be so severe that the resulting numerical value might have too few correct significant decimal digits for the uncertainty evaluation to be valid <<Chan1983>>.
 ====
 
-NOTE: In some special circumstances, such as when one of the input quantities has been assigned a PDF based on the stem:[t]-distribution with fewer than three degrees of freedom, the expectation and standard deviation of stem:[ii(Y)], as described by the PDF stem:[g_Y (eta)], might not exist. <<eq16>> and <<eq17>> might not then provide meaningful results. A coverage interval for stem:[ii(Y)] (see <<scls_7-7>>) can, however, be formed, since stem:[bb(G)] is meaningful and can be determined.
+NOTE: In some special circumstances, such as when one of the input quantities has been assigned a PDF based on the stem:[t]-distribution with fewer than three degrees of freedom, the expectation and standard deviation of stem:[ii(Y)], as described by the PDF stem:[g_Y (ii(eta))], might not exist. <<eq16>> and <<eq17>> might not then provide meaningful results. A coverage interval for stem:[ii(Y)] (see <<scls_7-7>>) can, however, be formed, since stem:[bb(G)] is meaningful and can be determined.
 
 NOTE: stem:[tilde(y)] will not in general agree with the model evaluated at the best estimates of the input quantities, since, for a non-linear model stem:[f(bb(X))], stem:[ii(E)(ii(Y)) = ii(E)(f(bb(X))) != f(ii(E)(bb(X)))] (cf. <<JCGM-100,clause=4.1.4>>). Irrespective of whether stem:[f] is linear or non-linear, in the limit as stem:[ii(M)] tends to infinity, stem:[tilde(y)] approaches stem:[ii(E)(f(bb(X)))] when stem:[ii(E)(f(bb(X)))] exists.
 
@@ -140,14 +140,14 @@ NOTE: stem:[tilde(y)] will not in general agree with the model evaluated at the 
 
 ==== {blank}
 
-A coverage interval for stem:[ii(Y)] can be determined from the discrete representation stem:[bb(G)] of stem:[G_Y (eta)] in an analogous manner to that in <<scls_5-3-2>> given stem:[ii(G)_Y (eta)].
+A coverage interval for stem:[ii(Y)] can be determined from the discrete representation stem:[bb(G)] of stem:[G_Y (ii(eta))] in an analogous manner to that in <<scls_5-3-2>> given stem:[ii(G)_Y (ii(eta))].
 
 
 ==== {blank}
 
 Let stem:[q = pii(M)], if stem:[pii(M)] is an integer. Otherwise, take stem:[q] to be the integer part of stem:[pii(M) + 1//2]. Then stem:[[y_{"low"},y_{"high"}\]] is a stem:[100p " %"] coverage interval for stem:[ii(Y)], where, for any stem:[r = 1,..., ii(M) - q], stem:[y_{"low"} = y_{(r)}] and stem:[y_{"high"} = y_{(r+q)}]. The probabilistically symmetric stem:[100p " %"] coverage interval is given by taking stem:[r = (ii(M) - q)//2], if stem:[(ii(M) - q)//2] is an integer, or the integer part of stem:[(ii(M) - q + 1)//2], otherwise. The shortest stem:[100p " %"] coverage interval is given by determining stem:[r^∗] such that, for stem:[r = 1,..., ii(M) - q, y_{(r^∗ + q)} - y_{(r^*)} <= y_{(r+q)} - y_{(r)}].
 
-NOTE: Because of the randomness in MCM, some of these stem:[ii(M) - q] interval lengths will be shorter than they would be on average, and some longer. So, by choosing the least such length, (the approximation to) the shortest stem:[100p " %"] coverage interval tends to be marginally shorter than that which would have been calculated from stem:[ii(G)_Y (eta)], with the consequence that the typical coverage probability is less than stem:[100p " %"]. For large stem:[ii(M)], this coverage probability is negligibly less than stem:[100p " %"].
+NOTE: Because of the randomness in MCM, some of these stem:[ii(M) - q] interval lengths will be shorter than they would be on average, and some longer. So, by choosing the least such length, (the approximation to) the shortest stem:[100p " %"] coverage interval tends to be marginally shorter than that which would have been calculated from stem:[ii(G)_Y (ii(eta))], with the consequence that the typical coverage probability is less than stem:[100p " %"]. For large stem:[ii(M)], this coverage probability is negligibly less than stem:[100p " %"].
 
 [example]
 stem:[10^5] numbers were drawn from a pseudo-random number generator for the rectangular distribution in the interval stem:[[0,1\]], and the shortest 95 % coverage interval formed as above. This exercise was carried out stem:[1000] times. The average coverage probability was 94.92 % and the standard deviation of the stem:[1000] coverage probabilities 0.06 %.
@@ -176,7 +176,7 @@ The times taken in the three steps are directly proportional to (a) stem:[ii(M)]
 If the model is simple and the input quantities are independent, the time in step <<item_7-8-1c>> can be expected to dominate, and the overall time taken is typically a few seconds for stem:[ii(M) = 10^6] on a personal computer operating at several GHz. Otherwise, let stem:[ii(T)_1] be the time taken to make one draw from the PDFs for the input quantities and stem:[T_2] that to make one evaluation of the model. Then, the overall time can be taken as essentially stem:[ii(M) xx (ii(T)_1 + ii(T)_2)], which, if the model is complicated, is dominated by the term stem:[ii(M) ii(T)_2].
 
 [[note1_7-8-3]]
-NOTE: If the model is simple and stem:[ii(M)] very large, e.g. stem:[10^8] or stem:[10^9], the sorting time may be excessive compared with the time taken to make the stem:[ii(M)] model evaluations. In such a case, calculations can instead be based on an approximation to stem:[g_Y (eta)] derived from a suitable histogram of the stem:[y_r].
+NOTE: If the model is simple and stem:[ii(M)] very large, e.g. stem:[10^8] or stem:[10^9], the sorting time may be excessive compared with the time taken to make the stem:[ii(M)] model evaluations. In such a case, calculations can instead be based on an approximation to stem:[g_Y (ii(eta))] derived from a suitable histogram of the stem:[y_r].
 
 
 [NOTE]
@@ -185,7 +185,7 @@ An indication of the computation time required for an application of MCM can be 
 
 [stem%unnumbered]
 ++++
-ii(Y) = cos X_1 + sin X_2 + tan^{-1} X_3 + exp(X_4) + X_5^(1//3).
+ii(Y) = cos ii(X)_1 + sin ii(X)_2 + tan^{-1} ii(X)_3 + exp(ii(X)_4) + ii(X)_5^(1//3).
 ++++
 
 Assign a Gaussian PDF to each input quantity stem:[ii(X)_i]. Make stem:[ii(M) = 10^6] Monte Carlo trials. The relative computation times for (a) generating 5M random Gaussian numbers, (b) forming stem:[ii(M)] model values and (&#x200c;c) sorting the stem:[ii(M)] model values were respectively 20 %, 20 % and 60 %, with a total computation time of a few seconds on a personal computer operating at several GHz.

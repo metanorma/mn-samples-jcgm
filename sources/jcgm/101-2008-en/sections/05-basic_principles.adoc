@@ -47,7 +47,7 @@ In this Supplement a generally efficient approach for determining (a numerical a
 
 [stem%unnumbered]
 ++++
-G_Y (eta) = int_{-oo}^{eta} g_Y (z) " d"z
+G_Y (ii(eta)) = int_{-oo}^{ii(eta)} g_Y (z) " d"z
 ++++
 
 for stem:[ii(Y)] is considered. It is based on applying a Monte Carlo method (MCM) as an implementation of the propagation of distributions (see <<scls_5-9>>).
@@ -59,10 +59,10 @@ A formal definition <<Cox2006>> for the PDF for stem:[ii(Y)] is
 
 [stem%unnumbered]
 ++++
-g_Y (eta) = int_{-oo}^{oo} ... int_{-oo}^{oo} g_{bb(X)} (bb(xi)) delta(eta - f(bb(xi))) " d"xi_N... "d"xi_1,
+g_Y (ii(eta)) = int_{-oo}^{oo} ... int_{-oo}^{oo} g_{bb(X)} (bb(xi)) delta(ii(eta) - f(bb(xi))) " d"xi_N... "d"xi_1,
 ++++
 
-where stem:[delta(cdot)] denotes the Dirac delta function. This multiple integral cannot generally be evaluated analytically. A numerical integration rule can be applied to provide an approximation to stem:[g_Y (eta)], but this is not an efficient approach.
+where stem:[delta(cdot)] denotes the Dirac delta function. This multiple integral cannot generally be evaluated analytically. A numerical integration rule can be applied to provide an approximation to stem:[g_Y (ii(eta))], but this is not an efficient approach.
 ====
 
 
@@ -76,7 +76,7 @@ An estimate stem:[y] of stem:[ii(Y)] is the expectation stem:[ii(E)(ii(Y))]. The
 [[scls_5-3-2]]
 ==== {blank}
 
-A coverage interval for stem:[ii(Y)] can be determined from stem:[G_Y (eta)]. Let stem:[alpha] denote any numerical value between zero and stem:[1 - p], where stem:[p] is the required coverage probability. The endpoints of a stem:[100p " %"] coverage interval for stem:[ii(Y)] are stem:[G_Y^{-1}(alpha)] and stem:[G_Y^{-1} (p + alpha)], i.e. the stem:[alpha]- and stem:[(p + alpha)]-quantiles of stem:[G_Y (eta)].
+A coverage interval for stem:[ii(Y)] can be determined from stem:[ii(G)_Y (ii(eta))]. Let stem:[alpha] denote any numerical value between zero and stem:[1 - p], where stem:[p] is the required coverage probability. The endpoints of a stem:[100p " %"] coverage interval for stem:[ii(Y)] are stem:[G_Y^{-1}(alpha)] and stem:[G_Y^{-1} (p + alpha)], i.e. the stem:[alpha]- and stem:[(p + alpha)]-quantiles of stem:[G_Y (ii(eta))].
 
 
 [[scls_5-3-3]]
@@ -90,7 +90,7 @@ NOTE: When the PDF for stem:[ii(Y)] is symmetric about the estimate stem:[y], th
 [[scls_5-3-4]]
 ==== {blank}
 
-A numerical value of stem:[alpha] different from stem:[(1 - p)//2] may be more appropriate if the PDF is asymmetric. The shortest stem:[100p " %"] coverage interval can be used in this case. It has the property that, for a unimodal (single-peaked) PDF, it contains the mode, the most probable value of stem:[ii(Y)]. It is given by the numerical value of stem:[alpha] satisfying stem:[g_Y (G_Y^{-1}(alpha)) = g_Y (G_Y^{-1} (p + alpha))], if stem:[g_Y (eta)] is unimodal, and in general by the numerical value of stem:[alpha] such that stem:[G_Y^{-1}(p + alpha) - G_Y^{-1}(alpha)] is a minimum.
+A numerical value of stem:[alpha] different from stem:[(1 - p)//2] may be more appropriate if the PDF is asymmetric. The shortest stem:[100p " %"] coverage interval can be used in this case. It has the property that, for a unimodal (single-peaked) PDF, it contains the mode, the most probable value of stem:[ii(Y)]. It is given by the numerical value of stem:[alpha] satisfying stem:[g_Y (G_Y^{-1}(alpha)) = g_Y (G_Y^{-1} (p + alpha))], if stem:[g_Y (ii(eta))] is unimodal, and in general by the numerical value of stem:[alpha] such that stem:[G_Y^{-1}(p + alpha) - G_Y^{-1}(alpha)] is a minimum.
 
 
 ==== {blank}
@@ -101,11 +101,11 @@ The probabilistically symmetric stem:[100p " %"] coverage interval and the short
 [[scls_5-3-6]]
 ==== {blank}
 
-<<fig1>> shows the distribution function stem:[G_Y (eta)] corresponding to an asymmetric PDF. Broken vertical lines mark the endpoints of the probabilistically symmetric 95 % coverage interval and broken horizontal lines the corresponding probability points, viz. 0.025 and 0.975. Continuous lines mark the endpoints of the shortest 95 % coverage interval and the corresponding probability points, which are 0.006 and 0.956 in this case. The lengths of the 95 % coverage intervals in the two cases are 1.76 unit and 1.69 unit, respectively.
+<<fig1>> shows the distribution function stem:[G_Y (ii(eta))] corresponding to an asymmetric PDF. Broken vertical lines mark the endpoints of the probabilistically symmetric 95 % coverage interval and broken horizontal lines the corresponding probability points, viz. 0.025 and 0.975. Continuous lines mark the endpoints of the shortest 95 % coverage interval and the corresponding probability points, which are 0.006 and 0.956 in this case. The lengths of the 95 % coverage intervals in the two cases are 1.76 unit and 1.69 unit, respectively.
 
 
 [[fig1]]
-.A distribution function stem:[G_Y (eta)] corresponding to an asymmetric PDF and the probabilistically symmetric and shortest 95 % coverage intervals (<<scls_5-3-6>>). "Unit" denotes any unit
+.A distribution function stem:[G_Y (ii(eta))] corresponding to an asymmetric PDF and the probabilistically symmetric and shortest 95 % coverage intervals (<<scls_5-3-6>>). "Unit" denotes any unit
 image::figure1.png[]
 
 
@@ -138,7 +138,7 @@ An appropriate method has to be chosen for the propagation stage. If it can be d
 [[scls_5-4-4]]
 ==== {blank}
 
-The propagation of the PDFs stem:[g_{X_i} (xi_i)], stem:[i = 1,..., ii(N)], for the input quantities stem:[ii(X)_i] through the model to provide the PDF stem:[g_Y (eta)] for the output quantity stem:[ii(Y)] is illustrated in <<fig2>> for stem:[N = 3] independent stem:[ii(X)_i]. <<fig2>> may be compared to <<fig3>> for the law of propagation of uncertainty. In <<fig2>>, the stem:[g_{X_i} (xi_i)], stem:[i = 1, 2, 3], are Gaussian, triangular, and Gaussian, respectively. stem:[g_Y(eta)] is indicated as being asymmetric, as generally arises for non-linear models or asymmetric stem:[g_{X_i} (xi_i)].
+The propagation of the PDFs stem:[g_{ii(X)_i} (xi_i)], stem:[i = 1,..., ii(N)], for the input quantities stem:[ii(X)_i] through the model to provide the PDF stem:[g_Y (ii(eta))] for the output quantity stem:[ii(Y)] is illustrated in <<fig2>> for stem:[N = 3] independent stem:[ii(X)_i]. <<fig2>> may be compared to <<fig3>> for the law of propagation of uncertainty. In <<fig2>>, the stem:[g_{ii(X)_i} (xi_i)], stem:[i = 1, 2, 3], are Gaussian, triangular, and Gaussian, respectively. stem:[g_Y(ii(eta))] is indicated as being asymmetric, as generally arises for non-linear models or asymmetric stem:[g_{ii(X)_i} (xi_i)].
 
 
 [[fig2]]
@@ -225,7 +225,7 @@ The propagation and summarizing stages of the GUM uncertainty framework (stages 
 . Calculate the model sensitivity coefficients <<JCGM-100,clause=5.1.3>> as the above partial derivatives evaluated at stem:[x].
 . Calculate the standard uncertainty stem:[u(y)] by combining stem:[u(x)], the stem:[u(x_i, x_j)], and the model sensitivity coefficients <<JCGM-100,clause=formulae (10), (13)>>.
 . Calculate stem:[nu_{"eff"}], the effective degrees of freedom associated with stem:[u(y)], using the Welch-Satterthwaite for-mula <<JCGM-100,clause=formula (G.2b)>>.
-. Calculate the expanded uncertainty stem:[U_p], and hence a coverage interval (for a stipulated coverage probability stem:[p]) for stem:[ii(Y)], regarded as a random variable, by forming the appropriate multiple of stem:[u(y)] through taking the probability distribution of stem:[(Y - y)//u(y)] as a standard Gaussian distribution (stem:[nu_{"eff"} = oo]) or stem:[t]-distribution (stem:[nu_{"eff"} < oo]).
+. Calculate the expanded uncertainty stem:[U_p], and hence a coverage interval (for a stipulated coverage probability stem:[p]) for stem:[ii(Y)], regarded as a random variable, by forming the appropriate multiple of stem:[u(y)] through taking the probability distribution of stem:[(ii(Y) - y)//u(y)] as a standard Gaussian distribution (stem:[nu_{"eff"} = oo]) or stem:[t]-distribution (stem:[nu_{"eff"} < oo]).
 
 
 [[fig3]]
@@ -311,12 +311,12 @@ When the conditions in <<scls_5-8-1>> and <<scls_5-8-2>> hold, the results from 
 
 ==== {blank}
 
-MCM provides a general approach to obtain an approximate numerical representation stem:[bb(G)], say, of the distribution function stem:[G_Y(eta)] for stem:[ii(Y)] <<Lira2002,page=75>>. The heart of the approach is repeated sampling from the PDFs for the stem:[ii(X)_i] and the evaluation of the model in each case.
+MCM provides a general approach to obtain an approximate numerical representation stem:[bb(G)], say, of the distribution function stem:[G_Y(ii(eta))] for stem:[ii(Y)] <<Lira2002,page=75>>. The heart of the approach is repeated sampling from the PDFs for the stem:[ii(X)_i] and the evaluation of the model in each case.
 
 
 ==== {blank}
 
-Since stem:[ii(G)_Y (eta)] encodes all the information known about stem:[ii(Y)], any property of stem:[ii(Y)] such as expectation, variance and coverage intervals can be approximated using stem:[bb(G)]. The quality of these calculated results improves as the number of times the PDFs are sampled increases.
+Since stem:[ii(G)_Y (ii(eta))] encodes all the information known about stem:[ii(Y)], any property of stem:[ii(Y)] such as expectation, variance and coverage intervals can be approximated using stem:[bb(G)]. The quality of these calculated results improves as the number of times the PDFs are sampled increases.
 
 
 ==== {blank}
@@ -326,7 +326,7 @@ Expectations and variances (and higher moments) can be determined directly from 
 
 ==== {blank}
 
-If stem:[y_r], for stem:[r = 1,..., ii(M)], represent stem:[ii(M)] model values sampled independently from a probability distribution for stem:[ii(Y)], then the expectation stem:[ii(E)(ii(Y)] and variance stem:[ii(V)(ii(Y))] can be approximated using the stem:[y_r]. In general, the moments of stem:[ii(Y)] (including stem:[ii(E)(ii(Y)] and stem:[ii(V)(ii(Y))]) are approximated by those of the sampled model values. Let stem:[ii(M)_{y_0}] denote the number of stem:[y_r] that are no greater than stem:[y_0], any prescribed number. The probability stem:["Pr"(ii(Y) <= y_0)] is approximated by stem:[M_{y_0}//ii(M)]. In this way, the stem:[y_r] provide a step function (histogram-like) approximation to the distribution function stem:[ii(G)_Y (eta)].
+If stem:[y_r], for stem:[r = 1,..., ii(M)], represent stem:[ii(M)] model values sampled independently from a probability distribution for stem:[ii(Y)], then the expectation stem:[ii(E)(ii(Y)] and variance stem:[ii(V)(ii(Y))] can be approximated using the stem:[y_r]. In general, the moments of stem:[ii(Y)] (including stem:[ii(E)(ii(Y)] and stem:[ii(V)(ii(Y))]) are approximated by those of the sampled model values. Let stem:[ii(M)_{y_0}] denote the number of stem:[y_r] that are no greater than stem:[y_0], any prescribed number. The probability stem:["Pr"(ii(Y) <= y_0)] is approximated by stem:[M_{y_0}//ii(M)]. In this way, the stem:[y_r] provide a step function (histogram-like) approximation to the distribution function stem:[ii(G)_Y (ii(eta))].
 
 
 ==== {blank}
@@ -446,6 +446,6 @@ Some features of MCM are
 
 . reduction in the analysis effort required for complicated or non-linear models, especially since the partial derivatives of first- or higher-order used in providing sensitivity coefficients for the law of propagation of uncertainty are not needed,
 . generally improved estimate of stem:[ii(Y)] for non-linear models (cf. <<JCGM-100,clause=4.1.4>>),
-. improved standard uncertainty associated with the estimate of stem:[ii(Y)] for non-linear models, especially when the stem:[X_i] are assigned non-Gaussian (e.g. asymmetric) PDFs, without the need to provide derivatives of higher order <<JCGM-100,clause=5.1.2 note>>,
-. provision of a coverage interval corresponding to a stipulated coverage probability when the PDF for stem:[ii(Y)] cannot adequately be approximated by a Gaussian distribution or a scaled and shifted stem:[t]-distribution, i.e. when the central limit theorem does not apply <<JCGM-100,clause=G.2.1, G.6.6>>. Such an inadequate approximation can arise when (1) the PDF assigned to a dominant stem:[X_i] is not a Gaussian distribution or a scaled and shifted stem:[t]-distribution, (2) the model is non-linear, or (3) the approximation error incurred in using the Welch-Satterthwaite formula for effective degrees of freedom is not negligible, and
+. improved standard uncertainty associated with the estimate of stem:[ii(Y)] for non-linear models, especially when the stem:[ii(X)_i] are assigned non-Gaussian (e.g. asymmetric) PDFs, without the need to provide derivatives of higher order <<JCGM-100,clause=5.1.2 note>>,
+. provision of a coverage interval corresponding to a stipulated coverage probability when the PDF for stem:[ii(Y)] cannot adequately be approximated by a Gaussian distribution or a scaled and shifted stem:[t]-distribution, i.e. when the central limit theorem does not apply <<JCGM-100,clause=G.2.1, G.6.6>>. Such an inadequate approximation can arise when (1) the PDF assigned to a dominant stem:[ii(X)_i] is not a Gaussian distribution or a scaled and shifted stem:[t]-distribution, (2) the model is non-linear, or (3) the approximation error incurred in using the Welch-Satterthwaite formula for effective degrees of freedom is not negligible, and
 . a coverage factor <<JCGM-100,clause=2.3.6>> is not required when determining a coverage interval.

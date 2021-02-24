@@ -18,7 +18,7 @@ Generally, a joint PDF stem:[g_X (xi)] is assigned to the input quantities stem:
 
 ==== {blank}
 
-When the stem:[X_i] are independent, PDFs stem:[g_{X_i} (xi_i)] are assigned individually based on an analysis of a series of indications (Type A evaluation of uncertainty) or based on scientific judgement using information <<Taylor1994>> such as historical data, calibrations, and expert judgement (Type B evaluation of uncertainty) <<JCGM-100,clause=3.3.5>>.
+When the stem:[ii(X)_i] are independent, PDFs stem:[g_{ii(X)_i} (xi_i)] are assigned individually based on an analysis of a series of indications (Type A evaluation of uncertainty) or based on scientific judgement using information <<Taylor1994>> such as historical data, calibrations, and expert judgement (Type B evaluation of uncertainty) <<JCGM-100,clause=3.3.5>>.
 
 
 ==== {blank}
@@ -30,7 +30,7 @@ NOTE: It may be possible to remove some or all dependencies by re-expressing rel
 
 ==== {blank}
 
-Information relevant to the assignment of PDFs to the stem:[X_i] is contained in the GUM <<JCGM-100,clause=4.3>>.
+Information relevant to the assignment of PDFs to the stem:[ii(X)_i] is contained in the GUM <<JCGM-100,clause=4.3>>.
 
 
 ==== {blank}
@@ -181,9 +181,9 @@ a| image::figure-table1-2.png[]
 
 | Sum of two quantities assigned rectangular distributions with lower and upper limits stem:[a_1], stem:[b_1] and stem:[a_2], stem:[b_2]
 a| Trapezoidal: +
-stem:["Trap"(a, b, beta)] with stem:[a = a_1 + a_2], +
+stem:["Trap"(a, b, ii(beta))] with stem:[a = a_1 + a_2], +
 stem:[b = b_1 + b_2], +
-stem:[beta = \|(b_1 - a_1) - (b_2 - a_2)\|//(b - a)]
+stem:[ii(beta) = \|(b_1 - a_1) - (b_2 - a_2)\|//(b - a)]
 a| image::figure-table1-3.png[]
 | <<scls_6-4-4>>
 
@@ -313,12 +313,12 @@ Hence stem:[u(x) = (0.0036)^{1//2} = 0.060 " "rm(V)], which can be compared with
 
 ===== {blank}
 
-The assignment of a symmetric trapezoidal distribution to a quantity is discussed in the GUM <<JCGM-100,clause=4.3.9>>. Suppose a quantity stem:[ii(X)] is defined as the sum of two independent quantities stem:[ii(X)_1] and stem:[ii(X)_2]. Suppose, for stem:[i = 1] and stem:[i = 2], stem:[ii(X)_i] is assigned a rectangular distribution stem:[R(a_i, b_i)] with lower limit stem:[a_i] and upper limit stem:[b_i]. Then the distribution for stem:[ii(X)] is a symmetric trapezoidal distribution stem:["Trap"(a, b, beta)] with lower limit stem:[a], upper limit stem:[b], and stem:[a] parameter stem:[beta] equal to the ratio of the semi-width of the top of the trapezoid to that of the base. The parameters of this trapezoidal distribution are related to those of the rectangular distributions by
+The assignment of a symmetric trapezoidal distribution to a quantity is discussed in the GUM <<JCGM-100,clause=4.3.9>>. Suppose a quantity stem:[ii(X)] is defined as the sum of two independent quantities stem:[ii(X)_1] and stem:[ii(X)_2]. Suppose, for stem:[i = 1] and stem:[i = 2], stem:[ii(X)_i] is assigned a rectangular distribution stem:[R(a_i, b_i)] with lower limit stem:[a_i] and upper limit stem:[b_i]. Then the distribution for stem:[ii(X)] is a symmetric trapezoidal distribution stem:["Trap"(a, b, ii(beta))] with lower limit stem:[a], upper limit stem:[b], and stem:[a] parameter stem:[ii(beta)] equal to the ratio of the semi-width of the top of the trapezoid to that of the base. The parameters of this trapezoidal distribution are related to those of the rectangular distributions by
 
 [[eq5]]
 [stem]
 ++++
-a = a_1 + a_2, " " b = b_1 + b_2, " " " "beta = lambda_1/lambda_2,
+a = a_1 + a_2, " " b = b_1 + b_2, " " " "ii(beta) = lambda_1/lambda_2,
 ++++
 
 where
@@ -379,17 +379,17 @@ stem:[ii(X)] has expectation and variance
 
 [stem%unnumbered]
 ++++
-ii(E)(ii(X)) = {a + b}/2, " " ii(V)(ii(X)) = {(b - a)^2}/24 (1 + beta^2).
+ii(E)(ii(X)) = {a + b}/2, " " ii(V)(ii(X)) = {(b - a)^2}/24 (1 + ii(beta)^2).
 ++++
 
 
 ===== {blank}
 
-To sample from stem:["Trap"(a, b, beta)], make two draws stem:[r_1] and stem:[r_2] independently from the standard rectangular distribution stem:[R(0, 1)] (see <<scls_C-3-3>>), and form
+To sample from stem:["Trap"(a, b, ii(beta))], make two draws stem:[r_1] and stem:[r_2] independently from the standard rectangular distribution stem:[R(0, 1)] (see <<scls_C-3-3>>), and form
 
 [stem%unnumbered]
 ++++
-xi = a + {b - a}/2 [(1 + beta)r_1 + (1 + beta)r_2].
+xi = a + {b - a}/2 [(1 + ii(beta))r_1 + (1 + ii(beta))r_2].
 ++++
 
 
@@ -398,7 +398,7 @@ xi = a + {b - a}/2 [(1 + beta)r_1 + (1 + beta)r_2].
 
 ===== {blank}
 
-Suppose a quantity stem:[ii(X)] is defined as the sum of two independent quantities, each assigned a rectangular distribution (see <<scls_6-4-4>>), but with equal semi-widths, i.e. stem:[b_1 - a_1 = b_2 - a_2]. It follows from <<eq5>> and <<eq6>> that stem:[lambda_1 = 0] and stem:[beta = 0]. The distribution for stem:[ii(X)] is the trapezoidal distribution stem:["Trap"(a, b, 0)], which reduces to the (symmetric) triangular distribution stem:[T(a, b)] over the interval stem:[[a,b\]].
+Suppose a quantity stem:[ii(X)] is defined as the sum of two independent quantities, each assigned a rectangular distribution (see <<scls_6-4-4>>), but with equal semi-widths, i.e. stem:[b_1 - a_1 = b_2 - a_2]. It follows from <<eq5>> and <<eq6>> that stem:[lambda_1 = 0] and stem:[ii(beta) = 0]. The distribution for stem:[ii(X)] is the trapezoidal distribution stem:["Trap"(a, b, 0)], which reduces to the (symmetric) triangular distribution stem:[T(a, b)] over the interval stem:[[a,b\]].
 
 
 ===== {blank}
@@ -457,7 +457,7 @@ If a quantity stem:[ii(X)] is known to cycle sinusoidally, with unknown phase st
 
 [stem%unnumbered]
 ++++
-X = {a + b}/2 + {b - a}/2 sin ii(Phi),
+ii(X) = {a + b}/2 + {b - a}/2 sin ii(Phi),
 ++++
 
 where stem:[ii(Phi)] has the rectangular distribution stem:[R(0,2pi)].
@@ -488,7 +488,7 @@ in the variable stem:[ii(Z)], through the linear transformation
 
 [stem%unnumbered]
 ++++
-X = a + (b - a)ii(Z).
+ii(X) = a + (b - a)ii(Z).
 ++++
 
 stem:[ii(Z)] has expectation 1/2 and variance 1/8. The distribution <<eq9,(9)>> is termed the arc sine distribution, since the corresponding distribution function is
@@ -634,14 +634,14 @@ whence
 
 [stem%unnumbered]
 ++++
-g_bb(X) (bb(xi)) = prod_{i=1}^N g_{X_i} (xi_i),
+g_bb(X) (bb(xi)) = prod_{i=1}^N g_{ii(X)_i} (xi_i),
 ++++
 
 with
 
 [stem%unnumbered]
 ++++
-g_{X_i} (xi_i) = 1/{sqrt(2 pi) (x_i)} exp(- {(xi - x_i)^2}/{2u^2(x_i)}).
+g_{ii(X)_i} (xi_i) = 1/{sqrt(2 pi) (x_i)} exp(- {(xi - x_i)^2}/{2u^2(x_i)}).
 ++++
 
 ====
@@ -673,14 +673,14 @@ The PDF for stem:[ii(X)] is
 [[eq12]]
 [stem]
 ++++
-g_X (xi) = {Gamma (n//2)}/{Gamma((n-1)//2)sqrt((n - 1)pi)} times 1/{s//sqrt(n)} (1 + 1/{n - 1} ({xi - bar(x)}/{s//sqrt(n)}))^{-n//2},
+g_X (xi) = {ii(Gamma) (n//2)}/{ii(Gamma)((n-1)//2)sqrt((n - 1)pi)} times 1/{s//sqrt(n)} (1 + 1/{n - 1} ({xi - bar(x)}/{s//sqrt(n)}))^{-n//2},
 ++++
 
 where
 
 [stem%unnumbered]
 ++++
-Gamma (z) = int_{0}^{oo} t^{z - 1} e^{-t} " d"t, " " " " z > 0
+ii(Gamma) (z) = int_{0}^{oo} t^{z - 1} e^{-t} " d"t, " " " " z > 0
 ++++
 
 is the gamma function.
@@ -735,7 +735,7 @@ is used, the degrees of freedom stem:[nu = n - 1] of the scaled and shifted stem
 
 [stem%unnumbered]
 ++++
-g_X (xi) = {Gamma((nu_{"p"} + 1)//2)}/{Gamma(nu_{"p"}//2)sqrt(nu_{"p"} pi)} times 1/{s_{"p"}//sqrt(n)}[1 + 1/{nu_{"p"}}({xi - bar(x)}/{s_{"p"}//sqrt(n)})^2]^{-(nu_{"p"} + 1)//2}
+g_X (xi) = {ii(Gamma)((nu_{"p"} + 1)//2)}/{ii(Gamma)(nu_{"p"}//2)sqrt(nu_{"p"} pi)} times 1/{s_{"p"}//sqrt(n)}[1 + 1/{nu_{"p"}}({xi - bar(x)}/{s_{"p"}//sqrt(n)})^2]^{-(nu_{"p"} + 1)//2}
 ++++
 
 and <<eq13>> by
@@ -840,7 +840,7 @@ To sample from stem:[G(q + 1, 1)], make stem:[q + 1] draws stem:[r_i], stem:[i =
 xi = - ln prod_{i=1}^{q+1} r_i.
 ++++
 
-NOTE: If the counting is performed over several samples (according to the same Poisson distribution), and stem:[q_i] is the number of objects counted in the __i__th sample, of size stem:[ii(S)_i], then the distribution for the average number of objects in a sample of size stem:[ii(S) = sum_i ii(S)_i] is stem:[G(alpha,beta)] with stem:[alpha = 1 + sum_i q_i] and stem:[beta = 1]. <<eq14>> and <<eq15>> apply with stem:[q = sum_i q_i].
+NOTE: If the counting is performed over several samples (according to the same Poisson distribution), and stem:[q_i] is the number of objects counted in the __i__th sample, of size stem:[ii(S)_i], then the distribution for the average number of objects in a sample of size stem:[ii(S) = sum_i ii(S)_i] is stem:[G(alpha,ii(beta))] with stem:[alpha = 1 + sum_i q_i] and stem:[ii(beta) = 1]. <<eq14>> and <<eq15>> apply with stem:[q = sum_i q_i].
 
 NOTE: The gamma distribution is a generalization of the chi-squared distribution and is used to characterize information associated with variances.
 

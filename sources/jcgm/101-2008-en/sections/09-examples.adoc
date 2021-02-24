@@ -261,24 +261,24 @@ NOTE: The conditions for the central limit theorem to apply are not well met in 
 
 ===== {blank}
 
-Consider the calibration of a weight stem:[W] of mass density stem:[rho_W] against a reference weight stem:[R] of mass density stem:[rho_R] having nominally the same mass, using a balance operating in air of mass density stem:[rho_a] <<OIML2004>>. Since stem:[rho_W] and stem:[rho_R] are generally different, it is necessary to account for buoyancy effects. Applying Archimedes' principle, the model takes the form
+Consider the calibration of a weight stem:[W] of mass density stem:[ii(rho)_W] against a reference weight stem:[R] of mass density stem:[ii(rho)_R] having nominally the same mass, using a balance operating in air of mass density stem:[ii(rho)_a] <<OIML2004>>. Since stem:[ii(rho)_W] and stem:[ii(rho)_R] are generally different, it is necessary to account for buoyancy effects. Applying Archimedes' principle, the model takes the form
 
 [[eq22]]
 [stem]
 ++++
-m_W (1 - rho_a//rho_W) = (m_R + delta_{m_R})(1 - rho_a//rho_R)
+m_W (1 - ii(rho)_a//ii(rho)_W) = (m_R + delta_{m_R})(1 - ii(rho)_a//ii(rho)_R)
 ++++
 
-where stem:[delta m_R] is the mass of a small weight of density stem:[rho_R] added to stem:[R] to balance it with stem:[W].
+where stem:[delta m_R] is the mass of a small weight of density stem:[ii(rho)_R] added to stem:[R] to balance it with stem:[W].
 
 
 ===== {blank}
 
-It is usual to work in terms of conventional masses. The conventional mass stem:[m_{W,c}] of stem:[W] is the mass of a (hypothetical) weight of density stem:[rho_0 = 8000 " "rm(kg/m)^3] that balances stem:[W] in air at density stem:[rho_{a_0} = 1.2 " "rm(kg/m)^3]. Thus,
+It is usual to work in terms of conventional masses. The conventional mass stem:[m_{W,c}] of stem:[W] is the mass of a (hypothetical) weight of density stem:[ii(rho)_0 = 8000 " "rm(kg/m)^3] that balances stem:[W] in air at density stem:[ii(rho)_{a_0} = 1.2 " "rm(kg/m)^3]. Thus,
 
 [stem%unnumbered]
 ++++
-m_W(1 - rho_{a_0}//rho_W) = m_{W,c}(1 - rho_{a_0}//rho_0).
+m_W(1 - ii(rho)_{a_0}//ii(rho)_W) = m_{W,c}(1 - ii(rho)_{a_0}//ii(rho)_0).
 ++++
 
 
@@ -289,14 +289,14 @@ In terms of conventional masses stem:[m_{W,c}], stem:[m_{R,c}] and stem:[delta m
 [[eq23]]
 [stem]
 ++++
-m_{W,c} (1 - rho_a//rho_W)(1 - rho_{a_0}//rho_W)^{-1} = (m_{R,c} + delta m_{R,c})(1 - rho_a//rho_R)(1 - rho_{a_0}//rho_R)^{-1},
+m_{W,c} (1 - ii(rho)_a//ii(rho)_W)(1 - ii(rho)_{a_0}//ii(rho)_W)^{-1} = (m_{R,c} + delta m_{R,c})(1 - ii(rho)_a//ii(rho)_R)(1 - ii(rho)_{a_0}//ii(rho)_R)^{-1},
 ++++
 
 from which, to an approximation adequate for most practical purposes,
 
 [stem%unnumbered]
 ++++
-m_{W,c} = (m_{R,c} + delta m_{R,c}) [1 + (rho_a - rho_{a_0}) (1/rho_W - 1/rho_R)].
+m_{W,c} = (m_{R,c} + delta m_{R,c}) [1 + (ii(rho)_a - ii(rho)_{a_0}) (1/ii(rho)_W - 1/ii(rho)_R)].
 ++++
 
 Let
@@ -318,7 +318,7 @@ The model used in this example is given by
 [[eq24]]
 [stem]
 ++++
-delta m = (m_{R,c} + delta m_{R,c}) [1 + (rho_a - rho_{a_0}) (1/rho_W - 1/rho_R)] - m_{"nom"}.
+delta m = (m_{R,c} + delta m_{R,c}) [1 + (ii(rho)_a - ii(rho)_{a_0}) (1/ii(rho)_W - 1/ii(rho)_R)] - m_{"nom"}.
 ++++
 
 NOTE: Applying the law of propagation of uncertainty to the "exact" model <<eq23,(23)>> is made difficult by the algebraic complexity of the partial derivatives. It is easier to apply MCM, because only model values need be formed.
@@ -327,24 +327,24 @@ NOTE: Applying the law of propagation of uncertainty to the "exact" model <<eq23
 [[scls_9-3-1-4]]
 ===== {blank}
 
-The only information available concerning stem:[m_{R,c}] and stem:[delta m_{R,c}] is a best estimate and an associated standard uncertainty for each of these quantities. Accordingly, following <<scls_6-4-7-1>>, a Gaussian distribution is assigned to each of these quantities, with these best estimates used as the expectations of the corresponding quantities and the associated standard uncertainties as the standard deviations. The only information available concerning stem:[rho_a], stem:[rho_W] and stem:[rho_R] is lower and upper limits for each of these quantities. Accordingly, following <<scls_6-4-2-1>>, a rectangular distribution is assigned to each of these quantities, with limits equal to the endpoints of the distribution. <<table5>> summarizes the input quantities and the PDFs assigned. In the table, a Gaussian distribution stem:[N(ii(mu), ii(sigma)^2)] is described in terms of expectation stem:[ii(mu)] and standard deviation stem:[ii(sigma)], and a rectangular distribution stem:[R(a, b)] with endpoints stem:[a] and stem:[b(a < b)] in terms of expectation stem:[(a + b)//2] and semi-width stem:[(b - a)//2].
+The only information available concerning stem:[m_{R,c}] and stem:[delta m_{R,c}] is a best estimate and an associated standard uncertainty for each of these quantities. Accordingly, following <<scls_6-4-7-1>>, a Gaussian distribution is assigned to each of these quantities, with these best estimates used as the expectations of the corresponding quantities and the associated standard uncertainties as the standard deviations. The only information available concerning stem:[ii(rho)_a], stem:[ii(rho)_W] and stem:[ii(rho)_R] is lower and upper limits for each of these quantities. Accordingly, following <<scls_6-4-2-1>>, a rectangular distribution is assigned to each of these quantities, with limits equal to the endpoints of the distribution. <<table5>> summarizes the input quantities and the PDFs assigned. In the table, a Gaussian distribution stem:[N(ii(mu), ii(sigma)^2)] is described in terms of expectation stem:[ii(mu)] and standard deviation stem:[ii(sigma)], and a rectangular distribution stem:[R(a, b)] with endpoints stem:[a] and stem:[b(a < b)] in terms of expectation stem:[(a + b)//2] and semi-width stem:[(b - a)//2].
 
 
-NOTE: The quantity stem:[rho_{a_0}] in the mass calibration model <<eq24,(24)>> is assigned the value stem:[1.2 " "rm(kg//m)^3] with no associated uncertainty.
+NOTE: The quantity stem:[ii(rho)_{a_0}] in the mass calibration model <<eq24,(24)>> is assigned the value stem:[1.2 " "rm(kg//m)^3] with no associated uncertainty.
 
 
 [[table5]]
 .The input quantities stem:[ii(X)_i] and the PDFs assigned to them for the mass calibration model <<eq24,(24)>> (<<scls_9-3-1-4>>)
 [cols="6*",options="header"]
 |===
-^| stem:[X_i] ^| Distribution 4+^| Parameters
+^| stem:[ii(X)_i] ^| Distribution 4+^| Parameters
 | | ^h| Expectation stem:[ii(mu)] ^h| Standard deviation stem:[ii(sigma)] ^h| Expectation stem:[x = (a + b)//2] ^h| Semi-width stem:[(b - a)//2]
 
 | stem:[m_{R,c}] | stem:[N(ii(mu),ii(sigma)^2)] | stem:[100000000 " "rm(mg)] | stem:[0.050 " "rm(mg)] | |
 | stem:[delta m_{R,c}] | stem:[N(ii(mu),ii(sigma)^2)] | 1.234 mg | 0.020 mg | |
-| stem:[rho_a] | stem:[R(a,b)] | | | stem:[1.20 " "rm(kg//m)^3] | stem:[0.10 " "rm(kg//m)^2]
-| stem:[rho_W] | stem:[R(a,b)] | | | stem:[8 xx 10^3 " "rm(kg//m)^3] | stem:[1 xx 10^3 " "rm(kg//m)^3]
-| stem:[rho_R] | stem:[R(a,b)] | | | stem:[8.00 xx 10^3 " "rm(kg//m)^3] | stem:[0.05 xx 10^3 " "rm(kg//m)^3]
+| stem:[ii(rho)_a] | stem:[R(a,b)] | | | stem:[1.20 " "rm(kg//m)^3] | stem:[0.10 " "rm(kg//m)^2]
+| stem:[ii(rho)_W] | stem:[R(a,b)] | | | stem:[8 xx 10^3 " "rm(kg//m)^3] | stem:[1 xx 10^3 " "rm(kg//m)^3]
+| stem:[ii(rho)_R] | stem:[R(a,b)] | | | stem:[8.00 xx 10^3 " "rm(kg//m)^3] | stem:[0.05 xx 10^3 " "rm(kg//m)^3]
 |===
 
 
@@ -406,13 +406,13 @@ MCM makes no such (implied) approximation to the model.
 .Sensitivity coefficients for the mass calibration model <<eq24,(24)>> (<<scls_9-3-2-5>>)
 [cols="^,^,^",options="header"]
 |===
-| stem:[X_i] | Partial derivative | Sensitivity coefficient
+| stem:[ii(X)_i] | Partial derivative | Sensitivity coefficient
 
-| stem:[m_{R,c}] | stem:[1 + (rho_a - rho_{a_0})(1//rho_W - 1//rho_R)] | 1
-| stem:[delta m_{R,c}] | stem:[1 + (rho_a - rho_a_0 )(1/rho_W - 1/rho_R)] | 1
-| stem:[rho_a] | stem:[(m_{R,c} + delta m_{R,c})(1//rho_W - 1//rho_R)] | 0
-| stem:[rho_W] | stem:[-(m_{R,c} + delta m_{R,c})(rho_a - rho_{a_0})//rho_W^2] | 0
-| stem:[rho_R] | stem:[(m_{R,c} + delta m_{R,c})(rho_a - rho_{a_0})//rho_R^2] | 0
+| stem:[m_{R,c}] | stem:[1 + (ii(rho)_a - ii(rho)_{a_0})(1//ii(rho)_W - 1//ii(rho)_R)] | 1
+| stem:[delta m_{R,c}] | stem:[1 + (ii(rho)_a - ii(rho)_a_0 )(1//ii(rho)_W - 1//ii(rho)_R)] | 1
+| stem:[ii(rho)_a] | stem:[(m_{R,c} + delta m_{R,c})(1//ii(rho)_W - 1//ii(rho)_R)] | 0
+| stem:[ii(rho)_W] | stem:[-(m_{R,c} + delta m_{R,c})(ii(rho)_a - ii(rho)_{a_0})//ii(rho)_W^2] | 0
+| stem:[ii(rho)_R] | stem:[(m_{R,c} + delta m_{R,c})(ii(rho)_a - ii(rho)_{a_0})//ii(rho)_R^2] | 0
 |===
 
 
@@ -434,15 +434,15 @@ During the calibration of a microwave power meter, the power meter and a standar
 [[eq25]]
 [stem]
 ++++
-Y = P_M/P_S = {1 - |: Gamma_M :|^2}/{1 - |: Gamma_S :|^2} times {|: 1 - Gamma_S Gamma_G :|^2}/{|: 1 - Gamma_M Gamma_G :|^2},
+ii(Y) = P_M/P_S = {1 - |: ii(Gamma)_M :|^2}/{1 - |: ii(Gamma)_S :|^2} times {|: 1 - ii(Gamma)_S ii(Gamma)_G :|^2}/{|: 1 - ii(Gamma)_M ii(Gamma)_G :|^2},
 ++++
 
-where stem:[Gamma_{"G"}] is the voltage reflection coefficient of the signal generator, stem:[Gamma_{"M"}] that of the meter being calibrated and stem:[Gamma_{"S"}] that of the standard meter. This power ratio is an instance of "comparison loss" <<Beatty1964>>, <<Kerns1967>>.
+where stem:[ii(Gamma)_{"G"}] is the voltage reflection coefficient of the signal generator, stem:[ii(Gamma)_{"M"}] that of the meter being calibrated and stem:[ii(Gamma)_{"S"}] that of the standard meter. This power ratio is an instance of "comparison loss" <<Beatty1964>>, <<Kerns1967>>.
 
 
 ===== {blank}
 
-Consider the case where the standard and the signal generator are reflectionless, i.e. stem:[Gamma_{"S"} = Gamma_{"G"} = 0], and measured values are obtained of the real and imaginary parts stem:[ii(X)_1] and stem:[ii(X)_2] of stem:[Gamma_M = ii(X)_1 + j ii(X)_2], where stem:[j^2 = -1]. Since stem:[|Gamma_M|^2 = ii(X)_1^2 + ii(X)_2^2], formula <<eq25>> becomes
+Consider the case where the standard and the signal generator are reflectionless, i.e. stem:[ii(Gamma)_{"S"} = ii(Gamma)_{"G"} = 0], and measured values are obtained of the real and imaginary parts stem:[ii(X)_1] and stem:[ii(X)_2] of stem:[ii(Gamma)_M = ii(X)_1 + j ii(X)_2], where stem:[j^2 = -1]. Since stem:[|ii(Gamma)_M|^2 = ii(X)_1^2 + ii(X)_2^2], formula <<eq25>> becomes
 
 [[eq26]]
 [stem]
@@ -479,7 +479,7 @@ Because the magnitudes of stem:[ii(X)_1] and stem:[ii(X)_2] in expression <<eq26
 delta ii(Y) = 1 - ii(Y) = ii(X)_1^2 + ii(X)_2^2,
 ++++
 
-taken as the model of measurement. For physical reasons, stem:[0 <= Y <= 1], and hence stem:[0 <= delta Y <= 1].
+taken as the model of measurement. For physical reasons, stem:[0 <= ii(Y) <= 1], and hence stem:[0 <= delta ii(Y) <= 1].
 
 
 ===== {blank}
@@ -741,7 +741,7 @@ NOTE: Apart from the requirement to draw from a multivariate distribution, the i
 .Comparison loss results, for input estimates with associated non-zero covariance (stem:[r(x_1, x_2) = 0.9]), obtained analytically, and using the GUM uncertainty framework (GUF) and MCM (<<scls_9-4-3-2-1>>)
 [cols="10*",options="header"]
 |===
-h| stem:[x_1] 3+h| Estimate stem:[delta y // 10^{-6}] 3+h| Standard uncertainty stem:[u(delta y)//10^{-6}] 3+h| Shortest 95 % coverage interval for stem:[delta Y//10^{-6}]
+h| stem:[x_1] 3+h| Estimate stem:[delta y // 10^{-6}] 3+h| Standard uncertainty stem:[u(delta y)//10^{-6}] 3+h| Shortest 95 % coverage interval for stem:[delta ii(Y)//10^{-6}]
 
 h| h| Analytical h| GUF h| MCM h| Analytical h| GUF h| MCM h| Analytical h| GUF h| MCM
 
@@ -787,10 +787,10 @@ The length of a nominally 50 mm gauge block is determined by comparing it with a
 [[eq29]]
 [stem]
 ++++
-d = ii(L) (1 + alpha theta) - ii(L)_s(1 + alpha_s theta_s)
+d = ii(L) (1 + alpha ii(theta)) - ii(L)_s(1 + alpha_s ii(theta)_s)
 ++++
 
-where stem:[ii(L)] is the length at stem:[20 " °C"] of the gauge block being calibrated, stem:[ii(L)_s] is the length of the reference standard at stem:[20 " °C"] as given in its calibration certificate, stem:[alpha] and stem:[alpha_s] are the coefficients of thermal expansion, respectively, of the gauge being calibrated and the reference standard, and stem:[theta] and stem:[theta_s] are the deviations in temperature from the stem:[20 " °C"] reference temperature, respectively, of the gauge block being calibrated and the reference standard.
+where stem:[ii(L)] is the length at stem:[20 " °C"] of the gauge block being calibrated, stem:[ii(L)_s] is the length of the reference standard at stem:[20 " °C"] as given in its calibration certificate, stem:[alpha] and stem:[alpha_s] are the coefficients of thermal expansion, respectively, of the gauge being calibrated and the reference standard, and stem:[ii(theta)] and stem:[ii(theta)_s] are the deviations in temperature from the stem:[20 " °C"] reference temperature, respectively, of the gauge block being calibrated and the reference standard.
 
 
 NOTE: The GUM refers to a gauge block as an end gauge.
@@ -805,7 +805,7 @@ From <<eq29>> the output quantity stem:[ii(L)] is given by
 [[eq30]]
 [stem]
 ++++
-ii(L) = {ii(L)_s (1 + alpha_ theta_s) + d} / {1 + alpha theta},
+ii(L) = {ii(L)_s (1 + alpha_s ii(theta)_s) + d} / {1 + alpha ii(theta)},
 ++++
 
 from which, to an approximation adequate for most practical purposes,
@@ -813,15 +813,15 @@ from which, to an approximation adequate for most practical purposes,
 [[eq31]]
 [stem]
 +++++
-ii(L) = ii(L)_s + d + ii(L)_s(alpha_s theta_s - alpha theta).
+ii(L) = ii(L)_s + d + ii(L)_s(alpha_s ii(theta)_s - alpha ii(theta)).
 +++++
 
-If the difference in temperature between the gauge block being calibrated and the reference standard is written as stem:[delta theta = theta - theta_s], and the difference in their thermal expansion coefficients as stem:[delta alpha = alpha - alpha_s], models <<eq30>> and <<eq31>> become, respectively,
+If the difference in temperature between the gauge block being calibrated and the reference standard is written as stem:[delta ii(theta) = ii(theta) - ii(theta)_s], and the difference in their thermal expansion coefficients as stem:[delta alpha = alpha - alpha_s], models <<eq30>> and <<eq31>> become, respectively,
 
 [[eq32]]
 [stem]
 ++++
-ii(L) = {ii(L)_s [1 + alpha_s (theta - delta theta)] + d} / {1 + (alpha_s + delta alpha)theta}
+ii(L) = {ii(L)_s [1 + alpha_s (ii(theta) - delta ii(theta))] + d} / {1 + (alpha_s + delta alpha)ii(theta)}
 ++++
 
 and
@@ -829,7 +829,7 @@ and
 [[eq33]]
 [stem]
 ++++
-ii(L) = ii(L)_s + d - ii(L)_s(theta delta alpha + alpha_s delta theta).
+ii(L) = ii(L)_s + d - ii(L)_s(ii(theta) delta alpha + alpha_s delta ii(theta)).
 ++++
 
 
@@ -848,16 +848,16 @@ where stem:[ii(D)] is a quantity of which the average of the five indications is
 
 ===== {blank}
 
-The quantity stem:[theta], representing deviation of the temperature from stem:[20 " °C"] of the gauge block being calibrated, can be expressed as
+The quantity stem:[ii(theta)], representing deviation of the temperature from stem:[20 " °C"] of the gauge block being calibrated, can be expressed as
 
 [[eq35]]
 [stem]
 ++++
-theta = theta_0 + Delta,
+ii(theta) = ii(theta)_0 + ii(Delta),
 ++++
 
 
-where stem:[theta_0] is a quantity representing the average temperature deviation of the gauge block from stem:[20 " °C"] and a quantity describing a cyclic variation of the temperature deviation from stem:[theta_0].
+where stem:[ii(theta)_0] is a quantity representing the average temperature deviation of the gauge block from stem:[20 " °C"] and a quantity describing a cyclic variation of the temperature deviation from stem:[ii(theta)_0].
 
 
 ===== {blank}
@@ -874,7 +874,7 @@ of the gauge block, gives
 [[eq36]]
 [stem]
 ++++
-delta ii(L) = {ii(L)_s [1 + alpha_s (theta_0 + Delta - delta theta)] + ii(D) + d_1 + d_2} / {1 + (alpha_s + delta alpha)(theta_0 + Delta)}
+delta ii(L) = {ii(L)_s [1 + alpha_s (ii(theta)_0 + ii(Delta) - delta ii(theta))] + ii(D) + d_1 + d_2} / {1 + (alpha_s + delta alpha)(ii(theta)_0 + ii(Delta))}
 ++++
 
 and
@@ -882,7 +882,7 @@ and
 [[eq37]]
 [stem]
 ++++
-delta ii(L) = ii(L)_s + ii(D) + d_1 + d_2 - ii(L)_s[delta alpha (theta_0 + Delta) + alpha_s delta theta] - ii(L)_{"nom"}
+delta ii(L) = ii(L)_s + ii(D) + d_1 + d_2 - ii(L)_s[delta alpha (ii(theta)_0 + ii(Delta)) + alpha_s delta ii(theta)] - ii(L)_{"nom"}
 ++++
 
 as models for the measurement problem.
@@ -890,7 +890,7 @@ as models for the measurement problem.
 
 ===== {blank}
 
-The treatment here of the measurement problem is in terms of the models <<eq36,(36)>> and <<eq37,(37)>> with output quantity stem:[delta ii(L)] and input quantities stem:[ii(L)_s], stem:[ii(D)], stem:[d_1], stem:[d_2], stem:[alpha_s], stem:[theta_0], stem:[Delta], stem:[delta alpha] and stem:[delta theta]. It differs from that given in GUM example H.1 in that in the GUM the models <<eq34,(34)>> and <<eq35,(35)>> above are treated as sub-models to models <<eq32,(32)>> and <<eq33,(33)>>, i.e. the GUM uncertainty framework is applied to each model <<eq34,(34)>> and <<eq35,(35)>>, with the results obtained used to provide information about the input quantities stem:[d] and stem:[theta] in models <<eq32,(32)>> and <<eq33,(33)>>. The treatment here avoids having to use the results obtained from MCM applied to the sub-models <<eq34,(34)>> and <<eq35,(35)>> to provide information about the distributions for the input quantities stem:[d] and stem:[theta] in expressions <<eq32,(32)>> and <<eq33,(33)>>.
+The treatment here of the measurement problem is in terms of the models <<eq36,(36)>> and <<eq37,(37)>> with output quantity stem:[delta ii(L)] and input quantities stem:[ii(L)_s], stem:[ii(D)], stem:[d_1], stem:[d_2], stem:[alpha_s], stem:[ii(theta)_0], stem:[ii(Delta)], stem:[delta alpha] and stem:[delta ii(theta)]. It differs from that given in GUM example H.1 in that in the GUM the models <<eq34,(34)>> and <<eq35,(35)>> above are treated as sub-models to models <<eq32,(32)>> and <<eq33,(33)>>, i.e. the GUM uncertainty framework is applied to each model <<eq34,(34)>> and <<eq35,(35)>>, with the results obtained used to provide information about the input quantities stem:[d] and stem:[ii(theta)] in models <<eq32,(32)>> and <<eq33,(33)>>. The treatment here avoids having to use the results obtained from MCM applied to the sub-models <<eq34,(34)>> and <<eq35,(35)>> to provide information about the distributions for the input quantities stem:[d] and stem:[ii(theta)] in expressions <<eq32,(32)>> and <<eq33,(33)>>.
 
 
 ==== Formulation: assignment of PDFs
@@ -909,23 +909,23 @@ In the following subclauses the available information about each input quantity 
 
 | | | stem:[ii(mu)] | stem:[ii(sigma)] | stem:[nu] | stem:[a] | stem:[b] | stem:[d]
 
-| stem:[L_s] | stem:[t_{nu} (ii(mu), ii(sigma)^2)] | stem:[50000623 " " rm(nm)] | 25 nm | 18 | | | 
-| stem:[D] | stem:[t_{nu} (ii(mu), ii(sigma)^2)] | 215 nm | 6 nm | 24 | | | 
+| stem:[ii(L)_s] | stem:[t_{nu} (ii(mu), ii(sigma)^2)] | stem:[50000623 " " rm(nm)] | 25 nm | 18 | | | 
+| stem:[ii(D)] | stem:[t_{nu} (ii(mu), ii(sigma)^2)] | 215 nm | 6 nm | 24 | | | 
 | stem:[d_1] | stem:[t_{nu} (ii(mu), ii(sigma)^2)] | 0 nm | 4 nm | 5  | | |
 | stem:[d_2] | stem:[t_{nu} (ii(mu), ii(sigma)^2)] | 0 nm | 7 nm | 8  | | |
 | stem:[alpha_s] | stem:[R(a,b)] | | | | stem:[9.5 xx 10^{-6} " °C"^{-1}] | |
-| stem:[theta_0] | stem:[N(ii(mu),ii(sigma)^2)] | stem:[-0.1 " °C"] | stem:[0.2 " °C"] | | | |
-| stem:[Delta] | stem:[U(a,b)] | | | | stem:[-0.5 " °C"] | stem:[0.5 " °C"] |
+| stem:[ii(theta)_0] | stem:[N(ii(mu),ii(sigma)^2)] | stem:[-0.1 " °C"] | stem:[0.2 " °C"] | | | |
+| stem:[ii(Delta)] | stem:[U(a,b)] | | | | stem:[-0.5 " °C"] | stem:[0.5 " °C"] |
 | stem:[delta alpha] | stem:["CTrap"(a,b,d)] | | | | stem:[-1.0 xx 10^{-6} " °C"^{-1}] | stem:[1.0 xx 10^{-6} " °C"^{-1}] | stem:[1.0 xx 10^{-6} " °C"^{-1}]
-| stem:[delta theta] | stem:["CTrap"(a,b,d)] | | | | stem:[-0.050 " °C"] | stem:[0.050 " °C"] | stem:[0.025 " °C"]
+| stem:[delta ii(theta)] | stem:["CTrap"(a,b,d)] | | | | stem:[-0.050 " °C"] | stem:[0.050 " °C"] | stem:[0.025 " °C"]
 |===
 
 
-===== Length stem:[L_s] of the reference standard
+===== Length stem:[ii(L)_s] of the reference standard
 
 ======  Information
 
-The calibration certificate for the reference standard gives stem:[hat(L_s) = 50.000623" " rm(mm)] as its length at stem:[20 " °C"] <<JCGM-100,clause=H.1.5>>. It gives stem:[ii(U)_p = 0.075 " "murm(m)] as the expanded uncertainty of the reference standard and states that it was obtained using a coverage factor of stem:[k_p = 3] <<JCGM-100,clause=H.1.3.1>>. The certificate states that the effective degrees of freedom associated with the combined standard uncertainty, from which the quoted expanded uncertainty was obtained, is stem:[nu_{"eff"} (u(hat(L_s))) = 18] <<JCGM-100,clause=H.1.6>>.
+The calibration certificate for the reference standard gives stem:[hat(ii(L)_s) = 50.000623" " rm(mm)] as its length at stem:[20 " °C"] <<JCGM-100,clause=H.1.5>>. It gives stem:[ii(U)_p = 0.075 " "murm(m)] as the expanded uncertainty of the reference standard and states that it was obtained using a coverage factor of stem:[k_p = 3] <<JCGM-100,clause=H.1.3.1>>. The certificate states that the effective degrees of freedom associated with the combined standard uncertainty, from which the quoted expanded uncertainty was obtained, is stem:[nu_{"eff"} (u(hat(ii(L)_s))) = 18] <<JCGM-100,clause=H.1.6>>.
 
 
 ======  Interpretation
@@ -959,7 +959,7 @@ ii(mu) = 215 " nm", " " " " " " " " ii(sigma) = 13/{sqrt(5)} " nm" = 6 nm, " " "
 
 ======  Information
 
-According to the calibration certificate of the comparator used to compare stem:[L] with stem:[L_s], the associated uncertainty due to random effects is stem:[0.01" "mu rm(m)] for a coverage probability of 95 % and is obtained from six indications, obtained independently <<JCGM-100,clause=H.1.3.2>>.
+According to the calibration certificate of the comparator used to compare stem:[ii(L)] with stem:[ii(L)_s], the associated uncertainty due to random effects is stem:[0.01" "mu rm(m)] for a coverage probability of 95 % and is obtained from six indications, obtained independently <<JCGM-100,clause=H.1.3.2>>.
 
 
 ======  Interpretation
@@ -1011,16 +1011,16 @@ a = 9.5 xx 10^{-6} " °C"^{-1}," " " " " " " " b = 13.5 xx 10^{-6} " °C"^{-1}.
 NOTE: There is no information about the reliability of the limits and so a rectangular distribution with exactly known limits is assigned. Such information may have been omitted from the description in the GUM because the corresponding sensitivity coefficient is zero, and so the quantity makes no contribution in an application of the GUM uncertainty framework based on first-order terms only.
 
 
-===== Average temperature deviation stem:[theta_0]
+===== Average temperature deviation stem:[ii(theta)_0]
 
 ======  Information
 
-The temperature of the test bed is reported as stem:[(19.9 +- 0.5) " °C"]. The average temperature deviation stem:[hat(theta_0) = -0.1 " °C"] is reported as having an associated standard uncertainty due to the uncertainty associated with the average temperature of the test bed of stem:[u(hat(theta_0)) = 0.2 " °C"] <<JCGM-100,clause=H.1.3.4>>.
+The temperature of the test bed is reported as stem:[(19.9 +- 0.5) " °C"]. The average temperature deviation stem:[hat(ii(theta)_0) = -0.1 " °C"] is reported as having an associated standard uncertainty due to the uncertainty associated with the average temperature of the test bed of stem:[u(hat(ii(theta)_0)) = 0.2 " °C"] <<JCGM-100,clause=H.1.3.4>>.
 
 
 ======  Interpretation
 
-Assign a Gaussian distribution stem:[N(ii(mu),ii(sigma)^2)] (see <<scls_6-4-7>>) to stem:[theta_0], with
+Assign a Gaussian distribution stem:[N(ii(mu),ii(sigma)^2)] (see <<scls_6-4-7>>) to stem:[ii(theta)_0], with
 
 [stem%unnumbered]
 ++++
@@ -1030,7 +1030,7 @@ ii(mu) = - 0.1 " °C", " " " " " " " " ii(sigma) = 0.2 " °C"
 NOTE: There is no information about the source of the evaluation of the uncertainty and so a Gaussian distribution is assigned. Also see <<scls_9-5-2-6-2>> note, regarding such information.
 
 
-===== Effect stem:[Delta] of cyclic temperature variation
+===== Effect stem:[ii(Delta)] of cyclic temperature variation
 
 ====== Information
 
@@ -1069,16 +1069,16 @@ a = -1.0 xx 10^{-6} " °C"^{-1}, " " " " " " " " b = 1.0 xx 10^{-6} " °C"^{-1},
 The stated reliability of 10 % on the estimated bounds provides the basis for this value of stem:[d].
 
 
-===== Difference stem:[delta theta] in temperatures
+===== Difference stem:[delta ii(theta)] in temperatures
 
 ======  Information
 
-The reference standard and the gauge block being calibrated are expected to be at the same temperature, but the temperature difference stem:[delta theta] could lie with equal probability anywhere in the estimated interval stem:[-0.05 " °C"] to stem:[0.05 " °C"] <<JCGM-100,clause=H.1.3.6>>. This difference is believed to be reliable only to 50 %, giving stem:[nu(u(hat(delta theta))) = 2] <<JCGM-100,clause=H.1.6>>.
+The reference standard and the gauge block being calibrated are expected to be at the same temperature, but the temperature difference stem:[delta ii(theta)] could lie with equal probability anywhere in the estimated interval stem:[-0.05 " °C"] to stem:[0.05 " °C"] <<JCGM-100,clause=H.1.3.6>>. This difference is believed to be reliable only to 50 %, giving stem:[nu(u(hat(delta ii(theta)))) = 2] <<JCGM-100,clause=H.1.6>>.
 
 
 ======  Interpretation
 
-Assign a rectangular distribution with inexactly prescribed limits (see <<scls_6-4-3>>) to stem:[delta theta], with
+Assign a rectangular distribution with inexactly prescribed limits (see <<scls_6-4-3>>) to stem:[delta ii(theta)], with
 
 [stem%unnumbered]
 ++++
@@ -1124,7 +1124,7 @@ stem:[1.26 xx 10^6] trials were taken by the adaptive Monte Carlo procedure. The
 .Results obtained for the approximate model <<eq37,(37)>> using the information summarized in <<table10>> (<<scls_9-5-4-1>>, <<scls_9-5-4-3>>)
 [cols="4*",options="header"]
 |===
-| Method | stem:[hat(delta ii(L))//rm(nm)] | stem:[u(hat(delta ii(L)))//rm(nm)] | Shortest 99 % coverage interval for stem:[delta L//rm(nm)]
+| Method | stem:[hat(delta ii(L))//rm(nm)] | stem:[u(hat(delta ii(L)))//rm(nm)] | Shortest 99 % coverage interval for stem:[delta ii(L)//rm(nm)]
 
 | GUF | 838 | 32 | [745, 931]
 | MCM | 838 | 36 | [745, 932]

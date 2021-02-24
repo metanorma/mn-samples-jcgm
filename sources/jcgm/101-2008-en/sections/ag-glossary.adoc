@@ -41,9 +41,9 @@ stem:["Ex"(lambda)]:: exponential distribution with parameter stem:[lambda]
 
 stem:[f]:: mathematical model of measurement, expressed as a functional relationship between an output quan-tity stem:[ii(Y)] and the input quantities stem:[ii(X)_1,...,ii(X)_N] on which stem:[ii(Y)] depends
 
-stem:[bb(G)]:: discrete representation of the distribution function stem:[ii(G)_Y(eta)] for the output quantity stem:[ii(Y)] from a Monte Carlo procedure
+stem:[bb(G)]:: discrete representation of the distribution function stem:[ii(G)_Y(ii(eta))] for the output quantity stem:[ii(Y)] from a Monte Carlo procedure
 
-stem:[G(alpha,beta)]:: gamma distribution with parameters stem:[alpha] and stem:[beta]
+stem:[G(alpha,ii(beta))]:: gamma distribution with parameters stem:[alpha] and stem:[ii(beta)]
 
 stem:[g_X (xi)]::  probability density function with variable stem:[xi] for the input quantity stem:[ii(X)]
 
@@ -51,13 +51,13 @@ stem:[g_{bb(X)} (bb(xi))]::  joint (multivariate) probability density function w
 
 stem:[g_{ii(X)_i}(xi_i)]:: probability density function with variable stem:[xi_i] for the input quantity stem:[ii(X)_i]
 
-stem:[G_Y (eta)]:: distribution function with variable stem:[eta] for the output quantity stem:[ii(Y)]
+stem:[G_Y (ii(eta))]:: distribution function with variable stem:[ii(eta)] for the output quantity stem:[ii(Y)]
 
-stem:[tilde(G)_Y (eta)]:: continuous approximation to the distribution function stem:[ii(G)_Y (eta)] for the output quantity stem:[ii(Y)]
+stem:[tilde(G)_Y (ii(eta))]:: continuous approximation to the distribution function stem:[ii(G)_Y (ii(eta))] for the output quantity stem:[ii(Y)]
 
-stem:[g_Y (eta)]:: probability density function with variable stem:[eta] for the output quantity stem:[ii(Y)]
+stem:[g_Y (ii(eta))]:: probability density function with variable stem:[ii(eta)] for the output quantity stem:[ii(Y)]
 
-stem:[tilde(g)_Y (eta)]:: derivative of stem:[ii(G)_Y (eta)] with respect to stem:[eta], providing a numerical approximation to the probability density function stem:[g_Y(eta)] for the output quantity stem:[ii(Y)]
+stem:[tilde(g)_Y (ii(eta))]:: derivative of stem:[ii(G)_Y (ii(eta))] with respect to stem:[ii(eta)], providing a numerical approximation to the probability density function stem:[g_Y(ii(eta))] for the output quantity stem:[ii(Y)]
 
 stem:[J]:: smallest integer greater than or equal to stem:[100//(1 - p)]
 
@@ -65,7 +65,7 @@ stem:[k_p]:: coverage factor corresponding to the coverage probability stem:[p]
 
 stem:[cc(l)]:: integer in the representation stem:[c xx 10^{cc(l)}] of a numerical value, where stem:[c] is an stem:[n_{"dig"}]-decimal digit integer
 
-stem:[M]:: number of Monte Carlo trials
+stem:[ii(M)]:: number of Monte Carlo trials
 
 stem:[N]:: number of input quantities stem:[ii(X)_1,..., ii(X)_N]
 
@@ -105,7 +105,7 @@ stem:[s_z]:: standard deviation associated with the average stem:[z] of the valu
 
 stem:[T(a, b)]:: triangular distribution over the interval stem:[[a,b\]]
 
-stem:["Trap"(a,b,beta)]:: trapezoidal distribution over the interval stem:[[a,b\]] with parameter stem:[beta]
+stem:["Trap"(a,b,ii(beta))]:: trapezoidal distribution over the interval stem:[[a,b\]] with parameter stem:[ii(beta)]
 
 stem:[t_{nu}]:: central stem:[t]-distribution with stem:[nu] degrees of freedom
 
@@ -145,7 +145,7 @@ stem:[ii(X)]:: input quantity, regarded as a random variable
 
 stem:[ii(X)]:: vector stem:[(ii(X)_1,..., ii(X)_N )^{sf(T)}] of input quantities, regarded as random variables, on which the output quantity stem:[ii(Y)] depends
 
-stem:[X_i]:: __i__th input quantity, regarded as a random variable, on which the output quantity stem:[ii(Y)] depends
+stem:[ii(X)_i]:: __i__th input quantity, regarded as a random variable, on which the output quantity stem:[ii(Y)] depends
 
 stem:[x]:: estimate (expectation) of stem:[ii(X)]
 
@@ -165,7 +165,7 @@ stem:[ii(Y)]:: (scalar) output quantity, regarded as a random variable
 
 stem:[y]:: estimate (expectation) of stem:[ii(Y)]
 
-stem:[tilde(y)]:: estimate of stem:[ii(Y)], obtained as the average of the stem:[ii(M)] model values stem:[y_r] from a Monte Carlo run or as the expectation of stem:[ii(Y)] characterized by the probability density function stem:[g_Y (eta)]
+stem:[tilde(y)]:: estimate of stem:[ii(Y)], obtained as the average of the stem:[ii(M)] model values stem:[y_r] from a Monte Carlo run or as the expectation of stem:[ii(Y)] characterized by the probability density function stem:[g_Y (ii(eta))]
 
 stem:[y_{"high"}]:: right-hand endpoint of a coverage interval for stem:[ii(Y)]
 
@@ -181,17 +181,17 @@ stem:[alpha]:: probability value
 
 stem:[alpha]:: parameter of a gamma distribution
 
-stem:[beta]:: parameter of a trapezoidal distribution equal to the ratio of the semi-width of the top of the trapezoid to that of the base
+stem:[ii(beta)]:: parameter of a trapezoidal distribution equal to the ratio of the semi-width of the top of the trapezoid to that of the base
 
-stem:[beta]:: parameter of a gamma distribution
+stem:[ii(beta)]:: parameter of a gamma distribution
 
-stem:[Gamma(z)]:: function with variable stem:[z]
+stem:[ii(Gamma)(z)]:: function with variable stem:[z]
 
 stem:[delta]:: numerical tolerance associated with a numerical value
 
 stem:[delta(z)]:: Dirac delta function with variable stem:[z]
 
-stem:[eta]:: variable describing the possible values of the output quantity stem:[ii(Y)]
+stem:[ii(eta)]:: variable describing the possible values of the output quantity stem:[ii(Y)]
 
 stem:[lambda_1]:: top semi-width of the trapezoid for a trapezoidal distribution
 

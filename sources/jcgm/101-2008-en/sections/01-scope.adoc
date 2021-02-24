@@ -35,7 +35,7 @@ A validation procedure is provided to check whether the GUM uncertainty framewor
 
 It is usually sufficient to report measurement uncertainty to one or perhaps two significant decimal digits. Guidance is provided on carrying out the calculation to give reasonable assurance that in terms of the information provided the reported decimal digits are correct.
 
-Detailed examples illustrate the guidance provided.
+Diled examples illustrate the guidance provided.
 
 This document is a Supplement to the GUM and is to be used in conjunction with it. Other approaches generally consistent with the GUM may alternatively be used. The audience of this Supplement is that of the GUM.
 

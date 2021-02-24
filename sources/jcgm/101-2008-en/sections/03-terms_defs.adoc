@@ -87,7 +87,7 @@ probability distribution of a continuous random variable stem:[ii(X)] having the
 
 [stem%unnumbered]
 ++++
-g_x(xi) = (Gamma((nu + 1)//2)) / {sqrt(pi nu)Gamma (nu//2)} (1 + xi^2/nu)^{-(nu+1)//2},
+g_x(xi) = (ii(Gamma)((nu + 1)//2)) / {sqrt(pi nu)ii(Gamma) (nu//2)} (1 + xi^2/nu)^{-(nu+1)//2},
 ++++
 
 
@@ -95,7 +95,7 @@ for stem:[-oo < xi < +oo], with parameter stem:[ii(nu)], a positive integer, the
 
 [stem%unnumbered]
 ++++
-Gamma(z) = int_0^{oo} t^{z-1} e^{-t} " d"t, " " " " z > 0
+ii(Gamma)(z) = int_0^{oo} t^{z-1} e^{-t} " d"t, " " " " z > 0
 ++++
 
 is the gamma function

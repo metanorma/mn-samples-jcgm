@@ -18,11 +18,11 @@ is stated. It constitutes the endpoints of the probabilistically symmetric 95 % 
 
 === {blank}
 
-The rectangular distribution stem:[R(a, b)] (see <<scls_6-4-2>>) takes the constant value stem:[(b - a)^{-1}] for stem:[a <= rho <= b] and is zero otherwise. The stem:[n]-fold convolution of stem:[R(0, 1)] is the B-spline stem:[B_n(rho)] of order stem:[n] (degree stem:[n - 1]) with knots stem:[0,...,n] <<Schoenberg1969>>. An explicit expression is <<Cox1972>>
+The rectangular distribution stem:[R(a, b)] (see <<scls_6-4-2>>) takes the constant value stem:[(b - a)^{-1}] for stem:[a <= ii(rho) <= b] and is zero otherwise. The stem:[n]-fold convolution of stem:[R(0, 1)] is the B-spline stem:[B_n(ii(rho))] of order stem:[n] (degree stem:[n - 1]) with knots stem:[0,...,n] <<Schoenberg1969>>. An explicit expression is <<Cox1972>>
 
 [stem%unnumbered]
 ++++
-B_n(rho) = 1/{(n - 1)!} sum_{r=0}^n ""^n C_r (-1)^r (rho - r)_{+}^{n-1}
+B_n(ii(rho)) = 1/{(n - 1)!} sum_{r=0}^n ""^n C_r (-1)^r (ii(rho) - r)_{+}^{n-1}
 ++++
 
 where
@@ -37,14 +37,14 @@ In particular,
 
 [stem%unnumbered]
 ++++
-B_4 (rho) = 1/6 rho^3, " " " " 0 <= rho <= 1
+B_4 (ii(rho)) = 1/6 ii(rho)^3, " " " " 0 <= ii(rho) <= 1
 ++++
 
-(with different cubic polynomial expressions for stem:[B_4(rho)] in other intervals between adjacent knots), and hence
+(with different cubic polynomial expressions for stem:[B_4(ii(rho))] in other intervals between adjacent knots), and hence
 
 [stem%unnumbered]
 ++++
-int_o^1 B_4 (rho) "d"rho = [1/24 rho^4]_0^{1} = 1/24 ~~ 0.0417
+int_o^1 B_4 (ii(rho)) "d"ii(rho) = [1/24 ii(rho)^4]_0^{1} = 1/24 ~~ 0.0417
 ++++
 
 
@@ -61,7 +61,7 @@ of the area under the PDF lies to the left of stem:[y_{"low"}], which is therefo
 
 [stem%unnumbered]
 ++++
-int_{0}^{y_{"low"}} B_4 (rho) "d"rho = 1/24 y_{"low"}^4 = 1/40,
+int_{0}^{y_{"low"}} B_4 (ii(rho)) "d"ii(rho) = 1/24 y_{"low"}^4 = 1/40,
 ++++
 
 i.e.

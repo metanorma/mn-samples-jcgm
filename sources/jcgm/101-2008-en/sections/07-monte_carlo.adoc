@@ -13,7 +13,7 @@ This clause gives information about the implementation of a Monte Carlo method f
 
 ==== {blank}
 
-A value of stem:[ii(M)], the number of Monte Carlo trials, i.e. the number of model evaluations to be made, needs to be selected. It can be chosen a priori, in which case there will be no direct control over the quality of the numerical results provided by MCM. The reason is that the number of trials needed to provide these results to a prescribed numerical tolerance will depend on the "shape" of the PDF for the output quantity and on the coverage probability required. Also, the calculations are stochastic in nature, being based on random sampling.
+A value of stem:[ii(M)], the number of Monte Carlo trials, i.e. the number of model evaluations to be made, needs to be selected. It can be chosen a _priori_, in which case there will be no direct control over the quality of the numerical results provided by MCM. The reason is that the number of trials needed to provide these results to a prescribed numerical tolerance will depend on the "shape" of the PDF for the output quantity and on the coverage probability required. Also, the calculations are stochastic in nature, being based on random sampling.
 
 NOTE: A value of stem:[ii(M) = 10^6] can often be expected to deliver a 95 % coverage interval for the output quantity such that this length is correct to one or two significant decimal digits.
 
@@ -82,7 +82,7 @@ NOTE: With reference to step <<item_7-5-1b>>, making only minute perturbations w
 
 NOTE: In step <<item_7-5-1b>>, it is exceedingly unlikely that perturbations are necessary, because of the very large number of distinct floating-point numbers that can arise from model values generated from input quantities obtained as draws from random number generators. A sound software implementation would make appropriate provision, however.
 
-NOTE: With reference to step <<item_7-5-1c>>, a variety of information can be deduced from G. In particular, information supplementary to the expectation and standard deviation can be provided, such as measures of skewness and kurtosis, and other statistics such as the mode and the median.
+NOTE: With reference to step <<item_7-5-1c>>, a variety of information can be deduced from stem:[bb(G)]. In particular, information supplementary to the expectation and standard deviation can be provided, such as measures of skewness and kurtosis, and other statistics such as the mode and the median.
 
 NOTE: If stem:[ii(Y)] is to become an input quantity for a further uncertainty calculation, sampling from its probability distribution is readily carried out by drawing randomly from the stem:[y_{(r)}], stem:[r = 1,..., M], with equal probability (see <<scls_6-5>>).
 
@@ -130,7 +130,7 @@ u^2(tilde(y)) = {ii(M)}/{ii(M) - 1} (1/{ii(M)} sum_{r=1}^{ii(M)} y_r^2 - tilde(y
 For the many circumstances in metrology in which stem:[u(y)] is much smaller than stem:[|y|] (in which case the stem:[y_r] have a number of leading decimal digits in common) the latter formula suffers numerically from subtractive cancellation (involving a mean square less a squared mean). This effect can be so severe that the resulting numerical value might have too few correct significant decimal digits for the uncertainty evaluation to be valid <<Chan1983>>.
 ====
 
-NOTE: In some special circumstances, such as when one of the input quantities has been assigned a PDF based on the stem:[t]-distribution with fewer than three degrees of freedom, the expectation and standard deviation of stem:[ii(Y)], as described by the PDF stem:[g_Y (eta)], might not exist. <<eq16>> and <<eq17>> might not then provide meaningful results. A coverage interval for stem:[ii(Y)] (see <<scls_7-7>>) can, however, be formed, since G is meaningful and can be determined.
+NOTE: In some special circumstances, such as when one of the input quantities has been assigned a PDF based on the stem:[t]-distribution with fewer than three degrees of freedom, the expectation and standard deviation of stem:[ii(Y)], as described by the PDF stem:[g_Y (eta)], might not exist. <<eq16>> and <<eq17>> might not then provide meaningful results. A coverage interval for stem:[ii(Y)] (see <<scls_7-7>>) can, however, be formed, since stem:[bb(G)] is meaningful and can be determined.
 
 NOTE: stem:[tilde(y)] will not in general agree with the model evaluated at the best estimates of the input quantities, since, for a non-linear model stem:[f(bb(X))], stem:[ii(E)(ii(Y)) = ii(E)(f(bb(X))) != f(ii(E)(bb(X)))] (cf. <<JCGM-100,clause=4.1.4>>). Irrespective of whether stem:[f] is linear or non-linear, in the limit as stem:[ii(M)] tends to infinity, stem:[tilde(y)] approaches stem:[ii(E)(f(bb(X)))] when stem:[ii(E)(f(bb(X)))] exists.
 
@@ -167,7 +167,7 @@ The computation time for MCM is dominated by that required for the following thr
 
 ==== {blank}
 
-The times taken in the three steps are directly proportional to (a) stem:[ii(M)], (b) stem:[ii(M)], and \(c) stem:[ii(M) ln ii(M)] (if an efficient sort algorithm <<Scowen1965>> is used).
+The times taken in the three steps are directly proportional to (a) stem:[ii(M)], (b) stem:[ii(M)], and (&#x200c;c) stem:[ii(M) ln ii(M)] (if an efficient sort algorithm <<Scowen1965>> is used).
 
 
 [[scls_7-8-3]]
@@ -188,7 +188,7 @@ An indication of the computation time required for an application of MCM can be 
 ii(Y) = cos X_1 + sin X_2 + tan^{-1} X_3 + exp(X_4) + X_5^(1//3).
 ++++
 
-Assign a Gaussian PDF to each input quantity stem:[ii(X)_i]. Make stem:[ii(M) = 10^6] Monte Carlo trials. The relative computation times for (a) generating 5M random Gaussian numbers, (b) forming stem:[ii(M)] model values and \(c) sorting the stem:[ii(M)] model values were respectively 20 %, 20 % and 60 %, with a total computation time of a few seconds on a personal computer operating at several GHz.
+Assign a Gaussian PDF to each input quantity stem:[ii(X)_i]. Make stem:[ii(M) = 10^6] Monte Carlo trials. The relative computation times for (a) generating 5M random Gaussian numbers, (b) forming stem:[ii(M)] model values and (&#x200c;c) sorting the stem:[ii(M)] model values were respectively 20 %, 20 % and 60 %, with a total computation time of a few seconds on a personal computer operating at several GHz.
 ====
 
 
@@ -262,7 +262,7 @@ where stem:[ii(J)] is the smallest integer greater than or equal to stem:[100//(
 
 . set stem:[h = 1], denoting the first application of MCM in the sequence;
 . [[item_7-9-4d]]carry out stem:[ii(M)] Monte Carlo trials, as in <<scls_7-3>> and <<scls_7-4>>;
-. use the stem:[ii(M)] model values stem:[y_1,..., y_M] so obtained to calculate, as in <<scls_7-5>> to <<scls_7-7>>, y^(h)^, u(y^(h)^), y_{"low"}^(h)^ and y_{"high"}^(h)^ as an estimate of stem:[ii(Y)], the associated standard uncertainty, and the left- and right-hand endpoints of a stem:[100p " %"] coverage interval, respectively, i.e. for the __h__th member of the sequence;
+. use the stem:[ii(M)] model values stem:[y_1,..., y_M] so obtained to calculate, as in <<scls_7-5>> to <<scls_7-7>>, stem:[y^{(h)}], stem:[u(y^{(h)})], stem:[y_{"low"}^{(h)}] and stem:[y_{"high"}^{(h)}] as an estimate of stem:[ii(Y)], the associated standard uncertainty, and the left- and right-hand endpoints of a stem:[100p " %"] coverage interval, respectively, i.e. for the __h__th member of the sequence;
 . if stem:[h = 1], increase stem:[h] by one and return to step <<item_7-9-4d>>;
 . [[item_7-9-4g]]calculate the standard deviation stem:[s_y] associated with the average of the estimates stem:[y^{(1)},..., y^{(h)}] of stem:[ii(Y)], given by
 +
@@ -283,13 +283,13 @@ y = 1/h sum_{r=1}^{h} y^{(r)};
 . [[item_7-9-4h]]calculate the counterpart of this statistic for stem:[u(y)], stem:[y_{"low"}] and stem:[y_{"high"}];
 . use all stem:[h xx ii(M)] model values available so far to form stem:[u(y)];
 . calculate the numerical tolerance stem:[delta] associated with stem:[u(y)] as in <<scls_7-9-2>>;
-. [[item_7-9-4k]]if any of stem:[2s_y], stem:[2s_{u(y)}], stem:[2s_{y_{"low"}}] and stem:[2s_{y_{"high"}}] exceeds stem:[delta], increase stem:[h] by one and return to step d);
+. [[item_7-9-4k]]if any of stem:[2s_y], stem:[2s_{u(y)}], stem:[2s_{y_{"low"}}] and stem:[2s_{y_{"high"}}] exceeds stem:[delta], increase stem:[h] by one and return to <<item_7-9-4d>>;
 . regard the overall computation as having stabilized, and use all stem:[h xx ii(M)] model values obtained to calculate stem:[y], stem:[u(y)] and a stem:[100p " %"] coverage interval, as in <<scls_7-5>> to <<scls_7-7>>.
 
 
 NOTE: Normally stem:[n_{"dig"}] in step <<item_7-9-4a>> would be chosen to be 1 or 2.
 
-NOTE: The choice of stem:[ii(M)] in step <<<item_7-9-4b>>> is arbitrary, but has been found suitable in practice.
+NOTE: The choice of stem:[ii(M)] in step <<<item_7-9-4b>> is arbitrary, but has been found suitable in practice.
 
 NOTE: In step <<item_7-9-4g>>, stem:[y] can be regarded as a realization of a random variable with standard deviation stem:[s_y].
 
@@ -307,7 +307,7 @@ An alternative, non-adaptive approach for a 95 % probabilistically symmetric cov
 
 [stem%unnumbered]
 ++++
-sum_{j=s-r}^{ii(M)} ii(C)_j p^j (1 - p)^{ii(M)-j} < 1 - 0.99,
+sum_{j=s-r}^{ii(M)} ""^{ii(M)} ii(C)_j p^j (1 - p)^{ii(M)-j} < 1 - 0.99,
 ++++
 
 where

@@ -154,7 +154,9 @@ In practice, only for simple cases can the propagation of distributions be imple
 [[scls_5-5]]
 === Reporting the results
 
-==== The following items would typically be reported following the use of the propagation of distributions:
+==== {blank}
+
+The following items would typically be reported following the use of the propagation of distributions:
 
 . an estimate stem:[y] of the output quantity stem:[ii(Y)];
 . the standard uncertainty stem:[u(y)] associated with stem:[y];

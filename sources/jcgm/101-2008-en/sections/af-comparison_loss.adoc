@@ -59,7 +59,7 @@ When stem:[x_2 = 0] and stem:[u(x_2) = u(x_1)], and replacing stem:[u(x_1, x_2)]
 
 [stem%unnumbered]
 ++++
-u(delta y) = 2 x_1^2 + [1 + r^2(x_1, x_2)]u^2(x_1) ^1/2^ u(x_1).
+u(delta y) = 2 {x_1^2 + [1 + r^2(x_1, x_2)]u^2(x_1)}^{1//2} u(x_1).
 ++++
 
 
@@ -82,7 +82,7 @@ u^2 (delta y) = 4 u^2 (x_1) x_1^2 + 4u^2 (x_2) x_2^2 + 2 u^4 (x_1) + 2 u^4 (x_2)
 
 ==== {blank}
 
-For the case stem:[x_1 = x_2 = r(x_1, x_2) = 0] and stem:[u(x_1) = u(x_2)], the PDF stem:[g_Y (eta)] for Y can be obtained analytically. It is valuable to have such a solution for further validation purposes. In the above circumstances,
+For the case stem:[x_1 = x_2 = r(x_1, x_2) = 0] and stem:[u(x_1) = u(x_2)], the PDF stem:[g_Y (eta)] for stem:[ii(Y)] can be obtained analytically. It is valuable to have such a solution for further validation purposes. In the above circumstances,
 
 [stem%unnumbered]
 ++++
@@ -113,7 +113,7 @@ The application of a general formula <<Rice1995,page=57-61>> for the PDF stem:[g
 
 [stem%unnumbered]
 ++++
-g_Y (eta) = 1/{u^2 (x_1) χ_2^2} (eta/{u^2(x_1)}) = 1/{2u^2 (x_1)} exp(- eta/{2u^2(x_1)}), " " eta >= 0.
+g_Y (eta) = 1/{u^2 (x_1)} χ_2^2 (eta/{u^2(x_1)}) = 1/{2u^2 (x_1)} exp(- eta/{2u^2(x_1)}), " " eta >= 0.
 ++++
 
 
@@ -232,7 +232,7 @@ as the estimate of stem:[delta ii(Y)]. The only non-trivially non-zero partial d
 
 [stem%unnumbered]
 ++++
-{partial f}/{partial X_i} = 2 X_i, " " " " {partial^2 f}/{partial X_i^2} = 2.
+{partial f}/{partial X_i} = 2 X_i, " " " " " " " " {partial^2 f}/{partial X_i^2} = 2.
 ++++
 
 

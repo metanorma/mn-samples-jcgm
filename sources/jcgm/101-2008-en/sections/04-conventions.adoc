@@ -36,7 +36,7 @@ which implicitly relates stem:[bb(X)] and stem:[ii(Y)]. In any case, to apply th
 [[scls_4-2]]
 === {blank}
 
-This Supplement departs from the symbols often used for 'PDF' and 'distribution function' <<ISO3534>>. The GUM uses the generic symbol stem:[f] to refer to a model and a PDF. Little confusion arises in the GUM as a consequence of this usage. The situation in this Supplement is different. The concepts of model, PDF, and distribution function are central to following and implementing the guidance provided. Therefore, in place of the symbols stem:[f] and stem:[ii(F)] to denote a PDF and a distribution function, respectively, the symbols g and G are used. These symbols are indexed appropriately to denote the quantity concerned. The symbol stem:[f] is reserved for the model.
+This Supplement departs from the symbols often used for 'PDF' and 'distribution function' <<ISO3534>>. The GUM uses the generic symbol stem:[f] to refer to a model and a PDF. Little confusion arises in the GUM as a consequence of this usage. The situation in this Supplement is different. The concepts of model, PDF, and distribution function are central to following and implementing the guidance provided. Therefore, in place of the symbols stem:[f] and stem:[ii(F)] to denote a PDF and a distribution function, respectively, the symbols stem:[g] and stem:[ii(G)] are used. These symbols are indexed appropriately to denote the quantity concerned. The symbol stem:[f] is reserved for the model.
 
 NOTE: The definitions in <<cls_3>> that relate to PDFs and distributions are adapted accordingly.
 
@@ -80,7 +80,7 @@ In this Supplement, the term "law of propagation of uncertainty" applies to the 
 
 === {blank}
 
-The subscript "c" <<JCGM-100,clause=5.1.1>> for the combined standard uncertainty is redundant in this Supplement. The standard uncertainty associated with an estimate stem:[y] of an output quantity stem:[ii(Y)] can therefore be written as stem:[u(y)], but the use of stem:[u_c(y)] remains acceptable if it is helpful to emphasize the fact that it represents a combined standard uncertainty. The qualifier "combined" in this context is also regarded as superfluous and may be omitted: the presence of "y" in "stem:[u(y)]" already indicates the estimate with which the standard uncertainty is associated. Moreover, when the results of one or more uncertainty evaluations become inputs to a subsequent uncertainty evaluation, the use of the subscript "c" and the qualifier "combined" are then inappropriate.
+The subscript "c" <<JCGM-100,clause=5.1.1>> for the combined standard uncertainty is redundant in this Supplement. The standard uncertainty associated with an estimate stem:[y] of an output quantity stem:[ii(Y)] can therefore be written as stem:[u(y)], but the use of stem:[u_c(y)] remains acceptable if it is helpful to emphasize the fact that it represents a combined standard uncertainty. The qualifier "combined" in this context is also regarded as superfluous and may be omitted: the presence of "stem:[y]" in "stem:[u(y)]" already indicates the estimate with which the standard uncertainty is associated. Moreover, when the results of one or more uncertainty evaluations become inputs to a subsequent uncertainty evaluation, the use of the subscript "c" and the qualifier "combined" are then inappropriate.
 
 
 === {blank}

@@ -22,14 +22,14 @@ The rectangular distribution stem:[R(a, b)] (see <<scls_6-4-2>>) takes the const
 
 [stem%unnumbered]
 ++++
-B_n(ii(rho)) = 1/{(n - 1)!} sum_{r=0}^n ""^n C_r (-1)^r (ii(rho) - r)_{+}^{n-1}
+B_n(ii(rho)) = 1/{(n - 1)!} sum_{r=0}^n " "^n C_r (-1)^r (ii(rho) - r)_{+}^{n-1}
 ++++
 
 where
 
 [stem%unnumbered]
 ++++
-""^n C_r = {n!} / {r!(n - r)!}, " " " " " " " " z_{+} = max(z,0)
+" "^n C_r = {n!} / {r!(n - r)!}, " " " " " " " " z_{+} = max(z,0)
 ++++
 
 

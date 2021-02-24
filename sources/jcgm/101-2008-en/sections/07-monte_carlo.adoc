@@ -20,7 +20,7 @@ NOTE: A value of stem:[ii(M) = 10^6] can often be expected to deliver a 95 % cov
 
 ==== {blank}
 
-The choice of a value of stem:[ii(M)] that is large compared with stem:[1//(1-p)], e.g. stem:[ii(M)] at least stem:[10^4] times greater than stem:[1//(1-p)], should be made. It can then be expected that G will provide a reasonable discrete representation of stem:[G_Y (ii(eta))] in the regions near the endpoints of a stem:[100p " %"] coverage interval for stem:[ii(Y)].
+The choice of a value of stem:[ii(M)] that is large compared with stem:[1//(1-p)], e.g. stem:[ii(M)] at least stem:[10^4] times greater than stem:[1//(1-p)], should be made. It can then be expected that stem:[ii(G)] will provide a reasonable discrete representation of stem:[G_Y (ii(eta))] in the regions near the endpoints of a stem:[100p " %"] coverage interval for stem:[ii(Y)].
 
 
 ==== {blank}
@@ -145,7 +145,7 @@ A coverage interval for stem:[ii(Y)] can be determined from the discrete represe
 
 ==== {blank}
 
-Let stem:[q = pii(M)], if stem:[pii(M)] is an integer. Otherwise, take stem:[q] to be the integer part of stem:[pii(M) + 1//2]. Then stem:[[y_{"low"},y_{"high"}\]] is a stem:[100p " %"] coverage interval for stem:[ii(Y)], where, for any stem:[r = 1,..., ii(M) - q], stem:[y_{"low"} = y_{(r)}] and stem:[y_{"high"} = y_{(r+q)}]. The probabilistically symmetric stem:[100p " %"] coverage interval is given by taking stem:[r = (ii(M) - q)//2], if stem:[(ii(M) - q)//2] is an integer, or the integer part of stem:[(ii(M) - q + 1)//2], otherwise. The shortest stem:[100p " %"] coverage interval is given by determining stem:[r^∗] such that, for stem:[r = 1,..., ii(M) - q, y_{(r^∗ + q)} - y_{(r^*)} <= y_{(r+q)} - y_{(r)}].
+Let stem:[q = p ii(M)], if stem:[p ii(M)] is an integer. Otherwise, take stem:[q] to be the integer part of stem:[pii(M) + 1//2]. Then stem:[[y_{"low"},y_{"high"}\]] is a stem:[100p " %"] coverage interval for stem:[ii(Y)], where, for any stem:[r = 1,..., ii(M) - q], stem:[y_{"low"} = y_{(r)}] and stem:[y_{"high"} = y_{(r+q)}]. The probabilistically symmetric stem:[100p " %"] coverage interval is given by taking stem:[r = (ii(M) - q)//2], if stem:[(ii(M) - q)//2] is an integer, or the integer part of stem:[(ii(M) - q + 1)//2], otherwise. The shortest stem:[100p " %"] coverage interval is given by determining stem:[r^∗] such that, for stem:[r = 1,..., ii(M) - q, y_{(r^∗ + q)} - y_{(r^{"*"})} <= y_{(r+q)} - y_{(r)}].
 
 NOTE: Because of the randomness in MCM, some of these stem:[ii(M) - q] interval lengths will be shorter than they would be on average, and some longer. So, by choosing the least such length, (the approximation to) the shortest stem:[100p " %"] coverage interval tends to be marginally shorter than that which would have been calculated from stem:[ii(G)_Y (ii(eta))], with the consequence that the typical coverage probability is less than stem:[100p " %"]. For large stem:[ii(M)], this coverage probability is negligibly less than stem:[100p " %"].
 
@@ -289,7 +289,7 @@ y = 1/h sum_{r=1}^{h} y^{(r)};
 
 NOTE: Normally stem:[n_{"dig"}] in step <<item_7-9-4a>> would be chosen to be 1 or 2.
 
-NOTE: The choice of stem:[ii(M)] in step <<<item_7-9-4b>> is arbitrary, but has been found suitable in practice.
+NOTE: The choice of stem:[ii(M)] in step <<item_7-9-4b>> is arbitrary, but has been found suitable in practice.
 
 NOTE: In step <<item_7-9-4g>>, stem:[y] can be regarded as a realization of a random variable with standard deviation stem:[s_y].
 
@@ -307,14 +307,14 @@ An alternative, non-adaptive approach for a 95 % probabilistically symmetric cov
 
 [stem%unnumbered]
 ++++
-sum_{j=s-r}^{ii(M)} ""^{ii(M)} ii(C)_j p^j (1 - p)^{ii(M)-j} < 1 - 0.99,
+sum_{j=s-r}^{ii(M)} " "^{ii(M)} ii(C)_j p^j (1 - p)^{ii(M)-j} < 1 - 0.99,
 ++++
 
 where
 
 [stem%unnumbered]
 ++++
-""^{ii(M)} ii(C)_j = {ii(M)!} / {j! (ii(M) - j)!},
+" "^{ii(M)} ii(C)_j = {ii(M)!} / {j! (ii(M) - j)!},
 ++++
 
 the best result being when this inequality is just satisfied.) These results can be extended to other coverage probabilities (and other choices of stem:[ii(M)]).

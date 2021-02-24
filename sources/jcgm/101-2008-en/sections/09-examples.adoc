@@ -86,7 +86,7 @@ NOTE: The probabilistically symmetric 95 % coverage interval is determined, beca
 [[scls_9-2-2-3]]
 ===== {blank}
 
-The law of propagation of uncertainty <<JCGM-100,clause=5.1.2>> gives the estimate stem:[y = 0.0] of stem:[ii(Y)] and associated standard uncertainty stem:[u(y) = 2.0], using a numerical tolerance of two significant decimal digits for stem:[u(y) (delta = 0.05)] (see <<scls_5-5>>). A probabilistically symmetric 95 % coverage interval for stem:[ii(Y)], based on a coverage factor of 1.96, is [-3.9, 3.9].
+The law of propagation of uncertainty <<JCGM-100,clause=5.1.2>> gives the estimate stem:[y = 0.0] of stem:[ii(Y)] and associated standard uncertainty stem:[u(y) = 2.0], using a numerical tolerance of two significant decimal digits for stem:[u(y) (delta = 0.05)] (see <<scls_5-5>>). A probabilistically symmetric 95 % coverage interval for stem:[ii(Y)], based on a coverage factor of 1.96, is stem:[[-3.9, 3.9\]].
 
 
 ===== {blank}
@@ -107,7 +107,7 @@ The PDF for stem:[ii(Y)] obtained analytically is the Gaussian PDF with expectat
 
 
 [[table2]]
-.The application to the model <<eq21,(21)>>, with each stem:[ii(X)_i] assigned a standard Gaussian PDF, of (a) the GUM uncertainty framework (GUF), (b) MCM, and \(c) an analytical approach (<<scls_9-2-2-2>>, <<scls_9-2-2-7>>, <<scls_9-2-3-4>>)
+.The application to the model <<eq21,(21)>>, with each stem:[ii(X)_i] assigned a standard Gaussian PDF, of (a) the GUM uncertainty framework (GUF), (b) MCM, and (&#x200c;c) an analytical approach (<<scls_9-2-2-2>>, <<scls_9-2-2-7>>, <<scls_9-2-3-4>>)
 [cols="8*",options="header"]
 |===
 | Method | stem:[ii(M)] | stem:[y] | stem:[u(y)] | Probabilistically symmetric 95 % coverage interval | stem:[d_{"low"}] | stem:[d_{"high"}] | GUF validated (stem:[delta = 0.05])?
@@ -330,7 +330,7 @@ NOTE: Applying the law of propagation of uncertainty to the "exact" model <<eq23
 The only information available concerning stem:[m_{R,c}] and stem:[delta m_{R,c}] is a best estimate and an associated standard uncertainty for each of these quantities. Accordingly, following <<scls_6-4-7-1>>, a Gaussian distribution is assigned to each of these quantities, with these best estimates used as the expectations of the corresponding quantities and the associated standard uncertainties as the standard deviations. The only information available concerning stem:[rho_a], stem:[rho_W] and stem:[rho_R] is lower and upper limits for each of these quantities. Accordingly, following <<scls_6-4-2-1>>, a rectangular distribution is assigned to each of these quantities, with limits equal to the endpoints of the distribution. <<table5>> summarizes the input quantities and the PDFs assigned. In the table, a Gaussian distribution stem:[N(ii(mu), ii(sigma)^2)] is described in terms of expectation stem:[ii(mu)] and standard deviation stem:[ii(sigma)], and a rectangular distribution stem:[R(a, b)] with endpoints stem:[a] and stem:[b(a < b)] in terms of expectation stem:[(a + b)//2] and semi-width stem:[(b - a)//2].
 
 
-NOTE: The quantity stem:[rho_{a_0}] in the mass calibration model <<eq24,(24)>> is assigned the value stem:[1.2 " "rm(kg/m)^3] with no associated uncertainty.
+NOTE: The quantity stem:[rho_{a_0}] in the mass calibration model <<eq24,(24)>> is assigned the value stem:[1.2 " "rm(kg//m)^3] with no associated uncertainty.
 
 
 [[table5]]
@@ -342,9 +342,9 @@ NOTE: The quantity stem:[rho_{a_0}] in the mass calibration model <<eq24,(24)>> 
 
 | stem:[m_{R,c}] | stem:[N(ii(mu),ii(sigma)^2)] | stem:[100000000 " "rm(mg)] | stem:[0.050 " "rm(mg)] | |
 | stem:[delta m_{R,c}] | stem:[N(ii(mu),ii(sigma)^2)] | 1.234 mg | 0.020 mg | |
-| stem:[rho_a] | stem:[R(a,b)] | | | stem:[1.20 " "rm(kg/m)^3] | stem:[0.10 " "rm(kg/m)^2]
-| stem:[rho_W] | stem:[R(a,b)] | | | stem:[8 xx 10^3 " "rm(kg/m)^3] | stem:[1 xx 10^3 " "rm(kg/m)^3]
-| stem:[rho_R] | stem:[R(a,b)] | | | stem:[8.00 xx 10^3 " "rm(kg/m)^3] | stem:[0.05 xx 10^3 " "rm(kg/m)^3]
+| stem:[rho_a] | stem:[R(a,b)] | | | stem:[1.20 " "rm(kg//m)^3] | stem:[0.10 " "rm(kg//m)^2]
+| stem:[rho_W] | stem:[R(a,b)] | | | stem:[8 xx 10^3 " "rm(kg//m)^3] | stem:[1 xx 10^3 " "rm(kg//m)^3]
+| stem:[rho_R] | stem:[R(a,b)] | | | stem:[8.00 xx 10^3 " "rm(kg//m)^3] | stem:[0.05 xx 10^3 " "rm(kg//m)^3]
 |===
 
 
@@ -542,7 +542,7 @@ MCM is applied in each case with stem:[ii(M) = 10^6] trials.
 [[scls_9-4-2-2-1]]
 ====== {blank}
 
-For the input estimate stem:[x_1 = 0], higher-order terms must be used when applying the law of propagation of uncertainty, because the partial derivatives of stem:[delta ii(Y)] with respect to stem:[ii(X)_1] and stem:[ii(X)_2], evaluated at stem:[ii(X)_1 = x_1 and ii(X)_2 = x_2], are identically zero when stem:[x_1 = x_2 = 0]. Thus, if the law of propagation of uncertainty with first-order terms only were applied, the resulting standard uncertainty would incorrectly be computed as zero.
+For the input estimate stem:[x_1 = 0], higher-order terms must be used when applying the law of propagation of uncertainty, because the partial derivatives of stem:[delta ii(Y)] with respect to stem:[ii(X)_1] and stem:[ii(X)_2], evaluated at stem:[ii(X)_1 = x_1] and stem:[ii(X)_2 = x_2], are identically zero when stem:[x_1 = x_2 = 0]. Thus, if the law of propagation of uncertainty with first-order terms only were applied, the resulting standard uncertainty would incorrectly be computed as zero.
 
 NOTE: A similar difficulty would arise for stem:[x_1] close to zero.
 
@@ -637,7 +637,7 @@ The endpoints of the shortest coverage intervals relating to the standard uncert
 [[scls_9-4-2-3-1]]
 ====== {blank}
 
-For the input estimate stem:[x_1 = 0.010], with correlation coefficient stem:[r(x_1, x_2) = 0], <<fig13>> shows the PDFs obtained using the GUM uncertainty framework with first-order terms only and with higher-order terms, and us-ing MCM.
+For the input estimate stem:[x_1 = 0.010], with correlation coefficient stem:[r(x_1, x_2) = 0], <<fig13>> shows the PDFs obtained using the GUM uncertainty framework with first-order terms only and with higher-order terms, and using MCM.
 
 
 ====== {blank}
@@ -934,7 +934,7 @@ Assign a scaled and shifted stem:[t]-distribution stem:[t_{nu} (ii(mu), ii(sigma
 
 [stem%unnumbered]
 ++++
-mu = 50000623 " mn", " " ii(sigma) = ii(U)_{"p"}/k_{"p"} = 75/3 " nm" = 25 " nm", " " nu = 18.
+mu = 50000623 " mn", " " " " " " " " ii(sigma) = ii(U)_{"p"}/k_{"p"} = 75/3 " nm" = 25 " nm", " " " " " " " " nu = 18.
 ++++
 
 
@@ -951,7 +951,7 @@ Assign a scaled and shifted stem:[t]-distribution stem:[t_{nu}(ii(mu), ii(sigma)
 
 [stem%unnumbered]
 ++++
-mu = 215 " nm", " " ii(sigma) = 13/{sqrt(5)} " nm" = 6 nm, " " nu = 24.
+ii(mu) = 215 " nm", " " " " " " " " ii(sigma) = 13/{sqrt(5)} " nm" = 6 nm, " " " " " " " " nu = 24.
 ++++
 
 
@@ -995,7 +995,7 @@ ii(mu) = 50000623 " "rm(nm), " " ii(sigma) = {U_p}/{k_p} = 75/3 " "rm(nm) = 25 "
 
 ====== Information 
 
-The coefficient of thermal expansion of the reference standard is given as stem:[alpha_s = 11.5 xx 10^{-6} " °C"^{-1}] with possible values of this quantity represented by a rectangular distribution with limits stem:[+-2 xx 10^{-6} " °C"^{-1}] <<JCGM-100,clause=H.1.3.3>>.
+The coefficient of thermal expansion of the reference standard is given as stem:[hat{alpha_s} = 11.5 xx 10^{-6} " °C"^{-1}] with possible values of this quantity represented by a rectangular distribution with limits stem:[+-2 xx 10^{-6} " °C"^{-1}] <<JCGM-100,clause=H.1.3.3>>.
 
 
 [[scls_9-5-2-6-2]]
@@ -1005,7 +1005,7 @@ Assign a rectangular distribution stem:[R(a, b)] (see <<scls_6-4-2>>) to stem:[a
 
 [stem%unnumbered]
 ++++
-a = 9.5 xx 10^{-6} " °C"^{-1}," " " " b = 13.5 xx 10^{-6} " °C"^{-1}. 
+a = 9.5 xx 10^{-6} " °C"^{-1}," " " " " " " " b = 13.5 xx 10^{-6} " °C"^{-1}. 
 ++++
 
 NOTE: There is no information about the reliability of the limits and so a rectangular distribution with exactly known limits is assigned. Such information may have been omitted from the description in the GUM because the corresponding sensitivity coefficient is zero, and so the quantity makes no contribution in an application of the GUM uncertainty framework based on first-order terms only.
@@ -1024,7 +1024,7 @@ Assign a Gaussian distribution stem:[N(ii(mu),ii(sigma)^2)] (see <<scls_6-4-7>>)
 
 [stem%unnumbered]
 ++++
-ii(mu) = - 0.1 " °C", " " ii(sigma) = 0.2 " °C"
+ii(mu) = - 0.1 " °C", " " " " " " " " ii(sigma) = 0.2 " °C"
 ++++
 
 NOTE: There is no information about the source of the evaluation of the uncertainty and so a Gaussian distribution is assigned. Also see <<scls_9-5-2-6-2>> note, regarding such information.
@@ -1043,7 +1043,7 @@ Assign an arc sine distribution stem:[U(a,b)] (see <<scls_6-4-6>>) to, with limi
 
 [stem%unnumbered]
 ++++
-a = -0.5 " °C", " " b = 0.5 " °C".
+a = -0.5 " °C", " " " " " " " " b = 0.5 " °C".
 ++++
 
 NOTE: There is no information about the reliability of the limits and so a U-shaped distribution with exactly known limits is assigned. As in <<scls_9-5-2-6-2>> note, such information may have been omitted from the description in the GUM.
@@ -1063,7 +1063,7 @@ Assign a rectangular distribution with inexactly prescribed limits (see <<scls_6
 
 [stem%unnumbered]
 ++++
-a = -1.0 xx 10^{-6} " °C"^{-1}, " " b = 1.0 xx 10^{-6} " °C"^{-1}, " " d = 0.1 xx 10^{-6} " °C"^{-1}.
+a = -1.0 xx 10^{-6} " °C"^{-1}, " " " " " " " " b = 1.0 xx 10^{-6} " °C"^{-1}, " " " " " " " " d = 0.1 xx 10^{-6} " °C"^{-1}.
 ++++
 
 The stated reliability of 10 % on the estimated bounds provides the basis for this value of stem:[d].
@@ -1082,7 +1082,7 @@ Assign a rectangular distribution with inexactly prescribed limits (see <<scls_6
 
 [stem%unnumbered]
 ++++
-a = -0.050 " °C", " " b = 0.050 " °C", " " d = 0.025 " °C".
+a = -0.050 " °C", " " " " " " " " b = 0.050 " °C", " " " " " " " " d = 0.025 " °C".
 ++++
 
 The stated reliability of 50 % provides the basis for this value of stem:[d].

@@ -31,7 +31,7 @@ In order to form stem:[tilde(ii(G))_Y(eta)], consider the discrete representatio
 [[eqd1]]
 [stem]
 ++++
-tilde(G)_Y (eta) = {r - 1//2}/{ii(M)} + {eta - y(r)}/{ii(M)(y_{(r+1)}) - y_{(r)}}, " " y_{(r)} <= eta <= y_{(y+1)}, " " r = 1,..., ii(M) - 1
+tilde(G)_Y (eta) = {r - 1//2}/{ii(M)} + {eta - y(r)}/{ii(M)(y_{(r+1)}) - y_{(r)}}, " " " " " " " " y_{(r)} <= eta <= y_{(y+1)}, " " " " " " " " r = 1,..., ii(M) - 1
 ++++
 --
 
@@ -73,7 +73,7 @@ NOTE: For a sufficiently large numerical value of stem:[ii(M)] (stem:[10^5], say
 
 === {blank}
 
-Let stem:[alpha] denote any value between zero and stem:[1 - p], where stem:[p] is the required coverage probability (e.g. 0.95). The endpoints of a stem:[100p " %"] coverage interval can be obtained from stem:[tilde(ii(G))(eta)] by inverse linear interpolation. To determine the lower endpoint stem:[y_{"low"}] such that stem:[alpha = tile(ii(G))_Y (y_{"low"})], identify the index stem:[r] for which the points stem:[(y_{(r)}, p_r)] and stem:[(y_{(r+1)}, p_{r+1})] satisfy
+Let stem:[alpha] denote any value between zero and stem:[1 - p], where stem:[p] is the required coverage probability (e.g. 0.95). The endpoints of a stem:[100p " %"] coverage interval can be obtained from stem:[tilde(ii(G))(eta)] by inverse linear interpolation. To determine the lower endpoint stem:[y_{"low"}] such that stem:[alpha = tilde(ii(G))_Y (y_{"low"})], identify the index stem:[r] for which the points stem:[(y_{(r)}, p_r)] and stem:[(y_{(r+1)}, p_{r+1})] satisfy
 
 [stem%unnumbered]
 ++++

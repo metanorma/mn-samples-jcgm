@@ -158,11 +158,11 @@ NOTE: The expectation stem:[ii(E)(ii(X))] is the first moment. The variance stem
 
 === covariance
 
-property of a pair of random variables, which, for two continuous random variables stem:[ii(X)_1] and stem:[ii(X)_2] characterized by a joint (multivariate) PDF stem:[g_{bb(X)} (bb(xi))], where stem:[ii(X) = (ii(X)_1, ii(X)_2)^T] and stem:[xi = (xi_1, xi_2)^T], is given by
+property of a pair of random variables, which, for two continuous random variables stem:[ii(X)_1] and stem:[ii(X)_2] characterized by a joint (multivariate) PDF stem:[g_{bb(X)} (bb(xi))], where stem:[ii(X) = (ii(X)_1, ii(X)_2)^{sf(T)}] and stem:[xi = (xi_1, xi_2)^{sf(T)}], is given by
 
 [stem%unnumbered]
 ++++
-"Cov"(ii(X)_1,ii(X)_2) = int_{-oo}^{oo} int_{-oo}{oo} [xi_1 - ii(E)(ii(X)_1)][xi_2 - ii(E)(ii(X)_2)] g_X (xi) " d"xi_1 " d"xi_2
+"Cov"(ii(X)_1,ii(X)_2) = int_{-oo}^{oo} int_{-oo}^{oo} [xi_1 - ii(E)(ii(X)_1)][xi_2 - ii(E)(ii(X)_2)] g_{bb(X)} (xi) " d"xi_1 " d"xi_2
 ++++
 
 NOTE: Not all pairs of random variables have a covariance.

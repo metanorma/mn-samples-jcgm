@@ -53,9 +53,9 @@ stem:[g_{ii(X)_i}(xi_i)]:: probability density function with variable stem:[xi_i
 
 stem:[G_Y (eta)]:: distribution function with variable stem:[eta] for the output quantity stem:[ii(Y)]
 
-stem:[G_Y (eta)]:: continuous approximation to the distribution function stem:[ii(G)_Y (eta)] for the output quantity stem:[ii(Y)]
+stem:[tilde(G)_Y (eta)]:: continuous approximation to the distribution function stem:[ii(G)_Y (eta)] for the output quantity stem:[ii(Y)]
 
-stem:[tilde(g)_Y (eta)]:: probability density function with variable stem:[eta] for the output quantity stem:[ii(Y)]
+stem:[g_Y (eta)]:: probability density function with variable stem:[eta] for the output quantity stem:[ii(Y)]
 
 stem:[tilde(g)_Y (eta)]:: derivative of stem:[ii(G)_Y (eta)] with respect to stem:[eta], providing a numerical approximation to the probability density function stem:[g_Y(eta)] for the output quantity stem:[ii(Y)]
 
@@ -99,7 +99,7 @@ stem:[s]:: standard deviation of a series of stem:[n] indications stem:[x_1,...,
 
 stem:[s_p]:: pooled standard deviation obtained from several series of indications
 
-stem:[T]:: superscript denoting matrix transpose
+stem:[sf(T)]:: superscript denoting matrix transpose
 
 stem:[s_z]:: standard deviation associated with the average stem:[z] of the values stem:[z^{(1)},..., z^{(h)}] in an adaptive Monte Carlo procedure, where stem:[z] may denote an estimate stem:[y] of the output quantity stem:[ii(Y)], the standard uncertainty stem:[u(y)] associated with stem:[y], or the left-hand endpoint stem:[y_{"low"}] or right-hand endpoint stem:[y_{"high"}] of a coverage interval for stem:[ii(Y)]
 
@@ -127,7 +127,7 @@ stem:[u(x_i,x_j)]:: covariance associated with the estimates stem:[x_i] and stem
 
 stem:[u(y)]:: standard uncertainty associated with the estimate stem:[y] of the output quantity stem:[ii(Y)]
 
-stem:[u(tilde(y)]:: standard uncertainty associated with stem:[tilde(y)]
+stem:[u(tilde(y))]:: standard uncertainty associated with stem:[tilde(y)]
 
 stem:[u_c(y)]:: combined standard uncertainty associated with the estimate stem:[y] of the output quantity stem:[ii(Y)]
 
@@ -143,7 +143,7 @@ stem:[w]:: semi-width stem:[(b - a)//2] of an interval stem:[[a,b\]]
 
 stem:[ii(X)]:: input quantity, regarded as a random variable
 
-stem:[ii(X)]:: vector stem:[(ii(X)_1,..., ii(X)_N )^T] of input quantities, regarded as random variables, on which the output quantity stem:[ii(Y)] depends
+stem:[ii(X)]:: vector stem:[(ii(X)_1,..., ii(X)_N )^{sf(T)}] of input quantities, regarded as random variables, on which the output quantity stem:[ii(Y)] depends
 
 stem:[X_i]:: __i__th input quantity, regarded as a random variable, on which the output quantity stem:[ii(Y)] depends
 
@@ -151,7 +151,7 @@ stem:[x]:: estimate (expectation) of stem:[ii(X)]
 
 stem:[bb(x)]:: vector estimate (vector expectation) stem:[(x_1,...,x_N)^{sf(T)}] of stem:[bb(X)]
 
-stem:[hat(x)]:: average of a series of stem:[n] indications stem:[x_1,..., x_n]
+stem:[bar(x)]:: average of a series of stem:[n] indications stem:[x_1,..., x_n]
 
 stem:[x_i]:: estimate (expectation) of stem:[ii(X)_i]
 
@@ -215,6 +215,6 @@ stem:[ii(sigma)]:: standard deviation of a quantity characterized by a probabili
 
 stem:[ii(sigma)^2]:: variance (squared standard deviation) of a quantity characterized by a probability distribution
 
-stem:[Phi]:: phase of a quantity that cycles sinusoidally
+stem:[ii(Phi)]:: phase of a quantity that cycles sinusoidally
 
 stem:[χ_{nu}^2]:: chi-squared distribution with stem:[nu] degrees of freedom

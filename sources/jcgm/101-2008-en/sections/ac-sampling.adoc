@@ -217,7 +217,7 @@ NOTE: If stem:[bb(V)] is positive definite (i.e. all its eigenvalues are strictl
 NOTE: If stem:[bb(V)] is not positive definite, perhaps because of numerical rounding errors or other sources, stem:[bb(R)] may not exist. Moreover, in cases where one or more of the eigenvalues of stem:[bb(V)] is very small (but positive), the software implementation of the Cholesky factorization algorithm used may be unable to form stem:[bb(R)] because of the effects of floating-point errors. In either of these situations it is recommended that stem:[bb(V)] is "repaired", i.e. as small a change as possible is made to stem:[bb(V)] such that the Cholesky factor stem:[bb(R)] for the modified matrix is well defined. The resulting factor is exact for a covariance matrix that numerically is close to the original stem:[bb(V)]. A simple repair procedure is available <<Strang1997,page=322>> for this purpose, and is embodied in the MULTNORM generator <<Salter2000>>.
 
 
-NOTE: If stem:[bb(V)] is semi-positive definite, the eigendecomposition stem:[bb(V) = bb(Q wedge Q)^{sf(T)}], where stem:[bb(Q)] is an orthogonal matrix and stem:[^^] a diagonal matrix, can be formed. Then stem:[bb(^^)^{1//2} bb(Q)^{sf(T)}] can be used to obtain draws from stem:[N(bb(0), bb(V))], even if stem:[bb(V)] is rank deficient.
+NOTE: If stem:[bb(V)] is semi-positive definite, the eigendecomposition stem:[bb(V) = bb(Q wedge Q)^{sf(T)}], where stem:[bb(Q)] is an orthogonal matrix and stem:[bb(^^)] a diagonal matrix, can be formed. Then stem:[bb(^^)^{1//2} bb(Q)^{sf(T)}] can be used to obtain draws from stem:[N(bb(0), bb(V))], even if stem:[bb(V)] is rank deficient.
 
 
 [[tablec4]]
@@ -259,7 +259,7 @@ where 1 denotes a vector of ones of dimension stem:[q xx 1]
 
 [stem%unnumbered]
 ++++
-bb(mu) = [(2.0),(3.0)], " " " " bb(V) = [(2.0,1.9),(1.9,2.0)]
+bb(mu) = [(2.0),(3.0)], " " " " " " " " bb(V) = [(2.0,1.9),(1.9,2.0)]
 ++++
 
 i.e. in which the two quantities concerned are positively correlated. Similar generators are available elsewhere <<Devroye1986>>.
@@ -298,7 +298,9 @@ stem:[t]:: Draw from a stem:[t]-distribution with stem:[nu] degrees of freedom
 a|
 . [[item_C-5a]]Generate two draws stem:[r_1] and stem:[r_2] independently from the rectangular distribution stem:[R(0,1)]
 . If stem:[r_1 < 1//2], form stem:[t = 1//(4r_1 - 1)] and stem:[v = r_2//t^2]; otherwise form stem:[t = 4r_1 - 3] and stem:[v = r_2]
-. If stem:[v < 1 - |t|//2] or stem:[v < (1 + t^2//nu)^{-(nu+1)//2}], accept t as a draw from the stem:[t]-distribution; otherwise repeat from step <<item_C-5a>>
+. If stem:[v < 1 - |t\|//2] or stem:[v < (1 + t^2//nu)^{-(nu+1)//2}], accept stem:[t] as a draw from the stem:[t]-distribution; otherwise repeat from step <<item_C-5a>>
 |===
+
+&nbsp;
 
 NOTE: stem:[nu] must be greater than two for the standard deviation of the stem:[t]-distribution with stem:[nu] degrees of freedom to be finite.

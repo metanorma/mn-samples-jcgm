@@ -217,8 +217,8 @@ stem:[N(bb(x), bb(U_x))]
 
 | Series of indications stem:[x_1,..., x_n] sampled independently from a quantity having a Gaussian distribution, with unknown expectation and unknown variance
 a| Scaled and shifted stem:[t]: +
-stem:[t_{n-1}(hat(x),s^2//n)] with hat(x) = sum_{i=1}^n x_i//n, +
-s^2 = sum_{i=1}^n (x_i hat(x))^2//(n-1)
+stem:[t_{n-1}(hat(x),s^2//n)] with stem:[hat(x) = sum_{i=1}^n x_i//n], +
+stem:[s^2 = sum_{i=1}^n (x_i hat(x))^2//(n-1)]
 a| image::figure-table1-7.png[]
 | <<scls_6-4-9-2>>
 
@@ -243,6 +243,7 @@ a| image::figure-table1-10.png[]
 | <<scls_6-4-11>>
 |===
 
+&nbsp;
 
 [NOTE]
 ====
@@ -420,7 +421,7 @@ where stem:[x = (a + b)//2] and stem:[w = lambda_2 = (b - a)//2].
 
 [stem%unnumbered]
 ++++
-g_X (xi) = 2/{b - a} max(1 - {2|xi - x|}/{b - a}, 0).
+g_X (xi) = 2/{b - a} max(1 - {:2|xi - x|:}/{b - a}, 0).
 ++++
 
 for computer implementation.
@@ -439,7 +440,7 @@ ii(E)(ii(X)) = {a + b}/2, " " ii(V)(ii(X)) = {(b - a)^2}/24.
 
 ===== {blank}
 
-To sample from stem:[T(a, b)], make two draws stem:[r_1] and stem:[r_2] independently from the standard rectangular distribu-tion stem:[R(0, 1)] (see <<scls_C-3-3>>), and form
+To sample from stem:[T(a, b)], make two draws stem:[r_1] and stem:[r_2] independently from the standard rectangular distribution stem:[R(0, 1)] (see <<scls_C-3-3>>), and form
 
 [stem%unnumbered]
 ++++
@@ -633,7 +634,7 @@ whence
 
 [stem%unnumbered]
 ++++
-g_bb(X) (bb(xi)) = prod_{i=1}^N g_{X_i} (xi),
+g_bb(X) (bb(xi)) = prod_{i=1}^N g_{X_i} (xi_i),
 ++++
 
 with
@@ -734,7 +735,7 @@ is used, the degrees of freedom stem:[nu = n - 1] of the scaled and shifted stem
 
 [stem%unnumbered]
 ++++
-g_X (xi) = {Gamma((nu_{"p"} + 1)//2)}/{Gamma(nu_{"p"}//2)sqrt(nu_{"p"} pi)} times 1/{s_{"p"}//sqrt(n)}[1 + 1/{nu_{"p"}}({xi - bar(x)}/{s_{"p"}//sqrt(n)})]^{-(nu_{"p"} + 1)//2}
+g_X (xi) = {Gamma((nu_{"p"} + 1)//2)}/{Gamma(nu_{"p"}//2)sqrt(nu_{"p"} pi)} times 1/{s_{"p"}//sqrt(n)}[1 + 1/{nu_{"p"}}({xi - bar(x)}/{s_{"p"}//sqrt(n)})^2]^{-(nu_{"p"} + 1)//2}
 ++++
 
 and <<eq13>> by
@@ -753,7 +754,7 @@ If the source of information about a quantity stem:[ii(X)] is a calibration cert
 
 ===== {blank}
 
-If stem:[nu_{"eff"}] is stated as infinite or not specified, in which case it would be taken as infinite in the absence of other information, a Gaussian distribution stem:[N(x, (U_p/k_p)^2)] would be assigned to stem:[ii(X)] (see <<scls_6-4-7-1>>).
+If stem:[nu_{"eff"}] is stated as infinite or not specified, in which case it would be taken as infinite in the absence of other information, a Gaussian distribution stem:[N(x, (U_p//k_p)^2)] would be assigned to stem:[ii(X)] (see <<scls_6-4-7-1>>).
 
 NOTE: This distribution is the limiting case of the scaled and shifted stem:[t]-distribution stem:[t_{nu} (x, (U_p//k_p)^2)] as stem:[nu] tends to infinity.
 
@@ -814,7 +815,7 @@ The PDF for stem:[ii(X)] is
 [[eq14]]
 [stem]
 ++++
-g_X (xi) = {({: xi^q exp(-xi)//q!, :},{: xi >= 0 :}),({: 0, :},{: "otherwise". :}) :}
+g_X (xi) = {({: xi^q exp(-xi)//q"!", :},{: xi >= 0 :}),({: 0, :},{: "otherwise". :}) :}
 ++++
 
 

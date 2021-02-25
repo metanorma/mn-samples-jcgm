@@ -46,7 +46,7 @@ NOTE: The definitions in <<cls_3>> that relate to PDFs and distributions are ada
 In this Supplement, a PDF is assigned to a quantity, which may be a single, scalar quantity stem:[ii(X)] or a vector quantity stem:[bb(X)]. In the scalar case, the PDF for stem:[ii(X)] is denoted by stem:[g_X (xi)], where stem:[xi] is a variable describing the possible values of stem:[ii(X)]. This stem:[ii(X)] is considered as a random variable with expectation stem:[ii(E)(ii(X))] and variance stem:[V(ii(X))] (see <<scls_3-6>> and <<scls_3-7>>).
 
 
-=== {blank}
+=== {blank} (((covariance matrix)))
 
 In the vector case, the PDF for stem:[bb(X)] is denoted by stem:[g_X (xi)], where stem:[bb(xi) = (xi_1,..., xi_N )^{sf(T)}] is a vector variable describing the possible values of the vector quantity stem:[bb(X)]. This stem:[bb(X)] is considered as a random vector variable with (vector) expectation stem:[ii(E)(bb(X))] and covariance matrix stem:[ii(V)(bb(X))].
 
@@ -78,12 +78,12 @@ NOTE: A hatted symbol is generally used in the statistical literature to denote 
 In this Supplement, the term "law of propagation of uncertainty" applies to the use of a first-order Taylor series approximation to the model. The term is qualified accordingly when a higher-order approximation is used.
 
 
-=== {blank}
+=== {blank} (((combined standard uncertainty)))
 
 The subscript "c" <<JCGM-100,clause=5.1.1>> for the combined standard uncertainty is redundant in this Supplement. The standard uncertainty associated with an estimate stem:[y] of an output quantity stem:[ii(Y)] can therefore be written as stem:[u(y)], but the use of stem:[u_c(y)] remains acceptable if it is helpful to emphasize the fact that it represents a combined standard uncertainty. The qualifier "combined" in this context is also regarded as superfluous and may be omitted: the presence of "stem:[y]" in "stem:[u(y)]" already indicates the estimate with which the standard uncertainty is associated. Moreover, when the results of one or more uncertainty evaluations become inputs to a subsequent uncertainty evaluation, the use of the subscript "c" and the qualifier "combined" are then inappropriate.
 
 
-=== {blank}
+=== {blank} (((coverage interval)))(((coverage probability)))
 
 The terms "coverage interval" and "coverage probability" are used throughout this Supplement. The GUM uses the term "level of confidence" as a synonym for coverage probability, drawing a distinction between "level of confidence" and "confidence level" <<JCGM-100,clause=6.2.2>>, because the latter has a specific definition in statistics. Since, in some languages, the translation from English of these two terms yields the same expression, the use of these terms is avoided here.
 

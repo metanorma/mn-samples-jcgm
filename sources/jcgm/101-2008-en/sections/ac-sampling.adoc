@@ -200,7 +200,7 @@ a|
 
 
 [[scls_C-5]]
-=== Multivariate Gaussian distribution
+=== Multivariate Gaussian distribution (((covariance matrix)))
 
 ==== {blank}
 
@@ -208,7 +208,7 @@ The most important multivariate distribution is the multivariate (or joint) Gaus
 
 
 [[scls_C-5-2]]
-==== {blank}
+==== {blank} (((Cholesky decomposition)))
 
 Draws from stem:[N(bb(mu), bb(V))] <<Salter2000>>, <<Strang1997>> can be obtained using the procedure in <<tablec4>>.
 
@@ -253,7 +253,7 @@ where 1 denotes a vector of ones of dimension stem:[q xx 1]
 
 
 [[scls_C-5-3]]
-==== {blank}
+==== {blank} (((correlated input quantities)))
 
 <<figc1>> shows 200 points generated using the MULTNORM generator <<Salter2000>> from stem:["N"(bb(mu),bb(V))], where
 

@@ -3,7 +3,7 @@
 
 === General
 
-==== {blank}
+==== {blank} (((Bayes' theorem)))
 
 This clause gives guidance on the assignment, in some common circumstances, of PDFs to the input quantities stem:[ii(X)_i] in the formulation stage of uncertainty evaluation. Such an assignment can be based on Bayes' theorem <<Gelman2004>> or the principle of maximum entropy <<Cox-Harris2006>>, <<Jaynes1989>>, <<Weise1992>>, <<Woger1987>>.
 
@@ -43,7 +43,7 @@ Comprehensive guidance on the assignment of PDFs individually or jointly to the 
 A standard text on probability distributions is Evans, Hastings and Peacock <<Evans2000>>.
 
 
-=== Bayes' theorem
+=== Bayes' theorem (((Bayes' theorem)))
 
 ==== {blank}
 
@@ -276,7 +276,7 @@ NOTE: The GUM treats the information about stem:[ii(X)] in <<scls_6-4-3-1>> by a
 
 
 [[scls_6-4-3-4]]
-===== {blank}
+===== {blank} (((calibration,certificate)))
 
 To sample from stem:["CTrap"(a, b, d)], make two draws stem:[r_1] and stem:[r_2] independently from the standard rectangular distribution stem:[R(0, 1)] (see <<scls_C-3-3>>), and form
 
@@ -338,7 +338,7 @@ and
 
 
 [[scls_6-4-4-2]]
-===== {blank}
+===== {blank} (((convolution)))
 
 The PDF for stem:[ii(X)] (<<fig5>>), obtained using convolution <<Rice1995,page=93>>, is
 
@@ -449,9 +449,9 @@ xi = a + {b - a}/2 (r_1 + r_2).
 
 
 [[scls_6-4-6]]
-==== Arc sine (U-shaped) distributions
+==== Arc sine (U-shaped) distributions (((arc sine distribution)))
 
-===== {blank}
+===== {blank} (((arc sine distribution,assignment to a quantity)))
 
 If a quantity stem:[ii(X)] is known to cycle sinusoidally, with unknown phase stem:[ii(Phi)], between specified limits stem:[a] and stem:[b], with stem:[a < b], then, according to the principle of maximum entropy, a rectangular distribution stem:[R(0,2pi)] would be assigned to stem:[ii(Phi)]. The distribution assigned to stem:[ii(X)] is the arc sine distribution stem:[U(a, b)] <<Evans2000>>, given by the transformation
 
@@ -463,7 +463,7 @@ ii(X) = {a + b}/2 + {b - a}/2 sin ii(Phi),
 where stem:[ii(Phi)] has the rectangular distribution stem:[R(0,2pi)].
 
 
-===== {blank}
+===== {blank} (((arc sine distribution,probability density function)))
 
 The PDF for stem:[ii(X)] is
 
@@ -502,7 +502,7 @@ It is a special case of the beta distribution with both parameters equal to one 
 ====
 
 
-===== {blank}
+===== {blank} (((arc sine distribution,expectation and variance)))
 
 stem:[ii(X)] has expectation and variance
 
@@ -512,7 +512,7 @@ ii(E)(ii(X)) = {a + b}/2, " " ii(V)(ii(X)) = {(b - a)^2}/8.
 ++++
 
 
-===== {blank}
+===== {blank} (((arc sine distribution,sampling from)))
 
 To sample from stem:[U(a, b)], make a draw stem:[r] from the standard rectangular distribution stem:[R(0, 1)] (see <<scls_C-3-3>>), and form
 
@@ -526,7 +526,7 @@ xi = {a + b}/2 + {b - a}/2 sin 2pir.
 ==== Gaussian distributions
 
 [[scls_6-4-7-1]]
-===== {blank}
+===== {blank} (((best estimate,of an input quantity)))
 
 If a best estimate stem:[x] and associated standard uncertainty stem:[u(x)] are the only information available regarding a quantity stem:[ii(X)], then, according to the principle of maximum entropy, a Gaussian probability distribution stem:[N(x, u^2(x))] would be assigned to stem:[ii(X)].
 
@@ -567,7 +567,7 @@ xi = x + u(x)z.
 ==== Multivariate Gaussian distributions
 
 [[scls_6-4-8-1]]
-===== {blank}
+===== {blank} (((best estimate,of a vector input quantity)))
 
 A comparable result to that in <<scls_6-4-7-1>> holds for an stem:[ii(N)]-dimensional quantity stem:[bb(X) = (ii(X)_1,..., ii(X)_N )^{sf(T)}]. If the only information available is a best estimate stem:[bb(x) = (x_1,..., x_N )^{sf(T)}] of stem:[bb(X)] and the associated (strictly) positive definite uncertainty matrix
 
@@ -593,7 +593,7 @@ g_X (xi) = 1/{[(2pi)^N det bb(U_x)]^{1//2}} exp (-1/2 (bb(xi - x))^{sf(T)} bb(U_
 ++++
 
 
-===== {blank}
+===== {blank} (((covariance matrix)))
 
 stem:[bb(X)] has expectation and covariance matrix
 
@@ -604,7 +604,7 @@ ii(E)(bb(X)) = x, " " ii(V) (bb(X)) = bb(U_x).
 
 
 [[scls_6-4-8-4]]
-===== {blank}
+===== {blank} (((Cholesky decomposition)))
 
 To sample from stem:[N(bb(x),bb(U_x))], make stem:[ii(N)] draws stem:[z_i], stem:[i = 1,...,ii(N)], independently from the standard Gaussian distribution stem:[N(0, 1)] (see <<scls_C-4>>), and form
 
@@ -654,7 +654,7 @@ stem:[t]-distributions typically arise in two circumstances: the evaluation of a
 
 
 [[scls_6-4-9-2]]
-===== {blank}
+===== {blank} (((average,of a set of indications)))(((Bayes' theorem)))
 
 Suppose that a series of stem:[n] indications stem:[x_1,..., x_n] is available, regarded as being obtained independently from a quantity with unknown expectation stem:[mu_0] and unknown variance stem:[ii(sigma)_0^2] having Gaussian distribution stem:["N"(mu_0,sigma_0^2)]. The desired input quantity stem:[ii(X)] is taken to be equal to stem:[mu_0]. Then, assigning a non-informative joint prior distribution to stem:[mu_0] and stem:[ii(sigma)_0^2], and using Bayes' theorem, the marginal PDF for stem:[ii(X)] is a scaled and shifted stem:[t]-distribution stem:[t_{nu}(bar(x), s^2//n)] with stem:[nu = n - 1] degrees of freedom, where
 
@@ -686,7 +686,7 @@ Gamma (z) = int_{0}^{oo} t^{z - 1} e^{-t} " d"t, " " " " z > 0
 is the gamma function.
 
 
-===== {blank}
+===== {blank} (((average,of a set of indications)))(((best estimate,of an input quantity)))
 
 stem:[ii(X)] has expectation and variance
 
@@ -747,7 +747,7 @@ x = bar(x) = 1/n sum_{i=1}^n x_i, " " u(x) = sqrt(nu_{"p"}/{nu_{"p"} - 2}) s_{"p
 
 
 [[scls_6-4-9-7]]
-===== {blank}
+===== {blank} (((best estimate,from a calibration certificate)))(((calibration,certificate)))(((coverage factor)))
 
 If the source of information about a quantity stem:[ii(X)] is a calibration certificate <<JCGM-100,clause=4.3.1>> in which a best estimate stem:[x], the expanded uncertainty stem:[ii(U)_p], the coverage factor stem:[k_p] and the effective degrees of freedom stem:[nu_{"eff"}] are stated, then a scaled and shifted stem:[t]-distribution stem:[t_{nu} (x, (ii(U)_p//k_p)^2)] with stem:[nu = nu_{"eff"}] degrees of freedom should be assigned to stem:[ii(X)].
 
@@ -762,7 +762,7 @@ NOTE: This distribution is the limiting case of the scaled and shifted stem:[t]-
 [[scls_6-4-10]]
 ==== Exponential distributions
 
-===== {blank}
+===== {blank} (((best estimate,of a non-negative input quantity)))
 
 If the only available information regarding a non-negative quantity stem:[ii(X)] is a best estimate stem:[x > 0] of stem:[ii(X)], then, according to the principle of maximum entropy, an exponential distribution stem:["Ex"(1//x)] would be assigned to stem:[ii(X)].
 
@@ -803,7 +803,7 @@ NOTE: Further information regarding the assignment of PDFs to non-negative quant
 [[scls_6-4-11]]
 ==== Gamma distributions
 
-===== {blank}
+===== {blank} (((Bayes' theorem)))
 
 Suppose the quantity stem:[ii(X)] is the average number of objects present in a sample of a fixed size (e.g. the average number of particles in an air sample taken from a clean room, or the average number of photons emitted by a source in a specified time interval). Suppose stem:[q] is the number of objects counted in a sample of the specified size, and the counted number is assumed to be a quantity with unknown expectation having a Poisson distribution. Then, according to Bayes' theorem, after assigning a constant prior distribution to the expectation, a gamma distribution stem:[G(q + 1, 1)] would be assigned to stem:[ii(X)].
 
@@ -831,7 +831,7 @@ ii(E)(ii(X)) = q + 1, " " ii(V)(ii(X)) = q + 1.
 
 
 [[scls_6-4-11-4]]
-===== {blank}
+===== {blank} (((chi-squared distribution)))
 
 To sample from stem:[G(q + 1, 1)], make stem:[q + 1] draws stem:[r_i], stem:[i = 1,..., q + 1], independently from the standard rectangular distribution stem:[R(0, 1)] (see <<scls_C-3-3>>), and form <<Evans2000>>
 

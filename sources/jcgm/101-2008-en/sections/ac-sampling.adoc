@@ -298,7 +298,7 @@ stem:[t]:: Draw from a stem:[t]-distribution with stem:[nu] degrees of freedom
 a|
 . [[item_C-5a]]Generate two draws stem:[r_1] and stem:[r_2] independently from the rectangular distribution stem:[R(0,1)]
 . If stem:[r_1 < 1//2], form stem:[t = 1//(4r_1 - 1)] and stem:[v = r_2//t^2]; otherwise form stem:[t = 4r_1 - 3] and stem:[v = r_2]
-. If stem:[v < 1 - |t\|//2] or stem:[v < (1 + t^2//nu)^{-(nu+1)//2}], accept stem:[t] as a draw from the stem:[t]-distribution; otherwise repeat from step <<item_C-5a>>
+. If stem:[v < 1 - \|t\|//2] or stem:[v < (1 + t^2//nu)^{-(nu+1)//2}], accept stem:[t] as a draw from the stem:[t]-distribution; otherwise repeat from step <<item_C-5a>>
 |===
 
 &nbsp;

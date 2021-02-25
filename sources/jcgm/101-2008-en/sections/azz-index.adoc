@@ -1,0 +1,5 @@
+[[alphabetical_index]]
+[index]
+== Alphabetical index
+
+index:see[curvilinear trapezoid distribution,rectangular distribution with inexactly prescribed limits]

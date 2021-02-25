@@ -23,7 +23,7 @@ Just as the nearly universal use of the ((International System of Units (SI))) h
 [[scls_0-4]]
 === {blank}
 
-The ideal method for evaluating and expressing the uncertainty of the result of a measurement should be:((("uncertainty, ideal method for evaluating and expressing")))((("uncertainty, internally consistent quantity for expressing")))((("uncertainty, transferable quantity for expressing")))((("uncertainty, universal method for evaluating and expressing")))
+The ideal method for evaluating and expressing the uncertainty of the result of a measurement should be:(((uncertainty, ideal method for evaluating and expressing)))(((uncertainty, internally consistent quantity for expressing)))(((uncertainty, transferable quantity for expressing)))(((uncertainty, universal method for evaluating and expressing)))
 
 * _universal_: the method should be applicable to all kinds of measurements and to all types of input dataused in measurements.
 

@@ -326,7 +326,7 @@ where
 [[eq6]]
 [stem]
 ++++
-lambda_1 = {|(b_1 - a_1) - (b_2 - a_2)|}/2, " " " " lambda_2 = {b - a}/2,
+lambda_1 = {|:(b_1 - a_1) - (b_2 - a_2):|}/2, " " " " lambda_2 = {b - a}/2,
 ++++
 
 and
@@ -361,7 +361,7 @@ where stem:[x = (a + b)//2].
 
 [stem%unnumbered]
 ++++
-g_X (xi) = 1/{lambda_1 + lambda_2} min(1/{lambda_2 - lambda_1} max(lambda_2 - |xi - x|,0), 1)
+g_X (xi) = 1/{lambda_1 + lambda_2} min(1/{lambda_2 - lambda_1} max(lambda_2 - |: xi - x :|, 0), 1)
 ++++
 
 for computer implementation. 

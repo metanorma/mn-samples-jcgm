@@ -595,7 +595,7 @@ g_X (xi) = 1/{[(2pi)^N det bb(U_x)]^{1//2}} exp (-1/2 (bb(xi - x))^{sf(T)} bb(U_
 
 ===== {blank}
 
-stem:[ii(X)] has expectation and covariance matrix
+stem:[bb(X)] has expectation and covariance matrix
 
 [stem%unnumbered]
 ++++

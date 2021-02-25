@@ -468,7 +468,7 @@ an interval for which it can be stated with a given level of confidence that it 
 
 NOTE: When both limits are defined by statistics, the interval is two-sided. When one of the two limits is not finite or consists of the boundary of the variable, the interval is one-sided.
 
-NOTE: Also called "statistical tolerance interval"((("tolerance interval, statistical"))). This term should not be used because it may cause confusion with "tolerance interval" which is defined in ISO 3534-2:1993.
+NOTE: Also called "statistical tolerance interval"(((tolerance interval, statistical))). This term should not be used because it may cause confusion with "tolerance interval" which is defined in ISO 3534-2:1993.
 
 // [ISO 3534-1:1993, definition 2.61]
 [.source]
@@ -550,7 +550,7 @@ If the expectation stem:[ii(mu)_z] of stem:[z] is known, the variance may be est
 s^2(z_i) = 1/n sum_{i=1}^n (z_i - ii(mu)_z)^2
 ++++
 
-The variance of the arithmetic mean or average of the observations, rather than the variance of the individual observations, is the proper measure of the uncertainty of a measurement result. The variance of a variable stem:[z] should be carefully distinguished from the variance of the mean stem:[bar(z)]. The variance of the arithmetic mean of a series of stem:[n] independent observations stem:[z_i] of stem:[z] is given by stem:[ii(sigma)^2(bar(z)) = ii(sigma)^2 (z_i)//n] and is estimated by the experimental ((variance of the mean))((("variance of the mean, experimental")))
+The variance of the arithmetic mean or average of the observations, rather than the variance of the individual observations, is the proper measure of the uncertainty of a measurement result. The variance of a variable stem:[z] should be carefully distinguished from the variance of the mean stem:[bar(z)]. The variance of the arithmetic mean of a series of stem:[n] independent observations stem:[z_i] of stem:[z] is given by stem:[ii(sigma)^2(bar(z)) = ii(sigma)^2 (z_i)//n] and is estimated by the experimental ((variance of the mean))(((variance of the mean, experimental)))
 
 [stem%unnumbered]
 ++++
@@ -586,7 +586,7 @@ which leads to
 ++++
 
 
-where stem:[p(y,z)] is the joint probability density function of the two variables stem:[y] and stem:[z]. The covariance stem:["cov"(y,z)] [also denoted by stem:[ii(nu)(y,z)] may be estimated by stem:[s(y_i,z_i)] obtained from stem:[n] independent pairs of simultaneous observations stem:[y_i] and stem:[z_i] of stem:[y] and stem:[z],(((covariance of two arithmetic means)))((("observations, independent pairs of simultaneous")))
+where stem:[p(y,z)] is the joint probability density function of the two variables stem:[y] and stem:[z]. The covariance stem:["cov"(y,z)] [also denoted by stem:[ii(nu)(y,z)] may be estimated by stem:[s(y_i,z_i)] obtained from stem:[n] independent pairs of simultaneous observations stem:[y_i] and stem:[z_i] of stem:[y] and stem:[z],(((covariance of two arithmetic means)))(((observations, independent pairs of simultaneous)))
 
 [stem%unnumbered]
 ++++
@@ -643,7 +643,7 @@ NOTE: For multivariate probability distributions, the ((correlation coefficient 
 [[note3_C-3-6]]
 [NOTE]
 ====
-If the input estimates stem:[x_i] and stem:[x_j] are correlated (see <<scls_5-2-2>>) and if a change stem:[delta_i] in stem:[x_i] produces a change stem:[ii(delta)_j] in stem:[x_j], then the correlation coefficient associated with stem:[x_i] and stem:[x_j] is estimated approximately by((("covariance, experimental evaluation of")))
+If the input estimates stem:[x_i] and stem:[x_j] are correlated (see <<scls_5-2-2>>) and if a change stem:[delta_i] in stem:[x_i] produces a change stem:[ii(delta)_j] in stem:[x_j], then the correlation coefficient associated with stem:[x_i] and stem:[x_j] is estimated approximately by(((covariance, experimental evaluation of)))
 
 [stem%unnumbered]
 ++++

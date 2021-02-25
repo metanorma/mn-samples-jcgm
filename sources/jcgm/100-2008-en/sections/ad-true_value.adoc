@@ -25,12 +25,12 @@ The velocity of sound in dry air of composition (mole fraction) stem:["N"_2 = 0.
 
 
 [[scls_D-2]]
-=== The realized quantity((("quantity, realized")))
+=== The realized quantity(((quantity, realized)))
 
 [[scls_D-2-1]]
 ==== {blank}
 
-Ideally, the quantity realized((("quantity, realized"))) for measurement would be fully consistent with the definition of the measurand. Often, however, such a quantity cannot be realized and the measurement is performed on a quantity that is an approximation of the measurand.
+Ideally, the quantity realized(((quantity, realized))) for measurement would be fully consistent with the definition of the measurand. Often, however, such a quantity cannot be realized and the measurement is performed on a quantity that is an approximation of the measurand.
 
 
 [[scls_D-3]]
@@ -39,25 +39,25 @@ Ideally, the quantity realized((("quantity, realized"))) for measurement would b
 [[scls_D-3-1]]
 ==== {blank}
 
-The result of the measurement of the realized quantity((("quantity, realized"))) is corrected for the difference between that quantity and the measurand in order to predict what the measurement result would have been if the realized quantity had in fact fully satisfied the definition of the measurand. The result of the measurement of the realized quantity is also corrected for all other recognized significant systematic effects. Although the final ((corrected result)) is sometimes viewed as the best estimate of the "true" value(((true value of a quantity))) of the measurand, in reality the result is simply the best estimate of the value of the quantity intended to be measured.
+The result of the measurement of the realized quantity(((quantity, realized))) is corrected for the difference between that quantity and the measurand in order to predict what the measurement result would have been if the realized quantity had in fact fully satisfied the definition of the measurand. The result of the measurement of the realized quantity is also corrected for all other recognized significant systematic effects. Although the final ((corrected result)) is sometimes viewed as the best estimate of the "true" value(((true value of a quantity))) of the measurand, in reality the result is simply the best estimate of the value of the quantity intended to be measured.
 
 
 [[scls_D-3-2]]
 ==== {blank}
 
-As an example, suppose that the measurand is the thickness of a given sheet of material at as pecified temperature. The specimen is brought to a temperature near the specified temperature and its thickness at a particular place is measured with a micrometer. The thickness of the material at that place and temperature, under the pressure applied by the micrometer, is the realized quantity((("quantity, realized"))).
+As an example, suppose that the measurand is the thickness of a given sheet of material at as pecified temperature. The specimen is brought to a temperature near the specified temperature and its thickness at a particular place is measured with a micrometer. The thickness of the material at that place and temperature, under the pressure applied by the micrometer, is the realized quantity(((quantity, realized))).
 
 
 [[scls_D-3-3]]
 ==== {blank}
 
-The temperature of the material at the time of the measurement and the applied pressure are determined. The uncorrected result of the measurement of the realized quantity((("quantity, realized"))) is then corrected by taking into account the calibration curve of the micrometer, the departure of the temperature of the specimen from the specified temperature, and the slight compression of the specimen under the applied pressure.
+The temperature of the material at the time of the measurement and the applied pressure are determined. The uncorrected result of the measurement of the realized quantity(((quantity, realized))) is then corrected by taking into account the calibration curve of the micrometer, the departure of the temperature of the specimen from the specified temperature, and the slight compression of the specimen under the applied pressure.
 
 
 [[scls_D-3-4]]
 ==== {blank}
 
-The ((corrected result)) may be called the best estimate of the "true" value, "true" in the sense that it is the value of a quantity that is believed to satisfy fully the definition of the ((measurand)); but had the micrometer been applied to a different part of the sheet of material, the realized quantity((("quantity, realized"))) would have been different with a different "true" value(((true value of a quantity))). However, that "true" value would be consistent with the definition of the measurand because the latter did not specify that the thickness was to be determined at a particular place on the sheet. Thus in this case, because of an incomplete(((uncertainty due to incomplete definition of the measurand))) definition of the measurand, the "true" value has an uncertainty that can be evaluated from measurements made at different places on the sheet. At some level, every measurand has such an "intrinsic" uncertainty((("uncertainty, intrinsic"))) that can in principle be estimated in some way. This is the minimum uncertainty((("uncertainty, minimum"))) with which a measurand can be determined, and every measurement that achieves such an uncertainty may be viewed as the best possible measurement of the measurand. To obtain a value of the quantity in question having a smaller uncertainty requires that the ((measurand)) be more completely defined.((("measurand, best possible measurement of the")))
+The ((corrected result)) may be called the best estimate of the "true" value, "true" in the sense that it is the value of a quantity that is believed to satisfy fully the definition of the ((measurand)); but had the micrometer been applied to a different part of the sheet of material, the realized quantity(((quantity, realized))) would have been different with a different "true" value(((true value of a quantity))). However, that "true" value would be consistent with the definition of the measurand because the latter did not specify that the thickness was to be determined at a particular place on the sheet. Thus in this case, because of an incomplete(((uncertainty due to incomplete definition of the measurand))) definition of the measurand, the "true" value has an uncertainty that can be evaluated from measurements made at different places on the sheet. At some level, every measurand has such an "intrinsic" uncertainty(((uncertainty, intrinsic))) that can in principle be estimated in some way. This is the minimum uncertainty(((uncertainty, minimum))) with which a measurand can be determined, and every measurement that achieves such an uncertainty may be viewed as the best possible measurement of the measurand. To obtain a value of the quantity in question having a smaller uncertainty requires that the ((measurand)) be more completely defined.(((measurand, best possible measurement of the)))
 
 NOTE: In the example, the measurand's specification leaves many other matters in doubt that might conceivably affect the thickness: the barometric pressure, the humidity, the attitude of the sheet in the gravitational field, the way it is supported, etc.
 
@@ -75,7 +75,7 @@ The term "true value of a measurand" or of a quantity (often truncated to "true 
 [[scls_D-4]]
 === Error(((error of measurement)))
 
-A corrected measurement result is not the value of the measurand -- that is, it is in error -- because of imperfect measurement of the realized quantity((("quantity, realized"))) due to random variations of the observations (random effects), inadequate determination of the corrections for systematic effects, and incomplete knowledge of certain physical phenomena (also systematic effects). Neither the value of the realized quantity nor the value of the measurand can ever be known exactly; all that can be known is their estimated values. In the example above, the measured thickness of the sheet _may_ be in error, that is, may differ from the value of the measurand (the thickness of the sheet), because each of the following may combine to contribute an unknown error to the measurement result:(((corrected result)))
+A corrected measurement result is not the value of the measurand -- that is, it is in error -- because of imperfect measurement of the realized quantity(((quantity, realized))) due to random variations of the observations (random effects), inadequate determination of the corrections for systematic effects, and incomplete knowledge of certain physical phenomena (also systematic effects). Neither the value of the realized quantity nor the value of the measurand can ever be known exactly; all that can be known is their estimated values. In the example above, the measured thickness of the sheet _may_ be in error, that is, may differ from the value of the measurand (the thickness of the sheet), because each of the following may combine to contribute an unknown error to the measurement result:(((corrected result)))
 
 . slight differences between the indications of the micrometer when it is repeatedly applied to the same realized quantity;
 . imperfect calibration of the micrometer;
@@ -110,7 +110,7 @@ It is fortunate that in many practical measurement situations, much of the discu
 [[scls_D-6-1]]
 ==== {blank}
 
-<<fig_D-1>> depicts some of the ideas discussed in <<cls_3>> of this _Guide_ and in this annex. It illustrates why the focus of this _Guide_ is uncertainty(((uncertainty of measurement))) and not error. The exact error of a result of a measurement is, in general, unknown and unknowable. All one can do is estimate the values of input quantities, including corrections for recognized ((systematic effect))s, together with their standard uncertainties (estimated standard deviations), either from unknown probability distributions that are sampled by means of repeated observations, or from subjective((("probability, subjective"))) or _a priori_ distributions((("distribution, _a priori_"))) based on the pool of available information; and then calculate the measurement result from the estimated values of the input quantities and the ((combined standard uncertainty)) of that result from the standard uncertainties of those estimated values. Only if there is a sound basis for believing that all of this has been done properly, with no significant ((systematic effect))s having been overlooked, can one assume that the measurement result is a reliable estimate of the value of the measurand and that its combined ((standard uncertainty)) is a reliable measure of its _possible_ error.(((error of measurement)))(((uncertainty of a correction)))
+<<fig_D-1>> depicts some of the ideas discussed in <<cls_3>> of this _Guide_ and in this annex. It illustrates why the focus of this _Guide_ is uncertainty(((uncertainty of measurement))) and not error. The exact error of a result of a measurement is, in general, unknown and unknowable. All one can do is estimate the values of input quantities, including corrections for recognized ((systematic effect))s, together with their standard uncertainties (estimated standard deviations), either from unknown probability distributions that are sampled by means of repeated observations, or from subjective(((probability, subjective))) or _a priori_ distributions(((distribution, _a priori_))) based on the pool of available information; and then calculate the measurement result from the estimated values of the input quantities and the ((combined standard uncertainty)) of that result from the standard uncertainties of those estimated values. Only if there is a sound basis for believing that all of this has been done properly, with no significant ((systematic effect))s having been overlooked, can one assume that the measurement result is a reliable estimate of the value of the measurand and that its combined ((standard uncertainty)) is a reliable measure of its _possible_ error.(((error of measurement)))(((uncertainty of a correction)))
 
 NOTE: In <<fig_D-1a>>), the observations are shown as a ((histogram)) for illustrative purposes [see <<scls_4-4-3>> and <<fig_1>>b)].
 
@@ -120,7 +120,7 @@ NOTE: The correction for an error is equal to the negative of the estimate of th
 [[scls_D-6-2]]
 ==== {blank}
 
-<<fig_D-2>> depicts some of the same ideas illustrated in <<fig_D-1>> but in a different way. Moreover, it also depicts the idea that there can be many values of the measurand if the definition of the measurand is incomplete(((uncertainty due to incomplete definition of the measurand))) [entry _g)_ of <<fig_D-2>>]. The uncertainty(((uncertainty of measurement))) arising from this incompleteness of definition as measured by the variance is evaluated from measurements(((error of measurement))) of multiple realizations of the measurand((("measurand, many values of the"))), using the same method, instruments, etc. (see <<scls_D-3-4>>).
+<<fig_D-2>> depicts some of the same ideas illustrated in <<fig_D-1>> but in a different way. Moreover, it also depicts the idea that there can be many values of the measurand if the definition of the measurand is incomplete(((uncertainty due to incomplete definition of the measurand))) [entry _g)_ of <<fig_D-2>>]. The uncertainty(((uncertainty of measurement))) arising from this incompleteness of definition as measured by the variance is evaluated from measurements(((error of measurement))) of multiple realizations of the measurand(((measurand, many values of the))), using the same method, instruments, etc. (see <<scls_D-3-4>>).
 
 NOTE: In the column headed "Variance", the variances are understood to be the variances stem:[u_i^2(y)] defined in <<eq_11a>> in <<scls_5-1-3>>; hence they add linearly as shown.
 

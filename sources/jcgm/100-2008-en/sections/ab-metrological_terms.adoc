@@ -359,7 +359,7 @@ NOTE: Results are here usually understood to be corrected results.
 
 
 [[scls_B-2-17]]
-==== experimental standard deviation((("standard deviation, experimental")))
+==== experimental standard deviation(((standard deviation, experimental)))
 
 for a series of stem:[n] measurements of the same measurand, the quantity stem:[s(q_k)] characterizing the dispersion of the results and given by the formula:
 
@@ -373,7 +373,7 @@ stem:[q_k] being the result of the stem:[k]th measurement and stem:[bar(q)] bein
 NOTE: Considering the series of stem:[n] values as a sample of a distribution, stem:[bar(q)] is an unbiased estimate of the mean stem:[ii(mu)_q], and stem:[s^2(q_k)] is an unbiased estimate of the variance stem:[ii(sigma)^2], of that distribution.
 
 [[note2_B-2-17]]
-NOTE: The expression stem:[s(q_k)//sqrt(n)] is an estimate of the standard deviation of the distribution of stem:[bar(q)] and is called the *experimental standard deviation of the mean*.((("standard deviation of the mean, experimental")))
+NOTE: The expression stem:[s(q_k)//sqrt(n)] is an estimate of the standard deviation of the distribution of stem:[bar(q)] and is called the *experimental standard deviation of the mean*.(((standard deviation of the mean, experimental)))
 
 NOTE: "Experimental standard deviation of the mean" is sometimes incorrectly called *standard error of the mean*.
 

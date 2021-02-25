@@ -5,7 +5,7 @@
 [[scls_1-1]]
 === {blank}
 
-This _Guide_ establishes general rules for evaluating and expressing uncertainty in measurement thatcan be followed at various levels of accuracy and in many fields -- from the shop floor to fundamental research. Therefore, the principles of this _Guide_ are intended to be applicable to a broad spectrum of measurements, including those required for:((("measurements, spectrum of, to which the principles of the _Guide_ apply")))(((uncertainty of measurement)))
+This _Guide_ establishes general rules for evaluating and expressing uncertainty in measurement thatcan be followed at various levels of accuracy and in many fields -- from the shop floor to fundamental research. Therefore, the principles of this _Guide_ are intended to be applicable to a broad spectrum of measurements, including those required for:(((measurements, spectrum of, to which the principles of the _Guide_ apply)))(((uncertainty of measurement)))
 
 * maintaining quality control and quality assurance in production; complying with and enforcing laws and regulations;
 * conducting basic research, and applied research and development, in science and engineering;

@@ -6,7 +6,7 @@ Additional guidance on evaluating uncertainty components, mainly of a practical 
 
 
 [[scls_4-1]]
-=== Modelling the measurement((("measurement, mathematical model of the")))
+=== Modelling the measurement(((measurement, mathematical model of the)))
 
 [[scls_4-1-1]]
 ==== {blank}
@@ -35,14 +35,14 @@ If a potential difference stem:[ii(V)] is applied to the terminals of a temperat
 ii(P) = f (ii(V),ii(R)_0,ii(alpha),t) = ii(V)^2//{ii(R)_0 [1 + ii(alpha) (t - t_0)]}
 ++++
 
-NOTE: Other methods of measuring stem:[ii(P)] would be modelled by different mathematical expressions.((("measurement, mathematical model of the")))
+NOTE: Other methods of measuring stem:[ii(P)] would be modelled by different mathematical expressions.(((measurement, mathematical model of the)))
 ====
 
 
 [[scls_4-1-2]]
 ==== {blank}
 
-The _input quantities_ stem:[ii(X)_1,ii(X)_2,...,ii(X)_N] upon which the _((output quantity))_ stem:[ii(Y)] depends may themselves beviewed as measurands and may themselves depend on other quantities, including corrections and correction factors for systematic effects, thereby leading to a complicated ((functional relationship)) stem:[f] that may never be written down explicitly. Further, stem:[f] may be determined experimentally (see <<scls_5-1-4>>) or exist only as an algorithm that must be evaluated numerically. The function stem:[f] as it appears in this _Guide_ is to be interpreted in this broader context, in particular as that function which contains every quantity, including all corrections and correction factors, that can contribute a significant component of uncertainty to the measurement result.((("measurement, mathematical model of the")))
+The _input quantities_ stem:[ii(X)_1,ii(X)_2,...,ii(X)_N] upon which the _((output quantity))_ stem:[ii(Y)] depends may themselves beviewed as measurands and may themselves depend on other quantities, including corrections and correction factors for systematic effects, thereby leading to a complicated ((functional relationship)) stem:[f] that may never be written down explicitly. Further, stem:[f] may be determined experimentally (see <<scls_5-1-4>>) or exist only as an algorithm that must be evaluated numerically. The function stem:[f] as it appears in this _Guide_ is to be interpreted in this broader context, in particular as that function which contains every quantity, including all corrections and correction factors, that can contribute a significant component of uncertainty to the measurement result.(((measurement, mathematical model of the)))
 
 Thus, if data indicate that stem:[f] does not model the measurement to the degree imposed by the required accuracy of the measurement result, additional input quantities must be included in stem:[f] to eliminate the inadequacy (see <<scls_3-4-2>>). This may require introducing an ((input quantity)) to reflect incomplete knowledge of a phenomenon thataffects the measurand. In the example of <<scls_4-1-1>>, additional input quantities might be needed to account for a known nonuniform temperature distribution across the resistor, a possible nonlinear temperature coefficient of resistance, or a possible dependence of resistance on barometric pressure.
 
@@ -52,7 +52,7 @@ NOTE: Nonetheless, <<eq_1>> may be as elementary as stem:[ii(Y) = ii(X)_1 - ii(X
 [[scls_4-1-3]]
 ==== {blank}
 
-The set of input quantities((("input quantities, categorization of"))) stem:[ii(X)_1, ii(X)_2,..., ii(X)_N] may be categorized as:
+The set of input quantities(((input quantities, categorization of))) stem:[ii(X)_1, ii(X)_2,..., ii(X)_N] may be categorized as:
 
 * quantities whose values _and uncertainties_ are directly determined in the current measurement. These values and uncertainties may be obtained from, for example, a single observation, repeated observations, or judgement based on experience, and may involve the determination of corrections to instrument readings and corrections for influence quantities, such as ambient temperature, barometric pressure, and humidity;
 
@@ -80,7 +80,7 @@ In some cases, the estimate stem:[y] may be obtained from
 y = bar(ii(Y)) = 1/n sum_{k=1}^n ii(Y)_k = 1/n sum_{k=1}^n f(ii(X)_{1,k}, ii(X)_{2,k},..., ii(X)_{N,k})
 ++++
 
-That is, stem:[y] is taken as the ((arithmetic mean)) or average (see <<scls_4-2-1>>) of stem:[n] independent determinations stem:[ii(Y)_k] of stem:[ii(Y)], each determination having the same uncertainty and each being based on a complet e set of observed values of the stem:[ii(N)] input quantities stem:[ii(X)_i] obtained at the same time. This way of averaging, rather than stem:[y = f(bar(ii(X))_1, bar(ii(X))_2,..., bar(ii(X))_N)], where((("functional relationship, nonlinear")))
+That is, stem:[y] is taken as the ((arithmetic mean)) or average (see <<scls_4-2-1>>) of stem:[n] independent determinations stem:[ii(Y)_k] of stem:[ii(Y)], each determination having the same uncertainty and each being based on a complet e set of observed values of the stem:[ii(N)] input quantities stem:[ii(X)_i] obtained at the same time. This way of averaging, rather than stem:[y = f(bar(ii(X))_1, bar(ii(X))_2,..., bar(ii(X))_N)], where(((functional relationship, nonlinear)))
 
 [stem%unnumbered]
 ++++
@@ -100,7 +100,7 @@ The estimated standard deviation associated with the ((output estimate)) or meas
 [[scls_4-1-6]]
 ==== {blank}
 
-Each ((input estimate)) stem:[x_i] and its associated ((standard uncertainty)) stem:[u(x_i)] are obtained from a distribution ofpossible values of the input quantity stem:[ii(X)_i]. This ((probability distribution)) may be frequency based, that is, based on a series of observations stem:[ii(X)_{i,k}] of stem:[ii(X)_i], or it may be an _a priori_ distribution. Type A evaluations of standard uncertainty(((Type A evaluation of uncertainty))) components are founded on ((frequency distribution))s while Type B evaluations(((Type B evaluation of uncertainty))) are founded on _a priori_ distributions((("distribution, _a priori_"))). It must be recognized that in both cases the distributions are models that are used torepresent the state of our knowledge.
+Each ((input estimate)) stem:[x_i] and its associated ((standard uncertainty)) stem:[u(x_i)] are obtained from a distribution ofpossible values of the input quantity stem:[ii(X)_i]. This ((probability distribution)) may be frequency based, that is, based on a series of observations stem:[ii(X)_{i,k}] of stem:[ii(X)_i], or it may be an _a priori_ distribution. Type A evaluations of standard uncertainty(((Type A evaluation of uncertainty))) components are founded on ((frequency distribution))s while Type B evaluations(((Type B evaluation of uncertainty))) are founded on _a priori_ distributions(((distribution, _a priori_))). It must be recognized that in both cases the distributions are models that are used torepresent the state of our knowledge.
 
 
 [[scls_4-2]]
@@ -117,13 +117,13 @@ In most cases, the best available estimate of the expectation or expected value(
 bar(q) = 1/n sum_{k=1}^n q_k
 ++++
 
-Thus, for an input quantity stem:[ii(X)_i] estimated from stem:[n] independent repeated observations((("observations, repeated"))) stem:[ii(X)_{i,k}], the arithmetic mean stem:[bar(ii(X))_i] obtained from <<eq_3>> isused as the ((input estimate)) stem:[x_i] in <<eq_2>> to determine the measurement result stem:[y]; that is, stem:[x_i = bar(ii(X))_i]. Those input estimates not evaluated from repeated observations must be obtained by other methods, such as those indicated in the second category of <<scls_4-1-3>>.(((Type A evaluation of uncertainty)))
+Thus, for an input quantity stem:[ii(X)_i] estimated from stem:[n] independent repeated observations(((observations, repeated))) stem:[ii(X)_{i,k}], the arithmetic mean stem:[bar(ii(X))_i] obtained from <<eq_3>> isused as the ((input estimate)) stem:[x_i] in <<eq_2>> to determine the measurement result stem:[y]; that is, stem:[x_i = bar(ii(X))_i]. Those input estimates not evaluated from repeated observations must be obtained by other methods, such as those indicated in the second category of <<scls_4-1-3>>.(((Type A evaluation of uncertainty)))
 
 
 [[scls_4-2-2]]
 ==== {blank}
 
-The individual observations stem:[q_k] differ in value because of random variations in the influence quantities(((influence quantity))), or ((random effect))s (see <<scls_3-2-2>>). The experimental variance of the observations((("standard deviation, experimental"))), which estimates the variance of the observations, which estimates the variance stem:[ii(sigma)^2] of the probability distribution of stem:[q], is given by
+The individual observations stem:[q_k] differ in value because of random variations in the influence quantities(((influence quantity))), or ((random effect))s (see <<scls_3-2-2>>). The experimental variance of the observations(((standard deviation, experimental))), which estimates the variance of the observations, which estimates the variance stem:[ii(sigma)^2] of the probability distribution of stem:[q], is given by
 
 [[eq_4]]
 [stem]
@@ -131,7 +131,7 @@ The individual observations stem:[q_k] differ in value because of random variati
 s^2 (q_k) = 1/{n - 1} sum_{j=1}^n (q_j - bar(q))^2
 ++++
 
-This estimate of ((variance)) and its positive square root stem:[s(q_k)], termed the *experimental standard deviation* (<<scls_B-2-17>>), characterize the variability of the observed values stem:[q_k], or more specifically, their dispersion about their mean stem:[bar(q)].(((Type A evaluation of uncertainty)))((("variance, experimental (or estimate of)")))
+This estimate of ((variance)) and its positive square root stem:[s(q_k)], termed the *experimental standard deviation* (<<scls_B-2-17>>), characterize the variability of the observed values stem:[q_k], or more specifically, their dispersion about their mean stem:[bar(q)].(((Type A evaluation of uncertainty)))(((variance, experimental (or estimate of))))
 
 
 [[scls_4-2-3]]
@@ -145,9 +145,9 @@ The best estimate of stem:[ii(sigma)^2 (bar(q)) = ii(sigma)^2//n], the ((varianc
 s^2 (bar(q)) = {s^2(q_k)}/n
 ++++
 
-The experimental variance of the mean stem:[s^2(bar(q))] and the *experimental standard deviation of the mean* stem:[s(bar(q))] (<<note2_B-2-17>>), equal to the positive square root of stem:[s^2(bar(q))], quantify how well stem:[bar(q)] estimates the expectation stem:[ii(mu)_q] of stem:[q], and either may be used as a measure of the uncertainty of stem:[bar(q)].((("standard deviation of the mean, experimental")))(((Type A evaluation of uncertainty)))(((Type A standard uncertainty)))(((variance of the mean)))((("variance of the mean, experimental")))
+The experimental variance of the mean stem:[s^2(bar(q))] and the *experimental standard deviation of the mean* stem:[s(bar(q))] (<<note2_B-2-17>>), equal to the positive square root of stem:[s^2(bar(q))], quantify how well stem:[bar(q)] estimates the expectation stem:[ii(mu)_q] of stem:[q], and either may be used as a measure of the uncertainty of stem:[bar(q)].(((standard deviation of the mean, experimental)))(((Type A evaluation of uncertainty)))(((Type A standard uncertainty)))(((variance of the mean)))(((variance of the mean, experimental)))
 
-Thus, for an input quantity stem:[ii(X)_i] determined from stem:[n] independent repeated observations((("observations, repeated"))) stem:[ii(X)_{i,k}], the ((standard uncertainty)) stem:[u(x_i)] of its estimate stem:[x_i = bar(ii(X))_i] is stem:[u(x_i) = s(bar(ii(X))_i)], with stem:[s^2(bar(ii(X))_i)] calculated according to <<eq_5>>. For convenience, stem:[u^2(x_i) =s^2(bar(ii(X))_i)] and stem:[u(x_i) = s(bar(ii(X))_i)] are sometimes called a _Type A variance_(((Type A variance))) and a _Type A standard uncertainty_, respectively.
+Thus, for an input quantity stem:[ii(X)_i] determined from stem:[n] independent repeated observations(((observations, repeated))) stem:[ii(X)_{i,k}], the ((standard uncertainty)) stem:[u(x_i)] of its estimate stem:[x_i = bar(ii(X))_i] is stem:[u(x_i) = s(bar(ii(X))_i)], with stem:[s^2(bar(ii(X))_i)] calculated according to <<eq_5>>. For convenience, stem:[u^2(x_i) =s^2(bar(ii(X))_i)] and stem:[u(x_i) = s(bar(ii(X))_i)] are sometimes called a _Type A variance_(((Type A variance))) and a _Type A standard uncertainty_, respectively.
 
 [[note1_4-2-3]]
 NOTE: The number of observations stem:[n] should be large enough to ensure that stem:[bar(q)] provides a reliable estimate of the expectation stem:[ii(mu)_q] of the ((random variable)) stem:[q] and that stem:[s^2(bar(q))] provides a reliable estimate of the variance stem:[ii(sigma)^2(bar(q)) = ii(sigma)^2//n] (see <<note_4-3-2>>). The difference between stem:[s^2(bar(q))] and stem:[ii(sigma)^2(bar(q))] must be considered when one constructs ((confidence interval))s (see <<scls_6-2-2>>). In this case, if the ((probability distribution)) of stem:[q] is a ((normal distribution)) (see <<scls_4-3-4>>), the difference is taken into account through the ((stem:[t]-distribution)) (see <<scls_G-3-2>>).
@@ -158,13 +158,13 @@ NOTE: Although the variance stem:[s^2(bar(q))] is the more fundamental quantity,
 [[scls_4-2-4]]
 ==== {blank}
 
-For a well-characterized measurement under ((statistical control)), a combined or pooled estimate of variance stem:[s_p^2] (or a pooled experimental standard deviation stem:[s_p]) that characterizes the measurement may be available. In such cases, when the value of a measurand stem:[q] is determined from stem:[n] independent observations, the experimental variance of the arithmetic mean stem:[bar(q)] of the observations is estimated better by stem:[s_p^2//n] than by stem:[s^2(q_k)//n] and the standard uncertainty is stem:[u = s_{"p"}//sqrt(n)]. (See also the <<note_H-3-6>>.)(((Type A evaluation of uncertainty)))((("variance, pooled estimate of (or pooled experimental standard deviation)")))
+For a well-characterized measurement under ((statistical control)), a combined or pooled estimate of variance stem:[s_p^2] (or a pooled experimental standard deviation stem:[s_p]) that characterizes the measurement may be available. In such cases, when the value of a measurand stem:[q] is determined from stem:[n] independent observations, the experimental variance of the arithmetic mean stem:[bar(q)] of the observations is estimated better by stem:[s_p^2//n] than by stem:[s^2(q_k)//n] and the standard uncertainty is stem:[u = s_{"p"}//sqrt(n)]. (See also the <<note_H-3-6>>.)(((Type A evaluation of uncertainty)))(((variance, pooled estimate of (or pooled experimental standard deviation))))
 
 
 [[scls_4-2-5]]
 ==== {blank}
 
-Often an estimate stem:[x_i] of an input quantity stem:[ii(X)_i] is obtained from a curve that has been fitted to experimental data by the method of least squares((("least squares, method of"))). The estimated variances and resulting standard uncertainties of the fitted parameters characterizing the curve and of any predicted points can usually be calculated by well-known statistical procedures (see <<scls_H-3>> and Reference <<FULLER1987>>).(((Type A evaluation of uncertainty)))
+Often an estimate stem:[x_i] of an input quantity stem:[ii(X)_i] is obtained from a curve that has been fitted to experimental data by the method of least squares(((least squares, method of))). The estimated variances and resulting standard uncertainties of the fitted parameters characterizing the curve and of any predicted points can usually be calculated by well-known statistical procedures (see <<scls_H-3>> and Reference <<FULLER1987>>).(((Type A evaluation of uncertainty)))
 
 
 [[scls_4-2-6]]
@@ -178,15 +178,15 @@ The ((degrees of freedom)) (<<scls_C-2-31>>) stem:[ii(nu)_i] of stem:[u(x_i)] (s
 
 If the random variations(((correlated random variations))) in the observations of an input quantity are correlated, for example, in time, the mean and experimental standard deviation of the mean as given in <<scls_4-2-1>> and <<scls_4-2-3>> may be inappropriate *((estimator))s* (<<scls_C-2-25>>) of the desired *((statistic))s* (<<scls_C-2-23>>). In such cases, the observations should be analysed bystatistical methods specially designed to treat a series of correlated, randomly-varying measurements.(((Type A evaluation of uncertainty)))
 
-NOTE: Such specialized methods are used to treat measurements of frequency standards. However, it is possible that as one goes from short-term measurements to long-term measurements of other metrological quantities, the assumption of uncorrelated random variations may no longer be valid and the specialized methods could be used to treat these measurements as well. (See Reference <<ALLAN1987>>, for example, for a detailed discussion of the Allan variance((("variance, Allan"))).)
+NOTE: Such specialized methods are used to treat measurements of frequency standards. However, it is possible that as one goes from short-term measurements to long-term measurements of other metrological quantities, the assumption of uncorrelated random variations may no longer be valid and the specialized methods could be used to treat these measurements as well. (See Reference <<ALLAN1987>>, for example, for a detailed discussion of the Allan variance(((variance, Allan))).)
 
 
 [[scls_4-2-8]]
 ==== {blank}
 
-The discussion of Type A evaluation of standard uncertainty in <<scls_4-2-1>> to <<scls_4-2-7>> is not meant to be exhaustive; there are many situations, some rather complex, that can be treated by statistical methods. An important example is the use of calibration designs, often based on the method of least squares, to evaluate the uncertainties arising from both short- and long-term random variations in the results of comparisons of material artefacts of unknown values, such as gauge blocks and standards of mass, with reference standards of known values. In such comparatively simple measurement situations, components of uncertainty can frequently be evaluated by the statistical analysis of data obtained from designs consisting of nested sequences of measurements of the measurand for a number of different values of the quantities upon which it depends -- a so-called analysis of variance (see <<scls_H-5>>).(((ANOVA)))(((Type A evaluation of uncertainty)))((("uncertainty, statistical evaluation of, by varying input quantities")))
+The discussion of Type A evaluation of standard uncertainty in <<scls_4-2-1>> to <<scls_4-2-7>> is not meant to be exhaustive; there are many situations, some rather complex, that can be treated by statistical methods. An important example is the use of calibration designs, often based on the method of least squares, to evaluate the uncertainties arising from both short- and long-term random variations in the results of comparisons of material artefacts of unknown values, such as gauge blocks and standards of mass, with reference standards of known values. In such comparatively simple measurement situations, components of uncertainty can frequently be evaluated by the statistical analysis of data obtained from designs consisting of nested sequences of measurements of the measurand for a number of different values of the quantities upon which it depends -- a so-called analysis of variance (see <<scls_H-5>>).(((ANOVA)))(((Type A evaluation of uncertainty)))(((uncertainty, statistical evaluation of, by varying input quantities)))
 
-NOTE: At lower levels of the ((calibration chain)), where reference standards are often assumed to be exactly known because they have been calibrated by a national or primary standards laboratory, the uncertainty of a calibration result may be a single Type A standard uncertainty evaluated from the pooled experimental standard deviation that characterizes the measurement.((("unit, use of an adopted value of a measurement standard as a")))((("variance, pooled estimate of (or pooled experimental standard deviation)")))
+NOTE: At lower levels of the ((calibration chain)), where reference standards are often assumed to be exactly known because they have been calibrated by a national or primary standards laboratory, the uncertainty of a calibration result may be a single Type A standard uncertainty evaluated from the pooled experimental standard deviation that characterizes the measurement.(((unit, use of an adopted value of a measurement standard as a)))(((variance, pooled estimate of (or pooled experimental standard deviation))))
 
 
 [[scls_4-3]]
@@ -195,7 +195,7 @@ NOTE: At lower levels of the ((calibration chain)), where reference standards ar
 [[scls_4-3-1]]
 ==== {blank}
 
-For an estimate stem:[x_i] of an input quantity stem:[ii(X)_i] that has not been obtained from repeated observations((("observations, repeated"))), the associated estimated ((variance)) stem:[u^2(x_i)] or the standard uncertainty stem:[u(x_i)] is evaluated by scientific judgement based on all of the available information on the possible variability of stem:[ii(X)_i]. The pool of information((("information, pool of, for a Type B evaluation")))(((Type B evaluation of uncertainty)))(((Type B standard uncertainty))) may include
+For an estimate stem:[x_i] of an input quantity stem:[ii(X)_i] that has not been obtained from repeated observations(((observations, repeated))), the associated estimated ((variance)) stem:[u^2(x_i)] or the standard uncertainty stem:[u(x_i)] is evaluated by scientific judgement based on all of the available information on the possible variability of stem:[ii(X)_i]. The pool of information(((information, pool of, for a Type B evaluation)))(((Type B evaluation of uncertainty)))(((Type B standard uncertainty))) may include
 
 * previous measurement data;
 * experience with or general knowledge of the behaviour and properties of relevant materials and instruments; manufacturer's specifications;
@@ -205,13 +205,13 @@ For an estimate stem:[x_i] of an input quantity stem:[ii(X)_i] that has not been
 For convenience, stem:[u^2(x_i)] and stem:[u(x_i)] evaluated in this way are sometimes called a _Type B variance_(((Type B variance))) and a _Type B standard uncertainty_, respectively.
 
 [[note_4-3-1]]
-NOTE: When stem:[x_i] is obtained from an _a priori_ distribution((("distribution, _a priori_"))), the associated variance is appropriately written as stem:[u^2(ii(X)_i)], but for simplicity, stem:[u^2(x_i)] and stem:[u(x)] are used throughout this _Guide_.
+NOTE: When stem:[x_i] is obtained from an _a priori_ distribution(((distribution, _a priori_))), the associated variance is appropriately written as stem:[u^2(ii(X)_i)], but for simplicity, stem:[u^2(x_i)] and stem:[u(x)] are used throughout this _Guide_.
 
 
 [[scls_4-3-2]]
 ==== {blank}
 
-The proper use of the pool((("information, pool of, for a Type B evaluation"))) of available information for a Type B evaluation(((Type B evaluation of uncertainty))) of standard uncertainty calls for insight based on experience and general knowledge, and is a skill that can be learned with practice. It should be recognized that a Type B evaluation of standard uncertainty can be as reliable as a Type A evaluation, especially in a measurement situation where a Type A evaluation is based on a comparatively small number of statistically independent observations.(((normal distribution)))(((Type A evaluation of uncertainty)))
+The proper use of the pool(((information, pool of, for a Type B evaluation))) of available information for a Type B evaluation(((Type B evaluation of uncertainty))) of standard uncertainty calls for insight based on experience and general knowledge, and is a skill that can be learned with practice. It should be recognized that a Type B evaluation of standard uncertainty can be as reliable as a Type A evaluation, especially in a measurement situation where a Type A evaluation is based on a comparatively small number of statistically independent observations.(((normal distribution)))(((Type A evaluation of uncertainty)))
 
 [[note_4-3-2]]
 NOTE: If the probability distribution of stem:[q] in <<note1_4-2-3>> is normal, then stem:[ii(sigma)[s(bar(q))\]//ii(sigma)(bar(q))], the standard deviation of stem:[s(bar(q))] relative to stem:[ii(sigma)(bar(q))], is approximately stem:[[2(n - 1)\]^{-1//2}]. Thus, taking stem:[ii(sigma)[s(bar(q))\]] as the uncertainty of stem:[s(bar(q))], for stem:[n = 10] observations, the relative uncertainty in stem:[s(bar(q))] is 24 percent, while for stem:[n = 50] observations it is 10 percent. (Additional values are given in <<table_E-1>> in <<annexE>>.)(((uncertainty due to limited sampling)))(((uncertainty of the experimental standard deviation of the mean)))
@@ -280,7 +280,7 @@ measurement result, it is prudent to obtain additional data for its further eval
 
 [[example1_4-3-7]]
 [example]
-A handbook gives the value of the coefficient of linear thermal expansion of pure copper at 20 °C, stem:[ii(alpha)_{20}("Cu")], as stem:[16.52 xx 10^{-6}" "rm(°C){-1}] and simply states that "the error in this value should not exceed stem:[0.40 xx 10^{-6}" "rm(°C)^{-1}]". Based on this limited information, it is not unreasonable to assume that the value of stem:[ii(alpha)_{20}("Cu")] lies with equal probability in the interval stem:[16.12 xx 10^{-6}" "rm(°C)^{-1}] to stem:[16.92 xx 10^{-6}" "rm(°C)^{-1}], and that it is very unlikely that stem:[ii(alpha)_{20}("Cu")] lies outside this interval. The variance of this symmetric rectangular distribution((("distribution, rectangular"))) of possible values of stem:[ii(alpha)_{20}("Cu")] of half-width stem:[a = 0.40 xx 10^{-6}" "rm(°C)^{-1}] is then, from <<eq_7>>, stem:[u^2(ii(alpha)_{20}) = (0.40 xx 10^{-6}" "rm(°C)^{-1})^2//3 = 53.3 xx 10^{-15}" "rm(°C)^{-2}], and the standard uncertainty is stem:[u(ii(alpha)_{20})=(0.40 xx 10^{-6}" "rm(°C)^{-1})//sqrt(3) = 0.23 xx 10^{-6}" "rm(°C)^{-1}].
+A handbook gives the value of the coefficient of linear thermal expansion of pure copper at 20 °C, stem:[ii(alpha)_{20}("Cu")], as stem:[16.52 xx 10^{-6}" "rm(°C){-1}] and simply states that "the error in this value should not exceed stem:[0.40 xx 10^{-6}" "rm(°C)^{-1}]". Based on this limited information, it is not unreasonable to assume that the value of stem:[ii(alpha)_{20}("Cu")] lies with equal probability in the interval stem:[16.12 xx 10^{-6}" "rm(°C)^{-1}] to stem:[16.92 xx 10^{-6}" "rm(°C)^{-1}], and that it is very unlikely that stem:[ii(alpha)_{20}("Cu")] lies outside this interval. The variance of this symmetric rectangular distribution(((distribution, rectangular))) of possible values of stem:[ii(alpha)_{20}("Cu")] of half-width stem:[a = 0.40 xx 10^{-6}" "rm(°C)^{-1}] is then, from <<eq_7>>, stem:[u^2(ii(alpha)_{20}) = (0.40 xx 10^{-6}" "rm(°C)^{-1})^2//3 = 53.3 xx 10^{-15}" "rm(°C)^{-2}], and the standard uncertainty is stem:[u(ii(alpha)_{20})=(0.40 xx 10^{-6}" "rm(°C)^{-1})//sqrt(3) = 0.23 xx 10^{-6}" "rm(°C)^{-1}].
 
 [[example2_4-3-7]]
 [example]
@@ -305,10 +305,10 @@ If in <<example1_4-3-7>> the value of the coefficient is given in the handbook a
 that "The smallest possible value is stem:[16.40 xx 10^{-6}" "rm(°C)^{-1}]" then stem:[b_"-" = 0.12 xx 10^{-6}" "rm(°C)^{-1}], stem:[b_+ = 0.40 xx 10^{-6}" "rm(°C)^{-1}], and, from <<eq_8>>, stem:[u(ii(alpha)_{20}) = 0.15 xx 10^{-6}" "rm(°C)^{-1}].
 
 
-NOTE: In many practical measurement situations where the bounds are asymmetric((("distribution, asymmetric"))), it may be appropriate to apply a correction to the estimate stem:[x_i] of magnitude stem:[(b_+ - b_"-")//2] so that the new estimate stem:[x'_i] of stem:[ii(X)_i] is at the midpoint of the bounds: stem:[x'_i = (a_"-" + a_+)//2]. This reduces the situation to the case of <<scls_4-3-7>>, with new values stem:[b'_+ = b'_{-} = (b_+ + b_"-")//2 = (a_+ - a_"-")//2 = a].
+NOTE: In many practical measurement situations where the bounds are asymmetric(((distribution, asymmetric))), it may be appropriate to apply a correction to the estimate stem:[x_i] of magnitude stem:[(b_+ - b_"-")//2] so that the new estimate stem:[x'_i] of stem:[ii(X)_i] is at the midpoint of the bounds: stem:[x'_i = (a_"-" + a_+)//2]. This reduces the situation to the case of <<scls_4-3-7>>, with new values stem:[b'_+ = b'_{-} = (b_+ + b_"-")//2 = (a_+ - a_"-")//2 = a].
 
 
-NOTE: Based on the principle of maximum entropy((("maximum entropy, principle of"))), the ((probability density function)) in the asymmetric case
+NOTE: Based on the principle of maximum entropy(((maximum entropy, principle of))), the ((probability density function)) in the asymmetric case
 may be shown to be stem:[p(ii(X)_i) = ii(A) exp[- ii(lambda) (ii(X)_i - x_i)], with stem:[ii(A) = [b_"-" exp(ii(lambda) b_"-") + b_+ exp(- ii(lambda) b_+)\]^{-1}] and
 stem:[ii(lambda) = {exp[ii(lambda) (b_"-" + b_+)\]-1}//{b_"-" exp[ii(lambda)(b_"-" + b_+)] + b_+}]. This leads to the variance stem:[u^2(x_i) = b_+ b_"-" - (b_+ + -b_"-")//ii(lambda)]; for stem:[b_+ > b_"-"], stem:[ii(lambda) > 0] and for stem:[b_+ < b_"-"], stem:[ii(lambda) < 0].
 
@@ -316,7 +316,7 @@ stem:[ii(lambda) = {exp[ii(lambda) (b_"-" + b_+)\]-1}//{b_"-" exp[ii(lambda)(b_"
 [[scls_4-3-9]]
 ==== {blank}
 
-In <<scls_4-3-7>>, because there was no specific knowledge about the possible values of stem:[ii(X)_i] within its estimated bounds(((bounds on an input quantity))) stem:[a_"-"] to stem:[a_+], one could only assume that it was equally probable for stem:[ii(X)_i] to take any value within those bounds, with zero ((probability)) of being outside them. Such step function discontinuities in a probability distribution are often unphysical. In many cases, it is more realistic to expect that values near the bounds are less likely than those near the midpoint. It is then reasonable to replace the symmetric rectangular distribution((("distribution, rectangular"))) with a symmetric trapezoidal distribution((("distribution, trapezoidal"))) having equal sloping sides (an isosceles trapezoid), a base of width stem:[a_+ - a_"-" = 2a], and a top of width stem:[2a ii(beta)], where stem:[0 <= ii(beta) <= 1]. As stem:[ii(beta) -> 1], this trapezoidal distribution approaches therectangular distribution of <<scls_4-3-7>>, while for stem:[ii(beta) = 0], it is a triangular distribution((("distribution, triangular"))) [see <<scls_4-4-6>> and <<fig_2b>>)]. Assuming such a trapezoidal distribution for stem:[ii(X)_i], one finds that the expectation(((expectation (or expected value)))) of stem:[ii(X)_i] is stem:[x_i = (a_"-" + a_+)//2] and its associated variance is(((Type B evaluation of uncertainty)))
+In <<scls_4-3-7>>, because there was no specific knowledge about the possible values of stem:[ii(X)_i] within its estimated bounds(((bounds on an input quantity))) stem:[a_"-"] to stem:[a_+], one could only assume that it was equally probable for stem:[ii(X)_i] to take any value within those bounds, with zero ((probability)) of being outside them. Such step function discontinuities in a probability distribution are often unphysical. In many cases, it is more realistic to expect that values near the bounds are less likely than those near the midpoint. It is then reasonable to replace the symmetric rectangular distribution(((distribution, rectangular))) with a symmetric trapezoidal distribution(((distribution, trapezoidal))) having equal sloping sides (an isosceles trapezoid), a base of width stem:[a_+ - a_"-" = 2a], and a top of width stem:[2a ii(beta)], where stem:[0 <= ii(beta) <= 1]. As stem:[ii(beta) -> 1], this trapezoidal distribution approaches therectangular distribution of <<scls_4-3-7>>, while for stem:[ii(beta) = 0], it is a triangular distribution(((distribution, triangular))) [see <<scls_4-4-6>> and <<fig_2b>>)]. Assuming such a trapezoidal distribution for stem:[ii(X)_i], one finds that the expectation(((expectation (or expected value)))) of stem:[ii(X)_i] is stem:[x_i = (a_"-" + a_+)//2] and its associated variance is(((Type B evaluation of uncertainty)))
 
 [[eq_9a]]
 [stem,subsequence=A]
@@ -342,7 +342,7 @@ NOTE: The trapezoidal distribution is equivalent to the convolution((("probabili
 [[scls_4-3-10]]
 ==== {blank}
 
-It is important not to "double-count" uncertainty components((("uncertainty, double-counting components of"))). If a component of uncertainty arising from a particular effect is obtained from a Type B evaluation, it should be included as an independent component of uncertainty in the calculation of the combined standard uncertainty of the measurement result only to the extent that the effect does not contribute to the observed variability of the observations. This is because the uncertainty due to that portion of the effect that contributes to the observed variability is already included in the component of uncertainty obtained from the statistical analysis of the observations.(((Type B evaluation of uncertainty)))
+It is important not to "double-count" uncertainty components(((uncertainty, double-counting components of))). If a component of uncertainty arising from a particular effect is obtained from a Type B evaluation, it should be included as an independent component of uncertainty in the calculation of the combined standard uncertainty of the measurement result only to the extent that the effect does not contribute to the observed variability of the observations. This is because the uncertainty due to that portion of the effect that contributes to the observed variability is already included in the component of uncertainty obtained from the statistical analysis of the observations.(((Type B evaluation of uncertainty)))
 
 
 [[scls_4-3-11]]
@@ -352,12 +352,12 @@ The discussion of Type B evaluation of standard uncertainty in <<scls_4-3-3>> to
 
 
 [[scls_4-4]]
-=== Graphical illustration of evaluating standard uncertainty((("standard uncertainty, graphical illustration of evaluating")))
+=== Graphical illustration of evaluating standard uncertainty(((standard uncertainty, graphical illustration of evaluating)))
 
 [[scls_4-4-1]]
 ==== {blank}
 
-<<fig_1>> represents the estimation of the value of an input quantity stem:[ii(X)_i] and the evaluation of the uncertainty of that estimate from the unknown distribution of possible measured values of stem:[ii(X)_i], or ((probability distribution)) of stem:[ii(X)_i], that is sampled by means of repeated observations((("observations, repeated"))).(((Type A evaluation of uncertainty)))
+<<fig_1>> represents the estimation of the value of an input quantity stem:[ii(X)_i] and the evaluation of the uncertainty of that estimate from the unknown distribution of possible measured values of stem:[ii(X)_i], or ((probability distribution)) of stem:[ii(X)_i], that is sampled by means of repeated observations(((observations, repeated))).(((Type A evaluation of uncertainty)))
 
 
 [[scls_4-4-2]]
@@ -377,7 +377,7 @@ NOTE: The definition of a probability density function stem:[p(z)] requires that
 [[scls_4-4-3]]
 ==== {blank}
 
-<<fig_1b>>) shows a ((histogram)) of stem:[n = 20] repeated observations((("observations, repeated"))) stem:[t_k] of the temperature stem:[t] that are assumed to have been taken randomly from the distribution of <<fig_1a>>). To obtain the histogram, the 20 observations or samples, whose values are given in <<table_1>>, are grouped into intervals 1 °C wide. (Preparation of a histogram is, of course, not required for the statistical analysis of the data.)(((Type A evaluation of uncertainty)))
+<<fig_1b>>) shows a ((histogram)) of stem:[n = 20] repeated observations(((observations, repeated))) stem:[t_k] of the temperature stem:[t] that are assumed to have been taken randomly from the distribution of <<fig_1a>>). To obtain the histogram, the 20 observations or samples, whose values are given in <<table_1>>, are grouped into intervals 1 °C wide. (Preparation of a histogram is, of course, not required for the statistical analysis of the data.)(((Type A evaluation of uncertainty)))
 
 
 [[table_1]]
@@ -440,13 +440,13 @@ image::figure2b.png[]
 [[scls_4-4-4]]
 ==== {blank}
 
-<<fig_2>> representsthe estimation of the value of an input quantity stem:[ii(X)_i] and the evaluation of the uncertainty of that estimate from an _a priori_ distribution((("distribution, _a priori_"))) of possible values of stem:[ii(X)_i], or ((probability distribution)) of stem:[ii(X)_i], based on all of the available information. For both cases shown, the input quantity is again assumed to be a temperature stem:[t].(((Type B evaluation of uncertainty)))
+<<fig_2>> representsthe estimation of the value of an input quantity stem:[ii(X)_i] and the evaluation of the uncertainty of that estimate from an _a priori_ distribution(((distribution, _a priori_))) of possible values of stem:[ii(X)_i], or ((probability distribution)) of stem:[ii(X)_i], based on all of the available information. For both cases shown, the input quantity is again assumed to be a temperature stem:[t].(((Type B evaluation of uncertainty)))
 
 
 [[scls_4-4-5]]
 ==== {blank}
 
-For the case illustrated in <<fig_2a>>), it is assumed that little information is available about the input quantity stem:[t] and that all one can do is suppose that stem:[t] is described by a symmetric, rectangular((("distribution, rectangular"))) _a priori_ probability distribution of lower bound stem:[a_"-" = 96" "rm(°C)], upper bound(((bounds on an input quantity))) stem:[a_+ = 104" "rm(°C)], and thus half-width stem:[a = (a_+ - a_"-")//2 = 4" "rm(°C)] (see <<scls_4-3-7>>). The ((probability density function)) of stem:[t] is then
+For the case illustrated in <<fig_2a>>), it is assumed that little information is available about the input quantity stem:[t] and that all one can do is suppose that stem:[t] is described by a symmetric, rectangular(((distribution, rectangular))) _a priori_ probability distribution of lower bound stem:[a_"-" = 96" "rm(°C)], upper bound(((bounds on an input quantity))) stem:[a_+ = 104" "rm(°C)], and thus half-width stem:[a = (a_+ - a_"-")//2 = 4" "rm(°C)] (see <<scls_4-3-7>>). The ((probability density function)) of stem:[t] is then
 
 [stem%unnumbered]
 ++++
@@ -461,7 +461,7 @@ The standard uncertainty of this estimate is stem:[u(ii(mu)_t) = a//sqrt(3) ~~ 2
 [[scls_4-4-6]]
 ==== {blank}
 
-For the case illustrated in <<fig_2b>>), it is assumed that the available information concerning stem:[t] is less limited and that stem:[t] can be described by a symmetric, triangular((("distribution, triangular"))) _a priori_ probability distribution of the same lower bound stem:[a_"-" = 96" "rm(°C)], the same upper bound(((bounds on an input quantity))) stem:[a_+ = 104" "rm(°C)], and thus the same half-width stem:[a = (a_+ - a_"-")//2 = 4" "rm(°C)] as in <<scls_4-4-5>>(see <<scls_4-3-9>>). The ((probability density function)) of stem:[t] is then(((Type B evaluation of uncertainty)))
+For the case illustrated in <<fig_2b>>), it is assumed that the available information concerning stem:[t] is less limited and that stem:[t] can be described by a symmetric, triangular(((distribution, triangular))) _a priori_ probability distribution of the same lower bound stem:[a_"-" = 96" "rm(°C)], the same upper bound(((bounds on an input quantity))) stem:[a_+ = 104" "rm(°C)], and thus the same half-width stem:[a = (a_+ - a_"-")//2 = 4" "rm(°C)] as in <<scls_4-4-5>>(see <<scls_4-3-9>>). The ((probability density function)) of stem:[t] is then(((Type B evaluation of uncertainty)))
 
 [stem%unnumbered]
 ++++

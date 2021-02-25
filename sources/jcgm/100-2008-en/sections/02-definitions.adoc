@@ -104,7 +104,7 @@ NOTE: The fraction may be viewed as the ((coverage probability)) or ((level of c
 [[note2_2-3-5]]
 NOTE: To associate a specific ((level of confidence)) with the interval defined by the expanded uncertainty requires explicit or implicit assumptions regarding the probability distribution characterized by the measurement result and its combined standard uncertainty. The ((level of confidence)) that may be attributed to this interval can be known only to the extent to which such assumptions may be justified.
 
-NOTE: Expanded uncertainty is termed _overall uncertainty_((("uncertainty, overall"))) in paragraph 5 of Recommendation INC-1 (1980).
+NOTE: Expanded uncertainty is termed _overall uncertainty_(((uncertainty, overall))) in paragraph 5 of Recommendation INC-1 (1980).
 
 
 [[scls_2-3-6]]

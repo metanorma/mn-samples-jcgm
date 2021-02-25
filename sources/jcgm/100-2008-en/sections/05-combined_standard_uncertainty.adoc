@@ -29,12 +29,12 @@ u_{"c"}^2(y) = sum_{i=1}^ii(N) ({del f}/{del x_i})^2 u^2(x_i)
 
 where stem:[f] is the function given in <<eq_1>>. Each stem:[u(x_i)] is a standard uncertainty evaluated as described in <<scls_4-2>> (Type A evaluation) or as in <<scls_4-3>> (Type B evaluation). The combined standard uncertainty stem:[u_{"c"}(y)] is an estimated standard deviation and characterizes the dispersion of the values that could reasonably be attributed to the measurand stem:[ii(Y)] (see <<scls_2-2-3>>).(((combined standard uncertainty)))
 
-<<eq_10>> and its counterpart for correlated input quantities, <<eq_13>>, both of which are based on a first-order ((Taylor series)) approximation of stem:[ii(Y) = f(ii(X)_1, ii(X)_2,..., ii(X)_N)], express what is termed in this _Guide_ the _law of propagation of uncertainty_((("uncertainty, law of propagation of"))) (see <<scls_E-3-1>> and <<scls_E-3-2>>).
+<<eq_10>> and its counterpart for correlated input quantities, <<eq_13>>, both of which are based on a first-order ((Taylor series)) approximation of stem:[ii(Y) = f(ii(X)_1, ii(X)_2,..., ii(X)_N)], express what is termed in this _Guide_ the _law of propagation of uncertainty_(((uncertainty, law of propagation of))) (see <<scls_E-3-1>> and <<scls_E-3-2>>).
 
 [[note_5-1-2]]
 [NOTE]
 ====
-When the nonlinearity of stem:[f] is significant, ((higher-order terms)) in the Taylor series expansion must be included in the expression for stem:[u_{"c"}^2(y)], <<eq_10>>. When the distribution of each stem:[ii(X)_i] is normal, the most important terms of next highest order to be added to the terms of <<eq_10>> are((("functional relationship, nonlinear")))
+When the nonlinearity of stem:[f] is significant, ((higher-order terms)) in the Taylor series expansion must be included in the expression for stem:[u_{"c"}^2(y)], <<eq_10>>. When the distribution of each stem:[ii(X)_i] is normal, the most important terms of next highest order to be added to the terms of <<eq_10>> are(((functional relationship, nonlinear)))
 
 [stem%unnumbered]
 ++++
@@ -77,7 +77,7 @@ Strictly speaking, the partial derivatives are stem:[del f//del x_i = del f//del
 [[note2_5-1-3]]
 [NOTE]
 ====
-The combined standard uncertainty stem:[u_{"c"}(y)] may be calculated numerically by replacing stem:[c_i u(x_i)] in <<eq_11a>> with((("combined standard uncertainty, numerical calculation of")))
+The combined standard uncertainty stem:[u_{"c"}(y)] may be calculated numerically by replacing stem:[c_i u(x_i)] in <<eq_11a>> with(((combined standard uncertainty, numerical calculation of)))
 
 [stem%unnumbered]
 ++++
@@ -115,13 +115,13 @@ and
 [[scls_5-1-4]]
 ==== {blank}
 
-Instead of being calculated from the function stem:[f], ((sensitivity coefficients)) stem:[del f//del x_i] are sometimes determined experimentally: one measures the change in stem:[ii(Y)] produced by a change in a particular stem:[ii(X)_i] while holding the remaining input quantities constant. In this case, the knowledge of the function stem:[f] (or a portion of it when only several ((sensitivity coefficients)) are so determined) is accordingly reduced to an empirical first-order Taylor series expansion based on the measured ((sensitivity coefficients))((("sensitivity coefficients, experimental determination of"))).
+Instead of being calculated from the function stem:[f], ((sensitivity coefficients)) stem:[del f//del x_i] are sometimes determined experimentally: one measures the change in stem:[ii(Y)] produced by a change in a particular stem:[ii(X)_i] while holding the remaining input quantities constant. In this case, the knowledge of the function stem:[f] (or a portion of it when only several ((sensitivity coefficients)) are so determined) is accordingly reduced to an empirical first-order Taylor series expansion based on the measured ((sensitivity coefficients))(((sensitivity coefficients, experimental determination of))).
 
 
 [[scls_5-1-5]]
 ==== {blank}
 
-If <<eq_1>> for the measurand stem:[ii(Y)] is expanded about nominal values stem:[ii(X)_{i,0}] of the input quantities stem:[ii(X)_i], then, to first order (which is usually an adequate approximation), stem:[ii(Y) = ii(Y)_0 + c_1 ii(delta)_1 + c_2 ii(delta)_2 + ... + c_N ii(delta)_N], where stem:[ii(Y)_0 = f(ii(X)_{1,0}, ii(X)_{2,0},..., ii(X)_{N,0})], stem:[c_i = (del f//del ii(X)_i)] evaluated at stem:[ii(X)_i = ii(X)_{i,0}], and stem:[ii(delta)_i = ii(X)_i - ii(X)_{i,0}]. Thus, for the purposes of ananalysis of uncertainty, a measurand is usually approximated by a linear function of its variables by transforming its input quantities from stem:[ii(X)_i] to stem:[ii(delta)_i] (see <<scls_E-3-1>>).((("functional relationship, linearization of a")))
+If <<eq_1>> for the measurand stem:[ii(Y)] is expanded about nominal values stem:[ii(X)_{i,0}] of the input quantities stem:[ii(X)_i], then, to first order (which is usually an adequate approximation), stem:[ii(Y) = ii(Y)_0 + c_1 ii(delta)_1 + c_2 ii(delta)_2 + ... + c_N ii(delta)_N], where stem:[ii(Y)_0 = f(ii(X)_{1,0}, ii(X)_{2,0},..., ii(X)_{N,0})], stem:[c_i = (del f//del ii(X)_i)] evaluated at stem:[ii(X)_i = ii(X)_{i,0}], and stem:[ii(delta)_i = ii(X)_i - ii(X)_{i,0}]. Thus, for the purposes of ananalysis of uncertainty, a measurand is usually approximated by a linear function of its variables by transforming its input quantities from stem:[ii(X)_i] to stem:[ii(delta)_i] (see <<scls_E-3-1>>).(((functional relationship, linearization of a)))
 
 [example]
 ====
@@ -147,13 +147,13 @@ If stem:[ii(Y)] is of the form stem:[ii(Y) = c ii(X)_1^{p1} ii(X)_2^{p2} ... ii(
 [u_{"c"} (y)//y]^2 = sum_{i=1}^ii(N) [p_i u(x_i)//x_i]^2
 ++++
 
-This is of the same form as <<eq_11a>> but with the combined variance stem:[u_{"c"}^2(y)] expressed as a _relative combined variance_((("combined standard uncertainty, relative"))) stem:[[u_{"c"}(y)//y\]^2] and the estimated variance stem:[u^2(x_i)] associated with each input estimate expressed as an estimated _relative variance_ stem:[[u(x_i)//x_i\]^2]. [The _relative combined standard uncertainty_((("standard uncertainty, relative"))) is stem:[u_{"c"}(y)//|y|] and the _relative standard uncertainty_ of each input estimate is stem:[u(x_i)//|x_i|], stem:[|y| != 0] and stem:[|x_i| != 0].](((combined standard uncertainty)))
+This is of the same form as <<eq_11a>> but with the combined variance stem:[u_{"c"}^2(y)] expressed as a _relative combined variance_(((combined standard uncertainty, relative))) stem:[[u_{"c"}(y)//y\]^2] and the estimated variance stem:[u^2(x_i)] associated with each input estimate expressed as an estimated _relative variance_ stem:[[u(x_i)//x_i\]^2]. [The _relative combined standard uncertainty_(((standard uncertainty, relative))) is stem:[u_{"c"}(y)//|y|] and the _relative standard uncertainty_ of each input estimate is stem:[u(x_i)//|x_i|], stem:[|y| != 0] and stem:[|x_i| != 0].](((combined standard uncertainty)))
 
 
 NOTE: When stem:[ii(Y)] has this form, its transformation to a linear function of variables (see <<scls_5-1-5>>) is readily achieved by
 setting stem:[ii(X)_i = ii(X)_{i,0} (1 + ii(delta)_i)], for then the following approximate relation results: stem:[(Y - ii(Y)_0) ii(Y)_0 = sum_{i=1}^ii(N) p_i ii(delta)_i].
 On the other hand, the logarithmic transformation stem:[ii(Z) = ln ii(Y)] and stem:[ii(W)_i = ln ii(X)_i] leads to an exact linearization in terms of the new variables:
-stem:[ii(Z) = ln c + sum_{i=1}^ii(N)  p_i ii(W)_i].((("functional relationship, linearization of a")))
+stem:[ii(Z) = ln c + sum_{i=1}^ii(N)  p_i ii(W)_i].(((functional relationship, linearization of a)))
 
 
 [[note2_5-1-6]]
@@ -217,7 +217,7 @@ For the very special case where _all_ of the input estimates are correlated with
 u_{"c"}^2(y) = [sum_{i=1}^ii(N) c_i u(x_i)]^2 = [sum_{i=1}^ii(N) {del f}/{del x_i} u(x_i)]^2
 ++++
 
-The combined standard uncertainty stem:[u_{"c"}(y)] is thus simply a _linear sum_ of terms representing the variation of the output estimate stem:[y] generated by the standard uncertainty of each input estimate stem:[x_i] (see <<scls_5-1-3>>). [This linear sum should not be confused with the general law of error propagation((("error propagation, general law of"))) although it has a similar form; standard uncertainties are not errors (see <<scls_E-3-2>>).]
+The combined standard uncertainty stem:[u_{"c"}(y)] is thus simply a _linear sum_ of terms representing the variation of the output estimate stem:[y] generated by the standard uncertainty of each input estimate stem:[x_i] (see <<scls_5-1-3>>). [This linear sum should not be confused with the general law of error propagation(((error propagation, general law of))) although it has a similar form; standard uncertainties are not errors (see <<scls_E-3-2>>).]
 ====
 
 [[example_5-2-2]]
@@ -232,7 +232,7 @@ NOTE: The estimated variances stem:[u^2(x_i)] and estimated covariances stem:[u(
 
 [NOTE]
 ====
-For the purposes of numerical evaluation((("combined standard uncertainty, numerical calculation of"))), <<eq_16>> may be written as
+For the purposes of numerical evaluation(((combined standard uncertainty, numerical calculation of))), <<eq_16>> may be written as
 
 [stem%unnumbered]
 ++++
@@ -257,7 +257,7 @@ must be added to the right-hand side of <<eq_12>>.
 [[scls_5-2-3]]
 ==== {blank}
 
-Consider two arithmetic means(((covariance of two arithmetic means))) stem:[bar(q)] and stem:[bar(r)] that estimate the expectations stem:[ii(mu)_q] and stem:[ii(mu)_r] of two randomly varying quantities stem:[q] and stem:[r], and let stem:[bar(q)] and stem:[bar(r)] be calculated from stem:[n] independent pairs of simultaneous observations((("observations, independent pairs of simultaneous"))) of stem:[q] and stem:[r] made under the same conditions of measurement (see <<scls_B-2-15>>). Then the covariance (see <<scls_C-3-4>>) of stem:[bar(q)] and stem:[bar(r)] is estimated by
+Consider two arithmetic means(((covariance of two arithmetic means))) stem:[bar(q)] and stem:[bar(r)] that estimate the expectations stem:[ii(mu)_q] and stem:[ii(mu)_r] of two randomly varying quantities stem:[q] and stem:[r], and let stem:[bar(q)] and stem:[bar(r)] be calculated from stem:[n] independent pairs of simultaneous observations(((observations, independent pairs of simultaneous))) of stem:[q] and stem:[r] made under the same conditions of measurement (see <<scls_B-2-15>>). Then the covariance (see <<scls_C-3-4>>) of stem:[bar(q)] and stem:[bar(r)] is estimated by
 
 [[eq_17]]
 [stem]
@@ -268,7 +268,7 @@ s(bar(q),bar(r)) = 1/{n(n-1)} sum_{k=1}^n (q_k - bar(q))(r_k - bar(r))
 where stem:[q_k] and stem:[r_k] are the individual observations of the quantities stem:[q] and stem:[r] and stem:[bar(q)] and stem:[bar(r)] are calculated from the observations according to <<eq_3>>. If in fact the observations are uncorrelated, the calculated covariance is expected to be near 0.
 
 Thus the estimated covariance of two correlated input quantities stem:[ii(X)_i] and stem:[ii(X)_j] that are estimated by the means
-stem:[bar(ii(X))_i] and stem:[bar(ii(X))_j] determined from independent pairs of repeated simultaneous observations((("observations, repeated"))) is given by
+stem:[bar(ii(X))_i] and stem:[bar(ii(X))_j] determined from independent pairs of repeated simultaneous observations(((observations, repeated))) is given by
 stem:[u(x_i,x_j) = s(bar(ii(X))_i,bar(ii(X))_j)], with stem:[s(bar(ii(X))_i,bar(ii(X))_j)] calculated according to <<eq_17>>. This application of <<eq_17>> is a Type A evaluation of covariance. The estimated ((correlation coefficient)) of stem:[bar(ii(X))_i] and stem:[bar(ii(X))_j] is obtained from
 <<eq_14>>: stem:[r(x_i,x_j) = r(bar(ii(X))_i,bar(ii(X))_j) = s(bar(ii(X))_i,bar(ii(X))_j)//[ s(bar(ii(X))_i) s(bar(ii(X))_j)\]]
 
@@ -278,10 +278,10 @@ NOTE: Examples where it is necessary to use covariances as calculated from <<eq_
 [[scls_5-2-4]]
 ==== {blank}
 
-There may be significant correlation between two input quantities if the same measuring instrument, physical measurement standard, or reference datum having a significant standard uncertainty is used in their determination. For example, if a certain thermometer is used to determine a temperature correction required in the estimation of the value of input quantity stem:[ii(X)_i], and the same thermometer is used to determine a similar temperature correction required in the estimation of input quantity stem:[ii(X)_j], the two input quantities could be significantly correlated. However, if stem:[ii(X)_i] and stem:[ii(X)_j] in this example are redefined to be the uncorrected quantities and the quantities that define the calibration curve for the thermometer are included as additional input quantities with independent standard uncertainties, the correlation between stem:[ii(X)_i] and stem:[ii(X)_j] is removed. (See <<scls_F-1-2-3>> and <<scls_F-1-2-4>> for further discussion.)((("correlation, elimination of")))
+There may be significant correlation between two input quantities if the same measuring instrument, physical measurement standard, or reference datum having a significant standard uncertainty is used in their determination. For example, if a certain thermometer is used to determine a temperature correction required in the estimation of the value of input quantity stem:[ii(X)_i], and the same thermometer is used to determine a similar temperature correction required in the estimation of input quantity stem:[ii(X)_j], the two input quantities could be significantly correlated. However, if stem:[ii(X)_i] and stem:[ii(X)_j] in this example are redefined to be the uncorrected quantities and the quantities that define the calibration curve for the thermometer are included as additional input quantities with independent standard uncertainties, the correlation between stem:[ii(X)_i] and stem:[ii(X)_j] is removed. (See <<scls_F-1-2-3>> and <<scls_F-1-2-4>> for further discussion.)(((correlation, elimination of)))
 
 
 [[scls_5-2-5]]
 ==== {blank}
 
-Correlations between input quantities cannot be ignored if present and significant. The associated covariances((("covariance, experimental evaluation of"))) should be evaluated experimentally if feasible by varying the correlated input quantities (see <<note3_C-3-6>>), or by using the pool of available information on the correlated variability of the quantities inquestion (Type B evaluation of covariance). Insight based on experience and general knowledge (see <<scls_4-3-1>> and <<scls_4-3-2>>) is especially required when estimating the degree of correlation between input quantities arising from the effects of common influences, such as ambient temperature, barometric pressure, and humidity. Fortunately, in many cases, the effects of such influences have negligible interdependence and the affected input quantities can be assumed to be uncorrelated. However, if they cannot be assumed to be uncorrelated, the correlations themselves can be avoided if the common influences are introduced as additional independent input quantities as indicated in <<scls_5-2-4>>.((("correlation, elimination of")))
+Correlations between input quantities cannot be ignored if present and significant. The associated covariances(((covariance, experimental evaluation of))) should be evaluated experimentally if feasible by varying the correlated input quantities (see <<note3_C-3-6>>), or by using the pool of available information on the correlated variability of the quantities inquestion (Type B evaluation of covariance). Insight based on experience and general knowledge (see <<scls_4-3-1>> and <<scls_4-3-2>>) is especially required when estimating the degree of correlation between input quantities arising from the effects of common influences, such as ambient temperature, barometric pressure, and humidity. Fortunately, in many cases, the effects of such influences have negligible interdependence and the affected input quantities can be assumed to be uncorrelated. However, if they cannot be assumed to be uncorrelated, the correlations themselves can be avoided if the common influences are introduced as additional independent input quantities as indicated in <<scls_5-2-4>>.(((correlation, elimination of)))

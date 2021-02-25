@@ -73,9 +73,9 @@ The task of developing a detailed guide based on the Working Group Recommendatio
 
 Responsibility was assigned to the ISO Technical Advisory Group on Metrology (TAG 4) because one of its tasks is to coordinate the development of guidelines on measurement topics that are of common interest to ISO and the six organizations that participate with ISO in the work of TAG 4: the International Electrotechnical Commission (IEC), the partner of ISO in worldwide standardization; the CIPM and the International Organization of Legal Metrology (OIML), the two worldwide metrology organizations; the International Union of Pure and Applied Chemistry (IUPAC) and the International Union of Pure and Applied Physics (IUPAP), the two international unions that represent chemistry and physics; and the International Federation of Clinical Chemistry (IFCC).(((IUPAC)))(((IUPAP)))(((IEC)))(((IFCC)))(((ISO)))(((ISO/TAG 4)))(((OIML)))
 
-TAG 4 in turn established ((Working Group 3 (ISO/TAG 4/WG 3))) composed of experts nominated by the BIPM, IEC, ISO, and OIML and appointed by the Chairman of TAG 4. It was assigned the following terms of reference:(((ISO/TAG 4/WG 3)))((("ISO/TAG 4/WG 3, terms of reference of")))(((ISO Technical Advisory Group on Metrology (ISO/TAG 4))))
+TAG 4 in turn established ((Working Group 3 (ISO/TAG 4/WG 3))) composed of experts nominated by the BIPM, IEC, ISO, and OIML and appointed by the Chairman of TAG 4. It was assigned the following terms of reference:(((ISO/TAG 4/WG 3)))(((ISO/TAG 4/WG 3, terms of reference of)))(((ISO Technical Advisory Group on Metrology (ISO/TAG 4))))
 
-To develop a guidance document based upon the recommendation of the BIPM Working Group on the Statement of Uncertainties which provides rules on the expression of measurement uncertainty for use within standardization, calibration, laboratory accreditation, and metrology services;((("laboratories, national metrology or standards")))
+To develop a guidance document based upon the recommendation of the BIPM Working Group on the Statement of Uncertainties which provides rules on the expression of measurement uncertainty for use within standardization, calibration, laboratory accreditation, and metrology services;(((laboratories, national metrology or standards)))
 
 The purpose of such guidance is
 

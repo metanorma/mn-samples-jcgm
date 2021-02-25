@@ -57,7 +57,7 @@ If the ((probability distribution))s of the input quantities stem:[ii(X)_1,ii(X)
 [[scls_G-1-5]]
 ==== {blank}
 
-If the functional relationship between stem:[ii(Y)] and its input quantities is nonlinear((("functional relationship, nonlinear"))) and a first-order ((Taylor series)) expansion of the relationship is not an acceptable approximation (see <<scls_5-1-2>> and <<scls_5-1-5>>), then the ((probability distribution)) of stem:[ii(Y)] cannot be obtained by convolving the distributions((("probability distributions, convolving"))) of the input quantities. In such cases, other analytical or numerical methods are required.
+If the functional relationship between stem:[ii(Y)] and its input quantities is nonlinear(((functional relationship, nonlinear))) and a first-order ((Taylor series)) expansion of the relationship is not an acceptable approximation (see <<scls_5-1-2>> and <<scls_5-1-5>>), then the ((probability distribution)) of stem:[ii(Y)] cannot be obtained by convolving the distributions((("probability distributions, convolving"))) of the input quantities. In such cases, other analytical or numerical methods are required.
 
 
 [[scls_G-1-6]]
@@ -84,7 +84,7 @@ The ((Central Limit Theorem)) is significant because it shows the very important
 [example]
 The rectangular distribution (see <<scls_4-3-7>> and <<scls_4-4-5>>) is an extreme example of a non-((normal distribution)), but the convolution of even as few as _three_ such distributions of equal width is approximately normal. If the half-width of each of the three rectangular distributions is stem:[a] so that the variance of each is stem:[a^2//3], the variance of the convolved distribution is stem:[ii(sigma)^2 = a^2]. The 95 percent and 99 percent intervals of the convolved distribution are defined by stem:[1.937 ii(sigma)] and stem:[2.379 ii(sigma)], respectively, while the corresponding intervals for a ((normal distribution)) with the same standard deviation stem:[ii(sigma)] are defined by stem:[1.960 ii(sigma)] and stem:[2.576 ii(sigma)] (see <<table_G-1>>) <<DIETRICH1991>>.((("probability distributions, convolving")))
 
-NOTE: For every interval with a level of confidence stem:[p] greater than about stem:[91.7] percent, the value of stem:[k_p] for a ((normal distribution)) is larger than the corresponding value for the distribution resulting from the convolution of any number and size of rectangular distributions((("distribution, rectangular"))).
+NOTE: For every interval with a level of confidence stem:[p] greater than about stem:[91.7] percent, the value of stem:[k_p] for a ((normal distribution)) is larger than the corresponding value for the distribution resulting from the convolution of any number and size of rectangular distributions(((distribution, rectangular))).
 
 NOTE: It follows from the ((Central Limit Theorem)) that the probability distribution of the arithmetic mean stem:[bar(q)] of stem:[n] observations stem:[q_k] of a random variable stem:[q] with expectation stem:[ii(mu)_q] and finite standard deviation stem:[ii(sigma)] approaches a ((normal distribution)) with mean stem:[ii(mu)_q] and standard deviation stem:[ii(sigma)//sqrt(n)] as stem:[n -> oo], whatever may be the probability distribution of stem:[q].
 
@@ -111,7 +111,7 @@ NOTE: Strictly speaking, in the expression stem:[(y - ii(Y))//u_{"c"}(y)], stem:
 
 If stem:[z] is a normally distributed ((random variable)) with expectation stem:[ii(mu)_z] and standard deviation stem:[ii(sigma)], and stem:[bar(z)] is the arithmetic mean of stem:[n] independent observations stem:[z_k] of stem:[z] with stem:[s(bar(z))] the experimental standard deviation of stem:[bar(z)] [see <<eq_3>> and <<eq_5>>], then the distribution of the variable stem:[t = (bar(z) - ii(mu)_z)// s(bar(z))] is the stem:[t]-*distribution* or *Student's distribution* (<<scls_C-3-8>>) with stem:[ii(nu) = n - 1] ((degrees of freedom)).(((level of confidence)))
 
-Consequently, if the measurand stem:[ii(Y)] is simply a single normally distributed quantity stem:[ii(X)], stem:[ii(Y) = ii(X)]; and if stem:[ii(X)] is estimated by the arithmetic mean stem:[bar(ii(X))] of stem:[n] independent repeated observations((("observations, repeated"))) stem:[ii(X)_k] of stem:[ii(X)], with experimental standard deviation of the mean stem:[s(bar(ii(X)))], then the best estimate of stem:[ii(Y)] is stem:[y = bar(ii(X))] and the experimental standard deviation of that estimate is stem:[u_{"c"}(y) = s(bar(ii(X)))]. Then stem:[t = (bar(z) - ii(mu)_z)//s(bar(z)) = (bar(ii(X)) - ii(X))//s(bar(ii(X))) = (y - ii(Y))//u_{"c"}(y)] is distributed according to the ((stem:[t]-distribution)) with
+Consequently, if the measurand stem:[ii(Y)] is simply a single normally distributed quantity stem:[ii(X)], stem:[ii(Y) = ii(X)]; and if stem:[ii(X)] is estimated by the arithmetic mean stem:[bar(ii(X))] of stem:[n] independent repeated observations(((observations, repeated))) stem:[ii(X)_k] of stem:[ii(X)], with experimental standard deviation of the mean stem:[s(bar(ii(X)))], then the best estimate of stem:[ii(Y)] is stem:[y = bar(ii(X))] and the experimental standard deviation of that estimate is stem:[u_{"c"}(y) = s(bar(ii(X)))]. Then stem:[t = (bar(z) - ii(mu)_z)//s(bar(z)) = (bar(ii(X)) - ii(X))//s(bar(ii(X))) = (y - ii(Y))//u_{"c"}(y)] is distributed according to the ((stem:[t]-distribution)) with
 
 [stem,subsequence=I]
 ++++
@@ -145,7 +145,7 @@ defines an interval stem:[y - ii(U)_p] to stem:[y + ii(U)_p], conveniently writt
 [[scls_G-3-3]]
 ==== {blank}
 
-The ((degrees of freedom)) stem:[ii(nu)] is equal to stem:[n-1] for a single quantity estimated by the arithmetic mean of stem:[n] independent observations, as in <<scls_G-3-2>>. If stem:[n] independent observations are used to determine both the slopeand intercept of a straight line by the method of least squares((("least squares, method of"))), the degrees of freedom of their respective standard uncertainties is stem:[ii(nu) = n - 2]. For a least-squares fit of stem:[m] parameters to stem:[n] data points, the degrees of freedom of the standard uncertainty of each parameter is stem:[ii(nu) = n-m]. (See Reference <<BOX1978>> for a further discussion of degrees of freedom.)(((degrees of freedom of a Type A standard uncertainty)))
+The ((degrees of freedom)) stem:[ii(nu)] is equal to stem:[n-1] for a single quantity estimated by the arithmetic mean of stem:[n] independent observations, as in <<scls_G-3-2>>. If stem:[n] independent observations are used to determine both the slopeand intercept of a straight line by the method of least squares(((least squares, method of))), the degrees of freedom of their respective standard uncertainties is stem:[ii(nu) = n - 2]. For a least-squares fit of stem:[m] parameters to stem:[n] data points, the degrees of freedom of the standard uncertainty of each parameter is stem:[ii(nu) = n-m]. (See Reference <<BOX1978>> for a further discussion of degrees of freedom.)(((degrees of freedom of a Type A standard uncertainty)))
 
 
 [[scls_G-3-4]]
@@ -162,18 +162,18 @@ Often, the stem:[t]-distribution is tabulated in quantiles; that is, values of t
 1 - ii(alpha) = int_{-oo}^{t_1 - ii(alpha)} f(t,ii(nu))" d"t
 ++++
 
-defines the quantile, where stem:[f] is the probability density function of stem:[t]. Thus stem:[t_p] and stem:[t_1 - ii(alpha)] are related by stem:[p = 1 - 2 ii(alpha)]. For example, the value of the quantile stem:[t_{0.975}], for which stem:[1 - ii(alpha) = 0.975] and stem:[ii(alpha) = 0.025], is the same as stem:[t_p(ii(nu))] for stem:[p = 0.95].((("stem:[t]-distribution, quantiles of the")))
+defines the quantile, where stem:[f] is the probability density function of stem:[t]. Thus stem:[t_p] and stem:[t_1 - ii(alpha)] are related by stem:[p = 1 - 2 ii(alpha)]. For example, the value of the quantile stem:[t_{0.975}], for which stem:[1 - ii(alpha) = 0.975] and stem:[ii(alpha) = 0.025], is the same as stem:[t_p(ii(nu))] for stem:[p = 0.95].(((stem:[t]-distribution, quantiles of the)))
 ====
 
 
 [[scls_G-4]]
-=== Effective degrees of freedom((("degrees of freedom, effective")))
+=== Effective degrees of freedom(((degrees of freedom, effective)))
 
 [[scls_G-4-1]]
 ==== {blank}
 
 In general, the ((stem:[t]-distribution)) will not describe the distribution of the variable stem:[(y - ii(Y))//u_{"c"}(y)] if stem:[u_{"c"}^2(y)] is the sum of two or more estimated variance components stem:[u_i^2(y) = c_i^2 u^2(x_i)] (see <<scls_5-1-3>>), even if each stem:[x_i] is the estimate of a normally distributed input quantity stem:[ii(X)_i]. However, the distribution of that variable may be approximated by a ((stem:[t]-distribution)) with an _effective_ degrees of freedom stem:[ii(nu)_{"eff"}] obtained from the
-((Welch-Satterthwaite formula)) <<WELCH1947>>, <<FAIRFIELD1936>>, <<SATTERTHWAITE1946>>((("degrees of freedom, effective")))(((level of confidence)))(((stem:[t]-factor)))
+((Welch-Satterthwaite formula)) <<WELCH1947>>, <<FAIRFIELD1936>>, <<SATTERTHWAITE1946>>(((degrees of freedom, effective)))(((level of confidence)))(((stem:[t]-factor)))
 
 [[eq_G-2a]]
 [stem,subsequence=J]
@@ -208,7 +208,7 @@ NOTE: If the value of stem:[ii(nu)_{"eff"}] obtained from <<eq_G-2b>> is not an 
 NOTE: If an input estimate stem:[x_i] is itself obtained from two or more other estimates, then the value of stem:[ii(nu)_i] to be used with stem:[u_i^4(y) = [c_i^2 u^2(x_i)\]^2] in the denominator of <<eq_G-2b>> is the effective degrees of freedom calculated from anexpression equivalent to <<eq_G-2b>>.
 
 [[note3_G-4-1]]
-NOTE: Depending upon the needs of the potential users of a measurement result, it may be useful, in addition to stem:[ii(nu)_{"eff"}], to calculate and report also values for stem:[ii(nu)_{"effA"}] and stem:[ii(nu)_{"effB"}], computed from <<eq_G-2b>> treating separately the standard uncertainties obtained from Type A(((combined standard uncertainty from Type A components alone)))(((Type A combined standard uncertainty))) and Type B(((combined standard uncertainty from Type B components alone)))(((Type B combined standard uncertainty))) evaluations. If the contributions to stem:[u_{"c"}^2(y)] of the Type A and Type B standard uncertainties alone are denoted, respectively, by stem:[u_{"cA"}^2(y)] and stem:[u_{"cB"}^2(y)], the various quantities are related by((("degrees of freedom, effective, of Type A components alone")))((("degrees of freedom, effective, of Type B components alone")))
+NOTE: Depending upon the needs of the potential users of a measurement result, it may be useful, in addition to stem:[ii(nu)_{"eff"}], to calculate and report also values for stem:[ii(nu)_{"effA"}] and stem:[ii(nu)_{"effB"}], computed from <<eq_G-2b>> treating separately the standard uncertainties obtained from Type A(((combined standard uncertainty from Type A components alone)))(((Type A combined standard uncertainty))) and Type B(((combined standard uncertainty from Type B components alone)))(((Type B combined standard uncertainty))) evaluations. If the contributions to stem:[u_{"c"}^2(y)] of the Type A and Type B standard uncertainties alone are denoted, respectively, by stem:[u_{"cA"}^2(y)] and stem:[u_{"cB"}^2(y)], the various quantities are related by(((degrees of freedom, effective, of Type A components alone)))(((degrees of freedom, effective, of Type B components alone)))
 
 [stem%unnumbered]
 ++++
@@ -247,7 +247,7 @@ The value of stem:[t_p] for stem:[p = 95] percent and stem:[ii(nu) = 19] is, fro
 [[scls_G-4-2]]
 ==== {blank}
 
-In practice, stem:[u_{"c"}(y)] depends on standard uncertainties stem:[u(x_i)] of input estimates of both normally and non-normally distributed input quantities, and the stem:[u(x_i)] are obtained from both frequency-based and _a priori_ probability distributions((("distribution, _a priori_"))) (that is, from both Type A and Type B evaluations). A similar statement applies to the estimate stem:[y] and input estimates stem:[x_i] upon which stem:[y] depends. Nevertheless, the probability distribution of the function stem:[t = (y - Y)//u_{"c"}(y)] can be approximated by the ((stem:[t]-distribution)) if it is expanded in a ((Taylor series)) about its expectation. In essence, this is what is achieved, in the lowest order approximation, by the ((Welch-Satterthwaite formula)), <<eq_G-2a>> or <<eq_G-2b>>.
+In practice, stem:[u_{"c"}(y)] depends on standard uncertainties stem:[u(x_i)] of input estimates of both normally and non-normally distributed input quantities, and the stem:[u(x_i)] are obtained from both frequency-based and _a priori_ probability distributions(((distribution, _a priori_))) (that is, from both Type A and Type B evaluations). A similar statement applies to the estimate stem:[y] and input estimates stem:[x_i] upon which stem:[y] depends. Nevertheless, the probability distribution of the function stem:[t = (y - Y)//u_{"c"}(y)] can be approximated by the ((stem:[t]-distribution)) if it is expanded in a ((Taylor series)) about its expectation. In essence, this is what is achieved, in the lowest order approximation, by the ((Welch-Satterthwaite formula)), <<eq_G-2a>> or <<eq_G-2b>>.
 
 The question arises as to the degrees of freedom to assign to a standard uncertainty obtained from a Type B evaluation when stem:[ii(nu)_{"eff"}] is calculated from <<eq_G-2b>>. Since the appropriate definition of degrees of freedom recognizes that stem:[ii(nu)] as it appears in the ((stem:[t]-distribution)) is a measure of the uncertainty of the variance stem:[s^2(bar(z))], <<eq_E-7>> in <<scls_E-4-3>> may be used to define the degrees of freedom stem:[ii(nu)_i],
 
@@ -267,7 +267,7 @@ Consider that one's knowledge of how input estimate stem:[x_i] was determined an
 [[scls_G-4-3]]
 ==== {blank}
 
-In the discussion in <<scls_4-3>> and <<scls_4-4>> of Type B evaluation of standard uncertainty from an _a priori_ probability distribution((("distribution, _a priori_"))), it was implicitly assumed that the value of stem:[u(x_i)] resulting from such an evaluation is exactly known. For example, when stem:[u(x_i)] is obtained from a rectangular probability distribution((("distribution, rectangular"))) of assumed half-width stem:[a = (a_+ - a_"-")//2] as in <<scls_4-3-7>> and <<scls_4-4-5>>, stem:[u(x_i) = a//sqrt(3)] is viewed as a constant with no uncertainty because stem:[a_+] and stem:[a_"-"], and thus stem:[a], are so viewed (but see <<note2_4-3-9>>). This implies through <<eq_G-3>> that stem:[ii(nu)_i -> oo] or stem:[1//ii(nu)_i -> 0], but it causes no difficulty in evaluating <<eq_G-2b>>. Further, assuming that stem:[ii(nu)_i -> oo] is not necessarily unrealistic; it is common practice to choose stem:[a_"-"] and stem:[a_+] in such a way that the probability of the quantity in question lying outside the interval stem:[a_"-"] to stem:[a_+] is extremely small.(((degrees of freedom of a Type B standard uncertainty)))
+In the discussion in <<scls_4-3>> and <<scls_4-4>> of Type B evaluation of standard uncertainty from an _a priori_ probability distribution(((distribution, _a priori_))), it was implicitly assumed that the value of stem:[u(x_i)] resulting from such an evaluation is exactly known. For example, when stem:[u(x_i)] is obtained from a rectangular probability distribution(((distribution, rectangular))) of assumed half-width stem:[a = (a_+ - a_"-")//2] as in <<scls_4-3-7>> and <<scls_4-4-5>>, stem:[u(x_i) = a//sqrt(3)] is viewed as a constant with no uncertainty because stem:[a_+] and stem:[a_"-"], and thus stem:[a], are so viewed (but see <<note2_4-3-9>>). This implies through <<eq_G-3>> that stem:[ii(nu)_i -> oo] or stem:[1//ii(nu)_i -> 0], but it causes no difficulty in evaluating <<eq_G-2b>>. Further, assuming that stem:[ii(nu)_i -> oo] is not necessarily unrealistic; it is common practice to choose stem:[a_"-"] and stem:[a_+] in such a way that the probability of the quantity in question lying outside the interval stem:[a_"-"] to stem:[a_+] is extremely small.(((degrees of freedom of a Type B standard uncertainty)))
 
 
 [[scls_G-5]]
@@ -315,7 +315,7 @@ NOTE: For a ((normal distribution)), the ((coverage factor)) stem:[k = sqrt(3) ~
 [[scls_G-5-3]]
 ==== {blank}
 
-Occasionally an input quantity stem:[ii(X)_i] is distributed asymmetrically((("distribution, asymmetric"))) -- deviations about its expected value of one sign are more probable than deviations of the opposite sign (see <<scls_4-3-8>>). Although this makes no difference in the evaluation of the standard uncertainty stem:[u(x_i)] of the estimate stem:[x_i] of stem:[ii(X)_i], and thus in the evaluation of stem:[u_{"c"}(y)], it may affect the calculation of stem:[ii(U)].
+Occasionally an input quantity stem:[ii(X)_i] is distributed asymmetrically(((distribution, asymmetric))) -- deviations about its expected value of one sign are more probable than deviations of the opposite sign (see <<scls_4-3-8>>). Although this makes no difference in the evaluation of the standard uncertainty stem:[u(x_i)] of the estimate stem:[x_i] of stem:[ii(X)_i], and thus in the evaluation of stem:[u_{"c"}(y)], it may affect the calculation of stem:[ii(U)].
 
 It is usually convenient to give a symmetric interval, stem:[ii(Y) = y pm ii(U)], unless the interval is such that there is a cost differential between deviations of one sign over the other. If the asymmetry of stem:[ii(X)_i] causes only a small asymmetry in the probability distribution characterized by the measurement result stem:[y] and its combined standard uncertainty stem:[u_{"c"}(y)], the probability lost on one side by quoting a symmetric interval is compensated by the probability gained on the other side. The alternative is to give an interval that is symmetric in probability (and thus asymmetric in stem:[ii(U)]): the probability that stem:[ii(Y)] lies below the lower limit stem:[y - ii(U)_"-"] is equal to the probability that stem:[ii(Y)] lies above the upper limit stem:[y + ii(U)_+]. But in order to quote such limits, more information than simply theestimates stem:[y] and stem:[u_{"c"}(y)] [and hence more information than simply the estimates stem:[x_i] and stem:[u(x_i)] of each input quantity stem:[ii(X)_i]] is needed.(((expanded uncertainty)))(((expanded uncertainty for an asymmetric distribution)))
 
@@ -323,7 +323,7 @@ It is usually convenient to give a symmetric interval, stem:[ii(Y) = y pm ii(U)]
 [[scls_G-5-4]]
 ==== {blank}
 
-The evaluation of the ((expanded uncertainty)) stem:[ii(U)_p] given here in terms of stem:[u_{"c"}(y)], stem:[ii(nu)_{"eff"}], and the factor stem:[t _p (ii(nu)_{"eff"})] from the ((stem:[t]-distribution)) is only an approximation, and it has its limitations. The distribution of stem:[(y - ii(Y))//u_{"c"}(y)] is given by the ((stem:[t]-distribution)) only if the distribution of stem:[ii(Y)] is normal, the estimate stem:[y] and its combined standard uncertainty stem:[u_{"c"}(y)] are independent, and if the distribution of stem:[u_{"c"}^2(y)] is a stem:[ii(chi)^2] distribution. The introduction of stem:[ii(nu)_{"eff"}], <<eq_G-2b>>, deals only with the latter problem, and provides an approximately stem:[ii(chi)^2] distribution for stem:[u_{"c"}^2(y)]; the other part of the problem, arising from the non-normality of the distribution of stem:[ii(Y)], requires the consideration of higher moments in addition to the variance.((("degrees of freedom, effective")))(((stem:[t]-factor)))
+The evaluation of the ((expanded uncertainty)) stem:[ii(U)_p] given here in terms of stem:[u_{"c"}(y)], stem:[ii(nu)_{"eff"}], and the factor stem:[t _p (ii(nu)_{"eff"})] from the ((stem:[t]-distribution)) is only an approximation, and it has its limitations. The distribution of stem:[(y - ii(Y))//u_{"c"}(y)] is given by the ((stem:[t]-distribution)) only if the distribution of stem:[ii(Y)] is normal, the estimate stem:[y] and its combined standard uncertainty stem:[u_{"c"}(y)] are independent, and if the distribution of stem:[u_{"c"}^2(y)] is a stem:[ii(chi)^2] distribution. The introduction of stem:[ii(nu)_{"eff"}], <<eq_G-2b>>, deals only with the latter problem, and provides an approximately stem:[ii(chi)^2] distribution for stem:[u_{"c"}^2(y)]; the other part of the problem, arising from the non-normality of the distribution of stem:[ii(Y)], requires the consideration of higher moments in addition to the variance.(((degrees of freedom, effective)))(((stem:[t]-factor)))
 
 
 [[scls_G-6]]
@@ -338,7 +338,7 @@ The ((coverage factor)) stem:[k_p] that provides an interval having a ((level of
 [[scls_G-6-2]]
 ==== {blank}
 
-Because the extensive computations required to combine probability distributions are seldom justified by the extent and reliability of the available information, an approximation to the distribution of the output quantity is acceptable. Because of the ((Central Limit Theorem)), it is usually sufficient to assume that the probability distribution of stem:[(y-ii(Y))//u_{"c"}(y)] is the ((stem:[t]-distribution)) and take stem:[k_p = t_p(ii(nu)_{"eff"})], with the ((stem:[t]-factor)) based on an effective degrees of freedom stem:[ii(nu)_{"eff"}] of stem:[u_{"c"}(y)] obtained from the ((Welch-Satterthwaite formula)), <<eq_G-2b>>.((("degrees of freedom, effective")))
+Because the extensive computations required to combine probability distributions are seldom justified by the extent and reliability of the available information, an approximation to the distribution of the output quantity is acceptable. Because of the ((Central Limit Theorem)), it is usually sufficient to assume that the probability distribution of stem:[(y-ii(Y))//u_{"c"}(y)] is the ((stem:[t]-distribution)) and take stem:[k_p = t_p(ii(nu)_{"eff"})], with the ((stem:[t]-factor)) based on an effective degrees of freedom stem:[ii(nu)_{"eff"}] of stem:[u_{"c"}(y)] obtained from the ((Welch-Satterthwaite formula)), <<eq_G-2b>>.(((degrees of freedom, effective)))
 
 
 [[scls_G-6-3]]
@@ -385,7 +385,7 @@ For many practical measurements in a broad range of fields, the following condit
 
 * the standard uncertainties stem:[u(x_i)] of these estimates, which may be obtained from either Type A or Type B evaluations, contribute comparable amounts to the combined standard uncertainty stem:[u_{"c"}(y)] of the measurement result stem:[y];
 
-* the linear approximation implied by the law of propagation of uncertainty((("uncertainty, law of propagation of"))) is adequate (see <<scls_5-1-2>> and <<scls_E-3-1>>);
+* the linear approximation implied by the law of propagation of uncertainty(((uncertainty, law of propagation of))) is adequate (see <<scls_5-1-2>> and <<scls_E-3-1>>);
 
 * the uncertainty of stem:[u_{"c"}(y)] is reasonably small because its effective degrees of freedom stem:[ii(nu)_{"eff"}] has a significant magnitude, say greater than 10.
 

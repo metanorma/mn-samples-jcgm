@@ -156,7 +156,7 @@ NOTE: The central moment of order stem:[r] is the expectation of the random vari
 NOTE: The expectation stem:[ii(E)(ii(X))] is the first moment. The variance stem:[ii(V)(ii(X))] is the central moment of order 2.
 
 
-=== covariance
+=== covariance (((covariance)))
 
 property of a pair of random variables, which, for two continuous random variables stem:[ii(X)_1] and stem:[ii(X)_2] characterized by a joint (multivariate) PDF stem:[g_{bb(X)} (bb(xi))], where stem:[ii(X) = (ii(X)_1, ii(X)_2)^{sf(T)}] and stem:[xi = (xi_1, xi_2)^{sf(T)}], is given by
 
@@ -168,7 +168,7 @@ property of a pair of random variables, which, for two continuous random variabl
 NOTE: Not all pairs of random variables have a covariance.
 
 
-=== uncertainty matrix
+=== uncertainty matrix (((covariance)))(((covariance matrix)))
 
 matrix of dimension stem:[ii(N) xx ii(N)], containing on its diagonal the squares of the standard uncertainties associated with estimates of the components of an N-dimensional vector quantity, and in its off-diagonal positions the covariances associated with pairs of estimates
 
@@ -186,7 +186,7 @@ NOTE: Covariances are also known as mutual uncertainties.
 NOTE: An uncertainty matrix is also known as a covariance matrix or variance-covariance matrix.
 
 
-=== coverage interval
+=== coverage interval (((Bayesian interval)))(((coverage interval)))(((credible interval)))
 
 interval containing the value of a quantity with a stated probability, based on the information available
 
@@ -199,24 +199,24 @@ NOTE: A coverage interval should not be termed 'confidence interval' to avoid co
 NOTE: This definition differs from that in the VIM, 3rd Edition (2008), since the term 'true value' has not been used in this Supplement, for reasons given in the GUM <<JCGM-100,clause=E.5>>.
 
 
-=== coverage probability
+=== coverage probability (((coverage probability)))
 
 probability that the value of a quantity is contained within a specified coverage interval
 
 NOTE: The coverage probability is sometimes termed "level of confidence" <<JCGM-100,clause=6.2.2>>.
 
 
-=== length of a coverage interval
+=== length of a coverage interval (((coverage interval,length of)))
 
 largest value minus smallest value in a coverage interval
 
 
-=== probabilistically symmetric coverage interval
+=== probabilistically symmetric coverage interval (((coverage interval,probabilistically symmetric)))
 
 coverage interval for a quantity such that the probability that the quantity is less than the smallest value in the interval is equal to the probability that the quantity is greater than the largest value in the interval
 
 
-=== shortest coverage interval
+=== shortest coverage interval (((coverage interval,shortest)))
 
 coverage interval for a quantity with the shortest length among all coverage intervals for that quantity having the same coverage probability
 

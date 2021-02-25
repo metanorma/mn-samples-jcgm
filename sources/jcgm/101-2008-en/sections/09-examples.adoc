@@ -71,7 +71,7 @@ NOTE: Further information concerning additive models, such as the model <<eq21,(
 ==== Normally distributed input quantities
 
 [[scls_9-2-2-1]]
-===== {blank}
+===== {blank} (((best estimate,of an input quantity)))
 
 Assign a standard Gaussian PDF to each stem:[ii(X)_i]. The best estimates of the stem:[ii(X)_i] are stem:[x_i = 0, i = 1, 2, 3, 4], with associated standard uncertainties stem:[u(x_i) = 1].
 
@@ -84,12 +84,12 @@ The results obtained are summarized in the first five columns of <<table2>>, wit
 NOTE: The probabilistically symmetric 95 % coverage interval is determined, because the PDF for stem:[ii(Y)] is known to be symmetric in this case, as it is for the other cases considered in this example.
 
 [[scls_9-2-2-3]]
-===== {blank}
+===== {blank} (((coverage factor)))(((coverage interval,probabilistically symmetric)))
 
 The law of propagation of uncertainty <<JCGM-100,clause=5.1.2>> gives the estimate stem:[y = 0.0] of stem:[ii(Y)] and associated standard uncertainty stem:[u(y) = 2.0], using a numerical tolerance of two significant decimal digits for stem:[u(y) (delta = 0.05)] (see <<scls_5-5>>). A probabilistically symmetric 95 % coverage interval for stem:[ii(Y)], based on a coverage factor of 1.96, is stem:[[-3.9, 3.9\]].
 
 
-===== {blank}
+===== {blank} (((coverage interval,probabilistically symmetric)))
 
 The application of MCM (<<cls_7>>) with stem:[ii(M) = 10^5] trials gives stem:[y = 0.0], stem:[u(y) = 2.0] and the probabilistically symmetric 95 % coverage interval [-3.9, 3.9]. Two further applications of the method, with stem:[ii(M) = 10^6] trials, agree with these results to within the numerical tolerance used. These two further applications (different random samplings being made from the PDFs) were made to demonstrate the variation in the results obtained. The fourth and fifth numerical values of stem:[ii(M)] (stem:[1.23 xx 10^6] and stem:[1.02 xx 10^6]) are the numbers of trials for two applications of the adaptive Monte Carlo procedure (see <<scls_7-9>>) with the use of a numerical tolerance of stem:[delta//5] (see <<scls_8-2>>).
 
@@ -101,7 +101,7 @@ The PDF for stem:[ii(Y)] obtained analytically is the Gaussian PDF with expectat
 
 
 [[scls_9-2-2-6]]
-===== {blank}
+===== {blank} (((coverage interval,probabilistically symmetric)))
 
 <<fig6>> shows the (Gaussian) PDF for stem:[ii(Y)] resulting from the GUM uncertainty framework. It also shows one of the approximations (scaled frequency distribution (histogram) of stem:[ii(M) = 10^6] model values of stem:[ii(Y)]) constituting the discrete representation G (see <<scls_7-5>>) to this PDF provided by MCM. The endpoints of the probabilistically symmetric 95 % coverage interval provided by both methods are shown as vertical lines. The PDF and the approximation are visually indistinguishable, as are the respective coverage intervals. For this example, such agreement would be ex-pected (for a sufficiently large value of stem:[ii(M)]), because all the conditions hold for the application of the GUM uncertainty framework (see <<scls_5-7>>).
 
@@ -141,7 +141,7 @@ The magnitudes stem:[d_{"low"}] and stem:[d_{"high"}] of the endpoint difference
 
 
 [[scls_9-2-2-8]]
-===== {blank}
+===== {blank} (((coverage interval,length of)))
 
 <<fig7>> shows the length stem:[y_{"high"} - y_{"low"}] of the 95 % coverage interval for stem:[ii(Y)] (see <<scls_7-7>>), as a function of the probability at its left-hand endpoint, determined from stem:[bb(G)]. As expected for a symmetric PDF, the interval takes its shortest length when symmetrically located with respect to the expectation.
 
@@ -151,7 +151,7 @@ The magnitudes stem:[d_{"low"}] and stem:[d_{"high"}] of the endpoint difference
 image::figure7.png[]
 
 
-===== {blank}
+===== {blank} (((coverage interval,probabilistically symmetric)))(((coverage interval,shortest)))
 
 Subclause <<scls_9-4>> provides an example of an asymmetric PDF for which the shortest coverage interval differs appreciably from the probabilistically symmetric coverage interval.
 
@@ -159,13 +159,13 @@ Subclause <<scls_9-4>> provides an example of an asymmetric PDF for which the sh
 [[scls_9-2-3]]
 ==== Rectangularly distributed input quantities with the same width
 
-===== {blank}
+===== {blank} (((best estimate,of an input quantity)))
 
 Assign a rectangular PDF to each stem:[ii(X)_i], so that stem:[ii(X)_i] has an expectation of zero and a standard deviation of unity (in contrast to <<scls_9-2-2-1>> where a Gaussian PDF is assigned). Again, the best estimates of the stem:[ii(X)_i] are stem:[x_i = 0, i = 1, 2, 3, 4], with associ= ated standard uncertainties stem:[u(x_i) = 1].
 
 
 [[scls_9-2-3-2]]
-===== {blank}
+===== {blank} (((coverage interval,probabilistically symmetric)))
 
 By following the analogous steps of <<scls_9-2-2-3>> to <<scls_9-2-2-5>>, the results in <<table3>> were obtained. The analytic solution for the endpoints of the probabilistically symmetric 95 % coverage interval, viz. stem:[+-2 sqrt(3)[2 - (3//5)^{1//4}\] ~~ +-3.88], was obtained as described in <<annexE>>.
 
@@ -193,7 +193,7 @@ By following the analogous steps of <<scls_9-2-2-3>> to <<scls_9-2-2-5>>, the re
 
 
 [[scls_9-2-3-4]]
-===== {blank}
+===== {blank} (((coverage interval,probabilistically symmetric)))
 
 The probabilistically symmetric 95 % coverage interval determined on the basis of the GUM un-certainty framework is in this case slightly more conservative than that obtained analytically. As for nor-mally distributed quantities, the validation procedure was applied (columns 6 to 8 of <<table3>>). As before, stem:[n_{"dig"} = 2], stem:[u(y) = 20 xx 10^{-1}], stem:[c = 20], stem:[cc(l) = -1] and stem:[delta = 0.05]. The endpoint differences stem:[d_{"low"}] and stem:[d_{"high"}] are larger than for the case of normally distributed quantities (<<table2>>). For the first of the two applications of the adaptive Monte Carlo procedure, the GUM uncertainty framework is validated. For the second application, it is not validated, although stem:[d_{"low"}] and stem:[d_{"high"}] for this application are close to the numerical tolerance stem:[delta = 0.05] (seen if more decimal digits than in <<table3>> are considered). Different validation results such as these are an occasional consequence of the stochastic nature of the Monte Carlo method, especially in a case such as that here.
 
@@ -236,7 +236,7 @@ The numbers stem:[ii(M)] of Monte Carlo trials taken by the adaptive procedure (
 
 
 [[scls_9-2-4-4]]
-===== {blank}
+===== {blank} (((coverage factor)))(((coverage interval,probabilistically symmetric)))
 
 <<fig9>> also shows the endpoints of the probabilistically symmetric 95 % coverage interval for stem:[ii(Y)] obtained from these approximations. The inner pair of vertical lines indicates the endpoints of the probabilistically symmet-ric 95 % coverage interval determined by MCM. The outer pair results from the GUM uncertainty framework, with a coverage factor of k = 1.96.
 
@@ -247,7 +247,7 @@ image::figure9.png[]
 
 
 [[scls_9-2-4-5]]
-===== {blank}
+===== {blank} (((central limit theorem)))(((coverage interval,probabilistically symmetric)))
 
 The probabilistically symmetric 95 % coverage interval determined on the basis of the GUM uncertainty framework in this case is more conservative than that obtained using MCM. Again, the validation procedure was applied (columns 6 to 8 of <<table4>>). Now, stem:[n_{"dig"} = 2], stem:[u(y) = 1.0 xx 10^1 = 10 xx 10^0], stem:[c = 10], stem:[cc(l) = 0] and stem:[delta = 1//2 xx 10^0 = 0.5]. For the two applications of the adaptive Monte Carlo procedure, the GUM uncertainty framework is not validated. For a numerical tolerance of one significant decimal digit in stem:[u(y)], i.e. stem:[n_{"dig"} = 1], for which stem:[delta = 5], the validation status would be positive in both cases, the 95 % coverage intervals all being stem:[[-2 xx 10^1, 2 xx 10^1\]]. See <<scls_4-13>>.
 
@@ -255,7 +255,7 @@ NOTE: The conditions for the central limit theorem to apply are not well met in 
 
 
 [[scls_9-3]]
-=== Mass calibration
+=== Mass calibration (((calibration,mass)))
 
 ==== Formulation
 
@@ -325,7 +325,7 @@ NOTE: Applying the law of propagation of uncertainty to the "exact" model <<eq23
 
 
 [[scls_9-3-1-4]]
-===== {blank}
+===== {blank} (((best estimate,of an input quantity)))
 
 The only information available concerning stem:[m_{R,c}] and stem:[delta m_{R,c}] is a best estimate and an associated standard uncertainty for each of these quantities. Accordingly, following <<scls_6-4-7-1>>, a Gaussian distribution is assigned to each of these quantities, with these best estimates used as the expectations of the corresponding quantities and the associated standard uncertainties as the standard deviations. The only information available concerning stem:[ii(rho)_a], stem:[ii(rho)_W] and stem:[ii(rho)_R] is lower and upper limits for each of these quantities. Accordingly, following <<scls_6-4-2-1>>, a rectangular distribution is assigned to each of these quantities, with limits equal to the endpoints of the distribution. <<table5>> summarizes the input quantities and the PDFs assigned. In the table, a Gaussian distribution stem:[N(ii(mu), ii(sigma)^2)] is described in terms of expectation stem:[ii(mu)] and standard deviation stem:[ii(sigma)], and a rectangular distribution stem:[R(a, b)] with endpoints stem:[a] and stem:[b(a < b)] in terms of expectation stem:[(a + b)//2] and semi-width stem:[(b - a)//2].
 
@@ -351,7 +351,7 @@ NOTE: The quantity stem:[ii(rho)_{a_0}] in the mass calibration model <<eq24,(24
 ==== Propagation and summarizing
 
 [[scls_9-3-2-1]]
-===== {blank}
+===== {blank} (((coverage interval,shortest)))
 
 The GUM uncertainty framework and the adaptive Monte Carlo procedure (see <<scls_7-9>>) were each used to obtain an estimate stem:[hat(delta m)] of stem:[delta m], the associated standard uncertainty stem:[u(hat(delta m))], and the shortest 95 % coverage interval for stem:[delta m]. The results obtained are shown in <<table6>>, in which GUF~1~ denotes the GUM uncertainty framework with first-order terms, MCM the adaptive Monte Carlo procedure, and GUF~2~ the GUM uncertainty framework with higher-order terms.
 
@@ -362,7 +362,7 @@ stem:[0.72 xx 10^6] trials were taken by the adaptive Monte Carlo procedure with
 
 
 [[scls_9-3-2-3]]
-===== {blank}
+===== {blank} (((coverage interval,shortest)))
 
 <<fig10>> shows the approximations to the PDF for stem:[delta m] obtained from the GUM uncertainty framework with first-order terms and MCM. The continuous curve represents a Gaussian PDF with parameters given by the GUM uncertainty framework. The inner pair of (broken) vertical lines indicates the shortest 95 % coverage interval for stem:[delta m] based on this PDF. The histogram is the scaled frequency distribution obtained using MCM as an approximation to the PDF. The outer pair of (continuous) vertical lines indicates the shortest 95 % coverage interval for stem:[delta m] based on the discrete representation of the distribution function determined as in <<scls_7-5>>.
 
@@ -423,7 +423,7 @@ MCM makes no such (implied) approximation to the model.
 
 
 [[scls_9-4]]
-=== Comparison loss in microwave power meter calibration
+=== Comparison loss in microwave power meter calibration (((calibration,microwave power meter)))
 
 ==== Formulation
 
@@ -451,14 +451,14 @@ ii(Y) = 1 - ii(X)_1^2 - ii(X)_2^2.
 ++++
 
 
-===== {blank}
+===== {blank} (((best estimate,of an input quantity)))(((correlation coefficient)))(((covariance)))
 
 Given respectively are best estimates stem:[x_1] and stem:[x_2] of the quantities stem:[ii(X)_1] and stem:[ii(X)_2] from measurement and the associated standard uncertainties stem:[u(x_1)] and stem:[u(x_2)]. stem:[ii(X)_1] and stem:[ii(X)_2] are often not independent. Denote by stem:[u(x_1, x_2)] the covariance associated with stem:[x_1] and stem:[x_2]. Equivalently <<JCGM-100,clause=5.2.2>>, stem:[u(x_1, x_2) = r(x_1, x_2)u(x_1)u(x_2)], where stem:[r = r(x_1, x_2)] denotes the associated correlation coefficient <<JCGM-100,clause=5.2.2>>.
 
 NOTE: In practice the electrical engineer may sometimes have difficulty in quantifying the covariance. In such cases, the uncertainty evaluation can be repeated with different trial numerical values for the correlation coefficient in order to study its effect. This example carries out calculations using a correlation coefficient of zero and of 0.9 (cf. <<scls_9-4-1-7>>).
 
 
-===== {blank}
+===== {blank} (((covariance matrix)))
 
 On the basis of <<scls_6-4-8-1>>, stem:[bb(X) = (ii(X)_1, ii(X)_2)^{sf(T)}] is assigned a bivariate Gaussian PDF in stem:[ii(X)_1] and stem:[ii(X)_2], with expectation and covariance matrix
 
@@ -493,7 +493,7 @@ The determination of an estimate stem:[delta y] of stem:[delta ii(Y)], the assoc
 Six cases are considered, in all of which stem:[x_2] is taken as zero and stem:[u(x_1) = u(x_2) = 0.005]. The first three of these cases correspond to taking stem:[x_1 = 0], stem:[0.010], and stem:[0.050], each with stem:[r(x_1, x_2) = 0]. The other three cases correspond to taking the same stem:[x_1], but with stem:[r(x_1, x_2) = 0.9]. The various numerical values of stem:[x_1] (comparable to those occurring in practice) are used to investigate the extent to which the results obtained using the considered approaches differ.
 
 
-===== {blank}
+===== {blank} (((covariance matrix)))
 
 For the cases in which stem:[r = r(x_1, x_2) = 0], the covariance matrix given in formulae <<eq27>> reduces to stem:["diag"(u^2(x_1), u^2(x_2))] and the corresponding joint distribution for stem:[ii(X)_1] and stem:[ii(X)_2] to the product of two univariate Gaussian distributions for stem:[ii(X)_i], for stem:[i = 1, 2], with expectation stem:[x_i] and standard deviation stem:[u(x_i)].
 
@@ -516,7 +516,7 @@ NOTE: These approaches do not constrain the PDF for stem:[delta ii(Y)] to be no 
 
 
 [[scls_9-4-2-1-2]]
-====== {blank}
+====== {blank} (((coverage interval,shortest)))
 
 stem:[delta y] and stem:[u(delta y)] can generally be formed analytically as the expectation and standard deviation of stem:[delta ii(Y)], as characterized by the PDF for stem:[delta ii(Y)]. See <<scls_F-1>>. The PDF for stem:[delta ii(Y)] can be formed analytically when stem:[x_1 = 0] and, in particular, used to determine the endpoints of the shortest 95 % coverage interval in that case. See <<scls_F-2>>.
 
@@ -561,7 +561,7 @@ NOTE: A similar difficulty would arise for stem:[x_1] close to zero.
 image::figure11.png[]
 
 
-====== {blank}
+====== {blank} (((chi-squared distribution)))
 
 It is seen in the figure that the use of the GUM uncertainty framework with higher-order terms in order to characterize the output quantity by a Gaussian distribution yields a PDF that is very different from the analytic solution. The latter takes the form of a particular chi-squared distribution—the sum of squares of two standard Gaussian variables (see <<scls_F-2>>).
 
@@ -615,7 +615,7 @@ NOTE: When MCM was repeated several times the results obtained were scattered ab
 
 
 [[scls_9-4-2-2-9]]
-====== {blank}
+====== {blank} (((coverage interval,shortest)))
 
 <<fig11>> also shows the shortest 95 % coverage intervals for the corresponding approximations to the distribution function for stem:[delta ii(Y)]. The 95 % coverage interval, indicated by dotted vertical lines, as provided by the GUM uncertainty framework is infeasible: it is symmetric about stem:[delta ii(Y) = 0] and therefore erroneously implies there is a 50 % probability that stem:[delta ii(Y)] is negative. The continuous vertical lines are the endpoints of the shortest 95 % coverage interval derived from the analytic solution, as described in <<scls_F-2>>. The endpoints of the shortest 95 % coverage interval determined using MCM are indistinguishable to graphical accuracy from those for the analytic solution.
 
@@ -627,7 +627,7 @@ The endpoints of the shortest coverage intervals relating to the standard uncert
 
 
 [[scls_9-4-2-2-11]]
-====== {blank}
+====== {blank} (((coverage interval,length of)))(((coverage interval,probabilistically symmetric)))(((coverage interval,shortest)))
 
 <<fig12>> shows the length of the 95 % coverage interval (see <<scls_7-7>>), as a function of the probability value at its left-hand endpoint, for the approximation to the PDF provided by MCM shown in <<fig11>>. The 95 % coverage interval does not take its shortest length when symmetrically located with respect to the expectation in this case. Indeed, the shortest 95 % coverage interval is as far-removed as possible from a probabilistically symmetric coverage interval, the left and right tail probabilities being 0 % and 5 %, respectively, as opposed to 2.5 % and 2.5 %. This figure can be compared with that (<<fig7>>) for the additive model of <<scls_9-2>>, for which the PDF for stem:[ii(Y)] is symmetric about its expectation.
 
@@ -635,7 +635,7 @@ The endpoints of the shortest coverage intervals relating to the standard uncert
 ===== Input estimate stem:[x_1 = 0.010]
 
 [[scls_9-4-2-3-1]]
-====== {blank}
+====== {blank} (((correlation coefficient)))
 
 For the input estimate stem:[x_1 = 0.010], with correlation coefficient stem:[r(x_1, x_2) = 0], <<fig13>> shows the PDFs obtained using the GUM uncertainty framework with first-order terms only and with higher-order terms, and using MCM.
 
@@ -646,7 +646,7 @@ The PDF provided by MCM exhibits a modest left-hand flank, although it is trunca
 
 
 [[scls_9-4-2-3-3]]
-====== {blank}
+====== {blank} (((coverage interval,shortest)))
 
 <<fig13>> also shows the endpoints of the shortest 95 % coverage intervals obtained by the three approaches. The continuous vertical lines denote the endpoints of the interval provided by MCM, the broken vertical lines those resulting from the GUM uncertainty framework with first-order terms, and the dotted vertical lines from the GUM uncertainty framework with higher-order terms. The intervals provided by the GUM uncertainty framework are shifted to the left compared with the shortest 95 % coverage interval for MCM. As a consequence, they again
 
@@ -700,7 +700,7 @@ NOTE: Because of the symmetry of the model in stem:[ii(X)_1] and stem:[ii(X)_2],
 NOTE: One reason why the GUM uncertainty framework with first-order terms (only) might be used in practice is that software for its implementation is readily available: results obtained from it might sometimes be accepted without question. For the case where stem:[x_1 = x_2 = 0] (<<fig11>>) the danger would be apparent because the standard uncertainty stem:[u(delta y)] was computed as zero, and consequently any coverage interval for stem:[delta ii(Y)] would be of zero length for any coverage probability. For stem:[x_1 != 0] (or stem:[x_2 != 0]), stem:[u(delta y)] and the length of the coverage interval for stem:[delta ii(Y)] are both non-zero, so no such warning would be available without prior knowledge of likely values for stem:[u(delta y)] and this length. Thus, a danger in implementing software based on the GUM uncertainty framework for these calculations is that checks of the software for stem:[x_1] or stem:[x_2] sufficiently far from zero would not indicate such problems, although, when used subsequently in practice for small values of stem:[x_1] or stem:[x_2], the results would be invalid, but conceivably unwittingly accepted.
 
 
-==== Propagation and summarizing: non-zero covariance
+==== Propagation and summarizing: non-zero covariance (((correlated input quantities)))(((covariance)))
 
 ===== General
 
@@ -722,7 +722,7 @@ u^2 (delta y) = 4x_1^2 u^2(x_1).
 Consequently, stem:[u(delta y)] does not depend on stem:[r(x_1, x_2)] and the GUM uncertainty framework with first-order terms gives identical results to those presented in <<scls_9-4-2>>. In particular, for the case stem:[x_1 = 0], stem:[u(delta y)] is (incorrectly) computed as zero, as in <<scls_9-4-2-2-1>>.
 
 
-====== {blank}
+====== {blank} (((covariance matrix)))
 
 MCM was implemented by sampling randomly from stem:[bb(X)] characterized by a bivariate Gaussian PDF with the given expectation and covariance matrix (<<eq27>>). The procedure in <<scls_C-5>> was used.
 
@@ -752,7 +752,7 @@ h| h| Analytical h| GUF h| MCM h| Analytical h| GUF h| MCM h| Analytical h| GUF 
 
 
 [[scls_9-4-3-2-2]]
-====== {blank}
+====== {blank} (((coverage interval,shortest)))
 
 <<fig15>> and <<fig16>> show the PDFs provided by the GUM uncertainty framework with first-order terms (bell-shaped curves) and MCM (scaled frequency distributions) in the cases stem:[x_1 = 0.010] and stem:[x_1 = 0.050], respectively. The endpoints of the shortest 95 % coverage interval provided by the two approaches are also shown, as broken vertical lines for the GUM uncertainty framework and continuous vertical lines for MCM.
 
@@ -776,7 +776,7 @@ image::figure16.png[]
 
 
 [[scls_9-5]]
-=== Gauge block calibration
+=== Gauge block calibration (((calibration,gauge block)))
 
 ==== Formulation: model
 
@@ -833,7 +833,7 @@ ii(L) = ii(L)_s + d - ii(L)_s(ii(theta) delta alpha + alpha_s delta ii(theta)).
 ++++
 
 
-===== {blank}
+===== {blank} (((average,of a set of indications)))
 
 The difference stem:[d] in the lengths of the gauge block being calibrated and the reference standard is determined as the average of a series of five indications, obtained independently, of the difference using a calibrated comparator. stem:[d] can be expressed as
 
@@ -923,7 +923,7 @@ In the following subclauses the available information about each input quantity 
 
 ===== Length stem:[ii(L)_s] of the reference standard
 
-======  Information
+======  Information (((calibration,certificate)))(((coverage factor)))
 
 The calibration certificate for the reference standard gives stem:[hat(ii(L)_s) = 50.000623" " rm(mm)] as its length at stem:[20 " °C"] <<JCGM-100,clause=H.1.5>>. It gives stem:[ii(U)_p = 0.075 " "murm(m)] as the expanded uncertainty of the reference standard and states that it was obtained using a coverage factor of stem:[k_p = 3] <<JCGM-100,clause=H.1.3.1>>. The certificate states that the effective degrees of freedom associated with the combined standard uncertainty, from which the quoted expanded uncertainty was obtained, is stem:[nu_{"eff"} (u(hat(ii(L)_s))) = 18] <<JCGM-100,clause=H.1.6>>.
 
@@ -940,7 +940,7 @@ mu = 50000623 " mn", " " " " " " " " ii(sigma) = ii(U)_{"p"}/k_{"p"} = 75/3 " nm
 
 ===== Average length difference stem:[ii(D)]
 
-======  Information
+======  Information (((average,of a set of indications)))
 
 The average stem:[hat ii(D)] of the five indications of the difference in lengths between the gauge block being calibrated and the reference standard is 215 nm <<JCGM-100,clause=H.1.5>>. The pooled experimental standard deviation characterizing the comparison of stem:[ii(L)] and stem:[ii(L)_s] was determined from 25 indications, obtained independently, of the difference in lengths of two standard gauge blocks, and equalled 13 nm <<JCGM-100,clause=H.1.3.2>>.
 
@@ -957,7 +957,7 @@ ii(mu) = 215 " nm", " " " " " " " " ii(sigma) = 13/{sqrt(5)} " nm" = 6 nm, " " "
 
 ===== Random effect stem:[d_1] of comparator
 
-======  Information
+======  Information (((calibration,certificate)))
 
 According to the calibration certificate of the comparator used to compare stem:[ii(L)] with stem:[ii(L)_s], the associated uncertainty due to random effects is stem:[0.01" "mu rm(m)] for a coverage probability of 95 % and is obtained from six indications, obtained independently <<JCGM-100,clause=H.1.3.2>>.
 
@@ -976,7 +976,7 @@ Here, stem:[k_{0.95}] is obtained from table G.2 of the GUM with stem:[nu = 5] d
 
 ===== Systematic effect stem:[d_2] of comparator
 
-======  Information
+======  Information (((calibration,certificate)))
 
 The uncertainty of the comparator due to systematic effects is given in the certificate as stem:[0.02" "mu rm(m)] at the "three sigma level" <<JCGM-100,clause=H.1.3.2>>. This uncertainty may be assumed to be reliable to 25 %, and thus the degrees of freedom is stem:[nu_{"eff"}(u(hat(d_2))) = 8] <<JCGM-100,clause=H.1.6>>.
 
@@ -1037,7 +1037,7 @@ NOTE: There is no information about the source of the evaluation of the uncertai
 The temperature of the test bed is reported as stem:[(19.9 +- 0.5) " °C"]. The stated maximum offset of stem:[0.5 " °C"] for is said to represent the amplitude of an approximately cyclical variation of temperature under a thermostatic system. The cyclic variation of temperature results in a U-shaped (arc sine) distribution <<JCGM-100,clause=H.1.3.4>>.
 
 
-======  Interpretation
+======  Interpretation (((arc sine distribution,assignment to a quantity)))
 
 Assign an arc sine distribution stem:[U(a,b)] (see <<scls_6-4-6>>) to, with limits
 
@@ -1111,7 +1111,7 @@ The application of MCM
 ==== Results
 
 [[scls_9-5-4-1]]
-===== {blank}
+===== {blank} (((coverage interval,shortest)))
 
 <<table11>> gives the results obtained for the approximate model <<eq37,(37)>> using the information summarized in <<table10>>. <<fig17>> shows the PDFs for stem:[delta ii(L)] obtained from the application of the GUM uncertainty framework (solid curve) and MCM (scaled frequency distribution). The distribution obtained from the GUM uncertainty framework is a stem:[t]-distribution with stem:[nu = 16] degrees of freedom. The endpoints of the shortest 99 % coverage intervals for stem:[delta ii(L)] obtained from the PDFs, which are indicated as vertical lines, are visually indistinguishable.
 

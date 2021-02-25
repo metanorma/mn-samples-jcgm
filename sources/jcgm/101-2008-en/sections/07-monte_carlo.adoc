@@ -11,7 +11,7 @@ This clause gives information about the implementation of a Monte Carlo method f
 [[scls_7-2]]
 === Number of Monte Carlo trials
 
-==== {blank}
+==== {blank} (((coverage interval,from Monte Carlo method)))(((coverage probability)))
 
 A value of stem:[ii(M)], the number of Monte Carlo trials, i.e. the number of model evaluations to be made, needs to be selected. It can be chosen a _priori_, in which case there will be no direct control over the quality of the numerical results provided by MCM. The reason is that the number of trials needed to provide these results to a prescribed numerical tolerance will depend on the "shape" of the PDF for the output quantity and on the coverage probability required. Also, the calculations are stochastic in nature, being based on random sampling.
 
@@ -98,7 +98,7 @@ A continuous approximation to stem:[ii(G)_Y (ii(eta))] is sometimes useful. <<an
 
 
 [[scls_7-6]]
-=== Estimate of the output quantity and the associated standard uncertainty
+=== Estimate of the output quantity and the associated standard uncertainty (((average,of sampled model values)))(((coverage interval,from Monte Carlo method)))
 
 The average
 
@@ -136,14 +136,14 @@ NOTE: stem:[tilde(y)] will not in general agree with the model evaluated at the 
 
 
 [[scls_7-7]]
-=== Coverage interval for the output quantity
+=== Coverage interval for the output quantity (((coverage interval,from Monte Carlo method)))
 
 ==== {blank}
 
 A coverage interval for stem:[ii(Y)] can be determined from the discrete representation stem:[bb(G)] of stem:[G_Y (ii(eta))] in an analogous manner to that in <<scls_5-3-2>> given stem:[ii(G)_Y (ii(eta))].
 
 
-==== {blank}
+==== {blank} (((coverage probability)))
 
 Let stem:[q = p ii(M)], if stem:[p ii(M)] is an integer. Otherwise, take stem:[q] to be the integer part of stem:[pii(M) + 1//2]. Then stem:[[y_{"low"},y_{"high"}\]] is a stem:[100p " %"] coverage interval for stem:[ii(Y)], where, for any stem:[r = 1,..., ii(M) - q], stem:[y_{"low"} = y_{(r)}] and stem:[y_{"high"} = y_{(r+q)}]. The probabilistically symmetric stem:[100p " %"] coverage interval is given by taking stem:[r = (ii(M) - q)//2], if stem:[(ii(M) - q)//2] is an integer, or the integer part of stem:[(ii(M) - q + 1)//2], otherwise. The shortest stem:[100p " %"] coverage interval is given by determining stem:[r^∗] such that, for stem:[r = 1,..., ii(M) - q, y_{(r^∗ + q)} - y_{(r^{"*"})} <= y_{(r+q)} - y_{(r)}].
 
@@ -228,7 +228,7 @@ As <<ex1_7-9-2>> except that only one significant decimal digit in stem:[u(y)] i
 In a temperature measurement, stem:[u(y) = 2 ii(K)]. Then, stem:[n_{"dig"} = 1] and stem:[u(y) = 2 x 10^0 K], giving stem:[c = 2] and stem:[cc(l) = 0]. Thus, stem:[delta = 1/2 xx 10^0] stem:[K = 0.5 K].
 
 
-==== Objective of adaptive procedure
+==== Objective of adaptive procedure (((coverage probability)))
 
 The objective of the adaptive procedure given in <<scls_7-9-4>> is to provide
 
@@ -244,7 +244,7 @@ NOTE: Generally, the larger is the coverage probability, the larger is the numbe
 
 
 [[scls_7-9-4]]
-==== Adaptive procedure
+==== Adaptive procedure (((coverage interval,probabilistically symmetric)))(((coverage interval,statistical)))
 
 A practical approach, involving carrying out a sequence of applications of MCM, is as follows:
 

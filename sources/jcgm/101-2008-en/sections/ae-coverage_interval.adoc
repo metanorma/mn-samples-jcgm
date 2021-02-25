@@ -1,9 +1,9 @@
 
 [[annexE]]
 [appendix]
-== Coverage interval for the four-fold convolution of a rectangular distribution
+== Coverage interval for the four-fold convolution of a rectangular distribution (((convolution)))(((coverage interval)))
 
-=== {blank}
+=== {blank} (((coverage interval,probabilistically symmetric)))
 
 In <<scls_9-2-3-2>>, the analytic solution
 

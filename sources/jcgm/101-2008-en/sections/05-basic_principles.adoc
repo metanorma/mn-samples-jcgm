@@ -4,7 +4,7 @@
 === Main stages of uncertainty evaluation
 
 [[scls_5-1-1]]
-==== {blank}
+==== {blank} (((Cauchy distribution)))(((coverage interval)))(((coverage probability)))
 
 The main stages of uncertainty evaluation constitute formulation, propagation, and summarizing:
 
@@ -74,13 +74,13 @@ An estimate stem:[y] of stem:[ii(Y)] is the expectation stem:[ii(E)(ii(Y))]. The
 
 
 [[scls_5-3-2]]
-==== {blank}
+==== {blank} (((coverage interval)))(((coverage probability)))
 
 A coverage interval for stem:[ii(Y)] can be determined from stem:[ii(G)_Y (ii(eta))]. Let stem:[alpha] denote any numerical value between zero and stem:[1 - p], where stem:[p] is the required coverage probability. The endpoints of a stem:[100p " %"] coverage interval for stem:[ii(Y)] are stem:[G_Y^{-1}(alpha)] and stem:[G_Y^{-1} (p + alpha)], i.e. the stem:[alpha]- and stem:[(p + alpha)]-quantiles of stem:[G_Y (ii(eta))].
 
 
 [[scls_5-3-3]]
-==== {blank}
+==== {blank} (((coverage factor)))(((coverage interval,probabilistically symmetric)))
 
 The choice stem:[alpha = (1 - p)//2] gives the coverage interval defined by the stem:[(1 - p)//2]- and stem:[(1 + p)//2]-quantiles, providing a probabilistically symmetric stem:[100p " %"] coverage interval.
 
@@ -88,18 +88,18 @@ NOTE: When the PDF for stem:[ii(Y)] is symmetric about the estimate stem:[y], th
 
 
 [[scls_5-3-4]]
-==== {blank}
+==== {blank} index-range:coverage_interval_shortest[(((coverage interval,shortest)))]
 
 A numerical value of stem:[alpha] different from stem:[(1 - p)//2] may be more appropriate if the PDF is asymmetric. The shortest stem:[100p " %"] coverage interval can be used in this case. It has the property that, for a unimodal (single-peaked) PDF, it contains the mode, the most probable value of stem:[ii(Y)]. It is given by the numerical value of stem:[alpha] satisfying stem:[g_Y (G_Y^{-1}(alpha)) = g_Y (G_Y^{-1} (p + alpha))], if stem:[g_Y (ii(eta))] is unimodal, and in general by the numerical value of stem:[alpha] such that stem:[G_Y^{-1}(p + alpha) - G_Y^{-1}(alpha)] is a minimum.
 
 
-==== {blank}
+==== {blank} (((coverage interval,probabilistically symmetric)))
 
 The probabilistically symmetric stem:[100p " %"] coverage interval and the shortest stem:[100p " %"] coverage interval are identical for a symmetric PDF, such as the Gaussian and scaled and shifted stem:[t]-distribution used within the GUM uncertainty framework. Therefore, in comparing the GUM uncertainty framework with other approaches, either of these intervals can be used.
 
 
 [[scls_5-3-6]]
-==== {blank}
+==== {blank} (((coverage interval,probabilistically symmetric))) [[coverage_interval_shortest]]
 
 <<fig1>> shows the distribution function stem:[G_Y (ii(eta))] corresponding to an asymmetric PDF. Broken vertical lines mark the endpoints of the probabilistically symmetric 95 % coverage interval and broken horizontal lines the corresponding probability points, viz. 0.025 and 0.975. Continuous lines mark the endpoints of the shortest 95 % coverage interval and the corresponding probability points, which are 0.006 and 0.956 in this case. The lengths of the 95 % coverage intervals in the two cases are 1.76 unit and 1.69 unit, respectively.
 
@@ -154,7 +154,7 @@ In practice, only for simple cases can the propagation of distributions be imple
 [[scls_5-5]]
 === Reporting the results
 
-==== {blank}
+==== {blank} (((coverage interval)))(((coverage interval,probabilistically symmetric)))(((coverage interval,shortest)))(((coverage probability)))
 
 The following items would typically be reported following the use of the propagation of distributions:
 
@@ -200,7 +200,7 @@ The same results reported to one significant decimal digit in stem:[u(y)] would 
 The GUM provides general guidance on many aspects of the stages of uncertainty evaluation presented in <<scls_5-1-1>>. It also provides the GUM uncertainty framework for the propagation and summarizing stages of uncertainty evaluation. The GUM uncertainty framework has been adopted by many organizations, is widely used, and has been implemented in standards and guides on measurement uncertainty and also in software.
 
 
-==== {blank}
+==== {blank} (((best estimate,of an input quantity)))(((coverage interval,from GUM uncertainty framework)))
 
 The GUM uncertainty framework comprises the following stages. Each model input quantity stem:[ii(X)_i] is summarized by its expectation and standard deviation, as given by the PDF for that quantity <<JCGM-100,clause=4.1.6>>. The expectation is taken as the best estimate stem:[x_i] of stem:[ii(X)_i] and the standard deviation as the standard uncertainty stem:[u(x_i)] associated with stem:[x_i]. This information is propagated, using the law of propagation of uncertainty <<JCGM-100,clause=5.1.2>>, through a first- or higher-order Taylor series approximation to the model to provide
 
@@ -213,7 +213,7 @@ NOTE: The summaries of the stem:[ii(X)_i] also include, where appropriate, the d
 
 
 [[scls_5-6-3]]
-==== {blank}
+==== {blank} (((correlated input quantities)))(((covariance)))(((coverage interval,from GUM uncertainty framework)))(((coverage probability)))
 
 The propagation and summarizing stages of the GUM uncertainty framework (stages <<item_5-1-1b>> and <<item_5-1-1c>> in <<scls_5-1-1>>) constitute the following computational steps. Also see <<fig3>>, which illustrates the law of propagation of uncertainty for a model having stem:[ii(N) = 3] independent input quantities stem:[bb(X) = (ii(X)_1, ii(X)_2, ii(X)_3)^{sf(T)}], which are estimated by stem:[x_i] with associated standard uncertainties stem:[u(x_i)], stem:[i = 1, 2, 3]. The output quantity stem:[ii(Y)] is estimated by stem:[y], with associated standard uncertainty stem:[u(y)].
 
@@ -242,7 +242,7 @@ No condition is necessary for the valid application of the law of propagation of
 
 
 [[scls_5-7-2]]
-==== {blank}
+==== {blank} (((central limit theorem)))(((coverage interval,from GUM uncertainty framework)))
 
 A coverage interval can be determined, in terms of the information provided in the GUM, under the following conditions:
 
@@ -296,7 +296,7 @@ NOTE: If the analytical determination of the higher derivatives, required when t
 
 
 [[scls_5-8-2]]
-==== {blank}
+==== {blank} (((coverage interval,from GUM uncertainty framework)))
 
 A coverage interval can be determined, in terms of the information provided in the GUM, when conditions <<item_5-7-2a>>, <<item_5-7-2b>> and <<item_5-7-2c>> in <<scls_5-7-2>> apply, with the exception that the content of note 3 in that subclause is replaced by "Condition c) is required in order that coverage intervals can be determined from these distributions."
 
@@ -337,7 +337,7 @@ NOTE: It is remotely possible that equalities exist amongst the stem:[y_r], in w
 
 
 [[scls_5-9-6]]
-==== {blank}
+==== {blank} (((coverage interval,from Monte Carlo method)))(((coverage probability)))
 
 MCM as an implementation of the propagation of distributions is shown diagrammatically in <<fig4>> for stem:[ii(M)] provided in advance (see <<scls_7-9>> otherwise). MCM can be stated as a step-by-step procedure:
 
@@ -412,7 +412,7 @@ When the conditions in <<scls_5-10-1>> hold, the results from the application of
 The intention of this subclause is to compare the principles on which the GUM uncertainty framework and MCM as an implementation of the propagation of distributions are based. This subclause also provides some motivation for the use of MCM in circumstances where it is questionable whether the application of the GUM uncertainty framework is valid.
 
 
-==== {blank}
+==== {blank} (((average,of a set of indications)))(((best estimate,of an input quantity)))
 
 For the purposes of comparing the GUM uncertainty framework and MCM, it is helpful to review the considerations in the GUM regarding Type A and Type B evaluations of uncertainty. For Type A evaluation, the GUM provides guidance on obtaining a best estimate of a quantity and the associated standard uncertainty from the average and the associated standard deviation of a set of indications of the quantity, obtained independently. For Type B evaluation, prior knowledge concerning the quantity is used to characterize the quantity by a PDF, from which a best estimate of the quantity and the standard uncertainty associated with that estimate are determined. The GUM states that both types of evaluation are based on probability distributions <<JCGM-100,clause=3.3.4>>, and that both approaches employ recognized interpretations of probability <<JCGM-100,clause=3.3.5>>. The GUM considers PDFs as underpinning uncertainty evaluation: in the context of the law of propagation of uncertainty, it refers explicitly to input and output quantities as being describable or characterized by probability distributions <<JCGM-100,clause=G.6.6>>. Also see <<scls_5-1-2>>.
 
@@ -422,7 +422,7 @@ For the purposes of comparing the GUM uncertainty framework and MCM, it is helpf
 The GUM uncertainty framework does not explicitly determine a PDF for the output quantity. However, the probability distribution used by that framework to characterize the output quantity is sometimes referred to in this Supplement as "provided by" or "resulting from" the GUM uncertainty framework.
 
 
-==== {blank}
+==== {blank} (((coverage interval)))
 
 This Supplement attempts to provide an approach that is as consistent with the GUM as possible, especially relating to the use of PDFs for all quantities, but departs from it in a clearly identified way where appropriate. These departures are:
 
@@ -435,12 +435,12 @@ This Supplement attempts to provide an approach that is as consistent with the G
 . since the PDF for stem:[ii(Y)] is not in general symmetric, a coverage interval for stem:[ii(Y)] is not necessarily centred on the estimate of stem:[ii(Y)] . Consideration therefore needs to be given to the choice of coverage interval corresponding to a specified coverage probability.
 
 
-==== {blank}
+==== {blank} (((best estimate,of an input quantity)))
 
 Since the GUM uncertainty framework explicitly uses only best estimates stem:[x_i] and the associated uncertainties (and covariances and degrees of freedom where appropriate), it is restricted in the information it can provide about stem:[ii(Y)]. Essentially it is limited to providing an estimate stem:[y] of stem:[ii(Y)] and the standard uncertainty stem:[u(y)] associated with stem:[y], and perhaps the related (effective) degrees of freedom. stem:[y] and stem:[u(y)] will be valid for a model that is linear in stem:[ii(X)]. Any other information about stem:[ii(Y)], e.g. coverage intervals, is derived using additional assumptions, e.g. that the distribution for stem:[ii(Y)] is Gaussian or a scaled and shifted stem:[t]-distribution.
 
 
-==== {blank}
+==== {blank} (((central limit theorem)))(((coverage factor)))(((coverage interval)))
 
 Some features of MCM are
 

@@ -71,7 +71,7 @@ where the double prime on a summation symbol indicates that the first and the la
 NOTE: For a sufficiently large numerical value of stem:[ii(M)] (stem:[10^5], say, or greater), stem:[tilde(y)] and stem:[u(tilde(y))] obtained using <<eqd2>> and <<eqd3>> would generally be indistinguishable for practical purposes from those given by <<eq16>> and <<eq17>>, respectively.
 
 
-=== {blank}
+=== {blank} (((coverage interval)))(((coverage probability)))
 
 Let stem:[alpha] denote any value between zero and stem:[1 - p], where stem:[p] is the required coverage probability (e.g. 0.95). The endpoints of a stem:[100p " %"] coverage interval can be obtained from stem:[tilde(ii(G))(ii(eta))] by inverse linear interpolation. To determine the lower endpoint stem:[y_{"low"}] such that stem:[alpha = tilde(ii(G))_Y (y_{"low"})], identify the index stem:[r] for which the points stem:[(y_{(r)}, p_r)] and stem:[(y_{(r+1)}, p_{r+1})] satisfy
 
@@ -103,16 +103,16 @@ p_s <= p + alpha < p_{s+1}.
 ++++
 
 
-=== {blank}
+=== {blank} (((coverage interval,probabilistically symmetric)))
 
 The choice stem:[alpha = 0.025] gives the coverage interval defined by the 0.025- and 0.975-quantiles. This choice provides the probabilistically symmetric 95 % coverage interval for stem:[ii(Y)].
 
 
-=== {blank}
+=== {blank} (((coverage interval,shortest)))
 
 The shortest coverage interval can generally be obtained from stem:[tilde(ii(G))_Y (ii(eta))] by determining stem:[alpha] such that stem:[tilde(ii(G))_Y^{-1} (p + alpha) - tilde(ii(G))_Y^{-1} (alpha), = ii(H)(alpha)], say, is a minimum. A straightforward numerical approach to determining the minimum is to evaluate stem:[ii(H)(alpha)] for a large number of uniformly spaced choices stem:[{alpha_k}] of stem:[alpha] between zero and stem:[1 - p], and choose stem:[alpha_{cc(l)}] from the set stem:[{alpha_k}] that yields the minimum from the set stem:[{ii(H)(alpha_k)}].
 
 
-=== {blank}
+=== {blank} (((coverage interval,shortest)))
 
 The computation of a coverage interval is facilitated if stem:[pii(M)] is an integer. Then, the numerical value of stem:[alpha], such that stem:[ii(H)(alpha)] is a minimum, is equal to stem:[r^∗//ii(M)], where stem:[r^∗] is the index stem:[r] such that the interval length stem:[y_{(r+pii(M))} - y_{(r)}], over stem:[r = 1,..., (1 - p)ii(M)], is least.

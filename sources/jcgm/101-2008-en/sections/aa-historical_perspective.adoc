@@ -3,7 +3,7 @@
 [appendix]
 == Historical perspective
 
-=== {blank}
+=== {blank} (((convolution)))
 
 The GUM is a rich document, covering many aspects of uncertainty evaluation. Although it does not refer explicitly to the use of a Monte Carlo method, such use was recognized during the drafting of the GUM. The ISO/IEC/OIML/BIPM draft (First Edition) of June 1992, produced by ISO/TAG 4/WG 3, states [G.1.5]:
 

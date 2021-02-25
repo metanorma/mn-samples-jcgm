@@ -90,7 +90,7 @@ delta ii(Y) = u^2 (x_1) [ii(X)_1^2/{u^2 (x_1)} + ii(X)_2^2/{u^2(x_2)}].
 ++++
 
 
-==== {blank}
+==== {blank} (((chi-squared distribution)))
 
 The term in square brackets is the sum, stem:[ii(Z)], say, of the squares of two independent quantities, each of which is distributed as a standard Gaussian PDF. Thus the sum is distributed as chi-squared with two degrees of freedom <<Rice1995,page=177>>, so that
 
@@ -147,7 +147,7 @@ G_Y (ii(eta)) = 1 - exp(- ii(eta)/{2u^2(x_1)}), " " ii(eta) >= 0.
 ++++
 
 
-==== {blank}
+==== {blank} (((coverage interval)))
 
 Let stem:[delta y_{alpha}] be that stem:[ii(eta)] in <<eqf3>> corresponding to stem:[ii(G)_Y (ii(eta)) = alpha] for any stem:[alpha] satisfying stem:[0 <= alpha <= 1-p]. Then
 
@@ -172,7 +172,7 @@ H(alpha) = -2u^2(x_1)ln(1 - p/{1 - alpha}).
 ++++
 
 
-==== {blank}
+==== {blank} (((coverage interval,shortest)))
 
 The shortest stem:[100p " %"] coverage interval is given by determining stem:[alpha] to minimize stem:[ii(H)(alpha)] (see <<scls_5-3-4>>). Since stem:[ii(H)(alpha)] is a strictly increasing function of stem:[alpha] for stem:[0 <= alpha <= 1 - p], stem:[ii(H)(alpha)] is minimized when stem:[alpha = 0]. Thus, the shortest stem:[100p " %"] coverage interval for stem:[delta ii(Y)] is
 
@@ -188,7 +188,7 @@ For stem:[u(x_1) = 0.005], the shortest 95 % coverage interval is
 [0, 0.0001498].
 ++++
 
-==== {blank}
+==== {blank} (((coverage interval,probabilistically symmetric)))(((coverage interval,shortest)))
 
 The 95 % probabilistically symmetric coverage interval for stem:[delta ii(Y)] is given by setting stem:[alpha = (1 - p)//2] (see <<scls_5-3-3>>):
 
@@ -263,7 +263,7 @@ u^2(delta y) = 4x_1^2 u^2(x_1) + 4x_2^2 u^2(x_2) + 4u^2 (x_1)u^2(x_2).
 ++++
 
 
-===== {blank}
+===== {blank} (((coverage interval)))
 
 A 95 % coverage interval for stem:[delta ii(Y)] is given by
 
@@ -276,7 +276,7 @@ as a consequence of stem:[delta ii(Y)] having a Gaussian PDF.
 
 
 [[scls_F-3-2]]
-==== Correlated input quantities
+==== Correlated input quantities (((correlated input quantities)))
 
 ===== {blank}
 

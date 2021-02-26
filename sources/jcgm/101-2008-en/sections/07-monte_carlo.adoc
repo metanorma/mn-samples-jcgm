@@ -15,7 +15,7 @@ This clause gives information about the implementation of a Monte Carlo method f
 
 A value of stem:[ii(M)], the number of Monte Carlo trials, i.e. the number of model evaluations to be made, needs to be selected. It can be chosen a _priori_, in which case there will be no direct control over the quality of the numerical results provided by MCM. The reason is that the number of trials needed to provide these results to a prescribed ((numerical tolerance)) will depend on the "shape" of the PDF for the output quantity and on the coverage probability required. Also, the calculations are stochastic in nature, being based on random sampling.
 
-NOTE: A value of stem:[ii(M) = 10^6] can often be expected to deliver a 95 % coverage interval for the output quantity such that this length is correct to one or two significant decimal digits.
+NOTE: A value of stem:[ii(M) = 10^6] can often be expected to deliver a 95 % coverage interval for the output quantity such that this length is correct to one or two ((significant decimal digits)).
 
 
 ==== {blank}
@@ -31,7 +31,7 @@ NOTE: If the model is complicated, e.g. involving the solution of a finite-eleme
 
 
 [[scls_7-3]]
-=== Sampling from probability distributions (((Monte Carlo method (MCM),sampling from probability distributions)))(((probability density function (PDF),for input quantities)))(((probability density function (PDF),joint)))(((probability density function (PDF),sampling from)))(((probability distribution,sampling from)))
+=== Sampling from probability distributions (((Monte Carlo method (MCM),sampling from probability distributions)))(((probability density function (PDF),for input quantities)))(((probability density function (PDF),joint)))(((probability density function (PDF),sampling from)))(((probability distribution,sampling from)))(((tests of randomness)))
 
 In an implementation of MCM, stem:[ii(M)] vectors stem:[bb(x)_r], stem:[r = 1,...,ii(M)] (see <<scls_7-2>>), are drawn from the PDFs stem:[g_{ii(X)_i} (xi_i)] for the N input quantities stem:[ii(X)_i]. Draws would be made from the joint (multivariate) PDF stem:[g_X (xi)] if appropriate. Recommendations concerning the manner in which this sampling can be carried out are given in <<annexC>>for the commonest distributions, viz. the rectangular, Gaussian, stem:[t], and multivariate Gaussian. Also see <<scls_6-4>>. It is possible to draw at random from any other distribution. See <<scls_C-2>>. Some such distributions could be approximations to distributions based on Monte Carlo results from a previous uncertainty calculation (see <<scls_6-5>>, <<scls_7-5>> and <<annexD>>).
 
@@ -56,14 +56,14 @@ y_r = f(bb(x)_r), r = 1,...,ii(M).
 
 The necessary modifications are made to <<scls_7-4-1>> if the stem:[ii(X)_i] are not independent and hence a joint PDF is assigned to them.
 
-NOTE: Model and derivative evaluations are made when applying the law of ((propagation of uncertainty)), using exact derivatives, at the best estimates of the input quantities. Model evaluations only are made when applying the law of ((propagation of uncertainty)) when numerical (finite-difference) approximations to derivatives are used. These evaluations are made, if the GUM recommendation <<JCGM-100,clause=5.1.3 note 2>> is adopted, at the best estimates of the input quantities and at points perturbed by stem:[+-] one standard uncertainty from each estimate in turn. With MCM, model evaluations are made in the neighbourhood of these best estimates, viz. at points that can be expected to be up to several standard uncertainties away from these estimates. The fact that model evaluations are made at different points according to the approach used may raise issues regarding the numerical procedure used to evaluate the model, e.g. ensuring its convergence (where iterative schemes are used) and numerical stability. The user should ensure that, where appropriate, the numerical methods used to evaluate stem:[f] are valid for a sufficiently large region containing these best estimates. Only occasionally would it be expected that this aspect is critical.
+NOTE: Model and derivative evaluations are made when applying the law of ((propagation of uncertainty)), using exact derivatives, at the best estimates of the input quantities. Model evaluations only are made when applying the law of ((propagation of uncertainty)) when numerical (finite-difference) approximations to derivatives are used. These evaluations are made, if the GUM recommendation <<JCGM-100,clause=5.1.3 note 2>> is adopted, at the best estimates of the input quantities and at points perturbed by stem:[+-] one ((standard uncertainty)) from each estimate in turn. With MCM, model evaluations are made in the neighbourhood of these best estimates, viz. at points that can be expected to be up to several standard uncertainties away from these estimates. The fact that model evaluations are made at different points according to the approach used may raise issues regarding the numerical procedure used to evaluate the model, e.g. ensuring its convergence (where iterative schemes are used) and numerical stability. The user should ensure that, where appropriate, the numerical methods used to evaluate stem:[f] are valid for a sufficiently large region containing these best estimates. Only occasionally would it be expected that this aspect is critical.
 
 
 [[scls_7-5]]
 === Discrete representation of the distribution function for the output quantity (((distribution function,for output quantity)))
 
 [[scls_7-5-1]]
-==== {blank} (((mode)))(((probability)))
+==== {blank} (((mode)))(((probability)))(((skewness)))(((sorting algorithm)))
 
 A discrete representation stem:[bb(G)] of the distribution function stem:[ii(G)_Y (ii(eta))] for the output quantity stem:[ii(Y)] can be obtained as follows:
 
@@ -98,7 +98,7 @@ A continuous approximation to stem:[ii(G)_Y (ii(eta))] is sometimes useful. <<an
 
 
 [[scls_7-6]]
-=== Estimate of the output quantity and the associated standard uncertainty (((average,of sampled model values)))(((coverage interval,from Monte Carlo method)))(((Estimate of output quantity,from Monte Carlo method)))(((probability density function (PDF),for input quantities)))
+=== Estimate of the output quantity and the associated standard uncertainty (((average,of sampled model values)))(((coverage interval,from Monte Carlo method)))(((Estimate of output quantity,from Monte Carlo method)))(((probability density function (PDF),for input quantities)))(((standard deviation,of sampled model values)))(((standard uncertainty,from Monte Carlo method)))
 
 The average
 
@@ -127,7 +127,7 @@ are taken, respectively, as an estimate stem:[y] of stem:[ii(Y)] and the standar
 u^2(tilde(y)) = {ii(M)}/{ii(M) - 1} (1/{ii(M)} sum_{r=1}^{ii(M)} y_r^2 - tilde(y)^2)
 ++++
 
-For the many circumstances in metrology in which stem:[u(y)] is much smaller than stem:[|y|] (in which case the stem:[y_r] have a number of leading decimal digits in common) the latter formula suffers numerically from subtractive cancellation (involving a mean square less a squared mean). This effect can be so severe that the resulting numerical value might have too few correct significant decimal digits for the uncertainty evaluation to be valid <<Chan1983>>.
+For the many circumstances in metrology in which stem:[u(y)] is much smaller than stem:[|y|] (in which case the stem:[y_r] have a number of leading decimal digits in common) the latter formula suffers numerically from subtractive cancellation (involving a mean square less a squared mean). This effect can be so severe that the resulting numerical value might have too few correct ((significant decimal digits)) for the uncertainty evaluation to be valid <<Chan1983>>.
 ====
 
 NOTE: In some special circumstances, such as when one of the input quantities has been assigned a PDF based on the stem:[t]-distribution with fewer than three ((degrees of freedom)), the ((expectation)) and standard deviation of stem:[ii(Y)], as described by the PDF stem:[g_Y (ii(eta))], might not exist. <<eq16>> and <<eq17>> might not then provide meaningful results. A coverage interval for stem:[ii(Y)] (see <<scls_7-7>>) can, however, be formed, since stem:[bb(G)] is meaningful and can be determined.
@@ -165,7 +165,7 @@ The computation time for MCM is dominated by that required for the following thr
 . [[item_7-8-1c]]sort the resulting stem:[ii(M)] model values into non-decreasing order.
 
 
-==== {blank}
+==== {blank} (((sorting algorithm)))
 
 The times taken in the three steps are directly proportional to (a) stem:[ii(M)], (b) stem:[ii(M)], and (&#x200c;c) stem:[ii(M) ln ii(M)] (if an efficient sort algorithm <<Scowen1965>> is used).
 
@@ -198,13 +198,13 @@ Assign a Gaussian PDF to each input quantity stem:[ii(X)_i]. Make stem:[ii(M) = 
 [[scls_7-9-1]]
 ==== General (((Monte Carlo method (MCM),number of trials)))
 
-A basic implementation of an adaptive Monte Carlo procedure involves carrying out an increasing number of Monte Carlo trials until the various results of interest have stabilized in a statistical sense. A numerical result is deemed to have stabilized if twice the standard deviation associated with it is less than the ((numerical tolerance)) (see <<scls_7-9-2>>) associated with the standard uncertainty stem:[u(y)].
+A basic implementation of an adaptive Monte Carlo procedure involves carrying out an increasing number of Monte Carlo trials until the various results of interest have stabilized in a statistical sense. A numerical result is deemed to have stabilized if twice the standard deviation associated with it is less than the ((numerical tolerance)) (see <<scls_7-9-2>>) associated with the ((standard uncertainty)) stem:[u(y)].
 
 
 [[scls_7-9-2]]
 ==== Numerical tolerance associated with a numerical value
 
-Let stem:[n_{"dig"}] denote the number of significant decimal digits regarded as meaningful in a numerical value stem:[z]. The ((numerical tolerance)) stem:[delta] associated with stem:[z] is given as follows:
+Let stem:[n_{"dig"}] denote the number of ((significant decimal digits)) regarded as meaningful in a numerical value stem:[z]. The ((numerical tolerance)) stem:[delta] associated with stem:[z] is given as follows:
 
 . express stem:[z] in the form stem:[c xx 10^{cc(l)}], where stem:[c] is an stem:[n_{"dig"}] decimal digit integer and stem:[cc(l)] an integer;
 . take
@@ -219,7 +219,7 @@ delta = 1/2  10^{cc(l)}.
 
 [[ex1_7-9-2]]
 [example]
-The estimate of the output quantity for a nominally 100 g measurement standard of mass <<JCGM-100,clause=7.2.2>> is stem:[y = 100.02147" "rm(g)]. The standard uncertainty stem:[u(y) = 0.00035" "rm(g)], both significant digits being regarded as meaningful. Thus, stem:[n_{"dig"} = 2] and stem:[u(y)] can be expressed as stem:[35 xx 10^{-5}" " rm(g)], and so stem:[c = 35] and stem:[cc(l) = -5]. Take stem:[delta = 1/2 xx 10^{-5}] stem:[g = 0.000005 " "rm(g)].
+The estimate of the output quantity for a nominally 100 g measurement standard of mass <<JCGM-100,clause=7.2.2>> is stem:[y = 100.02147" "rm(g)]. The ((standard uncertainty)) stem:[u(y) = 0.00035" "rm(g)], both significant digits being regarded as meaningful. Thus, stem:[n_{"dig"} = 2] and stem:[u(y)] can be expressed as stem:[35 xx 10^{-5}" " rm(g)], and so stem:[c = 35] and stem:[cc(l) = -5]. Take stem:[delta = 1/2 xx 10^{-5}] stem:[g = 0.000005 " "rm(g)].
 
 [example]
 As <<ex1_7-9-2>> except that only one significant decimal digit in stem:[u(y)] is regarded as meaningful. Thus, stem:[n_{"dig"} = 1] and stem:[u(y) = 0.0004" "rm(g) = 4 xx 10^{-4}" "rm(g)], giving stem:[c = 4] and stem:[cc(l) = -4]. Hence, stem:[delta = 1/2 xx 10^{-4}] stem:[g = 0.00005" "rm(g)].
@@ -233,7 +233,7 @@ In a temperature measurement, stem:[u(y) = 2 ii(K)]. Then, stem:[n_{"dig"} = 1] 
 The objective of the adaptive procedure given in <<scls_7-9-4>> is to provide
 
 . an estimate stem:[y] of stem:[ii(Y)],
-. an associated standard uncertainty stem:[u(y)], and
+. an associated ((standard uncertainty)) stem:[u(y)], and
 . the endpoints stem:[y_{"low"}] and stem:[y_{"high"}] of a coverage interval for stem:[ii(Y)] corresponding to a stipulated coverage probability such that each of these four values can be expected to meet the ((numerical tolerance)) required.
 
 NOTE: By its stochastic nature, the procedure cannot be guaranteed to provide such an interval.
@@ -262,7 +262,7 @@ where stem:[ii(J)] is the smallest integer greater than or equal to stem:[100//(
 
 . set stem:[h = 1], denoting the first application of MCM in the sequence;
 . [[item_7-9-4d]]carry out stem:[ii(M)] Monte Carlo trials, as in <<scls_7-3>> and <<scls_7-4>>;
-. use the stem:[ii(M)] model values stem:[y_1,..., y_M] so obtained to calculate, as in <<scls_7-5>> to <<scls_7-7>>, stem:[y^{(h)}], stem:[u(y^{(h)})], stem:[y_{"low"}^{(h)}] and stem:[y_{"high"}^{(h)}] as an estimate of stem:[ii(Y)], the associated standard uncertainty, and the left- and right-hand endpoints of a stem:[100p " %"] coverage interval, respectively, i.e. for the __h__th member of the sequence;
+. use the stem:[ii(M)] model values stem:[y_1,..., y_M] so obtained to calculate, as in <<scls_7-5>> to <<scls_7-7>>, stem:[y^{(h)}], stem:[u(y^{(h)})], stem:[y_{"low"}^{(h)}] and stem:[y_{"high"}^{(h)}] as an estimate of stem:[ii(Y)], the associated ((standard uncertainty)), and the left- and right-hand endpoints of a stem:[100p " %"] coverage interval, respectively, i.e. for the __h__th member of the sequence;
 . if stem:[h = 1], increase stem:[h] by one and return to step <<item_7-9-4d>>;
 . [[item_7-9-4g]]calculate the standard deviation stem:[s_y] associated with the average of the estimates stem:[y^{(1)},..., y^{(h)}] of stem:[ii(Y)], given by
 +
@@ -291,7 +291,7 @@ NOTE: Normally stem:[n_{"dig"}] in step <<item_7-9-4a>> would be chosen to be 1 
 
 NOTE: The choice of stem:[ii(M)] in step <<item_7-9-4b>> is arbitrary, but has been found suitable in practice.
 
-NOTE: In step <<item_7-9-4g>>, stem:[y] can be regarded as a realization of a random variable with standard deviation stem:[s_y].
+NOTE: In step <<item_7-9-4g>>, stem:[y] can be regarded as a realization of a ((random variable)) with standard deviation stem:[s_y].
 
 NOTE: The standard deviations formed in steps <<item_7-9-4g>> and <<item_7-9-4h>> tend to reduce in a manner proportional to stem:[h^{-1//2}] (cf. <<scls_5-9-6>> <<note2_5-9-6>>).
 

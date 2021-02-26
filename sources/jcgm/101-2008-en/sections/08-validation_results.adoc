@@ -13,14 +13,14 @@ The GUM uncertainty framework can be expected to work well in many circumstances
 
 Specifically, it is recommended that the two steps below and the following comparison process be carried out:
 
-. apply the GUM uncertainty framework (possibly with the law of ((propagation of uncertainty)) based on a higher-order Taylor series approximation) (see <<scls_5-6>>) to yield a stem:[100p " %"] coverage interval stem:[y +- U_p] for the output quantity, where stem:[p] is the stipulated coverage probability;
+. apply the GUM uncertainty framework (possibly with the law of ((propagation of uncertainty)) based on a higher-order ((Taylor series approximation))) (see <<scls_5-6>>) to yield a stem:[100p " %"] coverage interval stem:[y +- U_p] for the output quantity, where stem:[p] is the stipulated coverage probability;
 
-. apply the adaptive Monte Carlo procedure (see <<scls_7-9-4>>) to provide (approximations to) the standard uncertainty stem:[u(y)] and the endpoints stem:[y_{"low"}] and stem:[y_{"high"}] of the required (probabilistically symmetric or shortest) stem:[100p " %"] coverage interval for the output quantity. Also see <<scls_8-2>>.
+. apply the adaptive Monte Carlo procedure (see <<scls_7-9-4>>) to provide (approximations to) the ((standard uncertainty)) stem:[u(y)] and the endpoints stem:[y_{"low"}] and stem:[y_{"high"}] of the required (probabilistically symmetric or shortest) stem:[100p " %"] coverage interval for the output quantity. Also see <<scls_8-2>>.
 
 
 ==== {blank} (((coverage probability)))
 
-A comparison procedure has the following objective: determine whether the coverage intervals obtained by the GUM uncertainty framework and MCM agree to within a stipulated ((numerical tolerance)). This ((numerical tolerance)) is assessed in terms of the endpoints of the coverage intervals and corresponds to that given by expressing the standard uncertainty stem:[u(y)] to what is regarded as a meaningful number of significant decimal digits (cf. <<scls_7-9-2>>). The procedure is as follows:
+A comparison procedure has the following objective: determine whether the coverage intervals obtained by the GUM uncertainty framework and MCM agree to within a stipulated ((numerical tolerance)). This ((numerical tolerance)) is assessed in terms of the endpoints of the coverage intervals and corresponds to that given by expressing the ((standard uncertainty)) stem:[u(y)] to what is regarded as a meaningful number of ((significant decimal digits)) (cf. <<scls_7-9-2>>). The procedure is as follows:
 
 . form a ((numerical tolerance)) stem:[delta] associated with stem:[u(y)] as described in <<scls_7-9-2>>;
 . compare the coverage intervals obtained by the GUM uncertainty framework and MCM to determine whether the required number of correct decimal digits in the coverage interval provided by the GUM uncertainty framework has been obtained. Specifically, determine
@@ -47,6 +47,6 @@ NOTE: The choice of stem:[100p" "%] coverage interval will influence the compari
 [[scls_8-2]]
 === Obtaining results from a Monte Carlo method for validation purposes
 
-A sufficient number stem:[ii(M)] of Monte Carlo trials (see <<scls_7-2>>) should be performed in obtaining MCM results for the validation purposes of <<scls_8-1>>. Let stem:[n_{"dig"}] denote the number of significant decimal digits required in stem:[u(y)] (see <<scls_7-9-1>>) when validating the GUM uncertainty framework using MCM. Let stem:[delta] denote the ((numerical tolerance)) associated with stem:[u(y)] (see <<scls_7-9-2>>). Then it is recommended that the adaptive Monte Carlo procedure (see <<scls_7-9-4>>) be used to provide MCM results to a ((numerical tolerance)) of stem:[delta//5]. Such results can be obtained by replacing stem:[delta] by stem:[delta//5] in step <<item_7-9-4k>> of that procedure.
+A sufficient number stem:[ii(M)] of Monte Carlo trials (see <<scls_7-2>>) should be performed in obtaining MCM results for the validation purposes of <<scls_8-1>>. Let stem:[n_{"dig"}] denote the number of ((significant decimal digits)) required in stem:[u(y)] (see <<scls_7-9-1>>) when validating the GUM uncertainty framework using MCM. Let stem:[delta] denote the ((numerical tolerance)) associated with stem:[u(y)] (see <<scls_7-9-2>>). Then it is recommended that the adaptive Monte Carlo procedure (see <<scls_7-9-4>>) be used to provide MCM results to a ((numerical tolerance)) of stem:[delta//5]. Such results can be obtained by replacing stem:[delta] by stem:[delta//5] in step <<item_7-9-4k>> of that procedure.
 
 NOTE: It can be expected that the use of a ((numerical tolerance)) of stem:[delta//5] would require a value of stem:[ii(M)] of the order of 25 times that for a ((numerical tolerance)) of stem:[delta]. Such a value of stem:[ii(M)] might present efficiency problems for some computers in operating with vector arrays of dimension stem:[ii(M)]. In such a case, calculations can instead be based on an approximation to stem:[g_Y (ii(eta))] derived from a suitable histogram of the stem:[y_r], in which the cell frequencies in the histogram are updated as the Monte Carlo calculation proceeds. Cf. <<scls_7-8-3>> <<note1_7-8-3>>.

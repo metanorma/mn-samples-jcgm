@@ -20,12 +20,12 @@ Some of the examples further show whether the MCM results provided in <<item_9-1
 
 
 [[scls_9-1-3]]
-==== {blank}
+==== {blank} (((reporting the results)))
 
-Results are generally reported in the manner described in <<scls_5-5>>. However, more than the recommended one or two significant decimal digits are often given to facilitate comparison of the results obtained from the various approaches.
+Results are generally reported in the manner described in <<scls_5-5>>. However, more than the recommended one or two ((significant decimal digits)) are often given to facilitate comparison of the results obtained from the various approaches.
 
 
-==== {blank}
+==== {blank} (((rectangular distribution,sampling from)))
 
 The Mersenne Twister generator <<Matsumoto1998>> was used to generate pseudo-random numbers from a rectangular distri-bution (see <<scls_C-3>>). It passes a comprehensive test for pseudo-random numbers drawn from a rectangular distribution <<Ecuyerm>> (see <<scls_C-3-2>>) and is available within MATLAB <<Moler2004>>, the programming environment used to produce the results given here.
 
@@ -37,7 +37,7 @@ The first example (see <<scls_9-2>>) constitutes an additive model. It demonstra
 
 ==== {blank}
 
-The second example (see <<scls_9-3>>) is a calibration problem from mass metrology. It demonstrates that the GUM uncertainty framework is valid in this instance only if the contributions derived from higher-order terms in the Taylor series approximation of the model function are included.
+The second example (see <<scls_9-3>>) is a calibration problem from mass metrology. It demonstrates that the GUM uncertainty framework is valid in this instance only if the contributions derived from higher-order terms in the ((Taylor series approximation)) of the model function are included.
 
 
 ==== {blank}
@@ -86,7 +86,7 @@ NOTE: The probabilistically symmetric 95 % coverage interval is determined, beca
 [[scls_9-2-2-3]]
 ===== {blank} (((coverage factor)))(((coverage interval,probabilistically symmetric)))
 
-The law of ((propagation of uncertainty)) <<JCGM-100,clause=5.1.2>> gives the estimate stem:[y = 0.0] of stem:[ii(Y)] and associated standard uncertainty stem:[u(y) = 2.0], using a ((numerical tolerance)) of two significant decimal digits for stem:[u(y) (delta = 0.05)] (see <<scls_5-5>>). A probabilistically symmetric 95 % coverage interval for stem:[ii(Y)], based on a coverage factor of 1.96, is stem:[[-3.9, 3.9\]].
+The law of ((propagation of uncertainty)) <<JCGM-100,clause=5.1.2>> gives the estimate stem:[y = 0.0] of stem:[ii(Y)] and associated ((standard uncertainty)) stem:[u(y) = 2.0], using a ((numerical tolerance)) of two ((significant decimal digits)) for stem:[u(y) (delta = 0.05)] (see <<scls_5-5>>). A probabilistically symmetric 95 % coverage interval for stem:[ii(Y)], based on a coverage factor of 1.96, is stem:[[-3.9, 3.9\]].
 
 
 ===== {blank} (((coverage interval,probabilistically symmetric)))(((probability density function (PDF),sampling from)))
@@ -130,7 +130,7 @@ image::figure6.png[]
 [[scls_9-2-2-7]]
 ===== {blank} (((GUM uncertainty framework (GUF),validation of)))
 
-Columns 6 to 8 of <<table2>> also shows the results of applying the validation procedures of <<scls_8-1>> and <<scls_8-2>>. Using the terminology of <<scls_7-9-2>>, stem:[n_{"dig"} = 2], since two significant decimal digits in stem:[u(y)] are sought. Hence, stem:[u(y) = 2.0 = 20 xx 10^{-1}], and so stem:[c = 20] and stem:[cc(l) = -1]. Thus, according to <<scls_7-9-2>>, the ((numerical tolerance)) is
+Columns 6 to 8 of <<table2>> also shows the results of applying the validation procedures of <<scls_8-1>> and <<scls_8-2>>. Using the terminology of <<scls_7-9-2>>, stem:[n_{"dig"} = 2], since two ((significant decimal digits)) in stem:[u(y)] are sought. Hence, stem:[u(y) = 2.0 = 20 xx 10^{-1}], and so stem:[c = 20] and stem:[cc(l) = -1]. Thus, according to <<scls_7-9-2>>, the ((numerical tolerance)) is
 
 [stem%unnumbered]
 ++++
@@ -157,7 +157,7 @@ Subclause <<scls_9-4>> provides an example of an asymmetric PDF for which the sh
 
 
 [[scls_9-2-3]]
-==== Rectangularly distributed input quantities with the same width
+==== Rectangularly distributed input quantities with the same width (((rectangular distribution)))
 
 ===== {blank} (((best estimate,of an input quantity)))
 
@@ -211,7 +211,7 @@ Consider the example of <<scls_9-2-3>>, except that stem:[ii(X)_4] has a standar
 
 ===== {blank}
 
-The numbers stem:[ii(M)] of Monte Carlo trials taken by the adaptive procedure (stem:[0.03 xx 10^6] and stem:[0.08 xx 10^6]) are much smaller than they were for the two previous cases in this example. The main reason is that, in this case, stem:[delta = 0.5], the ((numerical tolerance)) resulting from requesting, as before, two significant decimal digits in stem:[u(y)], is ten times the previous value. Were the previous value to be used, stem:[ii(M)] would be of the order of 100 times greater.
+The numbers stem:[ii(M)] of Monte Carlo trials taken by the adaptive procedure (stem:[0.03 xx 10^6] and stem:[0.08 xx 10^6]) are much smaller than they were for the two previous cases in this example. The main reason is that, in this case, stem:[delta = 0.5], the ((numerical tolerance)) resulting from requesting, as before, two ((significant decimal digits)) in stem:[u(y)], is ten times the previous value. Were the previous value to be used, stem:[ii(M)] would be of the order of 100 times greater.
 
 
 [[table4]]
@@ -325,9 +325,9 @@ NOTE: Applying the law of ((propagation of uncertainty)) to the "exact" model <<
 
 
 [[scls_9-3-1-4]]
-===== {blank} (((best estimate,of an input quantity)))(((Gaussian distribution,assignment to a quantity)))
+===== {blank} (((best estimate,of an input quantity)))(((Gaussian distribution,assignment to a quantity)))(((rectangular distribution,assignment to a quantity)))
 
-The only information available concerning stem:[m_{R,c}] and stem:[delta m_{R,c}] is a best estimate and an associated standard uncertainty for each of these quantities. Accordingly, following <<scls_6-4-7-1>>, a ((Gaussian distribution)) is assigned to each of these quantities, with these best estimates used as the expectations of the corresponding quantities and the associated standard uncertainties as the standard deviations. The only information available concerning stem:[ii(rho)_a], stem:[ii(rho)_W] and stem:[ii(rho)_R] is lower and upper limits for each of these quantities. Accordingly, following <<scls_6-4-2-1>>, a rectangular distribution is assigned to each of these quantities, with limits equal to the endpoints of the distribution. <<table5>> summarizes the input quantities and the PDFs assigned. In the table, a ((Gaussian distribution)) stem:[N(ii(mu), ii(sigma)^2)] is described in terms of ((expectation)) stem:[ii(mu)] and standard deviation stem:[ii(sigma)], and a rectangular distribution stem:[R(a, b)] with endpoints stem:[a] and stem:[b(a < b)] in terms of expectation stem:[(a + b)//2] and semi-width stem:[(b - a)//2].
+The only information available concerning stem:[m_{R,c}] and stem:[delta m_{R,c}] is a best estimate and an associated ((standard uncertainty)) for each of these quantities. Accordingly, following <<scls_6-4-7-1>>, a ((Gaussian distribution)) is assigned to each of these quantities, with these best estimates used as the expectations of the corresponding quantities and the associated standard uncertainties as the standard deviations. The only information available concerning stem:[ii(rho)_a], stem:[ii(rho)_W] and stem:[ii(rho)_R] is lower and upper limits for each of these quantities. Accordingly, following <<scls_6-4-2-1>>, a rectangular distribution is assigned to each of these quantities, with limits equal to the endpoints of the distribution. <<table5>> summarizes the input quantities and the PDFs assigned. In the table, a ((Gaussian distribution)) stem:[N(ii(mu), ii(sigma)^2)] is described in terms of ((expectation)) stem:[ii(mu)] and standard deviation stem:[ii(sigma)], and a rectangular distribution stem:[R(a, b)] with endpoints stem:[a] and stem:[b(a < b)] in terms of expectation stem:[(a + b)//2] and semi-width stem:[(b - a)//2].
 
 
 NOTE: The quantity stem:[ii(rho)_{a_0}] in the mass calibration model <<eq24,(24)>> is assigned the value stem:[1.2 " "rm(kg//m)^3] with no associated uncertainty.
@@ -353,7 +353,7 @@ NOTE: The quantity stem:[ii(rho)_{a_0}] in the mass calibration model <<eq24,(24
 [[scls_9-3-2-1]]
 ===== {blank} (((coverage interval,shortest)))(((GUM uncertainty framework (GUF),with higher-order terms)))
 
-The GUM uncertainty framework and the adaptive Monte Carlo procedure (see <<scls_7-9>>) were each used to obtain an estimate stem:[hat(delta m)] of stem:[delta m], the associated standard uncertainty stem:[u(hat(delta m))], and the shortest 95 % coverage interval for stem:[delta m]. The results obtained are shown in <<table6>>, in which GUF~1~ denotes the GUM uncertainty framework with first-order terms, MCM the adaptive Monte Carlo procedure, and GUF~2~ the GUM uncertainty framework with higher-order terms.
+The GUM uncertainty framework and the adaptive Monte Carlo procedure (see <<scls_7-9>>) were each used to obtain an estimate stem:[hat(delta m)] of stem:[delta m], the associated ((standard uncertainty)) stem:[u(hat(delta m))], and the shortest 95 % coverage interval for stem:[delta m]. The results obtained are shown in <<table6>>, in which GUF~1~ denotes the GUM uncertainty framework with first-order terms, MCM the adaptive Monte Carlo procedure, and GUF~2~ the GUM uncertainty framework with higher-order terms.
 
 
 ===== {blank}
@@ -386,13 +386,13 @@ image::figure10.png[]
 
 ===== {blank}
 
-The results show that, although the GUM uncertainty framework (first order) and MCM give estimates of stem:[delta m] in good agreement, the numerical values for the associated standard uncertainty are noticeably different. The value (0.0754 mg) of stem:[u(hat(delta m))] returned by MCM is 40 % larger than that (0.0539 mg) returned by the GUM uncertainty framework (first order). The latter is thus optimistic in this respect. There is good agreement between stem:[u(hat(delta m))] determined by MCM and that (stem:[0.0750" "rm(mg)]) provided by the GUM uncertainty framework with higher-order terms.
+The results show that, although the GUM uncertainty framework (first order) and MCM give estimates of stem:[delta m] in good agreement, the numerical values for the associated ((standard uncertainty)) are noticeably different. The value (0.0754 mg) of stem:[u(hat(delta m))] returned by MCM is 40 % larger than that (0.0539 mg) returned by the GUM uncertainty framework (first order). The latter is thus optimistic in this respect. There is good agreement between stem:[u(hat(delta m))] determined by MCM and that (stem:[0.0750" "rm(mg)]) provided by the GUM uncertainty framework with higher-order terms.
 
 
 [[scls_9-3-2-5]]
 ===== {blank}
 
-<<table7>> contains the partial derivatives of first order for the model <<eq24,(24)>> with respect to the input quantities together with the sensitivity coefficients, viz. these derivatives evaluated at the best estimates of the input quantities. These derivatives indicate that, for the purposes of the GUM uncertainty framework with first-order terms, the model for this example can be considered as being replaced by the additive model
+<<table7>> contains the partial derivatives of first order for the model <<eq24,(24)>> with respect to the input quantities together with the ((sensitivity coefficients)), viz. these derivatives evaluated at the best estimates of the input quantities. These derivatives indicate that, for the purposes of the GUM uncertainty framework with first-order terms, the model for this example can be considered as being replaced by the additive model
 
 [stem%unnumbered]
 ++++
@@ -484,7 +484,7 @@ taken as the model of measurement. For physical reasons, stem:[0 <= ii(Y) <= 1],
 
 ===== {blank}
 
-The determination of an estimate stem:[delta y] of stem:[delta ii(Y)], the associated standard uncertainty stem:[u(delta y)], and a coverage interval for stem:[delta ii(Y)] will be considered for choices of stem:[x_1], stem:[x_2], stem:[u(x_1)], stem:[u(x_2)] and stem:[r(x_1, x_2)]. All quantities have dimension 1.
+The determination of an estimate stem:[delta y] of stem:[delta ii(Y)], the associated ((standard uncertainty)) stem:[u(delta y)], and a coverage interval for stem:[delta ii(Y)] will be considered for choices of stem:[x_1], stem:[x_2], stem:[u(x_1)], stem:[u(x_2)] and stem:[r(x_1, x_2)]. All quantities have dimension 1.
 
 
 [[scls_9-4-1-7]]
@@ -542,7 +542,7 @@ MCM is applied in each case with stem:[ii(M) = 10^6] trials.
 [[scls_9-4-2-2-1]]
 ====== {blank} (((GUM uncertainty framework (GUF),with higher-order terms)))
 
-For the input estimate stem:[x_1 = 0], higher-order terms must be used when applying the law of ((propagation of uncertainty)), because the partial derivatives of stem:[delta ii(Y)] with respect to stem:[ii(X)_1] and stem:[ii(X)_2], evaluated at stem:[ii(X)_1 = x_1] and stem:[ii(X)_2 = x_2], are identically zero when stem:[x_1 = x_2 = 0]. Thus, if the law of ((propagation of uncertainty)) with first-order terms only were applied, the resulting standard uncertainty would incorrectly be computed as zero.
+For the input estimate stem:[x_1 = 0], higher-order terms must be used when applying the law of ((propagation of uncertainty)), because the partial derivatives of stem:[delta ii(Y)] with respect to stem:[ii(X)_1] and stem:[ii(X)_2], evaluated at stem:[ii(X)_1 = x_1] and stem:[ii(X)_2 = x_2], are identically zero when stem:[x_1 = x_2 = 0]. Thus, if the law of ((propagation of uncertainty)) with first-order terms only were applied, the resulting ((standard uncertainty)) would incorrectly be computed as zero.
 
 NOTE: A similar difficulty would arise for stem:[x_1] close to zero.
 
@@ -611,7 +611,7 @@ are given in columns 2 to 4 of the row corresponding to stem:[x_1 = 0.000] in <<
 
 The estimate stem:[delta y = 0] obtained by evaluating the model at the input estimates is invalid: the correct (analytic) PDF for stem:[delta ii(Y)] is identically zero for stem:[delta ii(Y) < 0]; this estimate lies on the boundary of the non-zero part of that function. The estimate provided by MCM agrees with that obtained analytically. The law of ((propagation of uncertainty)) based on first-order terms gives the wrong, zero, value for stem:[u(delta y)] already noted. The value (stem:[50 xx 10^{-6}]) from the law of ((propagation of uncertainty)) based on higher-order terms agrees with that obtained analytically and by MCM.
 
-NOTE: When MCM was repeated several times the results obtained were scattered about stem:[50 xx 10^{-6}]. When it was repeated a number of times with a larger numerical value of stem:[ii(M)] the results were again scattered about stem:[50 xx 10^{-6}], but with a reduced dispersion. Such dispersion effects are expected, and were observed for the other Monte Carlo calculations made. Reporting the results to greater numbers of significant decimal digits would be necessary to see the actual numerical differences.
+NOTE: When MCM was repeated several times the results obtained were scattered about stem:[50 xx 10^{-6}]. When it was repeated a number of times with a larger numerical value of stem:[ii(M)] the results were again scattered about stem:[50 xx 10^{-6}], but with a reduced dispersion. Such dispersion effects are expected, and were observed for the other Monte Carlo calculations made. Reporting the results to greater numbers of ((significant decimal digits)) would be necessary to see the actual numerical differences.
 
 
 [[scls_9-4-2-2-9]]
@@ -661,7 +661,7 @@ image::figure12.png[]
 image::figure13.png[]
 
 
-include infeasible values of stem:[delta ii(Y)]. The shift is about 70 % of the standard uncertainty. The interval provided by MCM has its left-hand endpoint at zero, the smallest feasible value.
+include infeasible values of stem:[delta ii(Y)]. The shift is about 70 % of the ((standard uncertainty)). The interval provided by MCM has its left-hand endpoint at zero, the smallest feasible value.
 
 
 [[scls_9-4-2-3-4]]
@@ -673,9 +673,9 @@ The corresponding results are given in the penultimate row of <<table8>>.
 ===== Input estimate stem:[x_1 = 0.050]
 
 [[scls_9-4-2-4-1]]
-====== {blank}
+====== {blank} (((skewness)))
 
-<<fig14>> is similar to <<fig13>>, but for stem:[x_1 = 0.050]. Now, the PDFs provided by both variants of the GUM uncertainty framework are virtually indistinguishable from each other. Further, they are now much closer to the approximation to the PDF provided by MCM. That PDF exhibits a slight skewness, as evidenced in the tail regions. The coverage intervals provided by the two variants of the GUM uncertainty framework are visually almost identical, but still shifted from those for MCM. The shift is now about 10 % of the standard uncertainty. The intervals provided by the GUM uncertainty framework are now feasible.
+<<fig14>> is similar to <<fig13>>, but for stem:[x_1 = 0.050]. Now, the PDFs provided by both variants of the GUM uncertainty framework are virtually indistinguishable from each other. Further, they are now much closer to the approximation to the PDF provided by MCM. That PDF exhibits a slight skewness, as evidenced in the tail regions. The coverage intervals provided by the two variants of the GUM uncertainty framework are visually almost identical, but still shifted from those for MCM. The shift is now about 10 % of the ((standard uncertainty)). The intervals provided by the GUM uncertainty framework are now feasible.
 
 [[fig14]]
 .As <<fig13>> except that stem:[x_1 = 0.050] (<<scls_9-4-2-4-1>>, <<scls_9-4-3-3>>)
@@ -697,7 +697,7 @@ NOTE: The numerical values stem:[x_1 = x_2 = 0] lie in the centre of the region 
 NOTE: Because of the symmetry of the model in stem:[ii(X)_1] and stem:[ii(X)_2], exactly the same effect would occur were stem:[x_2] used in place of stem:[x_1].
 
 [[note3_9-4-2-5]]
-NOTE: One reason why the GUM uncertainty framework with first-order terms (only) might be used in practice is that software for its implementation is readily available: results obtained from it might sometimes be accepted without question. For the case where stem:[x_1 = x_2 = 0] (<<fig11>>) the danger would be apparent because the standard uncertainty stem:[u(delta y)] was computed as zero, and consequently any coverage interval for stem:[delta ii(Y)] would be of zero length for any coverage probability. For stem:[x_1 != 0] (or stem:[x_2 != 0]), stem:[u(delta y)] and the length of the coverage interval for stem:[delta ii(Y)] are both non-zero, so no such warning would be available without prior knowledge of likely values for stem:[u(delta y)] and this length. Thus, a danger in implementing software based on the GUM uncertainty framework for these calculations is that checks of the software for stem:[x_1] or stem:[x_2] sufficiently far from zero would not indicate such problems, although, when used subsequently in practice for small values of stem:[x_1] or stem:[x_2], the results would be invalid, but conceivably unwittingly accepted.
+NOTE: One reason why the GUM uncertainty framework with first-order terms (only) might be used in practice is that software for its implementation is readily available: results obtained from it might sometimes be accepted without question. For the case where stem:[x_1 = x_2 = 0] (<<fig11>>) the danger would be apparent because the ((standard uncertainty)) stem:[u(delta y)] was computed as zero, and consequently any coverage interval for stem:[delta ii(Y)] would be of zero length for any coverage probability. For stem:[x_1 != 0] (or stem:[x_2 != 0]), stem:[u(delta y)] and the length of the coverage interval for stem:[delta ii(Y)] are both non-zero, so no such warning would be available without prior knowledge of likely values for stem:[u(delta y)] and this length. Thus, a danger in implementing software based on the GUM uncertainty framework for these calculations is that checks of the software for stem:[x_1] or stem:[x_2] sufficiently far from zero would not indicate such problems, although, when used subsequently in practice for small values of stem:[x_1] or stem:[x_2], the results would be invalid, but conceivably unwittingly accepted.
 
 
 ==== Propagation and summarizing: non-zero covariance (((correlated input quantities)))(((covariance)))
@@ -925,10 +925,10 @@ In the following subclauses the available information about each input quantity 
 
 ======  Information (((calibration,certificate)))(((coverage factor)))(((degrees of freedom,effective)))(((expanded uncertainty)))
 
-The calibration certificate for the reference standard gives stem:[hat(ii(L)_s) = 50.000623" " rm(mm)] as its length at stem:[20 " °C"] <<JCGM-100,clause=H.1.5>>. It gives stem:[ii(U)_p = 0.075 " "murm(m)] as the expanded uncertainty of the reference standard and states that it was obtained using a coverage factor of stem:[k_p = 3] <<JCGM-100,clause=H.1.3.1>>. The certificate states that the effective ((degrees of freedom)) associated with the combined standard uncertainty, from which the quoted expanded uncertainty was obtained, is stem:[nu_{"eff"} (u(hat(ii(L)_s))) = 18] <<JCGM-100,clause=H.1.6>>.
+The calibration certificate for the reference standard gives stem:[hat(ii(L)_s) = 50.000623" " rm(mm)] as its length at stem:[20 " °C"] <<JCGM-100,clause=H.1.5>>. It gives stem:[ii(U)_p = 0.075 " "murm(m)] as the expanded uncertainty of the reference standard and states that it was obtained using a coverage factor of stem:[k_p = 3] <<JCGM-100,clause=H.1.3.1>>. The certificate states that the effective ((degrees of freedom)) associated with the combined ((standard uncertainty)), from which the quoted expanded uncertainty was obtained, is stem:[nu_{"eff"} (u(hat(ii(L)_s))) = 18] <<JCGM-100,clause=H.1.6>>.
 
 
-======  Interpretation
+======  Interpretation (((t-distribution,assignment to a quantity)))
 
 Assign a scaled and shifted stem:[t]-distribution stem:[t_{nu} (ii(mu), ii(sigma)^2)] (see <<scls_6-4-9-7>>) to stem:[ii(L)_s], with
 
@@ -945,7 +945,7 @@ mu = 50000623 " mn", " " " " " " " " ii(sigma) = ii(U)_{"p"}/k_{"p"} = 75/3 " nm
 The average stem:[hat ii(D)] of the five indications of the difference in lengths between the gauge block being calibrated and the reference standard is 215 nm <<JCGM-100,clause=H.1.5>>. The pooled experimental standard deviation characterizing the comparison of stem:[ii(L)] and stem:[ii(L)_s] was determined from 25 indications, obtained independently, of the difference in lengths of two standard gauge blocks, and equalled 13 nm <<JCGM-100,clause=H.1.3.2>>.
 
 
-======  Interpretation
+======  Interpretation (((t-distribution,assignment to a quantity)))
 
 Assign a scaled and shifted stem:[t]-distribution stem:[t_{nu}(ii(mu), ii(sigma)^2)] (see <<scls_6-4-9-2>> and <<scls_6-4-9-6>>) to stem:[ii(D)], with
 
@@ -962,7 +962,7 @@ ii(mu) = 215 " nm", " " " " " " " " ii(sigma) = 13/{sqrt(5)} " nm" = 6 nm, " " "
 According to the calibration certificate of the comparator used to compare stem:[ii(L)] with stem:[ii(L)_s], the associated uncertainty due to random effects is stem:[0.01" "mu rm(m)] for a coverage probability of 95 % and is obtained from six indications, obtained independently <<JCGM-100,clause=H.1.3.2>>.
 
 
-======  Interpretation
+======  Interpretation (((t-distribution,assignment to a quantity)))
 
 Assign a scaled and shifted stem:[t]-distribution stem:[t_{nu}(ii(mu), ii(sigma)^2)] (see <<scls_6-4-9-7>>) to stem:[d_1], with
 
@@ -981,7 +981,7 @@ Here, stem:[k_{0.95}] is obtained from table G.2 of the GUM with stem:[nu = 5] (
 The uncertainty of the comparator due to systematic effects is given in the certificate as stem:[0.02" "mu rm(m)] at the "three sigma level" <<JCGM-100,clause=H.1.3.2>>. This uncertainty may be assumed to be reliable to 25 %, and thus the ((degrees of freedom)) is stem:[nu_{"eff"}(u(hat(d_2))) = 8] <<JCGM-100,clause=H.1.6>>.
 
 
-======  Interpretation
+======  Interpretation (((t-distribution,assignment to a quantity)))
 
 Assign a scaled and shifted stem:[t]-distribution stem:[t_{nu}(ii(mu),ii(sigma)^2)] (see <<scls_6-4-9-7>>) to stem:[d_2], with
 
@@ -999,7 +999,7 @@ The coefficient of thermal expansion of the reference standard is given as stem:
 
 
 [[scls_9-5-2-6-2]]
-====== Interpretation 
+====== Interpretation (((rectangular distribution,assignment to a quantity)))
 
 Assign a rectangular distribution stem:[R(a, b)] (see <<scls_6-4-2>>) to stem:[alpha_s], with limits 
 
@@ -1015,7 +1015,7 @@ NOTE: There is no information about the reliability of the limits and so a recta
 
 ======  Information (((Gaussian distribution,assignment to a quantity)))
 
-The temperature of the test bed is reported as stem:[(19.9 +- 0.5) " °C"]. The average temperature deviation stem:[hat(ii(theta)_0) = -0.1 " °C"] is reported as having an associated standard uncertainty due to the uncertainty associated with the average temperature of the test bed of stem:[u(hat(ii(theta)_0)) = 0.2 " °C"] <<JCGM-100,clause=H.1.3.4>>.
+The temperature of the test bed is reported as stem:[(19.9 +- 0.5) " °C"]. The average temperature deviation stem:[hat(ii(theta)_0) = -0.1 " °C"] is reported as having an associated ((standard uncertainty)) due to the uncertainty associated with the average temperature of the test bed of stem:[u(hat(ii(theta)_0)) = 0.2 " °C"] <<JCGM-100,clause=H.1.3.4>>.
 
 
 ======  Interpretation
@@ -1057,7 +1057,7 @@ The estimated bounds on the variability of stem:[delta alpha] are stem:[+- 1 xx 
 any value within those bounds <<JCGM-100,clause=H.1.3.5>>. These bounds are deemed to be reliable to 10 %, giving stem:[nu(u(hat(delta alpha)) = 50] <<JCGM-100,clause=H.1.6>>.
 
 
-======  Interpretation
+======  Interpretation (((rectangular distribution with inexactly prescribed limits,assignment to a quantity)))
 
 Assign a rectangular distribution with inexactly prescribed limits (see <<scls_6-4-3>>) to stem:[delta alpha], with
 
@@ -1076,7 +1076,7 @@ The stated reliability of 10 % on the estimated bounds provides the basis for th
 The reference standard and the gauge block being calibrated are expected to be at the same temperature, but the temperature difference stem:[delta ii(theta)] could lie with equal probability anywhere in the estimated interval stem:[-0.05 " °C"] to stem:[0.05 " °C"] <<JCGM-100,clause=H.1.3.6>>. This difference is believed to be reliable only to 50 %, giving stem:[nu(u(hat(delta ii(theta)))) = 2] <<JCGM-100,clause=H.1.6>>.
 
 
-======  Interpretation
+======  Interpretation (((rectangular distribution with inexactly prescribed limits,assignment to a quantity)))
 
 Assign a rectangular distribution with inexactly prescribed limits (see <<scls_6-4-3>>) to stem:[delta ii(theta)], with
 
@@ -1090,11 +1090,11 @@ The stated reliability of 50 % provides the basis for this value of stem:[d].
 
 ==== Propagation and summarizing
 
-===== The GUM uncertainty framework (((degrees of freedom,effective)))
+===== The GUM uncertainty framework (((degrees of freedom,effective)))(((Welch-Satterthwaite formula)))
 
 The application of the GUM uncertainty framework is based on
 
-* a first-order Taylor series approximation to the model <<eq36,(36)>> or <<eq37,(37)>>,
+* a first-order ((Taylor series approximation)) to the model <<eq36,(36)>> or <<eq37,(37)>>,
 * use of the Welch-Satterthwaite formula to evaluate an effective ((degrees of freedom)) (rounded towards zero) associated with the uncertainty obtained from the law of ((propagation of uncertainty)), and
 * assigning a scaled and shifted stem:[t]-distribution with the above ((degrees of freedom)) to the output quantity.
 
@@ -1105,7 +1105,7 @@ The application of MCM
 
 * requires sampling from a rectangular distribution (see <<scls_6-4-2-4>> and <<scls_C-3-3>>), ((Gaussian distribution)) (see <<scls_6-4-7-4>> and <<scls_C-4>>), stem:[t]-distribution (see <<scls_6-4-9-5>> and <<scls_C-6>>), U-shaped distribution (see <<scls_6-4-6-4>>), and rectangular distribution with inexactly prescribed limits (see <<scls_6-4-3-4>>), and
 
-* implements adaptive MCM (see <<scls_7-9>>) with a ((numerical tolerance)) (stem:[delta = 0.5]) set to deliver stem:[n_{"dig"} = 2] significant decimal digits in the standard uncertainty.
+* implements adaptive MCM (see <<scls_7-9>>) with a ((numerical tolerance)) (stem:[delta = 0.5]) set to deliver stem:[n_{"dig"} = 2] ((significant decimal digits)) in the ((standard uncertainty)).
 
 
 ==== Results

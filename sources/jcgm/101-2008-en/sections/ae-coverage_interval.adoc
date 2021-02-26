@@ -1,7 +1,7 @@
 
 [[annexE]]
 [appendix]
-== Coverage interval for the four-fold convolution of a rectangular distribution (((convolution)))(((coverage interval)))
+== Coverage interval for the four-fold convolution of a rectangular distribution (((convolution)))(((coverage interval)))(((rectangular distribution)))
 
 === {blank} (((coverage interval,probabilistically symmetric)))
 

@@ -1,7 +1,7 @@
 
 [[annexB]]
 [appendix]
-== Sensitivity coefficients and uncertainty budgets
+== Sensitivity coefficients and uncertainty budgets (((sensitivity coefficients)))
 
 === {blank} (((Monte Carlo method (MCM))))(((probability density function (PDF),for output quantity)))
 

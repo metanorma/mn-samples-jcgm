@@ -15,9 +15,9 @@ ii(Y) = f(bb(X)),
 ++++
 
 
-where stem:[ii(Y)] is a scalar output quantity and stem:[bb(X)] represents the stem:[ii(N)] input quantities stem:[(ii(X)_1,...,ii(X)_N )^{sf(T)}]. Each stem:[ii(X)_i] is regarded as a random variable with possible values stem:[xi_i] and ((expectation)) stem:[x_i]. stem:[ii(Y)] is a random variable with possible values stem:[ii(eta)] and ((expectation)) stem:[y].
+where stem:[ii(Y)] is a scalar output quantity and stem:[bb(X)] represents the stem:[ii(N)] input quantities stem:[(ii(X)_1,...,ii(X)_N )^{sf(T)}]. Each stem:[ii(X)_i] is regarded as a ((random variable)) with possible values stem:[xi_i] and ((expectation)) stem:[x_i]. stem:[ii(Y)] is a ((random variable)) with possible values stem:[ii(eta)] and ((expectation)) stem:[y].
 
-NOTE: The same symbol is used for a physical quantity and the random variable that represents that quantity (cf. <<JCGM-100,clause=4.1.1 note 1>>).
+NOTE: The same symbol is used for a physical quantity and the ((random variable)) that represents that quantity (cf. <<JCGM-100,clause=4.1.1 note 1>>).
 
 
 [NOTE]
@@ -41,9 +41,9 @@ This Supplement departs from the symbols often used for 'PDF' and 'distribution 
 NOTE: The definitions in <<cls_3>> that relate to PDFs and distributions are adapted accordingly.
 
 
-=== {blank} (((probability density function (PDF))))
+=== {blank} (((probability density function (PDF))))(((variance)))
 
-In this Supplement, a PDF is assigned to a quantity, which may be a single, scalar quantity stem:[ii(X)] or a vector quantity stem:[bb(X)]. In the scalar case, the PDF for stem:[ii(X)] is denoted by stem:[g_X (xi)], where stem:[xi] is a variable describing the possible values of stem:[ii(X)]. This stem:[ii(X)] is considered as a random variable with ((expectation)) stem:[ii(E)(ii(X))] and variance stem:[V(ii(X))] (see <<scls_3-6>> and <<scls_3-7>>).
+In this Supplement, a PDF is assigned to a quantity, which may be a single, scalar quantity stem:[ii(X)] or a vector quantity stem:[bb(X)]. In the scalar case, the PDF for stem:[ii(X)] is denoted by stem:[g_X (xi)], where stem:[xi] is a variable describing the possible values of stem:[ii(X)]. This stem:[ii(X)] is considered as a ((random variable)) with ((expectation)) stem:[ii(E)(ii(X))] and variance stem:[V(ii(X))] (see <<scls_3-6>> and <<scls_3-7>>).
 
 
 === {blank} (((covariance matrix)))(((probability density function (PDF),joint)))
@@ -75,12 +75,12 @@ NOTE: A hatted symbol is generally used in the statistical literature to denote 
 
 === {blank}
 
-In this Supplement, the term "law of ((propagation of uncertainty))" applies to the use of a first-order Taylor series approximation to the model. The term is qualified accordingly when a higher-order approximation is used.
+In this Supplement, the term "law of ((propagation of uncertainty))" applies to the use of a first-order ((Taylor series approximation)) to the model. The term is qualified accordingly when a higher-order approximation is used.
 
 
 === {blank} (((combined standard uncertainty)))(((estimate of output quantity,from GUM uncertainty framework)))(((input quantities)))
 
-The subscript "c" <<JCGM-100,clause=5.1.1>> for the combined standard uncertainty is redundant in this Supplement. The standard uncertainty associated with an estimate stem:[y] of an output quantity stem:[ii(Y)] can therefore be written as stem:[u(y)], but the use of stem:[u_c(y)] remains acceptable if it is helpful to emphasize the fact that it represents a combined standard uncertainty. The qualifier "combined" in this context is also regarded as superfluous and may be omitted: the presence of "stem:[y]" in "stem:[u(y)]" already indicates the estimate with which the standard uncertainty is associated. Moreover, when the results of one or more uncertainty evaluations become inputs to a subsequent uncertainty evaluation, the use of the subscript "c" and the qualifier "combined" are then inappropriate.
+The subscript "c" <<JCGM-100,clause=5.1.1>> for the combined ((standard uncertainty)) is redundant in this Supplement. The ((standard uncertainty)) associated with an estimate stem:[y] of an output quantity stem:[ii(Y)] can therefore be written as stem:[u(y)], but the use of stem:[u_c(y)] remains acceptable if it is helpful to emphasize the fact that it represents a combined ((standard uncertainty)). The qualifier "combined" in this context is also regarded as superfluous and may be omitted: the presence of "stem:[y]" in "stem:[u(y)]" already indicates the estimate with which the ((standard uncertainty)) is associated. Moreover, when the results of one or more uncertainty evaluations become inputs to a subsequent uncertainty evaluation, the use of the subscript "c" and the qualifier "combined" are then inappropriate.
 
 
 === {blank} (((coverage interval)))(((coverage probability)))(((level of confidence)))
@@ -96,7 +96,7 @@ According to Resolution 10 of the 22nd CGPM (2003) "...the symbol for the decima
 [[scls_4-13]]
 === {blank}
 
-Unless otherwise qualified, numbers are expressed in a manner that indicates the number of meaningful significant decimal digits.
+Unless otherwise qualified, numbers are expressed in a manner that indicates the number of meaningful ((significant decimal digits)).
 
 [example]
 The numbers 0.060, 0.60, 6.0 and 60 are expressed to two significant decimal digits. The numbers 0.06, 0.6, 6 and stem:[6 xx 10^1] are expressed to one significant decimal digit. It would be incorrect to express stem:[6 xx 10^1] as 60, since two significant decimal digits would be implied.

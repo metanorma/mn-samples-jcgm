@@ -9,7 +9,7 @@ A glossary of principal symbols is given in <<annexG>>.
 
 === probability distribution (((probability)))(((probability distribution)))(((probability distribution,joint)))(((probability distribution,multivariate)))(((probability distribution,univariate)))
 
-&#x2329;random variable&#x232A; function giving the probability that a random variable takes any given value or belongs to a given set of values
+&#x2329;random variable&#x232A; function giving the probability that a ((random variable)) takes any given value or belongs to a given set of values
 
 NOTE: The probability on the whole set of values of the random variable equals 1.
 
@@ -80,7 +80,7 @@ NOTE: stem:[ii(mu)] is the expectation and stem:[ii(sigma)] is the standard devi
 NOTE: The normal distribution is also known as a Gaussian distribution.
 
 
-=== stem:[t]-distribution (((gamma function)))
+=== stem:[t]-distribution (((gamma function)))(((t-distribution)))(((t-distribution,probability density function)))
 
 probability distribution of a continuous random variable stem:[ii(X)] having the probability density function
 
@@ -125,7 +125,7 @@ ii(E)(ii(Z)) = ii(E)(ii(F)(ii(X))) = int_{-oo}^{oo} ii(F)(xi) g_X (xi) " d"xi.
 
 
 [[scls_3-7]]
-=== variance
+=== variance (((variance)))
 
 property of a random variable, which, for a continuous random variable stem:[ii(X)] characterized by a PDF stem:[g_X (xi)], is given by
 
@@ -137,7 +137,7 @@ ii(V)(ii(X)) = int_{-oo}^{oo} [xi - ii(E)(ii(X))]^2 g_X (xi) " d"xi
 NOTE: Not all random variables have a variance.
 
 
-=== standard deviation
+=== standard deviation (((standard deviation)))
 
 positive square root stem:[[ii(V)(ii(X))\]^{1//2}] of the variance
 
@@ -168,7 +168,7 @@ property of a pair of random variables, which, for two continuous random variabl
 NOTE: Not all pairs of random variables have a covariance.
 
 
-=== uncertainty matrix (((covariance)))(((covariance matrix)))(((mutual uncertainty)))
+=== uncertainty matrix (((covariance)))(((covariance matrix)))(((mutual uncertainty)))(((uncertainty matrix)))(((variance-covariance matrix)))
 
 matrix of dimension stem:[ii(N) xx ii(N)], containing on its diagonal the squares of the standard uncertainties associated with estimates of the components of an N-dimensional vector quantity, and in its off-diagonal positions the covariances associated with pairs of estimates
 
@@ -179,7 +179,7 @@ NOTE: An uncertainty matrix stem:[bb(U)_x] of dimension stem:[ii(N) xx ii(N)] as
 bb(U_x) = [(u(x_1,x_1),cdots,u(x_1,x_N)),(vdots,ddots,vdots),(u(x_N,x_1),cdots,u(x_N,x_N))],
 ++++
 
-where stem:[u(x_i, x_i) = u^2(x_i)] is the variance (squared standard uncertainty) associated with stem:[x_i] and stem:[u(x_i, x_j)] is the covariance associated with stem:[x_i] and stem:[x_j]. stem:[u(x_i, x_j) = 0] if elements stem:[ii(X)_i] and stem:[ii(X)_j] of stem:[bb(X)] are uncorrelated.
+where stem:[u(x_i, x_i) = u^2(x_i)] is the variance (squared ((standard uncertainty))) associated with stem:[x_i] and stem:[u(x_i, x_j)] is the covariance associated with stem:[x_i] and stem:[x_j]. stem:[u(x_i, x_j) = 0] if elements stem:[ii(X)_i] and stem:[ii(X)_j] of stem:[bb(X)] are uncorrelated.
 
 NOTE: Covariances are also known as mutual uncertainties.
 
@@ -241,9 +241,9 @@ method for the ((propagation of distributions)) by performing random sampling fr
 [[scls_3-20]]
 === ((numerical tolerance))
 
-semi-width of the shortest interval containing all numbers that can correctly be expressed to a specified number of significant decimal digits
+semi-width of the shortest interval containing all numbers that can correctly be expressed to a specified number of ((significant decimal digits))
 
 [example]
-All numbers greater than 1.75 and less than 1.85 can be expressed to two significant decimal digits as 1.8. The ((numerical tolerance)) is stem:[(1.85 - 1.75)//2 = 0.05].
+All numbers greater than 1.75 and less than 1.85 can be expressed to two ((significant decimal digits)) as 1.8. The ((numerical tolerance)) is stem:[(1.85 - 1.75)//2 = 0.05].
 
 NOTE: For the calculation of ((numerical tolerance)) associated with a numerical value, see <<scls_7-9-2>>.

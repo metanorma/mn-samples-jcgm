@@ -1,13 +1,13 @@
 
 [[cls_3]]
-== Terms and definitions
+== Terms and definitions (((Guide to the expression of uncertainty in measurement (GUM))))(((International vocabulary of basic and general terms in metrology (VIM))))
 
 For the purposes of this document the terms and definitions of the GUM and the "International vocabulary of basic and general terms in metrology" (VIM) apply unless otherwise indicated. Some of the most relevant definitions, adapted where necessary from these documents (see <<scls_4-2>>), are given below. Further definitions are given, including definitions taken or adapted from other sources, that are important for this Supplement.
 
 A glossary of principal symbols is given in <<annexG>>.
 
 
-=== probability distribution
+=== probability distribution (((probability)))(((probability distribution)))(((probability distribution,joint)))(((probability distribution,multivariate)))(((probability distribution,univariate)))
 
 &#x2329;random variable&#x232A; function giving the probability that a random variable takes any given value or belongs to a given set of values
 
@@ -18,10 +18,10 @@ NOTE: The probability on the whole set of values of the random variable equals 1
 
 NOTE: A probability distribution is termed univariate when it relates to a single (scalar) random variable, and multivariate when it relates to a vector of random variables. A multivariate probability distribution is also described as a joint distribution.
 
-NOTE: A probability distribution can take the form of a distribution function or a probability density function.
+NOTE: A probability distribution can take the form of a ((distribution function)) or a probability density function.
 
 
-=== distribution function
+=== ((distribution function)) (((probability)))
 
 function giving, for every value stem:[xi], the probability that the random variable stem:[ii(X)] be less than or equal to stem:[xi]: 
 
@@ -35,9 +35,9 @@ G_x (xi) = "Pr"(ii(X) <= xi)
 <<ISO_3534-1,clause=1.4>>,<<JCGM-100,clause=C.2.4>>
 
 
-=== probability density function
+=== probability density function (((probability density function (PDF))))(((probability element)))
 
-derivative, when it exists, of the distribution function
+derivative, when it exists, of the ((distribution function))
 
 [stem%unnumbered]
 ++++
@@ -59,7 +59,7 @@ g_X (xi) "d"xi = "Pr"(xi < ii(X) < xi + "d"xi).
 <<ISO_3534-1,clause=1.5>>,<<JCGM-100,clause=C.2.5>>
 
 
-=== normal distribution
+=== normal distribution (((Gaussian distribution)))(((Gaussian distribution,probability density function)))(((normal distribution)))
 
 probability distribution of a continuous random variable stem:[ii(X)] having the probability density function
 
@@ -80,7 +80,7 @@ NOTE: stem:[ii(mu)] is the expectation and stem:[ii(sigma)] is the standard devi
 NOTE: The normal distribution is also known as a Gaussian distribution.
 
 
-=== stem:[t]-distribution
+=== stem:[t]-distribution (((gamma function)))
 
 probability distribution of a continuous random variable stem:[ii(X)] having the probability density function
 
@@ -91,7 +91,7 @@ g_x(xi) = (Gamma((nu + 1)//2)) / {sqrt(pi nu)ii(Gamma) (nu//2)} (1 + xi^2/nu)^{-
 ++++
 
 
-for stem:[-oo < xi < +oo], with parameter stem:[ii(nu)], a positive integer, the degrees of freedom of the distribution, where
+for stem:[-oo < xi < +oo], with parameter stem:[ii(nu)], a positive integer, the ((degrees of freedom)) of the distribution, where
 
 [stem%unnumbered]
 ++++
@@ -102,7 +102,7 @@ is the gamma function
 
 
 [[scls_3-6]]
-=== expectation
+=== ((expectation))
 
 property of a random variable, which, for a continuous random variable stem:[ii(X)] characterized by a PDF stem:[g_X (xi)], is given by
 
@@ -142,7 +142,7 @@ NOTE: Not all random variables have a variance.
 positive square root stem:[[ii(V)(ii(X))\]^{1//2}] of the variance
 
 
-=== moment of order stem:[r]
+=== moment of order stem:[r] (((moment)))
 
 expectation of the __r__th power of a random variable, namely
 
@@ -168,7 +168,7 @@ property of a pair of random variables, which, for two continuous random variabl
 NOTE: Not all pairs of random variables have a covariance.
 
 
-=== uncertainty matrix (((covariance)))(((covariance matrix)))
+=== uncertainty matrix (((covariance)))(((covariance matrix)))(((mutual uncertainty)))
 
 matrix of dimension stem:[ii(N) xx ii(N)], containing on its diagonal the squares of the standard uncertainties associated with estimates of the components of an N-dimensional vector quantity, and in its off-diagonal positions the covariances associated with pairs of estimates
 
@@ -199,7 +199,7 @@ NOTE: A coverage interval should not be termed 'confidence interval' to avoid co
 NOTE: This definition differs from that in the VIM, 3rd Edition (2008), since the term 'true value' has not been used in this Supplement, for reasons given in the GUM <<JCGM-100,clause=E.5>>.
 
 
-=== coverage probability (((coverage probability)))
+=== coverage probability (((coverage probability)))(((level of confidence)))
 
 probability that the value of a quantity is contained within a specified coverage interval
 
@@ -221,29 +221,29 @@ coverage interval for a quantity such that the probability that the quantity is 
 coverage interval for a quantity with the shortest length among all coverage intervals for that quantity having the same coverage probability
 
 
-=== propagation of distributions
+=== propagation of distributions (((propagation of distributions)))
 
 method used to determine the probability distribution for an output quantity from the probability distributions assigned to the input quantities on which the output quantity depends
 
 NOTE: The method may be analytical or numerical, exact or approximate.
 
 
-=== GUM uncertainty framework
+=== GUM uncertainty framework (((GUM uncertainty framework (GUF))))
 
-application of the law of propagation of uncertainty and the characterization of the output quantity by a Gaussian distribution or a scaled and shifted stem:[t]-distribution in order to provide a coverage interval
+application of the law of ((propagation of uncertainty)) and the characterization of the output quantity by a Gaussian distribution or a scaled and shifted stem:[t]-distribution in order to provide a coverage interval
 
 
-=== Monte Carlo method
+=== Monte Carlo method (((Monte Carlo method (MCM))))
 
-method for the propagation of distributions by performing random sampling from probability distributions
+method for the ((propagation of distributions)) by performing random sampling from probability distributions
 
 
 [[scls_3-20]]
-=== numerical tolerance
+=== ((numerical tolerance))
 
 semi-width of the shortest interval containing all numbers that can correctly be expressed to a specified number of significant decimal digits
 
 [example]
-All numbers greater than 1.75 and less than 1.85 can be expressed to two significant decimal digits as 1.8. The numerical tolerance is stem:[(1.85 - 1.75)//2 = 0.05].
+All numbers greater than 1.75 and less than 1.85 can be expressed to two significant decimal digits as 1.8. The ((numerical tolerance)) is stem:[(1.85 - 1.75)//2 = 0.05].
 
-NOTE: For the calculation of numerical tolerance associated with a numerical value, see <<scls_7-9-2>>.
+NOTE: For the calculation of ((numerical tolerance)) associated with a numerical value, see <<scls_7-9-2>>.

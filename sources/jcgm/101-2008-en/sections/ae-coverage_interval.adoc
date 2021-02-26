@@ -86,4 +86,4 @@ Thus, the probabilistically symmetric 95 % coverage interval is
 [(3//5)^{1//4}, 4 - (3//5)^{1//4}] -= 2 +- (2 - (3//5)^(1//4)).
 ++++
 
-The corresponding coverage interval for the four-fold convolution of the rectangular PDF stem:[R(-sqrt(3),sqrt(3))] (which has zero expectation and unit standard deviation) is given by shifting this result by two units and scaling it by stem:[2 sqrt(3)] units, yielding expression <<eqe1>>.
+The corresponding coverage interval for the four-fold convolution of the rectangular PDF stem:[R(-sqrt(3),sqrt(3))] (which has zero ((expectation)) and unit standard deviation) is given by shifting this result by two units and scaling it by stem:[2 sqrt(3)] units, yielding expression <<eqe1>>.

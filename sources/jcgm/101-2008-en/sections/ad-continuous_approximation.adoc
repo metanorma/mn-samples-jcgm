@@ -2,7 +2,7 @@
 
 [[annexD]]
 [appendix]
-== Continuous approximation to the distribution function for the output quantity
+== Continuous approximation to the distribution function for the output quantity (((distribution function,for output quantity)))(((probability density function (PDF),for output quantity)))
 
 [[scls_D-1]]
 === {blank}
@@ -20,7 +20,7 @@ Working with a continuous approximation means, for instance, that
 
 
 [[scls_D-2]]
-=== {blank}
+=== {blank} (((probability)))
 
 In order to form stem:[tilde(ii(G))_Y(ii(eta))], consider the discrete representation stem:[bb(G) = {y_{(r)}], stem:[r = 1,..., ii(M)}] of stem:[ii(G)_Y (ii(eta))] in <<scls_7-5-1>>, after replacing replicate model values of stem:[y_{(r)}] as necessary (step b) in that subclause). Then, carry out the following steps:
 
@@ -39,18 +39,18 @@ NOTE: The form (<<scls_D-1>>) provides a convenient basis for sampling from stem
 
 
 [[scls_D-3]]
-=== {blank}
+=== {blank} (((Gaussian distribution)))(((Monte Carlo method (MCM))))
 
-<<figd1>> illustrates stem:[tilde(ii(G))_Y(ii(eta))] obtained using MCM based on stem:[ii(M) = 50] sampled values from a Gaussian PDF stem:[g_Y (ii(eta))] with stem:[ii(Y)] having expectation 3 and standard deviation 1.
+<<figd1>> illustrates stem:[tilde(ii(G))_Y(ii(eta))] obtained using MCM based on stem:[ii(M) = 50] sampled values from a Gaussian PDF stem:[g_Y (ii(eta))] with stem:[ii(Y)] having ((expectation)) 3 and standard deviation 1.
 
 [[figd1]]
 .An approximation stem:[tilde(ii(G))_Y (ii(eta))] to the distribution function stem:[ii(G)_Y (ii(eta))] (<<scls_D-3>>). "Unit" denotes any unit
 image::figured1.png[]
 
 
-=== {blank}
+=== {blank} (((estimate of output quantity,from Monte Carlo method)))
 
-Consider stem:[tilde(g)ii(Y)(ii(eta)) = tilde(G')_Y (ii(eta))], with stem:[tilde(ii(G))_Y (ii(eta))] given in <<eqd1>>. The function stem:[tilde(g)_Y (ii(eta))] is piecewise constant with breakpoints at stem:[ii(eta) = y_{(1)},..., y_{(ii(M))}]. The expectation stem:[tilde(y)] and standard deviation stem:[u(tilde(y))] of stem:[ii(Y)], described by stem:[tilde(g)_Y(ii(eta))], are taken, respectively, as an estimate of stem:[ii(Y)] and the standard uncertainty associated with that estimate. stem:[tilde(y)] and stem:[u(tilde(y))] are given by
+Consider stem:[tilde(g)ii(Y)(ii(eta)) = tilde(G')_Y (ii(eta))], with stem:[tilde(ii(G))_Y (ii(eta))] given in <<eqd1>>. The function stem:[tilde(g)_Y (ii(eta))] is piecewise constant with breakpoints at stem:[ii(eta) = y_{(1)},..., y_{(ii(M))}]. The ((expectation)) stem:[tilde(y)] and standard deviation stem:[u(tilde(y))] of stem:[ii(Y)], described by stem:[tilde(g)_Y(ii(eta))], are taken, respectively, as an estimate of stem:[ii(Y)] and the standard uncertainty associated with that estimate. stem:[tilde(y)] and stem:[u(tilde(y))] are given by
 
 [[eqd2]]
 [stem]

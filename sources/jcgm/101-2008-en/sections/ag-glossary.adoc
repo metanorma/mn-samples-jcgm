@@ -21,7 +21,7 @@ stem:[Cov(ii(X)_i,ii(X)_j)]:: covariance for two random variables stem:[ii(X)_i]
 
 stem:[c]:: stem:[n_{"dig"}]-decimal digit integer
 
-stem:[c_i]:: __i__th sensitivity coefficient, obtained as the partial derivative of the model stem:[f] for the measurement with respect to the __i__th input quantity stem:[ii(X)_i] evaluated at the vector estimate stem:[x] of the vector input quantity stem:[ii(X)]
+stem:[c_i]:: __i__th sensitivity coefficient, obtained as the ((partial derivative)) of the model stem:[f] for the measurement with respect to the __i__th input quantity stem:[ii(X)_i] evaluated at the vector estimate stem:[x] of the vector input quantity stem:[ii(X)]
 
 stem:[d]:: semi-width of the intervals in which the lower and upper limits A and B of a rectangular distribution with inexactly prescribed limits are known to lie
 
@@ -31,13 +31,13 @@ stem:[d_{"low"}]:: absolute value of the difference between the left-hand endpoi
 
 stem:[e]:: base of the natural logarithm
 
-stem:[ii(E)(ii(X))]:: expectation of a random variable stem:[ii(X)]
+stem:[ii(E)(ii(X))]:: ((expectation)) of a random variable stem:[ii(X)]
 
-stem:[ii(E)(bb(X))]:: vector expectation of a vector random variable stem:[bb(X)]
+stem:[ii(E)(bb(X))]:: vector ((expectation)) of a vector random variable stem:[bb(X)]
 
 stem:[ii(E)(ii(X)^r)]:: __r__th moment of a random variable stem:[ii(X)]
 
-stem:["Ex"(lambda)]:: exponential distribution with parameter stem:[lambda]
+stem:["Ex"(lambda)]:: ((exponential distribution)) with parameter stem:[lambda]
 
 stem:[f]:: mathematical model of measurement, expressed as a functional relationship between an output quan-tity stem:[ii(Y)] and the input quantities stem:[ii(X)_1,...,ii(X)_N] on which stem:[ii(Y)] depends
 
@@ -107,9 +107,9 @@ stem:[T(a, b)]:: triangular distribution over the interval stem:[[a,b\]]
 
 stem:["Trap"(a,b,ii(beta))]:: trapezoidal distribution over the interval stem:[[a,b\]] with parameter stem:[ii(beta)]
 
-stem:[t_{nu}]:: central stem:[t]-distribution with stem:[nu] degrees of freedom
+stem:[t_{nu}]:: central stem:[t]-distribution with stem:[nu] ((degrees of freedom))
 
-stem:[t_{nu} (ii(mu), ii(sigma)^2)]:: scaled and shifted stem:[t]-distribution with parameters stem:[ii(mu)] and stem:[ii(sigma)^2], and stem:[nu] degrees of freedom
+stem:[t_{nu} (ii(mu), ii(sigma)^2)]:: scaled and shifted stem:[t]-distribution with parameters stem:[ii(mu)] and stem:[ii(sigma)^2], and stem:[nu] ((degrees of freedom))
 
 stem:[U(0,1)]:: standard arc sine (U-shaped) distribution over the interval stem:[[0,1\]]
 
@@ -187,7 +187,7 @@ stem:[ii(beta)]:: parameter of a gamma distribution
 
 stem:[ii(Gamma)(z)]:: function with variable stem:[z]
 
-stem:[delta]:: numerical tolerance associated with a numerical value
+stem:[delta]:: ((numerical tolerance)) associated with a numerical value
 
 stem:[delta(z)]:: Dirac delta function with variable stem:[z]
 
@@ -199,11 +199,11 @@ stem:[lambda_2]:: base semi-width of the trapezoid for a trapezoidal distributio
 
 stem:[ii(mu)]:: expectation of a quantity characterized by a probability distribution
 
-stem:[nu]:: degrees of freedom of a stem:[t]-distribution or a chi-squared distribution
+stem:[nu]:: ((degrees of freedom)) of a stem:[t]-distribution or a chi-squared distribution
 
-stem:[nu_{"eff"}]:: effective degrees of freedom associated with the standard uncertainty stem:[u(y)]
+stem:[nu_{"eff"}]:: effective ((degrees of freedom)) associated with the standard uncertainty stem:[u(y)]
 
-stem:[nu_{"p"}]:: degrees of freedom associated with a pooled standard deviation s_p obtained from several series of indications
+stem:[nu_{"p"}]:: ((degrees of freedom)) associated with a pooled standard deviation s_p obtained from several series of indications
 
 stem:[xi]:: variable describing the possible values of the random variable stem:[ii(X)]
 
@@ -217,4 +217,4 @@ stem:[ii(sigma)^2]:: variance (squared standard deviation) of a quantity charact
 
 stem:[ii(Phi)]:: phase of a quantity that cycles sinusoidally
 
-stem:[χ_{nu}^2]:: chi-squared distribution with stem:[nu] degrees of freedom
+stem:[χ_{nu}^2]:: chi-squared distribution with stem:[nu] ((degrees of freedom))

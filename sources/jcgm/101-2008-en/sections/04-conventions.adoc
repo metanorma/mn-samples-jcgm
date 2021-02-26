@@ -4,7 +4,7 @@
 For the purposes of this Supplement the following conventions and notation are adopted.
 
 
-=== {blank}
+=== {blank} (((input quantities)))(((model of measurement)))(((output quantity)))
 
 A mathematical model of a measurement <<JCGM-100,clause=4.1>> of a single (scalar) quantity can be expressed as a functional relationship stem:[f]:
 
@@ -15,7 +15,7 @@ ii(Y) = f(bb(X)),
 ++++
 
 
-where stem:[ii(Y)] is a scalar output quantity and stem:[bb(X)] represents the stem:[ii(N)] input quantities stem:[(ii(X)_1,...,ii(X)_N )^{sf(T)}]. Each stem:[ii(X)_i] is regarded as a random variable with possible values stem:[xi_i] and expectation stem:[x_i]. stem:[ii(Y)] is a random variable with possible values stem:[ii(eta)] and expectation stem:[y].
+where stem:[ii(Y)] is a scalar output quantity and stem:[bb(X)] represents the stem:[ii(N)] input quantities stem:[(ii(X)_1,...,ii(X)_N )^{sf(T)}]. Each stem:[ii(X)_i] is regarded as a random variable with possible values stem:[xi_i] and ((expectation)) stem:[x_i]. stem:[ii(Y)] is a random variable with possible values stem:[ii(eta)] and ((expectation)) stem:[y].
 
 NOTE: The same symbol is used for a physical quantity and the random variable that represents that quantity (cf. <<JCGM-100,clause=4.1.1 note 1>>).
 
@@ -34,24 +34,24 @@ which implicitly relates stem:[bb(X)] and stem:[ii(Y)]. In any case, to apply th
 
 
 [[scls_4-2]]
-=== {blank}
+=== {blank} (((probability density function (PDF))))
 
-This Supplement departs from the symbols often used for 'PDF' and 'distribution function' <<ISO3534>>. The GUM uses the generic symbol stem:[f] to refer to a model and a PDF. Little confusion arises in the GUM as a consequence of this usage. The situation in this Supplement is different. The concepts of model, PDF, and distribution function are central to following and implementing the guidance provided. Therefore, in place of the symbols stem:[f] and stem:[ii(F)] to denote a PDF and a distribution function, respectively, the symbols stem:[g] and stem:[ii(G)] are used. These symbols are indexed appropriately to denote the quantity concerned. The symbol stem:[f] is reserved for the model.
+This Supplement departs from the symbols often used for 'PDF' and 'distribution function' <<ISO3534>>. The GUM uses the generic symbol stem:[f] to refer to a model and a PDF. Little confusion arises in the GUM as a consequence of this usage. The situation in this Supplement is different. The concepts of model, PDF, and ((distribution function)) are central to following and implementing the guidance provided. Therefore, in place of the symbols stem:[f] and stem:[ii(F)] to denote a PDF and a distribution function, respectively, the symbols stem:[g] and stem:[ii(G)] are used. These symbols are indexed appropriately to denote the quantity concerned. The symbol stem:[f] is reserved for the model.
 
 NOTE: The definitions in <<cls_3>> that relate to PDFs and distributions are adapted accordingly.
 
 
-=== {blank}
+=== {blank} (((probability density function (PDF))))
 
-In this Supplement, a PDF is assigned to a quantity, which may be a single, scalar quantity stem:[ii(X)] or a vector quantity stem:[bb(X)]. In the scalar case, the PDF for stem:[ii(X)] is denoted by stem:[g_X (xi)], where stem:[xi] is a variable describing the possible values of stem:[ii(X)]. This stem:[ii(X)] is considered as a random variable with expectation stem:[ii(E)(ii(X))] and variance stem:[V(ii(X))] (see <<scls_3-6>> and <<scls_3-7>>).
-
-
-=== {blank} (((covariance matrix)))
-
-In the vector case, the PDF for stem:[bb(X)] is denoted by stem:[g_X (xi)], where stem:[bb(xi) = (xi_1,..., xi_N )^{sf(T)}] is a vector variable describing the possible values of the vector quantity stem:[bb(X)]. This stem:[bb(X)] is considered as a random vector variable with (vector) expectation stem:[ii(E)(bb(X))] and covariance matrix stem:[ii(V)(bb(X))].
+In this Supplement, a PDF is assigned to a quantity, which may be a single, scalar quantity stem:[ii(X)] or a vector quantity stem:[bb(X)]. In the scalar case, the PDF for stem:[ii(X)] is denoted by stem:[g_X (xi)], where stem:[xi] is a variable describing the possible values of stem:[ii(X)]. This stem:[ii(X)] is considered as a random variable with ((expectation)) stem:[ii(E)(ii(X))] and variance stem:[V(ii(X))] (see <<scls_3-6>> and <<scls_3-7>>).
 
 
-=== {blank}
+=== {blank} (((covariance matrix)))(((probability density function (PDF),joint)))
+
+In the vector case, the PDF for stem:[bb(X)] is denoted by stem:[g_X (xi)], where stem:[bb(xi) = (xi_1,..., xi_N )^{sf(T)}] is a vector variable describing the possible values of the vector quantity stem:[bb(X)]. This stem:[bb(X)] is considered as a random vector variable with (vector) ((expectation)) stem:[ii(E)(bb(X))] and covariance matrix stem:[ii(V)(bb(X))].
+
+
+=== {blank} (((probability density function (PDF),joint)))
 
 A PDF for more than one input quantity is often called joint even if all the input quantities are independent.
 
@@ -63,27 +63,27 @@ When the elements stem:[ii(X)_i] of stem:[bb(X)] are independent, the PDF for st
 
 === {blank}
 
-The PDF for stem:[ii(Y)] is denoted by stem:[g_Y (ii(eta))] and the distribution function for stem:[ii(Y)] by stem:[G_Y (ii(eta))].
+The PDF for stem:[ii(Y)] is denoted by stem:[g_Y (ii(eta))] and the ((distribution function)) for stem:[ii(Y)] by stem:[G_Y (ii(eta))].
 
 
 === {blank}
 
-In the body of this Supplement, a quantity is generally denoted by an upper case letter and the expectation of the quantity or an estimate of the quantity by the corresponding lower case letter. For example, the expectation or an estimate of a quantity stem:[ii(Y)] would be denoted by stem:[y]. Such a notation is largely inappropriate for physical quantities, because of the established use of specific symbols, e.g. T for temperature and stem:[t] for time. Therefore, in some of the examples (<<cls_9>>), a different notation is used. There, a quantity is denoted by its conventional symbol and its expectation or an estimate of it by that symbol hatted. For instance, the quantity representing the deviation of the length of a gauge block being calibrated from nominal length (see <<scls_9-5>>) is denoted by stem:[delta ii(L)] and an estimate of stem:[delta ii(L)] by stem:[hat(delta ii(L))].
+In the body of this Supplement, a quantity is generally denoted by an upper case letter and the ((expectation)) of the quantity or an estimate of the quantity by the corresponding lower case letter. For example, the ((expectation)) or an estimate of a quantity stem:[ii(Y)] would be denoted by stem:[y]. Such a notation is largely inappropriate for physical quantities, because of the established use of specific symbols, e.g. T for temperature and stem:[t] for time. Therefore, in some of the examples (<<cls_9>>), a different notation is used. There, a quantity is denoted by its conventional symbol and its ((expectation)) or an estimate of it by that symbol hatted. For instance, the quantity representing the deviation of the length of a gauge block being calibrated from nominal length (see <<scls_9-5>>) is denoted by stem:[delta ii(L)] and an estimate of stem:[delta ii(L)] by stem:[hat(delta ii(L))].
 
 NOTE: A hatted symbol is generally used in the statistical literature to denote an estimate.
 
 
 === {blank}
 
-In this Supplement, the term "law of propagation of uncertainty" applies to the use of a first-order Taylor series approximation to the model. The term is qualified accordingly when a higher-order approximation is used.
+In this Supplement, the term "law of ((propagation of uncertainty))" applies to the use of a first-order Taylor series approximation to the model. The term is qualified accordingly when a higher-order approximation is used.
 
 
-=== {blank} (((combined standard uncertainty)))
+=== {blank} (((combined standard uncertainty)))(((estimate of output quantity,from GUM uncertainty framework)))(((input quantities)))
 
 The subscript "c" <<JCGM-100,clause=5.1.1>> for the combined standard uncertainty is redundant in this Supplement. The standard uncertainty associated with an estimate stem:[y] of an output quantity stem:[ii(Y)] can therefore be written as stem:[u(y)], but the use of stem:[u_c(y)] remains acceptable if it is helpful to emphasize the fact that it represents a combined standard uncertainty. The qualifier "combined" in this context is also regarded as superfluous and may be omitted: the presence of "stem:[y]" in "stem:[u(y)]" already indicates the estimate with which the standard uncertainty is associated. Moreover, when the results of one or more uncertainty evaluations become inputs to a subsequent uncertainty evaluation, the use of the subscript "c" and the qualifier "combined" are then inappropriate.
 
 
-=== {blank} (((coverage interval)))(((coverage probability)))
+=== {blank} (((coverage interval)))(((coverage probability)))(((level of confidence)))
 
 The terms "coverage interval" and "coverage probability" are used throughout this Supplement. The GUM uses the term "level of confidence" as a synonym for coverage probability, drawing a distinction between "level of confidence" and "confidence level" <<JCGM-100,clause=6.2.2>>, because the latter has a specific definition in statistics. Since, in some languages, the translation from English of these two terms yields the same expression, the use of these terms is avoided here.
 
@@ -107,7 +107,7 @@ The numbers 0.060, 0.60, 6.0 and 60 are expressed to two significant decimal dig
 Some symbols have more than one meaning in this Supplement. See <<annexG>>. The context clarifies the usage.
 
 
-=== {blank}
+=== {blank} (((Guide to the expression of uncertainty in measurement (GUM))))(((GUM uncertainty framework (GUF))))(((International vocabulary of basic and general terms in metrology (VIM))))(((Monte Carlo method (MCM))))(((probability density function (PDF))))
 
 The following abbreviations are used in this Supplement:
 

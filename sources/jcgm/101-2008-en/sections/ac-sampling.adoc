@@ -2,12 +2,12 @@
 
 [[annexC]]
 [appendix]
-== Sampling from probability distributions
+== Sampling from probability distributions (((probability density function (PDF),sampling from)))(((probability distribution,sampling from)))
 
 === General
 
 
-==== {blank}
+==== {blank} (((Monte Carlo method (MCM))))
 
 This annex provides technical information concerning sampling from probability distributions. Such sampling forms a central part of the use of MCM as an implementation of the propagation of distributions. A digital library of mathematical functions <<nistdigital>> and a repository of relevant software <<Nerlib>> may also be consulted.
 
@@ -32,11 +32,11 @@ A draw from any strictly increasing, univariate continuous distribution function
 NOTE: The inversion required in step <<item_c-2b>>, that is forming stem:[xi = ii(G)_X^{-1} (ii(rho))], may be possible analytically. Otherwise it can be carried out numerically.
 
 [example]
-As an instance of analytical inversion, consider the exponential PDF for stem:[ii(X)], with stem:[ii(X)] having expectation stem:[x (> 0)], viz. stem:[g_X (xi) = exp(-xi//x)//x], for stem:[xi >= 0], and zero otherwise (see <<scls_6-4-10>>). Then, by integration, stem:[ii(G)_X (xi) = 1 - exp(-xi//x)], for stem:[xi >= 0], and zero otherwise. Hence stem:[xi = -x ln(1 - ii(rho))]. This result can be simplified slightly by using the fact that if a variable stem:[ii(Q)] has the rectangular distribution stem:[R(0, 1)], then so has stem:[1 - ii(Q)]. Hence, stem:[xi = -x ln ii(rho)].
+As an instance of analytical inversion, consider the exponential PDF for stem:[ii(X)], with stem:[ii(X)] having ((expectation)) stem:[x (> 0)], viz. stem:[g_X (xi) = exp(-xi//x)//x], for stem:[xi >= 0], and zero otherwise (see <<scls_6-4-10>>). Then, by integration, stem:[ii(G)_X (xi) = 1 - exp(-xi//x)], for stem:[xi >= 0], and zero otherwise. Hence stem:[xi = -x ln(1 - ii(rho))]. This result can be simplified slightly by using the fact that if a variable stem:[ii(Q)] has the rectangular distribution stem:[R(0, 1)], then so has stem:[1 - ii(Q)]. Hence, stem:[xi = -x ln ii(rho)].
 
 NOTE: Numerically, stem:[xi] can generally be determined by solving the "zero-of-a-function" problem stem:[G_X (xi) - ii(rho) = 0]. Upper and lower bounds for stem:[xi] are typically easily found, in which case a recognized "bracketing" algorithm such as bisection or, more efficiently, a combination of linear interpolation and bisection <<Dekker1969>>, for example, can be used to determine stem:[xi].
 
-NOTE: If the pseudo-random number generator for the rectangular distribution is to be used as a basis for generating numbers from another distribution, a draw of stem:[ii(rho)] equal to zero or one can cause failure of that generator. An example is the exponential distribution (see <<scls_6-4-10>>). Its PDF (<<eq9>>) is not defined for stem:[ii(rho)] equal to zero or one. The use of the generator given in <<scls_C-3-3>> would not give rise to a failure of that type.
+NOTE: If the pseudo-random number generator for the rectangular distribution is to be used as a basis for generating numbers from another distribution, a draw of stem:[ii(rho)] equal to zero or one can cause failure of that generator. An example is the ((exponential distribution)) (see <<scls_6-4-10>>). Its PDF (<<eq9>>) is not defined for stem:[ii(rho)] equal to zero or one. The use of the generator given in <<scls_C-3-3>> would not give rise to a failure of that type.
 
 
 [[scls_C-3]]
@@ -176,9 +176,9 @@ For 64-bit computers, step <<item_comp-a>> of Computation, including (i) and (ii
 
 
 [[scls_C-4]]
-=== Gaussian distribution
+=== Gaussian distribution (((Gaussian distribution,sampling from)))
 
-The procedure in <<tablec3>> provides draws from the standard Gaussian distribution stem:[N(0, 1)] using the Box-Muller transform <<Box1958>>. A draw from the Gaussian distribution stem:[N(ii(mu),ii(sigma)^2)] is given by stem:[ii(mu) + ii(sigma) z], where stem:[z] is a draw from stem:[N(0, 1)].
+The procedure in <<tablec3>> provides draws from the standard ((Gaussian distribution)) stem:[N(0, 1)] using the Box-Muller transform <<Box1958>>. A draw from the ((Gaussian distribution)) stem:[N(ii(mu),ii(sigma)^2)] is given by stem:[ii(mu) + ii(sigma) z], where stem:[z] is a draw from stem:[N(0, 1)].
 
 
 [[tablec3]]
@@ -200,7 +200,7 @@ a|
 
 
 [[scls_C-5]]
-=== Multivariate Gaussian distribution (((covariance matrix)))
+=== Multivariate Gaussian distribution (((covariance matrix)))(((multivariate Gaussian distribution,sampling from)))
 
 ==== {blank}
 
@@ -279,7 +279,7 @@ In <<figc1>>, the points span an elongated angled ellipse. Were the off-diagonal
 [[scls_C-6]]
 === stem:[t]-distribution
 
-The procedure in <<tablec5>> provides an approach <<Kinderman1018>>, <<Robert1999,page=63>> to obtain draws from the stem:[t]-distribution with stem:[nu] degrees of freedom.
+The procedure in <<tablec5>> provides an approach <<Kinderman1018>>, <<Robert1999,page=63>> to obtain draws from the stem:[t]-distribution with stem:[nu] ((degrees of freedom)).
 
 
 [[tablec5]]
@@ -292,7 +292,7 @@ stem:[nu]:: Degrees of freedom
 
 ^h| Output parameter
 a|
-stem:[t]:: Draw from a stem:[t]-distribution with stem:[nu] degrees of freedom
+stem:[t]:: Draw from a stem:[t]-distribution with stem:[nu] ((degrees of freedom))
 
 ^h| Computation
 a|
@@ -303,4 +303,4 @@ a|
 
 &nbsp;
 
-NOTE: stem:[nu] must be greater than two for the standard deviation of the stem:[t]-distribution with stem:[nu] degrees of freedom to be finite.
+NOTE: stem:[nu] must be greater than two for the standard deviation of the stem:[t]-distribution with stem:[nu] ((degrees of freedom)) to be finite.

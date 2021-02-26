@@ -1,6 +1,6 @@
 
 [[cls_7]]
-== Implementation of a Monte Carlo method
+== Implementation of a Monte Carlo method (((Monte Carlo method (MCM))))
 
 [[scls_7-1]]
 === General
@@ -9,11 +9,11 @@ This clause gives information about the implementation of a Monte Carlo method f
 
 
 [[scls_7-2]]
-=== Number of Monte Carlo trials
+=== Number of Monte Carlo trials (((Monte Carlo method (MCM),number of trials)))
 
-==== {blank} (((coverage interval,from Monte Carlo method)))(((coverage probability)))
+==== {blank} (((coverage interval,from Monte Carlo method)))(((coverage probability)))(((probability density function (PDF),for output quantity)))
 
-A value of stem:[ii(M)], the number of Monte Carlo trials, i.e. the number of model evaluations to be made, needs to be selected. It can be chosen a _priori_, in which case there will be no direct control over the quality of the numerical results provided by MCM. The reason is that the number of trials needed to provide these results to a prescribed numerical tolerance will depend on the "shape" of the PDF for the output quantity and on the coverage probability required. Also, the calculations are stochastic in nature, being based on random sampling.
+A value of stem:[ii(M)], the number of Monte Carlo trials, i.e. the number of model evaluations to be made, needs to be selected. It can be chosen a _priori_, in which case there will be no direct control over the quality of the numerical results provided by MCM. The reason is that the number of trials needed to provide these results to a prescribed ((numerical tolerance)) will depend on the "shape" of the PDF for the output quantity and on the coverage probability required. Also, the calculations are stochastic in nature, being based on random sampling.
 
 NOTE: A value of stem:[ii(M) = 10^6] can often be expected to deliver a 95 % coverage interval for the output quantity such that this length is correct to one or two significant decimal digits.
 
@@ -25,13 +25,13 @@ The choice of a value of stem:[ii(M)] that is large compared with stem:[1//(1-p)
 
 ==== {blank}
 
-Because there is no guarantee that this or any specific pre-assigned number will suffice, a procedure that selects stem:[ii(M)] adaptively, i.e. as the trials progress, can be used. Some guidance in this regard is available <<Berthouex1994>>. Subclause <<scls_7-9>> provides such a procedure, a property of which is that the number of trials taken is economically consistent with the expectation of achieving a required numerical tolerance.
+Because there is no guarantee that this or any specific pre-assigned number will suffice, a procedure that selects stem:[ii(M)] adaptively, i.e. as the trials progress, can be used. Some guidance in this regard is available <<Berthouex1994>>. Subclause <<scls_7-9>> provides such a procedure, a property of which is that the number of trials taken is economically consistent with the ((expectation)) of achieving a required ((numerical tolerance)).
 
 NOTE: If the model is complicated, e.g. involving the solution of a finite-element model, because of large computing times it may not be possible to use a sufficiently large value of stem:[ii(M)] to obtain adequate distributional knowledge of the output quantity. In such a case an approximate approach would be to regard stem:[g_Y (ii(eta))] as Gaussian (as in the GUM) and proceed as follows. A relatively small value of stem:[ii(M)], 50 or 100, for example, would be used. The average and standard deviation of the resulting stem:[ii(M)] model values of stem:[ii(Y)] would be taken as stem:[y] and stem:[u(y)], respectively. Given this information, a Gaussian PDF stem:[g_Y(ii(eta)) = N(y,u^2(y))] would be assigned to characterize the knowledge of stem:[ii(Y)] (see <<scls_6-4-7>>) and a desired coverage interval for stem:[ii(Y)] calculated. Although this use of a small value of stem:[ii(M)] is inevitably less reliable than that of a large value in that it does not provide an approximation to the PDF for stem:[ii(Y)], it does take account of model non-linearity.
 
 
 [[scls_7-3]]
-=== Sampling from probability distributions
+=== Sampling from probability distributions (((Monte Carlo method (MCM),sampling from probability distributions)))(((probability density function (PDF),for input quantities)))(((probability density function (PDF),joint)))(((probability density function (PDF),sampling from)))(((probability distribution,sampling from)))
 
 In an implementation of MCM, stem:[ii(M)] vectors stem:[bb(x)_r], stem:[r = 1,...,ii(M)] (see <<scls_7-2>>), are drawn from the PDFs stem:[g_{ii(X)_i} (xi_i)] for the N input quantities stem:[ii(X)_i]. Draws would be made from the joint (multivariate) PDF stem:[g_X (xi)] if appropriate. Recommendations concerning the manner in which this sampling can be carried out are given in <<annexC>>for the commonest distributions, viz. the rectangular, Gaussian, stem:[t], and multivariate Gaussian. Also see <<scls_6-4>>. It is possible to draw at random from any other distribution. See <<scls_C-2>>. Some such distributions could be approximations to distributions based on Monte Carlo results from a previous uncertainty calculation (see <<scls_6-5>>, <<scls_7-5>> and <<annexD>>).
 
@@ -42,7 +42,7 @@ NOTE: For the results of MCM to be statistically valid, it is necessary that the
 === Evaluation of the model
 
 [[scls_7-4-1]]
-==== {blank}
+==== {blank} (((probability density function (PDF),for input quantities)))
 
 The model is evaluated for each of the stem:[ii(M)] draws from the PDFs for the N input quantities. Specifically, denote the stem:[ii(M)] draws by stem:[bb(x)_1,...,bb(x)_M], where the __r__th draw stem:[bb(x)_r] contains stem:[x_{1,r},..., x_{N,r}], with stem:[x_{i,r}] a draw from the PDF for stem:[ii(X)_i]. Then, the model values are
 
@@ -56,14 +56,14 @@ y_r = f(bb(x)_r), r = 1,...,ii(M).
 
 The necessary modifications are made to <<scls_7-4-1>> if the stem:[ii(X)_i] are not independent and hence a joint PDF is assigned to them.
 
-NOTE: Model and derivative evaluations are made when applying the law of propagation of uncertainty, using exact derivatives, at the best estimates of the input quantities. Model evaluations only are made when applying the law of propagation of uncertainty when numerical (finite-difference) approximations to derivatives are used. These evaluations are made, if the GUM recommendation <<JCGM-100,clause=5.1.3 note 2>> is adopted, at the best estimates of the input quantities and at points perturbed by stem:[+-] one standard uncertainty from each estimate in turn. With MCM, model evaluations are made in the neighbourhood of these best estimates, viz. at points that can be expected to be up to several standard uncertainties away from these estimates. The fact that model evaluations are made at different points according to the approach used may raise issues regarding the numerical procedure used to evaluate the model, e.g. ensuring its convergence (where iterative schemes are used) and numerical stability. The user should ensure that, where appropriate, the numerical methods used to evaluate stem:[f] are valid for a sufficiently large region containing these best estimates. Only occasionally would it be expected that this aspect is critical.
+NOTE: Model and derivative evaluations are made when applying the law of ((propagation of uncertainty)), using exact derivatives, at the best estimates of the input quantities. Model evaluations only are made when applying the law of ((propagation of uncertainty)) when numerical (finite-difference) approximations to derivatives are used. These evaluations are made, if the GUM recommendation <<JCGM-100,clause=5.1.3 note 2>> is adopted, at the best estimates of the input quantities and at points perturbed by stem:[+-] one standard uncertainty from each estimate in turn. With MCM, model evaluations are made in the neighbourhood of these best estimates, viz. at points that can be expected to be up to several standard uncertainties away from these estimates. The fact that model evaluations are made at different points according to the approach used may raise issues regarding the numerical procedure used to evaluate the model, e.g. ensuring its convergence (where iterative schemes are used) and numerical stability. The user should ensure that, where appropriate, the numerical methods used to evaluate stem:[f] are valid for a sufficiently large region containing these best estimates. Only occasionally would it be expected that this aspect is critical.
 
 
 [[scls_7-5]]
-=== Discrete representation of the distribution function for the output quantity
+=== Discrete representation of the distribution function for the output quantity (((distribution function,for output quantity)))
 
 [[scls_7-5-1]]
-==== {blank}
+==== {blank} (((mode)))(((probability)))
 
 A discrete representation stem:[bb(G)] of the distribution function stem:[ii(G)_Y (ii(eta))] for the output quantity stem:[ii(Y)] can be obtained as follows:
 
@@ -82,12 +82,12 @@ NOTE: With reference to step <<item_7-5-1b>>, making only minute perturbations w
 
 NOTE: In step <<item_7-5-1b>>, it is exceedingly unlikely that perturbations are necessary, because of the very large number of distinct floating-point numbers that can arise from model values generated from input quantities obtained as draws from random number generators. A sound software implementation would make appropriate provision, however.
 
-NOTE: With reference to step <<item_7-5-1c>>, a variety of information can be deduced from stem:[bb(G)]. In particular, information supplementary to the expectation and standard deviation can be provided, such as measures of skewness and kurtosis, and other statistics such as the mode and the median.
+NOTE: With reference to step <<item_7-5-1c>>, a variety of information can be deduced from stem:[bb(G)]. In particular, information supplementary to the ((expectation)) and standard deviation can be provided, such as measures of skewness and kurtosis, and other statistics such as the mode and the median.
 
 NOTE: If stem:[ii(Y)] is to become an input quantity for a further uncertainty calculation, sampling from its probability distribution is readily carried out by drawing randomly from the stem:[y_{(r)}], stem:[r = 1,..., M], with equal probability (see <<scls_6-5>>).
 
 
-==== {blank}
+==== {blank} (((probability density function (PDF),for output quantity)))
 
 The stem:[y_{(r)}] (or stem:[y_r]), when assembled into a histogram (with suitable cell widths) form a frequency distribution that, when normalized to have unit area, provides an approximation to the PDF stem:[g_Y (ii(eta))] for stem:[ii(Y)]. Calculations are not generally carried out in terms of this histogram, the resolution of which depends on the choice of cell widths, but in terms of G. The histogram can, however, be useful as an aid to understanding the nature of the PDF, e.g. the extent of its asymmetry. See, however, <<scls_7-8-3>> <<note1_7-8-3>> regarding the use of a large numerical value of stem:[ii(M)].
 
@@ -98,7 +98,7 @@ A continuous approximation to stem:[ii(G)_Y (ii(eta))] is sometimes useful. <<an
 
 
 [[scls_7-6]]
-=== Estimate of the output quantity and the associated standard uncertainty (((average,of sampled model values)))(((coverage interval,from Monte Carlo method)))
+=== Estimate of the output quantity and the associated standard uncertainty (((average,of sampled model values)))(((coverage interval,from Monte Carlo method)))(((Estimate of output quantity,from Monte Carlo method)))(((probability density function (PDF),for input quantities)))
 
 The average
 
@@ -130,7 +130,7 @@ u^2(tilde(y)) = {ii(M)}/{ii(M) - 1} (1/{ii(M)} sum_{r=1}^{ii(M)} y_r^2 - tilde(y
 For the many circumstances in metrology in which stem:[u(y)] is much smaller than stem:[|y|] (in which case the stem:[y_r] have a number of leading decimal digits in common) the latter formula suffers numerically from subtractive cancellation (involving a mean square less a squared mean). This effect can be so severe that the resulting numerical value might have too few correct significant decimal digits for the uncertainty evaluation to be valid <<Chan1983>>.
 ====
 
-NOTE: In some special circumstances, such as when one of the input quantities has been assigned a PDF based on the stem:[t]-distribution with fewer than three degrees of freedom, the expectation and standard deviation of stem:[ii(Y)], as described by the PDF stem:[g_Y (ii(eta))], might not exist. <<eq16>> and <<eq17>> might not then provide meaningful results. A coverage interval for stem:[ii(Y)] (see <<scls_7-7>>) can, however, be formed, since stem:[bb(G)] is meaningful and can be determined.
+NOTE: In some special circumstances, such as when one of the input quantities has been assigned a PDF based on the stem:[t]-distribution with fewer than three ((degrees of freedom)), the ((expectation)) and standard deviation of stem:[ii(Y)], as described by the PDF stem:[g_Y (ii(eta))], might not exist. <<eq16>> and <<eq17>> might not then provide meaningful results. A coverage interval for stem:[ii(Y)] (see <<scls_7-7>>) can, however, be formed, since stem:[bb(G)] is meaningful and can be determined.
 
 NOTE: stem:[tilde(y)] will not in general agree with the model evaluated at the best estimates of the input quantities, since, for a non-linear model stem:[f(bb(X))], stem:[ii(E)(ii(Y)) = ii(E)(f(bb(X))) != f(ii(E)(bb(X)))] (cf. <<JCGM-100,clause=4.1.4>>). Irrespective of whether stem:[f] is linear or non-linear, in the limit as stem:[ii(M)] tends to infinity, stem:[tilde(y)] approaches stem:[ii(E)(f(bb(X)))] when stem:[ii(E)(f(bb(X)))] exists.
 
@@ -154,9 +154,9 @@ stem:[10^5] numbers were drawn from a pseudo-random number generator for the rec
 
 
 [[scls_7-8]]
-=== Computation time
+=== Computation time (((Monte Carlo method (MCM),computation time)))
 
-==== {blank}
+==== {blank} (((probability density function (PDF),for input quantities)))(((probability density function (PDF),joint)))
 
 The computation time for MCM is dominated by that required for the following three steps:
 
@@ -193,18 +193,18 @@ Assign a Gaussian PDF to each input quantity stem:[ii(X)_i]. Make stem:[ii(M) = 
 
 
 [[scls_7-9]]
-=== Adaptive Monte Carlo procedure
+=== Adaptive Monte Carlo procedure (((Monte Carlo method (MCM),adaptive procedure)))
 
 [[scls_7-9-1]]
-==== General
+==== General (((Monte Carlo method (MCM),number of trials)))
 
-A basic implementation of an adaptive Monte Carlo procedure involves carrying out an increasing number of Monte Carlo trials until the various results of interest have stabilized in a statistical sense. A numerical result is deemed to have stabilized if twice the standard deviation associated with it is less than the numerical tolerance (see <<scls_7-9-2>>) associated with the standard uncertainty stem:[u(y)].
+A basic implementation of an adaptive Monte Carlo procedure involves carrying out an increasing number of Monte Carlo trials until the various results of interest have stabilized in a statistical sense. A numerical result is deemed to have stabilized if twice the standard deviation associated with it is less than the ((numerical tolerance)) (see <<scls_7-9-2>>) associated with the standard uncertainty stem:[u(y)].
 
 
 [[scls_7-9-2]]
 ==== Numerical tolerance associated with a numerical value
 
-Let stem:[n_{"dig"}] denote the number of significant decimal digits regarded as meaningful in a numerical value stem:[z]. The numerical tolerance stem:[delta] associated with stem:[z] is given as follows:
+Let stem:[n_{"dig"}] denote the number of significant decimal digits regarded as meaningful in a numerical value stem:[z]. The ((numerical tolerance)) stem:[delta] associated with stem:[z] is given as follows:
 
 . express stem:[z] in the form stem:[c xx 10^{cc(l)}], where stem:[c] is an stem:[n_{"dig"}] decimal digit integer and stem:[cc(l)] an integer;
 . take
@@ -234,17 +234,17 @@ The objective of the adaptive procedure given in <<scls_7-9-4>> is to provide
 
 . an estimate stem:[y] of stem:[ii(Y)],
 . an associated standard uncertainty stem:[u(y)], and
-. the endpoints stem:[y_{"low"}] and stem:[y_{"high"}] of a coverage interval for stem:[ii(Y)] corresponding to a stipulated coverage probability such that each of these four values can be expected to meet the numerical tolerance required.
+. the endpoints stem:[y_{"low"}] and stem:[y_{"high"}] of a coverage interval for stem:[ii(Y)] corresponding to a stipulated coverage probability such that each of these four values can be expected to meet the ((numerical tolerance)) required.
 
 NOTE: By its stochastic nature, the procedure cannot be guaranteed to provide such an interval.
 
 NOTE: stem:[y] and stem:[u(y)] generally "converge" considerably faster than stem:[y_{"low"}] and stem:[y_{"high"}] with respect to the number of Monte Carlo trials.
 
-NOTE: Generally, the larger is the coverage probability, the larger is the number of Monte Carlo trials required to deter-mine stem:[y_{"low"}] and stem:[y_{"high"}] for a given numerical tolerance.
+NOTE: Generally, the larger is the coverage probability, the larger is the number of Monte Carlo trials required to deter-mine stem:[y_{"low"}] and stem:[y_{"high"}] for a given ((numerical tolerance)).
 
 
 [[scls_7-9-4]]
-==== Adaptive procedure (((coverage interval,probabilistically symmetric)))(((coverage interval,statistical)))
+==== Adaptive procedure (((coverage interval,probabilistically symmetric)))(((coverage interval,statistical)))(((estimate of output quantity,from Monte Carlo method)))(((level of confidence)))
 
 A practical approach, involving carrying out a sequence of applications of MCM, is as follows:
 
@@ -282,7 +282,7 @@ y = 1/h sum_{r=1}^{h} y^{(r)};
 
 . [[item_7-9-4h]]calculate the counterpart of this statistic for stem:[u(y)], stem:[y_{"low"}] and stem:[y_{"high"}];
 . use all stem:[h xx ii(M)] model values available so far to form stem:[u(y)];
-. calculate the numerical tolerance stem:[delta] associated with stem:[u(y)] as in <<scls_7-9-2>>;
+. calculate the ((numerical tolerance)) stem:[delta] associated with stem:[u(y)] as in <<scls_7-9-2>>;
 . [[item_7-9-4k]]if any of stem:[2s_y], stem:[2s_{u(y)}], stem:[2s_{y_{"low"}}] and stem:[2s_{y_{"high"}}] exceeds stem:[delta], increase stem:[h] by one and return to <<item_7-9-4d>>;
 . regard the overall computation as having stabilized, and use all stem:[h xx ii(M)] model values obtained to calculate stem:[y], stem:[u(y)] and a stem:[100p " %"] coverage interval, as in <<scls_7-5>> to <<scls_7-7>>.
 

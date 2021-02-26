@@ -1,6 +1,6 @@
 
 [[cls_1]]
-== Scope
+== Scope (((GUM uncertainty framework (GUF))))(((model of measurement)))
 
 This Supplement provides a general numerical approach, consistent with the broad principles of the GUM <<JCGM-100,clause=G.1.5>>, for carrying out the calculations required as part of an evaluation of measure-ment uncertainty. The approach applies to arbitrary models having a single output quantity where the input quantities are characterized by any specified PDFs <<JCGM-100,clause=G.1.4, G.5.3>>.
 
@@ -16,7 +16,7 @@ This Supplement can be used to provide (a representation of) the PDF for the out
 
 can be obtained.
 
-Given (i) the model relating the input quantities and the output quantity and (ii) the PDFs characterizing the input quantities, there is a unique PDF for the output quantity. Generally, the latter PDF cannot be determined analytically. Therefore, the objective of the approach described here is to determine <<item_scope_a>>, <<item_scope_b>>, and <<item_scope_c>> above to a prescribed numerical tolerance, without making unquantified approximations.
+Given (i) the model relating the input quantities and the output quantity and (ii) the PDFs characterizing the input quantities, there is a unique PDF for the output quantity. Generally, the latter PDF cannot be determined analytically. Therefore, the objective of the approach described here is to determine <<item_scope_a>>, <<item_scope_b>>, and <<item_scope_c>> above to a prescribed ((numerical tolerance)), without making unquantified approximations.
 
 For a prescribed coverage probability, this Supplement can be used to provide any required coverage interval, including the probabilistically symmetric coverage interval and the shortest coverage interval.
 
@@ -25,7 +25,7 @@ This Supplement applies to input quantities that are independent, where each suc
 Typical of the uncertainty evaluation problems to which this Supplement can be applied include those in which
 
 * the contributory uncertainties are not of approximately the same magnitude <<JCGM-100,clause=G.2.2>>,
-* it is difficult or inconvenient to provide the partial derivatives of the model, as needed by the law of propagation of uncertainty <<JCGM-100,clause=5>>,
+* it is difficult or inconvenient to provide the partial derivatives(((partial derivative))) of the model, as needed by the law of ((propagation of uncertainty)) <<JCGM-100,clause=5>>,
 * the PDF for the output quantity is not a Gaussian distribution or a scaled and shifted stem:[t]-distribution <<JCGM-100,clause=G.6.5>>,
 * an estimate of the output quantity and the associated standard uncertainty are approximately of the same magnitude <<JCGM-100,clause=G.2.1>>,
 * the models are arbitrarily complicated <<JCGM-100,clause=G.1.5>>, and

@@ -16,7 +16,7 @@ NOTE: In some circumstances, another approach for assigning a PDF may be useful.
 Generally, a joint PDF stem:[g_X (xi)] is assigned to the input quantities stem:[bb(X) = (ii(X)_1,..., ii(X)_N )^{sf(T)}]. See <<scls_6-4-8-4>> <<note2_6-4-8-4>>.
 
 
-==== {blank} ((("indications, analysis of a series of")))(((probability density function (PDF),for input quantities)))
+==== {blank} ((("indications, analysis of a series of")))(((probability density function (PDF),for input quantities)))(((Type A and Type B evaluations of uncertainty)))
 
 When the stem:[ii(X)_i] are independent, PDFs stem:[g_{ii(X)_i} (xi_i)] are assigned individually based on an analysis of a series of indications (Type A evaluation of uncertainty) or based on scientific judgement using information <<Taylor1994>> such as historical data, calibrations, and expert judgement (Type B evaluation of uncertainty) <<JCGM-100,clause=3.3.5>>.
 
@@ -45,12 +45,12 @@ A standard text on probability distributions is Evans, Hastings and Peacock <<Ev
 
 === Bayes' theorem (((Bayes' theorem))) index-range:pdf_quantities[(((probability density function (PDF),for input quantities)))]
 
-==== {blank} ((("indications, analysis of a series of")))
+==== {blank} ((("indications, analysis of a series of")))(((random variable)))
 
 Suppose that information about an input quantity stem:[ii(X)] consists of a series of indications regarded as realizations of independent, identically distributed random variables characterized by a specified PDF, but with unknown ((expectation)) and variance. Bayes' theorem can be used to calculate a PDF for stem:[ii(X)], where stem:[ii(X)] is taken to be equal to the unknown average of these random variables. Calculation proceeds in two steps. First, a non-informative joint prior (pre-data) PDF is assigned to the unknown ((expectation)) and variance. Using Bayes' theorem, this joint prior PDF is then updated, based on the information supplied by the series of indications, to yield a joint posterior (post-data) PDF for the two unknown parameters. The desired posterior PDF for the unknown average is then calculated as a marginal PDF by integrating over the possible values of the unknown variance (see <<scls_6-4-9-2>>).
 
 
-==== {blank} ((("indications, analysis of a series of")))
+==== {blank} ((("indications, analysis of a series of")))(((random variable)))
 
 With the use of Bayes' theorem, the updating is carried out by forming the product of a likelihood function and the prior PDF <<Gelman2004>>. The likelihood function, in the case of indications obtained independently, is the product of functions, one function for each indication and identical in form, e.g. to a Gaussian PDF. The posterior PDF is then determined by integrating the product of prior PDF and likelihood over all possible values of the variance and normalizing the resulting expression.
 
@@ -95,15 +95,15 @@ NOTE: These illustrations of the PDFs are not drawn to scale. The multivariate G
 
 
 [[scls_6-4-2]]
-==== Rectangular distributions
+==== Rectangular distributions (((rectangular distribution)))
 
 [[scls_6-4-2-1]]
-===== {blank}
+===== {blank} (((rectangular distribution,assignment to a quantity)))
 
 If the only available information regarding a quantity stem:[ii(X)] is a lower limit a and an upper limit stem:[b] with stem:[a < b], then, according to the ((principle of maximum entropy)), a rectangular distribution stem:[R(a, b)] over the interval stem:[[a,b\]] would be assigned to stem:[ii(X)].
 
 
-===== {blank}
+===== {blank} (((rectangular distribution,probability density function)))
 
 The PDF for stem:[ii(X)] is 
 
@@ -113,7 +113,7 @@ g_X (xi) = { ({:1//(b-a),:},{:a <= xi <= b,:}),({:0,:},{:"otherwise.":}) :}
 ++++
 
 
-===== {blank}
+===== {blank} (((rectangular distribution,expectation and variance)))
 
 stem:[ii(X)] has ((expectation)) and variance
 
@@ -125,7 +125,7 @@ ii(E)(ii(X)) = {a + b}/2, " " " " " " " " ii(V)(ii(X)) = {(b - a)^2}/12.
 
 
 [[scls_6-4-2-4]]
-===== {blank}
+===== {blank} (((rectangular distribution,sampling from)))
 
 To sample from stem:[R(a, b)], make a draw stem:[r] from the standard rectangular distribution stem:[R(0, 1)] (see <<scls_C-3-3>>), and form
 
@@ -136,15 +136,15 @@ xi = a + (b - a)r.
 
 
 [[scls_6-4-3]]
-==== Rectangular distributions with inexactly prescribed limits
+==== Rectangular distributions with inexactly prescribed limits (((rectangular distribution)))(((rectangular distribution with inexactly prescribed limits)))
 
 [[scls_6-4-3-1]]
-===== {blank}
+===== {blank} (((rectangular distribution with inexactly prescribed limits,assignment to a quantity)))
 
 A quantity stem:[ii(X)] is known to lie between limits stem:[ii(A)] and stem:[ii(B)] with stem:[ii(A) < ii(B)], where the midpoint stem:[(ii(A) + ii(B))//2] of the interval defined by these limits is fixed and the length stem:[ii(B) - ii(A)] of the interval is not known exactly. stem:[ii(A)] is known to lie in the interval stem:[a +- d] and stem:[ii(B)] in stem:[b +- d], where stem:[a], stem:[b] and stem:[d], with stem:[d > 0] and stem:[a + d < b - d], are specified. If no other information is available concerning stem:[ii(X)], stem:[ii(A)] and stem:[ii(B)], the ((principle of maximum entropy)) can be applied to assign to stem:[ii(X)] a "curvilinear trapezoid" (a rectangular distribution with inexactly prescribed limits).
 
 
-===== {blank}
+===== {blank} (((rectangular distribution with inexactly prescribed limits,probability density function)))
 
 The PDF for stem:[ii(X)] is
 
@@ -179,7 +179,7 @@ a| image::figure-table1-2.png[]
 | <<scls_6-4-3>>
 
 
-| Sum of two quantities assigned rectangular distributions with lower and upper limits stem:[a_1], stem:[b_1] and stem:[a_2], stem:[b_2]
+| Sum of two quantities assigned ((rectangular distribution))s with lower and upper limits stem:[a_1], stem:[b_1] and stem:[a_2], stem:[b_2]
 a| Trapezoidal: +
 stem:["Trap"(a, b, ii(beta))] with stem:[a = a_1 + a_2], +
 stem:[b = b_1 + b_2], +
@@ -259,7 +259,7 @@ for computer implementation.
 
 
 [[scls_6-4-3-3]]
-===== {blank}
+===== {blank} (((rectangular distribution with inexactly prescribed limits,expectation and variance)))
 
 stem:[ii(X)] has expectation and variance
 
@@ -276,9 +276,9 @@ NOTE: The GUM treats the information about stem:[ii(X)] in <<scls_6-4-3-1>> by a
 
 
 [[scls_6-4-3-4]]
-===== {blank} (((calibration,certificate)))
+===== {blank} (((calibration,certificate)))(((rectangular distribution with inexactly prescribed limits,sampling from)))
 
-To sample from stem:["CTrap"(a, b, d)], make two draws stem:[r_1] and stem:[r_2] independently from the standard rectangular distribution stem:[R(0, 1)] (see <<scls_C-3-3>>), and form
+To sample from stem:["CTrap"(a, b, d)], make two draws stem:[r_1] and stem:[r_2] independently from the standard ((rectangular distribution)) stem:[R(0, 1)] (see <<scls_C-3-3>>), and form
 
 [stem%unnumbered]
 ++++
@@ -292,7 +292,7 @@ and
 xi = a_s + (b_s - a_s) r_2.
 ++++
 
-NOTE: stem:[a_s] is a draw from the rectangular distribution with limits stem:[a +- d]. stem:[b_s] is then formed to ensure that the midpoint of a_s and b_s is the prescribed value stem:[x = (a + b)//2].
+NOTE: stem:[a_s] is a draw from the ((rectangular distribution)) with limits stem:[a +- d]. stem:[b_s] is then formed to ensure that the midpoint of a_s and b_s is the prescribed value stem:[x = (a + b)//2].
 
 
 [example]
@@ -309,11 +309,11 @@ Hence stem:[u(x) = (0.0036)^{1//2} = 0.060 " "rm(V)], which can be compared with
 
 
 [[scls_6-4-4]]
-==== Trapezoidal distributions
+==== Trapezoidal distributions (((trapezoidal distribution)))
 
-===== {blank}
+===== {blank} (((trapezoidal distribution,assignment to a quantity)))
 
-The assignment of a symmetric trapezoidal distribution to a quantity is discussed in the GUM <<JCGM-100,clause=4.3.9>>. Suppose a quantity stem:[ii(X)] is defined as the sum of two independent quantities stem:[ii(X)_1] and stem:[ii(X)_2]. Suppose, for stem:[i = 1] and stem:[i = 2], stem:[ii(X)_i] is assigned a rectangular distribution stem:[R(a_i, b_i)] with lower limit stem:[a_i] and upper limit stem:[b_i]. Then the distribution for stem:[ii(X)] is a symmetric trapezoidal distribution stem:["Trap"(a, b, ii(beta))] with lower limit stem:[a], upper limit stem:[b], and stem:[a] parameter stem:[ii(beta)] equal to the ratio of the semi-width of the top of the trapezoid to that of the base. The parameters of this trapezoidal distribution are related to those of the rectangular distributions by
+The assignment of a symmetric trapezoidal distribution to a quantity is discussed in the GUM <<JCGM-100,clause=4.3.9>>. Suppose a quantity stem:[ii(X)] is defined as the sum of two independent quantities stem:[ii(X)_1] and stem:[ii(X)_2]. Suppose, for stem:[i = 1] and stem:[i = 2], stem:[ii(X)_i] is assigned a ((rectangular distribution)) stem:[R(a_i, b_i)] with lower limit stem:[a_i] and upper limit stem:[b_i]. Then the distribution for stem:[ii(X)] is a symmetric trapezoidal distribution stem:["Trap"(a, b, ii(beta))] with lower limit stem:[a], upper limit stem:[b], and stem:[a] parameter stem:[ii(beta)] equal to the ratio of the semi-width of the top of the trapezoid to that of the base. The parameters of this trapezoidal distribution are related to those of the rectangular distributions by
 
 [[eq5]]
 [stem]
@@ -338,7 +338,7 @@ and
 
 
 [[scls_6-4-4-2]]
-===== {blank} (((convolution)))
+===== {blank} (((convolution)))(((trapezoidal distribution,probability density function)))
 
 The PDF for stem:[ii(X)] (<<fig5>>), obtained using convolution <<Rice1995,page=93>>, is
 
@@ -373,7 +373,7 @@ for computer implementation.
 image::figure5.png[]
 
 
-===== {blank}
+===== {blank} (((trapezoidal distribution,expectation and variance)))
 
 stem:[ii(X)] has expectation and variance 
 
@@ -383,9 +383,9 @@ ii(E)(ii(X)) = {a + b}/2, " " ii(V)(ii(X)) = {(b - a)^2}/24 (1 + ii(beta)^2).
 ++++
 
 
-===== {blank}
+===== {blank} (((trapezoidal distribution,sampling from)))
 
-To sample from stem:["Trap"(a, b, ii(beta))], make two draws stem:[r_1] and stem:[r_2] independently from the standard rectangular distribution stem:[R(0, 1)] (see <<scls_C-3-3>>), and form
+To sample from stem:["Trap"(a, b, ii(beta))], make two draws stem:[r_1] and stem:[r_2] independently from the standard ((rectangular distribution)) stem:[R(0, 1)] (see <<scls_C-3-3>>), and form
 
 [stem%unnumbered]
 ++++
@@ -394,14 +394,14 @@ xi = a + {b - a}/2 [(1 + ii(beta))r_1 + (1 + ii(beta))r_2].
 
 
 [[scls_6-4-5]]
-==== Triangular distributions
+==== Triangular distributions (((triangular distribution)))
 
-===== {blank}
+===== {blank} (((triangular distribution,assignment to a quantity)))
 
-Suppose a quantity stem:[ii(X)] is defined as the sum of two independent quantities, each assigned a rectangular distribution (see <<scls_6-4-4>>), but with equal semi-widths, i.e. stem:[b_1 - a_1 = b_2 - a_2]. It follows from <<eq5>> and <<eq6>> that stem:[lambda_1 = 0] and stem:[ii(beta) = 0]. The distribution for stem:[ii(X)] is the trapezoidal distribution stem:["Trap"(a, b, 0)], which reduces to the (symmetric) triangular distribution stem:[T(a, b)] over the interval stem:[[a,b\]].
+Suppose a quantity stem:[ii(X)] is defined as the sum of two independent quantities, each assigned a ((rectangular distribution)) (see <<scls_6-4-4>>), but with equal semi-widths, i.e. stem:[b_1 - a_1 = b_2 - a_2]. It follows from <<eq5>> and <<eq6>> that stem:[lambda_1 = 0] and stem:[ii(beta) = 0]. The distribution for stem:[ii(X)] is the trapezoidal distribution stem:["Trap"(a, b, 0)], which reduces to the (symmetric) triangular distribution stem:[T(a, b)] over the interval stem:[[a,b\]].
 
 
-===== {blank}
+===== {blank} (((triangular distribution,probability density function)))
 
 The PDF for stem:[ii(X)] is
 
@@ -428,7 +428,7 @@ for computer implementation.
 ====
 
 
-===== {blank}
+===== {blank} (((triangular distribution,expectation and variance)))
 
 stem:[ii(X)] has expectation and variance
 
@@ -438,9 +438,9 @@ ii(E)(ii(X)) = {a + b}/2, " " ii(V)(ii(X)) = {(b - a)^2}/24.
 ++++
 
 
-===== {blank}
+===== {blank} (((triangular distribution,sampling from)))
 
-To sample from stem:[T(a, b)], make two draws stem:[r_1] and stem:[r_2] independently from the standard rectangular distribution stem:[R(0, 1)] (see <<scls_C-3-3>>), and form
+To sample from stem:[T(a, b)], make two draws stem:[r_1] and stem:[r_2] independently from the standard ((rectangular distribution)) stem:[R(0, 1)] (see <<scls_C-3-3>>), and form
 
 [stem%unnumbered]
 ++++
@@ -453,14 +453,14 @@ xi = a + {b - a}/2 (r_1 + r_2).
 
 ===== {blank} (((arc sine distribution,assignment to a quantity)))
 
-If a quantity stem:[ii(X)] is known to cycle sinusoidally, with unknown phase stem:[ii(Phi)], between specified limits stem:[a] and stem:[b], with stem:[a < b], then, according to the ((principle of maximum entropy)), a rectangular distribution stem:[R(0,2pi)] would be assigned to stem:[ii(Phi)]. The distribution assigned to stem:[ii(X)] is the arc sine distribution stem:[U(a, b)] <<Evans2000>>, given by the transformation
+If a quantity stem:[ii(X)] is known to cycle sinusoidally, with unknown phase stem:[ii(Phi)], between specified limits stem:[a] and stem:[b], with stem:[a < b], then, according to the ((principle of maximum entropy)), a ((rectangular distribution)) stem:[R(0,2pi)] would be assigned to stem:[ii(Phi)]. The distribution assigned to stem:[ii(X)] is the arc sine distribution stem:[U(a, b)] <<Evans2000>>, given by the transformation
 
 [stem%unnumbered]
 ++++
 ii(X) = {a + b}/2 + {b - a}/2 sin ii(Phi),
 ++++
 
-where stem:[ii(Phi)] has the rectangular distribution stem:[R(0,2pi)].
+where stem:[ii(Phi)] has the ((rectangular distribution)) stem:[R(0,2pi)].
 
 
 ===== {blank} (((arc sine distribution,probability density function)))
@@ -514,7 +514,7 @@ ii(E)(ii(X)) = {a + b}/2, " " ii(V)(ii(X)) = {(b - a)^2}/8.
 
 ===== {blank} (((arc sine distribution,sampling from)))
 
-To sample from stem:[U(a, b)], make a draw stem:[r] from the standard rectangular distribution stem:[R(0, 1)] (see <<scls_C-3-3>>), and form
+To sample from stem:[U(a, b)], make a draw stem:[r] from the standard ((rectangular distribution)) stem:[R(0, 1)] (see <<scls_C-3-3>>), and form
 
 [stem%unnumbered]
 ++++
@@ -567,7 +567,7 @@ xi = x + u(x)z.
 ==== Multivariate Gaussian distributions (((multivariate Gaussian distribution)))
 
 [[scls_6-4-8-1]]
-===== {blank} (((best estimate,of a vector input quantity)))(((multivariate Gaussian distribution,assignment to a vector quantity)))
+===== {blank} (((best estimate,of a vector input quantity)))(((multivariate Gaussian distribution,assignment to a vector quantity)))(((uncertainty matrix)))
 
 A comparable result to that in <<scls_6-4-7-1>> holds for an stem:[ii(N)]-dimensional quantity stem:[bb(X) = (ii(X)_1,..., ii(X)_N )^{sf(T)}]. If the only information available is a best estimate stem:[bb(x) = (x_1,..., x_N )^{sf(T)}] of stem:[bb(X)] and the associated (strictly) positive definite uncertainty matrix
 
@@ -646,7 +646,7 @@ g_{ii(X)_i} (xi_i) = 1/{sqrt(2 pi) (x_i)} exp(- {(xi - x_i)^2}/{2u^2(x_i)}).
 
 ====
 
-==== stem:[t]-distributions
+==== stem:[t]-distributions (((t-distribution)))
 
 ===== {blank}
 
@@ -654,7 +654,7 @@ stem:[t]-distributions typically arise in two circumstances: the evaluation of a
 
 
 [[scls_6-4-9-2]]
-===== {blank} (((average,of a set of indications)))(((Bayes' theorem)))((("indications, analysis of a series of")))
+===== {blank} (((average,of a set of indications)))(((Bayes' theorem)))((("indications, analysis of a series of")))(((t-distribution,assignment to a quantity)))(((variance,of a set of indications)))
 
 Suppose that a series of stem:[n] indications stem:[x_1,..., x_n] is available, regarded as being obtained independently from a quantity with unknown expectation stem:[mu_0] and unknown variance stem:[ii(sigma)_0^2] having Gaussian distribution stem:["N"(mu_0,sigma_0^2)]. The desired input quantity stem:[ii(X)] is taken to be equal to stem:[mu_0]. Then, assigning a non-informative joint prior distribution to stem:[mu_0] and stem:[ii(sigma)_0^2], and using Bayes' theorem, the marginal PDF for stem:[ii(X)] is a scaled and shifted stem:[t]-distribution stem:[t_{nu}(bar(x), s^2//n)] with stem:[nu = n - 1] ((degrees of freedom)), where
 
@@ -666,7 +666,7 @@ bar(x) = 1/n sum_{i=1}^n x_i, " " s^2 = 1/{n - 1} sum_{i=1}^n (x_i - bar(x))^2,
 being, respectively, the average and variance of the indications <<Gelman2004>>.
 
 
-===== {blank} (((gamma function)))
+===== {blank} (((gamma function)))(((t-distribution,probability density function)))
 
 The PDF for stem:[ii(X)] is
 
@@ -686,7 +686,7 @@ Gamma (z) = int_{0}^{oo} t^{z - 1} e^{-t} " d"t, " " " " z > 0
 is the gamma function.
 
 
-===== {blank} (((average,of a set of indications)))(((best estimate,of an input quantity)))(((degrees of freedom,effective)))((("indications, analysis of a series of")))
+===== {blank} (((average,of a set of indications)))(((best estimate,of an input quantity)))(((degrees of freedom,effective)))((("indications, analysis of a series of")))(((standard uncertainty,reliability of)))(((t-distribution,expectation and variance)))(((Type A and Type B evaluations of uncertainty)))(((Welch-Satterthwaite formula)))
 
 stem:[ii(X)] has expectation and variance
 
@@ -711,7 +711,7 @@ NOTE: In the Bayesian context of this Supplement, concepts such as the reliabili
 
 
 [[scls_6-4-9-5]]
-===== {blank}
+===== {blank} (((t-distribution,sampling from)))
 
 To sample from stem:[t_{nu}(bar(x),s^2//n)], make a draw stem:[t] from the central stem:[t]-distribution stem:[t_{nu}] with stem:[nu = n - 1] ((degrees of freedom)) <<JCGM-100,clause=G.3>> (also see <<scls_C-6>>), and form
 
@@ -722,7 +722,7 @@ xi = bar(x) + s/{sqrt(n)} t.
 
 
 [[scls_6-4-9-6]]
-===== {blank} (((degrees of freedom,of a pooled standard deviation)))((("indications, analysis of a series of")))
+===== {blank} (((degrees of freedom,of a pooled standard deviation)))((("indications, analysis of a series of")))(((standard deviation,pooled)))
 
 If instead of a standard deviation stem:[s] calculated from a single series of indications, a pooled standard deviation stem:[s_p] with stem:[nu_p] ((degrees of freedom)) obtained from stem:[ii(Q)] such sets,
 
@@ -747,7 +747,7 @@ x = bar(x) = 1/n sum_{i=1}^n x_i, " " u(x) = sqrt(nu_{"p"}/{nu_{"p"} - 2}) s_{"p
 
 
 [[scls_6-4-9-7]]
-===== {blank} (((best estimate,from a calibration certificate)))(((calibration,certificate)))(((coverage factor)))(((degrees of freedom,effective)))(((expanded uncertainty)))
+===== {blank} (((best estimate,from a calibration certificate)))(((calibration,certificate)))(((coverage factor)))(((degrees of freedom,effective)))(((expanded uncertainty)))(((t-distribution,assignment to a quantity)))
 
 If the source of information about a quantity stem:[ii(X)] is a calibration certificate <<JCGM-100,clause=4.3.1>> in which a best estimate stem:[x], the expanded uncertainty stem:[ii(U)_p], the coverage factor stem:[k_p] and the effective ((degrees of freedom)) stem:[nu_{"eff"}] are stated, then a scaled and shifted stem:[t]-distribution stem:[t_{nu} (x, (ii(U)_p//k_p)^2)] with stem:[nu = nu_{"eff"}] ((degrees of freedom)) should be assigned to stem:[ii(X)].
 
@@ -790,7 +790,7 @@ ii(E)(ii(X)) = x, " " ii(V)(ii(X)) = x^2.
 [[scls_6-4-6-4]]
 ===== {blank} (((exponential distribution,sampling from)))
 
-To sample from stem:["Ex"(1//x)], make a draw stem:[r] from the standard rectangular distribution stem:[R(0, 1)] (see <<scls_C-3-3>>), and form
+To sample from stem:["Ex"(1//x)], make a draw stem:[r] from the standard ((rectangular distribution)) stem:[R(0, 1)] (see <<scls_C-3-3>>), and form
 
 [stem%unnumbered]
 ++++
@@ -833,7 +833,7 @@ ii(E)(ii(X)) = q + 1, " " ii(V)(ii(X)) = q + 1.
 [[scls_6-4-11-4]]
 ===== {blank} (((chi-squared distribution)))(((Erlang distribution)))(((exponential distribution)))(((gamma distribution,sampling from)))
 
-To sample from stem:[G(q + 1, 1)], make stem:[q + 1] draws stem:[r_i], stem:[i = 1,..., q + 1], independently from the standard rectangular distribution stem:[R(0, 1)] (see <<scls_C-3-3>>), and form <<Evans2000>>
+To sample from stem:[G(q + 1, 1)], make stem:[q + 1] draws stem:[r_i], stem:[i = 1,..., q + 1], independently from the standard ((rectangular distribution)) stem:[R(0, 1)] (see <<scls_C-3-3>>), and form <<Evans2000>>
 
 [stem%unnumbered]
 ++++

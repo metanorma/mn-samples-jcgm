@@ -22,7 +22,7 @@ NOTE: Generators other than those given in this annex can be used. Their statist
 
 
 [[scls_C-2]]
-=== General distributions
+=== General distributions (((rectangular distribution)))
 
 A draw from any strictly increasing, univariate continuous distribution function stem:[G_X (xi)] can be made by transforming a draw from a rectangular distribution:
 
@@ -40,11 +40,11 @@ NOTE: If the pseudo-random number generator for the rectangular distribution is 
 
 
 [[scls_C-3]]
-=== Rectangular distribution
+=== Rectangular distribution (((rectangular distribution,sampling from)))
 
 ==== General
 
-===== {blank}
+===== {blank} (((rectangular number generator,quality of)))
 
 The ability to generate pseudo-random numbers from a rectangular distribution is fundamental in its own right, and also as the basis for generating pseudo-random numbers from any distribution (see <<scls_C-2>>, <<scls_C-4>> and <<scls_C-6>>) using an appropriate algorithm or formula. In the latter regard, the quality of the numbers generated from a non-rectangular distribution depends on that of the generator of numbers from a rectangular distribution and on the properties of the algorithm employed. The quality of the numbers generated from a non-rectangular distribution can therefore be expected to be related to those generated from the rectangular distribution. Only a generator that can faithfully provide rectangularly distributed numbers used in conjunction with a good algorithm can be expected to constitute a generator that can faithfully provide non-rectangularly distributed numbers.
 
@@ -106,7 +106,7 @@ NOTE: The period of the sequence of numbers produced by a pseudo-random number g
 
 
 [[scls_C-3-2-2]]
-===== {blank}
+===== {blank} (((tests of randomness)))
 
 An extensive test of the statistical properties of any generator submitted to it is carried out by the test suite TestU01 <<Ecuyerm>>. This suite is very detailed, with many individual tests, including the so-called Big Crush. Several generators passing the Big Crush test are listed by Wichmann and Hill <<Wichmann1622>>. An enhanced Wichmann-Hill generator (see <<scls_C-3-3>>) also passes the test, and has the properties <<Wichmann1622>> that
 
@@ -117,7 +117,7 @@ An extensive test of the statistical properties of any generator submitted to it
 
 
 [[scls_C-3-3]]
-==== Procedure for generating pseudo-random numbers from a rectangular distribution
+==== Procedure for generating pseudo-random numbers from a rectangular distribution (((rectangular number generator,recommended)))
 
 ===== {blank}
 
@@ -277,7 +277,7 @@ In <<figc1>>, the points span an elongated angled ellipse. Were the off-diagonal
 
 
 [[scls_C-6]]
-=== stem:[t]-distribution
+=== stem:[t]-distribution (((t-distribution,sampling from)))
 
 The procedure in <<tablec5>> provides an approach <<Kinderman1018>>, <<Robert1999,page=63>> to obtain draws from the stem:[t]-distribution with stem:[nu] ((degrees of freedom)).
 

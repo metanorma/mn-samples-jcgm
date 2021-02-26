@@ -77,7 +77,7 @@ stem:["N"(bb(mu),bb(V))]:: multivariate Gaussian distribution with parameters st
 
 stem:[n]:: number of indications in a series
 
-stem:[n_{"dig"}]:: number of significant decimal digits regarded as meaningful in a numerical value
+stem:[n_{"dig"}]:: number of ((significant decimal digits)) regarded as meaningful in a numerical value
 
 stem:[Pr(z)]:: probability of the event stem:[z]
 
@@ -121,7 +121,7 @@ stem:[bb(U_x)]:: uncertainty matrix associated with the vector estimate stem:[x]
 
 stem:[bb(u(x))]:: vector stem:[(u(x_1),..., u(x_N))^{sf(T)}] of standard uncertainties associated with the vector estimate stem:[x] of the vector input quantity stem:[ii(X)]
 
-stem:[u(x_i)]:: standard uncertainty associated with the estimate stem:[x_i] of the input quantity stem:[ii(X)_i]
+stem:[u(x_i)]:: ((standard uncertainty)) associated with the estimate stem:[x_i] of the input quantity stem:[ii(X)_i]
 
 stem:[u(x_i,x_j)]:: covariance associated with the estimates stem:[x_i] and stem:[x_j] of the input quantities stem:[ii(X)_i] and stem:[ii(X)_j]
 

@@ -1,6 +1,6 @@
 
 [[cls_1]]
-== Scope (((GUM uncertainty framework (GUF))))(((model of measurement)))
+== Scope (((GUM uncertainty framework (GUF))))(((model of measurement)))(((reporting the results)))(((uncertainty evaluation problems)))
 
 This Supplement provides a general numerical approach, consistent with the broad principles of the GUM <<JCGM-100,clause=G.1.5>>, for carrying out the calculations required as part of an evaluation of measure-ment uncertainty. The approach applies to arbitrary models having a single output quantity where the input quantities are characterized by any specified PDFs <<JCGM-100,clause=G.1.4, G.5.3>>.
 
@@ -33,7 +33,7 @@ Typical of the uncertainty evaluation problems to which this Supplement can be a
 
 A validation procedure is provided to check whether the GUM uncertainty framework is applicable. The GUM uncer-tainty framework remains the primary approach to uncertainty evaluation in circumstances where it is demonstrably applicable.
 
-It is usually sufficient to report measurement uncertainty to one or perhaps two significant decimal digits. Guidance is provided on carrying out the calculation to give reasonable assurance that in terms of the information provided the reported decimal digits are correct.
+It is usually sufficient to report measurement uncertainty to one or perhaps two ((significant decimal digits)). Guidance is provided on carrying out the calculation to give reasonable assurance that in terms of the information provided the reported decimal digits are correct.
 
 Diled examples illustrate the guidance provided.
 

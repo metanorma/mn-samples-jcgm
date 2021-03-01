@@ -8,8 +8,9 @@ A glossary of principal symbols is given in <<annexG>>.
 
 
 === probability distribution (((probability)))(((probability distribution)))(((probability distribution,joint)))(((probability distribution,multivariate)))(((probability distribution,univariate)))
+domain:[random variable]
 
-&#x2329;random variable&#x232A; function giving the probability that a ((random variable)) takes any given value or belongs to a given set of values
+function giving the probability that a ((random variable)) takes any given value or belongs to a given set of values
 
 NOTE: The probability on the whole set of values of the random variable equals 1.
 

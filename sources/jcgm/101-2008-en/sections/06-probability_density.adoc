@@ -179,7 +179,7 @@ a| image::figure-table1-2.png[]
 | <<scls_6-4-3>>
 
 
-| Sum of two quantities assigned ((rectangular distribution))s with lower and upper limits stem:[a_1], stem:[b_1] and stem:[a_2], stem:[b_2]
+| Sum of two quantities assigned rectangular distributions(((rectangular distribution))) with lower and upper limits stem:[a_1], stem:[b_1] and stem:[a_2], stem:[b_2]
 a| Trapezoidal: +
 stem:["Trap"(a, b, ii(beta))] with stem:[a = a_1 + a_2], +
 stem:[b = b_1 + b_2], +

@@ -493,9 +493,9 @@ The determination of an estimate stem:[delta y] of stem:[delta ii(Y)], the assoc
 Six cases are considered, in all of which stem:[x_2] is taken as zero and stem:[u(x_1) = u(x_2) = 0.005]. The first three of these cases correspond to taking stem:[x_1 = 0], stem:[0.010], and stem:[0.050], each with stem:[r(x_1, x_2) = 0]. The other three cases correspond to taking the same stem:[x_1], but with stem:[r(x_1, x_2) = 0.9]. The various numerical values of stem:[x_1] (comparable to those occurring in practice) are used to investigate the extent to which the results obtained using the considered approaches differ.
 
 
-===== {blank} (((covariance matrix)))(((probability density function (PDF),joint)))
+===== {blank} (((covariance matrix)))(((probability density function (PDF),joint)))(((Gaussian distribution)))
 
-For the cases in which stem:[r = r(x_1, x_2) = 0], the covariance matrix given in formulae <<eq27>> reduces to stem:["diag"(u^2(x_1), u^2(x_2))] and the corresponding joint distribution for stem:[ii(X)_1] and stem:[ii(X)_2] to the product of two univariate ((Gaussian distribution))s for stem:[ii(X)_i], for stem:[i = 1, 2], with ((expectation)) stem:[x_i] and standard deviation stem:[u(x_i)].
+For the cases in which stem:[r = r(x_1, x_2) = 0], the covariance matrix given in formulae <<eq27>> reduces to stem:["diag"(u^2(x_1), u^2(x_2))] and the corresponding joint distribution for stem:[ii(X)_1] and stem:[ii(X)_2] to the product of two univariate Gaussian distributions for stem:[ii(X)_i], for stem:[i = 1, 2], with ((expectation)) stem:[x_i] and standard deviation stem:[u(x_i)].
 
 
 [[scls_9-4-2]]

@@ -934,7 +934,7 @@ Assign a scaled and shifted stem:[t]-distribution stem:[t_{nu} (ii(mu), ii(sigma
 
 [stem%unnumbered]
 ++++
-mu = 50000623 " mn", " " " " " " " " ii(sigma) = ii(U)_{"p"}/k_{"p"} = 75/3 " nm" = 25 " nm", " " " " " " " " nu = 18.
+mu = 50000623 " mn", "    " ii(sigma) = ii(U)_{"p"}/k_{"p"} = 75/3 " nm" = 25 " nm", "    " nu = 18.
 ++++
 
 
@@ -951,7 +951,7 @@ Assign a scaled and shifted stem:[t]-distribution stem:[t_{nu}(ii(mu), ii(sigma)
 
 [stem%unnumbered]
 ++++
-ii(mu) = 215 " nm", " " " " " " " " ii(sigma) = 13/{sqrt(5)} " nm" = 6 nm, " " " " " " " " nu = 24.
+ii(mu) = 215 " nm", "    " ii(sigma) = 13/{sqrt(5)} " nm" = 6 nm, "    " nu = 24.
 ++++
 
 
@@ -1005,7 +1005,7 @@ Assign a rectangular distribution stem:[R(a, b)] (see <<scls_6-4-2>>) to stem:[a
 
 [stem%unnumbered]
 ++++
-a = 9.5 xx 10^{-6} " °C"^{-1}," " " " " " " " b = 13.5 xx 10^{-6} " °C"^{-1}. 
+a = 9.5 xx 10^{-6} " °C"^{-1},"    " b = 13.5 xx 10^{-6} " °C"^{-1}. 
 ++++
 
 NOTE: There is no information about the reliability of the limits and so a rectangular distribution with exactly known limits is assigned. Such information may have been omitted from the description in the GUM because the corresponding sensitivity coefficient is zero, and so the quantity makes no contribution in an application of the GUM uncertainty framework based on first-order terms only.
@@ -1024,7 +1024,7 @@ Assign a ((Gaussian distribution)) stem:[N(ii(mu),ii(sigma)^2)] (see <<scls_6-4-
 
 [stem%unnumbered]
 ++++
-ii(mu) = - 0.1 " °C", " " " " " " " " ii(sigma) = 0.2 " °C"
+ii(mu) = - 0.1 " °C", "    " ii(sigma) = 0.2 " °C"
 ++++
 
 NOTE: There is no information about the source of the evaluation of the uncertainty and so a ((Gaussian distribution)) is assigned. Also see <<scls_9-5-2-6-2>> note, regarding such information.
@@ -1043,7 +1043,7 @@ Assign an arc sine distribution stem:[U(a,b)] (see <<scls_6-4-6>>) to, with limi
 
 [stem%unnumbered]
 ++++
-a = -0.5 " °C", " " " " " " " " b = 0.5 " °C".
+a = -0.5 " °C", "    " b = 0.5 " °C".
 ++++
 
 NOTE: There is no information about the reliability of the limits and so a U-shaped distribution with exactly known limits is assigned. As in <<scls_9-5-2-6-2>> note, such information may have been omitted from the description in the GUM.
@@ -1063,7 +1063,7 @@ Assign a rectangular distribution with inexactly prescribed limits (see <<scls_6
 
 [stem%unnumbered]
 ++++
-a = -1.0 xx 10^{-6} " °C"^{-1}, " " " " " " " " b = 1.0 xx 10^{-6} " °C"^{-1}, " " " " " " " " d = 0.1 xx 10^{-6} " °C"^{-1}.
+a = -1.0 xx 10^{-6} " °C"^{-1}, "    " b = 1.0 xx 10^{-6} " °C"^{-1}, "    " d = 0.1 xx 10^{-6} " °C"^{-1}.
 ++++
 
 The stated reliability of 10 % on the estimated bounds provides the basis for this value of stem:[d].
@@ -1082,7 +1082,7 @@ Assign a rectangular distribution with inexactly prescribed limits (see <<scls_6
 
 [stem%unnumbered]
 ++++
-a = -0.050 " °C", " " " " " " " " b = 0.050 " °C", " " " " " " " " d = 0.025 " °C".
+a = -0.050 " °C", "    " b = 0.050 " °C", "    " d = 0.025 " °C".
 ++++
 
 The stated reliability of 50 % provides the basis for this value of stem:[d].

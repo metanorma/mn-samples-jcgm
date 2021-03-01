@@ -181,7 +181,7 @@ The shortest stem:[100p " %"] coverage interval is given by determining stem:[al
 [0, - 2u^2 (x_1) ln(1 - p)].
 ++++
 
-For stem:[u(x_1) = 0.005], the shortest 95 % coverage interval is
+For stem:[u(x_1) = 0.005], the shortest stem:[95 %] coverage interval is
 
 [stem%unnumbered]
 ++++
@@ -190,14 +190,14 @@ For stem:[u(x_1) = 0.005], the shortest 95 % coverage interval is
 
 ==== {blank} (((coverage interval,probabilistically symmetric)))(((coverage interval,shortest)))
 
-The 95 % probabilistically symmetric coverage interval for stem:[delta ii(Y)] is given by setting stem:[alpha = (1 - p)//2] (see <<scls_5-3-3>>):
+The stem:[95 %] probabilistically symmetric coverage interval for stem:[delta ii(Y)] is given by setting stem:[alpha = (1 - p)//2] (see <<scls_5-3-3>>):
 
 [stem%unnumbered]
 ++++
 [-2u^2 (x_1) ln 0.975, - 2u^2 (x_1) ln 0.025] = [0.0000013, 0.0001844],
 ++++
 
-which is 20 % longer than the shortest 95 % coverage interval.
+which is stem:[20 %] longer than the shortest stem:[95 %] coverage interval.
 
 NOTE: The above analysis is indicative of an analytical approach that can be applied to some problems of this type. In this particular case, the results could in fact have been obtained more directly, since stem:[g_Y(ii(eta))] is strictly increasing and the shortest coverage interval is always in the region of highest density.
 
@@ -265,7 +265,7 @@ u^2(delta y) = 4x_1^2 u^2(x_1) + 4x_2^2 u^2(x_2) + 4u^2 (x_1)u^2(x_2).
 
 ===== {blank} (((coverage interval)))
 
-A 95 % coverage interval for stem:[delta ii(Y)] is given by
+A stem:[95 %] coverage interval for stem:[delta ii(Y)] is given by
 
 [stem%unnumbered]
 ++++

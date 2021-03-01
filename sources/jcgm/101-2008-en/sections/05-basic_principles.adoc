@@ -101,11 +101,11 @@ The probabilistically symmetric stem:[100p " %"] coverage interval and the short
 [[scls_5-3-6]]
 ==== {blank} (((coverage interval,probabilistically symmetric)))(((probability density function (PDF),asymmetric))) [[coverage_interval_shortest]]
 
-<<fig1>> shows the ((distribution function)) stem:[G_Y (ii(eta))] corresponding to an asymmetric PDF. Broken vertical lines mark the endpoints of the probabilistically symmetric 95 % coverage interval and broken horizontal lines the corresponding probability points, viz. 0.025 and 0.975. Continuous lines mark the endpoints of the shortest 95 % coverage interval and the corresponding probability points, which are 0.006 and 0.956 in this case. The lengths of the 95 % coverage intervals in the two cases are 1.76 unit and 1.69 unit, respectively.
+<<fig1>> shows the ((distribution function)) stem:[G_Y (ii(eta))] corresponding to an asymmetric PDF. Broken vertical lines mark the endpoints of the probabilistically symmetric stem:[95 %] coverage interval and broken horizontal lines the corresponding probability points, viz. 0.025 and 0.975. Continuous lines mark the endpoints of the shortest stem:[95 %] coverage interval and the corresponding probability points, which are 0.006 and 0.956 in this case. The lengths of the stem:[95 %] coverage intervals in the two cases are 1.76 unit and 1.69 unit, respectively.
 
 
 [[fig1]]
-.A distribution function stem:[G_Y (ii(eta))] corresponding to an asymmetric PDF and the probabilistically symmetric and shortest 95 % coverage intervals (<<scls_5-3-6>>). "Unit" denotes any unit
+.A distribution function stem:[G_Y (ii(eta))] corresponding to an asymmetric PDF and the probabilistically symmetric and shortest stem:[95 %] coverage intervals (<<scls_5-3-6>>). "Unit" denotes any unit
 image::figure1.png[]
 
 
@@ -160,8 +160,8 @@ The following items would typically be reported following the use of the ((propa
 
 . an estimate stem:[y] of the output quantity stem:[ii(Y)];
 . the ((standard uncertainty)) stem:[u(y)] associated with stem:[y];
-. the stipulated coverage probability stem:[100p " %"] (e.g. 95 %);
-. the endpoints of the selected stem:[100p " %"] coverage interval (e.g. 95 % coverage interval) for stem:[ii(Y)];
+. the stipulated coverage probability stem:[100p " %"] (e.g. stem:[95 %]);
+. the endpoints of the selected stem:[100p " %"] coverage interval (e.g. stem:[95 %] coverage interval) for stem:[ii(Y)];
 . any other relevant information, such as whether the coverage interval is a probabilistically symmetric coverage interval or a shortest coverage interval.
 
 

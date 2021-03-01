@@ -31,7 +31,7 @@ In order to form stem:[tilde(ii(G))_Y(ii(eta))], consider the discrete represent
 [[eqd1]]
 [stem]
 ++++
-tilde(G)_Y (ii(eta)) = {r - 1//2}/{ii(M)} + {ii(eta) - y(r)}/{ii(M)(y_{(r+1)}) - y_{(r)}}, " " " " " " " " y_{(r)} <= ii(eta) <= y_{(y+1)}, " " " " " " " " r = 1,..., ii(M) - 1
+tilde(G)_Y (ii(eta)) = {r - 1//2}/{ii(M)} + {ii(eta) - y(r)}/{ii(M)(y_{(r+1)}) - y_{(r)}}, "    " y_{(r)} <= ii(eta) <= y_{(y+1)}, "    " r = 1,..., ii(M) - 1
 ++++
 --
 

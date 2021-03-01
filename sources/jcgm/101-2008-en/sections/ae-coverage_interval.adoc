@@ -29,7 +29,7 @@ where
 
 [stem%unnumbered]
 ++++
-" "^n C_r = {n!} / {r!(n - r)!}, " " " " " " " " z_{+} = max(z,0)
+" "^n C_r = {n!} / {r!(n - r)!}, "    " z_{+} = max(z,0)
 ++++
 
 

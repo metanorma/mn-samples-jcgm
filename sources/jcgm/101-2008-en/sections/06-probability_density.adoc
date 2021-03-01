@@ -120,7 +120,7 @@ stem:[ii(X)] has ((expectation)) and variance
 [[eq2]]
 [stem]
 ++++
-ii(E)(ii(X)) = {a + b}/2, " " " " " " " " ii(V)(ii(X)) = {(b - a)^2}/12.
+ii(E)(ii(X)) = {a + b}/2, "    " ii(V)(ii(X)) = {(b - a)^2}/12.
 ++++
 
 
@@ -266,7 +266,7 @@ stem:[ii(X)] has expectation and variance
 [[eq4]]
 [stem]
 ++++
-ii(E)(ii(X)) = {a+b}/2, " " " " " " " " ii(V)(ii(X)) = (b-a)^2/12 + d^2/9.
+ii(E)(ii(X)) = {a+b}/2, "    " ii(V)(ii(X)) = (b-a)^2/12 + d^2/9.
 ++++
 
 NOTE: The variance in <<eq4>> is always greater than the variance holding for exact limits in <<eq2>>, i.e. when stem:[d = 0].
@@ -282,7 +282,7 @@ To sample from stem:["CTrap"(a, b, d)], make two draws stem:[r_1] and stem:[r_2]
 
 [stem%unnumbered]
 ++++
-a_s = (a - d) + 2dr_1, " " " " " " " " b_s = (a + b) - a_s,
+a_s = (a - d) + 2dr_1, "    " b_s = (a + b) - a_s,
 ++++
 
 and

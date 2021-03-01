@@ -232,7 +232,7 @@ as the estimate of stem:[delta ii(Y)]. The only non-trivially non-zero partial d
 
 [stem%unnumbered]
 ++++
-{partial f}/{partial ii(X)_i} = 2 ii(X)_i, " " " " " " " " {partial^2 f}/{partial ii(X)_i^2} = 2.
+{partial f}/{partial ii(X)_i} = 2 ii(X)_i, "    " {partial^2 f}/{partial ii(X)_i^2} = 2.
 ++++
 
 

@@ -13,7 +13,7 @@ In <<scls_9-2-3-2>>, the analytic solution
 +-2 sqrt(3) [2 - (3//5)^{1//4}] ~~ +- 3.88
 ++++
 
-is stated. It constitutes the endpoints of the probabilistically symmetric 95 % coverage interval for the output quantity stem:[ii(Y)] in an additive model having four input quantities with expectations of zero and standard deviations of unity, the PDFs for which are identical rectangular distributions. This result is established in this annex.
+is stated. It constitutes the endpoints of the probabilistically symmetric stem:[95 %] coverage interval for the output quantity stem:[ii(Y)] in an additive model having four input quantities with expectations of zero and standard deviations of unity, the PDFs for which are identical rectangular distributions. This result is established in this annex.
 
 
 === {blank}
@@ -50,7 +50,7 @@ int_o^1 B_4 (ii(rho)) "d"ii(rho) = [1/24 ii(rho)^4]_0^{1} = 1/24 ~~ 0.0417
 
 === {blank}
 
-The left-hand endpoint stem:[y_{"low"}] of the probabilistically symmetric 95 % coverage interval lies between zero and one, since
+The left-hand endpoint stem:[y_{"low"}] of the probabilistically symmetric stem:[95 %] coverage interval lies between zero and one, since
 
 [stem%unnumbered]
 ++++
@@ -79,7 +79,7 @@ y_{"high"} = 4 - (3/5)^{1//4}.
 ++++
 
 
-Thus, the probabilistically symmetric 95 % coverage interval is
+Thus, the probabilistically symmetric stem:[95 %] coverage interval is
 
 [stem%unnumbered]
 ++++

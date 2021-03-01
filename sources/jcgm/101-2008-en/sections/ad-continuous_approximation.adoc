@@ -105,7 +105,7 @@ p_s <= p + alpha < p_{s+1}.
 
 === {blank} (((coverage interval,probabilistically symmetric)))
 
-The choice stem:[alpha = 0.025] gives the coverage interval defined by the 0.025- and 0.975-quantiles. This choice provides the probabilistically symmetric 95 % coverage interval for stem:[ii(Y)].
+The choice stem:[alpha = 0.025] gives the coverage interval defined by the 0.025- and 0.975-quantiles. This choice provides the probabilistically symmetric stem:[95 %] coverage interval for stem:[ii(Y)].
 
 
 === {blank} (((coverage interval,shortest)))

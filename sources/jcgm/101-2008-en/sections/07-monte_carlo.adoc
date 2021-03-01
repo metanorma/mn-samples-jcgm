@@ -15,7 +15,7 @@ This clause gives information about the implementation of a Monte Carlo method f
 
 A value of stem:[ii(M)], the number of Monte Carlo trials, i.e. the number of model evaluations to be made, needs to be selected. It can be chosen a _priori_, in which case there will be no direct control over the quality of the numerical results provided by MCM. The reason is that the number of trials needed to provide these results to a prescribed ((numerical tolerance)) will depend on the "shape" of the PDF for the output quantity and on the coverage probability required. Also, the calculations are stochastic in nature, being based on random sampling.
 
-NOTE: A value of stem:[ii(M) = 10^6] can often be expected to deliver a 95 % coverage interval for the output quantity such that this length is correct to one or two ((significant decimal digits)).
+NOTE: A value of stem:[ii(M) = 10^6] can often be expected to deliver a stem:[95 %] coverage interval for the output quantity such that this length is correct to one or two ((significant decimal digits)).
 
 
 ==== {blank}
@@ -150,7 +150,7 @@ Let stem:[q = p ii(M)], if stem:[p ii(M)] is an integer. Otherwise, take stem:[q
 NOTE: Because of the randomness in MCM, some of these stem:[ii(M) - q] interval lengths will be shorter than they would be on average, and some longer. So, by choosing the least such length, (the approximation to) the shortest stem:[100p " %"] coverage interval tends to be marginally shorter than that which would have been calculated from stem:[ii(G)_Y (ii(eta))], with the consequence that the typical coverage probability is less than stem:[100p " %"]. For large stem:[ii(M)], this coverage probability is negligibly less than stem:[100p " %"].
 
 [example]
-stem:[10^5] numbers were drawn from a pseudo-random number generator for the rectangular distribution in the interval stem:[[0,1\]], and the shortest 95 % coverage interval formed as above. This exercise was carried out stem:[1000] times. The average coverage probability was 94.92 % and the standard deviation of the stem:[1000] coverage probabilities 0.06 %.
+stem:[10^5] numbers were drawn from a pseudo-random number generator for the rectangular distribution in the interval stem:[[0,1\]], and the shortest stem:[95 %] coverage interval formed as above. This exercise was carried out stem:[1000] times. The average coverage probability was stem:[94.92 %] and the standard deviation of the stem:[1000] coverage probabilities stem:[0.06 %].
 
 
 [[scls_7-8]]
@@ -188,7 +188,7 @@ An indication of the computation time required for an application of MCM can be 
 ii(Y) = cos ii(X)_1 + sin ii(X)_2 + tan^{-1} ii(X)_3 + exp(ii(X)_4) + ii(X)_5^(1//3).
 ++++
 
-Assign a Gaussian PDF to each input quantity stem:[ii(X)_i]. Make stem:[ii(M) = 10^6] Monte Carlo trials. The relative computation times for (a) generating 5M random Gaussian numbers, (b) forming stem:[ii(M)] model values and (&#x200c;c) sorting the stem:[ii(M)] model values were respectively 20 %, 20 % and 60 %, with a total computation time of a few seconds on a personal computer operating at several GHz.
+Assign a Gaussian PDF to each input quantity stem:[ii(X)_i]. Make stem:[ii(M) = 10^6] Monte Carlo trials. The relative computation times for (a) generating 5M random Gaussian numbers, (b) forming stem:[ii(M)] model values and (&#x200c;c) sorting the stem:[ii(M)] model values were respectively stem:[20 %], stem:[20 %] and stem:[60 %], with a total computation time of a few seconds on a personal computer operating at several GHz.
 ====
 
 
@@ -299,11 +299,11 @@ NOTE: The standard deviations formed in steps <<item_7-9-4g>> and <<item_7-9-4h>
 NOTE: In situations where a coverage interval is not required, the test for stabilization of the computation in step <<item_7-9-4k>> can be based instead on stem:[2s_y] and stem:[2s_{u(y)}] only.
 
 
-NOTE: The factor 2 used in step <<item_7-9-4k>> is based on regarding the averages as realizations of Gaussian variables, and corresponds to a coverage probability of approximately 95 %.
+NOTE: The factor 2 used in step <<item_7-9-4k>> is based on regarding the averages as realizations of Gaussian variables, and corresponds to a coverage probability of approximately stem:[95 %].
 
 [NOTE]
 ====
-An alternative, non-adaptive approach for a 95 % probabilistically symmetric coverage interval, which can be obtained using the statistics of the binomial distribution <<David1981>>, is as follows. Select stem:[ii(M) = 10^5] or stem:[ii(M) = 10^6]. Form the interval stem:[[y_{(r)}, y_{(s)}\]], where, for stem:[ii(M) = 10^5], stem:[r = 2420] and stem:[s = 97581], or, for stem:[ii(M) = 10^6], stem:[r = 24747] and stem:[s = 975254]. This interval is a 95 % statistical coverage interval at the level of confidence 0.99 <<JCGM-100,clause=C.2.30>> <<Willink2004>>, i.e. the coverage probability will be no less than 95 % in at least 99 % of uses of MCM. The average coverage probability of such an interval will be stem:[(s - r)//(ii(M) + 1)], which is greater than 95 % by an amount that becomes smaller as stem:[ii(M)] is increased, viz. 95.16 % for stem:[ii(M) = 10^5] and 95.05 % for stem:[ii(M) = 10^6]. (There are other possibilities for stem:[r] and stem:[s]; they do not have to sum to stem:[ii(M) + 1]. A sufficient condition <<David1981,clause=2.6>> is that stem:[s - r] satisfies
+An alternative, non-adaptive approach for a stem:[95 %] probabilistically symmetric coverage interval, which can be obtained using the statistics of the binomial distribution <<David1981>>, is as follows. Select stem:[ii(M) = 10^5] or stem:[ii(M) = 10^6]. Form the interval stem:[[y_{(r)}, y_{(s)}\]], where, for stem:[ii(M) = 10^5], stem:[r = 2420] and stem:[s = 97581], or, for stem:[ii(M) = 10^6], stem:[r = 24747] and stem:[s = 975254]. This interval is a stem:[95 %] statistical coverage interval at the level of confidence 0.99 <<JCGM-100,clause=C.2.30>> <<Willink2004>>, i.e. the coverage probability will be no less than stem:[95 %] in at least stem:[99 %] of uses of MCM. The average coverage probability of such an interval will be stem:[(s - r)//(ii(M) + 1)], which is greater than stem:[95 %] by an amount that becomes smaller as stem:[ii(M)] is increased, viz. stem:[95.16 %] for stem:[ii(M) = 10^5] and stem:[95.05 %] for stem:[ii(M) = 10^6]. (There are other possibilities for stem:[r] and stem:[s]; they do not have to sum to stem:[ii(M) + 1]. A sufficient condition <<David1981,clause=2.6>> is that stem:[s - r] satisfies
 
 [stem%unnumbered]
 ++++

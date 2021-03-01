@@ -304,7 +304,7 @@ A certificate states that a voltage stem:[ii(X)] lies in the interval stem:[10.0
 u^2 (x) = (0.2)^2/12 + (0.05)^2 = 0.0036.
 ++++
 
-Hence stem:[u(x) = (0.0036)^{1//2} = 0.060 " "rm(V)], which can be compared with stem:[0.2//sqrt(12) = 0.058 " "rm(V)] in the case of exact limits, given by replacing stem:[d] by zero. The use of exact limits in this case gives a numerical value for stem:[u(x)] that is 4 % smaller than that for inexact limits. The relevance of such a difference needs to be considered in the context of the application.
+Hence stem:[u(x) = (0.0036)^{1//2} = 0.060 " "rm(V)], which can be compared with stem:[0.2//sqrt(12) = 0.058 " "rm(V)] in the case of exact limits, given by replacing stem:[d] by zero. The use of exact limits in this case gives a numerical value for stem:[u(x)] that is stem:[4 %] smaller than that for inexact limits. The relevance of such a difference needs to be considered in the context of the application.
 ====
 
 

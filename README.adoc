@@ -1,8 +1,6 @@
 = Metanorma JCGM samples
 
-image:https://github.com/metanorma/mn-samples-jcgm/workflows/ubuntu/badge.svg["Build Status", link="https://github.com/metanorma/mn-samples-jcgm/actions?workflow=ubuntu"]
-image:https://github.com/metanorma/mn-samples-jcgm/workflows/macos/badge.svg["Build Status", link="https://github.com/metanorma/mn-samples-jcgm/actions?workflow=macos"]
-image:https://github.com/metanorma/mn-samples-jcgm/workflows/windows/badge.svg["Build Status", link="https://github.com/metanorma/mn-samples-jcgm/actions?workflow=windows"]
+image:https://github.com/metanorma/mn-samples-jcgm/workflows/generate/badge.svg["Build Status", link="https://github.com/metanorma/mn-samples-jcgm/actions?workflow=generate"]
 image:https://github.com/metanorma/mn-samples-jcgm/workflows/docker/badge.svg["Build Status", link="https://github.com/metanorma/mn-samples-jcgm/actions?workflow=docker"]
 
 This document is available in its rendered forms here:

@@ -44,7 +44,7 @@ The approach upon which this guidance document is based is that outlined in ((Re
 [[scls_0-6]]
 === {blank}
 
-A succinct summary of the procedure specified in this guidance document for evaluating andex pressing uncertainty in measurement is given in <<cls_8>> and a number of examples are presented in detail in <<annexH>>. Other annexes deal with general terms in metrology (<<annexB>>); basic statistical terms and concepts (<<annexC>>); "true" value, error, and uncertainty (<<annexD>>); practical suggestions for evaluating uncertainty components (<<annexF>>); degrees of freedom and levels of confidence (<<annexG>>); the principal mathematical symbols used throughout the document (<<annexJ>>); and bibliographical references (<<bibliography>>). An <<alphabetical_index>> concludes the document.
+A succinct summary of the procedure specified in this guidance document for evaluating andex pressing uncertainty in measurement is given in <<cls_8>> and a number of examples are presented in detail in <<annexH>>. Other annexes deal with general terms in metrology (<<annexB>>); basic statistical terms and concepts (<<annexC>>); "true" value, error, and uncertainty (<<annexD>>); practical suggestions for evaluating uncertainty components (<<annexF>>); degrees of freedom and levels of confidence (<<annexG>>); the principal mathematical symbols used throughout the document (<<annexJ>>); and bibliographical references (<<bibliography>>). An <<alphabetical_index,alphabetical index>> concludes the document.
 
 
 [[scls_0-7]]

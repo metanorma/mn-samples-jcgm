@@ -49,7 +49,8 @@ Des liens vers les adresses des huit organisations membres du JCGM (Comité comm
 --
 
 [[foreword]]
-.Foreword
+[.preface]
+== Avant-propos
 
 Le Comité international des poids et mesures \(((CIPM))), la plus haute autorité mondiale en métrologie, a reconnu en 1977 le manque de consensus international dans l'expression de l'incertitude de mesure. Il a demandé au Bureau international des poids et mesures \(((BIPM))) de traiter le problème de concert avec les ((laboratoires de métrologie)) nationaux et d'émettre une recommandation.
 

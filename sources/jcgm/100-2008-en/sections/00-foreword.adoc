@@ -51,7 +51,8 @@ Links to the addresses of the eight organizations presently involved in the JCGM
 --
 
 [[foreword]]
-.Foreword
+[.preface]
+== Foreword
 
 In 1977, recognizing the lack of international consensus on the expression of uncertainty in measurement, the world's highest authority in metrology, the Comité International des Poids et Mesures (CIPM), requested the Bureau International des Poids et Mesures (BIPM) to address the problem in conjunction with the national standards laboratories and to make a recommendation.
 

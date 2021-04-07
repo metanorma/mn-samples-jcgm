@@ -274,7 +274,7 @@ where stem:[delta m_R] is the mass of a small weight of density stem:[ii(rho)_R]
 
 ===== {blank}
 
-It is usual to work in terms of conventional masses. The conventional mass stem:[m_{W,c}] of stem:[W] is the mass of a (hypothetical) weight of density stem:[ii(rho)_0 = 8000 " "rm(kg//m)^3] that balances stem:[W] in air at density stem:[ii(rho)_{a_0} = 1.2 " "rm(kg//m)^3]. Thus,
+It is usual to work in terms of conventional masses. The conventional mass stem:[m_{W,c}] of stem:[W] is the mass of a (hypothetical) weight of density stem:[ii(rho)_0 = 8000 "unitsml(kg/m)"^3] that balances stem:[W] in air at density stem:[ii(rho)_{a_0} = 1.2 "unitsml(kg/m)"^3]. Thus,
 
 [stem%unnumbered]
 ++++
@@ -310,7 +310,7 @@ be the deviation of stem:[m_{W,c}] from the nominal mass
 
 [stem%unnumbered]
 ++++
-m_{"nom"} = 100 " "rm(g). 
+m_{"nom"} = 100 "unitsml(g)". 
 ++++
 
 The model used in this example is given by 
@@ -330,7 +330,7 @@ NOTE: Applying the law of ((propagation of uncertainty)) to the "exact" model <<
 The only information available concerning stem:[m_{R,c}] and stem:[delta m_{R,c}] is a best estimate and an associated ((standard uncertainty)) for each of these quantities. Accordingly, following <<scls_6-4-7-1>>, a ((Gaussian distribution)) is assigned to each of these quantities, with these best estimates used as the expectations of the corresponding quantities and the associated standard uncertainties as the standard deviations. The only information available concerning stem:[ii(rho)_a], stem:[ii(rho)_W] and stem:[ii(rho)_R] is lower and upper limits for each of these quantities. Accordingly, following <<scls_6-4-2-1>>, a rectangular distribution is assigned to each of these quantities, with limits equal to the endpoints of the distribution. <<table5>> summarizes the input quantities and the PDFs assigned. In the table, a ((Gaussian distribution)) stem:[N(ii(mu), ii(sigma)^2)] is described in terms of ((expectation)) stem:[ii(mu)] and standard deviation stem:[ii(sigma)], and a rectangular distribution stem:[R(a, b)] with endpoints stem:[a] and stem:[b(a < b)] in terms of expectation stem:[(a + b)//2] and semi-width stem:[(b - a)//2].
 
 
-NOTE: The quantity stem:[ii(rho)_{a_0}] in the mass calibration model <<eq24,(24)>> is assigned the value stem:[1.2 " "rm(kg//m)^3] with no associated uncertainty.
+NOTE: The quantity stem:[ii(rho)_{a_0}] in the mass calibration model <<eq24,(24)>> is assigned the value stem:[1.2 "unitsml(kg/m)"^3] with no associated uncertainty.
 
 
 [[table5]]
@@ -340,11 +340,11 @@ NOTE: The quantity stem:[ii(rho)_{a_0}] in the mass calibration model <<eq24,(24
 ^| stem:[ii(X)_i] ^| Distribution 4+^| Parameters
 | | ^h| Expectation stem:[ii(mu)] ^h| Standard deviation stem:[ii(sigma)] ^h| Expectation stem:[x = (a + b)//2] ^h| Semi-width stem:[(b - a)//2]
 
-| stem:[m_{R,c}] | stem:[N(ii(mu),ii(sigma)^2)] | stem:[100000000 " "rm(mg)] | stem:[0.050 " "rm(mg)] | |
-| stem:[delta m_{R,c}] | stem:[N(ii(mu),ii(sigma)^2)] | stem:[1.234" "rm(mg)] | stem:[0.020" "rm(mg)] | |
-| stem:[ii(rho)_a] | stem:[R(a,b)] | | | stem:[1.20 " "rm(kg//m)^3] | stem:[0.10 " "rm(kg//m)^2]
-| stem:[ii(rho)_W] | stem:[R(a,b)] | | | stem:[8 xx 10^3 " "rm(kg//m)^3] | stem:[1 xx 10^3 " "rm(kg//m)^3]
-| stem:[ii(rho)_R] | stem:[R(a,b)] | | | stem:[8.00 xx 10^3 " "rm(kg//m)^3] | stem:[0.05 xx 10^3 " "rm(kg//m)^3]
+| stem:[m_{R,c}] | stem:[N(ii(mu),ii(sigma)^2)] | stem:[100000000 "unitsml(mg)"] | stem:[0.050 "unitsml(mg)"] | |
+| stem:[delta m_{R,c}] | stem:[N(ii(mu),ii(sigma)^2)] | stem:[1.234 "unitsml(mg)"] | stem:[0.020 "unitsml(mg)"] | |
+| stem:[ii(rho)_a] | stem:[R(a,b)] | | | stem:[1.20 "unitsml(kg/m)"^3] | stem:[0.10 "unitsml(kg/m)"^2]
+| stem:[ii(rho)_W] | stem:[R(a,b)] | | | stem:[8 xx 10^3 "unitsml(kg/m)"^3] | stem:[1 xx 10^3 "unitsml(kg/m)"^3]
+| stem:[ii(rho)_R] | stem:[R(a,b)] | | | stem:[8.00 xx 10^3 "unitsml(kg/m)"^3] | stem:[0.05 xx 10^3 "unitsml(kg/m)"^3]
 |===
 
 
@@ -371,7 +371,7 @@ stem:[0.72 xx 10^6] trials were taken by the adaptive Monte Carlo procedure with
 .Results of the calculation stage for the mass calibration model <<eq24,(24)>> (<<scls_9-3-2-1>>, <<scls_9-3-2-6>>)
 [cols="7*",options="header"]
 |===
-| Method | stem:[hat(delta m)//rm(mg)] | stem:[u(hat(delta m))] | Shortest stem:[95 %] coverage interval stem:[//"mg"] | stem:[d_{"low"}//"mg"] | stem:[d_{"high"}//"mg"] | GUF validated (stem:[delta = 0.005])?
+| Method | stem:[hat(delta m)//"unitsml(mg)"] | stem:[u(hat(delta m))] | Shortest stem:[95 %] coverage interval stem:[//"unitsml(mg)"] | stem:[d_{"low"}//"unitsml(mg)"] | stem:[d_{"high"}//"unitsml(mg)"] | GUF validated (stem:[delta = 0.005])?
 
 | GUF~1~ | stem:[1.2340] | stem:[0.0539] | stem:[[1.1285,1.3395\]] | stem:[0.0451] | stem:[0.0430] | No
 | MCM | stem:[1.2341] | stem:[0.0754] | stem:[[1.0834, 1.3825\]] | | |
@@ -386,7 +386,7 @@ image::figure10.png[]
 
 ===== {blank}
 
-The results show that, although the GUM uncertainty framework (first order) and MCM give estimates of stem:[delta m] in good agreement, the numerical values for the associated ((standard uncertainty)) are noticeably different. The value (stem:[0.0754" "rm(mg)]) of stem:[u(hat(delta m))] returned by MCM is stem:[40 %] larger than that (stem:[0.0539" "rm(mg)]) returned by the GUM uncertainty framework (first order). The latter is thus optimistic in this respect. There is good agreement between stem:[u(hat(delta m))] determined by MCM and that (stem:[0.0750" "rm(mg)]) provided by the GUM uncertainty framework with higher-order terms.
+The results show that, although the GUM uncertainty framework (first order) and MCM give estimates of stem:[delta m] in good agreement, the numerical values for the associated ((standard uncertainty)) are noticeably different. The value (stem:[0.0754 "unitsml(mg)"]) of stem:[u(hat(delta m))] returned by MCM is stem:[40 %] larger than that (stem:[0.0539 "unitsml(mg)"]) returned by the GUM uncertainty framework (first order). The latter is thus optimistic in this respect. There is good agreement between stem:[u(hat(delta m))] determined by MCM and that (stem:[0.0750 "unitsml(mg)"]) provided by the GUM uncertainty framework with higher-order terms.
 
 
 [[scls_9-3-2-5]]
@@ -782,7 +782,7 @@ image::figure16.png[]
 
 ===== {blank}
 
-The length of a nominally 50 mm gauge block is determined by comparing it with a known reference standard of the same nominal length. The direct output of the comparison of the two gauge blocks is the difference stem:[d] in their lengths given by
+The length of a nominally stem:[50 "unitsml(mm)"] gauge block is determined by comparing it with a known reference standard of the same nominal length. The direct output of the comparison of the two gauge blocks is the difference stem:[d] in their lengths given by
 
 [[eq29]]
 [stem]
@@ -790,7 +790,7 @@ The length of a nominally 50 mm gauge block is determined by comparing it with a
 d = ii(L) (1 + alpha ii(theta)) - ii(L)_s(1 + alpha_s ii(theta)_s)
 ++++
 
-where stem:[ii(L)] is the length at stem:[20 " °C"] of the gauge block being calibrated, stem:[ii(L)_s] is the length of the reference standard at stem:[20 " °C"] as given in its calibration certificate, stem:[alpha] and stem:[alpha_s] are the coefficients of thermal expansion, respectively, of the gauge being calibrated and the reference standard, and stem:[ii(theta)] and stem:[ii(theta)_s] are the deviations in temperature from the stem:[20 " °C"] reference temperature, respectively, of the gauge block being calibrated and the reference standard.
+where stem:[ii(L)] is the length at stem:[20 "unitsml(degC)"] of the gauge block being calibrated, stem:[ii(L)_s] is the length of the reference standard at stem:[20 "unitsml(degC)"] as given in its calibration certificate, stem:[alpha] and stem:[alpha_s] are the coefficients of thermal expansion, respectively, of the gauge being calibrated and the reference standard, and stem:[ii(theta)] and stem:[ii(theta)_s] are the deviations in temperature from the stem:[20 "unitsml(degC)"] reference temperature, respectively, of the gauge block being calibrated and the reference standard.
 
 
 NOTE: The GUM refers to a gauge block as an end gauge.
@@ -848,7 +848,7 @@ where stem:[ii(D)] is a quantity of which the average of the five indications is
 
 ===== {blank}
 
-The quantity stem:[ii(theta)], representing deviation of the temperature from stem:[20 " °C"] of the gauge block being calibrated, can be expressed as
+The quantity stem:[ii(theta)], representing deviation of the temperature from stem:[20 "unitsml(degC)"] of the gauge block being calibrated, can be expressed as
 
 [[eq35]]
 [stem]
@@ -857,7 +857,7 @@ ii(theta) = ii(theta)_0 + ii(Delta),
 ++++
 
 
-where stem:[ii(theta)_0] is a quantity representing the average temperature deviation of the gauge block from stem:[20 " °C"] and a quantity describing a cyclic variation of the temperature deviation from stem:[ii(theta)_0].
+where stem:[ii(theta)_0] is a quantity representing the average temperature deviation of the gauge block from stem:[20 "unitsml(degC)"] and a quantity describing a cyclic variation of the temperature deviation from stem:[ii(theta)_0].
 
 
 ===== {blank} (((model of measurement,calibration of gauge block)))
@@ -909,15 +909,15 @@ In the following subclauses the available information about each input quantity 
 
 | | | stem:[ii(mu)] | stem:[ii(sigma)] | stem:[nu] | stem:[a] | stem:[b] | stem:[d]
 
-| stem:[ii(L)_s] | stem:[t_{nu} (ii(mu), ii(sigma)^2)] | stem:[50000623 " " rm(nm)] | 25 nm | 18 | | | 
-| stem:[ii(D)] | stem:[t_{nu} (ii(mu), ii(sigma)^2)] | 215 nm | 6 nm | 24 | | | 
-| stem:[d_1] | stem:[t_{nu} (ii(mu), ii(sigma)^2)] | 0 nm | 4 nm | 5  | | |
-| stem:[d_2] | stem:[t_{nu} (ii(mu), ii(sigma)^2)] | 0 nm | 7 nm | 8  | | |
-| stem:[alpha_s] | stem:[R(a,b)] | | | | stem:[9.5 xx 10^{-6} " °C"^{-1}] | stem:[13.5 xx 10^{-6}" °C"^{-1}] |
-| stem:[ii(theta)_0] | stem:[N(ii(mu),ii(sigma)^2)] | stem:[-0.1 " °C"] | stem:[0.2 " °C"] | | | |
-| stem:[ii(Delta)] | stem:[U(a,b)] | | | | stem:[-0.5 " °C"] | stem:[0.5 " °C"] |
-| stem:[delta alpha] | stem:["CTrap"(a,b,d)] | | | | stem:[-1.0 xx 10^{-6} " °C"^{-1}] | stem:[1.0 xx 10^{-6} " °C"^{-1}] | stem:[1.0 xx 10^{-6} " °C"^{-1}]
-| stem:[delta ii(theta)] | stem:["CTrap"(a,b,d)] | | | | stem:[-0.050 " °C"] | stem:[0.050 " °C"] | stem:[0.025 " °C"]
+| stem:[ii(L)_s] | stem:[t_{nu} (ii(mu), ii(sigma)^2)] | stem:[50000623 "unitsml(nm)"] | stem:[25 "unitsml(nm)"] | stem:[18] | | | 
+| stem:[ii(D)] | stem:[t_{nu} (ii(mu), ii(sigma)^2)] | stem:[215 "unitsml(nm)"] | stem:[6 "unitsml(nm)"] | stem:[24] | | | 
+| stem:[d_1] | stem:[t_{nu} (ii(mu), ii(sigma)^2)] | stem:[0 "unitsml(nm)"] | stem:[4 "unitsml(nm)"] | stem:[5]  | | |
+| stem:[d_2] | stem:[t_{nu} (ii(mu), ii(sigma)^2)] | stem:[0 "unitsml(nm)"] | stem:[7 "unitsml(nm)"] | stem:[8]  | | |
+| stem:[alpha_s] | stem:[R(a,b)] | | | | stem:[9.5 xx 10^{-6} "unitsml(degC^(-1))"] | stem:[13.5 xx 10^{-6} "unitsml(degC^(-1))"] |
+| stem:[ii(theta)_0] | stem:[N(ii(mu),ii(sigma)^2)] | stem:[-0.1 "unitsml(degC)"] | stem:[0.2 "unitsml(degC)"] | | | |
+| stem:[ii(Delta)] | stem:[U(a,b)] | | | | stem:[-0.5 "unitsml(degC)"] | stem:[0.5 "unitsml(degC)"] |
+| stem:[delta alpha] | stem:["CTrap"(a,b,d)] | | | | stem:[-1.0 xx 10^{-6} "unitsml(degC^(-1))"] | stem:[1.0 xx 10^{-6} "unitsml(degC^(-1))"] | stem:[1.0 xx 10^{-6} "unitsml(degC^(-1))"]
+| stem:[delta ii(theta)] | stem:["CTrap"(a,b,d)] | | | | stem:[-0.050 "unitsml(degC)"] | stem:[0.050 "unitsml(degC)"] | stem:[0.025 "unitsml(degC)"]
 |===
 
 
@@ -925,7 +925,7 @@ In the following subclauses the available information about each input quantity 
 
 ======  Information (((calibration,certificate)))(((coverage factor)))(((degrees of freedom,effective)))(((expanded uncertainty)))
 
-The calibration certificate for the reference standard gives stem:[hat(ii(L)_s) = 50.000623" " rm(mm)] as its length at stem:[20 " °C"] <<JCGM-100,clause=H.1.5>>. It gives stem:[ii(U)_p = 0.075 " "murm(m)] as the expanded uncertainty of the reference standard and states that it was obtained using a coverage factor of stem:[k_p = 3] <<JCGM-100,clause=H.1.3.1>>. The certificate states that the effective ((degrees of freedom)) associated with the combined ((standard uncertainty)), from which the quoted expanded uncertainty was obtained, is stem:[nu_{"eff"} (u(hat(ii(L)_s))) = 18] <<JCGM-100,clause=H.1.6>>.
+The calibration certificate for the reference standard gives stem:[hat(ii(L)_s) = 50.000623 "unitsml(mm)"] as its length at stem:[20 "unitsml(degC)"] <<JCGM-100,clause=H.1.5>>. It gives stem:[ii(U)_p = 0.075 "unitsml(um)"] as the expanded uncertainty of the reference standard and states that it was obtained using a coverage factor of stem:[k_p = 3] <<JCGM-100,clause=H.1.3.1>>. The certificate states that the effective ((degrees of freedom)) associated with the combined ((standard uncertainty)), from which the quoted expanded uncertainty was obtained, is stem:[nu_{"eff"} (u(hat(ii(L)_s))) = 18] <<JCGM-100,clause=H.1.6>>.
 
 
 ======  Interpretation (((t-distribution,assignment to a quantity)))
@@ -934,7 +934,7 @@ Assign a scaled and shifted stem:[t]-distribution stem:[t_{nu} (ii(mu), ii(sigma
 
 [stem%unnumbered]
 ++++
-mu = 50000623 " mn", "    " ii(sigma) = ii(U)_{"p"}/k_{"p"} = 75/3 " nm" = 25 " nm", "    " nu = 18.
+mu = 50000623 " mn", "    " ii(sigma) = ii(U)_{"p"}/k_{"p"} = 75/3 "unitsml(nm)" = 25 "unitsml(nm)", "    " nu = 18.
 ++++
 
 
@@ -942,7 +942,7 @@ mu = 50000623 " mn", "    " ii(sigma) = ii(U)_{"p"}/k_{"p"} = 75/3 " nm" = 25 " 
 
 ======  Information (((average,of a set of indications)))((("indications, analysis of a series of")))
 
-The average stem:[hat ii(D)] of the five indications of the difference in lengths between the gauge block being calibrated and the reference standard is 215 nm <<JCGM-100,clause=H.1.5>>. The pooled experimental standard deviation characterizing the comparison of stem:[ii(L)] and stem:[ii(L)_s] was determined from 25 indications, obtained independently, of the difference in lengths of two standard gauge blocks, and equalled 13 nm <<JCGM-100,clause=H.1.3.2>>.
+The average stem:[hat ii(D)] of the five indications of the difference in lengths between the gauge block being calibrated and the reference standard is stem:[215 "unitsml(nm)"] <<JCGM-100,clause=H.1.5>>. The pooled experimental standard deviation characterizing the comparison of stem:[ii(L)] and stem:[ii(L)_s] was determined from 25 indications, obtained independently, of the difference in lengths of two standard gauge blocks, and equalled stem:[13 "unitsml(nm)"] <<JCGM-100,clause=H.1.3.2>>.
 
 
 ======  Interpretation (((t-distribution,assignment to a quantity)))
@@ -951,7 +951,7 @@ Assign a scaled and shifted stem:[t]-distribution stem:[t_{nu}(ii(mu), ii(sigma)
 
 [stem%unnumbered]
 ++++
-ii(mu) = 215 " nm", "    " ii(sigma) = 13/{sqrt(5)} " nm" = 6 nm, "    " nu = 24.
+ii(mu) = 215 "unitsml(nm)", "    " ii(sigma) = 13/{sqrt(5)} "unitsml(nm)" = 6 "unitsml(nm)", "    " nu = 24.
 ++++
 
 
@@ -959,7 +959,7 @@ ii(mu) = 215 " nm", "    " ii(sigma) = 13/{sqrt(5)} " nm" = 6 nm, "    " nu = 24
 
 ======  Information (((calibration,certificate)))((("indications, analysis of a series of")))
 
-According to the calibration certificate of the comparator used to compare stem:[ii(L)] with stem:[ii(L)_s], the associated uncertainty due to random effects is stem:[0.01" "mu rm(m)] for a coverage probability of stem:[95 %] and is obtained from six indications, obtained independently <<JCGM-100,clause=H.1.3.2>>.
+According to the calibration certificate of the comparator used to compare stem:[ii(L)] with stem:[ii(L)_s], the associated uncertainty due to random effects is stem:[0.01 "unitsml(um)"] for a coverage probability of stem:[95 %] and is obtained from six indications, obtained independently <<JCGM-100,clause=H.1.3.2>>.
 
 
 ======  Interpretation (((t-distribution,assignment to a quantity)))
@@ -968,7 +968,7 @@ Assign a scaled and shifted stem:[t]-distribution stem:[t_{nu}(ii(mu), ii(sigma)
 
 [stem%unnumbered]
 ++++
-ii(mu) = 0" "rm(nm), " " ii(sigma) = {U_{0.95}} / {k_{0.95}} = 10/2.57 " " rm(nm) = 4" "rm(nm)," " nu = 5.
+ii(mu) = 0 "unitsml(nm)", " " ii(sigma) = {U_{0.95}} / {k_{0.95}} = 10/2.57 "unitsml(nm)" = 4 "unitsml(nm)"," " nu = 5.
 ++++
 
 Here, stem:[k_{0.95}] is obtained from table G.2 of the GUM with stem:[nu = 5] ((degrees of freedom)) and stem:[p = 0.95].
@@ -978,7 +978,7 @@ Here, stem:[k_{0.95}] is obtained from table G.2 of the GUM with stem:[nu = 5] (
 
 ======  Information (((calibration,certificate)))
 
-The uncertainty of the comparator due to systematic effects is given in the certificate as stem:[0.02" "mu rm(m)] at the "three sigma level" <<JCGM-100,clause=H.1.3.2>>. This uncertainty may be assumed to be reliable to stem:[25 %], and thus the ((degrees of freedom)) is stem:[nu_{"eff"}(u(hat(d_2))) = 8] <<JCGM-100,clause=H.1.6>>.
+The uncertainty of the comparator due to systematic effects is given in the certificate as stem:[0.02 "unitsml(um)"] at the "three sigma level" <<JCGM-100,clause=H.1.3.2>>. This uncertainty may be assumed to be reliable to stem:[25 %], and thus the ((degrees of freedom)) is stem:[nu_{"eff"}(u(hat(d_2))) = 8] <<JCGM-100,clause=H.1.6>>.
 
 
 ======  Interpretation (((t-distribution,assignment to a quantity)))
@@ -987,7 +987,7 @@ Assign a scaled and shifted stem:[t]-distribution stem:[t_{nu}(ii(mu),ii(sigma)^
 
 [stem%unnumbered]
 ++++
-ii(mu) = 0 " "rm(nm), " " ii(sigma) = {U_p}/{k_p} = 20/3 " "rm(nm) = 7 " "rm(nm), " " nu = 8.
+ii(mu) = 0 "unitsml(nm)", " " ii(sigma) = {U_p}/{k_p} = 20/3 "unitsml(nm)" = 7 "unitsml(nm)", " " nu = 8.
 ++++
 
 
@@ -995,7 +995,7 @@ ii(mu) = 0 " "rm(nm), " " ii(sigma) = {U_p}/{k_p} = 20/3 " "rm(nm) = 7 " "rm(nm)
 
 ====== Information 
 
-The coefficient of thermal expansion of the reference standard is given as stem:[hat{alpha_s} = 11.5 xx 10^{-6} " °C"^{-1}] with possible values of this quantity represented by a rectangular distribution with limits stem:[+-2 xx 10^{-6} " °C"^{-1}] <<JCGM-100,clause=H.1.3.3>>.
+The coefficient of thermal expansion of the reference standard is given as stem:[hat{alpha_s} = 11.5 xx 10^{-6} "unitsml(degC^(-1))"] with possible values of this quantity represented by a rectangular distribution with limits stem:[+-2 xx 10^{-6} "unitsml(degC^(-1))"] <<JCGM-100,clause=H.1.3.3>>.
 
 
 [[scls_9-5-2-6-2]]
@@ -1005,7 +1005,7 @@ Assign a rectangular distribution stem:[R(a, b)] (see <<scls_6-4-2>>) to stem:[a
 
 [stem%unnumbered]
 ++++
-a = 9.5 xx 10^{-6} " °C"^{-1},"    " b = 13.5 xx 10^{-6} " °C"^{-1}. 
+a = 9.5 xx 10^{-6} "unitsml(degC^(-1))","    " b = 13.5 xx 10^{-6} "unitsml(degC^(-1))". 
 ++++
 
 NOTE: There is no information about the reliability of the limits and so a rectangular distribution with exactly known limits is assigned. Such information may have been omitted from the description in the GUM because the corresponding sensitivity coefficient is zero, and so the quantity makes no contribution in an application of the GUM uncertainty framework based on first-order terms only.
@@ -1015,7 +1015,7 @@ NOTE: There is no information about the reliability of the limits and so a recta
 
 ======  Information (((Gaussian distribution,assignment to a quantity)))
 
-The temperature of the test bed is reported as stem:[(19.9 +- 0.5) " °C"]. The average temperature deviation stem:[hat(ii(theta)_0) = -0.1 " °C"] is reported as having an associated ((standard uncertainty)) due to the uncertainty associated with the average temperature of the test bed of stem:[u(hat(ii(theta)_0)) = 0.2 " °C"] <<JCGM-100,clause=H.1.3.4>>.
+The temperature of the test bed is reported as stem:[(19.9 +- 0.5) "unitsml(degC)"]. The average temperature deviation stem:[hat(ii(theta)_0) = -0.1 "unitsml(degC)"] is reported as having an associated ((standard uncertainty)) due to the uncertainty associated with the average temperature of the test bed of stem:[u(hat(ii(theta)_0)) = 0.2 "unitsml(degC)"] <<JCGM-100,clause=H.1.3.4>>.
 
 
 ======  Interpretation
@@ -1024,7 +1024,7 @@ Assign a ((Gaussian distribution)) stem:[N(ii(mu),ii(sigma)^2)] (see <<scls_6-4-
 
 [stem%unnumbered]
 ++++
-ii(mu) = - 0.1 " °C", "    " ii(sigma) = 0.2 " °C"
+ii(mu) = - 0.1 "unitsml(degC)", "    " ii(sigma) = 0.2 "unitsml(degC)"
 ++++
 
 NOTE: There is no information about the source of the evaluation of the uncertainty and so a ((Gaussian distribution)) is assigned. Also see <<scls_9-5-2-6-2>> note, regarding such information.
@@ -1034,7 +1034,7 @@ NOTE: There is no information about the source of the evaluation of the uncertai
 
 ====== Information
 
-The temperature of the test bed is reported as stem:[(19.9 +- 0.5) " °C"]. The stated maximum offset of stem:[0.5 " °C"] for is said to represent the amplitude of an approximately cyclical variation of temperature under a thermostatic system. The cyclic variation of temperature results in a U-shaped (arc sine) distribution <<JCGM-100,clause=H.1.3.4>>.
+The temperature of the test bed is reported as stem:[(19.9 +- 0.5) "unitsml(degC)"]. The stated maximum offset of stem:[0.5 "unitsml(degC)"] for is said to represent the amplitude of an approximately cyclical variation of temperature under a thermostatic system. The cyclic variation of temperature results in a U-shaped (arc sine) distribution <<JCGM-100,clause=H.1.3.4>>.
 
 
 ======  Interpretation (((arc sine distribution,assignment to a quantity)))
@@ -1043,7 +1043,7 @@ Assign an arc sine distribution stem:[U(a,b)] (see <<scls_6-4-6>>) to, with limi
 
 [stem%unnumbered]
 ++++
-a = -0.5 " °C", "    " b = 0.5 " °C".
+a = -0.5 "unitsml(degC)", "    " b = 0.5 "unitsml(degC)".
 ++++
 
 NOTE: There is no information about the reliability of the limits and so a U-shaped distribution with exactly known limits is assigned. As in <<scls_9-5-2-6-2>> note, such information may have been omitted from the description in the GUM.
@@ -1053,7 +1053,7 @@ NOTE: There is no information about the reliability of the limits and so a U-sha
 
 ====== Information (((probability)))
 
-The estimated bounds on the variability of stem:[delta alpha] are stem:[+- 1 xx 10^{-6} " °C"^{-1}], with an equal probability of stem:[delta alpha] having
+The estimated bounds on the variability of stem:[delta alpha] are stem:[+- 1 xx 10^{-6} "unitsml(degC^(-1))"], with an equal probability of stem:[delta alpha] having
 any value within those bounds <<JCGM-100,clause=H.1.3.5>>. These bounds are deemed to be reliable to stem:[10 %], giving stem:[nu(u(hat(delta alpha)) = 50] <<JCGM-100,clause=H.1.6>>.
 
 
@@ -1063,7 +1063,7 @@ Assign a rectangular distribution with inexactly prescribed limits (see <<scls_6
 
 [stem%unnumbered]
 ++++
-a = -1.0 xx 10^{-6} " °C"^{-1}, "    " b = 1.0 xx 10^{-6} " °C"^{-1}, "    " d = 0.1 xx 10^{-6} " °C"^{-1}.
+a = -1.0 xx 10^{-6} "unitsml(degC^(-1))", "    " b = 1.0 xx 10^{-6} "unitsml(degC^(-1))", "    " d = 0.1 xx 10^{-6} "unitsml(degC^(-1))".
 ++++
 
 The stated reliability of stem:[10 %] on the estimated bounds provides the basis for this value of stem:[d].
@@ -1073,7 +1073,7 @@ The stated reliability of stem:[10 %] on the estimated bounds provides the basis
 
 ======  Information (((probability)))
 
-The reference standard and the gauge block being calibrated are expected to be at the same temperature, but the temperature difference stem:[delta ii(theta)] could lie with equal probability anywhere in the estimated interval stem:[-0.05 " °C"] to stem:[0.05 " °C"] <<JCGM-100,clause=H.1.3.6>>. This difference is believed to be reliable only to stem:[50 %], giving stem:[nu(u(hat(delta ii(theta)))) = 2] <<JCGM-100,clause=H.1.6>>.
+The reference standard and the gauge block being calibrated are expected to be at the same temperature, but the temperature difference stem:[delta ii(theta)] could lie with equal probability anywhere in the estimated interval stem:[-0.05 "unitsml(degC)"] to stem:[0.05 "unitsml(degC)"] <<JCGM-100,clause=H.1.3.6>>. This difference is believed to be reliable only to stem:[50 %], giving stem:[nu(u(hat(delta ii(theta)))) = 2] <<JCGM-100,clause=H.1.6>>.
 
 
 ======  Interpretation (((rectangular distribution with inexactly prescribed limits,assignment to a quantity)))
@@ -1082,7 +1082,7 @@ Assign a rectangular distribution with inexactly prescribed limits (see <<scls_6
 
 [stem%unnumbered]
 ++++
-a = -0.050 " °C", "    " b = 0.050 " °C", "    " d = 0.025 " °C".
+a = -0.050 "unitsml(degC)", "    " b = 0.050 "unitsml(degC)", "    " d = 0.025 "unitsml(degC)".
 ++++
 
 The stated reliability of stem:[50 %] provides the basis for this value of stem:[d].
@@ -1124,7 +1124,7 @@ stem:[1.26 xx 10^6] trials were taken by the adaptive Monte Carlo procedure. The
 .Results obtained for the approximate model <<eq37,(37)>> using the information summarized in <<table10>> (<<scls_9-5-4-1>>, <<scls_9-5-4-3>>)
 [cols="4*",options="header"]
 |===
-| Method | stem:[hat(delta ii(L))//rm(nm)] | stem:[u(hat(delta ii(L)))//rm(nm)] | Shortest stem:[99 %] coverage interval for stem:[delta ii(L)//rm(nm)]
+| Method | stem:[hat(delta ii(L))//"unitsml(nm)"] | stem:[u(hat(delta ii(L)))//"unitsml(nm)"] | Shortest stem:[99 %] coverage interval for stem:[delta ii(L)//"unitsml(nm)"]
 
 | GUF | 838 | 32 | [745, 931]
 | MCM | 838 | 36 | [745, 932]
@@ -1144,6 +1144,6 @@ Results obtained for the non-linear model <<eq36,(36)>> are identical to the res
 
 ===== {blank}
 
-There are some modest differences in the results obtained. stem:[u(hat(delta ii(L)))] was 4 nm greater for the application of MCM than for the GUM uncertainty framework. The length of the stem:[99 %] coverage interval for stem:[delta ii(L)] was 1 nm greater.
+There are some modest differences in the results obtained. stem:[u(hat(delta ii(L)))] was stem:[4 "unitsml(nm)"] greater for the application of MCM than for the GUM uncertainty framework. The length of the stem:[99 %] coverage interval for stem:[delta ii(L)] was stem:[1 "unitsml(nm)"] greater.
 
 These results apply equally to the non-linear and the approximate models. Whether such differences are important has to be judged in terms of the manner in which the results are to be used.

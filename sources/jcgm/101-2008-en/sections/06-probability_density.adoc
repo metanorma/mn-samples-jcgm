@@ -297,14 +297,14 @@ NOTE: stem:[a_s] is a draw from the ((rectangular distribution)) with limits ste
 
 [example]
 ====
-A certificate states that a voltage stem:[ii(X)] lies in the interval stem:[10.0 " "rm(V) +- 0.1 " "rm(V)]. No other information is available concerning stem:[ii(X)], except that it is believed that the magnitude of the interval endpoints is the result of rounding correctly some numerical value (see <<scls_3-20>>). On this basis, that numerical value lies between 0.05 V and 0.15 V, since the numerical value of every point in the interval (0.05, 0.15) rounded to one significant decimal digit is 0.1. The location of the interval can therefore be regarded as fixed, whereas its width is inexact. The best estimate of stem:[ii(X)] is stem:[x = 10.0" "rm(V)] and, using <<eq4>> based on stem:[a = 9.9" "rm(V)], stem:[b = 10.1" "rm(V)] and stem:[d = 0.05" "rm(V)], the associated standard uncertainty stem:[u(x)] is given by
+A certificate states that a voltage stem:[ii(X)] lies in the interval stem:[10.0 "unitsml(V)" +- 0.1 "unitsml(V)"]. No other information is available concerning stem:[ii(X)], except that it is believed that the magnitude of the interval endpoints is the result of rounding correctly some numerical value (see <<scls_3-20>>). On this basis, that numerical value lies between stem:[0.05 "unitsml(V)"] and stem:[0.15 "unitsml(V)"], since the numerical value of every point in the interval (0.05, 0.15) rounded to one significant decimal digit is 0.1. The location of the interval can therefore be regarded as fixed, whereas its width is inexact. The best estimate of stem:[ii(X)] is stem:[x = 10.0 "unitsml(V)"] and, using <<eq4>> based on stem:[a = 9.9 "unitsml(V)"], stem:[b = 10.1 "unitsml(V)"] and stem:[d = 0.05 "unitsml(V)"], the associated standard uncertainty stem:[u(x)] is given by
 
 [stem%unnumbered]
 ++++
 u^2 (x) = (0.2)^2/12 + (0.05)^2 = 0.0036.
 ++++
 
-Hence stem:[u(x) = (0.0036)^{1//2} = 0.060 " "rm(V)], which can be compared with stem:[0.2//sqrt(12) = 0.058 " "rm(V)] in the case of exact limits, given by replacing stem:[d] by zero. The use of exact limits in this case gives a numerical value for stem:[u(x)] that is stem:[4 %] smaller than that for inexact limits. The relevance of such a difference needs to be considered in the context of the application.
+Hence stem:[u(x) = (0.0036)^{1//2} = 0.060 "unitsml(V)"], which can be compared with stem:[0.2//sqrt(12) = 0.058 "unitsml(V)"] in the case of exact limits, given by replacing stem:[d] by zero. The use of exact limits in this case gives a numerical value for stem:[u(x)] that is stem:[4 %] smaller than that for inexact limits. The relevance of such a difference needs to be considered in the context of the application.
 ====
 
 

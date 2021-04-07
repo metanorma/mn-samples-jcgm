@@ -79,13 +79,13 @@ L'ISO 31 (toutes les parties) est en cours de révision sous la référence ISO 
 index-range:valGran[(((valeur d'une grandeur)))]expression quantitative d'une grandeur particulière, généralement sous la forme d'une unité de mesure multipliée par un nombre
 
 [example]
-Longueur d'une tige: 5,34 m ou 534 cm.
+Longueur d'une tige: stem:[5,34 "unitsml(m)"] ou stem:[534 "unitsml(cm)"].
 
 [example]
-Masse d'un corps: 0,152 kg ou 152 g.
+Masse d'un corps: stem:[0.152 "unitsml(kg)"] ou stem:[152 "unitsml(g)"].
 
 [example]
-Quantité de matière d'un échantillon d'eau (H~2~O): 0,012 mol ou 12 mmol.
+Quantité de matière d'un échantillon d'eau (H~2~O): stem:[0.012 "unitsml(mol)"] ou stem:[12 "unitsml(mmol)"].
 
 NOTE: La valeur d'une grandeur peut être positive, négative ou nulle.
 
@@ -127,7 +127,7 @@ index-range:valConv[(((valeur conventionnellement vraie d'une grandeur)))]valeur
 En un lieu donné, la valeur attribuée à la grandeur réalisée par un étalon de référence peut être prise comme étant une valeur conventionnellement vraie.
 
 [example]
-Valeur recommandée par CODATA (1986) pour la constante d'Avogadro, stem:[ii(N)_A:" "6.0221367 xx 10^{23}" "rm(mol)^{-1}].
+Valeur recommandée par CODATA (1986) pour la constante d'Avogadro, stem:[ii(N)_A:" "6.0221367 xx 10^{23} "unitsml(mol^(-1))"].
 
 
 NOTE: La valeur conventionnellement vraie est quelquefois appelée *valeur assignée, meilleure estimation* de la valeur, *valeur convenue* ou *valeur de référence*; le terme «valeur de référence», dans ce sens, ne doit pas être confondu avec le même terme utilisé dans le sens de la note dans le ((VIM)):1993, définition 5.7.
@@ -212,7 +212,7 @@ NOTE: Le mode opératoire est habituellement décrit dans un document qui est qu
 index-range:mesurande[(((mesurande)))]grandeur particulière soumise à mesurage
 
 [example]
-Pression de vapeur d'un échantillon donné d'eau à 20 °C.
+Pression de vapeur d'un échantillon donné d'eau à stem:[20 "unitsml(degC)"].
 
 NOTE: La définition du mesurande peut nécessiter des indications relatives à des grandeurs telles que le temps, la température et la pression.[[mesurande]]
 

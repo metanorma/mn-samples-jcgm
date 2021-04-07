@@ -21,7 +21,7 @@ Lorsqu'on réalise un mesurage, la première étape consiste à spécifier le ((
 La définition d'un mesurande spécifie ordinairement certains états et conditions physiques.
 
 [example]
-La célérité du son dans l'air sec de composition (fraction molaire) stem:["N"_2 = 0.7808], stem:["O"_2 = 0.2095], stem:["Ar" = 0.00935] et stem:["CO"_2 = 0.00035] à la température stem:[ii(T) = 273.15" "rm(K)] et à la pression stem:[p = 101325" "rm(Pa)].
+La célérité du son dans l'air sec de composition (fraction molaire) stem:["N"_2 = 0.7808], stem:["O"_2 = 0.2095], stem:["Ar" = 0.00935] et stem:["CO"_2 = 0.00035] à la température stem:[ii(T) = 273.15 "unitsml(K)"] et à la pression stem:[p = 101325 "unitsml(Pa)"].
 
 
 [[scls_D-2]]

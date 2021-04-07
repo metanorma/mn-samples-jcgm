@@ -223,7 +223,7 @@ NOTE: If the probability distribution of stem:[q] in <<note1_4-2-3>> is normal, 
 If the estimate stem:[x_i] is taken from a manufacturer's specification, calibration certificate, handbook, orother source and its quoted uncertainty is stated to be a particular multiple of a standard deviation, the standard uncertainty stem:[u(x_i)] is simply the quoted value divided by the multiplier, and the estimated variance stem:[u^2(x_i)] is the square of that quotient.(((Type B evaluation of uncertainty)))
 
 [example]
-A calibration certificate states that the mass of a stainless steel mass standard stem:[m_{"S"}] of nominal value one kilogram is stem:[1000.000325" "rm(g)] and that "the uncertainty of this value is stem:[240" "rm(mu g)] at the three standard deviation level". The standard uncertainty of the mass standard is then simply stem:[u(m_{"S"}) = (240" "rm(mu g))//3 = 80" "rm(mu g)]. This corresponds to a relative standard uncertainty stem:[u(m_{"S"})//m_{"S"}] of stem:[80 xx 10^{-9}] (see <<scls_5-1-6>>). The estimated variance is stem:[u^2(m_{"S"}) = (80" "rm(mu g))^2 = 6.4 xx 10^{-9}" "rm(g)^2].
+A calibration certificate states that the mass of a stainless steel mass standard stem:[m_{"S"}] of nominal value one kilogram is stem:[1000.000325 "unitsml(g)"] and that "the uncertainty of this value is stem:[240 "unitsml(ug)"] at the three standard deviation level". The standard uncertainty of the mass standard is then simply stem:[u(m_{"S"}) = (240 "unitsml(ug)")//3 = 80 "unitsml(ug)"]. This corresponds to a relative standard uncertainty stem:[u(m_{"S"})//m_{"S"}] of stem:[80 xx 10^{-9}] (see <<scls_5-1-6>>). The estimated variance is stem:[u^2(m_{"S"}) = (80 "unitsml(ug)")^2 = 6.4 xx 10^{-9} "unitsml(g^2)"].
 
 NOTE: In many cases, little or no information is provided about the individual components from which the quoted uncertainty has been obtained. This is generally unimportant for expressing uncertainty according to the practices of this _Guide_ since all standard uncertainties are treated in the same way when the combined standard uncertainty of ameasurement result is calculated (see <<cls_5>>).
 
@@ -236,22 +236,22 @@ The quoted uncertainty of stem:[x_i] is not necessarily given as a multiple of a
 NOTE: There would be no need for such an assumption if the uncertainty had been given in accordance with the recommendations of this _Guide_ regarding the reporting of uncertainty, which stress that the ((coverage factor)) used is always to be given (see <<scls_7-2-3>>).
 
 [example]
-A calibration certificate states that the resistance of a standard resistor stem:[ii(R)_{"S"}] of nominal value ten ohms is stem:[10.000742" "rm(Omega) pm 129" "rm(mu)rm(Omega)] at 23 °C and that "the quoted uncertainty of stem:[129" "rm(mu)rm(Omega)] defines an interval having a level of confidence of 99 percent". The standard uncertainty of the resistor may be taken as stem:[u(ii(R)_{"S"}) = (129" "rm(mu)rm(Omega))//2.58 = 50" "rm(mu)rm(Omega)], which corresponds to a relative standard uncertainty stem:[u(ii(R)_{"S"})//ii(R)_{"S"}] of stem:[5.0 xx 10^{-6}] (see <<scls_5-1-6>>). The estimated variance is stem:[u^2(ii(R)_{"S"}) = (50" "rm(mu)rm(Omega))^2 = 2.5 xx 10^{-9}" "rm(Omega)^2].
+A calibration certificate states that the resistance of a standard resistor stem:[ii(R)_{"S"}] of nominal value ten ohms is stem:[10.000742 "unitsml(Ohm)" pm 129 "unitsml(uOmega)"] at stem:[23 "unitsml(degC)"] and that "the quoted uncertainty of stem:[129 "unitsml(uOmega)"] defines an interval having a level of confidence of 99 percent". The standard uncertainty of the resistor may be taken as stem:[u(ii(R)_{"S"}) = (129 "unitsml(uOmega)")//2.58 = 50 "unitsml(uOmega)"], which corresponds to a relative standard uncertainty stem:[u(ii(R)_{"S"})//ii(R)_{"S"}] of stem:[5.0 xx 10^{-6}] (see <<scls_5-1-6>>). The estimated variance is stem:[u^2(ii(R)_{"S"}) = (50 "unitsml(uOmega)")^2 = 2.5 xx 10^{-9} "unitsml(Omega^2)"].
 
 
 [[scls_4-3-5]]
 ==== {blank}
 
-Consider the case where, based on the available information, one can state that "there is a fifty-fifty chance that the value of the input quantity stem:[ii(X)_i] lies in the interval stem:[a_"-"] to stem:[a_+]" (in other words, the probability that stem:[ii(X)_i] lies within this interval is stem:[0.5] or 50 percent). If it can be assumed that the distribution of possible values of stem:[ii(X)_i] is approximately normal, then the best estimate stem:[x_i] of stem:[ii(X)_i] can be taken to be the midpoint of the interval. Further, if the half-width of the interval is denoted by stem:[a = (a_+ - a_"-")//2], one can take stem:[u(x_i) = 1.48 a], because for a ((normal distribution)) with expectation stem:[ii(mu)] and standard deviation stem:[ii(sigma)] the interval stem:[ii(mu) pm ii(sigma)//1.48] encompasses approximately 50 percent of the distribution.(((Type B evaluation of uncertainty)))
+Consider the case where, based on the available information, one can state that "there is a fifty-fifty chance that the value of the input quantity stem:[ii(X)_i] lies in the interval stem:[a_"−"] to stem:[a_+]" (in other words, the probability that stem:[ii(X)_i] lies within this interval is stem:[0.5] or 50 percent). If it can be assumed that the distribution of possible values of stem:[ii(X)_i] is approximately normal, then the best estimate stem:[x_i] of stem:[ii(X)_i] can be taken to be the midpoint of the interval. Further, if the half-width of the interval is denoted by stem:[a = (a_+ - a_"−")//2], one can take stem:[u(x_i) = 1.48 a], because for a ((normal distribution)) with expectation stem:[ii(mu)] and standard deviation stem:[ii(sigma)] the interval stem:[ii(mu) pm ii(sigma)//1.48] encompasses approximately 50 percent of the distribution.(((Type B evaluation of uncertainty)))
 
 [example]
-A machinist determining the dimensions of a part estimates that its length lies, with probability stem:[0.5], in the interval stem:[10.07] mm to stem:[10.15] mm, and reports that stem:[l = (10.11 pm 0.04) " "rm(mm)], meaning that stem:[pm 0.04" "rm(mm)] defines an interval having a level of confidence of 50 percent. Then stem:[a = 0.04" "rm(mm)], and if one assumes a normal distribution for the possible values of stem:[l], the standard uncertainty of the length is stem:[u(l) = 1.48 xx 0.04" "rm(mm) ~~ 0.06" "rm(mm)] and the estimated variance is stem:[u^2(l) = (1.48 xx 0.04" "rm(mm))^2 = 3.5 xx 10^{-3}" "rm(mm)^2].
+A machinist determining the dimensions of a part estimates that its length lies, with probability stem:[0.5], in the interval stem:[10.07 "unitsml(mm)"] to stem:[10.15 "unitsml(mm)"], and reports that stem:[l = (10.11 pm 0.04) "unitsml(mm)"], meaning that stem:[pm 0.04 "unitsml(mm)"] defines an interval having a level of confidence of 50 percent. Then stem:[a = 0.04 "unitsml(mm)"], and if one assumes a normal distribution for the possible values of stem:[l], the standard uncertainty of the length is stem:[u(l) = 1.48 xx 0.04 "unitsml(mm)" ~~ 0.06 "unitsml(mm)"] and the estimated variance is stem:[u^2(l) = (1.48 xx 0.04 "unitsml(mm)")^2 = 3.5 xx 10^{-3} "unitsml(mm^2)"].
 
 
 [[scls_4-3-6]]
 ==== {blank}
 
-Consider a case similar to that of <<scls_4-3-5>> but where, based on the available information, one can state that "there is about a two out of three chance that the value of stem:[ii(X)_i] lies in the interval stem:[a_"-"] to stem:[a_+]" (in other words, the probability that stem:[ii(X)_i] lies within this interval is about 0.67). One can then reasonably take stem:[u(x_i) = a], because for a ((normal distribution)) with expectation stem:[ii(mu)] and standard deviation stem:[ii(sigma)] the interval stem:[ii(mu) pm ii(sigma)] encompasses about stem:[68.3] percent of the distribution.(((Type B evaluation of uncertainty)))
+Consider a case similar to that of <<scls_4-3-5>> but where, based on the available information, one can state that "there is about a two out of three chance that the value of stem:[ii(X)_i] lies in the interval stem:[a_"−"] to stem:[a_+]" (in other words, the probability that stem:[ii(X)_i] lies within this interval is about 0.67). One can then reasonably take stem:[u(x_i) = a], because for a ((normal distribution)) with expectation stem:[ii(mu)] and standard deviation stem:[ii(sigma)] the interval stem:[ii(mu) pm ii(sigma)] encompasses about stem:[68.3] percent of the distribution.(((Type B evaluation of uncertainty)))
 
 NOTE: It would give the value of stem:[u(x_i)] considerably more significance than is obviously warranted if one were to use the actual normal deviate stem:[0.96742] corresponding to probability stem:[p = 2//3], that is, if one were to write stem:[u(x_i) = a//0.96742 = 1.033a].
 
@@ -259,15 +259,15 @@ NOTE: It would give the value of stem:[u(x_i)] considerably more significance th
 [[scls_4-3-7]]
 ==== {blank}
 
-In other cases, it may be possible to estimate only bounds (upper and lower limits) for stem:[ii(X)_i], in particular, to state that "the ((probability)) that the value of stem:[ii(X)_i] lies within the interval stem:[a_"-"] to stem:[a_+] for all practical purposes is equal to one and the probability that stem:[ii(X)_i] lies outside this interval is essentially zero". If there is _no specific knowledge_ about the possible values of stem:[ii(X)_i] within the interval, one can only assume that it is equally probablefor stem:[ii(X)_i] to lie anywhere within it (a uniform or rectangular distribution of possible values -- see <<scls_4-4-5>> and <<fig_2a>>). Then stem:[x_i], the expectation or expected value(((expectation (or expected value)))) of stem:[ii(X)_i], is the midpoint of the interval, stem:[x_i = (a_"-" + a_+)//2], with associated variance(((Type B evaluation of uncertainty)))
+In other cases, it may be possible to estimate only bounds (upper and lower limits) for stem:[ii(X)_i], in particular, to state that "the ((probability)) that the value of stem:[ii(X)_i] lies within the interval stem:[a_"−"] to stem:[a_+] for all practical purposes is equal to one and the probability that stem:[ii(X)_i] lies outside this interval is essentially zero". If there is _no specific knowledge_ about the possible values of stem:[ii(X)_i] within the interval, one can only assume that it is equally probablefor stem:[ii(X)_i] to lie anywhere within it (a uniform or rectangular distribution of possible values -- see <<scls_4-4-5>> and <<fig_2a>>). Then stem:[x_i], the expectation or expected value(((expectation (or expected value)))) of stem:[ii(X)_i], is the midpoint of the interval, stem:[x_i = (a_"−" + a_+)//2], with associated variance(((Type B evaluation of uncertainty)))
 
 [[eq_6]]
 [stem]
 ++++
-u^2(x_i) = (a_+ - a_"-")^2//12
+u^2(x_i) = (a_+ - a_"−")^2//12
 ++++
 
-If the difference between the bounds(((bounds on an input quantity))), stem:[a_+ - a_"-"], is denoted by stem:[2a], then <<eq_6>> becomes
+If the difference between the bounds(((bounds on an input quantity))), stem:[a_+ - a_"−"], is denoted by stem:[2a], then <<eq_6>> becomes
 
 [[eq_7]]
 [stem]
@@ -280,43 +280,43 @@ measurement result, it is prudent to obtain additional data for its further eval
 
 [[example1_4-3-7]]
 [example]
-A handbook gives the value of the coefficient of linear thermal expansion of pure copper at 20 °C, stem:[ii(alpha)_{20}("Cu")], as stem:[16.52 xx 10^{-6}" "rm(°C){-1}] and simply states that "the error in this value should not exceed stem:[0.40 xx 10^{-6}" "rm(°C)^{-1}]". Based on this limited information, it is not unreasonable to assume that the value of stem:[ii(alpha)_{20}("Cu")] lies with equal probability in the interval stem:[16.12 xx 10^{-6}" "rm(°C)^{-1}] to stem:[16.92 xx 10^{-6}" "rm(°C)^{-1}], and that it is very unlikely that stem:[ii(alpha)_{20}("Cu")] lies outside this interval. The variance of this symmetric rectangular distribution(((distribution, rectangular))) of possible values of stem:[ii(alpha)_{20}("Cu")] of half-width stem:[a = 0.40 xx 10^{-6}" "rm(°C)^{-1}] is then, from <<eq_7>>, stem:[u^2(ii(alpha)_{20}) = (0.40 xx 10^{-6}" "rm(°C)^{-1})^2//3 = 53.3 xx 10^{-15}" "rm(°C)^{-2}], and the standard uncertainty is stem:[u(ii(alpha)_{20})=(0.40 xx 10^{-6}" "rm(°C)^{-1})//sqrt(3) = 0.23 xx 10^{-6}" "rm(°C)^{-1}].
+A handbook gives the value of the coefficient of linear thermal expansion of pure copper at stem:[20 "unitsml(degC)"], stem:[ii(alpha)_{20}("Cu")], as stem:[16.52 xx 10^{-6} "unitsml(degC^(-1))"] and simply states that "the error in this value should not exceed stem:[0.40 xx 10^{-6} "unitsml(degC^(-1))"]". Based on this limited information, it is not unreasonable to assume that the value of stem:[ii(alpha)_{20}("Cu")] lies with equal probability in the interval stem:[16.12 xx 10^{-6} "unitsml(degC^(-1))"] to stem:[16.92 xx 10^{-6} "unitsml(degC^(-1))"], and that it is very unlikely that stem:[ii(alpha)_{20}("Cu")] lies outside this interval. The variance of this symmetric rectangular distribution(((distribution, rectangular))) of possible values of stem:[ii(alpha)_{20}("Cu")] of half-width stem:[a = 0.40 xx 10^{-6} "unitsml(degC^(-1))"] is then, from <<eq_7>>, stem:[u^2(ii(alpha)_{20}) = (0.40 xx 10^{-6} "unitsml(degC^(-1))")^2//3 = 53.3 xx 10^{-15} "unitsml(degC^(-2))"], and the standard uncertainty is stem:[u(ii(alpha)_{20})=(0.40 xx 10^{-6} "unitsml(degC^(-1))")//sqrt(3) = 0.23 xx 10^{-6} "unitsml(degC^(-1))"].
 
 [[example2_4-3-7]]
 [example]
-A manufacturer's specifications for a digital voltmeter state that "between one and two years after the instrument is calibrated, its accuracy on the 1 V range is stem:[14 xx 10^{-6}] times the reading plus stem:[2 xx 10^{-6}] times the range". Consider that the instrument is used 20 months after calibration to measure on its 1 V range a potential difference stem:[ii(V)], and the arithmetic mean of a number of independent repeated observations of stem:[ii(V)] is found to be stem:[bar(ii(V)) = 0.928571" "rm(V)] with a Type A standard uncertainty stem:[u(bar(ii(V))) = 12" "rm(muV)]. One can obtain the standard uncertainty associated with the manufacturer's specifications from a Type B evaluation by assuming that the stated accuracy provides symmetric bounds to an additive correction to stem:[bar(ii(V))], stem:[Delta bar(ii(V))], of expectation equal to zero and with equal probability of lying anywhere within the bounds. The half-width stem:[a] of the symmetric rectangular distribution of possible values of stem:[Delta bar(ii(V))] is then stem:[a = (14 xx 10^{-6}) xx (0.928571" "rm(V)) + (2 xx 10^{-6}) xx (1" "rm(V)) = 15" "rm(muV)], and from <<eq_7>>, stem:[u^2(Delta bar(ii(V))) = 75 " "rm(muV)^2] and stem:[u(Delta bar(ii(V))) = 8.7" "rm(muV)]. The estimate of the value of the measurand stem:[ii(V)], for simplicity denoted by the same symbol stem:[ii(V)], is given by stem:[ii(V) = bar(ii(V)) + Delta bar(ii(V)) = 0.928571" "rm(V)]. One can obtain the combined standard uncertainty of this estimate by combining the stem:[12" "rm(muV)] Type A standard uncertainty of stem:[bar(ii(V))] with the stem:[8.7" "rm(muV)] Type B standard uncertainty of stem:[Delta bar(ii(V))]. The general method for combining standard uncertainty components is given in <<cls_5>>, with this particular example treated in <<scls_5-1-5>>.
+A manufacturer's specifications for a digital voltmeter state that "between one and two years after the instrument is calibrated, its accuracy on the stem:[1 "unitsml(V)"] range is stem:[14 xx 10^{-6}] times the reading plus stem:[2 xx 10^{-6}] times the range". Consider that the instrument is used 20 months after calibration to measure on its stem:[1 "unitsml(V)"] range a potential difference stem:[ii(V)], and the arithmetic mean of a number of independent repeated observations of stem:[ii(V)] is found to be stem:[bar(ii(V)) = 0.928571 "unitsml(V)"] with a Type A standard uncertainty stem:[u(bar(ii(V))) = 12 "unitsml(uV)"]. One can obtain the standard uncertainty associated with the manufacturer's specifications from a Type B evaluation by assuming that the stated accuracy provides symmetric bounds to an additive correction to stem:[bar(ii(V))], stem:[Delta bar(ii(V))], of expectation equal to zero and with equal probability of lying anywhere within the bounds. The half-width stem:[a] of the symmetric rectangular distribution of possible values of stem:[Delta bar(ii(V))] is then stem:[a = (14 xx 10^{-6}) xx (0.928571 "unitsml(V)") + (2 xx 10^{-6}) xx (1 "unitsml(V)") = 15 "unitsml(uV)"], and from <<eq_7>>, stem:[u^2(Delta bar(ii(V))) = 75 "unitsml(uV^2)"] and stem:[u(Delta bar(ii(V))) = 8.7 "unitsml(uV)"]. The estimate of the value of the measurand stem:[ii(V)], for simplicity denoted by the same symbol stem:[ii(V)], is given by stem:[ii(V) = bar(ii(V)) + Delta bar(ii(V)) = 0.928571 "unitsml(V)"]. One can obtain the combined standard uncertainty of this estimate by combining the stem:[12 "unitsml(uV)"] Type A standard uncertainty of stem:[bar(ii(V))] with the stem:[8.7 "unitsml(uV)"] Type B standard uncertainty of stem:[Delta bar(ii(V))]. The general method for combining standard uncertainty components is given in <<cls_5>>, with this particular example treated in <<scls_5-1-5>>.
 
 
 [[scls_4-3-8]]
 ==== {blank}
 
-In <<scls_4-3-7>>, the upper and lower bounds stem:[a_+] and stem:[a_"-"] for the input quantity stem:[ii(X)_i] may not be symmetric with respect to its best estimate stem:[x_i]; more specifically, if the lower bound is written as stem:[a_"-" = x_i - b_"-"] and the upper bound(((bounds on an input quantity))) as stem:[a_+ = x_i - b_+], then stem:[b_"-" != b_+]. Since in this case stem:[x_i] (assumed to be the expectation(((expectation (or expected value)))) of stem:[ii(X)_i]) is not at the centre of the interval stem:[a_"-"] to stem:[a_+], the ((probability)) distribution of stem:[ii(X)_i] cannot be uniform throughout the interval. However, there may not be enough information available to choose an appropriate distribution; different models will lead to different expressions for the variance. In the absence of such information, the simplest approximation is(((Type B evaluation of uncertainty)))
+In <<scls_4-3-7>>, the upper and lower bounds stem:[a_+] and stem:[a_"−"] for the input quantity stem:[ii(X)_i] may not be symmetric with respect to its best estimate stem:[x_i]; more specifically, if the lower bound is written as stem:[a_"−" = x_i - b_"−"] and the upper bound(((bounds on an input quantity))) as stem:[a_+ = x_i - b_+], then stem:[b_"−" != b_+]. Since in this case stem:[x_i] (assumed to be the expectation(((expectation (or expected value)))) of stem:[ii(X)_i]) is not at the centre of the interval stem:[a_"−"] to stem:[a_+], the ((probability)) distribution of stem:[ii(X)_i] cannot be uniform throughout the interval. However, there may not be enough information available to choose an appropriate distribution; different models will lead to different expressions for the variance. In the absence of such information, the simplest approximation is(((Type B evaluation of uncertainty)))
 
 [[eq_8]]
 [stem]
 ++++
-u^2(x_i) = {(b_+ + b_"-")^2}/12 = {(a_+ - a_"-")^2}/12
+u^2(x_i) = {(b_+ + b_"−")^2}/12 = {(a_+ - a_"−")^2}/12
 ++++
 
-which is the variance of a rectangular distribution with full width stem:[b_+ + b_"-"]. (Asymmetric distributions are also discussed in <<scls_F-2-4-4>> and <<scls_G-5-3>>.)
+which is the variance of a rectangular distribution with full width stem:[b_+ + b_"−"]. (Asymmetric distributions are also discussed in <<scls_F-2-4-4>> and <<scls_G-5-3>>.)
 
 [example]
-If in <<example1_4-3-7>> the value of the coefficient is given in the handbook as stem:[ii(alpha)_{20}("Cu") = 16.52 xx 10^{-6}" "rm(°C)^{-1}] and it is stated
-that "The smallest possible value is stem:[16.40 xx 10^{-6}" "rm(°C)^{-1}]" then stem:[b_"-" = 0.12 xx 10^{-6}" "rm(°C)^{-1}], stem:[b_+ = 0.40 xx 10^{-6}" "rm(°C)^{-1}], and, from <<eq_8>>, stem:[u(ii(alpha)_{20}) = 0.15 xx 10^{-6}" "rm(°C)^{-1}].
+If in <<example1_4-3-7>> the value of the coefficient is given in the handbook as stem:[ii(alpha)_{20}("Cu") = 16.52 xx 10^{-6} "unitsml(degC^(-1))"] and it is stated
+that "The smallest possible value is stem:[16.40 xx 10^{-6} "unitsml(degC^(-1))"]" then stem:[b_"−" = 0.12 xx 10^{-6} "unitsml(degC^(-1))"], stem:[b_+ = 0.40 xx 10^{-6} "unitsml(degC^(-1))"], and, from <<eq_8>>, stem:[u(ii(alpha)_{20}) = 0.15 xx 10^{-6} "unitsml(degC^(-1))"].
 
 
-NOTE: In many practical measurement situations where the bounds are asymmetric(((distribution, asymmetric))), it may be appropriate to apply a correction to the estimate stem:[x_i] of magnitude stem:[(b_+ - b_"-")//2] so that the new estimate stem:[x'_i] of stem:[ii(X)_i] is at the midpoint of the bounds: stem:[x'_i = (a_"-" + a_+)//2]. This reduces the situation to the case of <<scls_4-3-7>>, with new values stem:[b'_+ = b'_{-} = (b_+ + b_"-")//2 = (a_+ - a_"-")//2 = a].
+NOTE: In many practical measurement situations where the bounds are asymmetric(((distribution, asymmetric))), it may be appropriate to apply a correction to the estimate stem:[x_i] of magnitude stem:[(b_+ - b_"−")//2] so that the new estimate stem:[x'_i] of stem:[ii(X)_i] is at the midpoint of the bounds: stem:[x'_i = (a_"−" + a_+)//2]. This reduces the situation to the case of <<scls_4-3-7>>, with new values stem:[b'_+ = b'_{-} = (b_+ + b_"−")//2 = (a_+ - a_"−")//2 = a].
 
 
 NOTE: Based on the principle of maximum entropy(((maximum entropy, principle of))), the ((probability density function)) in the asymmetric case
-may be shown to be stem:[p(ii(X)_i) = ii(A) exp[- ii(lambda) (ii(X)_i - x_i)], with stem:[ii(A) = [b_"-" exp(ii(lambda) b_"-") + b_+ exp(- ii(lambda) b_+)\]^{-1}] and
-stem:[ii(lambda) = {exp[ii(lambda) (b_"-" + b_+)\]-1}//{b_"-" exp[ii(lambda)(b_"-" + b_+)] + b_+}]. This leads to the variance stem:[u^2(x_i) = b_+ b_"-" - (b_+ + -b_"-")//ii(lambda)]; for stem:[b_+ > b_"-"], stem:[ii(lambda) > 0] and for stem:[b_+ < b_"-"], stem:[ii(lambda) < 0].
+may be shown to be stem:[p(ii(X)_i) = ii(A) exp[- ii(lambda) (ii(X)_i - x_i)], with stem:[ii(A) = [b_"−" exp(ii(lambda) b_"−") + b_+ exp(- ii(lambda) b_+)\]^{-1}] and
+stem:[ii(lambda) = {exp[ii(lambda) (b_"−" + b_+)\]-1}//{b_"−" exp[ii(lambda)(b_"−" + b_+)] + b_+}]. This leads to the variance stem:[u^2(x_i) = b_+ b_"−" - (b_+ + -b_"−")//ii(lambda)]; for stem:[b_+ > b_"−"], stem:[ii(lambda) > 0] and for stem:[b_+ < b_"−"], stem:[ii(lambda) < 0].
 
 
 [[scls_4-3-9]]
 ==== {blank}
 
-In <<scls_4-3-7>>, because there was no specific knowledge about the possible values of stem:[ii(X)_i] within its estimated bounds(((bounds on an input quantity))) stem:[a_"-"] to stem:[a_+], one could only assume that it was equally probable for stem:[ii(X)_i] to take any value within those bounds, with zero ((probability)) of being outside them. Such step function discontinuities in a probability distribution are often unphysical. In many cases, it is more realistic to expect that values near the bounds are less likely than those near the midpoint. It is then reasonable to replace the symmetric rectangular distribution(((distribution, rectangular))) with a symmetric trapezoidal distribution(((distribution, trapezoidal))) having equal sloping sides (an isosceles trapezoid), a base of width stem:[a_+ - a_"-" = 2a], and a top of width stem:[2a ii(beta)], where stem:[0 <= ii(beta) <= 1]. As stem:[ii(beta) -> 1], this trapezoidal distribution approaches therectangular distribution of <<scls_4-3-7>>, while for stem:[ii(beta) = 0], it is a triangular distribution(((distribution, triangular))) [see <<scls_4-4-6>> and <<fig_2b>>)]. Assuming such a trapezoidal distribution for stem:[ii(X)_i], one finds that the expectation(((expectation (or expected value)))) of stem:[ii(X)_i] is stem:[x_i = (a_"-" + a_+)//2] and its associated variance is(((Type B evaluation of uncertainty)))
+In <<scls_4-3-7>>, because there was no specific knowledge about the possible values of stem:[ii(X)_i] within its estimated bounds(((bounds on an input quantity))) stem:[a_"−"] to stem:[a_+], one could only assume that it was equally probable for stem:[ii(X)_i] to take any value within those bounds, with zero ((probability)) of being outside them. Such step function discontinuities in a probability distribution are often unphysical. In many cases, it is more realistic to expect that values near the bounds are less likely than those near the midpoint. It is then reasonable to replace the symmetric rectangular distribution(((distribution, rectangular))) with a symmetric trapezoidal distribution(((distribution, trapezoidal))) having equal sloping sides (an isosceles trapezoid), a base of width stem:[a_+ - a_"−" = 2a], and a top of width stem:[2a ii(beta)], where stem:[0 <= ii(beta) <= 1]. As stem:[ii(beta) -> 1], this trapezoidal distribution approaches therectangular distribution of <<scls_4-3-7>>, while for stem:[ii(beta) = 0], it is a triangular distribution(((distribution, triangular))) [see <<scls_4-4-6>> and <<fig_2b>>)]. Assuming such a trapezoidal distribution for stem:[ii(X)_i], one finds that the expectation(((expectation (or expected value)))) of stem:[ii(X)_i] is stem:[x_i = (a_"−" + a_+)//2] and its associated variance is(((Type B evaluation of uncertainty)))
 
 [[eq_9a]]
 [stem,subsequence=A]
@@ -333,7 +333,7 @@ u^2 (x_i)= a^2//6
 ++++
 
 
-NOTE: For a ((normal distribution)) with expectation stem:[ii(mu)] and standard deviation stem:[ii(sigma)], the interval stem:[ii(mu) pm 3 ii(sigma)] encompasses approximately stem:[99.73] percent of the distribution. Thus, if the upper and lower bounds stem:[a_+] and stem:[a_"-"] define stem:[99.73] percent limits rather than 100 percent limits, and stem:[ii(X)_i] can be assumed to be approximately normally distributed rather than there being no specific knowledge about stem:[ii(X)_i] between the bounds as in <<scls_4-3-7>>, then stem:[u^2(x_i) = a^2//9]. By comparison, the variance of a symmetric rectangular distribution of half-width stem:[a] is stem:[a^2//3] [<<eq_7>>] and that of a symmetric triangular distribution of half-width stem:[a] is stem:[a^2//6] [<<eq_9b>>]. The magnitudes of the variances of the three distributions are surprisingly similar in view of the large differences in the amount of information required to justify them.
+NOTE: For a ((normal distribution)) with expectation stem:[ii(mu)] and standard deviation stem:[ii(sigma)], the interval stem:[ii(mu) pm 3 ii(sigma)] encompasses approximately stem:[99.73] percent of the distribution. Thus, if the upper and lower bounds stem:[a_+] and stem:[a_"−"] define stem:[99.73] percent limits rather than 100 percent limits, and stem:[ii(X)_i] can be assumed to be approximately normally distributed rather than there being no specific knowledge about stem:[ii(X)_i] between the bounds as in <<scls_4-3-7>>, then stem:[u^2(x_i) = a^2//9]. By comparison, the variance of a symmetric rectangular distribution of half-width stem:[a] is stem:[a^2//3] [<<eq_7>>] and that of a symmetric triangular distribution of half-width stem:[a] is stem:[a^2//6] [<<eq_9b>>]. The magnitudes of the variances of the three distributions are surprisingly similar in view of the large differences in the amount of information required to justify them.
 
 [[note2_4-3-9]]
 NOTE: The trapezoidal distribution is equivalent to the convolution((("probability distributions, convolving"))) of two rectangular distributions <<DIETRICH1991>>, one with a half-width stem:[a_1] equal to the mean half-width of the trapezoid, stem:[a_1 = a (1 + ii(beta))//2], the other with a half-width stem:[a_2] equal to the mean width of one of the triangular portions of the trapezoid, stem:[a_2 = a (1 - ii(beta))//2]. The variance of the distribution is stem:[u^2 = a_1^2//3 + a_2^2//3]. The convolved distribution can be interpreted as a rectangular distribution whose width stem:[2 a_1] has itself an uncertainty represented by a rectangular distribution of width stem:[2 a_2] and models the fact that the ((bounds on an input quantity)) are not exactly known. But even if stem:[a_2] is as large as 30 percent of stem:[a_1], stem:[u] exceeds stem:[a_1//sqrt(3)] by less than 5 percent.
@@ -363,7 +363,7 @@ The discussion of Type B evaluation of standard uncertainty in <<scls_4-3-3>> to
 [[scls_4-4-2]]
 ==== {blank}
 
-In <<fig_1a>>), it is assumed that the input quantity stem:[ii(X)_i] is a temperature stem:[t] and that its unknown distribution is a ((normal distribution)) with expectation stem:[ii(mu)_t = 100" "rm(°C)] and standard deviation stem:[ii(sigma) = 1.5" "rm(°C)]. Its ((probability density function)) (see <<scls_C-2-14>>) is then(((probability distribution)))(((Type A evaluation of uncertainty)))
+In <<fig_1a>>), it is assumed that the input quantity stem:[ii(X)_i] is a temperature stem:[t] and that its unknown distribution is a ((normal distribution)) with expectation stem:[ii(mu)_t = 100 "unitsml(degC)"] and standard deviation stem:[ii(sigma) = 1.5 "unitsml(degC)"]. Its ((probability density function)) (see <<scls_C-2-14>>) is then(((probability distribution)))(((Type A evaluation of uncertainty)))
 
 
 [stem%unnumbered]
@@ -377,18 +377,18 @@ NOTE: The definition of a probability density function stem:[p(z)] requires that
 [[scls_4-4-3]]
 ==== {blank}
 
-<<fig_1b>>) shows a ((histogram)) of stem:[n = 20] repeated observations(((observations, repeated))) stem:[t_k] of the temperature stem:[t] that are assumed to have been taken randomly from the distribution of <<fig_1a>>). To obtain the histogram, the 20 observations or samples, whose values are given in <<table_1>>, are grouped into intervals 1 °C wide. (Preparation of a histogram is, of course, not required for the statistical analysis of the data.)(((Type A evaluation of uncertainty)))
+<<fig_1b>>) shows a ((histogram)) of stem:[n = 20] repeated observations(((observations, repeated))) stem:[t_k] of the temperature stem:[t] that are assumed to have been taken randomly from the distribution of <<fig_1a>>). To obtain the histogram, the 20 observations or samples, whose values are given in <<table_1>>, are grouped into intervals stem:[1 "unitsml(degC)"] wide. (Preparation of a histogram is, of course, not required for the statistical analysis of the data.)(((Type A evaluation of uncertainty)))
 
 
 [[table_1]]
-.Twenty repeated observations of the temperature stem:[t] grouped in 1 °C intervals
+.Twenty repeated observations of the temperature stem:[t] grouped in stem:[1 "unitsml(degC)"] intervals
 [cols="3*"]
 |===
 2+| Interval +
 stem:[t_1 <= t < t_2]
 .2+| Temperature +
-stem:[t//rm(°C)]
-| stem:[t_1//rm(°C)] | stem:[t_2//rm(°C)]
+stem:[t//"unitsml(degC)"]
+| stem:[t_1//"unitsml(degC)"] | stem:[t_2//"unitsml(degC)"]
 
 | stem:[94.5] | stem:[95.5] | --
 | stem:[95.5] | stem:[96.5] | --
@@ -405,11 +405,11 @@ stem:[t//rm(°C)]
 
 
 The arithmetic mean or average stem:[bar(t)] of the stem:[n = 20] observations calculated according to <<eq_3>> is
-stem:[bar(t) = 100.145" "rm(°C) ~~ 100.14" "rm(°C)] and is assumed to be the best estimate of the expectation stem:[ii(mu)_t] of stem:[t] based on the
+stem:[bar(t) = 100.145 "unitsml(degC)" ~~ 100.14 "unitsml(degC)"] and is assumed to be the best estimate of the expectation stem:[ii(mu)_t] of stem:[t] based on the
 available data. The experimental standard deviation stem:[s(t_k)] calculated from <<eq_4>> is
-stem:[s(t_k) = 1.489" "rm(°C) ~~ 1.49" "rm(°C)], and the experimental standard deviation of the mean stem:[s(bar(t))] calculated
+stem:[s(t_k) = 1.489 "unitsml(degC)" ~~ 1.49 "unitsml(degC)"], and the experimental standard deviation of the mean stem:[s(bar(t))] calculated
 from <<eq_5>>, which is the standard uncertainty stem:[u(bar(t))] of the mean stem:[bar(t)], is
-stem:[u(bar(t)) = s(bar(t)) = s(t_k)//sqrt(20) = 0.333" "rm(°C) ~~ 0.33" "rm(°C)]. (For further calculations, it is likely that all of the digits would be retained.)
+stem:[u(bar(t)) = s(bar(t)) = s(t_k)//sqrt(20) = 0.333 "unitsml(degC)" ~~ 0.33 "unitsml(degC)"]. (For further calculations, it is likely that all of the digits would be retained.)
 
 
 NOTE: Although the data in <<table_1>> are not implausible considering the widespread use of high-resolution digital
@@ -446,30 +446,30 @@ image::figure2b.png[]
 [[scls_4-4-5]]
 ==== {blank}
 
-For the case illustrated in <<fig_2a>>), it is assumed that little information is available about the input quantity stem:[t] and that all one can do is suppose that stem:[t] is described by a symmetric, rectangular(((distribution, rectangular))) _a priori_ probability distribution of lower bound stem:[a_"-" = 96" "rm(°C)], upper bound(((bounds on an input quantity))) stem:[a_+ = 104" "rm(°C)], and thus half-width stem:[a = (a_+ - a_"-")//2 = 4" "rm(°C)] (see <<scls_4-3-7>>). The ((probability density function)) of stem:[t] is then
+For the case illustrated in <<fig_2a>>), it is assumed that little information is available about the input quantity stem:[t] and that all one can do is suppose that stem:[t] is described by a symmetric, rectangular(((distribution, rectangular))) _a priori_ probability distribution of lower bound stem:[a_"−" = 96 "unitsml(degC)"], upper bound(((bounds on an input quantity))) stem:[a_+ = 104 "unitsml(degC)"], and thus half-width stem:[a = (a_+ - a_"−")//2 = 4 "unitsml(degC)"] (see <<scls_4-3-7>>). The ((probability density function)) of stem:[t] is then
 
 [stem%unnumbered]
 ++++
-{:({:p(t) = 1//(2a),:},{:a_"-" <= t <= a_+:}),({:p(t) = 0,:},{:"otherwise.":}):}
+{:({:p(t) = 1//(2a),:},{:a_"−" <= t <= a_+:}),({:p(t) = 0,:},{:"otherwise.":}):}
 ++++
 
-As indicated in <<scls_4-3-7>>, the best estimate of stem:[t] is its expectation stem:[ii(mu)_t = (a_+ + a_"-")//2 = 100" "rm(°C)], which follows from <<scls_C-3-1>>.
-The standard uncertainty of this estimate is stem:[u(ii(mu)_t) = a//sqrt(3) ~~ 2.3" "rm(°C)], which follows from <<scls_C-3-2>>. [see <<eq_7>> ].(((Type B evaluation of uncertainty)))
+As indicated in <<scls_4-3-7>>, the best estimate of stem:[t] is its expectation stem:[ii(mu)_t = (a_+ + a_"−")//2 = 100 "unitsml(degC)"], which follows from <<scls_C-3-1>>.
+The standard uncertainty of this estimate is stem:[u(ii(mu)_t) = a//sqrt(3) ~~ 2.3 "unitsml(degC)"], which follows from <<scls_C-3-2>>. [see <<eq_7>> ].(((Type B evaluation of uncertainty)))
 
 
 
 [[scls_4-4-6]]
 ==== {blank}
 
-For the case illustrated in <<fig_2b>>), it is assumed that the available information concerning stem:[t] is less limited and that stem:[t] can be described by a symmetric, triangular(((distribution, triangular))) _a priori_ probability distribution of the same lower bound stem:[a_"-" = 96" "rm(°C)], the same upper bound(((bounds on an input quantity))) stem:[a_+ = 104" "rm(°C)], and thus the same half-width stem:[a = (a_+ - a_"-")//2 = 4" "rm(°C)] as in <<scls_4-4-5>>(see <<scls_4-3-9>>). The ((probability density function)) of stem:[t] is then(((Type B evaluation of uncertainty)))
+For the case illustrated in <<fig_2b>>), it is assumed that the available information concerning stem:[t] is less limited and that stem:[t] can be described by a symmetric, triangular(((distribution, triangular))) _a priori_ probability distribution of the same lower bound stem:[a_"−" = 96 "unitsml(degC)"], the same upper bound(((bounds on an input quantity))) stem:[a_+ = 104 "unitsml(degC)"], and thus the same half-width stem:[a = (a_+ - a_"−")//2 = 4 "unitsml(degC)"] as in <<scls_4-4-5>>(see <<scls_4-3-9>>). The ((probability density function)) of stem:[t] is then(((Type B evaluation of uncertainty)))
 
 [stem%unnumbered]
 ++++
-{:({:p(t) = (t - a_"-")//a^2,:},{:a_"-" <= t <= (a_+ + a_"-")//2:}),
-({:p(t) = (a_+ - t)//a^2,:},{:(a_+ + a_"-")//2 <= t <= a_+:}),
+{:({:p(t) = (t - a_"−")//a^2,:},{:a_"−" <= t <= (a_+ + a_"−")//2:}),
+({:p(t) = (a_+ - t)//a^2,:},{:(a_+ + a_"−")//2 <= t <= a_+:}),
 ({:p(t) = 0,:},{:"otherwise.":}):}
 ++++
 
-As indicated in <<scls_4-3-9>>, the expectation of stem:[t] is stem:[ii(mu)_t = (a_+ + a_"-")//2 = 100" "rm(°C)], which follows from <<scls_C-3-1>>. The standard uncertainty of this estimate is stem:[u(ii(mu)_t) = a//sqrt(6) ~~ 1.6" "rm(°C)], which follows from <<scls_C-3-2>> [see <<eq_9b>>].
+As indicated in <<scls_4-3-9>>, the expectation of stem:[t] is stem:[ii(mu)_t = (a_+ + a_"−")//2 = 100 "unitsml(degC)"], which follows from <<scls_C-3-1>>. The standard uncertainty of this estimate is stem:[u(ii(mu)_t) = a//sqrt(6) ~~ 1.6 "unitsml(degC)"], which follows from <<scls_C-3-2>> [see <<eq_9b>>].
 
-The above value, stem:[u(ii(mu)_t) = 1.6" "rm(°C)], may be compared with stem:[u(ii(mu)_t) = 2.3" "rm(°C)] obtained in <<scls_4-4-5>> from a rectangular distribution of the same 8 °C width; with stem:[ii(sigma) = 1.5" "rm(°C)] of the ((normal distribution)) of <<fig_1a>>) whose stem:[-2.58 ii(sigma)] to stem:[+2.58 ii(sigma)] width, which encompasses 99 percent of the distribution, is nearly stem:[8" "rm(°C)]; and with stem:[u(bar(t)) = 0.33" "rm(°C)] obtained in <<scls_4-4-3>> from 20 observations assumed to have been taken randomly from the same normal distribution.
+The above value, stem:[u(ii(mu)_t) = 1.6 "unitsml(degC)"], may be compared with stem:[u(ii(mu)_t) = 2.3 "unitsml(degC)"] obtained in <<scls_4-4-5>> from a rectangular distribution of the same stem:[8 "unitsml(degC)"] width; with stem:[ii(sigma) = 1.5 "unitsml(degC)"] of the ((normal distribution)) of <<fig_1a>>) whose stem:[-2.58 ii(sigma)] to stem:[+2.58 ii(sigma)] width, which encompasses 99 percent of the distribution, is nearly stem:[8 "unitsml(degC)"]; and with stem:[u(bar(t)) = 0.33 "unitsml(degC)"] obtained in <<scls_4-4-3>> from 20 observations assumed to have been taken randomly from the same normal distribution.

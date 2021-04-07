@@ -23,7 +23,7 @@ a = (a_{+} - a_{-})//2
 ++++
 
 | stem:[a_+] | limite supérieure d'une grandeur d'entrée stem:[ii(X)_i]
-| stem:[a_-] | limite inférieure d'une grandeur d'entrée stem:[ii(X)_i]
+| stem:[a_"−"] | limite inférieure d'une grandeur d'entrée stem:[ii(X)_i]
 
 | stem:[b_+] a| limite supérieure de l'écart entre une grandeur d'entrée stem:[ii(X)_i] et son estimation stem:[x_i]:
 
@@ -33,12 +33,12 @@ b_+ = a_+ - x_i
 ++++
 
 
-| stem:[b_-]
+| stem:[b_"−"]
 a| limite inférieure de l'écart entre une grandeur d'entrée stem:[ii(X)_i] et son estimation stem:[x_i]:
 
 [stem%unnumbered]
 ++++
-b_- = x_i - a_-
+b_"−" = x_i - a_"−"
 ++++
 
 

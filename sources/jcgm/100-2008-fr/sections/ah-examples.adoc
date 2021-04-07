@@ -19,7 +19,7 @@ Cet exemple démontre que, même pour un mesurage apparemment simple, on peut re
 [[scls_H-1-1]]
 ==== Le problème du mesurage
 
-La longueur d'un calibre à bouts de valeur nominale 50 mm est déterminée par comparaison avec un étalon connu, un calibre à bouts de même longueur nominale. On obtient directement la différence stem:[d] de leurs longueurs par la comparaison des deux calibres à bouts:
+La longueur d'un calibre à bouts de valeur nominale stem:[50 "unitsml(mm)"] est déterminée par comparaison avec un étalon connu, un calibre à bouts de même longueur nominale. On obtient directement la différence stem:[d] de leurs longueurs par la comparaison des deux calibres à bouts:
 
 [[eq_H-1]]
 [stem]
@@ -29,10 +29,10 @@ d = l(1 + ii(alpha) ii(theta)) - l_{"S"}(1 + ii(alpha)_{"S"}ii(theta)_{"S"})
 
 où
 
-stem:[l]:: est le mesurande, c'est-à-dire la longueur à 20 °C du calibre à bouts à étalonner;
-stem:[l_{"S"}]:: est la longueur de l'étalon à 20 °C telle que donnée dans son certificat d'étalonnage;
+stem:[l]:: est le mesurande, c'est-à-dire la longueur à stem:[20 "unitsml(degC)"] du calibre à bouts à étalonner;
+stem:[l_{"S"}]:: est la longueur de l'étalon à stem:[20 "unitsml(degC)"] telle que donnée dans son certificat d'étalonnage;
 stem:[ii(alpha)] et stem:[ii(alpha)_{"S"}]:: sont, respectivement, les coefficients de dilatation thermique du calibre à étalonner et de l'étalon;
-stem:[ii(theta)] et stem:[ii(theta)_{"S"}]:: sont, respectivement, les écarts de température par rapport à la température de référence de 20 °C du calibre et de l'étalon.
+stem:[ii(theta)] et stem:[ii(theta)_{"S"}]:: sont, respectivement, les écarts de température par rapport à la température de référence de stem:[20 "unitsml(degC)"] du calibre et de l'étalon.
 
 
 [[scls_H-1-2]]
@@ -56,7 +56,7 @@ l = f (l_{"S"}, d, ii(alpha)_{"S"}, ii(theta), ii(delta) ii(alpha), ii(delta) ii
 
 Les différences stem:[delta ii(theta)] et stem:[delta ii(alpha)], mais non point leurs incertitudes, sont estimées être nulles; stem:[delta ii(alpha)], stem:[ii(alpha)_{"S"}], stem:[delta ii(theta)], et stem:[ii(theta)] sont supposés être non corrélés. (Si le mesurande était exprimé en fonction des variables stem:[ii(theta)], stem:[ii(theta)_{"S"}], stem:[ii(alpha)], et stem:[ii(alpha)_{"S"}], il serait nécessaire d'inclure la corrélation entre stem:[ii(theta)] et stem:[ii(theta)_{"S"}], et entre stem:[ii(alpha)] et stem:[ii(alpha)_{"S"}].)
 
-On déduit donc de l'<<eq_H-3>> que l'estimation de la valeur du mesurande stem:[l] peut être obtenue de l'expression simple stem:[l_{"S"} + bar(d)], où stem:[l_{"S"}] est la longueur de l'étalon à 20 °C telle que donnée dans son certificat d'étalonnage et stem:[d] est estimé par stem:[bar(d)], moyenne arithmétique de stem:[n = 5] observations répétées indépendantes. L'incertitude-type composée stem:[u_{"c"}(l)] de stem:[l] est obtenue en appliquant l'<<eq_H-3>>, comme présenté ci-dessous.
+On déduit donc de l'<<eq_H-3>> que l'estimation de la valeur du mesurande stem:[l] peut être obtenue de l'expression simple stem:[l_{"S"} + bar(d)], où stem:[l_{"S"}] est la longueur de l'étalon à stem:[20 "unitsml(degC)"] telle que donnée dans son certificat d'étalonnage et stem:[d] est estimé par stem:[bar(d)], moyenne arithmétique de stem:[n = 5] observations répétées indépendantes. L'incertitude-type composée stem:[u_{"c"}(l)] de stem:[l] est obtenue en appliquant l'<<eq_H-3>>, comme présenté ci-dessous.
 
 NOTE: Dans cet exemple et dans les suivants, pour simplifier la notation, on utilise le même symbole pour une grandeur et pour son estimation.
 
@@ -118,61 +118,61 @@ u_{"c"}^2(l) = u^2(l_{"S"}) + u^2(d) + l_{"S"}^2 ii(theta)^2 u^2(delta ii(alpha)
 [[scls_H-1-3-1]]
 ===== Incertitude de l'étalonnage de l'étalon, stem:[u(l_{"S"})]
 
-Le certificat d'étalonnage donne pour l'incertitude élargie de l'étalon stem:[ii(U) = 0.075" "rm(mu m)] et précise qu'elle a été obtenue par utilisation d'un facteur d'élargissement stem:[k = 3]. L'incertitude-type est alors
+Le certificat d'étalonnage donne pour l'incertitude élargie de l'étalon stem:[ii(U) = 0.075 "unitsml(um)"] et précise qu'elle a été obtenue par utilisation d'un facteur d'élargissement stem:[k = 3]. L'incertitude-type est alors
 
 [stem%unnumbered]
 ++++
-u (l_{"S"}) = (0.075" "rm(mu m))//3 = 25" "rm(nm)
+u (l_{"S"}) = (0.075 "unitsml(um)")//3 = 25 "unitsml(nm)"
 ++++
 
 
 [[scls_H-1-3-2]]
 ===== Incertitude de la différence mesurée entre les longueurs, stem:[u(d)]
 
-L'écart-type expérimental d'une mesure caractérisant la comparaison de stem:[l] et stem:[l_{"S"}] est fondé sur un ensemble de mesures; il a été déterminé à partir de la variabilité de 25 observations répétées indépendantes de la différence des longueurs entre deux calibres étalons à bouts et il a été trouvé égal à 13 nm. Dans la comparaison de cet exemple, on prend cinq observations répétées. L'incertitude-type associée à la moyenne arithmétique de ces lectures est alors (voir <<scls_4-2-4>>)(((variance provenant d'un ensemble de données, estimation de la (ou estimation de l'écart-type expérimental provenant d'un ensemble de données))))
+L'écart-type expérimental d'une mesure caractérisant la comparaison de stem:[l] et stem:[l_{"S"}] est fondé sur un ensemble de mesures; il a été déterminé à partir de la variabilité de 25 observations répétées indépendantes de la différence des longueurs entre deux calibres étalons à bouts et il a été trouvé égal à stem:[13 "unitsml(nm)"]. Dans la comparaison de cet exemple, on prend cinq observations répétées. L'incertitude-type associée à la moyenne arithmétique de ces lectures est alors (voir <<scls_4-2-4>>)(((variance provenant d'un ensemble de données, estimation de la (ou estimation de l'écart-type expérimental provenant d'un ensemble de données))))
 
 [stem%unnumbered]
 ++++
-u(bar(d)) = s(bar(d)) = (13" "rm(nm))//sqrt(5) = 5.8" "rm(nm)
+u(bar(d)) = s(bar(d)) = (13 "unitsml(nm)")//sqrt(5) = 5.8 "unitsml(nm)"
 ++++
 
-Le certificat d'étalonnage du comparateur utilisé pour comparer stem:[l] à stem:[l_{"S"}] indique que son incertitude «due aux erreurs aléatoires(((aléatoire)))» est de stem:[pm 0.01" "rm(mu m)] à un niveau de confiance de 95 pour-cent et sur la base de 6 mesurages répétés; l'incertitude-type est alors, en utilisant le facteur stem:[t] pour stem:[ii(nu) = 6 - 1 = 5] degrés de liberté, stem:[t_{95}(5) = 2.57] (voir <<annexG>>, <<table_G-2>>)
-
-[stem%unnumbered]
-++++
-u(d_1) = (0.01" "rm(mu m))//2.57 = 3.9" "rm(nm)
-++++
-
-L'incertitude du comparateur «due aux erreurs systématiques» est donnée dans le certificat comme étant égale à stem:[0.02" "rm(mu m)] au «niveau trois ii(sigma)s». L'incertitude-type due à cette cause peut donc être prise égale à
+Le certificat d'étalonnage du comparateur utilisé pour comparer stem:[l] à stem:[l_{"S"}] indique que son incertitude «due aux erreurs aléatoires(((aléatoire)))» est de stem:[pm 0.01 "unitsml(um)"] à un niveau de confiance de 95 pour-cent et sur la base de 6 mesurages répétés; l'incertitude-type est alors, en utilisant le facteur stem:[t] pour stem:[ii(nu) = 6 - 1 = 5] degrés de liberté, stem:[t_{95}(5) = 2.57] (voir <<annexG>>, <<table_G-2>>)
 
 [stem%unnumbered]
 ++++
-u(d_2) = (0.02" "rm(mu m))//3 = 6.7" "rm(nm)
+u(d_1) = (0.01 "unitsml(um)")//2.57 = 3.9 "unitsml(nm)"
+++++
+
+L'incertitude du comparateur «due aux erreurs systématiques» est donnée dans le certificat comme étant égale à stem:[0.02 "unitsml(um)"] au «niveau trois ii(sigma)s». L'incertitude-type due à cette cause peut donc être prise égale à
+
+[stem%unnumbered]
+++++
+u(d_2) = (0.02 "unitsml(um)")//3 = 6.7 "unitsml(nm)"
 ++++
 
 La contribution totale est obtenue par la somme des variances estimées:
 
 [stem%unnumbered]
 ++++
-u^2(d) = u^2(bar(d)) + u^2(d_1) + u^2(d_2) = 93" "rm(nm)^2
+u^2(d) = u^2(bar(d)) + u^2(d_1) + u^2(d_2) = 93 "unitsml(nm^2)"
 ++++
 
 ou
 
 [stem%unnumbered]
 ++++
-u(d) = 9.7" "rm(nm)
+u(d) = 9.7 "unitsml(nm)"
 ++++
 
 
 [[scls_H-1-3-3]]
 ===== Incertitude du coefficient de dilatation thermique, stem:[u(ii(alpha)_{"S"})]
 
-Le coefficient de dilatation thermique du calibre étalon à bouts est donné comme étant stem:[ii(alpha)_{"S"} = 11.5 xx 10^{-6}" "rm(°C)^{-1}] avec une incertitude représentée par une loi rectangulaire de limites stem:[pm 2 xx 10^{-6}" "rm(°C)^{-1}]. L'incertitude-type est alors [voir <<eq_7>> de <<scls_4-3-7>>]
+Le coefficient de dilatation thermique du calibre étalon à bouts est donné comme étant stem:[ii(alpha)_{"S"} = 11.5 xx 10^{-6} "unitsml(degC^(-1))"] avec une incertitude représentée par une loi rectangulaire de limites stem:[pm 2 xx 10^{-6} "unitsml(degC^(-1))"]. L'incertitude-type est alors [voir <<eq_7>> de <<scls_4-3-7>>]
 
 [stem%unnumbered]
 ++++
-u(ii(alpha)_{"S"}) = (2 xx 10^{-6}" "rm(°C)^{-1})//sqrt(3) = 1.2 xx 10^{-6} " "rm(°C)^{-1}
+u(ii(alpha)_{"S"}) = (2 xx 10^{-6} "unitsml(degC^(-1))")//sqrt(3) = 1.2 xx 10^{-6} "unitsml(degC^(-1))"
 ++++
 
 Puisque stem:[c_{ii(alpha)_{"S"}} = {del f}//{del ii(alpha)_{"S"}} = -l_{"S"}delta ii(theta) = 0] comme indiqué en <<scls_H-1-3>>, cette incertitude n'a aucune contribution, au premier ordre, pour l'incertitude de stem:[l]. Elle fournit cependant une contribution au second ordre qui est évaluée en <<scls_H-1-7>>.
@@ -189,30 +189,30 @@ h| Valeur de l'incertitude-type +
 stem:[u(x_i)]
 h| stem:[c_i -= del f// del x_i]
 h| stem:[u_i(l) -= \|c_i\| u(x_i)] +
-(nm)
+(stem:["unitsml(nm)"])
 h| Nombre de degrés de liberté
 
-| stem:[u (l_{"S"})] | Étalonnage du calibre étalon | 25 nm | 1 | 25 | 18
-| stem:[u(d)] | Différence mesurée entre calibres | stem:[9.7] nm | 1 | stem:[9.7] | stem:[25.6]
-| stem:[u(bar(d))] | observations répétées | stem:[5.8] nm | | | 24
-| stem:[u(d_1)] |effets aléatoires(((aléatoire))) du comparateur | stem:[3.9] nm | | | 5
-| stem:[u(d_2)] | effets systématiques du comparateur | 6.7 nm | | | 8
-| stem:[u(ii(alpha)_{"S"})] | Coefficient de dilatation thermique du calibre étalon | stem:[1.2 xx 10^{-6}" "rm(°C)^{-1}] | 0 | 0 |
-| stem:[u(ii(theta))] | Température du banc d'essai | stem:[0.41" "rm(°C)] | 0 | 0 |
-| stem:[u(bar(ii(theta)))] | température moyenne du banc | stem:[0.2" "rm(°C)] | | |
-| stem:[u(ii(Delta))] | variation cyclique de température de la salle | stem:[0.35" "rm(°C)] | | |
-| stem:[u(deltaii(alpha))] | Différence entre les coefficients de dilatation des calibres | stem:[0.58 xx 10^{-6}" "rm(°C)^{-1}] | stem:[-l_{"S"} ii(theta)] | stem:[2.9] | 50
-| stem:[u(delta ii(theta))] | Différence entre les températures des calibres | stem:[0.029" "rm(°C)] | stem:[-l_{"S"} ii(alpha)_{"S"}] | stem:[16.6] | 2
+| stem:[u (l_{"S"})] | Étalonnage du calibre étalon | stem:[25 "unitsml(nm)"] | stem:[1] | stem:[25] | stem:[18]
+| stem:[u(d)] | Différence mesurée entre calibres | stem:[9.7 "unitsml(nm)"] | stem:[1] | stem:[9.7] | stem:[25.6]
+| stem:[u(bar(d))] | observations répétées | stem:[5.8 "unitsml(nm)"] | | | stem:[24]
+| stem:[u(d_1)] |effets aléatoires(((aléatoire))) du comparateur | stem:[3.9 "unitsml(nm)"] | | | stem:[5]
+| stem:[u(d_2)] | effets systématiques du comparateur | stem:[6.7 "unitsml(nm)"] | | | stem:[8]
+| stem:[u(ii(alpha)_{"S"})] | Coefficient de dilatation thermique du calibre étalon | stem:[1.2 xx 10^{-6} "unitsml(degC^(-1))"] | stem:[0] | stem:[0] |
+| stem:[u(ii(theta))] | Température du banc d'essai | stem:[0.41 "unitsml(degC)"] | stem:[0] | stem:[0] |
+| stem:[u(bar(ii(theta)))] | température moyenne du banc | stem:[0.2 "unitsml(degC)"] | | |
+| stem:[u(ii(Delta))] | variation cyclique de température de la salle | stem:[0.35 "unitsml(degC)"] | | |
+| stem:[u(deltaii(alpha))] | Différence entre les coefficients de dilatation des calibres | stem:[0.58 xx 10^{-6} "unitsml(degC^(-1))"] | stem:[-l_{"S"} ii(theta)] | stem:[2.9] | stem:[50]
+| stem:[u(delta ii(theta))] | Différence entre les températures des calibres | stem:[0.029 "unitsml(degC)"] | stem:[-l_{"S"} ii(alpha)_{"S"}] | stem:[16.6] | stem:[2]
 
 6+>a|
 [stem%unnumbered]
 ++++
-u_{"c"}^2(l) = sum u_i^2 (l) = 1002" "rm(nm)^2
+u_{"c"}^2(l) = sum u_i^2 (l) = 1002 "unitsml(nm^2)"
 ++++
 
 [stem%unnumbered]
 ++++
-u_{"c"}(l) = 32" "rm(nm)
+u_{"c"}(l) = 32 "unitsml(nm)"
 ++++
 
 [stem%unnumbered]
@@ -225,39 +225,39 @@ ii(nu)_{"eff"}(l) = 16
 [[scls_H-1-3-4]]
 ===== Incertitude de l'écart de température du calibre à bouts, stem:[u(ii(theta))]
 
-La température du banc d'essai est indiquée comme étant stem:[(19.9 pm 0.5)" "rm(°C)]; la température au moment des observations individuelles n'a pas été enregistrée. Le décalage maximal donné, stem:[ii(Delta) = 0.5" "rm(°C)], est censé représenter l'amplitude d'une variation approximativement cyclique de la température dans un système thermostaté et non pas l'incertitude de la température moyenne. La valeur de l'écart moyen de température
+La température du banc d'essai est indiquée comme étant stem:[(19.9 pm 0.5) "unitsml(degC)"]; la température au moment des observations individuelles n'a pas été enregistrée. Le décalage maximal donné, stem:[ii(Delta) = 0.5 "unitsml(degC)"], est censé représenter l'amplitude d'une variation approximativement cyclique de la température dans un système thermostaté et non pas l'incertitude de la température moyenne. La valeur de l'écart moyen de température
 
 [stem%unnumbered]
 ++++
-bar(ii(theta)) = 19.9" "rm(°C) - 20" "rm(°C) = - 0.1" "rm(°C)
+bar(ii(theta)) = 19.9 "unitsml(degC)" - 20 "unitsml(degC)" = - 0.1 "unitsml(degC)"
 ++++
 
 est indiquée comme ayant elle-même une incertitude-type due à l'incertitude sur la température moyenne du banc d'essai de
 
 [stem%unnumbered]
 ++++
-u(bar(ii(theta))) = 0.2" "rm(°C)
+u(bar(ii(theta))) = 0.2 "unitsml(degC)"
 ++++
 
 alors que la variation cyclique en fonction du temps produit une loi de température en forme de U (arcsinus) dont l'incertitude-type est
 
 [stem%unnumbered]
 ++++
-u(ii(Delta)) = (0.5" "rm(°C))//sqrt(2) = 0.35" "rm(°C)
+u(ii(Delta)) = (0.5 "unitsml(degC)")//sqrt(2) = 0.35 "unitsml(degC)"
 ++++
 
 L'écart de température stem:[ii(theta)] peut être pris égal à stem:[bar(ii(theta))], et l'incertitude-type de stem:[ii(theta)] est obtenue à partir de
 
 [stem%unnumbered]
 ++++
-u^2(ii(theta)) = u^2(bar(ii(theta))) + u^2(ii(Delta)) = 0.165" "rm(°C)^2
+u^2(ii(theta)) = u^2(bar(ii(theta))) + u^2(ii(Delta)) = 0.165 "unitsml(degC^2)"
 ++++
 
 ce qui donne
 
 [stem%unnumbered]
 ++++
-u(ii(theta)) = 0.41" "rm(°C)
+u(ii(theta)) = 0.41 "unitsml(degC)"
 ++++
 
 Puisque stem:[c_{ii(theta)} = del f//del ii(theta) = -l_{"S"} delta ii(alpha) = 0] comme indiqué en <<scls_H-1-3>>, cette incertitude ne contribue pas, elle non plus, à l'incertitude de stem:[l] au premier ordre; mais elle fournit une contribution au second ordre qui est évaluée en <<scls_H-1-7>>.
@@ -266,23 +266,23 @@ Puisque stem:[c_{ii(theta)} = del f//del ii(theta) = -l_{"S"} delta ii(alpha) = 
 [[scls_H-1-3-5]]
 ===== Incertitude de la différence des coefficients de dilatation, stem:[u(delta ii(alpha))]
 
-Les limites estimées sur la variabilité de stem:[delta ii(alpha)] sont stem:[pm 1 xx 10^{-6}" "rm(°C)^{-1}] avec, pour stem:[delta ii(alpha)], la même probabilité d'avoir
+Les limites estimées sur la variabilité de stem:[delta ii(alpha)] sont stem:[pm 1 xx 10^{-6} "unitsml(degC^(-1))"] avec, pour stem:[delta ii(alpha)], la même probabilité d'avoir
 n'importe quelle valeur entre ces limites. L'incertitude-type est
 
 [stem%unnumbered]
 ++++
-u(delta ii(alpha)) = (1 xx 10^{-6}" "rm(°C)^{-1})//sqrt(3) = 0.58 xx 10^{-6}" "rm(°C)^{-1}
+u(delta ii(alpha)) = (1 xx 10^{-6} "unitsml(degC^(-1))")//sqrt(3) = 0.58 xx 10^{-6} "unitsml(degC^(-1))"
 ++++
 
 
 [[scls_H-1-3-6]]
 ===== Incertitude de la différence entre les températures des calibres, stem:[u(delta ii(theta))]
 
-L'étalon et le calibre en essai sont supposés être à la même température, mais la différence de température peut se situer avec une probabilité égale à n'importe quel endroit dans l'intervalle estimé de stem:[-0.05" "rm(°C)] à stem:[+0.05" "rm(°C)]. L'incertitude-type est
+L'étalon et le calibre en essai sont supposés être à la même température, mais la différence de température peut se situer avec une probabilité égale à n'importe quel endroit dans l'intervalle estimé de stem:[-0.05 "unitsml(degC)"] à stem:[+0.05 "unitsml(degC)"]. L'incertitude-type est
 
 [stem%unnumbered]
 ++++
-u(delta ii(theta)) = (0.05" "rm(°C))//sqrt(3) = 0.029" "rm(°C)
+u(delta ii(theta)) = (0.05 "unitsml(degC)")//sqrt(3) = 0.029 "unitsml(degC)"
 ++++
 
 
@@ -294,18 +294,18 @@ L'incertitude-type composée stem:[u_{"c"}(l)] est calculée à partir de l'<<eq
 [[eq_H-6a]]
 [stem,subsequence=K]
 ++++
-u_{"c"}^2(l) = (25 " "rm(nm))^2 + (9.7 " "rm(nm))^2 + (0.05 " m")^2 (-0.1 " "rm(°C))^2 (0.58 xx 10^{-6}" "rm(°C)^{-1})^2 +
+u_{"c"}^2(l) = (25 "unitsml(nm)")^2 + (9.7 "unitsml(nm)")^2 + (0.05 "unitsml(m)")^2 (-0.1 "unitsml(degC)")^2 (0.58 xx 10^{-6} "unitsml(degC^(-1))")^2 +
 ++++
 
 [stem%unnumbered]
 ++++
-(0.05 " "rm(m))^2 (11.5 xx 10^{-6}" "rm(°C)^{-1})^2 (0.029" "rm(°C))^2
+(0.05 "unitsml(m)")^2 (11.5 xx 10^{-6} "unitsml(degC^(-1))")^2 (0.029 "unitsml(degC)")^2
 ++++
 
 [[eq_H-6b]]
 [stem,subsequence=K]
 ++++
-= (25 " "rm(nm))^2 + (9.7 " "rm(nm))^2 + (2.9 " "rm(nm))^2 + (16.6 " "rm(nm))^2 = 1002 " "rm(nm)^2
+= (25 "unitsml(nm)")^2 + (9.7 "unitsml(nm)")^2 + (2.9 "unitsml(nm)")^2 + (16.6 "unitsml(nm)")^2 = 1002 "unitsml(nm^2)"
 ++++
 
 ou
@@ -313,18 +313,18 @@ ou
 [[eq_H-6c]]
 [stem,subsequence=K]
 ++++
-u_{"c"}(l) = 32" "rm(nm)
+u_{"c"}(l) = 32 "unitsml(nm)"
 ++++
 
-La composante dominante de l'incertitude est clairement celle de l'étalon, stem:[u(l_{"S"}) = 25" "rm(nm)].
+La composante dominante de l'incertitude est clairement celle de l'étalon, stem:[u(l_{"S"}) = 25 "unitsml(nm)"].
 
 
 [[scls_H-1-5]]
 ==== Résultat final
 
-Le certificat d'étalonnage pour le calibre étalon à bouts donne stem:[l_{"S"} = 50.000623" "rm(mm)] comme longueur à 20 °C. La moyenne arithmétique stem:[bar(d)] des cinq observations répétées de la différence sur les longueurs entre le calibre inconnu et le calibre étalon est de 215 nm. Donc, puisque stem:[l = l_{"S"} + bar(d)] (voir <<scls_H-1-2>>), la longueur stem:[l] du calibre inconnu à 20 °C est stem:[50.000838" "rm(mm)]. En accord avec <<scls_7-2-2>>, le résultat final du mesurage peut être énoncé sous la forme:
+Le certificat d'étalonnage pour le calibre étalon à bouts donne stem:[l_{"S"} = 50.000623 "unitsml(mm)"] comme longueur à stem:[20 "unitsml(degC)"]. La moyenne arithmétique stem:[bar(d)] des cinq observations répétées de la différence sur les longueurs entre le calibre inconnu et le calibre étalon est de stem:[215 "unitsml(nm)"]. Donc, puisque stem:[l = l_{"S"} + bar(d)] (voir <<scls_H-1-2>>), la longueur stem:[l] du calibre inconnu à stem:[20 "unitsml(degC)"] est stem:[50.000838 "unitsml(mm)"]. En accord avec <<scls_7-2-2>>, le résultat final du mesurage peut être énoncé sous la forme:
 
-stem:[l = 50.000838" "rm(mm)] avec une incertitude-type composée stem:[u_{"c"} = 32" "rm(nm)]. L'incertitude-type composée relative correspondante est stem:[u_{"c"}//l = 6.4 xx 10^{-7}].
+stem:[l = 50.000838 "unitsml(mm)"] avec une incertitude-type composée stem:[u_{"c"} = 32 "unitsml(nm)"]. L'incertitude-type composée relative correspondante est stem:[u_{"c"}//l = 6.4 xx 10^{-7}].
 
 
 [[scls_H-1-6]]
@@ -333,28 +333,28 @@ stem:[l = 50.000838" "rm(mm)] avec une incertitude-type composée stem:[u_{"c"} 
 Supposons qu'on recherche une incertitude élargie stem:[ii(U)_{99} = k_{99} u_{"c"}(l)] qui fournisse un intervalle correspondant à un niveau de confiance de 99 pour-cent environ. La procédure à utiliser est celle qui est résumée en <<scls_G-6-4>>, et le nombre de degrés de liberté(((degrés de liberté d'une estimation de variance effectuée sur un ensemble de données, (ou d'un écart-type expérimental effectué sur un ensemble de données)))) nécessaire est indiqué dans le <<table_H-1>>. On obtient cela comme suit:
 
 . [[item_H-1-6a]]_Incertitude de l'étalonnage de l'étalon_, stem:[u(l_{"S"})] [<<scls_H-1-3-1>>]. Le certificat d'étalonnage spécifie que le nombre effectif de degrés de liberté de l'incertitude-type composée qui a permis d'obtenir l'incertitude élargie indiquée est stem:[ii(nu)_{"eff"}(l_{"S"}) = 18].
-. [[item_H-1-6b]]_Incertitude de la différence des longueurs mesurées_, stem:[u(d)] [<<scls_H-1-3-2>>]. Bien que stem:[bar(d)] ait été obtenu à partir de cinq observations répétées, mais parce que stem:[bar(d)] a été obtenu à partir d'un écart-type expérimental fondé sur un ensemble de données résultant de 25 observations, le nombre de degrés de liberté de stem:[u(bar(d))] est stem:[ii(nu)(bar(d)) = 25 - 1 = 24] (voir <<note_H-3-6>>). Le nombre de degrés de liberté de stem:[u(d_1)], incertitude due aux effets aléatoires(((aléatoire))) sur le comparateur, est stem:[ii(nu)(d_1) = 6 - 1 = 5] parce que stem:[d_1] a été obtenu à partir de 6 mesurages répétés. L'incertitude de stem:[pm 0.02" "rm(mu m)] pour les effets systématiques sur le comparateur peut être supposée fiable à 25 pour-cent, et il en résulte que le nombre de degrés de liberté à partir de l'<<eq_G-3>> de <<scls_G-4-2>> est stem:[ii(nu)(d_2) = 8] (voir l'exemple de <<scls_G-4-2>>). Le nombre effectif de degrés de liberté de stem:[u(d)], stem:[ii(nu)_{"eff"}(d)], est alors obtenu à partir de l'<<eq_G-2b>> de <<scls_G-4-1>>:
+. [[item_H-1-6b]]_Incertitude de la différence des longueurs mesurées_, stem:[u(d)] [<<scls_H-1-3-2>>]. Bien que stem:[bar(d)] ait été obtenu à partir de cinq observations répétées, mais parce que stem:[bar(d)] a été obtenu à partir d'un écart-type expérimental fondé sur un ensemble de données résultant de 25 observations, le nombre de degrés de liberté de stem:[u(bar(d))] est stem:[ii(nu)(bar(d)) = 25 - 1 = 24] (voir <<note_H-3-6>>). Le nombre de degrés de liberté de stem:[u(d_1)], incertitude due aux effets aléatoires(((aléatoire))) sur le comparateur, est stem:[ii(nu)(d_1) = 6 - 1 = 5] parce que stem:[d_1] a été obtenu à partir de 6 mesurages répétés. L'incertitude de stem:[pm 0.02 "unitsml(um)"] pour les effets systématiques sur le comparateur peut être supposée fiable à 25 pour-cent, et il en résulte que le nombre de degrés de liberté à partir de l'<<eq_G-3>> de <<scls_G-4-2>> est stem:[ii(nu)(d_2) = 8] (voir l'exemple de <<scls_G-4-2>>). Le nombre effectif de degrés de liberté de stem:[u(d)], stem:[ii(nu)_{"eff"}(d)], est alors obtenu à partir de l'<<eq_G-2b>> de <<scls_G-4-1>>:
 +
 --
 [stem%unnumbered]
 ++++
-ii(nu)_{"eff"}(d) = {[u^2(bar(d)) + u^2(d_1) + u^2(d_2)]^2}/{{u^4(bar(d))}/{ii(nu)(bar(d))} + {u^4(d_1)}/{ii(nu)(d_1)} + {u^4(d_2)}/{ii(nu)(d_2)}} = {(9.7 " "rm(nm))^4}/{{(5.8 " "rm(nm))^4}/24 + {(3.9 " "rm(nm))^4}/5 + {(6.7 " "rm(nm))^4}/8} = 25.6
+ii(nu)_{"eff"}(d) = {[u^2(bar(d)) + u^2(d_1) + u^2(d_2)]^2}/{{u^4(bar(d))}/{ii(nu)(bar(d))} + {u^4(d_1)}/{ii(nu)(d_1)} + {u^4(d_2)}/{ii(nu)(d_2)}} = {(9.7 "unitsml(nm)")^4}/{{(5.8 "unitsml(nm)")^4}/24 + {(3.9 "unitsml(nm)")^4}/5 + {(6.7 "unitsml(nm)")^4}/8} = 25.6
 ++++
 --
 
-. [[item_H-1-6c]]_Incertitude de la différence des coefficients de dilatation_, stem:[u(delta ii(alpha))] [<<scls_H-1-3-5>>]. Les limites estimées de stem:[pm 1 xx 10^{-6}" "rm(°C)^{-1}] sur la variabilité de stem:[delta ii(alpha)] sont jugées fiables à 10 pour-cent. Cela donne, à partir de l'<<eq_G-3>> de <<scls_G-4-2>>, stem:[ii(nu) (delta ii(alpha)) = 50].
-. [[item_H-1-6d]]_Incertitude de la différence entre les températures des calibres_, stem:[u(delta ii(theta))] [<<scls_H-1-3-6>>]. L'intervalle estimé de stem:[−0.05" "rm(°C)] à stem:[+0.05" "rm(°C)] pour la différence de température δθ est jugé fiable seulement à 50 pour-cent, ce qui donne, à partir de l'<<eq_G-3>> de <<scls_G-4-2>>, stem:[ii(nu)(delta ii(theta)) = 2].
+. [[item_H-1-6c]]_Incertitude de la différence des coefficients de dilatation_, stem:[u(delta ii(alpha))] [<<scls_H-1-3-5>>]. Les limites estimées de stem:[pm 1 xx 10^{-6} "unitsml(degC^(-1))"] sur la variabilité de stem:[delta ii(alpha)] sont jugées fiables à 10 pour-cent. Cela donne, à partir de l'<<eq_G-3>> de <<scls_G-4-2>>, stem:[ii(nu) (delta ii(alpha)) = 50].
+. [[item_H-1-6d]]_Incertitude de la différence entre les températures des calibres_, stem:[u(delta ii(theta))] [<<scls_H-1-3-6>>]. L'intervalle estimé de stem:[−0.05 "unitsml(degC)"] à stem:[+0.05 "unitsml(degC)"] pour la différence de température δθ est jugé fiable seulement à 50 pour-cent, ce qui donne, à partir de l'<<eq_G-3>> de <<scls_G-4-2>>, stem:[ii(nu)(delta ii(theta)) = 2].
 
 Le calcul de stem:[ii(nu)_{"eff"}(l)] à partir de l'<<eq_G-2b>> de <<scls_G-4-1>> s'effectue exactement de la même façon que pour le calcul de stem:[ii(nu)_"eff"(d)] en <<item_H-1-6b>> ci-dessus. Donc, à partir des <<eq_H-6b>> et <<eq_H-6c>> et des valeurs pour stem:[ii(nu)] données de <<item_H-1-6a>> à <<item_H-1-6d>>,
 
 [stem%unnumbered]
 ++++
-ii(nu)_{"eff"}(l) = {(32 " "rm(nm))^4}/{{(25 " "rm(nm))^4}/18 + {(9.7 " "rm(nm))^4}/25.6 + {(2.9 " "rm(nm))^4}/50 + {(16.6 " "rm(nm))^4}/2} = 16.7
+ii(nu)_{"eff"}(l) = {(32 "unitsml(nm)")^4}/{{(25 "unitsml(nm)")^4}/18 + {(9.7 "unitsml(nm)")^4}/25.6 + {(2.9 "unitsml(nm)")^4}/50 + {(16.6 "unitsml(nm)")^4}/2} = 16.7
 ++++
 
-Pour obtenir l'incertitude élargie exigée, on arrondit tout d'abord cette valeur au nombre entier immédiatement inférieur stem:[ii(nu)_{"eff"}(l) = 16]. Il en résulte alors, à partir du <<table_G-2>> de <<annexG>>, que stem:[t_{99}(16) = 2.92], et donc stem:[ii(U)_{99} = t_{99}(16) u_{"c"}(l) = 2.92 xx (32" "rm(nm)) = 93" "rm(nm)]. Selon 7.2.4, le résultat final du mesurage peut être énoncé comme:
+Pour obtenir l'incertitude élargie exigée, on arrondit tout d'abord cette valeur au nombre entier immédiatement inférieur stem:[ii(nu)_{"eff"}(l) = 16]. Il en résulte alors, à partir du <<table_G-2>> de <<annexG>>, que stem:[t_{99}(16) = 2.92], et donc stem:[ii(U)_{99} = t_{99}(16) u_{"c"}(l) = 2.92 xx (32 "unitsml(nm)") = 93 "unitsml(nm)"]. Selon 7.2.4, le résultat final du mesurage peut être énoncé comme:
 
-stem:[l = (50.000838 pm 0.000093)" "rm(mm)], où le nombre après le symbole stem:[pm] est la valeur numérique d'une incertitude élargie stem:[ii(U) = k u_{"c"}], avec stem:[ii(U)] déterminé à partir d'une incertitude-type composée stem:[u_{"c"} = 32" "rm(nm)] et d'un facteur d'élargissement stem:[k = 2.92] sur la base de la loi de stem:[t] pour stem:[ii(nu) = 16] degrés de liberté et où cette incertitude définit un intervalle estimé avoir un niveau de confiance de 99 pour-cent. L'incertitude élargie relative correspondante est stem:[ii(U)//l = 1.9 xx 10^{-6}].
+stem:[l = (50.000838 pm 0.000093) "unitsml(mm)"], où le nombre après le symbole stem:[pm] est la valeur numérique d'une incertitude élargie stem:[ii(U) = k u_{"c"}], avec stem:[ii(U)] déterminé à partir d'une incertitude-type composée stem:[u_{"c"} = 32 "unitsml(nm)"] et d'un facteur d'élargissement stem:[k = 2.92] sur la base de la loi de stem:[t] pour stem:[ii(nu) = 16] degrés de liberté et où cette incertitude définit un intervalle estimé avoir un niveau de confiance de 99 pour-cent. L'incertitude élargie relative correspondante est stem:[ii(U)//l = 1.9 xx 10^{-6}].
 
 
 [[scls_H-1-7]]
@@ -371,15 +371,15 @@ mais le premier seulement de ces termes contribue significativement à stem:[u_{
 
 [stem%unnumbered]
 ++++
-l_{"S"} u(delta ii(alpha)) u(ii(theta)) = (0.05 m) (0.58 xx 10^{-6}" "rm(°C)^{-1})(0.41" "rm(°C)) = 11.7" "rm(nm)
+l_{"S"} u(delta ii(alpha)) u(ii(theta)) = (0.05 "unitsml(m)") (0.58 xx 10^{-6} "unitsml(degC^(-1))")(0.41 "unitsml(degC)") = 11.7 "unitsml(nm)"
 ++++
 
 [stem%unnumbered]
 ++++
-l_{"S"} u(ii(alpha)_{"S"}) u(delta ii(theta))=(0.05 m)(1.2 xx 10^{-6}" "rm(°C)^{-1})(0.029" "rm(°C)) = 1.7" "rm(nm)
+l_{"S"} u(ii(alpha)_{"S"}) u(delta ii(theta))=(0.05 "unitsml(m)")(1.2 xx 10^{-6} "unitsml(degC^(-1))")(0.029 "unitsml(degC)") = 1.7 "unitsml(nm)"
 ++++
 
-Les termes de deuxième ordre font croître stem:[u_{"c"}(l)] de 32 nm à 34 nm.
+Les termes de deuxième ordre font croître stem:[u_{"c"}(l)] de stem:[32 "unitsml(nm)"] à stem:[34 "unitsml(nm)"].
 
 
 [[scls_H-2]]
@@ -478,7 +478,7 @@ ou
 u_{"c","r"}^2 (bar(ii(Z))) = u_{"r"}^2 (bar(ii(V))) + u_{"r"}^2 (bar(ii(I))) - 2 u_{"r"} (bar(ii(V))) u_{"r"} (bar(ii(I))) r(bar(ii(V)),bar(ii(I)))
 ++++
 
-où stem:[u(bar(ii(V))) = s(bar(ii(V)))], stem:[u(bar(ii(I))) = s(bar(ii(I)))], et où l'indice «r» dans la dernière expression signifie que stem:[u] est une incertitude relative. En substituant les valeurs appropriées du <<table_H-2>> dans l'<<eq_H-8a>> on obtientstem:[u_{"c"}(ii(Z)) = 0.236" "rm(Omega)].
+où stem:[u(bar(ii(V))) = s(bar(ii(V)))], stem:[u(bar(ii(I))) = s(bar(ii(I)))], et où l'indice «r» dans la dernière expression signifie que stem:[u] est une incertitude relative. En substituant les valeurs appropriées du <<table_H-2>> dans l'<<eq_H-8a>> on obtientstem:[u_{"c"}(ii(Z)) = 0.236 "unitsml(Ohm)"].
 
 Parce que les trois mesurandes ou grandeurs de sortie dépendent des mêmes grandeurs d'entrée, ils sont eux aussi corrélés. Les éléments de la ((matrice de covariance))(((covariance de deux moyennes arithmétiques))) qui décrit cette corrélation peuvent, dans le cas le plus général, s'écrire
 
@@ -512,20 +512,20 @@ h| Valeur de l'estimation stem:[y_l] (résultat de mesure)
 h| Incertitude-type composée stem:[u_{"c"}(y_l)] du résultat de mesure
 | 1
 | stem:[y_1 = ii(R) = (bar(ii(V))//bar(ii(I))) cos bar(ii(phi))]
-| stem:[y_1 = ii(R) = 127.732" "rm(Omega)]
-| stem:[u_{"c"}(R) = 0.071" "rm(Omega)] +
+| stem:[y_1 = ii(R) = 127.732 "unitsml(Ohm)"]
+| stem:[u_{"c"}(R) = 0.071 "unitsml(Ohm)"] +
 stem:[u(ii(R))//ii(R) = 0.06 xx 10^{-2}]
 
 | 2
 | stem:[y_2 = ii(X) = (bar(ii(V))//bar(ii(I))) sin bar(ii(phi))]
-| stem:[y_2 = ii(X) = 219.847" "rm(Omega)]
-| stem:[u_{"c"}(ii(X)) = 0.295" "rm(Omega)] +
+| stem:[y_2 = ii(X) = 219.847 "unitsml(Ohm)"]
+| stem:[u_{"c"}(ii(X)) = 0.295 "unitsml(Ohm)"] +
 stem:[u(ii(X))//ii(X) = 0.13 xx 10^{-2}]
 
 | 3
 | stem:[y_3 = ii(Z) = bar(ii(V))//bar(ii(I))]
-| stem:[y_3 = ii(Z) = 254.260" "rm(Omega)]
-| stem:[u_{"c"}(ii(Z)) = 0.236" "rm(Omega)] +
+| stem:[y_3 = ii(Z) = 254.260 "unitsml(Ohm)"]
+| stem:[u_{"c"}(ii(Z)) = 0.236 "unitsml(Ohm)"] +
 stem:[u(ii(Z))//ii(Z) = 0.09 xx 10^{-2}]
 
 
@@ -628,7 +628,7 @@ et son application aux données du <<table_H-2>> entraîne des modifications au 
 a|
 [stem%unnumbered]
 ++++
-u_{"c"}(ii(R)) = 0.195" "rm(Omega)
+u_{"c"}(ii(R)) = 0.195 "unitsml(Ohm)"
 ++++
 [stem%unnumbered]
 ++++
@@ -638,7 +638,7 @@ u_{"c"} (ii(R))//ii(R) = 0.15 xx 10^{-2}
 a|
 [stem%unnumbered]
 ++++
-u_{"c"}(ii(X)) = 0.201" "rm(Omega)
+u_{"c"}(ii(X)) = 0.201 "unitsml(Ohm)"
 ++++
 [stem%unnumbered]
 ++++
@@ -648,7 +648,7 @@ u_{"c"}(ii(X))//ii(X) =0.09 xx 10^{-2}
 a|
 [stem%unnumbered]
 ++++
-u_{"c"}(ii(Z)) = 0.204" "rm(Omega)
+u_{"c"}(ii(Z)) = 0.204 "unitsml(Ohm)"
 ++++
 [stem%unnumbered]
 ++++
@@ -682,7 +682,7 @@ Cet exemple illustre l'utilisation de la ((méthode des moindres)) carrés pour 
 [[scls_H-3-1]]
 ==== Le problème de mesure
 
-Un thermomètre est étalonné par comparaison de stem:[n = 11] lectures de température stem:[t_k] du thermomètre, chacune ayant une incertitude négligeable, aux températures de référence correspondantes stem:[t_{"R",k}] connues, dans la plage de température de 21 °C à 27 °C, pour obtenir les corrections stem:[b_k = t_{"R",k} - t_k] sur les lectures. Les corrections _mesurées_ stem:[b_k] et les températures _mesurées_ stem:[t_k] sont les grandeurs d'entrée de l'évaluation. Une droite d'étalonnage
+Un thermomètre est étalonné par comparaison de stem:[n = 11] lectures de température stem:[t_k] du thermomètre, chacune ayant une incertitude négligeable, aux températures de référence correspondantes stem:[t_{"R",k}] connues, dans la plage de température de stem:[21 "unitsml(degC)"] à stem:[27 "unitsml(degC)"], pour obtenir les corrections stem:[b_k = t_{"R",k} - t_k] sur les lectures. Les corrections _mesurées_ stem:[b_k] et les températures _mesurées_ stem:[t_k] sont les grandeurs d'entrée de l'évaluation. Une droite d'étalonnage
 
 [[eq_H-12]]
 [stem]
@@ -752,13 +752,13 @@ où toutes les sommations vont de stem:[k = 1] à stem:[n], où stem:[ii(theta)_
 [[scls_H-3-3]]
 ==== Calcul des résultats
 
-Les données à ajuster sont indiquées dans les deuxième et troisième colonnes du <<table_H-6>>. En prenant stem:[t_0 = 20" "rm(°C)] comme température de référence, l'application des <<eq_H-13a>> à <<eq_H-13g>> donne
+Les données à ajuster sont indiquées dans les deuxième et troisième colonnes du <<table_H-6>>. En prenant stem:[t_0 = 20 "unitsml(degC)"] comme température de référence, l'application des <<eq_H-13a>> à <<eq_H-13g>> donne
 
 [stem%unnumbered]
 ++++
-{:({:y_1 = -0.1712" "rm(°C):},{:s(y_1) = 0.0029" "rm(°C):}),
+{:({:y_1 = -0.1712 "unitsml(degC)":},{:s(y_1) = 0.0029 "unitsml(degC)":}),
 ({:y_2 = 0.00218 :},{:s(y_2) = 0.00067:}),
-({:r(y_1,y_2) = -0.930:},{:s = 0.0035" "rm(°C):}):}
+({:r(y_1,y_2) = -0.930:},{:s = 0.0035 "unitsml(degC)":}):}
 ++++
 
 Le fait que la pente stem:[y_2] soit plus de trois fois plus grande que son incertitude-type justifie le choix d'une droite d'étalonnage plutôt qu'une correction moyenne fixe.
@@ -772,16 +772,16 @@ Le fait que la pente stem:[y_2] soit plus de trois fois plus grande que son ince
 stem:[k]
 | Lecture du thermomètre +
 stem:[t_k] +
-(°C)
+(stem:["unitsml(degC)"])
 | Correction observée +
 stem:[b_k = t_{ii(R),k} - t_k] +
-(°C)
+(stem:["unitsml(degC)"])
 | Correction prévue +
 stem:[b(t_k)] +
-(°C)
+(stem:["unitsml(degC)"])
 | Différence entre les corrections observées et prévues +
 stem:[b_k - b(t_k)] +
-(°C)
+(stem:["unitsml(degC)"])
 
 | 1 | stem:[21.521] | stem:[-0.171] | stem:[-0.1679] | stem:[-0.0031]
 | 2 | stem:[22.012] | stem:[-0.169] | stem:[-0.1668] | stem:[-0.0022]
@@ -801,7 +801,7 @@ La fonction linéaire qui correspond à la droite d'étalonnage peut alors s'éc
 [[eq_H-14]]
 [stem]
 ++++
-b(t) = -0.1712 (29)" "rm(°C) + 0.00218 (67) (t - 20" "rm(°C))
+b(t) = -0.1712 (29) "unitsml(degC)" + 0.00218 (67) (t - 20 "unitsml(degC)")
 ++++
 
 où chaque nombre écrit entre parenthèses est la valeur numérique de l'incertitude-type relative à la valeur numérique qui le précède et exprimé en unité du dernier chiffre écrit (voir <<scls_7-2-2>>). Cette équation donne la valeur prédite de la correction stem:[b(t)] à toute température stem:[t] et, en particulier, la valeur stem:[b(t_k)] à stem:[t = t_k]. Ces valeurs sont données dans la quatrième colonne du tableau, tandis que la dernière colonne donne les différences entre les valeurs mesurées et les valeurs prédites, stem:[b_k - b(t_k)]. On peut utiliser l'analyse de ces différences pour vérifier la validité du modèle linéaire; il existe des tests de vérification pour cet usage (voir la <<FULLER1987>>), mais ils ne sont pas envisagés ici.
@@ -818,46 +818,46 @@ L'expression pour l'incertitude-type composée de la valeur prédite d'une corre
 u_{"c"}^2 [b (t)] = u^2 (y_1) + (t - t_0)^2 u^2(y_2) + 2(t - t_0) u(y_1) u(y_2) r (y_1, y_2)
 ++++
 
-La variance estimée stem:[u_{"c"}^2[b(t)\]] présente un minimum à stem:[t_{"min"} = t_0 - u (y_1) r(y_1,y_2)//u(y_2)], ce qui donne dans ce cas stem:[t_{"min"} = 24.0085" "rm(°C)].
+La variance estimée stem:[u_{"c"}^2[b(t)\]] présente un minimum à stem:[t_{"min"} = t_0 - u (y_1) r(y_1,y_2)//u(y_2)], ce qui donne dans ce cas stem:[t_{"min"} = 24.0085 "unitsml(degC)"].
 
-Comme exemple d'utilisation de l'<<eq_H-15>>, supposons qu'on recherche la correction pour le thermomètre et son incertitude à stem:[t = 30" "rm(°C)], valeur qui se situe en dehors de la plage de température pour laquelle le thermomètre a été en fait étalonné. En substituant stem:[t = 30" "rm(°C)] dans l'<<eq_H-14>> on obtient
+Comme exemple d'utilisation de l'<<eq_H-15>>, supposons qu'on recherche la correction pour le thermomètre et son incertitude à stem:[t = 30 "unitsml(degC)"], valeur qui se situe en dehors de la plage de température pour laquelle le thermomètre a été en fait étalonné. En substituant stem:[t = 30 "unitsml(degC)"] dans l'<<eq_H-14>> on obtient
 
 [stem%unnumbered]
 ++++
-b (30" "rm(°C)) = - 0.1494" "rm(°C)
+b (30 "unitsml(degC)") = - 0.1494 "unitsml(degC)"
 ++++
 
 tandis que l'<<eq_H-15>> devient
 
 [stem%unnumbered]
 ++++
-u_{"c"}^2 [b(30°C)] = (0.0029" "rm(°C))^2 + (10" "rm(°C))^2 (0.00067)^2 + 
+u_{"c"}^2 [b(30 "unitsml(degC)")] = (0.0029 "unitsml(degC)")^2 + (10 "unitsml(degC)")^2 (0.00067)^2 + 
 ++++
 
 [stem%unnumbered]
 ++++
-2(10" "rm(°C)) (0.0029" "rm(°C)) (0.00067) (-0.930)
+2(10 "unitsml(degC)") (0.0029 "unitsml(degC)") (0.00067) (-0.930)
 ++++
 
 [stem%unnumbered]
 ++++
-= 17.1 xx 10^{-6}" "rm(°C)^2
+= 17.1 xx 10^{-6} "unitsml(degC^2)"
 ++++
 
 ou
 
 [stem%unnumbered]
 ++++
-u_{"c"} [b (30" "rm(°C))] = 0.0041" "rm(°C)
+u_{"c"} [b (30 "unitsml(degC)")] = 0.0041 "unitsml(degC)"
 ++++
 
-La correction à stem:[30" "rm(°C)] est alors stem:[- 0.1494" "rm(°C)], avec une incertitude-type composée stem:[u_{"c"} = 0.0041" "rm(°C)], ayant stem:[ii(nu) = n - 2 = 9] degrés de liberté.
+La correction à stem:[30 "unitsml(degC)"] est alors stem:[- 0.1494 "unitsml(degC)"], avec une incertitude-type composée stem:[u_{"c"} = 0.0041 "unitsml(degC)"], ayant stem:[ii(nu) = n - 2 = 9] degrés de liberté.
 
 
 [[scls_H-3-5]]
 ==== Élimination de la corrélation entre la pente et l'ordonnée
 
-L'<<eq_H-13e>> pour le ((coefficient de corrélation))(((corrélation, élimination d'une))) stem:[r(y_1,y_2)] implique que si stem:[t_0] est choisi de telle sorte que stem:[sum_{k=1}^n ii(theta)_k = sum_{k=1}^n (t_k - t_0) = 0] alors stem:[r(y_1,y_2) = 0] et stem:[y_1] et stem:[y_2] ne seront pas corrélés, simplifiant de ce fait le calcul de l'incertitude-type d'une correction prédite. Puisque stem:[sum_{k=1}^n ii(theta)_k = 0] lorsque stem:[t_0 = bar(t) = (sum_{k=1}^n t_k)//n], et que stem:[bar(t) = 24.0085" "rm(°C)] dans le cas présent, en effectuant de nouveau l'ajustement par les moindres carrés avec stem:[t_0 = bar(t) = 24.0085 " "rm(°C)] on obtiendrait les valeurs de stem:[y_1] et stem:[y_2] non corrélées. (La température est aussi la température à laquelle stem:[u^2[b(t)\]] présente un minimum — voir <<scls_H-3-4>>.) Il n'est cependant pas nécessaire de
+L'<<eq_H-13e>> pour le ((coefficient de corrélation))(((corrélation, élimination d'une))) stem:[r(y_1,y_2)] implique que si stem:[t_0] est choisi de telle sorte que stem:[sum_{k=1}^n ii(theta)_k = sum_{k=1}^n (t_k - t_0) = 0] alors stem:[r(y_1,y_2) = 0] et stem:[y_1] et stem:[y_2] ne seront pas corrélés, simplifiant de ce fait le calcul de l'incertitude-type d'une correction prédite. Puisque stem:[sum_{k=1}^n ii(theta)_k = 0] lorsque stem:[t_0 = bar(t) = (sum_{k=1}^n t_k)//n], et que stem:[bar(t) = 24.0085 "unitsml(degC)"] dans le cas présent, en effectuant de nouveau l'ajustement par les moindres carrés avec stem:[t_0 = bar(t) = 24.0085 "unitsml(degC)"] on obtiendrait les valeurs de stem:[y_1] et stem:[y_2] non corrélées. (La température est aussi la température à laquelle stem:[u^2[b(t)\]] présente un minimum — voir <<scls_H-3-4>>.) Il n'est cependant pas nécessaire de
 refaire l'ajustement parce qu'on peut montrer que
 
 [[eq_H-16a]]
@@ -901,25 +901,25 @@ En appliquant ces relations aux résultats donnés en <<scls_H-3-3>> on obtient
 [[eq_H-17a]]
 [stem,subsequence=O]
 ++++
-b(t) = -0.1625 (11) + 0.00218 (67) (t - 24.0085 " "rm(°C))
+b(t) = -0.1625 (11) + 0.00218 (67) (t - 24.0085 "unitsml(degC)")
 ++++
 
 [[eq_H-17b]]
 [stem,subsequence=O]
 ++++
-u_{"c"}^2 [b(t)] = (0.0011)^2 + (t - 24.0085" "rm(°C))^2 (0.00067)^2
+u_{"c"}^2 [b(t)] = (0.0011)^2 + (t - 24.0085 "unitsml(degC)")^2 (0.00067)^2
 ++++
 
-On peut vérifier le fait que ces équations donnent les mêmes résultats que les <<eq_H-14>> et <<eq_H-15>> en recommençant les calculs de stem:[b(30" "rm(°C))] et de stem:[u_{"c"}[b(30" "rm(°C))\]]. En substituant stem:[t = 30" "rm(°C)] dans les <<eq_H-17a>> et <<eq_H-17b>> on obtient
-
-[stem%unnumbered]
-++++
-b (30" "rm(°C))= -0.1494" "rm(°C)
-++++
+On peut vérifier le fait que ces équations donnent les mêmes résultats que les <<eq_H-14>> et <<eq_H-15>> en recommençant les calculs de stem:[b(30 "unitsml(degC)")] et de stem:[u_{"c"}[b(30 "unitsml(degC)")\]]. En substituant stem:[t = 30 "unitsml(degC)"] dans les <<eq_H-17a>> et <<eq_H-17b>> on obtient
 
 [stem%unnumbered]
 ++++
-u_{"c"} [b (30" "rm(°C))] = 0.0041" "rm(°C)
+b (30 "unitsml(degC)")= -0.1494 "unitsml(degC)"
+++++
+
+[stem%unnumbered]
+++++
+u_{"c"} [b (30 "unitsml(degC)")] = 0.0041 "unitsml(degC)"
 ++++
 
 qui sont identiques aux résultats obtenus en <<scls_H-3-4>>. La covariance estimée entre deux corrections prédites stem:[b(t_1)] et stem:[b(t_2)] peut être obtenue à partir de l'<<eq_H-9>> de <<scls_H-2-3>>.
@@ -958,7 +958,7 @@ Cet exemple ressemble à l'<<scls_H-2>>, mesurage simultané de la résistance e
 [[scls_H-4-1]]
 ==== Le problème de mesure
 
-L'activité massique inconnue en radon (^222^Rn) dans un échantillon d'eau est déterminée par comptage par scintillation liquide par rapport à un échantillon étalon de radon dans l'eau possédant une activité massique connue. L'activité massique inconnue est obtenue par la mesure de trois sources de comptage consistant approximativement en 5 g d'eau et 12 g de scintillateur en émulsion organique dans des fioles de volume 22 ml:
+L'activité massique inconnue en radon (^222^Rn) dans un échantillon d'eau est déterminée par comptage par scintillation liquide par rapport à un échantillon étalon de radon dans l'eau possédant une activité massique connue. L'activité massique inconnue est obtenue par la mesure de trois sources de comptage consistant approximativement en stem:[5 "unitsml(g)"] d'eau et stem:[12 "unitsml(g)"] de scintillateur en émulsion organique dans des fioles de volume stem:[22 "unitsml(ml)"]:
 
 Source (a):: un _étalon_ consistant en une masse stem:[m_"S"] de la solution étalon d'activité massique connue;
 Source (b):: un _blanc_, échantillon d'eau identique mais ne contenant pas de substance radioactive, utilisé pour obtenir le taux de comptage du bruit de fond;
@@ -966,9 +966,9 @@ Source (&#x200c;c):: l'_échantillon_ consistant en une partie aliquote de masse
 
 On réalise six cycles de mesurage des trois sources dans l'ordre étalon — blanc — échantillon; chaque durée de comptage stem:[ii(T)_0] pour chaque source, corrigée des temps morts, est de 60 minutes pour chacun des six cycles. Bien qu'on ne puisse pas supposer constant le taux de comptage du bruit de fond sur la totalité de la durée de comptage (65 heures), on suppose que le nombre de coups obtenus pour chaque blanc peut être utilisé comme étant représentatif du taux de comptage du bruit de fond pendant les mesurages de l'étalon et de l'échantillon pour le même cycle. Les données sont présentées dans le <<table_H-7>>, où
 
-stem:[t_{"S"}], stem:[t_{"B"}], stem:[t_x]:: sont les durées depuis l'instant de référence stem:[t = 0] jusqu'au point milieu des intervalles de comptage, corrigés des temps morts, stem:[ii(T)_0 = 60" "rm(min)] respectivement pour les fioles de l'étalon, du blanc et de l'échantillon; bien que stem:[t_{"B"}] soit donné pour que les informations soient complètes, il n'est pas nécessaire dans l'analyse;
+stem:[t_{"S"}], stem:[t_{"B"}], stem:[t_x]:: sont les durées depuis l'instant de référence stem:[t = 0] jusqu'au point milieu des intervalles de comptage, corrigés des temps morts, stem:[ii(T)_0 = 60 "unitsml(min)"] respectivement pour les fioles de l'étalon, du blanc et de l'échantillon; bien que stem:[t_{"B"}] soit donné pour que les informations soient complètes, il n'est pas nécessaire dans l'analyse;
 
-stem:[ii(C)_{"S"}], stem:[ii(C)_{"B"}], stem:[ii(C)_x]:: sont les nombres de coups enregistrés pendant les intervalles de comptage, corrigés des temps morts, stem:[ii(T)_0 = 60" "rm(min)] respectivement pour les fioles de l'étalon, du blanc et de l'échantillon.
+stem:[ii(C)_{"S"}], stem:[ii(C)_{"B"}], stem:[ii(C)_x]:: sont les nombres de coups enregistrés pendant les intervalles de comptage, corrigés des temps morts, stem:[ii(T)_0 = 60 "unitsml(min)"] respectivement pour les fioles de l'étalon, du blanc et de l'échantillon.
 
 Le nombre de coups observé peut être exprimé sous la forme
 
@@ -992,7 +992,7 @@ stem:[ii(A)_{"S"}]:: est l'activité massique de l'étalon à l'instant de réf�
 stem:[ii(A)_x]:: est le _mesurande_ et il est défini comme l'activité massique de l'échantillon à l'instant de référence stem:[t = 0];
 stem:[m_{"S"}]:: est la masse de la solution étalon;
 stem:[m_x]:: est la masse de l'aliquote d'échantillon;
-stem:[ii(lambda)]:: est la constante de désintégration pour ^222^Rn: stem:[ii(lambda) = (ln 2)//ii(T)_{1//2} = 1.25894 xx 10^{-4}" "rm(min)^{-1}] stem:[(ii(T)_{1//2} = 5505.8" "rm(min))].
+stem:[ii(lambda)]:: est la constante de désintégration pour ^222^Rn: stem:[ii(lambda) = (ln 2)//ii(T)_{1//2} = 1.25894 xx 10^{-4} "unitsml(min^(-1))"] stem:[(ii(T)_{1//2} = 5505.8 "unitsml(min)")].
 
 
 [[table_H-7]]
@@ -1023,7 +1023,7 @@ stem:[ii(lambda)]:: est la constante de désintégration pour ^222^Rn: stem:[ii(
 | 6 | stem:[3956.83] | stem:[11058] | stem:[4018.38] | stem:[3980] | stem:[4079.94] | stem:[26356]
 |===
 
-Les <<eq_H-18a>> et <<eq_H-18b>> montrent qu'il n'est pas possible de faire directement la moyenne des six valeurs individuelles de stem:[ii(C)_{"S"}] ou de stem:[ii(C)_x] données au <<table_H-7>> en raison de la décroissance exponentielle de l'activité de l'étalon et de l'échantillon et en raison des faibles variations de comptage du bruit de fond d'un cycle à un autre. Au lieu de cela, on doit s'intéresser aux comptages corrigés de la décroissance et corrigés du bruit de fond (ou aux taux de comptage définis par le nombre de coups divisés par stem:[ii(T)_0 = 60" "rm(min)]). Cela suggère de combiner les <<eq_H-18a>> et <<eq_H-18b>> pour obtenir l'expression suivante de l'activité massique inconnue en fonction des grandeurs connues:
+Les <<eq_H-18a>> et <<eq_H-18b>> montrent qu'il n'est pas possible de faire directement la moyenne des six valeurs individuelles de stem:[ii(C)_{"S"}] ou de stem:[ii(C)_x] données au <<table_H-7>> en raison de la décroissance exponentielle de l'activité de l'étalon et de l'échantillon et en raison des faibles variations de comptage du bruit de fond d'un cycle à un autre. Au lieu de cela, on doit s'intéresser aux comptages corrigés de la décroissance et corrigés du bruit de fond (ou aux taux de comptage définis par le nombre de coups divisés par stem:[ii(T)_0 = 60 "unitsml(min)"]). Cela suggère de combiner les <<eq_H-18a>> et <<eq_H-18b>> pour obtenir l'expression suivante de l'activité massique inconnue en fonction des grandeurs connues:
 
 [stem]
 ++++
@@ -1032,7 +1032,7 @@ Les <<eq_H-18a>> et <<eq_H-18b>> montrent qu'il n'est pas possible de faire dire
 ({:"":},{:= ii(A)_{"S"} {m_{"S"}}/{m_x} {ii(C)_x - ii(C)_{"B"}}/{ii(C)_{"S"} - ii(C)_{"B"}} e^{ii(lambda) (t_x - t_{"S"})}:}):}
 ++++
 
-où stem:[(ii(C)_x - ii(C)_{"B"})e^{ii(lambda) t_x}] et stem:[(ii(C)_{"S"} - ii(C)_{"B"})e^{ii(lambda) t_{"S"}}] sont les comptages corrigés du bruit de fond respectivement pour l'échantillon et l'étalon, à l'instant de référence stem:[t = 0] et pour l'intervalle de temps stem:[ii(T)_0 = 60" "rm(min)]. On peut simplement écrire à la place
+où stem:[(ii(C)_x - ii(C)_{"B"})e^{ii(lambda) t_x}] et stem:[(ii(C)_{"S"} - ii(C)_{"B"})e^{ii(lambda) t_{"S"}}] sont les comptages corrigés du bruit de fond respectivement pour l'échantillon et l'étalon, à l'instant de référence stem:[t = 0] et pour l'intervalle de temps stem:[ii(T)_0 = 60 "unitsml(min)"]. On peut simplement écrire à la place
 
 [[eq_H-20]]
 [stem]
@@ -1058,7 +1058,7 @@ ii(R)_{"S"} = [(ii(C)_x - ii(C)_{"B"})//ii(T)_0] e^{ii(lambda) t_{"S"}}
 [[scls_H-4-2]]
 ==== Analyse des données
 
-Le <<table_H-8>> résume les valeurs des taux de comptage stem:[ii(R)_{"S"}] et stem:[ii(R)_x] corrigés du bruit de fond et de la décroissance, obtenus à partir des <<eq_H-21a>> et <<eq_H-21b>> en utilisant les données du <<table_H-7>> et stem:[ii(lambda) = 1.25894 xx 10^{-4}" "rm(min)^{-1}] comme indiqué précédemment. On doit noter que le rapport stem:[ii(R) = ii(R)_x//ii(R)_{"S"}] se calcule plus simplement à partir de l'expression
+Le <<table_H-8>> résume les valeurs des taux de comptage stem:[ii(R)_{"S"}] et stem:[ii(R)_x] corrigés du bruit de fond et de la décroissance, obtenus à partir des <<eq_H-21a>> et <<eq_H-21b>> en utilisant les données du <<table_H-7>> et stem:[ii(lambda) = 1.25894 xx 10^{-4} "unitsml(min^(-1))"] comme indiqué précédemment. On doit noter que le rapport stem:[ii(R) = ii(R)_x//ii(R)_{"S"}] se calcule plus simplement à partir de l'expression
 
 [stem%unnumbered]
 ++++
@@ -1078,11 +1078,11 @@ On doit reconnaître que les écarts-types expérimentaux de stem:[ii(R)_x] et s
 | Cycle +
 stem:[k]
 | stem:[ii(R)_x] +
-(stem:["min"^{-1}])
+(stem:["unitsml(min^(-1))"])
 | stem:[ii(R)_{"S"}] +
-(stem:["min"^{-1}])
+(stem:["unitsml(min^(-1))"])
 | stem:[t_x - t_{"S"}] +
-(min)
+(stem:["unitsml(min^(-1))"])
 | stem:[ii(R) = ii(R)_x//ii(R)_{"S"}]
 
 | 1 | stem:[652.46] | stem:[194.65] | stem:[123.63] | stem:[3.3520]
@@ -1165,26 +1165,26 @@ Pour obtenir l'activité massique inconnue stem:[ii(A)_x] et son incertitude-typ
 
 [stem%unnumbered]
 ++++
-{:({:ii(A)_{"S"} = 0.1368" "rm(Bq)//rm(g):},{:"":}),
-({:u(ii(A)_{"S"}) = 0.0018" "rm(Bq)//rm(g);:},{:u(ii(A)_{"S"})//ii(A)_{"S"} = 1.32 xx 10^{-2}:}):}
+{:({:ii(A)_{"S"} = 0.1368 "unitsml(Bq/g)":},{:"":}),
+({:u(ii(A)_{"S"}) = 0.0018 "unitsml(Bq/g)";:},{:u(ii(A)_{"S"})//ii(A)_{"S"} = 1.32 xx 10^{-2}:}):}
 ++++
 
 [stem%unnumbered]
 ++++
-{:({:m_{"S"} = 5.0192" "rm(g):},{:"":}),
-({:u(m_{"S"}) = 0.0050" "rm(g);:},{:u(m_{"S"})//m_{"S"} = 0.10 xx 10^{-2}:}):}
+{:({:m_{"S"} = 5.0192"unitsml(g)":},{:"":}),
+({:u(m_{"S"}) = 0.0050"unitsml(g)";:},{:u(m_{"S"})//m_{"S"} = 0.10 xx 10^{-2}:}):}
 ++++
 
 [stem%unnumbered]
 ++++
-{:({:m_x = 5.0571 " "rm(g):},{:"":}),
-({:u(m_x) = 0.0010 " "rm(g);:},{:u(m_x)//m_x = 0.002 xx 10^{-1}:}):}
+{:({:m_x = 5.0571 "unitsml(g)":},{:"":}),
+({:u(m_x) = 0.0010 "unitsml(g)";:},{:u(m_x)//m_x = 0.002 xx 10^{-1}:}):}
 ++++
 
 D'autres sources possibles d'incertitude sont évaluées comme étant négligeables:
 
 * les incertitudes-types des durées de décroissance, stem:[u(t_{"S",k})] et stem:[u(t_{x,k})];
-* l'incertitude de la constante de désintégration de ^222^Rn, stem:[u(ii(lambda)) = 1 xx 10^{-7}" "rm(min)^{-1}]. (La grandeur significative est le facteur de décroissance stem:[exp[lambda(t_x - t_{"S"})\]], qui varie de stem:[1.01563] pour les cycles stem:[k = 4] et stem:[6] à stem:[1.01570] pour le cycle stem:[k = 1]. L'incertitude-type de ces valeurs est stem:[u = 1.2 xx 10^{-5}]);
+* l'incertitude de la constante de désintégration de ^222^Rn, stem:[u(ii(lambda)) = 1 xx 10^{-7} "unitsml(min^(-1))"]. (La grandeur significative est le facteur de décroissance stem:[exp[lambda(t_x - t_{"S"})\]], qui varie de stem:[1.01563] pour les cycles stem:[k = 4] et stem:[6] à stem:[1.01570] pour le cycle stem:[k = 1]. L'incertitude-type de ces valeurs est stem:[u = 1.2 xx 10^{-5}]);
 * l'incertitude associée à la dépendance possible de l'efficacité de détection du compteur de scintillation avec la source utilisée (étalon, blanc ou échantillon);
 * l'incertitude de la correction pour le temps mort du compteur et de la correction pour la dépendance entre l'efficacité de comptage et le niveau d'activité.
 
@@ -1197,7 +1197,7 @@ Comme indiqué précédemment, stem:[ii(A)_x] et stem:[u_{"c"}(ii(A)_x)] peuvent
 [[eq_H-22a]]
 [stem,subsequence=R]
 ++++
-ii(A)_x = ii(A)_{"S"} {m_{"S"}}/{m_x} {bar(ii(R))_x}/{bar(ii(R))_{"S"}} = 0.4300 " "rm(Bq)//rm(g)
+ii(A)_x = ii(A)_{"S"} {m_{"S"}}/{m_x} {bar(ii(R))_x}/{bar(ii(R))_{"S"}} = 0.4300 "unitsml(Bq/g)"
 ++++
 
 L'application de l'<<eq_16>> à cette expression donne pour la variance composée stem:[u_{"c"}^2(ii(A)_x)]
@@ -1219,12 +1219,12 @@ En substituant les valeurs des grandeurs correspondantes dans les <<eq_H-22a>> e
 
 [stem%unnumbered]
 ++++
-u_{"c"} (ii(A)_x) = 0.0083" "rm(Bq)//rm(g)
+u_{"c"} (ii(A)_x) = 0.0083 "unitsml(Bq/g)"
 ++++
 
 Le résultat du mesurage peut alors être donné sous la forme:
 
-stem:[ii(A)_x = 0.4300" "rm(Bq)//rm(g)] avec une incertitude-type composée stem:[u_{"c"} = 0.0083" "rm(Bq)//rm(g)].
+stem:[ii(A)_x = 0.4300 "unitsml(Bq/g)"] avec une incertitude-type composée stem:[u_{"c"} = 0.0083 "unitsml(Bq/g)"].
 
 
 [[scls_H-4-3-2]]
@@ -1234,7 +1234,7 @@ Dans la deuxième approche, qui évite la corrélation entre stem:[bar(ii(R))_x]
 
 [stem,subsequence=S]
 ++++
-ii(A)_x = ii(A)_{"S"} {m_{"S"}}/{m_x} bar(ii(R)) = 0.4304" "rm(Bq)//rm(g)
+ii(A)_x = ii(A)_{"S"} {m_{"S"}}/{m_x} bar(ii(R)) = 0.4304 "unitsml(Bq/g)"
 ++++
 
 L'expression pour stem:[u_{"c"}^2(ii(A)_x)] est simplement
@@ -1253,12 +1253,12 @@ ce qui donne
 
 [stem%unnumbered]
 ++++
-u_{"c"} (ii(A)_x) = 0.0084" "rm(Bq)//rm(g)
+u_{"c"} (ii(A)_x) = 0.0084 "unitsml(Bq/g)"
 ++++
 
 Le résultat du mesurage peut alors être donné sous la forme:
 
-stem:[ii(A)_x = 0.4304" "rm(Bq)//rm(g)] avec une incertitude-type composée stem:[u_{"c"} = 0.0084" "rm(Bq)//rm(g)].
+stem:[ii(A)_x = 0.4304 "unitsml(Bq/g)"] avec une incertitude-type composée stem:[u_{"c"} = 0.0084 "unitsml(Bq/g)"].
 
 Le nombre effectif de degrés de liberté de stem:[u_{"c"}] peut être évalué par utilisation de la formule de Welch-Satterthwaite comme cela est illustré en <<scls_H-1-6>>.
 
@@ -1279,7 +1279,7 @@ Les méthodes d'((analyse de variance)) sont d'importance toute spéciale pour l
 [[scls_H-5-1]]
 ==== Le problème de mesure
 
-Considérons un étalon de tension à diode de Zener de valeur nominale 10 V, étalonné par rapport à une référence stable de tension durant une période de deux semaines. Pour chaque jour stem:[ii(J)] de la période, on effectue stem:[ii(K)] observations répétées indépendantes de la différence de potentiel stem:[ii(V)_{"S"}] de l'étalon. Appelons stem:[ii(V)_{jk}] la stem:[k]ième observation de stem:[ii(V)_{"S"}](stem:[k = 1, 2,...,ii(K)]) le stem:[j]ième jour (stem:[j = 1, 2,..., J]), la meilleure estimation de la différence de potentiel de l'étalon est la moyenne arithmétique stem:[bar(ii(V))] des stem:[ii(JK)] observations [voir <<eq_3>> de <<scls_4-2-1>>],
+Considérons un étalon de tension à diode de Zener de valeur nominale stem:[10 "unitsml(V)"], étalonné par rapport à une référence stable de tension durant une période de deux semaines. Pour chaque jour stem:[ii(J)] de la période, on effectue stem:[ii(K)] observations répétées indépendantes de la différence de potentiel stem:[ii(V)_{"S"}] de l'étalon. Appelons stem:[ii(V)_{jk}] la stem:[k]ième observation de stem:[ii(V)_{"S"}](stem:[k = 1, 2,...,ii(K)]) le stem:[j]ième jour (stem:[j = 1, 2,..., J]), la meilleure estimation de la différence de potentiel de l'étalon est la moyenne arithmétique stem:[bar(ii(V))] des stem:[ii(JK)] observations [voir <<eq_3>> de <<scls_4-2-1>>],
 
 [[eq_H-24a]]
 [stem,subsequence=T]
@@ -1355,17 +1355,17 @@ est la variance expérimentale des stem:[ii(J) = 10] moyennes journalières (il 
 .2+| Grandeur 10+| Jour, stem:[j]
 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10
 
-| stem:[bar(ii(V))_j//"V"] | stem:[10.000172] | stem:[10.000116] | stem:[10.000013] | stem:[10.000144] | stem:[10.000106] | stem:[10.000031] | stem:[10.000060] | stem:[10.000125] | stem:[10.000163] | stem:[10.000041] 
-| stem:[s(ii(V)_{jk})//rm(muV)] | 60 | 77 | 111 | 101 | 67 | 93 | 80 | 73 | 88 | 86
+| stem:[bar(ii(V))_j//"unitsml(V)"] | stem:[10.000172] | stem:[10.000116] | stem:[10.000013] | stem:[10.000144] | stem:[10.000106] | stem:[10.000031] | stem:[10.000060] | stem:[10.000125] | stem:[10.000163] | stem:[10.000041] 
+| stem:[s(ii(V)_{jk})// "unitsml(uV)"] | 60 | 77 | 111 | 101 | 67 | 93 | 80 | 73 | 88 | 86
 
 11+a|
 [stem%unnumbered]
 ++++
-bar(ii(V)) = 10.000097" "rm(V) " " " " s(bar(ii(V))_j) = 57" "rm(muV)
+bar(ii(V)) = 10.000097 "unitsml(V)" " " " " s(bar(ii(V))_j) = 57 "unitsml(uV)"
 ++++
 [stem%unnumbered]
 ++++
-s_{"a"}^2 = ii(K)s^2 (bar(ii(V))_j) = 5(57" "rm(muV))^2 = (128" "rm(muV))^2 " " " " s_{"b"}^2 = bar(s^2 (ii(V)_{jk})) = (85" "rm(muV))^2
+s_{"a"}^2 = ii(K)s^2 (bar(ii(V))_j) = 5(57 "unitsml(uV)")^2 = (128 "unitsml(uV)")^2 " " " " s_{"b"}^2 = bar(s^2 (ii(V)_{jk})) = (85 "unitsml(uV)")^2
 ++++
 |===
 
@@ -1398,7 +1398,7 @@ s_{"b"}^2 = bar(s^2(ii(V)_{jk})) = 1/ii(J) sum_{j=1}^ii(J) s^2 (ii(V)_{jk}) = 1/
 
 qui est une estimation de stem:[ii(sigma)_W^2] ayant stem:[ii(nu)_{"b"} = ii(J)(ii(K) - 1) = 40] degrés de liberté.
 
-Les estimations de stem:[ii(sigma)_W^2] données par les <<eq_H-26a>> et <<eq_H-26b>> sont respectivement stem:[s_{"a"}^2 = (128" "rm(mu V))^2] et stem:[s_{"b"}^2 = (85" "rm(mu V))^2] (voir <<table_H-9>>). Puisque l'estimation stem:[s_{"a"}^2] est fondée sur la variabilité des moyennes journalières, tandis que l'estimation stem:[s_{"b"}^2] est fondée sur la variabilité des observations journalières, leur différence indique la présence possible d'un effet qui varie d'un jour à l'autre mais qui reste relativement constant lorsque les observations sont faites un même jour. On utilise le ((test stem:[ii(F)])) pour tester cette possibilité et, en conséquence, l'hypothèse que la composante inter-jours de la variance est nulle.
+Les estimations de stem:[ii(sigma)_W^2] données par les <<eq_H-26a>> et <<eq_H-26b>> sont respectivement stem:[s_{"a"}^2 = (128 "unitsml(uV)")^2] et stem:[s_{"b"}^2 = (85 "unitsml(uV)")^2] (voir <<table_H-9>>). Puisque l'estimation stem:[s_{"a"}^2] est fondée sur la variabilité des moyennes journalières, tandis que l'estimation stem:[s_{"b"}^2] est fondée sur la variabilité des observations journalières, leur différence indique la présence possible d'un effet qui varie d'un jour à l'autre mais qui reste relativement constant lorsque les observations sont faites un même jour. On utilise le ((test stem:[ii(F)])) pour tester cette possibilité et, en conséquence, l'hypothèse que la composante inter-jours de la variance est nulle.
 
 
 [[scls_H-5-2-3]]
@@ -1415,7 +1415,7 @@ L'application du ((test stem:[ii(F)])) au présent exemple numérique donne
 
 [stem]
 ++++
-ii(F)(ii(nu)_{"a"},ii(nu)_{"b"}) = {s_{"a"}^2}/{s_{"b"}^2} = {ii(K) s^2 (bar(ii(V))_j)}/{s^2 (ii(V))_{jk}} = {5(57" "rm(muV))^2}/{(85" "rm(muV))^2} = 2.25
+ii(F)(ii(nu)_{"a"},ii(nu)_{"b"}) = {s_{"a"}^2}/{s_{"b"}^2} = {ii(K) s^2 (bar(ii(V))_j)}/{s^2 (ii(V))_{jk}} = {5(57 "unitsml(uV)")^2}/{(85 "unitsml(uV)")^2} = 2.25
 ++++
 
 avec stem:[ii(nu)_a = ii(J) - 1 = 9] degrés de liberté au numérateur et stem:[ii(nu)_{"b"} = ii(J) (ii(K) - 1) = 40] degrés de liberté au dénominateur. Puisque stem:[ii(F)_{0.95} (9.40) = 2.12] et stem:[ii(F)_{0.975} (9.40) = 2.45], on conclut qu'il y a un effet inter-jours statistiquement significatif au niveau de signification de 5 pour-cent mais non au niveau de 2,5 pour-cent.
@@ -1429,18 +1429,18 @@ Si l'existence d'un effet inter-jours est rejetée parce que la différence entr
 [[eq_H-28a]]
 [stem,subsequence=W]
 ++++
-s^2(bar(ii(V))) = {(ii(J) - 1)s_{"a"}^2 + ii(J) (ii(K) - 1) s_{"b"}^2}/{ii(JK) (ii(JK) - 1)} = {9(128" "rm(muV))^2 + 40(85" "rm(muV))^2}/{(10)(5)(49)}
+s^2(bar(ii(V))) = {(ii(J) - 1)s_{"a"}^2 + ii(J) (ii(K) - 1) s_{"b"}^2}/{ii(JK) (ii(JK) - 1)} = {9(128 "unitsml(uV)")^2 + 40(85 "unitsml(uV)")^2}/{(10)(5)(49)}
 ++++
 
 [[eq_H-28b]]
 [stem,subsequence=W]
 ++++
-s^2(bar(ii(V))) = (13" "rm(muV))^2, " ou " s(bar(ii(V))) = (13" "rm(muV))
+s^2(bar(ii(V))) = (13 "unitsml(uV)")^2, " ou " s(bar(ii(V))) = (13 "unitsml(uV)")
 ++++
 
 avec stem:[s(bar(ii(V)))] ayant stem:[ii(JK) - 1 = 49] degrés de liberté.
 
-Si l'on suppose que toutes les corrections pour les effets systématiques ont déjà été prises en compte et que toutes les autres composantes de l'incertitude sont négligeables, alors le résultat de l'étalonnage peut être donné comme stem:[ii(V)_{"S"} = bar(ii(V)) = 10.000097" "rm(V)] (voir <<table_H-9>>), avec une incertitude-type composée stem:[s(bar(ii(V))) = u_{"c"} = 13" "rm(muV)], et avec 49 degrés de liberté pour stem:[u_{"c"}].
+Si l'on suppose que toutes les corrections pour les effets systématiques ont déjà été prises en compte et que toutes les autres composantes de l'incertitude sont négligeables, alors le résultat de l'étalonnage peut être donné comme stem:[ii(V)_{"S"} = bar(ii(V)) = 10.000097 "unitsml(V)"] (voir <<table_H-9>>), avec une incertitude-type composée stem:[s(bar(ii(V))) = u_{"c"} = 13 "unitsml(uV)"], et avec 49 degrés de liberté pour stem:[u_{"c"}].
 
 NOTE: En pratique, il y aura très probablement des composantes d'incertitude supplémentaires qui seront significatives et devront, en conséquence, être composées avec la composante d'incertitude obtenue statistiquement à partir des observations (voir <<note_H-5-1>>).
 
@@ -1470,7 +1470,7 @@ où stem:[s_{"w"}^2] estime stem:[ii(sigma)_W^2] et stem:[s_{"B"}^2] estime stem
 
 [stem]
 ++++
-ii(F) = {ii(K) s^2(bar(ii(V))_j)}/{bar(s^2(ii(V)_{jk}))} = {s_{"W"}^2 + ii(K) s_{"B"}^2}/{s_{"W"}^2} = {5(57" "rm(muV))^2}/{(85" "rm(muV))^2} = 2.25
+ii(F) = {ii(K) s^2(bar(ii(V))_j)}/{bar(s^2(ii(V)_{jk}))} = {s_{"W"}^2 + ii(K) s_{"B"}^2}/{s_{"W"}^2} = {5(57 "unitsml(uV)")^2}/{(85 "unitsml(uV)")^2} = 2.25
 ++++
 
 qui conduit à
@@ -1483,13 +1483,13 @@ s_{"B"}^2 = {ii(K) s^2(bar(ii(V))_j) - bar(s^2 (ii(V)_{jk}))}/{ii(K)}
 
 [stem%unnumbered]
 ++++
-s_{"B"}^2 = (43" "rm(muV))^2, " ou " s_{"B"} = 43" "rm(muV)
+s_{"B"}^2 = (43 "unitsml(uV)")^2, " ou " s_{"B"} = 43 "unitsml(uV)"
 ++++
 
 [[eq_H-31b]]
 [stem,subsequence=X]
 ++++
-s_{"W"}^2 = bar(s^2(ii(V)_{jk})) = (85" "rm(muV))^2, " ou " s_{"W"} = 85" "rm(muV)
+s_{"W"}^2 = bar(s^2(ii(V)_{jk})) = (85 "unitsml(uV)")^2, " ou " s_{"W"} = 85 "unitsml(uV)"
 ++++
 
 La variance estimée de stem:[bar(ii(V))] est obtenue à partir de stem:[s^2(bar(ii(V))_j)], <<eq_H-25d>>, parce que stem:[s^2(bar(ii(V))_j)] reflète correctement à la fois les composantes aléatoires(((aléatoire))) de variance intra-jour et inter-jours [voir <<eq_H-29>>]. Alors
@@ -1502,7 +1502,7 @@ s^2(bar(ii(V))) = s^2 (bar(ii(V))_j)//ii(J)
 
 [stem%unnumbered]
 ++++
-= (57" "rm(muV))^2//10, " ou " s(bar(ii(V))) = 18" "rm(muV)
+= (57 "unitsml(uV)")^2//10, " ou " s(bar(ii(V))) = 18 "unitsml(uV)"
 ++++
 
 avec stem:[s(bar(ii(V)))] ayant stem:[ii(J) - 1 = 9] degrés de liberté.
@@ -1513,7 +1513,7 @@ Le nombre de degrés de liberté de stem:[s_{"w"}^2] (et donc de stem:[s_{"w"}])
 [[scls_H-5-2-7]]
 ====== {blank}
 
-La meilleure estimation de la différence de potentiel de l'étalon de tension est alors stem:[ii(V)_{"S"} = bar(ii(V)) = 10.000097" "rm(V)], avec stem:[s(bar(ii(V))) = u_{"c"} = 18" "rm(muV)] comme donné dans l'<<eq_H-32>>. Cette valeur de stem:[u_{"c"}] et ses 9 degrés de liberté peuvent être comparés à stem:[u_{"c"} = 13" "rm(muV)] et ses 49 degrés de liberté, résultat obtenu en <<scls_H-5-2-5>> [<<eq_H-28b>>] lorsqu'on avait rejeté l'existence d'un effet inter-jours.
+La meilleure estimation de la différence de potentiel de l'étalon de tension est alors stem:[ii(V)_{"S"} = bar(ii(V)) = 10.000097 "unitsml(V)"], avec stem:[s(bar(ii(V))) = u_{"c"} = 18 "unitsml(uV)"] comme donné dans l'<<eq_H-32>>. Cette valeur de stem:[u_{"c"}] et ses 9 degrés de liberté peuvent être comparés à stem:[u_{"c"} = 13 "unitsml(uV)"] et ses 49 degrés de liberté, résultat obtenu en <<scls_H-5-2-5>> [<<eq_H-28b>>] lorsqu'on avait rejeté l'existence d'un effet inter-jours.
 
 Dans un mesurage réel, un effet inter-jours apparent doit être, si possible, étudié plus à fond pour déterminer sa cause et on doit aussi vérifier si un effet systématique est présent, ce qui empêcherait l'utilisation de méthodes d'((analyse de variance)). Comme il a été dit au début de cet exemple, les techniques d'((analyse de variance)) sont conçues pour identifier et évaluer les composantes d'incertitude provenant d'effets aléatoires(((aléatoire))); elles ne peuvent pas fournir d'information sur les composantes provenant d'effets systématiques.
 
@@ -1555,7 +1555,7 @@ Les étalons nationaux sont des machines étalons réalisées dans ce but (il n'
 [[scls_H-6-1]]
 ==== Le problème de mesure
 
-Dans cet exemple, la dureté d'un bloc échantillon de matériau est déterminée sur l'échelle «Rockwell C» en utilisant une machine qui a été étalonnée par rapport à la machine étalon nationale. L'unité d'échelle pour la dureté Rockwell C est 0,002 mm, avec la dureté sur cette échelle définie comme stem:[100 xx (0.002" "rm(mm))] moins la moyenne des profondeurs, mesurées en millimètre, de cinq indentations. La valeur de cette grandeur, divisée par l'unité d'échelle Rockwell 0,002 mm, est appelée «indice de dureté HRC». Dans le présent exemple, la grandeur est simplement appelée «dureté», symbole stem:[h_{"Rockwell C"}], et la valeur numérique de la dureté exprimée en unités Rockwell de longueur est appelée «indice de dureté», symbole stem:[ii(H)_{"Rockwell C"}].
+Dans cet exemple, la dureté d'un bloc échantillon de matériau est déterminée sur l'échelle «Rockwell C» en utilisant une machine qui a été étalonnée par rapport à la machine étalon nationale. L'unité d'échelle pour la dureté Rockwell C est stem:[0.002 "unitsml(mm)"], avec la dureté sur cette échelle définie comme stem:[100 xx (0.002 "unitsml(mm)")] moins la moyenne des profondeurs, mesurées en millimètre, de cinq indentations. La valeur de cette grandeur, divisée par l'unité d'échelle Rockwell stem:[0.002 "unitsml(mm)"], est appelée «indice de dureté HRC». Dans le présent exemple, la grandeur est simplement appelée «dureté», symbole stem:[h_{"Rockwell C"}], et la valeur numérique de la dureté exprimée en unités Rockwell de longueur est appelée «indice de dureté», symbole stem:[ii(H)_{"Rockwell C"}].
 
 
 [[scls_H-6-2]]
@@ -1573,12 +1573,12 @@ h_{"Rockwell C"} = f(bar(d),ii(Delta)_{"c"},ii(Delta)_{"b"},ii(Delta)_{"S"})
 
 [stem%unnumbered]
 ++++
-= 100(0.002" "rm(mm)) - bar(d) - ii(Delta)_{"c"} - ii(Delta)_{"b"} - ii(Delta)_{"S"}
+= 100(0.002 "unitsml(mm)") - bar(d) - ii(Delta)_{"c"} - ii(Delta)_{"b"} - ii(Delta)_{"S"}
 ++++
 
 [stem,subsequence=Y]
 ++++
-ii(H)_{"Rockwell C"} = h_{"Rockwell C"}//(0.002" "rm(mm))
+ii(H)_{"Rockwell C"} = h_{"Rockwell C"}//(0.002 "unitsml(mm)")
 ++++
 
 où
@@ -1684,10 +1684,10 @@ Les données pour cet exemple sont résumées dans le <<table_H-10>>.
 |===
 | Source d'incertitude | Valeur
 
-| Profondeur moyenne stem:[bar(d)] de 5 indentations faites par la machine d'étalonnage sur le bloc échantillon: stem:[0.072" "rm(mm)]
+| Profondeur moyenne stem:[bar(d)] de 5 indentations faites par la machine d'étalonnage sur le bloc échantillon: stem:[0.072 "unitsml(mm)"]
 | stem:[36.0] unités Rockwell
 
-| Indice de dureté indiqué pour le bloc échantillon à partir des 5 indentations: stem:[ii(H)_{"Rockwell C"} = h_{"Rockwell C"}//(0.002" "rm(mm)) = [100(0.002" "rm(mm)) - 0.072 mm\]//(0.002" "rm(mm))] (voir <<scls_H-6-1>>)
+| Indice de dureté indiqué pour le bloc échantillon à partir des 5 indentations: stem:[ii(H)_{"Rockwell C"} = h_{"Rockwell C"}//(0.002 "unitsml(mm)") = [100(0.002 "unitsml(mm)") - 0.072 "unitsml(mm)"\]//(0.002 "unitsml(mm)")] (voir <<scls_H-6-1>>)
 | stem:[64.0] HRC
 
 | Écart-type expérimental stem:[s_{"p"}(d_k)] de l'ensemble des données relatives aux profondeurs des indentations faites par la machine d'étalonnage sur un bloc de dureté uniforme
@@ -1707,7 +1707,7 @@ Les données pour cet exemple sont résumées dans le <<table_H-10>>.
 | Incertitude-type stem:[u(ii(Delta)_{"S"})] de la machine étalon nationale et de la définition de la dureté | stem:[0.5] unités Rockwell
 |===
 
-L'échelle est en Rockwell C, désignée par HRC. L'unité d'échelle Rockwell est stem:[0.002" "rm(mm)], ce qui signifie donc que dans le <<table_H-10>> et pour la suite, «36,0 unités Rockwell» veut dire stem:[36.0 xx (0.002" "rm(mm)) = 0.072" "rm(mm)] par exemple et que c'est simplement une manière commode d'exprimer les données et les résultats.
+L'échelle est en Rockwell C, désignée par HRC. L'unité d'échelle Rockwell est stem:[0.002 "unitsml(mm)"], ce qui signifie donc que dans le <<table_H-10>> et pour la suite, «36,0 unités Rockwell» veut dire stem:[36.0 xx (0.002 "unitsml(mm)") = 0.072 "unitsml(mm)"] par exemple et que c'est simplement une manière commode d'exprimer les données et les résultats.
 
 Si les valeurs pour les grandeurs correspondantes données au <<table_H-10>> sont reportées dans l'<<eq_H-38>>, on obtient les deux expressions suivantes:
 
@@ -1723,16 +1723,16 @@ u_{"c"}^2(h) =[0.45^2/5 + 0.1^2/12 + 0.10^2/6 + 0.11^2/6 + (0.015 xx 36.0)^2/24 
 
 [stem%unnumbered]
 ++++
-u_{"c"}(h) = 0.55 " unité Rockwell" = 0.0011" "rm(mm)
+u_{"c"}(h) = 0.55 " unité Rockwell" = 0.0011 "unitsml(mm)"
 ++++
 
 où ils est suffisant de prendre stem:[z' = bar(d) = 36.0] unités Rockwell pour calculer l'incertitude.
 
 Si l'on suppose stem:[ii(Delta)_c = 0], la dureté du bloc échantillon est alors
 
-stem:[h_{"Rockwell C"} = 64.0] unités Rockwell ou stem:[0.1280" "rm(mm)] avec une incertitude-type composée stem:[u_{"c"} = 0.55] unité Rockwell ou stem:[0.0011" "rm(mm)].
+stem:[h_{"Rockwell C"} = 64.0] unités Rockwell ou stem:[0.1280 "unitsml(mm)"] avec une incertitude-type composée stem:[u_{"c"} = 0.55] unité Rockwell ou stem:[0.0011 "unitsml(mm)"].
 
-L'indice de dureté du bloc est stem:[h_{"Rockwell C"}//(0.002 mm) = (0.1280 mm)//(0.002 mm)], ou
+L'indice de dureté du bloc est stem:[h_{"Rockwell C"}//(0.002 "unitsml(mm)") = (0.1280 "unitsml(mm)")//(0.002 "unitsml(mm)")], ou
 
 stem:[ii(H)_{"Rockwell C"} = 64.0] HRC avec une incertitude-type composée stem:[u_{c} = 0.55] HRC.
 

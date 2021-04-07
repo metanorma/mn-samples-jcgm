@@ -219,13 +219,13 @@ delta = 1/2  10^{cc(l)}.
 
 [[ex1_7-9-2]]
 [example]
-The estimate of the output quantity for a nominally 100 g measurement standard of mass <<JCGM-100,clause=7.2.2>> is stem:[y = 100.02147" "rm(g)]. The ((standard uncertainty)) stem:[u(y) = 0.00035" "rm(g)], both significant digits being regarded as meaningful. Thus, stem:[n_{"dig"} = 2] and stem:[u(y)] can be expressed as stem:[35 xx 10^{-5}" " rm(g)], and so stem:[c = 35] and stem:[cc(l) = -5]. Take stem:[delta = 1/2 xx 10^{-5}] stem:[g = 0.000005 " "rm(g)].
+The estimate of the output quantity for a nominally stem:[100 "unitsml(g)"] measurement standard of mass <<JCGM-100,clause=7.2.2>> is stem:[y = 100.02147 "unitsml(g)"]. The ((standard uncertainty)) stem:[u(y) = 0.00035"unitsml(g)"], both significant digits being regarded as meaningful. Thus, stem:[n_{"dig"} = 2] and stem:[u(y)] can be expressed as stem:[35 xx 10^{-5} "unitsml(g)"], and so stem:[c = 35] and stem:[cc(l) = -5]. Take stem:[delta = 1/2 xx 10^{-5}] stem:[g = 0.000005 "unitsml(g)"].
 
 [example]
-As <<ex1_7-9-2>> except that only one significant decimal digit in stem:[u(y)] is regarded as meaningful. Thus, stem:[n_{"dig"} = 1] and stem:[u(y) = 0.0004" "rm(g) = 4 xx 10^{-4}" "rm(g)], giving stem:[c = 4] and stem:[cc(l) = -4]. Hence, stem:[delta = 1/2 xx 10^{-4}] stem:[g = 0.00005" "rm(g)].
+As <<ex1_7-9-2>> except that only one significant decimal digit in stem:[u(y)] is regarded as meaningful. Thus, stem:[n_{"dig"} = 1] and stem:[u(y) = 0.0004 "unitsml(g)" = 4 xx 10^{-4} "unitsml(g)"], giving stem:[c = 4] and stem:[cc(l) = -4]. Hence, stem:[delta = 1/2 xx 10^{-4}] stem:[g = 0.00005 "unitsml(g)"].
 
 [example]
-In a temperature measurement, stem:[u(y) = 2 ii(K)]. Then, stem:[n_{"dig"} = 1] and stem:[u(y) = 2 x 10^0 K], giving stem:[c = 2] and stem:[cc(l) = 0]. Thus, stem:[delta = 1/2 xx 10^0] stem:[K = 0.5 K].
+In a temperature measurement, stem:[u(y) = 2 ii(K)]. Then, stem:[n_{"dig"} = 1] and stem:[u(y) = 2 x 10^0 "unitsml(K)"], giving stem:[c = 2] and stem:[cc(l) = 0]. Thus, stem:[delta = 1/2 xx 10^0] stem:[K = 0.5 "unitsml(K)"].
 
 
 ==== Objective of adaptive procedure (((coverage probability)))

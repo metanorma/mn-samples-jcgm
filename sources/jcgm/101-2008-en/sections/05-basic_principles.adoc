@@ -181,14 +181,14 @@ Reported results corresponding to declaring two significant decimal digits in st
 
 [stem%unnumbered]
 ++++
-{:({:y = 1.024 " "rm(V)," "u(y) = 0.028 " "rm(V),:}),("shortest 95 % coverage interval" = [0.983, 1.088] " "rm(V).):}
+{:({:y = 1.024 "unitsml(V)"," "u(y) = 0.028 "unitsml(V)",:}),("shortest 95 % coverage interval" = [0.983, 1.088] "unitsml(V)".):}
 ++++
 
 The same results reported to one significant decimal digit in stem:[u(y)] would be
 
 [stem%unnumbered]
 ++++
-{:({:y = 1.02 " "rm(V), u(y) = 0.03 " "rm(V),:}),("shortest 95 % coverage interval" = [0.98, 1.09] " "rm(V).):}
+{:({:y = 1.02 "unitsml(V)", u(y) = 0.03 "unitsml(V)",:}),("shortest 95 % coverage interval" = [0.98, 1.09] "unitsml(V)".):}
 ++++
 
 

@@ -19,7 +19,7 @@ This example demonstrates that even an apparently simple measurement may involve
 [[scls_H-1-1]]
 ==== The measurement problem
 
-The length of a nominally 50 mm end gauge is determined by comparing it with a known standard of the same nominal length. The direct output of the comparison of the two end gauges is the difference stem:[d] in their lengths:
+The length of a nominally stem:[50 "unitsml(mm)"] end gauge is determined by comparing it with a known standard of the same nominal length. The direct output of the comparison of the two end gauges is the difference stem:[d] in their lengths:
 
 [[eq_H-1]]
 [stem]
@@ -29,10 +29,10 @@ d = l(1 + ii(alpha) ii(theta)) - l_{"S"}(1 + ii(alpha)_{"S"}ii(theta)_{"S"})
 
 where
 
-stem:[l]:: is the measurand, that is, the length at 20 °C of the end gauge being calibrated;
-stem:[l_{"S"}]:: is the length of the standard at 20 °C as given in its calibration certificate;
+stem:[l]:: is the measurand, that is, the length at stem:[20 "unitsml(degC)"] of the end gauge being calibrated;
+stem:[l_{"S"}]:: is the length of the standard at stem:[20 "unitsml(degC)"] as given in its calibration certificate;
 stem:[ii(alpha)] and stem:[ii(alpha)_{"S"}]:: are the coefficients of thermal expansion, respectively, of the gauge being calibrated and the standard;
-stem:[ii(theta)] and stem:[ii(theta)_{"S"}]:: are the _deviations_ in temperature from the 20 °C reference temperature, respectively, of the gauge and the standard.
+stem:[ii(theta)] and stem:[ii(theta)_{"S"}]:: are the _deviations_ in temperature from the stem:[20 "unitsml(degC)"] reference temperature, respectively, of the gauge and the standard.
 
 
 [[scls_H-1-2]]
@@ -56,7 +56,7 @@ l = f (l_{"S"}, d, ii(alpha)_{"S"}, ii(theta), delta ii(alpha), delta ii(theta))
 
 The differences stem:[delta ii(theta)] and stem:[delta ii(alpha)], but not their uncertainties, are estimated to be zero; and stem:[delta ii(alpha)], stem:[ii(alpha)_{"S"}], stem:[delta ii(theta)], and stem:[ii(theta)] are assumed to be uncorrelated. (If the measurand were expressed in terms of the variables stem:[ii(theta)], stem:[ii(theta)_{"S"}], stem:[ii(alpha)], and stem:[ii(alpha)_{"S"}], it would be necessary to include the correlation between stem:[ii(theta)] and stem:[ii(theta)_{"S"}], and between stem:[ii(alpha)] and stem:[ii(alpha)_{"S"}].)
 
-It thus follows from <<eq_H-3>> that the estimate of the value of the measurand stem:[l] may be obtained from the simple expression stem:[l_{"S"} + bar(d)], where stem:[l_{"S"}] is the length of the standard at 20 °C as given in its calibration certificate and stem:[d] is estimated by stem:[bar(d)], the arithmetic mean of stem:[n = 5] independent repeated observations. The combined standard uncertainty stem:[u_{"c"}(l)] of stem:[l] is obtained by applying <<eq_10>> in <<scls_5-1-2>> to <<eq_H-3>>, as discussed below.
+It thus follows from <<eq_H-3>> that the estimate of the value of the measurand stem:[l] may be obtained from the simple expression stem:[l_{"S"} + bar(d)], where stem:[l_{"S"}] is the length of the standard at stem:[20 "unitsml(degC)"] as given in its calibration certificate and stem:[d] is estimated by stem:[bar(d)], the arithmetic mean of stem:[n = 5] independent repeated observations. The combined standard uncertainty stem:[u_{"c"}(l)] of stem:[l] is obtained by applying <<eq_10>> in <<scls_5-1-2>> to <<eq_H-3>>, as discussed below.
 
 NOTE: In this and the other examples, for simplicity of notation, the same symbol is used for a quantity and its estimate.
 
@@ -98,61 +98,61 @@ u_{"c"}^2(l) = u^2(l_{"S"}) + u^2(d) + l_{"S"}^2 ii(theta)^2 u^2(delta ii(alpha)
 [[scls_H-1-3-1]]
 ===== Uncertainty of the calibration of the standard, stem:[u(l_{"S"})]
 
-The calibration certificate gives as the expanded uncertainty of the standard stem:[ii(U) = 0.075" "rm(mu m)] and states that it was obtained using a coverage factor of stem:[k = 3]. The standard uncertainty is then
+The calibration certificate gives as the expanded uncertainty of the standard stem:[ii(U) = 0.075 "unitsml(um)"] and states that it was obtained using a coverage factor of stem:[k = 3]. The standard uncertainty is then
 
 [stem%unnumbered]
 ++++
-u (l_{"S"}) = (0.075" "rm(mu m))//3 = 25" "rm(nm)
+u (l_{"S"}) = (0.075 "unitsml(um)")//3 = 25 "unitsml(nm)"
 ++++
 
 
 [[scls_H-1-3-2]]
 ===== Uncertainty of the measured difference in lengths, u(d)
 
-The pooled experimental standard deviation characterizing the comparison of stem:[l] and stem:[l_{"S"}] was determined from the variability of 25 independent repeated observations of the difference in lengths of two standard end gauges and was found to be 13 nm. In the comparison of this example, five repeated observations were taken. The standard uncertainty associated with the arithmetic mean of these readings is then (see <<scls_4-2-4>>)(((variance, pooled estimate of (or pooled experimental standard deviation))))
+The pooled experimental standard deviation characterizing the comparison of stem:[l] and stem:[l_{"S"}] was determined from the variability of 25 independent repeated observations of the difference in lengths of two standard end gauges and was found to be stem:[13 "unitsml(nm)"]. In the comparison of this example, five repeated observations were taken. The standard uncertainty associated with the arithmetic mean of these readings is then (see <<scls_4-2-4>>)(((variance, pooled estimate of (or pooled experimental standard deviation))))
 
 [stem%unnumbered]
 ++++
-u(bar(d)) = s(bar(d)) = (13" "rm(nm))//sqrt(5) = 5.8" "rm(nm)
+u(bar(d)) = s(bar(d)) = (13 "unitsml(nm)")//sqrt(5) = 5.8 "unitsml(nm)"
 ++++
 
-According to the calibration certificate of the comparator used to compare stem:[l] with stem:[l_{"S"}], its uncertainty "due to random errors" is stem:[pm 0.01" "rm(mu m)] at a level of confidence of 95 percent and is based on 6 replicate measurements; thus the standard uncertainty, using the stem:[t]-factor stem:[t_{95}(5) = 2.57] for stem:[ii(nu) = 6 - 1 = 5] degrees of freedom (see <<annexG>>, <<table_G-2>>), is
-
-[stem%unnumbered]
-++++
-u(d_1) = (0.01" "rm(mu m))//2.57 = 3.9" "rm(nm)
-++++
-
-The uncertainty of the comparator "due to systematic errors" is given in the certificate as stem:[0.02" "rm(mu m)] at the "three ii(sigma) level". The standard uncertainty from this cause may therefore be taken to be
+According to the calibration certificate of the comparator used to compare stem:[l] with stem:[l_{"S"}], its uncertainty "due to random errors" is stem:[pm 0.01 "unitsml(um)"] at a level of confidence of 95 percent and is based on 6 replicate measurements; thus the standard uncertainty, using the stem:[t]-factor stem:[t_{95}(5) = 2.57] for stem:[ii(nu) = 6 - 1 = 5] degrees of freedom (see <<annexG>>, <<table_G-2>>), is
 
 [stem%unnumbered]
 ++++
-u(d_2) = (0.02" "rm(mu m))//3 = 6.7" "rm(nm)
+u(d_1) = (0.01 "unitsml(um)")//2.57 = 3.9 "unitsml(nm)"
+++++
+
+The uncertainty of the comparator "due to systematic errors" is given in the certificate as stem:[0.02 "unitsml(um)"] at the "three ii(sigma) level". The standard uncertainty from this cause may therefore be taken to be
+
+[stem%unnumbered]
+++++
+u(d_2) = (0.02 "unitsml(um)")//3 = 6.7 "unitsml(nm)"
 ++++
 
 The total contribution is obtained from the sum of the estimated variances:
 
 [stem%unnumbered]
 ++++
-u^2(d) = u^2(bar(d)) + u^2(d_1) + u^2(d_2) = 93" "rm(nm)^2
+u^2(d) = u^2(bar(d)) + u^2(d_1) + u^2(d_2) = 93 "unitsml(nm^2)"
 ++++
 
 or
 
 [stem%unnumbered]
 ++++
-u(d) = 9.7" "rm(nm)
+u(d) = 9.7 "unitsml(nm)"
 ++++
 
 
 [[scls_H-1-3-3]]
 ===== Uncertainty of the thermal expansion coefficient, stem:[u(ii(alpha)_{"S"})]
 
-The coefficient of thermal expansion of the standard end gauge is given as stem:[ii(alpha)_{"S"} = 11.5 xx 10^{-6}" "rm(°C)^{-1}] with an uncertainty represented by a rectangular distribution with bounds stem:[pm 2 xx 10^{-6}" "rm(°C)^{-1}]. The standard uncertainty is then [see <<eq_7>>]
+The coefficient of thermal expansion of the standard end gauge is given as stem:[ii(alpha)_{"S"} = 11.5 xx 10^{-6} "unitsml(degC^(-1))"] with an uncertainty represented by a rectangular distribution with bounds stem:[pm 2 xx 10^{-6} "unitsml(degC^(-1))"]. The standard uncertainty is then [see <<eq_7>>]
 
 [stem%unnumbered]
 ++++
-u(ii(alpha)_{"S"}) = (2 xx 10^{-6}" "rm(°C)^{-1})//sqrt(3) = 1.2 xx 10^{-6} " "rm(°C)^{-1}
+u(ii(alpha)_{"S"}) = (2 xx 10^{-6} "unitsml(degC^(-1))")//sqrt(3) = 1.2 xx 10^{-6} "unitsml(degC^(-1))"
 ++++
 
 Since stem:[c_{ii(alpha)_{"S"}} = {del f}//{del ii(alpha)_{"S"}} = -l_{"S"}delta ii(theta) = 0] as indicated in <<scls_H-1-3>>, this uncertainty contributes nothing to the uncertainty of stem:[l] in first order. It does, however, have a second-order contribution that is discussed in <<scls_H-1-7>>.
@@ -172,27 +172,27 @@ h| stem:[u_i(l) -= \|c_i\| u(x_i)] +
 (nm)
 h| Degrees of freedom
 
-| stem:[u (l_{"S"})] | Calibration of standard end gauge | 25 nm | 1 | 25 | 18
-| stem:[u(d)] | Measured difference between end gauges | stem:[9.7] nm | 1 | stem:[9.7] | stem:[25.6]
-| stem:[u(bar(d))] | repeated observations | stem:[5.8] nm | | | 24
-| stem:[u(d_1)] | random effects of comparator | stem:[3.9] nm | | | 5
-| stem:[u(d_2)] | systematic effects of comparator | 6.7 nm | | | 8
-| stem:[u(ii(alpha)_{"S"})] | Thermal expansion coefficient of standard end gauge | stem:[1.2 xx 10^{-6}" "rm(°C)^{-1}] | 0 | 0 |
-| stem:[u(ii(theta))] | Temperature of test bed | stem:[0.41" "rm(°C)] | 0 | 0 |
-| stem:[u(bar(ii(theta)))] | mean temperature of bed | stem:[0.2" "rm(°C)] | | |
-| stem:[u(ii(Delta))] | cyclic variation of temperature of room | stem:[0.35" "rm(°C)] | | |
-| stem:[u(delta ii(alpha))] | Difference in expansion coefficients of end gauges | stem:[0.58 xx 10^{-6}" "rm(°C)^{-1}] | stem:[-l_{"S"} ii(theta)] | stem:[2.9] | 50
-| stem:[u(delta ii(theta))] | Difference in temperatures of end gauges | stem:[0.029" "rm(°C)] | stem:[-l_{"S"} ii(alpha)_{"S"}] | stem:[16.6] | 2
+| stem:[u (l_{"S"})] | Calibration of standard end gauge | stem:[25 "unitsml(nm)"] | 1 | 25 | 18
+| stem:[u(d)] | Measured difference between end gauges | stem:[9.7 "unitsml(nm)"] | 1 | stem:[9.7] | stem:[25.6]
+| stem:[u(bar(d))] | repeated observations | stem:[5.8 "unitsml(nm)"] | | | 24
+| stem:[u(d_1)] | random effects of comparator | stem:[3.9 "unitsml(nm)"] | | | 5
+| stem:[u(d_2)] | systematic effects of comparator | stem:[6.7 "unitsml(nm)"] | | | 8
+| stem:[u(ii(alpha)_{"S"})] | Thermal expansion coefficient of standard end gauge | stem:[1.2 xx 10^{-6} "unitsml(degC^(-1))"] | 0 | 0 |
+| stem:[u(ii(theta))] | Temperature of test bed | stem:[0.41 "unitsml(degC)"] | 0 | 0 |
+| stem:[u(bar(ii(theta)))] | mean temperature of bed | stem:[0.2 "unitsml(degC)"] | | |
+| stem:[u(ii(Delta))] | cyclic variation of temperature of room | stem:[0.35 "unitsml(degC)"] | | |
+| stem:[u(delta ii(alpha))] | Difference in expansion coefficients of end gauges | stem:[0.58 xx 10^{-6} "unitsml(degC^(-1))"] | stem:[-l_{"S"} ii(theta)] | stem:[2.9] | 50
+| stem:[u(delta ii(theta))] | Difference in temperatures of end gauges | stem:[0.029 "unitsml(degC)"] | stem:[-l_{"S"} ii(alpha)_{"S"}] | stem:[16.6] | 2
 
 6+>a|
 [stem%unnumbered]
 ++++
-u_{"c"}^2(l) = sum u_i^2 (l) = 1002" "rm(nm)^2
+u_{"c"}^2(l) = sum u_i^2 (l) = 1002 "unitsml(nm^2)"
 ++++
 
 [stem%unnumbered]
 ++++
-u_{"c"}(l) = 32" "rm(nm)
+u_{"c"}(l) = 32 "unitsml(nm)"
 ++++
 
 [stem%unnumbered]
@@ -205,63 +205,63 @@ ii(nu)_{"eff"}(l) = 16
 [[scls_H-1-3-4]]
 ===== Uncertainty of the deviation of the temperature of the end gauge, stem:[u(ii(theta))]
 
-The temperature of the test bed is reported as stem:[(19.9 pm 0.5)" "rm(°C)]; the temperature at the time of the individual observations was not recorded. The stated maximum offset, stem:[ii(Delta) = 0.5" "rm(°C)], is said to represent the amplitude of an approximately cyclical variation of the temperature under a thermostatic system, not the uncertainty of the mean temperature. The value of the mean temperature deviation
+The temperature of the test bed is reported as stem:[(19.9 pm 0.5) "unitsml(degC)"]; the temperature at the time of the individual observations was not recorded. The stated maximum offset, stem:[ii(Delta) = 0.5 "unitsml(degC)"], is said to represent the amplitude of an approximately cyclical variation of the temperature under a thermostatic system, not the uncertainty of the mean temperature. The value of the mean temperature deviation
 
 [stem%unnumbered]
 ++++
-bar(ii(theta)) = 19.9" "rm(°C) - 20" "rm(°C) = - 0.1" "rm(°C)
+bar(ii(theta)) = 19.9 "unitsml(degC)" - 20 "unitsml(degC)" = - 0.1 "unitsml(degC)"
 ++++
 
 is reported as having a standard uncertainty itself due to the uncertainty in the mean temperature of the test bed of
 
 [stem%unnumbered]
 ++++
-u(bar(ii(theta))) = 0.2" "rm(°C)
+u(bar(ii(theta))) = 0.2 "unitsml(degC)"
 ++++
 
 while the cyclic variation in time produces a U-shaped (arcsine) distribution of temperatures resulting in a standard uncertainty of
 
 [stem%unnumbered]
 ++++
-u(ii(Delta)) = (0.5" "rm(°C))//sqrt(2) = 0.35" "rm(°C)
+u(ii(Delta)) = (0.5 "unitsml(degC)")//sqrt(2) = 0.35 "unitsml(degC)"
 ++++
 
 The temperature deviation stem:[ii(theta)] may be taken equal to stem:[bar(ii(theta))], and the standard uncertainty of stem:[ii(theta)] is obtained from
 
 [stem%unnumbered]
 ++++
-u^2(ii(theta)) = u^2(bar(ii(theta))) + u^2(ii(Delta)) = 0.165" "rm(°C)^2
+u^2(ii(theta)) = u^2(bar(ii(theta))) + u^2(ii(Delta)) = 0.165 "unitsml(degC^2)"
 ++++
 
 which gives
 
 [stem%unnumbered]
 ++++
-u(ii(theta)) = 0.41" "rm(°C)
+u(ii(theta)) = 0.41 "unitsml(degC)"
 ++++
 
-Since stem:[c_{ii(theta)} = partial f//partial ii(theta) = -l_{"S"} delta ii(alpha) = 0] as indicated in <<scls_H-1-3>>, this uncertainty also contributes nothing to the uncertainty of stem:[l] in first order; but it does have a second-order contribution that is discussed in <<scls_H-1-7>>.
+Since stem:[c_{ii(theta)} = del f//del ii(theta) = -l_{"S"} delta ii(alpha) = 0] as indicated in <<scls_H-1-3>>, this uncertainty also contributes nothing to the uncertainty of stem:[l] in first order; but it does have a second-order contribution that is discussed in <<scls_H-1-7>>.
 
 
 [[scls_H-1-3-5]]
 ===== Uncertainty of the difference in expansion coefficients, stem:[u(delta ii(alpha))]
 
-The estimated bounds on the variability of stem:[delta ii(alpha)] are stem:[pm 1 xx 10^{-6}" "rm(°C)^{-1}], with an equal probability of stem:[delta ii(alpha)] having any value within those bounds. The standard uncertainty is
+The estimated bounds on the variability of stem:[delta ii(alpha)] are stem:[pm 1 xx 10^{-6} "unitsml(degC^(-1))"], with an equal probability of stem:[delta ii(alpha)] having any value within those bounds. The standard uncertainty is
 
 [stem%unnumbered]
 ++++
-u(delta ii(alpha)) = (1 xx 10^{-6}" "rm(°C)^{-1})//sqrt(3) = 0.58 xx 10^{-6}" "rm(°C)^{-1}
+u(delta ii(alpha)) = (1 xx 10^{-6} "unitsml(degC)^(-1)")//sqrt(3) = 0.58 xx 10^{-6} "unitsml(degC^(-1))"
 ++++
 
 
 [[scls_H-1-3-6]]
 ===== Uncertainty of the difference in temperature of the gauges, stem:[u(delta ii(theta))]
 
-The standard and the test gauge are expected to be at the same temperature, but the temperature difference could lie with equal probability anywhere in the estimated interval stem:[-0.05" "rm(°C)] to stem:[+0.05" "rm(°C)]. The standard uncertainty is
+The standard and the test gauge are expected to be at the same temperature, but the temperature difference could lie with equal probability anywhere in the estimated interval stem:[-0.05 "unitsml(degC)"] to stem:[+0.05 "unitsml(degC)"]. The standard uncertainty is
 
 [stem%unnumbered]
 ++++
-u(delta ii(theta)) = (0.05" "rm(°C))//sqrt(3) = 0.029" "rm(°C)
+u(delta ii(theta)) = (0.05 "unitsml(degC)")//sqrt(3) = 0.029 "unitsml(degC)"
 ++++
 
 
@@ -273,18 +273,18 @@ The combined standard uncertainty stem:[u_{"c"}(l)] is calculated from <<eq_H-5>
 [[eq_H-6a]]
 [stem,subsequence=K]
 ++++
-u_{"c"}^2(l) = (25 " "rm(nm))^2 + (9.7 " "rm(nm))^2 + (0.05 " "rm(m))^2 (-0.1 " "rm(°C))^2 (0.58 xx 10^{-6}" "rm(°C)^{-1})^2 +
+u_{"c"}^2(l) = (25 "unitsml(nm)")^2 + (9.7 "unitsml(nm)")^2 + (0.05 "unitsml(m)")^2 (-0.1 "unitsml(degC)")^2 (0.58 xx 10^{-6} "unitsml(degC^(-1))")^2 +
 ++++
 
 [stem%unnumbered]
 ++++
-(0.05 " "rm(m))^2 (11.5 xx 10^{-6}" "rm(°C)^{-1})^2 (0.029" "rm(°C))^2
+(0.05 "unitsml(m)")^2 (11.5 xx 10^{-6} "unitsml(degC^(-1))")^2 (0.029 "unitsml(degC)")^2
 ++++
 
 [[eq_H-6b]]
 [stem,subsequence=K]
 ++++
-= (25 " "rm(nm))^2 + (9.7 " "rm(nm))^2 + (2.9 " "rm(nm))^2 + (16.6 " "rm(nm))^2 = 1002 " "rm(nm)^2
+= (25 "unitsml(nm)")^2 + (9.7 "unitsml(nm)")^2 + (2.9 "unitsml(nm)")^2 + (16.6 "unitsml(nm)")^2 = 1002 "unitsml(nm^2)"
 ++++
 
 or
@@ -292,18 +292,18 @@ or
 [[eq_H-6c]]
 [stem,subsequence=K]
 ++++
-u_{"c"}(l) = 32" "rm(nm)
+u_{"c"}(l) = 32 "unitsml(nm)"
 ++++
 
-The dominant component of uncertainty is obviously that of the standard, stem:[u(l_{"S"}) = 25" "rm(nm)].
+The dominant component of uncertainty is obviously that of the standard, stem:[u(l_{"S"}) = 25 "unitsml(nm)"].
 
 
 [[scls_H-1-5]]
 ==== Final result
 
-The calibration certificate for the standard end gauge gives stem:[l_{"S"} = 50.000623" "rm(mm)] as its length at 20 °C. The arithmetic mean stem:[bar(d)] of the five repeated observations of the difference in lengths between the unknown end gauge and the standard gauge is 215 nm. Thus, since stem:[l = l_{"S"} + bar(d)] (see <<scls_H-1-2>>), the length stem:[l] of the unknown end gauge at 20 °C is stem:[50.000838" "rm(mm)]. Following <<scls_7-2-2>>, the final result of the measurement may be stated as:
+The calibration certificate for the standard end gauge gives stem:[l_{"S"} = 50.000623 "unitsml(mm)"] as its length at stem:[20 "unitsml(degC)"]. The arithmetic mean stem:[bar(d)] of the five repeated observations of the difference in lengths between the unknown end gauge and the standard gauge is stem:[215 "unitsml(nm)"]. Thus, since stem:[l = l_{"S"} + bar(d)] (see <<scls_H-1-2>>), the length stem:[l] of the unknown end gauge at stem:[20 "unitsml(degC)"] is stem:[50.000838 "unitsml(mm)"]. Following <<scls_7-2-2>>, the final result of the measurement may be stated as:
 
-stem:[l = 50.000838" "rm(mm)] with a combined standard uncertainty stem:[u_{"c"} = 32" "rm(nm)]. The corresponding relativecombined standard uncertainty is stem:[u_{"c"}//l = 6.4 xx 10^{-7}].
+stem:[l = 50.000838 "unitsml(mm)"] with a combined standard uncertainty stem:[u_{"c"} = 32 "unitsml(nm)"]. The corresponding relativecombined standard uncertainty is stem:[u_{"c"}//l = 6.4 xx 10^{-7}].
 
 
 [[scls_H-1-6]]
@@ -312,28 +312,28 @@ stem:[l = 50.000838" "rm(mm)] with a combined standard uncertainty stem:[u_{"c"}
 Suppose that one is required to obtain an expanded uncertainty stem:[ii(U)_{99} = k_{99} u_{"c"}(l)] that provides an interval having a level of confidence of approximately 99 percent. The procedure to use is that summarized in <<scls_G-6-4>>, and the required degrees of freedom are indicated in <<table_H-1>>. These were obtained as follows:
 
 . [[item_H-1-6a]]_Uncertainty of the calibration of the standard_, stem:[u(l_{"S"})] [<<scls_H-1-3-1>>]. The calibration certificate states that theeffective degrees of freedom of the combined standard uncertainty from which the quoted expanded uncertainty was obtained is stem:[ii(nu)_{"eff"}(l_{"S"}) = 18].
-. [[item_H-1-6b]]_Uncertainty of the measured difference in lengths_, stem:[u(d)] [<<scls_H-1-3-2>>]. Although stem:[bar(d)] was obtained from five repeated observations, because stem:[u(bar(d))] was obtained from a pooled experimental standard deviation based on 25 observations, the degrees of freedom of stem:[u(bar(d))] is stem:[ii(nu)(bar(d)) = 25 - 1 = 24] (see <<note_H-3-6>>). The degrees of freedom of stem:[u(d_1)], the uncertainty due to random effects on the comparator, is stem:[ii(nu)(d_1) = 6 - 1 = 5] because stem:[d_1] was obtained from six repeated measurements. The stem:[pm 0.02" "rm(mu m)] uncertainty for systematic effects on the comparator may be assumed to be reliable to 25 percent, and thus the degrees of freedom from <<eq_G-3>> in <<scls_G-4-2>> is stem:[ii(nu)(d_2) = 8] (see the <<example_G-4-2>> of <<scls_G-4-2>>). The effective degrees of freedom of stem:[u(d)], stem:[ii(nu)_{"eff"}(d)], is then obtained from <<eq_G-2b>> in <<scls_G-4-1>>:(((degrees of freedom of a pooled estimate of variance (or of a pooled experimental standard deviation))))
+. [[item_H-1-6b]]_Uncertainty of the measured difference in lengths_, stem:[u(d)] [<<scls_H-1-3-2>>]. Although stem:[bar(d)] was obtained from five repeated observations, because stem:[u(bar(d))] was obtained from a pooled experimental standard deviation based on 25 observations, the degrees of freedom of stem:[u(bar(d))] is stem:[ii(nu)(bar(d)) = 25 - 1 = 24] (see <<note_H-3-6>>). The degrees of freedom of stem:[u(d_1)], the uncertainty due to random effects on the comparator, is stem:[ii(nu)(d_1) = 6 - 1 = 5] because stem:[d_1] was obtained from six repeated measurements. The stem:[pm 0.02 "unitsml(um)"] uncertainty for systematic effects on the comparator may be assumed to be reliable to 25 percent, and thus the degrees of freedom from <<eq_G-3>> in <<scls_G-4-2>> is stem:[ii(nu)(d_2) = 8] (see the <<example_G-4-2>> of <<scls_G-4-2>>). The effective degrees of freedom of stem:[u(d)], stem:[ii(nu)_{"eff"}(d)], is then obtained from <<eq_G-2b>> in <<scls_G-4-1>>:(((degrees of freedom of a pooled estimate of variance (or of a pooled experimental standard deviation))))
 +
 --
 [stem%unnumbered]
 ++++
-ii(nu)_{"eff"}(d) = {[u^2(bar(d)) + u^2(d_1) + u^2(d_2)]^2}/{{u^4(bar(d))}/{ii(nu)(bar(d))} + {u^4(d_1)}/{ii(nu)(d_1)} + {u^4(d_2)}/{ii(nu)(d_2)}} = {(9.7 " "rm(nm))^4}/{{(5.8 " "rm(nm))^4}/24 + {(3.9 " "rm(nm))^4}/5 + {(6.7 " "rm(nm))^4}/8} = 25.6
+ii(nu)_{"eff"}(d) = {[u^2(bar(d)) + u^2(d_1) + u^2(d_2)]^2}/{{u^4(bar(d))}/{ii(nu)(bar(d))} + {u^4(d_1)}/{ii(nu)(d_1)} + {u^4(d_2)}/{ii(nu)(d_2)}} = {(9.7 "unitsml(nm)")^4}/{{(5.8 "unitsml(nm)")^4}/24 + {(3.9 "unitsml(nm)")^4}/5 + {(6.7 "unitsml(nm)")^4}/8} = 25.6
 ++++
 --
 
-. [[item_H-1-6d]]_Uncertainty of the difference in expansion coeficients_, stem:[u(delta ii(alpha))] [<<scls_H-1-3-5>>]. The estimated bounds of stem:[pm 1 xx 10^{-6}" "rm(°C)^{-1}] on the variability of stem:[delta ii(alpha)] are deemed to be reliable to 10 percent. This gives, from <<eq_G-3>> in <<scls_G-4-2>>, stem:[ii(nu) (delta ii(alpha)) = 50].
-. _Uncertainty of the difference in temperatures of the gauges_, stem:[u(delta ii(theta))] [<<scls_H-1-3-6>>]. The estimated interval stem:[-0.05" "rm(°C)] to stem:[+0.05" "rm(°C)] for the temperature difference stem:[delta ii(theta)] is believed to be reliable only to 50 percent, which from <<eq_G-3>> in <<scls_G-4-2>> gives stem:[ii(nu) (delta ii(theta)) = 2].
+. [[item_H-1-6d]]_Uncertainty of the difference in expansion coeficients_, stem:[u(delta ii(alpha))] [<<scls_H-1-3-5>>]. The estimated bounds of stem:[pm 1 xx 10^{-6} "unitsml(degC^(-1))"] on the variability of stem:[delta ii(alpha)] are deemed to be reliable to 10 percent. This gives, from <<eq_G-3>> in <<scls_G-4-2>>, stem:[ii(nu) (delta ii(alpha)) = 50].
+. _Uncertainty of the difference in temperatures of the gauges_, stem:[u(delta ii(theta))] [<<scls_H-1-3-6>>]. The estimated interval stem:[-0.05 "unitsml(degC)"] to stem:[+0.05 "unitsml(degC)"] for the temperature difference stem:[delta ii(theta)] is believed to be reliable only to 50 percent, which from <<eq_G-3>> in <<scls_G-4-2>> gives stem:[ii(nu) (delta ii(theta)) = 2].
 
 The calculation of stem:[ii(nu)_{"eff"}(l)] from <<eq_G-2b>> in <<scls_G-4-1>> proceeds in exactly the same way as for the calculation of stem:[ii(nu)_{"eff"}(d)] in <<item_H-1-6b>> above. Thus from <<eq_H-6b>> and <<eq_H-6c>> and the values for stem:[ii(nu)] given in <<item_H-1-6a>> through <<item_H-1-6d>>,
 
 [stem%unnumbered]
 ++++
-ii(nu)_{"eff"}(l) = {(32 " "rm(nm))^4}/{{(25 " "rm(nm))^4}/18 + {(9.7 " "rm(nm))^4}/25.6 + {(2.9 " "rm(nm))^4}/50 + {(16.6 " "rm(nm))^4}/2} = 16.7
+ii(nu)_{"eff"}(l) = {(32 "unitsml(nm)")^4}/{{(25 "unitsml(nm)")^4}/18 + {(9.7 "unitsml(nm)")^4}/25.6 + {(2.9 "unitsml(nm)")^4}/50 + {(16.6 "unitsml(nm)")^4}/2} = 16.7
 ++++
 
-To obtain the required expanded uncertainty, this value is first truncated to the next lower integer, stem:[ii(nu)_{"eff"}(l) = 16]. It then follows from <<table_G-2>> in <<annexG>> that stem:[t_{99}(16) = 2.92], and hence stem:[ii(U)_{99} = t_{99}(16) u_{"c"}(l) = 2.92 xx (32" "rm(nm)) = 93" "rm(nm)]. Following <<scls_7-2-4>>, the final result of the measurement may be stated as:
+To obtain the required expanded uncertainty, this value is first truncated to the next lower integer, stem:[ii(nu)_{"eff"}(l) = 16]. It then follows from <<table_G-2>> in <<annexG>> that stem:[t_{99}(16) = 2.92], and hence stem:[ii(U)_{99} = t_{99}(16) u_{"c"}(l) = 2.92 xx (32 "unitsml(nm)") = 93 "unitsml(nm)"]. Following <<scls_7-2-4>>, the final result of the measurement may be stated as:
 
-stem:[l = (50.000838 pm 0.000093)" "rm(mm)], where the number following the symbol stem:[pm] is the numerical value of an expanded uncertainty stem:[ii(U) = k u_{"c"}], with stem:[ii(U)] determined from a combined standard uncertainty stem:[u_{"c"} = 32" "rm(nm)] and a coverage factor stem:[k = 2.92] based on the stem:[t]-distribution for stem:[ii(nu) = 16] degrees of freedom, and defines an interval estimated to have a level of confidence of 99 percent. The corresponding relative expanded uncertainty is stem:[ii(U)//l = 1.9 xx 10^{-6}].
+stem:[l = (50.000838 pm 0.000093) "unitsml(mm)"], where the number following the symbol stem:[pm] is the numerical value of an expanded uncertainty stem:[ii(U) = k u_{"c"}], with stem:[ii(U)] determined from a combined standard uncertainty stem:[u_{"c"} = 32 "unitsml(nm)"] and a coverage factor stem:[k = 2.92] based on the stem:[t]-distribution for stem:[ii(nu) = 16] degrees of freedom, and defines an interval estimated to have a level of confidence of 99 percent. The corresponding relative expanded uncertainty is stem:[ii(U)//l = 1.9 xx 10^{-6}].
 
 [[scls_H-1-7]]
 ==== Second-order terms
@@ -349,15 +349,15 @@ but only the first of these terms contributes significantly to stem:[u_{"c"}(l)]
 
 [stem%unnumbered]
 ++++
-l_{"S"} u(delta ii(alpha)) u(ii(theta)) = (0.05 m) (0.58 xx 10^{-6}" "rm(°C)^{-1})(0.41" "rm(°C)) = 11.7" "rm(nm)
+l_{"S"} u(delta ii(alpha)) u(ii(theta)) = (0.05 "unitsml(m)") (0.58 xx 10^{-6} "unitsml(degC^(-1))")(0.41 "unitsml(degC)") = 11.7 "unitsml(nm)"
 ++++
 
 [stem%unnumbered]
 ++++
-l_{"S"} u(ii(alpha)_{"S"}) u(delta ii(theta))=(0.05 m)(1.2 xx 10^{-6}" "rm(°C)^{-1})(0.029" "rm(°C)) = 1.7" "rm(nm)
+l_{"S"} u(ii(alpha)_{"S"}) u(delta ii(theta))=(0.05 "unitsml(m)")(1.2 xx 10^{-6} "unitsml(degC^(-1))")(0.029 "unitsml(degC)") = 1.7 "unitsml(nm)"
 ++++
 
-The second-order terms increase stem:[u_{"c"}(l)] from 32 nm to 34 nm.
+The second-order terms increase stem:[u_{"c"}(l)] from stem:[32 "unitsml(nm)"] to stem:[34 "unitsml(nm)"].
 
 
 [[scls_H-2]]
@@ -397,11 +397,11 @@ stem:[k]
 3+h| Input quantities
 
 | stem:[ii(V)] +
-(V)
+(stem:["unitsml(V)"])
 | stem:[ii(I)] +
-(mA)
+(stem:["unitsml(mA)"])
 | stem:[ii(phi)] +
-(rad)
+(stem:["unitsml(rad)"])
 
 | 1 | stem:[5.007] | stem:[19.663] | stem:[1.0456]
 | 2 | stem:[4.994] | stem:[19.639] | stem:[1.0438]
@@ -457,7 +457,7 @@ or
 u_{"c","r"}^2 (bar(ii(Z))) = u_{"r"}^2 (bar(ii(V))) + u_{"r"}^2 (bar(ii(I))) - 2 u_{"r"} (bar(ii(V))) u_{"r"} (bar(ii(I))) r(bar(ii(V)),bar(ii(I)))
 ++++
 
-where stem:[u(bar(ii(V))) = s(bar(ii(V)))], stem:[u(bar(ii(I))) = s(bar(ii(I)))], and the subscript "r" in the last expression indicates that stem:[u] is a relative uncertainty. Substitution of the appropriate values from <<table_H-2>> into <<eq_H-8a>> then gives stem:[u_{"c"}(ii(Z)) = 0.236" "rm(Omega)].
+where stem:[u(bar(ii(V))) = s(bar(ii(V)))], stem:[u(bar(ii(I))) = s(bar(ii(I)))], and the subscript "r" in the last expression indicates that stem:[u] is a relative uncertainty. Substitution of the appropriate values from <<table_H-2>> into <<eq_H-8a>> then gives stem:[u_{"c"}(ii(Z)) = 0.236 "unitsml(Ohm)"].
 
 Because the three measurands or output quantities depend on the same input quantities, they too are correlated. The elements of the ((covariance matrix)) that describes this correlation may be written in general as
 
@@ -493,20 +493,20 @@ h| Combined standard uncertainty stem:[u_{"c"}(y_l)] of result of measurement
 
 | 1
 | stem:[y_1 = ii(R) = (bar(ii(V))//bar(ii(I))) cos bar(ii(phi))]
-| stem:[y_1 = ii(R) = 127.732" "rm(Omega)]
-| stem:[u_{"c"}(ii(R)) = 0.071" "rm(Omega)] +
+| stem:[y_1 = ii(R) = 127.732 "unitsml(Ohm)"]
+| stem:[u_{"c"}(ii(R)) = 0.071 "unitsml(Ohm)"] +
 stem:[u(ii(R))//ii(R) = 0.06 xx 10^{-2}]
 
 | 2
 | stem:[y_2 = ii(X) = (bar(ii(V))//bar(ii(I))) sin bar(ii(phi))]
-| stem:[y_2 = ii(X) = 219.847" "rm(Omega)]
-| stem:[u_{"c"}(X) = 0.295" "rm(Omega)] +
+| stem:[y_2 = ii(X) = 219.847 "unitsml(Ohm)"]
+| stem:[u_{"c"}(X) = 0.295 "unitsml(Ohm)"] +
 stem:[u(ii(X))//ii(X) = 0.13 xx 10^{-2}]
 
 | 3
 | stem:[y_3 = ii(Z) = bar(ii(V))//bar(ii(I))]
-| stem:[y_3 = ii(Z) = 254.260" "rm(Omega)]
-| stem:[u_{"c"}(ii(Z)) = 0.236" "rm(Omega)] +
+| stem:[y_3 = ii(Z) = 254.260 "unitsml(Ohm)"]
+| stem:[u_{"c"}(ii(Z)) = 0.236 "unitsml(Ohm)"] +
 stem:[u(ii(Z))//ii(Z) = 0.09 xx 10^{-2}]
 
 
@@ -548,11 +548,11 @@ stem:[k]
 3+h| Individual values of measurands
 
 | stem:[ii(R) = (ii(V)//ii(I)) cos ii(phi)] +
-(stem:[rm(Omega)])
+(stem:["unitsml(Ohm)"])
 | stem:[ii(X) = (ii(V)//ii(I)) sin ii(phi)] +
-(stem:[rm(Omega)])
+(stem:["unitsml(Ohm)"])
 | stem:[ii(Z) = ii(V)//ii(I)] +
-(stem:[rm(Omega)])
+(stem:["unitsml(Ohm)"])
 
 | 1 | stem:[127.67] | stem:[220.32] | stem:[254.64]
 | 2 | stem:[127.89] | stem:[219.79] | stem:[254.29]
@@ -615,7 +615,7 @@ and its application to the data of <<table_H-2>> leads to the changes in <<table
 a|
 [stem%unnumbered]
 ++++
-u_{"c"}(ii(R)) = 0.195" "rm(Omega)
+u_{"c"}(ii(R)) = 0.195 "unitsml(Ohm)"
 ++++
 [stem%unnumbered]
 ++++
@@ -625,7 +625,7 @@ u_{"c"} (ii(R))//ii(R) = 0.15 xx 10^{-2}
 a|
 [stem%unnumbered]
 ++++
-u_{"c"}(ii(X)) = 0.201" "rm(Omega)
+u_{"c"}(ii(X)) = 0.201 "unitsml(Ohm)"
 ++++
 [stem%unnumbered]
 ++++
@@ -635,7 +635,7 @@ u_{"c"}(ii(X))//ii(X) =0.09 xx 10^{-2}
 a|
 [stem%unnumbered]
 ++++
-u_{"c"}(ii(Z)) = 0.204" "rm(Omega)
+u_{"c"}(ii(Z)) = 0.204 "unitsml(Ohm)"
 ++++
 [stem%unnumbered]
 ++++
@@ -669,7 +669,7 @@ This example illustrates the use of the method of least squares(((least squares,
 [[scls_H-3-1]]
 ==== The measurement problem
 
-A thermometer is calibrated by comparing stem:[n = 11] temperature readings stem:[t_k] of the thermometer, each having negligible uncertainty, with corresponding known reference temperatures stem:[t_{"R",k}] in the temperature range 21 °C to 27 °C to obtain the corrections stem:[b_k = t_{"R",k} - t_k] to the readings. The _measured_ corrections stem:[b_k] and _measured_ temperatures stem:[t_k] are the input quantities of the evaluation. A linear calibration curve
+A thermometer is calibrated by comparing stem:[n = 11] temperature readings stem:[t_k] of the thermometer, each having negligible uncertainty, with corresponding known reference temperatures stem:[t_{"R",k}] in the temperature range stem:[21 "unitsml(degC)"] to stem:[27 "unitsml(degC)"] to obtain the corrections stem:[b_k = t_{"R",k} - t_k] to the readings. The _measured_ corrections stem:[b_k] and _measured_ temperatures stem:[t_k] are the input quantities of the evaluation. A linear calibration curve
 
 [[eq_H-12]]
 [stem]
@@ -740,13 +740,13 @@ where all sums are from stem:[k = 1] to stem:[n], stem:[ii(theta)_k = t_k - t_0]
 [[scls_H-3-3]]
 ==== Calculation of results
 
-The data to be fitted are given in the second and third columns of <<table_H-6>>. Taking stem:[t_0 = 20" "rm(°C)] as the reference temperature, application of <<eq_H-13a>> to <<eq_H-13g>> yields
+The data to be fitted are given in the second and third columns of <<table_H-6>>. Taking stem:[t_0 = 20 "unitsml(degC)"] as the reference temperature, application of <<eq_H-13a>> to <<eq_H-13g>> yields
 
 [stem%unnumbered]
 ++++
-{:({:y_1 = -0.1712" "rm(°C):},{:s(y_1) = 0.0029" "rm(°C):}),
+{:({:y_1 = -0.1712 "unitsml(degC)":},{:s(y_1) = 0.0029 "unitsml(degC)":}),
 ({:y_2 = 0.00218 :},{:s(y_2) = 0.00067:}),
-({:r(y_1,y_2) = -0.930:},{:s = 0.0035" "rm(°C):}):}
+({:r(y_1,y_2) = -0.930:},{:s = 0.0035 "unitsml(degC)":}):}
 ++++
 
 The fact that the slope stem:[y_2] is more than three times larger than its standard uncertainty provides some indication that a calibration curve and not a fixed average correction is required.(((uncertainty, statistical evaluation of, by varying input quantities)))
@@ -760,16 +760,16 @@ The fact that the slope stem:[y_2] is more than three times larger than its stan
 stem:[k]
 | Thermometer reading +
 stem:[t_k] +
-(°C)
+(stem:["unitsml(degC)"])
 | Observed correction +
 stem:[b_k = t_{R,k} - t_k] +
-(°C)
+(stem:["unitsml(degC)"])
 | Predicted correction +
 stem:[b(t_k)] +
-(°C)
+(stem:["unitsml(degC)"])
 | Difference between observed and predicted correction +
 stem:[b_k - b(t_k)] +
-(°C)
+(stem:["unitsml(degC)"])
 
 | 1 | stem:[21.521] | stem:[-0.171] | stem:[-0.1679] | stem:[-0.0031]
 | 2 | stem:[22.012] | stem:[-0.169] | stem:[-0.1668] | stem:[-0.0022]
@@ -790,7 +790,7 @@ The calibration curve may then be written as
 [[eq_H-14]]
 [stem]
 ++++
-b(t) = -0.1712 (29)" "rm(°C) + 0.00218 (67) (t - 20" "rm(°C))
+b(t) = -0.1712 (29) "unitsml(degC)" + 0.00218 (67) (t - 20 "unitsml(degC)")
 ++++
 
 where the numbers in parentheses are the numerical values of the standard uncertainties referred to the corresponding last digits of the quoted results for the intercept and slope (see <<scls_7-2-2>>). This equation gives the predicted value of the correction stem:[b(t)] at any temperature stem:[t], and in particular the value stem:[b(t_k)] at stem:[t = t_k]. These values are given in the fourth column of the table while the last column gives the differences between the measured and predicted values, stem:[b_k - b(t_k)]. An analysis of these differences can be used to check the validity of the linear model; formal tests exist (see Reference <<FULLER1987>>), but are not considered in this example.
@@ -808,35 +808,35 @@ u_{"c"}^2 [b (t)] = u^2 (y_1) + (t - t_0)^2 u^2(y_2) + 2(t - t_0) u(y_1) u(y_2) 
 ++++
 
 
-The estimated variance stem:[u_{"c"}^2[b(t)\]] is a minimum at stem:[t_{"min"} = t_0 - u (y1) r(y1,y2)//u(y_2)], which in the present case is stem:[t_{"min"} = 24.0085" "rm(°C)].
+The estimated variance stem:[u_{"c"}^2[b(t)\]] is a minimum at stem:[t_{"min"} = t_0 - u (y1) r(y1,y2)//u(y_2)], which in the present case is stem:[t_{"min"} = 24.0085 "unitsml(degC)"].
 
-As an example of the use of <<eq_H-15>>, consider that one requires the thermometer correction and its uncertainty at stem:[t = 30" "rm(°C)], which is outside the temperature range in which the thermometer was actually calibrated. Substituting stem:[t = 30" "rm(°C)] in <<eq_H-14>> gives
+As an example of the use of <<eq_H-15>>, consider that one requires the thermometer correction and its uncertainty at stem:[t = 30 "unitsml(degC)"], which is outside the temperature range in which the thermometer was actually calibrated. Substituting stem:[t = 30 "unitsml(degC)"] in <<eq_H-14>> gives
 
 [stem%unnumbered]
 ++++
-b (30" "rm(°C)) = - 0.1494" "rm(°C)
+b (30 "unitsml(degC)") = - 0.1494 "unitsml(degC)"
 ++++
 
 while <<eq_H-15>> becomes
 
 [stem%unnumbered]
 ++++
-u_{"c"}^2 [b(30°C)] = (0.0029" "rm(°C))^2 + (10" "rm(°C))^2 (0.00067)^2 + 2(10" "rm(°C)) (0.0029" "rm(°C)) (0.00067) (-0.930)
+u_{"c"}^2 [b(30 "unitsml(degC)")] = (0.0029 "unitsml(degC)")^2 + (10 "unitsml(degC)")^2 (0.00067)^2 + 2(10 "unitsml(degC)") (0.0029 "unitsml(degC)") (0.00067) (-0.930)
 ++++
 
 [stem%unnumbered]
 ++++
-= 17.1 xx 10^{-6}" "rm(°C)^2
+= 17.1 xx 10^{-6} "unitsml(degC^2)"
 ++++
 
 or
 
 [stem%unnumbered]
 ++++
-u_{"c"} [b (30" "rm(°C))] = 0.0041" "rm(°C)
+u_{"c"} [b (30 "unitsml(degC)")] = 0.0041 "unitsml(degC)"
 ++++
 
-Thus the correction at stem:[30" "rm(°C)] is stem:[- 0.1494" "rm(°C)], with a combined standard uncertainty of stem:[u_{"c"} = 0.0041" "rm(°C)], and with stem:[u_{"c"}] having stem:[ii(nu) = n - 2 = 9] degrees of freedom.
+Thus the correction at stem:[30 "unitsml(degC)"] is stem:[- 0.1494 "unitsml(degC)"], with a combined standard uncertainty of stem:[u_{"c"} = 0.0041 "unitsml(degC)"], and with stem:[u_{"c"}] having stem:[ii(nu) = n - 2 = 9] degrees of freedom.
 
 
 [[scls_H-3-5]]
@@ -845,8 +845,8 @@ Thus the correction at stem:[30" "rm(°C)] is stem:[- 0.1494" "rm(°C)], with a 
 <<eq_H-13e>> for the ((correlation coefficient)) stem:[r(y_1,y_2)] implies that if stem:[t_0] is so chosen that
 stem:[sum_{k=1}^n ii(theta)_k = sum_{k=1}^n (t_k - t_0) = 0], then stem:[r(y_1,y_2) = 0] and stem:[y_1] and stem:[y_2] will be uncorrelated, thereby simplifying the
 computation of the standard uncertainty of a predicted correction. Since stem:[sum_{k=1}^n ii(theta)_k = 0] when stem:[t_0 = bar(t) = (sum_{k=1}^n t_k)//n],
-and stem:[bar(t) = 24.0085" "rm(°C)] in the present case, repeating the least-squares fit with
-stem:[t_0 = bar(t) = 24.0085 " "rm(°C)] would lead to values of stem:[y_1] and stem:[y_2] that are uncorrelated. (The temperature stem:[bar(t)] is also thetemperature at which stem:[u^2[b(t)\]] is a minimum -- see <<scls_H-3-4>>.) However, repeating the fit is unnecessary because it can be shown that
+and stem:[bar(t) = 24.0085 "unitsml(degC)"] in the present case, repeating the least-squares fit with
+stem:[t_0 = bar(t) = 24.0085 "unitsml(degC)"] would lead to values of stem:[y_1] and stem:[y_2] that are uncorrelated. (The temperature stem:[bar(t)] is also thetemperature at which stem:[u^2[b(t)\]] is a minimum -- see <<scls_H-3-4>>.) However, repeating the fit is unnecessary because it can be shown that
 
 [[eq_H-16a]]
 [stem,subsequence=N]
@@ -890,25 +890,25 @@ Application of these relations to the results given in <<scls_H-3-3>> yields
 [[eq_H-17a]]
 [stem,subsequence=O]
 ++++
-b(t) = -0.1625 (11) + 0.00218 (67) (t - 24.0085 " "rm(°C))
+b(t) = -0.1625 (11) + 0.00218 (67) (t - 24.0085 "unitsml(degC)")
 ++++
 
 [[eq_H-17b]]
 [stem,subsequence=O]
 ++++
-u_{"c"}^2 [b(t)] = (0.0011)^2 + (t - 24.0085" "rm(°C))^2 (0.00067)^2
+u_{"c"}^2 [b(t)] = (0.0011)^2 + (t - 24.0085 "unitsml(degC)")^2 (0.00067)^2
 ++++
 
-That these expressions give the same results as <<eq_H-14>> and <<eq_H-15>> can be checked by repeating the calculation of stem:[b(30" "rm(°C))] and stem:[u_{"c"}[b(30" "rm(°C))\]]. The substitution of stem:[t = 30" "rm(°C)] into <<eq_H-17a>> and <<eq_H-17b>> yields
-
-[stem%unnumbered]
-++++
-b (30" "rm(°C))= -0.1494" "rm(°C)
-++++
+That these expressions give the same results as <<eq_H-14>> and <<eq_H-15>> can be checked by repeating the calculation of stem:[b(30 "unitsml(degC)")] and stem:[u_{"c"}[b(30 "unitsml(degC)")\]]. The substitution of stem:[t = 30 "unitsml(degC)"] into <<eq_H-17a>> and <<eq_H-17b>> yields
 
 [stem%unnumbered]
 ++++
-u_{"c"} [b (30" "rm(°C))] = 0.0041" "rm(°C)
+b (30 "unitsml(degC)")= -0.1494 "unitsml(degC)"
+++++
+
+[stem%unnumbered]
+++++
+u_{"c"} [b (30 "unitsml(degC)")] = 0.0041 "unitsml(degC)"
 ++++
 
 which are identical to the results obtained in <<scls_H-3-4>>. The estimated covariance between two predicted corrections stem:[b(t_1)] and stem:[b(t_2)] may be obtained from <<eq_H-9>> in <<scls_H-2-3>>.
@@ -952,7 +952,7 @@ This example is similar to example <<scls_H-2>>, the simultaneous measurement of
 [[scls_H-4-1]]
 ==== The measurement problem
 
-The unknown radon (^222^Rn) activity concentration in a water sample is determined by liquid-scintillation counting against a radon-in-water standard sample having a known activity concentration. The unknown activity concentration is obtained by measuring three counting sources consisting of approximately 5 g of water and 12 g of organic emulsion scintillator in vials of volume 22 ml:
+The unknown radon (^222^Rn) activity concentration in a water sample is determined by liquid-scintillation counting against a radon-in-water standard sample having a known activity concentration. The unknown activity concentration is obtained by measuring three counting sources consisting of approximately stem:[5 "unitsml(g)"] of water and stem:[12 "unitsml(g)"] of organic emulsion scintillator in vials of volume stem:[22 "unitsml(ml)"]:
 
 Source (a):: a _standard_ consisting of a mass stem:[m_{"S"}] of the standard solution with a known activity concentration;
 Source (b):: a matched _blank_ water sample containing no radioactive material, used to obtain the background counting rate;
@@ -962,10 +962,10 @@ Six cycles of measurement of the three counting sources are made in the order st
 
 
 stem:[t_{"S"}], stem:[t_{"B"}], stem:[t_x]:: are the times from the reference time stem:[t = 0] to the midpoint of the dead-time-corrected
-counting intervals stem:[ii(T)_0 = 60" "rm(min)] for the standard, blank, and sample vials, respectively;
+counting intervals stem:[ii(T)_0 = 60 "unitsml(min)"] for the standard, blank, and sample vials, respectively;
 although stem:[t_{"B"}] is given for completeness, it is not needed in the analysis;
 
-stem:[ii(C)_{"S"}], stem:[ii(C)_{"B"}], stem:[ii(C)_x]:: are the number of counts recorded in the dead-time-corrected counting intervals stem:[ii(T)_0 = 60" "rm(min)]
+stem:[ii(C)_{"S"}], stem:[ii(C)_{"B"}], stem:[ii(C)_x]:: are the number of counts recorded in the dead-time-corrected counting intervals stem:[ii(T)_0 = 60 "unitsml(min)"]
 for the standard, blank, and sample vials, respectively.
 
 
@@ -991,7 +991,7 @@ stem:[ii(A)_{"S"}]:: is the activity concentration of the standard at the refere
 stem:[ii(A)_x]:: is the _measurand_ and is defined as the unknown activity concentration of the sample at the reference time stem:[t = 0];
 stem:[m_{"S"}]:: is the mass of the standard solution;
 stem:[m_x]:: is the mass of the sample aliquot;
-stem:[ii(lambda)]:: is the decay constant for ^222^Rn: stem:[ii(lambda) = (ln" "2)//ii(T)_{1//2} = 1.25894 xx 10^{-4}" "rm(min)^{-1} (ii(T)_{1//2} = 5505.8" "rm(min))].
+stem:[ii(lambda)]:: is the decay constant for ^222^Rn: stem:[ii(lambda) = (ln" "2)//ii(T)_{1//2} = 1.25894 xx 10^{-4} "unitsml(min^(-1))" (ii(T)_{1//2} = 5505.8 "unitsml(min)")].
 
 
 [[table_H-7]]
@@ -1022,7 +1022,7 @@ stem:[ii(lambda)]:: is the decay constant for ^222^Rn: stem:[ii(lambda) = (ln" "
 | 6 | stem:[3956.83] | stem:[11058] | stem:[4018.38] | stem:[3980] | stem:[4079.94] | stem:[26356]
 |===
 
-<<eq_H-18a>> and <<eq_H-18b>> indicate that neither the six individual values of stem:[ii(C)_{"S"}] nor of stem:[ii(C)_x] given in <<table_H-7>> can be averaged directly because of the exponential decay of the activity of the standard and sample, and slight variations in background counts from one cycle to another. Instead, one must deal with the decay-corrected and background-corrected counts (or counting rates defined as the number of counts divided by stem:[ii(T)_0 = 60" "rm(min)]). This suggests combining <<eq_H-18a>> and <<eq_H-18b>> to obtain the following expression for the unknown concentration in terms of the known quantities:
+<<eq_H-18a>> and <<eq_H-18b>> indicate that neither the six individual values of stem:[ii(C)_{"S"}] nor of stem:[ii(C)_x] given in <<table_H-7>> can be averaged directly because of the exponential decay of the activity of the standard and sample, and slight variations in background counts from one cycle to another. Instead, one must deal with the decay-corrected and background-corrected counts (or counting rates defined as the number of counts divided by stem:[ii(T)_0 = 60 "unitsml(min)"]). This suggests combining <<eq_H-18a>> and <<eq_H-18b>> to obtain the following expression for the unknown concentration in terms of the known quantities:
 
 [stem]
 ++++
@@ -1031,7 +1031,7 @@ stem:[ii(lambda)]:: is the decay constant for ^222^Rn: stem:[ii(lambda) = (ln" "
 ({:"":},{:= ii(A)_{"S"} {m_{"S"}}/{m_x} {ii(C)_x - ii(C)_{"B"}}/{ii(C)_{"S"} - ii(C)_{"B"}} e^{ii(lambda) (t_x - t_{"S"})}:}):}
 ++++
 
-where stem:[(ii(C)_x - ii(C)_{"B"})e^{ii(lambda) t_x}] and stem:[(ii(C)_{"S"} - ii(C)_{"B"})e^{ii(lambda) t_{"S"}}] are, respectively, the background-corrected counts of the sample and the standard at the reference time stem:[t = 0] and for the time interval stem:[ii(T)_0 = 60" "rm(min)]. Alternatively, one may simply write
+where stem:[(ii(C)_x - ii(C)_{"B"})e^{ii(lambda) t_x}] and stem:[(ii(C)_{"S"} - ii(C)_{"B"})e^{ii(lambda) t_{"S"}}] are, respectively, the background-corrected counts of the sample and the standard at the reference time stem:[t = 0] and for the time interval stem:[ii(T)_0 = 60 "unitsml(min)"]. Alternatively, one may simply write
 
 [[eq_H-20]]
 [stem]
@@ -1057,7 +1057,7 @@ ii(R)_{"S"} = [(ii(C)_x - ii(C)_{"B"})//ii(T)_0] e^{ii(lambda) t_{"S"}}
 [[scls_H-4-2]]
 ==== Analysis of data
 
-<<table_H-8>> summarizes the values of the background-corrected and decay-corrected counting rates stem:[ii(R)_{"S"}] and stem:[ii(R)_x] calculated from <<eq_H-21a>> and <<eq_H-21b>> using the data of <<table_H-7>> and stem:[ii(lambda) = 1.25894 xx 10^{-4}" "rm(min)^{-1}] as given earlier. It should be noted that the ratio stem:[ii(R) = ii(R)_x//ii(R)_{"S"}] is most simply calculated from the expression
+<<table_H-8>> summarizes the values of the background-corrected and decay-corrected counting rates stem:[ii(R)_{"S"}] and stem:[ii(R)_x] calculated from <<eq_H-21a>> and <<eq_H-21b>> using the data of <<table_H-7>> and stem:[ii(lambda) = 1.25894 xx 10^{-4} "unitsml(min^(-1))"] as given earlier. It should be noted that the ratio stem:[ii(R) = ii(R)_x//ii(R)_{"S"}] is most simply calculated from the expression
 
 [stem%unnumbered]
 ++++
@@ -1079,11 +1079,11 @@ It should be recognized that the respective experimental standard deviations of 
 | Cycle +
 stem:[k]
 | stem:[ii(R)_x] +
-(stem:["min"^{-1}])
+(stem:["unitsml(min^(-1))"])
 | stem:[ii(R)_{"S"}] +
-(stem:["min"^{-1}])
+(stem:["unitsml(min^(-1))"])
 | stem:[t_x - t_{"S"}] +
-(min)
+(stem:["unitsml(min)"])
 | stem:[ii(R) = ii(R)_x//ii(R)_{"S"}]
 
 | 1 | stem:[652.46] | stem:[194.65] | stem:[123.63] | stem:[3.3520]
@@ -1174,27 +1174,27 @@ To obtain the unknown activity concentration stem:[ii(A)_x] and its combined sta
 
 [stem%unnumbered]
 ++++
-{:({:ii(A)_{"S"} = 0.1368" "rm(Bq)//rm(g):},{:"":}),
-({:u(ii(A)_{"S"}) = 0.0018" "rm(Bq)//rm(g);:},{:u(ii(A)_{"S"})//ii(A)_{"S"} = 1.32 xx 10^{-2}:}):}
+{:({:ii(A)_{"S"} = 0.1368 "unitsml(Bq/g)":},{:"":}),
+({:u(ii(A)_{"S"}) = 0.0018 "unitsml(Bq/g)";:},{:u(ii(A)_{"S"})//ii(A)_{"S"} = 1.32 xx 10^{-2}:}):}
 ++++
 
 [stem%unnumbered]
 ++++
-{:({:m_{"S"} = 5.0192" "rm(g):},{:"":}),
-({:u(m_{"S"}) = 0.0050" "rm(g);:},{:u(m_{"S"})//m_{"S"} = 0.10 xx 10^{-2}:}):}
+{:({:m_{"S"} = 5.0192 "unitsml(g)":},{:"":}),
+({:u(m_{"S"}) = 0.0050 "unitsml(g)";:},{:u(m_{"S"})//m_{"S"} = 0.10 xx 10^{-2}:}):}
 ++++
 
 [stem%unnumbered]
 ++++
-{:({:m_x = 5.0571 " "rm(g):},{:"":}),
-({:u(m_x) = 0.0010 " "rm(g);:},{:u(m_x)//m_x = 0.002 xx 10^{-1}:}):}
+{:({:m_x = 5.0571 "unitsml(g)":},{:"":}),
+({:u(m_x) = 0.0010 "unitsml(g)";:},{:u(m_x)//m_x = 0.002 xx 10^{-1}:}):}
 ++++
 
 
 Other possible sources of uncertainty are evaluated to be negligible:
 
 * standard uncertainties of the decay times, stem:[u(t_{"S",k})] and stem:[u(t_{x,k})];
-* standard uncertainty of the decay constant of ^222^Rn, stem:[u(ii(lambda)) = 1 xx 10^{-7}" "rm(min)^{-1}]. (The significant quantity is the decay factor stem:[exp[ii(lambda)(t_x - t_{"S"})\]], which varies from stem:[1.01563] for cycles stem:[k = 4] and 6 to stem:[1.01570] for cycle stem:[k = 1]. The standard uncertainty of these values is stem:[u = 1.2 xx 10^{-5}]);
+* standard uncertainty of the decay constant of ^222^Rn, stem:[u(ii(lambda)) = 1 xx 10^{-7} "unitsml(min^(-1))"]. (The significant quantity is the decay factor stem:[exp[ii(lambda)(t_x - t_{"S"})\]], which varies from stem:[1.01563] for cycles stem:[k = 4] and 6 to stem:[1.01570] for cycle stem:[k = 1]. The standard uncertainty of these values is stem:[u = 1.2 xx 10^{-5}]);
 * uncertainty associated with the possible dependence of the detection efficiency of the scintillation counter on the source used (standard, blank, and sample);
 * uncertainty of the correction for counter dead-time and of the correction for the dependence of counting efficiency on activity level.
 
@@ -1207,7 +1207,7 @@ As indicated earlier, stem:[ii(A)_x] and stem:[u_{"c"}(ii(A)_x)] may be obtained
 [[eq_H-22a]]
 [stem,subsequence=R]
 ++++
-ii(A)_x = ii(A)_{"S"} {m_{"S"}}/{m_x} {bar(ii(R))_x}/{bar(ii(R))_{"S"}} = 0.4300 " "rm(Bq)//rm(g)
+ii(A)_x = ii(A)_{"S"} {m_{"S"}}/{m_x} {bar(ii(R))_x}/{bar(ii(R))_{"S"}} = 0.4300 "unitsml(Bq/g)"
 ++++
 
 Application of <<eq_16>> in <<scls_5-2-2>> to this expression yields for the combined variance stem:[u_{"c"}^2(ii(A)_x)]
@@ -1230,12 +1230,12 @@ Substitution of the values of the relevant quantities into <<eq_H-22a>> and <<eq
 
 [stem%unnumbered]
 ++++
-u_{"c"} (ii(A)_x) = 0.0083" "rm(Bq)//rm(g)
+u_{"c"} (ii(A)_x) = 0.0083 "unitsml(Bq/g)"
 ++++
 
 The result of the measurement may then be stated as:
 
-stem:[ii(A)_x = 0.4300" "rm(Bq)//rm(g)] with a combined standard uncertainty of stem:[u_{"c"} = 0.0083" "rm(Bq)//rm(g)].
+stem:[ii(A)_x = 0.4300 "unitsml(Bq/g)"] with a combined standard uncertainty of stem:[u_{"c"} = 0.0083 "unitsml(Bq/g)"].
 
 
 [[scls_H-4-3-2]]
@@ -1246,7 +1246,7 @@ arithmetic mean stem:[bar(ii(R))]. Thus
 
 [stem,subsequence=S]
 ++++
-ii(A)_x = ii(A)_{"S"} {m_{"S"}}/{m_x} bar(ii(R)) = 0.4304" "rm(Bq)//rm(g)
+ii(A)_x = ii(A)_{"S"} {m_{"S"}}/{m_x} bar(ii(R)) = 0.4304 "unitsml(Bq/g)"
 ++++
 
 The expression for stem:[u_{"c"}^2(ii(A)_x)] is simply
@@ -1265,13 +1265,13 @@ which yields
 
 [stem%unnumbered]
 ++++
-u_{"c"} (ii(A)_x) = 0.0084" "rm(Bq)//rm(g)
+u_{"c"} (ii(A)_x) = 0.0084 "unitsml(Bq/g)"
 ++++
 
 The result of the measurement may then be stated as:
 
 ____
-stem:[ii(A)_x = 0.4304" "rm(Bq)//rm(g)] with a combined standard uncertainty of stem:[u_{"c"} = 0.0084" "rm(Bq)//rm(g)].
+stem:[ii(A)_x = 0.4304 "unitsml(Bq/g)"] with a combined standard uncertainty of stem:[u_{"c"} = 0.0084 "unitsml(Bq/g)"].
 ____
 
 The effective degrees of freedom of stem:[u_{"c"}] can be evaluated using the Welch-Satterthwaite formula in the manner illustrated in <<scls_H-1-6>>.
@@ -1294,7 +1294,7 @@ ANOVA methods are of special importance in the certification of reference materi
 [[scls_H-5-1]]
 ==== The measurement problem
 
-Consider a nominally 10 V Zener voltage standard that is calibrated against a stable voltage reference over a two-week period. On each of stem:[ii(J)] days during the period, stem:[ii(K)] independent repeated observations of the potential difference stem:[ii(V)_{"S"}] of the standard are made. If stem:[ii(V)_{jk}] denotes the stem:[k]th observation of stem:[ii(V)_{"S"}](stem:[k = 1, 2,...,ii(K)]) on the stem:[j]th day (stem:[j = 1, 2,..., ii(J)]), the best estimate of the potential difference of the standard is the arithmetic mean stem:[bar(ii(V))] of the stem:[ii(JK)] observations [see <<eq_3>> in <<scls_4-2-1>>],
+Consider a nominally stem:[10 "unitsml(V)"] Zener voltage standard that is calibrated against a stable voltage reference over a two-week period. On each of stem:[ii(J)] days during the period, stem:[ii(K)] independent repeated observations of the potential difference stem:[ii(V)_{"S"}] of the standard are made. If stem:[ii(V)_{jk}] denotes the stem:[k]th observation of stem:[ii(V)_{"S"}](stem:[k = 1, 2,...,ii(K)]) on the stem:[j]th day (stem:[j = 1, 2,..., ii(J)]), the best estimate of the potential difference of the standard is the arithmetic mean stem:[bar(ii(V))] of the stem:[ii(JK)] observations [see <<eq_3>> in <<scls_4-2-1>>],
 
 [[eq_H-24a]]
 [stem,subsequence=T]
@@ -1386,7 +1386,7 @@ s_{"b"}^2 = bar(s^2(ii(V)_{jk})) = 1/ii(J) sum_{j=1}^ii(J) s^2 (ii(V)_{jk}) = 1/
 
 which is an estimate of stem:[ii(sigma)_W^2] having stem:[ii(nu)_{"b"} = ii(J)(ii(K) - 1) = 40] degrees of freedom.
 
-The estimates of stem:[ii(sigma)_W^2] given by <<eq_H-26a>> and <<eq_H-26b>> are stem:[s_{"a"}^2 = (128" "rm(mu V))^2] and stem:[s_{"b"}^2 = (85" "rm(mu V))^2], respectively (see <<table_H-9>>). Since the estimate stem:[s_{"a"}^2] is based on the variability of the daily means while the estimate stem:[s_{"b"}^2] is based on the variability of the daily observations, their difference indicates the possible presence of an effect that varies from one day to another but that remains relatively constant when observations are made on any single day. The ((stem:[ii(F)]-test)) is used to test this possibility, and thus the assumption that the between-day component of variance is zero.
+The estimates of stem:[ii(sigma)_W^2] given by <<eq_H-26a>> and <<eq_H-26b>> are stem:[s_{"a"}^2 = (128 "unitsml(uV)")^2] and stem:[s_{"b"}^2 = (85 "unitsml(uV)")^2], respectively (see <<table_H-9>>). Since the estimate stem:[s_{"a"}^2] is based on the variability of the daily means while the estimate stem:[s_{"b"}^2] is based on the variability of the daily observations, their difference indicates the possible presence of an effect that varies from one day to another but that remains relatively constant when observations are made on any single day. The ((stem:[ii(F)]-test)) is used to test this possibility, and thus the assumption that the between-day component of variance is zero.
 
 
 [[scls_H-5-2-3]]
@@ -1405,17 +1405,17 @@ The ((stem:[ii(F)]-distribution)) is the probability distribution of the ratio s
 .2+| Quantity 10+| Day, stem:[j]
 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10
 
-| stem:[bar(ii(V))_j//rm(V)] | stem:[10.000172] | stem:[10.000116] | stem:[10.000013] | stem:[10.000144] | stem:[10.000106] | stem:[10.000031] | stem:[10.000060] | stem:[10.000125] | stem:[10.000163] | stem:[10.000041] 
-| stem:[s(ii(V)_{jk})//rm(muV)] | 60 | 77 | 111 | 101 | 67 | 93 | 80 | 73 | 88 | 86
+| stem:[bar(ii(V))_j//"unitsml(V)"] | stem:[10.000172] | stem:[10.000116] | stem:[10.000013] | stem:[10.000144] | stem:[10.000106] | stem:[10.000031] | stem:[10.000060] | stem:[10.000125] | stem:[10.000163] | stem:[10.000041] 
+| stem:[s(ii(V)_{jk})//"unitsml(uV)"] | 60 | 77 | 111 | 101 | 67 | 93 | 80 | 73 | 88 | 86
 
 11+a|
 [stem%unnumbered]
 ++++
-bar(ii(V)) = 10.000097" "rm(V) " " " " s(bar(ii(V))_j) = 57" "rm(muV)
+bar(ii(V)) = 10.000097 "unitsml(V)" " " " " s(bar(ii(V))_j) = 57 "unitsml(uV)"
 ++++
 [stem%unnumbered]
 ++++
-s_{"a"}^2 = ii(K)s^2 (bar(ii(V))_j) = 5(57" "rm(muV))^2 = (128" "rm(muV))^2 " " " " s_{"b"}^2 = bar(s^2 (ii(V)_{jk})) = (85" "rm(muV))^2
+s_{"a"}^2 = ii(K)s^2 (bar(ii(V))_j) = 5(57 "unitsml(uV)")^2 = (128 "unitsml(uV)")^2 " " " " s_{"b"}^2 = bar(s^2 (ii(V)_{jk})) = (85 "unitsml(uV)")^2
 ++++
 |===
 
@@ -1430,7 +1430,7 @@ The application of the ((stem:[ii(F)]-test)) to the present numerical example yi
 
 [stem]
 ++++
-ii(F)(ii(nu)_{"a"},ii(nu)_{"b"}) = {s_{"a"}^2}/{s_{"b"}^2} = {ii(K) s^2 (bar(ii(V))_j)}/{s^2 (bar(ii(V))_{jk})} = {5(57" "rm(mu V))^2}/{(85" "rm(mu V))^2} = 2.25
+ii(F)(ii(nu)_{"a"},ii(nu)_{"b"}) = {s_{"a"}^2}/{s_{"b"}^2} = {ii(K) s^2 (bar(ii(V))_j)}/{s^2 (bar(ii(V))_{jk})} = {5(57 "unitsml(uV)")^2}/{(85 "unitsml(uV)")^2} = 2.25
 ++++
 
 with stem:[ii(nu)_a = ii(J) - 1 = 9] degrees of freedom in the numerator and stem:[ii(nu)_{"b"} = ii(J) (ii(K) - 1) = 40] degrees of freedom in the denominator. Since stem:[ii(F)_{0.95} (9.40) = 2.12] and stem:[ii(F)_{0.975} (9.40) = 2.45], it is concluded that there is a statistically significant between-day effect at the 5 percent level of significance but not at the stem:[2.5] percent level.
@@ -1444,19 +1444,19 @@ If the existence of a between-day effect is rejected because the difference betw
 [[eq_H-28a]]
 [stem,subsequence=W]
 ++++
-s^2(bar(ii(V))) = {(ii(J) - 1)s_{"a"}^2 + ii(J) (ii(K) - 1) s_{"b"}^2}/{ii(JK) (ii(JK) - 1)} = {9(128" "rm(mu V))^2 + 40(85" "rm(mu V))^2}/{(10)(5)(49)}
+s^2(bar(ii(V))) = {(ii(J) - 1)s_{"a"}^2 + ii(J) (ii(K) - 1) s_{"b"}^2}/{ii(JK) (ii(JK) - 1)} = {9(128 "unitsml(uV)")^2 + 40(85 "unitsml(uV)")^2}/{(10)(5)(49)}
 ++++
 
 [[eq_H-28b]]
 [stem,subsequence=W]
 ++++
-s^2(bar(ii(V))) = (13" "rm(mu V))^2, " or " s(bar(ii(V))) = (13" "rm(mu V))
+s^2(bar(ii(V))) = (13 "unitsml(uV)")^2, " or " s(bar(ii(V))) = (13 "unitsml(uV)")
 ++++
 
 
 with stem:[s(bar(ii(V)))] having stem:[ii(JK) - 1 = 49] degrees of freedom.
 
-If it is assumed that all corrections for systematic effects have already been taken into account and that all other components of uncertainty are insignificant, then the result of the calibration can be stated as stem:[ii(V)_{"S"} = bar(ii(V)) = 10.000097" "rm(V)] (see <<table_H-9>>), with a combined standard uncertainty of stem:[s(bar(ii(V))) = u_{"c"} = 13" "rm(mu V)], and with stem:[u_{"c"}] having 49 degrees of freedom.
+If it is assumed that all corrections for systematic effects have already been taken into account and that all other components of uncertainty are insignificant, then the result of the calibration can be stated as stem:[ii(V)_{"S"} = bar(ii(V)) = 10.000097 "unitsml(V)"] (see <<table_H-9>>), with a combined standard uncertainty of stem:[s(bar(ii(V))) = u_{"c"} = 13 "unitsml(uV)"], and with stem:[u_{"c"}] having 49 degrees of freedom.
 
 NOTE: In practice, there would very likely be additional components of uncertainty that were significant and therefore would have to be combined with the component of uncertainty obtained statistically from the observations (see <<note_H-5-1>>).
 
@@ -1487,7 +1487,7 @@ stem:[ii(K)s^2 (bar(ii(V)_j))//bar(s^2 (ii(V)_{jk}))] used for the stem:[ii(F)]-
 
 [stem]
 ++++
-ii(F) = {ii(K) s^2(bar(ii(V))_j)}/{bar(s^2(ii(V)_{jk}))} = {s_{"W"}^2 + ii(K) s_{"B"}^2}/{s_{"W"}^2} = {5(57" "rm(mu V))^2}/{85" "rm(mu V)} = 2.25
+ii(F) = {ii(K) s^2(bar(ii(V))_j)}/{bar(s^2(ii(V)_{jk}))} = {s_{"W"}^2 + ii(K) s_{"B"}^2}/{s_{"W"}^2} = {5(57 "unitsml(uV)")^2}/{85 "unitsml(uV)"} = 2.25
 ++++
 
 
@@ -1497,13 +1497,13 @@ which then leads to
 [stem,subsequence=X]
 ++++
 {:({:s_{"B"}^2:},{:= {ii(K) s^2(bar(ii(V))_j) - bar(s^2 (ii(V)_{jk}))}/{ii(K)}:}),
-({:s_{"B"}^2:},{:= (43" "rm(mu V))^2, " or " s_{"W"} = 85" "rm(mu V):}):}
+({:s_{"B"}^2:},{:= (43 "unitsml(uV)")^2, " or " s_{"W"} = 85 "unitsml(uV)":}):}
 ++++
 
 [[eq_H-31b]]
 [stem,subsequence=X]
 ++++
-s_{"W"}^2 = bar(s^2(ii(V)_{jk})) = (85" "rm(mu V))^2, " or " s_{"W"} = 85" "rm(mu V)
+s_{"W"}^2 = bar(s^2(ii(V)_{jk})) = (85 "unitsml(uV)")^2, " or " s_{"W"} = 85 "unitsml(uV)"
 ++++
 
 
@@ -1513,7 +1513,7 @@ The estimated variance of stem:[bar(ii(V))] is obtained from stem:[s^2(bar(ii(V)
 [stem]
 ++++
 {:({:s^2(bar(ii(V))):},{:= s^2 (bar(ii(V))_j)//J:}),
-({:"":},{:= (57" "rm(mu V))^2//10, " or " s(bar(ii(V))) = 18" "rm(mu V):}):}
+({:"":},{:= (57 "unitsml(uV)")^2//10, " or " s(bar(ii(V))) = 18 "unitsml(uV)":}):}
 ++++
 
 with stem:[s(bar(ii(V)))] having stem:[ii(J) - 1 = 9] degrees of freedom.
@@ -1524,7 +1524,7 @@ The degrees of freedom of stem:[s_{"w"}^2] (and thus stem:[s_{"w"}]) is stem:[ii
 [[scls_H-5-2-7]]
 ====== {blank}
 
-The best estimate of the potential difference of the voltage standard is then stem:[ii(V)_{"S"} = bar(ii(V)) = 10.000097" "rm(V)], with stem:[s(bar(ii(V))) = u_{"c"} = 18" "rm(mu V)] as given in <<eq_H-32>>. This value of stem:[u_{"c"}] and its 9 degreesof freedom are to be compared with stem:[u_{"c"} = 13" "rm(mu V)] and its 49 degrees of freedom, the result obtained in <<scls_H-5-2-5>> [<<eq_H-28b>>] when the existence of a between-day effect was rejected.
+The best estimate of the potential difference of the voltage standard is then stem:[ii(V)_{"S"} = bar(ii(V)) = 10.000097 "unitsml(V)"], with stem:[s(bar(ii(V))) = u_{"c"} = 18 "unitsml(uV)"] as given in <<eq_H-32>>. This value of stem:[u_{"c"}] and its 9 degreesof freedom are to be compared with stem:[u_{"c"} = 13 "unitsml(uV)"] and its 49 degrees of freedom, the result obtained in <<scls_H-5-2-5>> [<<eq_H-28b>>] when the existence of a between-day effect was rejected.
 
 In a real measurement an apparent between-day effect should be further investigated, if possible, in order to determine its cause and whether a systematic effect is present that would negate the use of ANOVA methods. As pointed out at the beginning of this example, ANOVA techniques are designed to identify and evaluate components of uncertainty arising from random effects; they cannot provide information about components arising from systematic effects.
 
@@ -1567,7 +1567,7 @@ Realizations of the standard machine are kept as national standards (there is no
 [[scls_H-6-1]]
 ==== The measurement problem
 
-In this example, the hardness of a sample block of material is determined on the scale "Rockwell C" using a machine that has been calibrated against the national standard machine. The scale unit of Rockwell-C hardness is 0.002 mm, with hardness on that scale defined as stem:[100 xx (0.002" "rm(mm))] minus the average of the depths, measured in mm, of five indentations. The value of that quantity divided by the Rockwell scale unit 0.002 mm is called the "HRC hardness index". In this example, the quantity is called simply "hardness",
+In this example, the hardness of a sample block of material is determined on the scale "Rockwell C" using a machine that has been calibrated against the national standard machine. The scale unit of Rockwell-C hardness is stem:[0.002 "unitsml(mm)"], with hardness on that scale defined as stem:[100 xx (0.002 "unitsml(mm)")] minus the average of the depths, measured in stem:["unitsml(mm)"], of five indentations. The value of that quantity divided by the Rockwell scale unit stem:[0.002 "unitsml(mm)"] is called the "HRC hardness index". In this example, the quantity is called simply "hardness",
 
 symbol stem:[h_{"Rockwell C"}], and the numerical value of hardness expressed in Rockwell units of length is called the "hardness index", stem:[ii(H)_{"Rockwell C"}].
 
@@ -1581,12 +1581,12 @@ To the average of the depths of the indentations made in the sample block by the
 [stem,subsequence=Y]
 ++++
 {:(h_{"Rockwell C"},= f(bar(d),ii(Delta)_{"c"},ii(Delta)_{"b"},ii(Delta)_{"S"}))
-,("",= 100(0.002" "rm(mm)) - bar(d) - ii(Delta)_{"c"} - ii(Delta)_{"b"} - ii(Delta)_{"S"}):}
+,("",= 100(0.002 "unitsml(mm)") - bar(d) - ii(Delta)_{"c"} - ii(Delta)_{"b"} - ii(Delta)_{"S"}):}
 ++++
 
 [stem,subsequence=Y]
 ++++
-ii(H)_{"Rockwell C"} = h_{"Rockwell C"}//(0.002" "rm(mm))
+ii(H)_{"Rockwell C"} = h_{"Rockwell C"}//(0.002 "unitsml(mm)")
 ++++
 
 
@@ -1696,10 +1696,10 @@ The data for this example are summarized in <<table_H-10>>.
 |===
 | Source of uncertainty | Value
 
-| Average depth stem:[bar(d)] of 5 indentations made by the calibration machine in the sample block: stem:[0.072" "rm(mm)]
+| Average depth stem:[bar(d)] of 5 indentations made by the calibration machine in the sample block: stem:[0.072 "unitsml(mm)"]
 | stem:[36.0] Rockwell scale unit
 
-| Indicated hardness index of the sample block from the 5 indentations: stem:[ii(H)_{"Rockwell C"} = h_{"Rockwell C"}//(0.002" "rm(mm)) = [100(0.002" "rm(mm)) - 0.072 mm\]//(0.002" "rm(mm))] (see <<scls_H-6-1>>)
+| Indicated hardness index of the sample block from the 5 indentations: stem:[ii(H)_{"Rockwell C"} = h_{"Rockwell C"}//(0.002 "unitsml(mm)") = [100(0.002 "unitsml(mm)") - 0.072 "unitsml(mm)"\]//(0.002 "unitsml(mm)")] (see <<scls_H-6-1>>)
 | stem:[64.0] HRC
 
 | Pooled experimental standard deviation stem:[s_{"p"}(d_k)] of the depths of indentations made by the calibration machine in a block having uniform hardness
@@ -1719,7 +1719,7 @@ The data for this example are summarized in <<table_H-10>>.
 |===
 
 
-The scale is Rockwell C, designated HRC. The Rockwell scale unit is stem:[0.002" "rm(mm)], and thus in <<table_H-10>> and in the following, it is understood that (for example) "stem:[36.0] Rockwell scale unit" means stem:[36.0 xx (0.002" "rm(mm)) = 0.072" "rm(mm)] and is simply a convenient way of expressing the data and results.
+The scale is Rockwell C, designated HRC. The Rockwell scale unit is stem:[0.002 "unitsml(mm)"], and thus in <<table_H-10>> and in the following, it is understood that (for example) "stem:[36.0] Rockwell scale unit" means stem:[36.0 xx (0.002 "unitsml(mm)") = 0.072 "unitsml(mm)"] and is simply a convenient way of expressing the data and results.
 
 If the values for the relevant quantities given in <<table_H-10>> are substituted into <<eq_H-38>>, one obtains the following two expressions:
 
@@ -1735,16 +1735,16 @@ u_{"c"}^2(h),=[0.45^2/5 + 0.1^2/12 + 0.10^2/6 + 0.11^2/6 + (0.015 xx 36.0)^2/24 
 
 [stem%unnumbered]
 ++++
-u_{"c"}(h),= 0.55 " Rockwell scale unit" = 0.0011" "rm(mm)
+u_{"c"}(h),= 0.55 " Rockwell scale unit" = 0.0011 "unitsml(mm)"
 ++++
 
 
 
 where for the purpose of the calculation of uncertainty it is adequate to take stem:[z' = bar(d) = 36.0" Rockwell scale unit"]. Thus, if it is assumed that stem:[ii(Delta)_"c" = 0], the hardness of the sample block is
 
-stem:[h_{"Rockwell C"} = 64.0" Rockwell scale unit"] or stem:[0.1280" "rm(mm)] with a combined standard uncertainty of stem:[u_{"c"} = 0.55" Rockwell scale unit"] or stem:[0.0011" "rm(mm)].
+stem:[h_{"Rockwell C"} = 64.0" Rockwell scale unit"] or stem:[0.1280 "unitsml(mm)"] with a combined standard uncertainty of stem:[u_{"c"} = 0.55" Rockwell scale unit"] or stem:[0.0011 "unitsml(mm)"].
 
-The hardness index of the block is stem:[h_{"Rockwell C"}//(0.002 mm) = (0.1280 mm)//(0.002 mm)], or
+The hardness index of the block is stem:[h_{"Rockwell C"}//(0.002 "unitsml(mm)") = (0.1280 "unitsml(mm)")//(0.002 "unitsml(mm)")], or
 
 stem:[ii(H)_{"Rockwell C"} = 64.0] HRC with a combined standard uncertainty of stem:[u_{c} = 0.55] HRC.
 

@@ -81,13 +81,13 @@ The ISO 31 series is under revision as a series of ISO 80000 and IEC 80000 docum
 magnitude of a particular quantity generally expressed as a unit of measurement multiplied by a number
 
 [example]
-Length of a rod: 5.34 m or 534 cm.
+Length of a rod: stem:[5.34 "unitsml(m)"] or stem:[534 "unitsml(cm)"].
 
 [example]
-Mass of a body: 0.152 kg or 152 g.
+Mass of a body: stem:[0.152 "unitsml(kg)"] or stem:[152 "unitsml(g)"].
 
 [example]
-Amount of substance of a sample of water (H~2~O): 0.012 mol or 12 mmol.
+Amount of substance of a sample of water (H~2~O): stem:[0.012 "unitsml(mol)"] or stem:[12 "unitsml(mmol)"].
 
 NOTE: The value of a quantity may be positive, negative or zero.
 
@@ -129,7 +129,7 @@ value attributed to a particular quantity and accepted, sometimes by convention,
 At a given location, the value assigned to the quantity realized by a reference standard may be taken as a conventional true value.
 
 [example]
-The CODATA (1986) recommended value for the Avogadro constant: stem:[6.0221367 xx 10^{23}" "rm(mol)^{-1}].
+The CODATA (1986) recommended value for the Avogadro constant: stem:[6.0221367 xx 10^{23} "unitsml(mol^(-1))"].
 
 
 NOTE: "Conventional true value" is sometimes called *assigned value*, *best estimate* of the value, *conventional value* or *reference value*. "Reference value", in this sense, should not be confused with "reference value" in the senseused in the Note to VIM:1993, definition 5.7.
@@ -214,7 +214,7 @@ NOTE: A measurement procedure is usually recorded in a document that is sometime
 particular quantity subject to measurement
 
 [example]
-Vapour pressure of a given sample of water at 20 °C.
+Vapour pressure of a given sample of water at stem:[20 "unitsml(degC)"].
 
 NOTE: The specification of a measurand may require statements about quantities such as time, temperature and pressure.
 

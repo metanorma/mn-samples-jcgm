@@ -21,7 +21,7 @@ The first step in making a measurement is to specify the ((measurand)) -- the qu
 Commonly, the definition of a ((measurand)) specifies certain physical states and conditions.
 
 [example]
-The velocity of sound in dry air of composition (mole fraction) stem:["N"_2 = 0.7808], stem:["O"_2 = 0.2095], stem:["Ar" = 0.00935], and stem:["CO"_2 = 0.00035] at the temperature stem:[ii(T) = 273.15" "rm(K)] and pressure stem:[p = 101325" "rm(Pa)].
+The velocity of sound in dry air of composition (mole fraction) stem:["N"_2 = 0.7808], stem:["O"_2 = 0.2095], stem:["Ar" = 0.00935], and stem:["CO"_2 = 0.00035] at the temperature stem:[ii(T) = 273.15 "unitsml(K)"] and pressure stem:[p = 101325 "unitsml(Pa)"].
 
 
 [[scls_D-2]]

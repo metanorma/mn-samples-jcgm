@@ -125,14 +125,14 @@ If <<eq_1>> for the measurand stem:[ii(Y)] is expanded about nominal values stem
 
 [example]
 ====
-From <<example2_4-3-7>> of <<scls_4-3-7>>, the estimate of the value of the measurand stem:[ii(V)] is stem:[ii(V) = bar(ii(V)) + Delta bar(ii(V))], where stem:[bar(ii(V)) = 0.928571" "rm(V)], stem:[u(bar(ii(V)))=12" "rm(muV)], the additive correction stem:[Delta bar(ii(V)) = 0], and stem:[u (Delta bar(ii(V))) = 8.7" "rm(muV)]. Since stem:[del ii(V)//del bar(ii(V)) = 1], and stem:[del ii(V)//del (Delta bar(ii(V))) = 1], the combined variance associated with stem:[ii(V)] is given by
+From <<example2_4-3-7>> of <<scls_4-3-7>>, the estimate of the value of the measurand stem:[ii(V)] is stem:[ii(V) = bar(ii(V)) + Delta bar(ii(V))], where stem:[bar(ii(V)) = 0.928571 "unitsml(V)"], stem:[u(bar(ii(V)))=12 "unitsml(uV)"], the additive correction stem:[Delta bar(ii(V)) = 0], and stem:[u (Delta bar(ii(V))) = 8.7 "unitsml(uV)"]. Since stem:[del ii(V)//del bar(ii(V)) = 1], and stem:[del ii(V)//del (Delta bar(ii(V))) = 1], the combined variance associated with stem:[ii(V)] is given by
 
 [stem%unnumbered]
 ++++
-u_{"c"}^2 (ii{V}) = u^2 (bar(ii{V})) + u^2 (Delta bar(ii{V})) = (12" "rm(mu) rm(V))^2 + (8.7" "rm(mu)rm(V))^2 = 219 xx 10^{-12}" "rm(V)^2
+u_{"c"}^2 (ii{V}) = u^2 (bar(ii{V})) + u^2 (Delta bar(ii{V})) = (12 "unitsml(uV)")^2 + (8.7 "unitsml(uV)")^2 = 219 xx 10^{-12} "unitsml(V^2)"
 ++++
 
-and the combined standard uncertainty is stem:[u_{"c"}(V) = 15" "rm(muV)], which corresponds to a relative combined standard uncertainty stem:[u_{"c"}(ii(V))//ii(V)] of stem:[16 xx 10^{-6}] (see <<scls_5-1-6>>). This is an example of the case where the measurand is already a linear function of the quantities on which it depends, with coefficients stem:[c_i = +1]. It follows from <<eq_10>> that if stem:[ii(Y) = c_1ii(X)_1 + c_2ii(X)_2 +... + c_Nii(X)_N] and if the constants stem:[c_i = +1 or -1], then stem:[u_{"c"}^2 (y) = sum_{i=1}^{ii(N)} u^2 (x_i)].
+and the combined standard uncertainty is stem:[u_{"c"}(V) = 15 "unitsml(uV)"], which corresponds to a relative combined standard uncertainty stem:[u_{"c"}(ii(V))//ii(V)] of stem:[16 xx 10^{-6}] (see <<scls_5-1-6>>). This is an example of the case where the measurand is already a linear function of the quantities on which it depends, with coefficients stem:[c_i = +1]. It follows from <<eq_10>> that if stem:[ii(Y) = c_1ii(X)_1 + c_2ii(X)_2 +... + c_Nii(X)_N] and if the constants stem:[c_i = +1 or -1], then stem:[u_{"c"}^2 (y) = sum_{i=1}^{ii(N)} u^2 (x_i)].
 ====
 
 
@@ -222,8 +222,8 @@ The combined standard uncertainty stem:[u_{"c"}(y)] is thus simply a _linear sum
 
 [[example_5-2-2]]
 [example]
-Ten resistors, each of nominal resistance stem:[ii(R)_i = 1000" "rm(Omega)], are calibrated with a negligible uncertainty of comparison in terms of the same stem:[1000" "rm(Omega)] standard resistor stem:[ii(R)_s] characterized by a standard uncertainty stem:[u(ii(R)_s) = 100" "rm(m Omega)] as given in its calibration certificate. The resistors are connected in series with wires having negligible resistance in order to obtain a reference resistance stem:[ii(R)_{"ref"}] of nominal value stem:[10" "rm(k Omega)]. Thus
-stem:[ii(R)_{"ref"} = f (ii(R)_i) = sum_{i=1}^10 ii(R)_i]. Since stem:[r(x_i,x_j) = r(ii(R)_i,ii(R)_j) = +1] for each resistor pair (see <<scls_F-1-2-3>>, <<example2_F-1-2-3>>), the equation of this note applies. Since for each resistor stem:[del f // del x_i = del ii(R)_{"ref"}// del ii(R)_i = 1], and stem:[u(x_i) = u(ii(R)_i) = u(ii(R)_s)] (see <<scls_F-1-2-3>>, <<example2_F-1-2-3>>), that equation yields for the combined standard uncertainty of stem:[ii(R)_{"ref"}], stem:[u_{"c"}(ii(R)_{"ref"}) = sum_{i=1}^10 u (ii(R)_s) = 10 xx (100" "rm(m Omega)) = 1" "rm(Omega)]. The result stem:[u_{"c"}(ii(R)_{"ref"}) = [sum_{i=1}^10 u^2 (ii(R)_s)\]^{1//2} = 0.32" "rm(Omega)] obtained from <<eq_10>> is incorrect because it does not take into account that all of the calibrated values of the ten resistors are correlated.
+Ten resistors, each of nominal resistance stem:[ii(R)_i = 1000 "unitsml(Ohm)"], are calibrated with a negligible uncertainty of comparison in terms of the same stem:[1000 "unitsml(Ohm)"] standard resistor stem:[ii(R)_s] characterized by a standard uncertainty stem:[u(ii(R)_s) = 100 "unitsml(mOmega)"] as given in its calibration certificate. The resistors are connected in series with wires having negligible resistance in order to obtain a reference resistance stem:[ii(R)_{"ref"}] of nominal value stem:[10 "unitsml(kOmega)"]. Thus
+stem:[ii(R)_{"ref"} = f (ii(R)_i) = sum_{i=1}^10 ii(R)_i]. Since stem:[r(x_i,x_j) = r(ii(R)_i,ii(R)_j) = +1] for each resistor pair (see <<scls_F-1-2-3>>, <<example2_F-1-2-3>>), the equation of this note applies. Since for each resistor stem:[del f // del x_i = del ii(R)_{"ref"}// del ii(R)_i = 1], and stem:[u(x_i) = u(ii(R)_i) = u(ii(R)_s)] (see <<scls_F-1-2-3>>, <<example2_F-1-2-3>>), that equation yields for the combined standard uncertainty of stem:[ii(R)_{"ref"}], stem:[u_{"c"}(ii(R)_{"ref"}) = sum_{i=1}^10 u (ii(R)_s) = 10 xx (100 "unitsml(mOmega)") = 1 "unitsml(Ohm)"]. The result stem:[u_{"c"}(ii(R)_{"ref"}) = [sum_{i=1}^10 u^2 (ii(R)_s)\]^{1//2} = 0.32 "unitsml(Ohm)"] obtained from <<eq_10>> is incorrect because it does not take into account that all of the calibrated values of the ten resistors are correlated.
 
 
 [[note2_5-2-2]]

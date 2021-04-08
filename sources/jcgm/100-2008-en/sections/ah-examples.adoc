@@ -250,7 +250,7 @@ The estimated bounds on the variability of stem:[delta ii(alpha)] are stem:[pm 1
 
 [stem%unnumbered]
 ++++
-u(delta ii(alpha)) = (1 xx 10^{-6} "unitsml(degC)^(-1)")//sqrt(3) = 0.58 xx 10^{-6} "unitsml(degC^(-1))"
+u(delta ii(alpha)) = (1 xx 10^{-6} "unitsml(degC^(-1))")//sqrt(3) = 0.58 xx 10^{-6} "unitsml(degC^(-1))"
 ++++
 
 

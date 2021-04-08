@@ -566,11 +566,11 @@ stem:[k]
 3+h| Valeurs individuelles des mesurandes
 
 | stem:[ii(R) = (ii(V)//ii(I)) cos ii(phi)] +
-(stem:[Omega])
+(stem:[Ohm])
 | stem:[ii(X) = (ii(V)//ii(I)) sin ii(phi)] +
-(stem:[Omega])
+(stem:[Ohm])
 | stem:[ii(Z) = ii(V)//ii(I)] +
-(stem:[Omega])
+(stem:[Ohm])
 
 | 1 | stem:[127.67] | stem:[220.32] | stem:[254.64]
 | 2 | stem:[127.89] | stem:[219.79] | stem:[254.29]

@@ -409,7 +409,8 @@ stem:[k]
 | 4 | stem:[4.990] | stem:[19.685] | stem:[1.0428]
 | 5 | stem:[4.999] | stem:[19.678] | stem:[1.0433]
 | Arithmetic mean | stem:[bar(ii(V)) = 4.9990] | stem:[bar(ii(I)) = 19.6610] | stem:[bar(ii(phi)) = 1.04446]
-| Experimental standard deviation of mean | stem:[s(bar(ii(V))) = 0.0032] | stem:[s(bar(ii(I))) = 0.0095] | stem:[s(bar(ii(phi))) = 0.00075]
+a| Experimental standard +
+deviation of mean | stem:[s(bar(ii(V))) = 0.0032] | stem:[s(bar(ii(I))) = 0.0095] | stem:[s(bar(ii(phi))) = 0.00075]
 
 4+| Correlation coefficients
 4+a|
@@ -608,7 +609,7 @@ and its application to the data of <<table_H-2>> leads to the changes in <<table
 
 [[table_H-5]]
 .Changes in <<table_H-3>> under the assumption that the correlation coefficients of Table H.2 are zero
-[cols="1*"]
+[cols="1*^"]
 |===
 | Combined standard uncertainty stem:[u_{"c"}(y_l)] of result of measurement
 
@@ -991,7 +992,7 @@ stem:[ii(A)_{"S"}]:: is the activity concentration of the standard at the refere
 stem:[ii(A)_x]:: is the _measurand_ and is defined as the unknown activity concentration of the sample at the reference time stem:[t = 0];
 stem:[m_{"S"}]:: is the mass of the standard solution;
 stem:[m_x]:: is the mass of the sample aliquot;
-stem:[ii(lambda)]:: is the decay constant for ^222^Rn: stem:[ii(lambda) = (ln" "2)//ii(T)_{1//2} = 1.25894 xx 10^{-4} "unitsml(min^(-1))" (ii(T)_{1//2} = 5505.8 "unitsml(min)")].
+stem:[ii(lambda)]:: is the decay constant for ^222^Rn: stem:[ii(lambda) = (ln" "2)//ii(T)_{1//2} = 1.25894 xx 10^{-4} "unitsml(min^(-1))"] stem:[(ii(T)_{1//2} = 5505.8 "unitsml(min)")].
 
 
 [[table_H-7]]

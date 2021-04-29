@@ -1,6 +1,6 @@
 [[alphabetical_index]]
 [index]
-== Index
+== Alphabetical index
 
 index:see[analysis of variance,ANOVA]
 index:see[average,arithmetic mean]

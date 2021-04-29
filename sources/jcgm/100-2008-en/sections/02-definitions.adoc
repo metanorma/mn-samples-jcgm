@@ -63,6 +63,7 @@ Although these two traditional concepts are valid as ideals, they focus on _unkn
 
 
 [[scls_2-3]]
+[heading=terms and definitions]
 === Terms specific to this _Guide_
 
 In general, terms that are specific to this _Guide_ are defined in the text when first introduced. However, the definitions of the most important of these terms are given here for easy reference.

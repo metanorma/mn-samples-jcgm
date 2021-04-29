@@ -17,6 +17,7 @@ ISO 3534-1:1993 has been cancelled and replaced by ISO 3534-1:2006. Note that so
 --
 
 [[scls_C-2]]
+[heading=terms and definitions]
 === Definitions
 
 As in <<cls_2>> and <<annexB>>, the use of parentheses around certain words of some terms means that the words may be omitted if this is unlikely to cause confusion.
@@ -486,6 +487,7 @@ in general, the number of terms in a sum minus the number of constraints on the 
 
 
 [[scls_C-3]]
+[heading=terms]
 === Elaboration of terms and concepts
 
 [[scls_C-3-1]]

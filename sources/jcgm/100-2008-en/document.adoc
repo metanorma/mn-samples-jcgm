@@ -18,7 +18,7 @@
 :workgroup-en: Working Group on the Expression of Uncertainty in Measurement
 :workgroup-fr: Groupe de travail sur l'expression des incertitudes
 :title-provenance-en: GUM 1995 with minor corrections
-:date-published: 2008-09
+:published-date: 2008-09
 :mn-document-class: bipm
 :mn-output-extensions: xml,html,pdf,rxl
 :imagesdir: images

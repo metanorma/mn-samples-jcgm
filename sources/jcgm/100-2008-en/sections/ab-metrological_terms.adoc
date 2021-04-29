@@ -20,6 +20,7 @@ NOTE: Some basic statistical terms and concepts are given in <<annexC>>, while t
 
 
 [[scls_B-2]]
+[heading=terms and definitions]
 === Definitions
 
 As in <<cls_2>>, in the definitions that follow, the use of parentheses around certain words of some terms means that the words may be omitted if this is unlikely to cause confusion.

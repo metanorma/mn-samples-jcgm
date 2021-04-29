@@ -254,7 +254,7 @@ stem:[n]
 | 30 | 13
 | 50 | 10
 
-2+a|
+2+<a|
 . [[item_tabe1a]]The values given have been calculated from the exact expression for stem:[ii(sigma)[s(bar(q))\]//ii(sigma)(bar(q))], not the approximate expression stem:[[2(n-1)\]^{-1//2}].
 
 . [[item_tabe1b]]In the expression stem:[ii(sigma)[s(bar(q))\]//ii(sigma)(bar(q))], the denominator stem:[ii(sigma)(bar(q))] is the expectation stem:[ii(E)[ii(S)//sqrt(n)\]] and the numerator 

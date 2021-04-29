@@ -41,12 +41,13 @@ To obtain the value of the ((coverage factor)) stem:[k_p] that produces an inter
 | stem:[99.73] | stem:[3]
 |===
 
-
-NOTE: By contrast, if stem:[z] is described by a rectangular probability distribution with expectation stem:[ii(mu)_z] and standard deviation
+[NOTE,keep-separate=true]
+====
+By contrast, if stem:[z] is described by a rectangular probability distribution with expectation stem:[ii(mu)_z] and standard deviation
 stem:[ii(sigma) = a//sqrt(3)], where stem:[a] is the half-width of the distribution, the level of confidence stem:[p] is stem:[57.74] percent for stem:[k_p = 1]; 95 percent for
 stem:[k_p = 1.65]; 99 percent for stem:[k_p = 1.71]; and 100 percent for stem:[k_p >= sqrt(3) ~~ 1.73]; the rectangular distribution is "narrower" than the
 normal distribution in the sense that it is of finite extent and has no "tails".
-
+====
 
 [[scls_G-1-4]]
 ==== {blank}

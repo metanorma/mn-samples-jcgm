@@ -220,7 +220,7 @@ The propagation and summarizing stages of the GUM uncertainty framework (stages 
 . Obtain from the PDFs for the input quantities stem:[bb(X) = (ii(X)_1,..., ii(X)_N)^{sf(T)}] the expectations stem:[x = (x_1,..., x_N)^{sf(T)}] and the standard deviations (standard uncertainties) stem:[u(x) = [u(x_1),..., u(x_N )\]^{sf(T)}]. Use instead the joint PDF for stem:[ii(X)] if pairs of the stem:[ii(X)_i] are not independent (in which case they have non-zero covariance).
 . Set the ((degrees of freedom)) (infinite or finite) associated with each stem:[u(x_i)].
 . For each pair stem:[i], stem:[j] for which stem:[ii(X)_i] and stem:[ii(X)_j] are not independent, obtain from the joint PDF for stem:[ii(X)_i] and stem:[ii(X)_j] the covariance (mutual uncertainty) stem:[u(x_i, x_j)] associated with stem:[x_i] and stem:[x_j] .
-. Form the partial derivatives(((partial derivative))) of first order of stem:[f(bb(X))] with respect to stem:[bb(X)].
+. Form the partial derivatives(((partial derivative))) of first order of stem:[f(bii(X))] with respect to stem:[bii(X)].
 . Calculate stem:[y], the model evaluated at stem:[ii(X)] equal to stem:[x].
 . Calculate the model ((sensitivity coefficients)) <<JCGM-100,clause=5.1.3>> as the above partial derivatives(((partial derivative))) evaluated at stem:[x].
 . Calculate the ((standard uncertainty)) stem:[u(y)] by combining stem:[u(x)], the stem:[u(x_i, x_j)], and the model ((sensitivity coefficients)) <<JCGM-100,clause=formulae (10), (13)>>.

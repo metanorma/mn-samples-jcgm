@@ -1,0 +1,70 @@
+/__w/mn-samples-jcgm/mn-samples-jcgm/site/documents/jcgm/104-2009-en/document.err errors
+
+
+== Anchors
+
+(XML Line 000220): Crossreference target eq1 is undefined
+	<xref target="eq1">(1)</xref>
+(XML Line 000258): Crossreference target eq1 is undefined
+	<xref target="eq1">(1)</xref>
+(XML Line 000312): Crossreference target eq1 is undefined
+	<xref target="eq1">(1)</xref>
+(XML Line 000316): Crossreference target eq1 is undefined
+	<xref target="eq1">(1)</xref>
+(XML Line 000320): Crossreference target eq1 is undefined
+	<xref target="eq1">(1)</xref>
+(XML Line 000326): Crossreference target eq4 is undefined
+	<xref target="eq4">(4)</xref>
+(XML Line 000386): Crossreference target eq1 is undefined
+	<xref target="eq1">(1)</xref>
+(XML Line 000408): Crossreference target eq1 is undefined
+	<xref target="eq1">(1)</xref>
+
+
+== Metanorma XML Syntax
+
+(XML Line 000015:108): character content of element "revision-date" invalid; must be a string matching the regular expression "([\+\-]?\d{4})((-?)((0[1-9]|1[0-2])((-?)([12]\d|0[1-9]|3[01]))?|W([0-4]\d|5[0-2])(-?[1-7])?|(00[1-9]|0[1-9]\d|[12]\d{2}|3([0-5]\d|6[1-6]))))?"
+(XML Line 000049:615): text not allowed here; expected element "author", "p" or "source"
+(XML Line 000049:621): element "quote" incomplete; missing required element "p"
+(XML Line 000056:513): text not allowed here; expected element "author", "p" or "source"
+(XML Line 000056:519): element "quote" incomplete; missing required element "p"
+(XML Line 000298:46): element "index" not allowed here; expected the element end-tag, text or element "br", "em", "eref", "keyword", "link", "smallcap", "stem", "strike", "strong", "sub", "sup", "tt", "underline" or "xref"
+(XML Line 000342:203): element "index" not allowed here; expected the element end-tag, text or element "br", "em", "eref", "keyword", "link", "smallcap", "stem", "strike", "strong", "sub", "sup", "tt", "underline" or "xref"
+(XML Line 000342:45): element "index" not allowed here; expected the element end-tag, text or element "br", "em", "eref", "keyword", "link", "smallcap", "stem", "strike", "strong", "sub", "sup", "tt", "underline" or "xref"
+(XML Line 000438:121): element "index" not allowed here; expected the element end-tag, text or element "br", "em", "eref", "keyword", "link", "smallcap", "stem", "strike", "strong", "sub", "sup", "tt", "underline" or "xref"
+(XML Line 000438:233): element "index" not allowed here; expected the element end-tag, text or element "br", "em", "eref", "keyword", "link", "smallcap", "stem", "strike", "strong", "sub", "sup", "tt", "underline" or "xref"
+(XML Line 000438:324): element "index" not allowed here; expected the element end-tag, text or element "br", "em", "eref", "keyword", "link", "smallcap", "stem", "strike", "strong", "sub", "sup", "tt", "underline" or "xref"
+(XML Line 000438:43): element "index" not allowed here; expected the element end-tag, text or element "br", "em", "eref", "keyword", "link", "smallcap", "stem", "strike", "strong", "sub", "sup", "tt", "underline" or "xref"
+(XML Line 000438:453): element "index" not allowed here; expected the element end-tag, text or element "br", "em", "eref", "keyword", "link", "smallcap", "stem", "strike", "strong", "sub", "sup", "tt", "underline" or "xref"
+(XML Line 000508:241): element "index" not allowed here; expected the element end-tag, text or element "br", "em", "eref", "keyword", "link", "smallcap", "stem", "strike", "strong", "sub", "sup", "tt", "underline" or "xref"
+(XML Line 000508:666): element "index" not allowed here; expected the element end-tag, text or element "br", "em", "eref", "keyword", "link", "smallcap", "stem", "strike", "strong", "sub", "sup", "tt", "underline" or "xref"
+(XML Line 000508:84): element "index" not allowed here; expected the element end-tag, text or element "br", "em", "eref", "keyword", "link", "smallcap", "stem", "strike", "strong", "sub", "sup", "tt", "underline" or "xref"
+(XML Line 000546:169): element "index" not allowed here; expected the element end-tag, text or element "br", "em", "eref", "keyword", "link", "smallcap", "stem", "strike", "strong", "sub", "sup", "tt", "underline" or "xref"
+(XML Line 000546:594): element "index" not allowed here; expected the element end-tag, text or element "br", "em", "eref", "keyword", "link", "smallcap", "stem", "strike", "strong", "sub", "sup", "tt", "underline" or "xref"
+(XML Line 000682:251): element "docidentifier" not allowed yet; missing required element "title"
+(XML Line 000683:325): element "docidentifier" not allowed yet; missing required element "title"
+(XML Line 000684:258): element "docidentifier" not allowed yet; missing required element "title"
+(XML Line 000731:35): element "docidentifier" not allowed yet; missing required element "title"
+(XML Line 000734:35): element "docidentifier" not allowed yet; missing required element "title"
+(XML Line 000737:35): element "docidentifier" not allowed yet; missing required element "title"
+(XML Line 000740:35): element "docidentifier" not allowed yet; missing required element "title"
+(XML Line 000743:35): element "docidentifier" not allowed yet; missing required element "title"
+(XML Line 000746:35): element "docidentifier" not allowed yet; missing required element "title"
+(XML Line 000749:35): element "docidentifier" not allowed yet; missing required element "title"
+(XML Line 000752:35): element "docidentifier" not allowed yet; missing required element "title"
+(XML Line 000755:35): element "docidentifier" not allowed yet; missing required element "title"
+(XML Line 000758:35): element "docidentifier" not allowed yet; missing required element "title"
+(XML Line 000761:35): element "docidentifier" not allowed yet; missing required element "title"
+(XML Line 000764:35): element "docidentifier" not allowed yet; missing required element "title"
+(XML Line 000767:35): element "docidentifier" not allowed yet; missing required element "title"
+(XML Line 000770:35): element "docidentifier" not allowed yet; missing required element "title"
+(XML Line 000773:35): element "docidentifier" not allowed yet; missing required element "title"
+(XML Line 000776:35): element "docidentifier" not allowed yet; missing required element "title"
+(XML Line 000779:35): element "docidentifier" not allowed yet; missing required element "title"
+(XML Line 000782:35): element "docidentifier" not allowed yet; missing required element "title"
+(XML Line 000837:35): element "docidentifier" not allowed yet; missing required element "title"
+(XML Line 000840:35): element "docidentifier" not allowed yet; missing required element "title"
+(XML Line 000843:35): element "docidentifier" not allowed yet; missing required element "title"
+(XML Line 000846:35): element "docidentifier" not allowed yet; missing required element "title"
+(XML Line 000849:35): element "docidentifier" not allowed yet; missing required element "title"
+(XML Line 000852:35): element "docidentifier" not allowed yet; missing required element "title"

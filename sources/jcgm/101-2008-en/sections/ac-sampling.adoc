@@ -36,7 +36,7 @@ As an instance of analytical inversion, consider the exponential PDF for stem:[i
 
 NOTE: Numerically, stem:[xi] can generally be determined by solving the "zero-of-a-function" problem stem:[G_X (xi) - ii(rho) = 0]. Upper and lower bounds for stem:[xi] are typically easily found, in which case a recognized "bracketing" algorithm such as bisection or, more efficiently, a combination of linear interpolation and bisection <<Dekker1969>>, for example, can be used to determine stem:[xi].
 
-NOTE: If the pseudo-random number generator for the rectangular distribution is to be used as a basis for generating numbers from another distribution, a draw of stem:[ii(rho)] equal to zero or one can cause failure of that generator. An example is the ((exponential distribution)) (see <<scls_6-4-10>>). Its PDF (<<eq9>>) is not defined for stem:[ii(rho)] equal to zero or one. The use of the generator given in <<scls_C-3-3>> would not give rise to a failure of that type.
+NOTE: If the pseudo-random number generator for the rectangular distribution is to be used as a basis for generating numbers from another distribution, a draw of stem:[ii(rho)] equal to zero or one can cause failure of that generator. An example is the ((exponential distribution)) (see <<scls_6-4-10>>). Its PDF (<<arc-sine-pdf>>) is not defined for stem:[ii(rho)] equal to zero or one. The use of the generator given in <<scls_C-3-3>> would not give rise to a failure of that type.
 
 
 [[scls_C-3]]

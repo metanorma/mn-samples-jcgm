@@ -462,7 +462,7 @@ ii(X) = {a + b}/2 + {b - a}/2 sin ii(Phi),
 
 where stem:[ii(Phi)] has the ((rectangular distribution)) stem:[R(0,2pi)].
 
-
+[[arc-sine-pdf]]
 ===== {blank} (((arc sine distribution,probability density function)))
 
 The PDF for stem:[ii(X)] is
@@ -473,11 +473,11 @@ g_X (xi) = { ({: (2//pi)[(b - a)^2 - (2xi - a - b)^2]^{-1//2}, :},{: a < xi < b,
 ({: 0, :},{: "otherwise". :}) :}
 ++++
 
+[[eq9]]
 [NOTE]
 ====
 stem:[U(a,b)] is related to the standard arc sine distribution stem:[U(0,1)] given by
 
-[[eq9]]
 [stem]
 ++++
 g_Z (z) = { ({: [z(1 - z)]^{-1//2}//pi, :},{: 0 < z < 1, :}),
@@ -491,7 +491,7 @@ in the variable stem:[ii(Z)], through the linear transformation
 ii(X) = a + (b - a)ii(Z).
 ++++
 
-stem:[ii(Z)] has expectation 1/2 and variance 1/8. The distribution <<eq9,(9)>> is termed the arc sine distribution, since the corresponding ((distribution function)) is
+stem:[ii(Z)] has expectation 1/2 and variance 1/8. The distribution (9) is termed the arc sine distribution, since the corresponding ((distribution function)) is
 
 [stem%unnumbered]
 ++++

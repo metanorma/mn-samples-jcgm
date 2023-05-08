@@ -1,0 +1,21 @@
+
+[bibliography]
+== Normative references
+
+* [[[JCGM_100_2008,JCGM 100:2008]]], JCGM 100:2008. Evaluation of measurement data -- Guide to the expression of uncertainty in measurement (GUM).
+
+* [[[JCGM_101_2008,JCGM 101:2008]]], JCGM 101:2008. Evaluation of measurement data -- Supplement 1 to the "Guide to the expression of uncertainty in measurement" -- Propagation of distributions using a Monte Carlo method.
+
+* [[[JCGM_102_2011,JCGM 102:2011]]], JCGM 102:2011. Evaluation of measurement data -- Supplement 2 to the "Guide to the expression of uncertainty in measurement" -- Extension to any number of output quantities.
+
+* [[[JCGM_200_2012,JCGM 200:2012]]], JCGM 200:2012. International vocabulary of metrology -- Basic and general concepts and associated terms (VIM3).
+
+* [[[ISO_IEC_17000_2004,ISO/IEC 17000:2004]]], ISO/IEC 17000:2004. Conformity assessment -- Vocabulary and general principles.
+
+* [[[ISO_3534_1_2006,ISO 3534-1:2006]]], ISO 3534-1:2006. Statistics -- Vocabulary and symbols -- Part 1: Probability and general statistical terms.
+
+* [[[ISO_3534_2_2006,ISO 3534-2:2006]]], ISO 3534-2:2006. Statistics -- Vocabulary and symbols -- Part 2: Applied statistics.
+
+* [[[ISO_10576_1_2003,ISO 10576-1:2003]]]
+
+* [[[JCGM_100_2010,JCGM 100:2010]]]

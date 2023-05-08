@@ -1,0 +1,442 @@
+
+== Terms and definitions
+
+[.boilerplate]
+=== My predefined text
+
+For the purposes of this document the definitions of <<JCGM_100_2010>>,
+<<JCGM_101_2008>> and <<JCGM_200_2012>> apply, unless otherwise indicated.
+Some of the most relevant definitions from these documents are given succinctly
+below. Supplementary information, including notes and examples, can be
+found in the normative references.
+
+Further definitions are also given, including definitions taken, or adapted,
+from other sources, which are especially important in conformity assessment.
+
+For definitions that cite other documents, a NOTE that occurs prior to
+such citation is a part of the cited entry; other NOTES are particular
+to the present document.
+
+In this document, the terms "indication" and "maximum permissible error
+(of indication)" are taken to be quantities rather than values, in contrast
+with <<JCGM_200_2012>>.
+
+NOTE: Citations of the form [<<JCGM_101_2008,clause=3.4>>] are to the indicated
+(sub)clauses of the cited reference.
+
+[[sec_3.1]]
+=== Terms related to probability
+
+[[sec_3.1.1]]
+==== probability distribution
+alt:[distribution]
+
+probability measure induced by a random variable
+
+NOTE: There are numerous, equivalent mathematical representations of a
+distribution, including {{distribution function}}, {{probability density
+function}}, if it exists, and characteristic function.
+
+//Adapted from
+[.source%adapted]
+<<ISO_3534_1_2006,clause=2.11>>
+
+[[sec_3.1.2]]
+==== distribution function
+
+function giving, for every value stem:[xi], the probability that the random
+variable stem:[X] be less than or equal to stem:[xi]:
+
+[stem%unnumbered]
+++++
+G_x (xi) = "Pr"(X <= xi)
+++++
+
+[.source]
+<<JCGM_101_2008,clause=3.2>>
+
+[[sec_3.1.3]]
+==== probability density function
+alt:[PDF]
+
+derivative, when it exists, of the distribution function
+
+[stem%unnumbered]
+++++
+g_X (xi) = "d" G_x (xi) // "d" xi
+++++
+
+NOTE: stem:[g_X (xi) "d"xi] is the 'probability element'
+
+[stem%unnumbered]
+++++
+g_X (xi) "d"xi = "Pr"(xi < X < xi + "d"xi):
+++++
+
+//Adapted from
+[.source%adapted]
+<<JCGM_101_2008,clause=3.3>>
+
+[[sec_3.1.4]]
+==== normal distribution
+
+probability distribution of a continuous random variable X having the probability
+density function
+
+[stem%unnumbered]
+++++
+g_X (xi) = 1/(sigma sqrt(2 pi)) exp [- 1/2 ({xi - mu}/sigma)^2]
+++++
+
+for stem:[-oo < xi < oo]
+
+NOTE: stem:[mu] is the {{expectation}} and stem:[sigma] is the {{standard
+deviation}} of stem:[X].
+
+NOTE: The normal distribution is also known as a Gaussian distribution.
+
+[.source]
+<<JCGM_101_2008,clause=3.4>>
+
+
+[[sec_3.1.5]]
+==== expectation
+
+for a continuous random variable stem:[X] characterized by a PDF stem:[g_X(xi)],
+
+[stem%unnumbered]
+++++
+E(X) = int_{-oo}^{oo} xi g_X(xi) "d"xi
+++++
+
+NOTE: The expectation is also known as the mean.
+
+NOTE: Not all random variables have an expectation.
+
+NOTE: The expectation of the random variable stem:[Z = F(X)], for a given
+function stem:[F(X)], is
+
+[stem%unnumbered]
+++++
+E(Z) = E(F(X)) = int_{-oo}^{oo} F(xi) g_X (xi) "d"xi
+++++
+
+[.source]
+<<JCGM_101_2008,clause=3.6>>
+
+[[sec_3.1.6]]
+==== variance
+
+for a continuous random variable stem:[X] characterized by a PDF
+stem:[g_X (xi)],
+
+[stem%unnumbered]
+++++
+V(X) = int_{-oo}^{oo} [xi - E(X)]^2 g_X (xi) "d"xi
+++++
+
+NOTE: Not all random variables have a variance.
+
+[.source]
+<<JCGM_101_2008,clause=3.7>>
+
+[[sec_3.1.7]]
+==== standard deviation
+
+positive square root of the variance
+
+[.source]
+<<JCGM_101_2008,clause=3.8>>
+
+=== Terms related to metrology
+
+[[sec_3.2.1]]
+==== quantity
+
+property of a phenomenon, body, or substance, where the property has a
+magnitude that can be expressed as a number and a reference
+
+[.source]
+<<JCGM_200_2012,clause=1.1>>
+
+[[sec_3.2.2]]
+==== quantity value
+alt:[value of a quantity]
+alt:[value]
+
+number and reference together expressing magnitude of a quantity
+
+[.source]
+<<JCGM_200_2012,clause=1.19>>
+
+[[sec_3.2.3]]
+==== true quantity value
+alt:[true value of a quantity]
+alt:[true value]
+
+quantity value consistent with the definition of a quantity
+
+[.source]
+<<JCGM_200_2012,clause=2.11>>
+
+[[sec_3.2.4]]
+==== measurand
+
+quantity intended to be measured
+
+[.source]
+<<JCGM_200_2012,clause=2.3>>
+
+NOTE: In this document, the measurand is a measurable property of an item
+of interest.
+
+[[sec_3.2.5]]
+==== measurement result
+alt:[result of measurement]
+
+set of quantity values being attributed to a measurand together with any
+other available relevant information
+
+NOTE: A measurement result may be expressed in a number of ways, by giving,
+for example, (a) a measured quantity value with an associated measurement
+uncertainty; (b) a coverage interval for the measurand with an associated
+coverage probability; (c) a PDF; or (d) a numerical approximation to a
+PDF.
+
+[.source]
+<<JCGM_200_2012,clause=2.9>>
+
+[[sec_3.2.6]]
+==== measured quantity value
+alt:[value of a measured quantity]
+alt:[measured value]
+
+quantity value representing a measurement result
+
+NOTE: A measured quantity value is also known as an estimate, or best estimate,
+of a quantity.
+
+[.source]
+<<JCGM_200_2012,clause=2.10>>
+
+[[sec_3.2.7]]
+==== coverage interval
+
+interval containing the set of true quantity values of a measurand with
+a stated probability, based on the information available
+
+[.source]
+<<JCGM_200_2012,clause=2.36>>
+
+[[sec_3.2.8]]
+==== coverage probability
+
+probability that the set of true quantity values of a measurand is contained
+within a specified coverage interval
+
+[.source]
+<<JCGM_200_2012,clause=2.37>>
+
+[[sec_3.2.9]]
+==== indication
+
+quantity provided by a measuring instrument or measuring system
+
+NOTE: An indication is often given as the position of a pointer for an
+analogue output or the displayed or printed number for a digital output.
+
+NOTE: An indication is also known as a reading.
+
+//Adapted from
+[.source%adapted]
+<<JCGM_200_2012,clause=4.1>>
+
+=== Terms related to conformity assessment
+
+[[sec_3.3.1]]
+==== conformity assessment
+
+activity to determine whether specified requirements relating to a product,
+process, system, person or body are fulfilled
+
+//Adapted from
+[.source%adapted]
+<<ISO_IEC_17000_2004,clause=2.1>>
+
+[[sec_3.3.2]]
+==== inspection
+
+conformity assessment by observation and judgement accompanied, as appropriate,
+by measurement, testing or gauging
+
+//Adapted from
+[.source%adapted]
+<<ISO_3534_2_2006,clause=4.1.2>>
+
+NOTE: A measurement performed as part of conformity assessment is sometimes
+called an inspection measurement.
+
+[[sec_3.3.3]]
+==== specified requirement
+
+need or expectation that is stated
+
+NOTE: Specified requirements may be stated in normative documents such
+as regulations, standards and technical specifications.
+
+[.source]
+<<ISO_IEC_17000_2004,clause=3.1>>
+
+NOTE: The term 'expectation' in the context of a specified requirement
+is not related to the expectation of a random variable; see
+{{tolerance interval}}.
+
+NOTE: In this document, a typical specified requirement takes the form
+of a stated interval of permissible values of a measurable property of
+an item.
+
+[example]
+A sample of industrial waste water (the item) is required to have a mass
+concentration of dissolved mercury (the property) of no greater than
+stem:[10" ng/L"].
+
+[example]
+A grocery scale (the item) is required to have an indication stem:[R]
+(the property) in the interval
+[stem:[999.5 "unitsml(g)" <= R <= 1 000.5 "unitsml(g)"]] when measuring
+a standard 1 kg weight.
+
+[[sec_3.3.4]]
+==== tolerance limit
+alt:[specification limit]
+
+specified upper or lower bound of permissible values of a property
+
+//Adapted from
+[.source%adapted]
+<<ISO_3534_2_2006,clause=3.1.3>>
+
+[[sec_3.3.5]]
+==== tolerance interval
+
+interval of permissible values of a property
+
+//Adapted from
+[.source%adapted]
+<<ISO_10576_1_2003,clause=3.5>>
+
+NOTE: Unless otherwise stated in a specification, the tolerance limits
+belong to the tolerance interval.
+
+NOTE: The term 'tolerance interval' as used in conformity assessment has
+a different meaning from the same term as it is used in statistics.
+
+NOTE: A tolerance interval is called a 'specification zone' in ASME B89.7.3.1:2001
+<<ref2>>.
+
+[[sec_3.3.6]]
+==== tolerance
+alt:[specified tolerance]
+
+difference between upper and lower tolerance limits
+
+[[sec_3.3.7]]
+==== conformance probability
+
+probability that an item fulfills a specified requirement
+
+[[sec_3.3.8]]
+==== acceptance limit
+
+specified upper or lower bound of permissible measured quantity values
+
+//Adapted from
+[.source%adapted]
+<<ISO_3534_2_2006,clause=3.1.6>>
+
+[[sec_3.3.9]]
+==== acceptance interval
+
+interval of permissible measured quantity values
+
+NOTE: Unless otherwise stated in the specification, the acceptance limits
+belong to the acceptance interval.
+
+NOTE: An acceptance interval is called an 'acceptance zone' in ASME B89.7.3.1
+<<ref2>>.
+
+[[sec_3.3.10]]
+==== rejection interval
+
+interval of non-permissible measured quantity values
+
+NOTE: A rejection interval is called an 'rejection zone' in ASME B89.7.3.1
+<<ref2>>.
+
+[[sec_3.3.11]]
+==== guard band
+
+interval between a tolerance limit and a corresponding acceptance limit
+
+NOTE: The guard band includes the limits.
+
+[[sec_3.3.12]]
+==== decision rule
+
+documented rule that describes how measurement uncertainty will be accounted
+for with regard to accepting or rejecting an item, given a specified requirement
+and the result of a measurement
+
+//Adapted from
+[.source%adapted]
+<<ref2,ASME B89.7.3.1 2001>>
+
+[[sec_3.3.13]]
+==== specific consumer's risk
+
+probability that a particular accepted item is non-conforming
+
+[[sec_3.3.14]]
+==== specific producer's risk
+
+probability that a particular rejected item is conforming
+
+[[sec_3.3.15]]
+==== global consumer's risk
+alt:[consumer's risk]
+
+probability that a non-conforming item will be accepted based on a future
+measurement result
+
+[[sec_3.3.16]]
+==== global producer's risk
+alt:[producer's risk]
+
+probability that a conforming item will be rejected based on a future measurement
+result
+
+[[sec_3.3.17]]
+==== measurement capability index
+
+tolerance divided by a multiple of the standard measurement uncertainty
+associated with the measured value of a property of an item
+
+NOTE: In this document the multiple is taken to be 4; see clause <<sec_7.6.3>>
+
+[[sec_3.3.18]]
+==== maximum permissible error (of indication)
+alt:[MPE]
+
+for a measuring instrument, maximum difference, permitted by specifications
+or regulations, between the instrument indication and the quantity being
+measured
+
+NOTE: When more than one maximum difference is specified, the term
+"maximum permissible errors" is used; for example, a specified maximum
+negative difference and a specified maximum positive difference.
+
+NOTE: The error of indication can be written as stem:[E = R - R_0], where
+stem:[R] is the indication and stem:[R_0] denotes the indication of an
+ideal measuring instrument measuring the same measurand stem:[Y]. In the
+testing and verification of a measuring instrument, the error of indication
+is typically evaluated by measuring a calibrated reference standard.

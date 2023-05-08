@@ -1,0 +1,496 @@
+
+[[sec_7]]
+== Probability of conformity with specified requirements
+
+[[sec_7.1]]
+=== General rule for calculation of conformance probability
+
+[[sec_7.1.1]]
+==== {blank}
+
+An item conforms to a specified requirement if the true value of its associated
+property stem:[Y] lies in the tolerance interval. Knowledge of stem:[Y]
+is conveyed by a PDF stem:[g (eta | eta_{"m"})] so that a statement of
+conformity is always an inference, with some probability of being true.
+Denoting the set of permissible (conforming) values of stem:[Y] by stem:[C],
+the conformance probability, denoted by stem:[p_{"c"}], is given by
+
+[[eq_4]]
+[stem]
+++++
+p_{"c"} = "Pr" (Y in sf(C) | eta_{"m"}) = int_{sf(C)} g (eta | eta_{"m"}) " d"eta.
+++++
+
+[[sec_7.1.2]]
+==== {blank}
+
+<<eq_4>> gives the general rule for calculating the probability that an
+item conforms to a specified requirement based on measurement of a relevant
+property of the item. Given a two-sided tolerance interval for the measurand
+stem:[Y] , for example, with lower limit stem:[T_{"L"}] and upper limit
+stem:[T_{"U"}], stem:[sf(C) = [T_{"L"}, T_{"U"}\]] and the conformance
+probability is
+
+[stem%unnumbered]
+++++
+p_{"c"} = int_{T_{"L"}}^{T_{"U"}} g (eta | eta_{"m"}) " d"eta.
+++++
+
+[[sec_7.1.3]]
+==== {blank}
+
+Since the item either does, or does not, conform to specification, the
+probability that it does not conform is
+
+[stem%unnumbered]
+++++
+bar(p_{"c"}) = 1 - p_{"c"}.
+++++
+
+[[sec_7.2]]
+=== Conformance probabilities with normal PDFs
+
+[[sec_7.2.1]]
+==== {blank}
+
+The conformance probability depends on a state of knowledge of a measurand
+stem:[Y] as encoded and conveyed by the PDF stem:[g (eta | eta_{"m"})].
+In many cases it is reasonable to characterise knowledge of stem:[Y] by
+a {{normal distribution}} and this probability can be calculated. If the
+prior distribution is normal and the measuring system (i.e., the likelihood
+function) is characterised by a normal distribution then the distribution
+stem:[g (eta | eta_{"m"})] is also a normal distribution.
+
+[[sec_7.2.2]]
+==== {blank}
+
+More generally, if the likelihood function is characterised by a normal
+distribution and the prior information is meagre, then the posterior
+(post-measurement) PDF will be approximately normal. In such a case,
+stem:[g (eta | eta_{"m"})] can be approximated adequately by a normal distribution
+with expectation (mean) and standard deviation given by the best estimate
+stem:[y] and standard uncertainty stem:[u] calculated as in clause <<sec_6.3.1>>.
+
+NOTE: A normal distribution is completely specified by its expectation
+(mean) and standard deviation.
+
+NOTE: Some properties of normal PDFs are reviewed in <<annexA>>.
+
+[[sec_7.2.3]]
+==== {blank}
+
+Because of their familiarity and widespread use, normal PDFs will be used
+to illustrate the calculation of conformance probabilities in many examples
+in this document. Such calculations can be extended to the case where a
+small number of indications gives rise to a scaled and shifted __t__-distribution
+(see <<JCGM_101_2008,clause=6.4.9>>).
+
+[[sec_7.2.4]]
+==== {blank}
+
+Suppose that the PDF stem:[g (eta | eta_{"m"})] for the measurand stem:[Y]
+is (or is well approximated by) a normal distribution specified by a best
+estimate (expectation) y and standard uncertainty (standard deviation)
+stem:[u]. Then stem:[g (eta | eta_{"m"})] is given by
+
+[stem]
+++++
+g (eta | eta_{"m"}) = 1/{u sqrt(2pi)} exp [ -1/2 ({eta - y}/u)^2 ] " =: " varphi (eta; y, u^2).
+++++
+
+[[sec_7.2.5]]
+==== {blank}
+
+In general, the estimate stem:[y] depends on stem:[eta_{"m"}], i.e.,
+stem:[y = y(eta_{"m"})]. When knowledge of stem:[Y] is meagre before the
+measurement, then typically stem:[y ~~ eta_{"m"}]; see clause <<sec_A.4.4>>
+for an example where this is not the case.
+
+[[sec_7.2.6]]
+==== {blank}
+
+From the steps leading to <<eq_2>>, the probability that stem:[Y] lies
+in the interval stem:[[a, b\]], given the PDF (5), is
+
+[[eq_6]]
+[stem]
+++++
+"Pr"(a <= Y <= b | eta_{"m"}) = phi ({b - y}/u) - phi ({a - y}/u),
+++++
+
+where stem:[y = y(eta_{"m"})] and
+
+[stem%unnumbered]
+++++
+Phi(z) = 1/{sqrt(2pi)} int_{-oo}^{z} exp(-t^2//2)dt
+++++
+
+is the standard normal distribution function (see <<annexA>>).
+
+[[sec_7.3]]
+=== One-sided tolerance intervals with normal PDFs
+
+[[sec_7.3.1]]
+==== Single lower tolerance limit
+
+<<fig3>> shows a one-sided tolerance interval with a single lower tolerance
+limit stem:[T_{"L"}]. Conforming values of a property of interest stem:[Y]
+lie in the interval stem:[eta >= T_{"L"}]. Knowledge of stem:[Y] following
+an inspection measurement is conveyed by a normal PDF, shown superimposed
+on the tolerance interval. The best estimate stem:[y] lies in the tolerance
+interval; the shaded region to the left of stem:[T_{"L"}] indicates the
+probability that the item does not conform with specification. From <<eq_6>>,
+with stem:[a = T_{"L"}], stem:[b -> 1], and noting that
+stem:[Phi(oo) = 1], the conformance probability is
+
+[[eq_7]]
+[stem]
+++++
+p_{"c"} = 1 - Phi ({T_{"L"} - y}/u).
+++++
+
+Since stem:[Phi(t) + Phi(-t) = 1], the probability (<<eq_7>>) can be written
+
+[[eq_8]]
+[stem]
+++++
+p_{"c"} = Phi ({y - T_{"L"}}/u).
+++++
+
+[[fig3]]
+.Tolerance interval with a single lower tolerance limit stem:[T_{"L"}]. Knowledge of a quantity stem:[Y] (the measurable property of interest) following measurement is characterized by a normal PDF with best estimate stem:[y] and associated standard uncertainty stem:[u]. Conforming values of stem:[Y] lie in the interval stem:[eta >= T_{"L"}].
+image::figure3.png[]
+
+[[sec_7.3.2]]
+==== Single upper tolerance limit
+
+<<fig4>> shows a normal PDF superimposed on a one-sided tolerance interval
+with a single upper tolerance limit stem:[T_{"U"}]. Conforming values of
+a property of interest stem:[Y] lie in the interval stem:[eta <= T_{"U"}].
+In this case, the shaded region to the right of stem:[T_{"U"}] indicates
+the probability that the item does not conform with specification. From
+<<eq_6>>, with stem:[a -> -oo], stem:[b = T_{"U"}], and noting that
+stem:[Phi(-oo) = 0], the conformance probability is
+
+[[eq_9]]
+[stem]
+++++
+p_{"c"} = Phi ({T_{"U"} - y}/u).
+++++
+
+[[fig4]]
+.As <<fig3>> except with a single upper tolerance limit stem:[T_{"U"}]. Conforming values of stem:[Y] lie in the interval stem:[eta <= T_{"U"}].
+image::figure4.png[]
+
+[[sec_7.3.3]]
+==== General approach with single tolerance limits
+
+Probabilities (<<eq_8>>) and (<<eq_9>>) are of the same form and can be
+written as
+
+[[eq_10]]
+[stem]
+++++
+p_{"c"} = Phi(z),
+++++
+
+where stem:[z = (y - T_{"L"})//u] for a lower limit and
+stem:[z = (T_{"U"} - y)//u] for an upper limit. In both cases, stem:[p_{"c"}]
+is greater than or equal to 1/2 for an estimate stem:[y] in the tolerance
+interval (stem:[z >= 0]) and less than 1/2 otherwise. <<table1>> shows
+values of stem:[z] for several values of the conformance probability stem:[p_{"c"}].
+
+[[table1]]
+.Conformance (stem:[p_{"c"}]) and non-conformance (stem:[bar(p_{"c"}) = 1 - p_{"c"}]) probabilities for one-sided tolerance intervals and normal PDFs. For a lower limit, stem:[z = (y - T_{"L"})//u]; for an upper limit, stem:[z = (T_{"U"} - y)//u]. In both cases, stem:[z >= 0] for an estimate stem:[y] in the tolerance interval
+|===
+| stem:[p_{"c"}] | stem:[bar(p)_c] | stem:[z]
+| 0.80 | 0.20 | 0.84
+| 0.90 | 0.10 | 1.28
+| 0.95 | 0.05 | 1.64
+| 0.99 | 0.01 | 2.33
+| 0.999 | 0.001 | 3.09
+|===
+
+[example]
+The breakdown voltage stem:[V_{"b"}] of a Zener diode is measured, yielding
+a best estimate stem:[v_{"b"} = -5.47 "unitsml(V)"] with associated standard
+uncertainty stem:[u = 0.05 "unitsml(V)"]. Specification of the diode requires
+stem:[V_{"b"} <= -5.40 "unitsml(V)"], which is an upper limit on the breakdown
+voltage. Then stem:[z = [-5.40 - (-5.47)\]//0.05 = 1.40], and from <<eq_10>>,
+stem:[p_{"c"} = Phi(1.40) = 0.92]. There is a 92 % probability that the
+diode conforms to specification.
+
+[example]
+A metal container is destructively tested using pressurized water in a
+measurement of its bursting strength stem:[B].
+The measurement yields a best estimate stem:[b = 509.7 "unitsml(kPa)"],
+with associated standard uncertainty stem:[u = 8.6 "unitsml(kPa)"]. The
+container specification requires stem:[B >= 490 "unitsml(kPa)"], which
+is a lower limit on the bursting strength. Then stem:[z = (509.7 - 490)//8.6 = 2.3]
+and, from <<eq_10>>, stem:[p_{"c"} = Phi(2.3) = 0.99]. There is a 99 %
+probability that the container conformed to specification prior to the
+destructive test.
+
+[[sec_7.4]]
+=== Two-sided tolerance intervals with normal PDFs
+
+<<fig5>> shows a two-sided tolerance interval with tolerance limits stem:[T_{"L"}]
+and stem:[T_{"U"}] and length stem:[T = T_{"U"} - T_{"L"}] defining the
+tolerance stem:[T]. As previously, knowledge of a measurand stem:[Y] is
+assumed to be conveyed by a normal PDF. The estimate stem:[y] lies in the
+tolerance interval and there is a visible fraction of the probability in
+the region stem:[eta > T_{"U"}] beyond the upper tolerance limit.
+
+[[fig5]]
+.As <<fig3>> except with a two-sided tolerance interval. The length, stem:[T_{"U"} - T_{"L"}], of the interval is equal to the tolerance stem:[T]. Conforming values of stem:[Y] lie in the interval stem:[T_{"L"} <= eta <= T_{"U"}].
+image::figure5.png[]
+
+Using <<eq_6>> with stem:[b = T_{"U"}] and stem:[a = T_{"L"}] yields the
+conformance probability
+
+[[eq_11]]
+[stem]
+++++
+p_{"c"} = Phi ({T_{"U"} - y}/u) - Phi({T_{"L"} - y}/u).
+++++
+
+[example]
+A sample of SAE Grade 40 motor oil is required to have a kinematic viscosity
+stem:[Y] at 100 °C of no less than stem:[12.5 "unitsml(mm^2/s)"] and no
+greater than stem:[16.3 "unitsml(mm^2/s)"]. The kinematic viscosity of
+the sample is measured at 100 °C, yielding a best estimate
+stem:[y = 13.6 "unitsml(mm^2/s)"] and associated standard uncertainty
+stem:[u = 1.8 "unitsml(mm^2/s)"]. Following <<eq_11>>, form the quantities
+
+[stem%unnumbered]
+++++
+(T_{"U"} - y)//u = (16.3 - 13.6)//1.8 = 1.5, " " " " (T_{"L"} - y)//u = (12.5 - 13.6)//1.8 = -0.6,
+++++
+
+so that
+
+[stem%unnumbered]
+++++
+p_{"c"} = Phi(1.5) - Phi(-0.6) = 0.93 - 0.27 = 0.66.
+++++
+
+There is a 66 % probability that the sample of motor oil conforms to specification.
+
+[[sec_7.5]]
+=== Conformance probability and coverage intervals
+
+[[sec_7.5.1]]
+==== {blank}
+
+A measurement result can be summarized by giving a coverage interval with
+an associated coverage probability (see clause <<sec_6.3.2>>) rather than
+an explicit PDF for a measurand stem:[Y]. In such a case, a statement of
+conformance probability can be made by comparing the coverage interval
+with the tolerance interval. If a coverage interval with coverage probability
+stem:[p] lies wholly within the tolerance interval, then stem:[p_{"c"}]
+cannot be less than stem:[p]. This observation is illustrated in <<fig6>>,
+which shows two 95 % coverage intervals near an upper tolerance limit.
+
+[[sec_7.5.2]]
+==== {blank}
+
+Interval (a) extends beyond the tolerance limit and without knowing the
+form of the PDF for stem:[Y], no definite statement can be made about the
+conformance probability.
+
+[[fig6]]
+.Two 95 % coverage intervals for a measurand stem:[Y] near an upper tolerance limit stem:[T_{"U"}]. Interval (a) extends beyond the tolerance limit and the conformity cannot be decided without knowledge of the PDF for stem:[Y]. Interval (b) lies wholly within the tolerance interval; for this interval stem:[p_{"c"} >= 95" "%].
+image::figure6.png[]
+
+[[sec_7.5.3]]
+==== {blank}
+
+All values in interval (b) are less than the tolerance limit and there
+are conforming values of stem:[Y] that do not belong to this interval,
+so that stem:[p_{"c"} >= 95" "%].
+
+[[sec_7.5.4]]
+==== {blank}
+
+In general, if stem:[[eta_{"low"}, eta_{"high"}\]] is a coverage interval
+for stem:[Y], with coverage probability stem:[p], then
+
+* for a single upper tolerance limit stem:[T_{"U"}], stem:[p_{"c"} >= p]
+if stem:[eta_{"high"} <= T_{"U"}];
+
+* for a single lower tolerance limit stem:[T_{"L"}], stem:[p_{"c"} >= p]
+if stem:[eta_{"low"} >= T_{"L"}];
+
+* for a two-sided interval with upper and lower tolerance limits stem:[T_{"U"}]
+and stem:[T_{"L"}], stem:[p_{"c"} >= p] if stem:[eta_{"low"} >= T_{"L"}]
+and stem:[eta_{"high"} <= T_{"U"}].
+
+NOTE: Comparison of a coverage interval for a property of interest with
+an interval of permissible values is the basis for deciding conformity
+with specification as described in <<ref22>>.
+
+NOTE: Given the PDF for stem:[Y], the conformance probability can always
+be calculated. The PDF for a measurand is more informative than a coverage
+interval with its associated coverage probability.
+
+NOTE: When a conformity assessment of a measuring instrument is performed
+-- particularly when the assessment is regulated by specific standards
+-- the definition of the measurand, and consequently the uncertainty evaluation,
+may not be straightforward and may require specific attention.
+
+[[sec_7.6]]
+=== Measurement capability index stem:[C_{"m"}]
+
+[[sec_7.6.1]]
+==== {blank}
+
+Consider the case where prior information is so meagre that knowledge regarding
+possible values of a measured property stem:[Y] can be considered to be
+completely supplied by the measurement. In such a case, if the distribution
+for stem:[Y] is assumed to be a normal PDF
+stem:[g (eta | eta_{"m"}) = varphi (eta; y, u^2)], then stem:[y ~~ eta_{"m"}]
+and stem:[u ~~ u_{"m"}] (see clause <<sec_A.4.4.3>>). In the following
+subclauses it is assumed that this is the case, and a measurement result
+will be summarised by the two parameters stem:[(eta_{"m"}, u_{"m"})], taken
+to be the expectation and standard deviation of a normal PDF.
+
+[[sec_7.6.2]]
+==== {blank}
+
+A parameter that characterises the quality of the measurement, relative
+to a requirement specified by a tolerance, is called the {{measurement
+capability index}} defined by
+
+[[eq_12]]
+[stem]
+++++
+C_{"m"} = {T_{"U"} - T_{"L"}}/{4 u_{"m"}} = T/{4 u_{"m"}} = T/{2U},
+++++
+
+where stem:[U = 2u_{"m"}] is the expanded uncertainty with coverage factor
+stem:[k = 2].
+
+[[sec_7.6.3]]
+==== {blank}
+
+The factor of 4 in <<eq_12>> is arbitrary; the particular choice is motivated
+by the widespread use of the coverage interval
+stem:[[eta_{"m"} - 2u_{"m"}, eta_{"m"} + 2u_{"m"}\]] in reporting the result
+of a measurement. In the case where stem:[g (eta | eta_{"m"})] is a normal
+PDF, the coverage probability for such an interval is approximately
+95 %.
+
+[[sec_7.6.4]]
+==== {blank}
+
+There is a close connection between stem:[C_{"m"}] and other derived parameters
+that have been used to characterize measurement quality in various contexts.
+Among these are gauging ratio, gauge maker's rule, test uncertainty ratio
+(TUR) <<ref32>> and test accuracy ratio (TAR) <<ref1>>. Such parameters
+are typically stated in ratio form such as a 10-to-1 rule or a TUR of 4:1.
+Care has to be taken when such rules are encountered because they are sometimes
+ambiguously or incompletely defined. Definition (12), on the other hand,
+makes clear that a statement such as stem:[C_{"m"} >= 4] means that
+stem:[u_{"m"} <= T//16].
+
+[[sec_7.6.5]]
+==== {blank}
+
+In the calibration or verification of a measuring instrument, a specified
+requirement is often expressed in terms of a maximum permissible error
+(of indication) (see <<sec_3.3.18>>). Such a requirement means that when
+the instrument is used to measure a quantity stem:[Y], the error of indication
+must lie in an interval defined by specified upper and lower limits. In
+the common case of a symmetric interval stem:[[-E_{"max"},E_{"max"}\]],
+the tolerance is stem:[T = 2E_{"max"}] and the measurement capability
+index is
+
+[stem%unnumbered]
+++++
+C_{"m"} = {2E_{"max"}}/{2U} = {E_{"max"}}/U.
+++++
+
+In this expression, stem:[U] is the expanded uncertainty, for a coverage
+factor stem:[k = 2], associated with a measurement of the error of indication
+of the instrument.
+
+[[sec_7.7]]
+=== Measurement capability index and conformance probability
+
+[[sec_7.7.1]]
+==== {blank}
+
+For a normal PDF, <<eq_11>> gives the conformance probability stem:[p_{"c"}]
+in terms of a particular pair of tolerance limits stem:[(T_{"L"}, T_{"U"})]
+and a particular measurement result summarized by stem:[(y, u)]. Taking
+stem:[y = eta_{"m"}] and stem:[u = u_{"m"}], this expression can be re-written
+in a form suitable for a general measurement problem by defining a quantity
+
+[[eq_13]]
+[stem]
+++++
+tilde(y) = {eta_{"m"} - T_{"L"}}/T .
+++++
+
+For an estimate stem:[eta_{"m"}] in the tolerance interval,
+stem:[tilde y] lies in the interval stem:[0 <= tilde(y) <= 1].
+
+[[sec_7.7.2]]
+==== {blank}
+
+For a normal post-measurement PDF stem:[varphi(eta; eta_{"m"}, u_{"m"}^2)],
+<<eq_11>> can then be written, using <<eq_12>> and <<eq_13>>,
+
+[[eq_14]]
+[stem]
+++++
+p_{"c"} = Phi[4 C_{"m"}(1 - tilde(y))] - Phi(-4C_{"m"} tilde(y)) = p_{"c"} (tilde(y),C_{"m"}),
+++++
+
+so that stem:[p_{"c"}] is completely determined by the two quantities stem:[tilde(y)]
+and stem:[C_{"m"}].
+
+[[sec_7.7.3]]
+==== {blank}
+
+It is often the case that the standard uncertainty stem:[u_{"m"}] associated
+with an estimate stem:[eta_{"m"}] has a fixed value that depends on the
+design of the measuring system, but is independent of stem:[eta_{"m"}].
+A series of water samples, for example, might be inspected to determine,
+for each sample, a concentration of dissolved mercury, using a measurement
+procedure that yields different estimates, each having the same associated
+standard uncertainty stem:[u_{"m"}]. In such a case the measurement capability
+index stem:[C_{"m"} = T//4u_{"m"}] is fixed, and a question as to whether
+or not a measured property conforms to specification with an acceptable
+probability can be decided based on the estimate stem:[eta_{"m"}], using
+<<eq_13>> and <<eq_14>> with stem:[C_{"m"}] fixed.
+
+NOTE: A case where the standard uncertainty stem:[u_{"m"}] is proportional
+to the estimate stem:[eta_{"m"}] is treated in <<ref13,clause=A>>.
+
+[[fig7]]
+.Measurement capability index stem:[C_{"m"} = T=(4u_{"m"})] versus stem:[tilde(y) = (eta_{"m"} - T_{"L"})//T], showing the locus of constant 95 % conformance probability stem:[p_{"c"}]. The curve separates regions of conformity and non-conformity at a 95 % level of confidence. The post-measurement distribution for the measurand stem:[Y] is taken to be the normal PDF stem:[varphi(eta; eta_{"m"}, u_{"m"}^2)].
+image::figure7.png[]
+
+[[sec_7.7.4]]
+==== {blank}
+
+There is an infinite number of pairs stem:[(tilde(y),C_{"m"})] that yield
+a given conformance probability stem:[p_{"c"}] via <<eq_14>>. <<fig7>>
+shows stem:[C_{"m"}] versus stem:[tilde(y)] along a curve of constant
+95 % conformance probability for estimates stem:[eta_{"m"}] within the
+tolerance interval stem:[0 <= tilde(y) <= 1]. The curve separates regions
+of conformity (unshaded) and non-conformity (shaded) at a 95 % level of
+confidence.
+
+[[sec_7.7.5]]
+==== {blank}
+
+The horizontal axis in <<fig7>> corresponds to stem:[C_{"m"} = 1], or
+stem:[u_{"m"} = T//4]. For this relatively large standard uncertainty it
+can be seen that stem:[p_{"c"} >= 95" "%] only for
+stem:[0.45 <= tilde(y) <= 0.55]. If the measured property was required
+to conform to specification with at least a 95 % level of confidence, an
+acceptable estimate stem:[eta_{"m"}] would thus have to lie in the central
+approximately 10 % of the tolerance interval.
+

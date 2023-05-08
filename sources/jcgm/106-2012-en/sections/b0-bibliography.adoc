@@ -1,0 +1,164 @@
+
+[bibliography]
+== Bibliography
+
+* [[[ref1,1]]] Agilent Technologies. Metrology Forum. 2001.
+http://metrologyforum.tm.agilent.com/terminology.shtml.
+
+* [[[ref2,2]]] American Society of Mechanical Engineers. ASME B89.7.3.1:2001
+_Guidelines for decision rules: Considering measurement uncertainty in
+determining conformance to specifications_. New York, NY, 2001.
+
+* [[[ref3,3]]] BIPM, IEC, IFCC, ILAC, ISO, IUPAC, IUPAP, and OIML. Evaluation
+of measurement data -- Supplement 3 to the "Guide to the expression of
+uncertainty in measurement" -- Modelling. Joint Committee for Guides in
+Metrology, JCGM 103, in preparation.
+
+* [[[ref4,4]]] Box, G. E. P., and Tiao, G. C. _Bayesian Inference in Statistical
+Analysis_. Wiley Classics Library. John Wiley and Sons, 1992.
+
+* [[[ref5,5]]] D'Agostini, G. _Bayesian Reasoning in Data Analysis_. World
+Scientific Publishing, 2003.
+
+* [[[ref6,6]]] Deaver, D. How to maintain your confidence (in a world of
+declining test uncertainty ratios). _1993 NCSL Workshop and Symposium_
+(1993), 133-53.
+
+* [[[ref7,7]]] Deaver, D. Guardbanding with confidence. _1994 NCSL Workshop
+and Symposium_ (1994), 383-94.
+
+* [[[ref8,8]]] Deaver, D. Managing calibration confidence in the real world.
+_1995 NCSL Workshop and Symposium_ (1995), 1-17.
+
+* [[[ref9,9]]] Deaver, D. Guardbanding and the world of ISO Guide 25: Is
+there only one way? _1998 NCSL Workshop and Symposium_ (1998), 319-32.
+
+* [[[ref10,10]]] DeGroot, M. H. _Probability and Statistics_. Addison-Wesley,
+1975.
+
+* [[[ref11,11]]] Dowson, D. C., and Wragg, A. Maximum entropy distributions
+having prescribed first and second order moments.
+_IEEE Trans. IT 19_ (1973), 689-693.
+
+* [[[ref12,12]]] Eagle, A. R. A method for handling errors in testing and
+measuring. _Ind. Qual. Control 10_, 3 (1954), 10-15.
+
+* [[[ref13,13]]] EURACHEM/CITAC Guide. Use of uncertainty information in
+compliance assessment, 1st ed., 2007. http://www.eurachem.org/guides/Interpretation_with_expanded_uncertainty_2007_v1.pdf.
+
+* [[[ref14,14]]] Fearn, T., Fisher, S. A., Thompson, M., and Ellison, S.
+A decision theory approach to fitness for purpose in analytical measurement.
+_The Analyst 127_ (2002), 818-824.
+
+* [[[ref15,15]]] Forbes, A. B. Measurement uncertainty and optimized conformance
+assessment. _Measurement 39_ (2006), 808-814.
+
+* [[[ref16,16]]] Gregory, P. _Bayesian Logical Data Analysis for the Physical
+Sciences_. Cambridge University Press, 2005.
+
+* [[[ref17,17]]] Grubbs, F. A., and Coon, H. J. On setting test limits
+relative to specification limits. Ind. Qual. Control 10, 3 (1954), 15-20.
+
+* [[[ref18,18]]] Hibbert, D. B. _Quality Assurance in the Analytical Chemistry
+Laboratory_. Oxford University Press, 2007.
+
+* [[[ref19,19]]] International Electrotechnical Commission. IEC GUIDE 115
+_Application of uncertainty of measurement to conformity assessment activities
+in the electrotechnical sector_. 2007. Edition 1.0.
+
+* [[[ref20,20]]] International Laboratory Accreditation Cooperation. ILAC-G8:1996
+_Guidelines on assessment and reporting of compliance with specification_.
+Silverwater, Australia, 1996.
+
+* [[[ref21,ISO 14253-1:1998]]] International Organization for Standardization.
+ISO 14253-1:1998 _Geometrical Product Specifications GPS -- Inspection
+by measurement of workpieces and measuring equipment -- Part 1: Decision
+rules for proving conformance or non-conformance with specifications_.
+Geneva, 1998.
+
+* [[[ref22,ISO 10576-1:2003]]] International Organization for Standardization.
+ISO 10576-1:2003(E) _Statistical methods -- Guidelines for the evaluation
+of conformity with specified requirements -- Part 1: General principles_.
+Geneva, 2003.
+
+* [[[ref23,ISO/IEC 17025:2005]]] International Organization for Standardization.
+ISO/IEC 17025:2005 _General requirements for the competence of testing
+and calibration laboratories_. Geneva, 2005.
+
+* [[[ref24,ISO 3650:1998]]] International Organization for Standarization.
+ISO 3650 _Geometrical Product Specifications (GPS) -- Length standards
+-- Gauge blocks_, 2nd ed. Geneva, 1998.
+
+* [[[ref25,25]]] International Organization of Legal Metrology. OIML R
+111-1 Edition 2004(E) _Weights of classes_ E~1~;E~2~; F~1~; F~2~; M~1~;
+M~1-2~; M~2~; M~2-3~; M~3~ -- _Part 1: Metrological and technical requirements_.
+Paris.
+
+* [[[ref26,26]]] Jaynes, E. T. _Probability Theory: The Logic of Science_.
+Cambridge University Press, 2003.
+
+* [[[ref27,27]]] Jeffreys, H. Theory of Probability, 3rd ed. Clarendon
+Press, Oxford, 1983.
+
+* [[[ref28,28]]] Johnson, N. L., Kotz, S., and Balakrishnan, N. Continuous
+Univariate Distributions, Volume 1, 2nd ed. John Wiley & Sons, New York,
+NY, 1994.
+
+* [[[ref29,29]]] Käallgren, H., Lauwaars, M., Magnusson, B., Pendrill,
+L., and Taylor, P. Role of measurement uncertainty in conformity assessment
+in legal metrology and trade. Accred. Qual. Assur. 8 (2003), 541-47.
+
+* [[[ref30,30]]] M. Evans, N. H., and Peacock, B. _Statistical Distributions_,
+3rd ed. Wiley, 2000.
+
+* [[[ref31,31]]] Modarres, M., Kaminskiy, M., and Krivtsov, V. _Reliability
+and Risk Analysis_. Marcel Dekker, New York, 1999.
+
+* [[[ref32,32]]] NCSL International. ANSI/NCSL Z540-3:2006 _Requirements
+for the Calibration of Measuring and Test Equipment_. Boulder, Colorado
+USA, 2006.
+
+* [[[ref33,33]]] Oakland, J. S. _Statistical Process Control_, 6th ed.
+Butterworth-Heinemann, 2007.
+
+* [[[ref34,34]]] Pendrill, L. R. Optimised measurement uncertainty and
+decision-making when sampling by variables or by attribute. _Measurement
+39_ (2006), 829-840.
+
+* [[[ref35,35]]] Pendrill, L. R. Optimised measurement uncertainty and
+decision-making in conformity assessment. NCSLI Measure 2, 2 (2007), 76-86.
+
+* [[[ref36,36]]] Pendrill, L. R., and Käallgren, H. Exhaust gas analysers
+and optimised sampling, uncertainties and costs. _Accred. Qual. Assur.
+11_ (2006), 496-505.
+
+* [[[ref37,37]]] Possolo, A., and Toman, B. Assessment of measurement uncertainty
+via observation equations. _Metrologia 44_ (2007), 464-475.
+
+* [[[ref38,38]]] Rossi, G. B., and Crenna, F. A probabilistic approach
+to measurement-based decisions. _Measurement 39_ (2006), 101-19.
+
+* [[[ref39,39]]] Sivia, D. S. _Data Analysis - A Bayesian Tutorial_. Clarendon
+Press, Oxford, 1996.
+
+* [[[ref40,40]]] Sommer, K.-D., and Kochsiek, M. Role of measurement uncertainty
+in deciding conformance in legal metrology. _OIML Bulletin XLIII_, 2 (April
+2002), 19-24.
+
+* [[[ref41,41]]] Titterington, D. M. _Statistical analysis of finite mixture
+distributions_. Wiley, 1985.
+
+* [[[ref42,42]]] van der Grinten, J. G. M. Confidence levels of measurement-based
+decisions. _OIML Bulletin XLIV_, 3 (July 2003), 5-11.
+
+* [[[ref43,43]]] Wheeler, D. J., and Chambers, D. S. _Understanding Statistical
+Process Control_, 2nd ed. SPC Press, 1992.
+
+* [[[ref44,44]]] Williams, E., and Hawkins, C. The economics of guardband
+placement. In _Proceedings of the 24th IEEE International test Conference_
+(Baltimore, 1993).
+
+* [[[ref45,45]]] Wäoger, W. Probability assignment to systematic deviations
+by the principle of maximum entropy. _IEEE Trans. Inst. Meas. IM-20_, 2
+(1987), 655-8.
+

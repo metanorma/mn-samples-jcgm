@@ -1,0 +1,260 @@
+
+[[sec_6]]
+== Knowledge of the measurand
+
+[[sec_6.1]]
+=== Probability and information
+
+[[sec_6.1.1]]
+==== {blank}
+
+In measurements performed as part of a conformity assessment, knowledge
+of a property of interest (the measurand) is modelled by a conditional
+probability density function (PDF) whose form depends on available information.
+Such information always has two components: that which is available before
+performing the measurement (called prior information) and the additional
+information supplied by the measurement <<ref38>>.
+
+[[sec_6.1.2]]
+==== {blank}
+
+The PDF for a property of interest (the measurand) encodes and conveys
+belief in its possible values, given a particular state of knowledge. A
+poorly known measurand generally has a broad PDF, relative to the requirements
+of a conformity assessment, indicating a wide interval of possible values
+compatible with meagre information. Performing a measurement provides fresh
+information that serves to sharpen the PDF and to narrow the interval of
+possible values of the measurand.
+
+[[sec_6.1.3]]
+==== {blank}
+
+The effect of a measurement is thus to update a pre-measurement (or prior)
+state of knowledge, yielding a postmeasurement (or posterior) state of
+knowledge that includes the measurement data. The rule for this transformation
+is called Bayes' theorem and the underlying mathematical framework is known
+as Bayesian probability theory. In this document the results of this framework
+are used without detailed development or proof. A considerable literature
+is available; see, for example, references <<ref4>>, <<ref5>>, <<ref16>>,
+<<ref26>>, <<ref27>>, <<ref39>>.
+
+[[sec_6.2]]
+=== Bayes' theorem
+
+[[sec_6.2.1]]
+==== {blank}
+
+In conformity assessment, a measurable property stem:[Y] of an item of
+interest is regarded as a random variable with possible values denoted
+by stem:[eta]. Before measuring stem:[Y]; reasonable belief in its possible
+values is characterized by a prior (pre-measurement) PDF stem:[g_0 (eta)]
+whose form is independent of the measuring system (see clause <<sec_4.9>>).
+
+[[sec_6.2.2]]
+==== {blank}
+
+The prior PDF stem:[g_0 (eta)] is often assigned based on knowledge acquired
+by previous measurements of similar items. Methods for assigning a prior
+PDF for a property of interest are discussed in <<annexB>>.
+
+[[sec_6.2.3]]
+==== {blank}
+
+In a typical inspection measurement, the quantity stem:[Y] is measured
+using a procedure designed to provide sufficient information to assess
+conformity with a specified requirement.
+
+NOTE: The same symbol is used for a quantity and for the random variable
+that represents that quantity (see [GUM 4.1.1 note 1]).
+
+NOTE: Guidance on the assignment of PDFs in some common situations is given
+in <<JCGM_101_2008>> and <<annexB>>.
+
+[[sec_6.2.4]]
+==== {blank}
+
+The output of the measuring system is a quantity regarded as a random variable
+stem:[Y_{"m"}], with possible values denoted by etam. Measurement of stem:[Y]
+yields a particular realization, the measured quantity value stem:[eta_{"m"}]
+(see clauses <<sec_3.2.6>>
+and <<sec_4.4>>), and the resulting posterior (post-measurement) PDF for
+stem:[Y], given this new information, is written as
+
+[stem%unnumbered]
+++++
+g (eta | Y_{"m"} = eta_{"m"})" =: "g (eta | eta_{"m"}).
+++++
+
+[[sec_6.2.5]]
+==== {blank}
+
+The prior and posterior PDFs are related by Bayes' theorem
+
+[[eq_1]]
+[stem]
+++++
+g (eta | eta_{"m"}) = C_{g_0} (eta) h (eta_{"m"} | eta),
+++++
+
+where, given a measured value stem:[eta_{"m"}], stem:[C] is a constant
+chosen such that stem:[int_{-oo}^{oo} g (eta | eta_{"m"}) " d"eta = 1].
+The term stem:[h (eta_{"m"} | eta)] in <<eq_1>> is the PDF for the possible
+values of stem:[Y_{"m"}], given some particular value stem:[Y = eta] of
+the measurand.
+
+[[sec_6.2.6]]
+==== {blank}
+
+Expressed as a function of stem:[eta] for a measured value stem:[eta_{"m"}],
+the PDF stem:[h (eta_{"m"} | eta)] is called the likelihood of eta given
+stem:[eta_{"m"}], and is written as
+
+[stem%unnumbered]
+++++
+h (eta_{"m"} | eta)" =: " fr(L)(eta; eta_{"m"}).
+++++
+
+A measurement can be viewed in terms of stimulus and response or in terms
+of input and output. In this view, the likelihood function
+stem:[fr(L)(eta; eta_{"m"})] characterizes the distribution of plausible
+stimuli or inputs (values of stem:[eta]) that might have caused the observed
+response or output (measured value stem:[eta_{"m"}]).
+
+[[sec_6.2.7]]
+==== {blank}
+
+The form of the likelihood function will depend on the specific measurement
+problem and the measuring system, as described in a mathematical model,
+as well as on other relevant information such as historical data, instrument
+calibrations and the results of measurements of calibrated artefacts or
+standard reference materials, and experience with similar systems. In many
+cases of practical interest, the likelihood function can be characterised
+by a normal (Gaussian) distribution.
+
+[[sec_6.2.8]]
+==== {blank}
+
+Bayes' theorem shows how the posterior (post-measurement) state of knowledge
+is derived from a combination of prior (pre-measurement) information, encoded
+in the prior distribution, and information supplied by the measurement,
+represented by the likelihood function.
+
+[[sec_6.2.9]]
+==== {blank}
+
+In many cases, the measuring system is employed in order to supplement
+relatively meagre prior knowledge of the measurand with accurate measurement
+information. In such a case, the posterior (post-measurement) state of
+knowledge PDF is essentially defined by the likelihood function (encoding
+the measurement information), i.e.,
+
+[stem%unnumbered]
+++++
+g (eta | eta_{"m"}) = Ch (eta_{"m"} | eta)
+++++
+
+to a close approximation, where stem:[C] is a constant.
+
+[[sec_6.3]]
+=== Summary information
+
+[[sec_6.3.1]]
+==== Best estimate and standard uncertainty
+
+A measurement result is often summarized by giving an estimate of a measurand
+and a parameter that characterizes the dispersion of probable values about
+this estimate. In this document, the estimate stem:[y] of a property stem:[Y]
+is taken to be the _expectation_ (see <<sec_3.1.5>>) stem:[E(Y | eta_{"m"}]).
+The associated dispersion parameter stem:[u(y) = u], called the standard
+uncertainty, is taken to be the {{standard deviation}} of stem:[Y] , the
+positive square root of the {{variance}} stem:[V (Y | eta_{"m"})].
+stem:[E(Y | eta_{"m"})] and stem:[V (Y | eta_{"m"})] are given by
+
+[stem%unnumbered]
+++++
+E(Y | eta_{"m"}) = y = int_{-oo}^{oo} etag (eta | eta_{"m"}) " d"eta, " " " " " " V(Y | eta_{"m"}) = u^2 = int_{-oo}^{oo} (eta - y)^2 g (eta | eta_{"m"}) " d"eta.
+++++
+
+[[sec_6.3.1.1]]
+===== {blank}
+
+The standard uncertainty stem:[u] characterizes the dispersion of stem:[Y]
+about the estimate stem:[y]. When the PDF for stem:[Y] is single-peaked
+(unimodal) and symmetric, the estimate stem:[y] is also the most probable
+value of stem:[Y]; i.e., the mode of the distribution.
+
+[[sec_6.3.1.2]]
+===== {blank}
+
+For a measurement analysed according to JCGM 100:2010 (GUM), evaluation
+of the measurement data yields an estimate of the measurand (measured quantity
+value) stem:[eta_{"m"}], and an associated standard uncertainty stem:[u_{"m"}].
+The prior information is assumed to be so meagre that the post-measurement
+PDF stem:[g (eta | eta_{"m"})] can be summarised by the estimate
+stem:[y = eta_{"m"}] and the associated standard uncertainty
+stem:[u = u_{"m"}] (see clause <<sec_7.6.1>>).
+
+[[sec_6.3.2]]
+==== Coverage intervals
+
+[[sec_6.3.2.1]]
+===== {blank}
+
+Following a measurement, the probability that stem:[Y] is no greater than
+a given value a is
+
+[stem%unnumbered]
+++++
+Pr (Y <= a | eta_{"m"}) = G(a) = int_{-oo}^a g (eta | eta_{"m"}) " d"eta,
+++++
+
+[[sec_6.3.2.2]]
+===== {blank}
+
+It follows that the probability stem:[p] that stem:[Y] lies in the interval
+stem:[[a, b\]], with stem:[a < b], is
+
+[[eq_2]]
+[stem]
+++++
+p = "Pr" (a <= Y <= b | eta_{"m"}) = int_a^b g (eta | eta_{"m"}) " d"eta = G(b) - G(a).
+++++
+
+[[sec_6.3.2.3]]
+===== {blank}
+
+An interval such as stem:[[a, b\]] is called a coverage interval for stem:[Y],
+and stem:[p] is the associated coverage probability. Guidance on constructing
+a coverage interval with a desired coverage probability, including the
+case of a discrete approximation to the distribution function obtained
+by a Monte Carlo method, is given in <<JCGM_101_2008>>.
+
+[[sec_6.3.2.4]]
+===== {blank}
+
+When the PDF for stem:[Y] is symmetric and unimodal, an important and widely-used
+coverage interval is centred on the best estimate stem:[y], with a length
+equal to a multiple of the standard uncertainty stem:[u]. The GUM defines
+an additional measure of uncertainty called the expanded uncertainty, stem:[U],
+obtained by multiplying the standard uncertainty stem:[u] by a coverage
+factor stem:[k]:
+
+[stem]
+++++
+U = ku.
+++++
+
+[[sec_6.3.2.5]]
+===== {blank}
+
+The coverage factor is chosen in order to achieve a desired coverage probability
+associated with the coverage interval stem:[[y - U; y + U\]]. The relationship
+between stem:[k] and the associated coverage probability depends on the
+PDF for stem:[Y].
+
+NOTE: A coverage interval of the form stem:[[y - U, y + U\]] is sometimes
+called an uncertainty interval, as in <<ref22,clause=3.7>>.
+
+NOTE: If the PDF for stem:[Y] is asymmetric, it may be more appropriate
+to determine the shortest coverage interval for a given coverage probability.
+See <<JCGM_101_2008,clause=5.3.4>> for guidance on this calculation.

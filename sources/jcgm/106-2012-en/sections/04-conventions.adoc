@@ -1,0 +1,132 @@
+
+[[sec_4]]
+== Conventions and notation
+
+For the purposes of this document the following conventions, notation and
+terminology are adopted.
+
+[[sec_4.1]]
+=== {blank}
+
+In the GUM, the standard uncertainty associated with an estimate stem:[y]
+of a measurand stem:[Y] is written as stem:[u_c(y)]. The subscript "c",
+denoting "combined" standard uncertainty, is viewed as redundant and is
+not used in this document. (See <<JCGM_101_2008,clause=4.10>>).
+
+[[sec_4.2]]
+=== {blank}
+
+An expression written stem:[A" =: "B] means that stem:[B] is defined by
+stem:[A].
+
+[[sec_4.3]]
+=== {blank}
+
+When there is no potential for confusion, the symbol stem:[u], rather than
+stem:[u(y)], will be used for notational simplicity. The expanded uncertainty
+stem:[U] is generally taken to be stem:[U = ku] using a coverage factor
+of stem:[k = 2]; the value of k is given explicitly when there is potential
+for ambiguity.
+
+[[sec_4.4]]
+=== {blank}
+
+A property of interest (the measurand) is regarded as a random variable
+stem:[Y] with possible values stem:[eta]: When stem:[Y] is measured, evaluation
+of the measurement data yields a measured quantity value stem:[eta_{"m"}],
+taken to be a realization of an observable random variable stem:[Y_{"m"}].
+In general, the measured value stem:[eta_{"m"}] will differ from stem:[Y]
+by an unknown error stem:[E], say, which depends on random and systematic
+effects.
+
+[[sec_4.5]]
+=== {blank}
+
+A tolerance interval specifies permissible values of the measurand stem:[Y].
+A conformity assessment decision is based on the measured value stem:[eta_{"m"}]
+and the relation of stem:[eta_{"m"}] to a defined acceptance interval.
+
+[[sec_4.6]]
+=== {blank}
+
+Knowledge of the quantities stem:[Y] and stem:[Y_{"m"}] is encoded and
+conveyed by conditional PDFs whose forms depend on available information.
+Conditional PDFs are written with a vertical bar, with information to the
+right of the bar regarded as given. The PDF for a measurand stem:[Y] before
+measurement is stem:[g_{Y | I} (eta | I)]; where the symbol stem:[I] denotes
+prior information.
+
+[[sec_4.7]]
+=== {blank}
+
+Following a measurement of a property of interest, yielding an observed
+measured value stem:[eta_{"m"}], the postmeasurement PDF for stem:[Y] is
+stem:[g_{Y|eta_{"m"},I} (eta | eta_{"m"}, I)].
+
+[[sec_4.8]]
+=== {blank}
+
+The analogous PDFs for the possible values stem:[eta_{"m"}] of the measuring
+system output quantity stem:[Y_{"m"}] are (a),
+stem:[g_{Y_{"m"} | I} (eta_{"m"} | I)]; encoding belief in possible measured
+values given only the prior information stem:[I], and (b),
+stem:[g_{Y_{"m"} | eta,I} (eta_{"m"} | eta, I)], the analogous PDF when,
+in addition to the prior information stem:[I], the measurand is assumed
+to have a given true value stem:[Y = eta].
+
+[[sec_4.9]]
+=== {blank}
+
+In the interests of brevity, in this document explicit display of the fixed
+prior information I is largely omitted. Also, PDFs for stem:[Y] and stem:[Y_{"m"}]
+are expressed in terms of symbols g and h respectively, using the following
+notation in which subscripts are largely suppressed:
+
+* For pre-measurement knowledge of the measurand stem:[Y], 
++
+--
+[stem%unnumbered]
+++++
+g_{Y | I} (eta | I)" =: "g_0 (eta);
+++++
+--
+
+* For post-measurement knowledge of the measurand stem:[Y], 
++
+--
+[stem%unnumbered]
+++++
+g_{Y | eta_{"m"}, I} (eta | eta_{"m"}, I)" =: "g (eta | eta_{"m"}) ;
+++++
+--
+
+* Knowledge of possible measured values given only the prior information
+stem:[I],
++
+--
+[stem%unnumbered]
+++++
+g_{Y_{"m"} | I} (eta_{"m"} | I)" =: "h_0 (eta_{"m"});
+++++
+--
+
+* Knowledge of stem:[Y_{"m"}] assuming, in addition to information stem:[I],
+a given value stem:[Y = eta] of the measurand,
++
+--
+[stem%unnumbered]
+++++
+g_{Y_{"m"} | eta,I} (eta_{"m"} | eta, I)" =: "h (eta_{"m"} | eta).
+++++
+--
+
+These PDFs are not independent but are related by Bayes' theorem
+(see clause <<sec_6.2>>.)
+
+[[sec_4.10]]
+=== {blank}
+
+According to Resolution 10 of the 22nd CGPM (2003) ". . . the symbol for
+the decimal marker shall be either the point on the line or the comma on
+the line . . . ". The JCGM has decided to adopt, in its documents in English,
+the point on the line.

@@ -1,0 +1,148 @@
+
+[[sec_5]]
+== Tolerance limits and tolerance intervals
+
+[[sec_5.1]]
+=== Conformity assessment measurements
+
+[[sec_5.1.1]]
+==== {blank}
+
+Consider a situation where a property of an item of interest, such as the
+error of indication of a voltmeter, is measured in order to decide whether
+or not the item conforms to a specified requirement. Such a test of conformity
+comprises a sequence of three operations:
+
+* measure the property of interest;
+* compare the measurement result with the specified requirement;
+* decide on a subsequent action.
+
+[[sec_5.1.2]]
+==== {blank}
+
+In practice, once the measurement result has been obtained, the comparison/decision
+operations are typically implemented using a previously established and
+stated {{decision rule}} that depends upon the measurement result, the
+specified requirement, and the consequences of an incorrect decision.
+
+[[sec_5.1.3]]
+==== {blank}
+
+Guidance is available regarding the formulation of a decision rule. <<ref21>>
+and ASME B89.7.3.1 <<ref2>> provide guidelines for documenting a chosen
+decision rule and for describing the role of measurement uncertainty in
+setting acceptance limits. These documents address decision rules involving
+two or more possible decisions, and include the binary decision rule, with
+which this document is concerned, as a special case.
+
+[[sec_5.1.4]]
+==== {blank}
+
+A measurement performed as part of a conformity assessment is designed
+to obtain information sufficient to enable a decision to be made with an
+acceptable level of risk. An appropriate measurement strategy will balance
+the cost of reducing measurement uncertainty against the benefit of more
+certain knowledge of the true value of the measurand.
+
+[[sec_5.1.5]]
+==== {blank}
+
+An inspection measurement together with an associated decision rule is
+thus closely related to matters such as costs and risks. As such, the design
+of a satisfactory conformity assessment is often not a purely technical
+exercise. If the goal is to minimize cost, then given a suitable economic
+model the problem can be reduced to direct calculation.
+
+[[sec_5.2]]
+=== Permissible and non-permissible values: tolerance intervals
+
+[[sec_5.2.1]]
+==== {blank}
+
+In this document, specified requirements for a measurand of interest consist
+of limiting values, called tolerance limits, that separate intervals of
+permissible values of the measurand from intervals of non-permissible values
+<<ref22>>. Intervals of permissible values, called tolerance intervals,
+are of two kinds:
+
+* a one-sided tolerance interval with either an upper or a lower tolerance
+limit;
+* a two-sided tolerance interval with both upper and lower tolerance limits.
+
+In either case, an item conforms to the specified requirement if the true
+value of the measurand lies within the tolerance interval and is non-conforming
+otherwise. The above tolerance intervals are illustrated in <<fig2>>.
+
+[[sec_5.2.2]]
+==== {blank}
+
+Seemingly one-sided tolerance intervals often have implied additional limits,
+for physical or theoretical reasons, that are not explicitly stated <<ref22>>.
+Such tolerance intervals are effectively two-sided, having one specified
+limit and one implied limit; see examples 4 and 5 below.
+
+[[fig2]]
+.Tolerance intervals. (a) A one-sided interval having a single lower tolerance limit stem:[T_{"L"}]; (b) a one-sided interval having a single upper tolerance limit stem:[T_{"U"}]; (c) a two-sided interval having lower and upper tolerance limits. The difference stem:[T_{"U"} - T_{"L"}] is called the tolerance.
+image::figure2.png[]
+
+NOTE: In some cases, such as food safety or environmental protection, specifying
+the tolerance limits in conformity assessment measurements may involve
+uncertainties related to the difficulty in assessing the consequences of
+incorrect decisions <<ref29>>. A related problem in reliability analysis,
+called completeness uncertainty, is associated with unanalysed contributions
+to risk <<ref31>>.
+
+NOTE: Matters such as completeness uncertainty bear no relation to the
+measurement uncertainty associated with an estimate of a measurand resulting
+from an inspection measurement. In this document the tolerance limits are
+taken to be fixed constants.
+
+[[sec_5.3]]
+=== Examples of tolerance limits
+
+.Single upper tolerance limit
+====
+The breakdown voltage stem:[V_{"b"}] for a certain type of Zener diode
+is specified to be no greater than stem:[-5.4 "unitsml(V)"]. For a conforming
+diode, stem:[V_{"b"}] lies in the open interval stem:[V_{"b"} <= -5.4 "unitsml(V)"].
+====
+
+.Single lower tolerance limit
+====
+A metal container for soft drinks is required to have a bursting strength
+stem:[B] of not less than stem:[490 "unitsml(kPa)"]. Conforming values
+of stem:[B] lie in the open interval stem:[B >= 490 "unitsml(kPa)"]:
+====
+
+.Explicit upper and lower tolerance limits
+====
+An OIML Class stem:["E"_1] stem:[1 "unitsml(kg)"] weight <<ref25>> is specified
+to have a maximum permissible error (MPE) of stem:[500 "unitsml(ug)"].
+This means that the mass m of the weight is specified to be not less than
+0.999 999 5 kg and not more than 1.000 000 5 kg. A conforming 1 kg weight
+is one for which the mass error stem:[E = m - m_0], with
+stem:[m_0 = 1 "unitsml(kg)"], lies in the interval
+stem:[-500 "unitsml(ug)" <= E <= 500 "unitsml(ug)"].
+====
+
+.Explicit upper and implied lower tolerance limits
+====
+An environmental regulation requires the mass concentration stem:[X] of
+mercury in a stream of industrial waste water to be no
+greater than stem:[10 "unitsml(ng/L)"], which is an explicit upper tolerance
+limit. Since the mass concentration cannot be less than zero, there is
+an implied lower tolerance limit of stem:[0 "unitsml(ng/L)"]. A sample
+of waste water complies with the regulation if the mass concentration of
+mercury in the sample lies in the interval
+stem:[0  "unitsml(ng/L)" <= X <= 10 "unitsml(ng/L)"].
+====
+
+.Explicit lower and implied upper tolerance limits
+====
+Powdered sodium benzoate, used as a food preservative, is required to have
+a purity stem:[P], expressed as a mass fraction on a dry basis in percent,
+of no less than 99.0 %, which is an explicit lower tolerance limit. The
+purity cannot be greater than 100 %, which is an implied upper tolerance
+limit. A conforming sample of sodium benzoate is one for which the sample
+purity lies in the interval stem:[99.0 % <= P <= 100 %].
+====

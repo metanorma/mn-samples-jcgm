@@ -1,0 +1,428 @@
+
+[[annexA]]
+[appendix,obligation="informative"]
+== Normal distributions
+
+[[sec_A.1]]
+=== Normal probability density function
+
+[[sec_A.1.1]]
+==== {blank}
+
+Assume that a quantity of interest stem:[Y] is measured, yielding a best
+estimate stem:[y] and an associated standard uncertainty stem:[u(y) = u].
+In many cases the dispersion of probable values eta of stem:[Y] about the
+estimate stem:[y], given a measured value stem:[eta_{"m"}], is well characterized
+by a normal probability density function (PDF), given by
+
+[[eq_A.1]]
+[stem]
+++++
+g (eta | eta_{"m"}) = 1/{u sqrt(2pi)} exp [-1/2 ({eta - y}/{u})] " =: " varphi (eta; y, u^2),
+++++
+
+where stem:[y = y(eta_{"m"})]. In many conformity assessment measurements,
+stem:[y ~~ eta_{"m"}], but this is not always the case; see clause <<sec_A.4.4>>.
+
+[[sec_A.2]]
+=== Integrals of normal PDFs
+
+[[sec_A.2.1]]
+==== {blank}
+
+In computing coverage probabilities, conformance probabilities and/or consumer's
+and producer's risks, one often has to evaluate integrals of normal PDFs
+between finite or semi-infinite limits. Such integrals cannot be evaluated
+in closed form and are therefore evaluated numerically and tabulated. In
+order to simplify the notation it is convenient to introduce the standard
+normal PDF, stem:[varphi_0(t)], defined by
+
+[[eq_A.2]]
+[stem]
+++++
+varphi_0(t) = 1/{sqrt(2pi)} exp(-t^2//2) = varphi(t; 0, 1).
+++++
+
+[[sec_A.2.2]]
+==== {blank}
+
+There are two common ways that one finds integrals of normal PDFs expressed:
+
+. the standard normal distribution function, stem:[Phi(t)], defined by
++
+--
+[[eq_A.3]]
+[stem]
+++++
+Phi(z) = 1/{2pi} int_{-oo}^z exp(-t^2//2) "d"t = int_{-oo}^z varphi_0 (t) "d"t,
+++++
+
+and
+--
+
+. the error function, stem:["erf"(z)], defined by
++
+--
+[stem]
+++++
+"erf"(z) = 2/{sqrt(pi)} int_0^z exp(-t^2) "d"t .
+++++
+--
+
+These functions are simply related; from definitions (<<sec_A.3>>) and
+(<<sec_A.4>>) it is seen that
+
+[stem]
+++++
+Phi(z) = 1/2 [1 + "erf"(z // sqrt(2))] .
+++++
+
+[[sec_A.2.3]]
+==== {blank}
+
+Consider the probability that the stem:[Y] lies in the interval
+stem:[a <= Y <= b], given a measured value stem:[eta_{"m"}]. For the normal
+PDF of <<eq_A.1>> this probability is given by
+
+[stem%unnumbered]
+++++
+"Pr"(a <= Y <= b | eta_{"m"}) = 1/{u sqrt(2pi)} int_a^b  exp [-1/2 ({eta - y}/{u})^2] "d"eta .
+++++
+
+Setting stem:[z = (eta - y)//u] and stem:["d"z = "d"eta//u], this expression
+becomes
+
+[[eq_A.6]]
+[stem]
+++++
+"Pr"(a <= Y <= b | eta_{"m"}) = int_{(a - y)//u}^{(b - y)//u} varphi_0 (z) "d"z = Phi ({b-y}/u) - Phi ({a - y}/u) ,
+++++
+
+using <<eq_A.2>> and <<eq_A.3>>.
+
+[[sec_A.3]]
+=== Coverage probabilities for normal PDFs
+
+[[sec_A.3.1]]
+==== {blank}
+
+In a common special case, points a and b define a coverage interval (or
+uncertainty interval) of width stem:[2U] about the estimate stem:[y], where
+stem:[U = ku] is the expanded uncertainty for a stated coverage factor
+stem:[k] (see clause <<sec_6.3.2>>). Then stem:[a = y - ku],
+stem:[b = y + ku] and <<eq_A.6>> becomes
+
+[stem%unnumbered]
+++++
+"Pr"(|Y - y| <= ku | eta_{"m"}) = Phi(k) - Phi(-k) = "erf"(k//sqrt(2)) = P(k) .
+++++
+
+The coverage probabilities (or levels of confidence) for stem:[k = 1, 2]
+and stem:[3] are then:
+
+[stem%unnumbered]
+++++
+P(1) = Phi(1) - Phi(-1) = "erf"(1//sqrt(2)) = 0.683 = 68.3 % ,
+++++
+
+[stem%unnumbered]
+++++
+P(2) = Phi(2) - Phi(-2) = "erf"(2//sqrt(2)) = 0.955 = 95.5 % ,
+++++
+
+[stem%unnumbered]
+++++
+P(3) = Phi(3) - Phi(-3) = "erf"(3//sqrt(2)) = 0.997 = 99.7 % .
+++++
+
+[[sec_A.4]]
+=== Normal process and measurement probability densities
+
+[[sec_A.4.1]]
+==== Prior PDF stem:[g_0 (eta)] for the measurand stem:[Y]
+
+[[sec_A.4.1.1]]
+===== {blank}
+
+Before performing a measurement, knowledge of a measurand stem:[Y] is often
+well characterized by a normal prior PDF. Denoting the best estimate by
+stem:[y_0] and the associated standard uncertainty by stem:[u_0], this
+prior PDF is given by
+
+[[eq_A.7]]
+[stem]
+++++
+g_0 (eta) = varphi (eta; y_0, u_0^2) = 1/{u_0 sqrt(2pi)} exp [-1/2 ({eta - y_0}/{u_0})^2] = sqrt({w_0}/{2pi}) exp [- {w_0}/2 (eta - y_0)^2] .
+++++
+
+In the last expression a weight stem:[w_0 = 1//u_0^2] has been introduced
+to simplify the subsequent development.
+
+[[sec_A.4.2]]
+==== PDF stem:[h (eta_{"m"} | eta)] for stem:[Y_{"m"}], given a value stem:[Y = eta]
+
+[[sec_A.4.2.1]]
+===== {blank}
+
+Assume that the measuring system used in a conformity assessment is characterised,
+via the likelihood function, by a normal PDF. If such a system is used
+to measure a property of interest with an assumed value stem:[Y = eta]
+the PDF conveying belief in the possible values of stem:[Y_{"m"}] is then
+given by
+
+[[eq_A.8]]
+[stem]
+++++
+h (eta_{"m"} | eta) = varphi(eta_{"m"}; eta, u_{"m"}^2) = 1/{u_{"m"} sqrt(2pi)} exp [- 1/2 ({eta_{"m"} - eta}/{u_{"m"}})^2] = sqrt({w_{"m"}}/{2pi}) exp [- {w_{"m"}}/2 (eta_{"m"} - eta)^2] ,
+++++
+
+where stem:[w_{"m"} = 1//u_{"m"}^2].
+
+[[sec_A.4.2.2]]
+===== {blank}
+
+The normal PDF of <<eq_A.8>> reasonably characterizes a measurement analyzed
+according to the procedure described in the GUM, in the case where the
+conditions necessary for the validity of the central limit theorem exist.
+The GUM assumes no prior knowledge of the measurand, so that the dispersion
+of values that could reasonably be attributed to a measurand following
+a measurement is characterized by the standard uncertainty stem:[u_{"m"}].
+
+[[sec_A.4.3]]
+==== Marginal PDF stem:[h_0 (eta_{"m"})] for stem:[Y_{"m"}]
+
+[[sec_A.4.3.1]]
+===== {blank}
+
+It is of interest to ask, and of practical value to know, what measured
+value stem:[eta_{"m"}] might be realized if an item were chosen at random
+from a production process and the property of interest stem:[Y] measured.
+For a process characterized by the prior PDF of <<eq_A.7>> and measuring
+system characterized by the PDF of <<eq_A.8>>, the desired PDF can be calculated
+as a marginal probability density, using <<eq_16a>>, as follows:
+
+[stem%unnumbered]
+++++
+h_0 (eta_{"m"}) = int_{-oo}^{oo} g_0 (eta) h (eta_{"m"} | eta) "d"eta
+++++
+
+[stem%unnumbered]
+++++
+= sqrt(w_0 w_{"m"})/(2pi) int_{-oo}^{oo} exp [-1/2 (w_0 (eta - y_0)^2 + w_{"m"}(eta_{"m"} eta)^2)] "d"eta
+++++
+
+[stem%unnumbered]
+++++
+= 1/(sqrt(2pi)) sqrt((w_0 w_{"m"})/(w_0 + w_{"m"})) exp [- 1/2 (w_0 w_{"m"})/(w_0 + w_{"m"}) (eta_{"m"} - y_0)^2]
+++++
+
+[[eq_A.9]]
+[stem]
+++++
+= 1/(u_{eta_{"m"}} sqrt(2pi)) exp [-1/2 ({eta_{"m"} - y_0}/{u_{eta_{"m"}}})^2]
+++++
+
+[stem%unnumbered]
+++++
+= varphi (eta_{"m"}; y_0, u_{eta_{"m"}}^2),
+++++
+
+where,
+
+[[eq_A.10]]
+[stem]
+++++
+u_{eta_{"m"}} = sqrt({w_0 + w_{"m"}}/{w_0 w_{"m"}}) = sqrt(u_0^2 + u_{"m"}^2).
+++++
+
+[[sec_A.4.3.2]]
+===== {blank}
+
+The PDF stem:[h_0 (eta_{"m"})] is seen to be a normal distribution with
+expectation stem:[y_0] and associated standard uncertainty stem:[u_{eta_{"m"}}]
+given by <<eq_A.10>>.
+
+[[sec_A.4.3.3]]
+===== {blank}
+
+The expectation stem:[E(Y_{"m"}) = y_0] follows from the assumption that
+the measuring system has been corrected for all recognized significant
+systematic errors and is thus free from bias.
+
+[[sec_A.4.3.4]]
+===== {blank}
+
+The standard uncertainty stem:[u_{eta_{"m"}}] in <<eq_A.10>> is seen to
+be the quadrature sum of the standard uncertainties associated with the
+process and measuring system PDFs. The two sources of uncertainty (an uncertain
+process and an imperfect measuring system) combine in a natural way in
+their effects on knowledge of possible measured values of a property of
+interest. Given a high-accuracy measuring system, in the sense that
+stem:[u_{"m"} " << " u_0], then stem:[u_{eta_{"m"}} ~~ u_0] and uncertainty
+about possible measured quantity values is almost all due to incomplete
+information about the production process.
+
+[[sec_A.4.4]]
+==== Posterior (post-measurement) PDF stem:[g (eta | eta_{"m"})] for stem:[Y]
+
+[[sec_A.4.4.1]]
+===== {blank}
+
+Equating the right-hand sides of <<eq_16a>> and <<eq_16b>>, and rearranging
+yields the PDF for the measurand stem:[Y] following a measurement that
+yields a measured value stem:[eta_{"m"}]:
+
+[[eq_A.11]]
+[stem]
+++++
+g (eta | eta_{"m"}) = {g_0 (eta) h (eta_{"m"} | eta)}/{h_0 (eta_{"m"})} .
+++++
+
+Comparison with <<eq_1>> shows this result to be a statement of Bayes'
+theorem, with the denominator stem:[h_0 (eta_{"m"})] given by <<eq_A.9>>.
+Substituting the normal PDFs of <<eq_A.7>>-<<eq_A.9>> into <<eq_A.11>>
+yields
+
+[[eq_A.12]]
+[stem]
+++++
+g (eta | eta_{"m"}) = sqrt({w_0 + w_{"m"}}/{2pi}) exp [- {w_0 + w_{"m"}}/2 (eta - {w_0 y_0 + w_{"m"} eta_{"m"}}/{w_0 + w_{"m"}})^2]
+++++
+
+[stem%unnumbered]
+++++
+= 1/{u sqrt(2pi)} exp [-1/2 ({eta - y}/{u})^2]
+++++
+
+[stem%unnumbered]
+++++
+= varphi (eta; y, u^2) ,
+++++
+
+where
+
+[[eq_A.13]]
+[stem]
+++++
+y = {w_0 y_0 + w_{"m"} eta_{"m"}}/{w_0 + w_{"m"}} ,
+++++
+
+and
+
+[[eq_A.14]]
+[stem]
+++++
+u = 1/{sqrt(w_0 + w_{"m"})} = 1/{sqrt(1/{u_0^2} + 1/{u_{"m"}^2})} = {u_0 u_{"m"}}/{sqrt(u_0^2 + u_{"m"}^2)} .
+++++
+
+[[sec_A.4.4.2]]
+===== {blank}
+
+Bayes' theorem shows the effect of new information about the measurand
+stem:[Y] conveyed by the measured value stem:[eta_{"m"}] and the associated
+standard uncertainty stem:[u_{"m"}]. The posterior probability density
+(<<eq_A.12>>) is seen to be a normal distribution whose expectation (best
+estimate) stem:[y], <<eq_A.13>>, is a weighted average of stem:[y_0] and
+stem:[eta_{"m"}], with the weights equal to the reciprocals of the corresponding
+associated variances.
+
+[[sec_A.4.4.3]]
+===== {blank}
+
+From <<eq_A.14>> it is seen that the standard uncertainty u associated
+with the estimate stem:[y] is always less than both stem:[u_0] and stem:[u_{"m"}].
+There are two cases of special interest that are commonly encountered in
+practice.
+
+* If prior knowledge is so meagre that no attempt is made to assign an
+explicit prior PDF to the measurand stem:[Y], then
+stem:[u_{"m"} " << " u_0] so that stem:[w_{"m"} " >> " w_0]. From <<eq_A.14>>
+it follows that
++
+--
+[stem%unnumbered]
+++++
+y ~~ eta_{"m"}, " " u ~~ u_{"m"} ,
+++++
+
+and all relevant knowledge of the possible values of stem:[Y] can be said
+to derive from the measurement itself. Such measurements are the focus
+of the GUM, which is a guide to the evaluation of stem:[u_{"m"}] given
+an appropriate measurement model.
+--
+
+* In a typical calibration, a measuring instrument is used to measure a
+reference standard that realizes an estimate stem:[y_0] of a quantity stem:[Y]
+with a small associated standard uncertainty stem:[u_0]. For such a calibration,
+the systematic error of the instrument is poorly known a priori in the
+sense that stem:[u_0 " << " u_{"m"}], or stem:[w_0 " >> " w_{"m"}]. The
+posterior PDF for stem:[Y] is then such that, again using <<eq_A.14>>,
++
+--
+[stem%unnumbered]
+++++
+y ~~ y_0, " " u ~~ u_0 .
+++++
+
+In accord with common sense, knowledge of the reference standard is unchanged
+by the calibration measurement. The  instrument reading, however, conveys
+information about the error of indication of the instrument, which is the
+quantity of interest in a calibration.
+--
+
+[[sec_A.5]]
+=== Risk calculations with normal PDFs and a binary decision rule
+
+[[sec_A.5.1]]
+==== {blank}
+
+General formulae for the calculation of global consumer's and producer's
+risks were derived in clause <<sec_9.5>>, and the special case of a conformity
+assessment with a binary decision rule was treated in clause <<sec_9.5.3>>.
+It is of interest to derive expressions for the global risks in the common
+case of a binary decision rule where prior knowledge of a measurand and
+the possible outputs of a measuring system are both described by normal
+distributions.
+
+[[sec_A.5.2]]
+==== {blank}
+
+Given normal distributions, <<eq_A.7>> and <<eq_A.8>>, for the PDFs characterizing
+the production process and the measuring system, the joint PDF
+stem:[f(eta, eta_{"m"})], (<<eq_16a>>), for the outcome of a
+measurement is
+
+[stem%unnumbered]
+++++
+f(eta, eta_{"m"}) = g_0 (eta) h (eta_{"m"} | eta) = 1/{2pi u_0 u_{"m"}} exp {-1/2 [({eta - y_0}/u_0)^2 + ({n_{"m"} - eta}/u_{"m"})^2]} .
+++++
+
+Letting stem:[v = (eta_{"m"} - eta)//u_{"m"}]; stem:["d"v = "d"eta_{"m"}//u_{"m"}]
+and stem:[z = (eta - y_0)//u_0]; stem:["d"z = "d"eta//u_0] and substituting
+into <<eq_19>> and <<eq_20>> yields, after simplification, the global consumer's
+and producer's risks:
+
+[[eq_A.15]]
+[stem]
+++++
+R_{"C"} = int_{-oo}^{{T_{"L"} - y_0}/{u_0}} F(z) varphi_0 (z) "d"z + int_{{T_{"U"} - y_0}/{u_0}}^{oo} F(z) varphi_0 (z) "d"z
+++++
+
+and
+
+[[eq_A.16]]
+[stem]
+++++
+R_{"P"} = int_{{T_{"L"} - y_0}/{u_0}}^{{T_{"U"} - y_0}/{u_0}} (1 - F(z)) varphi_0 (z) "d"z .
+++++
+
+In these expressions, stem:[varphi_0(z) = (1//sqrt(2pi)) exp (-z^2//2)]
+is the standard normal PDF and
+
+[[eq_A.17]]
+[stem]
+++++
+F(z) = Phi ({A_{"U"} - y_0 - u_0z}/{u_{"m"}}) - Phi ({A_{"L"} - y_0 - u_0z}/{u_{"m"}}) ,
+++++
+
+where stem:[Phi(t)] is the standard normal distribution function.

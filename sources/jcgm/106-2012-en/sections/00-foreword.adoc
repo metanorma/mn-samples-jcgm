@@ -1,0 +1,40 @@
+
+== Foreword
+
+In 1997 a Joint Committee for Guides in Metrology
+(http://www.bipm.org/en/committees/jc/jcgm/[JCGM]),
+chaired by the Director of the Bureau International des Poids et Mesures
+(http://www.bipm.org/[BIPM]), was created by the seven international
+organizations that had originally in 1993 prepared the _Guide to the
+expression of uncertainty in measurement_ (GUM) and the _International
+vocabulary of basic and general terms in metrology_ (VIM). The JCGM
+assumed responsibility for these two documents from the ISO Technical
+Advisory Group 4 (TAG4).
+
+The Joint Committee is formed by the BIPM with the International Electrotechnical
+Commission (http://www.iec.ch/[IEC]), the International Federation
+of Clinical Chemistry and Laboratory Medicine (http://www.ifcc.org/[IFCC]),
+the International Organization for Standardization (http://www.iso.org/[ISO]),
+the International Union of Pure and Applied Chemistry (IUPAC), the
+International Union of Pure and Applied Physics (http://www.iupac.org/[IUPAP]),
+and the International Organization of Legal Metrology (http://www.oiml.org/[OIML]).
+A further organization joined these seven international organizations,
+namely, the International Laboratory Accreditation Cooperation (http://www.ilac.org/[ILAC]).
+
+JCGM has two Working Groups. Working Group 1, "Expression of uncertainty
+in measurement", has the task to promote the use of the GUM and to
+prepare Supplements and other documents for its broad application.
+Working Group 2, "Working Group on International vocabulary of basic
+and general terms in metrology (VIM)", has the task to revise and
+promote the use of the VIM. For further information on the activity
+of the JCGM, see link:http://www.bipm.org/[www.bipm.org]
+
+Documents such as this one are intended to give added value to the
+GUM by providing guidance on aspects of the evaluation and use of
+measurement uncertainty that are not explicitly treated in the GUM.
+Such guidance will be as consistent as possible with the general probabilistic
+basis of the GUM.
+
+This document has been prepared by Working Group 1 of the JCGM, and
+has benefited from detailed reviews undertaken by member organizations
+of the JCGM and National Metrology Institutes.

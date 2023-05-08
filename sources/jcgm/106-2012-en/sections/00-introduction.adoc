@@ -1,0 +1,108 @@
+
+== Introduction
+
+{{conformity assessment,Conformity assessment}}, as broadly defined, is
+any activity undertaken to determine, directly or indirectly, whether a
+product, process, system, person or body meets relevant standards and fulfills
+{{specified requirement,specified requirements}}. <<ISO_IEC_17000_2004>>
+gives general terms and definitions relating to conformity assessment,
+including the accreditation of conformity assessment bodies and the use
+of conformity assessment in facilitating trade.
+
+In a particular kind of conformity assessment, sometimes called {{inspection}},
+the determination that a product fulfils a specified requirement relies
+on measurement as a principal source of information. <<ref22>> sets out
+guidelines for checking conformity with specified limits in the case where
+a {{quantity}} is measured and a resulting {{coverage interval}} (termed
+'uncertainty interval' in ISO 10576-1:2003) is compared with a {{tolerance
+interval}}. The present document extends this approach to include explicit
+consideration of risks, and develops general procedures for deciding conformity
+based on {{measurement result,measurement results}}, recognizing the central
+role of {{probability distribution,probability distributions}} as expressions
+of uncertainty and incomplete information.
+
+The evaluation of measurement uncertainty is a technical problem whose
+solution is addressed by <<JCGM_100_2008>>, the _Guide to the expression
+of uncertainty in measurement_ (GUM), and by and its Supplements, <<JCGM_101_2008>>,
+<<JCGM_102_2011>> and JCGM 103 <<ref3>>. The present document assumes that
+a quantity of interest, the {{measurand}}, has been measured, with the
+result of the measurement expressed in a manner compatible with the principles
+described in the GUM. In particular, it is assumed that corrections have
+been applied to account for all recognized significant systematic effects.
+
+In conformity assessment, a measurement result is used to decide if an
+item of interest conforms to a specified requirement. The item might be,
+for example, a gauge block or digital voltmeter to be calibrated in compliance
+with <<ref23>> or verified according to <<ref24>>, or a sample of industrial
+waste water. The requirement typically takes the form of one or two {{tolerance
+limit,tolerance limits}} that define an interval of permissible values,
+called a {{tolerance interval}}, of a measurable property of the item.
+Examples of such properties include the length of a gauge block, the error
+of indication of a voltmeter, and the mass concentration of mercury in
+a sample of waste water. If the true value of the property lies within
+the tolerance interval, it is said to be conforming, and non-conforming
+otherwise.
+
+NOTE: The term 'tolerance interval' as used in conformity assessment has
+a different meaning from the same term as it is used in statistics.
+
+In general, deciding whether an item conforms will depend on a number of
+measured properties and there might be one or more tolerance intervals
+associated with each property. There may also be a number of possible decisions
+with respect to each property, given the result of a measurement. Having
+measured a particular quantity, for example, one might decide to (a) accept
+the item, (b) reject the item, (c) perform another measurement and so on.
+This document deals with items having a single scalar property with a requirement
+given by one or two tolerance limits, and a binary outcome in which there
+are only two possible states of the item, conforming or non-conforming,
+and two possible corresponding decisions, accept or reject. The concepts
+presented can be extended to more general decision problems.
+
+In the evaluation of measurement data, knowledge of the possible values
+of a measurand is, in general, encoded and conveyed by a {{probability
+density function}}, or a numerical approximation of such a function. Such
+knowledge is often summarized by giving a best estimate (taken as the {{measured
+quantity value}}) together with an associated measurement uncertainty,
+or a coverage interval that contains the value of the measurand with a
+stated {{coverage probability}}. An assessment of conformity with specified
+requirements is thus a matter of probability, based on information available
+after performing the measurement.
+
+In a typical measurement, the measurand of interest is not itself observable.
+The length of a steel gauge block, for example, cannot be directly observed,
+but one could observe the indication of a micrometer with its anvils in
+contact with the ends of the block. Such an indication conveys information
+about the length of the block through a measurement model that includes
+the effects of in uence quantities such as thermal expansion and micrometer
+calibration. In conformity assessment, an accept/reject decision is based
+on observable data (measured quantity values, for example) that lead to
+an inference regarding the possible values of a non-observable measurand
+<<ref37>>.
+
+Because of uncertainty in measurement, there is always the risk of incorrectly
+deciding whether or not an item conforms to a specified requirement based
+on the measured value of a property of the item. Such incorrect decisions
+are of two types: an item accepted as conforming may actually be non-conforming,
+and an item rejected as non-conforming may actually be conforming.
+
+By defining an {{acceptance interval}} of permissible measured values of
+a measurand, the risks of incorrect accept/reject decisions associated
+with measurement uncertainty can be balanced in such a way as to minimize
+the costs associated with such incorrect decisions. This document addresses
+the technical problem of calculating the {{conformance probability}} and
+the probabilities of the two types of incorrect decisions, given a probability
+density function (PDF) for the measurand, the tolerance limits and the
+limits of the acceptance interval.
+
+A particular acceptance interval, and its relation to a corresponding tolerance
+interval is shown in <<fig1>>.
+
+[[fig1]]
+.Binary conformity assessment where decisions are based on measured quantity values. The true value of a measurable property (the measurand) of an item is specified to lie in a tolerance interval defined by limits (stem:[T_{"L"}, T_{"U"}]). The item is accepted as conforming if the measured value of the property lies in an interval defined by {{acceptance limit,acceptance limits}} (stem:[A_{"L"}, A_{"U"}]), and rejected as non-conforming otherwise.
+image::figure1.png[]
+
+Choosing the tolerance limits and acceptance limits are business or policy
+decisions that depend upon the consequences associated with deviations
+from intended product quality. A general treatment of the nature of such
+decisions is beyond the scope of this document; see, for example, references
+<<ref14>>, <<ref15>>, <<ref34>>, <<ref35>>, <<ref36>>, <<ref44>>.

@@ -1,0 +1,411 @@
+
+[[annexB]]
+[appendix,obligation="informative"]
+== Prior knowledge of the measurand
+
+[[sec_B.1]]
+=== Statistical process control
+
+[[sec_B.1.1]]
+==== {blank}
+
+In many conformity assessments, knowledge of a measurand stem:[Y] prior
+to making a measurement is not explicitly considered in making accept/reject
+decisions. In such cases, which are typical of measurements analyzed according
+to principles described in the GUM, there is an implicit assumption that
+prior knowledge of stem:[Y] is so meagre as to have a negligible effect
+on the outcome of the decision.
+
+[[sec_B.1.2]]
+==== {blank}
+
+For a process in which a number of nominally identical items are produced
+over time, the nature of the process can be studied by periodically measuring
+a sample of its output. Statistics generated in the course of such measurements,
+such as a moving sample average and a sample standard deviation, provide
+information about the stability of the process so that it can be adjusted
+as necessary to meet production quality criteria. The generation and use
+of measurement information in this way forms the basis of statistical process
+control (SPC). A sizable literature is available; see for example references
+<<ref33>>, <<ref43>>.
+
+[[sec_B.1.3]]
+==== {blank}
+
+The behaviour of a process in SPC is commonly summarized by assuming that
+a sample of items measured for quality control purposes comprises a set
+of realizations of a stable frequency distribution. The mean value stem:[mu]
+and standard deviation stem:[sigma] of this distribution are estimated
+from the sample statistics.
+
+NOTE: A process for which mean values and standard deviations show acceptable
+variation with respect to specified limits, from sample to sample, is known
+as a stable process.
+
+[[sec_B.1.4]]
+==== {blank}
+
+The prior PDF stem:[g_0 (eta)] for a measurand stem:[Y] then takes the
+mathematical form of the frequency distribution suggested by a histogram
+of measured quantity values. The property of interest for an item chosen
+at random from the process would then be assigned a best estimate
+stem:[y_0 = mu] and associated standard uncertainty stem:[u_0 = sigma].
+
+[[sec_B.1.5]]
+==== {blank}
+
+This typical SPC procedure has two principal shortcomings: (a) reliable
+process modelling by use of a histogram usually requires a large sample,
+which might not be available, and (b) the uncertainty associated with the
+sample measurements is ignored and plays no role in assigning the PDF
+stem:[g_0 (eta)]. The following approach addresses both of these problems
+and reduces to the SPC result in the appropriate limits.
+
+[[sec_B.2]]
+=== An item chosen at random from a measured sample of items
+
+[[sec_B.2.1]]
+==== {blank}
+
+Consider a sample of stem:[n] items, each having a property stem:[Y] of
+interest in a conformity assessment. The sample is collected over an appropriate
+period of time from a production process that is assumed to be stable.
+Examples include:
+
+* a sample of stem:[n] gauge blocks, each characterized by a length stem:[L];
+
+* a sample of stem:[n] digital voltmeters, each characterized by an error
+of indication stem:[E] when measuring a standard reference voltage;
+
+* a sample of stem:[n] fibre optic connectors, each characterized by an
+insertion loss stem:[Lambda].
+
+[[sec_B.2.2]]
+==== {blank}
+
+For each of the stem:[n] items the property of interest is measured, yielding
+a set of estimates stem:[y_1, ... , y_n] and an associated standard measurement
+uncertainty eu: The uncertainty eu depends on the procedure used to measure
+the samples and is assumed to be the same for all of the measurements.
+The properties of the sample are then summarized by calculating a sample
+mean stem:[y] and sample variance stem:[s^2] defined by
+
+[[eq_B.1]]
+[stem]
+++++
+bar y = 1/n sum_{k=1}^n y_k,
+++++
+
+and
+
+[[eq_B.2]]
+[stem]
+++++
+s^2 = 1/n sum_{k=1}^n (y_k - bar(y))^2 .
+++++
+
+NOTE: The sample variance is often defined by dividing the
+stem:[sum_{k=1}^n (y_k - y)^2] by stem:[n - 1] rather than stem:[n]. The
+resulting quantity can be shown to be an unbiased estimator of the variance
+stem:[sigma^2] of a frequency distribution from which the data samples
+are assumed to be drawn. In defining stem:[s^2] in <<eq_B.2>>, the goal
+is not to estimate an unknown variance but rather to characterise the dispersion
+of the sample values about their mean. If the data are assumed to be a
+random sample from a normal frequency distribution
+stem:[varphi (eta, mu; sigma^2)], then the sample variance (<<eq_B.2>>)
+can be shown to be the maximum likelihood estimator of stem:[sigma^2] <<ref10>>.
+
+[[sec_B.2.3]]
+==== {blank}
+
+One of the measured items is selected at random (with probability stem:[1//n])
+and taken to be representative of the production process. Let stem:[Y_r]
+denote the property of interest for the randomly-selected item. Information
+relevant to the possible values eta of stem:[Y_r] consists only of the
+sample statistics (<<eq_B.1>>) and (<<eq_B.2>>), the individual estimates
+stem:[y_1, ..., y_n] being discarded once the measurements have been performed.
+Summary properties of the PDF for stem:[Y_r] can be calculated as follows.
+
+[[sec_B.2.4]]
+==== {blank}
+
+Let stem:[f_r(eta)] be the PDF for stem:[Y_r] and denote the PDFs for the
+stem:[n] sample properties stem:[Y_1, ..., Y_n] by
+stem:[f_k(eta), k = 1, ..., n]. Noting that each of the n items is equally
+likely to have been selected, stem:[f_r(eta)] can be written as the marginal
+PDF
+
+[[eq_B.3]]
+[stem]
+++++
+f_r(eta) = 1/n sum_{k=1}^n f_k (eta),
+++++
+
+called, appropriately, a finite mixture distribution <<ref41>>.
+
+[[sec_B.2.5]]
+==== {blank}
+
+The form of a particular PDF stem:[f_k(eta)] is generally not known, but
+since it conveys knowledge of the property stem:[Y_k] of the stem:[k"th"]
+measured item,
+
+[[eq_B.4]]
+[stem]
+++++
+E(Y_k) = y_k =  int_{-oo}^{oo} eta f_k (eta) "d"eta ,
+++++
+
+and
+
+[[eq_B.5]]
+[stem]
+++++
+V(Y_k) = tilde(u)^2 = int_{-oo}^{oo} (eta - y_k)^2 f_k (eta) "d"eta .
+++++
+
+Given these results and the PDF stem:[f_r(eta)] of <<eq_B.3>>, the estimate
+stem:[y_r] of the property stem:[Y_r] and associated standard uncertainty
+stem:[u_r] can then be calculated.
+
+[[sec_B.2.6]]
+==== {blank}
+
+For the estimate stem:[y_r] we have, by definition
+
+[stem%unnumbered]
+++++
+y_r = int_{-oo}^{oo} eta f_r (eta) "d"eta = 1/n sum_{k=1}^n int_{-oo}^{oo} eta f_k (eta) "d"eta = 1/n sum_{k=1}^n y_k ,
+++++
+
+where <<eq_B.4>> has been used in the last step. Comparing this result
+with <<eq_B.1>> shows that the a _priori_ estimate of stem:[Y] is equal
+to the sample mean:
+
+[[eq_B.6]]
+[stem]
+++++
+y_r = bar(y) .
+++++
+
+[[sec_B.2.7]]
+==== {blank}
+
+The associated variance of stem:[Y], whose positive square root is the
+standard uncertainty, is then given by
+
+[[eq_B.7]]
+[stem]
+++++
+u_r^2 = int_{-oo}^{oo} (eta - bar(y))^2 f_r(eta) "d"eta = 1/n sum_{k=1}^n int_{-oo}^{oo} (eta - bar(y))^2 f_k(eta) "d"eta .
+++++
+
+Now writing
+
+[stem]
+++++
+(eta - bar(y))^2 = (eta - y_k + y_k - bar(y))^2 = (eta - y_k)^2 + (y_k - bar(y))^2 + 2(eta - y_k)(y_k - bar(y)) ,
+++++
+
+using <<eq_B.4>> and <<eq_B.5>>, and substituting into <<eq_B.7>> leads
+to the result
+
+[[eq_B.8]]
+[stem]
+++++
+u_r^2 = tilde(u)^2 + 1/n sum_{k=1}^n (y_k - bar(y))^2 .
+++++
+
+[[sec_B.2.8]]
+==== {blank}
+
+The sum on the right-hand side of <<eq_B.8>> is seen to be the sample variance
+stem:[s^2] [see <<eq_B.2>>] so that
+
+[[eq_B.9]]
+[stem]
+++++
+u_r^2 = tilde(u)^2 + s^2 ,
+++++
+
+and the standard uncertainty associated with the prior estimate
+stem:[y_0] is
+
+[[eq_B.10]]
+[stem]
+++++
+u_r = sqrt(tilde(u)^2 + s^2) .
+++++
+
+[[sec_B.2.9]]
+==== {blank}
+
+The standard uncertainty stem:[u_r] given by <<eq_B.10>> is seen to be
+a quadrature [or root-sum-square (RSS)] combination of two components which
+are just the two parameters that summarize the sample data: a term stem:[tilde(u)^2]
+due to the common standard uncertainty associated with the sample measurements,
+and a term stem:[s^2] that characterizes the variability of the estimates
+stem:[y_1, ..., y_n].
+
+NOTE: Variability due to process variation and lack of measurement repeatability
+are combined in the observed sample variance stem:[s^2]. The standard uncertainty
+stem:[tilde(u)] should include a component that captures the effect of
+measurement variation.
+
+[[sec_B.2.10]]
+==== {blank}
+
+The calculated estimate and sample variance for the randomly selected item,
+<<eq_B.6>> and <<eq_B.7>>, are then taken to characterize future production
+of the process, assumed to be stable and free of drift. The logical model
+has a metrologist or inspector reasoning as follows:
+
+____
+I have chosen a future item from the production process. What can I say
+about the property stem:[Y] of this item before it is measured? Based on
+the results of the sample measurements, I believe that the best estimate
+of stem:[Y] is stem:[y_0 = y_r], given by <<eq_B.6>>, with an associated
+variance stem:[u_0^2 = u_r^2] given by <<eq_B.9>>. This is the extent of
+my knowledge. Given this information and the principle of maximum entropy
+(see JCGM 101:2008 6.3 and reference <<ref45>>), I will assign a normal
+PDF to convey and encode my prior knowledge of the property stem:[Y] for
+this item.
+____
+
+[[sec_B.2.11]]
+==== {blank}
+
+This leads to the following normal (or Gaussian) distribution to encode
+prior knowledge of property stem:[Y] :
+
+[stem]
+++++
+g_0 (eta) = 1/{u_0 sqrt(2pi)} exp [-1/2 ({eta - y_0}/{u_0})^2] = varphi (eta; y_0, u_0^2) ,
+++++
+
+with stem:[y_0 = bar(y)] and stem:[u_0^2 = tilde(u)^2 + s^2].
+
+[[sec_B.2.12]]
+==== {blank}
+
+In the common case where stem:[s^2 " >> " tilde(u)^2], uncertainty in the
+value of a property of an item chosen at random from the production process
+is dominated by process variability. Then stem:[u_0 ~~ sigma ~~ s], where
+the process is modelled by a frequency distribution with a standard deviation
+stem:[sigma] estimated by the sample standard deviation stem:[s].
+
+[[sec_B.3]]
+=== A positive property near a physical limit
+
+[[sec_B.3.1]]
+==== {blank}
+
+The normal PDF has an infinite range. In the case of a property (measurand)
+that is strictly positive, an assigned normal PDF will distribute a fraction
+of its probability over negative (and thus impossible) values of the property.
+For a property whose best estimate is within a few times its associated
+standard uncertainty of zero, this fraction of the probability can be significant.
+In such a case, assigning a normal PDF would be an unreasonable way to
+encode knowledge of the measurand.
+
+[[sec_B.3.2]]
+==== {blank}
+
+Many well-known PDFs are restricted to positive values of their arguments.
+Depending on available information, such a PDF can serve to model knowledge
+of a measurand stem:[Y] near a physical limit. In the case where knowledge
+of stem:[Y >= 0] is limited to an estimate and associated variance, as
+in clause <<sec_B.2>>, the principle of maximum entropy leads to the assignment
+of a normal distribution that is truncated at zero <<ref11>>. If values
+of stem:[Y] near zero are believed to have negligible probability, assigning
+a prior PDF stem:[g_0 (eta)] that approaches zero as stem:[eta -> 0] might
+be appropriate. One such distribution is the gamma PDF, whose use will
+serve as an example.
+
+[[sec_B.3.3]]
+==== {blank}
+
+The gamma PDF, with positive parameters stem:[alpha] and stem:[lambda],
+is defined by
+
+[[eq_B.11]]
+[stem]
+++++
+"gamma"(eta; alpha, lambda) = {lambda^{alpha}}/{Gamma(alpha)} eta^{alpha - 1} e^{-alpha eta} , " " eta >= 0
+++++
+
+where -(ff) is the gamma function:
+
+[stem%unnumbered]
+++++
+Gamma(alpha) = int_0^{oo} x^{alpha - 1} e^{-x} "d"x .
+++++
+
+NOTE: Special cases of the gamma PDF include stem:["gamma" (eta; 1; lambda)]
+(an exponential PDF with parameter lambda) and
+stem:["gamma" (eta; n//2, 1//2)] (a chi-squared PDF with stem:[n] degrees
+of freedom).
+
+NOTE: It is possible to define a 3-parameter gamma distribution by replacing
+stem:[eta] with stem:[(eta - gamma)] in <<eq_B.11>>, where the parameter
+ becomes the left end-point and the distribution is restricted to the interval
+stem:[eta >= gamma].
+
+[[fig_B.1]]
+.Several stem:["gamma" (eta; alpha, lambda)] PDFs, calculated according to <<eq_B.11>>, for selected parameter pairs stem:[(alpha, lambda)].
+image::figureB.1.png[]
+
+[[sec_B.3.4]]
+==== {blank}
+
+<<fig_B.1>> shows four gamma PDFs for particular values of stem:[alpha]
+and stem:[lambda]. The expectation and variance of the gamma PDF are
+given by
+
+[[eq_B.12]]
+[stem]
+++++
+E(Y ) = y_0 = alpha/lambda, " " V (Y) = u_0^2 = {alpha}/{lambda^2} ,
+++++
+
+and the maximum value (mode) of the distribution occurs when
+
+[[eq_B.13]]
+[stem]
+++++
+eta = {alpha - 1}/{lambda} .
+++++
+
+[[sec_B.3.5]]
+==== {blank}
+
+Given a particular state of prior information, appropriate values of stem:[alpha]
+and stem:[lambda] can be estimated using these expressions. In the case
+where knowledge of a property (measurand) stem:[Y] is obtained by measuring
+a sample of produced items, the prior estimate and associated variance
+are estimated by the sample statistics: stem:[y_0 = bar(y)] and
+stem:[u_0^2 = s^2]. <<eq_B.12>> can then be solved for the gamma PDF parameters:
+
+[[eq_B.14]]
+[stem]
+++++
+alpha = {bar(y)^2}/{s^2}, " " lambda = {bar(y)}/{s^2} .
+++++
+
+These estimates are the so-called 'method of moments' estimates, and may
+be unsatisfactory for a small sample size. Alternatives are the maximum
+likelihood estimates, but these typically require some form of numerical
+optimization or the solution of a system of non-linear equations.
+
+[[sec_B.3.6]]
+==== {blank}
+
+An example using a gamma PDF in the calculation of consumer's and producer's
+risks is given in clause <<sec_9.5.4>>.
+
+[[sec_B.3.7]]
+==== {blank}
+
+Useful information on properties and uses of probability distributions
+can be found in the books of Evans, Hastings and Peacock <<ref30>> and
+Johnson, Kotz and Balakrishnan <<ref28>>.

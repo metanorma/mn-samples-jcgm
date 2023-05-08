@@ -1,0 +1,136 @@
+
+[[annexC]]
+[appendix,obligation="informative"]
+== Glossary of principal symbols
+
+NOTE: The term _probability density function_ is abbreviated as PDF.
+
+stem:[sf(A)]:: interval of acceptable measured values stem:[Y_{"m"}]
+
+stem:[tilde(sf(A))]:: interval of non-acceptable measured values stem:[Y_{"m"}]
+
+stem:[A_{"L"}]:: lower acceptance limit
+
+stem:[A_{"U"}]:: upper acceptance limit
+
+stem:[a]:: lower limit of the interval in which a random variable is known
+to lie
+
+stem:[b]:: upper limit of the interval in which a random variable is known
+to lie
+
+stem:[sf(C)]:: interval of conforming values of a property of interest
+(measurand) stem:[Y]
+
+stem:[tilde(sf(C))]:: interval of non-conforming values of a property of
+interest (measurand) stem:[Y]
+
+stem:[C_{"m"}]:: measurement capability index
+
+stem:[E(X)]:: expectation of a random variable stem:[X]
+
+stem:[E(Y | eta_{"m"})]:: conditional expectation of a measurand stem:[Y];
+given a measured quantity value stem:[eta_{"m"}]
+
+stem:[E_{"max"}]:: maximum permissible error of indication for a measuring
+instrument
+
+stem:["erf"(z)]:: error function with variable stem:[z]
+
+stem:[f(eta, eta_{"m"})]:: joint PDF with variables stem:[eta] and stem:[eta_{"m"}]
+for quantities stem:[Y] and stem:[Y_{"m"}]
+
+stem:[G_X(xi)]:: distribution function with variable stem:[xi] for the
+quantity stem:[X]
+
+stem:["gamma"(eta; alpha, lambda)]:: gamma PDF with variable stem:[eta]
+and parameters stem:[alpha] and stem:[lambda]
+
+stem:[g (eta | eta_{"m"})]:: PDF with variable stem:[eta] for a measurand
+stem:[Y], given a measured quantity value stem:[eta_{"m"}]
+
+stem:[g_0 (eta)]:: PDF with variable stem:[eta] for a measurand stem:[Y]
+prior to measurement
+
+stem:[g_0 (eta | I)]:: prior PDF with variable stem:[eta] for a measurand
+stem:[Y] with explicit display of prior information stem:[I]; same as
+stem:[g_0 (eta)]
+
+stem:[g_X(xi)]:: PDF with variable stem:[xi] for the quantity stem:[X]
+
+stem:[h (eta_{"m"} | eta)]:: PDF with variable stem:[eta_{"m"}] for the
+output quantity stem:[Y_{"m"}] of a measuring system, given an assumed
+true value stem:[eta] of a measurand stem:[Y]
+
+stem:[h_0 (eta_{"m"})]:: marginal PDF with variable stem:[eta_{"m"}] for
+the output quantity stem:[Y_{"m"}] of a measuring system
+
+stem:[k]:: coverage factor
+
+stem:[sf(L)(eta; eta_{"m"})]:: likelihood of a true value stem:[eta] given
+a measured quantity value stem:[eta_{"m"}]
+
+stem:[p]:: coverage probability
+
+stem:[p_{"c"}]:: conformance probability
+
+stem:[bar(p_{"c"})]:: probability of non-conformance
+
+stem:[R_{"C"}]:: global consumer's risk
+
+stem:[R_{"C"}^{**}]:: specific consumer's risk
+
+stem:[R_{"P"}]:: global producer's risk
+
+stem:[R_{"P"}^{**}]:: specific producer's risk
+
+stem:[s^2]:: sample variance
+
+stem:[T]:: tolerance
+
+stem:[T_{"L"}]:: lower tolerance limit
+
+stem:[T_{"U"}]:: upper tolerance limit
+
+stem:[U]:: expanded uncertainty
+
+stem:[u]:: standard uncertainty
+
+stem:[u_0]:: standard uncertainty associated with estimate stem:[y_0] of
+a measurand stem:[Y] before performing a measurement
+
+stem:[u_{"m"}]:: standard uncertainty associated with a measured quantity
+value stem:[eta_{"m"}] when prior knowledge of the measurand is negligible
+
+stem:[V (X)]:: variance of a random variable stem:[X]
+
+stem:[V (Y | eta_{"m"})]:: conditional variance of a measurand stem:[Y];
+given a measured quantity value stem:[eta_{"m"}]
+
+stem:[w]:: length parameter of a guard band
+
+stem:[Y]:: measurable property (measurand) of an item, taken to be a random
+variable
+
+stem:[Y_{"m"}]:: output of a measuring system, taken to be a random variable
+
+stem:[bar(y)]:: sample mean
+
+stem:[y_0]:: expectation of stem:[Y] before performing a measurement
+
+stem:[tilde(y)]:: scaled measured quantity value
+
+stem:[alpha]:: parameter of a gamma PDF
+
+stem:[Gamma (z)]:: gamma function with variable stem:[z]
+
+stem:[eta]:: variable describing possible values of a measurand stem:[Y]
+
+stem:[lambda]:: parameter of a gamma PDF
+
+stem:[Phi(z)]:: standard normal distribution function with variable stem:[z]
+
+stem:[varphi_0(z)]:: standard normal PDF with variable stem:[z]
+
+stem:[varphi (eta; y, u^2)]:: normal (Gaussian) PDF with variable stem:[eta],
+expectation stem:[y] and variance stem:[u^2]

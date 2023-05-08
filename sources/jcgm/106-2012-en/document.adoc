@@ -1,0 +1,51 @@
+= JCGM 106:2012
+:docnumber: 106
+:edition: 1
+:copyright-year: 2012
+:language: en
+:doctype: guide
+:docstage: in-force
+:docsubstage: 60
+:title-en: Evaluation of measurement data
+:title-part-en: The role of measurement uncertainty in conformity assessment
+:title-fr: Évaluation des données de mesure
+:title-part-fr: Le rôle de l'incertitude de mesure dans l'évaluation de la conformité
+:committee-acronym: JCGM
+:committee-en: Joint Committee for Guides in Metrology
+:committee-fr: Comité commun pour les guides en métrologie
+:workgroup-acronym: WG 1
+:imagesdir: images
+:mn-document-class: bipm
+:mn-output-extensions: xml,html,doc,pdf,rxl
+:local-cache-only:
+:data-uri-image:
+
+include::sections/00-foreword.adoc[]
+
+include::sections/00-introduction.adoc[]
+
+include::sections/01-scope.adoc[]
+
+include::sections/02-norm_refs.adoc[]
+
+include::sections/03-terms_defs.adoc[]
+
+include::sections/04-conventions.adoc[]
+
+include::sections/05-tolerance.adoc[]
+
+include::sections/06-knowledge.adoc[]
+
+include::sections/07-probability.adoc[]
+
+include::sections/08-acceptance_intervals.adoc[]
+
+include::sections/09-risks.adoc[]
+
+include::sections/aa-normal_distributions.adoc[]
+
+include::sections/ab-prior_knowledge.adoc[]
+
+include::sections/ac-glossary.adoc[]
+
+include::sections/b0-bibliography.adoc[]

@@ -1,0 +1,347 @@
+
+[[sec_8]]
+== Acceptance intervals
+
+[[sec_8.1]]
+=== Acceptance limits
+
+[[sec_8.1.1]]
+==== {blank}
+
+A decision to accept an item as conforming, or reject it as non-conforming,
+to specification is based on a measured value stem:[eta_{"m"}] of a property
+of the item in relation to a stated decision rule that specifies the role
+of measurement uncertainty in formulating acceptance criteria. An interval
+of measured values of a property that results in acceptance of the item
+is called an {{acceptance interval}}, defined by one or two {{acceptance
+limit,acceptance limits}}.
+
+[[sec_8.1.2]]
+==== {blank}
+
+As suggested in the Introduction, acceptance limits and corresponding decision
+rules are chosen in such a way as to manage the undesired consequences
+of incorrect decisions. There are a number of widely used decision rules
+that are simple to implement. They can be applied when knowledge of a property
+of interest is summarised in terms of a best estimate and corresponding
+coverage interval. Two such decision rules are described in the following
+subclauses.
+
+[[sec_8.2]]
+=== Decision rule based on simple acceptance
+
+[[sec_8.2.1]]
+==== {blank}
+
+An important and widely used decision rule is known as simple acceptance
+<<ref2>> or shared risk <<ref20>>. Under such a rule, the producer and
+user (consumer) of the measurement result agree, implicitly or explicitly,
+to accept as conforming (and reject otherwise) an item whose property has
+a measured value in the tolerance interval. As the alternative name 'shared
+risk' implies, with a simple acceptance decision rule the producer and
+user share the consequences of incorrect decisions.
+
+[[sec_8.2.2]]
+==== {blank}
+
+In practice, in order to keep the chances of incorrect decisions to levels
+acceptable to both producer and user, there is usually a requirement that
+the measurement uncertainty has been considered and judged to be acceptable
+for the intended purpose.
+
+[[sec_8.2.3]]
+==== {blank}
+
+One approach to such consideration is to require, given an estimate of
+a measured quantity, that the associated expanded uncertainty stem:[U],
+for a coverage factor stem:[k = 2], must satisfy stem:[U <= U_{"max"}],
+where stem:[U_{"max"}] is a mutually agreed maximum acceptable expanded
+uncertainty. This approach is illustrated by the following example.
+
+====
+In legal metrology <<ref40>>, a decision rule based on simple acceptance
+has been used in the verification of measuring instruments. Consider such
+an instrument that is required to have an error of indication in the interval
+stem:[[-E_{"max"};E_{"max"}\]]. The instrument is accepted as conforming
+to the specified requirement if it meets the following criteria:
+
+. in measuring a calibrated standard, the best estimate e of the instrument
+error of indication E satisfies
++
+--
+[stem%unnumbered]
+++++
+|e| <= E_{"max"}, " and"
+++++
+--
+. [[ex_item_b]] the expanded uncertainty for a coverage factor
+stem:[k = 2] associated with the estimate e satisfies
++
+--
+[stem%unnumbered]
+++++
+U <= U_{"max"} = E_{"max"}//3.
+++++
+--
+
+In terms of the measurement capability index, criterion <<ex_item_b>> is
+equivalent to the requirement that stem:[C_{"m"} >= 3] (see clause <<sec_7.6>>).
+====
+
+[[sec_8.2.4]]
+==== {blank}
+
+Another practical acceptance decision rule follows from what is referred
+to as the "accuracy method" described in IEC Guide 115 <<ref19>>. In this
+approach, a well-characterised test method is used and sources of uncertainty
+are minimised by (a) use of measuring instruments with maximum permissible
+errors within specified limits, (b) environmental influences, such as temperature
+and relative humidity, maintained within specified limits, (c) well-documented
+control of laboratory procedures, and (d) well-documented competency of
+measurement personnel.
+
+[[sec_8.2.5]]
+==== {blank}
+
+By controlling sources of variability within prescribed limits, the measurement
+uncertainty associated with a best estimate of a measurand is assumed to
+be negligible, is not explicitly evaluated, and plays no role in an accept/reject
+decision. The approach of IEC Guide 115 Procedure 2 (the "accuracy method")
+formalizes the current practice of electrotechnical testing laboratories
+in using state-of-the-art measuring equipment and routine, well established
+test methods.
+
+[[sec_8.2.6]]
+==== {blank}
+
+Depending upon the relative width of the tolerance interval and the coverage
+interval, a simple acceptance decision rule, or similar decision rule,
+can often support the quality objectives of measurements and calibrations
+carried out in support of conformity assessments.
+
+[[sec_8.3]]
+=== Decision rules based on guard bands
+
+[[sec_8.3.1]]
+==== General considerations
+
+[[sec_8.3.1.1]]
+===== {blank}
+
+Accepting or rejecting an item when the measured value of its property
+of interest is close to a tolerance limit may result in an incorrect decision
+and lead to undesirable consequences. Such incorrect decisions are generally
+of two kinds in the case of a single upper tolerance limit [illustrated
+in <<fig8>>, outcomes (b) and (c)].
+
+[[sec_8.3.1.2]]
+===== {blank}
+
+With a decision rule based on simple acceptance and the common case of
+a symmetric unimodal PDF (such as a normal distribution) for the measurand,
+the probability of accepting a non-conforming item [<<fig8>>, (b)] or rejecting
+a conforming item [<<fig8>>, (c)] can be as large as 50 %. This would happen,
+for example, if the measured value of a property lay very close to the
+tolerance limit. In such a case about 50 % of the PDF for the measurand
+would lie on either side of the limit, so that whether the item is accepted
+or rejected, there would be a 50 % chance of an incorrect decision.
+
+[[sec_8.3.1.3]]
+===== {blank}
+
+Either of these probabilities can be reduced, at the cost of increasing
+the other, by choosing acceptance limits offset from the tolerance limits,
+a conformity decision strategy called guardbanding; see references <<ref6>>,
+<<ref7>>, <<ref8>>, <<ref9>>, <<ref12>>, <<ref17>>, <<ref44>>.
+
+[[fig8]]
+.Simple acceptance decision rule near an upper tolerance limit stem:[T_{"U"}], with four 95 % coverage intervals. For such a decision rule, the acceptance limit stem:[A_{"U"}] coincides with the tolerance limit. Decisions to accept or reject inspected items are based on measured values (triangles); the true values (circles) cannot be known. Cases (b) and (c) lead to incorrect decisions called false acceptance and false rejection, respectively (see clause <<sec_9.3.2>>). In case (c) the true value of the measurand lies (unknowingly) outside the 95 % coverage interval.
+image::figure8.png[]
+
+[[sec_8.3.2]]
+==== Guarded acceptance
+
+[[sec_8.3.2.1]]
+===== {blank}
+
+The risk of accepting a non-conforming item can be reduced by setting an
+acceptance limit stem:[A_{"U"}] inside the tolerance interval, as shown
+in <<fig9>>. The interval defined by stem:[T_{"U"}] and stem:[A_{"U"}]
+is called a guard band (see <<sec_3.3.11>>), and the resulting decision
+rule is called guarded acceptance.
+
+NOTE: Guarded acceptance is also known as stringent acceptance <<ref2>>
+and positive compliance for acceptance <<ref18>>.
+
+[[fig9]]
+.Decision rule based on guarded acceptance. An upper acceptance limit stem:[A_{"U"}] inside an upper tolerance limit stem:[T_{"U"}] defines an acceptance interval that reduces the probability of falsely accepting a non-conforming item (consumer's risk). By convention, the length parameter stem:[w] associated with a guarded acceptance guard band is taken to be positive: stem:[w = T_{"U"} - A_{"U"} > 0].
+image::figure9.png[]
+
+[[sec_8.3.2.2]]
+===== {blank}
+
+The difference between a tolerance limit and a corresponding acceptance
+limit defines a length parameter stem:[w] for a guard band, viz.
+
+[stem%unnumbered]
+++++
+w = T_{"U"} - A_{"U"}:
+++++
+
+For a guarded acceptance decision rule, stem:[w > 0].
+
+[[sec_8.3.2.3]]
+===== {blank}
+
+In many applications, the length parameter w is taken to be a multiple
+of the expanded uncertainty for a coverage factor stem:[k = 2],
+stem:[U = 2u], viz.
+
+[stem%unnumbered]
+++++
+w = rU,
+++++
+
+with the multiplier stem:[r] chosen to assure a minimum conformance probability
+for an item that is accepted. A common choice is stem:[r = 1], in which
+case stem:[w = U].
+
+[example]
+<<ref21>> establishes a default guarded acceptance decision rule for demonstrating
+conformity with specification. <<fig10>> is adapted from ISO 14253-1, figure
+7. In the case of a two-sided tolerance interval, upper and lower acceptance
+limits are offset from the corresponding tolerance limits by guard bands
+with length parameter stem:[w = U = 2u].
+
+The aim of the guard bands, with stem:[w = 2u], is to ensure that for any
+measured value lying within the acceptance interval, the probability of
+accepting a nonconforming item is at most 2.3 %, assuming a normal PDF
+for the measured quantity. This maximum probability occurs if the measured
+value of the property coincides with an acceptance limit. For measured
+values away from the acceptance limits, the probability of a false acceptance
+will be less than the maximum.
+
+[[fig10]]
+.Two-sided acceptance interval created by reducing the tolerance interval on either side by the stem:[k = 2] expanded uncertainty stem:[U = 2u]. This is the default decision rule established in <<ref21>>.
+image::figure10.png[]
+
+In ISO 14253-1, an acceptance interval is called a conformance zone, and
+a tolerance interval is called a specification zone. The labels in <<fig10>>
+follow the conventions of this document.
+
+[[sec_8.3.3]]
+==== Guarded rejection
+
+[[sec_8.3.3.1]]
+===== {blank}
+
+An acceptance limit outside a tolerance interval, as shown in <<fig11>>,
+can be chosen so as to increase the probability that a rejected item is
+truly non-conforming. Such a guarded rejection decision rule is often employed
+when one wants clear evidence that a limit has been exceeded prior to taking
+a negative action.
+
+NOTE: Guarded rejection is also known as stringent rejection <<ref2>> and
+positive non-compliance for rejection <<ref18>>.
+
+[[sec_8.3.3.2]]
+===== {blank}
+
+The length parameter stem:[w] for a guarded rejection guard band is
+stem:[w = T_{"U"} - A_{"U"} < 0].
+
+[[fig11]]
+.Decision rule based on guarded rejection. An upper acceptance limit stem:[A_{"U"}] outside an upper tolerance limit stem:[T_{"U"}] defines an acceptance interval that reduces the probability of falsely rejecting a conforming item (producer's risk). The length parameter stem:[w] associated with a guarded rejection guard band is stem:[w = T_{"U"} - A_{"U"} < 0].
+image::figure11.png[]
+
+.Speed limit enforcement
+====
+In highway law enforcement, the speed of motorists is measured by police
+using devices such as radars and laser guns <<ref42>>. A decision to issue
+a speeding ticket, which may potentially lead to an appearance in court,
+must be made with a high degree of confidence that the speed limit has
+actually been exceeded.
+
+Using a particular Doppler radar, speed measurements in the field can be
+performed with a relative standard uncertainty stem:[u(v) // v] of 2 %
+in the interval 50 km/h to 150 km/h. Knowledge of a measured speed
+stem:[v] in this interval is assumed to be characterised by a normal PDF
+with expectation v and standard deviation stem:[0.02v].
+
+Under these conditions one can ask, for a speed limit of
+stem:[v_0 = 100 "unitsml(km/h)"], what threshold speed stem:[v_{"max"}]
+(acceptance limit) should be set so that for a measured speed
+stem:[v >= v_{"max"}] the probability that stem:[v >= v_0] is a least
+99.9 %?
+
+This mathematical problem is equivalent to the calculation of a conformance
+probability for a one-sided tolerance interval (see clause <<sec_7.3>>).
+Here a value of stem:[z = (v_{"max"} - v_0)//(0.02 v_{"max"})] is needed
+for which 99.9 % of the probability lies in the region stem:[V >= v_0].
+From <<table1>> it is seen that stem:[z = 3.09], so that
+
+[stem%unnumbered]
+++++
+v_{"max"} = v_0/{1 - 0.02z} = 100/{1 - 0.02 times 3.09} " km/h" ~~ 107 " km/h" 
+++++
+
+The interval stem:[[100" km/h" <= v <= 107 " km/h"\]] is a guard band that
+ensures a probability of at least 99.9 % that the speed limit has been
+exceeded for a measured speed of 107 km/h or greater.
+====
+
+.Drugs in live animals and animal products
+====
+The anabolic steroid nandrolone belongs to a group of substances banned
+as growth promoters in food-producing animals. The substance occurs naturally
+in some live animals and consequently a threshold (tolerance) limit stem:[T]
+equal to stem:[2.00  "unitsml(ug/L)" ] has been established.
+
+In a screening test for nandrolone, a measured concentration exceeding
+the threshold value with a probability of 95 % or greater is considered
+suspect and should be followed up by a confirmation procedure.
+
+In performing a screening test, a laboratory wishes to set a decision (acceptance)
+limit A given by
+
+[stem%unnumbered]
+++++
+A = T + g;
+++++
+
+where stem:[g = |w|] is a guard band (see <<fig11>>), such that for a measured
+concentration value stem:[y >= A] the probability that stem:[Y >= T] is
+at least 95 %.
+
+The laboratory validates its measurement procedure by spiking ten blank
+samples at a concentration level close to the threshold.
+
+The samples are measured under within-laboratory reproducibility conditions,
+yielding an observed reproducibility standard deviation stem:[s]
+(ISO 3534-2, 3.3.12) of stem:[0.20  "unitsml(ug/L)"].
+
+From the spiking experiment, the laboratory concludes that its measurements
+are free from significant systematic errors. The measurement uncertainty
+is dominated by reproducibility effects and the PDF for nandrolone concentration
+stem:[Y] is thus taken to be a scaled and shifted t-distribution
+(see <<JCGM_101_2008,clause=6.4.9>>) with stem:[mu = 9] degrees of freedom.
+
+From a table or appropriate software for the t-distribution (one-sided,
+stem:[mu = 9] degrees of freedom, 95 % probability), the guard band is
+calculated as
+
+[stem%unnumbered]
+++++
+g = t_{0.95;9} times s = 1.83 times 0.20  "unitsml(ug/L)" = 0.37  "unitsml(ug/L)".
+++++
+
+A sample with measured value stem:[y] of nandrolone concentration greater
+than or equal to
+
+[stem%unnumbered]
+++++
+A = (2.00 + 0.37)  "unitsml(ug/L)" = 2.37 "unitsml(ug/L)"
+++++
+
+is thus considered suspect.
+====

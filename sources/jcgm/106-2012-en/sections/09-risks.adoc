@@ -1,0 +1,738 @@
+
+[[sec_9]]
+== Consumer's and producer's risks
+
+[[sec_9.1]]
+=== General
+
+[[sec_9.1.1]]
+==== {blank}
+
+In conformity assessment using a binary decision rule, a property of an
+item is measured and the item is accepted as conforming if the measured
+value of the property lies in a defined acceptance interval. A measured
+value outside the acceptance interval leads to rejection of the item as
+non-conforming. <<fig12>>, which reproduces <<fig1>>, illustrates the intervals
+of interest, showing a tolerance interval (of conforming values) and an
+acceptance interval (of permissible measured values).
+
+[[sec_9.1.2]]
+==== {blank}
+
+The use of guard bands provides a way to limit the probability of making
+an incorrect conformance decision based on measurement information as summarised
+by a coverage interval. The present clause is concerned with a more precise
+evaluation of such probabilities for a production process. The evaluated
+probabilities depend on two factors, the production process and the measuring
+system.
+
+[[sec_9.1.3]]
+==== {blank}
+
+If the measuring system were perfectly accurate, all conformance decisions
+would be correct and all risks would be zero. An increase in measurement
+uncertainty means an increase in the probability of an incorrect decision,
+and the probability is greatest when measured values are close to the tolerance
+limits.
+
+[[sec_9.1.4]]
+==== {blank}
+
+The risks also depend on the nature of the production process. If the process
+rarely produces an item whose property of interest is near the tolerance
+limits, there is less opportunity for incorrect decisions to be made. Conversely,
+if a process produces items with properties likely to be close to tolerance
+limits, the uncertainties associated with the measurements are brought
+into play. The remainder of this clause shows how the contributions of
+both factors can be evaluated.
+
+[[fig12]]
+.Binary conformity assessment where decisions are based on measured quantity values. The true value of a measurable property (the measurand) of an item is specified to lie in a tolerance interval defined by limits stem:[(T_{"L"}, T_{"U"})]. The item is accepted as conforming if the measured value of the property lies in an acceptance interval defined by limits stem:[(A_{"L"}, A_{"U"})], and rejected as non-conforming otherwise.
+image::figure12.png[]
+
+[[sec_9.2]]
+=== PDFs for production process and measuring system
+
+[[sec_9.2.1]]
+==== {blank}
+
+Consider a process that produces a sequence of items, each having a measurable
+property stem:[Y] with possible values stem:[eta]. The process might be
+a machine producing resistors of nominal resistance stem:[10 "unitsml(kOhm)"]
+or a sampling process yielding vials of ocean water containing dissolved
+mercury. For an item chosen at random from the process, knowledge of property
+stem:[Y] before it is measured is conveyed by a prior PDF stem:[g_0 (eta)].
+The PDF stem:[g_0 (eta)] can be said to characterize the production process,
+and is sometimes called the process probability density. The form of
+stem:[g_0 (eta)] is typically assigned based on knowledge acquired by measuring
+the property of interest in a sample of produced items.
+
+NOTE: Assigning a prior PDF based on a measured sample of items is discussed
+in <<annexB>>.
+
+[[sec_9.2.2]]
+==== {blank}
+
+Conformity assessment of a produced item is realized by a measurement of
+the property of interest. The output of the measuring system is a quantity
+regarded as an observable random variable stem:[Y_{"m"}] whose possible
+values stem:[eta_{"m"}], assuming a known input value stem:[Y = eta], are
+encoded and conveyed by a PDF stem:[h (eta_{"m"} | eta)]. The form of
+stem:[h (eta_{"m"} | eta)] is assigned based on the design of the measuring
+system, information supplied by calibrations and knowledge of relevant
+influence quantities such as environmental parameters and material properties.
+
+[[sec_9.3]]
+=== Possible outcomes of an inspection measurement with a binary decision rule
+
+[[sec_9.3.1]]
+==== {blank}
+
+Let stem:[sf(C)] and stem:[tilde sf(C)] denote, respectively, intervals
+of conforming and non-conforming values of stem:[Y]; and let stem:[sf(A)]
+and stem:[tilde sf(A)]
+denote, respectively, intervals of acceptable and non-acceptable values
+of stem:[Y_{"m"}]. In <<fig12>>, for example, stem:[sf(C)] corresponds
+to values of stem:[Y] in the interval stem:[T_{"L"} <= Y <= T_{"U"}], and
+stem:[A] corresponds to values of stem:[Y_{"m"}] in the interval
+stem:[A_{"L"} <= Y_{"m"} <= A_{"U"}].
+
+[[sec_9.3.2]]
+==== {blank}
+
+With a binary decision rule there are four possible outcomes of a conformity
+assessment test that yields a measured quantity value stem:[eta_{"m"}]:
+
+*Valid acceptance:* the item is accepted stem:[(Y_{"m"} = eta_{"m"} in sf(A))]
+and conforms with specification stem:[(Y in sf(C))]. This is a desired
+outcome of the conformity assessment test, leading to acceptance of a conforming
+item.
+
+*False acceptance:* the item is accepted stem:[(Y_{"m"} = eta_{"m"} in sf(A))]
+but does not conform with specification stem:[(Y in tilde(sf(C)))]. This
+is an incorrect decision whose probability is called consumer's risk, because
+the cost associated with such a mistake is often borne by a consumer, or
+user, who accepts the item as fit for its purpose and acts accordingly.
+
+NOTE: False acceptance is also known as a pass error or a false positive.
+
+For a particular measured item accepted as conforming, given a measured
+value stem:[Y_{"m"} = eta_{"m"} in sf(A)], the probability of false acceptance
+is called the {{specific consumer's risk}} <<ref38>>, denoted by stem:[R_{"C"}^{**}].
+
+From the definition (<<eq_4>>) of conformance probability it can be seen
+that stem:[R_{"C"}^{**}] is given by
+
+[stem%unnumbered]
+++++
+R_{"C"}^{**} = 1 - p_{"c"},
+++++
+
+for a measured value stem:[eta_{"m"}] in the acceptance interval. For an
+item chosen at random from the production process, the probability that
+it will be falsely accepted following a measurement is called the
+{{global consumer's risk}} <<ref38>>, denoted by stem:[R_C]. Calculation
+of stem:[R_C] is considered in clause <<sec_9.5>>.
+
+*Valid rejection:* the item is rejected stem:[(Y_{"m"} = eta_{"m"} in tilde(sf(A)))]
+and does not conform with specification stem:[(Y in tilde(sf(C)))]. This
+is a desired outcome of the conformity assessment test, leading to rejection
+of a non-conforming item.
+
+*False rejection:* the item is rejected stem:[(Y_{"m"} = eta_{"m"} in tilde(sf(A)))]
+but actually conforms with specification stem:[(Y in sf(C))]. This is another
+incorrect decision whose probability is called producer's risk, because
+the cost associated with such a mistake is often borne by a producer who
+cannot sell an item that has failed a test of conformity.
+
+NOTE: False rejection is also known as a fail error or a false negative.
+
+For a particular measured item rejected as non-conforming, given a measured
+value stem:[Y_{"m"} = eta_{"m"} in tilde(sf(A))], the probability of false
+rejection is called the {{specific producer's risk}} <<ref38>>, denoted
+by stem:[R_{"P"}^{**}]. From the definition (<<eq_4>>) of conformance probability
+it can be seen that stem:[R_{"P"}^{**}] is given by
+
+[stem%unnumbered]
+++++
+R_{"P"}^{**} = p_{"c"},
+++++
+
+for a measured value stem:[eta_{"m"}] outside the acceptance interval.
+For an item chosen at random from the production process, the probability
+that it will be falsely rejected following a measurement is called the
+{{global producer's risk}} <<ref38>>, denoted stem:[R_P]. Calculation of
+stem:[R_P] is considered in clause <<sec_9.5>>.
+
+[[sec_9.4]]
+=== The joint PDF for stem:[Y] and stem:[Y_{"m"}]
+
+[[sec_9.4.1]]
+==== {blank}
+
+As seen in clause <<sec_9.3.2>>, the specific consumer's risk and specific
+producer's risk stem:[R_{"C"}^{**}]
+and stem:[R_{"P"}^{**}] are simply related to the conformance probability
+for a particular measured item, given the result of a measurement. If the
+value of the property stem:[Y] is outside the tolerance interval and a
+measured value stem:[Y_{"m"}] is within the acceptance interval, then a
+consumer's risk has been realised. The probability that these two events
+occur, i.e., the global consumer's risk, is specified by a joint probability
+distribution that depends on the production process and the measuring system.
+
+[[sec_9.4.2]]
+==== {blank}
+
+The joint probability density can be written as a product of densities
+that are already known. In words, the probability that the value of the
+measurand stem:[Y] is outside the tolerance interval and measured value
+stem:[Y_{"m"}] is within the acceptance interval is given by the probability
+that the production process produces an item with a true value of stem:[Y]
+outside the tolerance interval multiplied by the probability that the measuring
+system produces a measured value stem:[Y_{"m"}] within the acceptance interval,
+given that the measurand stem:[Y] is outside the tolerance interval.
+
+[[sec_9.4.3]]
+==== {blank}
+
+Similarly, the global producer's risk is defined in terms of the same joint
+probability distribution. If the tolerance interval, the production process
+and the measuring system are regarded as fixed, the global consumer's risk
+and global producer's risk are determined by the acceptance limits. The
+acceptance limits can thus be set to achieve an acceptable balance of the
+two kinds of risk. In general it is not possible to set the acceptance
+limits to minimise both the consumer's and producer's risks simultaneously:
+decreasing one will increase the other.
+
+[[sec_9.4.4]]
+==== {blank}
+
+In the quality control and conformity assessment literature, the terms
+'consumer's risk' and 'producer's risk'
+are generally used in the sense of global risks, as described above.
+
+[[sec_9.4.5]]
+==== {blank}
+
+For a given production process and measuring system, knowledge of the possible
+outcomes of a conformity assessment test of an item selected at random
+is described by a joint probability density function. For such a randomly
+selected item, the probability that (a) the value of the measurand stem:[Y]
+lies in the interval stem:[eta <= Y <= eta + "d"eta] and that (b) a measurement
+of stem:[Y] would yield a measured value stem:[Y_{"m"}] in the interval
+stem:[eta_{"m"} <= Y_{"m"} <= eta_{"m"} + "d"eta_{"m"}] is given by
+
+[[eq_15]]
+[stem]
+++++
+"Pr" (eta <= Y <= eta + "d"eta " and " eta_{"m"} <= Y_{"m"} <= eta_{"m"} + "d"eta_{"m"}) = f(eta, eta_{"m"})"d"eta "d"eta_{"m"},
+++++
+
+where stem:[f(eta, eta_{"m"})] is the joint PDF for stem:[Y] and stem:[Y_{"m"}].
+
+[[sec_9.4.6]]
+==== {blank}
+
+Using the product (or multiplication) rule of probability theory, the joint
+density stem:[f(eta, eta_{"m"})] can be factorized in two ways, according
+to 
+
+[[eq_16a]]
+[stem]
+++++
+sf(eta, eta_{"m"}) = g_0 (eta) h (eta_{"m"} | eta)
+++++
+
+and
+
+[[eq_16b]]
+[stem]
+++++
+f(eta; eta_{"m"}) = h_0 (eta_{"m"}) g (eta | eta_{"m"}) .
+++++
+
+[[sec_9.4.7]]
+==== {blank}
+
+The two PDFs on the right in <<eq_16a>> are the two probability densities
+described in clause <<sec_9.2>>. Given the forms of these PDFs, the two
+probability densities on the right-hand side of <<eq_16b>> can be calculated,
+if desired. Such a calculation is illustrated in <<annexA>> (see clauses
+<<sec_A.4.3>> and <<sec_A.4.4>>).
+
+[[sec_9.5]]
+=== Calculation of global risks
+
+[[sec_9.5.1]]
+==== Historical context
+
+[[sec_9.5.1.1]]
+===== {blank}
+
+In the following subclauses, formulae are developed for calculating the
+global risks of incorrect decisions. Such calculations have traditionally
+been performed using measured frequency distributions of the various outcomes
+when a large sample of nominally identical items are measured. The global
+consumer's risk, in such an approach, is equal to the fraction of items
+in a measured sample that are accepted for use but do not conform with
+a specified requirement. Such non-conformance, for a particular item, has
+to be demonstrated after the fact by a separate measurement with an uncertainty
+much smaller than that of the measuring system used in the conformity assessment.
+
+[[sec_9.5.1.2]]
+===== {blank}
+
+The global risks below are calculated using probability distributions rather
+than frequency distributions, so that it is not necessary to consider an
+ensemble of measured items that may not, in fact, exist. Numerically, the
+calculated probabilities will always agree, on average, with measured frequencies.
+Thus acceptance limits can be chosen to yield acceptable fractions of mistakenly
+accepted or rejected items, on average, in the conformity assessment of
+items in a sample.
+
+[[sec_9.5.2]]
+==== General formulae
+
+[[sec_9.5.2.1]]
+===== {blank}
+
+Given the joint PDF (<<eq_16a>>) and the two probability densities
+stem:[g_0 (eta)] and stem:[h (eta_{"m"} | eta)], the probabilities of each
+of the four possible outcomes described above (see clause <<sec_9.3>>)
+can be calculated. These probabilities are simply the respective volumes
+under the joint probability density stem:[f(eta, eta_{"m"})], integrated
+over the four regions that describe all possible outcomes.
+
+[[sec_9.5.2.2]]
+===== {blank}
+
+Of particular interest are the global consumer's risk and global producer's
+risk, calculated as follows:
+
+* For a measured value in the acceptance interval and a value of stem:[Y]
+outside the tolerance interval, the global consumer's risk is
++
+--
+[[eq_17]]
+[stem]
+++++
+R_C = int_{tilde(sf(C))} int_{sf(A)} g_0 (eta) h (eta_{"m"} | eta) "d"eta_{"m"} "d"eta
+++++
+--
+
+* For a measured value outside the acceptance interval and a value of stem:[Y]
+within the tolerance interval, the global producer's risk is
++
+--
+[[eq_18]]
+[stem]
+++++
+R_P = int_{sf(C)} int_{tilde(sf(A))} g_0 (eta) h (eta_{"m"} | eta) "d"eta_{"m"} "d"eta .
+++++
+--
+
+[[sec_9.5.2.3]]
+===== {blank}
+
+<<eq_17>> and <<eq_18>> are general formulae for the calculation of global
+consumer's and producer's risks. Depending on the particular form of the
+PDFs stem:[g_0 (eta)] and stem:[h (eta_{"m"} | eta)], explicit evaluation
+of stem:[R_C] and stem:[R_P] may have to be performed numerically.
+
+[[sec_9.5.3]]
+==== Special case: Binary decision rule
+
+[[sec_9.5.3.1]]
+===== {blank}
+
+For the particular binary conformity assessment illustrated in <<fig12>>,
+formulae (<<eq_17>>) and (<<eq_18>>) become
+
+[[eq_19]]
+[stem]
+++++
+R_C = (int_{-oo}^{T_{"L"}} int_{T_{"U"}}^{oo}) int_{A_{"L"}}^{A_{"U"}} g_0 (eta) h (eta_{"m"} | eta) "d"eta_{"m"} "d"eta ,
+++++
+
+and
+
+[[eq_20]]
+[stem]
+++++
+R_P = (int_{-oo}^{A_{"L"}} int_{A_{"U"}}^{oo}) int_{T_{"L"}}^{T_{"U"}} g_0 (eta) h (eta_{"m"} | eta) "d"eta "d"eta_{"m"} .
+++++
+
+[[sec_9.5.3.2]]
+===== {blank}
+
+Use of <<eq_19>> and <<eq_20>> in the case where the joint PDF (<<eq_15>>)
+is a product of normal distributions is illustrated in the following example.
+Properties of normal distributions, including the particular forms of <<eq_19>>
+and <<eq_20>>, are discussed in <<annexA>>.
+
+.Manufacture of precision resistors
+====
+A supplier of electrical components produces wire-wound precision resistors
+of nominal resistance stem:[1" "500 "unitsml(Ohm)"]. For each resistor
+(the item), the resistance stem:[Y] (the property of interest) is specified
+to lie in a tolerance interval defined by the limits
+stem:[T_{"L"} = 1499.8  "unitsml(Ohm)"] and stem:[T_{"U"} = 1 500.2 "unitsml(Ohm)"]:
+
+A machine for producing such resistors is evaluated by measuring a sample
+of its output, using a high-accuracy ohmmeter with negligible measurement
+uncertainty. A histogram of the measured values appears normal in shape,
+centred on the nominal value with a standard deviation
+stem:[sigma = 0.12 "unitsml(Ohm)"]. Based on this information, a normal
+PDF stem:[g_0 (eta) = varphi (eta; y_0; u_0^2)] is assigned to model the
+production process, with stem:[y_0 = 1500  "unitsml(Ohm)"] and
+stem:[u_0 = sigma = 0.12  "unitsml(Ohm)"].
+
+For a typical resistor produced by this machine, the conformance
+probability is
+
+[[eq_21]]
+[stem]
+++++
+p_{"c"} =  int_{T_{"L"}}^{T_{"U"}} g_0 (eta) "d"eta = int_{1499.8}^{1500.2} varphi (eta; 1500, 0.12^2) "d" eta ~~ 0.90 = 90% .
+++++
+
+If the supplier simply shipped every resistor produced, about 10 % of them
+would be non-conforming, which for economic reasons is judged to be unacceptable.
+By purchasing a more expensive production machine the process variability
+could be reduced. In this case it is decided, considering the relative
+costs, to keep the existing machine and implement an inspection process
+to detect and remove non-conforming resistors.
+
+In production, the resistors are inspected for conformity with specification
+using a calibrated high-speed ohmmeter. A normal PDF
+stem:[h (eta_{"m"} | eta) = varphi (eta_{"m"}; eta, u_{"m"}^2)],
+with stem:[u_{"m"} = 0.04 "unitsml(Ohm)"], is assigned to encode and convey
+belief in the interval of measured values that might be observed when measuring
+a known resistance stem:[Y = eta]. The assignment is based on a model of
+the measuring system and an evaluation of the measurement uncertainty,
+including the uncertainty associated with the ohmmeter calibration.
+
+In order to reduce the probability of shipping resistors that do not meet
+specification (the consumer's risk), acceptance limits
+stem:[A_{"L"} = 1 499.82 "unitsml(Ohm)"], stem:[A_{"U"} = 1 500.18 "unitsml(Ohm)"]
+are chosen inside the tolerance interval(see <<fig12>>), creating a guarded
+acceptance interval with symmetric guard bands of length
+
+[stem%unnumbered]
+++++
+w = (1 500.2 - 1 500.18) "unitsml(Ohm)" = 0.02 "unitsml(Ohm)" = 0.25U .
+++++
+
+The consumer's and producer's risks are then calculated from <<eq_A.15;to!eq_A.17>>
+with
+
+[stem%unnumbered]
+++++
+varphi_0 (z) = (1//sqrt(2pi)) exp(-z^2//2)
+++++
+
+and
+
+[stem%unnumbered]
+++++
+F(z) = Phi ({A_{"U"} - y_0 - u_0z}/{u_{"m"}}) - Phi ({A_{"L"} - y_0 - u_0z}/{u_{"m"}}) = Phi (4.5 - 3z) - Phi(-4.5 - 3z) .
+++++
+
+Numerical integration yields
+
+[stem%unnumbered]
+++++
+R_C = int_{-oo}^{-1.667} F(z) varphi_0(z) "d"z + int_{1.667}^{oo} F(z)varphi_0(z)"d"z = 0.01 = 1% ,
+++++
+
+and
+
+[stem%unnumbered]
+++++
+R_P = int_{-1.667}^{1.667} [1 - F(z)] varphi_0(z) "d"z = 0.07 = 7 % .
+++++
+
+Interesting features of this conformity assessment procedure can be noted
+by considering an average sample of 100 resistors produced by the machine,
+measured, and accepted or rejected as suitable for use:
+
+* given the properties of the production process, 90 of the resistors conform
+with specification and 10 do not conform (see <<eq_21>>);
+
+* of the 90 conforming resistors, 83 are accepted and 7 falsely rejected
+as non-conforming;
+
+* of the 10 non-conforming resistors, 9 are rejected and one falsely accepted
+as conforming;
+
+* 84 of the resistors are accepted; of these, stem:[83//84 ~~ 99 %] conform,
+with about 1 % out of tolerance. This is the goal of the inspection measurement,
+reducing the proportion of non-conforming resistors, among those accepted
+for use, from 10 % to 1 %;
+
+* of the 16 resistors that are rejected, stem:[7//16 ~~ 44 %] actually
+conform with specification. This is a price to be paid for reducing the
+risk of accepting non-conforming products.
+====
+
+[[sec_9.5.4]]
+==== Setting acceptance limits
+
+[[sec_9.5.4.1]]
+===== {blank}
+
+In the example above, the global risks stem:[R_C] and stem:[R_P] were calculated
+given known acceptance limits stem:[A_{"L"}] and stem:[A_{"U"}]. In most
+real applications, a desired level of risk is chosen based on a cost analysis
+and acceptance limits are calculated so as to ensure that the desired risk
+level is achieved. Such calculations are not straightforward. A practical
+approach to such problems is via graphical solution, as illustrated in
+the following example.
+
+.Ball bearing production
+====
+A manufacturer produces large numbers of precision ball bearings. The performance
+specification for these bearings (the items) requires that, for each of
+them, the radial error motion (the property of interest) be less than
+stem:[2 "unitsml(um)"]. Radial error motion of a bearing is undesired motion
+perpendicular to the axis of rotation. For a perfect bearing, the radial
+error motion would be zero; any real bearing will have a positive radial
+error motion.
+
+In order to characterize the production process, the radial error motions
+of a large sample of bearings are measured, using a high-accuracy test
+apparatus with negligible measurement uncertainty. For this sample, the
+average observed radial error motion is stem:[bar(y) = 1 "unitsml(um)"],
+with an associated sample standard deviation stem:[s = 0.5 "unitsml(um)"]:
+
+Prior to shipment, bearings are tested for conformity with specification.
+In these tests the radial error motion is measured using a calibrated test
+apparatus. The measuring system is characterized by a normal PDF
+stem:[varphi (eta_{"m"}; eta, eta_{"m"}^2)]  with a standard uncertainty
+of stem:[u_{"m"} = 0.25 "unitsml(um)"].
+
+For economic reasons, the fraction of non-conforming bearings sold to customers
+as conforming (the global consumer's risk) must be held to 0.1 % or less.
+How can an acceptance limit A be chosen to satisfy this requirement?
+
+// [[fig13]]
+.Tolerance and acceptance intervals for the conformity assessment of ball bearings. Permissible values of radial error motion stem:[Y] lie in the interval stem:[0 <= eta <= T]. The acceptance limit stem:[A] is separated from the tolerance limit stem:[T] by a guard band with length parameter stem:[w = rU = 2ru_{"m"}]. The decision rule in this case is guarded acceptance, with stem:[w > 0].
+image::figure13.png[]
+
+The conformity assessment problem is illustrated in <<fig13>>. A conforming
+ball bearing is specified to have a radial error motion stem:[Y] in the
+interval stem:[0 <= eta <= T]. Since the radial error motion is always
+positive, with measured values close to zero, the prior PDF for the radial
+error stem:[Y] will be modelled by a gamma probability density (see <<annexB>>,
+clause <<sec_B.3>>). Based on the sample measurements, the expectation
+and standard uncertainty of the prior PDF are assigned to be
+stem:[y_0 = y = 1 "unitsml(um)"] and stem:[u_0 = s = 0.5 "unitsml(um)"].
+Using <<eq_B.14>>, the parameters stem:[alpha] and stem:[lambda] are calculated:
+
+[stem%unnumbered]
+++++
+alpha = {1^2}/{(0.5)^2} = 4, " " " " lambda = 1/{(0.5)^2} = 4 .
+++++
+
+From definition (<<eq_B.11>>) of the gamma probability density, the prior
+PDF for bearing radial error stem:[Y] is then
+
+[[eq_22]]
+[stem]
+++++
+g_0 (eta) = "gamma" (eta ; 4, 4) = 128/3 eta^3 e^{-4 eta} , " " eta >= 0 .
+++++
+
+// [[fig14]]
+.Gamma prior PDF given by <<eq_22>>, assigned based on the frequency distribution of measured radial error motions for a sample of ball bearings. The tolerance interval is the region stem:[0 <= eta <= 2 "unitsml(um)"]. The expectation of the distribution is the prior estimate stem:[y_0 = 1 "unitsml(um)"], with an associated standard uncertainty stem:[u_0 = 0.5 "unitsml(um)"]. Because the distribution is not symmetric, the most probable value of stem:[Y] (the mode of the distribution, here equal to stem:[0.75 "unitsml(um)"]) is not equal to stem:[y_0].
+image::figure14.png[]
+
+This PDF is shown in <<fig14>>. The probability that a ball bearing chosen
+at random from the production process would
+display a radial error motion greater than stem:[2 "unitsml(um)"] is indicated
+by the cross-hatched region. This non-conformance probability is
+
+[stem%unnumbered]
+++++
+bar(p_{"c"}) = int_{2}^{oo} "gamma" (eta; 4, 4) "d"eta = 0.042 ,
+++++
+
+which means that if all ball bearings produced were shipped without being
+measured, about 4.2 % of them would be non-
+conforming. The post-process measuring system is designed to detect non-conforming
+bearings so that they will not be shipped. An acceptance limit is desired
+to reduce the consumer's risk stem:[R_C] to 0.1 % or less. For the conformity
+assessment decision rule shown in <<fig13>>, the tolerance interval corresponds
+to stem:[0 <= Y <= T] and the acceptance interval to
+stem:[0 <= Y_{"m"} <= A]. In a manner analogous to the steps leading to
+<<eq_19>> and <<eq_20>>, the global consumer's and producer's risks are
+evaluated as
+
+[stem%unnumbered]
+++++
+R_C = int_{T}^{oo} int_{0}^{A} g_0 (eta) h (eta_{"m"} | eta) "d"eta_{"m"} "d"eta , " " " " R_P = int_{0}^{T} int_{A}^{oo} g_0 (eta) h (eta_{"m"} | eta) "d"eta_{"m"} "d"eta .
+++++
+
+For a measuring system characterized by a normal PDF
+stem:[h (eta_{"m"} | eta) = varphi (eta_{"m"}; eta, eta_{"m"}^2)], making
+the substitutions stem:[z = (eta_{"m"} - eta)//u_{"m"}, "d"z = "d"eta_{"m"}//u_{"m"}],
+and performing the integrations over stem:[z], these expressions become
+
+[stem%unnumbered]
+++++
+R_C = int_{T}^{oo} [Phi ({A - eta}/{u_{"m"}}) - Phi (- eta/{eta_{"m"}})] g_0 (eta) "d"eta , " " R_P = int_{0}^{T} [1 - Phi ({A - eta}/{eta_{"m"}})] g_0 (eta) "d"eta .
+++++
+
+From <<fig13>> it can be seen that stem:[A = T - 2r u_{"m"}]. Here stem:[T = 2 "unitsml(um)"] and stem:[u_{"m"} = 0.25 "unitsml(um)"]. Then setting stem:[g_0 (eta)] equal to the gamma PDF of <<eq_22>> yields the explicit results
+
+[[eq_23]]
+[stem]
+++++
+R_C(r) = 128/3 int_2^{oo} [Phi (8 - 2r - 4eta) - Phi(-4eta)] eta^3 e^{-4 eta} "d"eta ,
+++++
+
+[[eq_24]]
+[stem]
+++++
+R_P(r) = 128/3 int_0^2 [1 - Phi(8 - 2r - 4eta)] eta^3 e^{-4eta} "d"eta .
+++++
+
+// [[fig15]]
+.Global consumer's risk stem:[R_C] versus guard band multiplier stem:[r]. For stem:[r ~~ 0.65], the acceptance limit is stem:[A = T - 2(0.65)u_{"m"} = 1.7 "unitsml(um)"], and the desired risk stem:[R_C = 0.1 %] is achieved.
+image::figure15.png[]
+
+These integrals cannot be evaluated in closed form, but they can be calculated
+numerically for any chosen values of the guard band multiplier stem:[r].
+
+<<fig15>> shows the global consumer's risk stem:[R_C] for
+stem:[-1 <= r <= 1]. Positive stem:[r] corresponds to stem:[A < T] (guarded
+acceptance) and negative r corresponds to stem:[A > T]: For stem:[r = 0]
+there is no guard band stem:[(A = T)], a decision rule called shared risk
+or simple acceptance (see clause <<sec_8.2>>). The figure shows that the
+desired level of risk, stem:[R_C = 0.1 %], is achieved for a guard band
+multiplier stem:[r ~~ 0.65]. This results in a guarded acceptance interval
+with acceptance limit
+
+[stem%unnumbered]
+++++
+A = T - 2ru_{"m"} = (2 - 2 times 0.65 times 0.25) "unitsml(um)" ~~ 1.7 "unitsml(um)" .
+++++
+
+This choice of acceptance limit solves the decision problem.
+
+In conformity assessment with a binary decision rule, acting to reduce
+the consumer's risk will always increase the producer's risk. This general
+rule is well illustrated by <<fig16>> which shows stem:[R_P] versus stem:[R_C],
+calculated numerically from formulae (<<eq_23>>) and (<<eq_24>>), for the
+ball bearing example. For stem:[r = 0.65]; the global producer's risk stem:[R_P]
+is about 7.5 %. This means that about 75 of every 1000 ball bearings that
+fail inspection would actually conform with specification, resulting in
+the loss of revenue that would accrue if these good bearings were sold.
+
+The generation of an increasing amount of conforming scrap is a cost of
+guarded acceptance, which seeks to reduce the acceptance and shipment of
+non-conforming products. In practice a supplier must choose an operating
+point along a curve such as that shown in <<fig16>> that will balance the
+risks and yield an optimal outcome. The choice of such an operating point
+is a business or policy decision that requires an economic analysis of
+the decision problem.
+
+// [[fig16]]
+.Global risks stem:[R_P] versus stem:[R_C] for the ball bearing example. Any point on the curve corresponds to a particular value of stem:[r], the guard band multiplier, with several particular values identified. Acting to reduce consumer's risk by moving the acceptance limit farther inside the tolerance interval (increasing stem:[r]) always increases the risk of falsely rejecting conforming bearings. An economic analysis is required to choose an optimal decision rule. The open circle marks the operating point in the worked example.
+image::figure16.png[]
+====
+
+[[sec_9.5.5]]
+==== General graphical approach
+
+[[sec_9.5.5.1]]
+===== {blank}
+
+For a process with given tolerance T, normal prior PDF
+stem:[g_0 (eta) = varphi (eta; y_0; u_0^2)] and normal measuring system
+PDF stem:[h (eta_{"m"} | eta) = varphi (eta_{"m"}; eta, u_{"m"}^2)], a
+graph such as that shown in <<fig17>> can be created to aid in setting
+acceptance limits.
+
+[[sec_9.5.5.2]]
+===== {blank}
+
+In this example it is assumed that prior information is meagre in the sense
+that stem:[u_{"m"}^2" << "u_0^2], so that the
+estimate stem:[y ~~ eta_{"m"}] with associated standard uncertainty
+stem:[u ~~ u_{"m"}] (see clause <<sec_A.4.4.3>>).
+
+[[sec_9.5.5.3]]
+===== {blank}
+
+The figure shows stem:[R_P] versus stem:[R_C] for the particular case where
+stem:[u_0 = T//6].
+
+[[sec_9.5.5.4]]
+===== {blank}
+
+The five curves in the figure correspond to values of the measurement capability
+index stem:[C_{"m"} = T//(4u_{"m"})] in a range from 2 to 10, and along
+each curve solid points locate guard bands with various length parameters,
+from stem:[w = -U] to stem:[w = U], with the expanded uncertainty stem:[U]
+equal to stem:[2u].
+
+[[sec_9.5.5.5]]
+===== {blank}
+
+To use this particular graph it would be necessary to note that
+
+* the process is assumed to be centred, so that the prior estimate stem:[y_0]
+of the measurand lies at the midpoint of the tolerance interval;
+
+* the upper and lower guard bands are assumed to have length parameters
+that are equal in absolute value (a symmetric acceptance interval);
+
+* stem:[R_P] and stem:[R_C] are calculated assuming normal process and
+measuring system PDFs;
+
+* for measurement capabilities other than the five values shown, interpolation
+is possible;
+
+* it is also possible to interpolate along the curves to estimate the guard
+bands.
+
+[[fig17]]
+.Global risks stem:[R_P] versus stem:[R_C] for a binary conformity assessment with prior standard uncertainty stem:[u_0 = T//6]. The five curves correspond to values of the measurement capability index stem:[C_{"m"} = T//(4u_{"m"})] in an interval from 2 to 10. The solid points locate guard bands with length parameters from stem:[w = -U] to stem:[w = U], with stem:[U = 2u]. Positive values of w correspond to guarded acceptance, with acceptance limits inside the tolerance limits as in <<fig12>>.
+image::figure17.png[]
+
+[[sec_9.5.6]]
+==== The value of reduced measurement uncertainty
+
+[[sec_9.5.6.1]]
+===== {blank}
+
+Reducing the uncertainty associated with the result a of conformity assessment
+measurement will also reduce the probability of making an incorrect accept/reject
+decision. This observation is well illustrated in <<fig17>> by the dotted
+lines that mark the loci of the various guard bands.
+
+[[sec_9.5.6.2]]
+===== {blank}
+
+For a simple acceptance decision rule stem:[(w = 0)] it is seen, for example,
+that if the measurement uncertainty were such that
+stem:[C_{"m"} = T//(4u_{"m"}) = 2], then the consumer's risk would be
+stem:[R_C ~~ 0.1 %] and the corresponding producer's risk would be
+stem:[R_P ~~ 1.5 %].
+
+[[sec_9.5.6.3]]
+===== {blank}
+
+Investing in an improved measuring system with stem:[C_{"m"} = 10] would
+reduce these risks to stem:[R_C ~~ 0.04 %] and stem:[R_P ~~ 0.07 %] respectively.
+Whether such a reduction in measurement uncertainty would be economically
+desirable depends on the tradeoff between the cost of the improved metrology
+and the money saved via fewer decision mistakes.
+
+[[sec_9.5.6.4]]
+===== {blank}
+
+Improving the production process (reducing the prior standard uncertainty
+stem:[u_0]) will have a similar effect in reducing both consumer's and
+producer's risks, and will involve a similar kind of cost/benefit analysis.

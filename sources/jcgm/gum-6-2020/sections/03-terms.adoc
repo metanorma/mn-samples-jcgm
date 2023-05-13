@@ -1,0 +1,12 @@
+== Terms and definitions
+
+[.boilerplate]
+=== {blank}
+
+The terms and definitions of <<jcgm100>>, <<jcgm101>>, <<jcgm102>> and <<jcgm200>> apply.
+
+ISO, IEC and IUPAC maintain terminological databases for use in standardization at the following addresses:
+
+* IEC Electropedia: available at `http://www.electropedia.org`
+* ISO Online Browsing Platform: available at `http://www.iso.org/obp`
+* IUPAC Gold Book: available at `http://www.goldbook.iupac.org`

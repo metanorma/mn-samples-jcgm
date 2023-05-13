@@ -1,0 +1,21 @@
+== Conventions and notation
+
+=== {blank}
+
+The conventions and notation in <<jcgm100>>, <<jcgm101>> and <<jcgm102>> are adopted.
+Principal symbols used throughout the document are explained in <<annexA>>. Other
+symbols and those appearing in examples are explained at first occurrence.
+
+=== {blank}
+
+Most examples in this document contain numerical values rounded to a number of decimal
+digits appropriate to the application. Because of rounding there are often numerical
+inconsistencies among the values presented. An instance is the correlation coefficient
+of stem:[-0.817] in the example in <<cls-8.1.6>>. It is obtained from the
+_computer-held values_ of two standard uncertainties and a ((covariance)). If it were
+computed from the three presented values (three significant decimal digits), its value
+correct to three decimal digits would be stem:[-0.822].
+
+=== {blank}
+
+Links to numbered subclauses are indicated by underlining.

@@ -1,0 +1,1162 @@
+[[cls-8]]
+== Choosing the form of the measurement model
+
+[[cls-8.1]]
+=== General
+
+[[cls-8.1.1]]
+==== {blank}
+
+The same measurement principle can give rise to different models. Therefore, the
+experimenter is often faced with the need to choose a suitable form for the model
+from various possible forms. This clause gives guidance on the criteria that can be
+used in making this choice. Some of the forms of model are considered, with examples,
+in <<cls-13>>.
+
+[[cls-8.1.2]]
+==== {blank}
+
+A measurement model should be capable of accounting for all information that is
+relevant and available. The following aspects should be taken into consideration when
+choosing the form of the model (for further information or specific guidance, see the
+referenced subclauses):
+
+*_Availability of a reliable theoretical form_*:: The extent to which a model can be
+based on the measurement principle, usually a well-established scientific law, should
+be considered. A model based on a reliable scientific principle is likely to require
+less work to check its adequacy than does an empirical or hybrid model. See
+<<cls-7;and!cls-12>>.
+(((measurement model,empirical)))
+(((measurement model,hybrid)))
+
+*_Target measurement uncertainty_*:: The target measurement uncertainty affects the
+degree of approximation that is appropriate, and will also affect the number of
+corrections, etc. taken into consideration (see <<jcgm200,clause=2.34>>).
+
+*_Simplicity_*:: It may be important to provide a model that can be implemented with
+minimal effort. Simpler representations can also help to avoid mistakes in
+implementation. The use of sub-models (see <<cls-8.4>>) can be useful in this
+respect. See <<cls-9.2>>.
+
+*_Measurement range_*:: The model should be applicable over the whole range of values
+of the input and output quantities over which it is intended to be used. See
+<<cls-5.8>>. It may be appropriate to divide the range into subranges in each of
+which a different model applies. See the example in <<cls-7.2.2>>. Also see <<cls-12>>.
+
+*_Dominant sources of uncertainty_*:: Where the dominant uncertainties arise from
+measurement of input quantities, models that associate uncertainties with input
+quantities are most appropriate. Where the dominant uncertainties relate to
+unpredictable or random variation in observations, models incorporating performance
+data are usually more appropriate. See <<cls-C.5>>.
+
+*_Relevance_*:: A model that generates coefficient or parameter values that can be
+interpreted in terms of physical quantities can be easier for users to apply than a
+model that for mathematical simplicity uses abstract functions of physical quantities.
+
+*_Parsimony_*:: If a statistical model is fitted to data, the model should not
+include more terms than necessary. This aspect is often addressed by the statistical
+process of model selection. See <<cls-11.10>>.
+
+*_Available information_*:: The availability of comprehensive data on performance of
+the measurement procedure can make it possible to use simplified measurement
+models. See <<cls-10.3;and!cls-C.5>>.
+
+*_Numerical accuracy_*:: The model should be numerically as 'well-posed' as possible,
+that is, not adversely affected by the limitations of the available computational
+precision. See <<cls-8.6>>.(((numerical problems,accuracy)))
+
+*_Solution stability_*:: Some models requiring numerical solution (and particularly
+some representations) can lead to unstable numerical performance. Models that lead to
+stable solutions are preferred. See <<cls-8.6>>.
+
+*_Computational cost_*:: Models that are easier to evaluate or solve with adequate
+accuracy (see <<cls-13.3;and!cls-13.4>>) are often preferred to those that might
+require considerable computational effort (see <<cls-13.5;and!cls-13.6>>).
+
+[[cls-8.1.3]]
+==== {blank}
+
+The aspects listed in <<cls-8.1.2>> are often mutually incompatible. For instance,
+the simplest model is rarely the most accurate, and the most tractable mathematical
+form may not be easy to interpret. Choice of model is therefore a balance depending
+on local priorities. The overriding concern is whether the model is capable of
+providing a valid estimate together with an associated measurement uncertainty. When
+a target measurement uncertainty is available, the model should be capable of
+providing results consistent with it.
+
+[[cls-8.1.4]]
+==== {blank}
+
+Consideration should be given to choosing the most appropriate form of model, as
+different models may be appropriate for different purposes. <<ex1-8.1.4>> in this
+subclause is concerned with two models, the choice of which is made on the basis of
+providing data for different physical properties. <<ex2-8.1.4>> illustrates the
+advisability of using an implicit model when it provides a more natural description
+of the measurement. It also emphasizes that both algebraically and numerically an
+implicit model might have advantages over an explicit model. The example on shell
+thickness of microscopic spherical particles in <<cls-13.5>> demonstrates a case in which it
+is not possible to transform an implicit model into an explicit model. Such a
+situation is common.(((measurement model,implicit)))
+
+[[ex1-8.1.4]]
+[example]
+.Saturated vapour pressure (also see <<cls-7.3.1>>)
+====
+The dependence of vapour pressure stem:[p] at saturation on thermodynamic temperature
+stem:[T] is often used as the basis for determining and predicting the volumetric
+properties of fluids. A differential equation, the Clausius-Clapeyron equation
+(<<eq6>>) defines the first derivative stem:["d"p//"d"T] of the saturated vapour
+pressure curve. A solution to this equation is the Antoine equation <<antoine>>, a
+measurement model that takes the form
+
+[[eq8]]
+[stem]
+++++
+"ln" p/p_0 = A - B/(T+C),
+++++
+
+where stem:[p_0] is a reference pressure and stem:[A], stem:[B] and stem:[C] are
+coefficients, usually obtained by least-squares adjustment of vapour pressure data.
+
+A different solution of the Clausius-Clapeyron equation, the Clarke and Glew equation
+<<clarke>>, gives an alternative measurement model that relates vapour pressure data to
+thermodynamic functions:
+
+[[eq9]]
+[stem]
+++++
+R "ln" p/p_0 = -(Delta G^0(ii(Theta)))/ii(Theta) + Delta H^0(ii(Theta))(1/ii(Theta) - 1/T) + Delta C_p^0 (ii(Theta)/T - 1 - "ln" ii(Theta)/T),
+++++
+
+where stem:[R] is the gas constant, stem:[ii(Theta)] denotes a reference temperature,
+stem:[Delta G^0(ii(Theta))] and stem:[Delta H^0(ii(Theta))] are the molar free
+enthalpy and molar enthalpy differences between the vapour and the liquid phases at
+the temperature stem:[ii(Theta)], and stem:[Delta C_p^0] is the difference in molar
+heat capacity between the two phases.
+
+Whereas <<eq8>>, within a stated temperature range, conveniently
+reproduces experimental data within experimental uncertainty and interpolates vapour
+pressure data adequately, <<eq9>> is preferred when deriving
+thermodynamic properties from such data.
+====
+
+[[ex2-8.1.4]]
+[example]
+.Pressure generated by a pressure balance (also see <<ex2-7.2.1>>)
+====
+<<eq3>> in <<ex2-7.2.1>> is a measurement model that defines
+implicitly the pressure stem:[p] generated by a pressure balance. This model may
+equivalently be expressed as a quadratic equation(((measurement model,quadratic)))
+
+[[eq10]]
+[stem]
+++++
+ap^2 + bp + c = 0
+++++
+
+in stem:[p], where
+
+[stem%unnumbered]
+++++
+{:(a = A_0 lambda [1+alpha(T-T_"ref")]", ", b=A_0[1+alpha(T-T_"ref")]", ", c=-m(1-rho_a/rho_m)g",") :}
+++++
+
+with solution in the form of the explicit model
+
+[[eq11]]
+[stem]
+++++
+p = (sqrt(b^2-4ac)-b)/(2a).
+++++
+
+<<eq11>> is one of the two roots stem:[(-b pm sqrt(b^2-4ac))//(2a)] of <<eq10>>, and
+is positive since stem:[a] is positive and the term stem:[4ac] is negative. The other
+root is negative, carrying no physical meaning. Also see <<ex4-8.6.5>>.
+
+In some situations it might be necessary to use the measurement model
+
+[stem%unnumbered]
+++++
+p = (m(1-rho_a/rho_m)g)/(A_0(1+lambda p + gamma p^2)[1+alpha(T-T_"ref")]),
+++++
+
+that is, with a polynomial of degree two (or higher) replacing the term stem:[1 +
+lambda p] in <<eq3>>.
+
+Consequently, the output quantity stem:[p] corresponds to a root of a polynomial
+equation of degree at least 3, and it becomes more difficult (or impossible for
+degrees > 4) to derive an explicit measurement model for stem:[p] in this case. Also
+see reference <<cox40>>.
+
+To an approximation that may be sufficient for the case in hand, stem:[p] on the
+right-hand side of <<eq3>> can be replaced by a nominal value <<lewis>>, and the
+measurement treated as explicit (see <<cls-13.3>>).
+
+More complete measurement models can also be considered <<lewis>> that include, for
+instance, a correction to account for surface tension effects.
+====
+
+[[cls-8.1.5]]
+==== {blank}
+
+In calibration the relationship between the response variable and the stimulus
+variable can often be modelled using a polynomial of modest degree, often a straight
+line (polynomial of degree 1). Guidance on using a particular representation of
+polynomials (also see <<annexD>>), which assists in determining an appropriate
+polynomial degree, is available in ISO/TS 28038:2018 <<iso28038>> and <<cox>>. Also see
+<<ex2-8.3.3>>.
+
+NOTE: For many fields, specific guidance documents or international standards exist,
+providing advice on the selection of appropriate (polynomial) models for multipoint
+calibration.
+
+[[cls-8.1.6]]
+==== {blank}
+
+In cases where there is more than one output quantity, the model should usually be
+treated as multivariate (see <<cls-13.4;and!cls-13.6>>) rather than as separate
+univariate models (see <<cls-13.3;and!cls-13.5>>) since knowledge is often required
+of covariances associated with the estimates of the output quantities. Instances
+arise in subsequent modelling and uncertainty evaluation and the determination of
+coverage regions (see <<jcgm102>>). Not taking such covariances into consideration
+generally leads to invalid statements of uncertainty.
+
+[[ex-8.1.6]]
+[example]
+.Method of standard addition for determination of chemicals
+====
+The method of standard addition is a popular way to estimate the concentration of
+various chemicals. It relies on partitioning a sample into several aliquots, adding
+to them known masses of a standard and measuring the analytical response from such
+spiked samples. A straight-line regression is determined from the data and the ratio
+of the intercept and the slope of this regression line estimates the amount of the
+analyte in the analyzed sample. Often the ((covariance)) between the intercept and the
+slope is neglected resulting in the uncertainty associated with the estimate from the
+method of standard addition being too small <<meija121>>.
+
+Data relating to the analysis of bromide in a water sample are
+
+[%unnumbered]
+[cols=6]
+|===
+| Mass fraction increment stem:[x//"unitsml(mg*g^(-1))"]
+| 0
+| 47.8
+| 95.6
+| 142.8
+| 190.7
+
+| Instrumental response stem:[y]
+| 1.775
+| 2.676
+| 3.578
+| 4.418
+| 5.316
+|===
+
+The measurement model for the mass fraction of bromide in the analyzed water sample
+is stem:[w = a//b], where stem:[a] and stem:[b] are the coefficients of the
+straight-line regression stem:[y = a + bx]. Application of ordinary least squares
+gives estimated coefficients stem:[hat a = 1.786] and stem:[hat b = 0.018 52
+"unitsml(g*mg^(-1))"] with associated standard uncertainties and covariance
+(((least squares method)))
+
+[stem%unnumbered]
+++++
+{:(u(hat a) = 0.0124", ", u(hat b) = 0.000106 "unitsml(g*mg^(-1))"", ", u(hat a, hat b) = -1.08 xx 10^(-6) "unitsml(g*mg^(-1))"".") :}
+++++
+
+Alternatively, the correlation coefficient stem:[r(hat a, hat b) = [u(hat a, hat
+b)\]//[u(hat a)u(hat b)\] = -0.817] can be reported. If the coefficients of the
+straight-line regression are treated as the output quantities obtained independently
+from two univariate models, the estimate of stem:[w] is stem:[hat w = 96.4
+"unitsml(mg*g^(-1))"] with associated standard uncertainty stem:[u(hat w) = 0.9
+"unitsml(mg*g^(-1))"] given by the law of propagation of uncertainty. If, however,
+the correlation between stem:[a] and stem:[b] is (correctly) taken into
+consideration, the standard uncertainty is appreciably larger: stem:[u(hat w) = 1.2
+"unitsml(mg*g^(-1))"].(((correlation,elimination of)))
+
+It is important to note that in this instance the data cannot be "mean-centred" (that
+is shifted with respect to stem:[x] such that the arithmetic mean of the shifted
+stem:[x]-values is zero), with a resulting zero correlation, before fitting the
+straight line. Doing so would yield a value stem:[hat a] different from that required.
+====
+
+[[cls-8.2]]
+=== Fitness for purpose and approximations
+
+[[cls-8.2.1]]
+==== {blank}
+
+Ideally, a basic measurement model should describe a scientific law or relation known
+to hold for the true values of the input quantities and the output quantities. In
+practice, the measurement model usually represents only a practicable,
+fit-for-purpose approximation of the ideal relationship. This is so because, although
+that relationship may be known, it may be too complicated or inconvenient for
+practical use. Alternatively, the relationship may be unknown, but an empirical
+approximation to it may be sufficient for the intended purpose. In some instances, it
+may be possible to use a close approximation to the ideal relationship on a small
+number of occasions, and also work with a somewhat inferior model that would be more
+practical for routine use.
+
+[[cls-8.2.2]]
+==== {blank}
+
+It is generally inadvisable to select a model purely for convenience, for example,
+because it results in a simpler analysis or software is available for its
+implementation. In exceptional cases, it is accepted that analysis can be difficult,
+or software is unavailable or hard to develop. In such a circumstance, where a
+simpler model is used, there will be an uncertainty associated with the estimate of
+the measurand resulting from that use, which should be determined to the extent
+possible, and a corresponding term included in the measurement model. See
+<<cls-11.10>> concerned with model uncertainty.
+
+[[cls-8.3]]
+=== Representation and transformation of models
+
+[[cls-8.3.1]]
+==== Parametrization
+
+Parametrization is the process of representing or expressing a measurement model,
+whether theoretical or empirical, in terms of its quantities or parameters. For some
+models (especially theoretical models) it is important to retain the contextual
+meaning of the parameters. Some parametrizations can be more convenient
+operationally, some more in accordance with working practices and some more reliable
+numerically (see <<cls-8.6>>). Transformations of the parameters in a measurement
+model, or re-parametrizations, are frequently applied in metrology to re-express a
+measurement result in an alternative form for purposes of communication or to yield a
+simpler (or numerically more stable) computation. In the latter case, the results of
+the computation are transformed back to the original formulation. Great care should
+be taken when establishing and propagating uncertainties following transformation
+(see <<cls-8.3.6>>).(((measurement model,re-parametrization)))
+
+[example]
+.Straight line in terms of Cartesian stem:[(x, y)] co-ordinates
+====
+A straight line can be represented in Cartesian co-ordinates as
+
+[[eq12]]
+[stem]
+++++
+y = a + bx,
+++++
+
+with parameters stem:[a] and stem:[b], where stem:[a] is the intercept on the stem:[y]-axis
+and stem:[b] is the slope. This parametrization is appropriate when describing
+functional relationships between quantities.
+====
+
+[example]
+.Straight line in terms of polar stem:[(r, theta)] co-ordinates
+====
+The same line can also be represented as
+
+[stem%unnumbered]
+++++
+x " sin " theta + y " cos " theta = rho,
+++++
+
+with parameters stem:[theta] and stem:[rho], where stem:[theta] is the angle between
+the line and the horizontal and stem:[rho] is its distance of nearest approach to the
+origin. This parametrization can be useful when modelling geometrical problems where
+the line may be near-vertical, since stem:[b] diverges while stem:[theta] remains
+finite.
+====
+
+[[cls-8.3.2]]
+==== Re-parametrization
+
+Re-parametrization of a measurement model is the use of a different set of parameters
+that depend in some manner on the original parameters. For unchanged values of the
+input quantities the values of the output quantities are unchanged following
+re-parametrization.(((measurement model,re-parametrization)))
+
+[example]
+.Straight line in terms of shifted coordinates
+====
+An alternative to the <<eq12>> makes use of _shifted_ coordinates:
+
+[[eq13]]
+[stem]
+++++
+y - y_0 = a_0 + b(x - x_0),
+++++
+
+with parameters stem:[a_0] and stem:[b], where stem:[x_0] and stem:[y_0] are selected
+in some convenient way. The expression of the <<eq13>> as stem:[y = (y_0 +
+a_0 - bx_0) + bx] exposes the relationship between the original and new
+parametrization. The slope parameter stem:[b] is unchanged. It can sometimes be
+useful to work in terms of _shifted_ and _scaled_ coordinates such as
+
+[stem%unnumbered]
+++++
+x_"new" = (x-x_0)/s
+++++
+
+for suitable choices of stem:[x_0] and stem:[s].
+====
+
+[[cls-8.3.3]]
+==== Use in regression
+
+Suppose stem:[x_i, y_i, i = 1, ..., m], represent measured coordinates of some
+underlying straight-line relationship. The use of <<eq13>> is often
+more desirable than the use of <<eq12>> since adverse numerical effects in the
+calculation can be more readily avoided.
+
+[[ex1-8.3.3]]
+[example]
+.Drifting resistance standard (also see <<cls-10.6.4>>)
+====
+The straight-line regression line in <<cls-10.6.4>> is based on the shifted and
+scaled quantity
+
+[stem%unnumbered]
+++++
+y = (R-R_"nom")/R_"nom"
+++++
+
+rather than the original quantity stem:[R]. The values stem:[y_i] of stem:[y] (given
+in <<table5>>) range from stem:[17.9008] to stem:[18.6916], whereas
+the corresponding values stem:[R_i] of stem:[R] range from stem:[200.003580] to
+stem:[200.003738]. The former with dynamic range stem:[1.04] (the ratio of the range
+endpoint values) are considerably more manageable than the latter (dynamic range
+stem:[1.0000008]).
+====
+
+[[ex2-8.3.3]]
+[example]
+.Thermoelectric voltage
+====
+This example illustrates a circumstance in which the Chebyshev representation <<cox>> of
+a ((polynomial function)) confers considerable advantages over the often-used monomial
+representation. The monomial and Chebyshev representations (<<annexD>>) of
+thermoelectric voltage are, respectively,
+
+[[eq14]]
+[stem]
+++++
+{: (E=sum_(r=0)^n c_r vartheta^r", ", E = sum_(r=0)^n a_r T_r(t)",") :}
+++++
+
+in the reference function for Type S thermocouples, for Celsius temperatures
+stem:[vartheta] in the interval stem:[[50 "unitsml(degC)", 1064.18
+"unitsml(degC)"\]]. The first of these expressions is given in <<iec60584-1>> and the second is
+a re-parametrization of the first. The variable stem:[t] in the right-hand expression
+(<<eq14>>) is given by
+(((measurement model,re-parametrization)))
+
+[[eq15]]
+[stem]
+++++
+t = (2 vartheta - vartheta_"min" - vartheta_"max")/(vartheta_"max" - vartheta_"min")
+++++
+
+and stem:[T_r(t)] denotes the Chebyshev polynomial(((Chebyshev polynomials))) of degree stem:[r] in stem:[t]
+(see <<annexD>>). There is a factor of some stem:[10^21] between the estimated
+non-zero coefficients stem:[hat c_r] of largest and smallest magnitude in the
+monomial form, which are held to 12 significant decimal digits (12S): presumably it
+was considered that care is needed in working with this particular representation.
+The stem:[hat c_r] are given to 5S in column 2 of <<table1>>.
+
+[[table1]]
+.Estimated polynomial coefficients for a Type S thermocouple
+[cols=5]
+|===
+| r | Raw, stem:[hat c_r //"unitsml(mV)""unitsml(degC)"^(-r)] | Scaled, stem:[hat d_r] | Normalized, stem:[hat b_r] | Chebyshev, stem:[hat a_r]
+
+| stem:[0] | stem:[0] | stem:[0] | stem:[4.3036] | stem:[4.6391]
+| stem:[1] | stem:[5.4031 xx 10^(-3)] | stem:[5.7499] | stem:[5.5278] | stem:[5.3711]
+| stem:[2] | stem:[1.2593 xx 10^(-5)] | stem:[14.2618] | stem:[0.4784] | stem:[0.3706]
+| stem:[3] | stem:[-2.3248 xx 10^(-8)] | stem:[-28.0174] | stem:[-0.0543] | stem:[-0.0729]
+| stem:[4] | stem:[3.2203 xx 10^(-11)] | stem:[41.3005] | stem:[0.2206] | stem:[0.0371]
+| stem:[5] | stem:[-3.3147 xx 10^(-14)] | stem:[-45.2390] | stem:[-0.1637] | stem:[-0.0130]
+| stem:[6] | stem:[2.5574 xx 10^(-17)] | stem:[37.1447] | stem:[0.0216] | stem:[0.0022]
+| stem:[7] | stem:[-1.2507 xx 10^(-20)] | stem:[-19.3310] | stem:[-0.0249] | stem:[-0.0004]
+| stem:[8] | stem:[2.7144 xx 10^(-24)] | stem:[4.4648] | stem:[0.0252] | stem:[0.0002]
+|===
+
+A scaled variable stem:[q = vartheta//B] has been used in ITS-90 in recent years,
+where in this instance stem:[B = 1064.18 "unitsml(degC)"] is the upper endpoint of
+the interval of definition. Then, stem:[E = sum_(r=0)^n d_r q^r], with stem:[d_r =
+B^r c_r]. The scaling implies that the contribution from the stem:[r]th term in the
+sum is bounded in magnitude by stem:[abs(d_r)]. Values of stem:[E] in
+stem:["unitsml(mV)"] are typically required to 3D (three decimal places).
+Accordingly, estimates stem:[hat d_r] of the coefficients stem:[d_r] are given in column
+3 of <<table1>> to 4D (that is, including an extra digit) and are much more
+manageable. Alternatively, the variable can be normalized to the interval stem:[[-1,
+1\]] using the <<eq15>> with stem:[vartheta_"min" = -50
+"unitsml(degC)"] and stem:[vartheta_"max" = B]. Estimates stem:[hat b_r] of the
+corresponding coefficients stem:[b_r] are given in column 4 and estimates stem:[hat
+a_r] of the Chebyshev coefficients stem:[a_r] in column 5 of <<table1>>, both to 4D,
+obtained using references <<clenshaw>>, <<trefethen>>.
+
+<<fig3>> depicts the reference function (<<eq14>>). It curves only gently, but the
+non-linearity present cannot be ignored. The estimated coefficients in the monomial
+representation in terms of the raw or scaled variable in <<table1>> give no
+indication of the gently curved form in <<fig3>>. However, in strong contrast, for
+the normalized and Chebyshev forms, the dominance of the magnitudes of the first two
+estimated coefficients indicate that the calibration function has an appreciable
+linear (straight-line) component. The Chebyshev coefficients for degrees 7 and 8
+could arguably be replaced by zero, since to 3D they make little contribution, with
+the degree of the polynomial consequently reduced from 8 to 6. Such reasoning could
+not be applied to the other polynomial representations.
+
+[[fig3]]
+.Relationship between temperature and thermoelectric voltage
+image::img03.png[]
+====
+
+[[cls-8.3.4]]
+==== Simple transformations
+
+Some measurement models constitute simply transformation of the quantities involved
+('transformation of variables').
+
+[[ex-8.3.4]]
+[example]
+.Logarithmic and linear formats
+====
+In radio-frequency and microwave electrical metrology, transformations are often made
+between logarithmic and linear representations of dimensionless reflection and
+transmission coefficients (scattering parameters or stem:["S"]-parameters). For an
+stem:[n]-port electrical device, the expression is
+
+[stem%unnumbered]
+++++
+alpha = -20" log"_(10) abs S,
+++++
+
+where stem:[abs S] is the modulus of a (complex-valued) linear stem:["S"]-parameter
+and stem:[alpha] is the corresponding logarithmic loss (that is, return loss or
+attenuation), measured in stem:["dB"].
+
+stem:[abs S] is defined as
+
+[stem%unnumbered]
+++++
+abs S = (x^2 + y^2)^(1//2),
+++++
+
+where stem:[x] and stem:[y] are the real and imaginary components of the linear
+stem:["S"]-parameter.
+
+In this example, measured values of stem:[x] and stem:[y] are stem:[hat x = 0.0060]
+and stem:[hat y = 0.0080] and their stated associated standard uncertainties are
+stem:[u(hat x) = u(hat y) = 0.0100]. An estimate stem:[abs hat S] of stem:[abs S] and
+thence stem:[abs hat alpha] of stem:[alpha] are obtained:
+
+[stem%unnumbered]
+++++
+{: (abs hat S = (hat x^2 + hat y^2)^(1//2) = 0.0100", ", hat alpha = -20 " log"_(10) abs hat S = 40.0 " dB"".") :}
+++++
+
+These values typify the measurement of the linear reflection coefficient of a
+near-matched (that is, low-reflecting) device.
+
+Applying the law of propagation of uncertainty (LPU) (<<jcgm100,clause=5.1.2>>) gives
+
+[[eq16]]
+[stem]
+++++
+{: (u(abs hat S) = ([hat x^2u^2(hat x) + hat y^2u^2(hat y)]^(1//2))/(abs hat S) = 0.0100", ", hat u(alpha) = 20/("ln" 10) (u(abs hat S))/(abs hat S) = 8.7 " dB"".") :}
+++++
+
+The appropriateness of <<eq16>> for the standard uncertainty stem:[u(abs hat S)] is
+considered by also evaluating this uncertainty by applying the ((Monte Carlo method))
+given in <<jcgm101>>. Application of this method with stem:[M = 10^8] trials,
+assuming stem:[x] and stem:[y] are independently normally distributed with means
+stem:[hat x] and stem:[hat y], standard deviations stem:[u(hat x)] and stem:[u(hat
+y)], and no correlation between stem:[x] and stem:[y], gives the entries in column 3
+of <<table2>>, which are not in close agreement with the entries in column 2.
+
+[[table2]]
+.Data and results for a logarithmic transformation using the law of propagation of uncertainty (LPU) and a Monte Carlo method (MC)
+[cols=5,options=header,headerrows=2]
+|===
+| 2+| stem:[u(hat x) = u(hat y) = 0.01] 2+| stem:[u(hat x) = u(hat y) = 0.005]
+| | LPU | MC | LPU | MC
+
+| stem:[abs hat S] | stem:[0.0100] | stem:[0.0155] | stem:[0.0100] | stem:[0.0114]
+| stem:[u(abs hat S)] | stem:[0.0100] | stem:[0.0078] | stem:[0.0050] | stem:[0.0046]
+| stem:[hat alpha//"dB"] | stem:[40.0] | stem:[37.6] | stem:[40.0] | stem:[39.8]
+| stem:[u(hat alpha)//"dB"] | stem:[8.7] | stem:[5.4] | stem:[4.3] | stem:[4.4]
+|===
+
+The stem:[M] values of stem:[abs hat S] given by these trials can be used to
+construct a histogram, which when scaled appropriately, as described in <<jcgm101,
+clause=7.5.2>>, would give an approximation (which would improve as stem:[M] is
+increased) to the probability density function (PDF) for stem:[abs hat S]. This PDF
+is asymmetric, unlike the normal distribution assumed by the GUM. MC is expected to
+be more reliable in such circumstances.
+
+Consider now that stem:[u(hat x) = u(hat y) = 0.0050] (rather than stem:[0.0100]).
+The results are given in columns 4 and 5 of <<table2>>. The difference between the
+outcomes from LPU and <<jcgm101>> is now much less since the degree of approximation
+in the first-order Taylor expansion of the measurement function, which underpins LPU,
+is better over a shorter interval. Moreover, the PDF is less skewed.
+
+In general, it is not recommended to perform uncertainty calculations using
+((logarithmic quantities)) in, for example, stem:["dB"]. Logarithmic quantities should be
+converted to the equivalent linear format before performing uncertainty calculations.
+====
+(((measurement model,linear)))
+
+[[cls-8.3.5]]
+==== Non-linear relationships
+
+When a plot of data representing a relationship between two variables suggests an
+underlying non-linear behaviour, it is often possible to transform the raw data to
+make it 'more linear'. Doing so allows linear regression techniques to be used more
+effectively with such data. Re-parametrization in such an instance relates to the
+fact that the straight-line representation of the transformed data implies a
+different representation from that for the raw data. Such transformations generally
+change the statistical structure of the problem (see <<cls-8.3.6>>).
+(((measurement model,non-linear)))
+
+[[cls-8.3.6]]
+==== Impact on uncertainties
+
+For uncertainty propagation, not all algebraically equivalent models behave
+necessarily in the same way because they are not equivalent statistically. An
+algebraic transformation should be accompanied by a corresponding statistical
+transformation to ensure the integrity of the results obtained. The use of the law of
+propagation of uncertainty (<<jcgm100, clause=5.1.2>>) for this purpose is inadequate
+in some situations. Since the law of propagation of uncertainty is based on a
+linearization of the model, if errors originally followed a certain distribution, in
+the transformed problem they would generally follow a different distribution.
+Transformations have an impact on the uncertainties associated with the estimates of
+the quantities involved or on the weights in a statistical regression analysis
+involving such a model. See the example in <<cls-8.3.4>>.(((measurement model,linearization)))
+
+NOTE: Transformations also have an impact on the probability distributions used to
+characterize the quantities involved <<ohagan129>>.
+
+[example]
+.Re-parametrization of a model for lead adsorption by nano-particles
+====
+The Langmuir adsorption model <<langmuir>> describes the theoretical relation between the
+amount concentration stem:[ii(Gamma)] of a solute on the surface of an adsorbent to
+the amount concentration stem:[c] of the solute in the liquid with which it is in
+contact:
+
+[[eq17]]
+[stem]
+++++
+ii(Gamma) = ii(Gamma)_"max" (Kc)/(1+Kc),
+++++
+
+where stem:[K] is the Langmuir binding-strength coefficient and
+stem:[ii(Gamma)_"max"] (the measurand) is the maximum sorption capacity of the
+adsorbent. A reparametrized form of the Langmuir model is often used based on taking
+the reciprocal of both sides of <<eq17>>, which expresses stem:[1//ii(Gamma)]
+as a linear function of stem:[1//c]:
+
+[[eq18]]
+[stem]
+++++
+1/ii(Gamma) = 1/ii(Gamma)_"max" + 1/(ii(Gamma)_"max"K) xx 1/c.
+++++
+
+The model parameters stem:[1//ii(Gamma)_"max"] and stem:[1//(ii(Gamma)_"max" K)] can
+be obtained by linear regression. Although <<eq17;and!eq18>> are
+mathematically equivalent, different results are obtained for stem:[ii(Gamma)_"max"].
+
+Consider measured values of stem:[c] equal to
+
+[stem%unnumbered]
+++++
+{: (0.20 "unitsml(mmol*L^(-1))"",", 0.25 "unitsml(mmol*L^(-1))"", ", 0.33 "unitsml(mmol*L^(-1))"", ", 0.60 "unitsml(mmol*L^(-1))"", ", 2.00 "unitsml(mmol*L^(-1))") :},
+++++
+
+and corresponding measured values of stem:[ii(Gamma)] equal to
+
+[stem%unnumbered]
+++++
+{: (9.4 "unitsml(mmol*g^(-1))"", ", 11.1 "unitsml(mmol*g^(-1))"", ", 13.9 "unitsml(mmol*g^(-1))"", ", 20.0 "unitsml(mmol*g^(-1))"", ", 33.3 "unitsml(mmol*g^(-1))"".") :}
+++++
+
+Assuming stem:[c] and stem:[ii(Gamma)] are independent, and not accounting for
+measurement uncertainties associated with stem:[ii(Gamma)] and stem:[c] in order to
+illustrate the point, stem:[hat ii(Gamma)_"max" = 46.4 "unitsml(mmol*g^(-1))"] with
+associated standard uncertainty stem:[u(hat ii(Gamma)_"max") = 0.3
+"unitsml(mmol*g^(-1))"] is obtained by non-linear least-squares regression using
+<<eq17>>.
+
+Ordinary least-squares (OLS) fitting using <<eq18>> gives stem:[1//hat
+ii(Gamma)_"max" = 0.0214 "unitsml(g*mmol^(-1))"] with associated standard uncertainty
+stem:[u(1//hat ii(Gamma)_"max") = 0.0006 "unitsml(g*mmol^(-1))"], which following
+reciprocation corresponds to stem:[hat ii(Gamma)_"max" = 46.7 "unitsml(mmol*g^(-1))"] with
+associated standard uncertainty stem:[u(hat ii(Gamma)_"max") = 1.4
+"unitsml(mmol*g^(-1))"].
+
+Several other linearized versions of <<eq17>> exist; it is emphasized that
+re-parametrization can have a significant effect on the results if the transformed
+uncertainties are obtained using the law of propagation of uncertainty, which assumes
+sufficiently accurate linearizability. Although both models are _algebraically_
+equivalent, OLS treatment of these models differs in its assumptions. The OLS
+treatment of <<eq17>> implies normality in the dispersion of stem:[ii(Gamma)] values
+whereas OLS treatment of <<eq18>> implies normality in the dispersion of
+stem:[1//ii(Gamma)] values. These assumptions are inconsistent.
+(((measurement model,re-parametrization)))
+
+Although the values of stem:[ii(Gamma)_"max"] obtained by the two methods are
+consistent with respect to their associated standard uncertainties, this may not be
+the case in other circumstances.
+====
+
+[[cls-8.3.7]]
+==== Explicit and implicit forms of measurement model
+
+When it is possible to transform an implicit expression to an explicit expression,
+there can be a preferred choice that depends on the particular circumstances.
+Sometimes an implicit form is preferable because it can have better numerical
+behaviour even when an explicit form can be deduced from it.
+
+[example]
+.Representation of a circle
+====
+In the assessment of geometric form in dimensional metrology <<anthony>> the equation for the
+co-ordinates stem:[(x, y)] of a point on a circle centred at stem:[(a, b)] with
+radius stem:[r] is written implicitly as expression stem:[(x-a)^2 + (y-b)^2 = r^2].
+Then, stem:[y] expressed explicitly in terms of the other quantities is given by
+expression stem:[y = b pm [r^2-(x-a)^2\]^(1//2)]. Because of subtractive cancellation
+the use of the latter expression becomes problematic when stem:[abs(x-a) ~~ r].
+Alternatively, a convenient way to represent a circle is through the use of a
+parameter stem:[theta]:
+
+[stem%unnumbered]
+++++
+{: (x = a + r " cos "theta", ", y = b + r" sin "theta",") :}
+++++
+
+which is appropriate and numerically stable for values of stem:[theta] between
+stem:[0] and stem:[2pi] and all co-ordinates stem:[(x, y)].
+====
+
+[[cls-8.4]]
+=== Multi-stage measurement models
+
+[[cls-8.4.1]]
+==== {blank}
+
+In many stepwise processes in metrology, quantities from intermediate measurements
+are naturally used in a subsequent measurement. Each stage in the process can be
+described by a measurement model with input quantities and output quantities. This
+set of measurement models constitutes a multi-stage measurement model and can be used
+as such. Equivalently, the complete process can sometimes conveniently be described
+by a single-stage measurement model, perhaps involving a different number of
+quantities.(((measurement model,multi-stage)))
+
+[[cls-8.4.2]]
+==== {blank}
+
+Multi-stage models also arise as a natural consequence of the dissemination chain
+connecting ideally all kinds of measurements to the relevant SI units. Sometimes, to
+evaluate correctly the uncertainty associated with an estimate of the output
+quantities at a given stage, it is necessary to consider the previous stages in
+connection with the current stage. By implication, it can be necessary to consider
+the corresponding measurement models as a single multi-stage measurement model. An
+instance arises in mass and force measurements, in which covariances between volume
+and mass at the various stages of the dissemination chain must be taken into account
+to evaluate correctly the contribution of the buoyancy correction to the uncertainty
+associated with the output estimate of the current calibration <<malengo>>.(((covariance, elimination of)))
+
+[[ex2-8.4.1]]
+[example]
+.How long is a piece of string?
+====
+Consider the problem of establishing a model for the measurement of the length
+stem:[L] of a piece of string using a steel tape. Inevitably, idealizations and
+approximations are necessary. A simpler treatment involving fewer factors is
+available <<bell>>. The measurand is the length stem:[L]. It depends on several input
+quantities representing the observed string length and corrections to that length.
+Most of these quantities are expressed in terms of other quantities. The measurement
+model takes the form
+
+String length:: = Observed string length (A)
++
+--
++ Steel tape length correction (B) +
++ String length correction (&#x200c;C) +
++ Measurement process correction (D),
+--
+
+where
+
+(A) Observed string length:: = Average of a number of repeated observations
+stem:[(Q_11)]
+
+(B) Steel tape length correction:: = [Length deviation due to tape calibration
+imperfections stem:[(Q_21)]
++
+--
++ Extension in tape due to stretching (this correction is negative if there is
+shrinking rather than stretching) stem:[(Q_22)] +
++ Reduction in effective length of tape due to bending of the tape stem:[(Q_23)] +
+stem:[xx] Multiplicative correction for steel tape thermal expansion stem:[(Q_24)]
+--
+
+(&#x200c;C) String length correction:: = Reduction in effective string length due to string
+departing from a straight line stem:[(Q_31)]
++
+--
++ Reduction in string length as a result of shrinking (negative if there is
+stretching rather than shrinking) stem:[(Q_32)]
+--
+
+(D) Measurement process correction:: = Length deviation due to inability to align end
+of tape with end of string due to fraying of the string ends stem:[(Q_41)]
++
+--
++ Length deviation due to tape and string not being parallel stem:[(Q_42)] +
++ Length deviation due to reading a numerical value from the tape stem:[(Q_43)].
+--
+
+The measurement model is thus expressed symbolically as
+
+[stem%unnumbered]
+++++
+L = Q_11 + (Q_21 + Q_22 + Q_23)Q_24 + (Q_31 + Q_32) + (Q_41 + Q_42 + Q_43).
+++++
+
+Each input quantity stem:[Q_(ij)] would have an estimate and associated standard
+uncertainty, or be characterized by an appropriate probability distribution depending
+on the knowledge available. In the latter case, for instance, (a) a scaled and
+shifted stem:[t] distribution is used for the quantity stem:[Q_11] corresponding to
+the observed string length, based on repeated observations (see
+<<jcgm101,clause=6.4.9>>), and (b) a distribution based on a circular-arc model is
+used for the quantity stem:[Q_23]. This example is continued in <<ex1-10.4.3>>.
+
+The distribution for stem:[Q_23] is related to the chi-squared distribution and does
+not have zero expectation, since the _minimum_ effect of tape bending on the output
+quantity is zero. This degree of sophistication would not be warranted when measuring
+the length of a piece of string, but relevant in some other applications.
+(((probability distribution,chi-squared)))
+
+This example can be interpreted as a multi-stage model with the quantities
+representing the steel-tape-length correction, string-length correction and
+measurement-process correction described by sub-models.
+====
+
+[[ex2-8.4.2]]
+[example]
+.Peak area determined from spectral data
+====
+A requirement in spectroscopy is the detection of peaks in a signal and the
+determination of peak parameters such as area and location. The effects of noise in
+the signal are reduced by first smoothing the data. Peak area can be considered in
+terms of a two-stage model or a single-stage model.
+
+*_Two-stage model_*:: In a first stage data, with associated standard uncertainties,
+are filtered using a windowing function, of rectangular or triangular form, for
+instance. The result of the filtering is a set of smoothed values, with associated
+standard uncertainties and covariances. At least some of these covariances are
+non-zero, since the filtered data depend on the original data. This stage involves an
+explicit multivariate model (see <<cls-13.4>>). +
+In a second stage a linear function of the filtered data is obtained such as peak
+area. To evaluate the standard uncertainty associated with peak area, explicit use is
+made of the standard uncertainties and covariances associated with the filtered data
+established in the first stage. This stage involves an explicit univariate model (see
+<<cls-13.3>>).
+
+*_Single-stage model_*:: In a single-stage model, peak area is expressed directly as
+a function of the unfiltered data by combining explicitly the above two stages. As a
+consequence, the covariances generated in the above first stage require no
+consideration. This single-stage model is univariate and explicit (see <<cls-13.3>>).
+
+The mathematics of these two approaches is as follows:
+
+*_Two-stage model_*:: In the first stage data stem:[bb(ii(y))] representing a spectral signal are
+filtered using a windowing function. The result of the filtering is a vector
+stem:[bb(ii(z)) = bb(ii(C y))], where stem:[bb(ii(C))] is a matrix depending on the
+windowing function. If the ((covariance matrix)) associated with stem:[bb(ii(y))] is
+stem:[bb(ii(U_y))], the covariance matrix associated with stem:[bb(ii(z))] is
+stem:[bb(ii(U_z = CU_y)) bb(ii(C))^TT] (see <<jcgm102,clause=6.2.1.3>>). In the
+second stage a linear function stem:[p = bb(ii(w))^TT bb(ii(z))] of the filtered data
+stem:[bb(ii(z))] is obtained such as peak area. The variance associated with stem:[p]
+is stem:[u^2(p) = bb(ii(w))^TT bb(ii(U_z)) bb(ii(w))].
+
+*_Single-stage model_*:: The two stages when combined into a single stage become
+stem:[p = bb(ii(w))^TT bb(ii(C y))] and stem:[u^2(p) = bb(ii(w))^TT bb(ii(CU_y))
+bb(ii(C))^TT bb(ii(w))].The covariance matrix stem:[bb(ii(U_z))] is not involved in
+the combined calculation.
+
+The signal is often superimposed on a background that is estimated by a constant,
+inclined or curved baseline and subtracted from the original signal before peak
+processing. This subtraction introduces further correlation.
+====
+
+[[cls-8.4.3]]
+==== {blank}
+
+Calibration (see <<cls-11.4>>) is an important instance of a multi-stage model, where
+the determination of a calibration function is followed by its use. Subdivision into
+stages is necessary when one laboratory determines a calibration function and another
+uses it. When there are several calibration parameters (calibration coefficients,
+say), the parameter covariances as well as their standard uncertainties have to be
+made available to the next stage. Combining stages, when that is possible, avoids the
+need to work with these covariances. An instance is <<ex2-8.4.2>> in
+which many covariances would be passed from the first stage to the second. A further
+instance is the <<ex-8.1.6>>. Sometimes a change of variables can
+give an alternative representation of a model, which avoids the use of covariances;
+see, for instance <<jcgm100,annex=H.3>>.
+
+[[cls-8.5]]
+=== Uncertainty associated with choice of model
+
+The choice of measurement model should be examined if it is considered it will have
+an effect on the estimate of the measurand that is significant compared with the
+uncertainty associated with that estimate. For some classes of model, such as those
+that naturally include terms the number of which depends on the available data as in
+polynomial calibration, guidance is available on choosing a model <<iso28038>>. See
+<<cls-11.10>> for model uncertainty in the context of statistical models. Often,
+simply an awareness of the issue and its possible repercussions is the main
+consideration. Also see <<cls-8.2.2>>.
+
+[[cls-8.6]]
+=== Loss of numerical accuracy and its compensation
+
+[[cls-8.6.1]]
+==== {blank}
+
+Inaccuracy can occur in numerical computation as a result of using formulæ or
+algorithms which, although mathematically correct, are not suitable for the task in
+hand.
+
+Such inaccuracy can arise in many areas such as calculating basic statistics (for
+instance, mean and standard deviation of a set of data), fitting polynomials to data
+and simply evaluating a formula. Specific causes of such behaviour include numerical
+errors due to loss of significant digits arising from subtractive cancellation, build
+up of rounding error, and computer underflow or overflow.
+(((numerical problems,overflow)))(((numerical problems,underflow)))
+
+[[cls-8.6.2]]
+==== {blank}
+
+The need to evaluate measurement functions given as formulæ is widespread in
+metrology. Formulæ are provided in papers, reports, data sheets, procedures,
+specifications, guides and documentary standards, and elsewhere. They are used to
+express both theoretical and empirical relationships between quantities. Metrologists
+arguably have the right to expect that a formula provided in a reputable source is
+fit for the purpose for which it was developed. In other words, the formula can be
+directly evaluated manually or implemented on a computer with confidence. It is not
+always the case that a faithful implementation of a given formula yields a result
+with the numerical accuracy that might be expected, especially compared with the use
+of alternative mathematically equivalent formulæ. In some instances the loss of
+numerical accuracy may not be acceptable.
+
+[[cls-8.6.3]]
+==== {blank}
+
+Since a computer will be used for most calculations of the type considered in this
+guide, computations will naturally be carried out using all digits available
+(typically about 16 decimal digits in a computer wordlength). This number of digits
+is usually more than adequate for providing measurement results to the numerical
+accuracy required in practice. Certain formulæ or algorithms, however, are such that
+the computed measurement results might not have sufficient numerical accuracy due to
+such causes as in <<cls-8.6.1>>. A reasonable choice of parametrization can help to
+avoid such a possibility.
+
+[[cls-8.6.4]]
+==== {blank}
+
+If the measurement results are to be used in a further calculation, sufficient
+numerical accuracy should be retained in the values to be passed to that calculation.
+In accordance with <<cls-8.6.3>>, whenever possible calculations should proceed with
+the numerical values represented on the computer rather than the rounded values that
+may be used for reporting purposes. A common occurrence is when a calibration
+function is used in a first step to obtain calibration coefficient estimates,
+uncertainties and covariances, and, in a second step, this information is used to
+provide stimulus values and associated uncertainties corresponding to given response
+values and associated uncertainties. The use of rounded values from the first step
+may provide insufficient numerical accuracy in the required stimulus values and in
+the associated uncertainties.
+
+[[cls-8.6.5]]
+==== {blank}
+
+Compensation can often be made for loss of numerical accuracy, especially if it is
+anticipated that the computed results might be adversely affected. Rearranging,
+simplifying or re-parametrizing a mathematical expression can in some instances
+improve substantially the numerical accuracy of the evaluated result. Although it is
+beyond the scope of this guide to give extensive advice (that is the province of
+numerical analysis <<wilkinson>>), the examples below are indicative of numerical
+difficulties that can arise and the manner in which they can be overcome. The use of
+good quality mathematical software libraries is recommended.
+
+[[ex1-8.6.5]]
+[example]
+.Subtractive cancellation in calculating mean and standard deviation
+====
+For a set of values stem:[x_i, i = 1, ..., n], which may be repeated observations,
+obtained independently, of some quantity, formulæ for their mean stem:[bar x] and
+variance (squared standard deviation) stem:[s^2] are
+
+[[eq19]]
+[stem]
+++++
+{: (bar x = 1/n sum_(i=1)^n x_i", ", s^2 = 1/(n-1) sum_(i=1)^n (x_i - bar x)^2".") :}
+++++
+
+These formulæ are numerically stable. An alternative, mathematically equivalent
+formula is
+
+[[eq20]]
+[stem]
+++++
+s^2 = 1/(n-1) (sum_(i=1)^n x_i^2 - n bar x^2),
+++++
+
+a formula that should not be used for high-precision metrological data since it is
+potentially numerically unstable <<cox39>>. For data having stem:[r] leading decimal
+digits in common, typically stem:[2r] decimal digits are lost by applying <<eq20>>.
+
+Mass data, in grams, obtained under repeatability conditions of measurement using a
+comparison method <<bich>> are
+
+[%unnumbered]
+[cols=4]
+|===
+| stem:[1000.0007122]
+| stem:[1000.0007123]
+| stem:[1000.0007126]
+| stem:[1000.0007127]
+| stem:[1000.0007128]
+| stem:[1000.0007128]
+| stem:[1000.0007129]
+|
+|===
+
+stem:[s^2] given by <<eq19>> is stem:[7.1 xx 10^(-14) "unitsml(g^2)"] and that given
+by <<eq20>> is stem:[3.1 xx 10^(-10) "unitsml(g^2)"], using 16 significant decimal
+digits in calculations <<ieee754>>. These values differ by some four orders of magnitude.
+The corresponding values of stem:[s] are stem:[0.27 "unitsml(ug)"] and stem:[18
+"unitsml(ug)"]. The latter value is clearly incorrect since the data values on which
+stem:[s] is based differ from each other by less than stem:[1 "unitsml(ug)"]. The
+reason for this failure is that catastrophic subtractive cancellation takes place in
+<<eq20>> due to minute numerical rounding errors: the two contributory terms in
+parentheses in <<eq20>> are respectively stem:[7.000009976603555 xx 10^6
+"unitsml(g^2)"] and stem:[7.000009976603553 xx 10^6 "unitsml(g^2)"], differing by 2
+in the 15th significant decimal place.(((numerical problems,rounding)))
+
+A second instance of mass measurement data, again in grams, is
+
+[%unnumbered]
+[cols=4]
+|===
+| stem:[1000.0000948]
+| stem:[1000.0000950]
+| stem:[1000.0000950]
+| stem:[1000.0000950]
+| stem:[1000.0000950]
+| stem:[1000.0000951]
+| stem:[1000.0000950]
+|
+|===
+
+For this data, <<eq19>> gives stem:[s^2 = 8.1 xx 10^(-15) "unitsml(g^2)"] and
+<<eq20>> gives stem:[-3.1 xx 10^(-10) "unitsml(g^2)"]. Again, catastrophic
+subtractive cancellation takes place in <<eq20>>, so much so that the variance is
+computed as negative, an impossible value. The two contributory terms in parentheses
+in <<eq20>> are stem:[7.000001329800062 xx 10^6 "unitsml(g^2)"] and
+stem:[7.000001329800064 xx 10^6 "unitsml(g^2)"], respectively, which differ by -2 in
+the 15th significant decimal place.(((numerical problems,subtractive cancellation)))
+
+As both sets of data have some 9 leading decimal digits in common, about 18 digits
+would be expected to be lost by unstable <<eq20>>. Since about 16 decimal digits are
+available, no correct digit in the computed stem:[s^2], and hence stem:[s], can be
+anticipated.
+
+Consider stem:[n], the number of values of stem:[x_i], to be very large, stem:[10^6]
+or stem:[10^7], say, as arises, for instance, in a Monte Carlo implementation of the
+propagation of distributions (see <<jcgm101>>). The direct use of <<eq19>> not only
+requires all the stem:[x_i] to be available, but also necessitates two passes
+through the data, first to calculate stem:[bar x] and then stem:[s^2]. Incremental,
+'one-pass', forms of <<eq19>> are available <<higham, chapter=4>>. They provide numerical
+accuracy comparable to that for <<eq19>>, but use minimal memory.
+====
+
+[[ex2-8.6.5]]
+[example]
+.Inadequate form of polynomial for evaluation purposes
+====
+Consider the evaluation of a particular polynomial stem:[p(x)] of degree six
+<<rice,page=125>> in the region of a minimum of stem:[p]. The function is convex, with
+essentially flat behaviour in the middle of the interval. <<fig4>> shows stem:[p]
+evaluated at 101 equispaced stem:[x]-values in the interval stem:[[0.99, 1.01\]]
+with successive points joined by straight lines. The behaviour is highly erratic,
+and nothing like the smooth behaviour expected of a polynomial of modest degree. The
+irregularities correspond to large relative numerical errors in the computed values
+of the polynomial.
+
+The polynomial in monomial form is
+
+[[eq21]]
+[stem]
+++++
+p(x) = 1 - 6x + 15x^2 - 20x^3 + 15x^4 - 6x^5 + x^6,
+++++
+
+[[fig4]]
+.Polynomial evaluated using a numerically stable formula and (irregular curve) an unstable formula with successive evaluation points joined by straight lines
+image::img04.png[]
+
+which was the form that was evaluated in creating the 'jagged' line. The evaluation
+of the <<eq21>> near stem:[x = 1] suffers appreciable subtractive cancellation:
+individual terms in the polynomial (for instance, stem:[15x^2] and stem:[-20x^3])
+have magnitudes of between 1 and 20 near stem:[x = 1], yet the value of stem:[p] is
+very much smaller, for instance, of the order of stem:[10^(-13)] at stem:[x = 0.99].
+So many (some 14) digits are lost for this value of stem:[x].
+
+The polynomial stem:[p(x)] is in fact the expansion of stem:[(1 - x )^6], a form
+that is perfectly suitable for direct evaluation. The smooth curve in <<fig4>> was
+formed using this representation.
+
+Imagine using the <<eq21>> for the determination of a root of stem:[p(x) = 0], as
+would be required when working with an implicit model. The graph shows many spurious
+'zeros' (the points of intersection of the irregular curve and the horizontal line)
+induced by the noisy function values. More strictly, there are many pairs of
+adjacent points when the computed value of the function takes opposite signs.
+
+A similar situation would arise when determining the minimum of stem:[p]. The noise
+induced into the values of the function by the use of <<eq21>> would cause a poor
+estimate of the minimum to be returned. Indeed, there are many local minima. It
+would also be likely to introduce difficulties for the minimization routine, which
+is probably designed to operate effectively for smooth continuously differentiable
+functions. This function has all these properties mathematically, but not
+numerically in the field of floating-point arithmetic.
+====
+
+[[ex3-8.6.5]]
+[example]
+.Underflow and overflow in the evaluation of the geometric mean
+====
+The ((geometric mean)) stem:[x] <<cox38>> of stem:[n] positive values stem:[x_1, ..., x_n] is
+required. For each stem:[x_i] approximately equal to stem:[0.5] and stem:[n = 2000],
+the geometric mean obtained using the 'natural' formula stem:[x = (x_1 xx ... xx
+x_n)^(1//n)] is computed as zero in IEEE arithmetic <<ieee754>>, as implemented on most
+computers, because of underflow. The correct result is approximately stem:[0.5]. The
+difficulty can be overcome by forming stem:[(1//n) sum_(i=1)^n "ln "x_i] and
+exponentiating the result. If, on the other hand, each stem:[x_i] is now greater
+than unity, approximately 2, say, and stem:[n = 2000], say, the 'natural'
+calculation will overflow, but the modification will provide a reliable value.
+====
+
+[[ex4-8.6.5]]
+[example]
+.Roots of a quadratic equation
+====
+The textbook formula for the roots of a quadratic equation is not always numerically
+ideal. Consider <<ex2-8.1.4>>. For certain values of stem:[a],
+stem:[b] and stem:[c] (for instance, given by stem:[T ~~ T_"ref"], stem:[rho_a &Lt;
+rho_m], stem:[lambda &Lt; mg]), a value of stem:[p] obtained from <<eq11>> may be
+numerically inaccurate, as a result of subtractive cancellation, and thus not be fit
+for purpose. A recommended approach to forming the output estimates given input
+estimates is as follows. Let the two roots of the quadratic <<eq10>> be stem:[z_1]
+and stem:[z_2] with stem:[abs z_1 >= abs z_2]. Then, since the coefficients stem:[a]
+and stem:[b] in this equation are positive for this application, stem:[z_1] and
+stem:[z_2] are evaluated (without subtractive cancellation) from stem:[z_1 = (-b -
+sqrt(b^2-4ac))//(2a)] and stem:[z_2 = c//(z_1a)], using a property for the product
+of the roots of a quadratic equation.
+====

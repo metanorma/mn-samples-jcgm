@@ -1,0 +1,226 @@
+[[cls-6]]
+== Specifying the ((measurand))(((measurand,definition)))
+
+[[cls-6.1]]
+=== {blank}
+
+The choice of the measurand depends on the purpose of the measurement and may take
+account of the _target measurement uncertainty_ (see <<jcgm200, clause=2.34>>). Other
+processes and measurands are possible and the appropriate choice depends on the
+application of the measurement result.
+
+NOTE: Some measurands may be time-dependent such as in <<cls-10.6>> and <<annexB>>.
+(((measurand,time-dependent)))
+
+[example]
+.Diameter of a cylindrical component
+====
+In dimensional metrology, the diameter of a component of cylindrical form is obtained
+from knowledge of the profile of a right section of the component. If the component
+is a cylindrical piston, which is required to fit inside the cylinder of a
+piston-cylinder assembly, the measurand is the diameter of the minimum circumscribing
+circle (MCC) for the profile. <<fig1>> (left) gives the MCC for a lobed profile.
+
+[[fig1]]
+.Minimum circumscribed circle (left, blue) and maximum inscribed circle (right, red), described by thin lines, for lobed profiles indicated by thick curved lines
+image::img01.png[]
+
+If the component is a cylinder, which is required to contain a cylindrical piston in
+a piston-cylinder assembly, the measurand is the diameter of the maximum inscribed
+circle (MIC) for the profile. <<fig1>> (right) gives the MIC for a lobed profile.
+
+The profiles exhibit lobing due to the machining process used to produce the
+corresponding parts. For further information see reference <<euramet>> (Calibration Guide
+6). Reference <<anthony>> describes how to determine MCC and MIC by expressing the problems
+as optimization problems with linear constraints, a 'standard form' for solution.
+====
+
+[[cls-6.2]]
+=== {blank}
+
+Taking account of any given target measurement uncertainty, the measurand should be
+specified sufficiently well so that its value is unique for all practical purposes
+related to the measurement. Regulations, legislation or contracts can contain
+stipulations concerning the measurand, and often these documents specify a measurand
+to the relevant extent, for instance, by reference to an international standard (such
+as ISO or IEC) or OIML recommendation. In general, an adequate specification of the
+measurand would often involve location in space and time of the measurement, or
+specification of reference conditions of, for example, temperature and pressure.
+
+[[ex-6.2]]
+[example]
+.Length of a gauge block (also see example in <<cls-13.3>>)
+====
+The (central) length of a gauge block is defined as the perpendicular distance
+between the central point of one end face and a plane in contact with the opposite
+end face, when the gauge block is at stem:[20 "unitsml(degC)"].
+====
+
+[[cls-6.3]]
+=== {blank}
+
+In material testing, the measurand is often some property of an entire bulk of
+material under consideration. The measurement result to be obtained is required to be
+valid for the bulk (population) from which the sample is taken for measurement or
+testing. In such cases the measured value can be obtained through a process of
+sampling and measurement. Aspects such as the uncertainty arising from sampling, or
+also sample processing, are often part of the specification of the measurand in these
+circumstances. Often these aspects are covered in a sampling plan (see, for instance,
+ISO/IEC 17025 <<iso17025>>). Also see <<cls-6.1>>.
+
+[example]
+.Rockwell C hardness
+====
+Rockwell C hardness is defined as hardness value, measured in accordance with ISO
+6508, obtained using a diamond cone indenter and a force of 1 471 N <<astme9>>, <<iso6508-1>>.
+Possible ways to specify the measurand relating to Rockwell C hardness of a material can
+relate to a specified point on the material (or on a sample from it) at a specified
+time, and mean Rockwell C hardness of the material. The latter is typically obtained
+as the average over designated points (in the material itself or in the sample) at a
+specified time. The specification of the measurand as 'Rockwell C hardness of the
+material' would only be adequate if the sample (and the material) were substantially
+homogeneous and stable for the intended use of the material.
+====
+
+[example]
+.Emission monitoring
+====
+Two possible measurands relating to a component in an effluent are its mass
+concentration at the time of sampling and its total mass over a calendar year. In the
+fields related to power production, emissions are often also qualified in terms of
+mass emitted per unit of energy produced.
+====
+
+[example]
+.Biological material measurement
+====
+For a consignment of biological material subject to measurement, the measurand might
+relate to a particular sample of the material, a set of samples, the method used to
+make the measurement, the laboratory performing the measurement, or a set of
+laboratories involved in making the measurement.
+====
+
+[[cls-6.4]]
+=== {blank}
+
+The specification of a measurand often requires describing the conditions for which
+the measurement result is valid.
+
+[example]
+.Catalytic activity
+====
+The catalytic activity of an enzyme depends on the pH, temperature and other
+conditions. A complete specification of the measurand therefore requires these
+conditions to be specified.
+====
+
+[example]
+.Calorific value of natural gas
+====
+The calorific value (or, more correctly, the enthalpy of combustion) of natural gas
+is a function of temperature and pressure. When specifying the measurand, the
+relevant temperature and pressure are part of that specification. For example,
+reference conditions could be stem:[288.15 "unitsml(K)"] and stem:[101.325
+"unitsml(kPa)"] <<iso13443>>. Often there are contractually agreed reference conditions
+specified.
+====
+
+[[cls-6.5]]
+=== {blank}
+
+The measurement procedure should, as appropriate, address how the result is converted
+from the conditions of measurement to the conditions for which it is reported.
+
+[[ex1-6.5]]
+[example]
+.Length of a gauge block (also see example in <<cls-13.3>>)
+====
+The standard reference temperature for dimensional metrology is stem:[20
+"unitsml(degC)"] <<iso1>>. This standard reference temperature is exact, so that the
+laboratory temperature, even in the most sophisticated systems, can only approximate
+it. Consequently, the measurement model for the length of the gauge block in the
+example in <<cls-6.2>> contains a correction to that length based on i) the
+temperature difference between the reference temperature and the laboratory
+temperature (for example, stem:[23 "unitsml(degC)"]), and ii) the average coefficient
+of linear expansion in that range. Even when the _indicated_ laboratory temperature
+is stem:[20 "unitsml(degC)"] and the value of the correction would be equal to zero,
+there would still be a non-zero associated uncertainty.
+====
+
+[example]
+.Natural gas volume
+====
+Natural gas volume is measured at the metering pressure and temperature of the gas in
+the transfer line. The volume is reported at reference conditions for pressure and
+temperature, which are agreed between the contracting parties. The conversion of the
+natural gas volume at metering to reference conditions involves, among others, the
+compressibility factor of the natural gas at metering and reference conditions. The
+conversion is part of the measurement model.
+====
+
+=== {blank}
+
+In general, the same measurand can be represented by different models, depending
+primarily on the measurement principle chosen for its determination. Even within the
+same measurement principle, different models would result from different practical
+implementations of that principle, from the level of detail in the description of the
+measurement and the specific mathematical representation chosen among many that are
+often possible.
+
+[example]
+.SI value of the Boltzmann constant
+====
+The SI value of the Boltzmann constant <<newell>> was obtained from three different
+measurement principles, to which correspond as many measurement methods: acoustic gas
+thermometry, dielectric constant gas thermometry and Johnson noise thermometry. A
+specific measurement model holds for each of these methods. In addition, differences
+exist even among the models of those laboratories using the same method, due to
+different practical implementations of the method, and perhaps to the level of detail
+in identifying effects.
+====
+
+=== {blank}
+
+Ultimately, the measurement model describes the realization of the measurand
+according to the knowledge of those involved in the measurement. The description may
+not fully represent the measurand because some unrecognized effects were not
+included. As a consequence, the uncertainty associated with the estimate of the
+measurand will not contain the contributions from those effects.
+
+[example]
+.Mass comparison
+====
+In modern mass comparators, the mass stem:[m_"w"] of a standard weight stem:["W"] is determined
+(say, in vacuum) by comparing the forces stem:[F_"w" = g_"w"m_"w"] and stem:[F_"r" =
+g_"r"m_"r"] exerted on the comparator pan by stem:["W"] and by a reference mass
+standard stem:["R"], subjected to local accelerations due to gravity stem:[g_"w"] and
+stem:[g_"r"], respectively. The pan is held at a constant level by a servo mechanism.
+In most applications, it can safely be assumed that stem:[g_"w" = g_"r" = g], so that
+the model takes the simple form stem:[m_"w" = m_"r" - Delta m], where stem:[Delta m]
+is the comparator indication and stem:[g] has been dropped.
+
+The assumption stem:[g_"w" = g_"r" = g] is correct when the centres of gravity of the
+two standards during weighings lie at the same elevation, and can anyway be adequate
+depending on the target uncertainty. If this is not the case, the model may need to
+be extended, usually with a correction (a further input quantity to the measurement
+model) to the mass stem:[m_"r"] of the reference standard, having the form
+
+[stem%unnumbered]
+++++
+m_"r" (Delta g)/(Delta h) 1/g (h_"r"-h_"w"),
+++++
+
+where stem:[Delta g//(g Delta h) ~~ -2.4 xx 10^(-7) "unitsml(m^(-1))"] is the
+relative vertical gradient of the local acceleration due to gravity and stem:[h_"r" 
+- h_"w"] is the difference in elevation between the centres of gravity of the
+standards being compared. Whereas the uncertainty associated with the correction is
+normally negligible, the correction itself can be significant. This is the case in
+the comparisons at the highest level of standards made of materials having very
+different densities (and consequently different sizes and sometimes shapes), such as
+silicon, stainless steel and platinum-iridium standards. Neglecting to include such a
+correction in the model would imply an incomplete description of the measurand,
+resulting in an error with respect to a correctly specified measurand. The error
+amounts to about stem:[-3 "unitsml(ug)"] when comparing a stainless steel standard
+with a platinum-iridium prototype. This value is of the same order of magnitude of
+the standard uncertainty associated with the estimate of the measurand.
+====

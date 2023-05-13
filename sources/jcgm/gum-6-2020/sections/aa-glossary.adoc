@@ -1,0 +1,21 @@
+[[annexA]]
+[appendix]
+== Glossary of principal symbols
+
+The following principal symbols are used throughout the document:
+
+stem:[c]:: sensitivity coefficient (first partial derivative)
+stem:[f]:: measurement model (explicit form)
+stem:[h]:: measurement model (implicit form)
+stem:[m]:: number of output quantities
+stem:[N]:: number of input quantities
+stem:[Q]:: input quantity, used to calculate another input quantity (stem:[X])
+stem:[s]:: standard deviation
+stem:[u]:: standard uncertainty
+stem:[X]:: input quantity
+stem:[x]:: estimate of an input quantity
+stem:[Y]:: output quantity
+stem:[y]:: estimate of an output quantity
+
+Other symbols, particularly those appearing in the examples, are introduced as they
+occur.

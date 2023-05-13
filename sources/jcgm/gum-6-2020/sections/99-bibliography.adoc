@@ -1,0 +1,326 @@
+[bibliography]
+== References
+
+* [[[akaike,1]]], AKAIKE, H. A new look at the statistical model identification. _IEEE Transactions on Automatic Control 19_, 6 (1974), 716--723.
+
+* [[[amc2,2]]], ANALYTICAL METHODS COMMITTEE. Robust Statistics -- How Not to Reject Outliers. Part 1. Basic Concepts. _Analyst 114_ (1989), 1693--1697. Royal Society of Chemistry.
+
+* [[[amc3,3]]], ANALYTICAL METHODS COMMITTEE. Uncertainty of measurement: implications of its use in analytical science. _Analyst 120_ (1995), 2303--2308.
+
+* [[[anderson,4]]], ANDERSON, T. W., AND DARLING, D. A. Asymptotic theory of certain "goodness-of-fit" criteria based on stochastic processes. _Annals of Mathematical Statistics 23_ (1952), 193--212.
+
+* [[[andor,(5)BIPM Metrologia 35 4 427]]], ANDOR, G. Approximation function of spectral irradiance of standard lamps. _Metrologia 35_, 4 (1998), 427.
+
+* [[[anthony,6]]], ANTHONY, G. T., ANTHONY, H. M., BITTNER, B., BUTLER, B. P., COX, M. G., DRIESCHNER, R., ELLIGSEN, R., FORBES, A. B., GROSS, H., HANNABY, S. A., HARRIS, P. M., AND KOK, J. Reference software for finding Chebyshev best-fit geometric elements. _Precision Engineering 19_ (1996), 28--36.
+
+* [[[antoine,7]]], ANTOINE, C. Tensions des vapeurs; nouvelle relation entre les tensions et les températures. :Comptes Rendus des Séances de l'Académie des Sciences 107: (1888), 681--684, 778--780, 836--837.
+
+* [[[askey, 8]]], ASKEY, R. A., AND ROY, R. Gamma function. In _NIST Handbook of Mathematical Functions_, F. W. J. Olver, D. W. Lozier, R. F. Boisvert, and C. W. Clark, Eds. Cambridge University Press, Cambridge, UK, 2010.
+
+* [[[astme9,9]]], ASTME. ASTM E18-19:2019, _Standard Test Methods for Rockwell Hardness of Metallic Materials_.
+
+* [[[astme10,10]]], ASTME. ASTM E2782-11:2011, Standard Guide for Measurement Systems Analysis (MSA).
+
+* [[[atkins,11]]], ATKINS, P., AND DE PAULA, J. _Physical Chemistry_, 8th ed. W. H. Freeman, 2006.
+
+* [[[bartel12,12]]], BARTEL, T. Uncertainty in NIST force measurements. _Journal of Research of the National Institute of Standards and Technology 110_, 6 (2005), 589--603.
+
+* [[[bartel13,(13)BIPM Metrologia 53 3 965]]], BARTEL, T., STOUDT, S., AND POSSOLO, A. Force calibration using errors-in-variables regression and Monte Carlo uncertainty evaluation. _Metrologia 53_, 3 (2016), 965--980.
+
+* [[[basso,14]]], BASSO, D., PESARIN, F., SALMASO, L., AND SOLARI, A. _Permutation Tests for Stochastic Ordering and ANOVA -- Theory and Applications with R_. Springer, New York, NY, 2009.
+
+* [[[bell,15]]], BELL, S. Measurement Good Practice Guide No. 11. A Beginner's Guide to Uncertainty of Measurement. Tech. rep., National Physical Laboratory, Edition 2, 2001.
+
+* [[[berger,16]]], BERGER, J. The case for objective Bayesian analysis. _Bayesian Analysis 1_, 3 (2006), 385--402.
+
+* [[[bich,(17)BIPM Metrologia 27 3 111]]], BICH, W. Variances, covariances and restraints in mass metrology. _Metrologia 27_, 3 (1990), 111.
+
+* [[[bickel,18]]], BICKEL, P. J., AND DOKSUM, K. A. _Mathematical Statistics -- Basic Ideas and Selected Topics_, 2nd ed., vol. I. Chapman and Hall/CRC, San Francisco, California, 2015.
+
+* [[[bipm19,19]]], BIPM. Mutual recognition of national measurement standards and of measurement certificates issued by national metrology institutes (MRA). Tech. rep., Bureau International des Poids et Mesures, Sèvres, France, 1999.
+
+* [[[sib,(20)BIPM SI Brochure]]], BIPM. The International System of Units (SI), 2019. (SI Brochure).
+
+* [[[jcgm106,(21)JCGM 106:2012]]], BIPM, IEC, IFCC, ILAC, ISO, IUPAC, IUPAP, AND OIML. Evaluation of measurement data -- The role of measurement uncertainty in conformity assessment. Joint Committee for Guides in Metrology, JCGM 106:2012.
+
+* [[[blewitt,22]]], BLEWITT, G. Basics of the GPS Technique: Observation Equations. _In Geodetic Applications of GPS_, B. Jonsson, Ed., Reports in Geodesy and Geographical Information Systems. National Land Survey, Gävle, Sweden, 1997, pp. 9--54. Lecture Notes for Nordic Autumn School, Båstad, Sweden, 26-31 August, 1996.
+
+* [[[box,23]]], BOX, G. E. P., JENKINS, G. M., REINSEL, G. C., AND LJUNG, G. M. _Time Series Analysis: Forecasting and Control_, fifth ed. John Wiley & Sons, Hoboken, NJ, 2016.
+
+* [[[buckland,24]]], BUCKLAND, S. T., BURNHAM, K. P., AND AUGUSTIN, N. H. Model selection: An integral part of inference. _Biometrics 53_ (1997), 603--618.
+
+* [[[burnham,25]]], BURNHAM, K., AND ANDERSON, D. _Model Selection and Multimodel Inference: A Practical Information-Theoretic Approach_, 2nd ed. Springer-Verlag, New York, NY, 2002.
+
+* [[[butler, 26]]], BUTLER, B. P., COX, M. G., ELLISON, S. L. R., AND HARDCASTLE, W. A., Eds. _Statistics Software Qualification: Reference Data Sets_. Royal Society of Chemistry, Cambridge, 1996.
+
+* [[[cavendish,27]]], CAVENDISH, H. Experiments to determine the density of the earth. by Henry Cavendish, Esq. F. R. S. and A. S. _Philosophical Transactions of the Royal Society of London 88_ (1798), 469--526.
+
+* [[[chambers,28]]], CHAMBERS, J., CLEVELAND, W., KLEINER, B., AND TUKEY, P. _Graphical Methods for Data Analysis_. Wadsworth, Belmont, CA, 1983.
+
+* [[[charki,29]]], CHARKI, A., AND PAVESE, F. Data comparisons and uncertainty: a roadmap for gaining in competence and improving the reliability of results. _International Journal of Metrology and Quality Engineering 10_ (2019), 1.
+
+* [[[chatfield,30]]], CHATFIELD, C. Model uncertainty, data mining and statistical inference. _Journal of the Royal Statistical Society. Series A (Statistics in Society) 158_, 3 (1995), 419.
+
+* [[[chkrebtii,31]]], CHKREBTII, O. A., CAMPBELL, D. A., CALDERHEAD, B., AND GIROLAMI, M. A. Bayesian solution uncertainty quantification for differential equations. _Bayesian Analysis 11_, 4 (2016), 1239--1267.
+
+* [[[chrysler,32]]], CHRYSLER, FORD, AND GENERAL MOTORS. _Measurement Systems Analysis Reference Manual_. AIAG, 2002.
+
+* [[[claeskens,33]]], CLAESKENS, G., AND HJORT, N. L._ Model Selection and Model Averaging_. Cambridge University Press, Cambridge, UK, 2008.
+
+* [[[clarke,34]]], CLARKE, E. C. W., AND GLEW, D. N. Evaluation of thermodynamic functions from equilibrium constants. _Trans. Faraday Soc. 62_ (1966), 539--547.
+
+* [[[clenshaw,35]]], CLENSHAW, C. W., AND HAYES, J. G. Curve and surface fitting. _J. Inst. Math. Appl. 1_ (1965), 164--183.
+
+* [[[clyde,36]]], CLYDE, M., AND GEORGE, E. I. Model uncertainty. _Statistical Science 19_ (2004), 81--94.
+
+* [[[cox,37]]], COX, M., AND HARRIS, P. Polynomial calibration functions revisited: numerical and statistical issues. In _Advanced Mathematical and Computational Tools in Metrology X_ (2015), F. Pavese, A. Forbes, A. Chunovkina, W. Bremser, and N. Fischer, Eds., Series on Advances in Mathematics for Applied Sciences, World Scientific, pp. 9--16.
+
+* [[[cox38,38]]], COX, M. G. Graded reference data sets and performance profiles for testing software used in metrology. In _Advanced Mathematical Tools in Metrology III_ (Singapore, 1997), P. Ciarlini, M. G. Cox, F. Pavese, and D. Richter, Eds., World Scientific, pp. 43--55.
+
+* [[[cox39,39]]], COX, M. G., AND HARRIS, P. M. Design and use of reference data sets for testing scientific software. _Analytica Chimica Acta 380_ (1999), 339--351.
+
+* [[[cox40,40]]], COX, M. G., AND HARRIS, P. M. SSfM Best Practice Guide No. 6, Uncertainty evaluation. Tech. Rep. MS 6, National Physical Laboratory, Teddington, UK, 2010.
+
+* [[[cox41,41]]], COX, M. G., HARRIS, P. M., KENWARD, P. D., AND WOOLLIAMS, E. Spectral characteristic modelling. Tech. Rep. CMSC 27/03, National Physical Laboratory, Teddington, UK, 2003.
+
+* [[[cumpson,42]]], CUMPSON, P. J. The Thickogram: a method for easy film thickness measurement in XPS. _Surf. Interface Anal._ (2000).
+
+* [[[dasilva,43]]], DA SILVA, R. J. N. B., SANTOS, J. R., AND CAMÕES, M. F. G. F. C. A new terminology for the approaches to the quantification of the measurement uncertainty. _Accreditation and Quality Assurance 10_, 12 (2006), 664--671.
+
+* [[[davison,44]]], DAVISON, A. C. Statistical Models. Cambridge University Press, Cambridge, UK, 2008.
+
+* [[[delaeter,45]]], DE LAETER, J. R., BÖHLKE, J. K., BIÈVRE, P. D., HIDAKA, H., PEISER, H. S., ROSMAN, K. J. R., AND TAYLOR, P. D. P. Atomic weights of the elements. Review 2000 (IUPAC Technical Report). _Pure and Applied Chemistry 75_, 6 (2003), 683--800.
+
+* [[[degroot,46]]], DEGROOT, M. H., AND SCHERVISH, M. J. _Probability and Statistics_, 4th ed. Addison-Wesley, 2011.
+
+* [[[deming,47]]], DEMING, W. E., AND BIRGE, R. T. On the statistical theory of errors. _Reviews of Modern Physics 6_ (1934), 119--161.
+
+* [[[diaz,48]]], DIAZ, V. E. H. Time series of values of temperature in a thermal bath. _Centro de Metrología del Ejército Ecuatoriano_, CMME, Quito, Ecuador, March 2013.
+
+* [[[downes,49]]], DOWNES, S., KNOTT, A., AND ROBINSON, I. Towards a shock tube method for the dynamic calibration of pressure sensors. _Special Journal for the Economy and Science 125_, 2 (2015), 24--37. Official Information Bulletin of the Physikalisch-Technische Bundesanstalt.
+
+* [[[draper,50]]], DRAPER, N. R., AND SMITH, H. _Applied Regression Analysis_, third ed. Wiley, New York, 1998.
+
+* [[[dusen,51]]], DUSEN, M. S. V. Platinum-resistance thermometry at low temperatures 1. _J. Am. Chem. Soc. 47_, 2 (1925), 326--332.
+
+* [[[dybkaer,52]]], DYBKAER, R. Recovery revisited. _Accred. Qual. Assur. 10_ (2005), 302--303.
+
+* [[[efron,53]]], EFRON, B., AND TIBSHIRANI, R. J. _An Introduction to the Bootstrap_. Chapman & Hall, London, UK, 1993.
+
+* [[[ehrlich,(54)BIPM Metrologia 34 6 503]]], EHRLICH, C. D., AND RASBERRY, S. D. Metrological timelines in traceability. _Metrologia 34_, 6 (1997), 503.
+
+* [[[eichstadt55,55]]], EICHSTÄDT, S., AND ELSTER, C. Reliable uncertainty evaluation for ODE parameter estimation -- a comparison. _Journal of Physics: Conference Series 490_ (2014).
+
+* [[[eichstadt56,(56)BIPM Metrologia 47 5 522]]], EICHSTÄDT, S., ELSTER, C., ESWARD, T. J., AND HESSLING, J. P. Deconvolution filters for the analysis of dynamic measurement processes: a tutorial. _Metrologia 47_ (2010), 522--533.
+
+* [[[eichstadt57,(57)BIPM Metrologia 49 3 401]]], EICHSTÄDT, S., LINK, A., HARRIS, P., AND ELSTER, C. Efficient implementation of a Monte Carlo method for uncertainty evaluation in dynamic measurements. _Metrologia 49_ (2012), 401--410.
+
+* [[[eichstadt58,58]]], EICHSTÄDT, S., AND WILKENS, V. GUM2DFT - a software tool for uncertainty evaluation of transient signals in the frequency domain. _Meas. Sci. Technol. 27_ (2016), 12pp.
+
+* [[[eichstadt59,(59)BIPM Metrologia 53 4 S125]]], EICHSTÄDT, S., WILKENS, V., DIENSTFREY, A., HALE, P., HUGHES, B., AND JARVIS, C. On challenges in the uncertainty evaluation for time-dependent measurements. _Metrologia 53_ (2016), S125 -- S135.
+
+* [[[eisenhart,60]]], EISENHART, C. The meaning of "least" in least squares. _Journal of the Washington Academy of Sciences 54_, 2 (1964), 24--33.
+
+* [[[ellison61,61]]], ELLISON, S. L. R., AND BARWICK, V. J. Estimating measurement uncertainty: reconciliation using a cause and effect approach. _Accreditation and Quality Assurance 3_, 3 (1998), 101--105.
+
+* [[[ellison62,62]]], ELLISON, S. L. R., AND BARWICK, V. J. Using validation data for ISO measurement uncertainty estimation. Part 1: Principles of an approach using cause and effect analysis. _Analyst 123_ (1998), 1387--1392.
+
+* [[[ellison63,63]]], ELLISON, S. L. R., AND WILLIAMS, A., Eds. _Quantifying Uncertainty in Analytical Measurement_, third ed. Eurachem, 2012. EURACHEM/CITAC Guide CG-4, QUAM:2012.P1.
+
+* [[[elster64,(64)BIPM Metrologia 45 4 464]]], ELSTER, C., AND LINK, A. Uncertainty evaluation for dynamic measurements modelled by a linear time-invariant system. _Metrologia 45_ (2008), 464--473.
+
+* [[[elster65,(65)BIPM Metrologia 47 3 113]]], ELSTER, C., AND TOMAN, B. Analysis of key comparisons: estimating laboratories' biases by a fixed effects model using Bayesian model averaging. _Metrologia 47_, 3 (2010), 113--119.
+
+* [[[en,66]]], EN. CEN 71-1:2014+A1:2018. Safety of toys -- Part 1: Mechanical and physical properties. European Committee for Standardization.
+
+* [[[engen,67]]], ENGEN, G. F. _Microwave Circuit Theory and Foundations of Microwave Metrology_. Peter Peregrinus, London, 1992.
+
+* [[[euramet,68]]], EURAMET. Extent of calibration for cylindrical diameter standards, 2011. Euramet CG-6.
+
+* [[[forbes,69]]], FORBES, A. B., AND SOUSA, J. A. The GUM, Bayesian inference and the observation and measurement equations. _Measurement 44_ (2011), 1422--1435.
+
+* [[[fuller,70]]], FULLER, W. A. _Measurement Error Models_. John Wiley & Sons, New York, NY, 1987.
+
+* [[[gelman,71]]], GELMAN, A., CARLIN, J. B., STERN, H. S., DUNSON, D. B., VEHTARI, A., AND RUBIN, D. B. _Bayesian Data Analysis_, 3rd ed. Chapman & Hall / CRC, Boca Raton, FL, 2013.
+
+* [[[goldstein,72]]], GOLDSTEIN, M. Subjective Bayesian Analysis: Principles and Practice. _Bayesian Analysis_, 3 (2006), 403--420.
+
+* [[[guenther,73]]], GUENTHER, F. R., AND POSSOLO, A. Calibration and uncertainty assessment for certified reference gas mixtures. _Analytical and Bioanalytical Chemistry 399_ (2011), 489--500.
+
+* [[[hale,74]]], HALE, P. D., DIENSTFREY, A., WANG, J. C. M., WILLIAMS, D. F., LEWANDOWSKI, A., KEENAN, D. A., AND CLEMENT, T. S. Traceable waveform calibration with a covariance-based uncertainty analysis. _IEEE Trans. on Instr. and Meas. 58_, 10 (2009).
+
+* [[[hastie,75]]], HASTIE, T., TIBSHIRANI, R., AND FRIEDMAN, J. _The Elements of Statistical Learning: Data Mining, Inference, and Prediction_, second ed. Springer-Verlag, New York, 2009.
+
+* [[[higham,76]]], HIGHAM, N. J. _Accuracy and Stability of Numerical Algorithms_. SIAM, Philadelphia, 1996.
+
+* [[[hodges,77]]], HODGES, J. L., AND LEHMANN, E. L. Estimates of location based on rank tests. _The Annals of Mathematical Statistics 34_, 2 (1963), 598--611.
+
+* [[[hollander,78]]], HOLLANDER, M., WOLFE, D. A., AND CHICKEN, E. _Nonparametric Statistical Methods_, 3rd ed. John Wiley & Sons, Hoboken, NJ, 2014.
+
+* [[[huang,(79)BIPM Metrologia 35 4 381]]], HUANG, L. K., CEBULA, R. P., AND HILSENRATH, E. New procedure for interpolating NIST FEL lamp irradiances. _Metrologia 35_, 4 (1998), 381.
+
+* [[[huber,80]]], HUBER, P. J., AND RONCHETTI, E. M. _Robust Statistics_, 2nd ed. John Wiley & Sons, Hoboken, NJ, 2009.
+
+* [[[hurvich,81]]], HURVICH, C. M., AND TSAI, C.-L. Regression and time series model selection in small samples. _Biometrika 76_ (1989), 297--307.
+
+* [[[hyndman,82]]], HYNDMAN, R., AND KHANDAKAR, Y. Automatic time series forecasting: the forecast package for R. _Journal of Statistical Software 27_ (2008), 1--22.
+
+* [[[iec60584-1,(83)IEC 60584-1:2013]]], IEC. IEC 60584-1:2013, _Thermocouples -- Part 1: EMF specifications and tolerances_.
+
+* [[[ieee754,(84)IEEE 754-2019]]], IEEE. IEEE 754-2019, _Standard for Floating-Point Arithmetic_.
+
+* [[[ilac,85]]], ILAC. ILAC P14:01/2013 ILAC Policy for Uncertainty in Calibration, 2013.
+
+* [[[iso1,(86)ISO 1:2016]]], ISO. ISO 1:2016, _Geometrical product specifications (GPS) -- Standard reference temperature for the specification of geometrical and dimensional properties_.
+
+* [[[iso13443,(87)ISO 13343:1996]]], ISO. ISO 13443:1996, _Natural gas -- Standard reference conditions_.
+
+* [[[iso13528,(88)ISO 13528:2015]]], ISO. ISO 13528:2015, _Statistical methods for use in proficiency testing by interlaboratory comparisons_.
+
+* [[[iso17034,(89)ISO 17034:2016]]], ISO. ISO 17034:2016, _General requirements for the competence of reference material producers_.
+
+* [[[iso21748,(90)ISO 21748:2016]]], ISO. ISO 21748:2016, _Guidance for the use of repeatability, reproducibility and trueness estimates in measurement uncertainty evaluation_.
+
+* [[[iso3534-1,(91)ISO 3534-1:2006]]], ISO. ISO 3534-1:2006, _Statistics -- Vocabulary and symbols -- Part 1: Probability and general statistical terms_.
+
+* [[[iso5725-1,(92)ISO 5725-1:1994]]], ISO. ISO 5725-1:1994, _Accuracy (trueness and precision) of measurement methods and results--Part 1: General principles and definitions_.
+
+* [[[iso5725-2,(93)ISO 5725-2:1994]]], ISO. ISO 5725-2:1994, _Accuracy (trueness and precision) of measurement methods and results--Part 2: Basic method for the determination of repeatability and reproducibility of a standard measurement method_.
+
+* [[[iso6143,(94)ISO 6143:2001]]], ISO. ISO 6143:2001, _Gas analysis -- Comparison methods for determining and checking the composition of calibration gas mixtures_.
+
+* [[[iso6508-1,(95)ISO 6508-1:2016]]], ISO. ISO 6508-1:2016, _Metallic materials. Rockwell hardness test. Test method_.
+
+* [[[iso33,(96)ISO Guide 33:2015]]], ISO. ISO Guide 33:2015, _Reference materials -- Good practice in using reference materials_.
+
+* [[[iso35,(97)ISO Guide 35:2017]]], ISO. ISO Guide 35:2017, _Certification of reference materials -- General and statistical principles_.
+
+* [[[iso17503,(98)ISO/TS 17503:2015]]], ISO. ISO/TS 17503:2015, _Statistical methods of uncertainty evaluation -- Guidance on evaluation of uncertainty using two-factor crossed designs_.
+
+* [[[iso28038,(99)ISO/TS 28038:2018]]], ISO. ISO/TS 28038:2018, _Determination and use of polynomial calibration functions_.
+
+* [[[iso17025,(100)ISO/IEC 17025:2017]]], ISO/IEC. ISO/IEC 17025:2017, _General requirements for the competence of testing and calibration laboratories_.
+
+* [[[kass,101]]], KASS, R. E., AND WASSERMAN, L. The selection of prior distributions by formal rules. _Journal of the American Statistical Association 91_, 435 (1996), 1343--1370.
+
+* [[[kermack,102]]], KERMACK, W. O., AND MCKENDRICK, A. G. A contribution to the mathematical theory of epidemics. _Proceedings of the Royal Society of London A: Mathematical, Physical and Engineering Sciences 115_ (1927), 700--721.
+
+* [[[kerns,103]]], KERNS, D. M., AND BEATTY, R. W. _Basic Theory of Waveguide Junctions and Introductory Microwave Network Analysis_. Pergamon Press, London, 1967.
+
+* [[[kline,104]]], KLINE, S. J., AND MCCLINTOCK, F. A. Describing uncertainties in single-sample experiments. _Mechanical Engineering 75_, 1 (1953), 3--8.
+
+* [[[kobusch,105]]], KOBUSCH, M., EICHSTÄDT, S., KLAUS, L., AND BRUNS, T. Investigations for the model-based dynamic calibration of force transducers by using shock excitation. _ACTA IMEKO 4_, 2 (2015), 45--51.
+
+* [[[koepke106,(106)BIPM Metrologia 54 3 S34]]], KOEPKE, A., LAFARGE, T., POSSOLO, A., AND TOMAN, B. Consensus building for interlaboratory studies, key comparisons, and meta-analysis. _Metrologia 54_, 3 (2017), S34--S62.
+
+* [[[koepke107,107]]], KOEPKE, A., LAFARGE, T., TOMAN, B., AND POSSOLO, A. _NIST Consensus Builder -- User's Manual_. National Institute of Standards and Technology, Gaithersburg, MD, 2017.
+
+* [[[kragten,108]]], KRAGTEN, J. Calculating standard deviations and confidence intervals with a universally applicable spreadsheet technique. _Analyst 119_ (1994), 2161--2165.
+
+* [[[kruschke,109]]], KRUSCHKE, J. K. Bayesian estimation supersedes the t test. _Journal of Experimental Psychology: General 142_, 2 (2013), 573--603.
+
+* [[[kuramoto,(110)BIPM Metrologia 54 5 716]]], KURAMOTO, N., MIZUSHIMA, S., ZHANG, L., FUJITA, K., AZUMA, Y., KUROKAWA, A., OKUBO, S., INABA, H., AND FUJII, K. Determination of the Avogadro constant by the XRCD method using a 28Si-enriched sphere. _Metrologia 54_, 5 (2017), 716--729.
+
+* [[[langmuir,111]]], LANGMUIR, I. The adsorption of gases on plane surfaces of glass, mica and platinum. _Journal of the American Chemical Society 40_, 9 (1918), 1361--1403.
+
+* [[[lathi,112]]], LATHI, B. P. _Linear systems and signals_, 2nd ed. Oxford University Press, 2005.
+
+* [[[lewis,113]]], LEWIS, S., AND PEGGS, G. _The Pressure Balance: A Practical Guide to its Use. Second edition_. HMSO, London, 1991.
+
+* [[[lieblein,114]]], LIEBLEIN, J., AND ZELEN, M. Statistical investigation of the fatigue life of deep-groove ball bearings. _Journal of Research of the National Bureau of Standards 57_ (1957), 273--316.
+
+* [[[link115,115]]], LINK, A., AND ELSTER, C. Uncertainty evaluation for IIR (infinite impulse response) filtering using a state-space approach. _Meas. Sci. Technol.. 20_ (2009), 5pp.
+
+* [[[link116,116]]], LINK, A., TÄUBNER, A., WABINSKI, W., BRUNS, T., AND ELSTER, C. Modelling accelerometers for transient signals using calibration measurements upon sinusoidal excitation. _Measurement 40_ (2007), 928--935.
+
+* [[[mahnusson,117]]], MAGNUSSON, B., AND ÖRNEMARK, U. _The fitness for purpose of analytical methods: A laboratory guide to method validation and related topics_. Eurachem, 2014.
+
+* [[[malengo,(118)BIPM Metrologia 53 2 762]]], MALENGO, A., AND BICH, W. Buoyancy contribution to uncertainty of mass, conventional mass and force. _Metrologia 53_, 2 (2016), 762--769.
+
+* [[[medina,119]]], MEDINA-PASTOR, P., VALVERDE, A., PIHLSTRÖM, T., MASSELTER, S., GAMON, M., MEZCUA, M., RODRÍGUEZ-TORREBLANCA, C., AND FERNÁNDEZ-ALBA, A. R. Comparative study of the main top-down approaches for the estimation of measurement uncertainty in multiresidue analysis of pesticides in fruits and vegetables. _J. Ag. Food Chem. 59_ (2011), 7609--7619.
+
+* [[[meija120,120]]], MEIJA, J., AND MESTER, Z. Comment on the uncertainties in isotope patterns of molecules. _Analytica Chimica Acta 694_, 1-2 (2011), 174--176.
+
+* [[[meija121,121]]], MEIJA, J., PAGLIANO, E., AND MESTER, Z. Coordinate swapping in standard addition graphs for analytical chemistry: A simplified path for uncertainty calculation in linear and nonlinear plots. _Analytical Chemistry 86_, 17 (2014), 8563--8567.
+
+* [[[merkatas,(122)BIPM Metrologia 56 5 054001]]], MERKATAS, C., TOMAN, B., POSSOLO, A., AND SCHLAMMINGER, S. Shades of dark uncertainty and consensus value for the Newtonian constant of gravitation. _Metrologia 56_, 5 (2019), 054001.
+
+* [[[morgan,123]]], MORGAN, M. G., AND HENRION, M. _Uncertainty -- A Guide to Dealing with Uncertainty in Quantitative Risk and Policy Analysis_, first paperback ed. Cambridge University Press, New York, NY, 1992. 10th printing, 2007.
+
+* [[[mosteller, 124]]], MOSTELLER, F., AND TUKEY, J. W. _Data Analysis and Regression_. Addison-Wesley Publishing Company, Reading, Massachusetts, 1977.
+
+* [[[newell,(125)BIPM Metrologia 55 1 L13]]], NEWELL, D. B., CABIATI, F., FISCHER, J., FUJII, K., KARSHENBOIM, S. G., MARGOLIS, H. S., DE MIRANDÉS, E., MOHR, P. J., NEZ, F., PACHUCKI, K., QUINN, T. J., TAYLOR, B. N., WANG, M., WOOD, B. M., AND ZHANG, Z. The CODATA 2017 values of stem:[h], stem:[e], stem:[k], and stem:[N_A] for the revision of the SI. _Metrologia 55_, 1 (2018), L13.
+
+* [[[nist,126]]], NIST/SEMATECH. _NIST/SEMATECH e-Handbook of Statistical Methods_. National Institute of Standards and Technology, U.S. Department of Commerce, Gaithersburg, Maryland, 2012.
+
+* [[[wood,127]]], N.WOOD, S. _Core Statistics_. Cambridge University Press, New York, NY, 2015.
+
+* [[[ohagan128,128]]], O'HAGAN, A. Science, subjectivity and software (comment on articles by Berger and by Goldstein). _Bayesian Analysis 1_, 3 (2006), 445--450.
+
+* [[[ohagan129,(129)BIPM Metrologia 51 4 S237]]], O'HAGAN, A. Eliciting and using expert knowledge in metrology. _Metrologia 51_, 4 (2014), S237.
+
+* [[[ohagan130,130]]], O'HAGAN, A., BUCK, C. E., DANESHKHAH, A., EISER, J. R., GARTHWAITE, P. H., JENKINSON, D. J., OAKLEY, J. E., AND RAKOW, T. _Uncertain Judgements: Eliciting Experts' Probabilities_. Statistics in Practice. John Wiley & Sons, Chichester, England, 2006. ISBN: 978-0-470-02999-2.
+
+* [[[oppenheim,131]]], OPPENHEIM, A. V., AND SCHAFER, R. W. _Discrete-Time Signal Processing: Pearson New International Edition_. Pearson Education Limited, 2013.
+
+* [[[pagliano,132]]], PAGLIANO, E., MESTER, Z., AND MEIJA, J. Calibration graphs in isotope dilution mass spectrometry. _Analytica Chimica Acta 896_ (2015), 63--67.
+
+* [[[pawitan,133]]], PAWITAN, Y. _In All Likelihood: Statistical Modelling and Inference Using Likelihood_. Oxford University Press, 2001.
+
+* [[[percival,134]]], PERCIVAL, D. B., AND WALDEN, A. T. _Spectral Analysis for Physical Applications: Multitaper and Conventional Univariate Techniques_. Cambridge University Press, Cambridge, UK, 1993.
+
+* [[[picard,(135)BIPM Metrologia 45 2 149]]], PICARD, A., DAVIS, R. S., GLÄSER, M., AND FUJII, K. Revised formula for the density of moist air (CIPM-2007). _Metrologia 45_, 2 (2008), 149--155.
+
+* [[[pontius,136]]], PONTIUS, P. E., AND CAMERON, J. M. _Realistic Uncertainties and the Mass Measurement Process -- An Illustrated Review_. No. 103 in NBS Monograph. National Bureau of Standards, Washington, DC, 1967.
+
+* [[[possolo137,137]]], POSSOLO, A. Model-based interpolation, prediction, and approximation. In _Uncertainty Quantification in Scientific Computing_, A. M. Dienstfrey and R. F. Boisvert, Eds., IFIP Advances in Information and Communications Technology. Springer, New York, 2012, pp. 195--211. 10th IFIP WG 2.5 Working Conference, WoCoUQ 2011, Boulder, CO, USA, August 1--4, 2011.
+
+* [[[possolo138,(138)BIPM Metrologia 55 3 404]]], POSSOLO, A., BODNAR, O., BUTLER, T. A., MOLLOY, J. L., AND WINCHESTER, M. R. Value assignment and uncertainty evaluation in single-element reference solutions. _Metrologia 55_, 3 (2018), 404--413.
+
+* [[[possolo139,(139)BIPM Metrologia 51 3 339]]], POSSOLO, A., AND ELSTER, C. Evaluating the uncertainty of input quantities in measurement models. _Metrologia 51_, 3 (2014), 339.
+
+* [[[possolo140,140]]], POSSOLO, A., AND IYER, H. K. Concepts and tools for the evaluation of measurement uncertainty. _Review of Scientific Instruments 88_, 1 (2017), 011301.
+
+* [[[possolo141,(141)BIPM Metrologia 54 5 617]]], POSSOLO, A., AND PINTAR, A. L. Plurality of Type A evaluations of uncertainty. _Metrologia 54_, 5 (2017), 617--632.
+
+* [[[possolo142,(142)BIPM Metrologia 44 6 464]]], POSSOLO, A., AND TOMAN, B. Assessment of measurement uncertainty via observation equations. _Metrologia 44_ (2007), 464--475.
+
+* [[[possolo143,143]]] POSSOLO A. Simple Guide for Evaluating and Expressing the Uncertainty of NIST Measurement Results. Tech. Rep. TN 1900, National Institute of Standards and Technology, 2015.
+
+* [[[ramiandrisoa,144]]], RAMIANDRISOA, L., ALLARD, A., HAY, B., AND GOMÉS, S. Uncertainty assessment for measurements performed in the determination of thermal conductivity by scanning thermal microscopy. _Measurement Science and Technology 28_, 11 (2017), 115010.
+
+* [[[rhoderick,145]]], RHODERICK, G. C., KELLEY, M. E., MILLER, W. R., BRAILSFORD, G., AND POSSOLO, A. Development of a southern oceanic air standard reference material. _Analytical and Bioanalytical Chemistry 408_ (2016), 1159--1169.
+
+* [[[rice,146]]], RICE, J. R. _Matrix Computations and Mathematical Software_. McGraw-Hill, New York, 1981.
+
+* [[[rosi,147]]], ROSI, G., SORRENTINO, F., CACCIAPUOTI, L., PREVEDELLI, M., AND TINO, G. M. Precision measurement of the Newtonian gravitational constant using cold atoms. _Nature 510_ (2014), 518--521.
+
+* [[[schetzen,148]]], SCHETZEN, M. _The Volterra and Wiener Theory of Nonlinear Systems_. New York: Wiley, 2006.
+
+* [[[schwarz,149]]], SCHWARZ, G. Estimating the dimension of a model. _Annals of Statistics 6_, 2 (1978), 461--464.
+
+* [[[searle,150]]], SEARLE, S. R., CASELLA, G., AND MCCULLOCH, C. E. _Variance Components_. John Wiley & Sons, Hoboken, NJ, 2006.
+
+* [[[shard,151]]], SHARD, A. G., WANG, J., AND SPENCER, S. J. XPS topofactors: determining overlayer thickness on particles and fibres. _Surface and Interface Analysis 41_, 7 (2009), 541--548.
+
+* [[[simmons,152]]], SIMMONS, G. F. _Differential Equations with Applications and Historical Notes_, third ed. Chapman and Hall/CRC, Boca Raton, FL, 2016.
+
+* [[[soetaert,153]]], SOETAERT, K., CASH, J., AND MAZZIA, F. _Solving Differential Equations in R_. Springer, Berlin, 2012.
+
+* [[[somlo,154]]], SOMLO, P. I., AND HUNTER, J. D. _Microwave Impedance Measurement_. Peter Peregrinus, London, 1985.
+
+* [[[stigler,155]]], STIGLER, S. M. _The History of Statistics: The Measurement of Uncertainty before 1900_. Harvard University Press, Cambridge, MA, 1986.
+
+* [[[thompson,156]]], THOMPSON, M., AND ELLISON, S. L. R. Dark uncertainty. _Accred. Qual. Assur. 16_ (2011), 483--487.
+
+* [[[tikhonov,157]]], TIKHONOV, A. N., AND ARSENIN, V. Y. _Solution of ill-posed problems_. John Wiley & Sons Inc. New York, 1977.
+
+* [[[trefethen,158]]], TREFETHEN, L. N. _Approximation Theory and Approximation Practice_. SIAM, Philadelphia, 2013.
+
+* [[[vanderveen,159]]], VAN DER VEEN, A. M. H., LINSINGER, T., AND PAUWELS, J. Uncertainty calculations in the certification of reference materials. 2. Homogeneity study. _Accreditation and Quality Assurance 6_ (2001), 26--30.
+
+* [[[wilk,160]]], WILK, M. B., AND GNANADESIKAN, R. Probability plotting methods for the analysis of data. _Biometrika 55_, 1 (1968), 1--17.
+
+* [[[wilkens,161]]], WILKENS, V., AND KOCH, C. Amplitude and phase calibration of hydrophones up to 70 MHz using broadband pulse excitation and an optical reference hydrophone. _J. Acoust. Soc. Am. 115_, 6 (2004).
+
+* [[[wilkinson,162]]], WILKINSON, J. H. _Notes in Applied Science No. 32. Rounding Errors in Algebraic Processes_. Her Majesty's Stationery Office, London, 1963.

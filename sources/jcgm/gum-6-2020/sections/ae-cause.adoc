@@ -1,0 +1,179 @@
+[[annexE]]
+[appendix]
+== Cause-and-effect analysis(((cause and effect analysis)))
+
+[[cls-E.1]]
+=== General
+
+[[cls-E.1.1]]
+==== {blank}
+
+A cause-and-effect diagram (also known as an Ishikawa or fishbone diagram)
+<<ellison61>>, <<ellison62>>, <<ellison63>> is
+a hierarchical diagram that shows how multiple effects accumulate to influence an
+outcome. Such a diagram can be helpful in establishing a measurement model initially
+based on the measurement principle. Cause-and-effect analysis constitutes part of the
+toolkit for identifying relevant contributing effects as input quantities. It also
+helps to identify contributions to the uncertainty associated with individual input
+quantities and facilitates the grouping of related effects to simplify uncertainty
+evaluation from experimental data. Combined with a 'reconciliation' approach <<ellison61>> it
+also helps to match available information (including, for instance, quality assurance
+records and validation data <<ellison62>>) to individual uncertainty contributions. This in
+turn helps to identify missing information, avoid double-counting of contributions to
+measurement uncertainty, and identify contributions (particularly arising from random
+variation) that are adequately represented by information from method performance
+studies.(((measurement model,validation)))
+
+[[cls-E.1.2]]
+==== {blank}
+
+A comprehensive description of cause-and-effect diagrams, and their use in
+cause-and-effect analysis, is beyond the scope of the present guide. However, the
+example in this annex gives an indication of the principle as applied to the
+construction of a measurement model used for uncertainty evaluation.
+
+NOTE: The Eurachem/CITAC Guide <<ellison63, annex=D>> gives a general procedure for
+cause-and-effect analysis applied to uncertainty evaluation.
+
+[[ex-E.1.2]]
+[example]
+.Organophosphorus pesticide residue in a foodstuff
+====
+The amount of an organophosphorus pesticide residue in a foodstuff is to be
+determined. The procedure uses solvent extraction of the pesticide from a known mass
+of the foodstuff. The extract is purified, made up to a known volume, and the mass
+concentration of pesticide is determined using a gas chromatographic procedure. The
+calibration strategy in this example is single-point calibration using a solution of
+a pure reference material. The measurement model used is
+
+[[eq45]]
+[stem]
+++++
+w_"op" = (I_"op"gamma_"ref"V_"op")/(I_"ref"R_"op"m_"sample") f_"hom"f_1,
+++++
+
+where
+
+stem:[w_"op"]:: mass fraction of pesticide in the sample
+stem:[I_"op"]:: peak intensity of the sample extract
+stem:[gamma_"ref"]:: mass concentration of the reference standard
+stem:[V_"op"]:: final volume of the extract
+stem:[I_"ref"]:: peak intensity of the reference standard
+stem:[R_"op"]:: nominal correction for losses in extraction and clean-up ('recovery')
+stem:[m_"sample"]:: mass of the investigated sub-sample
+stem:[f_1]:: factor representing the effect of variation under intermediate
+conditions (precision)
+stem:[f_"hom"]:: factor representing the effect of sample inhomogeneity
+
+For the purpose of uncertainty evaluation, stem:[f_"hom"] and stem:[f_1] are assigned
+an estimate of unity with a standard uncertainty obtained from validation studies.
+The recovery correction stem:[R_"op"] and its associated standard uncertainty are,
+similarly, determined from validation data.
+
+A cause-and-effect diagram based on the <<eq45>> is given in
+<<fig12>> in which terms related to the precision of individual input quantities have
+been grouped together to form a single 'Repeatability' branch. Additional features in
+the figure include the factors affecting the reference solution concentration
+stem:[gamma_"ref"] and additional effects on volume and mass determination.
+
+NOTE: Reference <<ellison63>> provides further information on the additional terms appearing
+in <<fig12>> and on other aspects of this example.
+
+[[fig12]]
+.Cause-and-effect diagram for amount of an organophosphorus pesticide residue in a foodstuff. Adapted with permission from reference <<ellison63>>
+image::img12.png[]
+====
+
+[[cls-E.2]]
+=== 5M method
+
+[[cls-E.2.1]]
+==== {blank}
+
+Another comprehensive method is to determine the plausible error causes according to
+five categories, as used in  <<charki>>, <<ramiandrisoa>>, namely:
+
+* Machines: all effects related to the machines or measuring instruments used in the
+measurement process (trueness, repeatability, quantification, drift, linearity,
+hysteresis, ...),
+* Method: all effects related to the measurement method (choice of a parameter in the
+measurement procedure, coefficients of a statistical model, ...),
+* Environment (Milieu in French): all effects related to the environment
+(temperature, pressure, relative humidity, ...),
+* Material: all effects related to the item/material subject to the measurement
+(hardness, heterogeneity, alteration, thermal expansion coefficient, ...),
+* Manpower: all effects related to operator (ability, manual reading, ...).
+
+[[cls-E.2.2]]
+==== {blank}
+
+Sometimes, a practitioner could place an identified effect in either of two
+categories. The choice made has no influence on the subsequent uncertainty evaluation.
+
+[[ex-E.2.2]]
+[example]
+.Cord cross-sectional dimension testing
+====
+In testing the safety of toys in which cord is a constituent part, the following
+measurement procedure is carried out according to the European norm <<en>>. Whilst
+under a tension of stem:[(25 pm 2)N], the maximum cross-sectional dimension of the
+cord is measured at five points approximately equally spaced along its length using a
+caliper. The usual interpretation is that stem:[pm 2 "N"] is taken as the maximum
+permissible error (see <<jcgm200,clause=4.26>>), which gives the limits of the range
+of values that are allowed for the deviation from stem:[25 "N"] and often handled as
+a rectangular distribution over this range. The measurand is the average to the
+nearest stem:[0.1 "unitsml(mm)"] of these five observations as an approximation to
+the cross-sectional dimension. <<fig13>> provides the corresponding Ishikawa diagram
+representing the effects that influence the measurement.
+====
+
+[[fig13]]
+.Ishikawa diagram for the case of the measurement of the cord cross-sectional dimension, organized as a function of the five categories Machines, Method, Environment, Material, Manpower
+image::img13.png[]
+
+[[cls-E.3]]
+=== Measurement System Analysis (MSA)
+
+[[cls-E.3.1]]
+==== {blank}
+
+A measuring system can be described as a collection of hardware, software, procedures
+and methods, human effort, environmental conditions, associated devices, as well as
+the objects that are to be measured with the system. In the practical working of the
+measuring system, each of the elements in this collection combine to cause variation
+among measurements of an object that would not be present if the system were perfect.
+A measuring system can have varying degrees of each of these elements and one or more
+elements may be dominant contributors to this variation <<astme10>>.
+
+[[cls-E.3.2]]
+==== {blank}
+
+A primary goal in conducting an MSA study is to assess the several variance
+components that may be at play. Each element -- object, instrument, operator,
+environment and measurement method (<<fig14>>) -- will have its own variance component
+that contributes to the overall variation.
+
+[[fig14]]
+.Measurement system analysis
+image::img14.png[]
+
+[[cls-E.3.3]]
+==== {blank}
+
+Statistical methods allow the variance components in MSA to be estimated. Sometimes
+the analyst may only be interested in one of the components, such as repeatability.
+In other cases, two or more components may be of interest. Depending on how the MSA
+study is designed, the variance components may be estimated independently or combined
+as a composite measure <<astme10>>.
+
+[[cls-E.3.4]]
+==== {blank}
+
+Cause-and-effect diagrams for use in calculating the propagation of measurement
+uncertainties based on MSA are drawn on the principle that each element of the
+measuring system (<<fig14>>) is represented such as in <<fig15>> by one arrow or
+'bone' in the corresponding 'fishbone' or Ishikawa diagram.
+
+[[fig15]]
+.Measurement system analysis <<chrysler>>
+image::img15.png[]

@@ -1,0 +1,1368 @@
+[[cls-11]]
+== Statistical models used in metrology
+
+[[cls-11.1]]
+=== General
+
+[[cls-11.1.1]]
+==== {blank}
+
+Statistical models use probability distributions to reconcile the variability of
+replicated observations of the same property that depends on the measurand, or the
+dispersion of multiple measured values obtained for the same measurand, with the
+unknown, single true value of the measurand <<davison>>, <<wood>>.
+
+[[cls-11.1.2]]
+==== {blank}
+
+Models of this kind underlie all Type A evaluations of uncertainty, even if they are
+not articulated explicitly: in <<jcgm100,table=H.2>>, five replicated readings of
+electric current are combined into their arithmetic average, and the experimental
+standard deviation of this average is computed according to <<eq5>> in the GUM. The
+choice of the average as presumably 'best' (in the sense of minimum mean squared
+error) to summarize those observations suggests a measurement model where the
+observations are equal to the true value of the current plus normally distributed
+errors, all of the same precision. Reliance on <<eq5>> suggests that these
+observations are believed to be uncorrelated.
+(((probability distribution,normal)))
+
+[[ex-11.1.2]]
+[example]
+.Force transducer
+====
+When calibrating a force transducer <<bartel12>>, <<bartel13>>,
+and essentially the same force is
+applied repeatedly to it, the corresponding values of the deflection caused by the
+force typically will differ from one instance of application to another. This
+measurement may be modelled by saying that each observation of the deflection
+stem:[D] is a value of a normal random variable whose mean is a linear function of
+the force stem:[F], with an unknown standard deviation stem:[sigma] that
+characterizes the dispersion of the values of the deflection obtained under
+conditions of repeatability. In this case the measurement model may be written as
+
+[stem%unnumbered]
+++++
+D = alpha + beta F + varepsilon,
+++++
+
+where stem:[alpha] and stem:[beta] denote coefficients to be estimated using least
+squares, for example, from the data gathered in the calibration experiment, and
+stem:[varepsilon] is assumed to be a normal random variable with mean stem:[0" N"] and
+unknown standard deviation stem:[sigma].
+====
+
+[[cls-11.1.3]]
+==== {blank}
+
+Statistical models are either mathematical or algorithmic descriptions of the
+relation between empirical observations and the value of some property that is of
+substantive interest. The characteristic trait of statistical models, which
+distinguish them from other kinds of mathematical models, is that probability
+distributions are used to accommodate the fact that empirical observations made
+repeatedly of the same property typically vary, even when the value of this property
+remains constant.
+
+[[cls-11.1.4]]
+==== {blank}
+
+Statistical models employ probability distributions to describe sampling variability,
+or uncertainty more generally, which render details of the observations (empirical
+data) unpredictable. Such uncertainty clouds the relationship between true values of
+observable properties and true values of properties of interest that are not
+accessible to direct observation, whose values need to be inferred from the
+experimental data.
+
+[[ex-11.1.4]]
+[example]
+.Newtonian constant of gravitation
+====
+The Newtonian constant of gravitation stem:[G] has been measured in many experiments
+implementing a wide variety of approaches that rely on different physical laws
+describing how observable phenomena are informative about its value. From early
+measurements of the density of the Earth, in particular by Henry Cavendish <<cavendish>>, to
+interferometry using cold atoms <<rosi>>, and including a great variety of experiments
+involving balances of different kinds, a collection of measurement results has been
+assembled in the course of more than 200 years, yet without succeeding in achieving
+relative measurement uncertainty comparable to those that are associated with most
+other fundamental constants, even though sophisticated statistical models and methods
+of data reduction have been employed to derive a consensus value from the accumulated
+data <<merkatas>>.
+====
+
+[[cls-11.1.5]]
+==== {blank}
+
+Many different types of statistical models may be used as measurement models. The
+simplest, and most commonly used such model for scalar observations made under
+conditions of repeatability is illustrated in <<ex1-11.3.3>>.
+Subclauses <<cls-11.4;to!cls-11.8>> review several models that are particularly
+useful in measurement science.
+
+[[cls-11.2]]
+=== Observation equations
+
+Statistical models link measurement inputs (observations) to the true value of the
+measurand probabilistically. For example, a so-called _observation equation_
+<<forbes>>, <<possolo142>>
+expresses the observations as realized values of random variables whose
+probability distribution depends on the true value of the measurand: more precisely,
+where such true value is a known function of one or several parameters that specify
+the probability distribution of the observations. The expression 'observation
+equation', or 'observational equation', has been in use in metrology for a very long
+time <<blewitt>>, <<eisenhart>>, <<pontius>>, <<stigler>>, even though the
+precise and specific meaning just described is fairly recent.
+
+NOTE: The inputs for a measurement model (statistical or of any other kind) are
+observed values stem:[x_1, ..., x_N] of properties (which may be quantitative or
+qualitative) that are informative about the measurand in the sense that, once
+suitably combined, possibly also taking into account information about the measurand
+originating from other sources, produce an estimate of the true value of the measurand.
+
+NOTE: For statistical models, the observations xi may be considered as being made
+under conditions of repeatability (see <<jcgm200,clause=2.20>>) or under other
+conditions (for example, reproducibility conditions (see <<jcgm200,clause=2.24>>),
+depending on modelling choice and circumstances.
+
+[[ex-11.2]]
+[example]
+.Newtonian constant of gravitation (continued from <<cls-11.1.4>>)
+====
+A statistical model for stem:[N] independent measurement results obtained for
+stem:[G] expresses them as outcomes of observable random variables stem:[G_i = G +
+lambda_i + E_i], for stem:[i = 1,...,N], where stem:[lambda_i] denotes an effect
+specific to experiment stem:[i], and stem:[E_i] denotes measurement error. The
+specification of the model includes a characterization of the probability
+distributions of the experiment effects and of the measurement errors: for example,
+that stem:[lambda_1, ... ,lambda_N] are like a sample from a normal distribution with
+mean stem:[0 "unitsml(m^3*kg^(-1)*s^(-2))"] and unknown standard deviation
+stem:[tau], and that the measurement errors are like outcomes of independent random
+variables with distributions centered at stem:[0 "unitsml(m^3*kg^(-1)*s^(-2))"] but
+with possibly different unknown standard deviations.
+====
+
+[[cls-11.3]]
+=== Specification of statistical models
+
+[[cls-11.3.1]]
+==== {blank}
+
+Statistical models can often be specified by providing (i) as many simultaneous
+equations as there are observations made in the course of measurement, whose left
+sides have random variables representing the observations, and whose right sides have
+functions of several random variables whose realized values determine the
+observations, (ii) a description of the joint probability distribution of the random
+variables that appear on the right side of these equations, and (iii) an equation or
+algorithm that describes the relation between the parameters of this joint
+distribution and the true value of the measurand. A simple instance is provided as
+<<ex1-11.3.3>>.
+
+[[cls-11.3.2]]
+==== {blank}
+
+Since the specification of a statistical model includes a statement about the
+probability distribution(s) assumed, it is important to recognize that the results
+obtained will generally be different under different assumptions. No general guidance
+can be offered since knowledge of the application almost wholly dictates the
+assumptions to be made.
+
+[[cls-11.3.3]]
+==== {blank}
+
+When describing statistical models, particular observed values are usually
+distinguished from the corresponding random variables by using lower case letters for
+the former and upper case letters for the latter. However, the same symbols are very
+often used to denote either, their particular meaning being clear from the context.
+This simplification is motivated by the informal understanding of a random variable
+as a property value that is clouded by uncertainty, and that has a probability
+distribution as an attribute that characterizes and quantifies this uncertainty
+precisely.
+
+[[ex1-11.3.3]]
+[example]
+.Electric current -- model
+====
+<<jcgm100,table=H.2>> lists the following values of electric current determined under
+conditions of repeatability:
+
+[stem%unnumbered]
+++++
+{: (19.663 "unitsml(mA)"", ", 19.639 "unitsml(mA)"", ", 19.640 "unitsml(mA)"", ", 19.685 "unitsml(mA)"", ", 19.678 "unitsml(mA)"".") :}
+++++
+
+Assuming that the current stem:[I_0] (the measurand) remained constant as these
+observations were made, a particularly simple statistical model that explains how
+they may be consistent with the true value of the measurand expresses each observed
+value as
+
+[stem%unnumbered]
+++++
+{: (I_j = I_0 + E_j", ", j = 1","...","5",") :}
+++++
+
+where stem:[E_1,...,E_5] denote (non-observable) measurement errors assumed to be
+independent, normal random variables with mean stem:[0 "unitsml(mA)"] and unknown
+standard deviation stem:[sigma]. In this case, the statistical model asserts that
+stem:[I_1,...,I_5] are independent, normal random variables whose common mean is the
+measurand stem:[I_0], all with the same standard deviation stem:[sigma]. As is often
+the case with statistical models, the measurand is a parameter (the mean in this
+case) of the probability distribution of the observations.
+====
+
+[[ex2-11.3.3]]
+[example]
+.Lifetime of ball bearings -- model
+====
+<<lieblein, table="B-5">> lists the following results of an experiment to measure the
+lifetime of a batch of ball bearings, expressed as millions of revolutions at the
+time of failure: 6.0, 8.6, 17.8, 18.0, 27.5, 33.5, 50.5, 51.5, 69.0, 74.0, 74.0,
+89.0, 109.0, 118.0, 119.0, 138.0, 141.0, 144.0, 146.0, 150+, 151, 153+, 153+, 153+.
+Four of these (marked with a plus sign) represent censored observations. For
+instance, '150+' means that the corresponding ball bearing had not yet failed when
+the experiment was terminated and the ball had already undergone 150 million
+revolutions. These numbers of revolutions are assumed to have been observed under
+conditions of repeatability, and, in the original study <<lieblein>> they are modelled as a
+sample from a Weibull probability distribution with unknown values of its scale stem:[S] and
+shape stem:[A]. The measurand is the mean (or expected) lifetime,
+
+[stem%unnumbered]
+++++
+T = S Gamma (1 + 1//A),
+++++
+
+where stem:[Gamma] denotes the gamma function of mathematical analysis <<askey>>. In this
+case, the measurand is a function of the parameters (stem:[S] and stem:[A]) of the
+probability distribution of the observations. Considering the fact that if stem:[R]
+is a random variable with a Weibull distribution with scale stem:[S] and shape
+stem:[A], then stem:[(R//S)^A] has an exponential distribution with mean 1, the
+statistical model may also be written as an explicit observation equation that
+represents each observed number of revolutions as outcome of the random variable
+stem:[R_i] such that
+(((probability distribution,exponential)))
+
+[stem%unnumbered]
+++++
+{: ("ln " R_i = "ln "S + (1//A)"ln "E_i", ", i = 1","...","24",") :}
+++++
+
+where the stem:[E_i] denote non-observable measurement errors modelled as independent
+random variables whose common probability distribution is exponential with mean 1.
+====
+
+[[ex3-11.3.3]]
+[example]
+.Mass fraction of tin -- model
+====
+The value assigned to the mass fraction of tin in a reference solution used for
+spectrometric calibrations is a consensus value resulting from combining measurement
+results obtained gravimetrically and via inductively coupled plasma optical emission
+spectroscopy (ICP-OES) <<possolo138>>. For one particular version of this reference solution,
+the measured values were stem:[w_"G" = 10.00007 "unitsml(mg*g^(-1))"] from gravimetry
+and stem:[w_"I" = 10.02239 "unitsml(mg*g^(-1))"] from ICP-OES. The corresponding
+associated standard uncertainties were stem:[u(w_"G") = 0.00031 "unitsml(mg*g^(-1))"]
+based on stem:[nu_"G" = 278] degrees of freedom, and stem:[u(w_"I") = 0.00264
+"unitsml(mg*g^(-1))"] based on stem:[nu_"I" = 11] degrees of freedom. The measurand
+is stem:[omega] in the _random effects model_ (see <<cls-11.5.3>>) that comprises two
+simultaneous ((observation equations)),
+
+[stem%unnumbered]
+++++
+{: (w_"G" = omega + lambda_"G" + varepsilon_"G"", ", w_"I" = omega + lambda_"I" + varepsilon_"I"",") :}
+++++
+
+where stem:[lambda_"G"] and stem:[lambda_"I"] denote method effects, and
+stem:[varepsilon_"G"] and stem:[varepsilon_"I"] denote method-specific measurement errors.
+The specification of the model is completed by assuming that the method effects are
+independent normal random variables with mean stem:[0 "unitsml(mg*g^(-1))"] and
+unknown standard deviation stem:[tau], and that the method-specific measurement
+errors are independent random variables with scaled Student's stem:[t] distributions
+centered at stem:[0 "unitsml(mg*g^(-1))"], with stem:[nu_"G"] and stem:[nu_"I"]
+numbers of degrees of freedom, and unknown standard deviations stem:[u(w_"G")] and
+stem:[u(w_"I")].
+====
+
+[[cls-11.4]]
+=== Models for calibration and analysis
+
+[[cls-11.4.1]]
+==== {blank}
+
+The calibration of a measuring instrument serves to characterize how the instrument
+responds when presented with a measurement standard. This characterization involves
+establishing a relationship (_calibration function_) between values of calibration
+standards presented to the instrument, and the indications that the instrument
+produces in response (that is, the calibration function maps values of standards to
+instrumental indications), and evaluating the uncertainty associated with the
+resulting calibration function.
+
+[[cls-11.4.2]]
+==== {blank}
+
+To use the instrument in practice the inverse relation is needed, which maps an
+instrumental indication into a value of the measurand: for example, the inverse of
+the calibration function is called _analysis function_ in gas metrology <<guenther>>, and
+_measurement function_ in force metrology <<bartel13>>. For example, the calibration of an
+electrical load cell involves applying specified forces to it, reading the
+corresponding values of electromotive force (voltages) produced by the cell, and then
+building a function, most commonly a polynomial of low degree, that maps values of
+force to voltages or ratios of voltages <<bartel13>>.
+
+[[cls-11.4.3]]
+==== {blank}
+
+Since both the values of the measurement standards used in calibrations, and the
+corresponding instrumental indications, typically have non-negligible associated
+uncertainties, the statistical model usually most appropriate for calibrations is
+_errors-in-variables_ regression <<fuller>>, which may be employed to produce an analysis
+function, in the sense of ISO 6143 <<iso6143>>, directly, not by inversion of a
+calibration function. When the uncertainties associated with the values of the
+standards are negligible by comparison with the uncertainties associated with the
+instrumental indications, ordinary regression (where the fitted calibration curve
+minimizes a measure of the distances between observed and predicted values of the
+instrumental indications) may suffice. In some cases, the analysis (or measurement)
+function is determined directly during calibration, not via mathematical inversion of
+the corresponding calibration function.
+
+[[ex-11.4.3]]
+[example]
+.Amount fraction of stem:["N"_2"O"] in southern oceanic air -- model
+====
+<<fig6>> shows the data listed in <<table6>> for the primary standard mixtures that
+were used to build an analysis function stem:[A] to assign values to the amount
+fraction of stem:["N"_2"O"] in a reference material comprising southern oceanic air
+collected at Baring Head, New Zealand <<rhoderick>>. The analysis function stem:[A] produces
+a value of the amount fraction of stem:["N"_2"O"], stem:[x("N"_2"O") = A(r)], that
+corresponds to a ratio stem:[r] of the instrumental indications obtained
+contemporaneously for a calibration standard (or for a gas sample whose amount
+fraction of stem:["N"_2"O"] is to be determined) and for the air in a particular
+cylinder designated as the lot standard. The statistical model comprises three
+relations for each standard:
+
+[stem%unnumbered]
+++++
+{: (x = xi + varepsilon", ", r = rho + delta", ", xi = A(rho)".") :}
+++++
+
+The first two indicate that the reported amount fraction in the standard stem:[x],
+and the corresponding instrumental reading stem:[r], are both affected by measurement
+errors, with stem:[xi] and stem:[rho] denoting the corresponding true values. The
+third states that the analysis function stem:[A] relates corresponding true values.
+In gas metrology, stem:[A] usually is a polynomial of low degree that is fitted to
+the calibration data using ((errors-in-variables regression)) because the values of both
+stem:[x] and stem:[r] have non-negligible associated uncertainties, whose relative
+sizes are comparable in this case (last two columns of <<table6>>). <<ex4-11.9.8>>
+describes the estimation and uncertainty evaluation for stem:[A].
+
+[[table6]]
+.Analysis of the primary standard mixtures used to assign values to the amount fraction stem:[x] of stem:["N"_2"O"] in a southern oceanic air reference material <<rhoderick>>
+[cols=7]
+|===
+a| Standard mixture
+a| stem:[x//] +
+stem:[("unitsml(nmol/mol)")]
+a| stem:[u(x)//] +
+stem:[("unitsml(nmol/mol)")]
+a| stem:[r]
+a| stem:[u(r)]
+a| stem:[(u(x)//x)//] +
+%
+a| stem:[(u(r)//r)//] +
+%
+| FF22270 | stem:[314.952] | stem:[0.047] | stem:[0.972355] | stem:[0.000099] | stem:[0.015] | stem:[0.010]
+| FF22225 | stem:[319.646] | stem:[0.048] | stem:[0.987466] | stem:[0.000155] | stem:[0.015] | stem:[0.016]
+| CAL016773 | stem:[326.325] | stem:[0.057] | stem:[1.006460] | stem:[0.000078] | stem:[0.018] | stem:[0.0078]
+| FF22145 | stem:[331.135] | stem:[0.057] | stem:[1.021310] | stem:[0.000132] | stem:[0.017] | stem:[0.013]
+| FF22181 | stem:[338.390] | stem:[0.058] | stem:[1.043740] | stem:[0.000131] | stem:[0.017] | stem:[0.013]
+| FF22146 | stem:[344.378] | stem:[0.060] | stem:[1.062970] | stem:[0.000071] | stem:[0.017] | stem:[0.0067]
+|===
+====
+
+[[cls-11.5]]
+=== Models for homogeneity studies
+
+[[cls-11.5.1]]
+==== {blank}
+
+The preparation of reference materials in batches intended to be subdivided into
+separately packaged items (or units) that are assigned the same value and associated
+uncertainty, typically involves a study of the homogeneity of the batch, based on
+replicated measurements made in different units of the material.
+
+[[fig6]]
+.Analysis function used to assign values to the amount fraction of stem:["N"_2"O"] in a southern oceanic air reference material. The coordinates of the black dots are ratios and amount fractions for the primary calibration standards
+image::img06.png[]
+
+[[cls-11.5.2]]
+==== {blank}
+
+ISO Guide 35 <<iso35>> provides guidance for characterizing the homogeneity of reference
+materials. This Guide recognizes that homogeneity studies traditionally have included
+a statistical test to assess whether between-unit differences are significantly
+larger than within-unit differences, or larger than the uncertainty that the producer
+of the reference material achieved when measuring a single unit. ISO Guide 35 chooses
+to focus instead on whether the between-unit standard deviation is sufficiently small
+for the purpose that the candidate reference material is intended to serve, and in
+its <<iso35,clause=7.10>> suggests four criteria for checking whether this is the
+case: criteria (a)-(&#x200c;c) are accepted, practical conventions that ignore the sampling
+uncertainty surrounding the estimate of the between-unit standard deviation;
+criterion (d) recommends that a statistical test be carried out to ascertain 'that
+the between-unit term is not statistically significant at the 95&nbsp;% level of
+confidence', suggesting the Snedecor-Fisher stem:[F] test as one possibility.
+
+[[cls-11.5.3]]
+==== {blank}
+
+The Snedecor-Fisher stem:[F] test is usually carried out using the output from a
+conventional analysis of variance (ANOVA). The statistical model underlying such
+((ANOVA)) expresses each measured value stem:[w_(ij)] as a sum of the value stem:[omega]
+of the measurand, an item effect stem:[lambda_j], and a measurement error
+stem:[varepsilon_(ij)], for replicate determination stem:[i] in item stem:[j: w_(ij) =
+omega+lambda_j +varepsilon_(ij)]. The item effects stem:[lambda_j] are modelled as a
+sample from a normal probability distribution with mean 0 and unknown standard
+deviation stem:[tau], and the stem:[varepsilon_(ij)] are modelled as a sample from a
+normal probability distribution with mean 0 and unknown standard deviation
+stem:[sigma]. Because the item effects are modelled as random variables, this model
+is a _random effects model_. In this setting, the Snedecor-Fisher stem:[F] test is
+equivalent to testing the hypothesis that stem:[tau = 0] (with the appropriate
+units). In practice, and for many reference materials, a modicum of heterogeneity is
+acceptable, and it is recognized and expressed in the uncertainty associated with the
+estimate of stem:[omega]. When a candidate reference material is found to be
+excessively heterogeneous, in some cases it may be possible to split it into portions
+that are sufficiently homogeneous: this is often the case when the reference material
+is a gas mixture, and the items are cylinders that have been filled by drawing from
+several batches of the mixture, nominally of the same composition, yet whose actual
+compositions are too different for the intended purpose.
+(((measurement model,random effects)))
+
+[[cls-11.5.4]]
+==== {blank}
+
+The Snedecor-Fisher stem:[F] test(((F-test))) is very sensitive to violations of the assumptions
+just stated, that validate the underlying statistical model. Therefore, the validity
+of these assumptions needs to be checked, at a minimum by examining QQ-plots <<chambers>> of
+the estimates of the item effects, and of the measurement errors. Neither the
+((Kruskal-Wallis test)) <<hollander, section=6.1>> (implemented in function `kruskal.test`, which
+is included in 'base' `R`, available at `https://www.r-project.org/`) nor the
+Fisher-Pitman permutation test <<basso>> (implemented in function `oneway_test` of `R` package
+`coin`, available at `https://www.r-project.org/`) require the assumption of normality,
+and both can be used to assess homogeneity because they test whether the true values
+of the measurand in different items are significantly different, when determinations
+of the measurand can be made in multiple aliquots drawn from each item.(((QQ-plot)))
+
+[[ex-11.5.4]]
+[example]
+.Barium in clay soil -- model
+====
+<<table7>> lists measured values of the mass fraction of barium in aliquots of a clay
+soil used in a homogeneity study <<vanderveen>>. The model for this data is the additive model
+described in <<cls-11.5.3>>. The results of fitting this model to the data in the
+table are presented in <<ex5-11.9.8>>. Here the focus is on
+statistical tests of the hypothesis of homogeneity. The stem:[p]-values from the
+conventional ((ANOVA)) stem:[F]-test(((F-test))), the Kruskal-Wallis test and the Fisher-Pitman
+permutation test above are 0.09, 0.15, and 0.09, respectively. A stem:[p]-value is
+the probability of observing a value of the test criterion at least as extreme as was
+observed, under the assumption of homogeneity: since none of these stem:[p]-values is
+alarmingly small, none of the tests rejects the hypothesis of homogeneity.
+
+[[table7]]
+.Values of the mass fraction (stem:["unitsml(mg*kg^(-1))"]) of barium in a clay soil measured for a homogeneity study -- reproduced from <<vanderveen,table=1>>
+[cols=8]
+|===
+| Sample 3+^| Replicates | Sample 3+^| Replicates
+| 0118 | 323 | 301 | 310 | 1133 | 310 | 328 | 312
+| 0201 | 340 | 334 | 316 | 1249 | 314 | 314 | 302
+| 0383 | 320 | 321 | 309 | 1464 | 329 | 300 | 299
+| 0442 | 315 | 338 | 321 | 1581 | 320 | 329 | 311
+| 0557 | 326 | 338 | 325 | 1607 | 322 | 312 | 311
+| 0666 | 325 | 302 | 304 | 1799 | 332 | 317 | 299
+| 0791 | 324 | 331 | 317 | 1877 | 313 | 294 | 293
+| 0918 | 310 | 310 | 331 | 1996 | 324 | 314 | 335
+| 1026 | 336 | 321 | 328 | 2000 | 321 | 342 | 316
+|===
+====
+
+[[cls-11.6]]
+=== Models for the adjustment of observations
+
+[[cls-11.6.1]]
+==== {blank}
+
+In geodetic and astronomical measurement, as well as in conventional dimensional
+metrology and in the calibration of weights, the _adjustment of observations_
+consists of applying a measurement model and data reduction procedure to produce
+mutually consistent estimates of the true values of the angles or distances, or of
+the masses, that are the measurands. Applications include 'aligning' point clouds
+measured by different coordinate measuring machines and expressed relative to
+different reference frames;, assigning values to distances between landmarks based on
+redundant, mutually inconsistent triangulations in geodetic surveys, civil
+engineering, and industrial assembly of large structures (for example, in aeroplane
+manufacturing); and calibrating weights. In all cases, it is required to qualify the
+results with evaluations of uncertainty.
+
+[[cls-11.6.2]]
+==== {blank}
+
+The model that is most commonly used for the adjustment of observations in this sense
+expresses each observation as the sum of an unknown true value and a non-observable
+error (which may be a scalar or a vector) with mean zero, where the true values are
+assumed to satisfy particular 'equations of condition'. The adjustment is typically
+carried out by application of the method of least squares, which is equivalent to the
+method of maximum likelihood when the errors are assumed to be outcomes of
+independent, normally distributed random variables.(((least squares method)))
+
+[[ex1-11.6.2]]
+[example]
+.Calibrating a geodetic base line -- model
+====
+<<fig7>> shows the segments with lengths stem:[L_1, ..., L_6] that were surveyed to
+obtain an estimate of the length of the straight base line between geodetic markers
+stem:["A"] and stem:["D"], computed as the sum of the distances from stem:["A"] to
+stem:["B"] stem:[(lambda_1)], from stem:["B"] to stem:["C"] stem:[(lambda_2)], and
+from stem:["C"] to stem:["D"] stem:[(lambda_3)]. The observations were stem:[L_1 =
+27.19 "unitsml(m)"], stem:[L_2 = 33.08 "unitsml(m)"], stem:[L_3 = 25.33
+"unitsml(m)"], stem:[L_4 = 60.33 "unitsml(m)"], stem:[L_5 = 58.35 "unitsml(m)"], and
+stem:[L_6 = 85.59 "unitsml(m)"]. The observed lengths are mutually inconsistent
+because, for example, stem:[L_2 + L_3 != L_5]
+
+[[fig7]]
+.Observations made to calibrate the length of base line stem:["A"]-stem:["D"]
+image::img07.png[]
+
+The models for the observations are stem:[L_1 = lambda_1 + E_1], stem:[L_2 = lambda_2
++ E_2], stem:[L_3 = lambda_3 + E_3], stem:[L_4 = lambda_1 + lambda_2 + E_4],
+stem:[L_5 = lambda_2 + lambda_3 + E_5], and stem:[L_6 = lambda_1 + lambda_2 +
+lambda_3 + E_6], where stem:[E_1, ..., E_6] denote measurement errors. In geodesy,
+the additional assumption is commonly made that the measurement errors are like a
+sample from a normal distribution with mean stem:[0 "unitsml(m)"] and unknown
+standard deviation stem:[sigma].
+====
+
+[[ex2-11.6.2]]
+[example]
+.Standard relative atomic mass of tellurium
+====
+Before mass spectrometric measurements were common, relative atomic masses (also
+called atomic weights) of the elements were determined from sets of measurements
+linking the chemical equivalents of various elements. For instance, the relevant data
+involving tellurium are as follows <<delaeter>>:
+
+[stem%unnumbered]
+++++
+{: (A_"r"("TeBr"_4)//(4A_"r"("Ag")) = 1.03649", ", u(A_"r"("TeBr"_4))//(4A_"r"("Ag")) = 0.00004","),
+(A_"r"("TeBr"_4)//(4A_"r"("AgBr")) = 0.595426", ", u(A_"r"("TeBr"_4))//(4A_"r"("AgBr")) = 0.000025","),
+(A_"r"("TeCl"_4)//(4A_"r"("Ag")) = 0.624427", ", u(A_"r"("TeCl"_4))//(4A_"r"("Ag")) = 0.000034","),
+(A_"r"("TeCl"_4)//(4A_"r"("AgCl")) = 0.469962", ", u(A_"r"("TeCl"_4))//(4A_"r"("AgCl")) = 0.000027","),
+(A_"r"("Ag"_2"Te")//(4A_"r"("Ag")) = 1.59144", ", u(A_"r"("Ag"_2"Te"))//(4A_"r"("Ag")) = 0.00003".") :}
+++++
+
+Treating the relative atomic mass of silver, stem:[A_"r"("Ag")], as an additional
+input variable these observations provide a set of equations whose least-squares
+solution estimates the relative atomic mass of tellurium (along with bromine and
+chlorine).
+====
+
+[[cls-11.7]]
+=== Models for time series
+
+[[cls-11.7.1]]
+==== {blank}
+
+Observations made repeatedly of the same phenomenon or object, over time or along a
+transect in space, often equispaced in time or equidistant in space, tend to be
+interrelated, the more so the greater their proximity. The models used to study such
+series of observations involve correlated random variables <<box>>, <<percival>>.
+
+[[cls-11.7.2]]
+==== {blank}
+
+A particularly rich and widely used class of models for series of observations
+stem:[x_(t_1), x_(t_2), ...] made at equispaced epochs stem:[t_1, t_2, ...] are the
+so-called ARIMA (auto-regressive, integrated, moving average) models <<box>>. These
+models are applicable to series whose level and pattern of oscillations remain
+constant over time, as well as to series whose level (for example, the mean) drifts
+with passing time. For the latter, the model focuses on differences, for example on
+first differences stem:[x_(t_i) - x_(t_i-1)].
+
+[[cls-11.7.3]]
+==== {blank}
+
+ARIMA models express the value observed at a particular epoch (possibly after
+differencing the series), as a linear combination of values observed at a finite
+number of previous epochs, plus an 'error' that itself is a linear combination of
+measurement errors affecting the current observation and a finite number of previous
+observations. In the following example, an ARIMA model is used for a time series of
+values of temperature of a thermal bath measured at regular intervals. It captures
+the fact that values measured at nearby epochs tend to be more similar than values at
+more widely separated epochs. Recognizing the structure of the resulting
+correlations, and modelling them accurately, may impact on uncertainty evaluations
+considerably, as illustrated in <<ex9-11.9.8>>.
+
+[[ex-11.7.3]]
+[example]
+.Temperature of a thermal bath -- model
+====
+The readings of temperature listed in <<table8>> and depicted in <<fig8>> were taken
+every minute with a thermocouple immersed in a thermal bath during a period of 100
+min. These observations serve (i) to estimate the temperature of the bath assuming
+that it is in thermal equilibrium, and (ii) to ascertain that the bath indeed is in
+thermal equilibrium. Owing to uncontrolled exchanges of thermal energy with the
+environment external to the bath, which are counterbalanced by controlled heating and
+circulation of the fluid, even if the temperature of interest does not drift, it will
+still oscillate over time around its mean value stem:[tau], which is the primary
+measurand. The secondary measurand is the pattern of such oscillations. The inputs
+are readings of temperature stem:[t_1, ..., t_m], where stem:[t_i] denotes the
+reading made stem:[i] minutes after the beginning of the experiment, for stem:[i = 1,
+..., m = 100]. A time series model for the stem:[t_i] describes how consecutive
+readings of temperature are related to one another and to stem:[tau]. The structure
+of this model, and estimates of its adjustable parameters, characterize the pattern
+of oscillations observed when the bath is in a steady thermal state. The following
+auto-regression of order 2 <<box>> has been found to be adequate for these data
+<<possolo141,clause=V.B.1>>:
+
+[stem%unnumbered]
+++++
+t_i = tau + varphi_1(t_(i-1)-tau) + varphi_2(t_(i-2)-tau) + varepsilon_i,
+++++
+
+where the stem:[varepsilon_i] are assumed to be uncorrelated normal random variables
+with mean stem:[0 "unitsml(degC)"] and unknown standard deviation stem:[sigma]. The
+specification of this model comprises four parameters, stem:[tau], stem:[varphi_1],
+stem:[varphi_2] and stem:[sigma], of which stem:[tau] is the primary measurand, and
+the other three characterize the state of thermal equilibrium.
+
+This example has also been analyzed using a slightly different model in reference
+<<possolo139>>.
+
+[[table8]]
+[%unnumbered]
+.Time series of temperature readings made every minute, expressed as deviations from stem:[50 "unitsml(degC)"]. The first reading was stem:[50.1024 "unitsml(degC)"], the tenth stem:[50.1072 "unitsml(degC)"], the eleventh stem:[50.105 4 "unitsml(degC)"], etc. <<diaz>>
+|===
+| 0.1024 | 0.1054 | 0.1026 | 0.1042 | 0.1026 | 0.1039 | 0.1065 | 0.1052 | 0.1067 | 0.1072
+| 0.1054 | 0.1049 | 0.1082 | 0.1039 | 0.1052 | 0.1085 | 0.1088 | 0.1075 | 0.1085 | 0.1098
+| 0.1070 | 0.1060 | 0.1067 | 0.1065 | 0.1072 | 0.1062 | 0.1085 | 0.1062 | 0.1034 | 0.1049
+| 0.1044 | 0.1057 | 0.1060 | 0.1082 | 0.1052 | 0.1060 | 0.1057 | 0.1072 | 0.1072 | 0.1077
+| 0.1103 | 0.1090 | 0.1077 | 0.1082 | 0.1067 | 0.1098 | 0.1057 | 0.1060 | 0.1019 | 0.1021
+| 0.0993 | 0.1014 | 0.0965 | 0.1014 | 0.0996 | 0.0993 | 0.1003 | 0.1006 | 0.1026 | 0.1014
+| 0.1039 | 0.1044 | 0.1024 | 0.1037 | 0.1060 | 0.1024 | 0.1039 | 0.1070 | 0.1054 | 0.1065
+| 0.1072 | 0.1065 | 0.1085 | 0.1080 | 0.1093 | 0.1090 | 0.1128 | 0.1080 | 0.1108 | 0.1085
+| 0.1080 | 0.1100 | 0.1065 | 0.1062 | 0.1057 | 0.1052 | 0.1057 | 0.1034 | 0.1037 | 0.1009
+| 0.1009 | 0.1044 | 0.1021 | 0.1021 | 0.1029 | 0.1037 | 0.1049 | 0.1082 | 0.1044 | 0.1067
+|===
+
+[[fig8]]
+.Time series of the temperature readings listed in <<table8>>
+image::img08.png[]
+====
+
+[[cls-11.7.4]]
+==== {blank}
+
+In some applications, where an observed time series is used as input for subsequent
+data reduction steps, an _ad hoc_ smoothing procedure, as an alternative to fitting an
+explicit model, suffices to abate the extent of the uncertainty that is propagated
+downstream. Moving averages (in particular, exponentially weighted moving averages)
+and moving medians are widely used for this purpose <<nist, clause=6.4.3>>.
+
+[[cls-11.8]]
+=== Bayesian statistical models
+
+[[cls-11.8.1]]
+==== {blank}
+
+Bayesian statistical models reflect an understanding of uncertainties associated with
+both inputs and outputs as characterizing states of incomplete knowledge about the
+true value of the input quantities and of the measurand. They are particularly useful
+when there exists information about the true value of the measurand prior to
+obtaining the results of a new measurement, by providing the means to update such
+information with the fresh data that will be acquired in the new measurement.
+
+[[cls-11.8.2]]
+==== {blank}
+
+The distinctive features of a Bayesian treatment are these: (i) experimental data are
+modelled as realized values, or outcomes, of random variables with probability
+distributions involving parameters whose values are either unknown or known only
+incompletely; (ii) these parameters are modelled as random variables, hence so is the
+measurand because it is a function of those parameters -- however, none of these
+random variables is accessible to direct observation: knowledge of their values is
+obtained only through the empirical data; (iii) estimates and uncertainty evaluations
+for the parameters are derived from the conditional probability distribution of the
+parameters given the data (the so-called _posterior distribution_).
+(((probability distribution,posterior)))
+
+[[cls-11.8.3]]
+==== {blank}
+
+Accepting (i) and (ii) involve specifying probability distributions for all
+quantities involved (data and unknown parameters), and (iii) involves the application
+of Bayes' rule <<degroot,section=2.3,locality:theorem=7.2.1>>, typically using Markov Chain Monte
+Carlo (MCMC)(((Markov Chain Monte Carlo))) sampling to produce an arbitrarily large sample from the posterior
+distribution <<gelman>>, which may then be reduced to produce an estimate of the measurand
+and the associated uncertainty.
+
+[[cls-11.8.4]]
+==== {blank}
+
+The distribution assigned to the measurand (and to any other quantities whose values
+are unknown) is called a _prior distribution_. It conveys pre-existing knowledge
+about the measurand, before any fresh data are acquired in the new measurement
+experiment. This knowledge may be derived from historical data <<possolo138>> describes an
+instance of this case for value assignment to reference solutions used in
+spectrometric calibrations), or it may reflect a subjective, expert assessment of
+what is known about the value of the measurand <<ohagan130>>. When no such information is
+available, the application of ((Bayesian methods)) requires that a choice be made of a
+so-called _non-informative_ prior distribution for the measurand.
+(((probability distribution,prior)))
+
+[[cls-11.8.5]]
+==== {blank}
+
+Developing a Bayesian model in practice involves choosing a prior distribution. This
+choice typically is influential and challenging <<berger>>, <<goldstein>>.
+It is recommended that, when
+Bayesian methods are employed, the sensitivity of the conclusions to the choice of
+prior be assessed and documented, regardless of whether the prior results from an
+elicitation exercise <<ohagan128>> or from application of some prior selection principle
+<<kass>>. Furthermore, implementing and using the Bayesian model in practice requires
+familiarity with suitable, specialized software for statistical computing <<possolo141>>.
+
+[[ex1-11.8.5]]
+[example]
+.Pitot tube -- model
+====
+The airspeed stem:[v] of an aircraft may be measured using a Pitot tube and the
+measurement model
+
+[stem%unnumbered]
+++++
+v = sqrt(2DR_"s"T//p),
+++++
+
+where stem:[D] denotes the difference between the total and static pressures,
+stem:[p] and stem:[T] denote air pressure and temperature, and the specific gas
+constant for air stem:[R_"s" = 287.058 "unitsml(J*kg^(-1)*K^(-1))"]. Reference <<possolo140>>
+discusses this example using data from <<kline>>: stem:[D = 1.993 "unitsml(kPa)"],
+stem:[p = 101.4 "unitsml(kPa)"], and stem:[T = 292.8 "unitsml(K)"], with associated
+standard uncertainties stem:[u(D) = 0.0125 "unitsml(kPa)"], stem:[u(p) = 1.05
+"unitsml(kPa)"], and stem:[u(T) = 0.11 "unitsml(K)"]. Suppose that the estimate of
+stem:[D] is the average of five determinations
+
+[stem%unnumbered]
+++++
+{: (1.975 "unitsml(kPa)"", ", 2.039 "unitsml(kPa)"", ", 1.972 "unitsml(kPa)"", ", 1.979 "unitsml(kPa)"", ", 2.000 "unitsml(kPa)") :}
+++++
+
+made under repeatability conditions, and that long experience in making these
+measurements suggest that the standard uncertainty associated with the estimate of
+stem:[D] is stem:[0.03 "unitsml(kPa)"]. Suppose also that the prior knowledge about
+stem:[v] is expressed by a normal distribution with mean stem:[55
+"unitsml(m*s^(-1))"] and standard deviation stem:[10 "unitsml(m*s^(-1))"]. A Bayesian
+model can be defined by 'inverting' the measurement equation and reformulating it as
+a statistical model (cf. <<forbes>>): the determinations of stem:[D] are now regarded as a
+sample from a normal distribution with mean stem:[pv^2//(2R_"s"T)] and standard
+deviation stem:[0.03 "unitsml(kPa)"]; stem:[R_"s"] is treated as a known constant.
+The pressure stem:[p] and the temperature stem:[T] are assigned distributions with
+means equal to their measured values and standard deviations equal to their standard
+uncertainties, the distribution selected for stem:[p] being normal, and the
+distribution selected for stem:[T] being lognormal (which avoids division by 0 in the
+mean for stem:[D], while being practically indistinguishable from a normal
+distribution given that the coefficient of variation stem:[u(T)//T] is 0.04&nbsp;%.)
+====
+(((probability distribution,lognormal)))
+
+[[ex2-11.8.5]]
+[example]
+.Copper in wholemeal flour -- model
+====
+The Analytical Methods Committee of the Royal Society of Chemistry lists the
+following observations of the mass fraction of copper (expressed in
+stem:["unitsml(ug*g^(-1))"]) in wholemeal flour obtained under conditions of
+repeatability <<amc2>>:
+
+[stem%unnumbered]
+++++
+{: (2.9", ", 3.1", ", 3.4", ", 3.4", ", 3.7", ", 3.7", ", 2.8", ", 2.5", ", 2.4", ", 2.4", ", 2.7", ", 2.2", "),
+(5.28", ", 3.37", ", 3.03", ", 3.03", ", 28.95", ", 3.77", ", 3.4", ", 2.2", ", 3.5", ", 3.6", ", 3.7", ", 3.7".") :}
+++++
+
+The statistical model for these data expresses the observations as
+
+[stem%unnumbered]
+++++
+w_i = omega + varepsilon_i
+++++
+
+where stem:[omega] denotes the true value of the mass fraction of copper in the
+flour, and the stem:[varepsilon_i] denote measurement errors. A cursory examination of
+these data suffices to conclude that it is inappropriate to assume that the
+stem:[varepsilon_i] are like a sample from a normal distribution. The
+((Anderson-Darling test)) <<anderson>> (for example, as implemented in function
+`ad.test` of `R` package `nortest`,
+available at `https://www.r-project.org/`), corroborates this impression by roundly
+rejecting the hypothesis of normal shape for the stem:[w_i]. In this case, the
+culprit is the single outlying observation of stem:[28.95 "unitsml(ug*g^(-1))"]. That
+Committee recommended that a Huber M-estimator of location <<huber>> be used instead of
+the simple arithmetic average when the observations do not appear to be a sample from
+a normal distribution, as alternative to discarding observations that appear to be
+outliers. The Bayesian model defined in <<kruschke>> (and implemented in `R` package `BEST`,
+available at `https://www.r-project.org/`) implements a Bayesian alternative that
+effectively can model and adaptively down-weights potential outliers: (a) the data
+are modelled as a sample from a Student's stem:[t] distribution with stem:[nu] degrees of
+freedom, re-scaled to have standard deviation stem:[sigma], and shifted to have mean
+stem:[omega]; (b) the prior distribution for stem:[omega] is normal with mean equal
+to the average of the observations, and standard deviation stem:[1000 "unitsml(s)"],
+where s denotes the sample standard deviation of the observations; (&#x200c;c) the number of
+degrees of freedom stem:[nu] is modelled _a priori_ as stem:[E+1], where stem:[E] is
+a random variable with an exponential distribution with mean 29; (d) the standard
+deviation stem:[sigma] of the stem:[varepsilon_i] has a uniform (or, rectangular) prior
+distribution concentrated between stem:["unitsml(s)"//1000] and stem:[1000
+"unitsml(s)"]; and (e) stem:[omega], stem:[sigma], and stem:[nu] are assumed to be
+independent _a priori_.
+====
+(((probability distribution,exponential)))(((probability distribution,prior)))
+(((probability distribution,Student's stem:[t])))(((probability distribution,uniform)))
+
+[[cls-11.9]]
+=== Estimation and uncertainty evaluation for statistical models
+
+[[cls-11.9.1]]
+==== {blank}
+
+Statistical models enable recasting the measurement problem as a problem in
+statistical estimation, thereby consolidating, and executing simultaneously, the two
+key tasks involving reductions of measurement data: the assignment of a value to the
+measurand, and the evaluation of the associated measurement uncertainty. The generic,
+statistical paradigm is as follows: (i) given measurement data that will serve as
+inputs, a statistical model (as defined in <<cls-11.1.1>>) is developed that relates
+the probability distribution underlying the data to the value of the measurand; (ii)
+a criterion is selected that determines how the information about the measurand
+should be extracted from the data; (iii) the device used to extract such information
+is called an _estimator_, and its probability distribution fully characterizes the
+uncertainty associated with the estimate of the measurand that it produces.
+
+[[cls-11.9.2]]
+==== {blank}
+
+The statistical model in (i) above may be expressed by saying that the inputs
+stem:[x_1, ..., x_m] are outcomes of random variables whose joint probability
+distribution depends on a (possibly vectorial) parameter stem:[theta], and the
+corresponding probability density is written as stem:[g_theta]. In Bayesian models,
+stem:[theta] is regarded as the realized value of a non-observable random variable
+whose distribution (_prior distribution_) also needs to be specified. Finally, a
+function stem:[varphi] is required that maps that parameter into the true value of
+the measurand, stem:[eta = varphi(theta)]. In <<ex2-11.3.3>>, the
+inputs are the numbers of revolutions until failure of the stem:[m = 24] ball
+bearings, stem:[R_1, ...,R_m]. Their probability distribution is Weibull, and
+stem:[theta = (S,A)] is a vector with two components: the scale stem:[S] and shape
+stem:[A] of the Weibull distribution. The measurand is the expected lifetime of the
+ball bearings, stem:[eta = varphi(theta) = S Gamma (1+1//A)].
+(((probability distribution,Weibull)))
+
+[[cls-11.9.3]]
+==== {blank}
+
+Many criteria are available that determine how the information should be extracted
+that the data provide about the measurand. Reference <<degroot>> describes several of them,
+including the ((method of moments)), least squares, maximum likelihood, and minimum Bayes
+risk: these will be variously illustrated in the following examples. Application of a
+criterion to the statistical model determines an _estimator_, which is a function
+stem:[psi] that takes the measurement data as inputs and produces an estimate
+stem:[hat theta = psi(x_1, ..., x_m)] of the parameter stem:[theta], whence a
+corresponding estimate of the true value of the measurand may be derived as stem:[y =
+varphi(hat theta)]. For all statistical models, stem:[y] is the value of a random
+variable whose probability distribution characterizes measurement uncertainty fully.
+
+[[cls-11.9.4]]
+==== {blank}
+
+In some cases it is not possible to define stem:[psi] explicitly, and stem:[psi(x_1,
+..., x_m)] is evaluated by executing the steps of an algorithm. In <<ex4-11.9.8>>,
+estimating the coefficients of the analysis function used for value
+assignment for a reference material involves the numerical optimization of a
+non-linear function. In general, no 'rearrangement' of a statistical model is
+possible that usefully renders it in the form of a measurement model that could be
+dealt with as contemplated in <<jcgm100>>. This is obvious for the model discussed in
+<<ex2-11.3.3>>, owing to the presence of censored observations. In
+some cases, such 'rearrangement' is possible, but it depends on the underlying
+statistical model and on the selection of a principle of estimation, as the following
+example illustrates.(((measurement model,non-linear)))
+
+[[ex1-11.9.4]]
+[example]
+.Method of moments for Weibull lifetime
+====
+Suppose that, in <<ex2-11.3.3>>, none of the observations
+stem:[R_1, ...,R_m] (numbers of revolutions until failure of the stem:[m = 24] ball
+bearings) were censored. In these circumstances, the ((method of moments))
+<<bickel, example=2.1.2>> can be employed to estimate the scale stem:[S] and shape stem:[A] of the
+Weibull distribution selected as a model for the lifetime of the ball bearings. The
+estimates are the solution of the following two, simultaneous, non-linear equations:
+(((probability distribution,Weibull)))
+
+[stem%unnumbered]
+++++
+{: (SGamma(1+1//A)= (R_1 + ... + R_m)//m", ", S^2Gamma(1+2//A) = (R_1^2 + ... + R_m^2)//m".") :}
+++++
+
+This system of equations is an implicit measurement model for the vector output
+quantity stem:[(S,A)], with the stem:[R_i] as input quantities. Notice that the
+measurement function is determined by the underlying statistical model and by the
+choice of method of estimation. stem:[S] and stem:[A] may be estimated by evaluating
+the measurement function at the observed values of the inputs, and the associated
+uncertainties may be evaluated accordingly. In this case, the solution is stem:[hat S
+= 103] million revolutions, and stem:[hat A = 1.89]; hence the corresponding estimate
+of the mean lifetime is
+(((measurement model,implicit)))
+
+[stem%unnumbered]
+++++
+hat T = 103 Gamma (1 + 1//1.89)" million revolutions "= 91.4" million revolutions."
+++++
+
+The ((Monte Carlo method)) of <<jcgm101>> produces stem:[u(hat T) = 10.7] million
+revolutions, and the non-parametric bootstrap <<efron>> produces stem:[u(hat T) = 10.5]
+million revolutions.
+====
+
+[[ex2-11.9.4]]
+[example]
+.Electric current -- rearrangement
+====
+Even for the simplest of statistical models, as in <<ex1-11.3.3>>,
+the trivial 'rearrangement'
+
+[stem%unnumbered]
+++++
+tilde I_0 = (I_1 + I_2 + I_3 + I_4 + I_5)//5
+++++
+
+is justified only if it is assumed that the non-observable measurement errors in the
+stem:[I_j] are like a sample from a normal distribution, and that the estimator
+should have minimum mean squared error. Different assumptions would lead to
+estimators different from this arithmetic average.
+====
+
+[[cls-11.9.5]]
+==== {blank}
+
+Statistical models call for a varied assortment of techniques for uncertainty
+evaluation. In some cases, including when the ((method of moments)) is used to estimate
+the parameters of the distribution underlying the measured values, the approximate
+technique described in <<jcgm100>> [using the law of propagation of uncertainty as in
+<<jcgm100,locality:equation=10>> or <<jcgm100,locality:equation=13>>] is applicable and adequate for
+the intended purpose.
+
+[[cls-11.9.6]]
+==== {blank}
+
+When maximum likelihood is used to estimate the vector stem:[theta] of parameters
+introduced in <<cls-11.9.2>>, and the conditions detailed in
+<<bickel,locality:theorem=5.4.3>> are
+satisfied (as they will be in most cases likely to be encountered in practice), then
+stem:[H^(-1) (hat theta)] provides an approximation either to the squared standard
+uncertainty (when stem:[theta] is a scalar), or to the ((covariance matrix)) (when
+stem:[theta] is a vector), associated with the maximum likelihood estimate, stem:[hat
+theta]. When stem:[theta] is a scalar, stem:[H^(-1)(hat theta)] is the reciprocal of
+the second derivative of the negative loglikelihood function corresponding to the
+probability distribution underlying the inputs, evaluated at stem:[hat theta]. When
+stem:[theta] is a vector, stem:[H^(-1)(hat theta)] is the inverse of the matrix of
+the second-order partial derivatives of the negative loglikelihood function,
+evaluated at stem:[hat theta]. In this case, the square roots of the main diagonal
+elements of stem:[H^(-1)(hat theta)] are approximate evaluations of the standard
+uncertainties associated with the estimates of the parameters, and the covariances
+between them are given by the off-diagonal elements of the same matrix. Since the
+measurand is a known function of these parameters (in the aforementioned
+<<ex2-11.3.3>> the measurand is stem:[T = S Gamma (1 + 1//A)]), the
+uncertainty associated with the corresponding estimate can then be computed using
+<<jcgm100,locality:equation=13>>.
+
+[[cls-11.9.7]]
+==== {blank}
+
+Bayesian procedures produce a probability distribution for the parameters of the
+distribution underlying the inputs (or an arbitrarily large sample drawn from this
+distribution), from which the probability distribution (or a sample from the
+distribution) of the measurand may be derived straightforwardly. This distribution
+depends not only on the model used for the observations, but also on the prior
+distribution chosen for the parameters that appear in the model for the observations.
+
+[[cls-11.9.8]]
+==== {blank}
+
+In many other cases, methods other than those just mentioned will have to be
+employed, for example Monte Carlo methods for propagation of distributions
+(<<jcgm101>> and <<morgan>>) or bootstrap methods <<efron>>. Also see <<jcgm102>>.
+
+[[ex1-11.9.8]]
+[example]
+.Electric current -- estimation and uncertainty evaluation
+====
+The maximum likelihood estimates (MLEs) of stem:[I_0] and stem:[sigma] that
+correspond to the model described in <<ex1-11.3.3>> are as follows
+<<degroot, example=7.5.6>>:
+
+[stem%unnumbered]
+++++
+{: (bar I = (I_1 + ... + I_5)/5 = 19.661 "unitsml(mA)"", ", hat sigma = sqrt(((I_1-bar I)^2 + ... + (I_5 - bar I)^2)/5) = 0.019 "unitsml(mA)"".") :}
+++++
+
+For _unbiased_ estimates (that is, estimates whose mathematical expectations are
+equal to the respective measurands), the estimate of stem:[I_0] continues to be
+stem:[bar I], but the estimate of stem:[sigma] is as follows <<deming>>:
+
+[stem%unnumbered]
+++++
+hat sigma = sqrt(2/(5-1)) * (Gamma(5/2))/(Gamma((5-1)/2)) * sqrt(((I_1-bar I)^2 + ... + (I_5 - bar I)^2)/(5-1)) 0.020 "unitsml(mA)".
+++++
+
+If the measurement errors are best modelled as a sample from a Laplace distribution,
+then the MLE of stem:[I_0] is the median of the observations, stem:[tilde I_0 =
+19.663 "unitsml(mA)"], and the MLE of stem:[sigma] is the average of the absolute
+values of the deviations of the observations from the median, multiplied by
+stem:[sqrt 2], which is stem:[tilde sigma = 0.024 "unitsml(mA)"]. If the estimate of
+stem:[I_0] is stem:[bar I], then the law of propagation of uncertainty provides an
+exact evaluation of stem:[u(bar I)], which is the same as the evaluation that
+corresponds to maximum likelihood estimation, stem:[u(bar I_0) = hat sigma//sqrt 5 =
+0.009 "unitsml(mA)"]. However, if the estimate should be
+(((probability distribution,Laplace)))
+
+[stem%unnumbered]
+++++
+tilde I_0 = "median"{I_1, ..., I_5}
+++++
+
+instead, then the techniques described in <<jcgm100>> are unable to evaluate
+stem:[u(tilde I_0)]. The evaluation corresponding to the MLE for Laplace errors is
+stem:[u(tilde I_0) = 0.0238 "unitsml(mA)"//sqrt 5 = 0.011 "unitsml(mA)"]. When the
+median still seems to be the best choice as estimate of stem:[I_0], but no specific
+distributional shape can confidently be assumed for the measurement errors other
+than their distribution is symmetrical and centered at 0, then an evaluation of the
+associated uncertainty based on inversion of the ((Wilcoxon test)) is recommended <<possolo141>>:
+for the data considered in this example this produces stem:[0.0115
+"unitsml(mA)"//sqrt 5 = 0.005 "unitsml(mA)"].
+====
+(((probability distribution,Laplace)))
+
+[[ex2-11.9.8]]
+[example]
+.Lifetime of ball bearings -- estimation and uncertainty evaluation
+====
+In <<ex2-11.3.3>>, estimating the expected lifetime, stem:[T = S Gamma (1+1//A)],
+reduces to estimating the scale stem:[S] and shape stem:[A] of the Weibull model
+chosen for the inputs. The method of maximum likelihood (and Bayesian estimation
+procedures) are able to take into account the information provided by the four
+censored observations. The MLEs of stem:[S] and stem:[A] are the values that maximize
+(((probability distribution,Weibull)))
+
+[stem%unnumbered]
+++++
+sum_(i in &#119984;) "ln" w_(S,A) (R_i) + sum_(i in &#119966;) "ln" (1-W_(S,A)(R_i))
+++++
+
+with respect to stem:[S] and stem:[A], where stem:[w_(S,A)] and stem:[W_(S,A)]
+denote the probability density and the probability cumulative distribution function
+of the Weibull distribution with scale stem:[S] and shape stem:[A], stem:[&#119984;]
+denotes the set of indices corresponding to uncensored observations, and
+stem:[&#119966;] denotes the set of indices corresponding to censored observations.
+The MLEs are stem:[hat S = 111] million revolutions and stem:[hat A = 1.34]; hence
+stem:[hat T = 102] million revolutions. The approximate uncertainty evaluations
+associated with the MLEs are stem:[u(hat S) = 19] million revolutions and
+stem:[u(hat A) = 0.26], and the correlation between them is stem:[r(hat S,hat A) =
+0.0966], computed as described in <<cls-11.9.6>>. Application of
+<<jcgm100,locality:formula=13>> then yields stem:[u(hat T) = 17] million
+revolutions. The parametric ((statistical bootstrap)) evaluates the same uncertainty at
+20 million revolutions.
+====
+
+[[ex3-11.9.8]]
+[example]
+.Mass fraction of tin -- estimation and uncertainty evaluation
+====
+The ((DerSimonian-Laird estimate)) of the mass fraction of tin produced by the _NIST
+Consensus Builder_ <<koepke106>>, <<koepke107>> with the inputs specified in <<ex3-11.3.3>> is
+stem:[10.01 "unitsml(mg*g^(-1))"]. The hierarchical Bayesian procedure also
+implemented in the _NIST Consensus Builder_ produced the same estimate. The
+evaluation of the standard uncertainty associated with the DerSimonian-Laird
+estimate is stem:[0.011 "unitsml(mg*g^(-1))"]. A 95 % coverage interval for the mass
+fraction of tin ranges from stem:[9.99 "unitsml(mg*g^(-1))"] to stem:[10.04
+"unitsml(mg*g^(-1))"]. The corresponding values produced by the hierarchical
+Bayesian procedure are stem:[0.025 "unitsml(mg*g^(-1))"] for the standard
+uncertainty and stem:[9.96 "unitsml(mg*g^(-1))"] to stem:[10.06
+"unitsml(mg*g^(-1))"] for a 95 % coverage interval. The Bayesian procedure yields
+considerably larger uncertainty evaluations than the DerSimonian-Laird procedure
+because it captures more accurately, and expresses more realistically, the fact that
+the component of uncertainty attributable to differences between analytical methods
+is evaluated based on a single degree of freedom <<koepke106>>.
+====
+
+[[ex4-11.9.8]]
+[example]
+.Amount fraction of stem:["N"_2"O"] in southern oceanic air -- estimation and uncertainty evaluation
+====
+The estimates of the coefficients of the cubic polynomial
+
+[stem%unnumbered]
+++++
+A(r) = beta_0 + beta_1r + beta_2r^2 + beta_3r^3
+++++
+
+that was selected as a model for the analysis function in the <<ex-11.4.3>> are the
+values of the coefficients stem:[beta_0, ... ,beta_3] and of the true ratios
+stem:[rho_1, ...,rho_6] that maximize
+
+[stem%unnumbered]
+++++
+sum_(i=1)^6 ["ln "phi((x_i - A(rho_i))//u(x_i)-"ln " u(x_i) + "ln " psi_9 ((r_i-rho_i)//u(r_i))-"ln "u(r_i)],
+++++
+
+where stem:[x_1, ..., x_6] denote the amount fractions of stem:["N"_2"O"] in the
+calibration standards, stem:[phi] denotes the probability density of the normal
+distribution with mean 0 and standard deviation 1, and stem:[psi_9] denotes the
+probability density of the Student's stem:[t] distribution with 9 degrees of freedom
+(because the ratios for the standards are averages of 10 replicates). The estimates
+obtained by numerical optimization using the ((Nelder-Mead algorithm)) as implemented in
+`R` function `optim`, are
+(((probability distribution,normal)))
+
+[stem%unnumbered]
+++++
+{: (hat beta_0 = 329.13 "unitsml(nmol/mol)" ", ", hat beta_1 = 24.928 "unitsml(nmol/mol)" ","),
+(hat beta_2 = -0.29652 "unitsml(nmol/mol)" ", ", hat beta_3 = -0.19612 "unitsml(nmol/mol)" ","),
+(hat rho_1 = 0.97239", ", hat rho_2 = 0.98708", ", hat rho_3 = 1.0065", ", hat rho_4 = 1.0213", ", hat rho_5 = 1.0437","),
+(hat rho_6 = 1.063".") :}
+++++
+
+The uncertainty associated with stem:[A(r)] was evaluated using the Monte Carlo
+method described in <<guenther>>.
+====
+
+[[ex5-11.9.8]]
+[example]
+.Barium in clay soil -- estimation and uncertainty evaluation
+====
+The random effects model described in the <<ex-11.5.4>> may be fitted to the data by
+any one of several different methods. The conventional ((ANOVA)) approach to estimate
+stem:[tau] and stem:[sigma] uses the ((method of moments)) <<bickel, example=2.1.2>>: equating
+observed and expected mean squares, and then solving for stem:[tau^2] and
+stem:[sigma^2]. Since this approach may produce a negative estimate for stem:[tau^2]
+-- compare <<vanderveen,formula=5>> -- it is preferable to fit the model by restricted
+maximum likelihood (REML) <<searle>> (for example, as implemented in function `lmer` of
+`R` package `lme4`, available at `https://www.r-project.org/`). For this data set,
+the REML estimates of stem:[tau] and stem:[sigma] reproduce the results of the
+conventional ANOVA, stem:[hat tau = 5.3 "unitsml(mg*kg^(-1))"] and stem:[hat sigma =
+11 "unitsml(mg*kg^(-1))"], which are denoted by stem:[s_"bb"] and stem:[s_"within"]
+in <<vanderveen>>. The REML procedure also produces an estimate stem:[hat omega = 318
+"unitsml(mg*kg^(-1))"] of the measurand, and an evaluation of the associated
+standard uncertainty stem:[u(hat omega) = 2 "unitsml(mg*kg^(-1))"]. An approximate,
+profile-likelihood 95&nbsp;% coverage interval for stem:[tau] ranges from stem:[0
+"unitsml(mg*kg^(-1))"] to stem:[9.8 "unitsml(mg*kg^(-1))"], thus confirming the
+conclusion of the conventional stem:[F]-test enabled by the ((ANOVA)), whose
+stem:[p]-value is stem:[0.09], as already noted in the <<ex-11.5.4>>. (The profile
+likelihood for stem:[tau] is its marginal probability density evaluated at the
+maximum likelihood estimates of the other parameters in the model (see <<pawitan>>, page
+61).)
+====
+
+[[ex6-11.9.8]]
+[example]
+.Calibrating a geodetic base line -- estimation and uncertainty evaluation
+====
+The method of least squares amounts to choosing values for stem:[lambda_1,
+lambda_2], and stem:[lambda_3] that minimize stem:[S(lambda_1,lambda_2,lambda_3) =
+(L_1 - lambda_1)^2 + (L_2 - lambda_2)^2 + (L_3 - lambda_3)^2 + (L_4 - lambda_1 -
+lambda_2)^2 + (L_5 - lambda_2 - lambda_3)^2 + (L_6 - lambda_1 - lambda_2 -
+lambda_3)^2] with respect to stem:[lambda_1, lambda_2], and stem:[lambda_3].
+Computing stem:[del S(lambda_1,lambda_2,lambda_3)//del lambda_1 = 6lambda_1 +
+4lambda_2 + 2lambda_3 - 2L_1 - 2L_4 - 2L_6], and stem:[del S(lambda_1,lambda_2
+lambda_3)//del lambda_2] and stem:[del S(lambda_1,lambda_2 lambda_3)//del lambda_3]
+similarly, and equating all to 0 leads to the following system of three simultaneous
+equations in three unknowns:
+
+[stem%unnumbered]
+++++
+{: (3 lambda_1 + 2 lambda_2 + lambda_3 = L_1 + L_4 + L_6","),
+(2 lambda_1 + 4 lambda_2 + 2 lambda_3 = L_2 + L_4 + L_5 + L_6","),
+(lambda_1 + 2 lambda_2 + 3 lambda_3 = L_3 + L_5 + L_6".") :}
+++++
+
+The solution is stem:[hat lambda_1 = 27.22 "unitsml(m)"], stem:[hat lambda_2 = 33.08
+"unitsml(m)"], and stem:[hat lambda_3 = 25.30 "unitsml(m)"]. Therefore, the distance
+from stem:["A"] to stem:["D"] is estimated as stem:[hat Delta = hat lambda_1 + hat
+lambda_2 + hat lambda_3 = 85.59 "unitsml(m)"]. Since the eigenvalues of the matrix
+of second derivatives of stem:[S] as defined above, evaluated at stem:[(hat
+lambda_1, hat lambda_2, hat lambda_3)], all are positive, the solution indeed
+corresponds to a minimum. The adjusted observations (or, fitted lengths) are
+stem:[hat L_1 = 27.22 "unitsml(m)"], stem:[hat L_2 = 33.08 "unitsml(m)"], stem:[hat
+L_3 = 25.30 "unitsml(m)"], stem:[hat L_4 = 60.30 "unitsml(m)"], stem:[hat L_5 =
+58.38 "unitsml(m)"], and stem:[hat L_6 = 85.59 "unitsml(m)"].
+
+Next, we compute a Type A evaluation of the uncertainty associated with stem:[hat
+Delta], the estimate of the distance from stem:["A"] to stem:["D"]. First one
+computes the covariance matrix of (stem:[hat lambda_1, hat lambda_2, hat lambda_3])
+using conventional methods of linear regression <<draper>> (for example, as implemented in
+function `lm` of 'base' `R`, available at `https://www.r-project.org/`). Second,
+considering that stem:[Delta = lambda_1 + lambda_2 + lambda_3] is a linear
+measurement model of the sort considered in <<jcgm100,locality:equation=13>> may be used to
+obtain stem:[u(Delta) = 0.025 "unitsml(m)"] with 3 degrees of freedom.
+====
+
+[[ex7-11.9.8]]
+[example]
+.Pitot tube -- estimation and uncertainty evaluation
+====
+Application of MCMC sampling (for example, as implemented in function `metrop` of
+`R` package `mcmc`, available at `https://www.r-project.org/`), to the Bayesian
+model defined in <<ex1-11.8.5>>, produces a sample from the posterior distribution
+of stem:[v] with mean stem:[57.5 "unitsml(m/s)"] and standard deviation stem:[0.4
+"unitsml(m/s)"] -- a measurement result that, for this particular choice of prior
+distribution, is statistically indistinguishable from the result obtained via the
+conventional analysis according to <<jcgm100>>: stem:[v = 57.48 "unitsml(m/s)"] and
+stem:[u(v) = 0.35 "unitsml(m/s)"] <<possolo140,clause=A.6>>.
+====
+
+[[ex8-11.9.8]]
+[example]
+.Copper in wholemeal flour -- estimation and uncertainty evaluation
+====
+The Huber M-estimator of location <<huber>> (for example as implemented in function
+`huberM` of `R` package `robustbase`, available at `https://www.r-project.org/`)
+provides a robust alternative to the arithmetic average as an estimate of
+stem:[omega] that yields both an estimate stem:[3.21 "unitsml(ug*g^(-1))"] of that
+mass fraction, and an evaluation stem:[0.14 "unitsml(ug*g^(-1))"] of the associated
+standard uncertainty. The Bayesian model described in <<ex2-11.8.5>> produces a
+posterior distribution for the true value of the mass fraction whose mean,
+stem:[3.22 "unitsml(ug*g^(-1))"], is an estimate of the measurand stem:[omega], and
+whose standard deviation, stem:[0.15 "unitsml(ug*g^(-1))"], is an evaluation of the
+associated standard uncertainty. These results are in close agreement with the
+results of the classical robust analysis using the Huber M-estimator discussed
+above. Coverage intervals can also be derived from the posterior distribution: for
+example, stem:[2.92 "unitsml(ug*g^(-1))"] to stem:[3.51 "unitsml(ug*g^(-1))"] is a
+95&nbsp;% Bayesian coverage interval for the mass fraction of copper.
+====
+
+[[ex9-11.9.8]]
+[example]
+.Temperature of a thermal bath -- estimation and uncertainty evaluation
+====
+The MLEs of the parameters in the auto-regressive model described in the
+<<ex-11.7.3>> are
+
+[stem%unnumbered]
+++++
+{: (hat tau = 50.105 "unitsml(degC)"", ", hat varphi_1 = 0.41", ", hat varphi_2 = 0.42", ", sigma = 0.002 "unitsml(degC)"".") :}
+++++
+
+They were computed using function `Arima` defined in package `forecast` (available at
+`https://www.r-project.org/`) <<hyndman>>. The same function also provides evaluations of
+the corresponding standard uncertainties
+
+[stem%unnumbered]
+++++
+{: (u(tau) = 0.001 "unitsml(degC)"", ", u(varphi_1) = u(varphi_2) = 0.09",") :}
+++++
+
+computed as described in <<cls-11.9.6>>. It should be noted that stem:[u(tau)] is
+about three times larger than the naive (and incorrect) uncertainty evaluation
+stem:[s// sqrt 100 = 0.0003 "unitsml(degC)"] that would have been obtained
+neglecting the auto-correlations, where s denotes the standard deviation of the 100
+readings of temperature listed in <<table8>>. According to the auto-regression used
+as a model for these data, the correlations between the observations arise owing to
+a memory effect: the temperature at time stem:[T_i] is determined by the values of
+temperature measured during the previous two minutes, plus a volatile
+(unpredictable, or 'random') measurement error whose standard deviation is
+stem:[0.002 "unitsml(degC)"]. The state of thermal equilibrium is a _bona fide_
+measurand, characterized by the coefficients of the auto-regression: in this case,
+the estimates of these coefficients correspond to a _stationary_ process, meaning
+that the level, magnitude, and pattern of the oscillations of temperature do not
+depend on the time of the first observation.
+====
+
+[[cls-11.10]]
+=== Model selection and model uncertainty
+
+[[cls-11.10.1]]
+==== {blank}
+
+Whenever a statistical model is considered, a choice needs to be made about the
+particular model to use (_model selection_), because in most cases several models can
+be reasonable alternatives. In the <<ex-11.7.3>>, a normal auto-regression of order 2
+was selected for the time series of observations of temperature, but several other
+ARIMA models would be similarly reasonable.
+
+[[cls-11.10.2]]
+==== {blank}
+
+Model selection typically involves making a compromise between the goodness of fit
+of the model to the data, and the trustworthiness and fitness for purpose of the
+model in the application where the results will be used. For example, in the context
+of calibration, as discussed in the <<ex-11.4.3>>, a model that tracks all the
+values pertaining to the standards very closely may be too sensitive to their
+peculiarities and not serve as a reliable summary and useful generalization of the
+relationship that it strives to capture. The choice of degree for the polynomial
+used for the analysis function illustrates the compromise between achieving good fit
+and selecting a parsimonious model (usually a polynomial of low degree).
+(((measurement model,parsimonious)))
+
+[[cls-11.10.3]]
+==== {blank}
+
+Commonly used model selection criteria <<burnham>> include (i) the
+((Akaike Information Criterion)) (AIC) <<akaike>>; (ii) its version AICc <<hurvich>>
+'corrected' for the finite size of
+the data set used to build the model; and (iii) the ((Bayesian Information Criterion))
+(BIC) <<schwarz>>. None of these should be the sole guide used for model selection. Model
+selection criteria suggest a reasonable compromise between goodness of fit and
+simplicity of the model. They should always be supplemented with statistical
+examinations of residuals (differences between observations and model predictions),
+for instance QQ-plots <<wilk>>, and cross-validation (to determine how well alternative
+models can predict observations that were not used in the process of building them)
+<<hastie>>, <<mosteller>>.(((QQ-plot)))
+
+[[ex-11.10.3]]
+[example]
+.Temperature of a thermal bath -- model selection
+====
+According to BIC, a normal auto-regression of order 2, often denoted by ARIMA(2, 0,
+0), is 'best' for the time series of observations of temperature mentioned in the
+<<ex-11.7.3>>, among all autoregressive moving-average models with up to 5
+coefficients besides a non-zero mean. (In general, the notation ARIMA(stem:[p, d,
+q]) denotes a time series model for the data after computing stem:[d] differences,
+comprising stem:[p] auto-regressive terms and stem:[q] moving average terms.) On the
+other hand, according to AICc, the 'best' model is an ARIMA(1, 0, 2) with non-zero
+mean <<possolo139>>.
+====
+(((probability distribution,normal)))
+
+[[cls-11.10.4]]
+==== {blank}
+
+Instead of selecting a particular model, several models may be used and the
+corresponding results combined into some sort of average (_model averaging_). This
+averaging may be as simple as illustrated in the following example, or it may take
+into account how likely _a priori_ the different models are judged to be
+<<claeskens>>, <<elster65>>.
+Furthermore, the uncertainty surrounding model selection (_model uncertainty_)
+should be evaluated and propagated to the results recognizing the several
+alternatives <<chatfield>>, <<clyde>>, and become just another contribution
+to the uncertainty to be associated with the estimate of the measurand.
+
+[[ex-11.10.4]]
+[example]
+.Copper in wholemeal flour -- model averaging
+====
+In <<ex2-11.8.5>>, the normal model was discredited by the ((Anderson-Darling test)), and
+a Bayesian model was used instead that offers built-in protection against potential
+outliers. However, several other models would do likewise, and instead of selecting
+one, several may be employed and the corresponding results averaged. For example:
+the Laplace model suggests the median, stem:[3.39 "unitsml(ug/g)"] with associated
+standard uncertainty stem:[0.19 "unitsml(ug/g)"] (computed using the non-parametric,
+((statistical bootstrap)) <<efron>>); the Huber M-estimate of location is stem:[3.21
+"unitsml(ug/g)"] with associated standard uncertainty stem:[0.14 "unitsml(ug/g)"];
+the Hodges-Lehmann estimate <<hodges>> is stem:[3.23 "unitsml(ug/g)"] with associated
+standard uncertainty stem:[0.17 "unitsml(ug/g)"] (derived from the 68&nbsp;%
+coverage interval obtained by inversion of the Wilcoxon rank sum test <<hollander>>); and the
+aforementioned Bayesian model yields stem:[3.22 "unitsml(ug/g)"] with associated
+standard uncertainty stem:[0.15 "unitsml(ug/g)"]. The weighted average of these four
+estimates, with weights proportional to the reciprocals of their squared standard
+uncertainties, is stem:[3.25 "unitsml(ug/g)"], with associated standard uncertainty
+stem:[0.17 "unitsml(ug/g)"] (computed using <<buckland,locality:equation=9>>).
+====

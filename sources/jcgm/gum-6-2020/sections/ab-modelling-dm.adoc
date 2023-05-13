@@ -1,0 +1,289 @@
+[[annexB]]
+[appendix]
+== Modelling of ((dynamic measurements)) by linear time-invariant systems
+
+=== General
+
+[[cls-B.1.1]]
+==== {blank}
+
+Dynamic measurements are measurements in which the measurand and at least one of the
+input quantities are dynamic quantities, that is, are time-dependent, and the
+behaviour of the measuring system depends on its dynamic characteristics. An
+important aspect is that the relation between dynamic quantities is usually described
+by methods from signal processing <<oppenheim>> and systems theory <<lathi>> rather than by an
+algebraic equation. By means of transforming the continuous-time models to discrete
+time, some models of dynamic measurements can, however, be cast as multivariate
+models that can be handled with <<jcgm102>>. This clause provides introductory
+material for continuous and discrete time dynamic models and refers to relevant
+literature resources where applicable.(((measurement model,continuous-time)))
+
+[[cls-B.1.2]]
+==== {blank}
+
+Dynamic measurements can be found in many fields of metrology, such as acceleration
+measurement <<link116>>, dynamic force measurement <<kobusch>>, dynamic pressure measurement
+<<downes>>, hydrophone measurements <<wilkens>> or ultra-fast oscilloscope measurements <<hale>>. In
+all these applications, the relation between the input and the output of the
+measuring system is modelled by a linear time-invariant (LTI) system with linearity
+and time-invariance as defined in <<cls-B.2.2>> and <<cls-B.2.3>>, respectively. In a
+sense, LTI systems can be seen as the simplest extension of the measurement model of
+<<jcgm100>> to dynamic input and output quantities. For general non-linear dynamic
+systems, see, for instance, <<schetzen>>.
+
+[[cls-B.2]]
+=== Continuous-time models
+
+[[cls-B.2.1]]
+==== {blank}
+
+The relation between the input signal stem:[Y(t)] and output signal stem:[X(t)] of a
+dynamic system is denoted mathematically as
+
+[stem%unnumbered]
+++++
+X(t) = &#8459;[Y(t)],
+++++
+
+where stem:[&#8459;] denotes the model of the dynamic system.
+
+[[cls-B.2.2]]
+==== {blank}
+
+A dynamic system model is called a _linear system_ if it is linear in its dynamic
+inputs. That is, for dynamic quantities stem:[Y_1(t)] and stem:[Y_2(t)] with
+real-valued scaling factors stem:[c_1] and stem:[c_2] it holds that
+
+[stem%unnumbered]
+++++
+&#8459;[c_1 Y_1(t) + c_2 Y_2(t)] = c_1 &#8459;[Y_1(t)] + c_2 &#8459;[Y_2(t)].
+++++
+
+The linearity of the system in the dynamic quantities should not be confused with
+linearity in the non-dynamic system parameters.
+
+[[cls-B.2.3]]
+==== {blank}
+
+A system is called _time-invariant_ when the dynamic system model does not change
+with time. That is, provided that
+
+[stem%unnumbered]
+++++
+&#8459;[Y(t)] = X(t),
+++++
+
+a time shift in stem:[Y(t)] results in the same time shift in stem:[X(t)]:
+
+[stem%unnumbered]
+++++
+&#8459;[Y(t-t_0)] = X(t-t_0).
+++++
+
+[[cls-B.2.4]]
+==== {blank}
+
+For LTI systems the relation between the system input stem:[Y(t)] and system output
+stem:[X(t)] is given by the convolution equation <<oppenheim>>
+
+[stem%unnumbered]
+++++
+X(t) = (H ** Y)(t) = int_(-oo)^(oo) H(t-tau)Y(tau) "d"tau,
+++++
+
+where stem:[H(t)] denotes the impulse response of the dynamic system
+stem:[&#8459;(dot)].
+
+[[cls-B.2.5]]
+==== {blank}
+
+Alternatively, the relation between system input and system output can be modelled by
+a linear state-space system model with system matrices stem:[bb(A)],
+stem:[bb(B)], stem:[bb(C)] and stem:[bb(D)]:
+
+[stem%unnumbered]
+++++
+("d"Z(t))/("d"t) = A bb(Z)(t) + BY(t),
+++++
+
+[stem%unnumbered]
+++++
+bb(X)(t) = bb(C)Z(t) + bb(D)bb(Y)(t).
+++++
+
+[[cls-B.2.6]]
+==== {blank}
+
+Mathematically, an LTI system stem:[&#8459;] can be represented in different
+equivalent forms (for instance, <<lathi>>, <<oppenheim>>). The basic form is the system's transfer
+function stem:[H(s)] in the Laplace domain with complex-valued s from which all other
+representations can be derived. For instance, the system's representation in the
+frequency domain by its frequency response stem:[H("j" omega)] is obtained by setting
+stem:[s = "j" omega] in the transfer function. For its representation in the time
+domain by its impulse response stem:[H(t)], the inverse Laplace transform is applied
+to the transfer function.
+
+NOTE: Consequently, the result of a calibration of an LTI system can be a transfer
+function, frequency response or impulse response. The result can be parametric or
+non-parametric.
+
+NOTE: The imaginary unit stem:["i"] as used elsewhere in this document is usually
+denoted by stem:["j"] in signal analysis and related fields.
+
+[[cls-B.3]]
+=== Discrete-time models
+
+[[cls-B.3.1]]
+==== {blank}
+
+In this subclause it is assumed that an analogue-to-digital conversion of the dynamic
+system output stem:[X(t)] results in an equidistant discrete-time dynamic quantity
+stem:[X = (X(t_1), ..., X(t_M))^TT]. The corresponding dynamic measurand is the
+discrete-time dynamic quantity stem:[bb(Y) = (Y(t_1), ..., Y(t_M))^TT].
+
+[[cls-B.3.2]]
+==== {blank}
+
+An implicit measurement model in the time domain is given by
+
+[stem%unnumbered]
+++++
+X(t_j) - (H**Y)(t_j) = 0, j=1,...,M,
+++++
+
+where stem:[H] denotes the dynamic system model's impulse response.
+
+An implicit measurement model in the frequency domain is given by
+
+[[eq37]]
+[stem]
+++++
+X(f_j) - H(f_j)Y(f_j) = 0, j=1,...,M,
+++++
+
+where stem:[H] in this context denotes the dynamic system model's frequency response.
+
+[[cls-B.3.3]]
+==== {blank}
+
+An explicit model in the time domain can be derived by constructing a digital
+deconvolution filter designed such that the input of the filter is the observed
+system output stem:[X] and the filter output is an approximation to the dynamic
+measurand stem:[bb(Y)] <<eichstadt56>>. Therefore, the filter's frequency response equals
+the reciprocal of the system's frequency response up to a chosen frequency. Above
+that frequency the filter resembles a low-pass behaviour, attenuating high-frequency
+noise. The explicit measurement model is
+
+[[eq38]]
+[stem]
+++++
+Y(nT_s) = sum_(r=0)^(N_b) B_rX ((n-r)T_s) - sum_(r=1)^(N_a) A_r Y((n-r)T_s) + ii(Delta)(nT_s),
+++++
+
+where stem:[T_s] denotes the duration of the sampling interval. The filter
+coefficients stem:[bb(A) = (A_1,...,A_(N_a))^TT] and stem:[B =
+(B_0,...,B_(N_b))^TT] are determined from knowledge about the system model using, for
+instance, methods such as least squares adjustment <<eichstadt56>>. The additional term
+stem:[ii(Delta)(nT_s)] on the right-hand side of <<eq38>> denotes the correction for
+a time-dependent error caused by the deconvolution filter used <<eichstadt59>>. For the
+propagation of uncertainty for such measurement models, the methodology of
+<<jcgm102>> can be applied <<eichstadt57>>, <<elster64>>, <<link115>>.
+
+[[ex-B.3.3]]
+[example]
+====
+For an LTI measuring system calibrated in terms of its frequency response
+stem:[H(f_r)] for frequencies stem:[f_1, ..., f_M], an stem:[L]th order
+finite-impulse-response (FIR) filter with filter coefficients stem:[bb(A) = (A_0,
+...,A_L)^TT] is designed such that with radial frequency stem:[omega_r = 2pi f_r] its
+frequency response stem:[F_A(e^("j"omega_r//T_s))] satisfies <<elster64>>
+
+[stem%unnumbered]
+++++
+H("j"omega_r)F_A(e^("j"omega_r//T_s)) ~~ 1.
+++++
+
+for all stem:[omega_r <= bar omega_"up"] and zero beyond that frequency. Thus, the
+digital filter approximates the inverse of the system model in the frequency region
+[stem:[0,bar omega_"up"]] and attenuates frequency components for larger frequencies.
+The attenuation of high-frequency components is necessary in order to avoid otherwise
+strong noise amplification. Such attenuation can be achieved, for instance, by
+designing an FIR filter that mimics the inverse of the system model and which is then
+applied in cascade with an FIR low-pass filter. The measurement model is
+
+[stem%unnumbered]
+++++
+Y(t_n) = sum_(r=0)^L A_rX(t_(n-r)).
+++++
+
+With stem:[bb(ii(a)) = (a_0, ..., a_L)^TT] denoting the estimate of the FIR filter
+coefficients with associated ((covariance matrix)) stem:[bb(ii(U_a))], the standard
+uncertainty stem:[u(y_n)] associated with the estimate stem:[y_n] of the measurand at
+time instant stem:[t_n] is given by
+
+[stem%unnumbered]
+++++
+u^2(y_n) = bb(ii(a))^TT bb(ii(U))_(bb(ii(x))(n))bb(ii(a)) + bb(ii(x))^TT(n)bb(ii(U_a))bb(ii(x))(n) + "Tr"(bb(ii(U))_(bb(ii(x))(n))bb(ii(U_a))),
+++++
+
+where stem:[bb(ii(U))_(x(n))] denotes the covariance matrix associated with
+stem:[bb(ii(x))(n) = (x(t_n), ..., x(t_(n-M)))^TT] and stem:["Tr"()] denotes the
+trace of a matrix.
+====
+
+[[cls-B.3.4]]
+==== {blank}
+
+An explicit model in the frequency domain can be derived by transforming the
+<<eq37>> and multiplying by the frequency response of a chosen low-pass
+filter stem:[H_L(f)] for the attenuation of high-frequency noise:
+
+[stem%unnumbered]
+++++
+X(f) = (Y(f))/(H(f)) H_L(f),
+++++
+
+or by carrying out a ((Tikhonov regularization)) approach <<tikhonov>>. For the propagation of
+uncertainty for such measurement models, the methodology of <<jcgm102>>can be applied
+<<eichstadt58>>, <<hale>>.
+
+[[ex-B.3.4]]
+[example]
+====
+For the characterization of medical ultrasound devices, definite ultrasound pulse
+shapes are measured using hydrophones. Due to the imperfect dynamic behaviour of most
+hydrophones, a correction for the influence of the measuring device has to be made
+<<wilkens>>. For instance, based on the calibrated frequency response of the hydrophone, a
+deconvolution in the frequency domain can be carried out resulting in the measurement
+model
+
+[[eq39]]
+[stem]
+++++
+Y(f_r) = (X(f_r))/(H(f_r)) H_L(f_r) = (X(f_r))/(tilde H(f_r)), r=1,...,M,
+++++
+
+with stem:[X(f_r)] and stem:[Y(f_r)] at frequencies stem:[f_1, ..., f_M] denoting the
+discrete Fourier transform(((Fourier transform, discrete))) of stem:[bb(X) = (X_1, ..., X_M )^TT] and stem:[bb(Y) =
+(Y_1, ..., Y_M)^TT], respectively, and stem:[H_L(f_r)] the frequency response of a
+low-pass filter chosen for noise attenuation. stem:[Y(f_r)], stem:[X(f_r)] and
+stem:[tilde H(f_r)] are complex-valued quantities. With stem:[&#8476;] and
+stem:[&#120077;] denoting real and imaginary parts, respectively, the <<eq39>>
+can be written as
+
+[stem%unnumbered]
+++++
+Y(f_r) = ([&#8476;_X(f_r)&#8476;_(tilde H)(f_r) + &#120077;_X(f_r)&#120077;_(tilde H)(f_r)] + "j"[-&#8476;_X(f_r)&#120077;_(tilde H)(f_r) + &#120077;_X(f_r)&#8476;_(tilde H)(f_r)])/([&#8476;_(tilde H)(f_r)]^2 + [&#120077;_(tilde H)(f_r)]^2), r=1,...,M.
+++++
+
+The measurement model is thus multivariate and <<jcgm102>> can be applied for the
+propagation of uncertainty <<eichstadt58>>. <<fig10>> shows the resulting estimate
+stem:[bb(ii(y)) = (y_1, ..., y_M)^TT] and its associated point-wise standard
+uncertainties stem:[u(y_1), ..., u(y_M)] in the time domain after application of the
+inverse discrete Fourier transform with propagation of uncertainty. Note that as for
+<<eq38>> account has to be taken of the regularization error <<eichstadt59>>.
+
+[[fig10]]
+.Estimate and associated point-wise standard uncertainties for the hydrophone pressure input signal (solid line) and the values obtained with a reference instrument (broken line)
+image::img10.png[]
+====

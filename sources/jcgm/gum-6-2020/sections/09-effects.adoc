@@ -1,0 +1,91 @@
+[[cls-9]]
+== Identifying effects arising from the measurement
+
+[[cls-9.1]]
+=== {blank}
+
+The basic model describing the measurement principle [<<step-b-5.3>>]
+holds in ideal conditions. That model should usually be extended to
+cover effects arising in the practical implementation of the measurement. These
+effects should be identified and considered for inclusion in the model to obtain a
+measurement model adequate for the purpose [<<step-c-5.3;and!step-d-5.3>>].
+
+[example]
+.Local acceleration due to gravity
+====
+The local acceleration due to gravity stem:[g] (the measurand) is determined in
+absolute gravimeters by a free-fall experiment in which a body initially at rest
+falls a distance stem:[h] under the effect of gravity. The measurement principle is
+based on the model stem:[h = g t^2//2] or, equivalently, stem:[g = 2h//t^2], where
+stem:[t] is the time for the fall. This model is approximate, strictly holding only
+in a vacuum. In reality, an additive correction needs to be introduced in the model
+to accommodate the fact that air friction alters the law of motion of the body. The
+correction is proportional to the air density, the cross-sectional area of the body
+and the square of its velocity. These quantities, be they determined experimentally
+or estimated by other means, are themselves uncertain. Their uncertainties contribute
+to the uncertainty associated with the correction and in turn to the uncertainty
+associated with the measurand. Also, since the model is approximate in that stem:[g]
+is not strictly constant over the distance stem:[h], a more elaborate model may be
+constructed to account for that effect.
+====
+
+[[cls-9.2]]
+=== {blank}
+
+Effects arising from the measurement (see <<cls-9.3>>) are generally accounted for in the
+measurement model depending on the available knowledge about them. Subclauses
+<<cls-9.3;and!cls-9.5>> and <<cls-10>> provide guidance on extending the measurement
+model accordingly.
+
+[[cls-9.3]]
+=== {blank}
+
+The identification of the effects arising in the practical implementation of the
+measurement is one of the most demanding tasks in the construction of a
+fit-for-purpose model. Areas of consideration include, but are not limited to,
+contributions from the following effects (compare reference <<bell>>):
+
+* realization of the specification of the measurand,
+* approximations and assumptions in modelling the measurement,
+* conditions of measurement,
+* external influences (including environmental effects),
+* drift of the measuring system,
+* measurement standards and certified reference materials,
+* artefacts, objects or materials to which the measurement result is applicable,
+* instability or inhomogeneity of the artefact or material subject to measurement,
+* sampling,
+* sample preparation,
+* calibration,
+* reading analogue and digital measuring systems,
+* system resolution or discrimination threshold,
+* zeroing of an instrument, and
+* variations in and correlations between observations.
+
+[[note1-9.3]]
+[NOTE]
+====
+The effects are not necessarily independent.
+====
+
+[[note2-9.3]]
+[NOTE]
+====
+It is often more practicable to assess and include in the model combinations of
+these effects, rather than each effect separately.
+====
+
+[[cls-9.4]]
+=== {blank}
+
+During the execution of a measurement procedure, many factors need to be kept within
+specified limits. In principle, all these factors should be included in the
+measurement model.
+
+[[cls-9.5]]
+=== {blank}
+
+Identifying influences on a measurement can be facilitated by the use of a
+cause-and-effect diagram, also known as an Ishikawa or 'fishbone' diagram
+<<ellison61>>, <<ellison62>>, <<ellison63>>. A
+brief description of cause-and-effect diagrams and their use for measurement
+modelling is given in <<annexE>>.

@@ -1,0 +1,85 @@
+[[annexF]]
+[appendix]
+== Linearizing a measurement model and checking its adequacy
+
+[[cls-F.1]]
+=== {blank}
+
+This annex considers the linearization of the non-linear model (see <<cls-13.1.4>>)
+around the estimates stem:[x_1, ..., x_N] of stem:[X_1, ..., X_N]. The linearized
+measurement model takes the form
+(((measurement model,linearization)))
+
+[[eq46]]
+[stem]
+++++
+Y ~~ y + c_1(X_1 - x_1) + ... + c_N (X_N - x_n),
+++++
+
+where the estimate of stem:[Y] is
+
+[stem]
+++++
+y = f(x_1, ..., x_N).
+++++
+
+In <<eq46>>, stem:[c_1, ..., c_N] are the partial derivatives of the measurement
+function stem:[f(X_1, ..., X_N)] with respect to stem:[X_1, ..., X_N] evaluated at
+stem:[x_1, ..., x_N]. <<eq46>> is straightforwardly generalized to multivariate and
+implicit models, and to those ((measurement model,involving complex quantities)) (see <<jcgm102>>).
+
+[[cls-F.2]]
+=== {blank}
+
+Guidance on validating the use of the law of propagation of uncertainty when applied
+to a non-linear measurement model is given in <<jcgm101>> and <<jcgm102>>. The
+validation involves the use of a ((Monte Carlo method)). A simpler but less rigorous way
+to check whether linearization is adequate is as follows:
+
+. [[F.2-a]]For each input quantity stem:[X_i] in turn, form stem:[f_i^+] as stem:[f]
+evaluated at the input estimates apart from the stem:[i]th, which is replaced by
+stem:[x_i + u(x_i)].
+
+. [[F.2-b]]As , but form stem:[f_i^-] as stem:[f] evaluated at the input estimates
+apart from the stem:[i]th, which is replaced by stem:[x_i - u(x_i)].
+
+. Correspondingly, evaluate the linearized model (<<eq27>>) in these stem:[2n] cases.
+
+. If the magnitudes of all the deviations of the linearized model from the non-linear
+model are considered sufficiently small in the context of the application, the
+linearized model is deemed fit for purpose of uncertainty evaluation.
+
+The stem:[2N] calculated values of stem:[f] can be used to approximate its partial
+derivatives with respect to the stem:[X_i] at the estimates of the input quantities,
+and hence the sensitivity coefficients:
+
+[[eq47]]
+[stem]
+++++
+{: (c_i ~~ (f_i^+ - f_i^-)/(2u(x_i))", ", i=1","...","N"." ) :}
+++++
+
+NOTE: <<eq47>> is exact if the measurement function stem:[f] is linear or quadratic
+in stem:[x_i]. Otherwise, the numerical error in the formula is proportional to
+stem:[u^2(x_i)].
+
+NOTE: <<eq47>> does not apply to a quantity that has an exact value, that is, a zero
+standard uncertainty.
+
+NOTE: A closely related approach is due to Kragten <<kragten>>.(((Kragten method)))
+
+[[ex-F.2]]
+[example]
+.Release of cadmium from ceramic ware (also see <<ex2-10.4.3>>)
+====
+The application of <<eq47>> to the <<eq23>> for cadmium release
+from ceramic ware gives exact sensitivity coefficients for all input quantities apart
+from stem:[a_V] and stem:[d] since the model is linear in those quantities.
+The use of that formula
+using the relative standard uncertainty stem:[u_"rel"(hat a_V) = 0.033] associated
+with the estimate stem:[hat a_V = 5.73 "unitsml(dm^2)"] yields stem:[-0.002632] as
+the numerical approximation to the corresponding sensitivity coefficient compared
+with the actual value of stem:[-0.002629] obtained following formal differentiation.
+These values agree to three significant decimal digits. Since stem:[d] has an exact
+value, the corresponding sensitivity coefficient is zero.
+====

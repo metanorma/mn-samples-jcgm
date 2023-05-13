@@ -1,0 +1,57 @@
+== Introduction
+
+A measurement model constitutes a relationship between the output quantities or
+measurands (the quantities intended to be measured) and the input quantities known to
+be involved in the measurement. There are several reasons for modelling a
+measurement. Models assist in developing a quantitative understanding of the
+measurement and in improving the measurement. A model enables values of the output
+quantities to be obtained given the values of the input quantities. Additionally, a
+model not only allows propagation of uncertainty from the input quantities to the
+output quantities; it also provides an understanding of the principal contributions
+to uncertainty. This document is accordingly concerned with the development of a
+measurement model and the practical use of the model.(((output quantity)))
+
+One of the purposes of measurement is to assist in making decisions. The reliability
+of these decisions and the related risks depend on the values obtained for the output
+quantities and the associated uncertainties. In turn, these decisions depend on a
+suitable measurement model and the quality of information about the input quantities.
+
+Although the development of a measurement model crucially depends on the nature of
+the measurement, some generic guidance on aspects of modelling is possible. A
+measurement model might be a straightforward mathematical relationship, such as the
+ideal gas law, or, at the other extreme, involve a sophisticated numerical algorithm
+for its evaluation, such as the detection of peaks in a signal and the determination
+of peak parameters.
+
+A measurement model may take various forms: theoretical, empirical or hybrid (part-
+theoretical, part-empirical). It might have a single output quantity or more than one
+output quantity. The output quantity may or may not be expressed directly in terms of
+the input quantities. The quantities in the measurement model may be real-valued or
+complex-valued. Measurement models may be nested or multi-stage, in the sense that
+input quantities in one stage are output quantities from a previous stage, as occurs,
+for instance, in the dissemination of measurement standards or in calibration.
+Measurement models might describe time series of observations, including drift, and
+dynamic measurement. A measurement model may also take the form of a statistical
+model. In this document the concept 'measurement model' is intended in this broader
+meaning.(((measurement model,statistical)))(((measurement model,theoretical)))
+(((measurement model,empirical)))(((measurement model,hybrid)))
+
+In developing or using a measurement model there are important choices to be made.
+The selection of a model that is adequate or fit for purpose is a key issue.
+Particularly for empirical models, there is choice of representation (or
+parametrization) of the families of functions concerned (polynomials, polynomial
+splines or rational functions, etc.). Certain choices can be far superior to others
+in their numerical behaviour when the model is implemented on a computer. The
+uncertainty arising from the choice of model is a necessary consideration.
+
+In many disciplines, a basic measurement model requires extension to incorporate
+effects such as temperature corrections arising from the measurement to enable values
+for output quantities and the associated uncertainties to be obtained reliably.
+
+Following the introduction in 1993 of the Guide to the expression of uncertainty in
+measurement, or GUM (also known as <<jcgm100>>), the practice of uncertainty
+evaluation has broadened to use a wider variety of models and methods. To reflect
+this, this Guide includes an introduction to statistical models for measurement
+modelling (<<cls-11>>) and additional guidance on modelling random variation in
+<<annexC>>.
+(((measurement model,choice of model)))

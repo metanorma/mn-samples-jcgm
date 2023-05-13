@@ -1,0 +1,193 @@
+[[cls-5]]
+== Basic principles
+
+[[cls-5.1]]
+=== {blank}
+
+A _measurand_ (see <<jcgm200,clause=2.3>>) is in many cases not measured directly,
+but is indirectly determined from other _quantities_ (see <<jcgm200,clause=1.1>>) to
+which it is related by a _measurement model_ (see <<jcgm200,clause=2.48>>) such as
+<<eq1>> in <<cls-5.2>>. The measurement model is a mathematical expression or a
+set of such expressions (see <<jcgm100,clause=4.1.2>>), comprising all the quantities
+known to be involved in a measurement. It enables a value (see
+<<jcgm200,clause=1.19>>) of the measurand to be provided and an associated standard
+uncertainty to be evaluated. The measurement model may be specified wholly or partly
+in the form of an algorithm. The quantities to which the measurand is related
+constitute the _input quantities_ (see <<jcgm200,clause=2.50>>) in the measurement
+model. The measurand constitutes the _output quantity_ (see <<jcgm200,clause=2.51>>).
+
+[[cls-5.2]]
+=== {blank}
+
+Many measurements are modelled by a real functional relationship stem:[f] between
+stem:[N] real-valued input quantities stem:[X_1, ..., X_N] and a single real-valued
+output quantity (or measurand) stem:[Y] in the form
+
+[[eq1]]
+[stem]
+++++
+Y = f(X_1, ..., X_N ).
+++++
+
+This simple form is called a real explicit univariate measurement model; real since
+all quantities involved take real (rather than complex) values, explicit because a
+value for stem:[Y] can be computed directly given values of stem:[X_1, ..., X_N], and
+univariate since stem:[Y] is a single, scalar quantity. However, it does not apply
+for all measurements. A measurement model can be complex, involving _complex-valued
+quantities_ (see <<jcgm102,clause=3.2>>). It can be _implicit_ where a value for
+stem:[Y] cannot be determined directly given values of stem:[X_1, ..., X_N] (see
+<<cls-13.5>>). The measurement model can be _multivariate_ where there is more than
+one measurand, denoted by stem:[Y_1, ..., Y_m]; for further information, see
+<<cls-13.4>> and <<jcgm102>>.(((measurement model,implicit)))
+
+[example]
+.Volume of a cylinder
+====
+The volume of a cylinder is given by the measurement model
+
+[stem%unnumbered]
+++++
+V = pi/4 Ld^2
+++++
+
+in which cylinder length stem:[L] and diameter stem:[d] are the stem:[N = 2] input
+quantities, corresponding to stem:[X_1] and stem:[X_2], and an output quantity
+stem:[V] corresponding to stem:[Y].
+====
+
+[[cls-5.3]]
+=== {blank}
+
+The process of building a measurement model can be subdivided into the following
+steps, each step being described in the indicated clause:
+
+. [[step-a-5.3]]Select and specify the measurand (see <<cls-6>>).
+. [[step-b-5.3]]Model the measurement principle, thus providing a basic model for this purpose (see
+<<cls-7>>), choosing an appropriate mathematical form (see <<cls-8;and!cls-11>>).
+. [[step-c-5.3]]Identify effects involved in the measurement (see <<cls-9>>).
+. [[step-d-5.3]]Extend the basic model as necessary to include terms accounting for these effects
+(see <<cls-10;and!cls-11>>).
+. [[step-e-5.3]]Assess the resulting measurement model for adequacy (see <<cls-12>>).
+
+In any one instance, a number of passes through the process may be required,
+especially following <<step-c-5.3>>. It may be more efficient or effective to take the
+steps as listed in a different order.
+
+[[cls-5.4]]
+=== {blank}
+
+The manner in which a measurement model is used to obtain a value for the measurand
+(or values for the measurands) and evaluate the associated standard uncertainty (or
+covariance matrix) depends on its mathematical form (see <<cls-13>>). <<jcgm100>>
+mainly considers explicit univariate models and applies the law of propagation of
+uncertainty (LPU). <<jcgm102>> gives guidance on the use of generalizations of LPU
+for multivariate models and implicit models. For non-linear models, the use of the
+((Monte Carlo method)) of <<jcgm101>> (univariate measurement models) and <<jcgm102>>
+(multivariate models) is often more appropriate (see <<cls-13>>).(((covariance matrix)))(((measurement model,multivariate,implicit)))(((measurement model,multivariate,explicit)))
+
+[[cls-5.5]]
+=== {blank}
+
+The measurement model is a mathematical relationship among quantities, and as such it
+is subject to the rules of quantity calculus <<sib>>. The same symbols used for the
+quantities are also used for the corresponding _random variables_ (see <<jcgm100,
+clause=C.2.2>>), whose _probability distributions_ (see <<jcgm101,clause=3.1>>)
+describe the available knowledge about the quantities. Therefore, the measurement
+model can also be considered to be a model involving random variables, subject to the
+rules of mathematical statistics. The law of propagation of uncertainty as described
+in <<jcgm100,clause=5.1;and!clause=5.2>> uses a simple property of the transformation
+of _random variables_ when only expectations and variances (and, perhaps,
+covariances) are used, rather than the whole distributions.
+
+[example]
+.Mass of a spherical weight
+====
+The mass of a weight that has been machined in the form of a sphere from a block of
+material is given by
+
+[[eq2]]
+[stem]
+++++
+m = pi/6 d^3 rho,
+++++
+
+where stem:[d] is the diameter of the weight and stem:[rho] is the density of the
+material.
+
+<<eq2>> is a simple, well-known physical model that is idealized, applying to a
+perfect sphere and relating the output quantity mass to the input quantities diameter
+and density. At the same time, stem:[d] and stem:[rho] can be considered as random
+variables describing the available information on the corresponding physical
+quantities obtained, for instance, from a dimensional measurement made with a vernier
+caliper and from a table of reference data, respectively. Thus, <<eq2>> also
+describes how to transform this information about the input physical quantities to
+the mass stem:[m] of the weight (the measurand).
+====
+
+[[cls-5.6]]
+=== {blank}
+
+When building a measurement model that is fit for purpose, all effects known to
+affect the measurement result should be considered. The omission of a contribution
+can lead to an unrealistically small uncertainty associated with a value of the
+measurand <<thompson>>, and even to a wrong value of the measurand.
+
+Considerations when building a measurement model are given in <<cls-9.3>>. Also see
+<<jcgm100,clause=3.4>>.
+
+[[cls-5.7]]
+=== {blank}
+
+The fitness for purpose of a measurement model can encompass considerations made
+before measurement. Such aspects include the measurement capability <<ilac>> (see
+<<jcgm200,clause=2.6>>) in the case of a laboratory routinely performing
+calibrations. Fitness for purpose can also encompass the cost of measurement at a
+given level of uncertainty compared with the consequent costs of incorrect decisions
+of conformity (see also <<jcgm106>>). The measurand, which in the terminology of
+conformity assessment is a 'quality characteristic of the entity', can be, as in
+statistics, either
+
+* a measure of 'location', for instance, a quantity relating to an entity such as the
+mass of a single object, an error in mass (deviation from a nominal value), or an
+average mass of a batch of objects, or
+* a measure of 'dispersion', for instance, the standard deviation in mass amongst a
+batch of objects in a manufacturing process.
+
+[[cls-5.8]]
+=== {blank}
+
+When developing a measurement model, the ranges of possible values of the input
+quantities and output quantities should be considered. The model should be capable of
+providing credible estimates and associated uncertainties for all output quantities
+over the required ranges of the input quantities, which should be specified as
+appropriate. The measurement model should only be used within the ranges of all
+quantities for which it has been developed and assessed for adequacy. See <<cls-13.2>>.
+
+[[cls-5.9]]
+=== {blank}
+
+One aspect of specifying the domain of validity of the measurement model (see also
+<<cls-5.8>>) is to identify any restrictions on the domains of the quantities
+involved in the measurement model. Some quantities are necessarily positive (or at
+least non-negative). Some quantities might have lower and upper limits. There can be
+interrelationships between two or more quantities that need to be included in the
+measurement model.(((measurement model,domain of validity)))
+
+[example]
+.Quantities having restrictions
+====
+* Positive quantities, for instance, mass and volume.
+* Quantity with limits, for instance, a mass fraction can only take values between
+zero and one.
+* Quantities having interrelationships, for instance, the relative proportions
+(fractions) of all components (hydrocarbons and other molecules) of a natural gas sum
+to a constant.
+====
+
+Such quantities can sometimes be re-expressed by applying transformations. For
+instance, denoting by stem:[theta] a new real quantity that is unconstrained:
+
+* a quantity stem:[q] is positive if re-expressed as stem:[q = theta^2],
+* a quantity stem:[q] lies between stem:[a] and stem:[b] if re-expressed as
+stem:[q = a + (b - a) "sin"^2 theta], and
+* quantities stem:[q_1] and stem:[q_2] sum to unity by the transformation stem:[q_1 = "sin"^2 theta], stem:[q_2 = "cos"^2 theta].

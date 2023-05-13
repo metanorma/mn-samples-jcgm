@@ -1,0 +1,10 @@
+[bibliography]
+== Normative references
+
+* [[[jcgm100, BIPM JCGM 100:2008]]], BIPM, IEC, IFCC, ILAC, ISO, IUPAC, IUPAP, and OIML. Evaluation of measurement data -- Guide to the expression of uncertainty in measurement. Joint Committee for Guides in Metrology, JCGM 100:2008.
+
+* [[[jcgm101, BIPM JCGM 101:2008]]], BIPM, IEC, IFCC, ILAC, ISO, IUPAC, IUPAP, and OIML. Evaluation of measurement data -- Supplement 1 to the 'Guide to the expression of uncertainty in measurement' -- Propagation of distributions using a Monte Carlo method. Joint Committee for Guides in Metrology, JCGM 101:2008.
+
+* [[[jcgm102, BIPM JCGM 102:2011]]], BIPM, IEC, IFCC, ILAC, ISO, IUPAC, IUPAP, and OIML. Evaluation of measurement data -- Supplement 2 to the 'Guide to the expression of uncertainty in measurement' -- Extension to any number of output quantities. Joint Committee for Guides in Metrology, JCGM 102:2011.
+
+* [[[jcgm200, BIPM JCGM 200:2012]]], BIPM, IEC, IFCC, ILAC, ISO, IUPAC, IUPAP, and OIML. International vocabulary of metrology -- Basic and general concepts and associated terms. Joint Committee for Guides in Metrology, JCGM 200:2012.

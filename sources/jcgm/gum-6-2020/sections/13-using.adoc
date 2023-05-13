@@ -1,0 +1,401 @@
+[[cls-13]]
+== Using the measurement model
+
+[[cls-13.1]]
+=== General
+
+[[cls-13.1.1]]
+==== {blank}
+
+The main use of a measurement model is to calculate an estimate of the measurand and
+the associated uncertainty. Depending on the requirements, the uncertainty can be
+provided as a standard uncertainty, a coverage interval for a stipulated coverage
+probability, or both. Especially when using Monte Carlo or ((Bayesian methods)), it can
+be more appropriate to provide a (representation of) the probability distribution for
+the measurand. The latter is especially true when the output of the measurement model
+is used in a subsequent uncertainty calculation taking a probability distribution as
+input.
+
+[[cls-13.1.2]]
+==== {blank}
+
+Given values for the input quantities in the measurement model, the corresponding
+value of the measurand is obtained by evaluating a formula or by solving an equation.
+Some quantities can take complex values. There can be a single (scalar) measurand or
+multiple measurands (vector measurand). The mathematical, statistical or numerical
+tools applied for obtaining the estimate of the measurand and uncertainty evaluation
+depend on the form of the measurement model.
+
+[[cls-13.1.3]]
+==== {blank}
+
+The law of propagation of uncertainty holds exactly for a linear measurement model,
+that is, a model that is linear in its input quantities, but not generally otherwise.
+For a single output quantity, a linear measurement model takes the form
+
+[[eq27]]
+[stem]
+++++
+Y = c_0 + c_1X_1 + ... + c_N X_N,
+++++
+
+where stem:[c_0, ...,c_N] are exactly known constants. This expression is
+straightforwardly generalized to multivariate models, and to those involving complex
+quantities. Guidance on how to use the law of propagation of uncertainty is given in
+<<jcgm100>> for explicit univariate measurement models [as in <<eq1>>] and in
+<<jcgm102>> for other forms, including multivariate measurement models.
+(((measurement model,univariate,explicit)))
+
+[[cls-13.1.4]]
+==== {blank}
+
+A non-linear measurement model is a model that cannot exactly be expressed in the
+form <<eq27>>. With some degree of approximation, a non-linear model can be expressed
+locally in linear form in the neighbourhood of estimates stem:[x_1, ..., x_N] of the
+input quantities. On the basis of this linear form the law of propagation of
+uncertainty can be applied to yield an approximation to the standard uncertainty
+associated with the estimate stem:[y = f(x_1, ..., x_N)] of the output quantity. The
+adequacy of this approximation can be checked in any particular instance by applying
+the ((Monte Carlo method)) of <<jcgm101,clause=7>>, or <<jcgm102,clause=7>> in a
+multivariate case. <<annexF>> gives further details of model linearization and provides
+a simple method (that is not foolproof) of checking the approximation.
+(((measurement model,non-linear)))(((measurement model,linearization)))
+
+[[ex-13.1.4]]
+[example]
+.Failure of the law of propagation of uncertainty to propagate uncertainty in a non-linear model
+====
+Bromine has two stable isotopes, bromine-79 and bromine-81. Consider a dibromine
+molecule (stem:["Br"_2]) whose most abundant molecule is stem:[""^(79)"Br"^(81)"Br"]
+(the other molecules being stem:[""^(79)"Br"^(79)"Br"] and
+stem:[""^(81)"Br"^(81)"Br"]). The abundance of this molecule, having a mass of
+stem:[160 " Da"], with respect to all molecules of stem:["Br"_2] is given by the
+expression <<meija120>>
+
+[stem%unnumbered]
+++++
+x_(160) = 2x_(79)(1 - x_(79)).
+++++
+
+The isotopic abundance stem:[x_(79)] of bromine-79 varies naturally from stem:[0.505]
+to stem:[0.508]. Consider that stem:["Br"_2] has been made from a slightly altered
+isotopic bromine with stem:[x_(79) = 0.500] and stem:[u(x_(79)) = 0.005], and the
+abundance stem:[x_(160)] of stem:[""^(79)"Br"^(81)"Br"] is required. In such a case,
+the application of the law of propagation of uncertainty for the above measurement
+model yields
+
+[stem%unnumbered]
+++++
+u^2(x_(160)) = (("d"x_(160))/("d"x_(79)))^2 u^2(x_(79)) = (2-4x_(79))^2 u^2 (x_(79)).
+++++
+
+In this instance, the law of propagation of uncertainty provides invalid results
+since it yields stem:[u(x_(160)) = 0] when stem:[x_(79) = 0.500], regardless of the
+uncertainty associated with stem:[x_(79)]. The inadequate linearization of this model
+as used by the law of propagation of uncertainty can be remedied by using the Monte
+Carlo method: by modelling stem:[x_(79)] by a normal random variable,
+stem:["N"(0.500, 0.005^2)], for instance, stem:[x_(160) = 0.49995] with
+stem:[u(x_(180)) = 0.00007] is obtained.
+
+The issue can also be overcome by calculating non-symmetric approximations for the
+sensitivity coefficients or by including higher-order terms <<meija120>>.
+====
+
+[[cls-13.2]]
+=== Use of a model beyond the range for which it has been validated
+
+The use of a measurement model for ((extrapolation)) beyond an interval over which it is
+deemed valid is generally inadvisable (also see <<cls-5.8>> and <<ex-10.6.4>>). It is
+generally unsafe to fit an empirical or hybrid model to data and use the model beyond
+the span of the fitted data. Extrapolation with purely empirical functions such as
+polynomials and polynomial splines is particularly dangerous. Such functions can
+exhibit spurious behaviour beyond the span of the data they explain and should not be
+used for this purpose. In certain circumstances, a theoretical model may be used with
+caution for extrapolation beyond the span of the data that defines it when the model
+is judged to describe adequately the phenomenon of interest.(((polynomial spline)))
+
+[[ex-13.2]]
+[example]
+.Isotope-based quantitation: use of theoretical and empirical models
+====
+In isotope-based quantitation, routinely employed in chemical measurement, the
+measurand is the isotope amount ratio of a substance of interest (the analyte) in an
+'unknown' sample. This ratio is specified by a calibration function giving the
+relationship between isotope amount ratio and mass ratio. The calibration function is
+provided by regression given a data set consisting of several pairs of values. Each
+pair corresponds to a 'known' sample, for which a value of stem:[R_"AB"], the isotope
+ratio of the mixture, is observed (measured) corresponding to a value of stem:[q],
+the mass ratio of the sample (analyte) stem:["A"] and the isotopically-labelled
+internal standard stem:["B"]. See the data points indicated by filled circles in
+<<fig9>>.
+
+[[fig9]]
+.Isotope dilution theoretical (rational) model and empirical models fitted to calibration data and used for prediction
+image::img09.png[]
+
+A feature that distinguishes isotope dilution from many other methods of analytical
+chemistry is the inherently non-linear theoretical calibration function,
+
+[[eq28]]
+[stem]
+++++
+R_"AB" = (a_0 + a_1q)/(1+a_2q),
+++++
+
+which is a rational function having polynomial degree 1 in the numerator and in the
+denominator, where stem:[a_0], stem:[a_1] and stem:[a_2] are parameters calculated by
+regression from the provided data. Then, for a sample having a specified value of
+mass ratio stem:[q], the corresponding value of stem:[R_"AB"] is determined from
+the <<eq28>>. Accordingly, the calibration function given by <<eq28>> is an explicit
+univariate model (see <<cls-13.3>>) in which stem:[R_"AB"] is the output quantity or
+measurand, and the input quantities are stem:[q] and the calibration parameters
+stem:[a_0], stem:[a_1] and stem:[a_2].
+
+Many current implementations of isotope dilution calibration either ignore the
+curvature of the function (due to the presence of the term involving stem:[a_2]) or
+use instead an empirical model such as a polynomial of degree 2 or 3 (see
+<<annexD>>). Such empirical models do not generally extrapolate well beyond the
+interval spanned by the calibration data. <<fig9>> shows the use of a linear
+polynomial or straight line (corresponding to ignoring the term stem:[a_2q]), and
+quadratic and cubic polynomials fitted to five calibration points (filled circles).
+It also shows the <<eq28>> fitted to the same data. The open circles correspond to two
+additional samples outside the span of the calibration data. The advantage of the
+theoretical model over the candidate empirical models is evident in this case.
+Further details are given in reference <<pagliano>>.
+====
+
+[[cls-13.3]]
+=== Explicit univariate measurement model
+
+A measurement model taking the form <<eq1>> relating a single output quantity
+stem:[Y] to the input quantities stem:[X_1, ..., X_N] is termed univariate and
+explicit. Given values for the input quantities stem:[X_1, ..., X_N], an explicit
+model enables the corresponding value of the output quantity stem:[Y] to be
+determined directly. This form of model is the simplest and can be handled by the
+provisions of <<jcgm100>> or <<jcgm101>>.
+
+[[ex-13.3]]
+[example]
+.Gauge-block measurement (also see <<ex-6.2>> and <<ex1-6.5>>)
+====
+The length of a nominally stem:[50 "unitsml(mm)"] gauge block is determined by
+comparing it with a known gauge-block measurement standard of the same nominal length
+using a gauge block comparator. An expression for the direct output of the comparison
+of the two gauge blocks is the difference
+
+[[eq29]]
+[stem]
+++++
+d = [1+(alpha_"S" + delta alpha) theta] &#120001; - [1+alpha_"S"(theta - delta theta)] &#120001;_"S"
+++++
+
+in their lengths, where
+
+* stem:[&#120001;] is the length at stem:[20 "unitsml(degC)"] of the gauge block
+being calibrated,
+* stem:[&#120001;_"S"] is the length of the gauge-block measurement standard at
+stem:[20 "unitsml(degC)"] as given on its calibration certificate,
+* stem:[alpha_"S"] is the coefficient of thermal expansion of the gauge-block
+measurement standard,
+* stem:[delta alpha = alpha - alpha_"S"], where stem:[alpha] is the coefficient of
+thermal expansion of the gauge block being calibrated,
+* stem:[theta] is the deviation in Celsius temperature from the stem:[20
+"unitsml(degC)"] reference temperature of the gauge block being calibrated, and
+* stem:[delta theta = theta - theta_"S"], where stem:[theta_"S"] is the deviation in
+Celsius temperature from the stem:[20 "unitsml(degC)"] reference temperature of the
+gauge-block measurement standard.
+
+From <<eq29>> the output quantity stem:[&#120001;] can be expressed in terms of the
+stem:[N = 6] input quantities stem:[d], stem:[&#120001;_"S"], stem:[alpha_"S"],
+stem:[delta alpha], stem:[theta] and stem:[delta theta] as the explicit univariate
+measurement model
+
+[[eq30]]
+[stem]
+++++
+&#120001; = ([1+alpha_"S"(theta - delta theta)]&#120001;_"S" + d)/(1+(alpha_"S"+delta alpha)theta),
+++++
+
+the right-hand side of <<eq30>> constituting the measurement function.
+====
+
+[[cls-13.4]]
+=== Explicit multivariate measurement model
+
+A measurement model taking the form
+
+[[eq31]]
+[stem]
+++++
+{: (Y_1 = f_1(X_1, ..., X_N)", ", ...", ", Y_m=f_m(X_1, ..., X_N)".") :}
+++++
+
+where stem:[Y_1, ..., Y_m] are stem:[m] output quantities, and stem:[f_1, ..., f_m]
+denote the stem:[m] measurement functions, is termed multivariate and explicit. This
+form of model can be handled by the provisions of <<jcgm102>>.
+
+[[ex-13.4]]
+[example]
+.Resistance and reactance of a circuit element
+====
+The resistance stem:[R] and reactance stem:[X] of a circuit element are given by
+<<jcgm100,example=H.2>>:
+
+[[eq32]]
+[stem]
+++++
+{: (R=V/i "cos "phi", ", X = V/I "sin "phi".") :}
+++++
+
+Here <<eq32>> is the explicit multivariate measurement model for resistance and
+reactance in which stem:[V] denotes potential difference, stem:[I] denotes current
+and stem:[phi] denotes phase angle. There are stem:[N = 3] input quantities,
+stem:[V], stem:[I] and stem:[phi], and stem:[m = 2] output quantities stem:[R] and
+stem:[X]. The symbol stem:[X], conventionally denoting reactance, is not to be
+confused with stem:[X_1, X_2], etc., the generic symbols for the input quantities.
+====
+
+[[cls-13.5]]
+=== Implicit univariate measurement model
+
+A measurement model taking the form
+
+[[eq33]]
+[stem]
+++++
+h(Y, X_1, ..., X_N) = 0,
+++++
+
+where stem:[Y] is a scalar output quantity, and stem:[h] denotes a function of
+stem:[Y] and the input quantities stem:[X_1, ..., X_N], is termed univariate and
+implicit. Given values for the input quantities stem:[X_1, ..., X_N], the
+corresponding value of the output quantity stem:[Y] cannot be calculated directly
+from an implicit model. Specifically, <<eq33>> cannot readily or numerically stably
+be represented in terms of a measurement function. It is generally solved
+numerically, often by using an iterative procedure, to obtain a value of stem:[Y]
+corresponding to given values of stem:[X_1, ..., X_N]. This form of model can be
+handled by the provisions of <<jcgm102>>, which covers a generalization of the
+univariate form of the law of propagation of uncertainty given in
+<<jcgm100,clause=5.1;and!clause=5.2>> and a ((Monte Carlo method)).
+(((measurement model,implicit)))
+
+NOTE: There is not a unique way to write an implicit measurement model. For instance,
+in place of <<eq3>> in <<ex2-7.2.1>> the measurement model given by equating to zero
+the difference between the left- and right-hand sides of <<eq3>> could be used, which
+will then take the form <<eq33>>. The numerical efficiency of the solution of the
+measurement model equation depends on the choice made.
+
+NOTE: It is assumed that the implicit univariate measurement model (<<eq33>>) can be
+solved uniquely for the value of stem:[Y] corresponding to given values of stem:[X_1,
+..., X_N] close to their estimates.
+(((measurement model,univariate,implicit)))
+
+[[ex-13.5]]
+[example]
+.Shell thickness of microscopic spherical particles
+====
+A practical approach to determining the overlayer thickness of samples of microscopic
+spherical particles is to calculate an equivalent planar thickness stem:[T] and
+multiply it by a geometrical correction term <<shard>>. An implicit measurement model of
+the relationship between the measurand stem:[T] and experimentally measured
+independent quantities stem:[A] and stem:[B] is <<cumpson>>
+
+[[eq34]]
+[stem]
+++++
+h(T,A,B) -= e^(-T) - Ae^(-BT) - 1 = 0.
+++++
+
+In <<eq34>>, stem:[A] and stem:[B] are the input quantities and stem:[T] is the
+output quantity or measurand. It is not possible to re-express stem:[T] explicitly in
+terms of stem:[A] and stem:[B]. Using the provisions of <<jcgm102>>, given estimates
+stem:[hat A] and stem:[hat B] of stem:[A] of stem:[B], this equation can be solved
+numerically for the corresponding estimate stem:[hat T] of stem:[T]. Moreover, the
+standard uncertainty stem:[u(hat T)] can be obtained by propagating the standard
+uncertainties associated with stem:[hat A] and stem:[hat B].
+====
+
+[[cls-13.6]]
+=== Implicit multivariate measurement model
+
+A measurement model taking the form
+
+[[eq35]]
+[stem]
+++++
+{: (h_1(Y_1, X_1, ..., X_N) = 0", ", ...", ", h_m(Y_m,X_1,...,X_N) = 0",") :}
+++++
+
+implicitly defining the output quantities stem:[Y_1, ..., Y_m] in terms of the input
+quantities stem:[X_1, ..., X_N], is termed multivariate and implicit. Typically,
+<<eq35>> cannot readily or numerically stably be represented in terms of measurement
+functions stem:[f_1, ..., f_m] as in the explicit multivariate case in <<cls-13.4>>.
+It is generally solved numerically, typically by using an iterative procedure, to
+obtain values of stem:[Y_1, ..., Y_m] corresponding to values of stem:[X_1, ...,
+X_N]. This form of model can be handled by the provisions of <<jcgm102>>, which
+covers a multivariate generalization of the form of the law of propagation of
+uncertainty given in <<jcgm100>> and a ((Monte Carlo method)).
+
+NOTE: It is assumed that the implicit multivariate measurement model (<<eq35>>) can
+be solved uniquely for values of stem:[Y_1, ..., Y_m] given values of stem:[X_1, ...,
+X_N] close to their estimates.
+
+[[ex-13.6]]
+[example]
+.Pressures generated by a pressure balance accounting for correlation
+====
+A generalization of the example of the pressure balance in <<ex2-7.2.1>> is as
+follows. For stem:[i = 1, ..., m], let stem:[p_i] denote the generated pressure for
+applied mass stem:[m_i] and temperature stem:[t_i], with stem:[A_0], stem:[lambda],
+stem:[alpha], stem:[rho_a], stem:[rho_w] and stem:[g] as before. An estimate of each
+stem:[p_i] is obtained by solving an equation of the form of <<eq3>> given estimates
+of stem:[A_0], stem:[lambda], stem:[alpha], stem:[t_i], stem:[m_i], stem:[rho_a],
+stem:[rho_w] and stem:[g]. However, the quantities representing the generated
+pressures are not independent because they all depend on the quantities stem:[A_0],
+stem:[lambda], stem:[alpha], stem:[rho_a], stem:[rho_w] and stem:[g]. The measurement
+is described by a multivariate measurement model in which stem:[A_0], stem:[lambda],
+stem:[alpha], stem:[t1, ..., t_m], stem:[m_1, ..., m_m], stem:[rho_a], stem:[rho_w],
+stem:[g] are stem:[2m +6] input quantities, stem:[p_1, ..., p_m] are stem:[m] output
+quantities, and the measurement model takes the form
+
+[stem%unnumbered]
+++++
+h_i (Y_1, ..., Y_m, X_1, ..., X_N) = A_0 p_i (1+lambda p_i)[1+ alpha(t_i - t_"ref")] - m_i (1- rho_a/rho_w) g =0, i= 1,...,m,
+++++
+
+where stem:[t_"ref"] is a reference temperature, stem:[20 "unitsml(degC)"], say <<lewis>>.
+====
+
+[[cls-13.7]]
+=== Measurement models involving complex-valued quantities
+
+A complex measurement model involves at least one complex-valued quantity. Complex
+models can also be classified as univariate and explicit [of the form of <<eq1>>],
+multivariate and explicit [of the form of <<eq31>>], univariate and implicit [of the
+form of <<eq33>>], and multivariate and implicit [of the form of <<eq35>>]. For
+guidance on working with ((complex numbers)) in the context of measurement models see
+<<jcgm102,clause=6.4>>.
+
+[[ex-13.7]]
+[example]
+.Reflection coefficient measured by a calibrated microwave reflectometer
+====
+The (complex) reflection coefficient stem:[Gamma] measured by a calibrated microwave
+reflectometer, such as an automatic network analyser (ANA), is given by
+
+[[eq36]]
+[stem]
+++++
+Gamma = (aW + b)/(cW + 1),
+++++
+
+where stem:[W] is the (complex-valued) quantity representing the uncorrected
+reflection coefficient and stem:[a], stem:[b] and stem:[c] are (complex-valued)
+calibration coefficients characterizing the reflectometer
+<<engen>>, <<kerns>>, <<somlo>>.
+
+There are four (complex-valued) input quantities stem:[a], stem:[b], stem:[c],
+stem:[W] and a single (complex-valued) output quantity stem:[Gamma]. <<eq36>> defines
+an explicit univariate complex measurement model, the right-hand side constituting
+the measurement function.
+====

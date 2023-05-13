@@ -1,0 +1,711 @@
+[[cls-10]]
+== Extending the basic model
+
+[[cls-10.1]]
+=== General
+
+[[cls-10.1.1]]
+==== {blank}
+
+There are various ways of extending the basic model to account for the effects
+identified in <<cls-9.3>>. The purpose of elaborating the basic model is to
+complement it to become a measurement model that includes all quantities and effects
+that influence the measurement result. Two important choices should be made when
+including an effect in the model:
+
+. whether to model the effect as an effect on the observed values of an input
+quantity in the basic model, or as an effect on the observed values of the output
+quantity, and
+. whether the effect can be described sufficiently well that a correction can be made
+for it.
+
+[[cls-10.1.2]]
+==== {blank}
+
+The effects arising from the measurement can often be described as an effect on one
+or more input quantities. Consequently, it is appropriate to model such effects in
+relation to the input quantities being affected. Another frequently occurring
+situation arises when an effect cannot be easily described as an effect on an input
+quantity. Such effects should be incorporated in the measurement model as an effect
+on the output quantity. Such situations arise in all kinds of product and material
+testing, and also in the production of reference materials when evaluating batch
+homogeneity or stability <<iso35>>. This modelling choice is further elaborated in
+<<cls-10.2>>.
+
+[[cls-10.1.3]]
+==== {blank}
+
+In considering whether an effect can be described sufficiently well to allow
+correction, two broad classes can usefully be distinguished:
+
+*_Well-understood effects_*:: Many effects can usefully be measured or estimated with
+sufficiently small uncertainty to improve the measurement. Others may be known to
+have small uncertainties compared with the target measurement uncertainty. These
+well-known or readily measurable systematic effects will be considered here as
+'well-understood effects'.
+(((systematic effects,modelling)))
+
+*_Poorly understood effects_*:: Other effects are known to exist, but little can be
+said about their magnitude or even their sign in a particular measurement. These
+include random effects, which generally give rise to a different deviation for every
+instance of a particular random effect. Similarly, some systematic effects cannot
+readily be measured or characterized sufficiently for correction in a particular
+measurement, for example, because they depend heavily on unknown characteristics of
+each different test item. It is not possible to make a useful correction for either
+of these effects. They can, however, contribute perhaps appreciably to the
+measurement uncertainty. These will be considered as 'poorly understood effects'.
+
+Subclauses <<cls-10.3;and!cls-10.4>> give guidance on extending a basic measurement
+model to include these two broad types of effect.
+
+NOTE: The classification above is for convenience in discussion. Because it relies on
+the degree to which a particular effect is understood in a specific case, an effect
+that is 'poorly understood' in one circumstance can, for example, because of more
+extensive study of the measurement, be modelled as a 'well-understood' effect in
+different circumstances.
+
+[[cls-10.2]]
+=== Adding effects to the basic model
+
+[[cls-10.2.1]]
+==== {blank}
+
+An input quantity can often be described as a function of several other input
+quantities, as demonstrated in the following example.
+
+NOTE: This form of modelling is also known as a 'bottom-up' approach
+(((bottom-up approach))) to uncertainty evaluation <<amc3>>.
+
+[example]
+.Mass concentration computed from preparation data
+====
+Suppose the mass concentration of substance in a solution is calculated from the mass
+stem:[m] of the substance and the volume stem:[V] of the solution. As is common in
+analytical chemistry, a balance is used to determine stem:[m] and a volumetric flask
+is used to determine stem:[V]. The measurement model takes the form
+
+[[eq22]]
+[stem]
+++++
+gamma = m/V,
+++++
+
+where stem:[gamma] denotes the mass concentration. The volume of the solution is
+affected by the repeatability of filling and the temperature, and largely determined
+by the volume of the flask stem:[V_"flask"]. Hence, incorporating terms
+stem:[deltaV_"r"] and stem:[deltaV_T] to represent these respective effects,
+
+[stem%unnumbered]
+++++
+V = V_"flask" + delta V_"r" + delta V_T.
+++++
+
+This expression can be substituted in the <<eq22>> to account for
+these effects.
+
+The effect of the purity of the substance can be modelled by developing an expression
+for stem:[m] that incorporates a correction for purity, stem:[w]. If this correction
+is available, then
+
+[stem%unnumbered]
+++++
+m = m_"gross"w,
+++++
+
+where stem:[m_"gross"] is the mass calculated from weighing the substance. For
+stem:[m_"gross"], a measurement model is also constructed that typically includes the
+readings of the balance when weighing the empty container and when weighing the
+container with the substance, among others. A fully worked example is given in the
+Eurachem/CITAC Guide <<ellison63,locality:appendix=A,example=A1>>].
+====
+
+[[cls-10.2.2]]
+==== {blank}
+
+Another frequently occurring situation arises when an effect of, for example,
+sampling, sample preparation or the measuring system, is more conveniently evaluated in
+terms of the output quantity.
+
+NOTE: This form of modelling is also known as a 'top-down' approach to uncertainty
+evaluation <<amc3>>.(((top-down approach)))
+
+[example]
+.Ash content of coal
+====
+The ash content of coal (expressed as mass fraction) is a function of temperature.
+However, it is not possible to describe this relationship mathematically, due to the
+complexity of the chemical reactions involved in converting the coal sample into ash.
+Depending on the conditions of ashing, ash is produced with a different composition
+and hence a different mass.
+
+A laboratory evaluates the temperature effect by repeating under repeatability and
+(within-laboratory) reproducibility conditions the test on a set of laboratory
+samples from the same coal, over a number of days, to assess repeatability and
+reproducibility. The standard deviations thus obtained relate to the ash content of
+the coal. The temperature effect, which cannot be described as a relationship between
+the ash content and the (fluctuations of the) ashing temperature, would be
+incorporated in the measurement model as part of a precision term associated with the
+output quantity. Whether a bias component needs to be included would usually be
+assessed by using a certified reference material or retained sample from a
+proficiency test.
+====
+
+[[cls-10.2.3]]
+==== {blank}
+
+The mathematical form in which an effect is modelled depends primarily on whether
+this effect is in magnitude constant over the range of values concerned for the
+corresponding quantity, or whether some other relationship is determined. In cases
+where there exists an established functional relationship, such a relationship should
+be used, or a simplification of such a relationship if it can be demonstrated that it
+is fit for purpose.
+
+[[ex1-10.2.3]]
+[example]
+.Volume of a solution
+====
+The contraction or expansion of a liquid can be described as a function of the
+temperature by using the cubic expansion coefficient <<ellison63>>. Over large temperature
+ranges, this coefficient is generally also a function of temperature, so that a
+different mathematical expression can be needed depending on the range of
+temperatures contemplated when preparing solutions.
+====
+
+[[ex2-10.2.3]]
+[example]
+.Air buoyancy
+====
+Air buoyancy can be described as a function of the volume of the object being weighed
+and the air density. The air density can for example be computed from the CIPM 2007
+formula, which relates the air density to pressure, temperature, relative humidity
+and the amount fraction of carbon dioxide <<picard>>. A simpler form of the correction
+would use a constant value for the air density, with a suitably large uncertainty
+that reflects the variability of the air density the year round.
+====
+
+[[cls-10.3]]
+=== Modelling well-understood effects
+
+[[cls-10.3.1]]
+==== {blank}
+
+Well-understood effects exert an influence on the estimate of the measurand whose
+magnitude can be determined and for which a correction can usefully be considered.
+They are included in the measurement model by introducing input quantities as
+corrections or correction factors (see <<jcgm200,clause=2.53>>) to compensate,
+respectively, for additive effects (absolute) or multiplicative effects (proportional
+to the measurand). The associated uncertainties describe the residual doubt about how
+well the corrections or correction factors are known. Some input quantities might
+themselves be known to depend on further quantities, and so the measurement model
+would be expressed in terms of an enlarged set of input quantities. Equivalently,
+these input quantities can be regarded as output quantities from further measurement
+models in a multi-stage measurement model (see <<cls-8.4>>).
+
+[[cls-10.3.2]]
+==== {blank}
+
+In many cases the corrections or correction factors can be described by mathematical
+expressions that represent the physical phenomena causing the effects.
+
+[[ex-10.3.2]]
+[example]
+.Buoyancy in mass measurement
+====
+If the mass measurement in the <<ex-7.1>> is carried out in air, an
+additive correction due to air buoyancy of the form stem:[rho_"a"V] is introduced,
+where stem:[rho_"a"] is the air density and stem:[V] the volume of the weight. The
+model becomes
+
+[stem%unnumbered]
+++++
+m = k/g X + rho_"a"V.
+++++
+
+In turn, the volume is typically obtained from a known value stem:[V_"ref"]
+determined at a given reference temperature stem:[t_"ref"] (stem:[t_"ref" = 0
+"unitsml(degC)"] or stem:[t_"ref" = 20 "unitsml(degC)"]), and corrected by taking
+into account the temperature stem:[t] at which the measurement is made and the
+average coefficient of thermal expansion stem:[alpha] of the material that
+constitutes the weight in the temperature range between stem:[t] and stem:[t_"ref"].
+Therefore,
+
+[stem%unnumbered]
+++++
+V = V_"ref"[1 + alpha(t - t_"ref")].
+++++
+
+This expression can be introduced in the model, or be considered as a sub-model in a
+multi-stage measurement model (see also <<cls-8.4>>). Similar considerations can be
+applied to other input quantities.
+====
+
+[[cls-10.3.3]]
+==== {blank}
+
+If there is no known relationship between the effect and the quantity concerned, then
+often the dependence is determined experimentally, for example, in method evaluation
+or method verification studies <<iso17025>>. Also, consideration should be given to the
+possibility that the uncertainty component arising from the effect studied is not
+necessarily constant over the range of values considered for the quantity causing the
+effect. A well-established experiment provides data over this range, so that it can
+be assessed whether the uncertainty component is best approximated by a contribution
+that is independent of or proportional to the value of the measurand or has some
+other relationship to the measurand. In the first situation, the effect should be
+modelled as an additive term, whereas in the second situation a multiplicative factor
+is the appropriate choice.
+
+[[cls-10.3.4]]
+==== {blank}
+
+The correction corresponding to a well-understood effect should always be included in
+the measurement model in the form of a mathematical expression. How to determine the
+(unknown) value of the correction is a matter of choice, largely depending on the
+target uncertainty. The value can be determined experimentally during the
+measurement, or be estimated from other information, or be taken equal to zero, if
+additive, or to one, if multiplicative, in which cases the correction does not impact
+on the estimate of the measurand. Whichever its value, a correction in a measurement
+model contributes to the uncertainty associated with the estimate of the measurand.
+
+[[cls-10.3.5]]
+==== {blank}
+
+The practice of not including in the measurement model a correction having known
+value and applying instead an inflated uncertainty is scientifically unsound and is
+deprecated (see <<jcgm100,clause=F.2.4.5>>).
+
+[[cls-10.3.6]]
+==== {blank}
+
+The greater the effort that is devoted to evaluating a correction, the better is the
+available knowledge about it, and the more reliable is the resulting associated
+uncertainty.Simplifying a measurement model by neglecting corrections, or by
+including only a simple approximate correction for a more complex effect, can
+significantly reduce the effort required to characterise a measurement and evaluate
+its uncertainty. On the other hand, the additional uncertainties associated with the
+neglected effects or with the approximations employed are generally larger and less
+reliable than if the effects were characterised and corrected as necessary.
+
+[[ex-10.3.6]]
+[example]
+.Mass measurement (continued)
+====
+In the <<ex-10.3.2>>, the temperature stem:[t] can be measured or,
+based on prior knowledge about the laboratory conditions, it can be taken as
+stem:[t_"ref"]. Depending on the decision made, stem:[t-t_"ref"] has either a
+non-zero value with an uncertainty equal to that associated with the estimate of
+stem:[t], or is equal to zero with a larger uncertainty depending on the known
+temperature fluctuations in the laboratory. Also the air density can be measured,
+with state-of-the-art relative uncertainty of, say, some parts in stem:[10^5] or can
+be taken equal to an average value with an associated relative standard uncertainty
+typically between 0.1&nbsp;% and 1&nbsp;%.
+====
+
+[[cls-10.3.7]]
+==== {blank}
+
+The discussion above explains an apparent paradox arising when the same type of
+measurement is carried out at the highest accuracy and at the industrial level. In
+the former case, a complete model is used, containing all the corrections, which are
+determined experimentally. In the latter case, in which the target uncertainty is
+much greater, most of the corrections are typically estimated from other information
+(Type B evaluation) or simply 'neglected', so that the model contains just a few
+terms having, however, a much larger uncertainty. As a result, for the same kind of
+measurement a model containing a large number of terms yields an estimate having an
+uncertainty smaller than that provided by a simpler model containing a smaller number
+of terms. This somehow counter-intuitive fact is explained by the difference in the
+effort devoted to evaluate corrections in the two cases.
+
+[[cls-10.3.8]]
+==== {blank}
+
+There are circumstances in which an effect known to affect the measurement result can
+be represented only as a correction (or correction factor) that cannot be determined
+experimentally during the measurement. An estimate of the correction and the
+associated uncertainty are instead obtained from prior knowledge generated, for
+example, by method evaluation or method verification studies
+<<iso17025>>, <<mahnusson>>. In some
+cases, where the measurement is carried out for different values of a quantity such
+as concentration, the estimated correction and the associated uncertainty may depend
+on the particular value of the quantity.
+
+[[ex-10.3.8]]
+[example]
+.Recovery in chemical measurement
+====
+In chemistry the component of interest (the analyte) is often embedded in a complex
+mixture of other molecules (the matrix). Many methods of analysis to determine the
+concentration (the measurand) of the analyte require the analyte to be separated from
+the matrix. The quantity actually measured is the concentration of the analyte
+following removal. A systematic error arises if the measured value is obtained using
+a measurement model that ignores the effect of incomplete removal <<dybkaer>>. Correction
+for incomplete removal is usually described by a multiplicative recovery factor,
+which is estimated in an experiment where a reference material, having a known
+concentration of the analyte in the matrix, is measured. The recovery factor is
+included in a measurement model for the concentration of the analyte, and account is
+taken of the uncertainty associated with the estimate of the factor, which includes
+the uncertainty associated with the value carried by the reference material.
+====
+
+[[cls-10.4]]
+=== Modelling poorly understood effects
+
+[[cls-10.4.1]]
+==== {blank}
+
+Poorly understood effects, in contrast with the well-understood effects considered in
+<<cls-10.3>>, are known to exist, but little can be said in a specific measurement
+about their magnitude or even their sign. Although a correction cannot usefully be
+made for these effects, it is important to include them in the measurement model
+because they contribute to the uncertainty associated with the estimate of the
+measurand.
+
+[[ex-10.4.1]]
+[example]
+====
+Instances of poorly characterized effects include environmental conditions, effects
+between samples, mismatch between the calibration standards and the samples subject
+to measurement, treatment of test items prior to measurement, and the effects of
+sampling, sample transformation and sub-sampling.
+====
+
+[[cls-10.4.2]]
+==== {blank}
+
+Further instances of poorly understood effects include effects due to different
+operators, measurement conditions kept within certain limits, different artefacts and
+subsamples. These effects, which give rise to the dispersion of the values obtained
+for the measurand, should be included in the measurement model. It is often
+appropriate to evaluate under such conditions the standard uncertainty associated
+with the estimate of an input quantity, unless method validation, repeated
+observations on retained samples or artefacts, or quality control data show relevant
+between-run or between-measurement effects (see also <<jcgm100,annex=H.5>>). In
+particular, long-term effects tend to be more significant and appropriate techniques,
+such as analysis of variance, should be used for evaluating such reproducibility
+effects. It is crucial to include random variation in a measurement model in order to
+obtain a realistic evaluation of the uncertainty arising from these effects. The
+topic of modelling random variation is considered in <<annexC>>.
+
+[[cls-10.4.3]]
+==== {blank}
+
+The available knowledge about poorly understood effects is formally encapsulated in a
+random variable (see <<cls-5.5>>) having expectation zero or one for additive or
+multiplicative effects, respectively, and standard deviation providing a reasonable
+representation of the uncertainty associated with the effect. Such a random variable
+does not modify the estimate of the measurand, but contributes to the uncertainty
+associated with that estimate (also see <<note2-9.3>>).
+
+NOTE: Reproducibility studies can be a suitable way to characterise poorly understood
+effects if reproducibility can be established in related measurements. Guidance on
+the use of precision data is given in <<cls-C.5>>.
+
+[[ex1-10.4.3]]
+[example]
+.How long is a piece of string? (continued from the example in <<cls-8.4.2>>)
+====
+Apart from stem:[Q_(11)], the quantities in the measurement model given there all
+constitute correction terms. All these correction terms apart from stem:[Q_(23)] and
+stem:[Q_(24)] are additive and would have an estimate of zero. stem:[Q_(23)] would
+have an estimate equal to the (non-zero) expectation of the chi-squared distribution
+assigned to it, and stem:[Q_(24)] would have an estimate of unity since it is the
+only multiplicative correction in the model.(((probability distribution,chi-squared)))
+====
+
+[[ex2-10.4.3]]
+[example]
+.Release of cadmium from ceramic ware (also see the example in <<annexF>>)
+====
+The amount of cadmium released from ceramic ware is typically determined using atomic
+absorption spectrometry. A measurement model for stem:[r], the mass of cadmium
+leached per unit area of ceramic ware, is <<ellison63,locality:appendix=A, example=A.5>>
+
+[stem%unnumbered]
+++++
+r = (gamma_0 V_"L")/(a_"V") d,
+++++
+
+where stem:[gamma_0] is the mass concentration of cadmium in the extraction solution,
+stem:[V_"L"] is the volume of the leachate, stem:[a_"V"] is the surface area of the
+vessel and stem:[d] is the dilution factor. A more complete model is
+
+[[eq23]]
+[stem]
+++++
+r = (gamma_0 V_"L")/(a_"V")d f_"acid" f_"time" f_"temp",
+++++
+
+where stem:[f_"acid"], stem:[f_"time"] and stem:[f_"temp"] are multiplicative
+correction factors modelling the effects of acid concentration, duration of digestion
+and temperature. Estimates of the input quantities and the associated relative
+standard uncertainties are given in <<table4>>. The relative standard uncertainties
+associated with the estimates
+
+[stem%unnumbered]
+++++
+hat f_"acid" = hat f_"time" = hat f_"temp" = 1
+++++
+
+are provided by, for instance, method validation data <<ellison63, example=A.5>>.
+Since no dilution was applied in the present example, stem:[d] is exactly one.
+Using the  relative standard uncertainties in <<table4>>, given in
+<<ellison63,locality:appendix=A, example=A.5>>
+for this example, yields stem:[u_"rel"(hat r) = 0.097].
+
+[[table4]]
+.Estimates and relative standard uncertainties for cadmium release measurement model
+[cols=7, headerrows=2]
+|===
+| stem:[hat gamma_0] | stem:[hat V_"L"] | stem:[hat a_"V"] | stem:[hat d] | stem:[hat f_"acid"] | stem:[hat f_"time"] | stem:[hat f_"temp"]
+| stem:[0.26 "unitsml(mg*L^(-1))"] | stem:[0.332 "unitsml(L)"] | stem:[5.73 "unitsml(dm^2)"] | 1 | 1 | 1 | 1
+
+| stem:[u_"rel"(hat gamma_0)] | stem:[u_"rel"(hat V_"L")] | stem:[u_"rel"(hat a_"V")] | stem:[u_"rel"(hat d)] | stem:[u_"rel" (hat f_"acid")] | stem:[u_"rel" (hat f_"time")] | stem:[u_"rel" (hat f_"temp")]
+| stem:[0.069] | stem:[0.0054] | stem:[0.033] | stem:[0] | stem:[0.0008] | stem:[0.001] | stem:[0.06]
+|===
+====
+
+[[cls-10.5]]
+=== Shared effects
+
+[[cls-10.5.1]]
+==== {blank}
+
+In many cases, the same effect acts on two or more input quantities in a measurement
+model, thus introducing correlation. Such an effect is due, for instance, to the same
+measuring system, physical measurement standard or reference datum.
+
+[[ex-10.5.1]]
+[example]
+.Shared temperature effect
+====
+A thermometer is used to determine a temperature correction required in the
+estimation of input quantity stem:[X_i]. The same thermometer is used to determine a
+similar temperature correction needed in the estimation of input quantity stem:[X_j].
+The quantities stem:[X_i] and stem:[X_j] (strictly, the associated random variables)
+may be significantly correlated.
+====
+
+[[cls-10.5.2]]
+==== {blank}
+
+The original set of input quantities stem:[X_1, ..., X_N] upon which the measurand
+stem:[Y] depends can sometimes be redefined in such a way as to include as additional
+independent input quantities those quantities stem:[Q_&#120001;] that are common to
+two or more of the original stem:[X_i]. In the case of the <<ex-10.5.1>>,
+the quantities that define the calibration function for the
+thermometer (used to determine the temperature corrections) may be included as
+additional independent input quantities. Then the measurement model can be expressed
+in terms of independent quantities. Nonetheless, in some situations it may be more
+convenient to retain covariances rather than to increase the number of input
+quantities. In many cases it is not possible to remove the correlation because of
+insufficient information. Such a situation is likely to occur whenever measurement
+standards are calibrated in a laboratory and used in another laboratory for
+subsequent calibrations (also see <<cls-8.4.3>>).
+
+[[cls-10.5.3]]
+==== {blank}
+
+The correlation from shared effects has implications in the context of building an
+appropriate measurement model and impacts on the evaluation of the uncertainty
+associated with an estimate of the measurand. It is convenient to describe these
+common effects in the framework of multi-stage models (see
+<<cls-8.4.1;and!cls-8.4.3>>). In this context, two input quantities stem:[X_i] and
+stem:[X_j] depend on quantities stem:[Q_1,...,Q_L] (the common systematic effects).
+Thus, stem:[X_i = F_i(Q_1,...,Q_L)] and stem:[X_j = F_j(Q_1,...,Q_L)], although some
+of stem:[Q_1,...,Q_L] may actually appear only in one function and not in the other.
+
+[[ex-10.5.3]]
+[example]
+.Calibrated resistors in series
+====
+Ten resistors, each of nominal resistance stem:[R_i = 1 "unitsml(kOhm)"], are
+calibrated with a negligible uncertainty of comparison in terms of the same stem:[1
+"unitsml(kOhm)"] standard resistor stem:[R_"S"] characterized by a standard
+uncertainty stem:[u(R_"S") = 100 "unitsml(mOhm)"] as given in its calibration
+certificate. The resistors are connected in series with wires having negligible
+resistance in order to obtain a reference resistance stem:[R_"ref"] of nominal value
+stem:[10 "unitsml(kOhm)"]. Thus, the measurement model is
+
+[[eq24]]
+[stem]
+++++
+R_"ref" = sum_(i=1)^(10) R_i.
+++++
+
+Let the calibration of resistor stem:[i] be represented by
+
+[[eq25]]
+[stem]
+++++
+R_i = alpha_i R_"S",
+++++
+
+with stem:[alpha_i] a resistance ratio and stem:[u(alpha_i)] the associated standard
+uncertainty as obtained from repeated observations. It follows from the law of
+propagation of uncertainty [<<jcgm100,clause=5.2>>] that the variance associated with
+stem:[R_i] and the covariance associated with stem:[R_i] and stem:[R_j] are
+
+[[eq26]]
+[stem]
+++++
+{: (u^2(R_i) = R_"S"^2u^2(alpha_i) + alpha_i^2u^2(R_"S")", ", u(R_i,R_j) = alpha_i alpha_j u^2(R_"S")",") :}
+++++
+
+respectively. When, as occurs in practice, the stem:[alpha_i] take values very close
+to a common value stem:[alpha] with very small standard uncertainties, <<eq26>>
+reduce to
+
+[stem%unnumbered]
+++++
+u^2(R_i) = u(R_i,R_j) ~~ alpha^2 u^2 (R_"S"),
+++++
+
+for all stem:[i] and stem:[j], from which the correlation coefficient
+
+[stem%unnumbered]
+++++
+(u(R_i,R_j))/(u(R_i)u(R_j)) ~~ 1.
+++++
+
+The formula in <<jcgm100,clause=5.2.2,note=1>> then yields for the standard
+uncertainty associated with stem:[R_"ref"],
+
+[stem%unnumbered]
+++++
+u(R_"ref") = sum_(i=1)^(10) u(R_"s") = 10 xx (100 "unitsml(mOhm)") = 1 "unitsml(Ohm)".
+++++
+
+Taking no account of correlation, namely, applying the law of propagation of
+uncertainty for independent quantities, <<jcgm100,locality:equation=10>>, yields
+
+[stem%unnumbered]
+++++
+u(R_"ref") = [sum_(i=1)^(10) u^2 (R_"s")]^(1//2) = 0.32 "unitsml(Ohm)",
+++++
+
+which is incorrect, being too small by a factor of 3.
+
+Since the dominant uncertainty is that associated with stem:[R_"S"], which is common
+to all the resistor measurements, the errors in determining the different stem:[R_i]
+are almost perfectly correlated and the final resistance stem:[R_"ref"] is
+effectively a known multiple (stem:[sum_i alpha_i ~~ 10]) of stem:[R_"S"] with a
+corresponding 10-times larger uncertainty. Neglecting correlations leads to the
+incorrect result stem:[sqrt(10)u(R_i)] because it assumes that the errors associated
+with individual resistance measurements vary independently.
+
+The <<eq24;and!eq25>> constitute a simple instance of a two-stage model,
+the first stage in which stem:[R_"S"] and the stem:[alpha_i] are input quantities and
+the stem:[R_i] are output quantities, and the second stage in which the stem:[R_i]
+are the input quantities and stem:[R_"ref"] is the output quantity. Substitution of
+<<eq25>> into <<eq24>> gives a single-stage model.
+====
+
+[[cls-10.6]]
+=== Drift and other time-dependent effects
+
+[[cls-10.6.1]]
+==== {blank}
+
+Many measurement standards show drift over time. A measurement standard used as a
+reference is typically not calibrated immediately before use. Whenever the standard
+is used, it is necessary to update its value and standard uncertainty reflecting the
+possible change in the measurement standard since it was last calibrated. A recorded
+history of calibration results provides information about changes in the standard up
+to its most recent calibration. By fitting a suitable model to the recorded values of
+the standard as a function of time, the value of the measurement standard and the
+associated standard uncertainty at the time of use can be inferred.
+
+[[cls-10.6.2]]
+==== {blank}
+
+By plotting the time history of the quantity of interest, it can be seen whether the
+standard is fluctuating at random, or if there is a trend whether it appears to be
+linear or not. For a well-maintained measurement standard, a linear drift model such
+as that described in the <<ex-10.6.4>> is often appropriate.
+
+[[cls-10.6.3]]
+==== {blank}
+
+Any explanatory model should include terms to represent the time effect. The terms
+can describe corrections to the observations so that they relate to a single quantity
+measured at a convenient reference time. Alternatively, the terms can constitute
+parameters in a model of the observations as a function of time (as in
+<<cls-10.6.1>>). The corrections (in the former case) and the function parameters (in
+the latter case) are characterized by estimates and associated uncertainties and
+covariances (or, more generally, by a joint probability distribution).
+
+[[cls-10.6.4]]
+==== {blank}
+
+A suitable model will enable, under appropriate assumptions, a value of the
+measurement standard to be estimated at the time of use and the associated
+uncertainty evaluated. Care should always be taken since such estimation is a
+prediction or ((extrapolation)) beyond the span of existing data. See <<cls-13.2>>. See
+also reference <<ehrlich>>, which provides additional detail, particularly including
+approaches for dealing with the effects of such time-dependent changes as a part of
+traceability statements.
+
+NOTE: Current guidance on the production and certification of reference materials
+<<iso17034>>, <<iso35>> requires that the uncertainty associated with
+the property value includes long-term effects.
+
+[[ex-10.6.4]]
+[example]
+.Drifting resistance standard
+====
+A national metrology institute (NMI) provides calibration services for resistance
+standards based on a secondary working standard that is calibrated using a primary
+stem:[200 "unitsml(Ohm)"] standard approximately every six months. The stem:[200
+"unitsml(Ohm)"] standard exhibits drift due to recognized physical effects. Although
+no theoretical model of such effects is used, experience of a wide selection of
+high-quality standards suggests the drift can be explained by an empirical
+straight-line model. The value stem:[R] of a standard resistor is most conveniently
+expressed as a relative deviation stem:[y = Delta R//R_"nom" = (R -
+R_"nom")//R_"nom"] from its nominal value stem:[R_"nom"].
+
+The observed relative deviations for a stem:[200 "unitsml(Ohm)"] secondary resistance
+standard over the last 20 calibrations with time values stem:[t_i] and relative
+deviations stem:[y_i] is shown in <<fig5>>. The calibration points stem:[(t_i, y_i)]
+are given as crosses in the figure and provided in <<table5>>. The constant standard
+uncertainty stem:[0.025 xx 10^(-6)] was assigned to all stem:[y_i] based on knowledge
+of the measurement. The stem:[t_i] were taken as exact.
+
+[[fig5]]
+.Relative deviation from nominal of a resistance standard measured at approximately 6-monthly intervals, fitted drift line and 95&nbsp;% coverage corridor
+image::img05.png[]
+
+[[table5]]
+.Resistance drift data
+|===
+| stem:[t//"d"] | stem:[3588] | stem:[3731] | stem:[3916] | stem:[4089] | stem:[4325]
+| stem:[y//10^(-6)] | stem:[17.9093] | stem:[17.9008] | stem:[17.9493] | stem:[17.9539] | stem:[18.0032]
+| stem:[t//"d"] | stem:[4520] | stem:[4686] | stem:[4843] | stem:[5143] | stem:[5381]
+| stem:[y//10^(-6)] | stem:[18.0220] | stem:[18.0659] | stem:[18.0821] | stem:[18.1384] | stem:[18.1719]
+| stem:[t//"d"] | stem:[5982] | stem:[6157] | stem:[6445] | stem:[6817] | stem:[7219]
+| stem:[y//10^(-6)] | stem:[18.2294] | stem:[18.2655] | stem:[18.2959] | stem:[18.3348] | stem:[18.4009]
+| stem:[t//"d"] | stem:[7533] | stem:[7966] | stem:[8149] | stem:[8683] | stem:[9059]
+| stem:[y//10^(-6)] | stem:[18.4205] | stem:[18.4498] | stem:[18.5580] | stem:[18.6470] | stem:[18.6916]
+|===
+
+The central blue line in <<fig5>> shows the time-dependent estimate of the relative
+deviation obtained by fitting a straight line to the calibration points using
+least-squares regression respecting the given uncertainties. The lower and upper red
+lines indicate a 95&nbsp;% coverage corridor for stem:[y], as functions of time. The
+evaluated standard deviation of the dispersion of the data about the straight line is
+stem:[0.023 xx 10^(-6)], which compares well with the standard uncertainty of
+stem:[0.025 xx 10^(-6)] associated with the stem:[y_i].
+
+A customer calibration against the NMI's working standard can take place at any time
+stem:[t_"C"], say, typically within a 6 month period, since the most recent
+re-calibration. The value of the NMI's standard at that time is based on the value of
+the straight line at stem:[t = t_"C"].
+
+For the value stem:[t_"C" = 9242" d"], approximately 6 months after the most recent
+stem:[t]-value in the table, the extrapolated value using the fitted straight line is
+stem:[hat y_"C" = 18.6917 xx 10^(-6)]. (Extrapolation can in general be dangerous:
+see <<cls-13.2>>.) The standard uncertainty associated with stem:[hat y_"C"],
+obtained by propagating the standard uncertainties and ((covariance)) associated with the
+regression coefficients, is stem:[u(hat y_"C") = 0.0123 xx 10^(-6)]. The expanded
+uncertainty for 95&nbsp;% coverage is stem:[0.0258 xx 10^(-6)] based on the assumption
+that the measurement errors in the stem:[y_i] can be regarded as draws from a normal
+distribution.
+====

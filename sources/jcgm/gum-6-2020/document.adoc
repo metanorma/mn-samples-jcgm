@@ -1,0 +1,72 @@
+= JCGM GUM-6:2020
+:docnumber: GUM
+:partnumber: 6
+:copyright-year: 2020
+:edition: 1
+:revdate:
+:language: en
+:doctype: guide
+:docstage: in-force
+:docsubstage: 60
+:title-en: Guide to the expression of uncertainty in measurement
+:title-part-en: Developing and using measurement models
+:title-fr: Guide pour l'expression de l'incertitude de mesure
+:title-part-fr: Élaboration et utilisation des modèles de mesure
+:committee-acronym: JCGM
+:committee-en: Joint Committee for Guides in Metrology
+:committee-fr: Comité commun pour les guides en métrologie
+:workgroup-acronym: WG 1
+:workgroup-en: Expression of Uncertainty in Measurement
+:workgroup-fr: L'expression des incertitudes
+:published-date: 2020
+:mn-document-class: bipm
+:mn-output-extensions: xml,html,pdf,rxl
+:imagesdir: images
+:local-cache-only:
+:data-uri-image:
+
+include::sections/00-foreword.adoc[]
+
+include::sections/00-intro.adoc[]
+
+include::sections/01-scope.adoc[]
+
+include::sections/02-norm-refs.adoc[]
+
+include::sections/03-terms.adoc[]
+
+include::sections/04-conventions.adoc[]
+
+include::sections/05-principles.adoc[]
+
+include::sections/06-measurand.adoc[]
+
+include::sections/07-modelling.adoc[]
+
+include::sections/08-form.adoc[]
+
+include::sections/09-effects.adoc[]
+
+include::sections/10-extending.adoc[]
+
+include::sections/11-models.adoc[]
+
+include::sections/12-adequacy.adoc[]
+
+include::sections/13-using.adoc[]
+
+include::sections/aa-glossary.adoc[]
+
+include::sections/ab-modelling-dm.adoc[]
+
+include::sections/ac-modelling-rv.adoc[]
+
+include::sections/ad-representing.adoc[]
+
+include::sections/ae-cause.adoc[]
+
+include::sections/af-linearizing.adoc[]
+
+include::sections/99-bibliography.adoc[]
+
+include::sections/99-index.adoc[]

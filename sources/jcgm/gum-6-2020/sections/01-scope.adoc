@@ -1,0 +1,44 @@
+== Scope
+
+This document provides guidance on developing and using a measurement model and also
+covers the assessment of the adequacy of a measurement model. The document is of
+particular interest to developers of measurement procedures, working instructions and
+documentary standards. The model describes the relationship between the output
+quantity (the measurand) and the input quantities known to be involved in the
+measurement. The model is used to obtain a value for the measurand and an associated
+uncertainty. Measurement models are also used in, for example, design studies,
+simulation of processes, and in engineering, research and development.
+
+This document explains how to accommodate in a measurement model the quantities
+involved. These quantities relate i) to the phenomenon or phenomena on which the
+measurement is based, that is, the measurement principle, ii) to effects arising in
+the specific measurement, and iii) to the interaction with the artefact or sample
+subject to measurement.
+
+The guidance provided is organised in accordance with a work flow that could be
+contemplated when developing a measurement model from the beginning. This work flow
+starts with the specification of the measurand (<<cls-6>>). Then the measurement
+principle is modelled (<<cls-7>>) and an appropriate form of the model is chosen
+(<<cls-8>>). The basic model thus obtained is extended by identifying (<<cls-9>>) and
+adding (<<cls-10>>) effects arising from the measurement and the artefact or sample
+subject to measurement. Guidance on assessing the adequacy of the resulting
+measurement model is given in <<cls-12>>. The distinction between the basic model and
+the (complete) measurement model in the work flow should be helpful to those readers
+who already have a substantial part of the measurement model in place, but would like
+to verify that it contains all effects arising from the measurement so that it is fit
+for purpose.
+
+Guidance on the assignment of probability distributions to the quantities appearing
+in the measurement model is given in <<jcgm100>> and <<jcgm101>>. In <<cls-11>>,
+this guidance is supplemented by describing how statistical models can be developed
+and used for this purpose.(((probability distribution)))
+
+When using a measurement model, numerical problems can arise including computational
+effects such as rounding and numerical overflow. It is demonstrated how such problems
+can often be alleviated by expressing a model differently so that it performs well in
+calculations. It is also shown how a reformulation of the model can sometimes be used
+to eliminate some correlation effects among the input quantities when such
+dependencies exist.(((correlation,elimination of)))
+
+Examples from a number of metrology disciplines illustrate the guidance provided in
+this document.

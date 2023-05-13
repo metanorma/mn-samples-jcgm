@@ -1,0 +1,162 @@
+[[cls-12]]
+== Assessing the adequacy of the measurement model
+
+[[cls-12.1]]
+=== {blank}
+
+A measurement model is adequate if the estimate of the measurand obtained by using it
+is corrected for all known effects, and the associated uncertainty reflects all
+factors that could reasonably affect the estimate. If this is the case, values for
+the same measurand obtained using alternative models (see <<cls-8.5>>) should agree
+within reported uncertainties. In addition, the measurement model should be capable
+of providing estimates and associated uncertainties for the entire range(s) of
+measurand values and values of the input quantities for which it has been developed.
+
+[[cls-12.2]]
+=== {blank}
+
+Experimental evidence of measuring system performance is the most general check of
+adequacy of the model chosen. Such evidence is usually obtained when validating the
+measurement procedure, or performing measurements in support of quality control and
+quality assurance. There are different ways to assess by experiment the output of a
+measurement model, such as
+
+* participation in an interlaboratory comparison and use of the estimate and
+uncertainty from the measurement model in the performance evaluation,
+* use of a certified reference material (CRM) or a reference method to assess the
+performance of the measurement procedure,
+* comparison of the output of the measurement model with literature or reference data.
+
+By showing agreement between the measured and reference values within the respective
+uncertainties, support is provided for the adequacy of that model. Similarly,
+unexpected disagreement normally calls for further investigation and should result in
+improvements to the preferred measurement model.
+
+[[ex-12.2]]
+[example]
+.Performance evaluation in an interlaboratory comparison
+====
+Computing an stem:[E_n] or stem:[zeta] score <<iso13528>> from participation in a proficiency
+test facilitates assessing the performance evaluation taking into account both the
+measured value and the stated measurement uncertainty. Similarly, in key comparisons
+such an evaluation is facilitated by calculating degrees of equivalence <<bipm19>>. An
+unsatisfactory score can indicate an issue in the measurement model.
+
+NOTE: Guidance on using CRMs is given in ISO Guide 33 <<iso33>>.
+
+NOTE: Depending on the kind of CRM used, adaptations to the measurement model can be
+necessary, for example, because the form of the CRM can be different from the items
+subject to measurement for which the measurement model has been developed.
+====
+
+[[cls-12.3]]
+=== {blank}
+
+Supplementary to assessing experimentally the outputs of a measurement model for
+adequacy, it can be helpful to assess targeted parts of the measurement procedure
+separately, to assess aspects of the procedure, such as, but not limited to,
+
+* the calibration function and (deviations from) linearity of the instrument,
+* sampling,
+* sample preparation,
+* reproducibility effects.
+
+The use of validation studies and quality control data can be helpful in making these
+assessments.
+
+[[cls-12.4]]
+=== {blank}
+
+Reference data (exact or otherwise) for comparison purposes is widely used <<butler>>.
+'Exact' data can often be provided by inverting the proposed model to generate
+example data from prescribed values for the measurand. This process provides
+reassurance that a model is correctly implemented. Where it is possible to generate
+sample data from a more complete model, or from data on well-characterized test
+items, demonstration that the expected result is returned will provide additional
+confidence in the model actually used. In many cases, example data and calculations
+are published in relevant measurement or testing methods; comparison of calculated
+results with those in the respective standards then provides evidence of model
+adequacy.
+
+[[cls-12.5]]
+=== {blank}
+
+Assessing the adequacy over the ranges of input and output values requires verifying
+the output using one or more of the methods described in this clause. For instance,
+where a calibration function is to be used for measuring pH in the range 4 to 10, it
+should be ensured that either a single function performs sufficiently well over this
+range, or that alternative functions perform adequately (with appropriate
+calibration) over sub-ranges. In assessing adequacy across a range or sub-range, it
+is usually sufficient to explore the intended extremes and a small number of
+intermediate cases. Close attention should be given to regions where modelling
+assumptions change. If the number of terms in a computational model is adjusted
+depending on a measured response, the adequacy of the model should be confirmed near
+each such decision point. Consideration should be given to the sensitivity of a
+measurement result to the choice of model <<possolo143>>, particularly in critical
+applications. Also see <<cls-11.10>>.
+
+NOTE: It is not generally necessary for testing laboratories to confirm the adequacy
+of a calculation procedure given in a standard test or measurement method. Such a
+procedure would imply an underlying measurement model. Such a confirmation would have
+normally been undertaken by the expert committee in developing a relevant documentary
+standard or have been established by prior research.
+
+[[cls-12.6]]
+=== {blank}
+
+Supplementary to the checks on the output of the measurement model, there are several
+others that are especially helpful in verifying the appropriateness of the
+measurement model. These activities include the following, which are discussed
+further in the subsequent subclauses:
+
+* Reviewing the contributions to the measurement model;
+* Checking that a simplified model adequately reproduces the results of a more
+complete model it approximates using, for instance, the target measurement
+uncertainty for this purpose;
+* Confirming that the computer's numerical accuracy is sufficient for the application;
+* For models fitted to data, verifying the validity of the model and of the
+distribution assumptions made;
+* Obtaining evidence of model applicability from published research literature;
+* Obtaining experimental evidence that the model performs adequately for its intended
+use; and
+* Confirming that uncertainties predicted by the model are consistent with the
+observed performance of the measurement procedure.
+
+[[cls-12.7]]
+=== {blank}
+
+The contributions to the measurement model should be reviewed. They include
+contributions obtained from established scientific principles (see <<cls-7.1>>) and
+effects derived from metrological considerations (see <<cls-9.2>>, <<cls-9>> and
+<<annexC>>). The developed model should be checked against the compiled list of
+contributory effects to assess that all meaningful contributions have been taken into
+account (see <<cls-9.3>> and <<cls-E.1.1>>). In this review, account should be taken
+of any prescribed target measurement uncertainty. Also the possibility of understated
+values for uncertainty contributions should be part of this review.
+
+[[cls-12.8]]
+=== {blank}
+
+Where the proposed model is an intentional simplification of a more complicated model
+that can also be implemented, comparison of results obtained by the two models will
+provide an indication of the agreement between the two. Where measurement
+uncertainties and differences in calculated values are small compared with the target
+measurement uncertainty, the simplified model may be accepted as adequate. See
+<<cls-11.10>>.
+
+[[cls-12.9]]
+=== {blank}
+
+Different mathematical formulations or solution methods can lead to results of
+different numerical accuracy due to the limitations of computer arithmetic, premature
+termination of iterative calculations or for other reasons. Confirming sufficient
+numerical accuracy, often using reference or simulated data, can therefore be
+important when developing new implementations. Model choice for adequate numerical
+accuracy is discussed in more detail in <<cls-8.6>>.
+
+[[cls-12.10]]
+=== {blank}
+
+Research literature can provide evidence of the adequacy of a given model, sometimes
+over a particular domain. Literature may also be useful in establishing the
+limitations of a suggested model.

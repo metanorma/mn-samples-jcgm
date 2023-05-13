@@ -1,0 +1,467 @@
+[[annexC]]
+[appendix]
+== Modelling random variation
+
+[[cls-C.1]]
+=== General
+
+[[cls-C.1.1]]
+==== Random variation
+
+Variation is present in most sets of observations. Some variation arises from effects
+that can be measured and a correction made. Some variation, however, is unpredictable
+and cannot be corrected. Variation sometimes arises only from the accumulation of
+small fluctuations in measurement conditions, test material or other phenomena. In
+other cases, such as radiation counting, it can be a fundamental feature of the
+system under consideration. This unpredictable variation is usually regarded, and
+modelled, as random variation. Because of the presence of random variation, all
+complete measurement models should include at least some terms representing random
+variation.
+
+[[cls-C.1.2]]
+==== Considerations in modelling random variation
+
+Considerations in modelling random variation include:
+
+* Random variation in observations of an input quantity necessarily leads to random
+variation in corresponding values of the measurand. Random variation can therefore
+often be modelled as effects associated with individual input quantities or as an
+effect associated with the measurand, leading to an important choice in modelling;
+* Random variation in repeated observations will be influenced by any random
+variation that occurs in the input quantities during the particular set of
+measurements. However, not all input quantities necessarily vary during a given set
+of measurements; some may even be constant. The variation in a particular set of
+observations will therefore usually include the variation in only some of the input
+quantities. Considerable care should therefore be taken to avoid 'double-counting' or
+omission of some random effects;
+* Random variation often varies in scale depending on the time period over which
+variation is observed. Models may need to provide for multiple random effects in
+order to model the effect of variation over different time scales;
+* Random effects need not be independent, making it necessary to allow for
+covariance; and
+* The number of instances of each random effect depends on the particular
+experimental design used for the measurement. A complete model for random variation
+should therefore be specific to a particular experimental design.
+
+[[cls-C.2]]
+=== Including random variation in a measurement model
+
+[[cls-C.2.1]]
+==== Options for including random variation
+
+The simplest method of including random variation explicity in a measurement model is
+to introduce a term representing the effect of each source of random variation or
+embodying a combination of sources of random variation. There are two broad options
+for including random variation (see <<cls-C.1.2>>), which can be regarded as extremes
+of a continuum. One option is to associate random variation with each individual
+input quantity (see <<cls-C.2.2>>). The other extreme is to associate all random
+variation with the measurand (see <<cls-C.2.3>>).
+
+[[cls-C.2.2]]
+==== Random variation associated with an existing input quantity
+
+When random variation is associated with an existing input quantity in the model, it
+often suffices to include the random effect only in the probability distribution for
+that quantity. This extension can be as simple as increasing the variance associated
+with an existing probability distribution; the new random effect is then treated as
+an additional contribution to the uncertainty in a particular input quantity. More
+generally, a new random effect can be included as a new term to the model. For
+instance, a simple approach is to include an additive term with an expected value of
+zero and specify an appropriate probability distribution and its parameters. The
+examples in this subclause illustrate these two options, starting with the explicit
+identification of a new random effect.
+
+[[ex1-C.2.2]]
+[example]
+.Adding a random effect to a simple calculation of concentration
+====
+A simple model for the concentration x of a contaminant in drinking water is
+
+[[eq40]]
+[stem]
+++++
+x = I_x/I_"ref" x_"ref",
+++++
+
+where stem:[I_x] is the chromatographic peak area observed for a known volume of the
+test material, stem:[x_"ref"] is the (known) concentration of a reference solution
+and stem:[I_"ref"] is the chromatographic peak area for the same volume of the
+reference solution. To allow explicitly for random variation in, say, the observed
+peak area for the test item, one simple extension to the model might be:
+
+[[eq41]]
+[stem]
+++++
+x = ((I_x + varepsilon_x))/I_"ref" x_"ref"
+++++
+
+with
+
+[[eq42]]
+[stem]
+++++
+varepsilon_x ~ "N"(0,sigma_I^2)
+++++
+
+This model indicates that random variation in the observed peak area is modelled as
+an additive effect on peak area with a normal distribution, centred at zero and with
+variance stem:[sigma_I^2]. Note that the complete statistical model, <<eq41>>
+together with <<eq42>>, includes a statement about the probability distribution.
+====
+
+[[ex2-C.2.2]]
+[example]
+.Simplified inclusion of a random effect for an existing input quantity
+====
+<<ex1-C.2.2>> in this subclause can be simplified. Instead of including the new,
+zero-centred term stem:[varepsilon_x], the probability distribution can be associated
+directly with the peak area stem:[I_x]. The model then becomes
+
+[stem%unnumbered]
+++++
+x = I_x/I_"ref" x_"ref"
+++++
+
+(which appears identical to the unmodified model) with
+
+[stem%unnumbered]
+++++
+I_x ~ "N"(mu_I, sigma_I^2),
+++++
+
+where stem:[mu_I] is the (true) mean value for the peak area. In simple cases the
+observed value can be inserted into the calculation in place of the true value
+stem:[mu_I], making this representation essentially equivalent to the statistical
+model <<eq41>> and <<eq42>>.
+
+The model has been simplified for clarity. In practice, the true value for a peak
+area is of little interest. A more complete statistical model would show that the
+peak area stem:[I_x] is proportional to the true concentration stem:[mu_x] of
+interest. If the model is rewritten in this way, it can be seen as an implicit
+statistical model requiring a solution for stem:[mu_x], from which the
+<<eq40>> follows to a good approximation when the variances are small.
+====
+
+[[cls-C.2.3]]
+==== Random variation as an effect associated with the measurand
+
+[[cls-C.2.3.1]]
+===== {blank}
+
+It can be convenient to treat random variation as a direct effect on observed values,
+instead of as a set of effects on individual input quantities. Sometimes, proceeding
+in this way is a matter of modelling convenience, for instance, because it is more
+straightforward to study the dispersion of the observations than to examine each
+input quantity separately. In other circumstances, the dispersion of the observations
+is found to be greater than can be accounted for by the known variation in input
+quantities, and this excess variation needs to be taken into account in evaluating
+uncertainty. Both situations can be addressed by associating one or more sources of
+random variation with the measurand, rather than with an individual input quantity.
+
+[[ex-C.2.3.1]]
+[example]
+.The effect of random variation in ambient laboratory temperature on a measured value
+====
+Ambient laboratory temperature can influence a measurement in a number of ways
+including the introduction of a random effect. This effect could be due to random
+fluctuations in the laboratory temperature affecting the thermal properties of
+electrical detectors (noise floor, etc.) used by a measuring system. Such a random
+effect cannot easily be represented mathematically. However, laboratory experiments
+can be used to evaluate the uncertainty due to these random ambient temperature
+variations. For instance, if several repeated determinations are made over a suitable
+period of time (during which the laboratory temperature fluctuates in its usual way),
+then the set of determinations can be analyzed statistically and included as a
+component to the overall uncertainty in the measurement. Further, approximations to
+sensitivity coefficients can be determined empirically (see <<jcgm100,clause=5.1.4>>).
+====
+
+[[cls-C.2.3.2]]
+===== {blank}
+
+The simplest extension to a model is, as before, to include an additive effect with
+mean zero. This extension is most useful where the dispersion of observations is
+largely independent of the value of the measurand over the range of interest.
+
+[[ex-C.2.3.2]]
+[example]
+.Random variation associated with an existing input quantity: alternative representation
+====
+In <<ex1-C.2.2>>, an alternative representation is
+
+[stem%unnumbered]
+++++
+x = I_x/I_"ref" x_"ref" + varepsilon_x
+++++
+
+with
+
+[stem%unnumbered]
+++++
+varepsilon_x ~ "N"(0,sigma_x^2)
+++++
+
+in which stem:[sigma_x] includes all sources of random variation under a particular
+set of conditions of measurement.
+====
+
+[[cls-C.2.3.3]]
+===== {blank}
+
+When the standard deviation is known to be approximately proportional to the measured
+value over the relevant range of values, then it can be useful to choose a
+multiplicative term rather than an additive term. The new term is given a mean of 1
+and a standard deviation equal to the relative standard deviation of the
+observations. Also see <<cls-10.3.4>>. Treating random effects as additive or
+multiplicative leads to different models. The output of these models is nearly
+equivalent for small dispersion (for instance, relative standard deviation much less
+than 0.1). In general, however, different calculations are required to obtain
+unbiased estimates and, further, the probability distributions will be different for
+the two models.
+
+[[ex-C.2.3.3]]
+[example]
+.Model including random effect with approximately constant relative standard deviation
+====
+Continuing <<ex-C.2.3.2>>, a simple model that includes a random effect with
+approximately constant relative standard deviation is
+
+[stem%unnumbered]
+++++
+x = I_x/I_"ref" x_"ref"F_sigma
+++++
+
+with
+
+[stem%unnumbered]
+++++
+F_sigma ~ "N"(1,(sigma_x//mu_x)^2)
+++++
+
+in which, again, the dispersion includes all sources of random variation under
+particular conditions of measurement.
+====
+
+[[cls-C.2.3.4]]
+===== {blank}
+
+As indicated in <<cls-C.1.2>>, when random variation is modelled as an effect
+associated directly with the measurand, considerable care should be taken in the
+treatment of uncertainties associated with individual input quantities to ensure that
+effects are neither counted twice nor omitted. Particular issues that should be
+considered include:
+
+* When an input quantity, say stem:[A], is measured once (including a single average
+of several observations) for every measured value of the measurand, the term
+representing variation in observations of stem:[A] under repeatability conditions can
+be associated either with the input quantity or with the output quantity, but not
+with both; and
+* When the random variation associated with the output quantity relates to
+reproducibility conditions, it is important to be aware that some, or even all,
+contributions to the standard uncertainties associated with individual input
+quantities can appear in the observed reproducibility standard deviation. For
+instance, variation in ambient temperature (an effect that can be important in
+evaluating the uncertainty associated with measured volumes, for instance) will
+appear in a reproducibility standard deviation over sufficient time. In such
+circumstances, those contributions should not be included in the uncertainty
+associated with those input quantities as well as appearing implicitly in a random
+effect associated with the observation.
+
+NOTE: The fact that reproducibility conditions can lead to random variation that
+includes most effects on the measurand value underlies the concept of the 'top-down'
+approach to uncertainty evaluation, considered further in <<cls-C.5.2>>.
+
+[[cls-C.3]]
+=== Multiple sources of random variation
+
+Frequently, more than one cause of random variation can be identified; for instance,
+variation in environmental conditions over time and change in (say) operator might
+both be modelled as random effects. It is often useful to separate short-term
+variation (typically within a measurement run) from longer-term variation. Such
+separation ensures that the effect of averaging is properly reflected in the
+uncertainty evaluation. These separately identified sources of variation are common
+features of statistical models, which are straightforwardly extended to include the
+effects (even multiple sources) of random variation as further terms in the model.
+(((measurement model,random effects)))
+
+[[ex-C.3]]
+.Separating 'within-run' and 'between-run' effect
+====
+It can be useful to recognize that observations obtained over a short period (a
+single measurement run or day) typically vary much less than observations obtained
+from different runs. A simple extension to the model allows for a second such 'random
+effect':
+
+[[eq43]]
+[stem]
+++++
+X = mu + delta_"run" + epsilon,
+++++
+
+where stem:[delta_"run"] is a 'between-run' term, with its own probability
+distribution, having mean (usually zero) and variance that can be characterized by
+statistical methods such as analysis of variance.
+====
+
+NOTE: Often, a model such as <<eq43>> can be considered 'hierarchical' in the sense
+that all measured values within one run are subject to the same 'run' error; the
+error term stem:[varepsilon] is 'nested' within the run. Although it is perfectly
+possible to have other structures for random effects (for instance, the same two
+instruments could be used to measure the same material on two different days, forming
+a 'crossed' design), uncertainties (and associated degrees of freedom
+<<iso3534-1,locality:definition=2.54>>) can be simpler to handle in the case of a hierarchical model.
+
+NOTE: ISO 21748:2016 <<iso21748>> gives some guidance on the use of hierarchical (nested) models for
+uncertainty evaluation; some simple 'crossed' designs are addressed by ISO/TS 17503 <<iso17503>>.
+Both give information on the associated degrees of freedom.
+
+[[cls-C.4]]
+=== Asymmetrically distributed effects
+
+Additional care should be taken where a probability distribution for a random effect
+is asymmetric or where the measurement model is non-linear in a quantity associated
+with an otherwise symmetric random effect. In these cases, random variation often
+leads to bias in the measured value and the very simple model extension given in
+<<cls-C.3>> can be inappropriate. It is then much better to express the model as a
+statistical model for the data-generating process (see <<cls-11>>) and consider how
+best to obtain estimates of the parameters of the probability distribution that
+represent the desired measurement result. Sometimes the bias resulting from an
+asymmetric distribution can conveniently be addressed by including a correction (with
+associated uncertainty) based on the dispersion of the random effect; the principle
+is identical to the treatment of an asymmetric effect given in
+<<jcgm100,clause=F.2.4.4>>. A more general alternative is to solve the resulting
+implicit model directly, using (for instance) maximum-likelihood <<pawitan>> or Bayesian
+methods <<gelman>>.(((maximum-likelihood method)))
+
+[[cls-C.5]]
+=== Use of reproducibility studies
+
+[[cls-C.5.1]]
+==== {blank}
+
+A particular case of models that combine essentially all random variation effects
+into a small number of random effects associated with the measurand is the set of
+models used for examining the repeatability and reproducibility of measurement
+procedures. These models focus on random variation in the measurand without
+separating the effects associated with individual input quantities.
+
+[[cls-C.5.2]]
+==== {blank}
+
+One application of models of this type has been described as the 'top-down approach',
+a concept first introduced in a paper by the Analytical Methods Committee of the UK
+Royal Society of Chemistry <<amc3>> (also see <<cls-E.1.1>>). The top-down approach is
+based on the principle that the reproducibility standard deviation obtained in a
+collaborative study is a valid basis for measurement uncertainty evaluation
+<<iso21748,annex=A.2.1>>. See <<cls-C.5.3>>.(((top-down approach)))
+
+This approach is widely used in measurement and testing, where it is accepted that a
+suitably representative standard uncertainty can be obtained by that approach.
+Measurements made in different laboratories, at different times, with different
+instruments and personnel are carried out under a well-defined reproducibility
+condition of measurement. This approach is sometimes known as the 'pure top-down
+approach'. An instance of the use of the top-down approach in food analysis is
+available <<medina>>, and recommendations for relevant terminology in measurement
+uncertainty in chemistry have been discussed <<dasilva>>.
+
+[[cls-C.5.3]]
+==== {blank}
+
+In the implementation of the top-down approach given in <<iso21748>>, the basic
+statistical model <<iso21748>>, <<iso5725-1>> for a measurement is (following the nomenclature of
+references <<iso21748>>, <<iso5725-1>>, <<iso5725-2>>)
+
+[stem%unnumbered]
+++++
+Y = m + B + E,
+++++
+
+where stem:[Y] is the quantity measured by a laboratory, stem:[m] is the 'level' of
+the measurement (or the 'general mean' of stem:[Y]), stem:[B] is the laboratory
+systematic error under repeatability conditions, assumed to be normally distributed
+with expectation zero and unknown standard deviation stem:[sigma_L], and stem:[E] is
+the random error under repeatability conditions, assumed to be normally distributed
+with expectation zero and unknown standard deviation stem:[sigma_W].
+
+NOTE: The value of the laboratory systematic error stem:[B] is considered to be
+constant during any set of observations obtained under repeatability conditions, but
+to differ in general for observations obtained under other conditions. The variance
+of stem:[B] is called the between-laboratory variance.
+
+NOTE: The value of the random error stem:[E] is considered to be different for every
+observation of stem:[Y]. The variance of stem:[E] is called the within-laboratory
+variance.
+
+NOTE: Estimates stem:[s_"L"^2] and stem:[s_"r"^2] of, respectively,
+stem:[sigma_"L"^2] and stem:[sigma_"W"^2] are obtained in an inter-laboratory or
+collaborative study. stem:[s_"r"^2] is called the repeatability variance.
+
+[NOTE]
+====
+The standard uncertainty associated with a value stem:[y] of stem:[Y] is then given by
+
+[stem%unnumbered]
+++++
+u^2(y) = s_"L"^2 + s_"r"^2 -= s_"R"^2.
+++++
+
+stem:[s_"R"^2] is called the reproducibility variance.
+====
+
+[[cls-C.5.4]]
+==== {blank}
+
+In some collaborative studies the measurement model is extended to
+
+[stem%unnumbered]
+++++
+Y = mu + delta + B + E
+++++
+
+with stem:[hat mu], the certified value of the quantity being measured, constituting
+an estimate of stem:[mu] with associated standard uncertainty stem:[u(hat mu)], and
+stem:[hat delta], the bias of the measurement method, constituting an estimate of
+stem:[delta] with associated standard uncertainty stem:[u(hat delta)].
+
+[NOTE]
+====
+The standard uncertainty associated with a value stem:[y] of stem:[Y] is then given by
+
+[stem%unnumbered]
+++++
+u^2(y) = u^2(hat mu) + u^2(hat delta) + s_"R"^2.
+++++
+====
+
+[[cls-C.5.5]]
+==== {blank}
+
+In practice stem:[s_"R"] and stem:[u(hat delta)] might not describe the variability
+of the measurand arising from all effects that influence the measurement. Some
+important effects might be missing from the collaborative study. If stem:[X_i],
+stem:[i = 1, ..., n], with estimates stem:[x_i] and associated standard uncertainties
+stem:[u(x_i)], are quantities describing additive effects on which the measurand
+depends, a model for the measurement is
+
+[[eq44]]
+[stem]
+++++
+Y = mu + delta + sum_(i=1)^n c_i X_i + B + E,
+++++
+
+where stem:[c_i] is the sensitivity coefficient for stem:[X_i].
+
+[NOTE]
+====
+The measurand stem:[Y] in model (<<eq44>>) depends linearly on the input quantities.
+A more general form is
+
+[stem%unnumbered]
+++++
+Y = mu + delta + f(X_1,...,X_n) + B + E,
+++++
+
+in which stem:[f(X_1, ..., X_n)]is a single additive effect depending non-linearly on
+the quantities stem:[X_1, ..., X_n]. The standard uncertainty associated with an
+estimate of stem:[Y] is obtained by linearizing the model (as in <<jcgm100>>), if it
+is legitimate to do so, or applying a ((Monte Carlo method)) (as in <<jcgm101>>).
+====

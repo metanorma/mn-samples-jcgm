@@ -1,0 +1,134 @@
+[[annexD]]
+[appendix]
+== Representing polynomials
+
+[[cls-D.1]]
+=== {blank}
+
+A polynomial of degree n can be expressed as
+
+[stem%unnumbered]
+++++
+p_n(X) = a_0 + a_1X + a_2X^2 + ... + a_nX^n = sum_(j=0)^n a_j X^j = sum_(j=0)^n a_j phi_j (X),
+++++
+
+where stem:[phi_j(X) = X^j] are the so-called _monomial_ basis functions.
+
+[[cls-D.2]]
+=== {blank}
+
+While the description of polynomials in terms of monomial basis functions makes clear
+the nature of polynomial functions, the use of the monomial basis in numerical
+computation can lead to numerical difficulties. A first difficulty is that for values
+of the variable stem:[X] appreciably greater than one in absolute value, numerical
+values of the terms stem:[X^j] become larger as stem:[j] increases. This difficulty
+is addressed by working with a normalized variable stem:[V]. For stem:[X] taking
+values within the interval [stem:[x_"min", x_"max"]],(((polynomial function)))
+
+[stem%unnumbered]
+++++
+V = (2X - x_"min" - x_"max")/(x_"max" - x_"min"),
+++++
+
+and all its powers lie in the interval [stem:[-1, 1]]. For polynomials of small
+degree (stem:[n <= 4], say), this normalization is sufficient to avoid most numerical
+difficulties.
+
+[[cls-D.3]]
+=== {blank}
+
+The second difficulty arises from the fact that, especially for large stem:[j], the
+basis function stem:[phi_j] looks very similar to stem:[phi_(j+2)] in the interval
+stem:[[-1, 1\]]. <<fig11>> (left) shows the basis functions stem:[phi_(2j) = X^(2j)]
+for stem:[j = 1, 2, 3, 4]. This similarity implies numerical ill-conditioning that
+worsens rapidly as the degree increases and the variable values move further from
+zero and is the reason why polynomials are sometimes thought to be of very limited
+use because of problems of numerical reliability. In fact, it is their
+_representation_ (that is, parametrization) in terms of the monomial basis functions
+that leads to such problems, rather than polynomials _per se_.
+
+[[fig11]]
+.The monomial functions stem:[X^(2j)], stem:[j = 1, 2, 3, 4], on the interval [stem:[-1, 1]] (<<cls-D.3>>) and (right) the Chebyshev polynomials stem:[T_j(V)], stem:[j = 2, 3, 4, 5] (<<cls-D.4>>)
+image::img11.png[]
+
+[[cls-D.4]]
+=== {blank}
+
+Alternative representations can be obtained by using basis functions with better
+properties. The _Chebyshev_ polynomials stem:[T_j(V)] are one such set of basis
+functions and have the property that they are orthogonal to each other on the
+interval [stem:[-1, 1]] with respect to the weighting function
+
+[stem%unnumbered]
+++++
+w(V) = 1/((1+V^2)^(1//2)).
+++++
+
+They are defined for stem:[V in [-1, 1\]] by
+
+[stem%unnumbered]
+++++
+{: (T_0(V)=1", ", T_1(V)=V", ", T_j(V)=2VT_(j-1)(V)-T_(j-2)(V)", ", j>=2".") :}
+++++
+
+((Chebyshev polynomials)) can also be defined using the trigonometrical relationship
+
+[stem%unnumbered]
+++++
+{: (T_j("cos "theta) = "cos "j theta", ", "cos "theta = V".") :}
+++++
+
+<<fig11>> (right) shows stem:[T_j(V)], stem:[j = 2, 3, 4, 5].
+
+[[cls-D.5]]
+=== {blank}
+
+A further advantage of the Chebyshev representation is that due to the near
+orthogonality of the Chebyshev basis the ((covariance matrix)) associated with estimated
+Chebyshev coefficients tends to be much closer to a diagonal matrix than that for the
+monomial form.
+
+[[cls-D.6]]
+=== {blank}
+
+Polynomials of moderate to high degree fitted to data may oscillate spuriously in the
+interval of concern. Such behaviour is undesirable when a smooth underlying
+relationship is expected. The reason for such oscillation is often an unsuitable
+choice of values of the independent variable (such as equispaced). Generally, a
+preferred choice is the extrema of the Chebyshev polynomial of degree stem:[n-1],
+transformed linearly to the interval of concern, where stem:[n] is the greatest
+degree of polynomial to be considered <<trefethen>>. For polynomial regression using stem:[m]
+equispaced points, such undesirable effects tend to be reduced when stem:[n] is taken
+to be the largest integer no greater than stem:[1.4 sqrt(m)]. See <<table9>>.
+
+[[table9]]
+.Relation between stem:[m], the number of calibration points, and recommended maximum polynomial degree stem:[n] for approximately equispaced stimulus values
+|===
+| stem:[m] | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14 | 15 | 16 | 17 | 18 | 19 | 20
+| stem:[n] | 1 | 2 | 2 | 3 | 3 | 3 | 3 | 4 | 4 | 4 | 4 | 5 | 5 | 5 | 5 | 5 | 5 | 6 | 6
+|===
+
+[NOTE,keep-separate=true]
+====
+The expression stem:[1.4 sqrt m] is a slightly conservative form of the more
+complicated expression given by comparing the spacing interval for stem:[m]
+equispaced points over [stem:[-1, 1]] with the distance between the closest extrema
+of stem:[T_n].
+====
+
+[NOTE,keep-separate=true]
+====
+Operational considerations can suggest a larger number of calibration points than
+those given in <<table9>>. <<iso6143>> concerned with gas analysis gives the minimum
+number of calibration points recommended for polynomials of degree 1, 2 and 3 as 3, 5
+and 7, respectively. Here, experience has shown that for reproducing the curvature in
+calibration functions, a larger number of data points is required. One of the causes
+is the uncertainty associated with the calibration standards and the instrument
+responses.
+====
+
+[NOTE,keep-separate=true]
+====
+Further details and practical examples of polynomial calibration in which the
+Chebyshev representation is used are given in an ISO Technical Specification <<iso28038>>.
+====

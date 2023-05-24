@@ -1,0 +1,61 @@
+= JCGM 102:2011
+:docnumber: 102
+:edition: 1
+:copyright-year: 2011
+:publication-date: 2011-10
+:language: en
+:doctype: guide
+:docstage: in-force
+:docsubstage: 60
+:title-en: Evaluation of measurement data
+:title-main-en: Supplement 2 to the "Guide to the expression of uncertainty in measurement"
+:title-part-en: Extension to any number of output quantities
+:title-fr: Évaluation des données de mesure
+:title-main-fr: Supplément 2 du "Guide pour l'expression de l'incertitude de mesure"
+:title-part-fr: Extension à un nombre quelconque de grandeurs de sortie
+:committee-acronym: JCGM
+:committee-en: Joint Committee for Guides in Metrology
+:committee-fr: Comité commun pour les guides en métrologie
+:workgroup-acronym: WG 1
+:imagesdir: images
+:mn-document-class: bipm
+:mn-output-extensions: xml,html,doc,pdf,rxl
+:local-cache-only:
+:data-uri-image:
+
+include::sections/00-foreword.adoc[]
+
+include::sections/00-introduction.adoc[]
+
+include::sections/01-scope.adoc[]
+
+include::sections/02-norm_refs.adoc[]
+
+include::sections/03-terms_defs.adoc[]
+
+include::sections/04-conventions.adoc[]
+
+include::sections/05-basic_principles.adoc[]
+
+include::sections/06-framework.adoc[]
+
+include::sections/07-monte_carlo.adoc[]
+
+include::sections/08-validation.adoc[]
+
+include::sections/09-examples.adoc[]
+
+include::sections/aa-derivatives.adoc[]
+
+include::sections/ab-evaluation.adoc[]
+
+include::sections/ac-system_transformation.adoc[]
+
+include::sections/ad-glossary.adoc[]
+
+include::sections/b0-bibliography.adoc[]
+
+include::sections/b1-index_terms.adoc[]
+
+
+

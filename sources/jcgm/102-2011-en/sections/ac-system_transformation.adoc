@@ -1,0 +1,320 @@
+
+[[annexC]]
+[appendix,obligation="information"]
+== Co-ordinate system transformation
+
+[[sec_C.1]]
+=== General
+
+This annex is concerned with some details of the co-ordinate system
+transformation problem (see <<sec_9.3>>). Subclause <<sec_C.2>> provides
+the joint PDF for stem:[bb Y] analytically for the case that stem:[X_1]
+is described by the Gaussian distribution stem:[N(x_1, u_x^2)] and
+stem:[X_2] by stem:[N(x_2, u_x^2)], with stem:[X_1] and stem:[X_2]
+mutually independent. Subclause <<sec_C.3>> applies the GUM uncertainty
+framework for correlated and uncorrelated input quantities.
+
+[[sec_C.2]]
+=== Analytical solution for a special case
+(((analytical solution)))
+
+[[sec_C.2.1]]
+==== {blank}
+(((change of variables theorem)))
+
+Suppose stem:[bb X] has PDF stem:[g_{bb(X)}(bb(xi))], and
+stem:[bb xi = bb f^{-1}(eta)] is a transformation from values
+stem:[bb eta = (eta_1, ..., eta_N)^{sf(T)}] of stem:[bb Y] to values
+stem:[bb xi = (xi_1, ..., xi_N)^{sf(T)}] of stem:[bb X] that is one-to-one.
+Then <<ref19,page=35>>, stem:[bb Y] has PDF
+
+[stem]
+++++
+g_{bb Y}(bb eta) = g_{bb X}(bb f^{-1}(bb eta)) | "det"(bb J)|,
+++++
+
+where stem:["det"(bb J)] is the determinant of the Jacobian matrix
+stem:[bb J],
+
+[stem%unnumbered]
+++++
+bb J = [({del xi_1}/{del eta_1}, cdots, {del xi_1}/{del eta_N}),(vdots,ddots,vdots),({del xi_N}/{del eta_1}, cdots, {del xi_N}/{del eta_N})]
+++++
+ 
+regarded as a function of stem:[bb eta], with stem:["det"(bb J)] assumed
+to be nowhere zero or infinite.
+
+NOTE: The result (C.1) is sometimes known as the
+"Change of variables theorem".
+
+NOTE: The result for the transformation of a single quantity
+(stem:[N = 1]) is as follows <<ref21,pages=57-61>>: if
+stem:[eta = f(xi)] is differentiable and monotonic, stem:[bb Y] has
+PDF
+
+[stem%unnumbered]
+++++
+g_Y (eta) = g_X (f^{-1} (eta)) | {"d"f^{-1}(eta)}/{"d"eta}| .
+++++
+
+[[sec_C.2.2]]
+==== {blank}
+
+For the co-ordinate system transformation problem considered in <<sec_9.3>>,
+stem:[bb X -= (X_1, X_2)^{sf(T)}] with values
+stem:[bb xi = (xi_1, xi_2)^{sf(T)}], stem:[bb Y -= (R, Theta)^{sf(T)}]
+with values stem:[bb eta = (eta_1, eta_2)^{sf(T)}], and
+
+[stem%unnumbered]
+++++
+xi_1 = eta_1 cos eta_2, " " " " xi_2 = eta_1 sin eta_2.
+++++
+
+Therefore,
+
+[stem%unnumbered]
+++++
+bb J = [(cos(eta_2), -eta_1 sin(eta_2)),(sin(eta_2), eta_1 cos(eta_2))],
+++++
+
+and
+
+[stem%unnumbered]
+++++
+det(bb J) = eta_1 .
+++++
+
+It follows that, provided stem:[eta_1 > 0],
+
+[stem%unnumbered]
+++++
+g_{Y_1, Y_2} (eta_1, eta_2) = eta_1 g_{X_1,X_2} (eta_1 cos eta_2, eta_1 sin eta_2).
+++++
+
+[[sec_C.2.3]]
+==== {blank}
+
+Consider the case that stem:[X_1] is described by the Gaussian distribution
+stem:[N(x_1, u_x^2)] and stem:[X_2] by stem:[N(x_2, u_x^2)], with
+stem:[X_1] and stem:[X_2] mutually independent. Then,
+
+[stem%unnumbered]
+++++
+g_{X_1,X_2} (xi_1, xi_2) = g_{X_1} (xi_1) g_{X_2} (xi_2) = 1/{2 pi u_x^2} exp(-{(xi_1 - x_1)^2 + (xi_2 - x_2)^2}/{2 u_x^2}),
+++++
+
+giving
+
+[stem%unnumbered]
+++++
+g_{Y_1,Y_2} (eta_1, eta_2) = {eta_1}/{2piu_x^2} exp(-{(eta_1 cos eta_2 - x_1)^2 + (eta_1 sin eta_2 - x_2)^2}/{2 u_x^2}) .
+++++
+
+[[sec_C.2.4]]
+==== {blank}
+(((non-central chi-squared distribution)))
+(((probability density function (PDF),marginal)))
+(((Rayleigh distribution)))
+(((Rice distribution)))
+
+The marginal distribution for stem:[Y_1 -= R] is
+
+[[eq_C.2]]
+[stem]
+++++
+g_{Y_1} (eta_1) = int_{-pi}^{pi} g_{Y_1,Y_2} (eta_1, eta_2) "d"eta_2 = {eta_1}/{u_x^2} exp(-{eta_1^2 + y_1^2}/{2u_x^2}) I_0 ({eta_1 y_1}/{u_x^2}),
+++++
+
+where
+
+[stem%unnumbered]
+++++
+y_1^2 = x_1^2 + x_2^2,
+++++
+
+and stem:[I_0] is the modified Bessel function of the first kind of
+order zero.
+
+NOTE: The distribution is the Rice distribution with parameters stem:[y_1]
+and stem:[u_x].
+
+NOTE: If stem:[y_1 = 0], the distribution is the Rayleigh distribution
+with parameter stem:[u_x].
+
+NOTE: If stem:[u_x = 1], the distribution is the non-central chi-squared
+distribution with two degrees of freedom and non-centrality parameter
+stem:[y_1^2].
+
+[[sec_C.2.5]]
+==== {blank}
+(((probability density function (PDF),marginal)))
+
+The marginal distribution for stem:[Y_2 -= Theta] is
+
+[[eq_C.3]]
+[stem]
+++++
+g_{Y_2} (eta_2) = int_{0}^{oo} g_{Y_1,Y_2} (eta_1, eta_2) "d"eta_1 = 1/{2pi} exp(-{y_1^2}/{2u_x^2}) [1 + sqrt(pi) tau exp(tau^2) "erfc"(-tau)],
+++++
+
+where
+
+[stem%unnumbered]
+++++
+tau = {x_1 cos eta_2 + x_2 sin eta_2}/{sqrt(2) u_x}
+++++
+
+and
+
+[stem%unnumbered]
+++++
+"erfc"(z) = 1 - 2/{sqrt(pi)} int_0^{pi} exp(-t^2) "d"t
+++++
+
+is the complementary error function.
+
+[[sec_C.2.6]]
+==== {blank}
+(((Rayleigh distribution)))
+
+If also stem:[x_1 = x_2 = 0], then
+
+[stem%unnumbered]
+++++
+g_{Y_1, Y_2} (eta_1, eta_2) = {eta_1}/{2 pi u_x^2} exp(-{eta_1^2}/{2u_x^2}),
+++++
+
+and it follows that stem:[Y_1] and stem:[Y_2] are mutually independent
+with distributions
+
+[stem%unnumbered]
+++++
+g_{Y_1}(eta_1) = {eta_1}/{u_x^2} exp(-{eta_1^2}/{2u_x^2}),
+++++
+
+a Rayleigh distribution with parameter stem:[u_x], and
+
+[stem%unnumbered]
+++++
+g_{Y_2}(eta_2) = 1/{2pi},
+++++
+
+a rectangular distribution between stem:[-pi] and stem:[pi].
+
+[[sec_C.3]]
+=== Application of the GUM uncertainty framework
+(((GUM uncertainty framework)))
+
+[[sec_C.3.1]]
+==== {blank}
+
+For the co-ordinate system transformation problem considered in <<sec_9.3>>,
+the measurement model can be written as the bivariate measurement
+model
+
+[stem%unnumbered]
+++++
+Y_1 = f_1(X_1, X_2) = sqrt(X_1^2, X_2^2), " " " " Y_2 = f_2(X_1, X_2) = tan^{-1}(X_2//X_1),
+++++
+
+where it is understood that stem:[Y_1 >= 0] and
+stem:[-pi < Y_2 <= pi]. The input quantities stem:[X_1] and stem:[X_2]
+have estimates stem:[x_1] and stem:[x_2] and associated uncertainties
+stem:[u(x_1)] and stem:[u(x_2)], respectively, and associated covariance
+stem:[u(x_1, x_2)].
+
+[[sec_C.3.2]]
+==== {blank}
+
+The application of <<sec_6.2.1.2>> gives
+
+[stem%unnumbered]
+++++
+y_1 = sqrt(x_1^2 + x_2^2), " " " " y_2 = tan^{-1}(x_2//x_1),
+++++
+
+as the estimates of stem:[Y_1] and stem:[Y_2].
+
+[[sec_C.3.3]]
+==== {blank}
+(((sensitivity matrix)))
+
+The sensitivity matrix stem:[C_x] of dimension stem:[2 xx 2] is given
+by evaluating
+
+[stem%unnumbered]
+++++
+bb(C_X) = [({del f_1}/{del X_1}, {del f_1}/{del X_2}),({del f_2}/{del X_1}, {del f_2}/{del X_2})] = [({X_1}/{sqrt(X_1^2 + X_2^2)},{X_2}/{sqrt(X_1^2 + X_2^2)}),({-X_2}/{X_1^2 + X_2^2},{X_1}/{X_1^2 + X_2^2})]
+++++
+
+at stem:[X_1 = x_1] and stem:[X_2 = x_2]. Therefore, provided
+stem:[y_1 = sqrt(x_1^2 + x_2^2) > 0],
+
+[stem%unnumbered]
+++++
+bb(C_x) = [({x_1}/{sqrt(x_1^2 + x_2^2)},{x_2}/{sqrt(x_1^2 + x_2^2)}),({-x_2}/{x_1^2 + x_2^2},{x_1}/{x_1^2 + x_2^2})] = [(cos{:y_2:},sin y_2),(-(sin y_2)//y_1,(cos y_2)//y_1)] .
+++++
+
+[[sec_C.3.4]]
+==== {blank}
+
+The application of <<sec_6.2.1.3>> gives
+
+[stem%unnumbered]
+++++
+bb(U_y) = [(u^2(y_1),u(y_1, y_2)),(u(y_2, y_1),u^2(y_2))]
+++++
+
+as the covariance matrix associated with the estimates
+stem:[bb y = (y_1, y_2)^{sf(T)}], with
+stem:[u(y_2, y_1) = u(y_1, y_2)] and
+
+[stem%unnumbered]
+++++
+u^2(y_1) = u^2(x_1) cos^2 y_2 + u^2(x_2) sin^2 y_2 + 2u(x_1, x_2) cos y_2 sin y_2,
+++++
+
+[stem%unnumbered]
+++++
+u(y_1, y_2) = (u^2(x_2) - u^2(x_1))(sin y_2 cos y_2)//y_1 + u(x_1, x_2)(cos^2 y_2 - sin^2 y_2)//y_1,
+++++
+
+[stem%unnumbered]
+++++
+u^2(y_2) = u^2(x_1)(sin^2 y_2)//y_1^2 + u^2(x_2)(cos^2 y_2)//y_1^2 - 2u(x_1, x_2)(sin y_2 cos y_2)//y_1^2 .
+++++
+
+[[sec_C.3.5]]
+==== {blank}
+
+In the context of the GUM uncertainty framework, stem:[bb Y] is characterized
+by the bivariate Gaussian distribution stem:[N(bb y,bb(U_y))], which
+can be used as the basis of determining coverage regions for
+stem:[bb Y] corresponding to a prescribed coverage probability
+stem:[p] (see <<sec_6.5>>).
+
+[[sec_C.3.6]]
+==== {blank}
+
+Consider the case that stem:[u(x_1) = u(x_2) = u_x] and
+stem:[u(x_1, x_2) = 0] (see <<sec_C.2.3>>). Then,
+
+[stem%unnumbered]
+++++
+u^2(y_1) = u_x^2, " " " "  u(y_1, y_2) = 0, " " " " u^2(y_2) = u_x^2//y_1^2,
+++++
+
+with stem:[bb Y] characterized by a bivariate Gaussian distribution
+as in <<sec_C.3.5>>. It follows that, in this special circumstance
+of uncorrelated quantities assigned a bivariate Gaussian distribution,
+stem:[Y_1] and stem:[Y_2] are mutually independent
+<<ref19,locality:theorem=3.1.3>>. Consequently, stem:[Y_1] and stem:[Y_2]
+are characterized by univariate Gaussian distributions
+stem:[N(y_1, u^2(y_1))] and stem:[N(y_2, u^2(y_2))], respectively.
+
+NOTE: In contrast, in the analytical treatment <<sec_C.2>>, where
+stem:[bb Y] is not characterized by a bivariate Gaussian distribution,
+the conditions stem:[u(x_1) = u(x_2)] and stem:[u(x_1, x_2) = 0] are
+not sufficient for stem:[Y_1] and stem:[Y_2] to be independent. An
+additional condition, viz. stem:[x_1 = x_2 = 0], is required
+(see <<sec_C.2.6>>).

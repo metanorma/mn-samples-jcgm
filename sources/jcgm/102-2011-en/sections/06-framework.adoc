@@ -1,0 +1,1070 @@
+
+[[sec_6]]
+== GUM uncertainty framework
+(((GUM uncertainty framework)))
+
+[[sec_6.1]]
+=== General
+
+[[sec_6.1.1]]
+==== {blank}
+(((propagation of uncertainty)))
+
+The propagation of uncertainty for measurement models that are more
+general than the form stem:[Y = f(bb X)]
+in the GUM is described (see <<sec_6.2>> and <<sec_6.3>>). Although
+such measurement models are not directly considered in the GUM, the
+same underlying principles may be used to propagate estimates of the
+input quantities and the uncertainties associated with the estimates
+through the measurement model to obtain estimates of the output quantities
+and the associated uncertainties. Mathematical expressions for the
+evaluation of uncertainty are stated using matrix-vector notation,
+rather than the subscripted summations given in the GUM, because generally
+such expressions are more compact and more naturally implemented within
+modern software packages and computer languages.
+
+[[sec_6.1.2]]
+==== {blank}
+(((law of propagation of uncertainty)))
+
+For the application of the law of propagation of uncertainty, the
+same information concerning the input quantities as for the univariate
+measurement model treated in the GUM is used:
+
+. an estimate stem:[bb x = (x_1, ..., x_N)^{sf(T)}] of the input quantity
+stem:[bb X],
+. the covariance matrix stem:[bb(U_x)] associated with stem:[bb x]
+containing the covariances stem:[u(xi, x_j)], stem:[i = 1, ..., N],
+stem:[j = 1, ..., N], associated with stem:[x_i] and stem:[x_j].
+
+[[sec_6.1.3]]
+==== {blank}
+
+The description of the propagation of uncertainty given in <<sec_6.2>>
+and <<sec_6.3>> is for real measurement models, including complex
+measurement models that are expressed in terms of real quantities.
+A treatment for complex measurement models is given in <<sec_6.4>>.
+Also see <<sec_5.1.3>>.
+
+[[sec_6.1.4]]
+==== {blank}
+
+Obtaining a coverage region for a vector output quantity is described
+in <<sec_6.5>>.
+
+[[sec_6.2]]
+=== Propagation of uncertainty for explicit multivariate measurement models
+(((measurement model,explicit multivariate)))
+index-range:uncertainty[(((propagation of uncertainty)))]
+
+[[sec_6.2.1]]
+==== General
+
+[[sec_6.2.1.1]]
+===== {blank}
+(((measurement function,multivariate)))
+
+An explicit multivariate measurement model specifies a relationship
+between an output quantity stem:[bb Y = (Y_1, ..., Y_m)^{sf(T)}] and
+an input quantity stem:[bb X = (X_1, ..., X_N)^{sf(T)}], and takes
+the form
+
+[stem%unnumbered]
+++++
+bb Y = bb(f(X)), " " " " bb f = (f_1, ..., f_m)^{sf(T)},
+++++
+
+where stem:[bb f] denotes the multivariate measurement function.
+
+NOTE: Any particular function stem:[f_j(bb X)] may depend only on
+a subset of stem:[bb X], with each stem:[X_i] appearing in at least
+one function.
+
+[[sec_6.2.1.2]]
+===== {blank}
+(((estimate of input quantities,from GUM uncertainty framework)))
+
+Given an estimate stem:[bb x] of stem:[bb X], an estimate of
+stem:[bb Y] is
+
+[stem%unnumbered]
+++++
+bb(y = f(x)).
+++++
+
+[[sec_6.2.1.3]]
+===== {blank}
+(((covariance matrix,from GUM uncertainty framework)))
+(((sensitivity matrix)))
+
+The covariance matrix of dimension stem:[m xx m] associated with
+stem:[bb y] is
+
+[stem%unnumbered]
+++++
+bb(U_y) =
+[(u(y_1, y_1), cdots, u(y_1, y_m)),
+(vdots,ddots,vdots)
+(u(y_m, y_1), cdots, u(y_m, y_m))],
+++++
+
+where stem:["cov"(y_j, y_j) = u^2(y_j)], and is given by
+
+[[eq_3]]
+[stem]
+++++
+bb(U_y) = bb(C_x U_x C_x^{sf T}),
+++++
+
+where stem:[bb(C_x)] is the sensitivity matrix of dimension
+stem:[m xx N] given by evaluating
+
+[stem%unnumbered]
+++++
+bb(C_X) =
+[({del f_1}/{del X_1}, cdots, {del f_1}/{del X_N})
+(vdots,ddots,vdots)
+({del f_m}/{del X_1}, cdots, {del f_m}/{del X_N})]
+++++
+
+at stem:[bb X = bb x] <<ref19,page=29>>.
+
+[[sec_6.2.2]]
+==== Examples
+(((GUM uncertainty framework,examples of)))
+(((measurement model,multistage)))
+
+[[ex_6.2.2_1]]
+.Resistance and reactance of a circuit element [<<JCGM_100_2008,clause=H.2>>]
+====
+The resistance stem:[R] and reactance stem:[X] of a circuit element
+are determined by measuring the amplitude stem:[V] of a sinusoidal
+alternating potential difference applied to it, the amplitude stem:[I]
+of the alternating current passed through it, and the phase angle
+stem:[phi] between the two. The bivariate measurement model for stem:[R]
+and stem:[X] in terms of stem:[V], stem:[I] and stem:[phi] is
+
+[[eq_4]]
+[stem]
+++++
+R = f_1(V, I, phi) = V/I cos phi, " " " " X = f_2(V, I, phi) = V/I sin phi .
+++++
+
+In terms of the general notation, stem:[N = 3], stem:[m = 2],
+stem:[bb X -= (V, I, phi)^{sf(T)}] and stem:[bb Y -= (R, X)^{sf(T)}].
+
+An estimate stem:[bb y -= (hat R, hat X)^{sf(T)}] of resistance and
+reactance is obtained by evaluating expressions <<eq_4,droploc%>>
+at an estimate stem:[x -= (hat V, hat I, hat phi)^{sf(T)}] of the
+input quantity stem:[bb X].
+
+The covariance matrix stem:[bb(U_y)] of dimension stem:[2 xx 2] associated
+with stem:[bb y] is given by <<eq_3>>, where stem:[bb(C_x)] is the
+sensitivity matrix of dimension stem:[2 xx 3] given by evaluating
+
+[stem%unnumbered]
+++++
+[({del f_1}/{del V}, {del f_1}/{del I}, {del f_1}/{del phi}),({del f_2}/{del V}, {del f_2}/{del I}, {del f_2}/{del phi})] =
+[({cos phi}/I, -{V cos phi}/{I^2}, -{V sin phi}/I),({sin phi}/I, -{V sin phi}/{I^2}, -{V cos phi}/I)]
+++++
+
+at stem:[bb X = bb x], and stem:[bb(U_x)] is the covariance matrix
+of dimension stem:[3 xx 3] associated with stem:[bb x].
+
+NOTE: In the GUM, reactance is denoted by stem:[X], which is the notation
+used here. The reactance stem:[X], a component of the vector output
+quantity stem:[bb Y], is not to be confused with stem:[bb X], the
+vector input quantity.
+====
+
+[[ex_6.2.2_2]]
+.Reflection coefficient measured by a microwave reflectometer (approach 1)
+====
+The (complex) reflection coefficient stem:[bb(Gamma)] measured by
+a calibrated microwave reflectometer, such as an automatic network
+analyser, is given by the complex measurement model
+
+[[eq_5]]
+[stem]
+++++
+bb Gamma = {bb(a W + b)}/{bb(c W) + 1}
+++++
+
+where stem:[bb W] is the (complex) uncorrected reflection coefficient
+and stem:[bb a], stem:[bb b] and stem:[bb c] are (complex) calibration
+coefficients characterizing the reflectometer <<ref10>>, <<ref16>>,
+<<ref26>>.
+
+In terms of the general notation, and working with real and imaginary
+parts of the quantities involved, stem:[N = 8], stem:[m = 2],
+
+[stem%unnumbered]
+++++
+bb X -= (a_R, a_I, b_R, b_I, c_R, c_I, W_R, W_I)^{sf(T)}" " "and" " " bb Y -= (Gamma_R, Gamma_I)^{sf(T)}.
+++++
+
+An estimate stem:[bb y -= (hat(Gamma)_R, hat(Gamma)_I)^{sf(T)}] of
+the (complex) reflection coefficient is given by the real and imaginary
+parts of the right-hand side of <<eq_5>> evaluated at the estimate
+stem:[bb x] of the input quantity stem:[bb X].
+
+The covariance matrix stem:[bb(U_y)] of dimension stem:[2 xx 2] associated
+with stem:[bb y] is given by <<eq_3>>, where stem:[bb(C_x)] is the
+sensitivity matrix of dimension stem:[2 xx 8] given by evaluating
+
+[stem%unnumbered]
+++++
+[({del Gamma_R}/{del a_R}, {del Gamma_R}/{del a_I}, {del Gamma_R}/{del b_R}, {del Gamma_R}/{del b_I}, {del Gamma_R}/{del c_R}, {del Gamma_R}/{del c_I}, {del Gamma_R}/{del W_R}, {del Gamma_R}/{del W_I}),
+({del Gamma_I}/{del a_R}, {del Gamma_I}/{del a_I}, {del Gamma_I}/{del b_R}, {del Gamma_I}/{del b_I}, {del Gamma_I}/{del c_R}, {del Gamma_I}/{del c_I}, {del Gamma_I}/{del W_R}, {del Gamma_I}/{del W_I})]
+++++
+
+at stem:[bb X = bb x], and stem:[bb(U_x)] is the covariance matrix
+of dimension stem:[8 xx 8] associated with stem:[bb x].
+====
+
+.Calibration of mass standards
+====
+This example constitutes an instance of a multistage model (see <<sec_3.12>>,
+<<sec_5.4.2>> and <<sec_5.4.3>>).
+
+A set of stem:[q] mass standards of unknown mass values
+stem:[bb m = (m_1, ..., m_q)^{sf(T)}] is calibrated by comparison
+with a reference kilogram, using a mass comparator, a sensitivity
+weight for determining the comparator sensitivity, and a number of
+ancillary instruments such as a thermometer, a barometer and a hygrometer
+for determining the correction due to air buoyancy. The reference
+kilogram and the sensitivity weight have masses stem:[m_R] and stem:[m_S],
+respectively. The calibration is carried out by performing, according
+to a suitable measurement procedure, a sufficient number stem:[k]
+of comparisons between groups of standards, yielding apparent, namely,
+in-air differences stem:[bb delta = (delta_1, ..., delta_k)^{sf(T)}].
+Corresponding buoyancy corrections stem:[bb b = (b_1, ..., b_k)^{sf(T)}]
+are calculated. In-vacuo mass differences stem:[bb X] are obtained
+from the sub-model stem:[bb(X = f (W))], where
+stem:[bb W = (m_R, m_S, bb(delta)^{sf T}, bb(b)^{sf T})^{sf T}].
+
+An estimate stem:[bb y -= ( hat(m)_1, ..., hat(m)_q)^{sf(T)}] of the
+masses stem:[bb m] is typically given by the least-squares solution
+of the over-determined system of equations stem:[bb(Am = X)], where
+stem:[bb A] is a matrix of dimension stem:[k xx q] with elements equal
+to stem:[+1], stem:[-1] or zero, according to the mass standards involved
+in each comparison, and respecting the uncertainties associated with
+the estimate stem:[bb x] of stem:[bb X]. With this choice, the estimate
+stem:[bb y] is given by
+
+[[eq_6]]
+[stem]
+++++
+bb(y) = bb(U_y A^{sf T} U_x x),
+++++
+
+where the covariance matrix stem:[bb(U_y)] of dimension
+stem:[q xx q] associated with stem:[bb y] is given by
+stem:[bb(U_y) = (bb(A^{sf T} U_x^{-1} A))^{-1}] is the covariance
+matrix of dimension stem:[k xx k] associated with stem:[bb x]. A more
+detailed description of the sub-model, as well as a procedure for
+obtaining stem:[bb(U_x)] in terms of stem:[bb(U_w)], the covariance
+matrix associated with the estimate stem:[bb w] of stem:[bb W], is
+available <<ref3>>.
+
+The multivariate measurement model for this example can be expressed
+as
+
+[stem%unnumbered]
+++++
+bb Y = bb(U_y A^{sf T} U_x^{-1} X),
+++++
+
+where the measurement function is stem:[bb(U_y A^{sf T} U_x^{-1} X)].
+In terms of the general notation, stem:[N = k], stem:[m = q] and
+stem:[bb(Y -= m)].
+
+NOTE: It is preferable computationally to obtain the estimate given
+by formula <<eq_6,droploc%>> by an algorithm based on orthogonal factorization
+<<ref13>>, rather than use this explicit formula.
+====
+
+[[sec_6.3]]
+=== Propagation of uncertainty for implicit multivariate measurement models
+(((measurement model,implicit multivariate)))
+
+[[sec_6.3.1]]
+==== General
+
+[[sec_6.3.1.1]]
+===== {blank}
+
+An implicit multivariate measurement model specifies a relationship
+between an output quantity stem:[bb Y = (Y_1, ..., Y_m)^{sf(T)}] and
+an input quantity stem:[bb X = (X_1, ..., X_N)^{sf(T)}], and takes
+the form
+
+[stem%unnumbered]
+++++
+bb(h(Y, X)) = 0, " " " " bb(h) = (h_1, ..., h_m)^{sf(T)}.
+++++
+
+[[sec_6.3.1.2]]
+===== {blank}
+(((estimate of input quantities,from GUM uncertainty framework)))
+
+Given an estimate stem:[bb x] of stem:[bb X], an estimate
+stem:[bb y] of stem:[bb Y] is given by the solution of the system
+of equations
+
+[[eq_7]]
+[stem]
+++++
+bb(h(y, x) = 0).
+++++
+
+NOTE: The system of equations <<eq_7,droploc%>> has generally to be
+solved numerically for stem:[bb y], using, for example, Newton's method
+<<ref12>> or a variant of that method, starting from an approximation
+stem:[y^{(0)}] to the solution.
+
+[[sec_6.3.1.3]]
+===== {blank}
+(((covariance matrix,from GUM uncertainty framework)))
+(((sensitivity matrix)))
+
+The covariance matrix stem:[bb(U_y)] of dimension stem:[m xx m] associated
+with stem:[bb y] is evaluated from the system of equations
+
+[[eq_8]]
+[stem]
+++++
+bb(C_y U_y C_y^{sf T} = C_x U_x C_x^{sf T}),
+++++
+
+where stem:[bb(C_y)] is the sensitivity matrix of dimension
+stem:[m xx m] containing the partial derivatives
+stem:[del h_{ell}//del Y_j], stem:[ell = 1, ..., m],
+stem:[j = 1, ..., m], and stem:[bb(C_x)] is the sensitivity matrix
+of dimension stem:[m xx N] containing the partial derivatives
+stem:[del h_{ell}//del X_i], stem:[ell = 1, ..., m],
+stem:[i = 1, ..., N], all derivatives being evaluated at
+stem:[bb X = bb x] and stem:[bb Y = bb y].
+
+NOTE: The covariance matrix stem:[bb(U_y)] in <<eq_8>> is not defined
+if stem:[bb(C_y)] is singular.
+
+NOTE: <<eq_8>> is obtained in a similar way as <<eq_3>>, with the
+use of the implicit function theorem.
+
+[[sec_6.3.1.4]]
+===== {blank}
+(((covariance matrix)))
+(((sensitivity coefficient)))
+(((sensitivity matrix)))
+
+Formally, the covariance matrices stem:[bb(U_x)] and stem:[bb(U_y)]
+are related by
+
+[[eq_9]]
+[stem]
+++++
+bb(U_y) = bb(C U_x C^{sf T})
+++++
+
+where
+
+[[eq_10]]
+[stem]
+++++
+bb(C) = bb(C_y^{-1} C_x),
+++++
+
+a matrix of sensitivity coefficients of dimension stem:[m xx N].
+
+[[sec_6.3.1.5]]
+===== {blank}
+
+<<annexB>> contains a procedure for forming stem:[bb(U_y)]. It is
+not recommended that stem:[bb(U_y)] is obtained directly by evaluating
+<<eq_10>> and then <<eq_9>>, such a procedure is less stable numerically.
+
+[[sec_6.3.2]]
+==== Examples
+(((GUM uncertainty framework,examples of)))
+
+[example]
+.Set of pressures generated by a pressure balance
+====
+The pressure stem:[p] generated by a pressure balance is defined implicitly
+by the equation
+
+[[eq_11]]
+[stem]
+++++
+p = {m_w (1 - rho_a//rho_w) g_{ell}}/{A_0 (1 + lambda_p)(1 + alpha delta theta)}, 
+++++
+
+where stem:[m_w] is the total applied mass, stem:[rho_a] and stem:[rho_w]
+are, respectively, the densities of air and the applied masses, stem:[g_{ell}]
+is the local acceleration due to gravity, stem:[A_0] is the effective
+cross-sectional area of the balance at zero pressure, stem:[lambda]
+is the distortion coefficient of the piston-cylinder assembly, stem:[alpha]
+is the coefficient of thermal expansion, and stem:[delta theta] is
+the deviation from a 20 °C reference Celsius temperature <<ref17>>.
+
+Let stem:[p_1, ..., p_q] denote the generated pressures for, respectively,
+applied masses stem:[m_{w, 1}, ..., m_{w, q}] and temperature deviations
+stem:[delta theta_1, ..., delta theta_q].
+
+In terms of the general notation, stem:[N = 6 + 2q], stem:[m = q],
+stem:[bb X -= (A_0, lambda, alpha, delta theta_1, m_{w, 1}, ..., delta theta_q, m_{w, q}, rho_a, rho_w, g_{ell})^{sf(T)}] and
+stem:[Y -= (p_1, ..., p_q)^{sf(T)}].
+
+stem:[bb X] and stem:[bb Y] are related by the measurement model
+
+[[eq_12]]
+[stem]
+++++
+h_j(bb Y,bb X) = A_0 p_j (1 + lambda p_j) (1 + alpha delta theta_j) - m_{w, j} (1 - rho_a//rho_w) g_{ell} = 0, " " " " j = 1, ..., q .
+++++
+
+An estimate stem:[hat(p)_j] of stem:[hat p_j] is obtained by solving
+an equation of the form <<eq_12,droploc%>> given estimates of
+stem:[A_0], stem:[lambda], stem:[alpha], stem:[delta theta_j],
+stem:[m_{w, j}], stem:[rho_a], stem:[rho_w] and stem:[g_{ell}]. However,
+the resulting estimates have associated covariances because they all
+depend on the measured quantities stem:[A_0], stem:[lambda], stem:[alpha],
+stem:[rho_a], stem:[rho_w] and stem:[g_{ell}].
+
+The covariance matrix stem:[bb(U_y)] of dimension stem:[q xx q] associated
+with stem:[y -= (hat p_1, ..., hat p_q)^{sf(T)}] is evaluated from
+<<eq_8>>, where stem:[bb(C_y)] is the sensitivity matrix of dimension
+stem:[q xx q] containing the partial derivatives del
+stem:[h_{ell}//del y_j], stem:[ell = 1, ..., q],
+stem:[j = 1, ..., q], and stem:[bb(C_x)]
+is the matrix of dimension stem:[q xx (6 + 2q)] containing the partial
+derivatives del stem:[h_{ell}//del X_i], stem:[ell = 1, ..., q],
+stem:[i = 1, ..., 6 + 2q], both evaluated at stem:[bb(X = x)] and
+stem:[bb(Y = y)], and stem:[bb(U_x)] is the covariance matrix of dimension
+stem:[(6 + 2q) xx (6 + 2q)] associated with stem:[bb x].
+
+NOTE: A measurement function [giving stem:[Y_j (-= p_j)] explicitly
+as a function of stem:[bb X]] can be determined in this case as the
+solution of a quadratic equation. Such a form is not necessarily numerically
+stable. Moreover, measurement models involving additional, higher-order
+powers of stem:[p] are sometimes used <<ref9>>. Determination of an
+explicit expression is not generally possible in such a case.
+
+NOTE: There is more than one way to express the measurement model
+<<eq_12,droploc%>>. For instance, in place of the form <<eq_12,droploc%>>,
+the model based on equating to zero the difference between the left-
+and right-hand sides of model <<eq_11,droploc%>> could be used. The
+efficiency and stability of the numerical solution of the measurement
+model depends on the choice made.
+
+NOTE: More complete models of the pressure generated by a pressure
+balance can also be considered <<ref17>>, which include, for example,
+a correction to account for surface tension effects.
+
+NOTE: Not all the input quantities appear in each equation, with the
+jth equation involving only
+stem:[A_0, lambda, alpha, delta theta_j, m_{w, j}, rho_a, rho_w] and
+stem:[g_{ell}].
+====
+
+.Reflection coefficient measured by a microwave reflectometer (approach 2)
+====
+Another approach to <<ex_6.2.2_2>> is to relate the input quantity
+stem:[bb X -= (a_R, a_I, b_R, b_I, c_R, c_I, W_R, W_I)^{sf(T)}] and
+the output quantity stem:[bb Y -= (Gamma_R, Gamma_I)^{sf(T)}] using
+the bivariate measurement model
+
+[[eq_13]]
+[stem]
+++++
+h_1(bb Y,bb X) = 0, " " " " h_2(bb Y,bb X) = 0,
+++++
+
+where stem:[h_1(bb Y,bb X)] and stem:[h_2(bb Y,bb X)] are, respectively,
+the real and imaginary parts of
+
+[stem%unnumbered]
+++++
+(bb(cW) + 1) Gamma - (bb(aW) + bb(b)).
+++++
+
+An advantage of this approach is that the calculation of derivatives
+and thence sensitivity coefficients is more straightforward.
+
+An estimate stem:[y -= (hat(Gamma)_R, hat(Gamma)_I)^{sf(T)}] of the
+(complex) reflection coefficient is given by setting
+stem:[ bb X = bb x] in equations <<eq_13,droploc%>> and solving them
+numerically.
+
+The covariance matrix stem:[bb(U_y)] of dimension stem:[2 xx 2] associated
+with stem:[bb y] is evaluated from <<eq_8>>, where stem:[bb(C_y)]
+is the sensitivity matrix of dimension stem:[2 xx 2] containing the
+partial derivatives stem:[del h_{ell}//del y_j],
+stem:[Gamma = 1, 2], stem:[j = 1, 2], and stem:[bb(C_x)] is the sensitivity
+matrix of dimension stem:[2 xx 8] containing the partial derivatives
+stem:[del h_{ell}//del X_i], stem:[Gamma = 1, 2],
+stem:[i = 1, ..., 8], both evaluated at stem:[bb X = bb x] and
+stem:[bb Y = bb y], and stem:[bb(U_x)] is the covariance matrix of
+dimension stem:[8 xx 8] associated with stem:[bb x].
+====
+
+.Reflectometer calibration
+====
+The calibration of a reflectometer (<<ex_6.2.2_2>>) is typically undertaken
+by measuring values stem:[bb W] of the uncorrected reflection coefficient
+corresponding to a number of standards with reflection coefficients
+stem:[bb Gamma]. Often, three standards are used, giving the three
+(complex) simultaneous equations
+
+[[eq_14]]
+[stem]
+++++
+(bb(c) bb(W)_j + 1) bb(Gamma)_j - (bb(a) bb(W)_j + bb(b)) = 0,
+++++
+
+for stem:[j = 1, 2, 3]. Separation of these equations into real and
+imaginary parts gives rise to six simultaneous linear equations that
+are solved for estimates of the real and imaginary parts of the calibration
+coefficients stem:[bb(a)], stem:[bb(b)] and stem:[bb(c)] given estimates
+of the real and imaginary parts of the uncorrected reflection coefficients
+stem:[bb(W)_j] and of the reflection coefficients stem:[bb(Gamma)_j]
+for the standards.
+
+In terms of the general notation, stem:[N = 12], stem:[m = 6],
+stem:[bb X -= (W_{1, "R"}, W_{1, "I"}, Gamma_{1, "R"}, Gamma_{1, "I"}, W_{2,"R"}, W_{2,"I"}, Gamma_{2,"R"}, Gamma_{2,"I"}, W_{3,"R"}, W_{3,"I"}, Gamma_{3,"R"}, Gamma_{3,"I"})^{sf(T)}]
+and stem:[bb Y -= (a_R, a_I, b_R, b_I, c_R, c_I)^{sf(T)}].
+
+The input and output quantities are related by a multivariate measurement
+model, where, for stem:[j = 1, 2, 3], stem:[h_{2j-1}(bb Y,bb X)] and
+stem:[h_{2j}(bb Y,bb X)] are, respectively, the real and imaginary
+parts of the left-hand side of <<eq_14>>.
+
+An estimate
+stem:[bb y -= (hat a_R, hat a_I, hat b_R, hat b_I, hat c_R, hat c_I)^{sf(T)}]
+of the (complex) calibration coefficients is given by using the estimates
+of stem:[bb W_j] and stem:[bb Gamma_j] in <<eq_14>> and solving these
+equations numerically.
+
+The covariance matrix stem:[bb(U_y)] of dimension stem:[6 xx 6] associated
+with stem:[bb y] is evaluated from <<eq_8>>, where stem:[bb(C_y)]
+is the sensitivity matrix of dimension stem:[6 xx 6] containing the
+partial derivatives stem:[del h_{ell}//del y_j], stem:[ell = 1, ..., 6],
+stem:[j = 1, ..., 6], and stem:[bb(C_x)] is the sensitivity matrix
+of dimension stem:[6 xx 12] containing the partial derivatives del
+stem:[h_{ell}//del X_i], stem:[ell = 1, ..., 6], stem:[i = 1, ..., 12],
+both evaluated at stem:[bb X = bb x] and stem:[bb Y = bb y], and stem:[bb(U_x)]
+is the covariance matrix of dimension stem:[12 xx 12]  associated
+with stem:[bb x].
+
+NOTE: If a computer system capable of operating with complex quantities
+is available, separation of these equations into real and imaginary
+parts is unnecessary. The equations can be solved "directly" for stem:[bb a],
+stem:[bb b] and stem:[bb c].
+
+NOTE: The jth equation involves only the four input quantities
+stem:[W_{j,R}, W_{j,I}, Gamma_{j,R}] and stem:[Gamma_{j,I}].
+====
+
+[[sec_6.4]]
+=== Propagation of uncertainty for models involving complex quantities
+(((GUM uncertainty framework,examples of)))
+(((law of propagation of uncertainty)))
+(((measurement function,complex)))
+(((measurement model,complex)))
+(((quantity,complex)))
+
+<<annexA>> covers the algebraically efficient determination of the
+partial derivatives of first order of complex multivariate measurement
+functions. These derivatives are needed in a particularization of
+the law of propagation of uncertainty to such models. The treatment
+can be extended to complex multivariate measurement models in general.[[uncertainty]]
+
+.Reflection coefficient measured by a microwave reflectometer (approach 3)
+====
+Consider again <<ex_6.2.2_2>>.
+
+The complex output quantity stem:[bb(Y -= Gamma)] is related to the
+complex input quantity
+stem:[bb X = (bb X_1, ...,bb X4)^{sf(T)} -= (bb a,bb b,bb W)^{sf(T)}]
+by the measurement model <<eq_5,droploc%>>. Using <<annexA>>, stem:[bb(C_x)],
+a sensitivity matrix of dimension stem:[2 xx 8], is given by evaluating
+
+[stem%unnumbered]
+++++
+bb(C_X) = [bb(C_a), bb(C_b), bb(C_c), bb(C_W)],
+++++
+
+with
+
+[stem%unnumbered]
+++++
+bb(C_t) = bb M ({del bb Gamma}/{del bb t}), " " " " t -= bb(a), bb(b), bb(c), bb(W),
+++++
+
+at the estimate stem:[bb x] of stem:[bb X]. For instance, since
+
+[[eq_15]]
+[stem]
+++++
+{del bb Gamma}/{del bb b} = 1/{bb(cW) + 1},
+++++
+
+the further use of <<annexA>> gives
+
+[stem%unnumbered]
+++++
+bb(C_b) = [(Q_R, -Q_I),(Q_I, Q_R)],
+++++
+
+where stem:[Q_{"R"}] and stem:[Q_{"I"}] denote the real and imaginary
+parts, respectively, of the right-hand side of <<eq_15>>.
+
+The covariance matrix stem:[bb(U_y)] of dimension stem:[2 xx 2] associated
+with stem:[bb y -= hat(bb Gamma)], where
+
+[stem%unnumbered]
+++++
+bb(U_y) = [(u(hat Gamma_R, hat Gamma_R),u(hat Gamma_R,hat Gamma_I)),(u(hat Gamma_I, hat Gamma_R),u(hat Gamma_I,hat Gamma_I))] -=
+[(u^2(hat Gamma_R),u(hat Gamma_R,hat Gamma_I)),(u(hat Gamma_I,hat Gamma_R),u^2(hat Gamma_I))],
+++++
+
+is evaluated from <<eq_A.1>> of <<annexA>>, where stem:[bb(U_x)] is
+the covariance matrix of dimension stem:[8 xx 8] associated with
+stem:[bb x].
+====
+
+[[sec_6.5]]
+=== Coverage region for a vector output quantity
+(((coverage region,from GUM uncertainty framework)))
+
+[[sec_6.5.1]]
+==== General
+
+[[sec_6.5.1.1]]
+===== {blank}
+
+In electrical metrology, for example, it is appropriate to treat a
+vector output quantity as a single entity and in dealing with summaries
+of the joint probability distribution for this quantity to maintain
+as much information as possible.
+
+[[sec_6.5.1.2]]
+===== {blank}
+
+Given an estimate stem:[bb y] of the output quantity
+stem:[bb Y = (Y_1, ..., Y_m)^{sf(T)}], its associated covariance matrix
+stem:[bb(U_y)] and a coverage probability stem:[p], it is required
+to specify a region stem:[R_{bb Y}] in _m_-dimensional space that
+contains stem:[bb Y] with probability stem:[p].
+
+[[sec_6.5.1.3]]
+===== {blank}
+(((output quantity,probability density function (PDF) for)))
+(((principle of maximum entropy)))
+(((state of knowledge)))
+
+If stem:[bb y] and stem:[bb(U_y)] constitute the only available information
+about stem:[bb Y], according to the principle of maximum entropy the
+Gaussian PDF stem:[N(bb y, bb(U_y))] is used to describe the state
+of knowledge of stem:[bb Y] [<<JCGM_101_2008,clause=6.4.8>>].
+
+NOTE: This choice of PDF is consistent, within the GUM uncertainty
+framework, with the characterization of a single scalar output quantity
+stem:[Y] by a univariate Gaussian PDF when the associated degrees
+of freedom is infinite.
+
+[[sec_6.5.1.4]]
+===== {blank}
+(((coverage probability)))
+(((coverage region)))
+(((output quantity,probability density function (PDF) for)))
+
+In general, once the PDF for stem:[bb Y] is established, either the
+coverage probability for a specified coverage region or a coverage
+region for a specified coverage probability can be determined. Doing
+so is straightforward for a Gaussian PDF (see <<sec_6.5.2>>, <<sec_6.5.3>>
+and <<sec_6.5.4>>). For other PDFs, a numerical method such as a Monte
+Carlo method (see <<sec_7>>) is helpful in obtaining approximate solutions
+that are acceptable for practical purposes.
+
+[[sec_6.5.1.5]]
+===== {blank}
+
+The determination of a coverage region for a bivariate quantity
+(see <<sec_6.5.2>>) is used to motivate the treatment for the more
+general multivariate case (see <<sec_6.5.3>>). Consideration is also
+given to the determination of a coverage region for a quantity representing
+the average of a set of indication values regarded as random draws
+made independently from a multivariate Gaussian distribution
+(see <<sec_6.5.4>>).
+
+[[sec_6.5.2]]
+==== Bivariate case
+(((coverage region,bivariate)))
+
+[[sec_6.5.2.1]]
+===== {blank}
+
+The problem of specifying bivariate coverage regions illustrates the
+aspects that distinguish the determination of multivariate coverage
+regions from the univariate case. Consider a point
+stem:[bb Y = (Y_1, Y_2)^{sf(T)}] in the plane with rectangular co-ordinates
+stem:[Y_1] (abscissa) and stem:[Y_2] (ordinate). Both co-ordinates
+of stem:[bb Y] are measured with the same calibrated instrument. The
+information about stem:[bb Y] constitutes estimates stem:[y_1] and
+stem:[y_2] of the co-ordinates, standard uncertainties stem:[u(y_1)]
+and stem:[u(y_2)] associated with the estimates, as well as the covariance
+stem:[u(y_1, y_2)] due to the use of the same instrument in obtaining
+the estimates.
+
+[[sec_6.5.2.2]]
+===== {blank}
+
+In the context of the GUM uncertainty framework, as there is no other
+information, the joint PDF stem:[g_{Y_1, Y_2 (eta_1, eta_2)] characterizing
+stem:[bb Y] is the bivariate Gaussian PDF stem:[N(bb y, bb(U_y))]
+(see <<sec_6.5.1.3>>) with
+
+[stem%unnumbered]
+++++
+bb y = [(y_1),(y_2)], " " " "  bb(U_y) = [(u^2(y_1), u(y_1,y_2)),(u(y_2,y_1), u^2(y_2))]
+++++
+
+[[sec_6.5.2.3]]
+===== {blank}
+(((chi-squared distribution)))
+(((coverage interval)))
+(((coverage region,elliptical)))
+(((coverage region,rectangular)))
+(((coverage region,smallest)))
+
+Two particular coverage regions are considered:
+
+. [[item_6.5.2.3_a]]An ellipse centred at stem:[bb y] <<ref19,page=38>>:
++
+--
+
+[[eq_16]]
+[stem]
+++++
+(bb(eta - y))^{sf T} bb(U_y)^{-1}(bb(eta - y)) = k_p^2,
+++++
+
+with stem:[k_p] a constant determined such that the area under the
+PDF over the elliptical region is equal to stem:[p]. With this approach,
+the mutual dependence of stem:[Y_1] and stem:[Y_2] is taken into account.
+
+When stem:[bb Y] is characterized by a (bivariate) Gaussian probability
+distribution, the quantity
+
+[[eq_17]]
+[stem]
+++++
+(bb(Y - y))^{sf T} bb(U_y)^{-1} (bb(Y - y))
+++++
+
+is characterized by a chi-squared distribution with two degrees of
+freedom. It follows that stem:[k_p^2] is given by an upper percentage
+point of this chi-squared distribution, and satisfies
+
+[stem%unnumbered]
+++++
+p = "Pr"(sf(X)_2^2 <= k_p^2),
+++++
+
+where stem:[sf(X)_2^2] has a chi-squared distribution with two degrees
+of freedom. For the coverage probability stem:[p = 0.95],
+stem:[k_p = 2.45] (see <<sec_6.5.3>>),
+--
+
+. [[item_6.5.2.3_b]]A rectangle centred at stem:[bb y] with sides
+parallel to the axes and equal to the lengths of separately determined
+coverage intervals for stem:[Y_1] and stem:[Y_2]. The coverage interval
+for stem:[Y_1] is determined from the PDF for stem:[Y_1] given by
+marginalization.
++
+--
+[[eq_18]]
+[stem]
+++++
+g_{Y_1}(eta_1) = int_{-oo}^{oo} g_{Y_1}, Y_2 (eta_1, eta_2) "d"eta_2,
+++++
+
+irrespective of the state of knowledge of stem:[Y_2], and similarly
+for the coverage interval for stem:[Y_2]. The coverage intervals
+stem:[y_j +- k_q u(y_j)] are determined for coverage probability
+
+[[eq_19]]
+[stem]
+++++
+q = 1 - (1 - p)//2 = (1 + p)//2 .
+++++
+
+This rectangle constitutes a coverage region for stem:[bb Y] corresponding
+to a coverage probability of at least stem:[p] <<ref5>>.
+
+When stem:[bb Y] is characterized by a (bivariate) Gaussian probability
+distribution, the marginal distribution <<eq_18,droploc%>> for stem:[Y_1]
+is Gaussian as is that for stem:[Y_2]. It follows that stem:[k_q]
+is given by an upper percentage point of the standard Gaussian distribution,
+and satisfies
+
+[stem%unnumbered]
+++++
+q = "Pr"(|Z| <= k_q),
+++++
+
+where stem:[Z] has the standard Gaussian distribution stem:[N(0, 1)].
+For the coverage probability stem:[p = 0.95], the coverage intervals
+are stem:[y_j +- k_q u(y_j)], for stem:[j = 1, 2], with
+stem:[q = 0.975] and stem:[k_q = 2.24] (see <<sec_6.5.3>>).
+--
+
+NOTE: In the context of the GUM uncertainty framework, the elliptical
+coverage region given in <<item_6.5.2.3_a>> is the smallest
+stem:[100p %] coverage region.
+
+NOTE: When stem:[Y_1] and stem:[Y_2] are mutually independent, stem:[q]
+in <<eq_19>> can be replaced by stem:[q = p^{1//2}].
+
+[[ex_6.5.2.3_1]]
+====
+Consider a bivariate quantity stem:[bb Y] characterized by the Gaussian
+probability distribution stem:[N(bb y,bb(U_y))], where
+
+[stem%unnumbered]
+++++
+bb y = [(0),(0)], " " " " bb(U_y) = [(2.0,0.0),(0.0,1.0)]
+++++
+
+<<figure3>> (left) shows 95 % elliptical and rectangular coverage
+regions for stem:[bb Y], obtained as in <<item_6.5.2.3_a>> and
+<<item_6.5.2.3_b>>. Also shown are 1 000 points representing random
+draws from this probability distribution. The ellipse is the smallest
+coverage region for the stipulated coverage probability. 950 of the
+1 000 points are contained within the elliptical coverage region,
+which has area stem:[26.6 " unit"^2], and 953 within the rectangular
+region, which has area stem:[28.4" unit"^2].
+====
+
+[[ex_6.5.2.3_2]]
+====
+Consider a bivariate quantity stem:[bb Y] characterized by the Gaussian
+probability distribution stem:[N(bb y,bb(U_y))], where
+
+[stem%unnumbered]
+++++
+bb y = [(0),(0)], " " " " bb(U_y) = [(2.0,1.9),(1.9,2.0)]
+++++
+
+<<figure3>> (right) shows 95 % elliptical and rectangular coverage
+regions for stem:[bb Y], obtained as in <<item_6.5.2.3_a>> and
+<<item_6.5.2.3_b>>. Unlike example 1, the component quantities stem:[Y_1]
+and stem:[Y_2] of stem:[bb Y] are (positively) correlated. 957 of
+the 1 000 points are contained within the elliptical coverage region,
+which has area stem:[11.8 " unit"^2], and 972 within the rectangular
+region, which has area stem:[40.1 " unit"^2], indicating that the
+coverage probability for the rectangular region exceeds 0.95. The
+rectangular region, whose shape does not reflect the correlated component
+quantities and the distribution of the randomly drawn points, might
+be considered inappropriate as a coverage region for stem:[bb Y].
+A rectangle with sides parallel to the axes of the ellipse would have
+smaller area and might be considered more appropriate, but might be
+inconvenient since it would be expressed in terms of variables that
+would be artificial in terms of the application.
+====
+
+[[sec_6.5.2.4]]
+===== {blank}
+
+Further examples of coverage regions for the output quantities of
+bivariate measurement models are given in <<sec_9>>.
+
+[[sec_6.5.3]]
+==== Multivariate case
+(((chi-squared distribution)))
+(((coverage factor)))
+(((coverage interval)))
+(((coverage region,hyper-ellipsoidal)))
+(((coverage region,hyper-rectangular)))
+(((coverage region,multivariate)))
+
+For more than two quantities, coverage regions are no longer easily
+visualized, but can be constructed in an analogous manner to those
+described in <<item_6.5.2.3_a>> and <<item_6.5.2.3_b>> for the bivariate
+case. A region stem:[R_{bb Y}] in the _m_-dimensional space of the
+output quantity stem:[Y = (Y_1, ..., Y_m)^{sf(T)}] is required such
+that the probability that stem:[bb Y] lies in stem:[R_{bb Y}] is equal
+to the stipulated coverage probability stem:[p]. The following two
+forms of stem:[R_{bb Y}], analogous to those described in <<item_6.5.2.3_a>>
+and <<item_6.5.2.3_b>>, can be considered.
+
+[[figure3]]
+.Elliptical and rectangular coverage regions for a bivariate quantity stem:[bb Y] characterized by a Gaussian probability distribution for which the component quantities stem:[Y_1] and stem:[Y_2] are mutually independent, and (right) correlated (<<ex_6.5.2.3_1>> and <<ex_6.5.2.3_2>>)
+image::figure3.png[]
+
+. A hyper-ellipsoid (or multivariate ellipse) in stem:[m] dimensions
+given by <<eq_16>>.
++
+--
+When stem:[bb Y] is characterized by a (multivariate) Gaussian probability
+distribution, the quantity <<eq_17,droploc%>> is characterized by
+a chi-squared distribution with m degrees of freedom. It follows that
+stem:[k_p^2] is given by an upper percentage point of this chi-squared
+distribution, and satisfies
+
+[stem%unnumbered]
+++++
+p = "Pr"(sf(X)_m^2 <= k_p^2),
+++++
+
+where stem:[sf(X)_m^2] has a chi-squared distribution with stem:[m]
+degrees of freedom. <<table1>> gives values for the coverage factor
+stem:[k_p] for the coverage probability stem:[p = 0.95] and m jointly
+evaluated Gaussian quantities for a selection of values of stem:[m].
+--
+
+. A hyper-rectangle (or multivariate rectangle) in stem:[m] dimensions
+centered at stem:[bb y] with sides equal to the lengths of separately
+determined coverage intervals for stem:[y_j], stem:[j = 1, ..., m].
+The coverage intervals are determined for coverage probability
+stem:[q = 1 - (1 - p)//m]. This hyper-rectangle constitutes a coverage
+region for stem:[bb Y] corresponding to a coverage probability of
+at least stem:[p] <<ref5>>. The coverage interval for each stem:[y_j]
+is calculated following marginalization.
++
+--
+When stem:[bb Y] is characterized by a (multivariate) Gaussian probability
+distribution, the marginal distribution for each stem:[Y_j] is Gaussian.
+It follows that the coverage factor stem:[k_q] is given by an upper
+percentage point of the standard Gaussian distribution as in <<item_6.5.2.3_b>>.
+<<table2>> gives values for stem:[k_q] for the coverage probability
+stem:[p = 0.95] and stem:[m] jointly evaluated Gaussian quantities
+for a selection of values of stem:[m].
+--
+
+[NOTE]
+====
+For the univariate case (stem:[m = 1]), <<eq_16>> reduces to
+
+[stem%unnumbered]
+++++
+(eta - y)^2 = k_p^2 u_y^2,
+++++
+
+giving
+
+[stem%unnumbered]
+++++
+eta = y +- k_p u_y,
+++++
+
+the endpoints of a coverage interval for stem:[Y]. For the coverage
+probability stem:[p = 0.95], stem:[k_p = 1.96] (<<table1>>).
+====
+
+NOTE: When the stem:[y_j] are mutually independent, stem:[q] can be
+replaced by stem:[q = p^{1//m}].
+
+[[sec_6.5.4]]
+==== Coverage region for the expectation of a multivariate Gaussian distribution
+(((average)))
+(((covariance matrix)))
+(((coverage region,for expectation of multivariate Gaussian distribution)))
+(((Fisher-Snedecor distribution)))
+(((Gaussian distribution)))
+(((Gaussian distribution,multivariate)))
+(((random variable)))
+(((t-distribution)))
+
+Consider stem:[n] vectors stem:[y_1, ..., y_n], each of dimension
+stem:[m xx 1], with stem:[n > m], corresponding to repeated indication
+values of a multivariate quantity stem:[Y = (Y_1, ..., Y_m)^{sf(T)}].
+Suppose stem:[y_1, ..., y_n] can be regarded as realizations of
+
+[[table1]]
+.Coverage factors for hyper-ellipsoidal coverage regions corresponding to coverage probability stem:[p = 0.95] (<<sec_6.5.2>> and <<sec_6.5.3>>)
+[cols="a,a,a,a,a,a,a,a",options="header"]
+|===
+| stem:[m] | stem:[k_p] | stem:[m] | stem:[k_p] | stem:[m] | stem:[k_p] | stem:[m] | stem:[k_p]
+| 1 | 1.96 | 6  | 3.55 | 11 | 4.44 | 20 | 5.60
+| 2 | 2.45 | 7  | 3.75 | 12 | 4.59 | 25 | 6.14
+| 3 | 2.80 | 8  | 3.94 | 13 | 4.73 | 30 | 6.62
+| 4 | 3.08 | 9  | 4.11 | 14 | 4.87 | 40 | 7.47
+| 5 | 3.33 | 10 | 4.28 | 15 | 5.00 | 50 | 8.22
+|===
+
+[[table2]]
+.As <<table1>>, but for hyper-rectangular coverage regions (<<sec_6.5.2>> and <<sec_6.5.3>>)
+[cols="a,a,a,a,a,a,a,a",options="header"]
+|===
+| stem:[m] | stem:[k_q] | stem:[m] | stem:[k_q] | stem:[m] | stem:[k_q] | stem:[m] | stem:[k_q]
+| 1 | 1.96 | 6  | 2.64 | 11 | 2.84 | 20 | 3.02
+| 2 | 2.24 | 7  | 2.69 | 12 | 2.87 | 25 | 3.09
+| 3 | 2.39 | 8  | 2.73 | 13 | 2.89 | 30 | 3.14
+| 4 | 2.50 | 9  | 2.77 | 14 | 2.91 | 40 | 3.23
+| 5 | 2.58 | 10 | 2.81 | 15 | 2.94 | 50 | 3.29
+|===
+
+independent random vectors stem:[bb Y_1, ..., bb Y_n], each characterized
+by a multivariate Gaussian probability distribution with expectation
+stem:[bb mu] and covariance matrix stem:[bb sum]. Define the average
+and covariance matrix
+
+[stem%unnumbered]
+++++
+bb A = 1/n (bb Y_1 + cdots + bb Y_n), " " " " V = 1/n [(bb Y_1 - bb A)(bb Y_1 - bb A)^{sf(T)} + cdots + (bb Y_n - bb A)(bb Y_n - bb A)^{sf(T)}],
+++++
+
+of dimensions stem:[m xx 1] and stem:[m xx m], respectively. Then,
+the random variable
+
+[stem%unnumbered]
+++++
+{n - m}/m (bb A - bb mu)^{sf(T)} bb(V)^{-1}(bb A - bb mu)
+++++
+
+has an stem:[F_{m,n-m}] distribution <<ref19,locality:corollary=3.5.2.1>>,
+the so-called Fisher-Snedecor distribution with stem:[m] and
+stem:[n - m] degrees of freedom.
+
+NOTE: The counterpart of this result for a univariate quantity is
+as follows: for independent random variables stem:[Y_1, ..., Y_n],
+each characterized by a univariate Gaussian probability distribution
+with expectation stem:[mu] and variance stem:[sigma^2],
+stem:[(n - 1)^{1//2}(A - mu)//S] has a _t_-distribution with
+stem:[n - 1] degrees of freedom, where now
+
+[stem%unnumbered]
+++++
+A = 1/n (Y_1 + cdots + Y_n), " " " " S^2 = 1/n [(Y_1 - A)^2 + cdots + (Y_n - A)^2].
+++++
+
+[[ex_6.5.4]]
+====
+Consider stem:[n = 12] repeated indication values in the form of pairs,
+representing measured values of the volume fractions of microcline
+(stem:[A_1]) and biotite (stem:[A_2]) in one thin section cut from
+G-2 granite <<ref4>>, <<ref25>>. <<figure4>> shows these pairs as
+dots, together with a 95 % elliptical coverage region for the expectation
+of a quantity stem:[bb A] of dimension stem:[2 xx 1]. The expectation
+and covariance matrix for the indication values are
+
+[stem%unnumbered]
+++++
+bb a = [(27.0,6.2)], " " " " bb v = [(1.202,-0.396),(-0.396,0.381)].
+++++
+
+The 95th percentile of the stem:[F_{2,10}] distribution is 4.10. A
+95% coverage region for stem:[bb A] is the ellipse with equation
+
+[stem%unnumbered]
+++++
+(bb(A - a))^{sf(T)}bb(v)-1(bb(A - a)) = 4.10 xx 2/{12 - 2}.
+++++
+
+The small number of indication values prevents any meaningful, critical
+assessment of whether the assumptions hold to validate this coverage
+region.
+====

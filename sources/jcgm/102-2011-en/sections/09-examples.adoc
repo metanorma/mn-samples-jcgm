@@ -1,0 +1,1445 @@
+
+[[sec_9]]
+== Examples
+(((GUM uncertainty framework,examples of)))
+(((Monte Carlo method (MCM),examples of)))
+
+[[sec_9.1]]
+=== Illustrations of aspects of this Supplement
+
+[[sec_9.1.1]]
+==== {blank}
+(((analytical solution)))
+(((measurement model,linear)))
+
+The first example (see <<sec_9.2>>) is a linear measurement model
+in which the output quantities of the measurement model depend on
+a common effect and on effects that are different for the output quantities.
+This is an example for which analytical solutions are available for
+some special cases.
+
+[[sec_9.1.2]]
+==== {blank}
+(((analytical solution)))
+(((measurement model,non-linear)))
+(((quantity,complex)))
+
+The second example (see <<sec_9.3>>) is a non-linear measurement model
+concerning the transformation from a Cartesian representation (in
+terms of real and imaginary parts) of a complex quantity to a polar
+representation (in terms of magnitude and phase) of the quantity.
+This is an example for which analytical solutions are available for
+some special cases <<ref6>>.
+
+[[sec_9.1.3]]
+==== {blank}
+(((indication values)))
+(((measurement model,non-linear)))
+
+The third example (see <<sec_9.4>>), constituting a further non-linear
+measurement model, is that in the GUM concerned with the simultaneous
+measurement of resistance and reactance [<<JCGM_100_2008,clause=H.2>>].
+The example illustrates the treatment of a series of simultaneous
+indication values of a vector quantity that have been obtained independently.
+
+[[sec_9.1.4]]
+==== {blank}
+(((measurement model,multivariate)))
+(((measurement model,univariate)))
+
+The fourth example (see <<sec_9.5>>) is concerned with the measurement
+of Celsius temperature using a resistance thermometer. The example
+illustrates the treatment of a univariate measurement model and a
+multivariate measurement model.
+
+[[sec_9.1.5]]
+==== {blank}
+
+Many of the figures used to illustrate the results for the examples
+are best viewed in colour. In the figures showing contours, contours
+with a common colour correspond to the same contour value. The correspondence
+between contours of the same colour for contour plots within the same
+figure is applied throughout this Supplement unless a statement is
+made to the contrary. When two or more figures are used to compare
+results, such as those from the GUM uncertainty framework and a Monte
+Carlo method, the same axes are generally used. There are some exceptions
+when the PDFs, etc. for the methods are very different.
+
+[[sec_9.1.6]]
+==== {blank}
+(((contour smoothing)))
+(((Monte Carlo method (MCM),primary output from)))
+
+Since the primary output from MCM is the set of stem:[M] values of
+the vector quantity stem:[bb Y] gathered in the matrix G of dimension
+stem:[m xx M] (see <<sec_7.1.6>>), it is often desirable to summarize
+them by an approximation to the corresponding probability density
+function, and to depict this function by its contour lines. The figures
+in this clause show such contour lines in cases where the output quantity
+is of dimension stem:[m = 2]. The contour lines should be drawn in
+ways that guarantee that, as the number M of draws from the probability
+distribution of the output quantity grows large, they converge to
+the contours of the corresponding probability density function: doing
+so requires appropriate smoothing <<ref22>>, <<ref24>>. Some contour
+diagrams shown in this clause are computed directly from an approximation
+to the corresponding probability density function. For others an appropriate
+smoothing algorithm is applied and the resulting smoothed contours
+drawn. In one instance (<<figure10>>) unsmoothed and smoothed contours
+are shown to indicate the effect of the smoothing algorithm.
+
+[[sec_9.2]]
+=== Additive measurement model
+
+[[sec_9.2.1]]
+==== Formulation
+
+This example (compare <<ex_7.7.2>>) considers the additive (linear)
+bivariate measurement model
+
+[[eq_24]]
+[stem]
+++++
+Y_1 = X_1 + X_3," " " " Y_2 = X_2 + X_3
+++++
+
+for three different sets of PDFs stem:[g_{X_i}(xi_i)] assigned to
+the input quantities stem:[X_i], regarded as independent. The measurement
+model has three input quantities stem:[X_1], stem:[X_2] and stem:[X_3],
+with stem:[X_3] representing an effect that is common to the output
+quantities stem:[Y_1] and stem:[Y_2], and stem:[X_1] and stem:[X_2]
+effects that are different for stem:[Y_1] and stem:[Y_2]. For the
+first set of input PDFs (see <<sec_9.2.2>>), each stem:[g_{X_i}(xi_i)]
+is chosen to be a standard Gaussian distribution with stem:[X_i] having
+expectation zero and standard deviation unity. The second set of PDFs
+(see <<sec_9.2.3>>) is identical to the first, but stem:[g_{X_3}(xi_3)]
+is a rectangular distribution, also with stem:[X_3] having expectation
+zero and standard deviation unity. The third set of PDFs (see <<sec_9.2.4>>)
+is identical to the second except that stem:[X_3] has standard deviation
+three, representing a dominant common effect.
+
+[[sec_9.2.2]]
+==== Propagation and summarizing: case 1
+
+[[sec_9.2.2.1]]
+===== {blank}
+
+Characterize each stem:[X_i] by a standard Gaussian distribution.
+The estimates of the stem:[X_i] are stem:[x_i = 0],
+stem:[i = 1, 2, 3], with associated standard uncertainties
+stem:[u(x_i) = 1]. The results obtained from the application of the
+GUM uncertainty framework (see <<sec_6>>) and MCM (see <<sec_7>>)
+are summarized in <<table3>> and <<figure8;to!figure10>>. Some results
+in the table are reported to four significant decimal digits in order
+to facilitate their comparison.
+
+[[table3]]
+.Application of the GUM uncertainty framework (GUF) and MCM to the additive model <<eq_24,droploc%>>, with each stem:[X_i] characterized by a standard Gaussian distribution (<<sec_9.2.2>>)
+[cols="a,a,a,a,a,a,a,a,a",options="header"]
+|===
+| Method | stem:[M] | stem:[y_1] | stem:[y_2] | stem:[u(y_1)] | stem:[u(y_2)] | stem:[r(y_1, y_2)] | stem:[k_p] | stem:[k_q]
+| GUF           |                       | 0.000 | 0.000 | 1.414 | 1.414 | 0.500 | 2.45 | 2.24
+| MCM           | stem:[1 xx 10^5]      | 0.003 | 0.005 | 1.412 | 1.408 | 0.498 | 2.45 | 2.22
+| MCM           | stem:[1 xx 10^6]      | 0.000 | 0.000 | 1.416 | 1.415 | 0.500 | 2.45 | 2.21
+| MCM           | stem:[1 xx 10^7]      | 0.000 | 0.000 | 1.414 | 1.414 | 0.500 | 2.45 | 2.21
+| Adaptive MCM  | stem:[0.35 xx 10^6]   | 0.001 | -0.001 | 1.417 | 1.417 | 0.502 | 2.45 | 2.22
+| Adaptive MCM  | stem:[0.45 xx 10^6]   | 0.001 | -0.001 | 1.416 | 1.414 | 0.501 | 2.45 | 2.21
+|===
+
+[[sec_9.2.2.2]]
+===== {blank}
+
+The (generalized) GUM uncertainty framework gives the estimate
+stem:[bb y = (0, 0)^{sf(T)}] of stem:[bb Y]. The covariance matrix
+associated with this estimate is
+
+[stem%unnumbered]
+++++
+bb(U_y) = [(2,1),(1,2)],
+++++
+
+obtained by applying <<eq_3>>, namely stem:[bb(U_y) = bb(C_x) bb(U_x)C_x^{sf(T)}], with
+
+[stem%unnumbered]
+++++
+bb(U_x) = [(1^2,0,0),(0,1^2,0),(0,0,1^2)], " " " " bb(C_x) = [(1,0,1),(0,1,1)].
+++++
+
+The correlation coefficient associated with the estimates stem:[y_1]
+and stem:[y_2] (see <<sec_3.21>>) is stem:[r(y_1, y_2) = 0.5]. 95%
+coverage regions for stem:[bb Y] taking the forms of an ellipse and
+a rectangle are defined, respectively, by coverage factors
+stem:[k_p = 2.45] (<<table1>>) and stem:[k_q = 2.24] (<<table2>>).
+These results are summarized in row 1 (GUF) of <<table3>>. In the
+context of the GUM uncertainty framework, given the information available,
+stem:[bb Y] is characterized by the bivariate Gaussian PDF stem:[N(bb(y),bb(U_y))].
+
+[[sec_9.2.2.3]]
+===== {blank}
+
+The application of MCM with, respectively, stem:[M = 10^5, 10^6] and
+stem:[10^7] trials gives the results summarized in rows 2 to 4 (MCM)
+of <<table3>>. The fourth and fifth numerical values of stem:[M]
+(stem:[0.35 xx 10^6] and stem:[0.45 xx 10^6]) given in rows 5 and
+6 (Adaptive MCM) of the table are the numbers of trials taken by two
+applications of the adaptive Monte Carlo procedure (see <<sec_7.8.3>>)
+with stem:[n_{"dig"}], the number of significant decimal digits regarded
+as meaningful in the numerical value of a result, set equal to three
+(see <<note_8.3_3>>). For the applications of the adaptive procedure,
+it is required that all the results, i.e.
+stem:[y_1, y_2, u(y_1), u(y_2), r(y_1, y_2), k_p] and stem:[k_q],
+have stabilized in a statistical sense.
+
+[[sec_9.2.2.4]]
+===== {blank}
+
+The PDF for stem:[bb Y] obtained analytically is the bivariate Gaussian
+PDF stem:[N(bb(y),bb(U_y))] with y and stem:[bb(U_y)] given in <<sec_9.2.2.2>>.
+
+[[sec_9.2.2.5]]
+===== {blank}
+
+<<figure8>> (left) shows contours of the bivariate Gaussian PDF for
+stem:[bb Y] obtained from the GUM uncertainty framework (or obtained
+analytically). The contours take the form of ellipses with equations
+
+[stem%unnumbered]
+++++
+(bb(eta - y))^{sf(T)}bb(U_y)^{-1}(bb(eta - y)) = k^2
+++++
+
+for various values of stem:[k]. <<figure8>> (right) shows contours
+of the approximation to the PDF for stem:[bb Y] obtained from the
+application of MCM with stem:[M = 10^7] trials. The approximate PDF
+is described by the numbers of model values from the Monte Carlo calculation
+contained within each cell of a (suitably large) mesh defined on the
+domain of stem:[bb Y], with each number scaled (by the same scaling
+factor) so that the volume under the PDF (regarded as constant over
+each cell) is unity. A contouring algorithm is used to determine contours
+from this description of the approximate PDF for the same values of
+stem:[k] used to define the ellipses in <<figure8>> (left). The contours
+in <<figure8>> (right) are not smoothed (see <<sec_9.1.6>>).
+
+NOTE: <<figure8>> and subsequent contour plots include a colour bar
+indicating the contour heights according to a colour code.
+
+[[sec_9.2.2.6]]
+===== {blank}
+
+<<figure9>> shows the marginal PDF stem:[N(y_1, u^2(y_1))] for stem:[Y_1]
+resulting from the GUM uncertainty framework. It also shows the approximate
+PDF provided by MCM with stem:[M = 10^7] trials. The approximation
+is displayed as a scaled frequency distribution (histogram) of the
+model values for stem:[Y_1] from the Monte Carlo calculation. These
+two PDFs are almost indistinguishable by eye. Comparable results would
+be obtained for stem:[Y_2].
+
+[[sec_9.2.2.7]]
+===== {blank}
+(((contour smoothing)))
+
+<<figure10>> (left) shows the contours of the approximation to the
+PDF for stem:[bb Y] provided by MCM with stem:[0.45 xx 10^6] trials.
+The contours are considerably less "smooth" than those in <<figure8>>
+(right) obtained from a much larger number of trials. <<figure10>>
+(right) provides an instance of contour smoothing (see <<sec_9.1.6>>).
+
+NOTE: A large value for the number stem:[M] of Monte Carlo trials,
+and a fine discretization of the domain of stem:[bb Y], are generally
+needed to ensure that the contours in a graphical representation of
+the approximate PDF for stem:[bb Y] obtained using MCM are smooth.
+A similar effect arises for a single scalar output quantity, where
+a large value for M and many classes (or bins), are generally needed
+to ensure that the approximate PDF displayed as a histogram (or scaled
+frequency distribution) is smooth.
+
+[[sec_9.2.2.8]]
+===== {blank}
+
+The validation procedure of <<sec_8>> is applied to validate the results
+obtained from the GUM uncertainty framework against those from the
+two applications of the adaptive Monte Carlo calculation. The procedure
+is applied with stem:[n_{"dig"}], the number of significant decimal
+digits regarded as meaningful in the numerical value of a result,
+set equal to two. In this case, the numerical tolerances associated
+with the results are, respectively,
+
+[stem%unnumbered]
+++++
+delta_1 = delta_2 = 0.05, " " rho = 0.05, " " kappa_p = kappa_q = 0.05.
+++++
+
+The results obtained from the GUM uncertainty framework were validated
+in both instances. Excepting stem:[k_q], agreement between the results
+would be expected because all the conditions hold for the application
+of the GUM uncertainty framework. The evaluation of stem:[k_q] in
+the GUM uncertainty framework does not take account of the mutual
+dependence between stem:[Y_1] and stem:[Y_2] (see <<sec_6.5.2.3>>).
+Nevertheless, the values for stem:[k_q] obtained agree to the required
+number of significant decimal digits.
+
+[[figure8]]
+.Contours of the joint PDFs for the output quantities in the additive measurement model <<eq_24,droploc%>> provided by the GUM uncertainty framework and (right) MCM without contour smoothing, where the input quantities in the measurement model are characterized by standard Gaussian distributions (<<sec_9.2.2>>)
+image::figure8.png[]
+
+[[figure9]]
+.As <<figure8>>, but showing the marginal PDF for stem:[Y_1] (<<sec_9.2.2>>)
+image::figure9.png[]
+
+[[sec_9.2.3]]
+==== Propagation and summarizing: case 2
+
+[[sec_9.2.3.1]]
+===== {blank}
+
+This case is identical to that in <<sec_9.2.2>> except that stem:[X_3]
+is characterized by a rectangular distribution so that stem:[X_3]
+has an expectation of zero and a standard deviation of unity. Again,
+the estimates of the stem:[X_i] are stem:[x_i = 0], stem:[i = 1, 2, 3],
+with associated standard uncertainties stem:[u(x_i) = 1]. The results
+from the application of the GUM uncertainty framework (see <<sec_6>>)
+and MCM (see <<sec_7>>) are summarized in <<table4>> and
+<<figure11;and!figure12>>.
+
+[[sec_9.2.3.2]]
+===== {blank}
+
+The GUM uncertainty framework provides exactly the same (bivariate
+Gaussian) PDF for stem:[bb Y] (<<figure11>>, left) when the PDF for
+stem:[X_3] is Gaussian (as in <<sec_9.2.2>>) or rectangular (as here),
+because the expectations of the input quantities are identical, as
+are the standard deviations, in the two cases. Because the measurement
+model depends linearly on the input quantities, there is no approximation
+involved in the application of the law of propagation of uncertainty
+to obtain an estimate stem:[bb y] of stem:[bb Y] and the associated
+covariance matrix stem:[bb(U_y)]. However, the PDF provided by the
+GUM uncertainty framework is not the same as the analytical solution,
+since the latter depends on the distribution used to characterize
+stem:[X_3], and not only the expectation and standard deviation of
+the quantity.
+
+[[figure10]]
+.Contours of the joint PDF for the output quantities in the additive measurement model <<eq_24,droploc%>> provided by the adaptive MCM procedure and (right) with contour smoothing, where the input quantities in the model are characterized by standard Gaussian distributions (<<sec_9.2.2>>)
+image::figure10.png[]
+
+[[table4]]
+.As <<table3>>, except that stem:[X_3] is characterized by a rectangular distribution (<<sec_9.2.3>>)
+[cols="a,a,a,a,a,a,a,a,a",options=header]
+|===
+| Method | stem:[M] | stem:[y_1] | stem:[y_2] | stem:[u(y_1)] | stem:[u(y_2)] | stem:[r(y_1, y_2)] | stem:[k_p] | stem:[k_q]
+| GUF          |                      | 0.000 | 0.000 | 1.414 | 1.414 | 0.500 | 2.45 | 2.24
+| MCM          | stem:[1 xx 10^5]     | 0.008 | 0.010 | 1.414 | 1.410 | 0.500 | 2.38 | 2.15
+| MCM          | stem:[1 xx 10^6]     | 0.001 | 0.001 | 1.414 | 1.414 | 0.499 | 2.38 | 2.15
+| MCM          | stem:[1 xx 10^7]     | 0.000 | 0.000 | 1.414 | 1.414 | 0.500 | 2.38 | 2.15
+| Adaptive MCM | stem:[0.36 xx 10^6]  | 0.000 | -0.002 | 1.413 | 1.414 | 0.500 | 2.38 | 2.15
+| Adaptive MCM | stem:[0.35 xx 10^6]  | 0.002 | -0.001 | 1.418 | 1.415 | 0.502 | 2.38 | 2.15
+|===
+
+[[sec_9.2.3.3]]
+===== {blank}
+
+<<figure11>> (right) and <<figure12>> show the influence of the distribution
+used to characterize stem:[X_3] on the approximations to, respectively,
+the PDF for stem:[bb Y] and the marginal PDF for stem:[Y_1] obtained
+from MCM.
+
+[[sec_9.2.3.4]]
+===== {blank}
+
+The validation procedure of <<sec_8>> is again applied (see <<sec_9.2.2>>).
+In this case, values for stem:[y_1, y_2, u(y_1), u(y_2)] and
+stem:[r(y_1, y_2)] obtained from the GUM uncertainty framework were
+validated against those obtained from the two applications of the
+adaptive Monte Carlo procedure, but the values for stem:[k_p] and
+stem:[k_q]
+were not validated.
+
+[[figure11]]
+.Counterpart of <<figure8>> for an input quantity stem:[X_3] characterized by a rectangular distribution (<<sec_9.2.3>>)
+image::figure11.png[]
+
+[[figure12]]
+.Counterpart of <<figure9>> for an input quantity stem:[X_3] characterized by a rectangular distribution (<<sec_9.2.3>>)
+image::figure12.png[]
+
+[[sec_9.2.4]]
+==== Propagation and summarizing: case 3
+
+[[sec_9.2.4.1]]
+===== {blank}
+
+Consider the example of <<sec_9.2.3>>, except that stem:[X_3] now
+has a standard deviation of three rather than unity. The results from
+the application of the GUM uncertainty framework (see <<sec_6>>) and
+MCM (see <<sec_7>>) are summarized in <<table5>> and
+<<figure13;and!figure14>>.
+
+[[table5]]
+.As <<table4>>, except that stem:[X_3] has a standard deviation of three (<<sec_9.2.4>>)
+[cols="a,a,a,a,a,a,a,a,a",options="header"]
+|===
+| Method | stem:[M] | stem:[y_1] | stem:[y_2] | stem:[u(y_1)] | stem:[u(y_2)] | stem:[r(y_1, y_2)] | stem:[k_p] | stem:[k_q]
+| GUF          |                     | 0.000 | 0.000 | 3.162 | 3.162 | 0.900 | 2.45 | 2.24
+| MCM          | stem:[1 xx 10^5]    | 0.023 | 0.025 | 3.159 | 3.157 | 0.900 | 2.28 | 1.87
+| MCM          | stem:[1 xx 10^6]    | 0.003 | 0.002 | 3.161 | 3.161 | 0.900 | 2.28 | 1.87
+| MCM          | stem:[1 xx 10^7]    | 0.000 | 0.000 | 3.162 | 3.161 | 0.900 | 2.28 | 1.87
+| Adaptive MCM | stem:[1.49 xx 10^6] | 0.002 | 0.002 | 3.163 | 3.162 | 0.900 | 2.28 | 1.87
+| Adaptive MCM | stem:[1.85 xx 10^6] | 0.001 | 0.001 | 3.163 | 3.162 | 0.900 | 2.28 | 1.87
+|===
+
+[[sec_9.2.4.2]]
+===== {blank}
+
+The GUM uncertainty framework gives the estimate stem:[y = (0, 0)^{sf(T)}]
+of stem:[bb Y]. The covariance matrix associated with this estimate
+is
+
+[stem%unnumbered]
+++++
+bb(U_y) = [(10,9),(9,10)],
+++++
+
+obtained by applying <<eq_3>> with
+
+[stem%unnumbered]
+++++
+bb(U_x) = [(1^2,0,0),(0,1^2,0),(0,0,3^2)], " " " " bb(C_x) = [(1,0,1),(0,1,1)].
+++++
+
+The correlation coefficient associated with the estimates stem:[y_1]
+and stem:[y_2] is stem:[r(y_1, y_2) = 0.9]. 95% coverage regions for
+stem:[bb Y] taking the forms of an ellipse and a rectangle are defined,
+respectively, by coverage factors stem:[k_p = 2.45] (<<table1>>) and
+stem:[k_q = 2.24] (<<table2>>). These results are summarized in row
+1 (GUF) of <<table5>>. In the context of the GUM uncertainty framework,
+given the information available about stem:[bb Y], stem:[bb Y] is
+characterized by the bivariate Gaussian PDF stem:[N(y,bb(U_y))], the
+contours for which are shown in <<figure13>> (left). There is a stronger
+correlation between stem:[Y_1] and stem:[Y_2] in this example compared
+to the earlier examples because the relative contribution of the common
+effect stem:[X_3] to the uncertainties associated with the estimates
+of stem:[Y_1] and stem:[Y_2] is greater.
+
+[[sec_9.2.4.3]]
+===== {blank}
+
+<<figure13>> (right) and <<figure14>> show the greater influence (compared
+to the results of <<sec_9.2.3>>) of the distribution used to characterize
+stem:[X_3] on the approximations to, respectively, the PDF for stem:[bb Y]
+and the marginal PDF for stem:[Y_1] obtained from MCM.
+
+[[sec_9.2.4.4]]
+===== {blank}
+
+The validation procedure of <<sec_8>> is again applied (see <<sec_9.2.2>>
+and <<sec_9.2.3>>). In this case, values for
+stem:[y_1, y_2, u(y_1), u(y_2)] and stem:[r(y_1, y_2)] obtained from
+the GUM uncertainty framework were validated against those obtained
+from the two applications of the adaptive Monte Carlo procedure, but
+the values for stem:[k_p] and stem:[k_q] were not validated. The value
+of stem:[k_p] obtained from the GUM uncertainty framework is about
+7% bigger than that obtained from MCM, and the value of stem:[k_q]
+about 20% bigger.
+
+[[sec_9.3]]
+=== Co-ordinate system transformation
+
+[[sec_9.3.1]]
+==== Formulation
+
+[[sec_9.3.1.1]]
+===== {blank}
+
+Consider a complex quantity Z represented in Cartesian form
+
+[stem%unnumbered]
+++++
+X_1 + "i"X_2, 
+++++
+
+where stem:[X_1 -= Z_{"R"}] and stem:[X_2 -= Z_{"I"}] are, respectively,
+the real and imaginary parts of stem:[Z], or in polar form
+
+[stem%unnumbered]
+++++
+R(cos theta + "i"sin theta) = R e^{"i"theta},
+++++
+
+[[figure13]]
+.Counterpart of <<figure11>> for an input quantity stem:[X_3] with a standard deviation of three (<<sec_9.2.4>>)
+image::figure13.png[]
+
+[[figure14]]
+.Counterpart of <<figure12>> for an input quantity stem:[X_3] with a standard deviation of three (<<sec_9.2.4>>)
+image::figure14.png[]
+
+where stem:[R] and stem:[theta] are, respectively, the magnitude and
+phase of stem:[bb Z]. This example considers the transformation from
+Cartesian to polar representations of stem:[bb Z] described by the
+bivariate measurement model
+
+[[eq_25]]
+[stem]
+++++
+Y_1^2 = X_1^2 + X_2^2, " " " " tan Y_2 = X_2//X_1,
+++++
+
+with input quantity stem:[X = (X_1, X_2)^{sf(T)} -= (Z_{"R"}, Z_{"I"})^{sf(T)}]
+and output quantity stem:[bb Y = (Y_1, Y_2)^{sf(T)} -= (R, theta)^{sf(T)}].
+
+NOTE: <<eq_25>> constitute a bivariate measurement model for stem:[R]
+and stem:[theta]. Since stem:[R] is a magnitude, and is known to be
+non-negative, it is determined uniquely by the positive square root
+of stem:[R^2]. By using a "four quadrant inverse tangent function"
+(often denoted by "atan2") stem:[theta] is determined uniquely to
+satisfy stem:[-pi < theta <= pi]. Thus <<eq_25>> can be cast as a
+bivariate measurement model.
+
+[[sec_9.3.1.2]]
+===== {blank}
+(((input quantity,assigning a probability density function (PDF) to)))
+
+Given are estimates stem:[x_1] and stem:[x_2] of the quantities stem:[X_1]
+and stem:[X_2], obtained from a suitable measuring system, and associated
+standard uncertainties stem:[u(x_1)] and stem:[u(x_2)] and covariance
+stem:[u(x_1, x_2) = ru(x_1)u(x_2)], where stem:[r = r(x_1, x_2)] denotes
+the associated correlation coefficient [<<JCGM_100_2008,clause=5.2.2>>].
+On the basis of this information [<<JCGM_101_2008,clause=6.4.8.1>>],
+stem:[X] is assigned a bivariate Gaussian PDF, with expectation and
+covariance matrix
+
+[stem%unnumbered]
+++++
+[(x_1),(x_2)], " " [(u^2(x_1),ru(x_1)u(x_2)),(ru(x_1)u(x_2),u^2(x_2))].
+++++
+
+The quantities stem:[X_1] and stem:[X_2] are assumed to have dimension
+one.
+
+[[sec_9.3.1.3]]
+===== {blank}
+
+The determination of an estimate stem:[bb y] of stem:[bb Y] and the
+associated covariance matrix stem:[bb(U_y)] is considered for different
+choices of stem:[x_1, x_2, u(x_1), u(x_2)] and stem:[r(x_1, x_2)].
+
+[[sec_9.3.1.4]]
+===== {blank}
+
+Six cases are considered, in all of which stem:[x_2] is taken as zero
+and stem:[u(x_1) = u(x_2) = u_x = 0.010]. The first three of these
+cases correspond to taking stem:[x_1 = 0.001, 0.010] and 0.100, each
+with stem:[r(x_1, x_2) = 0] (see <<sec_9.3.2>>). The second three
+cases correspond to taking the same stem:[x_1], but with
+stem:[r(x_1, x_2) = 0.9] (see <<sec_9.3.3>>). <<figure15>> shows the
+contours of the joint PDFs assigned to the input quantities stem:[bb X]
+for case 1 (stem:[x_1 = 0.001] and stem:[r(x_1, x_2) = 0]) and case
+4 (stem:[x_1 = 0.001] and stem:[r(x_1, x_2) = 0.9]). (In this figure
+a common set of contour values is not used for the two contour plots.)
+The contours of the joint PDFs for the other cases are obtained by
+translating the contours shown along the stem:[X_1]-axis so that they
+are centred on stem:[x_1 = 0.010] (cases 2 and 5) or stem:[x_1 = 0.100]
+(cases 3 and 6).
+
+[[figure15]]
+.Contours of the joint PDFs for the input quantities in the co-ordinate system transformation model for cases 1 and (right) 4 (<<sec_9.3.1.4>>)
+image::figure15.png[]
+
+[[sec_9.3.2]]
+==== Propagation and summarizing: zero covariance
+
+[[sec_9.3.2.1]]
+===== General
+
+[[sec_9.3.2.1.1]]
+====== {blank}
+
+The evaluation of uncertainty is treated by applying the propagation
+of distributions (a) analytically (for purposes of comparison), (b)
+using the (generalized) GUM uncertainty framework, and (c) using MCM.
+
+[[sec_9.3.2.1.2]]
+====== {blank}
+
+The (joint) PDF for stem:[bb Y], and the marginal PDFs for stem:[Y_1]
+and stem:[Y_2], can be obtained analytically in the case that stem:[X_1]
+is described by the Gaussian distribution stem:[N(x_1, u_x^2)] and
+stem:[X_2] by stem:[N(x_2, u_x^2)], with stem:[X_1] and stem:[X_2]
+mutually independent. See <<sec_C.2>>.
+
+[[sec_9.3.2.1.3]]
+====== {blank}
+
+In the context of the GUM uncertainty framework, stem:[bb Y] is characterized
+by the bivariate Gaussian distribution stem:[N(bb(y),bb(U_y))], where
+the estimate stem:[y = (y_1, y_2)^{sf(T)}] of stem:[bb Y] is given
+by the solution to the equations
+
+[stem%unnumbered]
+++++
+y_1^2 = x_1^2 + x_2^2, " " " " tan y_2 = x_2//x_1,
+++++
+
+with associated covariance matrix stem:[bb(U_y)] obtained by applying
+a generalization of the law of propagation of uncertainty. See <<sec_6>>
+and <<sec_C.3>>.
+
+[[sec_9.3.2.1.4]]
+====== {blank}
+
+MCM is applied with stem:[M = 10^7] trials. See <<sec_7>>.
+
+[[sec_9.3.2.2]]
+===== Input estimate stem:[x_1 = 0.001]
+
+[[sec_9.3.2.2.1]]
+====== {blank}
+
+For the input estimate stem:[x_1 = 0.001], with correlation coefficient
+stem:[r(x_1, x_2) = 0], rows 1 to 3 of <<table6>>
+give the results obtained analytically, using the GUM uncertainty
+framework (GUF) and MCM.
+
+NOTE: The analytical results for stem:[y_1] and stem:[u(y_1)] given
+in <<table6>> are determined by calculating numerically, to a high
+degree of approximation, stem:[E(Y_1)] and stem:[V(Y_1)], which take
+the form of definite integrals involving the marginal distribution
+for stem:[Y_1] obtained analytically (see <<eq_C.2>>) in <<annexC>>).
+Similarly, the analytical results for stem:[y_2] and stem:[u(y_2)]
+are determined by calculating numerically stem:[E(Y_2)] and stem:[V(Y_2)],
+which involve the marginal distribution for stem:[Y_2] obtained analytically
+(see expression <<eq_C.3,droploc%>> in <<annexC>>). It is straightforward
+to show that stem:["Cov"(Y_1, Y_2) = 0] and, therefore, the analytical
+result stem:[r(y_1, y_2) = 0].
+
+[[table6]]
+.Co-ordinate system transformation results, for input estimates with associated zero covariance (<<sec_9.3.2.2.1>>, <<sec_9.3.2.3.1>> and <<sec_9.3.2.4.1>>)
+[cols="a,a,a,a,a,a,a",options="header"]
+|===
+| stem:[x_1] | Method | stem:[y_1] | stem:[y_2] | stem:[u(y_1)] | stem:[u(y_2)] | stem:[r(y_1, y_2)]
+
+.3+| 0.001 | Analytical | 0.013 | 0.000 | 0.007 | 1.744 | 0.000
+           | GUF        | 0.001 | 0.000 | 0.010 | 10.000 | 0.000
+           | MCM        | 0.013 | -0.001 | 0.007 | 1.744 | 0.000
+.3+| 0.010 | Analytical | 0.015 | 0.000 | 0.008 | 1.118 | 0.000
+           | GUF        | 0.010 | 0.000 | 0.010 | 1.000 | 0.000
+           | MCM        | 0.015 | 0.000 | 0.008 | 1.117 | 0.000
+.3+| 0.100 | Analytical | 0.101 | 0.000 | 0.010 | 0.101 | 0.000
+           | GUF        | 0.100 | 0.000 | 0.010 | 0.100 | 0.000
+           | MCM        | 0.101 | 0.000 | 0.010 | 0.101 | 0.000
+|===
+
+[[sec_9.3.2.2.2]]
+====== {blank}
+
+<<figure16>> shows in the top three graphs the contours of the joint
+PDFs for stem:[bb Y] obtained analytically, using the GUM uncertainty
+framework and using MCM. The PDF provided by MCM is consistent with
+the analytic solution. However, the PDF provided by the GUM uncertainty
+framework is very different from the analytic solution, and it is
+necessary to use a different set of contour values to illustrate this
+PDF (see <<sec_9.1.5>>). Furthermore, the PDF provided by the GUM
+uncertainty framework takes positive values for infeasible values
+of the output quantities, i.e. for values stem:[eta_1 < 0],
+stem:[eta_2 <= -pi] and stem:[eta_2 > pi], erroneously implying a
+non-zero probability density for such infeasible values.
+
+[[sec_9.3.2.2.3]]
+====== {blank}
+
+<<figure16>> shows in the bottom two graphs the marginal PDFs for
+the output quantities stem:[Y_1] and stem:[Y_2]
+obtained from the joint distribution for stem:[bb Y]. The marginal
+PDFs provided by MCM (shown as histograms or scaled frequency distributions)
+are consistent with the analytic solutions (shown as dashed lines).
+However, the marginal distributions provided by the GUM uncertainty
+framework (shown as solid lines) are very different from the analytic
+solutions. For convenience of presentation, the graph of the marginal
+PDF for stem:[Y_2] provided by the GUM uncertainty interval is only
+shown for (feasible) values of stem:[eta_2] satisfying
+stem:[-pi < eta_2 <= pi], although the PDF, which is the Gaussian
+stem:[N(0, 10^2)], extends well beyond this interval. The marginal
+PDFs provided by the GUM uncertainty framework imply a non-zero probability
+density for infeasible values of the output quantities (see also <<sec_9.3.2.2.2>>).
+
+[[sec_9.3.2.3]]
+===== Input estimate stem:[x_1 = 0.010]
+
+[[sec_9.3.2.3.1]]
+====== {blank}
+
+For the input estimate stem:[x_1 = 0.010], with correlation coefficient
+stem:[r(x_1, x_2) = 0], rows 4 to 6 of <<table6>> give the results
+obtained analytically, using the GUM uncertainty framework (GUF) and
+MCM. <<figure17>> shows the contours of the joint PDFs for
+stem:[bb Y] obtained using the three approaches and the marginal PDFs
+for stem:[Y_1] and stem:[Y_2] obtained from the respective joint PDFs.
+
+[[sec_9.3.2.3.2]]
+====== {blank}
+
+It is seen that the results obtained using MCM are consistent with
+the analytic solution. However, the results obtained using the GUM
+uncertainty framework are different from the analytic solution, but
+not so different as for the case stem:[x_1 = 0.001]. The relative
+differences between the standard uncertainties stem:[u(y_1)] and stem:[u(y_2)]
+determined using the GUM uncertainty framework and analytically are
+approximately 25% and 10% (compared with approximately 40% and 470%
+for the case stem:[x_1 = 0.001]).
+
+[[sec_9.3.2.4]]
+===== Input estimate stem:[x_1 = 0.100]
+
+[[sec_9.3.2.4.1]]
+====== {blank}
+
+For the input estimate stem:[x_1 = 0.100], with correlation coefficient
+stem:[r(x_1, x_2) = 0], the results obtained using the three approaches
+are given in rows 7 to 9 of <<table6>> and <<figure18>>.
+
+[[sec_9.3.2.4.2]]
+====== {blank}
+
+It is seen that the results obtained using the GUM uncertainty framework
+and MCM are both consistent with the analytic solution. The marginal
+distributions provided by the three approaches shown in <<figure18>>
+are virtually indistinguishable. The estimates, associated standard
+uncertainties and  associated correlation coefficient determined using
+the three approaches agree to two significant decimal digits.
+
+[[sec_9.3.3]]
+==== Propagation and summarizing: non-zero covariance
+
+[[sec_9.3.3.1]]
+===== {blank}
+
+The evaluation of uncertainty is treated by applying the propagation
+of distributions (a) using the (generalized) GUM uncertainty framework
+(see <<sec_6;and!sec_C.3>>), and (b) using MCM with stem:[M = 10^7]
+trials (see <<sec_7>>).
+
+[[sec_9.3.3.2]]
+===== {blank}
+
+For the input estimates stem:[x_1 = 0.001], stem:[x_1 = 0.010] and
+stem:[x_1 = 0.100], with correlation coefficient
+stem:[r(x_1, x_2) = 0.9], <<table7>> gives the results obtained. The
+joint PDFs for stem:[bb Y] and the marginal PDFs for stem:[Y_1] and
+stem:[Y_2] obtained from the two approaches are shown for the three
+cases in, respectively, <<figure19;and!figure20;and!figure21>>.
+
+[[table7]]
+.Co-ordinate system transformation results, for input estimates with associated covariance stem:[r(x_1, x_2) = 0.9] (<<sec_9.3.3.2>>)
+[cols="a,a,a,a,a,a,a",options="header"]
+|===
+| stem:[x_1] | Method | stem:[y_1] | stem:[y_2] | stem:[u(y_1)] | stem:[u(y_2)] | stem:[r(y_1, y2)]
+.2+| 0.001 | GUF | 0.001 | 0.000   | 0.010 | 10.000 | 0.900
+           | MCM | 0.012 | -0.556  | 0.008 | 1.599  | -0.070
+.2+| 0.010 | GUF | 0.010 | 0.000   | 0.010 | 1.000  | 0.900
+           | MCM | 0.015 | -0.343  | 0.008 | 0.903  | 0.352
+.2+| 0.100 | GUF | 0.100 | 0.000   | 0.010 | 0.100  | 0.900
+           | MCM | 0.101 | -0.009  | 0.010 | 0.102  | 0.882
+|===
+
+[[sec_9.3.3.3]]
+===== {blank}
+
+For the cases stem:[x_1 = 0.001] and stem:[x_1 = 0.010] the results
+provided by the GUM uncertainty framework and MCM are very different.
+In particular, MCM gives marginal PDFs for stem:[Y_2] in these two
+cases that have two peaks, and which are very different from the Gaussian
+(unimodal) distributions provided by the GUM uncertainty framework.
+The positions of these peaks in the marginal PDFs are (approximately)
+at the values stem:[eta_2 = pi//4 ~~ 0.785] and
+stem:[eta_2 = pi//4 - pi ~~ -2.356]. These values are the polar angles
+that define the orientation of the major axis of the elliptical contours
+of the joint PDF for the input quantities stem:[bb X] (see <<figure15>>,
+right).
+
+[[figure16]]
+.Co-ordinate system transformation results, for input estimate stem:[x_1 = 0.001] and covariance stem:[r(x_1, x_2) = 0], showing (a) contours of the joint PDFs for stem:[bb Y] obtained analytically (top), using the GUM uncertainty framework (middle left) and MCM (middle right), and (b) marginal PDFs or stem:[Y_1] (bottom left) and stem:[Y_2] (bottom right) obtained analytically (dashed line), using the GUM uncertainty framework (solid line) and MCM (histogram) (<<sec_9.3.2.2.2>> and <<sec_9.3.2.2.3>>)
+image::figure16.png[]
+
+[[figure17]]
+.As <<figure16>> except that stem:[x_1 = 0.010] (<<sec_9.3.2.3.1>>)
+image::figure17.png[]
+
+[[figure18]]
+.As <<figure16>> except that stem:[x_1 = 0.100] (<<sec_9.3.2.4.1>>)
+image::figure18.png[]
+
+[[sec_9.3.3.4]]
+===== {blank}
+
+For the case stem:[x_1 = 0.100] there is much better agreement between
+the results provided by the GUM uncertainty framework and MCM.
+
+[[figure19]]
+.Co-ordinate system transformation results, for input estimate stem:[x_1 = 0.001] and covariance stem:[r(x_1, x_2) = 0.9], showing (a) contours of the joint PDFs for stem:[bb Y] obtained using the GUM uncertainty framework (GUF, top left) and MCM (top right), and (b) the marginal PDFs for stem:[Y_1] (bottom left) and stem:[Y_2] (bottom right) obtained using GUF (solid line) and MCM (histogram) (<<sec_9.3.3.2>>)
+image::figure19.png[]
+
+[[sec_9.3.4]]
+==== Discussion
+
+[[sec_9.3.4.1]]
+===== {blank}
+
+For both cases of zero and non-zero covariance, as stem:[x_1] becomes
+increasingly removed from zero, the results given by the GUM uncertainty
+framework and those for MCM become closer to each other.
+
+[[sec_9.3.4.2]]
+===== {blank}
+
+For the input estimates stem:[x_1 = 0.001] and stem:[x_1 = 0.010],
+and generally for values of stem:[x_1] close to zero, the effect of
+the non-zero covariance is to change noticeably the results provided
+by MCM.
+
+[[figure20]]
+.As <<figure19>> except that stem:[x_1 = 0.010] (<<sec_9.3.3.2>>)
+image::figure20.png[]
+
+[[figure21]]
+.As <<figure19>> except that stem:[x_1 = 0.100] (<<sec_9.3.3.2>>)
+image::figure21.png[]
+
+[[sec_9.3.4.3]]
+===== {blank}
+
+The (numerical) results given in <<table6;and!table7>> provide summaries
+of the (joint and marginal) PDFs shown in the figures. In some circumstances
+such summaries may not be appropriate or may be insufficient to describe
+the nature of the PDF characterizing the output quantity. Consider
+the results for the case of the input estimate stem:[x_1 = 0.001]
+and non-zero covariance stem:[r(x_1, x_2) = 0.9] (<<figure19>>). The
+marginal PDF for stem:[Y_2] obtained using MCM is essentially bimodal,
+and the estimate stem:[y_2] of stem:[Y_2] is midway between the modes
+of the distribution in an interval of values of stem:[Y_2] where the
+probability density is small.
+
+NOTE: For an output quantity characterized by a multivariate Gaussian
+distribution, the expectation vector and co-variance matrix for the
+quantity completely describes the distribution.
+
+[[sec_9.3.4.4]]
+===== {blank}
+
+For the input estimates stem:[x_1 = 0.001] and stem:[x_1 = 0.010],
+and generally for measured values of stem:[x_1] close to zero, the
+determination of coverage regions in the form of ellipses and rectangles
+is inappropriate.
+
+[[sec_9.4]]
+=== Simultaneous measurement of resistance and reactance
+
+[[sec_9.4.1]]
+==== Formulation
+
+[[sec_9.4.1.1]]
+===== {blank}
+
+The resistance stem:[R] and reactance stem:[X] of a circuit element
+are determined by measuring the amplitude stem:[V] of a sinusoidally-alternating
+potential difference across its terminals, the amplitude stem:[I]
+of the alternating current passing through it, and the phase angle
+phi of the alternating potential difference relative to the alternating
+current. The input quantities are stem:[V], stem:[I] and stem:[phi]
+and the output quantities are the three impedance components stem:[R],
+stem:[X] and stem:[Z], where stem:[Z^2 = R^2 + X^2].
+
+[[sec_9.4.1.2]]
+===== {blank}
+
+The application of Ohm's law gives the trivariate measurement model
+
+[[eq_26]]
+[stem]
+++++
+R = V/I cos phi, " " " " X = V/I sin phi, " " " " Z = V/I.
+++++
+
+as the relationship between the input quantity
+stem:[bb X = (X_1, X_2, X_3)^{sf(T)} -= (V, I, phi)^{sf(T)}] and the
+output quantity stem:[bb Y = (Y_1, Y_2, Y_3)^{sf(T)} -= (R,X,Z)^{sf(T)}].
+
+NOTE: For reasons of simplicity, any systematic errors that may be
+present in stem:[V], stem:[I] and stem:[phi] are ignored.
+
+NOTE: In the GUM, reactance is denoted by stem:[X], the notation also
+used here. The reactance stem:[X], a component of the vector output
+quantity stem:[bb Y], is not to be confused with stem:[bb X], the
+vector input quantity.
+
+[[sec_9.4.1.3]]
+===== {blank}
+
+A series of stem:[n = 6] sets stem:[x_1, ..., x_n] of simultaneous
+indication values of the input quantities are obtained independently
+under similar conditions resulting in the data given in <<table8>>.
+
+NOTE: In the GUM, the data consists of a series of five sets of simultaneous
+indication values obtained independently (sets 1 to 5 of <<table8>>).
+At least six sets are required for the covariance matrix in <<sec_9.4.2.5>>
+to be defined. Set 6 in <<table8>> is therefore included, and is chosen
+to be the average of sets 1 to 5. This particular choice for set 6
+is not essential, but has the consequence that its inclusion does
+not change the average of the series.
+
+[[table8]]
+.A series of stem:[n = 6] sets of simultaneous indication values, obtained independently, of the input quantities for the measurement of resistance and reactance (<<sec_9.4.1.3>>)
+[cols="a,a,a,a",options="header"]
+|===
+| Set | V/V   | I/mA   | stem:[phi//rad]
+| 1   | 5.007 | 19.663 | 1.045 6
+| 2   | 4.994 | 19.639 | 1.043 8
+| 3   | 5.005 | 19.640 | 1.046 8
+| 4   | 4.990 | 19.685 | 1.042 8
+| 5   | 4.999 | 19.678 | 1.043 3
+| 6   | 4.999 | 19.661 | 1.044 5
+|===
+
+[[sec_9.4.2]]
+==== Propagation and summarizing
+
+[[sec_9.4.2.1]]
+===== {blank}
+
+The determination of an estimate stem:[bb y] of stem:[bb Y] and the
+associated covariance matrix stem:[bb(U_y)] is considered. The approach
+here treats the problem defined by the measurement model <<eq_26,droploc%>>
+and information about the input quantities in that model in the form
+of the sets stem:[x_1, ..., x_n] of indication values obtained independently
+given in <<table8>>. The GUM addresses this problem using the GUM
+uncertainty framework [<<JCGM_100_2008,clause=H.2.3>>]. The treatment
+here is extended to include MCM and an approach involving a multivariate
+_t_-distribution (see <<sec_5.3.2>>).
+
+[[sec_9.4.2.2]]
+===== {blank}
+
+For the purpose of applying the (generalized) GUM uncertainty framework,
+estimates stem:[bb x -= (hat(V), hat(I), hat(phi))^{sf(T)}] of the
+input quantities stem:[X -= (V, I, phi)^{sf(T)}] are determined as
+the averages of the indication values given in <<table8>>
+[<<JCGM_100_2008,clause=4.2>>].
+
+[stem%unnumbered]
+++++
+bb x = 1/n (bb x_1 + cdots + bb x_n).
+++++
+
+The covariance matrix stem:[bb(U_x)] associated with stem:[bb x] contains
+the variances associated with the averages [<<JCGM_100_2008,clause=4.2>>]
+and the covariances associated with each pair of averages
+[<<JCGM_100_2008,clause=5.2.3>>], and is evaluated from
+
+[stem%unnumbered]
+++++
+bb(U_x) = 1/{n(n - 1)} bb(M), " " " " bb(M) = (bb x_1 - bb x)(bb x_1 - bb x)^{sf(T)} + cdots + (bb x_n - bb x)(bb x_n - bb x)^{sf(T)}.
+++++
+
+stem:[bb M] is the matrix of sums of squares and products. The estimates
+stem:[bb x] and the associated standard uncertainties determined in
+this way are given in <<table9>>, and the correlation coefficients
+associated with pairs of the estimates in <<table10>>.
+
+NOTE: In the GUM, an approach 2 is presented for this example, based
+on GUM 4.1.4 note. This approach is not followed here, for the reason
+given in <<sec_4.1>>.
+
+[[table9]]
+.Estimates of the input quantities stem:[bb X -= (V, I, phi)^{sf(T)}] for the simultaneous measurement of resistance and reactance and the associated standard uncertainties (<<sec_9.4.2.2>>)
+[cols="a,a,a,a",options="header"]
+|===
+| | V/V | I/mA | stem:[phi//"rad"]
+| *Estimate* | 4.999 0 | 19.661 0 | 1.044 46
+| *Std unc*  | 0.002 6 | 0.007 7  | 0.000 61
+|===
+
+[[table10]]
+.Correlation coefficients associated with pairs of estimates of the input quantities X eta (V; I; phi)^{sf(T)} for the simultaneous measurement of resistance and reactance (<<sec_9.4.2.2>>)
+[cols="a,a,a,a",options="header"]
+|===
+|            | stem:[V] | stem:[I] | stem:[phi]
+| V          | 1        | -0.355   | 0.858
+| I          |          | 1        | -0.645
+| stem:[phi] |          |          | 1
+|===
+
+[[sec_9.4.2.3]]
+===== {blank}
+
+In the GUM uncertainty framework, estimates
+stem:[bb y -= (hat(R), hat(X), hat(Z))^{sf(T)}] of the output quantities
+stem:[bb Y -= (R, X, Z)^{sf(T)}] are obtained by evaluating the measurement
+model <<eq_26,droploc%>> for the estimates stem:[bb x] of the input
+quantities.
+
+[stem%unnumbered]
+++++
+bb y = [{hat(V)}/{hat(I)} cos hat(phi), {hat(V)}/{hat(I)} sin hat(phi), {hat(V)}/{hat(I)}]^{sf(T)} .
+++++
+
+The covariance matrix stem:[bb(U_y)] associated with stem:[bb y] is
+evaluated using <<eq_3>> in <<sec_6.2.1.3>>, namely
+stem:[bb(U_y) = bb(C_x) bb(U_x) bb(C_x)^{sf(T)}], where stem:[bb(C_x)]
+is the sensitivity matrix given by
+
+[[eq_27]]
+[stem]
+++++
+bb(C_x) = [({cos hat(phi)}/{hat(I)}, -{hat(V) cos hat(phi)}/{hat(I)^2},-{hat(V) sin hat(phi)}/{hat(I)^2}),
+({sin hat(phi)}/{hat(I)}, -{hat(V)sin hat(phi)}/{hat(I)^2}, {hat(V)cos hat(phi)}/{hat(I)}),
+(1/{hat(I)}, -{hat(V)}/{hat(I)^2},0)]
+++++
+
+The results obtained from the application of the GUM uncertainty framework
+are summarized in row 1 (GUF) of <<table11>>.
+
+NOTE: The right-most column in <<table11>> is expressed as
+stem:[1 - r(X,Z)] because the correlation coefficient stem:[r(X, Z)]
+is close to unity (see <<note_3.21_5>>).
+
+[[note_9.4.2.3_2]]
+[NOTE]
+====
+The covariance matrix stem:[bb(U_y)] is singular as a result of dependencies
+in the trivariate measurement model <<eq_26,droploc%>>.
+
+[[eq_28]]
+[stem]
+++++
+Z^2 = R^2 + X^2 .
+++++
+
+Because of relation <<eq_28,droploc%>>, the correlation matrix associated
+with the best estimates of stem:[R], stem:[X] and stem:[Z] is singular.
+However, due to rounding, the correlation matrix given in line 1 of
+<<table11>> is neither singular nor positive definite. Owing to the
+smallness of the standard uncertainties associated with the estimates
+of the input quantities, this singularity has no practical influence
+on the results obtained <<ref20,section=4>>.
+====
+
+[[table11]]
+.Results for the simultaneous measurement of resistance and reactance (<<sec_9.4.2.3>>, <<sec_9.4.2.4>> and <<sec_9.4.2.5>>)
+[cols="a,a,a,a,a,a,a,a,a,a",options="header"]
+|===
+| Method | stem:[R//Omega] | stem:[X//Omega] | stem:[Z//Omega] | stem:[u(R)//Omega] | stem:[u(X)//Omega] | stem:[u(Z)//Omega] | stem:[r(R, X)] | stem:[r(R,Z)] | stem:[1 - r(X, Z)]
+| GUF       | 127.732 | 219.847 | 254.260 | 0.058 | 0.241 | 0.193 | -0.588 | -0.485 | stem:[0.749 xx 10^{-2}]
+| MCM       | 127.732 | 219.847 | 254.260 | 0.130 | 0.536 | 0.429 | -0.587 | -0.482 | stem:[0.770 xx 10^{-2}]
+| Alt. GUF  | 127.732 | 219.847 | 254.260 | 0.130 | 0.540 | 0.431 | -0.588 | -0.485 | stem:[0.749 xx 10^{-2}]
+|===
+
+[[sec_9.4.2.4]]
+===== {blank}
+(((input quantity,assigning a probability density function (PDF) to)))
+(((t-distribution,multivariate)))
+
+Consider that the only information available about the input quantities
+is the series of indication values listed in <<table8>>, and that
+the three such values in each set can be regarded as a realization
+of the same multivariate Gaussian distribution. Then stem:[bb X] is
+characterized by the multivariate _t_-distribution
+stem:[t_{nu} (bb x,bb M//(nu n))] with stem:[nu = n - N = 3] degrees
+of freedom, where stem:[bb x] contains the averages of the indication
+values (as in <<sec_9.4.2.2>>). See 5.3.2. The results obtained from
+an application of MCM with stem:[M = 10^6] trials are summarized in
+row 2 (MCM) of <<table11>>.
+
+[[sec_9.4.2.5]]
+===== {blank}
+(((input quantity,assigning a probability density function (PDF) to)))
+(((t-distribution,multivariate)))
+
+The quantity stem:[bb X] characterized by the multivariate _t_-distribution
+given in <<sec_9.4.2.4>> has covariance matrix
+
+[stem%unnumbered]
+++++
+bb(V(X)) = 1/{(nu - 2)^n} M.
+++++
+
+An alternative approach that is preferred to the treatment in <<sec_9.4.2.3>>
+is to evaluate <<eq_3>>, namely
+stem:[bb(U_y) = bb(C_x) bb(U_x) bb(C_x)^{sf(T)}], with stem:[bb(C_x)]
+the sensitivity matrix <<eq_27,droploc%>> and stem:[bb(U_x)] replaced
+by stem:[bb(V(X))]. The results obtained from this alternative approach
+are summarized in row 3 (Alt. GUF) of <<table11>>. Also see reference
+<<ref15>>.
+
+NOTE: stem:[bb(V(X))] is the covariance matrix corresponding to the
+additional information considered in <<sec_9.4.2.4>>.
+
+NOTE: The covariance matrix for stem:[bb X] obtained in this way is
+only defined if stem:[nu = n - N > 2]. It is for this reason that,
+in this example, at least stem:[n = 6] simultaneous indication values
+of the stem:[N = 3] input quantities are required.
+
+[[sec_9.4.2.6]]
+===== {blank}
+
+The covariance matrix stem:[bb(V(X))] obtained from the distribution
+used to characterize stem:[bb X] is related to the covariance matrix
+stem:[bb(U_x)] used in the application of the GUM uncertainty framework
+by
+
+[stem%unnumbered]
+++++
+bb(V(X)) = {n - 1}/{n - N - 2} bb(U_x).
+++++
+
+[[sec_9.4.2.7]]
+===== {blank}
+
+The results obtained from the application of MCM and the alternative
+application of the GUM uncertainty framework are negligibly different,
+which indicates that the measurement functions in the measurement
+model <<eq_26,droploc%>> can be linearized, to a good degree of approximation,
+about the estimates of the input quantities.
+
+[[sec_9.4.2.8]]
+===== {blank}
+(((Welch-Satterthwaite formula.)))
+
+In this example, the conditions for the application of the Welch-Satterthwaite
+formula [<<JCGM_100_2008,formula=(G.2b)>>] of the GUM uncertainty
+framework to calculate an effective degrees of freedom are not valid
+because there are quantities for which the standard uncertainties
+have associated degrees of freedom that are finite and those quantities
+are not independent.
+
+[[sec_9.5]]
+=== Measurement of Celsius temperature using a resistance thermometer
+
+[[sec_9.5.1]]
+==== General
+
+The example described in this subclause is concerned with the measurement
+of Celsius temperature by comparing the resistance of an industrial
+platinum resistance thermometer with that of a standard resistor using
+a resistance bridge. The measurement of a single Celsius temperature
+is described by a univariate measurement model (see <<sec_9.5.2>>),
+and that of several temperatures by a multivariate measurement model
+(see <<sec_9.5.3>>). The example illustrates the treatment of these
+(univariate and multivariate) measurement models using the (generalized)
+GUM uncertainty framework.
+
+[[sec_9.5.2]]
+==== Measurement of a single Celsius temperature
+
+[[sec_9.5.2.1]]
+===== {blank}
+(((calibration)))
+
+The Celsius temperature stem:[theta] is measured by comparing the
+resistance stem:[R(theta)] of a resistance thermometer with the resistance
+stem:[R_S] of a standard resistor using a resistance bridge. In the
+temperature interval from 0 °C to 30 °C, the resistance of the thermometer
+is approximated by a parabolic function of its Celsius temperature
+stem:[theta].
+
+[[eq_29]]
+[stem]
+++++
+R(theta) = (1 + A theta + B theta^2)R_0,
+++++
+
+where stem:[R_0], stem:[A] and stem:[B] are determined from a calibration
+of the thermometer. Estimates of stem:[R_0], stem:[A] and stem:[B]
+and the associated standard uncertainties are given in <<table12>>,
+and the non-zero correlation coefficients associated with pairs of
+the estimates in <<table13>>.
+
+[[table12]]
+.Estimates of the input quantities stem:[bb X -= (R_0, A, B, R_S, r)^{sf(T)}] for the measurement of a single Celsius temperature and the associated standard uncertainties (<<sec_9.5.2.1>>, <<sec_9.5.2.2>> and <<sec_9.5.2.3>>)
+[cols="a,a,a,a,a,a",options="header"]
+|===
+| | stem:[R_0//Omega] | stem:[A//"°C"^{-1}] | stem:[B//"°C"^{-2}] | stem:[R_{"S"}//Omega] | stem:[r//1]
+
+| *Estimate* | 99.996 10 | 0.003 909 6 | stem:[-6.0 xx 10^{-7}] | 99.999 47 | 1.078 005 7
+| *Std unc*  | 0.000 50  | 0.000 002 7 | stem:[1.1 xx 10^{-7}]  | 0.000 10  | 0.000 005 0
+|===
+
+[[table13]]
+.Non-zero correlation coefficients associated with pairs of estimates of the input quantities for the measurement of a single Celsius temperature (<<sec_9.5.2.1>>, <<sec_9.5.2.2>> and <<sec_9.5.2.3>>)
+[cols="a,a,a,a",options="header"]
+|===
+|            | stem:[R_0] | stem:[A]      | stem:[B]
+
+| stem:[R_0] | 1          | stem:[-0.155] | stem:[0.092]
+| A          |            | 1             | stem:[-0.959]
+| B          |            |               | 1
+|===
+
+[[sec_9.5.2.2]]
+===== {blank}
+
+The estimate of stem:[R_{"S"}] and the associated standard uncertainty,
+determined by calibration, are given in <<table12>>. stem:[R_{"S"}]
+is independent of the parameters stem:[R_0], stem:[A] and stem:[B].
+
+[[sec_9.5.2.3]]
+===== {blank}
+
+The quantity measured with the resistance bridge is the resistance
+ratio
+
+[[eq_30]]
+[stem]
+++++
+r = {R(theta)}/{R_{"S"}} .
+++++
+
+The measured value of stem:[r] and the associated standard uncertainty
+are given in <<table12>>. The resistance ratio is independent of the
+parameters stem:[R_0], stem:[A] and stem:[B] of the resistance thermometer
+and the resistance stem:[R_{"S"}] of the standard resistor; there
+are thus no further non-zero correlation coefficients beyond those
+given in <<table13>>.
+
+[[sec_9.5.2.4]]
+===== {blank}
+
+By combining <<eq_29;and!eq_30>>, the following measurement model
+for the Celsius temperature stem:[theta] is obtained.
+
+[[eq_31]]
+[stem]
+++++
+(1 + A theta + B theta^2) R_0 - r R_{"S"} = 0 .
+++++
+
+In terms of the general notation, stem:[N = 5], stem:[m = 1],
+stem:[bb X -= (R_0, A, B, R_{"S"}, r)^{sf(T)}], stem:[Y -= theta],
+and
+
+[stem%unnumbered]
+++++
+h(Y, bb(X)) = (1 + A theta + B theta^2)R_0 - r R_{"S"}.
+++++
+
+NOTE: By considering expressions for the roots of a quadratic equation,
+transformation of the measurement model <<eq_31,droploc%>> to explicit
+form is possible. However, the numerical evaluation of the transformed
+model can suffer from subtractive cancellation, and the evaluation
+of sensitivity coefficients is made more difficult by the transformation.
+
+[[sec_9.5.2.5]]
+===== {blank}
+
+The estimate stem:[y -= hat(theta)] of the Celsius temperature generating
+the measured resistance ratio stem:[r] is found by inserting the estimates
+given in <<table12>> into <<eq_31>> and solving this equation. The
+solution obtained is stem:[hat(theta) = 20.023 2 " °C"].
+
+[[sec_9.5.2.6]]
+===== {blank}
+
+The standard uncertainty stem:[u_y -= u(hat(theta))] associated with
+the estimate stem:[y] is evaluated using <<eq_8>> in <<sec_6.3.1.3>>,
+namely stem:[bb(C_y) bb(U_y) bb(C_y)^{sf(T)} = bb(C_x) bb(U_x) bb(C_x)^{sf(T)}].
+Evaluating the matrices stem:[bb(C_y)] and stem:[bb(C_x)] in <<sec_6.3.1.3>>,
+namely
+
+[stem%unnumbered]
+++++
+bb(C_Y) = {del h}/{del Y} -= {del h}/{del theta} = (A + 2B theta) R_0,
+++++
+
+[stem%unnumbered]
+++++
+bb(C_X) = {del h}/{del bb(X)} -= [{del h}/{del R_0}, {del h}/{del A}, {del h}/{del B},{del h}/{del R_{"S"}},{del h}/{del r}] = [1 + A theta + B theta^2, R_0 theta, R_0 theta^2, -r, -R_{"S"}],
+++++
+
+at the estimates of the input quantities given in <<table12>> and
+the corresponding estimate of the output quantity, gives the sensitivity
+matrices
+
+[stem%unnumbered]
+++++
+c_y = 0.389 Omega "°C"^{-1}
+++++
+
+and
+
+[stem%unnumbered]
+++++
+bb(C_x) = [1.08, " "2.00 xx 10^3 Omega "°C", " " 4.01 Omega "°C"^2, -1.08, -1.00 xx 10^2 Omega ] .
+++++
+
+The elements of the covariance matrix stem:[bb(U_x)] associated with
+the estimates of the input quantities are calculated from the standard
+uncertainties in <<table12>> and the correlation coefficients in <<table13>>.
+The result obtained is stem:[u(hat(theta)) = 0.004 5 " °C"].
+
+[[sec_9.5.3]]
+==== Measurement of several Celsius temperatures
+
+[[sec_9.5.3.1]]
+===== {blank}
+
+The resistance thermometer, standard resistor and resistance bridge
+described in <<sec_9.5.2>> are used to measure the resistance ratios
+stem:[r_{1}, ..., r_{10}] generated by ten Celsius temperatures
+stem:[theta_{1}, ..., theta_{10}].
+
+[[sec_9.5.3.2]]
+===== {blank}
+
+The estimates of the input quantities, stem:[R_0, A, B] and stem:[R_{"S"}]
+and the associated standard uncertainties are given in <<table12>>
+and the estimates of stem:[r_{1}, ..., r_{10}] in <<table14>>. The
+only non-zero correlation coefficients associated with pairs of the
+estimates remain those given in <<table13>>. The resistance ratios
+are assumed to be independent, an assumption that is valid if the
+magnitudes of the random errors in the measured resistance ratios
+dominate.
+
+[[table14]]
+.Estimates of the resistance ratios for the measurement of several Celsius temperatures and the associated standard uncertainties (<<sec_9.5.3.2>>)
+[cols="a,a,a,a,a,a",options="header"]
+|===
+| | stem:[r_{1}] | stem:[r_{2}] | stem:[r_{3}] | stem:[r_{4}] | stem:[r_{5}]
+
+| stem:[(bb "Estimate"-1)//10^{-7}]  | 53 | 150 054 | 300 055 | 450 056 | 600 056
+| stem:[bb "Std unc"//10^{-7}]          | 50 | 50 | 50 | 50 | 50
+| | stem:[r_{6}] | stem:[r_{7}] | stem:[r_{8}] | stem:[r_{9}] | stem:[r_{10}]
+| stem:[(bb "Estimate"-1)//10^{-7}]  | 780 057 | 900 058 | 1 050 059 | 1 200 060 | 780 057
+| stem:[bb "Std unc"//10^{-7}]       | 50 | 50 | 50 | 50 | 50
+|===
+
+[[sec_9.5.3.3]]
+===== {blank}
+
+Each resistance ratio stem:[r_j] is related to the corresponding Celsius
+temperature stem:[theta_j] by an equation of the form <<eq_31,droploc%>>:
+
+[[eq_32]]
+[stem]
+++++
+(1 + A theta_j + B theta_j^2)R_0 - r_j R_{"S"} = 0, " " " " j = 1, ..., 10.
+++++
+
+In terms of the general notation, stem:[N = 14], stem:[m = 10], stem:[bb X -= (R_0, A, B, R_{"S"}, r_{1}, ..., r_{10})^{sf(T)}], stem:[bb Y -= (theta_{1}, ..., theta_{10})^{sf(T)}], and
+
+[stem%unnumbered]
+++++
+bb(h(Y,X)) = [(h_1(bb Y,bb X)), (vdots), (h_{10}(bb Y,bb X))] =
+[(R_0(1 + A theta_1 + B theta_1^2) - r_1 R_{"S"}),
+(vdots),
+(R_0(1 + A theta_{10} + B theta_{10}^2) - r_{10} R_{"S"})]
+++++
+
+NOTE: Transformation of the measurement model <<eq_32,droploc%>> to
+explicit form is possible (see <<sec_9.5.2.4>>).
+
+[[sec_9.5.3.4]]
+===== {blank}
+
+The estimates stem:[y -= (hat(theta)_{1}, ..., hat(theta)_{10})] of
+the Celsius temperatures stem:[bb Y] are given by inserting the estimates
+given in columns 1 to 4 of <<table12>> and in <<table14>> into <<eq_32>>
+and solving these equations. These estimates are given in <<table15>>.
+
+[[table15]]
+.Estimates of the output quantities stem:[bb Y] and the associated standard uncertainties for the measurement of several Celsius temperatures (<<sec_9.5.3.4>> and <<sec_9.5.3.5>>)
+[cols="a,a,a,a,a,a,a,a,a,a,a",options="header"]
+|===
+| | stem:[theta_{1}] | stem:[theta_{2}] | stem:[theta_{3}] | stem:[theta_{4}] | stem:[theta_{5}] | stem:[theta_{6}] | stem:[theta_{6}] | stem:[theta_{8}] | stem:[theta_{9}] | stem:[theta_{10}]
+
+| *Estimate*/°C | 0.010 0 | 3.849 1 | 7.692 8 | 11.541 0 | 15.393 8 | 20.023 2 | 23.113 1 | 26.979 7 | 30.850 9 | 20.023 2
+| *Std unc*/°C | 0.001 8  | 0.002 7 | 0.004 0 | 0.004 6 | 0.004 7 | 0.004 5 | 0.004 6 | 0.006 0 | 0.008 9 | 0.004 5
+|===
+
+[[table16]]
+.Correlation coefficients associated with pairs of estimates of the output quantities stem:[bb Y] for the measurement of several Celsius temperatures (<<sec_9.5.3.5>>)
+[cols="a,a,a,a,a,a,a,a,a,a,a",options="header"]
+|===
+| | stem:[theta_{1}] | stem:[theta_{2}] | stem:[theta_{3}] | stem:[theta_{4}] | stem:[theta_{5}] | stem:[theta_{6}] | stem:[theta_{7}] | stem:[theta_{8}] | stem:[theta_{9}] | stem:[theta_{10}]
+| stem:[theta_{1}] | 1 | 0.252 | 0.127 | 0.079 | 0.059 | 0.054 | 0.056 | 0.054 | 0.050 | 0.054
+| stem:[theta_{2}] | | 1 | 0.815 | 0.800 | 0.755 | 0.580 | 0.312 | -0.092 | -0.358 | 0.580
+| stem:[theta_{3}] | | | 1 | 0.902 | 0.868 | 0.691 | 0.400 | -0.057 | -0.365 | 0.691
+| stem:[theta_{4}] | | | | 1 | 0.909 | 0.766 | 0.495 | 0.040 | -0.281 | 0.766
+| stem:[theta_{5}] | | | | | 1 | 0.847 | 0.629 | 0.208 | -0.115 | 0.847
+| stem:[theta_{6}] | | | | | | 1 | 0.841 | 0.549 | 0.264 | 0.918
+| stem:[theta_{7}] | | | | | | | 1 | 0.812 | 0.613 | 0.841
+| stem:[theta_{8}] | | | | | | | | 1 | 0.909 | 0.549
+| stem:[theta_{9}] | | | | | | | | | 1 | 0.264
+| stem:[theta_{10}] | | | | | | | | | | 1
+|===
+
+[[sec_9.5.3.5]]
+===== {blank}
+
+The covariance matrix stem:[bb(U_y)] associated with y is evaluated
+using <<eq_8>> in <<sec_6.3.1.3>>, namely
+stem:[bb(C_y) bb(U_y) bb(C_y)^{sf(T)} = bb(C_x) bb(U_x) bb(C_x)^{sf(T)}].
+stem:[bb(C_y)] and stem:[bb(C_x)] are sensitivity matrices given by
+evaluating stem:[bb(C_y)] and stem:[bb(C_x)], respectively, at the
+estimates of the input and output quantities. stem:[bb(C_y)] is a
+diagonal matrix of dimension stem:[10 xx 10] with diagonal entries
+stem:[R_0(A + 2B theta_{1}), ..., R_0(A + 2B theta_{10})]. stem:[bb(C_x)]
+is a matrix of dimension stem:[10 xx 14] given by
+
+[stem%unnumbered]
+++++
+bb(C_X) = [bb(C_X)^{(1)} " " bb(C_X)^{(2)}],
+++++
+
+where
+
+[stem%unnumbered]
+++++
+bb(C_X)^{(1)} =
+[(1 + A theta_1 + B theta_1^2, R_0 theta_1,R_0 theta_1^2,-r_1),
+(vdots,vdots,vdots,vdots),
+(1 + A theta_{10} + B theta_{10}^2, R_0 theta_{10}, R_0 theta_{10}^2, -r_{10})]
+++++
+
+is a matrix of dimension stem:[10 xx 4], and stem:[bb(C_x)^{(2)}]
+is a diagonal matrix of dimension stem:[10 xx 10] with diagonal elements
+all equal to stem:[-R_{"S"}]. The covariance matrix stem:[bb(U_x)]
+is calculated from the standard uncertainties given in columns 1 to
+4 of <<table12>> and in <<table13>>. The standard uncertainties associated
+with the estimates of the Celsius temperatures and the correlation
+coefficients associated with pairs of estimates, derived from the
+matrix stem:[bb(U_y)], are given in <<table15>> and <<table16>>, respectively.
+
+[[sec_9.5.3.6]]
+===== {blank}
+
+The results given in <<table15>> and <<figure22>> show how the standard
+uncertainty stem:[u(hat(theta)_j)] varies with the estimate stem:[hat(theta)_j]
+of Celsius temperature stem:[theta_j]. The uncertainty is smallest
+around 0 °C and increases rapidly for temperatures greater than 25
+°C. This effect is due to the fact that the resistance thermometer
+was calibrated at the temperatures 0 °C, 15 °C, 20 °C and 25 °C, and
+that the Celsius temperature 0 °C during calibration was generated
+using an ice bath with a standard uncertainty three times smaller
+than those associated with the other three temperatures, which were
+generated using an oil bath.
+
+NOTE: In <<figure22;and!figure23>> the straight-line segments joining
+the plotted points are included for purpose of visualization.
+
+[[sec_9.5.3.7]]
+===== {blank}
+
+Using the results given in the final column of <<table16>>, <<figure23>>
+shows how the correlation coefficient associated with the pair of
+estimates stem:[hat(theta)_j] and stem:[hat(theta)_{10}] of Celsius
+temperatures stem:[theta_j] and stem:[theta_{10} = 20 " °C"] varies
+with stem:[hat(theta)_j], stem:[j = 1, ..., 9]. The correlation coefficient
+has a maximum for stem:[hat(theta)_j = hat(theta)_6] and approaches
+zero as the absolute difference stem:[|hat(theta)_j - hat(theta)_{10}|]
+becomes large. The example demonstrates that quantities measured with
+the same instrument can be highly correlated.
+
+[[figure22]]
+.Standard uncertainty stem:[u(hat(theta)_j)] associated with the estimate stem:[hat(theta)_j] of Celsius temperature stem:[theta_j] (<<sec_9.5.3.6>>)
+image::figure22.png[]
+
+[[figure23]]
+.Correlation coefficient associated with the pair of estimates stem:[hat(theta)_j] and stem:[hat(theta)_{10]} of Celsius temperatures stem:[theta_j] and stem:[theta_{10} = 20 " °C"] (<<sec_9.5.3.7>>)
+image::figure23.png[]

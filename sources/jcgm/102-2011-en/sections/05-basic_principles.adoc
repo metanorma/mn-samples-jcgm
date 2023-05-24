@@ -1,0 +1,435 @@
+
+
+[[sec_5]]
+== Basic principles
+
+[[sec_5.1]]
+=== General
+
+[[sec_5.1.1]]
+==== {blank}
+(((input quantity)))
+(((measurement function,univariate)))
+(((output quantity)))
+(((quantity,real vector)))
+
+In the GUM [<<JCGM_100_2008,clause=4.1>>], a measuring system is modelled
+in terms of a function involving real input quantities
+stem:[X_1, ..., X_N] and a real output quantity stem:[Y] in the form
+of <<eq_1>>, namely stem:[Y = f(bb X)], where
+stem:[bb X -= (X_1, ..., X_N)^{sf(T)}] is referred to as the real
+vector input quantity. This function is known as a real univariate
+measurement function (see <<note_3.9.1>>).
+
+[[sec_5.1.2]]
+==== {blank}
+(((output quantity)))
+(((quantity,real vector)))
+
+In practice, not all measuring systems encountered can be modelled
+as a measurement function in a single scalar output quantity. Such
+systems might instead involve either
+
+. a number of output quantities stem:[Y_1, ..., Y_m] (denoted collectively
+by the real vector output quantity stem:[Y -= (Y_1, ..., Y_m)^{sf(T)})],
+taking the form <<eq_1,droploc%>>, namely stem:[bb Y = bb f(bb X)],
+or
+. the more general form of measurement model, taking the form <<eq_2,droploc%>>,
+namely stem:[bb h(bb Y,bb X) = bb 0].
+
+[[sec_5.1.3]]
+==== {blank}
+(((law of propagation of uncertainty)))
+(((measurement model,complex)))
+(((quantity,complex)))
+
+Further, some or all of the components of stem:[bb X] and
+stem:[bb Y] might correspond to components (real part and imaginary
+part, or magnitude and phase) of complex input quantities. Therefore,
+all measurement models can be considered (without loss of generality)
+as real. However, a treatment that is simpler than the corresponding
+treatment involving real and imaginary parts applies for the complex
+case <<ref14>>. The treatment gives succinct matrix expressions for
+the law of propagation of uncertainty when applied to measurement
+models with complex quantities (complex models). See <<sec_6.4>> and
+<<annexA>>.
+
+[[sec_5.1.4]]
+==== {blank}
+
+This GUM Supplement considers the more general measurement models
+in <<sec_5.1.2>> and <<sec_5.1.3>>.
+
+[[sec_5.2]]
+=== Main stages of uncertainty evaluation
+(((stages of uncertainty evaluation)))
+
+[[sec_5.2.1]]
+==== {blank}
+(((covariance matrix)))
+(((coverage probability)))
+(((coverage region)))
+(((expectation)))
+(((input quantity)))
+(((input quantity,assigning a probability density function (PDF) to)))
+(((measurand)))
+(((measurement function)))
+(((output quantity)))
+(((output quantity,probability density function (PDF) for)))
+(((stages of uncertainty evaluation,formulation)))
+(((stages of uncertainty evaluation,propagation)))
+(((stages of uncertainty evaluation,summarizing)))
+(((vector measurand)))
+
+The main stages of uncertainty evaluation constitute formulation,
+propagation, and summarizing:
+
+. [[item_5.2.1_a]]_Formulation_:
+.. define the output quantity stem:[bb Y], the quantity intended to
+be measured (the vector measurand),
+.. determine the input quantity stem:[bb X] upon which stem:[bb Y]
+depends,
+.. develop a measurement function [stem:[bb f] in <<eq_1,droploc%>>]
+or measurement model <<eq_2,droploc%>> relating stem:[bb X] and
+stem:[bb Y],
+.. on the basis of available knowledge assign PDFs -- Gaussian (normal),
+rectangular (uniform), etc. -- to the components of stem:[bb X]. Assign
+instead a joint PDF to the components of stem:[bb X] that are not
+pairwise independent,
+. [[item_5.2.1_b]]_Propagation_:
++
+--
+propagate the PDFs for the components of stem:[bb X] through the model
+to obtain the (joint) PDF for stem:[bb Y],
+--
+. [[item_5.2.1_c]]_Summarizing_:
++
+--
+use the PDF for stem:[bb Y] to obtain
+--
+.. the expectation of stem:[bb Y], taken as an estimate stem:[bb y]
+of stem:[bb Y],
+.. the covariance matrix of stem:[bb Y], taken as the covariance matrix
+stem:[bb(U_y)] associated with stem:[bb y], and
+.. a coverage region containing stem:[Y] with a specified probability
+stem:[p] (the coverage probability).
+
+[[sec_5.2.2]]
+==== {blank}
+(((coverage probability)))
+(((input quantity,assigning a probability density function (PDF) to)))
+
+The steps in the formulation stage are carried out by the metrologist.
+Guidance on the assignment of PDFs (step 4 of stage <<item_5.2.1_a>>)
+is given in GUM Supplement 1 for some common cases and in <<sec_5.3>>.
+The propagation and summarizing stages, <<item_5.2.1_b>> and <<item_5.2.1_c>>,
+for which detailed guidance is provided here, require no further metrological
+information, and in principle can be carried out to any required numerical
+tolerance for the problem specified in the formulation stage.
+
+NOTE: Once the formulation stage <<item_5.2.1_a>> has been carried
+out, the PDF for stem:[bb Y] is completely specified mathematically,
+but generally the calculation of the expectation, covariance matrix
+and coverage regions require numerical methods that involve a degree
+of approximation.
+
+[[sec_5.3]]
+=== Probability density functions for the input quantities
+
+[[sec_5.3.1]]
+==== General
+(((Gaussian distribution,multivariate)))
+(((indication values)))
+(((input quantity,assigning a probability density function (PDF) to)))
+(((t-distribution,multivariate)))
+
+GUM Supplement 1 gives guidance on the assignment, in some common
+circumstances, of PDFs to the input quantities stem:[X_i] in the formulation
+stage of uncertainty evaluation [<<JCGM_101_2008,clause=6>>]. The
+only multivariate distribution considered in GUM Supplement 1 is the
+multivariate Gaussian [<<JCGM_101_2008,clause=6.4.8>>]. This distribution
+is assigned to the input quantity stem:[bb X] when the estimate
+stem:[bb x] and associated covariance matrix stem:[bb(U_x)] constitute
+the only information available about stem:[bb X]. A further multivariate
+distribution, the multivariate _t_-distribution, is described in <<sec_5.3.2>>.
+This distribution arises when a series of indication values, regarded
+as being obtained independently from a vector quantity with unknown
+expectation and unknown covariance matrix having a multivariate Gaussian
+distribution, is the only information available about stem:[bb X].
+Also see <<sec_6.5.4>>.
+
+[[sec_5.3.2]]
+==== Multivariate _t_-distribution
+(((t-distribution,multivariate)))
+
+[[sec_5.3.2.1]]
+===== {blank}
+(((Bayes' theorem)))
+(((Gaussian distribution,multivariate)))
+(((indication values)))
+
+Suppose that a series of stem:[n] indication values
+stem:[x_1, ..., x_n], each of dimension stem:[N xx 1], is available,
+with stem:[n > N], regarded as being obtained independently from a
+quantity with unknown expectation stem:[bb mu] and covariance matrix
+stem:[sum] of dimension stem:[N xx N] having the multivariate Gaussian
+distribution stem:[N(bb mu, bb sum)]. The desired input quantity
+stem:[bb X] of dimension stem:[N xx 1] is taken to be equal to
+stem:[bb mu]. Then, assigning a non-informative joint prior distribution
+to stem:[bb mu] and stem:[bb sum], and using Bayes' theorem, the marginal
+(joint) PDF for stem:[bb X] is a multivariate _t_-distribution
+stem:[t_nu(bb(bar x), bb S//n)] with stem:[nu = n - N] degrees of
+freedom <<ref11>>, where 
+
+[stem%unnumbered]
+++++
+bar x = 1/n (x_1 + ... + x_n), " " " " bb(S) = 1/nu [(x_1 - bar x)
+(x_1 - bar x)^{sf T} + ... + (x_n - bar x)(x_n - bar x)^{sf T}].
+++++
+
+NOTE: The prior can be assigned in other ways, which would influence
+the degrees of freedom or even the distribution.
+
+[[sec_5.3.2.2]]
+===== {blank}
+
+The PDF for stem:[bb X] is
+
+[stem%unnumbered]
+++++
+g_{bb(X)}(bb(xi)) = {Gamma(n//2)}/{Gamma (nu//2)(pi nu)^{N//2}} xx
+["det"(bb S//n)]^{-1//2} [1 + 1/nu (bb xi - bar(bb x))^{sf T}
+(bb S/n)^{-1} (bb xi - bar (bb x))]^{-n//2}
+++++
+
+where stem:[Gamma(z)] is the gamma function with argument stem:[z].
+
+[[sec_5.3.2.3]]
+===== {blank}
+
+stem:[bb X] has expectation and covariance matrix
+
+[stem%unnumbered]
+++++
+bb E(bb X) = bar(bb x), " " " " bb V(bb X) = nu/{nu - 2} bb(S)/n,
+++++
+
+where stem:[bb E(bb X)] is defined only for stem:[nu > 1] (that is
+for stem:[n > N + 1]) and stem:[bb V(bb X)] only for stem:[nu > 2]
+(that is for stem:[n > N+2]).
+
+[[sec_5.3.2.4]]
+===== {blank}
+(((Cholesky decomposition)))
+(((Gaussian distribution)))
+
+To make a random draw from stem:[t_{nu}(bar(bb(x)),bb S//n)], make
+stem:[N] random draws stem:[z_i], stem:[i = 1, ..., N], from the standard
+Gaussian distribution N(0, 1) and a single random draw stem:[w] from
+stem:[sf(X)_{nu}^2], the chi-squared distribution with nu degrees
+of freedom, and form
+
+[stem%unnumbered]
+++++
+bb (xi = bar bb(x) + L z) sqrt(nu/w), " " " " z = (z_1, ..., z_N)^{sf(T)},
+++++
+
+where stem:[bb L] is the lower triangular matrix of dimension
+stem:[N xx N] given by the Cholesky decomposition
+stem:[bb(S)//n = bb(LL)^{sf T}] <<ref13>>.
+
+NOTE: The matrix stem:[bb L] can be determined as in reference <<ref13>>,
+for example.
+
+[[sec_5.3.3]]
+==== Construction of multivariate probability density functions
+(((copula)))
+
+When the input quantities stem:[X_1, ..., X_N] are correlated, the
+information that typically is available about them are the forms of
+their PDFs (say, that one is Gaussian, another is rectangular, etc.),
+estimates stem:[x_1, ..., x_N], used as their expectations, associated
+standard uncertainties stem:[u(x_1), ..., u(x_N)], used as their standard
+deviations, and covariances associated with pairs of the stem:[x_i].
+A mathematical device known as a copula <<ref20>> can be used to produce
+a PDF for stem:[bb X] consistent with such information. Such a PDF
+is not unique.
+
+[[sec_5.4]]
+=== Propagation of distributions
+(((propagation of distributions)))
+
+[[sec_5.4.1]]
+==== {blank}
+
+<<figure1>> (left) shows an instance of a measurement model in which
+there are stem:[N = 3] mutually independent input quantities
+stem:[bb X = (X_1, X_2, X_3)^{sf(T)}] and stem:[m = 2] output quantities
+stem:[bb Y = (Y_1, Y_2)^{sf(T)}]. The measurement function is
+stem:[bb f = (f_1, f_2)^{sf(T)}]. For stem:[i = 1, 2, 3], stem:[X_i]
+is assigned the PDF stem:[g_{X_i}(xi_i)], and stem:[bb Y] is characterized
+by the joint PDF stem:[g_{bb Y}(eta) -= g_{Y_1, Y_2} (eta_1, eta_2)].
+<<figure1>> (right) adapts this instance to where stem:[X_1] and stem:[X_2]
+are mutually dependent and characterized by the joint PDF
+stem:[g_{X_1,X_2} (xi_1, xi_2)].
+
+[[sec_5.4.2]]
+==== {blank}
+index-range:multistage[(((measurement model,multistage)))]
+
+There might be an additional output quantity, stem:[bb Q] say, depending
+on stem:[bb Y]. stem:[bb Y] would be regarded as an input quantity
+to a further measurement model represented in terms of a measurement
+function stem:[bb t], say:
+
+[stem%unnumbered]
+++++
+bb (Q = t(Y)).
+++++
+
+For example, stem:[bb Y] might be the vector of masses in a set of
+mass standards, and stem:[bb Q] the sums of some of them.
+
+[[figure1]]
+.Propagation of distributions for stem:[N = 3] input quantities and stem:[m = 2] output quantities when the input quantities stem:[X_1, X_2] and stem:[X_3] are mutually independent and (right) when stem:[X_1] and stem:[X_2] are mutually dependent (<<sec_5.4.1>>)
+image::figure1.png[]
+
+[[sec_5.4.3]]
+==== {blank}
+
+Composition of the measurement functions stem:[bb f] and
+stem:[bb t], which are regarded as sub-models, gives stem:[bb Q] as
+a function of stem:[bb X]. It can, however, be desirable to retain
+the individual sub-models when they relate to functionally distinct
+stages. These two sub-models constitute an instance of a multistage
+model (see <<sec_3.12>>).
+
+[[sec_5.4.4]]
+==== {blank}
+
+
+The case when the final stage of a multistage model has an output
+quantity that is a single scalar quantity, and that quantity is the
+only output quantity of interest, can be handled using GUM Supplement
+1.[[multistage]]
+
+[[sec_5.5]]
+=== Obtaining summary information
+
+[[sec_5.5.1]]
+==== {blank}
+(((estimate of input quantities)))
+(((expectation)))
+
+An estimate stem:[bb y] of the output quantity stem:[bb Y] is the
+expectation stem:[bb (E(Y))]. The covariance matrix stem:[bb(U_y)]
+associated with stem:[bb y] is the covariance matrix stem:[bb(V(Y))].
+
+[[sec_5.5.2]]
+==== {blank}
+(((coverage region)))
+(((random variable)))
+
+For a coverage probability stem:[p], a coverage region
+stem:[R_{bb Y}] for stem:[bb Y] satisfies
+
+[stem%unnumbered]
+++++
+int_{R_{bb Y}} g_{bb Y} (bb eta) "d" bb(eta) = p
+++++
+
+NOTE: Although random variables corresponding to some quantities might
+be characterized by distributions having no expectation or covariance
+matrix (see, for example, <<sec_5.3.2>>), a coverage region for
+stem:[bb Y] always exists.
+
+NOTE: Generally there is more than one coverage region for a stated
+coverage probability stem:[p].
+
+[[sec_5.5.3]]
+==== {blank}
+(((coverage interval,probabilistically symmetric)))
+(((coverage interval,shortest)))
+(((coverage region,smallest)))
+
+There is no direct multivariate counterpart of the probabilistically
+symmetric stem:[100p%] coverage interval considered in GUM Supplement
+1. There is, however, a counterpart of the shortest stem:[100p%] coverage
+interval. It is the stem:[100p %] coverage region for stem:[bb Y]
+of smallest hyper-volume.
+
+[[sec_5.6]]
+=== Implementations of the propagation of distributions
+(((propagation of distributions,implementations of)))
+
+[[sec_5.6.1]]
+==== {blank}
+(((law of propagation of uncertainty)))
+(((Monte Carlo method (MCM))))
+(((propagation of distributions,analytical methods for)))
+(((propagation of distributions,numerical methods for)))
+(((propagation of uncertainty)))
+(((stages of uncertainty evaluation,propagation)))
+
+The propagation of distributions can be implemented in several ways:
+
+. analytical methods, that is methods that provide a mathematical
+representation of the PDF for stem:[bb Y],
+. uncertainty propagation based on replacing the model by a first-order
+Taylor series approximation (a generalization of the treatment in
+the GUM [<<JCGM_100_2008,clause=5.1.2>>]) -- the (generalized) law
+of propagation of uncertainty,
+. numerical methods [<<JCGM_100_2008,clause=G.1.5>>] that implement
+the propagation of distributions, specifically using a Monte Carlo
+method (MCM).
+
+NOTE: Solutions expressible analytically are ideal in that they do
+not introduce any approximation. They are applicable in simple cases
+only, however. These methods are not considered further in this Supplement,
+apart from in the examples for comparison purposes.
+
+NOTE: MCM as considered here is regarded as a means for providing
+a numerical representation of the distribution for the vector output
+quantity, rather than a simulation method per se. In the context of
+the propagation stage of uncertainty evaluation, the problem to be
+solved is deterministic, there being no random physical process to
+be simulated.
+
+[[sec_5.6.2]]
+==== {blank}
+(((propagation of uncertainty)))
+
+In uncertainty propagation, the estimate stem:[bb(x = E(X))] of
+stem:[bb X] and the associated covariance matrix stem:[bb(U_x) = bb(V(X))]
+are propagated through (a linearization of) the measurement model.
+This Supplement provides procedures for doing so for the various types
+of model considered.
+
+[[sec_5.6.3]]
+==== {blank}
+(((law of propagation of uncertainty)))
+
+<<figure2>> (left) illustrates the (generalized) law of propagation
+of uncertainty for a measurement model with stem:[N = 3] mutually
+independent input quantities stem:[bb X = (X_1, X_2, X_3)^{sf(T)}]
+and stem:[m = 2] output quantities stem:[bb Y = (Y_1, Y_2)^{sf(T)}].
+stem:[bb X] is estimated by stem:[bb x = (x_1, x_2, x_3)^{sf(T)}]
+with associated standard uncertainties stem:[u(x_1)], stem:[u(x_2)]
+and stem:[u(x_3)]. stem:[bb Y] is estimated by
+stem:[bb y = (y_1, y_2)^{sf(T)}] with associated covariance matrix
+stem:[bb(U_y)]. <<figure2>> (right) applies when stem:[X_1] and stem:[X_2]
+are mutually dependent with covariance stem:[u(x_1, x_2)] associated
+with the estimates stem:[x_1] and stem:[x_2].
+
+[[figure2]]
+.Generalized law of propagation of uncertainty for stem:[N = 3] mutually independent input quantities stem:[X_1], stem:[X_2] and stem:[X_3], and stem:[m = 2] (almost invariably) mutually dependent output quantities, and (right) as left, but for mutually dependent stem:[X_1] and stem:[X_2] (<<sec_5.6.3>>)
+image::figure2.png[]
+
+[[sec_5.6.4]]
+==== {blank}
+(((Monte Carlo method (MCM))))
+
+In MCM, a discrete representation of the (joint) probability distribution
+for stem:[bb X] is propagated through the measurement model to obtain
+a discrete representation of the (joint) probability distribution
+for stem:[bb Y] from which the required summary information is determined.

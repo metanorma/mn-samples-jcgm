@@ -1,0 +1,256 @@
+
+[[annexD]]
+[appendix,obligation="informative"]
+== Glossary of principal symbols
+
+stem:[C_x]:: sensitivity matrix of dimension stem:[m xx N] associated
+with stem:[bb x]
+
+stem:[C_y]:: sensitivity matrix of dimension stem:[m xx m] associated
+with stem:[bb y]
+
+stem:[c]:: stem:[n_{"dig"}]-decimal digit integer
+
+stem:["Corr"(X_i, X_j)]:: correlation for two random variables stem:[X_i]
+and stem:[X_j]
+
+stem:["Cov"(X_i, X_j)]:: covariance for two random variables stem:[X_i]
+and stem:[X_j]
+
+stem:["det"(J)]:: Jacobian determinant
+
+stem:[E(X_i)]:: expectation of random variable stem:[X_i]
+
+stem:[bb(E(X))]:: expectation of random variable stem:[bb X]
+
+stem:[F_{m,n}]:: Fisher-Snedecor distribution with stem:[m] and
+stem:[n - m] degrees of freedom
+
+stem:[f]:: univariate measurement function depending on input quantities
+stem:[bb X]
+
+stem:[bb f]:: multivariate measurement function depending on input
+quantities stem:[bb X]
+
+stem:[bb G]:: discrete representation of distribution function
+stem:[G_{bb Y}(bb eta)] for output quantity stem:[bb Y] from a Monte
+Carlo procedure
+
+stem:[G_{bb X}(bb xi)]:: distribution function with variable
+stem:[bb xi] for input quantity stem:[bb X]
+
+stem:[g_{X_i}(xi_i)]:: probability density function with variable
+stem:[xi_i] for input quantity stem:[X_i]
+
+stem:[g_{bb(X)}(bb(xi))]:: joint (multivariate) probability density
+function with variable stem:[bb xi] for input quantity stem:[bb X]
+
+stem:[G_{bb Y}(bb eta)]:: distribution function with variable
+stem:[bb eta] for output quantity stem:[bb Y]
+
+stem:[g_{bb Y}(bb eta)]:: joint (multivariate) probability density
+function with variable stem:[bb eta] for output quantity
+stem:[bb Y]
+
+stem:[h]:: univariate measurement model expressed as a relationship
+between output quantity stem:[bb Y] and input quantities
+stem:[bb X] on which stem:[bb Y] depends
+
+stem:[bb h]:: multivariate measurement model expressed as a relationship
+between output quantities stem:[bb Y] and input quantities
+stem:[bb X] on which stem:[bb Y] depends
+
+stem:["i"]:: imaginary unit given by stem:["i"^2 = -1]
+
+stem:[bb J]:: Jacobian matrix
+
+stem:[k_p]:: coverage factor for a coverage region in the form of
+a hyper-ellipsoid corresponding to coverage probability stem:[p]
+
+stem:[k_q]:: coverage factor for a coverage region in the form of
+a hyper-rectangle corresponding to coverage probability stem:[p]
+
+stem:[bb L]:: lower triangular matrix
+
+stem:[ell]:: integer in the representation stem:[c xx 10^{ell}] of
+a numerical value, where stem:[c] is an stem:[n_{"dig"}]-decimal digit
+integer
+
+stem:[m]:: number of output quantities stem:[Y_1, ..., Y_m]
+
+stem:[M]:: number of Monte Carlo trials
+
+stem:[bb M]:: matrix of sums of squares and products
+
+stem:[N]:: number of input quantities stem:[X_1, ..., X_N]
+
+stem:[N(0, 1)]:: standard Gaussian distribution
+
+stem:[N(mu, sigma^2)]:: Gaussian distribution with parameters stem:[mu]
+and stem:[sigma^2]
+
+stem:[N(bb mu,bb V)]:: multivariate Gaussian distribution with parameters
+stem:[bb mu] and stem:[bb V]
+
+stem:[n]:: number of indication values in a series
+
+stem:[n_{"dig"}]:: number of significant decimal digits regarded as
+meaningful in a numerical value
+
+stem:["Pr"(z)]:: probability of event stem:[z]
+
+stem:[p]:: coverage probability
+
+stem:[R_{bb Y}]:: coverage region in stem:[m] dimensions for
+stem:[bb Y]
+
+stem:[bb(R_y)]:: correlation matrix of dimension stem:[m xx m] associated
+with stem:[bb y]
+
+stem:[R(0, 1)]:: standard rectangular distribution over the interval
+stem:[[0, 1\]]
+
+stem:[R(a, b)]:: rectangular distribution over the interval
+stem:[[a, b\]]
+
+stem:[r(xi, x_j)]:: correlation coefficient associated with estimates
+stem:[x_i] and stem:[x_j] of input quantities stem:[X_i] and stem:[X_j]
+
+stem:[s]:: standard deviation of a series of stem:[n] indication values
+stem:[x_1, ..., x_n]
+
+stem:[s_z]:: standard deviation associated with average stem:[z] of
+values stem:[z^{(1)}, ..., z^{(h)}] in adaptive Monte Carlo procedure,
+where stem:[z] may denote estimate stem:[y_j] of output quantity stem:[y_j],
+standard uncertainty stem:[u(y_j)] associated with stem:[y_j], maximum
+eigenvalue stem:[lambda_{"max"}] of correlation matrix stem:[bb(R_y)],
+or coverage factor stem:[k_p] of coverage region for stem:[bb Y]
+
+stem:[sf T]:: superscript denoting matrix transpose
+
+stem:[t_{nu}(bb mu,bb S)]:: multivariate _t_-distribution with parameters
+stem:[bb mu] and stem:[bb S], and nu degrees of freedom
+
+stem:[U_p]:: expanded uncertainty corresponding to coverage probability
+stem:[p]
+
+stem:[bb(U_x)]:: covariance matrix associated with estimate
+stem:[bb x] of input quantity stem:[bb X]
+
+stem:[bb(U_y)]:: covariance matrix associated with estimate
+stem:[bb y] of output quantity stem:[bb Y]
+
+stem:[u_x, u(x)]:: standard uncertainty associated with estimate stem:[x]
+of input quantity stem:[X]
+
+stem:[u(x_i)]:: standard uncertainty associated with estimate stem:[x_i]
+of input quantity stem:[X_i]
+
+stem:[u(x_i, x_j)]:: covariance associated with estimates stem:[x_i]
+and stem:[x_j] of input quantities stem:[X_i] and stem:[X_j]
+
+stem:[bb(u(x))]:: vector stem:[(u(x_1), ..., u(x_N))^{sf(T)}] of standard
+uncertainties associated with estimate stem:[bb x] of input quantity
+stem:[bb X]
+
+stem:[V(X_i)]:: variance of random variable stem:[X_i]
+
+stem:[bb V]:: covariance (variance-covariance) matrix
+
+stem:[bb(V(X))]:: covariance matrix of random variable stem:[bb X]
+
+stem:[X_i]:: ith input quantity, regarded as a random variable
+
+stem:[bb X]:: vector stem:[(X_1, ..., X_N)^{sf(T)}] of input quantities
+
+stem:[bar x]:: average of series of stem:[n] indication values
+stem:[x_1, ..., x_n]
+
+stem:[x_i]:: estimate (expectation) of stem:[X_i], or ith indication
+value in series
+
+stem:[bb x]:: estimate (expectation) stem:[(x_1, ..., x_N)^{sf(T)}]
+of stem:[bb X]
+
+stem:[x_{i,r}]:: rth Monte Carlo draw from probability density function
+for stem:[X_i]
+
+stem:[bb x_r]:: rth Monte Carlo draw, containing values
+stem:[x_{1,r}, ..., x_{N,r}], drawn from probability density functions
+for stem:[N] input quantities stem:[X_1, ..., X_N] or from joint probability
+density function for stem:[bb X]
+
+stem:[Y_j]:: jth output quantity, regarded as a random variable
+
+stem:[bb Y]:: vector stem:[(Y_1, ..., Y_m)^{sf(T)}] of output quantities,
+regarded as random variables
+
+stem:[y_j]:: estimate (expectation) of stem:[Y_j]
+
+stem:[bb y]:: estimate (expectation) stem:[(y_1, ..., y_m)^{sf(T)}]
+of stem:[bb Y]
+
+stem:[tilde(bb y)]:: estimate of stem:[bb Y], obtained as average
+of M model values stem:[bb(y_r)] from a Monte Carlo run
+
+stem:[bb y_r]:: rth model value stem:[bb f(bb x_r)]
+
+stem:[dot(bb y)_r]:: rth model value stem:[bb f(bb x_r)] suitably
+transformed
+
+stem:[z^{(h)}]:: hth value in adaptive Monte Carlo procedure, where
+stem:[z] may denote estimate stem:[y_j] of output quantity stem:[Y_j],
+standard uncertainty stem:[u(y_j)] associated with stem:[y_j], maximum
+eigenvalue stem:[lambda_{"max"}] of correlation matrix stem:[bb(R_y)],
+or coverage factor stem:[k_p] for a coverage region for stem:[bb Y]
+
+stem:[alpha]:: probability value
+
+stem:[Gamma(z)]:: gamma function with variable stem:[z]
+
+stem:[delta]:: numerical tolerance associated with numerical value
+
+stem:[bb eta]:: variable describing possible values of output quantity
+stem:[bb Y]
+
+stem:[kappa_p]:: numerical tolerance associated with coverage factor
+stem:[k_p] for a hyper-ellipsoidal coverage region
+
+stem:[kappa_q]:: numerical tolerance associated with coverage factor
+stem:[k_q] for a hyper-rectangular coverage region
+
+stem:[lambda_{"max"}]:: largest eigenvalue of correlation matrix
+
+stem:[lambda_{"min"}]:: smallest eigenvalue of correlation matrix
+
+stem:[mu]:: expectation of quantity characterized by probability distribution
+
+stem:[bb mu]:: expectation of quantity characterized by joint probability
+distribution
+
+stem:[nu]:: degrees of freedom of _t_-distribution or chi-squared
+distribution
+
+stem:[nu_{"eff"}]:: effective degrees of freedom associated with standard
+uncertainty stem:[u(y)]
+
+stem:[xi_i]:: variable describing possible values of input quantity
+stem:[X_i]
+
+stem:[bb xi]:: variable stem:[(xi_1, ..., xi_N)^{sf(T)}] describing
+possible values of input quantity stem:[bb X]
+
+stem:[rho]:: numerical tolerance associated with largest eigenvalue
+stem:[lambda_{"max"}] of a correlation matrix
+
+stem:[sigma]:: standard deviation of quantity characterized by probability
+distribution
+
+stem:[sigma^2]:: variance (squared standard deviation) of quantity
+characterized by probability distribution
+
+stem:[bb sum]:: covariance matrix of vector quantity characterized
+by joint probability distribution
+
+stem:[sf(X)_{nu}^2]:: chi-squared distribution with stem:[nu] degrees
+of freedom

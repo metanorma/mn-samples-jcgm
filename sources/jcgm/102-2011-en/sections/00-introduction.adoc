@@ -1,0 +1,45 @@
+
+== Introduction
+
+The "Guide to the expression of uncertainty in measurement" (GUM)
+[<<JCGM_100_2008>>] is mainly concerned with univariate measurement
+models, namely models having a single scalar output quantity. However,
+models with more than one output quantity arise across metrology.
+The GUM includes examples, from electrical metrology, with three output
+quantities [<<JCGM_100_2008,clause=H.2>>], and thermal metrology,
+with two output quantities [<<JCGM_100_2008,clause=H.3>>]. This Supplement
+to the GUM treats multivariate measurement models, namely models with
+any number of output quantities. Such quantities are generally mutually
+correlated because they depend on common input quantities. A generalization
+of the GUM uncertainty framework [<<JCGM_100_2008,clause=5>>] is used
+to provide estimates of the output quantities, the standard uncertainties
+associated with the estimates, and covariances associated with pairs
+of estimates. The input or output quantities in the measurement model
+may be real or complex.
+
+Supplement 1 to the GUM [<<JCGM_101_2008>>] is concerned with the
+propagation of probability distributions [<<JCGM_101_2008,clause=5>>]
+through a measurement model as a basis for the evaluation of measurement
+uncertainty, and its implementation by a Monte Carlo method
+[<<JCGM_101_2008,clause=7>>]. Like the GUM, it is only concerned with
+models having a single scalar output quantity [<<JCGM_101_2008,clause=1>>].
+This Supplement describes a generalization of that Monte Carlo method
+to obtain a discrete representation of the joint probability distribution
+for the output quantities of a multivariate model. The discrete representation
+is then used to provide estimates of the output quantities, and standard
+uncertainties and covariances associated with those estimates. Appropriate
+use of the Monte Carlo method would be expected to provide valid results
+when the applicability of the GUM uncertainty framework is questionable,
+namely when (a) linearization of the model provides an inadequate
+representation, or (b) the probability distribution for the output
+quantity (or quantities) departs appreciably from a (multivariate)
+Gaussian distribution.
+
+Guidance is also given on the determination of a coverage region for
+the output quantities of a multivariate model, the counterpart of
+a coverage interval for a single scalar output quantity, corresponding
+to a stipulated coverage probability. The guidance includes the provision
+of coverage regions that take the form of hyper-ellipsoids and hyper-rectangles.
+A calculation procedure that uses results provided by the Monte Carlo
+method is also described for obtaining an approximation to the smallest
+coverage region.

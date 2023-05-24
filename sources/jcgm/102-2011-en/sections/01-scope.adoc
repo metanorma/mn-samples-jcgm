@@ -1,0 +1,75 @@
+
+== Scope
+(((covariance)))
+(((coverage probability)))
+(((coverage region)))
+(((coverage region,hyper-ellipsoidal)))
+(((coverage region,hyper-rectangular)))
+(((coverage region,smallest)))
+(((estimate of input quantities)))
+index-range:gum-range[(((Guide to the expression of uncertainty in measurement (GUM))))]
+(((GUM uncertainty framework)))
+(((Monte Carlo method (MCM))))
+(((sensitivity coefficient)))
+(((standard uncertainty)))
+(((Supplement 1 to the GUM)))
+
+This Supplement to the "Guide to the expression of uncertainty in
+measurement" (GUM) is concerned with measurement models having any
+number of input quantities (as in the GUM and GUM Supplement 1) and
+any number of output quantities. The quantities involved might be
+real or complex. Two approaches are considered for treating such models.
+The first approach is a generalization of the GUM uncertainty framework.
+The second is a Monte Carlo method as an implementation of the propagation
+of distributions. Appropriate use of the Monte Carlo method would
+be expected to provide valid results when the applicability of the
+GUM uncertainty framework is questionable.
+
+The approach based on the GUM uncertainty framework is applicable
+when the input quantities are summarized (as in the GUM) in terms
+of estimates (for instance, measured values) and standard uncertainties
+associated with these estimates and, when appropriate, covariances
+associated with pairs of these estimates. Formulae and procedures
+are provided for obtaining estimates of the output quantities and
+for evaluating the associated standard uncertainties and covariances.
+Variants of the formulae and procedures relate to models for which
+the output quantities (a) can be expressed directly in terms of the
+input quantities as measurement functions, and (b) are obtained through
+solving a measurement model, which links implicitly the input and
+output quantities.
+
+The counterparts of the formulae in the GUM for the standard uncertainty
+associated with an estimate of the output quantity would be algebraically
+cumbersome. Such formulae are provided in a more compact form in terms
+of matrices and vectors, the elements of which contain variances (squared
+standard uncertainties), covariances and sensitivity coefficients.
+An advantage of this form of presentation is that these formulae can
+readily be implemented in the many computer languages and systems
+that support matrix algebra.
+
+The Monte Carlo method is based on (i) the assignment of probability
+distributions to the input quantities in the measurement model
+[<<JCGM_101_2008,clause=6>>], (ii) the determination of a discrete
+representation of the (joint) probability distribution for the output
+quantities, and (iii) the determination from this discrete representation
+of estimates of the output quantities and the evaluation of the associated
+standard uncertainties and covariances. This approach constitutes
+a generalization of the Monte Carlo method in Supplement 1 to the
+GUM, which applies to a single scalar output quantity.
+
+For a prescribed coverage probability, this Supplement can be used
+to provide a coverage region for the output quantities of a multivariate
+model, the counterpart of a coverage interval for a single scalar
+output quantity. The provision of coverage regions includes those
+taking the form of a hyper-ellipsoid or a hyper-rectangle. These coverage
+regions are produced from the results of the two approaches described
+here. A procedure for providing an approximation to the smallest coverage
+region, obtained from results provided by the Monte Carlo method,
+is also given.
+
+This Supplement contains detailed examples to illustrate the guidance
+provided.
+
+This document is a Supplement to the GUM and is to be used in conjunction
+with it and GUM Supplement 1. The audience of this Supplement is that
+of the GUM and its Supplements. Also see <<JCGM_104_2009>>.

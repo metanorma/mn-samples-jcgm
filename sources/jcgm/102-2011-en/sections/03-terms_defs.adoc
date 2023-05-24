@@ -1,0 +1,644 @@
+
+== Terms and definitions
+(((International vocabulary of metrology (VIM))))
+
+[.boilerplate]
+=== My predefined text 
+
+For the purposes of this Supplement, the definitions of the GUM and
+the VIM apply unless otherwise indicated. Some of the most relevant
+definitions, adapted or generalized where necessary from these documents,
+are given below. Further definitions are given, including definitions
+taken or adapted from other sources, that are especially important
+for this Supplement.[[gum-range]]
+
+A glossary of principal symbols used is given in <<annexD>>.
+
+[[sec_3.1]]
+=== real quantity
+(((quantity,real)))
+
+quantity whose numerical value is a real number
+
+[[sec_3.2]]
+=== complex quantity
+(((quantity,complex)))
+
+quantity whose numerical value is a complex number
+
+[NOTE]
+====
+A complex quantity stem:[bb(Z)] can be represented by two real quantities
+in Cartesian form
+
+[stem%unnumbered]
+++++
+bb(Z) -= (Z_{"R"}, Z_{"I"})^{sf(T)} = Z_R + "i"Z_I,
+++++
+
+where stem:[sf(T)] denotes "transpose", stem:["i"^2 = -1] and stem:[Z_{"R"}]
+and stem:[Z_{"I"}] are, respectively, the real and imaginary parts
+of stem:[bb(Z)], or in polar form
+
+[stem%unnumbered]
+++++
+Z -= (Z_r, Z_{theta})sf(T) = Z_r (cos Z_{theta} + "i" sin Z_{theta})
+= Z_r e^{"i" Z_{theta}},
+++++
+
+where stem:[Z_r] and stem:[Z_{theta}] are, respectively, the magnitude
+(amplitude) and phase of stem:[bb(Z)].
+====
+
+[[sec_3.3]]
+=== vector quantity
+(((quantity,vector)))
+
+set of quantities arranged as a matrix having a single column
+
+[[sec_3.4]]
+=== real vector quantity
+(((quantity,real vector)))
+
+vector quantity with real components
+
+[example]
+====
+A real vector quantity stem:[bb(X)] containing stem:[N] real quantities
+stem:[X_1, ..., X_N] expressed as a matrix of dimension
+stem:[N xx 1]:
+
+[stem%unnumbered]
+++++
+bb(X) = [(X_1), (vdots), (X_N)] = (X_1, ..., X_N)^{sf(T)} .
+++++
+====
+
+[[sec_3.5]]
+=== complex vector quantity
+(((quantity,complex vector)))
+
+vector quantity with complex components
+
+[example]
+====
+A complex vector quantity stem:[bb(Z)] containing stem:[N] complex
+quantities stem:[bb(Z)_1, ..., bb(Z)_N] expressed as a matrix of dimension
+stem:[N xx 1]:
+
+[stem%unnumbered]
+++++
+bb(Z) = [(bb(Z)_1), (vdots), (bb(Z)_N)] = (bb(Z)_1, ..., bb(Z)_N)^{sf(T)}.
+++++
+====
+
+[[sec_3.6]]
+=== vector measurand
+(((measurand)))
+(((vector measurand)))
+
+vector quantity intended to be measured
+
+NOTE: Generalized from <<JCGM_200_2008,locality:definition=2.3>>.
+
+[[sec_3.7]]
+=== measurement model
+(((measurement model)))
+
+alt:[model of measurement]
+alt:[model]
+
+mathematical relation among all quantities known to be involved in
+a measurement
+
+NOTE: Adapted from <<JCGM_200_2008,locality:definition=2.48>>.
+
+NOTE: A general form of a measurement model is the equation
+stem:[h(Y, X_1, ..., X_N) = 0], where stem:[Y], the output quantity
+in the measurement model, is the measurand, the quantity value of
+which is to be inferred from information about input quantities
+stem:[X_1, ..., X_N] in the measurement model.
+
+NOTE: In cases where there are two or more output quantities in a
+measurement model, the measurement model consists of more than one
+equation.
+
+[[sec_3.8]]
+=== multivariate measurement model
+(((measurement model,multivariate)))
+(((measurement model,univariate)))
+
+alt:[multivariate model]
+
+measurement model in which there is any number of output quantities
+
+[[note_3.8_1]]
+[NOTE]
+====
+The general form of a multivariate measurement model is the equations
+
+[stem%unnumbered]
+++++
+h_1(Y_1, ..., Y_m, X_1, ..., X_N) = 0, " " ...,
+h_m(Y_1, ..., Y_m, X_1, ..., X_N) = 0,
+++++
+
+where stem:[Y_1, ..., Y_m], the output quantities, stem:[m] in number,
+in the multivariate measurement model, constitute the measurand, the
+quantity values of which are to be inferred from information about
+input quantities stem:[X_1, ..., X_N] in the multivariate measurement
+model.
+====
+
+[NOTE]
+====
+A vector representation of the general form of multivariate measurement
+model is
+
+[stem%unnumbered]
+++++
+bb(h) (bb(Y), bb(X)) = 0,
+++++
+
+where stem:[bb(Y) = (Y_1, ..., Y_m)^{sf(T)}] and
+stem:[bb(h) = (h_1, ..., h_m)^{sf(T)}] are matrices of dimension
+stem:[m xx 1].
+====
+
+NOTE: If, in <<note_3.8_1>>, stem:[m], the number of output quantities,
+is unity, the model is known as a univariate measurement model.
+
+[[sec_3.9]]
+=== multivariate measurement function
+(((measurement function,multivariate)))
+(((measurement function,univariate)))
+
+alt:[multivariate function]
+
+function in a multivariate measurement model for which the output
+quantities are expressed in terms of the input quantities
+
+[[note_3.9.1]]
+NOTE: Generalized from <<JCGM_200_2008,locality:definition=2.49>>.
+
+[[note_3.9.2]]
+NOTE: If a measurement model stem:[bb(h)(bb(Y), bb(X)) = 0] can explicitly
+be written as stem:[bb(Y) = bb(f)(bb(X))], where
+stem:[bb(X) = (X_1, ..., X_N)^{sf(T)}] are the input quantities, and
+stem:[bb(Y) = (Y_1, ..., Y_m)^{sf(T)}] are the output quantities,
+stem:[bb(f) = (f_1, ..., f_m)^{sf(T)}] is the multivariate measurement
+function. More generally, stem:[bb(f)] may symbolize an algorithm,
+yielding for input quantity values stem:[bb(x) = (x_1, ..., x_N)^{sf(T)}]
+a corresponding unique set of output quantity values
+stem:[y_1 = f_1(bb(x)), ..., y_m = f_m(bb(x))].
+
+NOTE: If, in note <<note_3.9.2>>, stem:[m], the number of output quantities,
+is unity, the function is known as a univariate measurement function.
+
+[[sec_3.10]]
+=== real measurement model
+(((measurement model,real)))
+
+alt:[real model]
+
+measurement model, generally multivariate, involving real quantities
+
+[[sec_3.11]]
+=== complex measurement model
+(((measurement model,complex)))
+
+alt:[complex model]
+
+measurement model, generally multivariate, involving complex quantities
+
+[[sec_3.12]]
+=== multistage measurement model
+(((calibration)))
+(((measurement model,multistage)))
+
+alt:[multistage model]
+
+measurement model, generally multivariate, consisting of a sequence
+of sub-models, in which output quantities from one sub-model become
+input quantities to a subsequent sub-model
+
+NOTE: Only at the final stage of a multistage measurement model might
+it be necessary to consider a coverage region for the output quantities
+based on the joint probability density function for those quantities.
+
+[example]
+A common instance in metrology is the following pair of measurement
+sub-models in the context of calibration. The first sub-model has
+input quantities whose measured values are provided by measurement
+standards and corresponding indication values, and as output quantities
+the parameters in a calibration function. This sub-model specifies
+the manner in which the output quantities are obtained from the input
+quantities, for example by solving a least-squares problem. The second
+sub-model has as input quantities the parameters in the calibration
+function and a quantity realized by a further indication value and
+as output quantity the quantity corresponding to that input quantity.
+
+[[sec_3.13]]
+=== joint distribution function
+(((distribution function)))
+alt:[distribution function]
+
+function giving, for every value stem:[bb(xi) = (xi_1, ..., xi_N)^{sf(T)}],
+the probability that each element stem:[X_i] of the random variable
+stem:[bb(X)] be less than or equal to stem:[xi_i]
+
+[NOTE]
+====
+The joint distribution for the random variable stem:[bb(X)] is denoted
+by stem:[G_{bb(X)}(bb(xi))], where
+
+[stem%unnumbered]
+++++
+G_{bb(X)}(bb(xi)) = "Pr"(X_1 <= xi_1, ..., X_N <= xi_N) .
+++++
+====
+
+[[sec_3.14]]
+=== joint probability density function
+(((probability density function (PDF))))
+
+alt:[probability density function]
+
+non-negative function stem:[g_{bb(X)}(bb(xi))] satisfying
+
+[stem%unnumbered]
+++++
+G_{bb(X)}(bb(xi)) = int_{-oo}^{xi_1} ... int_{-oo}^{xi_N} g_{bb(X)}(z) "d"z_N ... "d"z_1
+++++
+
+[[sec_3.15]]
+=== marginal probability density function
+(((probability density function (PDF),marginal)))
+
+for a random variable stem:[X_i], a component of stem:[bb(X)] having
+probability density function stem:[g_{bb(X)}(bb(xi))], the probability
+density function for stem:[X_i] alone:
+
+[stem%unnumbered]
+++++
+g_{X_i} (xi_i) = int_{-oo}^{oo} ... int_{-oo}^{oo} g_{bb(X)}(bb(xi)) "d"xi_N cdots "d"xi_{i+1} "d"xi_{i-1} cdots "d"xi_1
+++++
+
+NOTE: When the components stem:[X_i] of stem:[bb(X)] are independent,
+stem:[g_{bb(X)}(bb(xi)) = g_{X_1} (xi_1)g_{X_2} (xi_2) cdots g_{X_N} (xi_N)].
+
+[[sec_3.16]]
+=== expectation
+
+property of a random variable stem:[X_i], a component of stem:[bb(X)]
+having probability density function stem:[g_{bb(X)}(bb(xi))], given
+by
+
+[stem%unnumbered]
+++++
+E(X_i) = int_{-oo}^{oo} cdots int_{-oo}^{oo} xi_i g_{bb(X)}(bb(xi)) "d"xi_N cdots "d"xi_1 = int_{-oo}^{oo} xi_i g_{X_i} (xi_i) "d"xi_i
+++++
+
+NOTE: Generalized from <<JCGM_101_2008,locality:definition=3.6>>.
+
+NOTE: The expectation of the random variable stem:[bb(X)] is
+stem:[bb(E)(bb(X)) = (E(X_1), ..., E(X_N))^{sf(T)}], a matrix of dimension
+stem:[N xx 1].
+
+[[sec_3.17]]
+=== variance
+(((variance)))
+
+property of a random variable stem:[X_i], a component of stem:[bb(X)]
+having probability density function stem:[g_{bb(X)}(bb(xi))], given
+by
+
+[stem%unnumbered]
+++++
+V (X_i) = int_{-oo}^{oo} cdots int_{-oo}^{oo} [xi_i - E(X_i)]^2 g_{bb(X)}(bb(xi)) "d"xi_N cdots "d"xi_1 = int_{-oo}^{oo} [xi_i - E(X_i)]^2 g_{X_i} (xi_i) "d"xi_i
+++++
+
+NOTE: Generalized from <<JCGM_101_2008,locality:definition=3.7>>.
+
+[[sec_3.18]]
+=== covariance
+(((covariance)))
+
+property of a pair of random variables stem:[X_i] and stem:[X_j],
+components of stem:[bb(X)] having probability density function
+stem:[g_{bb(X)}(bb(xi))], given by
+
+[stem%unnumbered]
+++++
+"Cov"(X_i, X_j) = "Cov"(X_j, X_i) = int_{-oo}^{oo} cdots int_{-oo}^{oo} [xi_i - E(X_i)][xi_j - E(X_j)]g_{bb(X)}(bb(xi)) "d"xi_N cdots "d"xi_1
+++++
+
+[stem%unnumbered]
+++++
+= int_{-oo}^{oo} int_{-oo}^{oo} [xi_i - E(X_i)][xi_j - E(X_j)]g_{X_i, X_j} (xi_i, xi_j) "d"xi_i "d"xi_j,
+++++
+
+where stem:[g_{X_i, X_j}(xi_i, xi_j)] is the joint PDF for the two
+random variables stem:[X_i] and stem:[X_j]
+
+NOTE: Generalized from <<JCGM_101_2008,locality:definition=3.10>>.
+
+NOTE: The covariance matrix of the random variable stem:[bb(X)] is
+stem:[bb(V(X))], a symmetric positive semi-definite matrix of dimension
+stem:[N xx N] containing the covariances stem:["Cov"(X_i, X_j)]. Certain
+operations involving stem:[bb(V(X))] require positive definiteness.
+
+[[sec_3.19]]
+=== ((correlation))
+
+property of a pair of random variables stem:[X_i] and stem:[X_j],
+components of stem:[bb X] having probability density function stem:[g_{bb(X)}(bb(xi))],
+given by
+
+[stem%unnumbered]
+++++
+"Corr"(X_i, X_j) = "Corr"(X_j, X_i) = {"Cov"(X_i, X_j)}/sqrt{V (X_i)V (X_j)}
+++++
+
+NOTE: stem:["Corr"(X_i, X_j)] is a quantity of dimension one.
+
+[[sec_3.20]]
+=== measurement covariance matrix
+(((Cholesky factor)))
+(((covariance matrix)))
+(((covariance matrix,repairing of)))
+(((eigendecomposition)))
+
+alt:[covariance matrix]
+
+symmetric positive semi-definite matrix of dimension stem:[N xx N]
+associated with an estimate of a real vector quantity of dimension
+stem:[N xx 1], containing on its diagonal the squares of the standard
+uncertainties associated with the respective components of the estimate
+of the quantity, and, in its off-diagonal positions, the covariances
+associated with pairs of components of that estimate
+
+NOTE: Adapted from <<JCGM_101_2008,definition 3.11>>.
+
+[NOTE]
+====
+A covariance matrix stem:[bb(U_x)] of dimension stem:[N xx N] associated
+with the estimate stem:[bb(x)] of a quantity stem:[bb(X)] has the
+representation
+
+[stem%unnumbered]
+++++
+bb(U_x) = [(u(x_1,x_1),cdots,u(x_1,x_N)),(vdots,ddots,vdots),(u(x_N,x_1),cdots,u(x_N,x_N))] =
+[(u^2(x_1),cdots,u(x_1,x_N)),(vdots,ddots,vdots),(u(x_N,x_1),cdots,u^2(x_N))],
+++++
+
+where stem:[u(xi, xi) = u^2(xi)] is the variance (squared standard
+uncertainty) associated with stem:[xi] and stem:[u(xi, x_j)] is the
+covariance associated with stem:[xi] and stem:[x_j]. When elements
+stem:[X_i] and stem:[X_j] of stem:[bb(X)] are uncorrelated,
+stem:[u(xi, x_j) = 0].
+====
+
+NOTE: In GUM Supplement 1 [<<JCGM_101_2008>>], the measurement covariance
+matrix is termed uncertainty matrix.
+
+[NOTE]
+====
+Some numerical difficulties can occasionally arise when working with
+covariance matrices. For instance, a covariance matrix stem:[bb(U_x)]
+associated with a vector estimate stem:[bb(x)] may not be positive
+definite. That possibility can be a result of the way stem:[bb(U_x)]
+has been calculated. As a consequence, the Cholesky factor of stem:[bb(U_x)]
+may not exist. The Cholesky factor is used in working numerically
+with stem:[bb(U_x)] <<ref7>>; also see <<annexB>>. Moreover, the variance
+associated with a linear combination of the elements of stem:[bb(x)]
+could be negative, when otherwise it would be expected to be small
+and positive. In such a situation procedures exist for "repairing"
+stem:[bb(U_x)] such that the repaired covariance matrix is positive
+definite. As a result, the Cholesky factor would exist, and variances
+of such linear combinations would be positive as expected. Such a
+procedure is given by the following variant of that in reference <<ref27>>.
+Form the eigendecomposition
+
+[stem%unnumbered]
+++++
+bb(U_x) = bb(Q D Q^{sf(T)}),
+++++
+
+where stem:[bb(Q)] is orthonormal and stem:[bb(D)] is the diagonal
+matrix of eigenvalues of stem:[bb(U_x)]. Construct a new diagonal
+matrix, stem:[bb(D)'] say, which equals stem:[bb(D)], but with elements
+that are smaller than stem:[d_{"min"}] replaced by stem:[d_{"min"}].
+Here, stem:[d_{"min"}] equals the product of the unit roundoff of
+the computer used and the largest element of stem:[bb(D)]. Subsequent
+calculations would use a repaired covariance matrix stem:[bb(U_x)']
+formed from
+
+[stem%unnumbered]
+++++
+bb(U_x)' = bb(Q) bb(D)' bb(Q)^{sf(T)} .
+++++
+====
+
+NOTE: Certain operations involving stem:[bb(U_x)] require positive
+definiteness.
+
+[[sec_3.21]]
+=== ((correlation matrix))
+(((correlation coefficient)))
+(((reporting numerical values)))
+
+symmetric positive semi-definite matrix of dimension stem:[N xx N]
+associated with an estimate of a real vector quantity of dimension
+stem:[N xx 1], containing the correlations associated with pairs of
+components of the estimate
+
+[NOTE]
+====
+A correlation matrix stem:[bb(bb(R_x))] of dimension stem:[N xx N]
+associated with the estimate stem:[bb(x)] of a quantity stem:[bb(X)]
+has the representation
+
+[stem%unnumbered]
+++++
+bb(R_x) = [(r(x_1, x_1), cdots, r(x_1, x_N)),(vdots, ddots, vdots), (r(x_N, x_1), cdots, r(x_N, x_N))],
+++++
+
+where stem:[r(x_i, x_i) = 1] and stem:[r(x_i, x_j)] is the correlation
+associated with stem:[x_i] and stem:[x_j]. When elements stem:[X_i]
+and stem:[X_j] of stem:[bb(X)] are uncorrelated,
+stem:[r(x_i, x_j) = 0].
+====
+
+NOTE: Correlations are also known as correlation coefficients.
+
+[[note_3.21_3]]
+[NOTE]
+====
+stem:[bb(R_x)] is related to stem:[bb(U_x)] (see <<sec_3.20>>) by
+
+[stem%unnumbered]
+++++
+bb(U_x) = bb(D_x R_x D_x),
+++++
+
+where stem:[D_x] is a diagonal matrix of dimension stem:[N xx N] with
+diagonal elements stem:[u(x_1), ..., u(x_N)]. Element stem:[(i, j)]
+of stem:[bb(U_x)] is given by
+
+[stem%unnumbered]
+++++
+u(x_i, x_j) = r(x_i, x_j) u(x_i) u(x_j) .
+++++
+====
+
+NOTE: A correlation matrix stem:[bb(R_x)] is positive definite or
+singular, if and only if the corresponding covariance matrix stem:[bb(U_x)]
+is positive definite or singular, respectively. Certain operations
+involving stem:[bb(R_x)] require positive definiteness.
+
+[[note_3.21_5]]
+NOTE: When presenting numerical values of the off-diagonal elements
+of a correlation matrix, rounding to three places of decimals is often
+sufficient. However, if the correlation matrix is close to being singular,
+more decimal digits need to be retained in order to avoid numerical
+difficulties when using the correlation matrix as input to an uncertainty
+evaluation. The number of decimal digits to be retained depends on
+the nature of the subsequent calculation, but as a guide can be taken
+as the number of decimal digits needed to represent the smallest eigenvalue
+of the correlation matrix with two significant decimal digits. For
+a correlation matrix of dimension stem:[2 xx 2], the eigenvalues
+stem:[lambda_{"max"}] and stem:[lambda_{"min"}] are stem:[1 - |r|],
+the smaller, stem:[lambda_{"min"}], being stem:[1 - |r|], where stem:[r]
+is the off-diagonal element of the matrix. If a correlation matrix
+is known to be singular prior to rounding, rounding towards zero reduces
+the risk that the rounded matrix is not positive semi-definite.
+
+[[sec_3.22]]
+=== sensitivity matrix
+(((sensitivity matrix)))
+
+matrix of partial derivatives of first order for a real measurement
+model with respect to either the input quantities or the output quantities
+evaluated at estimates of those quantities
+
+NOTE: For stem:[N] input quantities and stem:[m] output quantities,
+the sensitivity matrix with respect to stem:[bb(X)] has dimension
+stem:[m xx N] and that with respect to stem:[bb(Y)] has dimension
+stem:[m xx m].
+
+[[sec_3.23]]
+=== coverage interval
+(((coverage interval)))
+(((coverage interval,probabilistically symmetric)))
+(((coverage interval,shortest)))
+
+interval containing the true quantity value with a stated probability,
+based on the information available
+
+NOTE: Adapted from <<JCGM_101_2008,locality:definition=3.12>>.
+
+NOTE: The probabilistically symmetric coverage interval for a scalar
+quantity is the interval such that the probability that the true quantity
+value is less than the smallest value in the interval is equal to
+the probability that the true quantity value is greater than the largest
+value in the interval [adapted from <<JCGM_101_2008,clause=3.15>>].
+
+NOTE: The shortest coverage interval for a quantity is the interval
+of shortest length among all coverage intervals for that quantity
+having the same coverage probability
+[adapted from <<JCGM_101_2008,clause=3.16>>].
+
+[[sec_3.24]]
+=== coverage region
+(((coverage region)))
+
+region containing the true vector quantity value with a stated probability,
+based on the information available
+
+[[sec_3.25]]
+=== coverage probability
+(((coverage probability)))
+(((level of confidence)))
+
+probability that the true quantity value is contained within a specified
+coverage interval or coverage region
+
+NOTE: Adapted from <<JCGM_101_2008,locality:definition=3.13>>.
+
+NOTE: The coverage probability is sometimes termed "level of confidence"
+[<<JCGM_100_2008,clause=6.2.2>>].
+
+[[sec_3.26]]
+=== smallest coverage region
+(((coverage region,smallest)))
+(((expectation)))
+
+coverage region for a vector quantity with minimum (hyper-)volume
+among all coverage regions for that quantity having the same coverage
+probability
+
+NOTE: For a single scalar quantity, the smallest coverage region is
+the shortest coverage interval for the quantity. For a bivariate quantity,
+it is the coverage region with the smallest area among all coverage
+regions for that quantity having the same coverage probability.
+
+[[sec_3.27]]
+=== multivariate Gaussian distribution
+(((Gaussian distribution,multivariate)))
+
+probability distribution of a random variable stem:[bb(X)] of dimension
+stem:[N xx 1] having the joint probability density function
+
+[stem%unnumbered]
+++++
+g_{bb(X)}(bb(xi)) = 1/{(2pi)^{N//2} ["det"(bb V)]^{1//2}}
+exp(-1/2 (bb xi - mu)^{sf(T)} bb(V)^{-1} (bb xi - bb mu))
+++++
+
+NOTE: stem:[bb mu] is the expectation and stem:[bb V] is the covariance
+matrix of stem:[bb X], which must be positive definite.
+
+[[sec_3.28]]
+=== multivariate _t_-distribution
+(((chi-squared distribution)))
+(((Gaussian distribution)))
+(((t-distribution,multivariate)))
+
+probability distribution of a random variable stem:[bb X] of dimension
+stem:[N xx 1] having the joint probability density function
+
+[stem%unnumbered]
+++++
+g_{bb(X)}(bb(xi)) = {Gamma ({nu + N}/2)}/{Gamma (nu/2)(pi nu)^{N//2}} xx 1/{["det"(bb V)]^{1//2}} [1 + 1/nu (bb xi - bb mu)^{sf(T)} bb V^{-1} (bb xi - bb mu)]^{-(nu + N)//2},
+++++
+
+with parameters stem:[bb mu], stem:[bb V] and stem:[nu], where
+stem:[bb V] is symmetric positive definite and
+
+[stem%unnumbered]
+++++
+Gamma(z) = int_0^{oo} t^{z-1} e^{-t} "d"t, " " " " z > 0,
+++++
+
+is the gamma function
+
+NOTE: The multivariate _t_-distribution is based on the observation
+that if a vector random variable stem:[bb Q] of dimension
+stem:[N xx 1] and a scalar random variable stem:[W] are independent
+and have respectively a Gaussian distribution with zero expectation
+and positive definite covariance matrix stem:[bb V] of dimension
+stem:[N xx N], and a chi-squared distribution with stem:[nu] degrees
+of freedom, and stem:[(nu//W)^{1//2} bb Q = bb X - bb mu], then
+stem:[bb X] has the given probability distribution.
+
+NOTE: stem:[g_{bb(X)}(bb(xi))] does not factorize into the product
+of stem:[N] probability density functions even when stem:[bb V] is
+a diagonal matrix. Generally, the components of stem:[bb X] are statistically
+dependent random variables.
+
+[example]
+When stem:[N = 2], stem:[nu = 5], and stem:[bb V] is the identity
+matrix of dimension stem:[2 xx 2], the probability that
+stem:[X_1 > 1] is 18 %, while the conditional probability that
+stem:[X_1 > 1] given that stem:[X_2 > 2] is 26 %.

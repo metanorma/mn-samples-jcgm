@@ -1,0 +1,49 @@
+
+[[annexB]]
+[appendix,obligation="informative"]
+== Evaluation of sensitivity coefficients and covariance matrix for multivariate measurement models
+(((covariance matrix)))
+(((measurement model,multivariate)))
+(((sensitivity coefficient)))
+
+[[sec_B.1]]
+=== {blank}
+(((Cholesky factor)))
+
+When recognized concepts from numerical linear algebra <<ref13>> are
+used, a numerically stable way to form stem:[bb(U_y)], the solution
+of the linear system of <<eq_8>> is as follows.
+
+. form the Cholesky factor stem:[bb(R_x)] of stem:[bb(U_x)], that
+is the upper triangular matrix such that
+stem:[bb(R_x)^{sf(T)} bb(R_x) = bb(U_x)];
+
+. factorize stem:[bb(C_x)] as the product
+stem:[bb(C_x) = bb(Q_x) bb(W_x)], where stem:[bb(Q_x)] is an orthogonal
+matrix and stem:[bb(W_x)] is upper triangular,
+
+. factorize stem:[bb(C_y)] as the product
+stem:[bb(C_y) = bb(L_y) bb(W_y)], where stem:[bb(L_y)] is lower triangular
+and stem:[bb(W_y)] is upper triangular;
+
+. solve the matrix equation stem:[bb(W_y)^{sf(T)} bb M_1 = bb I] for
+stem:[bb M_1],
+
+. solve stem:[bb(L_y)^{sf(T)} bb M_2 = bb M_1] for stem:[bb M_2],
+
+. form stem:[bb M_3 = Q_x^{sf(T)}] stem:[bb M_2];
+
+. form stem:[bb K = W_x^{sf(T)}] stem:[bb M_3];
+
+. form stem:[bb M = bb(R_x K)];
+
+. orthogonally triangularize stem:[bb M] to give the upper triangular
+matrix stem:[bb R],
+
+. form stem:[bb(U_y) = bb(R)^{sf(T)} bb(R)].
+
+[[sec_B.2]]
+=== {blank}
+
+This procedure can be verified using elementary matrix algebra. Further
+details are available <<ref7>>.

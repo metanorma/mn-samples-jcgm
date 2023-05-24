@@ -1,0 +1,140 @@
+
+[[annexA]]
+[appendix,obligation="informative"]
+== Derivatives of complex multivariate measurement functions
+(((measurement function,complex)))
+
+[[sec_A.1]]
+=== {blank}
+(((quantity,complex)))
+
+In this annex consideration is given to the algebraically efficient
+determination of the partial derivatives of first order of the measurement
+function f in a complex multivariate measurement model
+
+[stem%unnumbered]
+++++
+bb(Y) = bb(f(X)),
+++++
+
+where
+
+[stem%unnumbered]
+++++
+bb(X) = (bb X_1, ...,bb X_N)^{sf(T)}, " " " " bb(Y) = (bb Y_1, ...,bb Y_m)^{sf(T)},
+++++
+
+and
+
+[stem%unnumbered]
+++++
+bb(f) = (bb f_1, ...,bb f_m)^{sf(T)},
+++++
+
+stem:[X_i] denoting the complex quantity stem:[X_{i,"R"} + "i"X_{i,"I"}],
+with stem:[X_{i,"R"}] and stem:[X_{i,"I"}] real scalar quantities,
+and stem:["i"^2 = -1], and similarly for stem:[bb Y_j] and
+stem:[bb f_j].
+
+[[sec_A.2]]
+=== {blank}
+(((covariance matrix)))
+
+Let stem:[bb(U_x)] denote the covariance matrix of dimension
+stem:[2N xx 2N] associated with an estimate stem:[bb x] of
+stem:[bb X]. stem:[bb(U_x)] takes the form
+
+[stem%unnumbered]
+++++
+bb(U_x) = [(bb(U(x_1, x_1)), cdots, bb(U(x_1, x_N))),(vdots,ddots,vdots),(bb(U(x_N, x_1)), cdots, bb(U(x_N, x_N)))],
+++++
+
+where
+
+[stem%unnumbered]
+++++
+bb(U(x_i, x_j)) = [(u(x_{i,"R"}, x_{j,"R"}), u(x_{i,"R"}, x_{j,"I"})),(u(x_{i,"I"}, x_{j,"R"}), u(x_{i,"I"}, x_{j,"I"}))]
+++++
+
+is the covariance matrix of dimension stem:[2 xx 2] associated with
+the (complex) estimates stem:[x_i] and stem:[x_j] of stem:[X_i] and
+stem:[X_j], respectively.
+
+[[sec_A.3]]
+=== {blank}
+(((covariance matrix)))
+(((law of propagation of uncertainty)))
+
+The covariance matrix
+
+[stem%unnumbered]
+++++
+bb(U_y) = [(bb(U(y_1, y_1)), cdots, bb(U(y_1, y_m))),(vdots,ddots,vdots),(bb(U(y_m, y_1)), cdots, bb(U(y_m; y_m)))],
+++++
+
+of dimension stem:[2m xx 2m], where
+
+[stem%unnumbered]
+++++
+bb(U(y_{ell}, y_j)) = [(u(y_{ell,"R"}, y_{j,"R"}), u(y_{ell,"R"}, y_{j,"I"})),(u(y_{ell,"I"}, y_{j,"R"}), u(y_{ell,"I"}, y_{j,"I"}))],
+++++
+
+associated with the estimate
+
+[stem%unnumbered]
+++++
+bb y = bb(f(x))
+++++
+
+of stem:[bb Y] is given by the generalized law of propagation of uncertainty
+
+[[eq_A.1]]
+[stem]
+++++
+bb(U_y) = bb(C_x) bb(U_x) bb(C_x)^{sf(T)} .
+++++
+
+[[sec_A.4]]
+=== {blank}
+(((sensitivity matrix)))
+
+stem:[bb(C_x)] is the sensitivity matrix of dimension
+stem:[2m xx 2N] given by evaluating
+
+[stem%unnumbered]
+++++
+bb(C_x) = [(bb C_{1,1}, cdots,bb C_{1,N}),(vdots,ddots,vdots),(bb C_{m,1}, cdots,bb C_{m,N})]
+++++
+
+at stem:[bb X = bb x], where stem:[bb C_{j,i}] is the matrix of dimension
+stem:[2 xx 2] of the partial derivatives of first order of the real
+and imaginary parts of stem:[bb f_j] with respect to the real and
+imaginary parts of stem:[bb X_i].
+
+[stem%unnumbered]
+++++
+bb C_{j,i} = [({del f_{j,"R"}}/{del bb X_{i,"R"}},{del f_{j,"R"}}/{del bb X_{i,"I"}}),({del f_{j,"I"}}/{del bb X_{i,"R"}},{del f_{j,"I"}}/{del bb X_{i,"I"}})] .
+++++
+
+[[sec_A.5]]
+=== {blank}
+
+For any complex scalar quantity stem:[bb Q = Q_{"R"} + "i"Q_{"I"}],
+consider the matrix representation of dimension stem:[2 xx 2] for
+stem:[bb Q] <<ref14>>.
+
+[stem%unnumbered]
+++++
+bb(M(Q)) = [(Q_{"R"}, -Q_{"I"}),(Q_{"I"}, Q_{"R"})]
+++++
+
+Then, stem:[bb C_{j,i}] can be expressed as
+
+[stem%unnumbered]
+++++
+bb C_{j,i} = bb M ({del bb f_i}/{del bb X_i}),
+++++
+
+and provides the basis for an algebraically efficient means for forming
+the partial derivatives: only the complex derivatives of first order
+of the stem:[bb f_j] with respect to the stem:[bb X_i] need be formed.

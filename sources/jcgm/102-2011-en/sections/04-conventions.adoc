@@ -1,0 +1,253 @@
+
+[[sec_4]]
+== Conventions and notation
+
+For the purposes of this Supplement the following conventions and
+notation are adopted.
+
+[[sec_4.1]]
+=== {blank}
+(((quantity)))
+(((random variable)))
+(((state of knowledge)))
+(((Type A and Type B uncertainty evaluation)))
+
+In the GUM [<<JCGM_100_2008,clause=4.1.1,note=1>>], for economy of
+notation the same (upper case) symbol is used for
+
+. the (physical) quantity, which is assumed to have an essentially
+unique true value, and
+. the corresponding random variable.
+
+NOTE: The random variable has different roles in Type A and Type B
+uncertainty evaluations. In a Type A uncertainty evaluation, the random
+variable represents "...the possible outcome of an observation
+of the quantity". In a Type B uncertainty evaluation, the probability
+distribution for the random variable describes the state of knowledge
+about the quantity.
+
+This ambiguity in the symbol is harmless in most circumstances.
+
+In this Supplement, as well as in Supplement 1, for the input quantities
+subjected to a Type A uncertainty evaluation, the same (uppercase)
+symbol is used for three concepts, namely
+
+. the quantity,
+. [[item_4.1_b]]the random variable representing the possible outcome
+of an observation of the quantity, and
+. [[item_4.1_c]]the random variable whose probability distribution
+describes the state of knowledge about the quantity.
+
+This further ambiguity between two distinct random variables is not
+present in the GUM and is a potential source of misunderstanding.
+In particular, it might be believed that the Monte Carlo procedure
+adopted in this Supplement, as well as in Supplement 1, complies with
+the procedure suggested in GUM 4.1.4 note. Although the two procedures
+are analogous in principle, in that both are based on repeatedly evaluating
+the model for individual input quantity values drawn from a probability
+distribution, they are different in practice, in that draws are made
+from different distributions. In GUM 4.1.4 note, draws are made from
+the frequency distribution for the random variable <<item_4.1_b>>.
+In the Supplements, draws are made from the probability distribution
+for the random variable <<item_4.1_c>>. The former approach is not
+recommended in most experimental situations <<ref2>>.
+
+[[sec_4.2]]
+=== {blank}
+(((input quantity)))
+
+The input quantities in a measurement model are generically denoted
+by stem:[X_1, ..., X_N], and collectively by
+stem:[X = (X_1, ..., X_N)^{sf(T)}], a matrix of dimension
+stem:[N xx 1], stem:[sf(T)] denoting "transpose".
+
+[[sec_4.3]]
+=== {blank}
+(((output quantity)))
+
+Likewise the output quantities in a measurement model are generically
+denoted by stem:[Y_1, ..., Y_m], and collectively by
+stem:[bb Y = (Y_1, ..., Y_m)^{sf(T)}], a matrix of dimension
+stem:[m xx 1].
+
+[[sec_4.4]]
+=== {blank}
+(((measurement function,multivariate)))
+(((measurement model)))
+
+When the stem:[Y_i] are expressed directly as formulae in
+stem:[bb X], the measurement model can be written as
+
+[[eq_1]]
+[stem]
+++++
+bb Y = bb f(bb X),
+++++
+
+where stem:[bb f] is the multivariate measurement function. Equivalently
+(see <<sec_3.9>>), the measurement model can be expressed as
+
+[stem%unnumbered]
+++++
+Y_1 = f_1(bb X), ..., Y_m = f_m(bb X),
+++++
+
+where stem:[f_1(bb X), ..., f_m(bb X)] are components of
+stem:[bb f(bb X)].
+
+[[sec_4.5]]
+=== {blank}
+(((measurement model)))
+
+When the stem:[Y_i] are not expressed directly as formulae in
+stem:[bb X], the measurement model is represented by the equation
+
+[[eq_2]]
+[stem]
+++++
+bb h(bb Y, bb X) = 0,
+++++
+
+or, equivalently (see <<sec_3.8>>), by
+
+[stem%unnumbered]
+++++
+h_1(bb Y, bb X) = 0, ..., h_m(bb Y,bb X) = 0 .
+++++
+
+[[sec_4.6]]
+=== {blank}
+(((covariance matrix)))
+
+An estimate of stem:[bb X] is denoted by stem:[bb x = (x_1, ..., x_N)^{sf(T)}],
+a matrix of dimension stem:[N xx 1]. The covariance matrix associated
+with stem:[bb x] is denoted by stem:[bb(U_x)], a matrix of dimension
+stem:[N xx N] (see <<sec_3.20>>).
+
+[[sec_4.7]]
+=== {blank}
+(((covariance matrix)))
+(((estimate of input quantities)))
+(((variance)))
+
+An estimate of stem:[bb Y] is denoted by stem:[bb y = (y_1, ..., y_m)^{sf(T)}],
+a matrix of dimension stem:[m xx 1]. The covariance matrix associated
+with stem:[bb y] is denoted by stem:[bb(U_y)], a matrix of dimension
+stem:[m xx m].
+
+NOTE: stem:[bb(U_y)] is the counterpart, for stem:[m] output quantities,
+of the variance stem:[u^2(y)] associated with stem:[y] in the context
+of the univariate measurement models of the GUM and GUM Supplement
+1. In the GUM, stem:[u(y)] is denoted by stem:[u_c(y)], the subscript
+"c" denoting combined. As in Supplement 1, the use of "c" in this
+context is considered superfluous for the reasons stated in <<sec_4.10>>
+of that Supplement. Accordingly, "c" is similarly not used in this
+Supplement.
+
+[[sec_4.8]]
+=== {blank}
+(((estimate of input quantities)))
+
+When estimates of the output quantities in a measurement model are
+to be used individually, each of these quantities may be considered
+as the output quantity in the corresponding univariate (scalar) measurement
+model. When the output quantities are to be considered together, for
+instance used in a subsequent calculation, any correlations associated
+with pairs of estimates of the output quantities need to be taken
+into account.
+
+[[sec_4.9]]
+=== {blank}
+(((standard uncertainty)))
+
+The symbol adopted for the standard uncertainty associated with a
+quantity value stem:[x] is stem:[u(x)]. When the context is such that
+there is no possibility of misunderstanding, the alternative notation
+stem:[u_x] can be adopted. The alternative notation is not recommended
+when a quantity value is indexed or otherwise adorned, for example
+stem:[x_i] or stem:[hat x].
+
+[[sec_4.10]]
+=== {blank}
+
+stem:[bb x] may be described as either "estimates of the input quantities",
+or "an estimate of the (vector) input quantity". The latter description
+is mainly used in this Supplement (and similarly for the output quantities).
+
+[[sec_4.11]]
+=== {blank}
+(((expectation)))
+(((quantity)))
+(((quantity,estimate)))
+
+As in subclauses <<sec_4.2>> to <<sec_4.10>>, a quantity is generally
+denoted by an upper case letter and an estimate or some fixed value
+of the quantity (such as the expectation) by the corresponding lower
+case letter. Although valuable for generic considerations, such a
+notation is largely inappropriate for physical quantities, because
+of the established use of specific symbols, for example stem:[T] for
+thermodynamic temperature and stem:[t] for time. Therefore, in some
+of the examples, a different notation is used, in which a quantity
+is denoted by its conventional symbol and its expectation or an estimate
+of it by that symbol hatted. For instance, the quantity representing
+the amplitude of an alternating current (<<ex_6.2.2_1>>) is denoted
+by stem:[I] and an estimate of stem:[I] by stem:[hat I] [<<JCGM_101_2008,clause=4.8>>].
+
+[[sec_4.12]]
+=== {blank}
+(((distribution function)))
+(((measurement function)))
+index-range:probability_pdf[(((probability density function (PDF))))]
+
+A departure is made from the symbols often used for a probability
+density function (PDF) and distribution function. The GUM uses the
+generic symbol stem:[f] to refer to a model and a PDF. Little confusion
+arises in the GUM as a consequence of this usage. The situation in
+this Supplement is different. The concepts of measurement function,
+PDF, and distribution function are central to following and implementing
+the guidance provided. Therefore, in place of the symbols stem:[f]
+and F to denote a PDF and a distribution function, respectively, the
+symbols stem:[g] and stem:[G] are used. These symbols are indexed
+appropriately to denote the quantity concerned. The symbol stem:[f]
+is reserved for a measurement function. Vector counterparts of these
+symbols are also used.
+
+[[sec_4.13]]
+=== {blank}
+(((expectation)))
+(((probability density function (PDF))))
+(((random variable)))
+(((variance)))
+
+A PDF is assigned to a quantity, which might be a single scalar quantity
+stem:[X] or a vector quantity stem:[bb X]. In the scalar case, the
+PDF for stem:[X] is denoted by stem:[g_{bb(X)}(bb(xi))], where stem:[xi]
+is a variable describing the possible values of stem:[X]. This stem:[X]
+is considered as a random variable with expectation stem:[E(X)] and
+variance stem:[V(X)].
+
+[[sec_4.14]]
+=== {blank}
+(((covariance matrix)))
+(((expectation)))
+(((probability density function (PDF))))
+(((random variable)))
+
+In the vector case, the PDF for stem:[bb X] is denoted by stem:[g_{bb(X)}(bb(xi))], where stem:[bb xi = (xi_1, ..., xi_N)^{sf(T)}] is a variable describing the possible values of the quantity stem:[bb X]. This stem:[bb X] is considered as a random variable with expectation stem:[bb E(bb X)] and covariance matrix stem:[bb V(bb X)].
+
+[[sec_4.15]]
+=== {blank}
+
+Analogously, in the scalar case, the PDF for stem:[Y] is denoted by
+stem:[g_Y(eta)] and, in the vector case, the PDF for stem:[bb Y] is
+denoted by stem:[g_{bb Y} (bb eta)].[[probability_pdf]]
+
+[[sec_4.16]]
+=== {blank}
+
+According to Resolution 10 of the 22nd CGPM (2003) "...the symbol
+for the decimal marker shall be either the point on the line or the
+comma on the line ...". The JCGM has decided to adopt, in its documents
+in English, the point on the line.
+
+

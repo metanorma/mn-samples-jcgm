@@ -1,0 +1,102 @@
+
+[bibliography]
+== Bibliography
+
+* [[[ref1,1]]], Barnett, V. The ordering of multivariate
+data. J. R. Statist. Soc. A 139 (1976), 318.
+
+* [[[ref2,2]]], Bich, W., Callegaro, L., and Pennecchi, F. Non-linear
+models and best estimates in the GUM. Metrologia 43 (2006), S196-S199.
+
+* [[[ref3,3]]], Bich, W., Cox, M. G., and Harris, P. M. Uncertainty
+modelling in mass comparisons. Metrologia 30 (1993), 1-12.
+
+* [[[ref4,4]]], Chayes, F. Petrographic Modal Analysis: An Elementary
+Statistical Appraisal. John Wiley & Sons, New York, 1956.
+
+* [[[ref5,5]]], Comtet, L. Bonferroni Inequalities -- Advanced Combinatorics:
+The Art of Finite and Infinite Expansions. Reidel, Dordrecht, Netherlands,
+1974.
+
+* [[[ref6,6]]], Cox, M. G., Esward, T. J., Harris, P. M., McCormick,
+N., Ridler, N. M., Salter, M. J., and Walton, J. P. R. B. Visualization
+of uncertainty associated with classes of electrical measurement.
+Tech. Rep. CMSC 44/04, National Physical Laboratory, Teddington, UK,
+2004.
+
+* [[[ref7,7]]], Cox, M. G., and Harris, P. M. SSfM Best Practice Guide
+No. 6, Uncertainty evaluation. Tech. Rep. MS 6, National Physical
+Laboratory, Teddington, UK, 2010.
+
+* [[[ref8,8]]], Cox, M. G., Harris, P. M., and Smith, I. M. Software
+specifications for uncertainty evaluation. Tech. Rep. MS 7, National
+Physical Laboratory, Teddington, UK, 2010.
+
+* [[[ref9,9]]], EAL. Calibration of pressure balances. Tech. Rep.
+EAL-G26, European Cooperation for Accreditation of Labo-
+ratories, 1997.
+
+* [[[ref10,10]]], Engen, G. F. Microwave Circuit Theory and Foundations
+of Microwave Metrology. Peter Peregrinus, London, 1992.
+
+* [[[ref11,11]]], Gelman, A., Carlin, J. B., Stern, H. S.,
+and Rubin, D. B. Bayesian Data Analysis. Chapman & Hall/CRC,
+Boca Raton, Florida, 2004. Second edition.
+
+* [[[ref12,12]]], Gill, P. E., Murray, W., and Wright, M. H. Practical
+Optimization. Academic Press, London, 1981.
+
+* [[[ref13,13]]], Golub, G. H., and Van Loan, C. F. Matrix Computations.
+John Hopkins University Press, Baltimore, MD, USA, 1996. Third edition.
+
+* [[[ref14,14]]], Hall, B. D. On the propagation of uncertainty in
+complex-valued quantities. Metrologia 41 (2004), 173-177.
+
+* [[[ref15,15]]], Kacker, R., Toman, B., and Huang, D. Comparison
+of ISO-GUM, draft GUM Supplement 1 and Bayesian statistics using simple
+linear calibration. Metrologia 43 (2006), S167-S177.
+
+* [[[ref16,16]]], Kerns, D. M., and Beatty, R. W. Basic Theory of
+Waveguide Junctions and Introductory Microwave Network Analysis. Pergamon
+Press, London, 1967.
+
+* [[[ref17,17]]], Lewis, S., and Peggs, G. The Pressure Balance: A
+Practical Guide to its Use. Second edition. HMSO, London, 1991.
+
+* [[[ref18,18]]], Lira, I. Evaluating the Uncertainty of Measurement.
+Fundamentals and Practical Guidance. Institute of Physics, Bristol,
+UK, 2002.
+
+* [[[ref19,19]]], Mardia, K. V., Kent, J. T., and Bibby, J. M. Multivariate
+Analysis. Academic Press, London, UK, 1979.
+
+* [[[ref20,20]]], Possolo, A. Copulas for uncertainty analysis. Metrologia
+47 (2010), 262-271.
+
+* [[[ref21,21]]], Rice, J. R. Mathematical Statistics and Data Analysis,
+second ed. Du_xbury Press, Belmont, Ca., USA, 1995.
+
+* [[[ref22,22]]], Scott, D. W. Multivariate Density Estimation: Theory,
+Practice, and Visualization. John Wiley & Sons, New York, 1999.
+
+* [[[ref23,23]]], Scott, D. W., and Sain, S. R. Multi-dimensional
+density estimation. In Handbook of Statistics, Volume 23, Data Mining
+and Computational Statistics (Amsterdam, 2004), C. Rao and E. Wegman,
+Eds., Elsevier, pp. 229-261.
+
+* [[[ref24,24]]], Silverman, B. W. Density Estimation. Chapman and
+Hall, London, 1986.
+
+* [[[ref25,25]]], Smith, D. B. Granite, G-2. Certificate of Analysis.
+United States Geological Survey, Denver, Colorado, 1998.
+
+* [[[ref26,26]]], Somlo, P. I., and Hunter, J. D. Microwave Impedance
+Measurement. Peter Peregrinus, London, 1985.
+
+* [[[ref27,27]]], Strang, G., and Borre, K. Linear Algebra, Geodesy
+and GPS. Wiley, Wellesley-Cambridge Press, 1997.
+
+* [[[ref28,28]]], Wübbeler, G., Harris, P. M., Cox, M. G.,
+and Elster, C. A two-stage procedure for determining the number
+of trials in the application of a Monte Carlo method for uncertainty
+evaluation. Metrologia 47, 3 (2010), 317.

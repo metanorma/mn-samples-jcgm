@@ -1,0 +1,21 @@
+
+[bibliography]
+== Normative references
+(((International vocabulary of metrology (VIM))))
+(((Introduction to the GUM)))
+(((Supplement 1 to the GUM)))
+
+* [[[JCGM_100_2008,JCGM 100:2008]]], JCGM 100:2008. Guide to the expression
+of uncertainty in measurement (GUM).
+
+* [[[JCGM_101_2008,JCGM 101:2008]]], JCGM 101:2008. Evaluation of
+measurement data -- Supplement 1 to the "Guide to the expression of
+uncertainty in measurement" -- Propagation of distributions using
+a Monte Carlo method.
+
+* [[[JCGM_104_2009,JCGM 104:2009]]], JCGM 104:2009. Evaluation of
+measurement data -- An introduction to the "Guide to the expression
+of uncertainty in measurement" and related documents.
+
+* [[[JCGM_200_2008,JCGM 200:2008]]],JCGM 200:2008. International Vocabulary
+of Metrology|Basic and General Concepts and Associated Terms (VIM).

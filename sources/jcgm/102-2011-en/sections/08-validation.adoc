@@ -1,0 +1,124 @@
+
+[[sec_8]]
+== Validation of the GUM uncertainty framework using a Monte Carlo method
+(((GUM uncertainty framework,validation of)))
+
+[[sec_8.1]]
+=== {blank}
+(((GUM uncertainty framework)))
+(((Monte Carlo method (MCM))))
+
+The (generalized) GUM uncertainty framework (GUF) can be expected
+to work well in many circumstances. However, it is not always straightforward
+to determine whether all the conditions for its application hold
+[<<JCGM_101_2008,clause=5.7>>, <<JCGM_101_2008,clause=5.8>>]. Indeed,
+the degree of difficulty of doing so would typically be considerably
+greater than that required to apply MCM, assuming suitable software
+were available <<ref8>>. Therefore, since these circumstances cannot
+readily be tested, any cases of doubt should be validated. Since the
+domain of validity for MCM is broader than that for the GUM uncertainty
+framework, it is recommended that both the GUM uncertainty framework
+and MCM be applied and the results compared. Should the comparison
+be favourable, the GUM uncertainty framework could be used on this
+occasion and for sufficiently similar problems in the future. Otherwise,
+consideration should be given to using MCM or another appropriate
+approach instead.
+
+[[sec_8.2]]
+=== {blank}
+
+Specifically, it is recommended that steps <<item_8.2_a>> and <<item_8.2_b>>
+below and the comparison process in <<sec_8.3>> be carried out.
+
+. [[item_8.2_a]]apply the GUM uncertainty framework (see <<sec_6>>)
+to yield (i) an estimate stem:[bb(y)^{"GUF"}] of stem:[bb Y], (ii)
+the standard uncertainties stem:[u(bb(y)^{"GUF"}]) associated with
+stem:[bb(y)^{"GUF"}], (iii) the correlation matrix stem:[bb(R_y)^{"GUF"}]
+associated with stem:[bb(y)^{"GUF"}], and (iv) the coverage factor
+stem:[k_p^{"GUF"}] defining a stem:[100p%] coverage region for
+stem:[bb Y] in the form of a hyper-ellipsoid in stem:[m] dimensions,
+
+. [[item_8.2_b]]apply the adaptive Monte Carlo procedure (see <<sec_7.8.3>>)
+to provide, similarly, stem:[bb y_{"MCM"}], stem:[bb(u)(bb(y)_{"MCM"})],
+stem:[bb(R_y)^{"MCM"}] and stem:[k_p^{"MCM"}].
+
+[[sec_8.3]]
+=== {blank}
+(((numerical tolerance)))
+
+The objective of the comparison procedure is to determine whether
+the results provided by the GUM uncertainty framework and MCM agree
+to within a stipulated numerical tolerance. The procedure is as follows.
+
+. set stem:[n_{"dig"}] to an appropriate small positive integer
+(see <<sec_7.8.2>>),
+
+. for stem:[j = 1, ..., m], calculate the numerical tolerances stem:[delta_j]
+associated with stem:[u(y_j)] as in <<sec_7.8.2.1>> and <<sec_7.8.2.2>>,
+
+. calculate the numerical tolerance rho associated with the matrix
+stem:[bb(R_y)] of correlation coefficients as in <<sec_7.8.2.1>> and
+<<sec_7.8.2.3>>,
+
+. [[item_8.3_d]]calculate the numerical tolerance stem:[kappa_p] associated
+with stem:[k_p] as in <<sec_7.8.2.1>> and <<sec_7.8.2.7>>,
+
+. compare the estimates, associated standard uncertainties and correlation
+coefficients, and coverage factors obtained using the GUM uncertainty
+framework and MCM to determine whether the required number of correct
+decimal digits in the results provided by the GUM uncertainty framework
+has been obtained. Specifically, determine
++
+--
+[stem%unnumbered]
+++++
+d_{y_j} = | y^{"GUF"} - y^{"MCM"}|, " " " " j = 1, ..., m,
+++++
+
+[stem%unnumbered]
+++++
+d_{u(y_j)} = | u(y^{"GUF"} - u(y_j^{"MCM"})|," " " " j = 1, ..., m,
+++++
+
+[stem%unnumbered]
+++++
+d_{lambda_{"max"}} = | lambda_{"max"}^{"GUF"} - lambda_{"max"}^{"MCM"}|,
+++++
+
+[stem%unnumbered]
+++++
+d_{k_p} = | k_p^{"GUF"} - k_p^{"MCM"} |,
+++++
+
+viz. the absolute differences of the respective numerical results.
+Then, if for all stem:[j = 1, ..., m], stem:[d_{y_j}] and stem:[d_{u(y_j)}]
+are no larger than stem:[delta_j], stem:[d_{lambda_{"max"}}] is no
+larger than stem:[rho], and stem:[d_{k_p}] is no larger than stem:[kappa_p],
+the comparison is favourable and the GUM uncertainty framework has
+been validated in this instance.
+--
+
+NOTE: The choice of stem:[100p%] coverage region will influence the
+comparison. Therefore, the validation applies for the specified coverage
+probability stem:[p] and coverage region only.
+
+NOTE: In situations where a coverage region is not required, the test
+in step <<item_8.3_d>> can be based instead on stem:[d_{y_j}], stem:[d_{u(y_j)}]
+and stem:[d_{lambda_{"max"}}] only. In cases where a coverage region
+is determined that is not in the form of a hyper-ellipsoid in stem:[m]
+dimensions, a test can be made in terms of the parameters defining
+the region. For example, for a coverage region in the form of a hyper-rectangle
+in stem:[m] dimensions, a test can be made in terms of the coverage
+factor stem:[k_q] defining the region and a numerical tolerance stem:[kappa_q]
+associated with stem:[k_q].
+
+[[note_8.3_3]]
+NOTE: A sufficient number stem:[M] of Monte Carlo trials should be
+performed in obtaining MCM results for the purpose of validating those
+from the GUM uncertainty framework. It is recommended that the numerical
+tolerances set in the adaptive procedure of <<sec_7.8>> are no greater
+than one fifth of the respective numerical tolerances used in the
+validation procedure [<<JCGM_101_2008,clause=8.2>>]. Alternatively,
+the number of significant decimal digits set in the adaptive procedure
+can be set to be one greater than the number of digits set in the
+validation procedure.

@@ -1,0 +1,967 @@
+
+[[sec_7]]
+== Monte Carlo method
+(((Monte Carlo method (MCM))))
+
+[[sec_7.1]]
+=== General
+
+[[sec_7.1.1]]
+==== {blank}
+
+This clause gives information about the implementation of a Monte
+Carlo method (MCM) for the propagation of distributions: see the procedure
+given in <<sec_7.1.7>>, which is presented diagrammatically in <<figure5>>.
+
+[[figure4]]
+.Twelve indication values in the form of pairs and 95% elliptical coverage region for the expectation taken as the average of these pairs (<<ex_6.5.4>>)
+image::figure4.png[]
+
+[[sec_7.1.2]]
+==== {blank}
+(((distribution function,from Monte Carlo method)))
+
+MCM provides a general approach to obtain an approximate numerical
+representation stem:[bb G], say, of the distribution function
+stem:[G_{bb Y}(bb eta)] for stem:[bb Y] <<ref18,page=75>>. The heart
+of the approach is making repeated draws from the PDFs for the stem:[X_i]
+(or joint PDF for stem:[bb X]) and the evaluation of the vector output
+quantity in each case.
+
+[[sec_7.1.3]]
+==== {blank}
+
+Since stem:[G_{bb Y}(bb eta)] encodes all the information known about
+stem:[bb Y], any property of stem:[bb Y] such as expectation, variances
+and covariances, and coverage regions can be approximated using
+stem:[bb G]. The quality of these calculated results generally improves
+with the number of draws made.
+
+[[sec_7.1.4]]
+==== {blank}
+
+The set of output quantity values obtained in <<sec_7.1.2>> are taken
+as drawn independently from the joint probability distribution for
+stem:[bb Y]. Expectations, variances (and higher moments) and covariances
+can be determined directly from these values. The determination of
+coverage regions requires these values to be analyzed in an appropriate
+manner (see <<sec_7.7>>).
+
+[[sec_7.1.5]]
+==== {blank}
+(((distribution function,from Monte Carlo method)))
+
+Let stem:[bb(y_r)], for stem:[r = 1, ..., M], represent the output
+quantity values in <<sec_7.1.4>>. The expectation stem:[bb(E(Y))]
+and variance stem:[bb(V(Y))] of stem:[bb Y] can be approximated using
+the stem:[bb(y_r)]. In general, the moments of stem:[bb Y] (including
+stem:[bb(E(Y))] and stem:[bb(V(Y))]) are approximated by the moments
+of these values. Let stem:[M_{bb(y_0)}] denote the number of stem:[bb(y_r)]
+for which each component is no greater than the corresponding component
+of stem:[bb(y_0)], any prescribed numerical vector of dimension
+stem:[m xx 1]. The probability stem:["Pr"(bb(Y) <= bb(y_0))] is approximated
+by stem:[M_{bb(y_0)}//M]. In this way, stem:[bb y_1, ...,bb y_M] provide
+a discrete representation of the distribution function
+stem:[G_{bb Y}(bb eta)].
+
+[[sec_7.1.6]]
+==== {blank}
+(((Monte Carlo method (MCM),primary output from)))
+
+stem:[bb G], the primary output from MCM, constitutes the matrix of
+dimension stem:[m xx M] given by
+
+[stem%unnumbered]
+++++
+bb G = (bb y_1, ...,bb y_M).
+++++
+
+[[sec_7.1.7]]
+==== {blank}
+(((average)))
+(((expectation)))
+(((propagation of distributions)))
+(((random variable)))
+(((variance)))
+
+MCM as an implementation of the propagation of distributions when
+stem:[bb Y] can be expressed explicitly in terms of stem:[bb X], where
+stem:[M] is provided in advance (see <<sec_7.8>> otherwise), is shown
+diagrammatically in <<figure5>>. MCM can be stated as a step-by-step
+procedure.
+
+. [[item_7.1.7_a]]select the number stem:[M] of Monte Carlo trials
+to be made. See <<sec_7.2>>,
+
+. generate stem:[M] vectors, by drawing randomly from the PDFs assigned
+to the input quantities stem:[X_i] (or the joint PDF for
+stem:[bb X]), as realizations of the (set of N) stem:[X_i].
+See <<sec_7.3>>,
+
+. for each such vector, form the corresponding value of stem:[bb Y],
+yielding M vector output quantity values in all. See <<sec_7.4>>,
+
+. take the representation stem:[bb G] of the distribution function
+for stem:[bb Y] as the set of stem:[M] vector output quantity values.
+See <<sec_7.5>>,
+
+. use stem:[bb G] to form an estimate stem:[bb y] of stem:[bb Y] and
+the covariance matrix stem:[bb(U_y)] associated with stem:[bb y].
+See <<sec_7.6>>,
+
+. use stem:[bb G] to form an appropriate coverage region for
+stem:[bb Y], for a stipulated coverage probability stem:[p].
+See <<sec_7.7>>.
+
+[[note_7.1.7]]
+NOTE: Mathematically, the average of the stem:[M] vector output quantity
+values is a realization of a random variable with expectation stem:[bb(E(Y))]
+and variance stem:[bb(V(Y))//M]. Thus, the closeness of agreement
+between this average and stem:[bb(E(Y))] can be expected to be proportional
+to stem:[M^{-1//2}].
+
+[[sec_7.1.8]]
+==== {blank}
+
+The effectiveness of MCM to determine stem:[bb y], stem:[bb(U_y)]
+and a coverage region for stem:[bb Y] depends on the use of an adequately
+large value of stem:[M] (step <<item_7.1.7_a>>). Guidance on obtaining
+such a value and generally on implementing MCM is available <<ref8>>.
+Also see <<sec_7.2;and!sec_7.8>>.
+
+[[sec_7.2]]
+=== Number of Monte Carlo trials
+(((Monte Carlo method (MCM),number of trials in)))
+
+[[sec_7.2.1]]
+==== {blank}
+
+A value of stem:[M], the number of Monte Carlo trials, i.e. the number
+of vector output quantity values, needs to be selected. It can be
+chosen a priori, in which case there will be no direct control over
+the quality of the numerical results provided by MCM. The reason is
+that the number of trials needed to provide these results to a prescribed
+numerical tolerance will depend on the "shape" of the PDF for the
+output quantity and on the coverage probability required. Also, the
+calculations are stochastic in nature, being based on random draws.
+
+[[sec_7.2.2]]
+==== {blank}
+
+Because there is no guarantee that any specific pre-assigned number
+will suffice, a procedure that selects stem:[M] adaptively, i.e. as
+the trials progress, can be used. Subclause <<sec_7.8>> provides such
+a procedure, a property of which is that the number of trials taken
+is economically consistent with the expectation of achieving a required
+numerical tolerance.
+
+NOTE: If the model is complicated, e.g. involving the solution of
+a finite-element model, because of large computing times it may not
+be possible to use a sufficiently large value of stem:[M] to obtain
+adequate distributional knowledge of the output quantity. In such
+a case an approximate approach would be to regard
+stem:[g_{bb Y}(bb eta)] as Gaussian (as in the GUM) and proceed as
+follows. A relatively small value of stem:[M], 50 or 100, for example,
+would be used. The average and covariance matrix of the resulting
+stem:[M] values of stem:[bb Y] would be taken as stem:[bb y] and stem:[bb(U_y)],
+respectively. Given this information, a Gaussian PDF stem:[N(bb y,bb(U_y))]
+would be assigned to characterize the knowledge of stem:[bb Y]
+[<<JCGM_101_2008,clause=6.4.7>>] and a desired coverage region for
+stem:[bb Y] calculated. Although this use of a small value of stem:[M]
+is inevitably less reliable than that of a large value in that it
+does not provide an approximation to the PDF for stem:[bb Y], it does
+take account of model non-linearity.
+
+[[sec_7.3]]
+=== Making draws from probability distributions
+(((Monte Carlo method (MCM),making random draws from probability distributions used in)))
+
+[[sec_7.3.1]]
+==== {blank}
+
+In an implementation of MCM, stem:[M] vectors stem:[x_r],
+stem:[r = 1, ..., M], are drawn from the PDFs stem:[g_{X_i} (xi_i)]
+for the input quantities stem:[X_1, ..., X_N]. Draws would be made
+from the joint (multivariate) PDF stem:[g_{bb(X)}(bb(xi))] if appropriate.
+
+[[sec_7.3.2]]
+==== {blank}
+(((Gaussian distribution)))
+(((Gaussian distribution,multivariate)))
+(((rectangular distribution)))
+(((t-distribution)))
+
+Recommendations concerning the manner in which these draws can be
+obtained for the commonest distributions, including the rectangular,
+Gaussian, _t_-distribution and multivariate Gaussian, are given in
+GUM Supplement 1 [<<JCGM_101_2008,clause=6.4>>, <<JCGM_101_2008,annex=C>>].
+It is possible to draw at random from any other distribution
+[<<JCGM_101_2008,clause=C.2>>]. Some such distributions could be approximations
+to distributions based on Monte Carlo results from a previous uncertainty
+calculation [<<JCGM_101_2008,clause=6.5>>, <<JCGM_101_2008,annex=D>>].
+
+[[sec_7.3.3]]
+==== {blank}
+(((t-distribution,multivariate)))
+(((tests of randomness)))
+
+A procedure to make draws form a further multivariate distribution,
+the multivariate _t_-distribution, is described in <<sec_5.3.2.4>>.
+
+NOTE: For the results of MCM to be statistically valid, it is necessary
+that the pseudo-random number generators used to draw from the distributions
+required have appropriate properties. Some tests of randomness of
+the numbers produced by a generator are indicated in <<sec_C.3.2>>
+of GUM Supplement 1.
+
+[[figure5]]
+.Propagation and summarizing stages of uncertainty evaluation using MCM to implement the propagation of distributions when the vector output quantity can be expressed explicitly in terms of the input quantities (<<sec_7.1.7>>)
+image::figure5.png[]
+
+[[sec_7.4]]
+=== Evaluation of the vector output quantity
+(((Monte Carlo method (MCM),evaluation of vector output quantity in)))
+
+[[sec_7.4.1]]
+==== {blank}
+
+The vector output quantity is evaluated for each of the stem:[M] draws
+from the PDFs for the stem:[N] input quantities. Specifically, denote
+the stem:[M] draws by stem:[x_1, ..., x_M], each of dimension
+stem:[N xx 1], where the rth draw stem:[x_r] contains
+stem:[x_{1,r}, ..., x_{N,r}], with stem:[x_{i,r}] a draw from the
+PDF for stem:[X_i]. When the measurement model is explicit the vector
+output quantity values are
+
+[stem%unnumbered]
+++++
+bb(y_r) = bb(f(x_r)), " " r = 1, ..., M.
+++++
+
+NOTE: Measurement function and derivative evaluations are made at
+the estimates of the input quantities when applying the law of propagation
+of uncertainty using exact derivatives. Measurement function evaluations
+only are made when applying the law of propagation of uncertainty
+using numerical (finite-difference) approximations to derivatives.
+These evaluations are made, if the GUM recommendation
+[<<JCGM_100_2008,clause=5.1.3,note=2>>] is adopted, at the estimates
+of the input quantities and at points perturbed by stem:[u(x_i)] and
+stem:[-u(x_i)] from each individual estimate stem:[x_i] in turn. With
+MCM, measurement function evaluations are made in the neighbourhood
+of these estimates, viz. at points that can be expected to be up to
+several standard uncertainties away from these estimates. The fact
+that measurement function evaluations are made at different points
+according to the approach used may raise issues regarding the numerical
+procedure used to evaluate the function, e.g. ensuring its convergence
+(where iterative schemes are used) and numerical stability. The user
+should ensure that, where appropriate, the numerical methods used
+to evaluate the measurement function are valid for a sufficiently
+large region containing these estimates. Only occasionally would it
+be expected that this aspect is critical.
+
+[[sec_7.4.2]]
+==== {blank}
+
+The necessary modifications are made to <<sec_7.4.1>> if the stem:[X_i]
+are not independent and hence a joint PDF is assigned to them.
+
+[[sec_7.4.3]]
+==== {blank}
+
+The necessary modifications are made to <<sec_7.4.1>> if the measurement
+model is implicit. The vector output quantity values stem:[bb(y_r)]
+are obtained as the solutions to the equations
+
+[stem%unnumbered]
+++++
+bb(h(y_r,x_r) = 0), " " " " r = 1, ..., M.
+++++
+
+[[sec_7.5]]
+=== Discrete representation of the distribution function for the output quantity
+(((distribution function,from Monte Carlo method)))
+(((Monte Carlo method (MCM),making random draws from probability distributions used in)))
+
+A discrete representation of the distribution function for the vector
+output quantity is formed from the stem:[M] values of the vector output
+quantity obtained in <<sec_7.4>>. In general, this representation
+is a matrix stem:[bb G] of dimension stem:[m xx M] whose rth column
+is the rth value of the vector output quantity. For a univariate model,
+stem:[bb G] is a row vector.
+
+NOTE: The jth row of stem:[bb G] provides a discrete representation
+of an approximation to the marginal distribution for stem:[Y_j].
+
+NOTE: stem:[bb G] has a graphical interpretation for
+stem:[m = 1, 2, 3]. Consider stem:[m = 2] and, for stem:[r = 1, ..., M],
+plot a point in the stem:[Y_1], stem:[Y_2] plane having co-ordinates
+corresponding to the two elements in column stem:[r] of stem:[bb G].
+For M sufficiently large, the local density of points in any small
+region of the plane will be approximately proportional to the probability
+density there.
+
+NOTE: A variety of information can be deduced from stem:[bb G], such
+as higher-order moments. However, only the expectation and variance,
+used as an estimate of stem:[bb Y] and an approximation to the associated
+covariance matrix, respectively, are to be used as the basis for uncertainty
+propagation in a further stage of uncertainty evaluation
+[<<JCGM_100_2008,clause=0.4>>] in the context of the GUM uncertainty
+framework.
+
+NOTE: If stem:[bb Y] is to become a vector input quantity for a further
+uncertainty calculation, making random draws from its probability
+distribution is readily carried out by drawing randomly from the
+stem:[bb y_r, r = 1, ..., M], (or equivalently from the columns of
+stem:[bb G]) with equal probability [<<JCGM_101_2008,clause=6.5>>].
+
+[[sec_7.6]]
+=== Estimate of the output quantity and the associated covariance matrix
+(((average)))
+(((covariance matrix)))
+(((covariance matrix,from Monte Carlo method)))
+(((estimate of input quantities,from Monte Carlo method)))
+
+The average and covariance matrix,
+
+[stem%unnumbered]
+++++
+hat bb(y) = 1/M (bb y_1 + cdots + bb y_M), " " " " bb(U_{hat y}) = 1/{M - 1}
+[(bb y_1 - bb hat(e))(y_1 - bb hat(e))^{sf(T)} + cdots + (bb y_M - bb hat(e))(bb y_M - bb hat(e))^{sf(T)}],
+++++
+
+are taken, respectively, as an estimate stem:[bb y] of stem:[bb Y]
+and the covariance matrix stem:[bb(U_y)] associated with
+stem:[bb y].
+
+NOTE: Irrespective of whether the measurement model is linear or non-linear,
+in the limit as stem:[M] tends to infinity, stem:[hat(bb(y))] approaches
+in probability stem:[bb(E(f(X)))] when the latter exists.
+
+[[sec_7.7]]
+=== Coverage region for a vector output quantity
+(((coverage region,from Monte Carlo method)))
+
+[[sec_7.7.1]]
+==== General
+(((coverage region,hyper-ellipsoidal)))
+(((coverage region,hyper-rectangular)))
+(((coverage region,smallest)))
+
+There are arbitrarily many stem:[100p %] coverage regions for
+stem:[bb Y]. Three forms of coverage regions are given here. They
+are considered to have practical value, but other coverage regions
+might sometimes be useful in particular circumstances. Each form of
+coverage region addressed is based on stem:[bb G], namely, a set of
+stem:[M] points stem:[bb(y_r)] randomly drawn from the PDF for
+stem:[bb Y], such as obtained with a Monte Carlo method (see <<sec_7.5>>).
+The forms of coverage regions considered are as follows.
+
+. Hyper-ellipsoidal coverage region, which will be close to the smallest
+coverage region for stem:[bb Y] when to a good approximation the PDF
+for stem:[bb Y] is Gaussian,
+
+. Hyper-rectangular coverage region, which has a simple interpretation
+but is often pessimistically large,
+
+. Smallest coverage region, which in general does not have any particular
+geometric definition and is obtained to a degree of approximation
+that depends on stem:[M].
+
+[[sec_7.7.2]]
+==== Hyper-ellipsoidal coverage region
+(((Cholesky decomposition)))
+(((coverage factor)))
+(((coverage region,hyper-ellipsoidal)))
+
+A stem:[100p%] hyper-ellipsoidal coverage region for stem:[bb Y] is
+
+[[eq_20]]
+[stem]
+++++
+(bb(eta - y))^{sf(T)} bb(U_y)^{-1} (bb(eta - y)) = k_p^2,
+++++
+
+where stem:[bb y] specifies its location, stem:[bb(U_y)] specifies
+its shape, and stem:[k_p] specifies its size. A procedure for determining
+such a coverage region is as follows.
+
+. [[item_7.7.2_a]]Transform the points stem:[bb y_r], denoting the
+transformed points by stem:[dot(bb y)_r], according to
++
+--
+[[eq_21]]
+[stem]
+++++
+dot(bb y)_r = bb L^{-1} (bb y_r - bb y), " " " " r = 1, ..., M,
+++++
+
+where stem:[bb L] is the lower triangular matrix of dimension
+stem:[m xx m] given by the Cholesky decomposition
+stem:[bb(U_y) = bb(LL)^{sf T}],
+--
+
+. Sort the transformed points stem:[dot(bb y)_r] according to increasing
+value of stem:[d_r], where
++
+--
+[stem%unnumbered]
+++++
+d_r^2 = dot(bb y)_r^{sf T} dot(bb y)_r = sum_{j=1}^{m} dot(y)_{j,r}^2,
+" " " " r = 1, ..., M;
+++++
+--
+
+. Use the sorted stem:[dot(bb y)_r] to determine the coverage factor
+stem:[k_p] such that a fraction stem:[p] of the stem:[dot(bb y)_r]
+satisfies stem:[d_r < k_p];
+
+. Take the hyper-ellipsoid defined by <<eq_20>> as the boundary of
+a stem:[100p%] coverage region for stem:[bb Y].
+
+[NOTE]
+====
+This procedure is based on reference <<ref1>>, where multidimensional
+data is sorted using the metric
+
+[stem%unnumbered]
+++++
+(bb y_r - bb a)^{sf(T)} sum^{-1}(bb y_r - bb a),
+++++
+
+with a denoting a location statistic and stem:[sum] a dispersion statistic.
+The choice made here is stem:[bb a = bb y] and stem:[bb sum = bb(U_y)].
+The procedure is also based on transforming the points so that the
+transformed points have a covariance matrix equal to the identity
+matrix, and hence there is no correlation associated with the transformed
+points. The points can then be sorted. The points stem:[bb y_r], which
+can be regarded as a cluster of points centered on stem:[bb y], approximate
+the distribution for stem:[bb Y], as a consequence of the approach
+used to obtain them. A coverage region can be defined by the hyper-ellipsoid
+centred on stem:[bb y] that (just) contains stem:[100p%] of these
+stem:[bb y_r].
+====
+
+NOTE: The extent to which the coverage region obtained is appropriate
+depends on the context. It might be inappropriate if the distribution
+of the points stem:[bb(y_r)] differed appreciably from a multivariate
+Gaussian PDF.
+
+NOTE: The matrix stem:[bb L] in step <<item_7.7.2_a>> can be determined
+as in reference <<ref13>>, for instance. See example.
+
+NOTE: This procedure takes into account the mutual dependence between
+pairs of components of stem:[bb Y].
+
+NOTE: For a complicated measurement model, for example, involving
+a finite-element calculation, because of large computing times it
+may not be possible to use a sufficiently large value of stem:[M]
+to obtain adequate distributional knowledge of the output quantity.
+In such a case an approximate approach would be to regard the distribution
+for stem:[bb Y] as Gaussian and proceed as follows. A relatively small
+value of stem:[M], say 50 or 100, would be used. The average and covariance
+matrix of the resulting stem:[M] values of stem:[bb Y] would be taken
+as stem:[bb y] and stem:[bb(U_y)], respectively. Given this information,
+a Gaussian PDF with expectation stem:[bb y] and covariance matrix
+stem:[bb(U_y)] would be used to characterize the knowledge of
+stem:[bb Y], and a coverage region for stem:[bb Y] calculated accordingly.
+Although this use of a small value of stem:[M] is inevitably less
+reliable than that of a large value in that it does not provide an
+approximation to the PDF for stem:[bb Y], it does take account of
+model non-linearity. <<table1>> gives values of stem:[k_p] for coverage
+probability stem:[p = 0.95] as a function of stem:[m], the number
+of output quantities, under the assumption that stem:[bb Y] is Gaussian.
+
+[[ex_7.7.2]]
+====
+Consider the measurement model
+
+[[eq_22]]
+[stem]
+++++
+Y_1 = X_1 + X_3, " " " " Y_2 = X_2 + X_3,
+++++
+
+where the input quantities stem:[X_1] and stem:[X_2] are each assigned
+the Gaussian distribution stem:[N(0, 0.1)], stem:[X_3] is assigned
+the rectangular distribution stem:[R(-(3 xx 1.9)^{1//2}],
+stem:[(3 xx 1.9)^{1//2})], and the quantities are (pairwise) independent.
+The expectations of the input quantities stem:[X_i] are
+stem:[x_i = 0], stem:[i = 1, 2, 3], with associated variances
+stem:[u^2(xi) = 0.1], stem:[i = 1, 2], and stem:[u^2(x_3) = 1.9].
+Then, as in <<ex_6.5.2.3_2>>, stem:[bb Y = (Y_1, Y_2)^{sf(T)}] has
+expectation and covariance matrix
+
+[stem%unnumbered]
+++++
+bb y = [(0),(0)], " " " " bb(U_y) = [(2.0,1.9),(1.9,2.0)]
+++++
+
+The stem:[dot(bb y)_r] in step <<item_7.7.2_a>> are formed using
+stem:[bb L^{-1}], where to three decimal places,
+
+[stem%unnumbered]
+++++
+bb L = [(1.414,1.344),(0.000,0.442)], " " " " bb L^{-1} = [(0.707,-2.151),(0.000,2.265)]
+++++
+
+<<figure6>> (left) shows 1 000 points randomly drawn from the probability
+distribution for stem:[bb Y] defined by the measurement model <<eq_22,droploc%>>
+and the above Gaussian probability distributions for the input quantities
+stem:[X_i], stem:[i = 1, 2, 3]. The 95% elliptical coverage region
+for stem:[bb Y] based on characterizing stem:[bb Y] by the bivariate
+Gaussian distribution stem:[N(bb y,bb(U_y))] (as in <<item_6.5.2.3_a>>)
+is shown by a broken line. This region has area stem:[11.8 " unit"^2],
+stem:[k_p = 2.45] and contains 968 of the 1 000 points. The elliptical
+coverage region determined on the basis of the 1 000 draws (as in
+the above procedure) is shown by a solid line. This region has area
+stem:[10.6 " unit"^2], stem:[k_p = 2.33], that is, it is slightly
+smaller than the region obtained under the Gaussian assumption, and,
+by construction, contains exactly 950 points.
+
+The measurement model <<eq_22,droploc%>> is considered in more detail
+in <<sec_9>>, and further examples of coverage regions for the output
+quantities in bivariate measurement models are also given in <<sec_9>>.
+
+// [[figure6]]
+.Elliptical coverage regions based on <<item_6.5.2.3_a>> and <<sec_7.7.2>>, and (right) rectangular coverage regions based on <<item_6.5.2.3_b>> and <<sec_7.7.3>> (<<ex_7.7.2>> and <<ex_7.7.3>>)
+image::figure6.png[]
+====
+
+[[sec_7.7.3]]
+==== Hyper-rectangular coverage region
+(((coverage region,hyper-rectangular)))
+
+A stem:[100p%] hyper-rectangular coverage region for stem:[bb Y] is
+
+[[eq_23]]
+[stem]
+++++
+y_j +- k_q u(y_j), " " " " j = 1, ..., m,
+++++
+
+where stem:[bb y = (y_1, ..., y_m)^{sf(T)}] specifies its location,
+stem:[bb(u(y)) = (u(y_1), ..., u(y_m))^{sf(T)}] specifies its shape,
+and stem:[k_q] specifies its size. A procedure for determining such
+a coverage region is as follows:
+
+. Transform the points stem:[bb(y_r)] according to <<eq_21>>, denoting
+the transformed points by stem:[dot(bb y)_r], where stem:[bb L] is
+now the diagonal matrix of dimension stem:[m xx m] with diagonal elements
+stem:[u(y_1), ..., u(y_m)],
+
+. Rank the transformed points stem:[bb y_r] according to increasing
+value of stem:[d_r], where now
+
+[stem%unnumbered]
+++++
+d_r = max_{j=1,...,m} |dot(y)_{j,r}|, " " " " r = 1, ..., M ;
+++++
+
+. Use the ranked stem:[dot(bb y)_r] to determine the coverage factor
+stem:[k_q] such that a fraction stem:[p] of the stem:[dot(bb y)_r]
+satisfies stem:[d_r < k_q];
+
+. Take the hyper-rectangle defined by <<eq_23>> as the boundary of
+a stem:[100p%] coverage region for stem:[bb Y].
+
+NOTE: With this approach, mutual dependence between pairs of components
+of stem:[bb Y] is not taken into account.
+
+[[ex_7.7.3]]
+[example]
+<<figure6>> (right) shows the same 1 000 points as in <<figure6>>
+(left). The 95% rectangular coverage region for stem:[bb Y] based
+on characterizing stem:[Y_j], stem:[j = 1, 2], by the Gaussian distribution
+stem:[N(y_j, u^2(y_j))], and ignoring the correlation associated with
+stem:[y_1] and stem:[y_2] (as in <<item_6.5.2.3_b>>), is shown by
+a broken line. This region has area stem:[40.1 " unit"^2],
+stem:[k_q = 2.24] and contains all 1 000 points. The rectangular coverage
+region determined on the basis of the 1 000 draws (as in the above
+procedure) is shown by a solid line. This region has area
+stem:[25.5 " unit"^2], stem:[k_q = 1.78], that is, it is smaller than
+the region obtained under the Gaussian assumption, and, by construction,
+contains exactly 950 points.
+
+[[sec_7.7.4]]
+==== Smallest coverage region
+(((coverage region,smallest)))
+
+A procedure that provides an approximation to the smallest stem:[100p%]
+coverage region is as follows.
+
+. [[item_7.7.4_a]]Construct a (hyper-)rectangular region in the space
+of the output quantities;
+
+. [[item_7.7.4_b]]Subdivide this rectangular region into a mesh of
+small rectangles;
+
+. Assign each output quantity value to the small rectangle containing
+it;
+
+. [[item_7.7.4_d]]Use the fraction of output quantity values assigned
+to each rectangle as the approximate probability that stem:[bb Y]
+lies in that rectangle;
+
+. [[item_7.7.4_e]]List the rectangles in terms of decreasing probability;
+
+. Form the cumulative sum of probabilities for these listed rectangles,
+stopping when this sum is no smaller than stem:[p];
+
+. Take the corresponding set of rectangles as defining the smallest
+coverage region.
+
+NOTE: The procedure is based on reference <<ref20>> and consists of
+subdividing the space of the output quantities into a number of small
+(hyper-)rectangles, approximating the probability that stem:[bb Y]
+lies in each small rectangle by the proportion of output quantity
+values assigned to that rectangle, and approximating the smallest
+coverage region by the smallest set of such rectangles that contain
+stem:[100p%] of the stem:[M] output quantity values.
+
+NOTE: The rectangular region in step <<item_7.7.4_a>> should just
+contain all the stem:[bb y_r].
+
+NOTE: The fineness of the mesh in <<item_7.7.4_b>> influences the
+approximate coverage region produced.
+
+NOTE: The quality of the approximation generally improves with stem:[M].
+To achieve a sufficiently good approximation, particularly for a number
+of output quantities larger than about two or three, might necessitate
+a very large value of stem:[M].
+
+NOTE: The region so obtained might be disjointed, particularly if
+stem:[M] is insufficiently large.
+
+NOTE: Step <<item_7.7.4_d>> sets the probability for each rectangle
+to be the relative frequency of output quantity values assigned to
+that rectangle. A coverage region that is less disjointed and having
+a smoother boundary would be expected to be obtained if step <<item_7.7.4_d>>
+were replaced by the use of a more sophisticated approximation to
+the probability density <<ref23>>.
+
+NOTE: Some of the approximate probabilities in step <<item_7.7.4_d>>
+may be equal in value. In such a case the order of the items in the
+list in step <<item_7.7.4_e>> is not unique. As a consequence a different
+approximate coverage region might be obtained for each possible ordering.
+
+NOTE: In the bivariate case (stem:[m = 2]), steps <<item_7.7.4_a>>
+to <<item_7.7.4_d>> are also carried out in the initial stages of
+a typical contouring algorithm used in visualizing an approximation
+to the PDF for stem:[bb Y] (see <<sec_9.1.6>>).
+
+[[ex_7.7.4]]
+[example]
+Consider the same problem as in <<ex_7.7.2>>. <<figure7>> shows approximations
+to the 95% smallest coverage region, obtained using the procedure
+in this subclause, based on a set of small rectangles forming a
+stem:[10 xx 10] mesh and (right) a stem:[100 xx 100] mesh. The coverage
+region in <<figure7>> (left) relates to 1 000 points drawn randomly
+from the PDF for stem:[bb Y], has area stem:[11.3 " unit"^2] and contains
+955 of the points. The coverage region in <<figure7>> (right) relates
+to 1 000 000 points drawn randomly from the PDF for stem:[bb Y], has
+area stem:[9.4 " unit"^2] and contains 950 074 of the points. For
+comparison, in each figure, the 95% elliptical coverage region for
+stem:[bb Y] based on the procedure in <<sec_7.7.2>> is shown by a
+solid line.
+
+[[figure7]]
+.Elliptical coverage regions based on <<sec_7.7.2>> and approximations to the smallest coverage region based on <<sec_7.7.4>> for a stem:[10 xx 10] mesh and 1 000 points drawn randomly from the PDF for stem:[bb Y], and (right) for a stem:[100 xx 100] mesh and 1 000 000 points (<<ex_7.7.4>>)
+image::figure7.png[]
+
+[[sec_7.8]]
+=== Adaptive Monte Carlo procedure
+(((Monte Carlo method (MCM),adaptive procedure for)))
+
+[[sec_7.8.1]]
+==== General
+
+[[sec_7.8.1.1]]
+===== {blank}
+(((Monte Carlo method (MCM),number of trials in)))
+(((numerical tolerance)))
+
+The effectiveness of MCM to determine estimates stem:[bb y] of the
+output quantities stem:[bb Y], the associated covariance matrix stem:[bb(U_y)]
+and a coverage region for stem:[bb Y] depends on the use of an adequately
+large value for the number stem:[M] of Monte Carlo trials. A value
+for stem:[M] can be chosen _a priori_ as in <<sec_7.2>>. Alternatively,
+an adaptive Monte Carlo procedure can be used that involves carrying
+out an increasing number of Monte Carlo trials until the various results
+of interest have stabilized in a statistical sense. A numerical result
+is deemed to have stabilized if twice the standard deviation associated
+with it is less than a stipulated numerical tolerance (see <<sec_7.8.2>>).
+
+[[sec_7.8.1.2]]
+===== {blank}
+(((correlation coefficient)))
+(((covariance matrix)))
+(((coverage factor)))
+(((coverage region,hyper-ellipsoidal)))
+(((estimate of input quantities)))
+(((standard uncertainty)))
+
+The objective of the adaptive procedure given in <<sec_7.8.3>> is
+to provide
+
+. an estimate stem:[bb y = (y_1, ..., y_m)^{sf(T)}] of stem:[bb Y],
+
+. a vector stem:[bb(u(y)) = (u(y_1), ..., u(y_m))^{sf(T)}] of standard
+uncertainties associated with the estimates,
+
+. a positive definite matrix stem:[R_{bb Y}] of dimension
+stem:[m xx m] of correlation coefficients stem:[r_{ij} = r(y_i, y_j)]
+associated with pairs of the estimates, and
+
+. a coverage factor stem:[k_p] defining a stem:[100p%] coverage region
+for stem:[bb Y] in the form of a hyper-ellipsoid in m dimensions,
+such that each of these values can be expected to meet a stipulated
+numerical tolerance.
+
+NOTE: By its stochastic nature, the procedure cannot be guaranteed
+to meet these tolerances.
+
+NOTE: Generally, the larger is the coverage probability stem:[p],
+the larger is the number of Monte Carlo trials required to determine
+stem:[k_p] for a given numerical tolerance.
+
+NOTE: The standard uncertainties stem:[bb(u(y))] and correlation matrix
+stem:[R_{bb Y}] together determine the covariance matrix stem:[bb(U_y)]
+associated with the estimates stem:[bb y] (see <<note_3.21_3>> and
+<<sec_7.8.2.4>>).
+
+NOTE: When a coverage region is to be determined that is not in the
+form of a hyper-ellipsoid in stem:[m] dimensions, a test for stabilization
+can be made in terms of the parameters defining the region. For example,
+for a coverage region in the form of a hyper-rectangle in m dimensions,
+a test could be made in terms of the coverage factor stem:[k_q] defining
+the region and a numerical tolerance associated with stem:[k_q]. The
+procedure given in <<sec_7.8.3>> is modified accordingly.
+
+NOTE: When a coverage region is not required, an increasing number
+of Monte Carlo trials is undertaken until the estimates stem:[bb y],
+associated standard uncertainties stem:[bb(u(y))] and correlation
+matrix stem:[R_{bb Y}] have stabilized.
+
+NOTE: When dependencies exist among the output quantities,
+stem:[R_{bb Y}] may not be positive definite. See <<sec_9.4>> (particularly
+<<note_9.4.2.3_2>>) for an example.
+
+[[sec_7.8.2]]
+==== Numerical tolerance associated with a numerical value
+(((numerical tolerance)))
+
+[[sec_7.8.2.1]]
+===== {blank}
+index-range:decimal_digits[(((number of significant decimal digits)))]
+
+Let stem:[n_{"dig"}] denote the number of significant decimal digits
+regarded as meaningful in a numerical value stem:[z]. The numerical
+tolerance stem:[delta] associated with stem:[z] is given as follows.
+
+. express stem:[z] in the form stem:[c xx 10^{ell}], where stem:[c]
+is an stem:[n_{"dig"}] decimal digit integer and stem:[ell] an integer;
+
+. take
++
+--
+[stem%unnumbered]
+++++
+delta = 1/2 10^{ell}.
+++++
+--
+
+[[sec_7.8.2.2]]
+===== {blank}
+
+For stem:[j = 1, ..., m], the numerical tolerance stem:[delta_j] used
+to test for stabilization of the estimate stem:[y_j] of stem:[Y_j]
+and the standard uncertainty stem:[u(y_j)] associated with stem:[y_j]
+in the adaptive procedure of <<sec_7.8.3>> is calculated in terms
+of a number of significant decimal digits regarded as meaningful in
+the value of stem:[u(y_j)].
+
+[[sec_7.8.2.3]]
+===== {blank}
+
+The numerical tolerance rho used to test for stabilization of the
+matrix stem:[bb(R_y)] of correlation coefficients stem:[r_{i,j}]
+associated with the estimate stem:[y] is calculated in terms of a
+number of significant decimal digits in stem:[lambda_{"max"}], the
+largest eigenvalue of stem:[bb(R_y)] (see <<note_3.21_3>>).[[decimal_digits]]
+
+[[sec_7.8.2.4]]
+===== {blank}
+
+The matrix stem:[bb(R_y)] would often be used in a subsequent uncertainty
+evaluation. Commonly, this evaluation would relate to a scalar quantity
+stem:[Q] expressed as some linear combination
+
+[stem%unnumbered]
+++++
+Q = c_1 Y_1 + cdots + c_m Y_m = bb(c)^{sf(T)} bb(Y)
+++++
+
+of the stem:[Y_i]. Using
+
+[stem%unnumbered]
+++++
+bb(U_y) = bb(D_y R_y D_y)
+++++
+
+(see <<note_3.21_3>>), the standard uncertainty stem:[u(q)] associated
+with the estimate
+
+[stem%unnumbered]
+++++
+q = bb(c)^{sf(T)} bb(y)
+++++
+
+of stem:[Q] is given by
+
+[stem%unnumbered]
+++++
+u^2(q) = bb(c)^{sf(T)}bb(U_y c) = bb(d)^{sf(T)}bb(R_y)bb(d),
+++++
+
+where
+
+[stem%unnumbered]
+++++
+bb(d) = bb(D_y c).
+++++
+
+[[sec_7.8.2.5]]
+===== {blank}
+
+The numerical accuracy of stem:[u(q)] depends on that of stem:[bb(R_y)]
+and stem:[d], the latter depending on stem:[bb(D_y)] and hence
+stem:[bb(u(y)) = (u_1(y_1), ..., u_m(y_m))^{sf(T)}].
+
+[[sec_7.8.2.6]]
+===== {blank}
+(((number of significant decimal digits)))
+
+For subsequent uncertainty evaluations that are more complicated,
+such as involving a least squares calculation using explicitly or
+implicitly the inverse of stem:[bb(U_y)], it would be necessary to
+utilize a different stabilization test. For a least squares calculation,
+it would be appropriate to calculate rho in <<sec_7.8.2.3>> in terms
+of a number of significant decimal digits in the smallest eigenvalue
+of stem:[bb(R_y)] (also see <<note_3.21_5>>): the sensitivity of the
+solution to the least squares problem depends on the condition number
+stem:[lambda_{"max"}//lambda_{"min"}] of stem:[bb(R_y)]. Hence, in
+order to reduce the number of Monte Carlo trials, a parametrization
+of that problem should be used that makes the condition number as
+small as reasonably possible.
+
+[[sec_7.8.2.7]]
+===== {blank}
+(((number of significant decimal digits)))
+
+The numerical tolerance stem:[kappa_p] used to test for stabilization
+of the coverage factor stem:[k_p] is calculated in terms of a number
+of significant decimal digits regarded as meaningful in the value
+stem:[k_p].
+
+[[sec_7.8.2.8]]
+===== {blank}
+
+For a subsequent uncertainty evaluation based on the use of
+stem:[bb G] (see <<sec_7.5>>) as an approximation to the distribution
+function for stem:[bb Y], it should be ensured that this discrete
+representation is adequate for the purpose, especially when a coverage
+region is to be provided. Detailed advice on this aspect is beyond
+the scope of this Supplement.
+
+[[sec_7.8.3]]
+==== Adaptive procedure
+(((random variable)))
+
+A suggested practical approach, involving carrying out a sequence
+of applications of MCM, is as follows.
+
+. [[item_7.8.3_a]]set stem:[n_{"dig"}] to an appropriate small positive
+integer (see <<sec_7.8.2>>),
+
+. [[item_7.8.3_b]]set stem:[M = max(J, 10^4)], where stem:[J] is the
+smallest integer greater than or equal to stem:[100//(1 - p)],
+
+. set stem:[h = 1], denoting the first application of MCM in the sequence,
+
+. [[item_7.8.3_d]]carry out stem:[M] Monte Carlo trials, as in <<sec_7.3>>
+and <<sec_7.4>>,
+
+. use the stem:[M] vector output quantity values
+stem:[bb y_1, ...,bb y_M] so obtained to calculate stem:[y^{(h)}],
+stem:[bb(u)(bb(y)^{(h)})], stem:[bb(R_y)^{(h)}] and stem:[k_p^{(h)}]
+as an estimate of stem:[bb Y], the associated standard uncertainties,
+the associated correlation matrix and a coverage factor for a stem:[100p%]
+coverage region, respectively, i.e. for the hth member of the sequence,
+
+. [[item_7.8.3_f]]if stem:[h <= 10], increase h by one and return
+to step <<item_7.8.3_d>>,
+
+. [[item_7.8.3_g]]for stem:[j = 1, ..., m], calculate the standard
+deviation stem:[s_{y_j}] associated with the average of the estimates
+stem:[y_j^{(1)}, ..., y_j^{h}], given by
+
+[stem%unnumbered]
+++++
+s_{y_j}^2 = 1/{h(h - 1)} sum_{r=1}^h (y_j^(r) - y_j)^2, " " " "
+y_j = 1/h sum_{r=1}^h y_j^{(r)} ;
+++++
+
+. [[item_7.8.3_h]]calculate the counterpart of this statistic for
+the components of stem:[bb(u)(bb(y)^{(h)})] and for stem:[lambda_{"max"}]
+and stem:[k_p^{(h)}];
+
+. use all stem:[h xx M] model values available so far to form values
+for stem:[bb(u(y))], stem:[bb(R_y)] and stem:[k_p];
+
+. for stem:[j = 1, ..., m], calculate the numerical tolerances stem:[delta_j]
+associated with stem:[u(y_j)] as in <<sec_7.8.2.1>> and <<sec_7.8.2.2>>,
+
+. calculate the numerical tolerance stem:[rho] associated with the
+matrix stem:[bb(R_y)] of correlation coefficients as in <<sec_7.8.2.1>>
+and <<sec_7.8.2.3>>,
+
+. [[item_7.8.3_m]]calculate the numerical tolerance stem:[kappa_p]
+associated with stem:[k_p] as in <<sec_7.8.2.1>> and <<sec_7.8.2.7>>,
+
+. if for any stem:[j = 1, ..., m], stem:[2s_{y_j}] or stem:[2s_{u(y_j)}]
+exceeds stem:[delta_j], or stem:[2slambda_{"max"}] exceeds stem:[rho],
+or stem:[2sk_p] exceeds stem:[kappa_p], increase stem:[h] by one and
+return to step <<item_7.8.3_d>>,
+
+. regard the overall computation as having stabilized, and use all
+stem:[h xx M] vector output quantity values obtained to calculate
+stem:[bb y], stem:[bb(U_y)] and the coverage factor stem:[k_p] for
+a stem:[100p%] coverage region, as in <<sec_7.6>> and <<sec_7.7>>.
+
+NOTE: For (stochastic) convergence of the adaptive procedure, the
+expectation and covariance matrix of stem:[bb Y] must exist.
+
+NOTE: The choice of stem:[M] in step <<item_7.8.3_b>> is arbitrary,
+but has been found suitable in practice.
+
+NOTE: The initial use of ten applications of MCM with stem:[M] trials
+in steps <<item_7.8.3_d>> to <<item_7.8.3_f>> helps to prevent premature
+convergence of the procedure, and, moreover, makes the assumption,
+implied by note 6, more reasonable. A similar change to the counterpart
+of this procedure when there is a single scalar output quantity
+[<<JCGM_101_2008,clause=7.9.4>>] would also improve the performance
+of the scheme there for some problems.
+
+NOTE: In step <<item_7.8.3_g>>, stem:[y_j] is regarded as a realization
+of a random variable with standard deviation stem:[s_{y_j}].
+
+NOTE: The standard deviations formed in steps <<item_7.8.3_g>> and
+<<item_7.8.3_h>> tend to reduce in a manner proportional to stem:[h^{-1//2}]
+(see <<note_7.1.7>>).
+
+NOTE: The factor 2 used in step <<item_7.8.3_m>> is based on regarding
+the averages as realizations of Gaussian variables, and corresponds
+to a coverage probability of approximately 95 %.
+
+NOTE: Reference <<ref28>> considers improvements to the adaptive scheme
+of GUM Supplement 1 [<<JCGM_101_2008,clause=7.9>>].

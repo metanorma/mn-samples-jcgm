@@ -1,0 +1,43 @@
+
+== Foreword
+
+In 1997 the Joint Committee for Guides in Metrology (JCGM), chaired
+by the Director of the BIPM, was formed by the seven International
+Organizations that had prepared the original versions of the _Guide
+to the expression of uncertainty in measurement (GUM)_ and the _International
+vocabulary of basic and general terms in metrology (VIM)_. The Joint
+Committee took on this part of the work of the ISO Technical Advisory
+Group 4 (TAG 4), which had developed the GUM and the VIM. The Joint
+Committee was originally made up of representatives from the International
+Bureau of Weights and Measures (BIPM), the International Electrotechnical
+Commission (IEC), the International Federation of Clinical Chemistry
+and Laboratory Medicine (IFCC), the International Organization for
+Standardization (ISO), the International Union of Pure and Applied
+Chemistry (IUPAC), the International Union of Pure and Applied Physics
+(IUPAP), and the International Organization of Legal Metrology (OIML).
+In 2005, the International Laboratory Accreditation Cooperation (ILAC)
+officially joined the seven founding international organizations.
+
+The JCGM has two Working Groups. Working Group 1 (JCGM/WG 1) on the
+GUM has the task of promoting the use of the GUM and preparing Supplements
+to the GUM for broad application. Working Group 2 (JCGM/WG 2) on the
+VIM has the task of revising the VIM and promoting its use. Working
+Group 2 is composed of up to two representatives of each member organization,
+supplemented by a limited number of experts. The third edition of
+the VIM has been prepared by Working Group 2.
+
+In 2004, a first draft of the third edition of the VIM was submitted
+for comments and proposals to the eight organizations represented
+in the JCGM, which in most cases consulted their members or affiliates,
+including numerous National Metrology Institutes. Comments were studied
+and discussed, taken into account when appropriate, and replied to
+by JCGM/WG 2. A final draft of the third edition was submitted in
+2006 to the eight organizations for review and approval.
+
+All subsequent comments were considered and taken into account as
+appropriate by Working Group 2.
+
+The third edition of the VIM has been approved by each and all of
+the eight JCGM Member organizations.
+
+This third edition cancels and replaces the second edition 1993.

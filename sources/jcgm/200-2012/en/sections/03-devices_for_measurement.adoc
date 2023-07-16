@@ -1,0 +1,164 @@
+
+
+[[sec_3]]
+== Devices for measurement
+
+[[sec_3.1]]
+=== (4.1) measuring instrument
+(((measuring instrument)))
+
+device used for making *measurements*, alone or in conjunction with
+one or more supplementary devices
+
+NOTE: A measuring instrument that can be used alone is a
+*measuring system*.
+
+NOTE: A measuring instrument may be an *indicating measuring instrument*
+or a *material measure*.
+
+[[sec_3.2]]
+=== (4.5) measuring system
+(((measuring system)))
+
+set of one or more *measuring instruments* and often other devices,
+including any reagent and supply, assembled and adapted to give information
+used to generate *measured quantity values* within specified intervals
+for *quantities* of specified *kinds*
+
+NOTE: A measuring system may consist of only one measuring instrument.
+
+[[sec_3.3]]
+=== (4.6) indicating measuring instrument
+(((indicating measuring instrument)))
+
+*measuring instrument* providing an output signal carrying information
+about the *value* of the *quantity* being measured
+
+[example]
+Voltmeter, micrometer, thermometer, electronic balance.
+
+NOTE: An indicating measuring instrument may provide a record of its
+*indication*.
+
+NOTE: An output signal may be presented in visual or acoustic form.
+It may also be transmitted to one or more other devices.
+
+[[sec_3.4]]
+=== (4.6) displaying measuring instrument
+(((displaying measuring instrument)))
+
+*indicating measuring instrument* where the output signal is presented
+in visual form
+
+[[sec_3.5]]
+=== (4.17) scale of a displaying measuring instrument
+(((scale of a displaying measuring instrument)))
+
+part of a *displaying measuring instrument*, consisting of an ordered
+set of marks together with any associated *quantity values*
+
+[[sec_3.6]]
+=== (4.2) material measure
+(((material measure)))
+
+*measuring instrument* reproducing or supplying, in a permanent manner
+during its use, *quantities* of one or more given *kinds*, each with
+an assigned *quantity value*
+
+[example]
+Standard weight, volume measure (supplying one or several quantity
+values, with or without a *quantity-value scale*), standard electric
+resistor, line scale (ruler), gauge block, standard signal generator,
+*certified reference material*.
+
+NOTE: The *indication* of a material measure is its assigned quantity
+value.
+
+NOTE: A material measure can be a *measurement standard*.
+
+[[sec_3.7]]
+=== (4.3) measuring transducer
+(((measuring transducer)))
+
+device, used in *measurement*, that provides an output *quantity*
+having a specified relation to the input quantity
+
+[example]
+Thermocouple, electric current transformer, strain gauge, pH electrode,
+Bourdon tube, bimetallic strip.
+
+[[sec_3.8]]
+=== (4.14) sensor
+(((sensor)))
+
+element of a *measuring system* that is directly affected by a phenomenon,
+body, or substance carrying a *quantity* to be measured
+
+[example]
+Sensing coil of a platinum resistance thermometer, rotor of a turbine
+flow meter, Bourdon tube of a pressure gauge, float of a level-measuring
+instrument, photocell of a spectrometer, thermotropic liquid crystal
+which changes colour as a function of temperature.
+
+NOTE: In some fields, the term "detector" is used for this concept.
+
+[[sec_3.9]]
+=== (4.15) detector
+(((detector)))
+
+device or substance that indicates the presence of a phenomenon, body,
+or substance when a threshold *value* of an associated *quantity*
+is exceeded
+
+[example]
+Halogen leak detector, litmus paper.
+
+NOTE: In some fields, the term "detector" is used for the concept
+of *sensor*.
+
+NOTE: In chemistry, the term "indicator" is frequently used for this
+concept.
+
+[[sec_3.10]]
+=== (4.4) measuring chain
+(((measuring chain)))
+
+series of elements of a *measuring system* constituting a single path
+of the signal from a *sensor* to an output element
+
+[example]
+Electro-acoustic measuring chain comprising a microphone, attenuator,
+filter, amplifier, and voltmeter.
+
+[example]
+Mechanical measuring chain comprising a Bourdon tube, system of levers,
+two gears, and a mechanical dial.
+
+[[sec_3.11]]
+=== (4.30) adjustment of a measuring system
+alt:[adjustment]
+(((adjustment)))
+(((adjustment of a measuring system)))
+
+set of operations carried out on a *measuring system* so that it provides
+prescribed *indications* corresponding to given *values* of a *quantity*
+to be measured
+
+NOTE: Types of adjustment of a measuring system include
+*zero adjustment of a measuring system*, offset adjustment, and span
+adjustment (sometimes called gain adjustment).
+
+NOTE: Adjustment of a measuring system should not be confused with
+*calibration*, which is a prerequisite for adjustment.
+
+NOTE: After an adjustment of a measuring system, the measuring system
+must usually be re-calibrated.
+
+[[sec_3.12]]
+=== zero adjustment of a measuring system
+alt:[zero adjustment]
+(((zero adjustment)))
+(((zero adjustment of a measuring system)))
+
+*adjustment of a measuring system* so that it provides a null *indication*
+corresponding to a zero *value* of a *quantity* to be measured

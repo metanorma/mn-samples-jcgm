@@ -1,0 +1,1167 @@
+
+[[sec_1]]
+== Quantities and units
+
+[[sec_1.1]]
+=== quantity
+(((quantity)))
+
+property of a phenomenon, body, or substance, where the property has
+a magnitude that can be expressed as a number and a reference
+
+[[note_1_1.1]]
+[NOTE]
+====
+The generic concept 'quantity' can be divided into several levels
+of specific concepts, as shown in the following table. The left hand
+side of the table shows specific concepts under 'quantity'. These
+are generic concepts for the individual quantities in the right hand
+column.
+
+[cols="a,a,a",options="unnumbered"]
+|===
+
+.2+| length, stem:[l]
+
+longueur, stem:[l]
+
+| radius, stem:[r]
+
+rayon, stem:[r]
+
+| radius of circle A, stem:[rA] or stem:[r(A)]
+
+rayon du cercle A, stem:[rA] or stem:[r(A)]
+
+| wavelength,
+
+longueur d'onde,
+
+| wavelength of the sodium stem:[D] radiation, ~D~ or (D; Na)
+
+longueur d'onde de la radiation D du sodium, ~D~ ou (D; Na)
+
+.2+| energy, stem:[E]
+
+énergie, stem:[E]
+
+| kinetic energy, stem:[T]
+
+énergie cinétique, stem:[T]
+
+| kinetic energy of particle stem:[i] in a given system, stem:[T_i]
+
+énergie cinétique de la particule stem:[i] dans un système donné, stem:[T_i]
+
+| heat, stem:[Q]
+
+chaleur, stem:[Q]
+
+| heat of vaporization of sample stem:[i] of water, stem:[Q_i]
+
+chaleur de vaporisation du spécimen stem:[i] d'eau, stem:[Q_i]
+
+2+| electric charge, stem:[Q]
+
+charge électrique, stem:[Q] 
+
+| electric charge of the proton, stem:[e]
+
+charge électrique du proton, stem:[e]
+
+2+| electric resistance, stem:[R]
+
+résistance électrique, stem:[R]
+
+| electric resistance of resistor stem:[i] in a given circuit, stem:[R_i]
+
+résistance électrique de la résistance stem:[i] dans un circuit donné, stem:[R_i]
+
+2+| amount-of-substance concentration of entity stem:[B], stem:[c_B]
+
+concentration en quantité de matière du constituant stem:[B], stem:[c_B]
+
+| amount-of-substance concentration of ethanol in wine sample stem:[i], stem:[c_i] (C~2~H~5~OH)
+
+concentration en quantité de matière d'éthanol dans le spécimen stem:[i] de vin, stem:[c_i] (C~2~H~5~OH)
+
+2+| number concentration of entity stem:[B], stem:[C_B]
+
+nombre volumique du constituant B, stem:[C_B]
+
+| number concentration of erythrocytes in blood sample stem:[i], stem:[C] (Erys; stem:[B_i])
+
+nombre volumique d'érythrocytes dans le spécimen stem:[i] de sang, stem:[C] (Erc; stem:["Sg"_i])
+
+2+| Rockwell C hardness, HRC
+
+dureté C de Rockwell, HRC
+
+| Rockwell C hardness of steel sample stem:[i], HRC~_i_~
+
+dureté C de Rockwell du spécimen stem:[i] d'acier, HRC~_i_~
+
+|===
+
+====
+
+[NOTE,keep-separate=true]
+====
+A reference can be a *measurement unit*, a *measurement procedure*,
+a *reference material*, or a combination of such.
+====
+
+NOTE: Symbols for quantities are given in the ISO 80000 and IEC 80000
+series _Quantities and units_. The symbols for quantities are written
+in italics. A given symbol can indicate different quantities.
+
+NOTE: The preferred IUPAC-IFCC format for designations of quantities
+in laboratory medicine is "System-Component; kind-of-quantity".
+
+[example]
+"Plasma (Blood) Sodium ion; amount-of-substance concentration equal
+to stem:[143 "unitsml(mol/l)"] in a given person at a given time".
+
+NOTE: A quantity as defined here is a scalar. However, a vector or
+a tensor, the components of which are quantities, is also considered
+to be a quantity.
+
+NOTE: The concept 'quantity' may be generically divided into, e.g.
+'physical quantity', 'chemical quantity', and 'biological quantity',
+or *base quantity* and *derived quantity*.
+
+[[sec_1.2]]
+=== (1.1, Note 2) kind of quantity
+alt:[kind]
+(((kind)))
+(((kind of quantity)))
+
+aspect common to mutually comparable *quantities*
+
+NOTE: The division of 'quantity' according to 'kind of quantity' is
+to some extent arbitrary.
+
+[example]
+The quantities diameter, circumference, and wavelength are generally
+considered to be quantities of the same kind, namely of the kind of
+quantity called length.
+
+[example]
+The quantities heat, kinetic energy, and potential energy are generally
+considered to be quantities of the same kind, namely of the kind of
+quantity called energy.
+
+NOTE: Quantities of the same kind within a given *system of quantities*
+have the same *quantity dimension*. However, quantities of the same
+dimension are not necessarily of the same kind.
+
+[example]
+The quantities moment of force and energy are, by convention, not
+regarded as being of the same kind, although they have the same dimension.
+Similarly for heat capacity and entropy, as well as for number of
+entities, relative permeability, and mass fraction.
+
+NOTE: In English, the terms for quantities in the left half of the
+table in <<note_1_1.1>>, are often used for the corresponding
+'kinds of quantity'. In French, the term "nature" is only used in
+expressions such as "grandeurs de même nature" (in English, "quantities
+of the same kind").
+
+[[sec_1.3]]
+=== (1.2) system of quantities
+(((system of quantities)))
+
+set of *quantities* together with a set of non-contradictory equations
+relating those quantities
+
+NOTE: *Ordinal quantities*, such as Rockwell C hardness, are usually
+not considered to be part of a system of quantities because they are
+related to other quantities through empirical relations only.
+
+[[sec_1.4]]
+=== (1.3) base quantity
+(((base quantity)))
+
+*quantity* in a conventionally chosen subset of a given
+*system of quantities*, where no subset quantity can be expressed
+in terms of the others
+
+NOTE: The subset mentioned in the definition is termed the
+"set of base quantities".
+
+[example]
+The set of base quantities in the *International System of Quantities
+(ISQ)* is given in <<sec_1.6>>.
+
+NOTE: Base quantities are referred to as being mutually independent
+since a base quantity cannot be expressed as a product of powers of
+the other base quantities.
+
+NOTE: 'Number of entities' can be regarded as a base quantity in any
+system of quantities.
+
+[[sec_1.5]]
+=== (1.4) derived quantity
+(((derived quantity)))
+
+*quantity*, in a *system of quantities*, defined in terms of the
+*base quantities* of that system
+
+[example]
+In a system of quantities having the base quantities length and mass,
+mass density is a derived quantity defined as the quotient of mass
+and volume (length to the third power).
+
+[[sec_1.6]]
+=== International System of Quantities
+alt:[ISQ]
+(((International System of Quantities)))
+(((ISQ)))
+
+*system of quantities* based on the seven *base quantities*: length,
+mass, time, electric current, thermodynamic temperature, amount of
+substance, and luminous intensity
+
+NOTE: This system of quantities is published in the ISO 80000 and
+IEC 80000 series _Quantities and units_.
+
+NOTE: The *International System of Units (SI)* (see <<sec_1.16>>)
+is based on the ISQ.
+
+[[sec_1.7]]
+=== (1.5) quantity dimension
+alt:[dimension of a quantity]
+alt:[dimension]
+(((dimension)))
+(((dimension of a quantity)))
+(((quantity dimension)))
+
+expression of the dependence of a *quantity* on the *base quantities*
+of a *system of quantities* as a product of powers of factors corresponding
+to the base quantities, omitting any numerical factor
+
+[example]
+In the *ISQ*, the quantity dimension of force is denoted by
+stem:[dim F = "LMT"^{-2}].
+
+[example]
+In the same system of quantities, stem:[dim rho B = ML^{-3}] is the
+quantity dimension of mass concentration of component stem:[B], and
+stem:["ML"^{-3}] is also the quantity dimension of mass density, stem:[rho],
+(volumic mass).
+
+====
+The period stem:[T] of a pendulum of length stem:[l] at a place with
+the local acceleration of free fall stem:[g] is
+
+[stem%unnumbered]
+++++
+T = 2 pi sqrt(l/g) " or " T = C(g)sqrt(l)
+++++
+
+where stem:[C(g) = {2pi}/{sqrt(g)}]
+
+Hence stem:["dim" C(g) = L^{-1//2} T].
+====
+
+NOTE: A power of a factor is the factor raised to an exponent. Each
+factor is the dimension of a base quantity.
+
+NOTE: The conventional symbolic representation of the dimension of
+a base quantity is a single upper case letter in roman (upright) sans-serif
+type. The conventional symbolic representation of the dimension of
+a *derived quantity* is the product of powers of the dimensions of
+the base quantities according to the definition of the derived quantity.
+The dimension of a quantity stem:[Q] is denoted by stem:[dim Q].
+
+NOTE: In deriving the dimension of a quantity, no account is taken
+of its scalar, vector, or tensor character.
+
+[NOTE]
+====
+In a given system of quantities,
+
+* quantities of the same *kind* have the same quantity dimension,
+
+* quantities of different quantity dimensions are always of different
+kinds, and
+
+* quantities having the same quantity dimension are not necessarily
+of the same kind.
+====
+
+[NOTE]
+====
+Symbols representing the dimensions of the base quantities in
+the ISQ are:
+
+[cols="2",options="unnumbered,header"]
+|===
+^.^| Base quantity +
+Grandeur de base
+
+^.^| Symbol for dimension +
+Symbole de la dimension
+
+| length +
+longueur
+| stem:[sf "L"]
+
+| mass +
+masse
+| stem:[sf "M"]
+
+| time +
+temps
+| stem:[sf "T"]
+
+| electric current +
+courant électrique
+| stem:[sf "I"]
+
+| thermodynamic temperature +
+température thermodynamique
+| stem:[Theta]
+
+| amount of substance +
+quantité de matière
+| stem:[sf "N"]
+
+| luminous intensity +
+intensité lumineuse
+| stem:[sf "J"]
+
+|===
+====
+
+Thus, the dimension of a quantity stem:[Q] is denoted by
+stem:[dim Q = sf "L M T I "Θ sf " N J"] where the exponents, named
+dimensional exponents, are positive, negative, or zero.
+
+
+[[sec_1.8]]
+=== (1.6) quantity of dimension one
+alt:[dimensionless quantity]
+(((dimensionless quantity)))
+(((quantity of dimension one)))
+
+*quantity* for which all the exponents of the factors corresponding
+to the *base quantities* in its *quantity dimension* are zero
+
+NOTE: The term "dimensionless quantity" is commonly used and is kept
+here for historical reasons. It stems from the fact that all exponents
+are zero in the symbolic representation of the dimension for such
+quantities. The term "quantity of dimension one" reflects the convention
+in which the symbolic representation of the dimension for such quantities
+is the symbol 1 (see <<ISO_31_0_1992,clause=2.2.6>>).
+
+NOTE: The *measurement units* and *values* of quantities of dimension
+one are numbers, but such quantities convey more information than
+a number.
+
+NOTE: Some quantities of dimension one are defined as the ratios of
+two quantities of the same *kind*.
+
+[example]
+Plane angle, solid angle, refractive index, relative permeability,
+mass fraction, friction factor, Mach number.
+
+NOTE: Numbers of entities are quantities of dimension one.
+
+[example]
+Number of turns in a coil, number of molecules in a given sample,
+degeneracy of the energy levels of a quantum system.
+
+[[sec_1.9]]
+=== (1.7) measurement unit
+alt:[unit of measurement]
+alt:[unit]
+(((measurement unit)))
+(((unit)))
+(((unit of measurement)))
+
+real scalar *quantity*, defined and adopted by convention, with which
+any other quantity of the same *kind* can be compared to express the
+ratio of the two quantities as a number
+
+NOTE: Measurement units are designated by conventionally assigned
+names and symbols.
+
+NOTE: Measurement units of quantities of the same *quantity dimension*
+may be designated by the same name and symbol even when the quantities
+are not of the same kind. For example, joule per kelvin and stem:["unitsml(J/K)"] are
+respectively the name and symbol of both a measurement unit of heat
+capacity and a measurement unit of entropy, which are generally not
+considered to be quantities of the same kind. However, in some cases
+special measurement unit names are restricted to be used with quantities
+of a specific kind only. For example, the measurement unit 'second
+to the power minus one' (stem:["unitsml(1/s)"]) is called hertz
+(stem:["unitsml(Hz)"]) when used for frequencies
+and becquerel (stem:["unitsml(Bq)"]) when used for activities of radio nuclides.
+
+NOTE: Measurement units of *quantities of dimension one* are numbers.
+In some cases these measurement units are given special names, e.g.
+radian, steradian, and decibel, or are expressed by quotients such
+as millimole per mole equal to stem:[10^{-3}] and microgram per kilogram
+equal to stem:[10^{-9}].
+
+NOTE: For a given quantity, the short term "unit" is often combined
+with the quantity name, such as "mass unit" or "unit of mass".
+
+[[sec_1.10]]
+=== (1.13) base unit
+(((base unit)))
+
+*measurement unit* that is adopted by convention for a *base quantity*
+
+NOTE: In each *coherent system of units*, there is only one base unit
+for each base quantity.
+
+[example]
+In the *SI*, the metre is the base unit of length. In the CGS systems,
+the centimetre is the base unit of length.
+
+NOTE: A base unit may also serve for a *derived quantity* of the same
+*quantity dimension*.
+
+[example]
+Rainfall, when defined as areic volume (volume per area), has the
+metre as a *coherent derived unit* in the SI.
+
+NOTE: For number of entities, the number one, symbol 1, can be regarded
+as a base unit in any *system of units*.
+
+[[sec_1.11]]
+=== (1.14) derived unit
+(((derived unit)))
+
+*measurement unit* for a *derived quantity*
+
+[example]
+The metre per second, symbol stem:["unitsml(m/s)"], and the centimetre per second, symbol
+stem:["unitsml(cm/s)"], are derived units of speed in the *SI*. The kilometre per hour,
+symbol stem:["unitsml(km/h)"], is a measurement unit of speed outside the SI but accepted
+for use with the SI. The knot, equal to one nautical mile per hour,
+is a measurement unit of speed outside the SI.
+
+[[sec_1.12]]
+=== (1.10) coherent derived unit
+(((coherent derived unit)))
+
+*derived unit* that, for a given *system of quantities* and for a
+chosen set of *base units*, is a product of powers of base units with
+no other proportionality factor than one
+
+NOTE: A power of a base unit is the base unit raised to an exponent.
+
+NOTE: Coherence can be determined only with respect to a particular
+system of quantities and a given set of base units.
+
+[example]
+If the metre, the second, and the mole are base units, the metre per
+second is the coherent derived unit of velocity when velocity is defined
+by the *quantity equation* stem:[v = "d" bb"r"//"d"t], and the mole
+per cubic metre is the coherent derived unit of amount-of-substance
+concentration when amount-of-substance concentration is defined by
+the quantity equation stem:[c = n // V]. The kilometre per hour and
+the knot, given as examples of derived units in <<sec_1.11>>, are
+not coherent derived units in such a system of quantities.
+
+NOTE: A derived unit can be coherent with respect to one system of
+quantities but not to another.
+
+[example]
+The centimetre per second is the coherent derived unit of speed in
+a CGS *system of units* but is not a coherent derived unit in the
+*SI*.
+
+NOTE: The coherent derived unit for every derived *quantity of dimension
+one* in a given system of units is the number one, symbol 1. The name
+and symbol of the *measurement unit* one are generally not indicated.
+
+[[sec_1.13]]
+=== (1.9) system of units
+(((system of units)))
+
+set of *base units* and *derived units*, together with their multiples
+and submultiples, defined in accordance with given rules, for a given
+*system of quantities*
+
+[[sec_1.14]]
+=== (1.11) coherent system of units
+(((coherent system of units)))
+
+*system of units*, based on a given *system of quantities*, in which
+the *measurement unit* for each *derived quantity* is a *coherent
+derived unit*
+
+[example]
+Set of coherent SI units and relations between them.
+
+NOTE: A system of units can be coherent only with respect to a system
+of quantities and the adopted *base units*.
+
+NOTE: For a coherent system of units, *numerical value equations*
+have the same form, including numerical factors, as the corresponding
+*quantity equations*.
+
+[[sec_1.15]]
+=== (1.15) off-system measurement unit
+alt:[off-system unit]
+(((off-system measurement unit)))
+(((off-system unit)))
+
+*measurement unit* that does not belong to a given *system of units*
+
+[example]
+The electron-volt (about stem:[1.602 18 cdot 10^{-19} "unitsml(J)"])
+is an off-system measurement unit of energy with respect to the *SI*.
+
+[example]
+Day, hour, minute are off-system measurement units of time with respect
+to the SI.
+
+[[sec_1.16]]
+=== (1.12) International System of Units
+alt:[SI]
+(((International System of Units)))
+(((SI)))
+
+*system of units*, based on the *International System of Quantities*,
+their names and symbols, including a series of prefixes and their
+names and symbols, together with rules for their use, adopted by the
+General Conference on Weights and Measures (CGPM)
+
+[NOTE]
+====
+The SI is founded on the seven *base quantities* of the *ISQ*
+and the names and symbols of the corresponding *base units* that are
+contained in the following table.
+
+[cols="3",options="unnumbered"]
+|===
+^.^h| Base quantity +
+Grandeur de base
+2+^.^h| Base unit +
+Unité de base
+^.^h| Name +
+Nom
+^.^h| Name +
+Nom
+^.^h| Symbol +
+Symbole
+
+| length +
+longueur
+| metre +
+mètre
+| stem:["unitsml(m)"]
+
+| mass +
+masse
+| kilogram +
+kilogramme
+| stem:["unitsml(kg)"]
+
+| time +
+temps
+| second +
+seconde
+| stem:["unitsml(s)"]
+
+| electric current +
+courant électrique
+| ampere +
+ampère
+| stem:["unitsml(A)"]
+
+| thermodynamic temperature +
+température thermodynamique
+| kelvin +
+kelvin
+| stem:["unitsml(K)"]
+
+| amount of substance +
+quantité de matière
+| mole +
+mole
+| stem:["unitsml(mol)"]
+
+| luminous intensity +
+intensité lumineuse
+| candela +
+candela
+| stem:["unitsml(cd)"]
+
+|===
+
+====
+
+[NOTE,keep-separate=true]
+====
+The base units and the *coherent derived units* of the SI form
+a coherent set, designated the "set of coherent SI units".
+====
+
+NOTE: For a full description and explanation of the International
+System of Units, see the current edition of the SI brochure published
+by the Bureau International des Poids et Mesures (BIPM) and available
+on the BIPM website.
+
+NOTE: In *quantity calculus*, the quantity 'number of entities' is
+often considered to be a base quantity, with the base unit one, symbol
+1.
+
+[[note_5_1.16]]
+[NOTE]
+====
+The SI prefixes for *multiples of units* and *submultiples of units*
+are:
+
+[cols="3",options="unnumbered"]
+|===
+.2+^.^h| Factor +
+Facteur
+2+^.^h| Prefix +
+Préfixe
+^.^h| Name +
+Nom
+^.^h| Symbol +
+Symbole
+
+| stem:[10^{24}]
+| yotta +
+yotta
+| Y
+
+| stem:[10^{21}]
+| zetta +
+zetta
+| Z
+
+| stem:[10^{18}]
+| exa +
+exa
+| E
+
+| stem:[10^{15}]
+| peta +
+péta
+| P
+
+| stem:[10^{12}]
+| tera +
+téra
+| T
+
+| stem:[10^{9}]
+| giga +
+giga
+| G
+
+| stem:[10^{6}]
+| mega +
+méga
+| M
+
+| stem:[10^{3}]
+| kilo +
+kilo
+| k
+
+| stem:[10^{2}]
+| hecto +
+hecto
+| h
+
+| stem:[10^{1}]
+| deca +
+déca
+| da
+
+| stem:[10^{-1}]
+| deci +
+déci
+| d
+
+| stem:[10^{-2}]
+| centi +
+centi
+| c
+
+| stem:[10^{-3}]
+| milli +
+milli
+| m
+
+| stem:[10^{-6}]
+| micro +
+micro
+| stem:["unitsml(u-)"]
+
+| stem:[10^{-9}]
+| nano +
+nano
+| n
+
+| stem:[10^{-12}]
+| pico +
+pico
+| p
+
+| stem:[10^{-15}]
+| femto +
+femto
+| f
+
+| stem:[10^{-18}]
+| atto +
+atto
+| a
+
+| stem:[10^{-21}]
+| zepto +
+zepto
+| z
+
+| stem:[10^{-24}]
+| yocto +
+yocto
+| y
+
+|===
+
+====
+
+[[sec_1.17]]
+=== (1.16) multiple of a unit
+(((multiple of a unit)))
+
+*measurement unit* obtained by multiplying a given measurement unit
+by an integer greater than one
+
+[example]
+The kilometre is a decimal multiple of the metre.
+
+[example]
+The hour is a non-decimal multiple of the second.
+
+NOTE: SI prefixes for decimal multiples of SI *base units* and SI
+*derived units* are given in <<note_5_1.16>>.
+
+NOTE: SI prefixes refer strictly to powers of 10, and should not be
+used for powers of 2. For example, 1 kilobit should not be used to
+represent 1 024 bits (stem:[2^10] bits), which is 1 kibibit.
+
+Prefixes for binary multiples are:
+
+[cols="3",options="unnumbered"]
+|===
+.2+^.^h| Factor +
+Facteur
+2+^.^h| Prefix +
+Préfixe
+^.^h| Name +
+Nom
+^.^h| Symbol +
+Symbole
+
+| stem:[(2^{10})^{8}]
+| yobi +
+yobi
+| stem:[sf "Yi"]
+
+| stem:[(2^{10})^{7}]
+| zebi +
+zébi
+| stem:[sf "Zi"]
+
+| stem:[(2^{10})^{6}]
+| exbi +
+exbi
+| stem:[sf "Ei"]
+
+| stem:[(2^{10})^{5}]
+| pebi +
+pébi
+| stem:[sf "Pi"]
+
+| stem:[(2^{10})^{4}]
+| tebi +
+tébi
+| stem:[sf "Ti"]
+
+| stem:[(2^{10})^{3}]
+| gibi +
+gibi
+| stem:[sf "Gi"]
+
+| stem:[(2^{10})^{2}]
+| mebi +
+mébi
+| stem:[sf "Mi"]
+
+| stem:[(2^{10})^1]
+| kibi +
+kibi
+| stem:[sf "Ki"]
+
+|===
+
+Source: <<IEC_80000_13>>.
+
+[[sec_1.18]]
+=== (1.17) submultiple of a unit
+(((submultiple of a unit)))
+
+*measurement unit* obtained by dividing a given measurement unit by
+an integer greater than one
+
+[example]
+The millimetre is a decimal submultiple of the metre.
+
+[example]
+For a plane angle, the second is a non-decimal submultiple of the
+minute.
+
+NOTE: SI prefixes for decimal submultiples of SI *base units* and
+SI *derived units* are given in <<note_5_1.16>>.
+
+[[sec_1.19]]
+=== (1.18) quantity value
+alt:[value of a quantity]
+alt:[value]
+(((quantity value)))
+(((value)))
+(((value of a quantity)))
+
+number and reference together expressing magnitude of a *quantity*
+
+[[ex_1_1.19]]
+====
+Length of a given rod:
+
+stem:[5.34 "unitsml(m)"] or stem:[534 "unitsml(cm)"]
+====
+
+[[ex_2_1.19]]
+====
+Mass of a given body:
+
+stem:[0.152 "unitsml(kg)"] or stem:[152 "unitsml(g)"]
+====
+
+[[ex_3_1.19]]
+====
+Curvature of a given arc:
+
+stem:[112 "unitsml(m^1)"]
+====
+
+[[ex_4_1.19]]
+====
+Celsius temperature of a given sample:
+
+stem:[5 "unitsml(degC)"]
+====
+
+[[ex_5_1.19]]
+====
+Electric impedance of a given circuit element at a given frequency,
+where j is the imaginary unit:
+
+(7 3j)
+====
+
+[[ex_6_1.19]]
+====
+Refractive index of a given sample of glass:
+
+1.32
+====
+
+[[ex_7_1.19]]
+====
+Rockwell C hardness of a given sample:
+
+43.5 HRC
+====
+
+[[ex_8_1.19]]
+====
+Mass fraction of cadmium in a given sample of copper:
+
+stem:[3 "unitsml(ug/kg)"] or stem:[3 cdot 10^{-9}]
+====
+
+[[ex_9_1.19]]
+====
+Molality of Pb^2+^ in a given sample of water:
+
+stem:[1.76 "unitsml(umol/kg)"]
+====
+
+[[ex_10_1.19]]
+====
+Arbitrary amount-of-substance concentration of lutropin in a given
+sample of human blood plasma (WHO International Standard 80/552 used
+as a calibrator):
+
+5.0 IU/l, where "IU" stands for "WHO International Unit"
+====
+
+[NOTE]
+====
+According to the type of reference, a quantity value is either
+
+* a product of a number and a *measurement unit*
+(see <<ex_1_1.19;and!ex_2_1.19;and!ex_3_1.19;and!ex_4_1.19;and!ex_5_1.19;and!ex_8_1.19;and!ex_9_1.19>>);
+the measurement unit one is generally not indicated for
+*quantities of dimension one* (see <<ex_6_1.19;and!ex_8_1.19>>), or
+
+* a number and a reference to a *measurement procedure* (see <<ex_7_1.19>>),
+or
+
+* a number and a *reference material* (see <<ex_10_1.19>>).
+====
+
+NOTE: The number can be complex (see <<ex_5_1.19>>).
+
+NOTE: A quantity value can be presented in more than one way
+(see <<ex_1_1.19;and!ex_2_1.19;and!ex_8_1.19>>).
+
+NOTE: In the case of vector or tensor quantities, each component has
+a quantity value.
+
+[example]
+Force acting on a given particle, e.g. in Cartesian components
+stem:[(F_x;F_y;F_z) = (31.5;43.2;17.0) "unitsml(N)"].
+
+[[sec_1.20]]
+=== (1.21) numerical quantity value
+alt:[numerical value of a quantity numerical value]
+(((numerical quantity value)))
+(((numerical value)))
+(((numerical value of a quantity)))
+
+number in the expression of a *quantity value*, other than any number
+serving as the reference
+
+NOTE: For *quantities of dimension one*, the reference is a
+*measurement unit* which is a number and this is not considered as
+a part of the numerical quantity value.
+
+[example]
+In an amount-of-substance fraction equal to stem:[3 "unitsml(mmol/mol)"], the numerical
+quantity value is 3 and the unit is stem:["unitsml(mmol/mol)"].
+The unit stem:["unitsml(mmol/mol)"] is
+numerically equal to 0.001, but this number 0.001 is not part of the
+numerical quantity value, which remains 3.
+
+NOTE: For *quantities* that have a measurement unit (i.e. those other
+than *ordinal quantities*), the numerical value stem:[{Q}] of a quantity
+stem:[Q] is frequently denoted stem:[{Q} =Q//[Q\]], where stem:[[Q\]]
+denotes the measurement unit.
+
+====
+For a quantity value of stem:[5.7 "unitsml(kg)"], the numerical quantity value is
+stem:[{m} = (5.7 "unitsml(kg)")//"unitsml(kg)" = 5.7]. The same quantity
+value can be expressed as stem:[5 700 "unitsml(g)"] in which case the numerical quantity
+value stem:[{m} = (5 700 "unitsml(g)")//"unitsml(g)" = 5 700].
+====
+
+[[sec_1.21]]
+=== quantity calculus
+(((quantity calculus)))
+
+set of mathematical rules and operations applied to *quantities* other
+than *ordinal quantities*
+
+NOTE: In quantity calculus, *quantity equations* are preferred to
+*numerical value equations* because quantity equations are independent
+of the choice of *measurement units*, whereas numerical value equations
+are not (see <<ISO_31_0_1992,clause=2.2.2>>).
+
+[[sec_1.22]]
+=== quantity equation
+(((quantity equation)))
+
+mathematical relation between *quantities* in a given *system of quantities*,
+independent of *measurement units*
+
+[[ex_1_1.22]]
+[example]
+stem:[Q_1 = Q_2 Q_3] where stem:[Q_1], stem:[Q_2] and stem:[Q_3] denote
+different quantities, and where is a numerical factor.
+
+[example]
+stem:[T = (1//2) m v^2] where stem:[T] is the kinetic energy and stem:[v]
+the speed of a specified particle of mass stem:[m].
+
+[example]
+stem:[n = It//F] where stem:[n] is the amount of substance of a univalent
+component, stem:[I] is the electric current and stem:[t] the duration
+of the electrolysis, and where stem:[F] is the Faraday constant.
+
+[[sec_1.23]]
+=== unit equation
+(((unit equation)))
+
+mathematical relation between *base units*, *coherent derived units*
+or other *measurement units*
+
+[example]
+For the *quantities* in <<ex_1_1.22>>, stem:[[Q_1\] = [Q_2\] [Q_3\]]
+where, stem:[[Q_1\]], stem:[[Q_2\]], and stem:[[Q_3\]] denote the
+measurement units of stem:[Q_1], stem:[Q_2], and stem:[Q_3], respectively,
+provided that these measurement units are in a *coherent system of
+units*.
+
+[example]
+stem:[J ":=" "unitsml(kg*m^2/s^2)"], where, stem:["unitsml(J)"],
+stem:["unitsml(kg)"], stem:["unitsml(m)"], and stem:["unitsml(s)"] are the
+symbols for the joule, kilogram, metre, and second, respectively.
+(The symbol stem:[":="] denotes "is by definition equal to" as given in the
+ISO 80000 and IEC 80000 series.)
+
+[example]
+stem:[1 "unitsml(km/h)" = (1/3.6) "unitsml(m/s)"].
+
+[[sec_1.24]]
+=== conversion factor between units
+(((conversion factor between units)))
+
+ratio of two *measurement units* for *quantities* of the same *kind*
+
+[example]
+stem:["unitsml(km/m)" = 1000] and thus stem:[1 "unitsml(km)" = 1000 "unitsml(m)"].
+
+NOTE: The measurement units may belong to different *systems of units*.
+
+[example]
+stem:["unitsml(h/s)" = 3600] and thus stem:[1 "unitsml(h)" = 3600 "unitsml(s)"].
+
+[example]
+stem:[("unitsml(km/h)")/("unistml(m/s)") = (1//3.6)] and thus
+stem:[1 "unitsml(km/h)" = (1//3.6) "unitsml(m/s)"].
+
+[[sec_1.25]]
+=== numerical value equation
+alt:[numerical quantity value equation]
+(((numerical quantity value equation)))
+(((numerical value equation)))
+
+mathematical relation between *numerical quantity values*, based on
+a given *quantity equation* and specified *measurement units*
+
+[example]
+For the *quantities* in <<ex_1_1.22>>, stem:[{Q_1} = {Q_2} {Q_3}],
+where stem:[{Q_1}], stem:[{Q_2}], and stem:[{Q_3}] denote the numerical
+values of stem:[Q_1], stem:[Q_2], and stem:[Q_3], respectively, provided
+that they are expressed in either *base units* or *coherent derived
+units* or both.
+
+[example]
+In the quantity equation for kinetic energy of a particle,
+stem:[T = (1//2) mv^2], if stem:[m = 2 "unitsml(kg)"] and
+stem:[v = 3 "unitsml(m/s)"], then stem:[{T} = (1//2)" "2" "3^2] is
+a numerical value equation giving the numerical value 9 of stem:[T]
+in joules.
+
+[[sec_1.26]]
+=== ordinal quantity
+(((ordinal quantity)))
+
+*quantity*, defined by a conventional *measurement procedure*, for
+which a total ordering relation can be established, according to magnitude,
+with other quantities of the same *kind*, but for which no algebraic
+operations among those quantities exist
+
+[example]
+Rockwell C hardness.
+
+[example]
+Octane number for petroleum fuel.
+
+[example]
+Earthquake strength on the Richter scale.
+
+[example]
+Subjective level of abdominal pain on a scale from zero to five.
+
+NOTE: Ordinal quantities can enter into empirical relations only and
+have neither *measurement units* nor *quantity dimensions*. Differences
+and ratios of ordinal quantities have no physical meaning.
+
+NOTE: Ordinal quantities are arranged according to
+*ordinal quantity-value scales* (see <<sec_1.28>>).
+
+[[sec_1.27]]
+=== quantity-value scale
+alt:[measurement scale]
+(((measurement scale)))
+(((quantity-value scale)))
+
+ordered set of *quantity values* of *quantities* of a given
+*kind of quantity* used in ranking, according to magnitude, quantities
+of that kind
+
+[example]
+Celsius temperature scale.
+
+[example]
+Time scale.
+
+[example]
+Rockwell C hardness scale.
+
+[[sec_1.28]]
+=== (1.22) ordinal quantity-value scale
+alt:[ordinal value scale]
+(((ordinal quantity-value scale)))
+(((ordinal value scale)))
+
+*quantity-value scale* for *ordinal quantities*
+
+[example]
+Rockwell C hardness scale.
+
+[example]
+Scale of octane numbers for petroleum fuel.
+
+NOTE: An ordinal quantity-value scale may be established by *measurements*
+according to a *measurement procedure*.
+
+[[sec_1.29]]
+=== conventional reference scale
+(((conventional reference scale)))
+
+*quantity-value scale* defined by formal agreement
+
+[[sec_1.30]]
+=== nominal property
+(((nominal property)))
+
+property of a phenomenon, body, or substance, where the property has
+no magnitude
+
+[example]
+Sex of a human being.
+
+[example]
+Colour of a paint sample.
+
+[example]
+Colour of a spot test in chemistry.
+
+[example]
+ISO two-letter country code.
+
+[example]
+Sequence of amino acids in a polypeptide.
+
+NOTE: A nominal property has a value, which can be expressed in words,
+by alphanumerical codes, or by other means.
+
+NOTE: 'Nominal property value' is not to be confused with
+*nominal quantity value*.

@@ -1,0 +1,56 @@
+
+== List of acronyms
+
+BIPM:: International Bureau of Weights and Measures
+
+CCQM:: Consultative Committee for Amount of Substance -- Metrology
+in Chemistry
+
+CGPM:: General Conference on Weights and Measures
+
+CODATA:: Committee on Data for Science and Technology
+
+GUM:: Guide to the Expression of Uncertainty in Measurement
+
+IAEA:: International Atomic Energy Agency
+
+ICSU:: International Council for Science
+
+IEC:: International Electrotechnical Commission
+
+IFCC:: International Federation of Clinical Chemistry and Laboratory
+Medicine
+
+ILAC:: International Laboratory Accreditation Cooperation
+
+ISO:: International Organization for Standardization
+
+ISO/REMCO:: International Organization for Standardization, Reference
+Materials Committee
+
+IUPAC:: International Union of Pure and Applied Chemistry
+
+IUPAC/CIAAW:: International Union of Pure and Applied Chemistry --
+Commission on Isotopic Abundances and Atomic Weights
+
+IUPAP:: International Union of Pure andApplied Physics
+
+JCGM:: Joint Committee for Guides in Metrology
+
+JCGM/WG 1:: Joint Committee for Guides in Metrology, Working Group
+1 on the GUM
+
+JCGM/WG 2:: Joint Committee for Guides in Metrology, Working Group
+2 on the VIM
+
+OIML:: International Organization of Legal Metrology
+
+VIM, 2nd edition:: International Vocabulary of Basic and General Terms
+in Metrology (1993)
+
+VIM, 3rd edition:: International Vocabulary of Metrology -- Basic
+and General Concepts and Associated Terms (this publication) VIM
+
+VIML:: International Vocabulary of Terms in Legal Metrology
+
+WHO:: World Health Organization

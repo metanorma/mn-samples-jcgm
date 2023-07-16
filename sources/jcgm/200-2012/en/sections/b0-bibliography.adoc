@@ -1,0 +1,115 @@
+
+[bibliography]
+== Bibliography
+
+* [[[ISO_31_0_1992,ISO 31-0:1992]]], _Quantities and units -- Part 0: General principles_
+
+* [[[ISO_31_5,ISO 31-5]]], _Quantities and units -- Part 5: Electricity and magnetism_
+
+* [[[ISO_31_6,ISO 31-6]]], _Quantities and units -- Part 6: Light and related electromagnetic radiations_
+
+* [[[ISO_31_8,ISO 31-8]]], _Quantities and units -- Part 8: Physical chemistry and molecular physics_
+
+* [[[ISO_31_9,ISO 31-9]]], _Quantities and units -- Part 9: Atomic and nuclear physics_
+
+* [[[ISO_31_10,ISO 31-10]]], _Quantities and units -- Part 10: Nuclear reactions and ionizing radiations_
+
+* [[[ISO_31_11,ISO 31-11]]], _Quantities and units -- Part 11: Mathematical signs and symbols for use in the physical sciences and technology_
+
+* [[[ISO_31_12,ISO 31-12]]], _Quantities and units -- Part 12: Characteristic numbers_
+
+* [[[ISO_31_13,ISO 31-13]]], _Quantities and units -- Part 13: Solid state physics_
+
+* [[[ISO_704_2000,ISO 704:2000]]], _Terminology work -- Principles and methods_
+
+* [[[ISO_1000_1992_Amd_1_1998,ISO 1000:1992/Amd.1:1998]]], _SI units and recommendations for the use of their multiples and of certain other units_
+
+* [[[ISO_1087_1_2000,ISO 1087-1:2000]]], _Terminology work -- Vocabulary -- Part 1: Theory and application_
+
+* [[[ISO_3534_1,ISO 3534-1]]], _Statistics -- Vocabulary and symbols -- Part 1: General statistical terms and terms used in probability_
+
+* [[[ISO_5436_2,ISO 5436-2]]], _Geometrical Product Specifications (GPS) -- Surface texture: Profile method; Measurement standards -- Part 2: Software measurement standards_
+
+* [[[ISO_5725_1_1994_Cor_1_1998,ISO 5725-1:1994/Cor.1:1998]]], _Accuracy (trueness and precision) of measurement methods and results -- Part 1: General principles and definitions_
+
+* [[[ISO_5725_2_1994_Cor_1_2002,ISO 5725-2:1994/Cor.1:2002]]], _Accuracy (trueness and precision) of measurement methods and results -- Part 2: Basic method for the determination of repeatability and reproducibility of a standard measurement method_
+
+* [[[ISO_5725_3_1994_Cor_1_2001,ISO 5725-3:1994/Cor.1:2001]]], _Accuracy (trueness and precision) of measurement methods and results -- Part 3: Intermediate measures of the precision of a standard measurement method_
+
+* [[[ISO_5725_4_1994,ISO 5725-4:1994]]], _Accuracy (trueness and precision) of measurement methods and results -- Part 4: Basic methods for the determination of the trueness of a standard measurement method_
+
+* [[[ISO_5725_5_1998_Cor_1_2005,ISO 5725-5:1998/Cor.1:2005]]], _Accuracy (trueness and precision) of measurement methods and results -- Part 5: Alternative methods for the determination of the precision of a standard measurement method_
+
+* [[[ISO_5725_6_1994_Cor_1_2001,ISO 5725-6:1994/Cor.1:2001]]], _Accuracy (trueness and precision) of measurement methods and results -- Part 6: Use in practice of accuracy values_
+
+* [[[ISO_9000_2005,ISO 9000:2005]]], _Quality management systems -- Fundamentals and vocabulary_
+
+* [[[ISO_10012,ISO 10012]]], _Measurement management systems -- Requirements for measurement processes and measuring equipment_
+
+* [[[ISO_10241_1992,ISO 10241:1992]]], _International terminology standards -- Preparation and layout_
+
+* [[[ISO_13528,ISO 13528]]], _Statistical methods for use in proficiency testing by interlaboratory comparisons_
+
+* [[[ISO_15189_2007,ISO 15189:2007]]], _Medical laboratories -- Particular requirements for quality and competence_
+
+* [[[ISO_17511,ISO 17511]]], _In vitro diagnostic medical devices -- Measurement of quantities in biological samples -- Metrological traceability of values assigned to calibrators and control materials_
+
+* [[[ISO_TS_21748,ISO/TS 21748]]], _Guidance for the use of repeatability, reproducibility and trueness estimates in measurement uncertainty estimation_
+
+* [[[ISO_TS_21749,ISO/TS 21749]]], _Measurement uncertainty for metrological applications -- Repeated measurements and nested experiments_
+
+* [[[ISO_80000_3,ISO 80000-3]]], _Quantities and units -- Part 3: Space and time_
+
+* [[[ISO_80000_4,ISO 80000-4]]], _Quantities and units -- Part 4: Mechanics_
+
+* [[[ISO_80000_5,ISO 80000-5]]], _Quantities and units -- Part 5: Thermodynamics_
+
+* [[[ISO_80000_8,ISO 80000-8]]], _Quantities and units -- Part 8: Acoustics_
+
+* [[[ISO_Guide_31_2000,ISO Guide 31:2000]]], _Reference materials -- Contents of certificates and labels_
+
+* [[[ISO_Guide_34_2000,ISO Guide 34:2000]]], _General requirements for the competence of reference material producers_
+
+* [[[ISO_Guide_35_2006,ISO Guide 35:2006]]],_Reference materials -- General and statistical principles for certification_
+
+* [[[Guid_expression,Guid expression]]], _Guide to the expression of uncertainty in measurement (GUM)_, BIPM, IEC, IFCC, ISO, IUPAC, IUPAP, OIML, 1993 amended 1995
+
+* [[[JCGM_101_2008,JCGM 101:2008]]], _Evaluation of measurement data -- Supplement 1 to the "Guide to the expression of uncertainty in measurement" -- Propagation of distributions using a Monte Carlo method_
+
+* [[[IEC_60027_2_2005,IEC 60027-2:2005]]], _Letter symbols to be used in electrical technology -- Part 2: Telecommunications and electronics_
+
+* [[[IEC_60050_300_2001,IEC 60050-300:2001]]], _International Electrotechnical Vocabulary -- Electrical and electronic measurements and measuring instruments -- Part 311: General terms relating to measurements -- Part 312: General terms relating to electrical measurements -- Part 313: Types of electrical measuring instruments -- Part 314: Specific terms according to the type of instrument_
+
+* [[[IEC_60359_2001,IEC 60359:2001]]], Ed. 3.0 (bilingual), _Electrical and electronic measurement equipment -- Expression of performance_
+
+* [[[IEC_80000_13,IEC 80000-13]]], _Quantities and units -- Part 13: Information science and technology_
+
+* [[[BIPM_SI,BIPM SI]]] BIPM: _The International System of Units (SI)_, 8^th^ edition, 2006
+
+* [[[CCQM_Meeting_5,CCQM Meeting 5]]] BIPM, _Consultative Committee for Amount of Substance (CCQM) -- 5th Meeting (February 1999)_
+
+* [[[MOHR_2002,MOHR 2002]]], P.J. MOHR, B.N. TAYLOR, D.B. NEWELL, Recommended Values of the Fundamental Physical Constants: 2002,_ Reviews of Modern _Physics_, *77*, 2005, 107 pp. http://physics.nist.gov/constants
+
+* [[[EMONS_2006,EMONS 2006]]], EMONS, H., FAJGELJ, A., VAN DER VEEN, A.M.H. and WATTERS, R. New definitions on reference materials. _Accred. Qual. Assur._, *10*, 2006, pp. 576-578
+
+* [[[Guide_1995,Guide 1995]]], _Guide to the expression of uncertainty in measurement_ (1993, amended 1995) (published by ISO in the name of BIPM, IEC, IFCC, IUPAC, IUPAP and OIML)
+
+* [[[IFCC_IUPAC,IFCC-IUPAC]]], IFCC-IUPAC: Approved Recommendation (1978). Quantities and Units in Clinical Chemistry, _Clin. Chim. Acta_, 1979:**96**:157F:183F
+
+* [[[ILAC_P_10_2002,ILAC P-10:2002]]], ILAC P-10 (2002), ILAC Policy on Traceability of Measurement Results
+
+* [[[LAETER_2005,LAETER 2005]]] J.K. BÖHLKE, R. de LAETER, P. D E BIÈVRE, H. HIDAKA, H.S. PEISER, K.J.R. ROSMAN, P.D.P. TAYLOR. Isotopic Composition of the Elements, 2001, _J. Phys. Chem. Ref. Data._, **34**, 2005, pp. 57-67
+
+* [[[IUPAP_25,IUPAP-25]]], IUPAP-25: Booklet on Symbols, Units, Nomenclature and Fundamental Constants. Document IUPAP-25, E.R. Cohen and P. Giacomo, _Physica_ *146A*, 1987, pp. 1-68 footnote:[To be revised and published on the Web]
+
+* [[[IUPAC_1993,IUPAC 1993]]] IUPAC: Quantities, Units and Symbols in Physical Chemistry (1993, 2007)
+
+* [[[IUPAC_2003,IUPAC 2003]]] IUPAC, _Pure Appl. Chem_., *75*, 2003,pp. 1107-1122
+
+* [[[OIML_V1_2000,OIML V1:2000]]] OIML V1:2000, _International Vocabulary of Terms in Legal Metrology (VIML)_
+
+* [[[WHO_75_589,WHO 75/589]]] WHO 75/589, _Chorionic gonadotrophin, human_, 1999
+
+* [[[WHO_80_552,WHO 80/552]]] WHO 80/552, _Luteinizing hormone, human, pituitary_, 1988
+
+* [[[ISO_21749,ISO/TS 21749:2005]]]

@@ -1,0 +1,113 @@
+
+== Introduction
+
+In general, a vocabulary is a "terminological dictionary which contains
+designations and definitions from one or more specific subject fields"
+(<<ISO_1087_1_2000,clause=3.7.2>>). The present Vocabulary pertains
+to metrology, the "science of measurement and its application". It
+also covers the basic principles governing quantities and units. The
+field of quantities and units could be treated in many different ways.
+Clause 1 of this Vocabulary is one such treatment, and is based on
+the principles laid down in the various parts of ISO 31, _Quantities
+and units_, currently being replaced by ISO 80000 and IEC 80000 series
+_Quantities and units_, and in theSI Brochure, _The International
+System of Units_ (published by the BIPM).
+
+The second edition of the _International vocabulary of basic and general
+terms in metrology_ (VIM) was published in 1993. The need to cover
+measurements in chemistry and laboratory medicine for the first time,
+as well as to incorporate concepts such as those that relate to metrological
+traceability, measurement uncertainty, and nominal properties, led
+to this third edition. Its title is now _International vocabulary
+of metrology -- Basic and general concepts and associated terms (VIM)_,
+in order to emphasize the primary role of concepts in developing a
+vocabulary.
+
+In this Vocabulary, it is taken for granted that there is no fundamental
+difference in the basic principles of measurement in physics, chemistry,
+laboratory medicine, biology, or engineering. Furthermore, an attempt
+has been made to meet conceptual needs of measurement in fields such
+as biochemistry, food science, forensic science, and molecular biology.
+
+Several concepts that appeared in the second edition of the VIM do
+not appear in this third edition because they are no longer considered
+to be basic or general. For example, the concept 'response time',
+used in describing the temporal behaviour of a measuring system, is
+not included. For concepts related to measurement devices that are
+not covered by this third edition of the VIM, the reader should consult
+other vocabularies such as IEC 60050, _International Electrotechnical
+Vocabulary_, IEV. For concepts concerned with quality management,
+mutual recognition arrangements pertaining to metrology, or legal
+metrology, the reader is referred to documents given in the bibliography.
+
+Development of this third edition of the VIM has raised some fundamental
+questions about different current philosophies and descriptions of
+measurement, as will be summarized below. These differences sometimes
+lead to difficulties in developing definitions that could be used
+across the different descriptions. No preference is given in this
+third edition to any of the particular approaches.
+
+The change in the treatment of measurement uncertainty from an Error
+Approach (sometimes called Traditional Approach or True Value Approach)
+to an Uncertainty Approach necessitated reconsideration of some of
+the related concepts appearing in the second edition of the VIM. The
+objective of measurement in the Error Approach is to determine an
+estimate of the true value that is as close as possible to that single
+true value. The deviation from the true value is composed of random
+and systematic errors. The two kinds of errors, assumed to be always
+distinguishable, have to be treated differently. No rule can be derived
+on how they combine to form the total error of any given measurement
+result, usually taken as the estimate. Usually, only an upper limit
+of the absolute value of the total error is estimated, sometimes loosely
+named "uncertainty".
+
+In the CIPM Recommendation INC-1 (1980) on the Statement of Uncertainties,
+it is suggested that the components of measurement uncertainty should
+be grouped into two categories, Type A and Type B, according to whether
+they were evaluated by statistical methods or otherwise, and that
+they be combined to yield a variance according to the rules of mathematical
+probability theory by also treating the Type B components in terms
+of variances. The resulting standard deviation is an expression of
+a measurement uncertainty. A view of the Uncertainty Approach was
+detailed in the _Guide to the expression of uncertainty in measurement
+(GUM)_ (1993, corrected and reprinted in 1995) that focused on the
+mathematical treatment of measurement uncertainty through an explicit
+measurement model under the assumption that the measurand can be characterized
+by an essentially unique value. Moreover, in the GUM as well as in
+IEC documents, guidance is provided on the Uncertainty Approach in
+the case of a single reading of a calibrated instrument, a situation
+normally met in industrial metrology.
+
+The objective of measurement in the Uncertainty Approach is not to
+determine a true value as closely as possible. Rather, it is assumed
+that the information from measurement only permits assignment of an
+interval of reasonable values to the measurand, based on the assumption
+that no mistakes have been made in performing the measurement. Additional
+relevant information may reduce the range of the interval of values
+that can reasonably be attributed to the measurand. However, even
+the most refined measurement cannot reduce the interval to a single
+value because of the finite amount of detail in the definition of
+a measurand. The definitional uncertainty, therefore, sets a minimum
+limit to any measurement uncertainty. The interval can be represented
+by one of its values, called a "measured quantity value".
+
+In the GUM, the definitional uncertainty is considered to be negligible
+with respect to the other components of measurement uncertainty. The
+objective of measurement is then to establish a probability that this
+essentially unique value lies within an interval of measured quantity
+values, based on the information available from measurement.
+
+The IEC scenario focuses on measurements with single readings, permitting
+the investigation of whether quantities vary in time by demonstrating
+whether measurement results are compatible. The IEC view also allows
+non-negligible definitional uncertainties. The validity of the measurement
+results is highly dependent on the metrological properties of the
+instrument as demonstrated by its calibration. The interval of values
+offered to describe the measurand is the interval of values of measurement
+standards that would have given the same indications.
+
+In the GUM, the concept of true value is kept for describing the objective
+of measurement, but the adjective "true" is considered to be redundant.
+The IEC does not use the concept to describe this objective. In this
+Vocabulary, the concept and term are retained because of common usage
+and the importance of the concept.

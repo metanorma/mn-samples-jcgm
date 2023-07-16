@@ -1,0 +1,48 @@
+= JCGM 200:2012
+:docnumber: 200
+:tc-document-number:
+:edition: 3
+:published-date:
+:copyright-year: 2012
+:language: en
+:doctype: international-standard
+:title-en: International vocabulary of metrology
+:title-part-en: Basic and general concepts and associated terms (VIM)
+:docstage: in-force
+:docsubstage: 60
+:committee-acronym: JCGM
+:committee-en: Joint Committee for Guides in Metrology
+:workgroup-acronym: WG 1
+:workgroup-en: Working Group on the Expression of Uncertainty in Measurement
+:imagesdir: images
+:mn-document-class: bipm
+:mn-output-extensions: xml,html,doc,pdf,rxl
+:local-cache-only:
+
+include::sections/00-foreword.adoc[]
+
+include::sections/00-introduction.adoc[]
+
+include::sections/00-conventions.adoc[]
+
+include::sections/00-scope.adoc[]
+
+include::sections/01-quantities_and_units.adoc[]
+
+include::sections/02-measurement.adoc[]
+
+include::sections/03-devices_for_measurement.adoc[]
+
+include::sections/04-properties_measuring_devices.adoc[]
+
+include::sections/05-etalons.adoc[]
+
+include::sections/aa-concept_diagrams.adoc[]
+
+include::sections/b0-bibliography.adoc[]
+
+include::sections/b1-acronyms.adoc[]
+
+
+[index]
+== Alphabetical index

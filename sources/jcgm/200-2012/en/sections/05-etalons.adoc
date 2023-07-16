@@ -1,0 +1,472 @@
+
+[[sec_5]]
+== Measurement standards (Etalons)
+
+[[sec_5.1]]
+=== (6.1) measurement standard
+alt:[etalon]
+(((etalon)))
+(((measurement standard)))
+
+realization of the definition of a given *quantity*, with stated
+*quantity value* and associated *measurement uncertainty*, used as
+a reference
+
+[example]
+1 kg mass measurement standard with an associated *standard measurement
+uncertainty* of stem:[3 "unitsml(ug)"].
+
+[example]
+100 measurement standard resistor with an associated standard measurement
+uncertainty of stem:[1 mu].
+
+[example]
+Caesium frequency standard with a relative standard measurement uncertainty
+of stem:[2 cdot 10^{-15}].
+
+[example]
+Standard buffer solution with a pH of 7.072 with an associated standard
+measurement uncertainty of 0.006.
+
+[example]
+Set of reference solutions of cortisol in human serum having a certified
+quantity value with measurement uncertainty for each solution.
+
+[example]
+*Reference material* providing quantity values with measurement uncertainties
+for the mass concentration of each of ten different proteins.
+
+NOTE: A "realization of the definition of a given quantity" can be
+provided by a *measuring system*, a *material measure*, or a reference
+material.
+
+NOTE: A measurement standard is frequently used as a reference in
+establishing *measured quantity values* and associated measurement
+uncertainties for other quantities of the same *kind*, thereby establishing
+*metrological traceability* through *calibration* of other measurement
+standards, *measuring instruments*, or measuring systems.
+
+NOTE: The term "realization" is used here in the most general meaning.
+It denotes three procedures of "realization". The first one consists
+in the physical realization of the *measurement unit* from its definition
+and is realization _sensu stricto_. The second, termed "reproduction",
+consists not in realizing the measurement unit from its definition
+but in setting up a highly reproducible measurement standard based
+on a physical phenomenon, as it happens, e.g. in case of use of
+frequency-stabilized lasers to establish a measurement standard for
+the metre, of the Josephson effect for the volt or of the quantum
+Hall effect for the ohm. The third procedure consists in adopting
+a material measure as a measurement standard. It occurs in the case
+of the measurement standard of 1 kg.
+
+NOTE: A standard measurement uncertainty associated with a measurement
+standard is always a component of the *combined standard measurement
+uncertainty* (see <<Guide_1995,clause=2.3.4>>) in a *measurement result*
+obtained using the measurement standard.
+
+Frequently, this component is small compared with other components
+of the combined standard measurement uncertainty.
+
+NOTE: Quantity value and measurement uncertainty must be determined
+at the time when the measurement standard is used.
+
+NOTE: Several quantities of the same kind or of different kinds may
+be realized in one device which is commonly also called a measurement
+standard.
+
+NOTE: The word "embodiment" is sometimes used in the English language
+instead of "realization".
+
+NOTE: In science and technology, the English word "standard" is used
+with at least two different meanings: as a specification, technical
+recommendation, or similar normative document (in French "norme")
+and as a measurement standard (in French "étalon"). This Vocabulary
+is concerned solely with the second meaning.
+
+NOTE: The term "measurement standard" is sometimes used to denote
+other metrological tools, e.g. 'software measurement standard' (see
+<<ISO_5436_2>>).
+
+[[sec_5.2]]
+=== (6.2) international measurement standard
+(((international measurement standard)))
+
+*measurement standard* recognized by signatories to an international
+agreement and intended to serve worldwide
+
+[example]
+The international prototype of the kilogram.
+
+[example]
+Chorionic gonadotrophin, World Health Organization (WHO) 4th international
+standard 1999, 75/589, 650 International Units per ampoule.
+
+[example]
+VSMOW2 (Vienna Standard Mean Ocean Water) distributed by the International
+Atomic Energy Agency (IAEA) for differential stable isotope amount-of-substance
+ratio *measurements*.
+
+[[sec_5.3]]
+=== (6.3) national measurement standard
+alt:[national standard]
+(((national measurement standard)))
+(((national standard)))
+
+*measurement standard* recognized by national authority to serve in
+a state or economy as the basis for assigning *quantity values* to
+other measurement standards for the *kind of quantity* concerned
+
+[[sec_5.4]]
+=== (6.4) primary measurement standard
+alt:[primary standard]
+(((primary measurement standard)))
+(((primary standard)))
+
+*measurement standard* established using a
+*primary reference measurement procedure*, or created as an artifact,
+chosen by convention
+
+[example]
+Primary measurement standard of amount-of-substance concentration
+prepared by dissolving a known amount of substance of a chemical component
+to a known volume of solution.
+
+[example]
+Primary measurement standard for pressure based on separate *measurements*
+of force and area.
+
+[example]
+Primary measurement standard for isotope amount-of-substance ratio
+measurements, prepared by mixing known amount-of-substances of specified
+isotopes.
+
+[example]
+Triple-point-of-water cell as a primary measurement standard of thermodynamic
+temperature.
+
+[example]
+The international prototype of the kilogram as an artifact, chosen
+by convention.
+
+[[sec_5.5]]
+=== (6.5) secondary measurement standard
+alt:[secondary standard]
+(((secondary measurement standard)))
+(((secondary standard)))
+
+*measurement standard* established through *calibration* with respect
+to a *primary measurement standard* for a *quantity* of the same *kind*
+
+NOTE: Calibration may be obtained directly between a primary measurement
+standard and a secondary measurement standard, or involve an intermediate
+*measuring system* calibrated by the primary measurement standard
+and assigning a *measurement result* to the secondary measurement
+standard.
+
+NOTE: A measurement standard having its *quantity value* assigned
+by a ratio *primary reference measurement procedure* is a secondary
+measurement standard.
+
+[[sec_5.6]]
+=== (6.6) reference measurement standard
+alt:[reference standard]
+(((reference measurement standard)))
+(((reference standard)))
+
+*measurement standard* designated for the *calibration* of other measurement
+standards for *quantities* of a given *kind* in a given organization
+or at a given location
+
+[[sec_5.7]]
+=== (6.7) working measurement standard
+alt:[working standard]
+(((working measurement standard)))
+(((working standard)))
+
+*measurement standard* that is used routinely to calibrate or verify
+*measuring instruments* or *measuring systems*
+
+NOTE: A working measurement standard is usually calibrated with respect
+to a *reference measurement standard*.
+
+NOTE: In relation to *verification*, the terms "check standard" or
+"control standard" are also sometimes used.
+
+[[sec_5.8]]
+=== (6.9) travelling measurement standard
+alt:[travelling standard]
+(((travelling measurement standard)))
+(((travelling standard)))
+
+*measurement standard*, sometimes of special construction, intended
+for transport between different locations
+
+[example]
+Portable battery-operated caesium-133 frequency measurement standard.
+
+[[sec_5.9]]
+=== (6.8) transfer measurement device
+alt:[transfer device]
+(((transfer device)))
+(((transfer measurement device)))
+
+device used as an intermediary to compare *measurement standards*
+
+NOTE: Sometimes, measurement standards are used as transfer devices.
+
+[[sec_5.10]]
+=== intrinsic measurement standard
+alt:[intrinsic standard]
+(((intrinsic measurement standard)))
+(((intrinsic standard)))
+
+*measurement standard* based on an inherent and reproducible property
+of a phenomenon or substance
+
+[example]
+Triple-point-of-water cell as an intrinsic measurement standard of
+thermodynamic temperature.
+
+[example]
+Intrinsic measurement standard of electric potential difference based
+on the Josephson effect.
+
+[example]
+Intrinsic measurement standard of electric resistance based on the
+quantum Hall effect.
+
+[example]
+Sample of copper as an intrinsic measurement standard of electric
+conductivity.
+
+NOTE: A *quantity value* of an intrinsic measurement standard is assigned
+by consensus and does not need to be established by relating it to
+another measurement standard of the same type. Its *measurement uncertainty*
+is determined by considering two components: the first associated
+with its consensus quantity value and the second associated with its
+construction, implementation, and maintenance.
+
+NOTE: An intrinsic measurement standard usually consists of a system
+produced according to the requirements of a consensus procedure and
+subject to periodic *verification*. The consensus procedure may contain
+provisions for the application of *corrections* necessitated by the
+implementation.
+
+NOTE: Intrinsic measurement standards that are based on quantum phenomena
+usually have outstanding *stability*.
+
+NOTE: The adjective "intrinsic" does not mean that such a measurement
+standard may be implemented and used without special care or that
+such a measurement standard is immune to internal and external influences.
+
+[[sec_5.11]]
+=== (6.12) conservation of a measurement standard
+alt:[maintenance of a measurement standard]
+(((conservation of a measurement standard)))
+(((maintenance of a measurement standard)))
+
+set of operations necessary to preserve the metrological properties
+of a *measurement standard* within stated limits
+
+NOTE: Conservation commonly includes periodic *verification* of predefined
+metrological properties or *calibration*, storage under suitable conditions,
+and specified care in use.
+
+[[sec_5.12]]
+=== calibrator
+(((calibrator)))
+
+*measurement standard* used in *calibration*
+
+NOTE: The term "calibrator" is only used in certain fields.
+
+[[sec_5.13]]
+=== (6.13) reference material
+alt:[RM]
+(((reference material)))
+(((RM)))
+
+material, sufficiently homogeneous and stable with reference to specified
+properties, which has been established to be fit for its intended
+use in *measurement* or in examination of *nominal properties*
+
+NOTE: Examination of a nominal property provides a nominal property
+value and associated uncertainty. This uncertainty is not a
+*measurement uncertainty*.
+
+NOTE: Reference materials with or without assigned *quantity values*
+can be used for *measurement precision* control whereas only reference
+materials with assigned quantity values can be used for *calibration*
+or *measurement trueness* control.
+
+NOTE: 'Reference material' comprises materials embodying *quantities*
+as well as nominal properties.
+
+====
+_Examples of reference materials embodying quantities_:
+
+. water of stated purity, the dynamic viscosity of which is used to
+calibrate viscometers;
+
+. human serum without an assigned quantity value for the amount-of-substance
+concentration of the inherent cholesterol, used only as a measurement
+precision control material;
+
+. fish tissue containing a stated mass fraction of a dioxin, used
+as a *calibrator*.
+====
+
+====
+_Examples of reference materials embodying nominal properties_:
+
+. colour chart indicating one or more specified colours;
+
+. DNA compound containing a specified nucleotide sequence;
+
+. urine containing 19-androstenedione.
+====
+
+NOTE: A reference material is sometimes incorporated into a specially
+fabricated device.
+
+[example]
+Substance of known triple-point in a triple-point cell.
+
+[example]
+Glass of known optical density in a transmission filter holder.
+
+[example]
+Spheres of uniform size mounted on a microscope slide.
+
+NOTE: Some reference materials have assigned quantity values that
+are metrologically traceable to a *measurement unit* outside a
+*system of units*. Such materials include vaccines to which International
+Units (IU) have been assigned by the World Health Organization.
+
+NOTE: In a given *measurement*, a given reference material can only
+be used for either calibration or quality assurance.
+
+NOTE: The specifications of a reference material should include its
+material traceability, indicating its origin and processing
+(<<EMONS_2006,Accred. Qual. Assur.:2006>>).
+
+NOTE: ISO/REMCO has an analogous definition <<EMONS_2006>> but uses
+the term "measurement process" to mean 'examination'
+(<<ISO_15189_2007,clause=3.4>>), which covers both measurement of
+a quantity and examination of a nominal property.
+
+[[sec_5.14]]
+=== (6.14) certified reference material
+alt:[CRM]
+(((certified reference material)))
+(((CRM)))
+
+*reference material*, accompanied by documentation issued by an authoritative
+body and providing one or more specified property values with associated
+uncertainties and traceabilities, using valid procedures
+
+[example]
+Human serum with assigned *quantity value* for the concentration of
+cholesterol and associated *measurement uncertainty* stated in an
+accompanying certificate, used as a *calibrator* or *measurement trueness*
+control material.
+
+NOTE: 'Documentation' is given in the form of a 'certificate'
+(see <<ISO_Guide_31_2000>>).
+
+NOTE: Procedures for the production and certification of certified
+reference materials are given, e.g. in <<ISO_Guide_34_2000>> and
+<<ISO_Guide_35_2006>>.
+
+NOTE: In this definition, "uncertainty" covers both 'measurement uncertainty'
+and 'uncertainty associated with the value of a *nominal property*',
+such as for identity and sequence. "Traceability" covers both
+'*metrological traceability* of a quantity value' and 'traceability
+of a nominal property value'.
+
+NOTE: Specified quantity values of certified reference materials require
+metrological traceability with associated measurement uncertainty
+(<<EMONS_2006,Accred. Qual. Assur.:2006>>).
+
+NOTE: ISO/REMCO has an analogous definition
+(<<EMONS_2006,Accred. Qual. Assur.:2006>>) but uses the modifiers
+"metrological" and "metrologically" to refer to both quantity and
+nominal property.
+
+[[sec_5.15]]
+=== commutability of a reference material
+(((commutability of a reference material)))
+
+property of a *reference material*, demonstrated by the closeness
+of agreement between the relation among the *measurement results*
+for a stated *quantity* in this material, obtained according to two
+given *measurement procedures*, and the relation obtained among the
+measurement results for other specified materials
+
+NOTE: The reference material in question is usually a *calibrator*
+and the other specified materials are usually routine samples.
+
+NOTE: The measurement procedures referred to in the definition are
+the one preceding and the one following the reference material (calibrator)
+in question in a *calibration hierarchy* (see <<ISO_17511>>).
+
+NOTE: The stability of commutable reference materials should be monitored
+regularly.
+
+[[sec_5.16]]
+=== reference data
+(((reference data)))
+
+data related to a property of a phenomenon, body, or substance, or
+to a system of components of known composition or structure, obtained
+from an identified source, critically evaluated, and verified for
+accuracy
+
+[example]
+Reference data for solubility of chemical compounds as published by
+the IUPAC.
+
+NOTE: In this definition, accuracy covers, for example,
+*measurement accuracy* and 'accuracy of a nominal property value'.
+
+NOTE: "Data" is a plural form, "datum" is the singular. "Data" is
+commonly used in the singular sense, instead of "datum".
+
+[[sec_5.17]]
+=== standard reference data
+(((standard reference data)))
+
+*reference data* issued by a recognized authority
+
+[example]
+Values of the fundamental physical constants, as regularly evaluated
+and recommended by CODATA of ICSU.
+
+[example]
+Relative atomic mass values, also called atomic weight values, of
+the elements, as evaluated every two years by IUPAC-CIAAW, approved
+by the IUPAC General Assembly, and published in _Pure Appl. Chem_.
+
+[[sec_5.18]]
+=== reference quantity value
+alt:[reference value]
+(((reference quantity value)))
+(((reference value)))
+
+*quantity value* used as a basis for comparison with values of *quantities*
+of the same *kind*
+
+NOTE: A reference quantity value can be a *true quantity value* of
+a *measurand*, in which case it is unknown, or a
+*conventional quantity value*, in which case it is known.
+
+[NOTE]
+====
+A reference quantity value with associated *measurement uncertainty*
+is usually provided with reference to
+
+. a material, e.g. a *certified reference material*,
+. a device, e.g. a stabilized laser,
+. a *reference measurement procedure*,
+. a comparison of *measurement standards*.
+====

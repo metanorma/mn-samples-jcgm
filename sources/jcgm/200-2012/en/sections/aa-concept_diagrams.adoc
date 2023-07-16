@@ -1,0 +1,123 @@
+
+[[annex-a]]
+[appendix,obligation="informative"]
+== Concept diagrams
+
+The 12 concept diagrams in this informative Annex are intended to
+provide:
+
+* a visual presentation of the relations between the concepts defined
+and termed in the preceding clauses;
+
+* a possibility for checking whether the definitions offer adequate
+relations;
+
+* a background for identifying further needed concepts; and
+
+* a check that terms are sufficiently systematic.
+
+It should be recalled, however, that a given concept may be describable
+by many characteristics and only essential delimiting characteristics
+are included in the definition.
+
+The area available on a page limits the number of concepts that can
+be presented legibly, but all diagrams are in principle interrelated
+as indicated in each diagram by parenthetic references to other diagrams.
+
+The relations used are of three types as defined by <<ISO_704_2000>>
+and <<ISO_1087_1_2000>>. Two are hierarchical, i.e. having superordinate
+and subordinate concepts, the third is non-hierarchical.
+
+The hierarchical _generic relation_ (or genus-species relation) connects
+a generic concept and a specific concept; the latter inherits all
+characteristics of the former. The diagrams show such relations as
+a tree,
+
+[%unnumbered]
+image::annex-a-figure1-en.png[]
+
+where a short branch with three dots indicates that one or more other
+specific concepts exist, but are not included for presentation and
+a heavy starting line of a tree shows a separate terminological dimension.
+For example,
+
+[%unnumbered]
+image::annex-a-figure2-en.png[]
+
+where a third concept might be 'off-system measurement unit'.
+
+The _partitive relation_ (or part-whole relation) is also hierarchical
+and connects a comprehensive concept to two or more partitive concepts
+which fitted together constitute the comprehensive concept. The diagrams
+show such relations as a rake or bracket, and a continued backline
+without a tooth means one or more further partitive concepts that
+are not discussed.
+
+[%unnumbered]
+image::annex-a-figure3-en.png[]
+
+A close-set double line indicates that several partitive concepts
+of a given type are involved and a broken line shows that such plurality
+is uncertain. For example
+
+[%unnumbered]
+image::annex-a-figure4-en.png[]
+
+A parenthetic term indicates a concept that is not defined in the
+Vocabulary, but is taken as a primitive which is assumed to be generally
+understood.
+
+[%unnumbered]
+image::annex-a-figure5-en.png[]
+
+The _associative relation_ (or pragmatic relation) is non-hierarchical
+and connects two concepts which are in some sort of thematic association.
+There are many subtypes of associative relation, but all are indicated
+by a double-headed arrow. For example,
+
+[%unnumbered]
+image::annex-a-figure6-en.png[]
+
+To avoid too complicated diagrams, they do not show all the possible
+associative relations. The diagrams will demonstrate that fully systematic
+derived terms have not been created, often because metrology is an
+old discipline with a vocabulary evolved by accretion rather than
+as a comprehensive de novo structure.
+
+[%landscape]
+<<<
+
+[[figureA.1]]
+.Concept diagram for part of Clause 1 around 'quantity'
+image::figureA.1-en.png[]
+
+[[figureA.2]]
+.Concept diagram for part of Clause 1 around 'measurement unit'
+image::figureA.2-en.png[]
+
+[[figureA.3]]
+.Concept diagram for part of Clause 2 around 'measurement'
+image::figureA.3-en.png[]
+
+[[figureA.4]]
+.Concept diagram for part of Clause 2 around 'quantity value'
+image::figureA.4-en.png[]
+
+[[figureA.5]]
+.Concept diagram for part of Clause 2 around 'measurement precision'
+image::figureA.5-en.png[]
+
+[[figureA.6]]
+.Concept diagram for part of Clause 2 around 'measurement uncertainty'
+image::figureA.6-en.png[]
+
+[[figureA.7]]
+.Concept diagram for part of Clause 2 around 'calibration'
+image::figureA.7-en.png[]
+
+[[figureA.12]]
+.Concept diagram for part of Clause 5 around 'measurement
+image::figureA.12-en.png[]
+
+[%portrait]
+<<<

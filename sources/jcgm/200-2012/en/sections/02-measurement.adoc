@@ -1,0 +1,1086 @@
+
+[[sec_2]]
+== Measurement
+
+[[sec_2.1]]
+=== (2.1) measurement
+(((measurement)))
+
+process of experimentally obtaining one or more *quantity values*
+that can reasonably be attributed to a *quantity*
+
+NOTE: Measurement does not apply to *nominal properties*.
+
+NOTE: Measurement implies comparison of quantities or counting of
+entities.
+
+NOTE: Measurement presupposes a description of the quantity commensurate
+with the intended use of a *measurement result*, a *measurement procedure*,
+and a calibrated *measuring system* operating according to the specified
+measurement procedure, including the measurement conditions.
+
+[[sec_2.2]]
+=== (2.2) metrology
+(((metrology)))
+
+science of *measurement* and its application
+
+NOTE: Metrology includes all theoretical and practical aspects of
+measurement, whatever the *measurement uncertainty* and field of application.
+
+[[sec_2.3]]
+=== (2.6) measurand
+(((measurand)))
+
+*quantity* intended to be measured
+
+NOTE: The specification of a measurand requires knowledge of the
+*kind of quantity*, description of the state of the phenomenon, body,
+or substance carrying the quantity, including any relevant component,
+and the chemical entities involved.
+
+NOTE: In the second edition of the VIM and in <<IEC_60050_300_2001>>,
+the measurand is defined as the "particular quantity subject to measurement".
+
+NOTE: The *measurement*, including the *measuring system* and the
+conditions under which the measurement is carried out, might change
+the phenomenon, body, or substance such that the quantity being measured
+may differ from the measurand as defined. In this case, adequate *correction*
+is necessary.
+
+[example]
+The potential difference between the terminals of a battery may decrease
+when using a voltmeter with a significant internal conductance to
+perform the measurement. The open-circuit potential difference can
+be calculated from the internal resistances of the battery and the
+voltmeter.
+
+[example]
+The length of a steel rod in equilibrium with the ambient Celsius
+temperature of stem:[23 "unitsml(degC)"] will be different from the length at the specified
+temperature of stem:[20 "unitsml(degC)"], which is the measurand. In this case, a correction
+is necessary.
+
+NOTE: In chemistry, "analyte", or the name of a substance or compound,
+are terms sometimes used for 'measurand'. This usage is erroneous
+because these terms do not refer to quantities.
+
+[[sec_2.4]]
+=== (2.3) measurement principle
+alt:[principle of measurement]
+(((measurement principle)))
+(((principle of measurement)))
+
+phenomenon serving as a basis of a *measurement*
+
+[example]
+Thermoelectric effect applied to the measurement of temperature.
+
+[example]
+Energy absorption applied to the measurement of amount-of-substance
+concentration.
+
+[example]
+Lowering of the concentration of glucose in blood in a fasting rabbit
+applied to the measurement of insulin concentration in a preparation.
+
+NOTE: The phenomenon can be of a physical, chemical, or biological
+nature.
+
+[[sec_2.5]]
+=== (2.4) measurement method
+alt:[method of measurement]
+(((measurement method)))
+(((method of measurement)))
+
+generic description of a logical organization of operations used in
+a *measurement*
+
+[NOTE]
+====
+Measurement methods may be qualified in various ways such as:
+
+* substitution measurement method,
+* differential measurement method, and
+* null measurement method;
+
+or
+
+* direct measurement method, and
+* indirect measurement method.
+
+See <<IEC_60050_300_2001>>.
+====
+
+[[sec_2.6]]
+=== (2.5) measurement procedure
+(((measurement procedure)))
+
+detailed description of a *measurement* according to one or more
+*measurement principles* and to a given *measurement method*, based
+on a *measurement model* and including any calculation to obtain a
+*measurement result*
+
+NOTE: A measurement procedure is usually documented in sufficient
+detail to enable an operator to perform a measurement.
+
+NOTE: A measurement procedure can include a statement concerning a
+*target measurement uncertainty*.
+
+NOTE: A measurement procedure is sometimes called a standard operating
+procedure, abbreviated SOP.
+
+[[sec_2.7]]
+=== reference measurement procedure
+(((reference measurement procedure)))
+
+*measurement procedure* accepted as providing *measurement results*
+fit for their intended use in assessing *measurement trueness* of
+*measured quantity values* obtained from other measurement procedures
+for *quantities* of the same *kind*, in *calibration*, or in characterizing
+*reference materials*
+
+[[sec_2.8]]
+=== primary reference measurement procedure
+alt:[primary reference procedure]
+(((primary reference measurement procedure)))
+(((primary reference procedure)))
+
+*reference measurement procedure* used to obtain a *measurement result*
+without relation to a *measurement standard* for a *quantity* of the
+same *kind*
+
+[example]
+The volume of water delivered by a 50 ml pipette at stem:[20 "unitsml(degC)"] is measured
+by weighing the water delivered by the pipette into a beaker, taking
+the mass of beaker plus water minus the mass of the initially empty
+beaker, and correcting the mass difference for the actual water temperature
+using the volumic mass (mass density).
+
+NOTE: The Consultative Committee for Amount of Substance -- Metrology
+in Chemistry (CCQM) uses the term "primary method of measurement"
+for this concept.
+
+NOTE: Definitions of two subordinate concepts, which could be termed
+"direct primary reference measurement procedure" and "ratio primary
+reference measurement procedure", are given by the CCQM
+(<<CCQM_Meeting_5>>).
+
+[[sec_2.9]]
+=== (3.1) measurement result
+alt:[result of measurement]
+(((measurement result)))
+(((result of measurement)))
+
+set of *quantity values* being attributed to a *measurand* together
+with any other available relevant information
+
+NOTE: A measurement result generally contains "relevant information"
+about the set of quantity values, such that some may be more representative
+of the measurand than others. This may be expressed in the form of
+a probability density function (PDF).
+
+NOTE: A measurement result is generally expressed as a single
+*measured quantity value* and a *measurement uncertainty*. If the
+measurement uncertainty is considered to be negligible for some purpose,
+the measurement result may be expressed as a single measured quantity
+value. In many fields, this is the common way of expressing a measurement
+result.
+
+NOTE: In the traditional literature and in the previous edition of
+the VIM, measurement result was defined as a value attributed to a
+measurand and explained to mean an *indication*, or an uncorrected
+result, or a corrected result, according to the context.
+
+[[sec_2.10]]
+=== measured quantity value
+alt:[value of a measured]
+alt:[quantity measured value]
+(((measured quantity value)))
+(((measured value)))
+(((value of a measured quantity)))
+
+*quantity value* representing a *measurement result*
+
+NOTE: For a *measurement* involving replicate *indications*, each
+indication can be used to provide a corresponding measured quantity
+value. This set of individual measured quantity values can be used
+to calculate a resulting measured quantity value, such as an average
+or median, usually with a decreased associated *measurement uncertainty*.
+
+NOTE: When the range of the *true quantity values* believed to represent
+the *measurand* is small compared with the measurement uncertainty,
+a measured quantity value can be considered to be an estimate of an
+essentially unique true quantity value and is often an average or
+median of individual measured quantity values obtained through replicate
+measurements.
+
+NOTE: In the case where the range of the true quantity values believed
+to represent the measurand is not small compared with the measurement
+uncertainty, a measured quantity value is often an estimate of an
+average or median of the set of true quantity values.
+
+NOTE: In the GUM, the terms "result of measurement" and "estimate
+of the value of the measurand" or just "estimate of the measurand"
+are used for 'measured quantity value'.
+
+[[sec_2.11]]
+=== (1.19) true quantity value
+alt:[true value of a quantity]
+alt:[true value]
+(((true quantity value)))
+(((true value)))
+(((true value of a quantity)))
+
+*quantity value* consistent with the definition of a *quantity*
+
+NOTE: In the Error Approach to describing *measurement*, a true quantity
+value is considered unique and, in practice, unknowable. The Uncertainty
+Approach is to recognize that, owing to the inherently incomplete
+amount of detail in the definition of a quantity, there is not a single
+true quantity value but rather a set of true quantity values consistent
+with the definition. However, this set of values is, in principle
+and in practice, unknowable. Other approaches dispense altogether
+with the concept of true quantity value and rely on the concept of
+*metrological compatibility of measurement results* for assessing
+their validity.
+
+NOTE: In the special case of a fundamental constant, the quantity
+is considered to have a single true quantity value.
+
+NOTE: When the *definitional uncertainty* associated with the *measurand*
+is considered to be negligible compared to the other components of
+the *measurement uncertainty*, the measurand may be considered to
+have an "essentially unique" true quantity value. This is the approach
+taken by the GUM and associated documents, where the word "true" is
+considered to be redundant.
+
+[[sec_2.12]]
+=== conventional quantity value
+alt:[conventional value of a quantity]
+alt:[conventional value]
+(((conventional quantity value)))
+(((conventional value)))
+(((conventional value of a quantity)))
+
+*quantity value* attributed by agreement to a *quantity* for a given
+purpose
+
+[example]
+Standard acceleration of free fall (formerly called "standard acceleration
+due to gravity"), stem:[g_n = 9.806 65 "unitsml(m*s^2)"].
+
+[example]
+Conventional quantity value of the Josephson constant,
+stem:[K_{"J-90"} = 483 597.9 "unitsml(GHz)" cdot "unitsml(V^1)"]
+
+[example]
+Conventional quantity value of a given mass standard,
+stem:[m = 100.00347 "unitsml(g)"].
+
+NOTE: The term "conventional true quantity value" is sometimes used
+for this concept, but its use is discouraged.
+
+NOTE: Sometimes a conventional quantity value is an estimate of a
+*true quantity value*.
+
+NOTE: A conventional quantity value is generally accepted as being
+associated with a suitably small *measurement uncertainty*, which
+might be zero.
+
+[[sec_2.13]]
+=== (3.5) measurement accuracy
+alt:[accuracy of measurement]
+alt:[accuracy]
+(((accuracy)))
+(((accuracy of measurement)))
+(((measurement accuracy)))
+
+closeness of agreement between a *measured quantity value* and a
+*true quantity value* of a *measurand*
+
+NOTE: The concept 'measurement accuracy' is not a *quantity* and is
+not given a *numerical quantity value*. A *measurement* is said to
+be more accurate when it offers a smaller *measurement error*.
+
+NOTE: The term "measurement accuracy" should not be used for
+*measurement trueness* and the term "measurement precision" should
+not be used for 'measurement accuracy', which, however, is related
+to both these concepts.
+
+NOTE: 'Measurement accuracy' is sometimes understood as closeness
+of agreement between measured quantity values that are being attributed
+to the measurand.
+
+[[sec_2.14]]
+=== measurement trueness
+alt:[trueness of measurement]
+alt:[trueness]
+(((measurement trueness)))
+(((trueness)))
+(((trueness of measurement)))
+
+closeness of agreement between the average of an infinite number of
+replicate *measured quantity values* and a *reference quantity value*
+
+NOTE: Measurement trueness is not a *quantity* and thus cannot be
+expressed numerically, but measures for closeness of agreement are
+given in ISO 5725.
+
+NOTE: Measurement trueness is inversely related to
+*systematic measurement error*, but is not related to
+*random measurement error*.
+
+NOTE: "Measurement accuracy" should not be used for 'measurement trueness'.
+
+[[sec_2.15]]
+=== measurement precision
+alt:[precision]
+(((measurement precision)))
+(((precision)))
+
+closeness of agreement between *indications* or
+*measured quantity values* obtained by replicate *measurements* on
+the same or similar objects under specified conditions
+
+NOTE: Measurement precision is usually expressed numerically by measures
+of imprecision, such as standard deviation, variance, or coefficient
+of variation under the specified conditions of measurement.
+
+NOTE: The 'specified conditions' can be, for example,
+*repeatability conditions of measurement*, *intermediate precision
+conditions of measurement*, or *reproducibility conditions of measurement*
+(see <<ISO_5725_1_1994_Cor_1_1998>>).
+
+NOTE: Measurement precision is used to define *measurement repeatability*,
+*intermediate measurement precision*, and *measurement reproducibility*.
+
+NOTE: Sometimes "measurement precision" is erroneously used to mean
+*measurement accuracy*.
+
+[[sec_2.16]]
+=== (3.10) measurement error
+alt:[error of measurement]
+alt:[error]
+(((error)))
+(((error of measurement)))
+(((measurement error)))
+
+*measured quantity value* minus a *reference quantity value*
+
+[NOTE]
+====
+The concept of 'measurement error' can be used both
+
+. when there is a single reference quantity value to refer to, which
+occurs if a *calibration* is made by means of a *measurement standard*
+with a *measured quantity value* having a negligible
+*measurement uncertainty* or if a *conventional quantity value* is
+given, in which case the measurement error is known, and
+
+. if a *measurand* is supposed to be represented by a unique
+*true quantity value* or a set of true quantity values of negligible
+range, in which case the measurement error is not known.
+====
+
+NOTE: Measurement error should not be confused with production error
+or mistake.
+
+[[sec_2.17]]
+=== (3.14) systematic measurement
+alt:[error systematic error of measurement]
+alt:[systematic error]
+(((systematic error)))
+(((systematic error of measurement)))
+(((systematic measurement error)))
+
+component of *measurement error* that in replicate *measurements*
+remains constant or varies in a predictable manner
+
+NOTE: A *reference quantity value* for a systematic measurement error
+is a *true quantity value*, or a *measured quantity value* of a
+*measurement standard* of negligible *measurement uncertainty*, or
+a *conventional quantity value*.
+
+NOTE: Systematic measurement error, and its causes, can be known or
+unknown. A *correction* can be applied to compensate for a known systematic
+measurement error.
+
+NOTE: Systematic measurement error equals measurement error minus
+*random measurement error*.
+
+[[sec_2.18]]
+=== measurement bias
+alt:[bias]
+(((measurement bias)))
+
+estimate of a *systematic measurement error*
+
+[[sec_2.19]]
+=== (3.13) random measurement error
+alt:[random error of measurement]
+alt:[random error]
+(((random error)))
+(((random error of measurement)))
+(((random measurement error)))
+
+component of *measurement error* that in replicate *measurements*
+varies in an unpredictable manner
+
+NOTE: A *reference quantity value* for a random measurement error
+is the average that would ensue from an infinite number of replicate
+measurements of the same *measurand*.
+
+NOTE: Random measurement errors of a set of replicate measurements
+form a distribution that can be summarized by its expectation, which
+is generally assumed to be zero, and its variance.
+
+NOTE: Random measurement error equals measurement error minus
+*systematic measurement error*.
+
+[[sec_2.20]]
+=== (3.6, Notes 1 and 2) repeatability condition of measurement
+alt:[repeatability condition]
+(((repeatability condition)))
+(((repeatability condition of measurement)))
+
+condition of *measurement* , out of a set of conditions that includes
+the same *measurement procedure*, same operators, same
+*measuring system*, same operating conditions and same location, and
+replicate measurements on the same or similar objects over a short
+period of time
+
+NOTE: A condition of measurement is a repeatability condition only
+with respect to a specified set of repeatability conditions.
+
+NOTE: In chemistry, the term "intra-serial precision condition of
+measurement" is sometimes used to designate this concept.
+
+[[sec_2.21]]
+=== (3.6) measurement repeatability
+alt:[repeatability]
+(((measurement repeatability)))
+(((repeatability)))
+
+*measurement precision* under a set of
+*repeatability conditions of measurement*
+
+[[sec_2.22]]
+=== intermediate precision condition of measurement
+alt:[intermediate precision condition]
+(((intermediate precision condition)))
+(((intermediate precision condition of measurement)))
+
+condition of *measurement* , out of a set of conditions that includes
+the same *measurement procedure*, same location, and replicate measurements
+on the same or similar objects over an extended period of time, but
+may include other conditions involving changes
+
+NOTE: The changes can include new *calibrations*, *calibrators*, operators,
+and *measuring systems*.
+
+NOTE: A specification for the conditions should contain the conditions
+changed and unchanged, to the extent practical.
+
+NOTE: In chemistry, the term "inter-serial precision condition of
+measurement" is sometimes used to designate this concept.
+
+[[sec_2.23]]
+=== intermediate measurement precision
+alt:[intermediate precision]
+(((intermediate measurement precision)))
+(((intermediate precision)))
+
+*measurement precision* under a set of
+*intermediate precision conditions of measurement*
+
+NOTE: Relevant statistical terms are given in <<ISO_5725_3_1994_Cor_1_2001>>.
+
+[[sec_2.24]]
+=== (3.7, Note 2) reproducibility condition of measurement
+alt:[reproducibility condition]
+(((reproducibility condition)))
+(((reproducibility condition of measurement)))
+
+condition of *measurement*, out of a set of conditions that includes
+different locations, operators, *measuring systems*, and replicate
+measurements on the same or similar objects
+
+NOTE: The different measuring systems may use different
+*measurement procedures*.
+
+NOTE: A specification should give the conditions changed and unchanged,
+to the extent practical.
+
+[[sec_2.25]]
+=== (3.7) measurement reproducibility
+alt:[reproducibility]
+(((measurement reproducibility)))
+(((reproducibility)))
+
+*measurement precision* under *reproducibility conditions of measurement*
+
+NOTE: Relevant statistical terms are given in <<ISO_5725_1_1994_Cor_1_1998>>
+and <<ISO_5725_2_1994_Cor_1_2002>>.
+
+[[sec_2.26]]
+=== (3.9) measurement uncertainty
+alt:[uncertainty of measurement uncertainty]
+(((measurement uncertainty)))
+(((uncertainty)))
+(((uncertainty of measurement)))
+
+non-negative parameter characterizing the dispersion of the
+*quantity values* being attributed to a *measurand*, based on the
+information used
+
+NOTE: Measurement uncertainty includes components arising from systematic
+effects, such as components associated with *corrections* and the
+assigned quantity values of *measurement standards*, as well as the
+*definitional uncertainty*. Sometimes estimated systematic effects
+are not corrected for but, instead, associated measurement uncertainty
+components are incorporated.
+
+NOTE: The parameter may be, for example, a standard deviation called
+*standard measurement uncertainty* (or a specified multiple of it),
+or the half-width of an interval, having a stated *coverage probability*.
+
+NOTE: Measurement uncertainty comprises, in general, many components.
+Some of these may be evaluated by *Type A evaluation of measurement
+uncertainty* from the statistical distribution of the quantity values
+from series of *measurements* and can be characterized by standard
+deviations. The other components, which may be evaluated by *Type
+B evaluation of measurement uncertainty*, can also be characterized
+by standard deviations, evaluated from probability density functions
+based on experience or other information.
+
+NOTE: In general, for a given set of information, it is understood
+that the measurement uncertainty is associated with a stated quantity
+value attributed to the measurand. A modification of this value results
+in a modification of the associated uncertainty.
+
+[[sec_2.27]]
+=== definitional uncertainty
+(((definitional uncertainty)))
+
+component of *measurement uncertainty* resulting from the finite amount
+of detail in the definition of a *measurand*
+
+NOTE: Definitional uncertainty is the practical minimum measurement
+uncertainty achievable in any *measurement* of a given measurand.
+
+NOTE: Any change in the descriptive detail leads to another definitional
+uncertainty.
+
+NOTE: In the <<Guide_1995,clause=D.3.4>>, and in IEC 60359, the concept
+'definitional uncertainty' is termed "intrinsic uncertainty".
+
+[[sec_2.28]]
+=== Type A evaluation of measurement uncertainty
+alt:[Type A evaluation]
+(((Type A evaluation)))
+(((Type A evaluation of measurement uncertainty)))
+
+evaluation of a component of *measurement uncertainty* by a statistical
+analysis of *measured quantity values* obtained under defined measurement
+conditions
+
+NOTE: For various types of measurement conditions, see
+*repeatability condition of measurement*,
+*intermediate precision condition of measurement*, and
+*reproducibility condition of measurement*.
+
+NOTE: For information about statistical analysis, see e.g.the <<Guide_1995>>.
+
+NOTE: See also <<Guide_1995,clause=2.3.2>>, ISO 5725, <<ISO_13528>>,
+<<ISO_TS_21748>>, <<ISO_21749>>.
+
+[[sec_2.29]]
+=== Type B evaluation of measurement uncertainty
+alt:[Type B evaluation]
+(((Type B evaluation)))
+(((Type B evaluation of measurement uncertainty)))
+
+evaluation of a component of *measurement uncertainty* determined
+by means other than a *Type A evaluation of measurement uncertainty*
+
+====
+Evaluation based on information
+
+* associated with authoritative published *quantity values*,
+* associated with the quantity value of a *certified reference material*,
+* obtained from a *calibration* certificate,
+* about drift,
+* obtained from the *accuracy class* of a verified *measuring instrument*,
+* obtained from limits deduced through personal experience.
+====
+
+NOTE: See also <<Guide_1995,clause=2.3.3>>.
+
+[[sec_2.30]]
+=== standard measurement uncertainty
+alt:[standard uncertainty of measurement]
+alt:[standard uncertainty]
+(((standard measurement uncertainty)))
+(((standard uncertainty)))
+(((standard uncertainty of measurement)))
+
+*measurement uncertainty* expressed as a standard deviation
+
+[[sec_2.31]]
+=== combined standard measurement uncertainty
+(((combined standard measurement uncertainty)))
+(((combined standard uncertainty)))
+
+combined standard uncertainty
+
+*standard measurement uncertainty* that is obtained using the individual
+standard measurement uncertainties associated with the
+*input quantities in a measurement model*
+
+NOTE: In case of correlations of input quantities in a measurement
+model, covariances must also be taken into account when calculating
+the combined standard measurement uncertainty; see also
+<<Guide_1995,clause=2.3.4>>.
+
+[[sec_2.32]]
+=== relative standard measurement uncertainty
+(((relative standard measurement uncertainty)))
+
+*standard measurement uncertainty* divided by the absolute value of
+the *measured quantity value*
+
+[[sec_2.33]]
+=== uncertainty budget
+(((uncertainty budget)))
+
+statement of a *measurement uncertainty*, of the components of that
+measurement uncertainty, and of their calculation and combination
+
+NOTE: An uncertainty budget should include the *measurement model*,
+estimates, and measurement uncertainties associated with the *quantities*
+in the measurement model, covariances, type of applied probability
+density functions, degrees of freedom, type of evaluation of measurement
+uncertainty, and any *coverage factor*.
+
+[[sec_2.34]]
+=== target measurement uncertainty
+alt:[target uncertainty]
+(((target measurement uncertainty)))
+(((target uncertainty)))
+
+*measurement uncertainty* specified as an upper limit and decided
+on the basis of the intended use of *measurement results*
+
+[[sec_2.35]]
+=== expanded measurement uncertainty
+alt:[expanded uncertainty]
+(((expanded measurement uncertainty)))
+(((expanded uncertainty)))
+
+product of a *combined standard measurement uncertainty* and a factor
+larger than the number one
+
+NOTE: The factor depends upon the type of probability distribution
+of the *output quantity in a measurement model* and on the selected
+*coverage probability*.
+
+NOTE: The term "factor" in this definition refers to a *coverage factor*.
+
+NOTE: Expanded measurement uncertainty is termed "overall uncertainty"
+in paragraph 5 of Recommendation INC-1 (1980) (see the GUM) and simply
+"uncertainty" in IEC documents.
+
+[[sec_2.36]]
+=== coverage interval
+(((coverage interval)))
+
+interval containing the set of *true quantity values* of a *measurand*
+with a stated probability, based on the information available
+
+NOTE: A coverage interval does not need to be centred on the chosen
+*measured quantity value* (see <<JCGM_101_2008>>).
+
+NOTE: A coverage interval should not be termed "confidence interval"
+to avoid confusion with the statistical concept
+(see <<Guide_1995,clause=6.2.2>>).
+
+NOTE: A coverage interval can be derived from an
+*expanded measurement uncertainty* (see <<Guide_1995,clause=2.3.5>>).
+
+[[sec_2.37]]
+=== coverage probability
+(((coverage probability)))
+
+probability that the set of *true quantity values* of a *measurand*
+is contained within a specified *coverage interval*
+
+NOTE: This definition pertains to the Uncertainty Approach as presented
+in the GUM.
+
+NOTE: The coverage probability is also termed "level of confidence"
+in the GUM.
+
+[[sec_2.38]]
+=== coverage factor
+(((coverage factor)))
+
+number larger than one by which a *combined standard measurement uncertainty*
+is multiplied to obtain an *expanded measurement uncertainty*
+
+NOTE: A coverage factor is usually symbolized stem:[k]
+(see also <<Guide_1995,clause=2.3.6>>).
+
+[[sec_2.39]]
+=== (6.11) calibration
+(((calibration)))
+
+operation that, under specified conditions, in a first step, establishes
+a relation between the *quantity values* with *measurement uncertainties*
+provided by *measurement standards* and corresponding *indications*
+with associated measurement uncertainties and, in a second step, uses
+this information to establish a relation for obtaining a
+*measurement result* from an indication
+
+NOTE: A calibration may be expressed by a statement, calibration function,
+*calibration diagram*, *calibration curve*, or calibration table.
+In some cases, it may consist of an additive or multiplicative *correction*
+of the indication with associated measurement uncertainty.
+
+NOTE: Calibration should not be confused with
+*adjustment of a measuring system*, often mistakenly called "self-calibration",
+nor with *verification* of calibration.
+
+NOTE: Often, the first step alone in the above definition is perceived
+as being calibration.
+
+[[sec_2.40]]
+=== calibration hierarchy
+(((calibration hierarchy)))
+
+sequence of *calibrations* from a reference to the final
+*measuring system*, where the outcome of each calibration depends
+on the outcome of the previous calibration
+
+NOTE: *Measurement uncertainty* necessarily increases along the sequence
+of calibrations.
+
+NOTE: The elements of a calibration hierarchy are one or more
+*measurement standards* and measuring systems operated according to
+*measurement procedures*.
+
+NOTE: For this definition, the 'reference' can be a definition of
+a *measurement unit* through its practical realization, or a measurement
+procedure, or a measurement standard.
+
+NOTE: A comparison between two measurement standards may be viewed
+as a calibration if the comparison is used to check and, if necessary,
+correct the *quantity value* and measurement uncertainty attributed
+to one of the measurement standards.
+
+[[sec_2.41]]
+=== (6.10) metrological traceability
+(((metrological traceability)))
+
+property of a *measurement result* whereby the result can be related
+to a reference through a documented unbroken chain of *calibrations*,
+each contributing to the *measurement uncertainty*
+
+[[note_1_2.41]]
+NOTE: For this definition, a 'reference' can be a definition of a
+*measurement unit* through its practical realization, or a
+*measurement procedure* including the measurement unit for a
+non-*ordinal quantity*, or a *measurement standard*.
+
+NOTE: Metrological traceability requires an established
+*calibration hierarchy*.
+
+NOTE: Specification of the reference must include the time at which
+this reference was used in establishing the calibration hierarchy,
+along with any other relevant metrological information about the reference,
+such as when the first calibration in the calibration hierarchy was
+performed.
+
+NOTE: For *measurements* with more than one *input quantity in the
+measurement model*, each of the input *quantity values* should itself
+be metrologically traceable and the calibration hierarchy involved
+may form a branched structure or a network. The effort involved in
+establishing metrological traceability for each input quantity value
+should be commensurate with its relative contribution to the measurement
+result.
+
+NOTE: Metrological traceability of a measurement result does not ensure
+that the measurement uncertainty is adequate for a given purpose or
+that there is an absence of mistakes.
+
+NOTE: A comparison between two measurement standards may be viewed
+as a calibration if the comparison is used to check and, if necessary,
+correct the quantity value and measurement uncertainty attributed
+to one of the measurement standards.
+
+NOTE: The ILAC considers the elements for confirming metrological
+traceability to be an unbroken *metrological traceability chain* to
+an *international measurement standard* or a *national measurement
+standard*, a documented measurement uncertainty, a documented measurement
+procedure, accredited technical competence, metrological traceability
+to the SI, and calibration intervals (see <<ILAC_P_10_2002>>).
+
+NOTE: The abbreviated term "traceability" is sometimes used to mean
+'metrological traceability' as well as other concepts, such as 'sample
+traceability' or 'document traceability' or 'instrument traceability'
+or 'material traceability', where the history ("trace") of an item
+is meant. Therefore, the full term of "metrological traceability"
+is preferred if there is any risk of confusion.
+
+[[sec_2.42]]
+=== (6.10 Note 2) metrological traceability chain
+alt:[traceability chain]
+(((metrological traceability chain)))
+(((traceability chain)))
+
+sequence of *measurement standards* and *calibrations* that is used
+to relate a *measurement result* to a reference
+
+NOTE: A metrological traceability chain is defined through a
+*calibration hierarchy*.
+
+NOTE: A metrological traceability chain is used to establish
+*metrological traceability* of a measurement result.
+
+NOTE: A comparison between two measurement standards may be viewed
+as a calibration if the comparison is used to check and, if necessary,
+correct the *quantity value* and *measurement uncertainty* attributed
+to one of the measurement standards.
+
+[[sec_2.43]]
+=== metrological traceability to a measurement unit
+alt:[metrological traceability to a unit]
+(((metrological traceability to a measurement unit)))
+(((metrological traceability to a unit)))
+
+*metrological traceability* where the reference is the definition
+of a *measurement unit* through its practical realization
+
+NOTE: The expression "traceability to the SI" means 'metrological
+traceability to a measurement unit of the *International System of
+Units*'.
+
+[[sec_2.44]]
+=== verification
+(((verification)))
+
+provision of objective evidence that a given item fulfils specified
+requirements
+
+[example]
+Confirmation that a given *reference material* as claimed is homogeneous
+for the *quantity value* and *measurement procedure* concerned, down
+toa measurement portion having a mass of 10 mg.
+
+[example]
+Confirmation that performance properties or legal requirements of
+a *measuring system* are achieved.
+
+[example]
+Confirmation that a *target measurement uncertainty* can be met.
+
+NOTE: When applicable, *measurement uncertainty* should be taken into
+consideration.
+
+NOTE: The item may be, e.g. a process, measurement procedure, material,
+compound, or measuring system.
+
+NOTE: The specified requirements may be, e.g. that a manufacturer's
+specifications are met.
+
+NOTE: Verification in legal metrology, as defined in <<OIML_V1_2000,VIML>>,
+and in conformity assessment in general, pertains to the examination
+and marking and/or issuing of a verification certificate for a measuring
+system.
+
+NOTE: Verification should not be confused with *calibration*. Not
+every verification is a *validation*.
+
+NOTE: In chemistry, verification of the identity of the entity involved,
+or of activity, requires a description of the structure or properties
+of that entity or activity.
+
+[[sec_2.45]]
+=== validation
+(((validation)))
+
+*verification*, where the specified requirements are adequate for
+an intended use
+
+[example]
+A *measurement procedure*, ordinarily used for the *measurement* of
+mass concentration of nitrogen in water, may be validated also for
+measurement of mass concentration of nitrogen in human serum.
+
+[[sec_2.46]]
+=== metrological comparability of measurement results
+alt:[metrological comparability]
+(((metrological comparability)))
+(((metrological comparability of measurement results)))
+
+comparability of *measurement results*, for *quantities* of a given
+*kind*, that are metrologically traceable to the same reference
+
+[example]
+Measurement results, for the distances between the Earth and the Moon,
+and between Paris and London, are metrologically comparable when they
+are both metrologically traceable to the same *measurement unit*,
+for instance the metre.
+
+NOTE: See <<note_1_2.41>> *metrological traceability*.
+
+NOTE: Metrological comparability of measurement results does not necessitate
+that the *measured quantity values* and associated *measurement uncertainties*
+compared be of the same order of magnitude.
+
+[[sec_2.47]]
+=== metrological compatibility of measurement results
+alt:[metrological compatibility]
+(((metrological compatibility)))
+(((metrological compatibility of measurement results)))
+
+property of a set of *measurement results* for a specified *measurand*,
+such that the absolute value of the difference of any pair of
+*measured quantity values* from two different measurement results
+is smaller than some chosen multiple of the
+*standard measurement uncertainty* of that difference
+
+NOTE: Metrological compatibility of measurement results replaces the
+traditional concept of 'staying within the error', as it represents
+the criterion for deciding whether two measurement results refer to
+the same measurand or not. If in a set of *measurements* of a measurand,
+thought to be constant, a measurement result is not compatible with
+the others, either the measurement was not correct
+(e.g. its *measurement uncertainty* was assessed as being too small)
+or the measured *quantity* changed between measurements.
+
+NOTE: Correlation between the measurements influences metrological
+compatibility of measurement results. If the measurements are completely
+uncorrelated, the standard measurement uncertainty of their difference
+is equal to the root mean square sum of their standard measurement
+uncertainties, while it is lower for positive covariance or higher
+for negative covariance.
+
+[[sec_2.48]]
+=== measurement model
+alt:[model of measurement]
+alt:[model]
+(((measurement model)))
+(((model)))
+(((model of measurement)))
+
+mathematical relation among all *quantities* known to be involved
+in a *measurement*
+
+NOTE: A general form of a measurement model is the equation
+stem:[h (Y,X_1," ",X_n) = 0], where stem:[Y], the
+*output quantity in the measurement model*, is the *measurand*, the
+*quantity value* of which is to be inferred from information about
+*input quantities in the measurement model* stem:[X_1], ,stem:[X_n].
+
+NOTE: In more complex cases where there are two or more output quantities
+in a measurement model, the measurement model consists of more than
+one equation.
+
+[[sec_2.49]]
+=== measurement function
+(((measurement function)))
+
+function of *quantities*, the value of which, when calculated using
+known *quantity values* for the *input quantities in a measurement
+model*, is a *measured quantity value* of the *output quantity in
+the measurement model*
+
+NOTE: If a *measurement model* stem:[h (Y, X_1," ", X_n) = 0] can
+explicitly be written as stem:[Y = f (X_1," ", X_n)], where stem:[Y]
+is the output quantity in the measurement model, the function stem:[f]
+is the measurement function. More generally,stem:[f] may symbolize
+an algorithm, yielding for input quantity values stem:[x_1], , stem:[x_n]
+a corresponding unique output quantity value
+stem:[y = f (x_1," ", x_n)].
+
+NOTE: A measurement function is also used to calculate the
+*measurement uncertainty* associated with the measured quantity value
+of stem:[Y].
+
+[[sec_2.50]]
+=== input quantity in a measurement model
+alt:[input quantity]
+(((input quantity)))
+(((input quantity in a measurement model)))
+
+*quantity* that must be measured, or a quantity, the *value* of which
+can be otherwise obtained, in order to calculate a
+*measured quantity value* of a *measurand*
+
+[example]
+When the length of a steel rod at a specified temperature is the measurand,
+the actual temperature, the length at that actual temperature, and
+the linear thermal expansion coefficient of the rod are input quantities
+in a measurement model.
+
+NOTE: An input quantity in a measurement model is often an output
+quantity of a *measuring system*.
+
+NOTE: *Indications*, *corrections* and *influence quantities* can
+be input quantities in a measurement model.
+
+[[sec_2.51]]
+=== output quantity in a measurement model
+alt:[output quantity]
+(((output quantity)))
+(((output quantity in a measurement model)))
+
+*quantity*, the *measured value* of which is calculated using the
+*values* of *input quantities in a measurement model*
+
+[[sec_2.52]]
+=== (2.7) influence quantity
+(((influence quantity)))
+
+*quantity* that, in a direct *measurement*, does not affect the quantity
+that is actually measured, but affects the relation between the *indication*
+and the *measurement result*
+
+[example]
+Frequency in the direct measurement with an ammeter of the constant
+amplitude of an alternating current.
+
+[example]
+Amount-of-substance concentration of bilirubin in a direct measurement
+of haemoglobin amount-of-substance concentration in human blood plasma.
+
+[example]
+Temperature of a micrometer used for measuring the length of a rod,
+but not the temperature of the rod itself which can enter into the
+definition of the *measurand*.
+
+[example]
+Background pressure in the ion source of a mass spectrometer during
+a measurement of amount-of-substance fraction.
+
+NOTE: An indirect measurement involves a combination of direct measurements,
+each of which may be affected by influence quantities.
+
+NOTE: In the GUM, the concept 'influence quantity' is defined as in
+the second edition of the VIM, covering not only the quantities affecting
+the *measuring system*, as in the definition above, but also those
+quantities that affect the quantities actually measured. Also, in
+the GUM this concept is not restricted to direct measurements.
+
+[[sec_2.53]]
+=== (3.15) (3.16) correction
+(((correction)))
+
+compensation for an estimated systematic effect
+
+NOTE: See <<Guide_1995,clause=3.2.3>>, for an explanation of
+'systematic effect'.
+
+NOTE: The compensation can take different forms, such as an addend
+or a factor, or can be deduced from a table.

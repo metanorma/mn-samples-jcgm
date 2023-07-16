@@ -1,0 +1,26 @@
+
+[.preface]
+== Scope
+
+Ce Vocabulaire donne un ensemble de définitions et de termes associés,
+en anglais et en français, pour un système de concepts fondamentaux
+et généraux utilisés en métrologie, ainsi que des schémas conceptuels
+illustrant leurs relations. Pour un grand nombre de définitions, des
+informations complémentaires sont données sous forme d'exemples et
+de notes.
+
+Ce Vocabulaire se propose d'être une référence commune pour les scientifiques
+et les ingénieurs -- y compris les physiciens, chimistes et biologistes
+médicaux -- ainsi que pour les enseignants et praticiens, impliqués
+dans la planification ou la réalisation de mesurages, quels que soient
+le domaine d'application et le niveau d'incertitude de mesure. Il
+se propose aussi d'être une référence pour les organismes gouvernementaux
+et inter-gouvernementaux, les associations commerciales, les comités
+d'accréditation, les régulateurs et les associations professionnelles.
+
+Les concepts utilisés dans les différentes approches de la description
+des mesurages sont présentés ensemble. Les organisations membres du
+JCGM peuvent sélectionner les concepts et définitions en accord avec
+leurs terminologies respectives. Néanmoins, ce Vocabulaire vise à
+la promotion d'une harmonisation globale de la terminologie utilisée
+en métrologie.

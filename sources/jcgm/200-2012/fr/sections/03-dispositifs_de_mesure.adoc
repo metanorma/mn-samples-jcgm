@@ -1,0 +1,177 @@
+
+
+[[sec_3]]
+== Dispositifs de mesure
+
+[[sec_3.1]]
+=== (4.1) instrument de mesure, m appareil de mesure, m
+(((appareil de mesure)))
+(((instrument de mesure)))
+
+dispositif utilisé pour faire des *mesurages*, seul ou associé à un
+ou plusieurs dispositifs annexes
+
+NOTE: Un instrument de mesure qui peut être utilisé seul est un
+*système de mesure*.
+
+NOTE: Un instrument de mesure peut être un *appa-reil de mesure indicateur*
+ou une *mesure matérialisée*.
+
+[[sec_3.2]]
+=== (4.5) système de mesure, m
+(((système de mesure)))
+
+ensemble d'un ou plusieurs *instruments de mesure* et souvent d'autres
+dispositifs, comprenant si nécessaire réactifs et alimentations, assemblés
+et adaptés pour fournir des informations destinées à obtenir des
+*valeurs mesurées* dans des intervalles spécifiés pour des *grandeurs*
+de *natures* spécifiées
+
+NOTE: Un système de mesure peut consister en un seul instrument de
+mesure.
+
+
+[[sec_3.3]]
+=== (4.6) appareil de mesure indicateur, m
+alt:[appareil indicateur, m]
+(((appareil de mesure indicateur)))
+(((appareil indicateur)))
+
+*instrument de mesure* qui fournit un signal de sortie porteur d'informations
+sur la *valeur* de la *grandeur* mesurée
+
+[example]
+Voltmètre, micromètre à vis, thermomètre, balance électronique.
+
+NOTE: Un appareil de mesure indicateur peut fournir un enregistrement
+de son *indication*.
+
+NOTE: Un signal de sortie peut être présenté sous forme visuelle ou
+acoustique. Il peut aussi être transmis à un ou plusieurs autres dispositifs.
+
+[[sec_3.4]]
+=== (4.6) appareil de mesure afficheur, m
+alt:[appareil afficheur, m]
+(((appareil afficheur)))
+(((appareil de mesure afficheur)))
+
+*appareil de mesure indicateur* dont le signal de sortie est présenté
+sous forme visuelle
+
+[[sec_3.5]]
+=== (4.17) échelle d'un appareil de mesure afficheur, f
+alt:[échelle, f]
+(((échelle)))
+(((échelle d'un appareil de mesure afficheur)))
+
+partie d'un *appareil de mesure afficheur* constituée d'un ensemble
+ordonné de repères, associés éventuellement à des nombres ou des
+*valeurs de grandeurs*
+
+[[sec_3.6]]
+=== (4.2) mesure matérialisée, f
+(((mesure matérialisée)))
+
+*instrument de mesure* qui reproduit ou fournit, d'une manière permanente
+pendant son emploi, des *grandeurs* d'une ou plusieurs *natures*,
+chacune avec une *valeur* assignée
+
+[example]
+Masse marquée, mesure de capacité (fournissant une ou plusieurs valeurs,
+avec ou sans *échelle de valeurs*), résistance électrique étalon,
+règle graduée,cale étalon, générateur de signaux étalons,
+*matériau de référence certifié*.
+
+NOTE: L'*indication* d'une mesure matérialisée est sa valeur assignée.
+
+NOTE: Une mesure matérialisée peut être un *étalon*.
+
+[[sec_3.7]]
+=== (4.3) transducteur de mesure, m
+(((transducteur de mesure)))
+
+dispositif, employé en *mesurage*, qui fait correspondre à une *grandeur*
+d'entrée une grandeur de sortie selon une loi déterminée
+
+[example]
+Thermocouple, transformateur de courant électrique, jauge de contrainte,
+électrode de pH, tube de Bourdon, bilame.
+
+
+[[sec_3.8]]
+=== (4.14) capteur, m
+(((capteur)))
+
+élément d'un *système de mesure* qui est directe-ment soumis à l'action
+du phénomène, du corps ou de la substance portant la *grandeur* à
+mesurer
+
+[example]
+Bobine sensible d'un thermomètre à résistance de platine, rotor d'un
+débitmètre à turbine, tube de Bourdon d'un manomètre, flotteur d'un
+appareil de mesure de niveau, récepteur photoélectrique d'un spectrophoto-mètre,
+cristal liquide thermotrope dont la couleur change en fonction de
+la température.
+
+NOTE: Dans certains domaines, le terme «détecteur» est employé pour
+ce concept.
+
+[[sec_3.9]]
+=== (4.15) détecteur, m
+(((détecteur)))
+
+dispositif ou substance qui indique la présence d'un phénomène, d'un
+corps ou d'une substance lorsqu'une *valeur* de seuil d'une *grandeur*
+associée est dépassée
+
+[example]
+Détecteur de fuite à halogène, papier au tournesol.
+
+NOTE: Dans certains domaines, le terme «détecteur» est employé pour
+le concept de *capteur*.
+
+NOTE: En chimie, le terme «indicateur» est souvent employé pour ce
+concept.
+
+
+[[sec_3.10]]
+=== (4.4) chaîne de mesure, f
+(((chaîne de mesure)))
+
+suite d'éléments d'un *système de mesure* qui constitue un seul chemin
+du signal depuis le *capteur* jusqu'à l'élément de sortie
+
+[example]
+Chaîne de mesure électroacoustique comprenant un microphone, un atténuateur,
+un filtre, un am-plificateur et un voltmètre.
+
+[example]
+Chaîne de mesure mécanique compre-nant un tube de Bourdon, un système
+de leviers, deux roues dentées et un cadran mécanique.
+
+[[sec_3.11]]
+=== (4.30) ajustage d'un système de mesure, m ajustage, m
+(((ajustage)))
+(((ajustage d'un système de mesure)))
+
+ensemble d'opérations réalisées sur un *système de mesure* pour qu'il
+fournisse des *indications* prescrites correspondant à des *valeurs*
+données des *grandeurs* à mesurer
+
+NOTE: Divers types d'ajustage d'un système de mesure sont le
+*réglage de zéro*, le réglage de décalage, le réglage d'étendue
+(appelé aussi réglage de gain).
+
+NOTE: Il convient de ne pas confondre l'ajustage d'un système de mesure
+avec son *étalonnage*, qui est un préalable à l'ajustage.
+
+NOTE: Après un ajustage d'un système de mesure, le système demande
+généralement à être réétalonné.
+
+[[sec_3.12]]
+=== réglage de zéro, m
+(((réglage de zéro)))
+
+*ajustage d'un système de mesure* pour que le système fournisse une
+*indication* égale à zéro correspondant à une *valeur* égale à zéro
+de la *grandeur* à mesurer

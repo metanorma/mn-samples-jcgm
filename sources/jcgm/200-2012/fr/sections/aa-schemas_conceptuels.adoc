@@ -1,0 +1,129 @@
+
+
+[[annex-a]]
+[appendix,obligation="informative"]
+== Schémas conceptuels
+
+Les 12 schémas conceptuels de cette Annexe informative sont destinés
+à fournir
+
+* une représentation visuelle des relations entre les concepts définis
+et désignés dans les articles précédents;
+
+* une possibilité de vérifier si les définitions présentent des relations
+adéquates;
+
+* un cadre pour identifier d'autres concepts nécessaires;
+
+* une vérification du caractère suffisamment systématique des termes.
+
+Il convient toutefois de rappeler qu'un concept donné peut être décrit
+par de nombreux caractères et que seuls les caractères essentiels
+distinctifs sont inclus dans la définition.
+
+La surface disponible sur une page limite le nombre de concepts qu'il
+est possible de présenter d'une manière lisible, mais tous les schémas
+sont interconnectés en principe comme indiqué dans chaque schéma par
+des références entre parenthèses à d'autres schémas.
+
+Les relations utilisées sont de trois types conformément à l'<<ISO_704_2000>>
+et à l'<<ISO_1087_1_2000>>. Pour deux de ces types, les relations
+sont hiérarchiques et associent des concepts superordonnés et subordonnés.
+Les relations du troisième type sont non-hiérarchiques.
+
+La relation hiérarchique désignée comme _relation générique_
+(ou relation genre-espèce) associe unconcept générique et un concept
+spécifique; ce dernier hérite de tous les caractères du concept générique.
+Les schémas représentent ces relations sous la forme d'une arborescence
+
+[%unnumbered]
+image::annex-a-figure1-fr.png[]
+
+où une branche courte terminée par trois points indique qu'il existe
+un ou plusieurs autres concepts spécifiques qui ne sont pas représentés
+et où une branche en gras indique une dimension terminologique séparée.
+Par exemple
+
+[%unnumbered]
+image::annex-a-figure2-fr.png[]
+
+où un troisième concept pourrait être «unité hors système».
+
+La _relation partitive_ (ou relation partie-tout) est aussi une relation
+hiérarchique. Elle associe un concept intégrant et deux concepts partitifs
+ou plus dont l'assemblage constitue le concept intégrant. Les schémas
+représentent ces relations sous forme d'un râteau. Une ligne de base
+poursuivie sans dent indique qu'un ou plusieurs concepts partitifs
+n'ont pas été pris en compte.
+
+[%unnumbered]
+image::annex-a-figure3-fr.png[]
+
+Une paire de deux dents rapprochées indique qu'il y a plusieurs concepts
+partitifs d'un type donné. L'une de ces dents est en pointillés pour
+indiquer que leur nombre est indéterminé. Par exemple
+
+[%unnumbered]
+image::annex-a-figure4-fr.png[]
+
+
+Un terme entre parenthèses désigne un concept qui n'est pas défini
+dans le Vocabulaire, mais qui est considéré comme un concept premier
+généralement compréhensible.
+
+[%unnumbered]
+image::annex-a-figure5-fr.png[]
+
+La _relation associative_ (ou relation pragmatique) est une relation
+non hiérarchique qui associe deux concepts ayant des liens thématiques
+d'une certaine sorte. Il y a de nombreux sous-types de relations associatives,
+mais tous sont indiqués par une double flèche. Par exemple
+
+[%unnumbered]
+image::annex-a-figure6-fr.png[]
+
+Pour éviter des schémas trop compliqués, toutes les relations associatives
+ne sont pas représentées. Les schémas mettent en évidence que les
+termes dérivés n'ont pas toujours une structure systématique, le plus
+souvent parce que la métrologie est une discipline ancienne, dont
+le vocabulaire a évolué par accrétion plutôt que d'avoir été créé
+ex nihilo sous la forme d'un ensemble complet et cohérent.
+
+[%landscape]
+<<<
+
+[[figureA.1]]
+.Schéma conceptuel pour la partie de l'Article 1 autour de «grandeur»
+image::figureA.1-fr.png[]
+
+[[figureA.2]]
+.Schéma conceptuel pour la partie de l'Article 1 autour de «unité de mesure»
+image::figureA.2-fr.png[]
+
+[[figureA.3]]
+.Schéma conceptuel pour la partie de l'Article 2 autour de «mesurage»
+image::figureA.3-fr.png[]
+
+[[figureA.4]]
+.Schéma conceptuel pour la partie de l'Article 2 autour de «valeur d'une grandeur»
+image::figureA.4-fr.png[]
+
+[[figureA.5]]
+.Schéma conceptuel pour la partie de l'Article 2 autour de «fidélité de mesure»
+image::figureA.5-fr.png[]
+
+[[figureA.6]]
+.Schéma conceptuel pour la partie de l'Article 2 autour de «incertitude de mesure»
+image::figureA.6-fr.png[]
+
+[[figureA.7]]
+.Schéma
+image::figureA.7-fr.png[]
+
+[[figureA.12]]
+.Schéma conceptuel pour la partie de l'Article 5 autour de «étalon»
+image::figureA.12-fr.png[]
+
+[%portrait]
+<<<
+

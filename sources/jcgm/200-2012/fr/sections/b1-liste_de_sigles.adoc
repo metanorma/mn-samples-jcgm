@@ -1,0 +1,55 @@
+
+== Liste de sigles
+
+BIPM:: Bureau international des poids etmesures
+
+CCQM:: Comité consultatif pour la quantitéde matière -- Métrologie
+enchimie
+
+CGPM:: Conférence générale des poids etmesures
+
+CODATA:: Comité pour les données scientifiques et technologiques
+
+GUM:: Guide pour l'expression del'incertitude de mesure
+
+AIEA:: Agence internationale pourl'énergie atomique
+
+ICSU:: Conseil international pour la science
+
+CEI:: Commission électrotechnique internationale
+
+IFCC:: Fédération internationale dechimie clinique et biologiemédicale
+
+ILAC:: Coopération internationale surl'agrément des laboratoires d'essai
+
+ISO:: Organisation internationale denormalisation
+
+ISO/REMCO:: Organisation internationale de normalisation, comité pour
+les matériaux de référence
+
+UICPA:: Union internationale de chimiepure et appliquée
+
+UICPA/CIAAW:: Union internationale de chimiepure et appliquée -- Commission
+des abondances isotopiques et des poids atomiques
+
+UIPPA:: Union internationale de physique pure et appliquée
+
+JCGM:: Comité commun pour les guidesen métrologie
+
+JCGM/WG 1:: Groupe de travail 1 du Comitécommun pour les guides en
+métrologie (GUM)
+
+JCGM/WG 2:: Groupe de travail 2 du Comité commun pour les guides en
+métrologie (VIM)
+
+OIML:: Organisation internationale de métrologie légale
+
+VIM, 2^e^ édition:: Vocabulaire international des termes fondamentaux
+et généraux de métrologie (1993)
+
+VIM, 3^e^ édition:: Vocabulaire international de métrologie -- Concepts
+fondamentaux et généraux et termes associés (cette publication) VIM
+
+VIML:: Vocabulaire international des termes de métrologie légale
+
+OMS:: Organisation mondiale de la santé

@@ -1,0 +1,1042 @@
+
+[[sec_1]]
+== Grandeurs et unités
+
+[[sec_1.1]]
+=== (1.1) grandeur, f
+(((grandeur)))
+
+propriété d'un phénomène, d'un corps ou d'une substance, que l'on
+peut exprimer quantitativement sous forme d'un nombre et d'une référence
+
+[[note_1_1.1]]
+[NOTE]
+====
+Le concept générique de grandeur peut être subdivisé en plusieurs
+niveaux de concepts spécifiques, comme indiqué dans le tableau suivant.
+La moitié gauche du tableau présente des concepts spécifiques du concept
+de grandeur. Ce sont des concepts génériques pour les grandeurs individuelles
+de la moitié droite.
+
+[cols="a,a,a",options="unnumbered"]
+|===
+
+.2+| length, stem:[l]
+
+longueur, stem:[l]
+
+| radius, stem:[r]
+
+rayon, stem:[r]
+
+| radius of circle A, stem:[rA] or stem:[r(A)]
+
+rayon du cercle A, stem:[rA] or stem:[r(A)]
+
+| wavelength,
+
+longueur d'onde,
+
+| wavelength of the sodium stem:[D] radiation, ~D~ or (D; Na)
+
+longueur d'onde de la radiation D du sodium, ~D~ ou (D; Na)
+
+.2+| energy, stem:[E]
+
+énergie, stem:[E]
+
+| kinetic energy, stem:[T]
+
+énergie cinétique, stem:[T]
+
+| kinetic energy of particle stem:[i] in a given system, stem:[T_i]
+
+énergie cinétique de la particule stem:[i] dans un système donné, stem:[T_i]
+
+| heat, stem:[Q]
+
+chaleur, stem:[Q]
+
+| heat of vaporization of sample stem:[i] of water, stem:[Q_i]
+
+chaleur de vaporisation du spécimen stem:[i] d'eau, stem:[Q_i]
+
+2+| electric charge, stem:[Q]
+
+charge électrique, stem:[Q] 
+
+| electric charge of the proton, stem:[e]
+
+charge électrique du proton, stem:[e]
+
+2+| electric resistance, stem:[R]
+
+résistance électrique, stem:[R]
+
+| electric resistance of resistor stem:[i] in a given circuit, stem:[R_i]
+
+résistance électrique de la résistance stem:[i] dans un circuit donné, stem:[R_i]
+
+2+| amount-of-substance concentration of entity stem:[B], stem:[c_B]
+
+concentration en quantité de matière du constituant stem:[B], stem:[c_B]
+
+| amount-of-substance concentration of ethanol in wine sample stem:[i], stem:[c_i] (C~2~H~5~OH)
+
+concentration en quantité de matière d'éthanol dans le spécimen stem:[i] de vin, stem:[c_i] (C~2~H~5~OH)
+
+2+| number concentration of entity stem:[B], stem:[C_B]
+
+nombre volumique du constituant B, stem:[C_B]
+
+| number concentration of erythrocytes in blood sample stem:[i], stem:[C] (Erys; stem:[B_i])
+
+nombre volumique d'érythrocytes dans le spécimen stem:[i] de sang, stem:[C] (Erc; stem:["Sg"_i])
+
+2+| Rockwell C hardness, HRC
+
+dureté C de Rockwell, HRC
+
+| Rockwell C hardness of steel sample stem:[i], HRC~_i_~
+
+dureté C de Rockwell du spécimen stem:[i] d'acier, HRC~_i_~
+
+|===
+
+====
+
+NOTE: La référence peut être une *unité de mesure*, une
+*procédure de mesure*, un *matériau de référence*, ou une de leurs
+combinaisons.
+
+NOTE: Les séries ISO 80000 et CEI 80000 _Grandeurs et unités_ donnent
+des symboles de grandeurs.Les symboles de grandeurs sont écrits en
+italique. Un symbole donné peut noter des grandeurs différentes.
+
+NOTE: Le format préféré par l'UICPA-IFCC pour la désignation des grandeurs
+dans les laboratoires de biologie médicale est «Système--Constituant;
+nature-de-grandeur».
+
+[example]
+«Plasma (Sang)--Ion sodium; concentration en quantité de matière égale
+à stem:[143 "unitsml(mmol/l)"] chez une personne donnée à un instant
+donné».
+
+NOTE: Une grandeur telle que définie ici est une grandeur scalaire.
+Cependant, un vecteur ou un tenseur dont les composantes sont des
+grandeurs est aussi considéré comme une grandeur.
+
+NOTE: Le concept de grandeur peut être subdivisé génériquement, par
+exemple «grandeur physique», «grandeur chimique» et «grandeur biologique»,
+ou *grandeur de base* et *grandeur dérivée*.
+
+[[sec_1.2]]
+=== (1.1, Note 2) nature de grandeur, f
+alt:[nature, f]
+(((nature)))
+(((nature de grandeur)))
+
+aspect commun à des *grandeurs* mutuellement comparables
+
+NOTE: La répartition des grandeurs selon leur nature est dans une
+certaine mesure arbitraire.
+
+[example]
+Les grandeurs diamètre, circonférence et longueur d'onde sont généralement
+considérées comme des grandeurs de même nature, à savoir la nature
+de la longueur.
+
+[example]
+Les grandeurs chaleur, énergie cinétique et énergie potentielle sont
+généralement considérées comme des grandeurs de même nature, à savoir
+la nature de l'énergie.
+
+NOTE: Les grandeurs de même nature dans un *système de grandeurs*
+donné ont la même *dimension*.Cependant des grandeurs de même dimension
+ne sont pas nécessairement de même nature.
+
+[example]
+On ne considère pas, par convention, les grandeurs moment d'une force
+et énergie comme étant de même nature, bien que ces grandeurs aient
+la même dimension. Il en est de même pour la capacité thermique et
+l'entropie, ainsi que pour un nombre d'entités, la perméabilité relative
+et la fraction massique.
+
+NOTE: En français, le terme «nature» n'est employé que dans des expressions
+telles que «grandeurs de même nature» (en anglais «quantities of the
+same kind»). En anglais, les termes désignant les grandeurs de la
+moitié gauche du tableau en <<note_1_1.1>>, sont souvent employés
+pour désigner les «natures» correspondantes.
+
+[[sec_1.3]]
+=== (1.2) système de grandeurs, m
+(((système de grandeurs)))
+
+ensemble de *grandeurs* associé à un ensemble de relations non contradictoires
+entre ces grandeurs
+
+NOTE: Les *grandeurs ordinales*, telles que la dureté C de Rockwell,
+ne sont généralement pas considérées comme faisant partie d'un système
+de grandeurs, parce qu'elles ne sont reliées à d'autres grandeurs
+que par des relations empiriques.
+
+[[sec_1.4]]
+=== (1.3) grandeur de base, f
+(((grandeur de base)))
+
+*grandeur* d'un sous-ensemble choisi par convention dans un
+*système de grandeurs* donné de façon à ce qu'aucune grandeur du sous-ensemble
+ne puisse être exprimée en fonction des autres
+
+NOTE: Le sous-ensemble mentionné dans la définition est appelé l'ensemble
+des grandeurs de base.
+
+[example]
+L'ensemble des grandeurs de base du *Système international de grandeurs
+(ISQ)* estdonné en <<sec_1.6>>.
+
+NOTE: Les grandeurs de base sont considérées comme mutuellement indépendantes
+puisqu'une grandeur de base ne peut être exprimée par un produit de
+puissances des autres grandeurs de base.
+
+NOTE: On peut considérer la grandeur «nombre d'entités» comme une
+grandeur de base dans tout système de grandeurs.
+
+[[sec_1.5]]
+=== (1.4) grandeur dérivée, f
+(((grandeur dérivée)))
+
+*grandeur* définie, dans un *système de grandeurs* , en fonction des
+*grandeurs de base* de ce système
+
+[example]
+Dans un système de grandeurs ayant pour grandeurs de base la longueur
+et la masse, la masse volumique est une grandeur dérivée définie comme
+le quotient d'une masse par un volume (longueur au cube).
+
+[[sec_1.6]]
+=== Système international de grandeurs, m
+alt:[ISQ, m]
+(((ISQ)))
+(((Système international de grandeurs)))
+
+*système de grandeurs* fondé sur les sept *grandeurs de base*: longueur,
+masse, temps, courant électrique, température thermodynamique, quantité
+de matière, intensité lumineuse
+
+NOTE: Ce système de grandeurs est publié dans les séries ISO 80000
+et CEI 80000 _Grandeurs et unités_.
+
+NOTE: Le *Système international d'unités (SI)* (voir <<sec_1.16>>)
+est fondé sur l'ISQ.
+
+[[sec_1.7]]
+=== (1.5) dimension, f
+alt:[dimension d'une grandeur, f]
+(((dimension)))
+(((dimension d'une grandeur)))
+
+expression de la dépendance d'une *grandeur* par rapport aux
+*grandeurs de base* d'un *système de grandeurs* sous la forme d'un
+produit depuissances de facteurs correspondant aux grandeurs de base,
+en omettant tout facteur numérique
+
+[example]
+Dans l'*ISQ*, la dimension de la force est notée stem:[dim F = "LMT"^{-2}].
+
+[example]
+Dans le même système de grandeurs, stem:[dim rho B = "ML"^{-3}] est
+la dimension de la concentration en masse du constituant stem:[B],
+et stem:["ML"^{-3}] est aussi la dimension de la masse volumique,
+stem:[rho].
+
+[example]
+La période stem:[T] d'un pendule de longueur stem:[l] en un endroit
+où l'accélération locale de la pesanteur vaut stem:[g] est
+
+stem:[T = 2 pi sqrt(l/g)] ou stem:[T = C (g) l]
+
+où stem:[C(g) = 2/{sqrt(g)}]
+
+Par conséquent, stem:[dim C(g) = sf "L"^{-1//2} sf "T"].
+
+NOTE: Une puissance d'un facteur est le facteur muni d'un exposant.
+Chaque facteur exprime la dimension d'une grandeur de base.
+
+NOTE: Par convention, la représentation symbolique de la dimension
+d'une grandeur de base est une lettre majuscule unique en caractère
+romain (droit) sans empattement. Par convention, la représentation
+symbolique de la dimension d'une *grandeur dérivée* est le produit
+de puissances des dimensions des grandeurs de base conformément à
+la définition de la grandeur dérivée. La dimension de la grandeur
+stem:[Q] est notée stem:[dim Q].
+
+NOTE: Pour établir la dimension d'une grandeur, on ne tient pas compte
+du caractère scalaire, vectoriel ou tensoriel.
+
+[NOTE]
+====
+Dans un système de grandeurs donné,
+
+* les grandeurs de même *nature* ont la même dimension,
+* des grandeurs de dimensions différentes sont toujours de nature
+différente,
+* des grandeurs ayant la même dimension ne sont pas nécessairement
+de même nature.
+====
+
+[NOTE]
+====
+Dans l'ISQ, les symboles correspondant aux dimensions des grandeurs
+de base sont:
+
+[cols="2",options="unnumbered,header"]
+|===
+^.^| Base quantity +
+Grandeur de base
+
+^.^| Symbol for dimension +
+Symbole de la dimension
+
+| length +
+longueur
+| stem:[sf "L"]
+
+| mass +
+masse
+| stem:[sf "M"]
+
+| time +
+temps
+| stem:[sf "T"]
+
+| electric current +
+courant électrique
+| stem:[sf "I"]
+
+| thermodynamic temperature +
+température thermodynamique
+| stem:[Theta]
+
+| amount of substance +
+quantité de matière
+| stem:[sf "N"]
+
+| luminous intensity +
+intensité lumineuse
+| stem:[sf "J"]
+
+|===
+====
+
+La dimension d'une grandeur stem:[Q] est donc notée
+stem:[dim Q = sf "L M T I "Θ sf " N J"] où les exposants, appelés
+exposants dimensionnels, sont positifs, négatifs ou nuls.
+
+[[sec_1.8]]
+=== (1.6) grandeur sans dimension, f
+alt:[grandeur de dimension un, f]
+(((grandeur de dimension un)))
+(((grandeur sans dimension)))
+
+*grandeur* pour laquelle tous les exposants des facteurs correspondant
+aux *grandeurs de base* dans sa *dimension* sont nuls
+
+NOTE: Le terme «grandeur sans dimension» est d'usage courant en français.
+Il provient du fait que tous les exposants sont nuls dans la représentation
+symbolique de la dimension de telles grandeurs. Le terme «grandeur
+de dimension un» reflète la convention selon laquelle la représentation
+symbolique de la dimension de telles grandeurs est le symbole 1 (voir
+l'<<ISO_31_0_1992,clause=2.2.6>>).
+
+NOTE: Les *unités de mesure* et les *valeurs* des grandeurs sans dimension
+sont des nombres, mais ces grandeurs portent plus d'information qu'un
+nombre.
+
+NOTE: Certaines grandeurs sans dimension sont définies comme des rapports
+de deux grandeurs de même *nature*.
+
+[example]
+Angle plan, angle solide, indice de réfraction, perméabilité relative,
+fraction massique, facteur de frottement, nombre de Mach.
+
+NOTE: Les nombres d'entités sont des grandeurs sans dimension.
+
+[example]
+Nombre de tours dans une bobine, nombre de molécules dans un spécimen
+donné, dégénérescence des niveaux d'énergie d'un système quantique.
+
+[[sec_1.9]]
+=== (1.7) unité de mesure, f
+alt:[unité, f]
+(((unité)))
+(((unité de mesure)))
+
+*grandeur* scalaire réelle, définie et adoptée par convention, à laquelle
+on peut comparer toute autre grandeur de même *nature* pour exprimer
+le rapport des deux grandeurs sous la forme d'un nombre
+
+NOTE: On désigne les unités de mesure par des noms et des symboles
+attribués par convention.
+
+NOTE: Les unités des grandeurs de même *dimension* peuvent être désignées
+par le même nom etle même symbole même si ces grandeurs ne sont pas
+de même nature. On emploie, par exemple, le nom «joule par kelvin»
+et le symbole J/K pour désigner à la fois une unité de capacité thermique
+et une unité d'entropie, bien que ces grandeurs ne soient généralement
+pas considérées comme étant de même nature. Toutefois, dans certains
+cas, des noms spéciaux sont utilisés exclusivement pour des grandeurs
+d'une nature spécifiée. C'est ainsi que l'unité seconde à la puissance
+moins un (stem:["unitsml(1/s)"]) est appelée hertz (stem:["unitsml(Hz)"])
+pour les fréquences et becquerel (stem:["unitsml(Bq)"]) pour les activités
+de radionucléides.
+
+NOTE: Les unités des *grandeurs sans dimension* sont des nombres.
+Dans certains cas, on leur donne des noms spéciaux, par exemple radian,
+stéradian et décibel, ou on les exprime par des quotients comme la
+millimole par mole égale à stem:[10^{-3}], et le microgramme par kilogram-me
+égal à stem:[10^{-9}].
+
+NOTE: Pour une grandeur donnée, le nom abrégé «unité» est souvent
+combiné avec le nom de la grandeur, par exemple «unité de masse».
+
+[[sec_1.10]]
+=== (1.13) unité de base, f
+(((unité de base)))
+
+*unité de mesure* adoptée par convention pour une *grandeur de base*
+
+NOTE: Dans chaque *système cohérent d'unités*, il y a une seule unité
+de base pour chaque grandeur de base.
+
+[example]
+Dans le *SI*, le mètre est l'unité de base de longueur. Dans les systèmes
+CGS, le centimètre est l'unité de base de longueur.
+
+NOTE: Une unité de base peut aussi servir pour une *grandeur dérivée*
+de même *dimension*.
+
+[example]
+La hauteur de pluie, définie comme un volume surfacique
+(volume par aire) a le mètre comme *unité dérivée cohérente* dans
+le SI.
+
+NOTE: Pour un nombre d'entités, on peut considérer le nombre un, de
+symbole 1, comme une unité de base dans tout *système d'unités*.
+
+[[sec_1.11]]
+=== (1.14) unité dérivée, f
+(((unité dérivée)))
+
+*unité de mesure* d'une *grandeur dérivée*
+
+[example]
+Le mètre par seconde, symbole stem:["unitsml(m/s)"], et le centimètre
+par seconde, symbole stem:["unitsml(cm/s)"], sont des unités dérivées
+de vitesse dans le *SI*. Le kilomètre par heure, symbole km/h, est
+une unité de vitesse en dehors du SI mais dont l'usage est accepté
+avec le SI. Le nœud, égal à un mille marin par heure, est une unité
+de vitesse en dehors du SI.
+
+[[sec_1.12]]
+=== (1.10) unité dérivée cohérente, f
+(((unité dérivée cohérente)))
+
+*unité dérivée* qui, pour un *système de grandeurs* donné et pour
+un ensemble choisi d'*unités de base* , est un produit de puissances
+des unités de base sans autre facteur de proportionnalité que le nombre
+un
+
+NOTE: Une puissance d'une unité de base est l'unité munie d'un exposant.
+
+NOTE: La cohérence ne peut être déterminée que par rapport à un système
+de grandeurs particulier et un ensemble donné d'unités de base.
+
+[example]
+Si le mètre, la seconde et la mole sont des unités de base, le mètre
+par seconde est l'unité dérivée cohérente de vitesse lorsque la vitesse
+est définie par l'**équation aux grandeurs**  stem:[v = "d"r//"d"t],
+et la mole par mètre cube est l'unité dérivée cohérente de concentration
+en quantité de matière lorsque la concentration en quantité de matière
+est définie par l'équation aux grandeurs stem:[c = n//V]. Le kilomètre
+par heure et le nœud, donnés comme exemples d'unités dérivées en <<sec_1.11>>,
+ne sont pas des unités dérivées cohérentes dans un tel système.
+
+NOTE: Une unité dérivée peut être cohérente par rapport à un système
+de grandeurs, mais non par rapport à un autre.
+
+[example]
+Le centimètre par seconde est l'unité dérivée cohérente de vitesse
+dans le *système d'unités* CGS mais n'est pas une unité dérivée cohérente
+dans le *SI*.
+
+NOTE: Dans tout système d'unités, l'unité dérivée cohérente de toute
+*grandeur dérivée sans dimension* est le nombre un, de symbole 1.
+Le nom et le symbole de l'*unité de mesure* un sont généralement omis.
+
+[[sec_1.13]]
+=== (1.9) système d'unités, m
+(((système d'unités)))
+
+ensemble d'*unités de base* et d'*unités dérivées*, de leurs multiples
+et sous-multiples, définis conformément à des règles données, pour
+un *système de grandeurs* donné
+
+[[sec_1.14]]
+=== (1.11) système cohérent d'unités, m
+(((système cohérent d'unités)))
+
+*système d'unités*, fondé sur un *système de grandeurs* donné, dans
+lequel l'*unité de mesure* de chaque *grandeur dérivée* est une
+*unité dérivée cohérente*
+
+[example]
+L'ensemble des unités SI cohérentes et les relations entre elles.
+
+NOTE: Un système d'unités ne peut être cohérent que par rapport à
+un système de grandeurs et aux *unités de base* adoptées.
+
+NOTE: Pour un système cohérent d'unités, les *équations aux valeurs
+numériques* ont la même forme,y compris les facteurs numériques, que
+les *équations aux grandeurs* correspondantes.
+
+[[sec_1.15]]
+=== (1.15) unité hors système, f
+(((unité hors système)))
+
+*unité de mesure* qui n'appartient pas à un *système d'unités* donné
+
+[example]
+L'électronvolt (environ stem:[1,602 18 * 10^{-19} "unitsml(J)"]) est
+une unité d'énergie hors système pour le *SI*.
+
+[example]
+Le jour, l'heure, la minute sont des unités de temps hors système
+pour le SI.
+
+[[sec_1.16]]
+=== (1.12) Système international d'unités, m
+alt:[SI, m]
+(((Système international d'unités)))
+
+*système d'unités*, fondé sur le *Système international de grandeurs*,
+comportant les noms et symboles des unités, une série de préfixes
+avec leurs noms et symboles, ainsi que des règles pour leur emploi,
+adopté par la Conférence générale des poids et mesures (CGPM)
+
+NOTE: Le SI est fondé sur les sept *grandeurs de base* de l' *ISQ*.
+Les noms et les symboles des *unités de base* sont donnés dans le
+tableau suivant.
+
+NOTE: Les unités de base et les *unités dérivées cohérentes* du SI
+forment un ensemble cohérent, appelé «ensemble des unités SI cohérentes».
+
+NOTE: Pour une description et une explication complètes du Système
+international d'unités, voir la dernière édition de la brochure du
+SI publiée par le Bureau international des poids et mesures (BIPM)
+et disponible sur le site internet du BIPM.
+
+NOTE: En *algèbre des grandeurs*, la grandeur «nombre d'entités» est
+souvent considérée comme une grandeur de base, avec l'unité de base
+un, symbole 1.
+
+[[note_5_1.16]]
+[NOTE]
+====
+Les préfixes SI pour les *multiples* et *sous-multiples des unités*
+sont:
+
+[cols="3",options="unnumbered"]
+|===
+^.^h| Base quantity +
+Grandeur de base
+2+^.^h| Base unit +
+Unité de base
+^.^h| Name +
+Nom
+^.^h| Name +
+Nom
+^.^h| Symbol +
+Symbole
+
+| length +
+longueur
+| metre +
+mètre
+| stem:["unitsml(m)"]
+
+| mass +
+masse
+| kilogram +
+kilogramme
+| stem:["unitsml(kg)"]
+
+| time +
+temps
+| second +
+seconde
+| stem:["unitsml(s)"]
+
+| electric current +
+courant électrique
+| ampere +
+ampère
+| stem:["unitsml(A)"]
+
+| thermodynamic temperature +
+température thermodynamique
+| kelvin +
+kelvin
+| stem:["unitsml(K)"]
+
+| amount of substance +
+quantité de matière
+| mole +
+mole
+| stem:["unitsml(mol)"]
+
+| luminous intensity +
+intensité lumineuse
+| candela +
+candela
+| stem:["unitsml(cd)"]
+
+|===
+
+====
+
+[[sec_1.17]]
+=== (1.16) multiple d'une unité, m
+(((multiple d'une unité)))
+
+*unité de mesure* obtenue en multipliant une unité de mesure donnée
+par un entier supérieur à un
+
+[example]
+Le kilomètre est un multiple décimal du mètre.
+
+[example]
+L'heure est un multiple non décimal de la seconde.
+
+NOTE: Les préfixes SI pour les multiples décimaux des *unités de base*
+et des *unités dérivées* du *SI* sont donnés à la <<note_5_1.16>>.
+
+NOTE: Les préfixes SI représentent strictement des puissances de 10
+et il convient de ne pas les utiliser pour des puissances de 2. Par
+exemple, il convient de ne pas utiliser 1 kilobit pour représenter
+1 024 bits (stem:[2^10] bits), qui est 1 kibibit.
+
+Les préfixes pour les multiples binaires sont:
+
+[cols="3",options="unnumbered"]
+|===
+.2+^.^h| Factor +
+Facteur
+2+^.^h| Prefix +
+Préfixe
+^.^h| Name +
+Nom
+^.^h| Symbol +
+Symbole
+
+| stem:[(2^{10})^{8}]
+| yobi +
+yobi
+| stem:[sf "Yi"]
+
+| stem:[(2^{10})^{7}]
+| zebi +
+zébi
+| stem:[sf "Zi"]
+
+| stem:[(2^{10})^{6}]
+| exbi +
+exbi
+| stem:[sf "Ei"]
+
+| stem:[(2^{10})^{5}]
+| pebi +
+pébi
+| stem:[sf "Pi"]
+
+| stem:[(2^{10})^{4}]
+| tebi +
+tébi
+| stem:[sf "Ti"]
+
+| stem:[(2^{10})^{3}]
+| gibi +
+gibi
+| stem:[sf "Gi"]
+
+| stem:[(2^{10})^{2}]
+| mebi +
+mébi
+| stem:[sf "Mi"]
+
+| stem:[(2^{10})^1]
+| kibi +
+kibi
+| stem:[sf "Ki"]
+
+|===
+
+[[sec_1.18]]
+=== (1.17) sous-multiple d'une unité, m
+(((sous-multiple d'une unité)))
+
+*unité de mesure* obtenue en divisant une unité de mesure donnée par
+un entier supérieur à un
+
+[example]
+Le millimètre est un sous-multiple décimal du mètre
+
+[example]
+Pour l'angle plan, la seconde est un sous-multiple non décimal de
+la minute.
+
+NOTE: Les préfixes SI pour les sous-multiples décimaux des
+*unités de base* et des *unités dérivées* du SI sont donnés à
+la <<note_5_1.16>>.
+
+[[sec_1.19]]
+=== (1.18) valeur d'une grandeur, f
+alt:[valeur, f]
+(((valeur)))
+(((valeur d'une grandeur)))
+
+ensemble d'un nombre et d'une référence constituant l'expression quantitative
+d'une *grandeur*
+
+[[ex_1_1.19]]
+====
+Longueur d'une tige donnée:
+
+stem:[5,34 "unitsml(m)"] ou stem:[534 "unitsml(cm)"]
+====
+
+[[ex_2_1.19]]
+====
+Masse d'un corps donné:
+
+stem:[0,152 "unitsml(kg)"] ou stem:[152 "unitsml(g)"]
+====
+
+[[ex_3_1.19]]
+====
+Courbure d'un arc donné:
+
+stem:[112 "unitsml(m^1)"]
+====
+
+[[ex_4_1.19]]
+====
+Température Celsius d'un spécimen donné:
+
+stem:[5 "unitsml(degC)"]
+====
+
+[[ex_5_1.19]]
+====
+Impédance électrique d'un élément de circuit donné à une fréquence
+donnée, où j est l'unité imaginaire:
+
+(7 3j)
+====
+
+[[ex_6_1.19]]
+====
+Indice de réfraction d'un spécimen donné de verre:
+
+1,32
+====
+
+[[ex_7_1.19]]
+====
+Dureté C de Rockwell d'un spécimen donné:
+
+43,5 HRC
+====
+
+[[ex_8_1.19]]
+====
+Fraction massique de cadmium dans un spécimen donné de cuivre:
+
+stem:[3 "unitsml(ug/kg)"] ou stem:[3*10^{-9}]
+====
+
+[[ex_9_1.19]]
+====
+Molalité de Pb^2+^ dans un spécimen donné d'eau:
+
+stem:[1,76 "unitsml(umol/kg)"]
+====
+
+[[ex_10_1.19]]
+====
+Concentration arbitraire en quantité de matière de lutropine dans
+un spécimen donné de plasma sanguin humain en utilisant l'étalon international
+80/552 de l'OMS:
+
+5,0 UI/l, où «UI» signifie «unité internationale de l'OMS»
+====
+
+[NOTE]
+====
+Selon le type de référence, la valeur d'une grandeur est
+
+* soit le produit d'un nombre et d'une *unité de mesure* (voir les
+<<ex_1_1.19;and!ex_2_1.19;and!ex_3_1.19;and!ex_4_1.19;and!ex_5_1.19;and!ex_8_1.19;and!ex_9_1.19>>);
+l'unité un est généralement omise pour les *grandeurs sans dimension*
+(voir <<ex_6_1.19;and!ex_8_1.19>>);
+
+* soit un nombre et la référence à une *procédure de mesure*
+(voir <<ex_7_1.19>>);
+
+* soit un nombre et un *matériau de référence* (voir <<ex_10_1.19>>).
+====
+
+NOTE: Le nombre peut être complexe (voir <<ex_5_1.19>>).
+
+NOTE: La valeur d'une grandeur peut être repré-sentée de plus d'une
+façon (voir <<ex_1_1.19;and!ex_2_1.19;and!ex_8_1.19>>).
+
+NOTE: Dans le cas de grandeurs vectorielles ou tensorielles, chaque
+composante a une valeur.
+
+[example]
+Force agissant sur une particule donnée, par exemple en coordonnées
+cartésiennes stem:[(F_x;F_y;F_z) = (31,5; 43,2; 17,0) "unitsml(N)"].
+
+[[sec_1.20]]
+=== (1.21) valeur numérique, f
+alt:[valeur numérique d'une grandeur, f]
+(((valeur numérique)))
+(((valeur numérique d'une grandeur)))
+
+nombre dans l'expression de la *valeur d'une grandeur*, autre qu'un
+nombre utilisé comme référence
+
+NOTE: Pour les *grandeurs sans dimension*, la référence est une
+*unité de mesure* qui est un nombre, et ce nombre n'est pas considéré
+comme faisant partie de la valeur numérique.
+
+[example]
+Pour une fraction molaire égale à stem:[3 "unitsml(mmol/mol)"], la
+valeur numérique est 3 et l'unité est stem:["unitsml(mmol/mol)"].
+L'unité stem:["unitsml(mmol/mol)"] est numériquement égale à 0,001,
+mais ce nombre 0,001 ne fait pas partie de la valeur numérique qui
+reste 3.
+
+NOTE: Pour les *grandeurs* qui ont une unité de me-sure (c'est-à-dire
+autres que les *grandeurs ordinales*), la valeur numérique stem:[{Q}]
+d'une grandeur stem:[Q] est fréquemment notée stem:[{Q} = Q//[Q\]],
+où stem:[[Q\]] est le symbole de l'unité de mesure.
+
+[example]
+Pour une valeur de stem:[5,7 "unitsml(kg)"], la valeur numérique est
+stem:[{m} = (5,7 "unitsml(kg)")//"unitsml(kg)" = 5,7]. La même valeur
+peut être exprimée comme stem:[5 700 "unitsml(g)"] et la valeur numérique
+est alors stem:[{m} = (5 700 "unitsml(g)")//"unitsml(g)" = 5 700].
+
+[[sec_1.21]]
+=== algèbre des grandeurs, f
+(((algèbre des grandeurs)))
+
+ensemble de règles et opérations mathématiques appliquées aux *grandeurs*
+autres que les *grandeurs ordinales*
+
+NOTE: En algèbre des grandeurs, les *équations aux grandeurs* sont
+préférées aux *équations aux valeurs numériques* car les premières,
+contrairement auxsecondes, sont indépendantes du choix des
+*unités de mesure* (voir l'<<ISO_31_0_1992,clause=2.2.2>>).
+
+[[sec_1.22]]
+=== équation aux grandeurs, f
+(((équation aux grandeurs)))
+
+relation d'égalité entre des *grandeurs* d'un *système de grandeurs*
+donné, indépendante des *unités de mesure*
+
+[[ex_1_1.22]]
+[example]
+stem:[Q_1 = Q_2 Q_3], où stem:[Q_1,Q_2] et stem:[Q_3] représentent
+différentes grandeurs et où est un facteur numérique.
+
+[example]
+stem:[T = (1//2) m v^2], où stem:[T] est l'énergie cinétique et stem:[v]
+la vitesse d'une particule spécifiée de masse stem:[m].
+
+[example]
+stem:[n = It//F], où stem:[n] est la quantité de matière d'un composé
+univalent, stem:[I] est le courant électrique et stem:[t] la durée
+de l'électrolyse, et où stem:[F] est la constante de Faraday.
+
+[[sec_1.23]]
+=== équation aux unités, f
+(((équation aux unités)))
+
+relation d'égalité entre des *unités de base*, des
+*unités dérivées cohérentes* ou d'autres *unités de mesure*
+
+[example]
+Pour les *grandeurs* données dans l'<<ex_1_1.22>>,
+stem:[[Q_1\] = [Q_2\] [Q_3]] où stem:[[Q_1\]], stem:[[Q_2\]] et stem:[[Q_3\]]
+représentent respectivement les unités de stem:[Q_1,Q_2] et stem:[Q_3],
+pourvu que ces unités soient dans un *système cohérent d'unités*.
+
+[example]
+stem:["unitsml(J)" ":=" "unitsml(kg*m^2/s^2)"], où stem:["unitsml(J)"],
+stem:["unitsml(kg)"], stem:["unitsml(m)"] et stem:["unitsml(s)"] sont
+respectivement les symboles du joule, du kilogramme, du mètre et de
+la seconde. (Le symbole stem:[":="] signifie «est par définition égal
+à», comme indiqué dans les séries ISO 80000 et CEI 80000.)
+
+[example]
+stem:["unitsml(km/h)" = (1//3,6) "unitsml(m/s)"].
+
+[[sec_1.24]]
+=== facteur de conversion entre unités, m
+(((facteur de conversion entre unités)))
+
+rapport de deux *unités de mesure* correspondant à des *grandeurs*
+de même *nature*
+
+[example]
+stem:["unitsml(km/m)" = 1 000] et par conséquent
+stem:[1 "unitsml(km)" = 1 000 "unitsml(m)"].
+
+NOTE: Les unités de mesure peuvent appartenir à des *systèmes d'unités*
+différents.
+
+[example]
+stem:["unitsml(h/s)" = 3 600] et par conséquent
+stem:[1 "unitsml(h)" = 3 600 "unitsml(s)"].
+
+[example]
+stem:[("unitsml(km/h)")//("unitsml(m/s)") = (1//3,6)] et par conséquent
+stem:[1 "unitsml(km/h)" = (1//3,6) "unitsml(m/s)"].
+
+[[sec_1.25]]
+=== équation aux valeurs numériques, f
+(((équation aux valeurs numériques)))
+
+relation d'égalité entre des *valeurs numériques*, fondée sur une
+*équation aux grandeurs* donnée et des *unités de mesure* spécifiées
+
+[example]
+Pour les *grandeurs* données dans l'<<ex_1_1.22>>,
+stem:[{Q_1} = {Q_2} {Q_3}], où stem:[{Q_1}, {Q_2}] et stem:[{Q_3}]
+représentent respectivement les valeurs numériques de stem:[Q_1,Q_2]
+et stem:[Q_3] lorsqu'elles sont exprimées en *unités de base* ou en
+*unités dérivées cohérentes* ou les deux.
+
+[example]
+Pour l'équation de l'énergie cinétique d'une particule,
+stem:[T = (1//2) mv^2], si stem:[m = 2 "unitsml(kg)"] et
+stem:[v = 3 "unitsml(m/s)"], alors stem:[{T} = (1//2)" "2" "3^2] est
+une équation aux valeurs numériques donnant la valeur numérique 9
+pour stem:[T] en joules.
+
+[[sec_1.26]]
+=== grandeur ordinale, f
+alt:[grandeur repérable, f]
+(((grandeur ordinale)))
+(((grandeur repérable)))
+
+*grandeur* définie par une *procédure de mesure* adoptée par convention,
+qui peut être classée avec d'autres grandeurs de même *nature* selon
+l'ordre croissant ou décroissant de leurs expressions quantitatives,
+mais pour laquelle aucune relation algébrique entre ces grandeurs
+n'existe
+
+[example]
+Dureté C de Rockwell.
+
+[example]
+Indice d'octane pour les carburants.
+
+[example]
+Magnitude d'un séisme sur l'échelle de Richter.
+
+[example]
+Niveau subjectif de douleur abdominale sur une échelle de zéro à cinq.
+
+NOTE: Les grandeurs ordinales ne peuvent prendre part qu'à des relations
+empiriques et n'ont ni *unités de mesure*, ni *dimensions*. Les différences
+et les rapportsde grandeurs ordinales n'ont pas de signification.
+
+NOTE: Les grandeurs ordinales sont classées selon des *échelles ordinales*
+(voir <<sec_1.28>>).
+
+[[sec_1.27]]
+=== échelle de valeurs, f
+alt:[échelle de mesure, f]
+(((échelle de mesure)))
+(((échelle de valeurs)))
+
+ensemble ordonné de *valeurs* de *grandeurs* d'une *nature* donnée,
+utilisé pour classer des grandeursde cette nature en ordre croissant
+ou décroissant de leurs expressions quantitatives
+
+[example]
+Échelle des températures Celsius.
+
+[example]
+Échelle de temps.
+
+[example]
+Échelle de dureté C de Rockwell.
+
+[[sec_1.28]]
+=== (1.22) échelle ordinale, f
+alt:[échelle de repérage, f]
+(((échelle de repérage)))
+(((échelle ordinale)))
+
+*échelle de valeurs* pour *grandeurs ordinales*
+
+[example]
+Échelle de dureté C de Rockwell.
+
+[example]
+Échelle des indices d'octane pour les carburants.
+
+NOTE: Une échelle ordinale peut être établie par des *mesurages* conformément
+à une *procédure de mesure*.
+
+[[sec_1.29]]
+=== échelle de référence conventionnelle, f
+(((échelle de référence conventionnelle)))
+
+*échelle de valeurs* définie par un accord officiel
+
+[[sec_1.30]]
+=== propriété qualitative, f
+alt:[attribut, m]
+(((attribut)))
+(((propriété qualitative)))
+
+propriété d'un phénomène, d'un corps ou d'une substance, que l'on
+ne peut pas exprimer quantitativement
+
+[example]
+Sexe d'une personne.
+
+[example]
+Couleur d'un spécimen de peinture.
+
+[example]
+Couleur d'un _spot test_ en chimie.
+
+[example]
+Code de pays ISO à deux lettres.
+
+[example]
+Séquence d'acides aminés dans un polypeptide.
+
+NOTE: Une propriété qualitative a une valeur, qui peut être exprimée
+par des mots, par des codes alphanumériques ou par d'autres moyens.
+
+NOTE: La valeur d'une propriété qualitative ne doit pas être confondue
+avec la *valeur nominale* d'une grandeur.

@@ -1,0 +1,46 @@
+
+== Foreword
+
+En 1997 le Comité commun pour les guides en métrologie (JCGM), présidé
+par le Directeur du BIPM, a été formé par les sept Organisations internationales
+qui avaient préparé les versions originales du _Guide pour l'expression
+de l'incertitude de mesure (GUM)_ et du _Vocabulaire international
+des termes fondamentaux et généraux en métrologie (VIM)_ . Le Comité
+commun a repris cette partie du travail du Groupe techniqueconsultatif
+4 (TAG 4) de l'ISO, qui avait élaboré le GUM et le VIM. Le Comité
+commun était constitué à l'origine de représentants du Bureau international
+des poids et mesures (BIPM), de la Commission électrotechnique internationale
+(CEI), de la Fédération internationale de chimie clinique et de biologie
+médicale (IFCC), de l'Organisation internationale de normalisation
+(ISO), de l'Union internationale de chimie pure et appliquée (UICPA),
+de l'Union internationale de physique pure et appliquée (UIPPA) et
+de l'Organisation internationale de métrologie légale (OIML). En 2005,
+la Coopération internationale sur l'agrément des laboratoires d'essais
+(ILAC) a rejoint officiellement les sept organisations internationales
+fondatrices.
+
+Le JCGM a deux Groupes de travail. Le Groupe de travail 1 (JCGM/WG
+1) sur le GUM a la tâche de promouvoir l'usage du GUM et de préparer
+des suppléments au GUM pour en élargir le champ d'application. Le
+Groupe de travail 2 (JCGM/WG 2) sur le VIM a la tâche de réviser le
+VIM et d'en promouvoir l'usage. Le Groupe de travail 2 est composé
+de deux représentants au plus de chaque organisation membre et de
+quelques autres experts. Cette troisième édition du VIM a été préparée
+par le Groupe de travail 2.
+
+En 2004, un premier projet de troisième édition du VIM a été soumis
+pour commentaires et propositions aux huit organisations représentées
+dans le JCGM, qui pour la plupart ont consulté leurs membres ou affiliés,
+y compris de nombreux laboratoires nationaux de métrologie. Le JCGM/WG
+2 a étudié et discuté les commentaires, les a éventuellement pris
+en compte et a élaboré des réponses. Une version finale de la troisième
+édition a été soumise en 2006 aux huit organisations pour évaluation
+et approbation.
+
+Tous les commentaires ultérieurs ont été examinés et éventuellement
+pris en compte par le Groupe de travail 2.
+
+Cette troisième édition a été approuvée à l'unanimité par les huit
+organisations membres du JCGM.
+
+Cette troisième édition annule et remplace la deuxième édition 1993.

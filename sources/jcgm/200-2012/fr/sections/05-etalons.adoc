@@ -1,0 +1,464 @@
+
+[[sec_5]]
+== Étalons
+
+[[sec_5.1]]
+=== (6.1) étalon, m
+(((étalon)))
+
+réalisation de la définition d'une *grandeur* donnée, avec une *valeur*
+déterminée et une *incertitude de mesure* associée, utilisée comme
+référence
+
+[example]
+Étalon de masse de stem:[1 "unitsml(kg)"] avec une *incertitude-type*
+associée de stem:[3 "unitsml(ug)"].
+
+[example]
+Résistance étalon de 100 avec une incertitude-type associée de
+stem:[1 mu].
+
+[example]
+Étalon de fréquence à césium avec une incertitude-type associée de
+stem:[2*10^{-15}].
+
+[example]
+Solution tampon de référence ayant un pH de 7,072 avec une incertitude-type
+associée de 0,006.
+
+[example]
+Série de solutions de référence de cor-tisol dans du sérum humain,
+dont chaque solution a une valeur certifiée avec une incertitude de
+mesure.
+
+[example]
+*Matériau de référence* fournissant des valeurs avec les incertitudes
+de mesure associées pour la concentration en masse de dix protéines
+différentes.
+
+NOTE: La «réalisation de la définition d'une grandeur donnée» peut
+être fournie par un *système de mesure*, une *mesure matérialisée*
+ou un matériau de référence.
+
+NOTE: Un étalon sert souvent de référence dans l'obtention de
+*valeurs mesurées* et d'incertitudes de mesure associées pour d'autres
+grandeurs de même *nature*, établissant ainsi une *traçabilité métrologique*
+par l'intermédiaire de l'*étalonnage* d'autres étalons,
+*instruments de mesure* ou systèmes de mesure.
+
+NOTE: Le terme «réalisation» est employé ici dans son sens le plus
+général. Il désigne trois procédures de réalisation. La première,
+la réalisation _stricto sensu_, est la réalisation physique de
+l'*unité de mesure* à partir de sa définition. La deuxième, appelée
+«reproduction», consiste, non pas à réaliser l'unité à partir de sa
+définition, mais à construire un étalon hautement reproductible fondé
+sur un phénomène physique, par exemple l'emploi de lasers stabilisés
+en fréquence pour construire un étalon du mètre, l'emploi de l'effet
+Josephson pour le volt ou de l'effet Hall quantique pour l'ohm. La
+troisième procédure consiste à adopter une mesure matérialisée comme
+étalon. C'est le cas de l'étalon de stem:[1 "unitsml(kg)"].
+
+NOTE: L'incertitude-type associée à un étalon est toujours une composante
+de l'*incertitude-type composée* (voir le <<Guide_1995,clause=2.3.4>>)
+dans un *résultat de mesure* obtenu en utilisant l'étalon. Cette composante
+estsouvent petite par rapport à d'autres composantes de l'incertitude-type
+composée.
+
+NOTE: La valeur de la grandeur et l'incertitude de mesure doivent
+être déterminées au moment où l'étalon est utilisé.
+
+NOTE: Plusieurs grandeurs de même nature ou de natures différentes
+peuvent être réalisées à l'aide d'un seul dispositif, appelé aussi
+étalon.
+
+NOTE: Le mot «embodiment» est quelquefois utilisé en anglais à la
+place de «realization».
+
+NOTE: Dans la science et la technologie, le mot anglais «standard»
+est utilisé avec au moins deux signi-fications différentes: celle
+de spécification, recom-mandation technique ou autre document normatif,
+et celle d'étalon (en anglais «measurement standard»). Seule la deuxième
+signification relève du présent Vocabulaire.
+
+NOTE: Le terme «étalon» est parfois utilisé pour dé-signer d'autres
+outils métrologiques, par exemple un étalon logiciel (voir l'<<ISO_5436_2>>).
+
+
+[[sec_5.2]]
+=== (6.2) étalon international, m
+(((étalon international)))
+
+*étalon* reconnu par les signataires d'un accord international pour
+une utilisation mondiale
+
+[example]
+Le prototype international du kilogramme.
+
+[example]
+Gonadotrophine chorionique, 4^e^ étalon international de l'Organisation
+mondiale de la santé (OMS), 1999, 75/589, 650 unités internationales
+par ampoule.
+
+[example]
+Eau océanique moyenne normalisée de Vienne (VSMOW2), distribuée par
+l'Agence internationale pour l'énergie atomique (AIEA) pour des *mesurages*
+de rapports molaires différentiels relatifs d'isotopes stables.
+
+[[sec_5.3]]
+=== (6.3) étalon national, m
+(((étalon national)))
+
+*étalon* reconnu par une autorité nationale pour servir, dans un état
+ou une économie, comme base à l'attribution de *valeurs* à d'autres
+étalons de *grandeurs* de la même *nature*
+
+[[sec_5.4]]
+=== (6.4) étalon primaire, m
+(((étalon primaire)))
+
+*étalon* établi à l'aide d'une *procédure de mesure primaire* ou créé
+comme objet choisi par convention
+
+[example]
+Étalon primaire de concentration en quantité de matière préparé en
+dissolvant une quantité de matière connue d'une substance chimique
+dans un volume connu de solution.
+
+[example]
+Étalon primaire de pression fondé sur des *mesurages* séparés de force
+et d'aire.
+
+[example]
+Étalon primaire pour les mesurages du rapport molaire d'isotopes,
+préparé en mélangeant des quantités de matière connues d'isotopes
+spécifiés.
+
+[example]
+Étalon primaire de température thermo-dynamique constitué d'une cellule
+à point triple de l'eau.
+
+[example]
+Le prototype international du kilogramme en tant qu'objet choisi par
+convention.
+
+[[sec_5.5]]
+=== (6.5) étalon secondaire, m
+(((étalon secondaire)))
+
+*étalon* établi par l'intermédiaire d'un *étalonnage* par rapport
+à un *étalon primaire* d'une *grandeur* de même *nature*
+
+NOTE: On peut obtenir directement la relation entre l'étalon primaire
+et l'étalon secondaire ou mettre en œuvre un *système de mesure* intermédiaire
+étalonné par l'étalon primaire, qui assigne un *résultat de mesure*
+à l'étalon secondaire.
+
+NOTE: Un étalon dont la *valeur* est assignée par une
+*procédure de mesure primaire* de mesure de rapportest un étalon
+secondaire.
+
+[[sec_5.6]]
+=== (6.6) étalon de référence, m
+(((étalon de référence)))
+
+*étalon* conçu pour l'*étalonnage* d'autres étalons de *grandeurs*
+de même *nature* dans une organisation donnée ou en un lieu donné
+
+
+[[sec_5.7]]
+=== (6.7) étalon de travail, m
+(((étalon de travail)))
+
+*étalon* qui est utilisé couramment pour étalonner ou contrôler des
+*instruments de mesure* ou des *systèmes de mesure*
+
+NOTE: Un étalon de travail est habituellement étalon-né par rapport
+à un *étalon de référence*.
+
+NOTE: Un étalon de travail servant à la *vérification* est aussi désigné
+comme «étalon de vérification» ou «étalon de contrôle».
+
+
+[[sec_5.8]]
+=== (6.9) étalon voyageur, m
+(((étalon voyageur)))
+
+*étalon*, parfois de construction spéciale, destiné au transport en
+des lieux différents
+
+[example]
+Étalon de fréquence à césium 133, portatif et fonctionnant sur accumulateur.
+
+[[sec_5.9]]
+=== (6.8) dispositif de transfert, m
+(((dispositif de transfert)))
+
+dispositif utilisé comme intermédiaire pour comparer entre eux des
+*étalons*
+
+NOTE: Des étalons peuvent parfois servir de dispositifs de transfert.
+
+[[sec_5.10]]
+=== étalon intrinsèque, m
+(((étalon intrinsèque)))
+
+*étalon* fondé sur une propriété intrinsèque et reproductible d'un
+phénomène ou d'une substance
+
+[example]
+Étalon intrinsèque de température thermo-dynamique constitué d'une
+cellule à point triple de l'eau.
+
+[example]
+Étalon intrinsèque de différence de potentiel électrique fondé sur
+l'effet Josephson.
+
+[example]
+Étalon intrinsèque de résistance électrique fondé sur l'effet Hall
+quantique.
+
+[example]
+Étalon intrinsèque de conductivité électrique constitué d'un spécimen
+de cuivre.
+
+NOTE: La *valeur* d'un étalon intrinsèque est assignée par consensus
+et n'a pas besoin d'être établie en le reliant à un autre étalon de
+même type. Son *incertitude de mesure* est déterminée en prenant en
+compte deuxcomposantes, l'une associée à la valeur de consensus et
+l'autre associée à la construction, la mise en œuvre et la maintenance.
+
+NOTE: Un étalon intrinsèque consiste généralement en un système fabriqué
+conformément aux exigences d'une procédure de consensus et il est
+soumis à une *vérification* périodique. La procédure de consensus
+peutcomprendre des dispositions pour appliquer les *corrections* nécessaires
+à la mise en œuvre.
+
+NOTE: Les étalons intrinsèques fondés sur des phénomènes quantiques
+ont généralement une *stabilité* exceptionnelle.
+
+NOTE: L'adjectif «intrinsèque» ne signifie pas que l'étalon peut être
+mis en œuvre et utilisé sans précautions particulières ou qu'il est
+protégé d'influences internes et externes.
+
+
+[[sec_5.11]]
+=== (6.12) conservation d'un étalon, f
+alt:[maintenance d'un étalon, f]
+(((conservation d'un étalon)))
+(((maintenance d'un étalon)))
+
+ensemble des opérations nécessaires à la préservation des propriétés
+métrologiques d'un *étalon* dans des limites déterminées
+
+NOTE: La conservation comprend habituellement une *vérification* périodique
+de propriétés métrologiqueschoisies ou un *étalonnage*, un stockage
+dans des conditions appropriées et des précautions particulières lors
+de l'utilisation.
+
+[[sec_5.12]]
+=== .....
+
+*étalon* utilisé pour des *étalonnages*
+
+NOTE: En anglais, le terme «calibrator» n'est utilisé que dans certains
+domaines.
+
+
+[[sec_5.13]]
+=== (6.13) matériau de référence, m
+alt:[MR]
+(((matériau de référence)))
+(((MR)))
+
+matériau suffisamment homogène et stable en ce qui concerne des propriétés
+spécifiées, qui a été préparé pour être adapté à son utilisation prévue
+pour un *mesurage* ou pour l'examen de *propriétés qualitatives*
+
+NOTE: L'examen d'une propriété qualitative comprend l'attribution
+d'une valeur et de l'incertitude associée à un autre matériau. Cette
+incertitude n'est pas une *incertitude de mesure*.
+
+NOTE: Des matériaux de référence avec ou sans *valeurs* assignées
+peuvent servir à contrôler la *fidélité de mesure*, tandis que seuls
+des matériaux à valeursassignées peuvent servir à l'*étalonnage* ou
+au contrôle de la *justesse de mesure*.
+
+NOTE: Les matériaux de référence comprennent des matériaux caractérisés
+par des *grandeurs* et des matériaux caractérisés par des propriétés
+qualitatives.
+
+====
+_Exemples de matériaux de référence supports de grandeurs_:
+
+. eau de pureté déterminée, dont la viscosité dynamique est utilisée
+pour l'étalonnage de viscosimètres;
+
+. sérum humain sans valeur assignée à la concentration de cholestérol
+intrinsèque, utilisé seulement pour le contrôle de la fidélité de
+mesure;
+
+. tissu de poisson contenant une fraction massique déterminée de dioxine,
+utilisé comme *étalon* dans un étalonnage.
+====
+
+====
+_Exemples de matériaux de référence supports de propriétés qualitatives_:
+
+. nuancier de couleurs indiquant une ou plusieurs couleurs spécifiées;
+
+. ADN contenant une séquence spécifiée de nucléotides;
+
+. urine contenant de la 19-androstènedione.
+====
+
+NOTE: Un matériau de référence est quelquefois incorporé dans un dispositif
+fabriqué spécialement.
+
+[example]
+Substance dont le point triple est con-nu dans une cellule triple
+point.
+
+[example]
+Verre de densité optique connue dans un support de filtre de transmission.
+
+[example]
+Sphères à granulométrie uniforme montées sur une lame de microscope.
+
+NOTE: Certains matériaux de référence ont des valeurs assignées qui
+sont métrologiquement traçables à une *unité de mesure* en dehors
+d'un *système d'unités*. Ces matériaux comprennent des vaccins auxquels
+des unités internationales (UI) ont été assignées par l'Organi-sation
+mondiale de la santé.
+
+NOTE: Dans un *mesurage* donné, un matériau de référence donné ne
+peut être utilisé que pour l'étalonnage ou pour l'assurance de la
+qualité.
+
+NOTE: Il convient d'inclure dans les spécifications d'un matériau
+de référence sa traçabilité, qui indique son origine et son traitement
+(<<EMONS_2006,Accred. Qual. Assur.:2006>>).
+
+NOTE: La définition de l'ISO/REMCO <<EMONS_2006>> est analogue, mais
+utilise le terme «processus de mesure» pour signifier «examen»
+(<<ISO_15189_2007,clause=3.4>>) qui couvre à la fois un mesurage de
+la grandeur et l'examen d'une propriété qualitative.
+
+[[sec_5.14]]
+=== (6.14) matériau de référence certifié, m
+alt:[MRC]
+(((matériau de référence certifié)))
+(((MRC)))
+
+*matériau de référence*, accompagné d'une documentation délivrée par
+un organisme faisant autorité et fournissant une ou plusieurs valeurs
+de pro-priétés spécifiées avec les incertitudes et les tra-çabilités
+associées, en utilisant des procédures valables
+
+[example]
+Sérum humain dont la *valeur* assignée à la concentration de cholestérol
+et l'*incertitude de mesure* associée sont indiquées dans un certificat
+et qui sert d'*étalon* dans un *étalonnage* ou de matériau de contrôle
+de la *justesse de mesure*.
+
+NOTE: La documentation mentionnée est délivrée sous la forme d'un
+«certificat» (voir le <<Guide_ISO_31_2000>>).
+
+NOTE: Des procédures pour la production et la certification de matériaux
+de référence certifiés sont données, par exemple, dans les <<Guide_ISO_34_2000>>
+et <<Guide_ISO_35_2006>>.
+
+NOTE: Dans la définition, le terme «incertitude» peut désigner soit
+une incertitude de mesure, soit l'incertitude associée à la valeur
+d'une *propriété qualitative*, telle que l'identité ou la séquence.
+Le terme «traçabilité» peut désigner soit la *traçabilité métrologique*
+de la valeur d'une grandeur, soit la traçabilité de la valeur d'une
+pro-priété qualitative.
+
+NOTE: Les valeurs de grandeurs spécifiées des matériaux de référence
+certifiés exigent une traçabilité métrologique avec une incertitude
+de mesure associée (voir <<EMONS_2006,Accred. Qual. Assur.:2006>>).
+
+NOTE: La définition de l'ISO/REMCO est analogue
+(<<EMONS_2006,Accred. Qual. Assur.:2006>>), mais utilise «métrologique»
+à la fois pour une grandeur et pour une propriété qualitative.
+
+[[sec_5.15]]
+=== commutabilité d'un matériau de référence, f
+(((commutabilité d'un matériau de référence)))
+
+propriété d'un *matériau de référence*, exprimée par l'étroitesse
+de l'accord entre, d'une part, la relation entre les
+*résultats de mesure* obtenus pour une *grandeur* déterminée de ce
+matériau en utilisantdeux *procédures de mesure* données et, d'autre
+part, la relation entre les résultats de mesure pour d'autres matériaux
+spécifiés
+
+NOTE: Le matériau de référence en question est généralement un *étalon*
+et les autres matériaux spécifiés sont généralement des spécimens
+courants.
+
+NOTE: Les procédures de mesure mentionnées dans la définition sont
+celle qui précède et celle qui suit le matériau de référence utilisé
+comme étalon dans une *hiérarchie d'étalonnage* (voir l'<<ISO_17511>>).
+
+NOTE: Il convient de vérifier régulièrement la stabilité des matériaux
+de référence commutables.
+
+[[sec_5.16]]
+=== donnée de référence, f
+(((donnée de référence)))
+
+donnée liée à une propriété d'un phénomène, d'un corps ou d'une substance,
+ou à un système de constituants de composition ou de structure connue,
+obtenue à partir d'une source identifiée, évaluée de façon critique
+et vérifiée en exactitude
+
+[example]
+Données de référence relatives à la solu-bilité de composés chimiques,
+publiées par l'UICPA.
+
+NOTE: Dans la définition, le terme «exactitude» peut désigner soit
+une *exactitude de mesure*, soit l'«exactitude de la valeur d'une
+propriété qualitative».
+
+NOTE: En anglais, «data» est une forme plurielle dont le singulier
+est «datum». «Data» est couramment utilisé au sens singulier à la
+place de «datum».
+
+[[sec_5.17]]
+=== donnée de référence normalisée, f
+(((donnée de référence normalisée)))
+
+*donnée de référence* provenant d'une autorité reconnue
+
+[example]
+Valeurs des constantes physiques fonda-mentales, évaluées et recommandées
+régulièrement par le CODATA de l'ICSU.
+
+[example]
+Valeurs des masses atomiques relatives des éléments, appelées aussi
+valeurs des poids atomi-ques, évaluées tous les deux ans par l'UICPA-CIAAW,
+approuvées par l'Assemblée générale de l'UICPA et publiées dans
+_Pure Appl. Chem_.
+
+[[sec_5.18]]
+=== valeur de référence, f
+(((valeur de référence)))
+
+*valeur d'une grandeur* servant de base de comparaison pour les valeurs
+de *grandeurs* de même *nature*
+
+NOTE: La valeur de référence peut être une *valeur vraie* d'un *mesurande*,
+et est alors inconnue, ou une *valeur conventionnelle*, et est alors
+connue.
+
+[NOTE]
+====
+Une valeur de référence associée à son *incertitude de mesure* se
+rapporte généralement à
+
+. un matériau, par exemple un *matériau de référence certifié*,
+. un dispositif, par exemple un laser stabilisé,
+. une *procédure de mesure de référence*,
+. une comparaison d'*étalons*.
+====

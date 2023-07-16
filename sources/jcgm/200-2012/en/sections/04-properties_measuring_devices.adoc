@@ -1,0 +1,464 @@
+
+[[sec_4]]
+== Properties of measuring devices
+
+[[sec_4.1]]
+=== (3.2) indication
+
+*quantity value* provided by a *measuring instrument* or a
+*measuring system*
+
+NOTE: An indication may be presented in visual or acoustic form or
+may be transferred to another device. An indication is often given
+by the position of a pointer on the display for analog outputs, a
+displayed or printed number for digital outputs, a code pattern for
+code outputs, or an assigned quantity value for *material measures*.
+
+NOTE: An indication and a corresponding value of the *quantity* being
+measured are not necessarily values of quantities of the same *kind*.
+
+[[sec_4.2]]
+=== blank indication
+alt:[background indication]
+(((background indication)))
+(((blank indication)))
+(((indication)))
+
+*indication* obtained from a phenomenon, body, or substance similar
+to the one under investigation, but for which a *quantity* of interest
+is supposed not to be present, or is not contributing to the indication
+
+[[sec_4.3]]
+=== (4.19) indication interval
+(((indication interval)))
+
+set of *quantity values* bounded by extreme possible *indications*
+
+NOTE: An indication interval is usually stated in terms of its smallest
+and greatest quantity values, for example "99 V to 201 V".
+
+NOTE: In some fields, the term is "range of indications".
+
+[[sec_4.4]]
+=== (5.1) nominal indication interval
+alt:[nominal interval]
+(((nominal indication interval)))
+(((nominal interval)))
+
+set of *quantity values*, bounded by rounded or approximate extreme
+*indications*, obtainable with a particular setting of the controls
+of a *measuring instrument* or *measuring system* and used to designate
+that setting
+
+NOTE: A nominal indication interval is usually stated as its smallest
+and greatest quantity values, for example "100 V to 200 V".
+
+NOTE: In some fields, the term is "nominal range".
+
+[[sec_4.5]]
+=== (5.2) range of a nominal indication interval
+(((range of a nominal indication	interval)))
+
+absolute value of the difference between the extreme *quantity values*
+of a *nominal indication interval*
+
+[example]
+For a nominal indication interval of -10 V to +10 V, the range of
+the nominal indication interval is 20 V.
+
+NOTE: Range of a nominal indication interval is sometimes termed "span
+of a nominal interval".
+
+[[sec_4.6]]
+=== (5.3) nominal quantity value
+alt:[nominal value]
+(((nominal quantity value)))
+(((nominal value)))
+
+rounded or approximate *value* of a characterizing *quantity* of a
+*measuring instrument* or *measuring system* that provides guidance
+for its appropriate use
+
+[example]
+100 as the nominal quantity value marked on a standard resistor.
+
+[example]
+1 000 ml as the nominal quantity value marked on a single-mark volumetric
+flask.
+
+[example]
+stem:[0.1 "unistml(mol/l)"] as the nominal quantity value for amount-of-substance concentration
+of a solution of hydrogen chloride, HCl.
+
+[example]
+stem:[-20 "unitsml(degC)"] as a maximum Celsius temperature for storage.
+
+NOTE: "Nominal quantity value" and "nominal value" should not be used
+for "nominal property value".
+
+[[sec_4.7]]
+=== (5.4) measuring interval
+alt:[working interval]
+(((measuring interval)))
+(((working interval)))
+
+set of *values* of *quantities* of the same *kind* that can be measured
+by a given *measuring instrument* or *measuring system* with specified
+*instrumental measurement uncertainty*, underdefined conditions
+
+NOTE: In some fields, the term is "measuring range" or
+"measurement range".
+
+NOTE: The lower limit of a measuring interval should not be confused
+with *detection limit*.
+
+[[sec_4.8]]
+=== steady-state operating condition
+(((steady-state operating condition)))
+
+operating condition of a *measuring instrument* or *measuring system*
+in which the relation established by *calibration* remains valid even
+for a *measurand* varying with time
+
+[[sec_4.9]]
+=== (5.5) rated operating condition
+(((rated operating condition)))
+
+operating condition that must be fulfilled during *measurement* in
+order that a *measuring instrument* or *measuring system* perform
+as designed
+
+NOTE: Rated operating conditions generally specify intervals of *values*
+for a *quantity* being measured and for any *influence quantity*.
+
+[[sec_4.10]]
+=== (5.6) limiting operating condition
+(((limiting operating condition)))
+
+extreme operating condition that a *measuring instrument* or
+*measuring system* is required to withstand without damage, and without
+degradation of specified metrological properties, when it is subsequently
+operated under its *rated operating conditions*
+
+NOTE: Limiting conditions for storage, transport or operation can
+differ.
+
+NOTE: Limiting conditions can include limiting *values* of a *quantity*
+being measured and of any *influence quantity*.
+
+[[sec_4.11]]
+=== (5.7) reference operating condition
+alt:[reference condition]
+(((reference condition)))
+(((reference operating condition)))
+
+operating condition prescribed for evaluating the performance of a
+*measuring instrument* or *measuring system* or for comparison of
+*measurement results*
+
+NOTE: Reference operating conditions specify intervals of *values*
+of the *measurand* and of the *influence quantities*.
+
+NOTE: In <<IEC_60050_300_2001>>, item 311-06-02, the term "reference
+condition" refers to an operating condition under which the specified
+*instrumental measurement uncertainty* is the smallest possible.
+
+[[sec_4.12]]
+=== (5.10) sensitivity of a measuring system
+alt:[sensitivity]
+(((sensitivity)))
+(((sensitivity of a measuring system)))
+
+quotient of the change in an *indication* of a *measuring system*
+and the corresponding change in a *value* of a *quantity* being measured
+
+NOTE: Sensitivity of a measuring system can depend on the value of
+the quantity being measured.
+
+NOTE: The change considered in a value of a quantity being measured
+must be large compared with the *resolution*.
+
+[[sec_4.13]]
+=== selectivity of a measuring system
+alt:[selectivity]
+(((selectivity)))
+(((selectivity of a measuring system)))
+
+property of a *measuring system*, used with a specified
+*measurement procedure*, whereby it provides measured *quantity values*
+for one or more *measurands* such that the values of each measurand
+are independent of other measurands or other *quantities* in the phenomenon,
+body, or substance being investigated
+
+[example]
+Capability of a measuring system including a mass spectrometer to
+measure the ion current ratio generated by two specified compounds
+without disturbance by other specified sources of electric current.
+
+[example]
+Capability of a measuring system to measure the power of a signal
+component at a given frequency without being disturbed by signal components
+or other signals at other frequencies.
+
+[example]
+Capability of a receiver to discriminate between a wanted signal and
+unwanted signals, often having frequencies slightly different from
+the frequency of the wanted signal.
+
+[example]
+Capability of a measuring system for ionizing radiation to respond
+to a given radiation to be measured in the presence of concomitant
+radiation.
+
+[example]
+Capability of a measuring system to measure the amount-of-substance
+concentration of creatininium in blood plasma by a Jaffé procedure
+without being influenced by the glucose, urate, ketone, and protein
+concentrations.
+
+[example]
+Capability of a mass spectrometer to measure the amount-of-substance
+abundance of the ^28^Si isotope and of the ^30^Si isotope in silicon
+from a geological deposit without influence between the two, or from
+the ^29^Si isotope.
+
+[[note_1_4.13]]
+NOTE: In physics, there is often only one measurand; the other quantities
+are of the same *kind* as the measurand, and they are input quantities
+to the measuring system.
+
+NOTE: In chemistry, the measured quantities often involve different
+components in the system undergoing measurement and these quantities
+are not necessarily of the same kind.
+
+NOTE: In chemistry, selectivity of a measuring system is usually obtained
+for quantities with selected components in concentrations within stated
+intervals.
+
+NOTE: Selectivity as used in physics (see <<note_1_4.13>>) is a concept
+close to specificity as it is sometimes used in chemistry.
+
+[[sec_4.14]]
+=== resolution
+(((resolution)))
+
+smallest change in a *quantity* being measured that causes a perceptible
+change in the corresponding *indication*
+
+NOTE: Resolution can depend on, for example, noise (internal or external)
+or friction. It may also depend on the *value* of a quantity being
+measured.
+
+[[sec_4.15]]
+=== (5.12) resolution of a displaying device
+(((resolution of a displaying device)))
+
+smallest difference between displayed *indications* that can be meaningfully
+distinguished
+
+[[sec_4.16]]
+=== (5.11) discrimination threshold
+(((discrimination threshold)))
+
+largest change in a *value* of a *quantity* being measured that causes
+no detectable change in the corresponding *indication*
+
+NOTE: Discrimination threshold may depend on, e.g. noise
+(internal or external) or friction. It can also depend on the value
+of the quantity being measured and how the change is applied.
+
+[[sec_4.17]]
+=== (5.13) dead band
+(((dead band)))
+
+maximum interval through which a *value* of a *quantity* being measured
+can be changed in both directions without producing a detectable change
+in the corresponding *indication*
+
+NOTE: Dead band can depend on the rate of change.
+
+[[sec_4.18]]
+=== (4.15 Note 1) detection limit
+alt:[limit of detection]
+(((detection limit)))
+(((limit of detection)))
+
+
+*measured quantity value*, obtained by a given *measurement procedure*,
+for which the probability of falsely claiming the absence of a component
+in a material is , given a probability of falsely claiming its presence
+
+NOTE: IUPAC recommends default values for and equal to 0.05.
+
+NOTE: The abbreviation LOD is sometimes used.
+
+NOTE: The term "sensitivity" is discouraged for 'detection limit'.
+
+[[sec_4.19]]
+=== (5.14) stability of a measuring instrument
+alt:[stability]
+(((stability)))
+(((stability of a measuring instrument)))
+
+property of a *measuring instrument*, whereby its metrological properties
+remain constant in time
+
+NOTE: Stability may be quantified in several ways.
+
+[example]
+In terms of the duration of a time interval over which a metrological
+property changes by a stated amount.
+
+[example]
+In terms of the change of a property over a stated time interval.
+
+[[sec_4.20]]
+=== (5.25) instrumental bias
+(((instrumental bias)))
+
+average of replicate *indications* minus a *reference quantity value*
+
+[[sec_4.21]]
+=== (5.16) instrumental drift
+(((instrumental drift)))
+
+continuous or incremental change over time in *indication*, due to
+changes in metrological properties of a *measuring instrument*
+
+NOTE: Instrumental drift is related neither to a change in a *quantity*
+being measured nor to a change of any recognized *influence quantity*.
+
+[[sec_4.22]]
+=== variation due to an influence quantity
+(((variation due to an influence quantity)))
+
+difference in *indication* for a given *measured quantity value*,
+or in *quantity values* supplied by a *material measure*, when an
+*influence quantity* assumes successively two different quantity values
+
+[[sec_4.23]]
+=== (5.17) step response time
+(((step response time)))
+
+duration between the instant when an input *quantity value* of a
+*measuring instrument* or *measuring system* is subjected to an abrupt
+change between two specified constant quantity values and the instant
+when a corresponding *indication* settles within specified limits
+around its final steady value
+
+[[sec_4.24]]
+=== instrumental measurement uncertainty
+(((instrumental measurement uncertainty)))
+
+component of *measurement uncertainty* arising from a *measuring instrument*
+or *measuring system* in use
+
+NOTE: Instrumental measurement uncertainty is obtained through *calibration*
+of a measuring instrument or measuring system, except for a
+*primary measurement standard* for which other means are used.
+
+NOTE: Instrumental measurement uncertainty is used in a
+*Type B evaluation of measurement uncertainty*.
+
+NOTE: Information relevant to instrumental measurement uncertainty
+may be given in the instrument specifications.
+
+[[sec_4.25]]
+=== (5.19) accuracy class
+(((accuracy class)))
+
+class of *measuring instruments* or *measuring systems* that meet
+stated metrological requirements that are intended to keep *measurement*
+
+*errors* or *instrumental measurement uncertainties* within specified
+limits under specified operating conditions
+
+NOTE: An accuracy class is usually denoted by a number or symbol adopted
+by convention.
+
+NOTE: Accuracy class applies to *material measures*.
+
+[[sec_4.26]]
+=== (5.21) maximum permissible measurement error
+alt:[maximum permissible error limit of error]
+(((limit of error)))
+(((maximum permissible error)))
+(((maximum permissible measurement error)))
+
+extreme value of *measurement error*, with respect to a known
+*reference quantity value*, permitted by specifications or regulations
+for a given *measurement*, *measuring instrument*, or *measuring system*
+
+NOTE: Usually, the term "maximum permissible errors" or "limits of
+error" is used where there are two extreme values.
+
+NOTE: The term "tolerance" should not be used to designate 'maximum
+permissible error'.
+
+[[sec_4.27]]
+=== (5.22) datum measurement error
+alt:[datum error]
+(((datum error)))
+(((datum measurement error)))
+
+*measurement error* of a *measuring instrument* or *measuring system*
+at a specified *measured quantity value*
+
+[[sec_4.28]]
+=== (5.23) zero error
+(((zero error)))
+
+*datum measurement error* where the specified *measured quantity value*
+is zero
+
+NOTE: Zero error should not be confused with absence of
+*measurement error*.
+
+[[sec_4.29]]
+=== null measurement uncertainty
+(((null measurement uncertainty)))
+
+*measurement uncertainty* where the specified *measured quantity value*
+is zero
+
+NOTE: Null measurement uncertainty is associated with a null or near
+zero *indication* and covers an interval where one does not know whether
+the *measurand* is too small to be detected or the indication of the
+*measuring instrument* is due only to noise.
+
+NOTE: The concept of 'null measurement uncertainty' also applies when
+a difference is obtained between *measurement* of a sample and a blank.
+
+[[sec_4.30]]
+=== calibration diagram
+(((calibration diagram)))
+
+graphical expression of the relation between *indication* and corresponding
+*measurement result*
+
+NOTE: A calibration diagram is the strip of the plane defined by the
+axis of the indication and the axis of measurement result, that represents
+the relation between an indication and a set of *measured quantity
+values*. A one-to-many relation is given, and the width of the strip
+for a given indication provides the *instrumental measurement uncertainty*.
+
+NOTE: Alternative expressions of the relation include a *calibration
+curve* and associated *measurement uncertainty*, a calibration table,
+or a set of functions.
+
+NOTE: This concept pertains to a *calibration* when the instrumental
+measurement uncertainty is large in comparison with the measurement
+uncertainties associated with the *quantity values* of *measurement
+standards*.
+
+[[sec_4.31]]
+=== calibration curve
+(((calibration curve)))
+
+expression of the relation between *indication* and corresponding
+*measured quantity value*
+
+NOTE: A calibration curve expresses a one-to-one relation that does
+not supply a *measurement result* as it bears no information about
+the *measurement uncertainty*.
+

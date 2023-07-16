@@ -1,0 +1,24 @@
+
+[.preface]
+== Scope
+
+In this Vocabulary, a set of definitions and associated terms is given,
+in English and French, for a system of basic and general concepts
+used in metrology, together with concept diagrams to demonstrate their
+relations. Additional information is given in the form of examples
+and notes under many definitions.
+
+This Vocabulary is meant to be a common reference for scientists and
+engineers -- including physicists, chemists, medical scientists --
+as well as for both teachers and practitioners involved in planning
+or performing measurements, irrespective of the level of measurement
+uncertainty and irrespective of the field of application. It is also
+meant to be a reference for governmental and inter-governmental bodies,
+trade associations, accreditation bodies, regulators, and professional
+societies.
+
+Concepts used in different approaches to describing measurement are
+presented together. The member organizations of the JCGM can select
+the concepts and definitions in accordance with their respective terminologies.
+Nevertheless, this Vocabulary is intended to promote global harmonization
+of terminology used in metrology.

@@ -1,0 +1,112 @@
+
+[.preface]
+== Conventions
+
+=== Terminology rules
+
+The definitions and terms given in this third edition, as well as
+their formats, comply as far as possible with the rules of terminology
+work, as outlined in <<ISO_704_2000>>, <<ISO_1087_1_2000>> and
+<<ISO_10241_1992>>. In particular, the substitution principle applies;
+that is, it is possible in any definition to replace a term referring
+to a concept defined elsewhere in the VIM by the definition corresponding
+to that term, without introducing contradiction or circularity.
+
+Concepts are listed in five chapters and in logical order in each
+chapter.
+
+In some definitions, the use of non-defined concepts (also called
+"primitives") is unavoidable. In this Vocabulary, such non-defined
+concepts include: system, component, phenomenon, body, substance,
+property, reference, experiment, examination, magnitude, material,
+device, and signal.
+
+To facilitate the understanding of the different relations between
+the various concepts given in this Vocabulary, concept diagrams have
+been introduced. They are given in <<annex-a>>.
+
+=== Reference number
+
+Concepts appearing in both the second and third editions have a double
+reference number; the third edition reference number is printed in
+bold face, and the earlier reference from the second edition is given
+in parentheses and in light font.
+
+=== Synonyms
+
+Multiple terms for the same concept are permitted. If more than one
+term is given, the first term is the preferred one, and it is used
+throughout as far as possible.
+
+=== Bold face
+
+Terms used for a concept to be defined are printed in *bold face*.
+In the text of a given entry, terms of concepts defined elsewhere
+in the VIM are also printed in *bold face* the first time they appear.
+
+=== Quotation marks
+
+In the English text of this document, single quotation marks ('...')
+surround the term representing a concept unless it is in bold. Double
+quotation marks ("...") are used when only the term is considered,
+or for a quotation. In the French text, quotation marks («...») are
+used for quotations, or to highlight a word or a group of words.
+
+=== Decimal sign
+
+The decimal sign in the English text is the point on the line, and
+the comma on the line is the decimal sign in the French text.
+
+=== French terms "mesure" and "mesurage" ("measurement")
+
+The French word "mesure" has several meanings in everyday French language.
+For this reason, it is not used in this Vocabulary without further
+qualification. It is for the same reason that the French word "mesurage"
+has been introduced to describe the act of measurement. Nevertheless,
+the French word "mesure" occurs many times in forming terms in this
+Vocabulary, following current usage, and without ambiguity. Examples
+are: instrument de mesure, appareil de mesure, unité de mesure, méthode
+de mesure. This does not mean that the use of the French word "mesurage"
+in place of "mesure" in such terms is not permissible when advantageous.
+
+=== Equal-by-definition symbol
+
+The symbol := denotes "is by definition equal to" as given in the
+ISO 80000 and IEC 80000 series.
+
+=== Interval
+
+The term "interval" is used together with the symbol stem:[[a,b\]]
+to denote the set of real numbers stem:[x] for which
+stem:[a <= x <= b], where stem:[a] and stem:[b" "a] are real numbers.
+The term "interval" is used here for 'closed interval'. The symbols
+stem:[a] and stem:[b] denote the 'end-points' of the interval
+stem:[[a,b\]].
+
+====
+stem:[[-4,2\]]
+
+[%unnumbered]
+image::conventions_figure1-en.png[]
+====
+
+The two end-points 2 and -4 of the interval stem:[[4, 2\]] can be
+stated as stem:[-1" "3]. The latter expression does not denote the
+interval stem:[[-4, 2\]]. Nevertheless, stem:[-1" "3] is often used
+to denote the interval stem:[[-4, 2\]].
+
+=== Range of interval
+
+==== Range
+
+The range of the interval stem:[[a, b\]] is the difference
+stem:[b" "a] and is denoted by stem:[r[a, b\]].
+
+====
+stem:[r[-4,2\] = 2 - (-4) = 6]
+
+[%unnumbered]
+image::conventions_figure2-en.png[]
+====
+
+NOTE: The term "span" is sometimes used for this concept.

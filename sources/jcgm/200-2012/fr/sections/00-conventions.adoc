@@ -1,0 +1,114 @@
+
+[.preface]
+== Conventions
+
+=== Règles terminologiques
+
+Les définitions et termes donnés dans cette troisième édition, ainsi
+que leurs formats, sont conformes autant que possible aux règles de
+terminologie exposées dans l'<<ISO_704_2000>>, l'<<ISO_1087_1_2000>>
+et l'<<ISO_10241_1992>>. En particulier le principe de substitution
+s'applique: il est possible dans toute définition de remplacer un
+terme désignant un concept défini ailleurs dans le VIM par la définition
+correspondante, sans introduire de contradiction ou de circularité.
+
+Les concepts sont répartis en cinq chapitres et présentés dans un
+ordre logique dans chaque chapitre.
+
+Dans certaines définitions, l'utilisation de concepts non définis
+(aussi appelés des concepts «premiers») est inévitable. Dans ce Vocabulaire,
+on trouve parmi eux: système, composante ou constituant, phénomène,
+corps, substance, propriété, référence, expérience, examen, quantitatif,
+matériel, dispositif, signal.
+
+Pour faciliter la compréhension des différentes relations entre les
+concepts définis dans ce Vocabulaire, des schémas conceptuels ont
+été introduits. Ils sont donnés dans l'<<annex-a>>.
+
+=== Numéro de référence
+
+Les concepts figurant à la fois dans la seconde et la troisième éditions
+ont un double numéro de référence. Le numéro de référence de la troisième
+édition est imprimé en gras, le numéro antérieur de la seconde édition
+est placé entre parenthèses en maigre.
+
+=== Synonymes
+
+Plusieurs termes sont autorisés pour un même concept. S'il y a plusieurs
+termes, le premier est le terme privilégié et est celui qui sera utilisé
+ailleurs dans le VIM dans la mesure du possible.
+
+=== Caractères gras
+
+Les termes désignant un concept à définir sont imprimés en *gras*.
+Dans le texte d'un article donné, les termes correspondant à des concepts
+définis ailleurs dans le VIM sont aussi imprimés en *gras* à leur
+première apparition.
+
+=== Guillemets
+
+Dans le texte anglais du présent document, un terme représentant un
+concept est placé entre marques simples ('...') sauf s'il est en gras.
+Des marques doubles ("...") sont utilisées lorsque seul le terme est
+considéré ou pour une citation. Dans le texte français, les guillemets
+(«...») sont employés pour les citations ou pour mettre en évidence
+un mot ou un groupe de mots.
+
+=== Signe décimal
+
+Le signe décimal est le point sur la ligne dans le texte anglais,
+la virgule sur la ligne dans le texte français.
+
+=== Mesure et mesurage
+
+Le mot «mesure» a, dans la langue française courante, plusieurs significations.
+Aussi n'est-il pas employé seul dans le présent Vocabulaire. C'est
+également la raison pour laquelle le mot «mesurage» a été introduit
+pour qualifier l'action de mesurer. Le mot «mesure» intervient cependant
+à de nombreuses reprises pour former des termes de ce Vocabulaire,
+suivant en cela l'usage courant et sans ambiguïté. On peut citer,
+par exemple: instrument de mesure, appareil de mesure, unité de mesure,
+méthode de mesure. Cela ne signifie pas que l'utilisation du mot «mesurage»
+au lieu de «mesure» pour ces termes ne soit pas admissible si l'on
+y trouve quelque avantage.
+
+=== Symbole d'égalité par définition
+
+Le symbole := signifie «est par définition égal à», comme indiqué
+dans les séries ISO 80000 et CEI 80000.
+
+=== Intervalle
+
+Le terme «intervalle» et le symbole stem:[[a;b\]] sont utilisés pour
+désigner l'ensemble des nombres réels stem:[x] tels que
+stem:[a <= x <= b], où stem:[a] et stem:[b" "a] sont des nombres réels.
+Le terme «intervalle» est utilisé ici pour «intervalle fermé». Lessymboles
+stem:[a] et stem:[b] notent les extrémités de l'intervalle stem:[[a;b\]].
+
+====
+stem:[[-4; 2\]]
+
+[%unnumbered]
+image::conventions_figure1-fr.png[]
+====
+
+Les deux extrémités 2 et -4 de l'intervalle stem:[[-4; 2\]] peuvent
+être notées stem:[-1" "3]. Cette dernière expression ne désigne pas
+l'intervalle stem:[[-4; 2\]]. Cependant, stem:[-1" "3] est souvent
+utilisé pour désigner l'intervalle stem:[[-4; 2\]].
+
+=== Étendue d'un intervalle
+
+==== Étendue
+
+L'étendue de l'intervalle stem:[[a;b\]] est la différence
+stem:[b - a], notée stem:[r[a;b\]].
+
+====
+stem:[r[-4; 2\] = 2 - (-4) = 6]
+
+[%unnumbered]
+image::conventions_figure2-fr.png[]
+====
+
+NOTE: En anglais, le terme «span» est parfois utilisé.

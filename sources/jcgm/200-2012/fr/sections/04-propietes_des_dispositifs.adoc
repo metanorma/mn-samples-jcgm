@@ -1,0 +1,495 @@
+
+[[sec_4]]
+== Propriétés des dispositifs de mesure
+
+[[sec_4.1]]
+=== (3.2) indication, f
+(((indication)))
+
+*valeur* fournie par un *instrument de mesure* ou un *système de mesure*
+
+NOTE: Une indication peut être présentée sous forme visuelle ou acoustique
+ou peut être transférée à un autre dispositif. Elle est souvent donnée
+par la position d'un pointeur sur un affichage pour les sorties analogiques,
+par un nombre affiché ou imprimé pour les sorties numériques, par
+une configuration codée pour les sorties codées, ou par la valeur
+assignée pour les *mesures matérialisées*.
+
+NOTE: Une indication et la valeur de la *grandeur* mesurée correspondante
+ne sont pas nécessairement des valeurs de grandeurs de même *nature*.
+
+
+[[sec_4.2]]
+=== indication du blanc, f
+alt:[indication d'environnement, f]
+(((indication d'environnement)))
+(((indication du blanc)))
+
+*indication* obtenue à partir d'un phénomène, d'un corps ou d'une
+substance semblable au phénomène, au corps ou à la substance en cours
+d'étude, mais dont la *grandeur* d'intérêt est supposée ne pas être
+présente ou ne contribue pas à l'indication
+
+[[sec_4.3]]
+=== (4.19) intervalle des indications, m
+(((intervalle des indications)))
+
+ensemble des *valeurs* comprises entre les deux *indications* extrêmes
+
+NOTE: Un intervalle des indications est généralement exprimé en donnant
+la plus petite et la plus grande valeur, par exemple «99 V à 201 V».
+
+NOTE: Dans certains domaines, le terme anglais est «range of indications».
+En français, le terme «étendue des indications» est parfois employé.
+
+
+[[sec_4.4]]
+=== (5.1) intervalle nominal des indications, m
+alt:[intervalle nominal, m]
+alt:[calibre, m]
+(((calibre)))
+(((intervalle nominal)))
+(((intervalle nominal des indications)))
+
+ensemble des *valeurs* comprises entre deux *indications* extrêmes
+arrondies ou approximatives,que l'on obtient pour une position particulière
+des commandes d'un *instrument de mesure* ou d'un *système de mesure*
+et qui sert à désigner cetteposition
+
+NOTE: Un intervalle nominal des indications est généralement exprimé
+en donnant la plus petite et la plus grande valeur, par exemple
+«100 V à 200 V».
+
+NOTE: Dans certains domaines, le terme anglais est «nominal range».
+
+
+[[sec_4.5]]
+=== (5.2) étendue de mesure, f
+alt:[étendue nominale, f]
+(((étendue de mesure)))
+(((étendue nominale)))
+
+valeur absolue de la différence entre les *valeurs* extrêmes d'un
+*intervalle nominal des indications*
+
+[example]
+Pour un intervalle nominal des indications de –10 V à +10 V, l'étendue
+de mesure est 20 V.
+
+NOTE: En anglais, l'étendue de mesure est quelquefois dénommée
+«span of a nominal interval». En français, le terme
+«intervalle de mesure» est parfois improprement employé.
+
+
+[[sec_4.6]]
+=== (5.3) valeur nominale, f
+(((valeur nominale)))
+
+*valeur* arrondie ou approximative d'une *grandeur* caractéristique
+d'un *instrument de mesure* ou d'un *système de mesure*, qui sert
+de guide pour son utilisation appropriée
+
+[example]
+La valeur 100 marquée sur une résistance étalon.
+
+[example]
+La valeur stem:["1 000" "unitsml(ml)"] marquée sur une fiole jaugée
+à un trait.
+
+[example]
+La valeur stem:["0,1" "unitsml(mol/l)"] de la concentration en quantité
+de matière d'une solution d'acide chlorhydrique, HCl.
+
+[example]
+La valeur stem:[-20 "unitsml(degC)"] d'une température Celsius maximale
+de stockage.
+
+NOTE: En anglais, il convient de ne pas utiliser
+«nominal quantity value» et «nominal value» pour la valeur d'une
+*propriété qualitative* (en anglais «nominal property value»).
+
+[[sec_4.7]]
+=== (5.4) intervalle de mesure, m
+(((intervalle de mesure)))
+
+ensemble des *valeurs* de *grandeurs* d'une même *nature* qu'un
+*instrument de mesure* ou un *système de mesure* donné peut mesurer
+avec une *incertitude instrumentale* spécifiée, dans des conditions
+déterminées
+
+NOTE: Dans certains domaines, le terme anglais est «measuring range»
+ou «measurement range». En français, le terme «étendue de mesure»
+est parfois improprement employé.
+
+NOTE: Il convient de ne pas confondre la limite inférieure d'un intervalle
+de mesure avec la *limite de détection*.
+
+[[sec_4.8]]
+=== condition de régime établi , f
+alt:[condition de régime permanent, f]
+(((condition de régime établi)))
+(((condition de régime permanent)))
+
+condition de fonctionnement d'un *instrument de mesure* ou d'un
+*système de mesure* dans laquellela relation établie par un *étalonnage*
+reste valable même pour un *mesurande* qui varie en fonction du temps
+
+[[sec_4.9]]
+=== (5.5) condition assignée de fonctionnement, f
+(((condition assignée de fonctionnement)))
+
+condition de fonctionnement qui doit être satisfaite pendant un *mesurage*
+pour qu'un *instrument de mesure* ou un *système de mesure* fonctionne
+conformément à sa conception
+
+NOTE: Les conditions assignées de fonctionnement spécifient généralement
+des intervalles de *valeurs* pour la *grandeur* mesurée et pour les
+*grandeurs d'influence*.
+
+
+[[sec_4.10]]
+=== (5.6) condition limite de fonctionnement, f
+alt:[condition limite, f]
+(((condition limite)))
+(((condition limite de fonctionnement)))
+
+condition de fonctionnement extrême qu'un *instrument de mesure* ou
+un *système de mesure* doitpouvoir supporter sans dommage et sans
+dégradation de propriétés métrologiques spécifiées, lorsqu'il est
+ensuite utilisé dans ses *conditions assignées de fonctionnement*
+
+NOTE: Les conditions limites de fonctionnement peuvent être différentes
+pour le stockage, le transport et le fonctionnement.
+
+NOTE: Les conditions limites de fonctionnement peuvent comprendre
+des *valeurs* limites pour la *grandeur* mesurée et pour les
+*grandeurs d'influence*.
+
+[[sec_4.11]]
+=== (5.7) condition de fonctionnement de référence, f
+alt:[condition de référence, f]
+(((condition de fonctionnement de référence)))
+(((condition de référence)))
+
+condition de fonctionnement prescrite pour évaluer les performances
+d'un *instrument de mesure* ou d'un *système de mesure* ou pour comparer
+des *résultats de mesure*
+
+NOTE: Les conditions de fonctionnement de référence spécifient des
+intervalles de *valeurs* du *mesu-rande* et des *grandeurs d'influence*.
+
+NOTE: Dans la <<IEC_60050_300_2001>>, n^o^ 311-06-02, le terme
+«condition de référence» désigne une condition de fonctionnement dans
+laquelle l'*incertitude instrumentale* spécifiée est la plus petite
+possible.
+
+[[sec_4.12]]
+=== (5.10) sensibilité, f
+(((sensibilité)))
+
+quotient de la variation d'une *indication* d'un *système de mesure*
+par la variation correspondante de la *valeur* de la *grandeur* mesurée
+
+NOTE: La sensibilité peut dépendre de la valeur de la grandeur mesurée.
+
+NOTE: La variation de la valeur de la grandeur mesurée doit être grande
+par rapport à la *résolution*.
+
+[[sec_4.13]]
+=== sélectivité, f
+(((sélectivité)))
+
+propriété d'un *système de mesure*, utilisant une *procédure de mesure*
+spécifiée, selon laquelle lesystème fournit des *valeurs mesurées*
+pour un ou plusieurs *mesurandes*, telles que les valeurs de chaque
+mesurande sont indépendantes des autres mesurandes ou d'autres *grandeurs*
+dans le phénomène, le corps ou la substance en cours d'examen
+
+[example]
+Aptitude d'un système de mesure comprenant un spectromètre de masse
+à mesurer le rapport des courants ioniques produits par deux composés
+spécifiés sans dépendre d'autres sources spécifiées de courant électrique.
+
+[example]
+Aptitude d'un système de mesure à mesurer la puissance d'une composante
+d'un signal à une fréquence donnée sans perturbation par des composantes
+du signal ou par d'autres signaux à d'autres fréquences.
+
+[example]
+Aptitude d'un récepteur à discerner un signal désiré de signaux non
+désirés, qui ont souvent des fréquences légèrement différentes de
+la fréquence du signal désiré.
+
+[example]
+Aptitude d'un système de mesure de rayonnement ionisant à répondre
+à un rayonnement particulier à mesurer en présence d'un rayonnement
+concomitant.
+
+[example]
+Aptitude d'un système de mesure à mesurer la concentration en quantité
+de matière de créa-tinine dans le plasma sanguin par une procédure
+de Jaffé sans être influencé par les concentrations de glucose, d'urate,
+de cétone et de protéines.
+
+[example]
+Aptitude d'un spectromètre de masse à mesurer les abondances en quantité
+de matière de l'isotope ^28^Si et de l'isotope ^30^Si dans du silicium
+provenant d'un dépôt géologique sans influence entre eux ou par l'isotope
+^29^Si.
+
+[[note_1_4.13]]
+NOTE: En physique, il y a souvent un seul mesurande; les autres grandeurs
+sont de même *nature* que le mesurande et sont appliquées à l'entrée
+du système de mesure.
+
+NOTE: En chimie, les grandeurs mesurées impliquent souvent différents
+constituants dans le système en cours de mesurage et ces grandeurs
+ne sont pas nécessairement de même nature.
+
+NOTE: En chimie, la sélectivité d'un système de mesure est généralement
+obtenue pour des grandeurs associées à des constituants sélectionnés
+dont les concentrations sont dans des intervalles déterminés.
+
+NOTE: Le concept de sélectivité en physique (voir <<note_1_4.13>>)
+est voisin de celui de spécificité, tel qu'il est quelquefois utilisé
+en chimie.
+
+[[sec_4.14]]
+=== résolution, f
+(((résolution)))
+
+plus petite variation de la *grandeur* mesurée qui produit une variation
+perceptible de l'*indication* correspondante
+
+NOTE: La résolution peut dépendre, par exemple, du bruit
+(interne ou externe) ou du frottement. Elle peut aussi dépendre de
+la *valeur* de la grandeur mesurée.
+
+
+[[sec_4.15]]
+=== (5.12) résolution d'un dispositif afficheur, f
+(((résolution d'un dispositif afficheur)))
+
+plus petite différence entre *indications* affichées qui peut être
+perçue de manière significative
+
+[[sec_4.16]]
+=== (5.11) seuil de discrimination, m
+alt:[seuil de mobilité, m]
+alt:[mobilité, f]
+(((mobilité)))
+(((seuil de discrimination)))
+(((seuil de mobilité)))
+(((SI)))
+
+variation la plus grande de la *valeur* d'une *grandeur* mesurée qui
+ne produit aucune variation détectable de l'*indication* correspondante
+
+NOTE: Le seuil de discrimination peut dépendre, par exemple, du bruit
+(interne ou externe) ou du frottement. Il peut aussi dépendre de la
+valeur de la grandeur mesurée et de la manière dont la variation est
+appliquée.
+
+[[sec_4.17]]
+=== (5.13) zone morte, f
+
+intervalle maximal à l'intérieur duquel on peut faire varier la *valeur*
+de la *grandeur* mesurée dans les deux sens sans provoquer de variation
+détectable de l'*indication* correspondante
+
+NOTE: La zone morte peut dépendre de la vitesse de la variation.
+
+[[sec_4.18]]
+=== limite de détection, f
+(((limite de détection)))
+
+*valeur mesurée*, obtenue par une *procédure de mesure* donnée, pour
+laquelle la probabilité de déclarer faussement l'absence d'un constituant
+dans un matériau est, étant donnée la probabilité de déclarer faussement
+sa présence
+
+NOTE: L'UICPA recommande des valeurs par défaut de et égales à 0,05.
+
+NOTE: [Applicable uniquement au texte anglais].
+
+NOTE: Le terme «sensibilité» est à proscrire au sens de limite de
+détection.
+
+[[sec_4.19]]
+=== (5.14) stabilité, f
+alt:[constance, f]
+(((constance)))
+(((stabilité)))
+
+propriété d'un *instrument de mesure* selon laquelle celui-ci conserve
+ses propriétés métrologiques constantes au cours du temps
+
+NOTE: La stabilité d'un instrument de mesure peut être exprimée quantitativement
+de plusieurs façons.
+
+[example]
+Par la durée d'un intervalle de temps au cours duquel une propriété
+métrologique évolue d'une quantité donnée.
+
+[example]
+Par la variation d'une propriété au cours d'un intervalle de temps
+déterminé.
+
+
+[[sec_4.20]]
+=== (5.25) biais instrumental, m
+alt:[erreur de justesse d'un instrument, f]
+(((biais instrumental)))
+(((erreur de justesse d'un instrument)))
+
+différence entre la moyenne d'*indications* répétées et une *valeur
+de référence*
+
+[[sec_4.21]]
+=== (5.16) dérive instrumentale, f
+(((dérive instrumentale)))
+
+variation continue ou incrémentale dans le temps d'une *indication*,
+due à des variations des propriétés métrologiques d'un
+*instrument de mesure*
+
+NOTE: La dérive instrumentale n'est liée ni à une variation de la
+*grandeur* mesurée, ni à une variation d'une *grandeur d'influence*
+identifiée.
+
+
+[[sec_4.22]]
+=== variation due à une grandeur d'influence, f
+(((variation due à une grandeur d'influence)))
+
+différence entre les *indications* qui correspondent à une même
+*valeur mesurée*, ou entre les *valeurs* fournies par une
+*mesure matérialisée*, lorsqu'une *grandeur d'influence* prend successivement
+deuxvaleurs différentes
+
+[[sec_4.23]]
+=== (5.17) temps de réponse à un échelon, m
+(((temps de réponse à un échelon)))
+
+durée entre l'instant où une *valeur* d'entrée d'un
+*instrument de mesure* ou d'un *système de mesure* subit un changement
+brusque d'une valeurconstante spécifiée à une autre et l'instant où
+l'*indication* correspondante se maintient entre deux limites spécifiées
+autour de sa valeur finale en régime établi
+
+
+[[sec_4.24]]
+=== incertitude instrumentale, f
+(((incertitude instrumentale)))
+
+composante de l'*incertitude de mesure* qui provient de
+l'*instrument de mesure* ou du *système de mesure* utilisé
+
+NOTE: L'incertitude instrumentale est obtenue par *étalonnage* de
+l'instrument de mesure ou du système demesure, sauf pour un
+*étalon primaire*, pour lequel on utilise d'autres moyens.
+
+NOTE: L'incertitude instrumentale est utilisée dans une
+*évaluation de type B de l'incertitude*.
+
+NOTE: Les informations relatives à l'incertitude instrumentale peuvent
+être données dans les spécifications de l'instrument.
+
+[[sec_4.25]]
+=== (5.19) classe d'exactitude, f
+(((classe d'exactitude)))
+
+classe d'*instruments de mesure* ou de *systèmes de mesure* qui satisfont
+à certaines exigencesmétrologiques destinées à maintenir les
+*erreurs de mesure* ou les *incertitudes instrumentales* entredes
+limites spécifiées dans des conditions de fonctionnement spécifiées
+
+NOTE: Une classe d'exactitude est habituellement indiquée par un nombre
+ou un symbole adopté par convention.
+
+NOTE: Le concept de classe d'exactitude s'applique aux
+*mesures matérialisées*.
+
+
+[[sec_4.26]]
+=== (5.21) erreur maximale tolérée, f
+alt:[limite d'erreur, f]
+(((erreur maximale tolérée)))
+(((limite d'erreur)))
+
+valeur extrême de l'*erreur de mesure*, par rapport à une
+*valeur de référence* connue, qui est tolérée par les spécifications
+ou règlements pour un *mesurage*, un *instrument de mesure* ou un
+*système de mesure* donné
+
+NOTE: Les termes «erreurs maximales tolérées» ou «limites d'erreur»
+sont généralement utilisés lorsqu'il y a deux valeurs extrêmes.
+
+NOTE: Il convient de ne pas utiliser le terme «tolérance» pour désigner
+l'erreur maximale tolérée.
+
+
+[[sec_4.27]]
+=== (5.22) erreur au point de contrôle, f
+(((erreur au point de contrôle)))
+
+*erreur de mesure* d'un *instrument de mesure* ou d'un
+*système de mesure* pour une *valeur mesurée* spécifiée
+
+[[sec_4.28]]
+=== (5.23) erreur à zéro, f
+(((erreur à zéro)))
+
+*erreur au point de contrôle* lorsque la *valeur mesurée* spécifiée
+est nulle
+
+NOTE: Il convient de ne pas confondre l'erreur à zéro avec l'absence
+d'*erreur de mesure*.
+
+[[sec_4.29]]
+=== incertitude de mesure à zéro, f
+(((incertitude de mesure à zéro)))
+
+*incertitude de mesure* lorsque la *valeur mesurée* spécifiée est
+nulle
+
+NOTE: L'incertitude de mesure à zéro est associée à une *indication*
+nulle ou presque nulle et correspond à l'intervalle dans lequel on
+ne sait pas si le *mesurande* est trop petit pour être détecté ou
+si l'indication de l'*instrument de mesure* est due seulement au bruit.
+
+NOTE: Le concept d'incertitude de mesure à zéro s'applique aussi lorsqu'une
+différence est obtenue entre le *mesurage* d'un spécimen et un blanc.
+
+
+[[sec_4.30]]
+=== diagramme d'étalonnage, m
+(((diagramme d'étalonnage)))
+
+expression graphique de la relation entre une *indication* et le
+*résultat de mesure* correspondant
+
+NOTE: Un diagramme d'étalonnage est la bande du plan défini par l'axe
+des indications et l'axe des résultats de mesure, qui représente la
+relation entre une indication et un ensemble de *valeurs mesurées*.
+Il correspond à une relation multivoque; la largeur de la bande pour
+une indication donnée fournit l'*incertitude instrumentale*.
+
+NOTE: D'autres expressions de la relation consistent en une
+*courbe d'étalonnage* avec les *incertitudes de mesure* associées,
+en une table d'étalonnage ou en unensemble de fonctions.
+
+NOTE: Le concept est relatif à un *étalonnage* quand l'incertitude
+instrumentale est grande par rapport aux incertitudes de mesure associées
+aux *valeurs* des *étalons*.
+
+[[sec_4.31]]
+=== courbe d'étalonnage, f
+(((courbe d'étalonnage)))
+
+expression de la relation entre une *indication* et la *valeur mesurée*
+correspondante
+
+NOTE: Une courbe d'étalonnage exprime une relation biunivoque qui
+ne fournit pas un *résultat de mesure* puisqu'elle ne contient aucune
+information sur l'*incertitude de mesure*.

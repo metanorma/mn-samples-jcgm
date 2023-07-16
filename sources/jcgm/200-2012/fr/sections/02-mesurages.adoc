@@ -1,0 +1,1071 @@
+
+
+[[sec_2]]
+== Mesurages
+
+[[sec_2.1]]
+=== (2.1) mesurage, m
+alt:[mesure, f]
+(((mesurage)))
+(((mesure)))
+
+processus consistant à obtenir expérimentalement une ou plusieurs
+*valeurs* que l'on peut raisonnablement attribuer à une *grandeur*
+
+NOTE: Les mesurages ne s'appliquent pas aux *propriétés qualitatives*.
+
+NOTE: Un mesurage implique la comparaison de grandeurs ou le comptage
+d'entités.
+
+NOTE: Un mesurage suppose une description de la grandeur compatible
+avec l'usage prévu d'un *résultat de mesure*, une *procédure de mesure*
+et un *système de mesure* étalonné fonctionnant selon la procédure
+demesure spécifiée, incluant les conditions de mesure.
+
+[[sec_2.2]]
+=== (2.2) métrologie, f
+(((métrologie)))
+
+science des *mesurages* et ses applications
+
+NOTE: La métrologie comprend tous les aspects théo-riques et pratiques
+des mesurages, quels que soient l'*incertitude de mesure* et le domaine
+d'application.
+
+[[sec_2.3]]
+=== (2.6) mesurande, m
+(((mesurande)))
+
+*grandeur* que l'on veut mesurer
+
+NOTE: La spécification d'un mesurande nécessite la connaissance de
+la *nature de grandeur* et la description de l'état du phénomène,
+du corps ou de la substance dont la grandeur est une propriété, incluant
+tout consti-tuant pertinent, et les entités chimiques en jeu.
+
+NOTE: Dans la deuxième édition du VIM et dans la <<IEC_60050_300_2001>>,
+le mesurande est défini comme la «grandeur particulière soumise à
+mesurage».
+
+NOTE: Il se peut que le *mesurage*, incluant le *système de mesure*
+et les conditions sous lesquelles lemesurage est effectué, modifie
+le phénomène, le corps ou la substance de sorte que la grandeur mesurée
+peut différer du mesurande. Dans ce cas, une *correction* appropriée
+est nécessaire.
+
+[example]
+La différence de potentiel entre les bornes d'une batterie peut diminuer
+lorsqu'on la mesure en employant un voltmètre ayant une conductance
+interne importante. La différence de potentiel en circuit ouvert peut
+alors être calculée à partir des résistances internes de la batterie
+et du voltmètre.
+
+[example]
+La longueur d'une tige en équilibre avec la température ambiante de
+stem:[23 "unitsml(degC)"] sera différente de la longueur à la température
+spécifiée de stem:[20 "unitsml(degC)"], qui est le mesurande. Dans
+ce cas, une correction est nécessaire.
+
+NOTE: En chimie, l'expression «substance à ana-lyser», ou le nom d'une
+substance ou d'un composé, sont quelquefois utilisés à la place de
+«mesurande». Cet usage est erroné puisque ces termes ne désignent
+pas des grandeurs.
+
+
+[[sec_2.4]]
+=== (2.3) principe de mesure, m
+(((principe de mesure)))
+
+phénomène servant de base à un *mesurage*
+
+[example]
+Effet thermoélectrique appliqué au mesurage de la température.
+
+[example]
+Absorption d'énergie appliquée au mesurage de la concentration en
+quantité de matière.
+
+[example]
+Diminution de la concentration de glucose dans le sang d'un lapin
+à jeun, appliquée au mesurage de la concentration d'insuline dans
+une préparation.
+
+NOTE: Le phénomène peut être de nature physique, chimique ou biologique.
+
+[[sec_2.5]]
+=== (2.4) méthode de mesure, f
+(((méthode de mesure)))
+
+description générique de l'organisation logique des opérations mises
+en œuvre dans un *mesurage*
+
+[NOTE]
+====
+Les méthodes de mesure peuvent être qualifiées de diverses façons
+telles que:
+
+* méthode de mesure par substitution,
+* méthode de mesure différentielle,
+* méthode de mesure par zéro;
+
+ou
+
+* méthode de mesure directe,
+* méthode de mesure indirecte.
+
+Voir la <<IEC_60050_300_2001>>.
+====
+
+[[sec_2.6]]
+=== (2.5) procédure de mesure, f
+alt:[procédure opératoire, f]
+(((procédure de mesure)))
+(((procédure opératoire)))
+
+description détaillée d'un *mesurage* conformément à un ou plusieurs
+*principes de mesure* et à une *méthode de mesure* donnée, fondée
+sur un *modèle de mesure* et incluant tout calcul destiné àobtenir
+un *résultat de mesure*
+
+NOTE: Une procédure de mesure est habituellement documentée avec assez
+de détails pour permettre à un opérateur d'effectuer un mesurage.
+
+NOTE: Une procédure de mesure peut inclure une assertion concernant
+une *incertitude cible*.
+
+NOTE: Une procédure de mesure est quelquefois appelée en anglais
+_standard operating procedure_, abrégé en _SOP_. Le terme «mode opératoire
+de mesure» était employé en français dans la deuxième édition du VIM.
+
+
+
+[[sec_2.7]]
+=== procédure de mesure de référence, f
+alt:[procédure opératoire de référence, f]
+(((procédure de mesure de référence)))
+(((procédure opératoire de référence)))
+
+*procédure de mesure* considérée comme four-nissant des
+*résultats de mesure* adaptés à leur usage prévu pour l'évaluation
+de la *justesse* de *valeurs mesurées* obtenues à partir d'autres
+procédures de mesure pour des *grandeurs* de la même *nature* , pour
+un *étalonnage* ou pour la caractérisation de *matériaux de référence*
+
+[[sec_2.8]]
+=== procédure de mesure primaire, f
+alt:[procédure opératoire primaire, f]
+(((procédure de mesure primaire)))
+
+*procédure de mesure de référence* utilisée pour obtenir un
+*résultat de mesure* sans relation avec un *étalon* d'une *grandeur*
+de même *nature*
+
+[example]
+Le volume d'eau délivré par une pipette de stem:[5 "unitsml(ml)"]
+à stem:[20 "unitsml(degC)"] est mesuré en pesant l'eau délivrée par
+la pipette dans un bécher, en prenant la différence entre la masse
+du bécher contenant l'eau et la masse du bécher initialement vide,
+puis en corrigeant la différence de masse pour la température réelle
+de l'eau par l'intermé-diaire de la masse volumique.
+
+NOTE: Le Comité consultatif pour la quantité de matière -- Métrologie
+en chimie (CCQM) utilise pour ce concept le terme «méthode de mesure
+primaire».
+
+NOTE: Le CCQM a donné (<<CCQM_Meeting_5>>) les définitions de deux
+concepts subordonnés, que l'on pourrait dénommer «procédure de mesure
+primaire directe» et «procédure primaire de mesure de rapports».
+
+[[sec_2.9]]
+=== (3.1) résultat de mesure, m
+alt:[résultat d'un mesurage, m]
+(((résultat de mesure)))
+(((résultat d'un mesurage)))
+
+ensemble de *valeurs* attribuées à un *mesurande*, complété par toute
+autre information pertinente disponible
+
+NOTE: Un résultat de mesure contient généralement des informations
+pertinentes sur l'ensemble de valeurs, certaines pouvant être plus
+représentatives du mesu-rande que d'autres. Cela peut s'exprimer sous
+la forme d'une fonction de densité de probabilité.
+
+NOTE: Le résultat de mesure est généralement exprimé par une
+*valeur mesurée* unique et une *incertitude de mesure*. Si l'on considère
+l'incertitude demesure comme négligeable dans un certain but, le résultat
+de mesure peut être exprimé par une seule valeur mesurée. Dans de
+nombreux domaines, c'est la manière la plus usuelle d'exprimer un
+résultat de mesure.
+
+NOTE: Dans la littérature traditionnelle et dans l'édition précédente
+du VIM, le résultat de mesure était défini comme une valeur attribuée
+à un mesurande et pouvait se référer à une *indication*, un résultat
+brut ou un résultat corrigé, selon le contexte.
+
+[[sec_2.10]]
+=== valeur mesurée, f
+(((valeur mesurée)))
+
+*valeur d'une grandeur* représentant un *résultat de mesure*
+
+NOTE: Pour un *mesurage* impliquant des *indications* répétées, chacune
+peut être utilisée pour fournirune valeur mesurée correspondante.
+Cet ensemble de valeurs mesurées individuelles peut ensuite être utilisé
+pour calculer une valeur mesurée résultante, telle qu'une moyenne
+ou une médiane, en général avec une *incertitude de mesure* associée
+qui décroît.
+
+NOTE: Lorsque l'étendue des *valeurs vraies* consi-dérées comme représentant
+le *mesurande* est petite par rapport à l'incertitude de mesure, on
+peut considérer une valeur mesurée comme une estimation d'une valeur
+vraie par essence unique, souvent sous la forme d'une moyenne ou d'une
+médiane de valeurs mesurées indivi-duelles obtenues par des mesurages
+répétés.
+
+NOTE: Lorsque l'étendue des valeurs vraies considé-rées comme représentant
+le mesurande n'est pas petite par rapport à l'incertitude de mesure,
+une valeur mesurée est souvent une estimation d'une moyenne ou d'une
+médiane de l'ensemble des valeurs vraies.
+
+NOTE: Dans le GUM, les termes «résultat de mesure» et «estimation
+de la valeur du mesurande», ou simplement «estimation du mesurande»,
+sont utilisés au sens de «valeur mesurée».
+
+[[sec_2.11]]
+=== (1.19) valeur vraie, f
+alt:[valeur vraie d'une grandeur, f]
+(((valeur vraie)))
+(((valeur vraie d'une grandeur)))
+
+*valeur d'une grandeur* compatible avec la définition de la *grandeur*
+
+NOTE: Dans l'approche «erreur» de description des *mesurages*, la
+valeur vraie est considérée comme uni-que et, en pratique, impossible
+à connaître. L'approche «incertitude» consiste à reconnaître que,
+par suite de la quantité intrinsèquement incomplète de détails dans
+la définition d'une grandeur, il n'y a pas une seule valeur vraie
+mais plutôt un ensemble de valeurs vraies com-patibles avec la définition.
+Toutefois, cet ensemble de valeurs est, en principe et en pratique,
+impossible à connaître. D'autres approches évitent complètement le
+concept de valeur vraie et évaluent la validité des
+*résultats de mesure* à l'aide du concept de *compatibilité de mesure*.
+
+NOTE: Dans le cas particulier des constantes fonda-mentales, on considère
+la grandeur comme ayant une seule valeur vraie.
+
+NOTE: Lorsque l'*incertitude définitionnelle* associée au *mesurande*
+est considérée comme négligeable par rapport aux autres composantes
+de l'*incertitude de mesure*, on peut considérer que le mesurande
+a unevaleur vraie par essence unique. C'est l'approche adoptée dans
+le GUM, où le mot «vraie» est considéré comme redondant.
+
+[[sec_2.12]]
+=== valeur conventionnelle, m
+alt:[valeur conventionnelle d'une grandeur, m]
+(((valeur conventionnelle)))
+(((valeur conventionnelle d'une grandeur)))
+
+*valeur* attribuée à une *grandeur* par un accord pour un usage donné
+
+[example]
+Valeur conventionnelle de l'accélération due à la pesanteur ou accélération
+normale de la pesanteur,stem:[g_n = 9,806 65 "unitsml(m*s^2)"].
+
+[example]
+Valeur conventionnelle de la constante de Josephson,
+stem:[K = 483 597,9 "unitsml(GHz)" cdot "unitsml(V^1)"].
+
+[example]
+Valeur conventionnelle d'un étalon de masse donné,
+stem:[m = 100,003 47 "unitsml(g)"].
+
+NOTE: Le terme «valeur conventionnellement vraie» est quelquefois
+utilisé pour ce concept, mais son utilisa-tion est déconseillée.
+
+NOTE: Une valeur conventionnelle est quelquefois une estimation d'une
+*valeur vraie*.
+
+NOTE: Une valeur conventionnelle est généralement considérée comme
+associée à une *incertitude de mesure* convenablement petite, qui
+peut être nulle.
+
+[[sec_2.13]]
+=== (3.5) exactitude de mesure, f
+alt:[exactitude, f]
+(((exactitude)))
+(((exactitude de mesure)))
+
+étroitesse de l'accord entre une *valeur mesurée* et une *valeur vraie*
+d'un *mesurande*
+
+NOTE: L'exactitude de mesure n'est pas une *gran-deur* et ne s'exprime
+pas numériquement. Un *mesurage* est quelquefois dit plus exact s'il
+fournit une plus petite *erreur de mesure*.
+
+NOTE: Il convient de ne pas utiliser le terme «exactitude de mesure»
+pour la *justesse de mesure* et le terme «fidélité de mesure» pour
+l'exactitude de mesure. Celle-ci est toutefois liée aux concepts de
+jus-tesse et de fidélité.
+
+NOTE: L'exactitude de mesure est quelquefois inter-prétée comme l'étroitesse
+de l'accord entre les valeurs mesurées qui sont attribuées au mesurande.
+
+[[sec_2.14]]
+=== justesse de mesure, f
+alt:[justesse, f]
+(((justesse)))
+(((justesse de mesure)))
+
+étroitesse de l'accord entre la moyenne d'un nom-bre infini de
+*valeurs mesurées* répétées et une *valeur de référence*
+
+NOTE: La justesse de mesure n'est pas une *gran-deur* et ne peut donc
+pas s'exprimer numériquement, mais l'ISO 5725 donne des caractéristiques
+pour l'étroi-tesse de l'accord.
+
+NOTE: La justesse de mesure varie en sens inverse de l'*erreur systématique*
+mais n'est pas liée à l'*erreur aléatoire*.
+
+NOTE: Il convient de ne pas utiliser «exactitude de mesure» pour la
+justesse de mesure.
+
+[[sec_2.15]]
+=== fidélité de mesure, f
+alt:[fidélité, f]
+(((fidélité)))
+(((fidélité de mesure)))
+
+étroitesse de l'accord entre les *indications* ou les *valeurs mesurées*
+obtenues par des *mesurages* répétés du même objet ou d'objets similaires
+dans des conditions spécifiées
+
+NOTE: La fidélité est en général exprimée numérique-ment par
+des caractéristiques telles que l'écart-type, la variance ou le coefficient
+de variation dans les conditions spécifiées.
+
+NOTE: Les conditions spécifiées peuvent être, par exemple, des
+*conditions de répétabilité*, des *conditions de fidélité intermédiaire*
+ou des *conditions de reproductibilité* (voir l'<<ISO_5725_1_1994_Cor_1_1998>>).
+
+NOTE: La fidélité sert à définir la *répétabilité de mesure*, la
+*fidélité intermédiaire de mesure* et la *reproductibilité de mesure*.
+
+NOTE: Le terme «fidélité de mesure» est quelquefois utilisé improprement
+pour désigner l'*exactitude de mesure*.
+
+[[sec_2.16]]
+=== (3.10) erreur de mesure, f
+alt:[erreur, f]
+(((erreur)))
+(((erreur de mesure)))
+
+différence entre la *valeur mesurée* d'une *grandeur* et une
+*valeur de référence*
+
+[NOTE]
+====
+Le concept d'erreur peut être utilisé
+
+. lorsqu'il existe une valeur de référence unique à laquelle se rapporter,
+ce qui a lieu si on effectue un *étalonnage* au moyen d'un *étalon*
+dont la *valeur mesurée* a une *incertitude de mesure* négligeableou
+si on prend une *valeur conventionnelle*, l'erreur étant alors connue,
+
+. si on suppose le *mesurande* représenté par une *valeur vraie* unique
+ou un ensemble de valeursvraies d'étendue négligeable, l'erreur étant
+alors inconnue.
+====
+
+NOTE: Il convient de ne pas confondre l'erreur de mesure avec une
+erreur de production ou une erreur humaine.
+
+[[sec_2.17]]
+=== (3.14) erreur systématique, f
+(((erreur systématique)))
+
+composante de l'*erreur de mesure* qui, dans des *mesurages* répétés,
+demeure constante ou variede façon prévisible
+
+NOTE: La *valeur de référence* pour une erreur systématique est une
+*valeur vraie*, une *valeur mesurée* d'un *étalon* dont
+l'*incertitude de mesure* est négli-geable, ou une *valeur conventionnelle*.
+
+NOTE: L'erreur systématique et ses causes peuvent être connues ou
+inconnues. On peut appliquer une *correction* pour compenser une erreur
+systématiqueconnue.
+
+NOTE: L'erreur systématique est égale à la différence entre l'erreur
+de mesure et l'*erreur aléatoire*.
+
+[[sec_2.18]]
+=== biais de mesure, m
+alt:[biais, m]
+alt:[erreur de justesse, f]
+(((biais)))
+(((biais de mesure)))
+(((erreur de justesse)))
+
+estimation d'une *erreur systématique*
+
+[[sec_2.19]]
+=== (3.13) erreur aléatoire, f
+(((erreur aléatoire)))
+
+composante de l'*erreur de mesure* qui, dans des *mesurages* répétés,
+varie de façon imprévisible
+
+NOTE: La *valeur de référence* pour une erreur aléa-toire est la moyenne
+qui résulterait d'un nombre infini de mesurages répétés du même *mesurande*.
+
+NOTE: Les erreurs aléatoires d'un ensemble de mesurages répétés forment
+une distribution qui peut être résumée par son espérance mathématique,
+générale-ment supposée nulle, et par sa variance.
+
+NOTE: L'erreur aléatoire est égale à la différence entre l'erreur
+de mesure et l'*erreur systématique*.
+
+[[sec_2.20]]
+=== (3.6, Notes 1 et 2) *condition de répétabilité*, f
+(((condition de répétabilité)))
+
+condition de *mesurage* dans un ensemble de conditions qui comprennent
+la même *procédure de mesure*, les mêmes opérateurs, le même
+*système de mesure*, les mêmes conditions de fonctionnement et le
+même lieu, ainsi que des mesurages répétés sur le même objet ou des
+objets similaires pendant une courte période de temps
+
+NOTE: Une condition de mesurage n'est une condition de répétabilité
+que par rapport à un ensemble donné de conditions de répétabilité.
+
+NOTE: En chimie, on utilise quelquefois le terme «condition de fidélité
+intra-série» pour désigner ce concept.
+
+[[sec_2.21]]
+=== (3.6) répétabilité de mesure, f
+alt:[répétabilité, f]
+(((répétabilité)))
+(((répétabilité de mesure)))
+
+*fidélité de mesure* selon un ensemble de *conditions de répétabilité*
+
+[[sec_2.22]]
+=== condition de fidélité intermédiaire, f
+(((condition de fidélité intermédiaire)))
+
+condition de *mesurage* dans un ensemble de conditions qui comprennent
+la même *procédure de mesure*, le même lieu et des mesurages répétéssur
+le même objet ou des objets similaires pendant une période de temps
+étendue, mais peuvent comprendre d'autres conditions que l'on fait
+varier
+
+NOTE: Les conditions que l'on fait varier peuvent comprendre de nouveaux
+*étalonnages*, *étalons*, opérateurs et *systèmes de mesure*.
+
+NOTE: Il convient qu'une spécification relative aux conditions contienne,
+dans la mesure du possible, les conditions que l'on fait varier et
+celles qui restent inchan-gées.
+
+NOTE: En chimie, on utilise quelquefois le terme «condition de fidélité
+inter-série» pour désigner ce concept.
+
+[[sec_2.23]]
+=== fidélité intermédiaire de mesure, f
+alt:[fidélité intermédiaire, f]
+(((fidélité intermédiaire)))
+(((fidélité intermédiaire de mesure)))
+
+*fidélité de mesure* selon un ensemble de
+*conditions de fidélité intermédiaire*
+
+NOTE: Des termes statistiques pertinents sont donnés dans
+l'<<ISO_5725_3_1994_Cor_1_2001>>.
+
+[[sec_2.24]]
+=== (3.7, Note 2) condition de reproductibilité, f
+(((condition de reproductibilité)))
+
+condition de *mesurage* dans un ensemble de conditions qui comprennent
+des lieux, des opéra-teurs et des *systèmes de mesure* différents,
+ainsi que des mesurages répétés sur le même objet ou des objets similaires
+
+NOTE: Les différents systèmes de mesure peuvent utiliser des
+*procédures de mesure* différentes.
+
+NOTE: Il convient qu'une spécification relative aux conditions contienne,
+dans la mesure du possible, les conditions que l'on fait varier et
+celles qui restent inchan-gées.
+
+[[sec_2.25]]
+=== (3.7) reproductibilité de mesure, f
+alt:[reproductibilité, f]
+(((reproductibilité)))
+(((reproductibilité de mesure)))
+
+*fidélité de mesure* selon un ensemble de *conditions de reproductibilité*
+
+NOTE: Des termes statistiques pertinents sont donnés dans l'<<ISO_5725_1_1994_Cor_1_1998>> et l'<<ISO_5725_2_1994_Cor_1_2002>>.
+
+
+[[sec_2.26]]
+=== (3.9) incertitude de mesure, f
+alt:[incertitude, f]
+(((incertitude)))
+(((incertitude de mesure )))
+
+paramètre non négatif qui caractérise la dispersion des *valeurs*
+attribuées à un *mesurande*, à partir des informations utilisées
+
+NOTE: L'incertitude de mesure comprend des com-posantes provenant
+d'effets systématiques, telles que les composantes associées aux *corrections*
+et aux valeurs assignées des *étalons*, ainsi que
+l'*incertitude définitionnelle*. Parfois, on ne corrige pas des effets
+systématiquesestimés, mais on insère plutôt des composantes associées
+de l'incertitude.
+
+NOTE: Le paramètre peut être, par exemple, un écart-type appelé
+*incertitude-type* (ou un de ses multiples) ou la demi-étendue d'un
+intervalle ayant une *probabilité de couverture* déterminée.
+
+NOTE: L'incertitude de mesure comprend en général de nombreuses composantes.
+Certaines peuvent être évaluées par une *évaluation de type A de l'incertitude*
+à partir de la distribution statistique des valeurs provenant de séries
+de *mesurages* et peuvent être caractérisées par des écarts-types.
+Les autres composantes, qui peuvent être évaluées par une
+*évaluation de type B de l'incertitude*, peuvent aussi être caractérisées
+par des écarts-types, évalués à partir de fonctions de densité de
+proba-bilité fondées sur l'expérience ou d'autres informations.
+
+NOTE: En général, pour des informations données, on sous-entend que
+l'incertitude de mesure est associée à une valeur déterminée attribuée
+au mesurande. Une modification de cette valeur entraîne une modification
+de l'incertitude associée.
+
+[[sec_2.27]]
+=== incertitude définitionnelle, f
+(((incertitude définitionnelle)))
+
+composante de l'*incertitude de mesure* qui résulte de la quantité
+finie de détails dans la définition d'un *mesurande*
+
+NOTE: L'incertitude définitionnelle est l'incertitude minimale que
+l'on peut obtenir en pratique par tout *mesurage* d'un mesurande donné.
+
+NOTE: Toute modification des détails descriptifs conduit à une autre
+incertitude définitionnelle.
+
+NOTE: Dans le <<Guide_1995,clause=D.3.4>>, et dans la <<IEC_60359_2001>>,
+le concept d'incertitude définitionnelle est appelé «incertitude intrinsèque».
+
+[[sec_2.28]]
+=== évaluation de type A de l'incertitude, f
+alt:[évaluation de type A, f]
+(((évaluation de type A)))
+(((évaluation de type A de l'incertitude)))
+
+évaluation d'une composante de l'*incertitude de mesure* par une analyse
+statistique des *valeurs mesurées* obtenues dans des conditions définiesde
+*mesurage*
+
+NOTE: Pour divers types de conditions de mesurage, voir
+*condition de répétabilité*, *condition de fidélité intermédiaire*
+et *condition de reproductibilité*.
+
+NOTE: Voir par exemple le <<Guide_1995>> pour des informations sur
+l'analyse statistique.
+
+NOTE: Voir aussi le <<Guide_1995,clause=2.3.2>>, l'<<ISO_5725>>,
+l'<<ISO_13528>>, l'<<ISO_TS_21748>> et l'<<ISO_21749>>.
+
+[[sec_2.29]]
+=== évaluation de type B de l'incertitude, f
+alt:[évaluation de type B, f]
+(((évaluation de type B)))
+(((évaluation de type B de l'incertitude)))
+
+évaluation d'une composante de l'*incertitude de mesure* par d'autres
+moyens qu'une *évaluation de type A de l'incertitude*
+
+====
+Évaluation fondée sur des informations
+
+* associées à des *valeurs* publiées faisant autorité,
+
+* associées à la valeur d'un *matériau de référence certifié*,
+
+* obtenues à partir d'un certificat d'*étalonnage*,
+
+* concernant la dérive,
+
+* obtenues à partir de la *classe d'exactitude* d'un
+*instrument de mesure* vérifié,
+
+* obtenues à partir de limites déduites de l'expérience personnelle.
+====
+
+NOTE: Voir aussi le <<Guide_1995,clause=2.3.3>>.
+
+[[sec_2.30]]
+=== incertitude-type, f
+(((incertitude-type)))
+
+*incertitude de mesure* exprimée sous la forme d'un écart-type
+
+[[sec_2.31]]
+=== incertitude-type composée, f
+(((incertitude-type composée)))
+
+*incertitude-type* obtenue en utilisant les incertitudes-types individuelles
+associées aux *grandeurs d'entrée dans un modèle de mesure*
+
+NOTE: Lorsqu'il existe des corrélations entre les grandeurs d'entrée
+dans un modèle de mesure, il faut aussi prendre en compte des covariances
+dans le calcul de l'incertitude-type composée; voir aussi le
+<<Guide_1995,clause=2.3.4>>.
+
+[[sec_2.32]]
+=== incertitude-type relative, f
+(((incertitude-type relative)))
+
+quotient de l'*incertitude-type* par la valeur absolue de la
+*valeur mesurée*
+
+[[sec_2.33]]
+=== bilan d'incertitude, m
+(((bilan d'incertitude)))
+
+formulation d'une *incertitude de mesure* et des composantes de cette
+incertitude, ainsi que de leur calcul et de leur combinaison
+
+NOTE: Un bilan d'incertitude devrait comprendre le *modèle de mesure*,
+les estimations et incertitudes associées aux *grandeurs* qui interviennent
+dans ce modèle, les covariances, le type des fonctions de densité
+de pro-babilité utilisées, les degrés de liberté, le type d'évaluation
+de l'incertitude, ainsi que tout *facteur d'élargissement*.
+
+[[sec_2.34]]
+=== incertitude cible, f
+alt:[incertitude anticipée, f]
+(((incertitude anticipée)))
+(((incertitude cible)))
+
+*incertitude de mesure* spécifiée comme une limite supérieure et choisie
+d'après les usages prévus des *résultats de mesure*
+
+[[sec_2.35]]
+=== incertitude élargie, f
+(((incertitude élargie)))
+
+produit d'une *incertitude-type composée* et d'un facteur supérieur
+au nombre un
+
+NOTE: Le facteur dépend du type de la loi de pro-babilité de la
+*grandeur de sortie dans un modèle de mesure* et de la
+*probabilité de couverture* choisie.
+
+NOTE: Le facteur qui intervient dans la définition est un
+*facteur d'élargissement*.
+
+NOTE: L'incertitude élargie est appelée «incertitude globale» au paragraphe
+5 de la Recommandation INC-1 (1980) (voir le GUM) et simplement «incertitude»
+dans les documents de la CEI.
+
+
+[[sec_2.36]]
+=== intervalle élargi, m
+(((intervalle élargi)))
+
+intervalle contenant l'ensemble des *valeurs vraies* d'un *mesurande*
+avec une probabilité déterminée, fondé sur l'information disponible
+
+NOTE: Un intervalle élargi n'est pas nécessairement centré sur la
+*valeur mesurée* choisie (voir le <<JCGM_101_2008>>).
+
+NOTE: Il convient de ne pas appeler «intervalle de confiance» un intervalle
+élargi pour éviter des confusions avec le concept statistique
+(voir le <<Guide_1995,clause=6.2.2>>).
+
+NOTE: Un intervalle élargi peut se déduire d'une *incertitude élargie*
+(voir le <<Guide_1995,clause=2.3.5>>).
+
+[[sec_2.37]]
+=== probabilité de couverture, f
+(((probabilité de couverture)))
+
+probabilité que l'ensemble des *valeurs vraies* d'un *mesurande* soit
+contenu dans un *intervalle élargi* spécifié
+
+NOTE: La définition se réfère à l'approche «incer-titude» présentée
+dans le GUM.
+
+NOTE: Il convient de ne pas confondre ce concept avec le concept statistique
+de niveau de confiance, bien que le terme «level of confidence» soit
+utilisé en anglais dans le GUM.
+
+[[sec_2.38]]
+=== facteur d'élargissement, m
+(((facteur d'élargissement)))
+
+nombre supérieur à un par lequel on multiplie une
+*incertitude-type composée* pour obtenir une
+*incertitude élargie*
+
+NOTE: Un facteur d'élargissement est habituellement noté par le symbole
+stem:[k] (voir aussi le <<Guide_1995,clause=2.3.6>>).
+
+
+[[sec_2.39]]
+=== (6.11) étalonnage, m
+(((étalonnage)))
+
+opération qui, dans des conditions spécifiées, établit en une première
+étape une relation entre les *valeurs* et les *incertitudes de mesure*
+associéesqui sont fournies par des *étalons* et les *indications*
+correspondantes avec les incertitudes associées, puis utilise en une
+seconde étape cette information pour établir une relation permettant
+d'obtenir un *résultat de mesure* à partir d'une indication
+
+NOTE: Un étalonnage peut être exprimé sous la forme d'un énoncé, d'une
+fonction d'étalonnage, d'un *dia-gramme d'étalonnage*, d'une
+*courbe d'étalonnage* oud'une table d'étalonnage. Dans certains cas,
+il peut consister en une *correction* additive ou multiplicative de
+l'indication avec une incertitude de mesure associée.
+
+NOTE: Il convient de ne pas confondre l'étalonnage avec
+l'*ajustage d'un système de mesure*, souvent appelé improprement
+«auto-étalonnage», ni avec la *vérification* de l'étalonnage.
+
+NOTE: La seule première étape dans la définition est souvent perçue
+comme étant l'étalonnage.
+
+[[sec_2.40]]
+=== hiérarchie d'étalonnage, f
+(((hiérarchie d'étalonnage)))
+
+suite d'*étalonnages* depuis une référence jusqu'au *système de mesure*
+final, dans laquelle le résultatde chaque étalonnage dépend de celui
+de l'étalonnage précédent
+
+NOTE: L'*incertitude de mesure* augmente nécessai-rement le long de
+la suite d'étalonnages.
+
+NOTE: Les éléments d'une hiérarchie d'étalonnage sont des *étalons*
+ainsi que des systèmes de mesure utilisés conformément à des
+*procédures de mesure*.
+
+NOTE: La référence mentionnée dans la définition peut être une définition
+d'une *unité de mesure* sous la forme de sa réalisation pratique,
+une procédure de mesure ou un étalon.
+
+NOTE: Une comparaison entre deux étalons peut être considérée comme
+un étalonnage si elle sert à vérifier et, si nécessaire, à corriger
+la *valeur* et l'incertitude attribuées à l'un des étalons.
+
+[[sec_2.41]]
+=== (6.10) traçabilité métrologique, f
+(((traçabilité métrologique)))
+
+propriété d'un *résultat de mesure* selon laquelle ce résultat peut
+être relié à une référence par l'inter-médiaire d'une chaîne ininterrompue
+et documentée d'*étalonnages* dont chacun contribue à
+l'*incertitude de mesure*
+
+[[note_1_2.41]]
+NOTE: La référence mentionnée dans la définition peut être une définition
+d'une *unité de mesure* sous la forme de sa réalisation pratique,
+une *procédure de mesure*, qui indique l'unité de mesure dans la cas
+d'unegrandeur autre qu'une *grandeur ordinale*, ou un *étalon*.
+
+NOTE: La traçabilité métrologique nécessite l'exis-tence d'une
+*hiérarchie d'étalonnage*.
+
+NOTE: La spécification de la référence doit com-prendre la date où
+cette référence a été utilisée dans l'établissement d'une hiérarchie
+d'étalonnage, ainsi que d'autres informations métrologiques pertinentes
+concer-nant la référence, telles que la date où a été effectué le
+premier étalonnage de la hiérarchie.
+
+NOTE: Pour des *mesurages* comportant plus d'une seule
+*grandeur d'entrée dans le modèle de mesure*, chaque *valeur* d'entrée
+devrait être elle-même métrologi-quement traçable et la hiérarchie
+d'étalonnage peut prendre la forme d'une structure ramifiée ou d'un
+réseau. Il convient que l'effort consacré à établir la traçabilité
+métrologique de chaque valeur d'entrée soit proportionné à sa contribution
+relative au résultat de mesure.
+
+NOTE: La traçabilité métrologique d'un résultat de mesure n'assure
+pas l'adéquation de l'incertitude de mesure à un but donné ou l'absence
+d'erreurs humaines.
+
+NOTE: Une comparaison entre deux étalons peut être considérée comme
+un étalonnage si elle sert à vérifier et, si nécessaire, à corriger
+la valeur et l'incertitude attri-buées à l'un des étalons.
+
+NOTE: L'ILAC considère que les éléments néces-saires pour confirmer
+la traçabilité métrologique sont une *chaîne de traçabilité métrologique*
+ininterrompue à un *étalon international* ou un *étalon national*,
+une incer-titude de mesure documentée, une procédure de mesure documentée,
+une compétence technique reconnue, la traçabilité métrologique au
+SI et des intervalles entre étalonnages (voir ILAC P-10:2002).
+
+NOTE: Le terme abrégé «traçabilité» est quelquefois employé pour désigner
+la traçabilité métrologique, ainsi que d'autres concepts tels que
+la traçabilité d'un spécimen, d'un document, d'un instrument ou d'un
+matériau, où intervient l'historique (la trace) d'une entité. Il est
+donc préférable d'utiliser le terme complet «traçabilité métrolo-gique»
+s'il y a risque de confusion.
+
+
+[[sec_2.42]]
+=== chaîne de traçabilité métrologique, f
+alt:[chaîne de traçabilité, f]
+(((chaîne de traçabilité)))
+(((chaîne de traçabilité métrologique)))
+
+succession d'*étalons* et d'*étalonnages* qui est uti-lisée pour relier
+un *résultat de mesure* à une référence
+
+NOTE: Une chaîne de traçabilité métrologique est définie par l'intermédiaire
+d'une *hiérarchie d'étalonnage*.
+
+NOTE: La chaîne de traçabilité métrologique est uti-lisée pour établir
+la *traçabilité métrologique* du résultat de mesure.
+
+NOTE: Une comparaison entre deux étalons peut être considérée comme
+un étalonnage si elle sert à vérifier et, si nécessaire, à corriger
+la *valeur* et l'*incertitude de mesure* attribuées à l'un des étalons.
+
+[[sec_2.43]]
+=== traçabilité métrologique à une unité de mesure, f
+alt:[traçabilité métrologique à une unité, f]
+(((traçabilité métrologique à une unité)))
+(((traçabilité métrologique à une unité de mesure)))
+
+*traçabilité métrologique* où la référence est la définition d'une
+*unité de mesure* sous la forme de sa réalisation pratique
+
+NOTE: L'expression «traçabilité au SI» signifie la traça-bilité métrologique
+à une unité de mesure du *Système international d'unités*.
+
+[[sec_2.44]]
+=== vérification, f
+(((vérification)))
+
+fourniture de preuves tangibles qu'une entité don-née satisfait à
+des exigences spécifiées
+
+[example]
+Confirmation qu'un *matériau de réfé-rence* donné est bien, comme
+déclaré, homogène pour la *valeur* et la *procédure de mesure* concernées
+jusqu'àdes prises de mesure de masse stem:[10 "unitsml(mg)"].
+
+[example]
+Confirmation que des propriétés relatives aux performances ou des
+exigences légales sont satis-faites par un *système de mesure*.
+
+[example]
+Confirmation qu'une *incertitude cible* peut être atteinte.
+
+NOTE: S'il y a lieu, il convient de prendre en compte
+l'*incertitude de mesure*.
+
+NOTE: L'entité peut être, par exemple, un processus, une procédure
+de mesure, un matériau, un composé ou un système de mesure.
+
+NOTE: Les exigences spécifiées peuvent être, par exemple, les spécifications
+d'un fabricant.
+
+NOTE: La vérification en métrologie légale, comme définie dans le
+<<OIML_V1_2000,VIML>>, et plus généralement en évaluation de la conformité,
+comporte l'examen et le marquage et/ou la délivrance d'un certificat
+de vérification pour un système de mesure.
+
+NOTE: Il convient de ne pas confondre la vérification avec l'*étalonnage*.
+Toute vérification n'est pas une *validation*.
+
+NOTE: En chimie, la vérification de l'identité d'une entité, ou celle
+d'une activité, nécessite une description de la structure ou des propriétés
+de cette entité ou activité.
+
+[[sec_2.45]]
+=== validation, f
+(((validation)))
+
+*vérification*, où les exigences spécifiées sont adéquates pour un
+usage déterminé
+
+[example]
+Une *procédure de mesure*, habituellement utilisée pour le *mesurage*
+de la concentration en masse d'azote dans l'eau, peut aussi être validée
+pour le mesurage dans le sérum humain.
+
+[[sec_2.46]]
+=== comparabilité métrologique, f
+(((comparabilité métrologique)))
+
+comparabilité de *résultats de mesure*, pour des *grandeurs* d'une
+*nature* donnée, qui sont métro-logiquement traçables à une même référence
+
+[example]
+Des résultats de mesure pour les distances entre la Terre et la Lune
+et entre Paris et Londres sont métrologiquement comparables s'ils
+sont métrologique-ment traçables à la même *unité de mesure*, par
+exemple le mètre.
+
+NOTE: Voir la <<note_1_2.41>>, *traçabilité métrolo-gique*.
+
+NOTE: La comparabilité métrologique ne nécessite pas que les
+*valeurs mesurées* et les *incertitudes de mesure* associées soient
+du même ordre de grandeur.
+
+[[sec_2.47]]
+=== compatibilité de mesure,
+alt:[f compatibilité métrologique, f]
+(((compatibilité de mesure)))
+(((compatibilité métrologique)))
+
+propriété d'un ensemble de *résultats de mesure* correspondant à un
+*mesurande* spécifié, telle que la valeur absolue de la différence
+des *valeurs mesurées* pour toute paire de résultats de mesureest
+plus petite qu'un certain multiple choisi de l'*incertitude-type*
+de cette différence
+
+NOTE: La compatibilité de mesure remplace le concept traditionnel
+«rester dans l'erreur», puisqu'elle exprime selon quel critère décider
+si deux résultats de mesure se rapportent ou non au même mesurande.
+Si, dans un ensemble de *mesurages* d'un mesurande que l'on pense
+être constant, un résultat de mesure n'est pas compatible avec les
+autres, soit le mesurage n'est pas correct (par exemple
+l'*incertitude de mesure* évaluée est trop petite), soit la *grandeur*
+mesurée a changé d'un mesurage à l'autre.
+
+NOTE: La corrélation entre les mesurages influence la compatibilité
+de mesure. Si les mesurages sont entièrement décorrélés, l'incertitude-type
+de leur différence est égale à la moyenne quadratique de leurs
+incertitudes-types (racine carrée de la somme des carrés), tandis
+qu'elle est plus petite pour une covariance positive ou plus grande
+pour une covariance négative.
+
+
+[[sec_2.48]]
+=== modèle de mesure, m
+alt:[modèle, m]
+(((modèle)))
+(((modèle de mesure)))
+
+relation mathématique entre toutes les *grandeurs* qui interviennent
+dans un *mesurage*
+
+NOTE: Une forme générale d'un modèle de mesure est l'équation
+stem:[h (Y,X_1," ",X_n) = 0], où stem:[Y], la
+*grandeur de sortie dans le modèle de mesure*, est le *mesurande*,dont
+la *valeur* doit être déduite de l'information sur les
+*grandeurs d'entrée dans le modèle de mesure* stem:[X_1," ",X_n].
+
+NOTE: Dans les cas plus complexes où il y a deux grandeurs de sortie
+ou plus, le modèle de mesure comprend plus d'une seule équation.
+
+
+[[sec_2.49]]
+=== fonction de mesure, f
+(((fonction de mesure)))
+
+fonction de *grandeurs*, dont la valeur, lorsqu'elle est calculée
+en utilisant des *valeurs* connues pour les
+*grandeurs d'entrée dans le modèle de mesure*, est une *valeur mesurée*
+de la *grandeur de sortie dans le modèle de mesure*
+
+NOTE: Si un *modèle de mesure* stem:[h (Y,X_1," ",X_n) = 0] peut être
+écrit explicitement sous la forme stem:[Y = f (X_1," ",X_n)], où stem:[Y]
+est la grandeur de sortie dans lemodèle de mesure, la fonction stem:[f]
+est la fonction de mesure. Plus généralement, stem:[f] peut symboliser
+un algorithme qui fournit, pour les valeurs d'entrée stem:[x_1," ",x_n],
+une valeur de sortie unique correspondante
+
+[stem%unnumbered]
+++++
+y = f (x_1," ",x_n).
+++++
+
+NOTE: On utilise aussi une fonction de mesure pour calculer
+l'*incertitude de mesure* associée à la valeur mesurée de stem:[Y].
+
+
+[[sec_2.50]]
+=== grandeur d'entrée dans un modèle de mesure, f
+alt:[grandeur d'entrée, f]
+(((grandeur d'entrée)))
+(((grandeur d'entrée dans un modèle de mesure)))
+
+*grandeur* qui doit être mesurée, ou grandeur dont la *valeur* peut
+être obtenue autrement, pour calculer une *valeur mesurée* d'un *mesurande*
+
+[example]
+Lorsque le mesurande est la longueur d'une tige d'acier à une température
+spécifiée, la température réelle, la longueur à la température réelle
+et le coefficient de dilatation thermique linéique de la tige sont
+des grandeurs d'entrée dans un modèle de mesure.
+
+NOTE: Une grandeur d'entrée dans un modèle de mesure est souvent une
+grandeur de sortie d'un *système de mesure*.
+
+NOTE: Les *indications*, les *corrections* et les *grandeurs d'influence*
+sont des grandeurs d'entrée dans un modèle de mesure.
+
+[[sec_2.51]]
+=== grandeur de sortie dans un modèle de mesure, f
+alt:[grandeur de sortie, f]
+(((grandeur de sortie)))
+(((grandeur de sortie dans un modèle de mesure)))
+
+*grandeur* dont la *valeur mesurée* est calculée en utilisant les
+*valeurs* des *grandeurs d'entrée dans un modèle de mesure*
+
+[[sec_2.52]]
+=== (2.7) grandeur d'influence, f
+(((grandeur d'influence)))
+
+*grandeur* qui, lors d'un *mesurage* direct, n'a pas d'effet sur la
+grandeur effectivement mesurée, mais a un effet sur la relation entre
+l'*indication* et le *résultat de mesure*
+
+[example]
+Fréquence lors du mesurage direct de l'amplitude constante d'un courant
+alternatif au moyen d'un ampèremètre.
+
+[example]
+Concentration en quantité de matière de bilirubine lors du mesurage
+direct de la concentration en quantité de matière d'hémoglobine dans
+le plasma sanguin humain.
+
+[example]
+Température d'un micromètre lors du mesurage de la longueur d'une
+tige, mais pas la température de la tige elle-même qui peut entrer
+dans la définition du *mesurande*.
+
+[example]
+Pression ambiante dans la source d'ions d'un spectromètre de masse
+lors du mesurage d'une fraction molaire.
+
+NOTE: Un mesurage indirect implique une combi-naison de mesurages
+directs, sur chacun desquels des grandeurs d'influence peuvent avoir
+un effet.
+
+NOTE: Dans le GUM, le concept «grandeur d'influence» est défini comme
+dans la deuxième édition du VIM, de façon à comprendre non seulement
+les grandeurs qui ont un effet sur le *système de mesure*, comme dans
+la définition ci-dessus, mais aussi celles qui ont un effet sur les
+grandeurs effectivement mesurées. En outre, le concept n'y est pas
+limité aux mesurages directs.
+
+[[sec_2.53]]
+=== (3.15) (3.16) correction, f
+(((correction)))
+
+compensation d'un effet systématique connu
+
+NOTE: Voir le <<Guide_1995,clause=3.2.3>>, pour une explication du
+concept d'effet systématique.
+
+NOTE: La modification peut prendre différentes formes, telles que
+l'addition d'une valeur ou la multiplication par un facteur, ou peut
+se déduire d'une table.

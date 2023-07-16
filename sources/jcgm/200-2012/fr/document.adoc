@@ -1,0 +1,47 @@
+= JCGM 200:2012
+:docnumber: 200
+:tc-document-number: 
+:edition: 3
+:published-date: 
+:copyright-year: 2012
+:language: fr
+:doctype: international-standard
+:title-en: Vocabulaire international de métrologie
+:title-part-en: Concepts fondamentaux et généraux et termes associés (VIM)
+:docstage: in-force
+:docsubstage: 60
+:committee-acronym: JCGM
+:committee-en: Joint Committee for Guides in Metrology
+:workgroup-acronym: WG 1
+:workgroup-en: Working Group on the Expression of Uncertainty in Measurement
+:imagesdir: images
+:mn-document-class: bipm
+:mn-output-extensions: xml,html,doc,pdf,rxl
+:local-cache-only:
+
+include::sections/00-foreword.adoc[]
+
+include::sections/00-introduction.adoc[]
+
+include::sections/00-conventions.adoc[]
+
+include::sections/00-scope.adoc[]
+
+include::sections/01-grandeurs.adoc[]
+
+include::sections/02-mesurages.adoc[]
+
+include::sections/03-dispositifs_de_mesure.adoc[]
+
+include::sections/04-propietes_des_dispositifs.adoc[]
+
+include::sections/05-etalons.adoc[]
+
+include::sections/aa-schemas_conceptuels.adoc[]
+
+include::sections/b0-bibliography.adoc[]
+
+include::sections/b1-liste_de_sigles.adoc[]
+
+[index]
+== Index alphabétique

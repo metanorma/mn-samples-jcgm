@@ -1,0 +1,121 @@
+
+
+== Introduction
+
+En général, un vocabulaire est un «dictionnaire terminologique contenant
+des désignations et des définitions tirées d'un ou plusieurs domaines
+particuliers» (<<ISO_1087_1_2000,clause=3.7.2>>). Le présent Vocabulaire
+concerne la métrologie, «science des mesurages et ses applications».
+Il couvre aussi les principes de base régissant les grandeurs et unités.
+Le domaine des grandeurs et unités peut être traité de différentes
+manières. Celle retenue pour l'Article 1 de ce Vocabulaire est fondée
+sur les principes exposés dans les différentes parties de l'ISO 31,
+_Grandeurs et unités_ , en cours de remplacement par les séries ISO
+80000 et CEI 80000 _Grandeurs et unités_, et dans la Brochure sur
+le SI, _Le Système international d'unités_ (publiée par le BIPM).
+
+La deuxième édition du _Vocabulaire international des termes fondamentaux
+et généraux de métrologie_ (VIM) a été publiée en 1993. Le besoin
+de couvrir pour la première fois les mesures en chimie et en biologie
+médicale, ainsi que celui d'inclure des concepts relatifs, par exemple,
+à la traçabilité métrologique, à l'incertitude de mesure et aux propriétés
+qualitatives, ont conduit à cette troisième édition. Son titre est
+devenu _Vocabulaire international de métrologie -- Concepts fondamentaux
+et généraux et termes associés (VIM)_, afin de mettre en évidence
+le rôle primordial des concepts dans l'élaboration d'un vocabulaire.
+
+Dans ce Vocabulaire, on considère qu'il n'y a pas de différence fondamentale
+dans les principes de base des mesurages en physique, chimie, biologie
+médicale, biologie ou sciences de l'ingénieur. De plus, on a essayé
+de couvrir les besoins conceptuels des mesurages dans des domaines
+tels que la biochimie, la science des aliments, l'expertise médicolégale
+et la biologie moléculaire.
+
+Plusieurs concepts qui apparaissaient dans la deuxième édition du
+VIM n'apparaissent pas dans la troisième édition car il ne sont plus
+considérés comme étant fondamentaux ou généraux. Par exemple, le concept
+de temps de réponse, utilisé pour décrire le comportement temporel
+d'un système de mesure, n'est pas inclus. Pour des concepts relatifs
+aux dispositifs de mesure qui ne figurent pas dans cette troisième
+édition du VIM, le lecteur pourra se reporter à d'autres vocabulaires
+comme la CEI 60050, _Vocabulaire électrotechnique international_ ,
+VEI. Pour ceux se rapportant à la gestion de la qualité, aux arrangements
+de reconnaissancemutuelle ou à la métrologie légale, le lecteur se
+reportera à la bibliographie.
+
+Le développement de cette troisième édition du VIM a soulevé quelques
+questions fondamentales, résumées ci-dessous, concernant différentes
+approches utilisées pour la description des mesurages. Ces différences
+ont parfois rendu difficile le développement de définitions compatibles
+avec les différentes descriptions. Dans cette troisième édition, les
+différentes approches sont traitées sur un pied d'égalité.
+
+Le changement dans le traitement de l'incertitude de mesure, d'une
+approche «erreur» (quelquefois appelée approche traditionnelle ou
+approche de la valeur vraie) à une approche «incertitude», a conduit
+à reconsidérer certains des concepts correspondants qui figuraient
+dans la deuxième édition du VIM. L'objectif des mesurages dans l'approche
+«erreur» est de déterminer une estimation de la valeur vraie qui soit
+aussi proche que possible de cette valeur vraie unique. L'écart par
+rapport à la valeur vraie est constitué d'erreurs aléatoires et systématiques.
+Les deux types d'erreurs, que l'on admet pouvoir toujours distinguer,
+doivent être traitées différemment. On ne peut pas établir de règle
+indiquant comment les combiner pour obtenir l'erreur totale caractérisant
+un résultat de mesure donné, celui-ci étant en général l'estimation.
+En général il est seulement possible d'estimer une limite supérieure
+de la valeur absolue de l'erreur totale, appelée parfois abusivement
+«incertitude».
+
+La Recommandation INC-1 (1980) du CIPM sur l'expression des incertitudes
+suggère que les composantes de l'incertitude de mesure soient groupées
+en deux catégories, Type A et Type B, selon qu'elles sont évaluées
+par des méthodes statistiques ou par d'autres méthodes, et qu'elles
+soient combinées pour obtenir une variance conformément aux règles
+de la théorie mathématique des probabilités, en traitant aussi les
+composantes de Type B en termes de variances. L'écart-type qui en
+résulte est une expression de l'incertitude de mesure. Une description
+de l'approche «incertitude» a été détaillée dans le _Guide pour l'expression
+de l'incertitude de mesure (GUM)_ (1993, corrigé en 1995), qui met
+l'accent sur le traitementmathématique de l'incertitude à l'aide d'un
+modèle de mesure explicite supposant que le mesurande puisse être
+caractérisé par une valeur par essence unique. De plus, dans le GUM
+aussi bien que dans les documents de la CEI, des indications sont
+données sur l'approche «incertitude» dans le cas d'une lecture unique
+d'un instrument étalonné, une situation qui se rencontre couramment
+en métrologie industrielle.
+
+L'objectif des mesurages dans l'approche «incertitude» n'est pas de
+déterminer une valeur vraie le mieux possible. On suppose plutôt que
+l'information obtenue lors d'un mesurage permet seulement d'attribuer
+au mesurande un intervalle de valeurs raisonnables, en supposant que
+le mesurage a été effectué correctement.
+
+Des informations additionnelles pertinentes peuvent réduire l'étendue
+de l'intervalle des valeurs qui peuvent être attribuées raisonnablement
+au mesurande. Cependant, même le mesurage le plus raffiné ne peut
+réduire l'intervalle à une seule valeur à cause de la quantité finie
+de détails dans la définition d'un mesurande. L'incertitude définitionnelle
+impose donc une limite inférieure à toute incertitude de mesure. L'intervalle
+peut être représenté par une de ses valeurs, appelée «valeur mesurée».
+
+Dans le GUM, l'incertitude définitionnelle est supposée négligeable
+par rapport aux autres composantes de l'incertitude de mesure. L'objectif
+des mesurages est alors d'établir une probabilité que la valeur par
+essence unique soit à l'intérieur d'un intervalle de valeurs mesurées,
+en se fondant sur l'information obtenue lors des mesurages.
+
+Les documents de la CEI mettent l'accent sur des mesurages comportant
+une seule lecture, qui permettent d'étudier si des grandeurs varient
+en fonction du temps par détermination de la compatibilité des résultats
+de mesure. La CEI traite aussi le cas d'incertitudes définitionnelles
+non négligeables. La validité des résultats de mesure dépend grandement
+des propriétés métrologiques de l'instrument, déterminées lors de
+son étalonnage. L'intervalle des valeurs attribuées au mesurande est
+l'intervalle des valeurs des étalons qui auraient donné les mêmes
+indications.
+
+Dans le GUM, le concept de valeur vraie est retenu pour décrire l'objectif
+des mesurages, mais l'adjectif «vraie» est considéré comme étant redondant.
+La CEI n'utilise pas le concept pour décrire cet objectif. Dans le
+présent Vocabulaire, le concept et le terme sont retenus, compte tenu
+de leur usage fréquent et de l'importance du concept.

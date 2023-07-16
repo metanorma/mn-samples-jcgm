@@ -1,0 +1,118 @@
+
+[bibliography]
+== Bibliography
+
+* [[[ISO_31_0_1992,ISO 31-0:1992]]], _Grandeurs et unités -- Partie 0: Principes généraux_
+
+* [[[ISO_31_5,ISO 31-5]]], _Grandeurs et unités -- Partie 5: Électricité et magnétisme_
+
+* [[[ISO_31_6,ISO 31-6]]], _Grandeurs et unités -- Partie 6: Lumière et rayonnements électromagnétiques connexes_
+
+* [[[ISO_31_8,ISO 31-8]]], _Grandeurs et unités -- Partie 8: Chimie physique et physique moléculaire_
+
+* [[[ISO_31_9,ISO 31-9]]], _Grandeurs et unités -- Partie 9: Physique atomique et nucléaire_
+
+* [[[ISO_31_10,ISO 31-10]]], _Grandeurs et unités -- Partie 10: Réactions nucléaires et rayonnements ioni-sants_
+
+* [[[ISO_31_11,ISO 31-11]]], _Grandeurs et unités -- Partie 11: Signes et symboles mathématiques à em-ployer dans les sciences physiques et dans la technique_
+
+* [[[ISO_31_12,ISO 31-12]]], _Grandeurs et unités -- Partie 12: Nombres caractéristiques_
+
+* [[[ISO_31_13,ISO 31-13]]], _Grandeurs et unités -- Partie 13: Physique de l'état solide_
+
+* [[[ISO_704_2000,ISO 704:2000]]], _Travail terminologique -- Principes et méthodes_
+
+* [[[ISO_1000_1992_Amd_1_1998,ISO 1000:1992/Amd.1:1998]]], _Unités SI et re-commandations pour l'emploi de leurs mul-tiples et de certaines autres unités_
+
+* [[[ISO_1087_1_2000,ISO 1087-1:2000]]], _Travaux terminologiques -- Vocabulaire -- Partie 1: Théorie et application_
+
+* [[[ISO_3534_1,ISO 3534-1]]], _Statistique -- Vocabulaire et symboles -- Partie 1: Termes statistiques généraux et termes utilisés en calcul des probabilités_
+
+* [[[ISO_5436_2,ISO 5436-2]]], _Spécification géométrique des produits (GPS) -- État de surface: Méthode du profil; Étalons -- Partie 2: Étalons logiciels_
+
+* [[[ISO_5725_1_1994_Cor_1_1998,ISO 5725-1:1994/Cor.1:1998]]], _Exactitude (jus-tesse et fidélité) des résultats et méthodes de mesure -- Partie 1: Principes généraux et dé-finitions_
+
+* [[[ISO_5725_2_1994_Cor_1_2002,ISO 5725-2:1994/Cor.1:2002]]], _Exactitude (jus-tesse et fidélité) des résultats et méthodes de mesure -- Partie 2: Méthode de base pour la détermination de la répétabilité et de la repro-ductibilité d'une méthode de mesure norma-lisée_
+
+* [[[ISO_5725_3_1994_Cor_1_2001,ISO 5725-3:1994/Cor.1:2001]]], _Exactitude (jus-tesse et fidélité) des résultats et méthodes de mesure -- Partie 3: Mesures intermédiaires de la fidélité d'une méthode de mesure norma-lisée_
+
+* [[[ISO_5725_4_1994,ISO 5725-4:1994]]], _Exactitude (justesse et fidé-lité) des résultats et méthodes de mesure -- Partie 4: Méthodes de base pour la détermi-nation de la justesse d'une méthode de mesure normalisée_ (disponible en anglaisseulement)
+
+* [[[ISO_5725_5_1998_Cor_1_2005,ISO 5725-5:1998/Cor.1:2005]]], _Exactitude (jus-tesse et fidélité) des résultats et méthodes de mesure -- Partie 5: Méthodes alternatives pour la détermination de la fidélité d'une méthode de mesure normalisée_
+
+* [[[ISO_5725_6_1994,ISO 5725-6:1994]]], _Exactitude (justesse et fidé-lité) des résultats et méthodes de mesure -- Partie 6: Utilisation dans la pratique des valeurs d'exactitude_
+
+* [[[ISO_9000_2005,ISO 9000:2005]]], _Systèmes de management de la qualité -- Principes essentiels et vocabulaire_
+
+* [[[ISO_10012,ISO 10012]]], _Systèmes de management de la mesure -- Exigences pour les processus et les équipements de mesure_
+
+* [[[ISO_10241_1992,ISO 10241:1992]]], _Normes terminologiques in-ternationales -- Élaboration et présentation_
+
+* [[[ISO_13528,ISO 13528]]], _Méthodes statistiques utilisées dans les essais d'aptitude par comparaisons interlaboratoires_
+
+* [[[ISO_15189_2007,ISO 15189:2007]]], _Laboratoires d'analyses de biologie médicale -- Exigences particulières concernant la qualité et la compétence_
+
+* [[[ISO_17511,ISO 17511]]], _Dispositifs médicaux de diagnostic in vitro -- Mesurage des grandeurs dans des échantillons d'origine biologique -- Traçabilité métrologique des valeurs attribuées aux agents d'étalonnage et aux matériaux de contrôle_
+
+* [[[ISO_TS_21748,ISO/TS 21748]]], _Lignes directrices relatives à l'utilisation d'estimations de la répétabilité, de la reproductibilité et de la justesse dans l'éva-luation de l'incertitude de mesure_
+
+* [[[ISO_TS_21749,ISO/TS 21749]]], _Incertitude de mesure pour les applications en métrologie -- Mesures répétées et expériences emboîtées_
+
+* [[[ISO_80000_3,ISO 80000-3]]], _Grandeurs et unités -- Partie 3: Espace et temps_
+
+* [[[ISO_80000_4,ISO 80000-4]]], _Grandeurs et unités -- Partie 4: Mécanique_
+
+* [[[ISO_80000_5,ISO 80000-5]]], _Grandeurs et unités -- Partie 5: Thermodynamique_
+
+* [[[ISO_80000_8,ISO 80000-8]]], _Grandeurs et unités -- Partie 8: Acoustique_
+
+* [[[Guide_ISO_31_2000,Guide ISO 31:2000]]], _Matériaux de référence -- Contenu des certificats et étiquettes_
+
+* [[[Guide_ISO_34_2000,Guide ISO 34:2000]]], _Exigences générales pour la compétence des producteurs de matériaux de référence_ (disponible en anglais seulement)
+
+* [[[Guide_ISO_35_2006,Guide ISO 35:2006]]], _Matériaux de référence -- Principes généraux et statistiques pour la cer-tification_ (disponible en anglais seulement)
+
+* [[[,]]]_Guide pour l'expression de l'incertitude de mesure (GUM)_, BIPM, CEI, FICC, ISO, OIML, UICPA, UIPPA, 1993 amendé en 1995
+
+* [[[JCGM_101_2008,JCGM 101:2008]]], _Evaluation of measurement data -- Supplement 1 to the "Guide to the expression of uncertainty in measurement" -- Propagation of distributions using a Monte Carlo method_
+
+* [[[IEC_60027_2_2005,IEC 60027-2:2005]]], _Symboles littéraux à utiliser en électrotechnique -- Partie 2: Télécommu-nications et électronique_
+
+* [[[IEC_60050_300_2001,IEC 60050-300:2001]]], _Vocabulaire Électro-technique International -- Mesures et appareils de mesure électriques et électroniques -- Partie 311: Termes généraux concernant les mesures -- Partie 312: Termes généraux concernant les mesures électriques -- Partie 313: Types d'appareils électriques de mesure -- Partie 314: Termes spécifiques selon le type d'appareil_
+
+* [[[IEC_60359_2001,IEC 60359:2001]]], Ed. 3.0 (Bilingue), _Appareils de mesure électriques et électroniques -- Expression des performances_
+
+* [[[IEC_80000_13,IEC 80000-13]]], _Grandeurs et unités -- Partie 13: Science et technologies de l'infor-mation_
+
+* [[[BIPM_SI,BIPM SI]]] BIPM: _Le Système international d'unités (SI)_, 8^e^ édition, 2006
+
+* [[[CCQM_Meeting_5,CCQM Meeting 5]]] BIPM, _Comité consultatif pour la quantité de matière (CCQM) -- 5^e^ _session (février 1999)_
+
+* [[[MOHR_2002,MOHR 2002]]], P.J. MOHR , B.N. TAYLOR, D.B. NEWELL. Recommended Values of the Fundamental Physical Constants: 2002, _Reviews of Modern Physics_, *77*, 2005, 107 pp. http://physics.nist.gov/constants
+
+* [[[EMONS_2006,EMONS 2006]]], EMONS, H., FAJGELJ, A., VAN DER VEEN, A.M.H. and WATTERS, R. New definitions on reference materials. _Accred. Qual. Assur._, *10*, 2006,+pp. 576-578+
+
+* [[[Guide_1995,Guide 1995]]], _Guide pour l'expression de l'incertitude de me-sure_ (1993, corrigé 1995) (publié par l'ISO au nom du BIPM, de la CEI, du FICC, de l'OIML, de l'UICPA et de l'IUPPA)
+
+* [[[IFCC_IUPAC,IFCC-IUPAC]]], IFCC-IUPAC: Approved Recommendation (1978). Quantities and Units in Clinical Chem-istry, _Clin. Chim. Acta_, 1979:**96**:157F:183F
+
+* [[[ILAC_P_10,ILAC P-10]]], ILAC P-10 (2002), ILAC Policy on Traceability of Measurement Results
+
+* [[[LAETER_2005,LAETER 2005]]] J.K. BÖHLKE, R. de LAETER, P. D E BIEVRE, H. HIDAKA, H.S. PEISER, K.J.R. ROSMAN,+P.D.P. TAYLOR. Isotopic Composition of the Elements, 2001, _J. Phys. Chem. Ref. Data._, **34**, 2005, pp. 57-67
+
+* [[[IUPAP_25,IUPAP-25]]], IUPAP-25: Booklet on Symbols, Units, No-menclature and Fundamental Constants. Document IUPAP-25, E.R. Cohen et P. Giacomo, _Physica_, **146**A, 1987, pp. 1-68 footnote:[Sera révisé et publié sur le Web]
+
+* [[[IUPAC_1993,IUPAC 1993]]] IUPAC (UICPA): Quantities, Units and Symbols in Physical Chemistry (1993, 2007)
+
+* [[[IUPAC_2003,IUPAC 2003]]] IUPAC, _Pure Appl. Chem_., *75*, 2003,+pp. 1107-1122
+
+* [[[OIML_V1_2000,OIML V1:2000]]] OIML V1:2000, _Vocabulaire international des termes de métrologie légale (VIML)_
+
+* [[[WHO_75_589,WHO 75/589]]] WHO 75/589, _Chorionic gonadotrophin, human_, 1999
+
+* [[[WHO_80_552,WHO 80/552]]] WHO 80/552, _Luteinizing hormone, human, pituitary_, 1988
+
+* [[[ISO_21749,ISO/TS 21749:2005]]]
+
+* [[[ISO_5725,ISO 5725]]]
+

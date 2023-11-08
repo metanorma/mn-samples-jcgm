@@ -1,15 +1,13 @@
 = JCGM 200:2012
 :docnumber: 200
-:tc-document-number:
 :edition: 3
-:published-date:
 :copyright-year: 2012
 :language: en
-:doctype: international-standard
-:title-en: International vocabulary of metrology
-:title-part-en: Basic and general concepts and associated terms (VIM)
+:doctype: guide
 :docstage: in-force
 :docsubstage: 60
+:title-en: International vocabulary of metrology
+:title-part-en: Basic and general concepts and associated terms (VIM)
 :committee-acronym: JCGM
 :committee-en: Joint Committee for Guides in Metrology
 :workgroup-acronym: WG 1
@@ -42,7 +40,6 @@ include::sections/aa-concept_diagrams.adoc[]
 include::sections/b0-bibliography.adoc[]
 
 include::sections/b1-acronyms.adoc[]
-
 
 [index]
 == Alphabetical index

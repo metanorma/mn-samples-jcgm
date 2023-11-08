@@ -16,7 +16,7 @@
 :workgroup-en: Working Group on the Expression of Uncertainty in Measurement
 :imagesdir: images
 :mn-document-class: bipm
-:mn-output-extensions: xml,html,doc,pdf,rxl
+:mn-output-extensions: xml,html,pdf,rxl
 :local-cache-only:
 
 include::sections/00-foreword.adoc[]

@@ -515,7 +515,7 @@ For economic reasons, the fraction of non-conforming bearings sold to customers
 as conforming (the global consumer's risk) must be held to 0.1 % or less.
 How can an acceptance limit A be chosen to satisfy this requirement?
 
-// [[fig13]]
+[[fig13]]
 .Tolerance and acceptance intervals for the conformity assessment of ball bearings. Permissible values of radial error motion stem:[Y] lie in the interval stem:[0 <= eta <= T]. The acceptance limit stem:[A] is separated from the tolerance limit stem:[T] by a guard band with length parameter stem:[w = rU = 2ru_{"m"}]. The decision rule in this case is guarded acceptance, with stem:[w > 0].
 image::figure13.png[]
 
@@ -543,7 +543,7 @@ PDF for bearing radial error stem:[Y] is then
 g_0 (eta) = "gamma" (eta ; 4, 4) = 128/3 eta^3 e^{-4 eta} , " " eta >= 0 .
 ++++
 
-// [[fig14]]
+[[fig14]]
 .Gamma prior PDF given by <<eq_22>>, assigned based on the frequency distribution of measured radial error motions for a sample of ball bearings. The tolerance interval is the region stem:[0 <= eta <= 2 "unitsml(um)"]. The expectation of the distribution is the prior estimate stem:[y_0 = 1 "unitsml(um)"], with an associated standard uncertainty stem:[u_0 = 0.5 "unitsml(um)"]. Because the distribution is not symmetric, the most probable value of stem:[Y] (the mode of the distribution, here equal to stem:[0.75 "unitsml(um)"]) is not equal to stem:[y_0].
 image::figure14.png[]
 
@@ -597,7 +597,7 @@ R_C(r) = 128/3 int_2^{oo} [Phi (8 - 2r - 4eta) - Phi(-4eta)] eta^3 e^{-4 eta} "d
 R_P(r) = 128/3 int_0^2 [1 - Phi(8 - 2r - 4eta)] eta^3 e^{-4eta} "d"eta .
 ++++
 
-// [[fig15]]
+[[fig15]]
 .Global consumer's risk stem:[R_C] versus guard band multiplier stem:[r]. For stem:[r ~~ 0.65], the acceptance limit is stem:[A = T - 2(0.65)u_{"m"} = 1.7 "unitsml(um)"], and the desired risk stem:[R_C = 0.1 %] is achieved.
 image::figure15.png[]
 
@@ -637,7 +637,7 @@ risks and yield an optimal outcome. The choice of such an operating point
 is a business or policy decision that requires an economic analysis of
 the decision problem.
 
-// [[fig16]]
+[[fig16]]
 .Global risks stem:[R_P] versus stem:[R_C] for the ball bearing example. Any point on the curve corresponds to a particular value of stem:[r], the guard band multiplier, with several particular values identified. Acting to reduce consumer's risk by moving the acceptance limit farther inside the tolerance interval (increasing stem:[r]) always increases the risk of falsely rejecting conforming bearings. An economic analysis is required to choose an optimal decision rule. The open circle marks the operating point in the worked example.
 image::figure16.png[]
 ====

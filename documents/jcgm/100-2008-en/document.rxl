@@ -1,13 +1,13 @@
 <bibdata type="standard">
-<title language="en" format="text/plain" type="main">Evaluation of measurement data</title>
+<title language="en" format="text/plain" type="title-main">Evaluation of measurement data</title>
 
-<title language="en" format="text/plain" type="part">Guide to the expression of uncertainty in measurement</title>
+<title language="en" format="text/plain" type="title-part">Guide to the expression of uncertainty in measurement</title>
 
-<title language="en" format="text/plain" type="provenance">GUM 1995 with minor corrections</title>
+<title language="en" format="text/plain" type="title-provenance">GUM 1995 with minor corrections</title>
 
-<title language="fr" format="text/plain" type="main">Évaluation des données de mesure</title>
+<title language="fr" format="text/plain" type="title-main">Évaluation des données de mesure</title>
 
-<title language="fr" format="text/plain" type="part">Guide pour l’expression de l’incertitude de mesure</title>
+<title language="fr" format="text/plain" type="title-part">Guide pour l’expression de l’incertitude de mesure</title>
 <docidentifier type="BIPM">JCGM 100</docidentifier><docnumber>100</docnumber><date type="published"><on>2008-09</on></date><contributor><role type="author"/><organization>
 <name>Bureau International des Poids et Mesures</name>
 <abbreviation>BIPM</abbreviation></organization></contributor><contributor><role type="publisher"/><organization>

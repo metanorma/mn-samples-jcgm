@@ -1,15 +1,15 @@
 <bibdata type="standard">
-<title language="en" format="text/plain" type="main">Propagation of distributions using a Monte Carlo method</title>
+<title language="en" format="text/plain" type="title-main">Propagation of distributions using a Monte Carlo method</title>
 
-<title language="en" format="text/plain" type="part">Evaluation of measurement data</title>
+<title language="en" format="text/plain" type="title-part">Evaluation of measurement data</title>
 
-<title language="en" format="text/plain" type="subpart">Supplement 1 to the "Guide to the expression of uncertainty in measurement"</title>
+<title language="en" format="text/plain" type="title-subpart">Supplement 1 to the "Guide to the expression of uncertainty in measurement"</title>
 
-<title language="fr" format="text/plain" type="main">Propagation de distributions par une méthode de Monte Carlo</title>
+<title language="fr" format="text/plain" type="title-main">Propagation de distributions par une méthode de Monte Carlo</title>
 
-<title language="fr" format="text/plain" type="part">Évaluation des données de mesure</title>
+<title language="fr" format="text/plain" type="title-part">Évaluation des données de mesure</title>
 
-<title language="fr" format="text/plain" type="subpart">Supplément 1 du "Guide pour l’expression de l’incertitude de mesure"</title>
+<title language="fr" format="text/plain" type="title-subpart">Supplément 1 du "Guide pour l’expression de l’incertitude de mesure"</title>
 <docidentifier type="BIPM">JCGM 101</docidentifier><docnumber>101</docnumber><contributor><role type="author"/><organization>
 <name>Bureau International des Poids et Mesures</name>
 <abbreviation>BIPM</abbreviation></organization></contributor><contributor><role type="publisher"/><organization>

@@ -1,0 +1,12 @@
+<bibdata type="standard">
+
+<title language="fr" format="text/plain" type="title-main">Vocabulaire international de métrologie</title>
+
+<title language="fr" format="text/plain" type="title-part">Concepts fondamentaux et généraux et termes associés (VIM)</title>
+<docidentifier type="BIPM">JCGM 200</docidentifier><docnumber>200</docnumber><contributor><role type="author"/><organization>
+<name>Bureau international des poids et mesures</name>
+<abbreviation>BIPM</abbreviation></organization></contributor><contributor><role type="publisher"/><organization>
+<name>Bureau international des poids et mesures</name>
+<abbreviation>BIPM</abbreviation></organization></contributor><edition>3</edition><language>fr</language><script>Latn</script><status><stage>in-force</stage></status><copyright><from>2012</from><owner><organization>
+<name>Bureau international des poids et mesures</name>
+<abbreviation>BIPM</abbreviation></organization></owner></copyright><ext><doctype>guide</doctype><editorialgroup><committee acronym="JCGM"><variant language="en" script="Latn">Joint Committee for Guides in Metrology</variant></committee></editorialgroup><structuredidentifier><docnumber>200</docnumber></structuredidentifier></ext></bibdata>

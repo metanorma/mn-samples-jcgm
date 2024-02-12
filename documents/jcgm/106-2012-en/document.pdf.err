@@ -1,0 +1,14 @@
+WARNING: Font file '/github/home/.metanorma/fonts/cambria.ttc' (font name 'Cambria Math', font style 'normal', font weight 'normal') doesn't exist. Replaced by '/github/home/.metanorma/fonts/NotoSans-Regular.ttf'.
+WARNING: Font file '/github/home/.metanorma/fonts/cambria.ttc' (font name 'Cambria Math', font style 'normal', font weight 'bold') doesn't exist. Replaced by '/github/home/.metanorma/fonts/NotoSans-Bold.ttf'.
+
+Font "Cambria Math,italic,400" not found. Substituting with "Cambria Math,normal,400".
+Page 33: Unresolved ID reference "fig13" found.
+Page 34: Unresolved ID reference "fig13" found.
+Page 34: Unresolved ID reference "fig14" found.
+Page 35: Unresolved ID reference "fig15" found.
+Page 35: Unresolved ID reference "fig16" found.
+Page 35: Unresolved ID reference "fig13" found.
+Page 36: Unresolved ID reference "fig16" found.
+WARNING: Font file '/github/home/.metanorma/fonts/cambria.ttc' (font name 'Cambria Math', font style 'normal', font weight 'normal') doesn't exist. Replaced by '/github/home/.metanorma/fonts/NotoSans-Regular.ttf'.
+WARNING: Font file '/github/home/.metanorma/fonts/cambria.ttc' (font name 'Cambria Math', font style 'normal', font weight 'bold') doesn't exist. Replaced by '/github/home/.metanorma/fonts/NotoSans-Bold.ttf'.
+

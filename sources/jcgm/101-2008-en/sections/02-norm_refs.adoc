@@ -1,5 +1,5 @@
 
-[bibliography]
+[bibliography,normative=true]
 == Normative references (((Guide to the expression of uncertainty in measurement (GUM))))(((International vocabulary of basic and general terms in metrology (VIM))))
 
 * [[[JCGM-100,nofetch(BIPM JCGM 100)]]] JCGM 100 (GUM:1995). Guide to the expression of uncertainty in measurement (GUM), 1995.

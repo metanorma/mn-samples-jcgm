@@ -36960,7 +36960,7 @@ any value within those bounds <eref type="inline" bibitemid="JCGM-100" citeas="J
 <title>Normative references <index><primary>Guide to the expression of uncertainty in measurement (GUM)</primary></index><index><primary>International vocabulary of basic and general terms in metrology (VIM)</primary></index></title><p id="_770a9855-359c-9817-27ff-f023b34e886b">The following referenced documents are indispensable for the application of this document. For dated references, only the edition cited applies. For undated references, the latest edition of the referenced document (including any amendments) applies.</p>
 <bibitem id="JCGM-100"><formattedref format="application/x-isodoc+xml">JCGM 100 (GUM:1995). Guide to the expression of uncertainty in measurement (GUM), 1995.</formattedref><docidentifier type="BIPM">BIPM JCGM 100</docidentifier><docnumber>100</docnumber></bibitem>
 <bibitem id="JCGM-200"><formattedref format="application/x-isodoc+xml"><link target="http://www.bipm.org/en/publications/guides/vim.html">JCGM 200 (VIM:2008)</link>. International Vocabulary of Metrology—Basic and General Concepts and Associated Terms, VIM, 3rd Edition, 2008.</formattedref><docidentifier type="BIPM">BIPM JCGM 200</docidentifier><docnumber>200</docnumber></bibitem>
-<bibitem id="ISO_3534-1" type="standard" schema-version="v1.2.8">  <fetched>2024-02-12</fetched>  
+<bibitem id="ISO_3534-1" type="standard" schema-version="v1.2.8">  <fetched>2024-02-20</fetched>  
 <title type="title-intro" format="text/plain" language="en" script="Latn">Statistics</title>
   
 <title type="title-main" format="text/plain" language="en" script="Latn">Vocabulary and symbols</title>

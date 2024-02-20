@@ -17296,7 +17296,7 @@ expectation <semantic__stem type="MathML" block="false"><semantic__math xmlns="h
 </semantic__dl>
 </semantic__annex><semantic__bibliography><semantic__references id="semantic___normative_references" normative="true" obligation="informative">
 <semantic__title>Normative references</semantic__title><semantic__p id="semantic___770a9855-359c-9817-27ff-f023b34e886b">The following referenced documents are indispensable for the application of this document. For dated references, only the edition cited applies. For undated references, the latest edition of the referenced document (including any amendments) applies.</semantic__p>
-<semantic__bibitem id="semantic__JCGM_100_2008" type="standard" schema-version="v1.2.8">  <semantic__fetched>2024-02-12</semantic__fetched>  
+<semantic__bibitem id="semantic__JCGM_100_2008" type="standard" schema-version="v1.2.8">  <semantic__fetched>2024-02-20</semantic__fetched>  
 <semantic__title format="text/plain" language="en" script="Latn">Guide to the expression of uncertainty in measurement</semantic__title>
   <semantic__uri type="citation" language="en" script="Latn">https://www.bipm.org/documents/20126/2071204/JCGM_100_2008_E.pdf/cb0ef43f-baa5-11cf-3f85-4dcd86f77bd6</semantic__uri>  <semantic__uri type="citation" language="fr" script="Latn">https://www.bipm.org/documents/20126/2071204/JCGM_100_2008_F.pdf/53384399-1e6d-b598-dd17-2831a6b5b812</semantic__uri>  <semantic__docidentifier type="BIPM" primary="true" language="en" script="Latn">JCGM 100:2008</semantic__docidentifier>  <semantic__docidentifier type="BIPM" primary="true" language="fr" script="Latn">JCGM 100:2008</semantic__docidentifier>  <semantic__docidentifier type="BIPM" primary="true">JCGM 100:2008</semantic__docidentifier>  <semantic__docnumber>JCGM 100:2008</semantic__docnumber>  <semantic__date type="published">    <semantic__on>2008-09</semantic__on>  </semantic__date>  <semantic__contributor>    <semantic__role type="publisher"/>    <semantic__organization>      
 <semantic__name language="en" script="Latn">International Bureau of Weights and Measures</semantic__name>
@@ -17315,7 +17315,7 @@ expectation <semantic__stem type="MathML" block="false"><semantic__math xmlns="h
       <semantic__abbreviation>IFCC</semantic__abbreviation>      <semantic__uri>www.ifcc.org</semantic__uri>    </semantic__organization>  </semantic__contributor>  <semantic__contributor>    <semantic__role type="author"/>    <semantic__organization>      
 <semantic__name language="en" script="Latn">International Laboratory Accreditation Cooperation</semantic__name>
       <semantic__abbreviation>ILAC</semantic__abbreviation>      <semantic__uri>www.ilac.org</semantic__uri>    </semantic__organization>  </semantic__contributor>  <semantic__edition>1</semantic__edition>  <semantic__language>en</semantic__language>  <semantic__language>fr</semantic__language>  <semantic__script>Latn</semantic__script>  <semantic__place>    <semantic__city>Paris</semantic__city>  </semantic__place></semantic__bibitem>
-<semantic__bibitem id="semantic__JCGM_101_2008" type="standard" schema-version="v1.2.8">  <semantic__fetched>2024-02-12</semantic__fetched>  
+<semantic__bibitem id="semantic__JCGM_101_2008" type="standard" schema-version="v1.2.8">  <semantic__fetched>2024-02-20</semantic__fetched>  
 <semantic__title format="text/plain" language="en" script="Latn">Supplement 1 to the “Guide to the expression of uncertainty in measurement” — Propagation of distributions using a Monte Carlo method</semantic__title>
   <semantic__uri type="citation" language="en" script="Latn">https://www.bipm.org/documents/20126/2071204/JCGM_101_2008_E.pdf/325dcaad-c15a-407c-1105-8b7f322d651c</semantic__uri>  <semantic__docidentifier type="BIPM" primary="true" language="en" script="Latn">JCGM 101:2008</semantic__docidentifier>  <semantic__docidentifier type="BIPM" primary="true" language="fr" script="Latn">JCGM 101:2008</semantic__docidentifier>  <semantic__docidentifier type="BIPM" primary="true">JCGM 101:2008</semantic__docidentifier>  <semantic__docnumber>JCGM 101:2008</semantic__docnumber>  <semantic__date type="published">    <semantic__on>2008</semantic__on>  </semantic__date>  <semantic__contributor>    <semantic__role type="publisher"/>    <semantic__organization>      
 <semantic__name language="en" script="Latn">International Bureau of Weights and Measures</semantic__name>
@@ -17334,7 +17334,7 @@ expectation <semantic__stem type="MathML" block="false"><semantic__math xmlns="h
       <semantic__abbreviation>IFCC</semantic__abbreviation>      <semantic__uri>www.ifcc.org</semantic__uri>    </semantic__organization>  </semantic__contributor>  <semantic__contributor>    <semantic__role type="author"/>    <semantic__organization>      
 <semantic__name language="en" script="Latn">International Laboratory Accreditation Cooperation</semantic__name>
       <semantic__abbreviation>ILAC</semantic__abbreviation>      <semantic__uri>www.ilac.org</semantic__uri>    </semantic__organization>  </semantic__contributor>  <semantic__edition>1</semantic__edition>  <semantic__language>en</semantic__language>  <semantic__language>fr</semantic__language>  <semantic__script>Latn</semantic__script>  <semantic__place>    <semantic__city>Paris</semantic__city>  </semantic__place></semantic__bibitem>
-<semantic__bibitem id="semantic__JCGM_102_2011" type="standard" schema-version="v1.2.8">  <semantic__fetched>2024-02-12</semantic__fetched>  
+<semantic__bibitem id="semantic__JCGM_102_2011" type="standard" schema-version="v1.2.8">  <semantic__fetched>2024-02-20</semantic__fetched>  
 <semantic__title format="text/plain" language="en" script="Latn">Supplement 2 to the “Guide to the expression of uncertainty in measurement” – Extension to any number of output quantities</semantic__title>
   <semantic__uri type="citation" language="en" script="Latn">https://www.bipm.org/documents/20126/2071204/JCGM_102_2011_E.pdf/6a3281aa-1397-d703-d7a1-a8d58c9bf2a5</semantic__uri>  <semantic__docidentifier type="BIPM" primary="true" language="en" script="Latn">JCGM 102:2011</semantic__docidentifier>  <semantic__docidentifier type="BIPM" primary="true" language="fr" script="Latn">JCGM 102:2011</semantic__docidentifier>  <semantic__docidentifier type="BIPM" primary="true">JCGM 102:2011</semantic__docidentifier>  <semantic__docnumber>JCGM 102:2011</semantic__docnumber>  <semantic__date type="published">    <semantic__on>2011</semantic__on>  </semantic__date>  <semantic__contributor>    <semantic__role type="publisher"/>    <semantic__organization>      
 <semantic__name language="en" script="Latn">International Bureau of Weights and Measures</semantic__name>
@@ -17355,7 +17355,7 @@ expectation <semantic__stem type="MathML" block="false"><semantic__math xmlns="h
       <semantic__abbreviation>IFCC</semantic__abbreviation>      <semantic__uri>www.ifcc.org</semantic__uri>    </semantic__organization>  </semantic__contributor>  <semantic__contributor>    <semantic__role type="author"/>    <semantic__organization>      
 <semantic__name language="en" script="Latn">International Laboratory Accreditation Cooperation</semantic__name>
       <semantic__abbreviation>ILAC</semantic__abbreviation>      <semantic__uri>www.ilac.org</semantic__uri>    </semantic__organization>  </semantic__contributor>  <semantic__language>en</semantic__language>  <semantic__language>fr</semantic__language>  <semantic__script>Latn</semantic__script>  <semantic__place>    <semantic__city>Paris</semantic__city>  </semantic__place></semantic__bibitem>
-<semantic__bibitem id="semantic__JCGM_200_2012" type="standard" schema-version="v1.2.8">  <semantic__fetched>2024-02-12</semantic__fetched>  
+<semantic__bibitem id="semantic__JCGM_200_2012" type="standard" schema-version="v1.2.8">  <semantic__fetched>2024-02-20</semantic__fetched>  
 <semantic__title format="text/plain" language="en" script="Latn">International vocabulary of metrology – Basic and general concepts and associated terms (VIM)</semantic__title>
   <semantic__uri type="citation" language="en" script="Latn">https://www.bipm.org/documents/20126/2071204/JCGM_200_2012.pdf/f0e1ad45-d337-bbeb-53a6-15fe649d0ff1</semantic__uri>  <semantic__docidentifier type="BIPM" primary="true" language="en" script="Latn">JCGM 200:2012</semantic__docidentifier>  <semantic__docidentifier type="BIPM" primary="true" language="fr" script="Latn">JCGM 200:2012</semantic__docidentifier>  <semantic__docidentifier type="BIPM" primary="true">JCGM 200:2012</semantic__docidentifier>  <semantic__docnumber>JCGM 200:2012</semantic__docnumber>  <semantic__date type="published">    <semantic__on>2012</semantic__on>  </semantic__date>  <semantic__contributor>    <semantic__role type="publisher"/>    <semantic__organization>      
 <semantic__name language="en" script="Latn">International Bureau of Weights and Measures</semantic__name>
@@ -17376,7 +17376,7 @@ expectation <semantic__stem type="MathML" block="false"><semantic__math xmlns="h
       <semantic__abbreviation>IFCC</semantic__abbreviation>      <semantic__uri>www.ifcc.org</semantic__uri>    </semantic__organization>  </semantic__contributor>  <semantic__contributor>    <semantic__role type="author"/>    <semantic__organization>      
 <semantic__name language="en" script="Latn">International Laboratory Accreditation Cooperation</semantic__name>
       <semantic__abbreviation>ILAC</semantic__abbreviation>      <semantic__uri>www.ilac.org</semantic__uri>    </semantic__organization>  </semantic__contributor>  <semantic__edition>3</semantic__edition>  <semantic__language>en</semantic__language>  <semantic__language>fr</semantic__language>  <semantic__script>Latn</semantic__script>  <semantic__place>    <semantic__city>Paris</semantic__city>  </semantic__place></semantic__bibitem>
-<semantic__bibitem id="semantic__ISO_IEC_17000_2004" type="standard" schema-version="v1.2.8">  <semantic__fetched>2024-02-12</semantic__fetched>  
+<semantic__bibitem id="semantic__ISO_IEC_17000_2004" type="standard" schema-version="v1.2.8">  <semantic__fetched>2024-02-20</semantic__fetched>  
 <semantic__title type="title-intro" format="text/plain" language="en" script="Latn">Conformity assessment</semantic__title>
   
 <semantic__title type="title-main" format="text/plain" language="en" script="Latn">Vocabulary and general principles</semantic__title>
@@ -17390,7 +17390,7 @@ expectation <semantic__stem type="MathML" block="false"><semantic__math xmlns="h
 <semantic__name>ISO/IEC</semantic__name>
       </semantic__organization>    </semantic__owner>  </semantic__copyright>  <semantic__relation type="updates">    <semantic__bibitem type="standard">      <semantic__formattedref format="text/plain">ISO/IEC 17000:2020</semantic__formattedref>      <semantic__docidentifier type="ISO" primary="true">ISO/IEC 17000:2020</semantic__docidentifier>      <semantic__date type="circulated">        <semantic__on>2020-05-26</semantic__on>      </semantic__date>    </semantic__bibitem>
   </semantic__relation>  <semantic__place>Geneva</semantic__place></semantic__bibitem>
-<semantic__bibitem id="semantic__ISO_3534_1_2006" type="standard" schema-version="v1.2.8">  <semantic__fetched>2024-02-12</semantic__fetched>  
+<semantic__bibitem id="semantic__ISO_3534_1_2006" type="standard" schema-version="v1.2.8">  <semantic__fetched>2024-02-20</semantic__fetched>  
 <semantic__title type="title-intro" format="text/plain" language="en" script="Latn">Statistics</semantic__title>
   
 <semantic__title type="title-main" format="text/plain" language="en" script="Latn">Vocabulary and symbols</semantic__title>
@@ -17404,7 +17404,7 @@ expectation <semantic__stem type="MathML" block="false"><semantic__math xmlns="h
 <semantic__name>ISO</semantic__name>
       </semantic__organization>    </semantic__owner>  </semantic__copyright>  <semantic__relation type="obsoletes">    <semantic__bibitem type="standard">      <semantic__formattedref format="text/plain">ISO 3534-1:1993</semantic__formattedref>      <semantic__docidentifier type="ISO" primary="true">ISO 3534-1:1993</semantic__docidentifier>    </semantic__bibitem>
   </semantic__relation>  <semantic__place>Geneva</semantic__place></semantic__bibitem>
-<semantic__bibitem id="semantic__ISO_3534_2_2006" type="standard" schema-version="v1.2.8">  <semantic__fetched>2024-02-12</semantic__fetched>  
+<semantic__bibitem id="semantic__ISO_3534_2_2006" type="standard" schema-version="v1.2.8">  <semantic__fetched>2024-02-20</semantic__fetched>  
 <semantic__title type="title-intro" format="text/plain" language="en" script="Latn">Statistics</semantic__title>
   
 <semantic__title type="title-main" format="text/plain" language="en" script="Latn">Vocabulary and symbols</semantic__title>
@@ -17418,7 +17418,7 @@ expectation <semantic__stem type="MathML" block="false"><semantic__math xmlns="h
 <semantic__name>ISO</semantic__name>
       </semantic__organization>    </semantic__owner>  </semantic__copyright>  <semantic__relation type="obsoletes">    <semantic__bibitem type="standard">      <semantic__formattedref format="text/plain">ISO 3534-2:1993</semantic__formattedref>      <semantic__docidentifier type="ISO" primary="true">ISO 3534-2:1993</semantic__docidentifier>    </semantic__bibitem>
   </semantic__relation>  <semantic__place>Geneva</semantic__place></semantic__bibitem>
-<semantic__bibitem id="semantic__ISO_10576_1_2003" type="standard" schema-version="v1.2.8">  <semantic__fetched>2024-02-12</semantic__fetched>  
+<semantic__bibitem id="semantic__ISO_10576_1_2003" type="standard" schema-version="v1.2.8">  <semantic__fetched>2024-02-20</semantic__fetched>  
 <semantic__title type="title-intro" format="text/plain" language="en" script="Latn">Statistical methods</semantic__title>
   
 <semantic__title type="title-main" format="text/plain" language="en" script="Latn">Guidelines for the evaluation of conformity with specified requirements</semantic__title>
@@ -17494,7 +17494,7 @@ expectation <semantic__stem type="MathML" block="false"><semantic__math xmlns="h
 </semantic__bibitem><semantic__bibitem id="semantic__ref20">
   <semantic__formattedref format="application/x-isodoc+xml">International Laboratory Accreditation Cooperation. ILAC-G8:1996 <semantic__em>Guidelines on assessment and reporting of compliance with specification</semantic__em>. Silverwater, Australia, 1996.</semantic__formattedref>
   <semantic__docidentifier type="metanorma">[20]</semantic__docidentifier>
-</semantic__bibitem><semantic__bibitem id="semantic__ref21" type="standard" schema-version="v1.2.8">  <semantic__fetched>2024-02-12</semantic__fetched>  
+</semantic__bibitem><semantic__bibitem id="semantic__ref21" type="standard" schema-version="v1.2.8">  <semantic__fetched>2024-02-20</semantic__fetched>  
 <semantic__title type="title-intro" format="text/plain" language="en" script="Latn">Geometrical Product Specifications (GPS)</semantic__title>
   
 <semantic__title type="title-main" format="text/plain" language="en" script="Latn">Inspection by measurement of workpieces and measuring equipment</semantic__title>
@@ -17507,7 +17507,7 @@ expectation <semantic__stem type="MathML" block="false"><semantic__math xmlns="h
       <semantic__abbreviation>ISO</semantic__abbreviation>      <semantic__uri>www.iso.org</semantic__uri>    </semantic__organization>  </semantic__contributor>  <semantic__edition>1</semantic__edition>  <semantic__language>en</semantic__language>  <semantic__script>Latn</semantic__script>  <semantic__status>    <semantic__stage>95</semantic__stage>    <semantic__substage>99</semantic__substage>  </semantic__status>  <semantic__copyright>    <semantic__from>1998</semantic__from>    <semantic__owner>      <semantic__organization>        
 <semantic__name>ISO</semantic__name>
       </semantic__organization>    </semantic__owner>  </semantic__copyright>  <semantic__relation type="updates">    <semantic__bibitem type="standard">      <semantic__formattedref format="text/plain">ISO 14253-1:2013</semantic__formattedref>      <semantic__docidentifier type="ISO" primary="true">ISO 14253-1:2013</semantic__docidentifier>      <semantic__date type="circulated">        <semantic__on>2013-08-22</semantic__on>      </semantic__date>    </semantic__bibitem>
-  </semantic__relation>  <semantic__place>Geneva</semantic__place></semantic__bibitem><semantic__bibitem id="semantic__ref22" type="standard" schema-version="v1.2.8">  <semantic__fetched>2024-02-12</semantic__fetched>  
+  </semantic__relation>  <semantic__place>Geneva</semantic__place></semantic__bibitem><semantic__bibitem id="semantic__ref22" type="standard" schema-version="v1.2.8">  <semantic__fetched>2024-02-20</semantic__fetched>  
 <semantic__title type="title-intro" format="text/plain" language="en" script="Latn">Statistical methods</semantic__title>
   
 <semantic__title type="title-main" format="text/plain" language="en" script="Latn">Guidelines for the evaluation of conformity with specified requirements</semantic__title>
@@ -17520,7 +17520,7 @@ expectation <semantic__stem type="MathML" block="false"><semantic__math xmlns="h
       <semantic__abbreviation>ISO</semantic__abbreviation>      <semantic__uri>www.iso.org</semantic__uri>    </semantic__organization>  </semantic__contributor>  <semantic__edition>1</semantic__edition>  <semantic__language>en</semantic__language>  <semantic__script>Latn</semantic__script>  <semantic__abstract format="text/plain" language="en" script="Latn">ISO 10576-1:2002 sets out guidelines for drafting requirements that may be formulated as limiting values for a quantifiable characteristic and for checking conformity to such requirements when the test or measurement result is subject to uncertainty. It is applicable whenever the uncertainty may be quantified according to the principles laid down in the Guide to the expression of uncertainty in measurement. The term uncertainty is thus a descriptor for all elements of variation in the measurement result, including uncertainty due to sampling. It is outside the scope of ISO 10576-1:2002 to give rules for how to act when an inconclusive result of a conformity test has been obtained.</semantic__abstract>  <semantic__status>    <semantic__stage>95</semantic__stage>    <semantic__substage>99</semantic__substage>  </semantic__status>  <semantic__copyright>    <semantic__from>2003</semantic__from>    <semantic__owner>      <semantic__organization>        
 <semantic__name>ISO</semantic__name>
       </semantic__organization>    </semantic__owner>  </semantic__copyright>  <semantic__relation type="updates">    <semantic__bibitem type="standard">      <semantic__formattedref format="text/plain">ISO 10576:2022</semantic__formattedref>      <semantic__docidentifier type="ISO" primary="true">ISO 10576:2022</semantic__docidentifier>      <semantic__date type="circulated">        <semantic__on>2022-08-05</semantic__on>      </semantic__date>    </semantic__bibitem>
-  </semantic__relation>  <semantic__place>Geneva</semantic__place></semantic__bibitem><semantic__bibitem id="semantic__ref23" type="standard" schema-version="v1.2.8">  <semantic__fetched>2024-02-12</semantic__fetched>  
+  </semantic__relation>  <semantic__place>Geneva</semantic__place></semantic__bibitem><semantic__bibitem id="semantic__ref23" type="standard" schema-version="v1.2.8">  <semantic__fetched>2024-02-20</semantic__fetched>  
 <semantic__title type="title-main" format="text/plain" language="en" script="Latn">General requirements for the competence of testing and calibration laboratories</semantic__title>
   
 <semantic__title type="main" format="text/plain" language="en" script="Latn">General requirements for the competence of testing and calibration laboratories</semantic__title>
@@ -17533,7 +17533,7 @@ expectation <semantic__stem type="MathML" block="false"><semantic__math xmlns="h
       </semantic__organization>    </semantic__owner>  </semantic__copyright>  <semantic__relation type="obsoletes">    <semantic__bibitem type="standard">      <semantic__formattedref format="text/plain">ISO/IEC 17025:1999</semantic__formattedref>      <semantic__docidentifier type="ISO" primary="true">ISO/IEC 17025:1999</semantic__docidentifier>    </semantic__bibitem>
   </semantic__relation>  <semantic__relation type="updates">    <semantic__bibitem type="standard">      <semantic__formattedref format="text/plain">ISO/IEC 17025:2017</semantic__formattedref>      <semantic__docidentifier type="ISO" primary="true">ISO/IEC 17025:2017</semantic__docidentifier>      <semantic__date type="circulated">        <semantic__on>2017-11-29</semantic__on>      </semantic__date>    </semantic__bibitem>
   </semantic__relation>  <semantic__relation type="updates">    <semantic__bibitem type="standard">      <semantic__formattedref format="text/plain">ISO/IEC 17025:2005/Cor 1:2006</semantic__formattedref>      <semantic__docidentifier type="ISO" primary="true">ISO/IEC 17025:2005/Cor 1:2006</semantic__docidentifier>      <semantic__date type="circulated">        <semantic__on>2017-11-29</semantic__on>      </semantic__date>    </semantic__bibitem>
-  </semantic__relation>  <semantic__place>Geneva</semantic__place></semantic__bibitem><semantic__bibitem id="semantic__ref24" type="standard" schema-version="v1.2.8">  <semantic__fetched>2024-02-12</semantic__fetched>  
+  </semantic__relation>  <semantic__place>Geneva</semantic__place></semantic__bibitem><semantic__bibitem id="semantic__ref24" type="standard" schema-version="v1.2.8">  <semantic__fetched>2024-02-20</semantic__fetched>  
 <semantic__title type="title-intro" format="text/plain" language="en" script="Latn">Geometrical Product Specifications (GPS)</semantic__title>
   
 <semantic__title type="title-main" format="text/plain" language="en" script="Latn">Length standards</semantic__title>
@@ -17857,7 +17857,7 @@ IFCC, ILAC, ISO, IUPAC, IUPAP and OIML).</p>
 <p id="_afb8979d-dc4f-a871-9d66-eddf301ca64e">The JCGM and its member organizations have published this document to enhance access to information about metrology. They endeavor to update it on a regular basis, but cannot guarantee the accuracy at all times and shall not be responsible for any direct or indirect damage that may result from its use. Any reference to commercial products of any kind (including but not restricted to any software, data or hardware) or links to websites, over which the JCGM and its member organizations have no control and for which they assume no responsibility, does not imply any approval, endorsement or recommendation by the JCGM and its member organizations.</p>
 </clause>
 </legal-statement>
-</boilerplate><preface><clause type="toc" id="_49c1ef0f-f562-4c6b-aba3-d36ec16cc019" displayorder="1"><title depth="1">Contents</title></clause>
+</boilerplate><preface><clause type="toc" id="_a3c08f4f-20a3-4595-914a-a5276909dd03" displayorder="1"><title depth="1">Contents</title></clause>
 <foreword id="_foreword" obligation="informative" displayorder="2">
 <title>Foreword</title>
 <p id="_06e80692-d05a-b976-dddf-314da409f870">In 1997 a Joint Committee for Guides in Metrology
@@ -24095,7 +24095,7 @@ an instrument that is required to have an error of indication in the interval
 <asciimath>[-E_{"max"};E_{"max"}]</asciimath></stem>. The instrument is accepted as conforming
 to the specified requirement if it meets the following criteria:</p>
 
-<ol id="_a03054a5-0824-e9cb-022e-c1598ff7ed5f" type="arabic"><li id="_2301d699-d3db-4fda-9778-607462ca076a" label="1"><p id="_bd187faf-6bd4-460b-d92d-f68d31311f0c">in measuring a calibrated standard, the best estimate e of the instrument
+<ol id="_a03054a5-0824-e9cb-022e-c1598ff7ed5f" type="arabic"><li id="_645d93e0-b630-4f58-9b99-e5f25c1dd0ef" label="1"><p id="_bd187faf-6bd4-460b-d92d-f68d31311f0c">in measuring a calibrated standard, the best estimate e of the instrument
 error of indication E satisfies</p>
 <formula id="_4049353f-49df-e50c-fb93-850fc7306c63" unnumbered="true"><stem type="MathML" block="true"><math xmlns="http://www.w3.org/1998/Math/MathML">
   <mstyle displaystyle="true">
@@ -29132,7 +29132,7 @@ normal PDF, <stem type="MathML" block="false"><math xmlns="http://www.w3.org/199
 <clause id="sec_A.2.2" obligation="informative" inline-header="true"><title>A.2.2.</title>
 <p id="_083be2dc-bae1-a694-7a00-ffc1c0f46693">There are two common ways that one finds integrals of normal PDFs expressed:</p>
 
-<ol id="_95bd486c-8710-6102-c8c0-64b35ac61dc7" type="arabic"><li id="_3b5fd32a-54fd-488c-adcf-f6cb158bfb16" label="1"><p id="_11ea115c-f40e-1771-8321-a0ca2904721a">the standard normal distribution function, <stem type="MathML" block="false"><math xmlns="http://www.w3.org/1998/Math/MathML">
+<ol id="_95bd486c-8710-6102-c8c0-64b35ac61dc7" type="arabic"><li id="_91ff660f-b032-4d92-9b54-915035ff0fe4" label="1"><p id="_11ea115c-f40e-1771-8321-a0ca2904721a">the standard normal distribution function, <stem type="MathML" block="false"><math xmlns="http://www.w3.org/1998/Math/MathML">
   <mstyle displaystyle="false">
     <mi mathvariant="normal">Φ</mi>
     <mrow>
@@ -29214,7 +29214,7 @@ normal PDF, <stem type="MathML" block="false"><math xmlns="http://www.w3.org/199
 
 <p id="_e8f61aeb-f452-8a98-d0df-ea97b969c97d">and</p>
 </li>
-<li id="_8680f6a2-675f-4203-b5da-92431c4a2826" label="2"><p id="_63402752-997b-6cbc-22a9-207fcb29890a">the error function, <stem type="MathML" block="false"><math xmlns="http://www.w3.org/1998/Math/MathML">
+<li id="_8cb5829b-5408-447f-946c-34f5c3c1c7f2" label="2"><p id="_63402752-997b-6cbc-22a9-207fcb29890a">the error function, <stem type="MathML" block="false"><math xmlns="http://www.w3.org/1998/Math/MathML">
   <mstyle displaystyle="false">
     <mtext>erf</mtext>
     <mrow>

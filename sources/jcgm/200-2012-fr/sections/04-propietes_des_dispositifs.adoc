@@ -1,5 +1,6 @@
 
 [[sec_4]]
+[heading=Terms and definitions]
 == Propriétés des dispositifs de mesure
 
 [[sec_4.1]]

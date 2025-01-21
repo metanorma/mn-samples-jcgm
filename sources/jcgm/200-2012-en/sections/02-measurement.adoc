@@ -1,5 +1,6 @@
 
 [[sec_2]]
+[heading=Terms and definitions]
 == Measurement
 
 [[sec_2.1]]

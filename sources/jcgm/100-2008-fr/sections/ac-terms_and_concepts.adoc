@@ -17,6 +17,7 @@ L'ISO 3534-1:1993 a été annulée et remplacée par l'ISO 3534-1:2006. Il est �
 --
 
 [[scls_C-2]]
+[heading=Terms and definitions]
 === Définitions
 
 Comme à l'<<cls_2>> et en <<annexB>>, l'utilisation de parenthèses autour de mots de certains termes signifie que ces mots peuvent être omis s'il n'y a pas d'ambiguïté à craindre.
@@ -142,8 +143,8 @@ NOTE: La plupart des mesures statistiques de corrélation ne mesurent que le deg
 
 [[scls_C-2-9]]
 ==== espérance mathématique (d'une variable ((aléatoire)) ou d'une loi de ((probabilité)))
-*alt:[valeur espérée]*
-*alt:[moyenne]*
+alt:[*valeur espérée*]
+alt:[*moyenne*]
 
 . index-range:espMath[(((espérance mathématique (ou valeur espérée))))]Pour une variable ((aléatoire)) discrète stem:[ii(X)] prenant des valeurs stem:[x_i] avec des ((probabilité))s stem:[p_i], l'espérance mathématique, si elle existe, est(((moyenne)))
 +
@@ -233,7 +234,7 @@ NOTE: Le moment centré d'ordre 2(((moment centré d'ordre stem:[q]))) est la _v
 
 [[scls_C-2-14]]
 ==== loi normale
-*alt:[loi de Laplace-Gauss]*
+alt:[*loi de Laplace-Gauss*]
 
 index-range:loiNorm[(((loi normale)))]loi de ((probabilité)) d'une variable ((aléatoire)) continue stem:[ii(X)], dont la densité de ((probabilité)) est(((loi de Laplace-Gauss)))
 
@@ -296,7 +297,7 @@ Commentaire du _Guide_ pour la version française: le terme «((distribution de 
 
 [[scls_C-2-19]]
 ==== moyenne arithmétique
-*alt:[moyenne]*
+alt:[*moyenne*]
 
 index-range:moyArit[(((moyenne arithmétique)))]somme des valeurs divisée par le nombre de valeurs
 

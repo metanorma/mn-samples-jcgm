@@ -1,5 +1,6 @@
 
 [[sec_1]]
+[heading=Terms and definitions]
 == Quantities and units
 
 [[sec_1.1]]

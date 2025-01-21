@@ -1,5 +1,6 @@
 
 [[sec_1]]
+[heading=Terms and definitions]
 == Grandeurs et unités
 
 [[sec_1.1]]

@@ -1,6 +1,7 @@
 
 
 [[sec_3]]
+[heading=Terms and definitions]
 == Devices for measurement
 
 [[sec_3.1]]

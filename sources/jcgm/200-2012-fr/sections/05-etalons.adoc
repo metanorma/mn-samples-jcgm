@@ -1,5 +1,6 @@
 
 [[sec_5]]
+[heading=Terms and definitions]
 == Étalons
 
 [[sec_5.1]]

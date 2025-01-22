@@ -1,6 +1,38 @@
 WARNING: Font file '/github/home/.metanorma/fonts/cambria.ttc' (font name 'Cambria Math', font style 'normal', font weight 'normal') doesn't exist. Replaced by '/github/home/.metanorma/fonts/NotoSans-Regular.ttf'.
 WARNING: Font file '/github/home/.metanorma/fonts/cambria.ttc' (font name 'Cambria Math', font style 'normal', font weight 'bold') doesn't exist. Replaced by '/github/home/.metanorma/fonts/NotoSans-Bold.ttf'.
 
+PDF isn't valid PDF/UA-1:
+ValidationResult [flavour=ua1, totalAssertions=1403796, assertions=[
+TestAssertion [ruleId=RuleId [specification=ISO 14289-1:2014, clause=7.2, testNumber=27], status=failed,
+message=TOC element may contain only TOC, TOCI and Caption elements,
+location=Location [level=CosDocument, context=root/document[0]/StructTreeRoot[0](17577 0 obj PDStructTreeRoot)/K[0](17579 0 obj SEDocument Document)/K[3](19222 0 obj SEPart Part)/K[0](19254 0 obj SESect Sect)/K[0](19255 0 obj SEDiv Div)/K[0](19256 0 obj SETOC TOC)], locationContext=null, errorMessage=null], 
+TestAssertion [ruleId=RuleId [specification=ISO 14289-1:2014, clause=7.2, testNumber=36], status=failed,
+message=THead element may contain only TR elements,
+location=Location [level=CosDocument, context=root/document[0]/StructTreeRoot[0](17577 0 obj PDStructTreeRoot)/K[0](17579 0 obj SEDocument Document)/K[6](19225 0 obj SEPart Part)/K[0](19630 0 obj SESect Sect)/K[0](19631 0 obj SEDiv Div)/K[4](19635 0 obj SEDiv Div)/K[5](19788 0 obj SEDiv Div)/K[3](2656 0 obj SEDiv Div)/K[8](20275 0 obj SETable Table)/K[0](2737 0 obj SETHead THead)], locationContext=null, errorMessage=null], 
+TestAssertion [ruleId=RuleId [specification=ISO 14289-1:2014, clause=7.2, testNumber=36], status=failed,
+message=THead element may contain only TR elements,
+location=Location [level=CosDocument, context=root/document[0]/StructTreeRoot[0](17577 0 obj PDStructTreeRoot)/K[0](17579 0 obj SEDocument Document)/K[7](19226 0 obj SEPart Part)/K[0](20994 0 obj SESect Sect)/K[0](20995 0 obj SEDiv Div)/K[4](21000 0 obj SEDiv Div)/K[5](21740 0 obj SEDiv Div)/K[3](6879 0 obj SEDiv Div)/K[5](21959 0 obj SETable Table)/K[0](7008 0 obj SETHead THead)], locationContext=null, errorMessage=null], 
+TestAssertion [ruleId=RuleId [specification=ISO 14289-1:2014, clause=7.2, testNumber=36], status=failed,
+message=THead element may contain only TR elements,
+location=Location [level=CosDocument, context=root/document[0]/StructTreeRoot[0](17577 0 obj PDStructTreeRoot)/K[0](17579 0 obj SEDocument Document)/K[7](19226 0 obj SEPart Part)/K[0](20994 0 obj SESect Sect)/K[0](20995 0 obj SEDiv Div)/K[6](21002 0 obj SEDiv Div)/K[1](22571 0 obj SEDiv Div)/K[3](8246 0 obj SEDiv Div)/K[3](22591 0 obj SETable Table)/K[0](8291 0 obj SETHead THead)], locationContext=null, errorMessage=null], 
+TestAssertion [ruleId=RuleId [specification=ISO 14289-1:2014, clause=7.2, testNumber=36], status=failed,
+message=THead element may contain only TR elements,
+location=Location [level=CosDocument, context=root/document[0]/StructTreeRoot[0](17577 0 obj PDStructTreeRoot)/K[0](17579 0 obj SEDocument Document)/K[7](19226 0 obj SEPart Part)/K[0](20994 0 obj SESect Sect)/K[0](20995 0 obj SEDiv Div)/K[6](21002 0 obj SEDiv Div)/K[6](22576 0 obj SEDiv Div)/K[6](9529 0 obj SEDiv Div)/K[9](23154 0 obj SETable Table)/K[0](9656 0 obj SETHead THead)], locationContext=null, errorMessage=null], 
+TestAssertion [ruleId=RuleId [specification=ISO 14289-1:2014, clause=7.2, testNumber=36], status=failed,
+message=THead element may contain only TR elements,
+location=Location [level=CosDocument, context=root/document[0]/StructTreeRoot[0](17577 0 obj PDStructTreeRoot)/K[0](17579 0 obj SEDocument Document)/K[7](19226 0 obj SEPart Part)/K[0](20994 0 obj SESect Sect)/K[0](20995 0 obj SEDiv Div)/K[7](21003 0 obj SEDiv Div)/K[5](23264 0 obj SEDiv Div)/K[3](23709 0 obj SEDiv Div)/K[5](23725 0 obj SETable Table)/K[0](10672 0 obj SETHead THead)], locationContext=null, errorMessage=null], 
+TestAssertion [ruleId=RuleId [specification=ISO 14289-1:2014, clause=7.2, testNumber=36], status=failed,
+message=THead element may contain only TR elements,
+location=Location [level=CosDocument, context=root/document[0]/StructTreeRoot[0](17577 0 obj PDStructTreeRoot)/K[0](17579 0 obj SEDocument Document)/K[7](19226 0 obj SEPart Part)/K[0](20994 0 obj SESect Sect)/K[0](20995 0 obj SEDiv Div)/K[7](21003 0 obj SEDiv Div)/K[5](23264 0 obj SEDiv Div)/K[4](23710 0 obj SEDiv Div)/K[14](23801 0 obj SETable Table)/K[0](10905 0 obj SETHead THead)], locationContext=null, errorMessage=null], 
+TestAssertion [ruleId=RuleId [specification=ISO 14289-1:2014, clause=7.2, testNumber=36], status=failed,
+message=THead element may contain only TR elements,
+location=Location [level=CosDocument, context=root/document[0]/StructTreeRoot[0](17577 0 obj PDStructTreeRoot)/K[0](17579 0 obj SEDocument Document)/K[7](19226 0 obj SEPart Part)/K[0](20994 0 obj SESect Sect)/K[0](20995 0 obj SEDiv Div)/K[7](21003 0 obj SEDiv Div)/K[5](23264 0 obj SEDiv Div)/K[5](23711 0 obj SEDiv Div)/K[4](23936 0 obj SETable Table)/K[0](10967 0 obj SETHead THead)], locationContext=null, errorMessage=null], 
+TestAssertion [ruleId=RuleId [specification=ISO 14289-1:2014, clause=7.2, testNumber=36], status=failed,
+message=THead element may contain only TR elements,
+location=Location [level=CosDocument, context=root/document[0]/StructTreeRoot[0](17577 0 obj PDStructTreeRoot)/K[0](17579 0 obj SEDocument Document)/K[7](19226 0 obj SEPart Part)/K[0](20994 0 obj SESect Sect)/K[0](20995 0 obj SEDiv Div)/K[7](21003 0 obj SEDiv Div)/K[5](23264 0 obj SEDiv Div)/K[5](23711 0 obj SEDiv Div)/K[12](23939 0 obj SETable Table)/K[0](11129 0 obj SETHead THead)], locationContext=null, errorMessage=null], 
+TestAssertion [ruleId=RuleId [specification=ISO 14289-1:2014, clause=7.2, testNumber=36], status=failed,
+message=THead element may contain only TR elements,
+location=Location [level=CosDocument, context=root/document[0]/StructTreeRoot[0](17577 0 obj PDStructTreeRoot)/K[0](17579 0 obj SEDocument Document)/K[8](19227 0 obj SEPart Part)/K[0](24854 0 obj SESect Sect)/K[0](24855 0 obj SEDiv Div)/K[0](24856 0 obj SEDiv Div)/K[0](24857 0 obj SEDiv Div)/K[0](24858 0 obj SEDiv Div)/K[0](24859 0 obj SEDiv Div)/K[0](24860 0 obj SETable Table)/K[0](12376 0 obj SETHead THead)], locationContext=null, errorMessage=null]], isCompliant=false]
 WARNING: Font file '/github/home/.metanorma/fonts/cambria.ttc' (font name 'Cambria Math', font style 'normal', font weight 'normal') doesn't exist. Replaced by '/github/home/.metanorma/fonts/NotoSans-Regular.ttf'.
 WARNING: Font file '/github/home/.metanorma/fonts/cambria.ttc' (font name 'Cambria Math', font style 'normal', font weight 'bold') doesn't exist. Replaced by '/github/home/.metanorma/fonts/NotoSans-Bold.ttf'.
 

@@ -9,4 +9,4 @@
 <name>Bureau International des Poids et Mesures</name>
 <abbreviation>BIPM</abbreviation></organization></contributor><edition>3</edition><language>en</language><script>Latn</script><status><stage>in-force</stage></status><copyright><from>2012</from><owner><organization>
 <name>Bureau International des Poids et Mesures</name>
-<abbreviation>BIPM</abbreviation></organization></owner></copyright><ext><doctype>guide</doctype><editorialgroup><committee acronym="JCGM" language="en" script="Latn">Joint Committee for Guides in Metrology</committee></editorialgroup><structuredidentifier><docnumber>200</docnumber></structuredidentifier></ext></bibdata>
+<abbreviation>BIPM</abbreviation></organization></owner></copyright><ext><doctype>guide</doctype><flavor>bipm</flavor><editorialgroup><committee acronym="JCGM" language="en" script="Latn">Joint Committee for Guides in Metrology</committee></editorialgroup><structuredidentifier><docnumber>200</docnumber></structuredidentifier></ext></bibdata>

@@ -2,7 +2,7 @@ WARNING: Font file '/github/home/.metanorma/fonts/cambria.ttc' (font name 'Cambr
 WARNING: Font file '/github/home/.metanorma/fonts/cambria.ttc' (font name 'Cambria Math', font style 'normal', font weight 'bold') doesn't exist. Replaced by '/github/home/.metanorma/fonts/NotoSans-Bold.ttf'.
 
 PDF isn't valid PDF/UA-1:
-ValidationResult [flavour=ua1, totalAssertions=459733, assertions=[
+ValidationResult [flavour=ua1, totalAssertions=465179, assertions=[
 TestAssertion [ruleId=RuleId [specification=ISO 14289-1:2014, clause=7.2, testNumber=27], status=failed,
 message=TOC element may contain only TOC, TOCI and Caption elements,
 location=Location [level=CosDocument, context=root/document[0]/StructTreeRoot[0](4305 0 obj PDStructTreeRoot)/K[0](4307 0 obj SEDocument Document)/K[3](4608 0 obj SEPart Part)/K[0](4640 0 obj SESect Sect)/K[0](4641 0 obj SEDiv Div)/K[0](4642 0 obj SETOC TOC)], locationContext=null, errorMessage=null]], isCompliant=false]

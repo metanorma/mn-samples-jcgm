@@ -3,13 +3,13 @@ WARNING: Font file '/github/home/.metanorma/fonts/cambria.ttc' (font name 'Cambr
 
 Font "Cambria Math,italic,400" not found. Substituting with "Cambria Math,normal,400".
 PDF isn't valid PDF/UA-1:
-ValidationResult [flavour=ua1, totalAssertions=461023, assertions=[
+ValidationResult [flavour=ua1, totalAssertions=461464, assertions=[
 TestAssertion [ruleId=RuleId [specification=ISO 14289-1:2014, clause=7.2, testNumber=27], status=failed,
 message=TOC element may contain only TOC, TOCI and Caption elements,
-location=Location [level=CosDocument, context=root/document[0]/StructTreeRoot[0](5160 0 obj PDStructTreeRoot)/K[0](5162 0 obj SEDocument Document)/K[3](5421 0 obj SEPart Part)/K[0](5450 0 obj SESect Sect)/K[0](5451 0 obj SEDiv Div)/K[0](5452 0 obj SETOC TOC)], locationContext=null, errorMessage=null], 
+location=Location [level=CosDocument, context=root/document[0]/StructTreeRoot[0](5159 0 obj PDStructTreeRoot)/K[0](5161 0 obj SEDocument Document)/K[3](5420 0 obj SEPart Part)/K[0](5449 0 obj SESect Sect)/K[0](5450 0 obj SEDiv Div)/K[0](5451 0 obj SETOC TOC)], locationContext=null, errorMessage=null], 
 TestAssertion [ruleId=RuleId [specification=ISO 14289-1:2014, clause=7.2, testNumber=36], status=failed,
 message=THead element may contain only TR elements,
-location=Location [level=CosDocument, context=root/document[0]/StructTreeRoot[0](5160 0 obj PDStructTreeRoot)/K[0](5162 0 obj SEDocument Document)/K[6](5424 0 obj SEPart Part)/K[0](5789 0 obj SESect Sect)/K[0](5790 0 obj SEDiv Div)/K[7](5797 0 obj SEDiv Div)/K[3](6237 0 obj SEDiv Div)/K[3](6319 0 obj SEDiv Div)/K[4](6369 0 obj SETable Table)/K[0](1770 0 obj SETHead THead)], locationContext=null, errorMessage=null]], isCompliant=false]
+location=Location [level=CosDocument, context=root/document[0]/StructTreeRoot[0](5159 0 obj PDStructTreeRoot)/K[0](5161 0 obj SEDocument Document)/K[6](5423 0 obj SEPart Part)/K[0](5788 0 obj SESect Sect)/K[0](5789 0 obj SEDiv Div)/K[7](5796 0 obj SEDiv Div)/K[3](6236 0 obj SEDiv Div)/K[3](6318 0 obj SEDiv Div)/K[4](6368 0 obj SETable Table)/K[0](1770 0 obj SETHead THead)], locationContext=null, errorMessage=null]], isCompliant=false]
 WARNING: Font file '/github/home/.metanorma/fonts/cambria.ttc' (font name 'Cambria Math', font style 'normal', font weight 'normal') doesn't exist. Replaced by '/github/home/.metanorma/fonts/NotoSans-Regular.ttf'.
 WARNING: Font file '/github/home/.metanorma/fonts/cambria.ttc' (font name 'Cambria Math', font style 'normal', font weight 'bold') doesn't exist. Replaced by '/github/home/.metanorma/fonts/NotoSans-Bold.ttf'.
 

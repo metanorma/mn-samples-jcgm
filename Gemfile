@@ -10,3 +10,5 @@ gem "sassc"
 #gem "metanorma-bipm", git: "https://github.com/metanorma/metanorma-bipm", branch: "main"
 #gem "isodoc-i18n", git: "https://github.com/metanorma/isodoc-i18n", branch: "main"
 #gem "mn-requirements", git: "https://github.com/metanorma/mn-requirements", branch: "main"
+
+gem 'plurimath', path: "~/work/metanorma/plurimath"

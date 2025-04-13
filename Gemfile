@@ -11,5 +11,7 @@ gem "sassc"
 #gem "isodoc-i18n", git: "https://github.com/metanorma/isodoc-i18n", branch: "main"
 #gem "mn-requirements", git: "https://github.com/metanorma/mn-requirements", branch: "main"
 
+gem "unitsml", "0.4.4"
+
 gem 'plurimath', git: 'https://github.com/alex-sc/plurimath', branch: "main"
 gem 'isodoc', github: 'metanorma/isodoc', branch: "feature/localize_maths_performance_fix"

@@ -12,3 +12,4 @@ gem "sassc"
 #gem "mn-requirements", git: "https://github.com/metanorma/mn-requirements", branch: "main"
 
 gem 'plurimath', git: 'https://github.com/alex-sc/plurimath', branch: "main"
+gem 'isodoc', github: 'metanorma/isodoc', branch: "feature/localize_maths_performance_fix"

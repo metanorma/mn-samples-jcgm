@@ -3,9 +3,6 @@
 name: docker
 
 on:
-  push:
-    branches: [ main ]
-  pull_request:
   workflow_dispatch:
 
 permissions:
@@ -19,7 +16,6 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  if: false
   build:
     runs-on: ubuntu-latest
     container:

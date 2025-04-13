@@ -33,6 +33,7 @@ jobs:
       - name: Metanorma generate site
         uses: actions-mn/build-and-publish@v1
         with:
+          use-bundler: true
           agree-to-terms: true
           destination: artifact
           artifact-name: ${{ github.event.repository.name }}-${{ runner.os }}

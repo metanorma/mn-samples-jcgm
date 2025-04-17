@@ -22,6 +22,7 @@ on:
   status: {}
 jobs:
   automerge:
+    if: false
     runs-on: ubuntu-latest
     steps:
       - id: automerge

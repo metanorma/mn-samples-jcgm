@@ -1,0 +1,9 @@
+WARNING: Font file '/github/home/.metanorma/fonts/cambria.ttc' (font name 'Cambria Math', font style 'normal', font weight 'normal') doesn't exist. Replaced by '/github/home/.metanorma/fonts/NotoSans-Regular.ttf'.
+WARNING: Font file '/github/home/.metanorma/fonts/cambria.ttc' (font name 'Cambria Math', font style 'normal', font weight 'bold') doesn't exist. Replaced by '/github/home/.metanorma/fonts/NotoSans-Bold.ttf'.
+
+Page 34: Unresolved ID reference "figure6" found.
+Page 35: Unresolved ID reference "figure6" found.
+1 link target could not be fully resolved and now point to the top of the page or is dysfunctional.
+WARNING: Font file '/github/home/.metanorma/fonts/cambria.ttc' (font name 'Cambria Math', font style 'normal', font weight 'normal') doesn't exist. Replaced by '/github/home/.metanorma/fonts/NotoSans-Regular.ttf'.
+WARNING: Font file '/github/home/.metanorma/fonts/cambria.ttc' (font name 'Cambria Math', font style 'normal', font weight 'bold') doesn't exist. Replaced by '/github/home/.metanorma/fonts/NotoSans-Bold.ttf'.
+

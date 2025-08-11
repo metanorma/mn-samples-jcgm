@@ -1,0 +1,102 @@
+<relaton-collection xmlns="https://open.ribose.com/relaton-xml"><title>JCGM Publications in Metanorma</title><contributor><role type='author'/><organization><name>JCGM</name></organization></contributor><relation type='partOf'><bibdata type="standard" schema-version="v1.2.9">
+  <title type="title-main" format="text/plain" language="en">Evaluation of measurement data</title>
+  <title type="title-part" format="text/plain" language="en">The role of measurement uncertainty in conformity assessment</title>
+  <title type="title-main" format="text/plain" language="fr">Évaluation des données de mesure</title>
+  <title type="title-part" format="text/plain" language="fr">Le rôle de l’incertitude de mesure dans l’évaluation de la conformité</title>
+  <uri type="xml">./documents/jcgm/106-2012-en/document.xml</uri>
+  <uri type="pdf">./documents/jcgm/106-2012-en/document.pdf</uri>
+  <uri type="html">./documents/jcgm/106-2012-en/document.html</uri>
+  <uri type="rxl">./documents/jcgm/106-2012-en/document.rxl</uri>
+  <docidentifier type="BIPM" primary="true">JCGM 106</docidentifier>
+  <docnumber>106</docnumber>
+  <contributor>
+    <role type="author"/>
+    <organization>
+      <name>Bureau International des Poids et Mesures</name>
+      <abbreviation>BIPM</abbreviation>
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      <name>Bureau International des Poids et Mesures</name>
+      <abbreviation>BIPM</abbreviation>
+    </organization>
+  </contributor>
+  <edition>1</edition>
+  <language>en</language>
+  <script>Latn</script>
+  <status>
+    <stage>in-force</stage>
+  </status>
+  <copyright>
+    <from>2012</from>
+    <owner>
+      <organization>
+        <name>Bureau International des Poids et Mesures</name>
+        <abbreviation>BIPM</abbreviation>
+      </organization>
+    </owner>
+  </copyright>
+  <ext schema-version="v1.0.0">
+    <doctype>guide</doctype>
+    <editorialgroup>
+      <committee acronym="JCGM" language="en" script="Latn">Joint Committee for Guides in Metrology</committee>
+      <committee acronym="JCGM" language="fr" script="Latn">Comité commun pour les guides en métrologie</committee>
+      <workgroup acronym="WG 1"/>
+    </editorialgroup>
+    <structuredidentifier>
+      <docnumber>106</docnumber>
+    </structuredidentifier>
+  </ext>
+</bibdata></relation>
+<relation type='partOf'><bibdata type="standard" schema-version="v1.2.9">
+  <title type="title-main" format="text/plain" language="fr">Vocabulaire international de métrologie</title>
+  <title type="title-part" format="text/plain" language="fr">Concepts fondamentaux et généraux et termes associés (VIM)</title>
+  <uri type="xml">./documents/jcgm/200-2012-fr/document.xml</uri>
+  <uri type="pdf">./documents/jcgm/200-2012-fr/document.pdf</uri>
+  <uri type="html">./documents/jcgm/200-2012-fr/document.html</uri>
+  <uri type="rxl">./documents/jcgm/200-2012-fr/document.rxl</uri>
+  <docidentifier type="BIPM" primary="true">JCGM 200</docidentifier>
+  <docnumber>200</docnumber>
+  <contributor>
+    <role type="author"/>
+    <organization>
+      <name>Bureau international des poids et mesures</name>
+      <abbreviation>BIPM</abbreviation>
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      <name>Bureau international des poids et mesures</name>
+      <abbreviation>BIPM</abbreviation>
+    </organization>
+  </contributor>
+  <edition>3</edition>
+  <language>fr</language>
+  <script>Latn</script>
+  <status>
+    <stage>in-force</stage>
+  </status>
+  <copyright>
+    <from>2012</from>
+    <owner>
+      <organization>
+        <name>Bureau international des poids et mesures</name>
+        <abbreviation>BIPM</abbreviation>
+      </organization>
+    </owner>
+  </copyright>
+  <ext schema-version="v1.0.0">
+    <doctype>guide</doctype>
+    <editorialgroup>
+      <committee acronym="JCGM" language="en" script="Latn">Joint Committee for Guides in Metrology</committee>
+      <workgroup acronym="WG 1"/>
+    </editorialgroup>
+    <structuredidentifier>
+      <docnumber>200</docnumber>
+    </structuredidentifier>
+  </ext>
+</bibdata></relation>
+</relaton-collection>

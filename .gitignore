@@ -1,3 +1,9 @@
 .history/
 _untracked-files/
 Gemfile.lock
+iev/
+relaton/
+*.xml.abort
+*.log.txt
+*.err
+_tmp_*

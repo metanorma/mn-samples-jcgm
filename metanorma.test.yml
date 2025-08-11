@@ -1,0 +1,17 @@
+---
+metanorma:
+  source:
+    files:
+      # - sources/jcgm/100-2008-en/document.adoc
+      # - sources/jcgm/100-2008-fr/document.adoc
+      # - sources/jcgm/101-2008-en/document.adoc
+      # - sources/jcgm/102-2011-en/document.adoc
+      # - sources/jcgm/104-2009-en/document.adoc
+      - sources/jcgm/106-2012-en/document.adoc
+      - sources/jcgm/200-2012-en/document.adoc
+      - sources/jcgm/200-2012-fr/document.adoc
+      # - sources/jcgm/gum-6-2020/document.adoc
+
+  collection:
+    organization: "JCGM"
+    name: "JCGM Publications in Metanorma (test collection)"

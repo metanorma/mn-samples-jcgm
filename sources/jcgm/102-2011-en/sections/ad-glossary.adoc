@@ -111,7 +111,7 @@ stem:[R(0, 1)]:: standard rectangular distribution over the interval
 stem:[[0, 1\]]
 
 stem:[R(a, b)]:: rectangular distribution over the interval
-stem:[[a, b\]]
+stem:[ [a, b\]]
 
 stem:[r(xi, x_j)]:: correlation coefficient associated with estimates
 stem:[x_i] and stem:[x_j] of input quantities stem:[X_i] and stem:[X_j]

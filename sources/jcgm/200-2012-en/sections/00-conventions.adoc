@@ -76,12 +76,12 @@ ISO 80000 and IEC 80000 series.
 
 === Interval
 
-The term "interval" is used together with the symbol stem:[[a,b\]]
+The term "interval" is used together with the symbol stem:[ [a,b\]]
 to denote the set of real numbers stem:[x] for which
 stem:[a <= x <= b], where stem:[a] and stem:[b" "a] are real numbers.
 The term "interval" is used here for 'closed interval'. The symbols
 stem:[a] and stem:[b] denote the 'end-points' of the interval
-stem:[[a,b\]].
+stem:[ [a,b\]].
 
 ====
 stem:[[-4,2\]]
@@ -99,7 +99,7 @@ to denote the interval stem:[[-4, 2\]].
 
 ==== Range
 
-The range of the interval stem:[[a, b\]] is the difference
+The range of the interval stem:[ [a, b\]] is the difference
 stem:[b" "a] and is denoted by stem:[r[a, b\]].
 
 ====

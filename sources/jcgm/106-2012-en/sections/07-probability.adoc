@@ -110,7 +110,7 @@ for an example where this is not the case.
 ==== {blank}
 
 From the steps leading to <<eq_2>>, the probability that stem:[Y] lies
-in the interval stem:[[a, b\]], given the PDF (5), is
+in the interval stem:[ [a, b\]], given the PDF (5), is
 
 [[eq_6]]
 [stem]

@@ -91,7 +91,7 @@ stem:[bb(R)]:: upper triangular matrix
 
 stem:[R(0,1)]:: standard rectangular distribution over the interval stem:[[0,1\]]
 
-stem:[R(a,b)]:: rectangular distribution over the interval stem:[[a,b\]]
+stem:[R(a,b)]:: rectangular distribution over the interval stem:[ [a,b\]]
 
 stem:[r(x_i,x_j)]:: correlation coefficient associated with the estimates stem:[x_i] and stem:[x_j] of the input quantities stem:[ii(X)_i] and stem:[ii(X)_j]
 
@@ -103,9 +103,9 @@ stem:[sf(T)]:: superscript denoting matrix transpose
 
 stem:[s_z]:: standard deviation associated with the average stem:[z] of the values stem:[z^{(1)},..., z^{(h)}] in an adaptive Monte Carlo procedure, where stem:[z] may denote an estimate stem:[y] of the output quantity stem:[ii(Y)], the standard uncertainty stem:[u(y)] associated with stem:[y], or the left-hand endpoint stem:[y_{"low"}] or right-hand endpoint stem:[y_{"high"}] of a coverage interval for stem:[ii(Y)]
 
-stem:[T(a, b)]:: triangular distribution over the interval stem:[[a,b\]]
+stem:[T(a, b)]:: triangular distribution over the interval stem:[ [a,b\]]
 
-stem:["Trap"(a,b,ii(beta))]:: trapezoidal distribution over the interval stem:[[a,b\]] with parameter stem:[ii(beta)]
+stem:["Trap"(a,b,ii(beta))]:: trapezoidal distribution over the interval stem:[ [a,b\]] with parameter stem:[ii(beta)]
 
 stem:[t_{nu}]:: central stem:[t]-distribution with stem:[nu] ((degrees of freedom))
 
@@ -113,7 +113,7 @@ stem:[t_{nu} (ii(mu), ii(sigma)^2)]:: scaled and shifted stem:[t]-distribution w
 
 stem:[U(0,1)]:: standard arc sine (U-shaped) distribution over the interval stem:[[0,1\]]
 
-stem:[U(a,b)]:: arc sine (U-shaped) distribution over the interval stem:[[a,b\]]
+stem:[U(a,b)]:: arc sine (U-shaped) distribution over the interval stem:[ [a,b\]]
 
 stem:[U_p]:: expanded uncertainty corresponding to a coverage probability stem:[p]
 
@@ -139,7 +139,7 @@ stem:[ii(V)(ii(X))]:: variance of a random variable stem:[ii(X)]
 
 stem:[bb(V(X))]:: covariance matrix for the vector random variable stem:[ii(X)]
 
-stem:[w]:: semi-width stem:[(b - a)//2] of an interval stem:[[a,b\]]
+stem:[w]:: semi-width stem:[(b - a)//2] of an interval stem:[ [a,b\]]
 
 stem:[ii(X)]:: input quantity, regarded as a random variable
 

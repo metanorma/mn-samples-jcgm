@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<metanorma xmlns="https://www.metanorma.org/ns/standoc" type="presentation" version="2.7.0" schema-version="v2.0.8" flavor="bipm">
+<metanorma xmlns="https://www.metanorma.org/ns/standoc" type="presentation" version="2.7.2" schema-version="v2.1.0" flavor="bipm">
 <bibdata type="standard">
 <title language="en" format="text/plain" type="title-main">Evaluation of measurement data</title>
 
@@ -14,12 +14,12 @@
 <name>Bureau International des Poids et Mesures</name>
 <abbreviation>BIPM</abbreviation></organization></contributor><edition language="">1</edition><edition language="en">first edition</edition><language current="true">en</language><script current="true">Latn</script><status><stage>in-force</stage></status><copyright><from>2012</from><owner><organization>
 <name>Bureau International des Poids et Mesures</name>
-<abbreviation>BIPM</abbreviation></organization></owner></copyright><ext><doctype>guide</doctype><flavor>bipm</flavor><editorialgroup><committee acronym="JCGM" language="en" script="Latn">Joint Committee for Guides in Metrology</committee><committee acronym="JCGM" language="fr" script="Latn">Comité commun pour les guides en métrologie</committee></editorialgroup><structuredidentifier><docnumber>106</docnumber></structuredidentifier></ext></bibdata><localized-strings><localized-string key="scope" language="en">Scope</localized-string><localized-string key="symbolsabbrev" language="en">Symbols and abbreviated terms</localized-string><localized-string key="abbrev" language="en">Abbreviated terms</localized-string><localized-string key="symbols" language="en">Symbols</localized-string><localized-string key="table_of_contents" language="en">Contents</localized-string><localized-string key="introduction" language="en">Introduction</localized-string><localized-string key="foreword" language="en">Foreword</localized-string><localized-string key="abstract" language="en">Abstract</localized-string><localized-string key="acknowledgements" language="en">Acknowledgements</localized-string><localized-string key="executivesummary" language="en">Executive summary</localized-string><localized-string key="termsdef" language="en">Terms and definitions</localized-string><localized-string key="termsdefsymbolsabbrev" language="en">Terms, definitions, symbols and abbreviated terms</localized-string><localized-string key="termsdefsymbols" language="en">Terms, definitions and symbols</localized-string><localized-string key="termsdefabbrev" language="en">Terms, definitions and abbreviated terms</localized-string><localized-string key="normref" language="en">Normative references</localized-string><localized-string key="bibliography" language="en">References</localized-string><localized-string key="index" language="en">Index</localized-string><localized-string key="see" language="en">see</localized-string><localized-string key="see_also" language="en">see also</localized-string><localized-string key="preface" language="en">Preface</localized-string><localized-string key="section" language="en">Section</localized-string><localized-string key="clause" language="en">Chapter</localized-string><localized-string key="annex" language="en">Annex</localized-string><localized-string key="appendix" language="en">Appendix</localized-string><localized-string key="continued" language="en">continued</localized-string><localized-string key="no_terms_boilerplate" language="en">No terms and definitions are listed in this document.
+<abbreviation>BIPM</abbreviation></organization></owner></copyright><ext><doctype>guide</doctype><flavor>bipm</flavor><editorialgroup><committee acronym="JCGM" language="en" script="Latn">Joint Committee for Guides in Metrology</committee><committee acronym="JCGM" language="fr" script="Latn">Comité commun pour les guides en métrologie</committee><workgroup acronym="WG 1"/></editorialgroup><structuredidentifier><docnumber>106</docnumber></structuredidentifier></ext></bibdata><localized-strings><localized-string key="scope" language="en">Scope</localized-string><localized-string key="symbolsabbrev" language="en">Symbols and abbreviated terms</localized-string><localized-string key="abbrev" language="en">Abbreviated terms</localized-string><localized-string key="symbols" language="en">Symbols</localized-string><localized-string key="table_of_contents" language="en">Contents</localized-string><localized-string key="introduction" language="en">Introduction</localized-string><localized-string key="foreword" language="en">Foreword</localized-string><localized-string key="abstract" language="en">Abstract</localized-string><localized-string key="acknowledgements" language="en">Acknowledgements</localized-string><localized-string key="executivesummary" language="en">Executive summary</localized-string><localized-string key="termsdef" language="en">Terms and definitions</localized-string><localized-string key="termsdefsymbolsabbrev" language="en">Terms, definitions, symbols and abbreviated terms</localized-string><localized-string key="termsdefsymbols" language="en">Terms, definitions and symbols</localized-string><localized-string key="termsdefabbrev" language="en">Terms, definitions and abbreviated terms</localized-string><localized-string key="normref" language="en">Normative references</localized-string><localized-string key="bibliography" language="en">References</localized-string><localized-string key="index" language="en">Index</localized-string><localized-string key="see" language="en">see</localized-string><localized-string key="see_also" language="en">see also</localized-string><localized-string key="preface" language="en">Preface</localized-string><localized-string key="section" language="en">Section</localized-string><localized-string key="clause" language="en">Chapter</localized-string><localized-string key="annex" language="en">Annex</localized-string><localized-string key="appendix" language="en">Appendix</localized-string><localized-string key="continued" language="en">continued</localized-string><localized-string key="no_terms_boilerplate" language="en">No terms and definitions are listed in this document.
 </localized-string><localized-string key="internal_terms_boilerplate" language="en">For the purposes of this document, the following terms and definitions apply.
 </localized-string><localized-string key="norm_with_refs_pref" language="en">The following referenced documents are indispensable for the application of this document. For dated references, only the edition cited applies. For undated references, the latest edition of the referenced document (including any amendments) applies.</localized-string><localized-string key="norm_empty_pref" language="en">There are no normative references in this document.</localized-string><localized-string key="external_terms_boilerplate" language="en">For the purposes of this document, the terms and definitions given in % apply.
 </localized-string><localized-string key="internal_external_terms_boilerplate" language="en">For the purposes of this document, the terms and definitions given in % and the following apply.
 </localized-string><localized-string key="no_information_available" language="en">[NO INFORMATION AVAILABLE]</localized-string><localized-string key="term_defined_in" language="en">(%)</localized-string><localized-string key="binary_and" language="en">%1 <conn>and</conn> %2</localized-string><localized-string key="multiple_and" language="en">%1<enum-comma>,</enum-comma> <conn>and</conn> %2</localized-string><localized-string key="binary_or" language="en">%1 <conn>or</conn> %2</localized-string><localized-string key="multiple_or" language="en">%1<enum-comma>,</enum-comma> <conn>or</conn> %2</localized-string><localized-string key="chain_and" language="en">%1 <conn>and</conn> %2</localized-string><localized-string key="chain_or" language="en">%1 <conn>or</conn> %2</localized-string><localized-string key="chain_from" language="en">%1 <conn>from</conn> %2</localized-string><localized-string key="chain_to" language="en">%1 <conn>to</conn> %2</localized-string><localized-string key="nested_xref" language="en">%1<comma>,</comma> %2</localized-string><localized-string key="list_nested_xref" language="en">%1 %2</localized-string><localized-string key="SpelloutRules" language="en">spellout-ordinal</localized-string><localized-string key="OrdinalRules" language="en">digits-ordinal</localized-string><localized-string key="note" language="en">Note</localized-string><localized-string key="note_xref" language="en">Note</localized-string><localized-string key="termnote" language="en">Note % to entry</localized-string><localized-string key="list" language="en">List</localized-string><localized-string key="deflist" language="en">Definition List</localized-string><localized-string key="figure" language="en">Figure</localized-string><localized-string key="diagram" language="en">Diagram</localized-string><localized-string key="formula" language="en">Equation</localized-string><localized-string key="inequality" language="en">Inequality</localized-string><localized-string key="table" language="en">Table</localized-string><localized-string key="requirement" language="en">Requirement</localized-string><localized-string key="recommendation" language="en">Recommendation</localized-string><localized-string key="permission" language="en">Permission</localized-string><localized-string key="box" language="en">Box</localized-string><localized-string key="no_identifier" language="en">(NO ID)</localized-string><localized-string key="recommendationtest" language="en">Recommendation test</localized-string><localized-string key="requirementtest" language="en">Requirement test</localized-string><localized-string key="permissiontest" language="en">Permission test</localized-string><localized-string key="recommendationclass" language="en">Recommendations class</localized-string><localized-string key="requirementclass" language="en">Requirements class</localized-string><localized-string key="permissionclass" language="en">Permissions class</localized-string><localized-string key="abstracttest" language="en">Abstract test</localized-string><localized-string key="conformanceclass" language="en">Conformance class</localized-string><localized-string key="key" language="en">Key</localized-string><localized-string key="example" language="en">EXAMPLE</localized-string><localized-string key="example_xref" language="en">Example</localized-string><localized-string key="where" language="en">where</localized-string><localized-string key="where_one" language="en">where</localized-string><localized-string key="wholeoftext" language="en">Whole of text</localized-string><localized-string key="draft_label" language="en">draft</localized-string><localized-string key="inform_annex" language="en">informative</localized-string><localized-string key="norm_annex" language="en">normative</localized-string><localized-string key="modified" language="en">modified</localized-string><localized-string key="adapted" language="en">adapted</localized-string><localized-string key="deprecated" language="en">DEPRECATED</localized-string><localized-string key="and" language="en">and</localized-string><localized-string key="all_parts" language="en">All Parts</localized-string><localized-string key="edition_ordinal" language="en">{{ var1 | ordinal_word: '', '' }} edition</localized-string><localized-string key="edition" language="en">edition</localized-string><localized-string key="version" language="en">version</localized-string><localized-string key="toc_figures" language="en">List of figures</localized-string><localized-string key="toc_tables" language="en">List of tables</localized-string><localized-string key="toc_recommendations" language="en">List of recommendations</localized-string><localized-string key="month_january" language="en">January</localized-string><localized-string key="month_february" language="en">February</localized-string><localized-string key="month_march" language="en">March</localized-string><localized-string key="month_april" language="en">April</localized-string><localized-string key="month_may" language="en">May</localized-string><localized-string key="month_june" language="en">June</localized-string><localized-string key="month_july" language="en">July</localized-string><localized-string key="month_august" language="en">August</localized-string><localized-string key="month_september" language="en">September</localized-string><localized-string key="month_october" language="en">October</localized-string><localized-string key="month_november" language="en">November</localized-string><localized-string key="month_december" language="en">December</localized-string><localized-string key="obligation" language="en">Obligation</localized-string><localized-string key="admonition.danger" language="en">Danger</localized-string><localized-string key="admonition.warning" language="en">Warning</localized-string><localized-string key="admonition.caution" language="en">Caution</localized-string><localized-string key="admonition.important" language="en">Important</localized-string><localized-string key="admonition.safety_precautions" language="en">Safety Precautions</localized-string><localized-string key="admonition.editorial" language="en">Editorial Note</localized-string><localized-string key="locality.section" language="en">Section</localized-string><localized-string key="locality.clause" language="en">Clause</localized-string><localized-string key="locality.part" language="en">Part</localized-string><localized-string key="locality.paragraph" language="en">Paragraph</localized-string><localized-string key="locality.chapter" language="en">Chapter</localized-string><localized-string key="locality.page" language="en">Page</localized-string><localized-string key="locality.table" language="en">Table</localized-string><localized-string key="locality.annex" language="en">Annex</localized-string><localized-string key="locality.figure" language="en">Figure</localized-string><localized-string key="locality.example" language="en">Example</localized-string><localized-string key="locality.note" language="en">Note</localized-string><localized-string key="locality.formula" language="en">Formula</localized-string><localized-string key="grammar_abbrevs.masculine" language="en">m</localized-string><localized-string key="grammar_abbrevs.feminine" language="en">f</localized-string><localized-string key="grammar_abbrevs.neuter" language="en">n</localized-string><localized-string key="grammar_abbrevs.common" language="en">common</localized-string><localized-string key="grammar_abbrevs.singular" language="en">sg</localized-string><localized-string key="grammar_abbrevs.dual" language="en">dual</localized-string><localized-string key="grammar_abbrevs.pl" language="en">pl</localized-string><localized-string key="grammar_abbrevs.isPreposition" language="en">prep</localized-string><localized-string key="grammar_abbrevs.isParticiple" language="en">part</localized-string><localized-string key="grammar_abbrevs.isAdjective" language="en">adj</localized-string><localized-string key="grammar_abbrevs.isAdverb" language="en">adv</localized-string><localized-string key="grammar_abbrevs.isNoun" language="en">noun</localized-string><localized-string key="grammar_abbrevs.isVerb" language="en">verb</localized-string><localized-string key="relatedterms.deprecates" language="en">deprecates</localized-string><localized-string key="relatedterms.supersedes" language="en">supersedes</localized-string><localized-string key="relatedterms.narrower" language="en">narrower</localized-string><localized-string key="relatedterms.broader" language="en">broader</localized-string><localized-string key="relatedterms.equivalent" language="en">equivalent</localized-string><localized-string key="relatedterms.compare" language="en">compare</localized-string><localized-string key="relatedterms.contrast" language="en">contrast</localized-string><localized-string key="relatedterms.see" language="en">see</localized-string><localized-string key="relatedterms.seealso" language="en">see also</localized-string><localized-string key="Clause.sg" language="en">Clause</localized-string><localized-string key="Clause.pl" language="en">Clauses</localized-string><localized-string key="Annex.sg" language="en">Annex</localized-string><localized-string key="Annex.pl" language="en">Annexes</localized-string><localized-string key="Appendix.sg" language="en">Appendix</localized-string><localized-string key="Appendix.pl" language="en">Appendixes</localized-string><localized-string key="Note.sg" language="en">Note</localized-string><localized-string key="Note.pl" language="en">Notes</localized-string><localized-string key="Note_%_to_entry.sg" language="en">Note % to entry</localized-string><localized-string key="Note_%_to_entry.pl" language="en">Notes % to entry</localized-string><localized-string key="List.sg" language="en">List</localized-string><localized-string key="List.pl" language="en">Lists</localized-string><localized-string key="Figure.sg" language="en">Figure</localized-string><localized-string key="Figure.pl" language="en">Figures</localized-string><localized-string key="Formula.sg" language="en">Formula</localized-string><localized-string key="Formula.pl" language="en">Formulas</localized-string><localized-string key="Table.sg" language="en">Table</localized-string><localized-string key="Table.pl" language="en">Tables</localized-string><localized-string key="Requirement.sg" language="en">Requirement</localized-string><localized-string key="Requirement.pl" language="en">Requirements</localized-string><localized-string key="Recommendation.sg" language="en">Recommendation</localized-string><localized-string key="Recommendation.pl" language="en">Recommendations</localized-string><localized-string key="Permission.sg" language="en">Permission</localized-string><localized-string key="Permission.pl" language="en">Permissions</localized-string><localized-string key="Example.sg" language="en">Example</localized-string><localized-string key="Example.pl" language="en">Examples</localized-string><localized-string key="Part.sg" language="en">Part</localized-string><localized-string key="Part.pl" language="en">Parts</localized-string><localized-string key="Section.sg" language="en">Section</localized-string><localized-string key="Section.pl" language="en">Sections</localized-string><localized-string key="Paragraph.sg" language="en">Paragraph</localized-string><localized-string key="Paragraph.pl" language="en">Paragraphs</localized-string><localized-string key="Chapter.sg" language="en">Chapter</localized-string><localized-string key="Chapter.pl" language="en">Chapters</localized-string><localized-string key="Page.sg" language="en">Page</localized-string><localized-string key="Page.pl" language="en">Pages</localized-string><localized-string key="level2_ancillary" language="en">Annex</localized-string><localized-string key="level3_ancillary" language="en">Appendix</localized-string><localized-string key="level2_ancillary_2019" language="en">Appendix</localized-string><localized-string key="level3_ancillary_2019" language="en">Annex</localized-string><localized-string key="level2_ancillary_alt" language="en">Annexe</localized-string><localized-string key="level3_ancillary_alt" language="en">Appendice</localized-string><localized-string key="level2_ancillary_alt_2019" language="en">Annexe</localized-string><localized-string key="level3_ancillary_alt_2019" language="en">Annexe</localized-string><localized-string key="level4_ancillary" language="en">Part</localized-string><localized-string key="level4_ancillary_alt" language="en">Partie</localized-string><localized-string key="level5_ancillary" language="en">Sub-part</localized-string><localized-string key="level5_ancillary_alt" language="en">Partie de sub</localized-string><localized-string key="iso_annex" language="en">Annex</localized-string><localized-string key="subclause" language="en">Section</localized-string><localized-string key="clause_jcgm" language="en">Clause</localized-string><localized-string key="subclause_jcgm" language="en">Clause</localized-string><localized-string key="all_rights_reserved" language="en">All rights reserved</localized-string><localized-string key="adapted_from" language="en">Adapted from: </localized-string><localized-string key="modified_from" language="en">Modified from: </localized-string><localized-string key="prefacenote" language="en">NOTE</localized-string><localized-string key="listnote" language="en">Note</localized-string><localized-string key="date" language="en">Date</localized-string><localized-string key="authorized" language="en">Authorized</localized-string><localized-string key="language" language="en">en</localized-string><localized-string key="script" language="en">Latn</localized-string></localized-strings><metanorma-extension><UnitsML xmlns="https://schema.unitsml.org/unitsml/1.0"><UnitSet><Unit dimensionURL="#NISTd2" id="U_NISTu27" semx-id="U_NISTu27">
-        <UnitSystem name="SI" type="SI_derived" lang="en-US"/>
+        <UnitSystem name="SI" type="SI_base" lang="en-US"/>
         <UnitName lang="en">gram</UnitName>
         <UnitSymbol type="HTML">g</UnitSymbol>
         <UnitSymbol type="MathMl">
@@ -61,7 +61,7 @@
           <EnumeratedRootUnit unit="gram" prefix="k"/>
         </RootUnits>
       </Unit><Unit dimensionURL="#NISTd2" id="U_ug" semx-id="U_ug">
-        <UnitSystem name="SI" type="SI_derived" lang="en-US"/>
+        <UnitSystem name="SI" type="SI_base" lang="en-US"/>
         <UnitName lang="en">ug</UnitName>
         <UnitSymbol type="HTML">g</UnitSymbol>
         <UnitSymbol type="MathMl">
@@ -96,7 +96,7 @@
         </UnitSymbol>
         <RootUnits>
           <EnumeratedRootUnit unit="gram" prefix="n"/>
-          <EnumeratedRootUnit unit="liter" powerNumerator="-1"/>
+          <EnumeratedRootUnit unit="litre" powerNumerator="-1"/>
         </RootUnits>
       </Unit><Unit dimensionURL="#NISTd56" id="U_mm2.s-1" semx-id="U_mm2.s-1">
         <UnitSystem name="SI" type="SI_derived" lang="en-US"/>
@@ -128,7 +128,7 @@
           </math>
         </UnitSymbol>
         <RootUnits>
-          <EnumeratedRootUnit unit="meter" prefix="m" powerNumerator="2"/>
+          <EnumeratedRootUnit unit="metre" prefix="m" powerNumerator="2"/>
           <EnumeratedRootUnit unit="second" powerNumerator="-1"/>
         </RootUnits>
       </Unit><Unit id="U_km.h-1" semx-id="U_km.h-1">
@@ -154,7 +154,7 @@
           </math>
         </UnitSymbol>
         <RootUnits>
-          <EnumeratedRootUnit unit="meter" prefix="k"/>
+          <EnumeratedRootUnit unit="metre" prefix="k"/>
           <EnumeratedRootUnit unit="hour" powerNumerator="-1"/>
         </RootUnits>
       </Unit><Unit id="U_ug.L-1" semx-id="U_ug.L-1">
@@ -181,7 +181,7 @@
         </UnitSymbol>
         <RootUnits>
           <EnumeratedRootUnit unit="gram" prefix="u"/>
-          <EnumeratedRootUnit unit="liter" powerNumerator="-1"/>
+          <EnumeratedRootUnit unit="litre" powerNumerator="-1"/>
         </RootUnits>
       </Unit><Unit dimensionURL="#D_L2MT4I2" id="U_kOhm" semx-id="U_kOhm">
         <UnitSystem name="SI" type="SI_derived" lang="en-US"/>
@@ -205,7 +205,7 @@
           </math>
         </UnitSymbol>
       </Unit><Unit dimensionURL="#NISTd1" id="U_um" semx-id="U_um">
-        <UnitSystem name="SI" type="SI_derived" lang="en-US"/>
+        <UnitSystem name="SI" type="SI_base" lang="en-US"/>
         <UnitName lang="en">um</UnitName>
         <UnitSymbol type="HTML">m</UnitSymbol>
         <UnitSymbol type="MathMl">
@@ -214,7 +214,7 @@
           </math>
         </UnitSymbol>
         <RootUnits>
-          <EnumeratedRootUnit unit="meter" prefix="u"/>
+          <EnumeratedRootUnit unit="metre" prefix="u"/>
         </RootUnits>
       </Unit></UnitSet><QuantitySet><Quantity id="NISTq2" quantityType="base" dimensionURL="#NISTd2" semx-id="NISTq2">
         <QuantityName lang="en-US">mass</QuantityName>
@@ -402,7 +402,7 @@ otherwise.<note id="_4548ce18-39bd-1d12-e345-38aca5a0dc66" semx-id="_4548ce18-39
 <p id="_e2e67f15-981e-cd6b-2d8e-bdde5af04e40" semx-id="_e2e67f15-981e-cd6b-2d8e-bdde5af04e40">A particular acceptance interval, and its relation to a corresponding tolerance interval is shown in  <xref target="fig1" id="_f6c43224-f2be-807f-dd40-00f0d1263512"/><semx element="xref" source="_f6c43224-f2be-807f-dd40-00f0d1263512"><fmt-xref target="fig1"><span class="fmt-element-name">Figure</span> <semx element="autonum" source="fig1">1</semx></fmt-xref></semx>.</p>
 
 <figure id="fig1" anchor="fig1" semx-id="_a71c1260-2b6c-5e86-1891-1fed46421c70" autonum="1">
-<name id="_723b578d-cf22-4998-b5af-587585a36963" semx-id="_7e6014b5-48d5-292e-6ade-81bbd188d5c3">Binary conformity assessment where decisions are based on measured quantity values. The true value of a measurable property (the measurand) of an item is specified to lie in a tolerance interval defined by limits (<stem block="false" type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
+<name id="_5a83b926-12c6-4dd4-b15b-11e3390184c1" semx-id="_7e6014b5-48d5-292e-6ade-81bbd188d5c3">Binary conformity assessment where decisions are based on measured quantity values. The true value of a measurable property (the measurand) of an item is specified to lie in a tolerance interval defined by limits (<stem block="false" type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
   <mstyle displaystyle="false">
     <msub>
       <mi mathvariant="normal">T</mi>
@@ -426,7 +426,7 @@ otherwise.<note id="_4548ce18-39bd-1d12-e345-38aca5a0dc66" semx-id="_4548ce18-39
       <mtext>U</mtext>
     </msub>
   </mstyle>
-</math><asciimath>A_{"L"}, A_{"U"}</asciimath></stem>), and rejected as non-conforming otherwise.</name><fmt-name id="_69cbd449-b647-d479-1e67-b47eb0b339c2"><span class="fmt-caption-label"><span class="fmt-element-name">Figure</span> <semx element="autonum" source="fig1">1</semx></span><span class="fmt-caption-delim"> — </span><semx element="name" source="_723b578d-cf22-4998-b5af-587585a36963">Binary conformity assessment where decisions are based on measured quantity values. The true value of a measurable property (the measurand) of an item is specified to lie in a tolerance interval defined by limits (<stem block="false" type="MathML" id="_1a6db102-9640-2820-15c2-67840a94bf58"><math xmlns="http://www.w3.org/1998/Math/MathML">
+</math><asciimath>A_{"L"}, A_{"U"}</asciimath></stem>), and rejected as non-conforming otherwise.</name><fmt-name id="_69cbd449-b647-d479-1e67-b47eb0b339c2"><span class="fmt-caption-label"><span class="fmt-element-name">Figure</span> <semx element="autonum" source="fig1">1</semx></span><span class="fmt-caption-delim"> — </span><semx element="name" source="_5a83b926-12c6-4dd4-b15b-11e3390184c1">Binary conformity assessment where decisions are based on measured quantity values. The true value of a measurable property (the measurand) of an item is specified to lie in a tolerance interval defined by limits (<stem block="false" type="MathML" id="_1a6db102-9640-2820-15c2-67840a94bf58"><math xmlns="http://www.w3.org/1998/Math/MathML">
   <mstyle displaystyle="false">
     <msub>
       <mi mathvariant="normal">T</mi>
@@ -3375,7 +3375,7 @@ a given value <stem block="false" type="MathML" id="_72610ea3-3c61-80b2-ceeb-738
 <p id="_232808b7-e4fe-3e08-7c6c-9714b15ae5e3" semx-id="_232808b7-e4fe-3e08-7c6c-9714b15ae5e3">Seemingly one-sided tolerance intervals often have implied additional limits, for physical or theoretical reasons, that are not explicitly stated  <eref type="inline" bibitemid="ref22" citeas="ISO 10576-1:2003" id="_8c2e919d-4e19-f088-8a05-a0f91a6c9834"/><semx element="eref" source="_8c2e919d-4e19-f088-8a05-a0f91a6c9834">[<fmt-xref type="inline" target="ref22">ISO 10576-1:2003</fmt-xref>]</semx>. Such tolerance intervals are effectively two-sided, having one specified limit and one implied limit; see examples 4 and 5 below.</p>
 
 <figure id="fig2" anchor="fig2" semx-id="_df3176db-e624-e8d9-7bca-a3d35bc0003d" autonum="2">
-<name id="_9349a429-e0b1-4634-a30a-3b1813188c9f" semx-id="_c966b6aa-85f5-786b-134f-292dfa126158">Tolerance intervals. (a) A one-sided interval having a single lower tolerance limit <stem block="false" type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
+<name id="_7fb0f28c-9b0b-4f3b-99b2-2bae99c912bc" semx-id="_c966b6aa-85f5-786b-134f-292dfa126158">Tolerance intervals. (a) A one-sided interval having a single lower tolerance limit <stem block="false" type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
   <mstyle displaystyle="false">
     <msub>
       <mi mathvariant="normal">T</mi>
@@ -3401,7 +3401,7 @@ a given value <stem block="false" type="MathML" id="_72610ea3-3c61-80b2-ceeb-738
       <mtext>L</mtext>
     </msub>
   </mstyle>
-</math><asciimath>T_{"U"} - T_{"L"}</asciimath></stem> is called the tolerance.</name><fmt-name id="_2d5ec2a0-761f-d664-91a8-9ffe2f45d149"><span class="fmt-caption-label"><span class="fmt-element-name">Figure</span> <semx element="autonum" source="fig2">2</semx></span><span class="fmt-caption-delim"> — </span><semx element="name" source="_9349a429-e0b1-4634-a30a-3b1813188c9f">Tolerance intervals. (a) A one-sided interval having a single lower tolerance limit <stem block="false" type="MathML" id="_1c4fe8a4-fdc0-8f62-e97d-d5f980e47e0d"><math xmlns="http://www.w3.org/1998/Math/MathML">
+</math><asciimath>T_{"U"} - T_{"L"}</asciimath></stem> is called the tolerance.</name><fmt-name id="_2d5ec2a0-761f-d664-91a8-9ffe2f45d149"><span class="fmt-caption-label"><span class="fmt-element-name">Figure</span> <semx element="autonum" source="fig2">2</semx></span><span class="fmt-caption-delim"> — </span><semx element="name" source="_7fb0f28c-9b0b-4f3b-99b2-2bae99c912bc">Tolerance intervals. (a) A one-sided interval having a single lower tolerance limit <stem block="false" type="MathML" id="_1c4fe8a4-fdc0-8f62-e97d-d5f980e47e0d"><math xmlns="http://www.w3.org/1998/Math/MathML">
   <mstyle displaystyle="false">
     <msub>
       <mi mathvariant="normal">T</mi>
@@ -4071,7 +4071,7 @@ purity lies in the interval <stem block="false" type="MathML" id="_22e22413-8566
 </clause>
 </clause>
 
-<clause id="sec_6" anchor="sec_6" obligation="normative" semx-id="_35af6a7a-9fcd-8ce7-34b0-b334183a63a3" displayorder="10">
+<clause id="sec_6" anchor="sec_6" obligation="normative" semx-id="_57ffb9b2-98fa-b095-f14a-6438c18133c7" displayorder="10">
 <title id="_46031c2d-6685-63f9-1c68-1d87531aec2a" semx-id="_713dabd2-e832-1796-bb6e-75a006d93e21">Knowledge of the measurand</title><fmt-title depth="1" id="_fba57d06-0ece-0a29-cc51-7d45f2668f04"><span class="fmt-caption-label"><semx element="autonum" source="sec_6">6</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_46031c2d-6685-63f9-1c68-1d87531aec2a">Knowledge of the measurand</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="sec_6">6</semx></fmt-xref-label>
 <clause id="sec_6.1" anchor="sec_6.1" obligation="normative" semx-id="_f33f0682-78e8-2679-7608-043f11659820">
 <title id="_5800b449-10bc-4ae8-931a-f1e94a061f12" semx-id="_0bf8a0a9-bd22-5b43-b31a-8a0a36b30ab7">Probability and information</title><fmt-title depth="2" id="_af0e44d1-9e20-5ffe-5351-3433c4a9bb82"><span class="fmt-caption-label"><semx element="autonum" source="sec_6">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="sec_6.1">1</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_5800b449-10bc-4ae8-931a-f1e94a061f12">Probability and information</semx></fmt-title><fmt-xref-label><semx element="autonum" source="sec_6">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="sec_6.1">1</semx></fmt-xref-label>
@@ -4800,7 +4800,7 @@ response or output (measured value <stem block="false" type="MathML" id="_c4eb73
 </clause>
 </clause>
 
-<clause id="sec_6.3" anchor="sec_6.3" obligation="normative" semx-id="_84989920-e100-c239-70a5-9ca2ae5de927">
+<clause id="sec_6.3" anchor="sec_6.3" obligation="normative" semx-id="_e469ec70-e57e-0ee5-bce1-be53593d5546">
 <title id="_1a7e934c-0ba8-e94b-eccf-a4202cab9319" semx-id="_002df687-cb2f-d924-bf07-0b0c722d55de">Summary information</title><fmt-title depth="2" id="_1ab602ba-017e-7b93-801c-01d4e0a10aef"><span class="fmt-caption-label"><semx element="autonum" source="sec_6">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="sec_6.3">3</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_1a7e934c-0ba8-e94b-eccf-a4202cab9319">Summary information</semx></fmt-title><fmt-xref-label><semx element="autonum" source="sec_6">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="sec_6.3">3</semx></fmt-xref-label>
 <clause id="sec_6.3.1" anchor="sec_6.3.1" obligation="normative" semx-id="_e010db0a-f67d-8356-d5a1-a04bb8ce936f">
 <title id="_dcdb1922-51e2-29d9-1ed1-7fd07dab9abd" semx-id="_5f946166-c609-f057-3126-314980e2a791">Best estimate and standard uncertainty</title><fmt-title depth="3" id="_9f0b3be2-a2c6-924b-c98b-c9b18ef437a4"><span class="fmt-caption-label"><semx element="autonum" source="sec_6">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="sec_6.3">3</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="sec_6.3.1">1</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_dcdb1922-51e2-29d9-1ed1-7fd07dab9abd">Best estimate and standard uncertainty</semx></fmt-title><fmt-xref-label><semx element="autonum" source="sec_6">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="sec_6.3">3</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="sec_6.3.1">1</semx></fmt-xref-label>
@@ -5320,7 +5320,7 @@ PDF <stem block="false" type="MathML" id="_c264d9b1-b992-eec9-4654-66750409f9f3"
 </clause>
 </clause>
 
-<clause id="sec_6.3.2" anchor="sec_6.3.2" obligation="normative" semx-id="_52571fef-366f-fea3-19b6-1163c295eb56">
+<clause id="sec_6.3.2" anchor="sec_6.3.2" obligation="normative" semx-id="_ec16b720-86bf-ef27-c3c6-91c60bdd3680">
 <title id="_37a3b99a-0d99-0d5d-d458-e9e96fd80941" semx-id="_7161f562-b425-650e-1cfd-207c8ae1b034">Coverage intervals</title><fmt-title depth="3" id="_fd57f98a-b410-e5b2-9585-b3afa83728ba"><span class="fmt-caption-label"><semx element="autonum" source="sec_6">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="sec_6.3">3</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="sec_6.3.2">2</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_37a3b99a-0d99-0d5d-d458-e9e96fd80941">Coverage intervals</semx></fmt-title><fmt-xref-label><semx element="autonum" source="sec_6">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="sec_6.3">3</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="sec_6.3.2">2</semx></fmt-xref-label>
 <clause id="sec_6.3.2.1" anchor="sec_6.3.2.1" obligation="normative" inline-header="true" semx-id="_c1a1d125-d8a1-5e33-5062-62818b7b7c4f"><fmt-title depth="4" id="_35ff877a-1de5-44c7-2386-835b29687c27"><span class="fmt-caption-label"><semx element="autonum" source="sec_6">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="sec_6.3">3</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="sec_6.3.2">2</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="sec_6.3.2.1">1</semx><span class="fmt-autonum-delim">.</span></span></fmt-title><fmt-xref-label><semx element="autonum" source="sec_6">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="sec_6.3">3</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="sec_6.3.2">2</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="sec_6.3.2.1">1</semx></fmt-xref-label>
 <p id="_546ef5c2-5362-2b64-365d-475700a50a0e" semx-id="_546ef5c2-5362-2b64-365d-475700a50a0e">Following a measurement, the probability that <stem block="false" type="MathML" id="_f312e449-8d1c-a85f-b3ac-c6b0a2f256c3"><math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -5434,8 +5434,8 @@ PDF <stem block="false" type="MathML" id="_c264d9b1-b992-eec9-4654-66750409f9f3"
 </math><asciimath>Pr (Y &#x3c;= a | eta_{"m"}) = G(a) = int_{-oo}^a g (eta | eta_{"m"}) " d"eta,</asciimath></semx></fmt-stem></formula>
 </clause>
 
-<clause id="sec_6.3.2.2" anchor="sec_6.3.2.2" obligation="normative" inline-header="true" semx-id="_7d6ec082-02ae-801c-f52d-e3e2f1493004"><fmt-title depth="4" id="_3acdf5aa-2d18-0f8d-9e72-9e2ec4c42955"><span class="fmt-caption-label"><semx element="autonum" source="sec_6">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="sec_6.3">3</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="sec_6.3.2">2</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="sec_6.3.2.2">2</semx><span class="fmt-autonum-delim">.</span></span></fmt-title><fmt-xref-label><semx element="autonum" source="sec_6">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="sec_6.3">3</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="sec_6.3.2">2</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="sec_6.3.2.2">2</semx></fmt-xref-label>
-<p id="_175d5efe-6f76-f4f0-7a55-aedd1b782ecb" semx-id="_175d5efe-6f76-f4f0-7a55-aedd1b782ecb">It follows that the probability <stem block="false" type="MathML" id="_ee60232b-c5e9-c94d-4309-f96f9264071d"><math xmlns="http://www.w3.org/1998/Math/MathML">
+<clause id="sec_6.3.2.2" anchor="sec_6.3.2.2" obligation="normative" inline-header="true" semx-id="_ff2495f1-8d43-0eb3-5a70-898ea7bf4bd4"><fmt-title depth="4" id="_3acdf5aa-2d18-0f8d-9e72-9e2ec4c42955"><span class="fmt-caption-label"><semx element="autonum" source="sec_6">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="sec_6.3">3</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="sec_6.3.2">2</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="sec_6.3.2.2">2</semx><span class="fmt-autonum-delim">.</span></span></fmt-title><fmt-xref-label><semx element="autonum" source="sec_6">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="sec_6.3">3</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="sec_6.3.2">2</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="sec_6.3.2.2">2</semx></fmt-xref-label>
+<p id="_69df6b5f-5303-e740-0f19-47dd5d28b7d2" semx-id="_69df6b5f-5303-e740-0f19-47dd5d28b7d2">It follows that the probability <stem block="false" type="MathML" id="_ee60232b-c5e9-c94d-4309-f96f9264071d"><math xmlns="http://www.w3.org/1998/Math/MathML">
   <mstyle displaystyle="false">
     <mi>p</mi>
   </mstyle>
@@ -5452,7 +5452,7 @@ PDF <stem block="false" type="MathML" id="_c264d9b1-b992-eec9-4654-66750409f9f3"
     <mi mathvariant="normal">Y</mi>
   </mstyle>
 </math><asciimath>Y</asciimath></semx></fmt-stem> lies in the interval
-<stem block="false" type="MathML" id="_4af1578d-12e8-77d4-63f7-d0b42f4804e2"><math xmlns="http://www.w3.org/1998/Math/MathML">
+<stem block="false" type="MathML" id="_da52e1ae-1085-9c3a-3bcd-cffbabee432e"><math xmlns="http://www.w3.org/1998/Math/MathML">
   <mstyle displaystyle="false">
     <mrow>
       <mo>[</mo>
@@ -5462,7 +5462,7 @@ PDF <stem block="false" type="MathML" id="_c264d9b1-b992-eec9-4654-66750409f9f3"
       <mo>]</mo>
     </mrow>
   </mstyle>
-</math><asciimath>[a, b]</asciimath></stem><fmt-stem type="MathML"><semx element="stem" source="_4af1578d-12e8-77d4-63f7-d0b42f4804e2"><math xmlns="http://www.w3.org/1998/Math/MathML">
+</math><asciimath> [a, b]</asciimath></stem><fmt-stem type="MathML"><semx element="stem" source="_da52e1ae-1085-9c3a-3bcd-cffbabee432e"><math xmlns="http://www.w3.org/1998/Math/MathML">
   <mstyle displaystyle="false">
     <mrow>
       <mo>[</mo>
@@ -5472,7 +5472,7 @@ PDF <stem block="false" type="MathML" id="_c264d9b1-b992-eec9-4654-66750409f9f3"
       <mo>]</mo>
     </mrow>
   </mstyle>
-</math><asciimath>[a, b]</asciimath></semx></fmt-stem>, with <stem block="false" type="MathML" id="_fc0b600e-96a0-70b1-d64c-5a1c366aec26"><math xmlns="http://www.w3.org/1998/Math/MathML">
+</math><asciimath> [a, b]</asciimath></semx></fmt-stem>, with <stem block="false" type="MathML" id="_fc0b600e-96a0-70b1-d64c-5a1c366aec26"><math xmlns="http://www.w3.org/1998/Math/MathML">
   <mstyle displaystyle="false">
     <mi>a</mi>
     <mo>&#x3c;</mo>
@@ -5601,8 +5601,8 @@ PDF <stem block="false" type="MathML" id="_c264d9b1-b992-eec9-4654-66750409f9f3"
 </math><asciimath>p = "Pr" (a &#x3c;= Y &#x3c;= b | eta_{"m"}) = int_a^b g (eta | eta_{"m"}) " d"eta = G(b) - G(a).</asciimath></semx></fmt-stem></formula>
 </clause>
 
-<clause id="sec_6.3.2.3" anchor="sec_6.3.2.3" obligation="normative" inline-header="true" semx-id="_29c4036d-ea63-ac72-a1ad-e13f595b1e8b"><fmt-title depth="4" id="_c35ab6db-b276-002f-0b8b-d37406545627"><span class="fmt-caption-label"><semx element="autonum" source="sec_6">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="sec_6.3">3</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="sec_6.3.2">2</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="sec_6.3.2.3">3</semx><span class="fmt-autonum-delim">.</span></span></fmt-title><fmt-xref-label><semx element="autonum" source="sec_6">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="sec_6.3">3</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="sec_6.3.2">2</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="sec_6.3.2.3">3</semx></fmt-xref-label>
-<p id="_970c863e-5158-ce96-9c01-7926b71a361a" semx-id="_970c863e-5158-ce96-9c01-7926b71a361a">An interval such as <stem block="false" type="MathML" id="_1a232c96-a93d-cae6-806c-d9e7eed9cfd6"><math xmlns="http://www.w3.org/1998/Math/MathML">
+<clause id="sec_6.3.2.3" anchor="sec_6.3.2.3" obligation="normative" inline-header="true" semx-id="_1b74c0c6-a2ee-56e5-019d-0e1ad289a0e9"><fmt-title depth="4" id="_c35ab6db-b276-002f-0b8b-d37406545627"><span class="fmt-caption-label"><semx element="autonum" source="sec_6">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="sec_6.3">3</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="sec_6.3.2">2</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="sec_6.3.2.3">3</semx><span class="fmt-autonum-delim">.</span></span></fmt-title><fmt-xref-label><semx element="autonum" source="sec_6">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="sec_6.3">3</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="sec_6.3.2">2</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="sec_6.3.2.3">3</semx></fmt-xref-label>
+<p id="_09001a32-db8b-f024-9d67-e9a42cb7bebf" semx-id="_09001a32-db8b-f024-9d67-e9a42cb7bebf">An interval such as <stem block="false" type="MathML" id="_58f321e4-38ae-04b5-b89d-59dc08f02fe6"><math xmlns="http://www.w3.org/1998/Math/MathML">
   <mstyle displaystyle="false">
     <mrow>
       <mo>[</mo>
@@ -5612,7 +5612,7 @@ PDF <stem block="false" type="MathML" id="_c264d9b1-b992-eec9-4654-66750409f9f3"
       <mo>]</mo>
     </mrow>
   </mstyle>
-</math><asciimath>[a, b]</asciimath></stem><fmt-stem type="MathML"><semx element="stem" source="_1a232c96-a93d-cae6-806c-d9e7eed9cfd6"><math xmlns="http://www.w3.org/1998/Math/MathML">
+</math><asciimath> [a, b]</asciimath></stem><fmt-stem type="MathML"><semx element="stem" source="_58f321e4-38ae-04b5-b89d-59dc08f02fe6"><math xmlns="http://www.w3.org/1998/Math/MathML">
   <mstyle displaystyle="false">
     <mrow>
       <mo>[</mo>
@@ -5622,7 +5622,7 @@ PDF <stem block="false" type="MathML" id="_c264d9b1-b992-eec9-4654-66750409f9f3"
       <mo>]</mo>
     </mrow>
   </mstyle>
-</math><asciimath>[a, b]</asciimath></semx></fmt-stem> is called a coverage interval for <stem block="false" type="MathML" id="_5a4b44ea-14ba-763f-d031-67595bb515de"><math xmlns="http://www.w3.org/1998/Math/MathML">
+</math><asciimath> [a, b]</asciimath></semx></fmt-stem> is called a coverage interval for <stem block="false" type="MathML" id="_5a4b44ea-14ba-763f-d031-67595bb515de"><math xmlns="http://www.w3.org/1998/Math/MathML">
   <mstyle displaystyle="false">
     <mi mathvariant="normal">Y</mi>
   </mstyle>
@@ -5813,7 +5813,7 @@ PDF for <stem block="false" type="MathML" id="_8b11d92a-8ba5-34c7-225e-873b91822
 </clause>
 </clause>
 
-<clause id="sec_7" anchor="sec_7" obligation="normative" semx-id="_e488b693-d514-f56c-caaa-6f04547f04c1" displayorder="11">
+<clause id="sec_7" anchor="sec_7" obligation="normative" semx-id="_9fa29605-839a-5451-daaa-b419874611ce" displayorder="11">
 <title id="_c415dab3-9997-62ff-4375-08b1f1506fe7" semx-id="_94737f03-ba4e-879d-6ed1-8c04ad192509">Probability of conformity with specified requirements</title><fmt-title depth="1" id="_181ba2b2-5ea0-5a7f-e47f-94d7d8eca5ed"><span class="fmt-caption-label"><semx element="autonum" source="sec_7">7</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_c415dab3-9997-62ff-4375-08b1f1506fe7">Probability of conformity with specified requirements</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="sec_7">7</semx></fmt-xref-label>
 <clause id="sec_7.1" anchor="sec_7.1" obligation="normative" semx-id="_1c23cc97-fc1e-212b-7371-72e017cecee0">
 <title id="_17608678-80a3-3366-65c4-ce26783bf321" semx-id="_21ccd2cb-e07d-6ac2-857f-5e2f3ec0c99c">General rule for calculation of conformance probability</title><fmt-title depth="2" id="_6ab8ce79-a230-c890-b269-505fe71d19c0"><span class="fmt-caption-label"><semx element="autonum" source="sec_7">7</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="sec_7.1">1</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_17608678-80a3-3366-65c4-ce26783bf321">General rule for calculation of conformance probability</semx></fmt-title><fmt-xref-label><semx element="autonum" source="sec_7">7</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="sec_7.1">1</semx></fmt-xref-label>
@@ -6195,7 +6195,7 @@ property of the item. Given a two-sided tolerance interval for the measurand
 </clause>
 </clause>
 
-<clause id="sec_7.2" anchor="sec_7.2" obligation="normative" semx-id="_05e1eaa7-c87f-fa60-ea8e-c02508b9c19f">
+<clause id="sec_7.2" anchor="sec_7.2" obligation="normative" semx-id="_9ec7bf87-54a0-3e32-a1e9-9cd0b6b94cc5">
 <title id="_e5d1f013-78b8-b87e-009c-85189bbdcc44" semx-id="_62666f2c-e29f-184c-a316-d5b81766c8bb">Conformance probabilities with normal PDFs</title><fmt-title depth="2" id="_b68ac0a8-ebfc-5c2e-123d-a3022abb8ae6"><span class="fmt-caption-label"><semx element="autonum" source="sec_7">7</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="sec_7.2">2</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_e5d1f013-78b8-b87e-009c-85189bbdcc44">Conformance probabilities with normal PDFs</semx></fmt-title><fmt-xref-label><semx element="autonum" source="sec_7">7</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="sec_7.2">2</semx></fmt-xref-label>
 <clause id="sec_7.2.1" anchor="sec_7.2.1" obligation="normative" inline-header="true" semx-id="_c0deaa3c-635b-cfe5-5cf0-6a2121e3e8ed"><fmt-title depth="3" id="_83797785-9feb-5223-00d0-fd7ca6de7c50"><span class="fmt-caption-label"><semx element="autonum" source="sec_7">7</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="sec_7.2">2</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="sec_7.2.1">1</semx><span class="fmt-autonum-delim">.</span></span></fmt-title><fmt-xref-label><semx element="autonum" source="sec_7">7</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="sec_7.2">2</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="sec_7.2.1">1</semx></fmt-xref-label>
 <p id="_75f85283-3ad5-e74d-e39c-7c977c4b64b1" semx-id="_75f85283-3ad5-e74d-e39c-7c977c4b64b1">The conformance probability depends on a state of knowledge of a measurand
@@ -6648,8 +6648,8 @@ measurement, then typically <stem block="false" type="MathML" id="_d9db69ac-a607
 </math><asciimath>y ~~ eta_{"m"}</asciimath></semx></fmt-stem>; see clause <xref target="sec_A.4.4" id="_892865f6-4b0d-3cbc-2c2a-72b7d8976e6a"/><semx element="xref" source="_892865f6-4b0d-3cbc-2c2a-72b7d8976e6a"><fmt-xref target="sec_A.4.4"><semx element="autonum" source="annexA">A</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="sec_A.4">4</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="sec_A.4.4">4</semx></fmt-xref></semx> for an example where this is not the case.</p>
 </clause>
 
-<clause id="sec_7.2.6" anchor="sec_7.2.6" obligation="normative" inline-header="true" semx-id="_f437090c-3beb-c4b9-41f4-78bd7d3eb720"><fmt-title depth="3" id="_123db50b-1a3d-1191-9577-29b120a9c089"><span class="fmt-caption-label"><semx element="autonum" source="sec_7">7</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="sec_7.2">2</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="sec_7.2.6">6</semx><span class="fmt-autonum-delim">.</span></span></fmt-title><fmt-xref-label><semx element="autonum" source="sec_7">7</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="sec_7.2">2</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="sec_7.2.6">6</semx></fmt-xref-label>
-<p id="_bf7393f6-6f71-e246-069e-81fdba3fad47" semx-id="_bf7393f6-6f71-e246-069e-81fdba3fad47">From the steps leading to <xref target="eq_2" id="_6f70ff75-09cc-2617-9f7c-2bb16228cb76"/><semx element="xref" source="_6f70ff75-09cc-2617-9f7c-2bb16228cb76"><fmt-xref target="eq_2"><span class="fmt-element-name">Equation</span> <span class="fmt-autonum-delim">(</span><semx element="autonum" source="eq_2">2</semx><span class="fmt-autonum-delim">)</span></fmt-xref></semx>, the probability that <stem block="false" type="MathML" id="_bba49f81-b042-c5c3-77b1-b8a786a9efa9"><math xmlns="http://www.w3.org/1998/Math/MathML">
+<clause id="sec_7.2.6" anchor="sec_7.2.6" obligation="normative" inline-header="true" semx-id="_0ddab48a-60be-4c76-9686-011659d75fac"><fmt-title depth="3" id="_123db50b-1a3d-1191-9577-29b120a9c089"><span class="fmt-caption-label"><semx element="autonum" source="sec_7">7</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="sec_7.2">2</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="sec_7.2.6">6</semx><span class="fmt-autonum-delim">.</span></span></fmt-title><fmt-xref-label><semx element="autonum" source="sec_7">7</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="sec_7.2">2</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="sec_7.2.6">6</semx></fmt-xref-label>
+<p id="_3343b8ea-3978-0db1-4ada-542c06897fa5" semx-id="_3343b8ea-3978-0db1-4ada-542c06897fa5">From the steps leading to <xref target="eq_2" id="_6f70ff75-09cc-2617-9f7c-2bb16228cb76"/><semx element="xref" source="_6f70ff75-09cc-2617-9f7c-2bb16228cb76"><fmt-xref target="eq_2"><span class="fmt-element-name">Equation</span> <span class="fmt-autonum-delim">(</span><semx element="autonum" source="eq_2">2</semx><span class="fmt-autonum-delim">)</span></fmt-xref></semx>, the probability that <stem block="false" type="MathML" id="_bba49f81-b042-c5c3-77b1-b8a786a9efa9"><math xmlns="http://www.w3.org/1998/Math/MathML">
   <mstyle displaystyle="false">
     <mi mathvariant="normal">Y</mi>
   </mstyle>
@@ -6658,7 +6658,7 @@ measurement, then typically <stem block="false" type="MathML" id="_d9db69ac-a607
     <mi mathvariant="normal">Y</mi>
   </mstyle>
 </math><asciimath>Y</asciimath></semx></fmt-stem> lies
-in the interval <stem block="false" type="MathML" id="_a375cc6e-d517-3d4b-f1a0-408468df5d56"><math xmlns="http://www.w3.org/1998/Math/MathML">
+in the interval <stem block="false" type="MathML" id="_473c7b94-782e-44eb-4533-ab222cd8ee9f"><math xmlns="http://www.w3.org/1998/Math/MathML">
   <mstyle displaystyle="false">
     <mrow>
       <mo>[</mo>
@@ -6668,7 +6668,7 @@ in the interval <stem block="false" type="MathML" id="_a375cc6e-d517-3d4b-f1a0-4
       <mo>]</mo>
     </mrow>
   </mstyle>
-</math><asciimath>[a, b]</asciimath></stem><fmt-stem type="MathML"><semx element="stem" source="_a375cc6e-d517-3d4b-f1a0-408468df5d56"><math xmlns="http://www.w3.org/1998/Math/MathML">
+</math><asciimath> [a, b]</asciimath></stem><fmt-stem type="MathML"><semx element="stem" source="_473c7b94-782e-44eb-4533-ab222cd8ee9f"><math xmlns="http://www.w3.org/1998/Math/MathML">
   <mstyle displaystyle="false">
     <mrow>
       <mo>[</mo>
@@ -6678,7 +6678,7 @@ in the interval <stem block="false" type="MathML" id="_a375cc6e-d517-3d4b-f1a0-4
       <mo>]</mo>
     </mrow>
   </mstyle>
-</math><asciimath>[a, b]</asciimath></semx></fmt-stem>, given the PDF (5), is</p>
+</math><asciimath> [a, b]</asciimath></semx></fmt-stem>, given the PDF (5), is</p>
 
 <formula id="eq_6" anchor="eq_6" semx-id="_7dd9e399-38c4-e5d2-ae69-1702c89d617e" autonum="6"><fmt-name id="_8d652e70-f67f-0f06-8b26-b83e28d06abf"><span class="fmt-caption-label"><span class="fmt-autonum-delim">(</span><semx element="autonum" source="eq_6">6</semx><span class="fmt-autonum-delim">)</span></span></fmt-name><fmt-xref-label><span class="fmt-element-name">Equation</span> <span class="fmt-autonum-delim">(</span><semx element="autonum" source="eq_6">6</semx><span class="fmt-autonum-delim">)</span></fmt-xref-label><stem block="true" type="MathML" id="_7e5b3ee2-030c-7628-7c0f-045c4758b318"><math xmlns="http://www.w3.org/1998/Math/MathML">
   <mstyle displaystyle="true">
@@ -7192,7 +7192,7 @@ with <stem block="false" type="MathML" id="_ce9ec73a-e5e0-166d-81e2-e827919cd918
 </math><asciimath>p_{"c"} = Phi ({y - T_{"L"}}/u).</asciimath></semx></fmt-stem></formula>
 
 <figure id="fig3" anchor="fig3" semx-id="_d294368c-fb4c-f684-3645-a98b930a3be5" autonum="3">
-<name id="_c05968f0-43d1-4a95-9cda-d9c55da225d7" semx-id="_cf6f9f2b-8f48-a5e2-22b3-6e4955a65e31">Tolerance interval with a single lower tolerance limit <stem block="false" type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
+<name id="_5352e3f8-18b7-40c0-9ef0-edcc05d34c87" semx-id="_cf6f9f2b-8f48-a5e2-22b3-6e4955a65e31">Tolerance interval with a single lower tolerance limit <stem block="false" type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
   <mstyle displaystyle="false">
     <msub>
       <mi mathvariant="normal">T</mi>
@@ -7224,7 +7224,7 @@ with <stem block="false" type="MathML" id="_ce9ec73a-e5e0-166d-81e2-e827919cd918
       <mtext>L</mtext>
     </msub>
   </mstyle>
-</math><asciimath>eta &#x3e;= T_{"L"}</asciimath></stem>.</name><fmt-name id="_62f7d3dd-96f7-3a6b-2476-634adb5f9d79"><span class="fmt-caption-label"><span class="fmt-element-name">Figure</span> <semx element="autonum" source="fig3">3</semx></span><span class="fmt-caption-delim"> — </span><semx element="name" source="_c05968f0-43d1-4a95-9cda-d9c55da225d7">Tolerance interval with a single lower tolerance limit <stem block="false" type="MathML" id="_fc02ae46-bd50-d182-2398-7ecbdc421864"><math xmlns="http://www.w3.org/1998/Math/MathML">
+</math><asciimath>eta &#x3e;= T_{"L"}</asciimath></stem>.</name><fmt-name id="_62f7d3dd-96f7-3a6b-2476-634adb5f9d79"><span class="fmt-caption-label"><span class="fmt-element-name">Figure</span> <semx element="autonum" source="fig3">3</semx></span><span class="fmt-caption-delim"> — </span><semx element="name" source="_5352e3f8-18b7-40c0-9ef0-edcc05d34c87">Tolerance interval with a single lower tolerance limit <stem block="false" type="MathML" id="_fc02ae46-bd50-d182-2398-7ecbdc421864"><math xmlns="http://www.w3.org/1998/Math/MathML">
   <mstyle displaystyle="false">
     <msub>
       <mi mathvariant="normal">T</mi>
@@ -7463,7 +7463,7 @@ In this case, the shaded region to the right of <stem block="false" type="MathML
 </math><asciimath>p_{"c"} = Phi ({T_{"U"} - y}/u).</asciimath></semx></fmt-stem></formula>
 
 <figure id="fig4" anchor="fig4" semx-id="_f1218924-8902-be40-8f66-afca8c27c1ee" autonum="4">
-<name id="_1a826c2e-43bf-4670-8ce4-d88b36949c9b" semx-id="_1ad04424-b9c2-3e8e-9aaf-836b83eefaf9">As <xref target="fig3"/> except with a single upper tolerance limit <stem block="false" type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
+<name id="_ac0a0c5c-ae2c-4425-a587-4c2665befda8" semx-id="_1ad04424-b9c2-3e8e-9aaf-836b83eefaf9">As <xref target="fig3"/> except with a single upper tolerance limit <stem block="false" type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
   <mstyle displaystyle="false">
     <msub>
       <mi mathvariant="normal">T</mi>
@@ -7483,7 +7483,7 @@ In this case, the shaded region to the right of <stem block="false" type="MathML
       <mtext>U</mtext>
     </msub>
   </mstyle>
-</math><asciimath>eta &#x3c;= T_{"U"}</asciimath></stem>.</name><fmt-name id="_969956d3-ac21-716e-85f4-8a95a3b7eeab"><span class="fmt-caption-label"><span class="fmt-element-name">Figure</span> <semx element="autonum" source="fig4">4</semx></span><span class="fmt-caption-delim"> — </span><semx element="name" source="_1a826c2e-43bf-4670-8ce4-d88b36949c9b">As <xref target="fig3" id="_f69fff3f-72f3-1740-27e8-6060715b014d"/><semx element="xref" source="_f69fff3f-72f3-1740-27e8-6060715b014d"><fmt-xref target="fig3"><span class="fmt-element-name">Figure</span> <semx element="autonum" source="fig3">3</semx></fmt-xref></semx> except with a single upper tolerance limit <stem block="false" type="MathML" id="_c816beae-4613-b4b1-d1b0-1bf3a81af948"><math xmlns="http://www.w3.org/1998/Math/MathML">
+</math><asciimath>eta &#x3c;= T_{"U"}</asciimath></stem>.</name><fmt-name id="_969956d3-ac21-716e-85f4-8a95a3b7eeab"><span class="fmt-caption-label"><span class="fmt-element-name">Figure</span> <semx element="autonum" source="fig4">4</semx></span><span class="fmt-caption-delim"> — </span><semx element="name" source="_ac0a0c5c-ae2c-4425-a587-4c2665befda8">As <xref target="fig3" id="_f69fff3f-72f3-1740-27e8-6060715b014d"/><semx element="xref" source="_f69fff3f-72f3-1740-27e8-6060715b014d"><fmt-xref target="fig3"><span class="fmt-element-name">Figure</span> <semx element="autonum" source="fig3">3</semx></fmt-xref></semx> except with a single upper tolerance limit <stem block="false" type="MathML" id="_c816beae-4613-b4b1-d1b0-1bf3a81af948"><math xmlns="http://www.w3.org/1998/Math/MathML">
   <mstyle displaystyle="false">
     <msub>
       <mi mathvariant="normal">T</mi>
@@ -8440,7 +8440,7 @@ the region <stem block="false" type="MathML" id="_6e55c8b3-b4f0-579f-5b65-fb2186
 </math><asciimath>eta &#x3e; T_{"U"}</asciimath></semx></fmt-stem> beyond the upper tolerance limit.</p>
 
 <figure id="fig5" anchor="fig5" semx-id="_5379081b-56ba-1435-8b5a-047042cc96db" autonum="5">
-<name id="_85dca70e-a0ad-484f-956d-59527418ca54" semx-id="_6d6b26db-115f-95d9-ad91-caa0f7b242db">As <xref target="fig3"/> except with a two-sided tolerance interval. The length, <stem block="false" type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
+<name id="_6eba0650-39e1-4b4c-9674-9073544d64dc" semx-id="_6d6b26db-115f-95d9-ad91-caa0f7b242db">As <xref target="fig3"/> except with a two-sided tolerance interval. The length, <stem block="false" type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
   <mstyle displaystyle="false">
     <msub>
       <mi mathvariant="normal">T</mi>
@@ -8474,7 +8474,7 @@ the region <stem block="false" type="MathML" id="_6e55c8b3-b4f0-579f-5b65-fb2186
       <mtext>U</mtext>
     </msub>
   </mstyle>
-</math><asciimath>T_{"L"} &#x3c;= eta &#x3c;= T_{"U"}</asciimath></stem>.</name><fmt-name id="_60ad2707-51c4-8bfb-a805-4c8434f05be6"><span class="fmt-caption-label"><span class="fmt-element-name">Figure</span> <semx element="autonum" source="fig5">5</semx></span><span class="fmt-caption-delim"> — </span><semx element="name" source="_85dca70e-a0ad-484f-956d-59527418ca54">As <xref target="fig3" id="_664e8ff2-296d-2ead-ef42-8e650ba73312"/><semx element="xref" source="_664e8ff2-296d-2ead-ef42-8e650ba73312"><fmt-xref target="fig3"><span class="fmt-element-name">Figure</span> <semx element="autonum" source="fig3">3</semx></fmt-xref></semx> except with a two-sided tolerance interval. The length, <stem block="false" type="MathML" id="_cd1bbc2a-09bd-95bd-0310-80844731dee0"><math xmlns="http://www.w3.org/1998/Math/MathML">
+</math><asciimath>T_{"L"} &#x3c;= eta &#x3c;= T_{"U"}</asciimath></stem>.</name><fmt-name id="_60ad2707-51c4-8bfb-a805-4c8434f05be6"><span class="fmt-caption-label"><span class="fmt-element-name">Figure</span> <semx element="autonum" source="fig5">5</semx></span><span class="fmt-caption-delim"> — </span><semx element="name" source="_6eba0650-39e1-4b4c-9674-9073544d64dc">As <xref target="fig3" id="_664e8ff2-296d-2ead-ef42-8e650ba73312"/><semx element="xref" source="_664e8ff2-296d-2ead-ef42-8e650ba73312"><fmt-xref target="fig3"><span class="fmt-element-name">Figure</span> <semx element="autonum" source="fig3">3</semx></fmt-xref></semx> except with a two-sided tolerance interval. The length, <stem block="false" type="MathML" id="_cd1bbc2a-09bd-95bd-0310-80844731dee0"><math xmlns="http://www.w3.org/1998/Math/MathML">
   <mstyle displaystyle="false">
     <msub>
       <mi mathvariant="normal">T</mi>
@@ -9142,7 +9142,7 @@ form of the PDF for <stem block="false" type="MathML" id="_0175cad3-bc53-169f-fc
 </math><asciimath>Y</asciimath></semx></fmt-stem>, no definite statement can be made about the conformance probability.</p>
 
 <figure id="fig6" anchor="fig6" semx-id="_e936c24b-ac61-4e85-472b-1370706aba2f" autonum="6">
-<name id="_b17277ad-c7be-4c43-b5fb-e83cd2e7905d" semx-id="_259a8553-56ae-82c6-8ca0-d9bb4d7fa8fd">Two 95 % coverage intervals for a measurand <stem block="false" type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
+<name id="_ad3764d5-9d8f-432e-83a5-e3225d8badf8" semx-id="_259a8553-56ae-82c6-8ca0-d9bb4d7fa8fd">Two 95 % coverage intervals for a measurand <stem block="false" type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
   <mstyle displaystyle="false">
     <mi mathvariant="normal">Y</mi>
   </mstyle>
@@ -9168,7 +9168,7 @@ form of the PDF for <stem block="false" type="MathML" id="_0175cad3-bc53-169f-fc
     <mtext> </mtext>
     <mi>%</mi>
   </mstyle>
-</math><asciimath>p_{"c"} &#x3e;= 95" "%</asciimath></stem>.</name><fmt-name id="_70ee1030-05eb-325c-b528-ac6d365c6109"><span class="fmt-caption-label"><span class="fmt-element-name">Figure</span> <semx element="autonum" source="fig6">6</semx></span><span class="fmt-caption-delim"> — </span><semx element="name" source="_b17277ad-c7be-4c43-b5fb-e83cd2e7905d">Two 95 % coverage intervals for a measurand <stem block="false" type="MathML" id="_6a97f3ef-55c1-38c3-2b6d-20deada86a32"><math xmlns="http://www.w3.org/1998/Math/MathML">
+</math><asciimath>p_{"c"} &#x3e;= 95" "%</asciimath></stem>.</name><fmt-name id="_70ee1030-05eb-325c-b528-ac6d365c6109"><span class="fmt-caption-label"><span class="fmt-element-name">Figure</span> <semx element="autonum" source="fig6">6</semx></span><span class="fmt-caption-delim"> — </span><semx element="name" source="_ad3764d5-9d8f-432e-83a5-e3225d8badf8">Two 95 % coverage intervals for a measurand <stem block="false" type="MathML" id="_6a97f3ef-55c1-38c3-2b6d-20deada86a32"><math xmlns="http://www.w3.org/1998/Math/MathML">
   <mstyle displaystyle="false">
     <mi mathvariant="normal">Y</mi>
   </mstyle>
@@ -10759,7 +10759,7 @@ to the estimate <stem block="false" type="MathML" id="_7dfe5b36-139b-4a25-29fd-5
 
 
 <figure id="fig7" anchor="fig7" semx-id="_4049ec28-ae53-9c87-7465-d6b4be2ec610" autonum="7">
-<name id="_c94a50b3-1c78-4cc8-9651-1d6976c41068" semx-id="_e3750b22-cad8-005e-aad2-87112867aa36">Measurement capability index <stem block="false" type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
+<name id="_7b74ca3c-561f-4e8f-a412-565628341ee9" semx-id="_e3750b22-cad8-005e-aad2-87112867aa36">Measurement capability index <stem block="false" type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
   <mstyle displaystyle="false">
     <msub>
       <mi mathvariant="normal">C</mi>
@@ -10832,7 +10832,7 @@ to the estimate <stem block="false" type="MathML" id="_7dfe5b36-139b-4a25-29fd-5
       <mo>)</mo>
     </mrow>
   </mstyle>
-</math><asciimath>varphi(eta; eta_{"m"}, u_{"m"}^2)</asciimath></stem>.</name><fmt-name id="_30be2bae-5825-8e7f-fa00-323668a4a011"><span class="fmt-caption-label"><span class="fmt-element-name">Figure</span> <semx element="autonum" source="fig7">7</semx></span><span class="fmt-caption-delim"> — </span><semx element="name" source="_c94a50b3-1c78-4cc8-9651-1d6976c41068">Measurement capability index <stem block="false" type="MathML" id="_b784ad88-b05c-6d2c-66dc-355c75777855"><math xmlns="http://www.w3.org/1998/Math/MathML">
+</math><asciimath>varphi(eta; eta_{"m"}, u_{"m"}^2)</asciimath></stem>.</name><fmt-name id="_30be2bae-5825-8e7f-fa00-323668a4a011"><span class="fmt-caption-label"><span class="fmt-element-name">Figure</span> <semx element="autonum" source="fig7">7</semx></span><span class="fmt-caption-delim"> — </span><semx element="name" source="_7b74ca3c-561f-4e8f-a412-565628341ee9">Measurement capability index <stem block="false" type="MathML" id="_b784ad88-b05c-6d2c-66dc-355c75777855"><math xmlns="http://www.w3.org/1998/Math/MathML">
   <mstyle displaystyle="false">
     <msub>
       <mi mathvariant="normal">C</mi>
@@ -11477,7 +11477,7 @@ equivalent to the requirement that <stem block="false" type="MathML" id="_71ed73
 <p id="_5b963974-891f-09fd-ceaf-3e3574fc6882" semx-id="_5b963974-891f-09fd-ceaf-3e3574fc6882">Either of these probabilities can be reduced, at the cost of increasing the other, by choosing acceptance limits offset from the tolerance limits, a conformity decision strategy called guardbanding; see references  <eref type="inline" bibitemid="ref6" citeas="[6]" id="_e94ca825-b671-f888-5f40-8d549fb4d4d2"/><semx element="eref" source="_e94ca825-b671-f888-5f40-8d549fb4d4d2">[<fmt-xref type="inline" target="ref6">6</fmt-xref>]</semx>, <eref type="inline" bibitemid="ref7" citeas="[7]" id="_da8763a4-0a45-c7d6-eabf-67dafe8282fd"/><semx element="eref" source="_da8763a4-0a45-c7d6-eabf-67dafe8282fd">[<fmt-xref type="inline" target="ref7">7</fmt-xref>]</semx>, <eref type="inline" bibitemid="ref8" citeas="[8]" id="_098c1e17-6db2-f424-90cd-bb8eaf8a4912"/><semx element="eref" source="_098c1e17-6db2-f424-90cd-bb8eaf8a4912">[<fmt-xref type="inline" target="ref8">8</fmt-xref>]</semx>, <eref type="inline" bibitemid="ref9" citeas="[9]" id="_2c32a7f0-c8a2-5813-3733-0a5c70180e21"/><semx element="eref" source="_2c32a7f0-c8a2-5813-3733-0a5c70180e21">[<fmt-xref type="inline" target="ref9">9</fmt-xref>]</semx>, <eref type="inline" bibitemid="ref12" citeas="[12]" id="_a4cd84f1-76ce-5270-b137-91b27eda6153"/><semx element="eref" source="_a4cd84f1-76ce-5270-b137-91b27eda6153">[<fmt-xref type="inline" target="ref12">12</fmt-xref>]</semx>, <eref type="inline" bibitemid="ref17" citeas="[17]" id="_bcd6123e-86bf-f1ac-86c4-cf80b0c75994"/><semx element="eref" source="_bcd6123e-86bf-f1ac-86c4-cf80b0c75994">[<fmt-xref type="inline" target="ref17">17</fmt-xref>]</semx>, <eref type="inline" bibitemid="ref44" citeas="[44]" id="_687b0349-650e-f1a1-0bc3-a7cd950b8116"/><semx element="eref" source="_687b0349-650e-f1a1-0bc3-a7cd950b8116">[<fmt-xref type="inline" target="ref44">44</fmt-xref>]</semx>.</p>
 
 <figure id="fig8" anchor="fig8" semx-id="_3e969f0b-8a3a-17f4-8149-c401c0dbffd9" autonum="8">
-<name id="_ff818d90-e9b3-4ead-ad13-ad0cf56dddd4" semx-id="_130cef36-73a5-7176-7e7a-a195669bf5e2">Simple acceptance decision rule near an upper tolerance limit <stem block="false" type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
+<name id="_b3363784-576d-4ed0-b0a3-b5f1fce5b6af" semx-id="_130cef36-73a5-7176-7e7a-a195669bf5e2">Simple acceptance decision rule near an upper tolerance limit <stem block="false" type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
   <mstyle displaystyle="false">
     <msub>
       <mi mathvariant="normal">T</mi>
@@ -11491,7 +11491,7 @@ equivalent to the requirement that <stem block="false" type="MathML" id="_71ed73
       <mtext>U</mtext>
     </msub>
   </mstyle>
-</math><asciimath>A_{"U"}</asciimath></stem> coincides with the tolerance limit. Decisions to accept or reject inspected items are based on measured values (triangles); the true values (circles) cannot be known. Cases (b) and (c) lead to incorrect decisions called false acceptance and false rejection, respectively (see clause <xref target="sec_9.3.2"/>). In case (c) the true value of the measurand lies (unknowingly) outside the 95 % coverage interval.</name><fmt-name id="_ca2464e3-01f5-eec7-1946-af58f58a5f3a"><span class="fmt-caption-label"><span class="fmt-element-name">Figure</span> <semx element="autonum" source="fig8">8</semx></span><span class="fmt-caption-delim"> — </span><semx element="name" source="_ff818d90-e9b3-4ead-ad13-ad0cf56dddd4">Simple acceptance decision rule near an upper tolerance limit <stem block="false" type="MathML" id="_308213a5-7dbb-069a-8d35-5a7ee2fa71b1"><math xmlns="http://www.w3.org/1998/Math/MathML">
+</math><asciimath>A_{"U"}</asciimath></stem> coincides with the tolerance limit. Decisions to accept or reject inspected items are based on measured values (triangles); the true values (circles) cannot be known. Cases (b) and (c) lead to incorrect decisions called false acceptance and false rejection, respectively (see clause <xref target="sec_9.3.2"/>). In case (c) the true value of the measurand lies (unknowingly) outside the 95 % coverage interval.</name><fmt-name id="_ca2464e3-01f5-eec7-1946-af58f58a5f3a"><span class="fmt-caption-label"><span class="fmt-element-name">Figure</span> <semx element="autonum" source="fig8">8</semx></span><span class="fmt-caption-delim"> — </span><semx element="name" source="_b3363784-576d-4ed0-b0a3-b5f1fce5b6af">Simple acceptance decision rule near an upper tolerance limit <stem block="false" type="MathML" id="_308213a5-7dbb-069a-8d35-5a7ee2fa71b1"><math xmlns="http://www.w3.org/1998/Math/MathML">
   <mstyle displaystyle="false">
     <msub>
       <mi mathvariant="normal">T</mi>
@@ -11579,7 +11579,7 @@ rule is called guarded acceptance.<note id="_62e5bb74-bbe5-6b38-94a2-0a0e6b22478
 
 
 <figure id="fig9" anchor="fig9" semx-id="_d90fe1d1-7b6b-38e6-eeaf-527e20dd27aa" autonum="9">
-<name id="_9a4c6dab-d5df-4eee-ba15-e66d679bc96b" semx-id="_02795a3b-7a76-d1b2-6488-3e082e7ddb9a">Decision rule based on guarded acceptance. An upper acceptance limit <stem block="false" type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
+<name id="_e4a3c2ce-0a59-4114-8958-35affee65a22" semx-id="_02795a3b-7a76-d1b2-6488-3e082e7ddb9a">Decision rule based on guarded acceptance. An upper acceptance limit <stem block="false" type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
   <mstyle displaystyle="false">
     <msub>
       <mi mathvariant="normal">A</mi>
@@ -11613,7 +11613,7 @@ rule is called guarded acceptance.<note id="_62e5bb74-bbe5-6b38-94a2-0a0e6b22478
     <mo>&#x3e;</mo>
     <mn>0</mn>
   </mstyle>
-</math><asciimath>w = T_{"U"} - A_{"U"} &#x3e; 0</asciimath></stem>.</name><fmt-name id="_a619d50a-1b70-b1de-67ad-397a799e9f70"><span class="fmt-caption-label"><span class="fmt-element-name">Figure</span> <semx element="autonum" source="fig9">9</semx></span><span class="fmt-caption-delim"> — </span><semx element="name" source="_9a4c6dab-d5df-4eee-ba15-e66d679bc96b">Decision rule based on guarded acceptance. An upper acceptance limit <stem block="false" type="MathML" id="_54fa707b-522d-cc31-9259-b5e7e9be7b03"><math xmlns="http://www.w3.org/1998/Math/MathML">
+</math><asciimath>w = T_{"U"} - A_{"U"} &#x3e; 0</asciimath></stem>.</name><fmt-name id="_a619d50a-1b70-b1de-67ad-397a799e9f70"><span class="fmt-caption-label"><span class="fmt-element-name">Figure</span> <semx element="autonum" source="fig9">9</semx></span><span class="fmt-caption-delim"> — </span><semx element="name" source="_e4a3c2ce-0a59-4114-8958-35affee65a22">Decision rule based on guarded acceptance. An upper acceptance limit <stem block="false" type="MathML" id="_54fa707b-522d-cc31-9259-b5e7e9be7b03"><math xmlns="http://www.w3.org/1998/Math/MathML">
   <mstyle displaystyle="false">
     <msub>
       <mi mathvariant="normal">A</mi>
@@ -11870,7 +11870,7 @@ with length parameter <stem block="false" type="MathML" id="_db02d0a7-1dbd-d288-
 </math><asciimath>w = 2u</asciimath></semx></fmt-stem>, is to ensure that for any measured value lying within the acceptance interval, the probability of accepting a nonconforming item is at most 2.3 %, assuming a normal PDF for the measured quantity. This maximum probability occurs if the measured value of the property coincides with an acceptance limit. For measured values away from the acceptance limits, the probability of a false acceptance will be less than the maximum.</p>
 
 <figure id="fig10" anchor="fig10" semx-id="_8174179d-cfb6-7864-8bff-243f19c7318e" autonum="10">
-<name id="_04dd6860-593c-4326-a40a-002c75a8c936" semx-id="_0c5a44a5-6d22-d0a1-1d46-daaccdbbafc8">Two-sided acceptance interval created by reducing the tolerance interval on either side by the <stem block="false" type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
+<name id="_3b5c97d0-bfe4-4841-b7a5-11a5b51d92d1" semx-id="_0c5a44a5-6d22-d0a1-1d46-daaccdbbafc8">Two-sided acceptance interval created by reducing the tolerance interval on either side by the <stem block="false" type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
   <mstyle displaystyle="false">
     <mi>k</mi>
     <mo>=</mo>
@@ -11883,7 +11883,7 @@ with length parameter <stem block="false" type="MathML" id="_db02d0a7-1dbd-d288-
     <mn>2</mn>
     <mi>u</mi>
   </mstyle>
-</math><asciimath>U = 2u</asciimath></stem>. This is the default decision rule established in <eref type="inline" bibitemid="ref21" citeas="ISO 14253-1:1998"/>.</name><fmt-name id="_32292f53-597c-39b3-4337-dfdbfeeea56d"><span class="fmt-caption-label"><span class="fmt-element-name">Figure</span> <semx element="autonum" source="fig10">10</semx></span><span class="fmt-caption-delim"> — </span><semx element="name" source="_04dd6860-593c-4326-a40a-002c75a8c936">Two-sided acceptance interval created by reducing the tolerance interval on either side by the <stem block="false" type="MathML" id="_85a2c9c7-3e59-a1f9-1b62-2f6da0c93aa1"><math xmlns="http://www.w3.org/1998/Math/MathML">
+</math><asciimath>U = 2u</asciimath></stem>. This is the default decision rule established in <eref type="inline" bibitemid="ref21" citeas="ISO 14253-1:1998"/>.</name><fmt-name id="_32292f53-597c-39b3-4337-dfdbfeeea56d"><span class="fmt-caption-label"><span class="fmt-element-name">Figure</span> <semx element="autonum" source="fig10">10</semx></span><span class="fmt-caption-delim"> — </span><semx element="name" source="_3b5c97d0-bfe4-4841-b7a5-11a5b51d92d1">Two-sided acceptance interval created by reducing the tolerance interval on either side by the <stem block="false" type="MathML" id="_85a2c9c7-3e59-a1f9-1b62-2f6da0c93aa1"><math xmlns="http://www.w3.org/1998/Math/MathML">
   <mstyle displaystyle="false">
     <mi>k</mi>
     <mo>=</mo>
@@ -11974,7 +11974,7 @@ a negative action.<note id="_366ff03c-dd84-507c-9e5f-7da87ecb91e0" semx-id="_366
 </math><asciimath>w = T_{"U"} - A_{"U"} &#x3c; 0</asciimath></semx></fmt-stem>.</p>
 
 <figure id="fig11" anchor="fig11" semx-id="_09d6b29c-9807-7164-f79e-71ae05dd6ec0" autonum="11">
-<name id="_6509dce9-c4db-40f5-ba13-783cfb561742" semx-id="_a92edf06-3821-e386-fc1f-1d977189f57b">Decision rule based on guarded rejection. An upper acceptance limit <stem block="false" type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
+<name id="_21fc72d6-0cc8-4d20-9d94-8942d908e154" semx-id="_a92edf06-3821-e386-fc1f-1d977189f57b">Decision rule based on guarded rejection. An upper acceptance limit <stem block="false" type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
   <mstyle displaystyle="false">
     <msub>
       <mi mathvariant="normal">A</mi>
@@ -12008,7 +12008,7 @@ a negative action.<note id="_366ff03c-dd84-507c-9e5f-7da87ecb91e0" semx-id="_366
     <mo>&#x3c;</mo>
     <mn>0</mn>
   </mstyle>
-</math><asciimath>w = T_{"U"} - A_{"U"} &#x3c; 0</asciimath></stem>.</name><fmt-name id="_fe6818b8-d597-b1ab-890e-80842f7f7e12"><span class="fmt-caption-label"><span class="fmt-element-name">Figure</span> <semx element="autonum" source="fig11">11</semx></span><span class="fmt-caption-delim"> — </span><semx element="name" source="_6509dce9-c4db-40f5-ba13-783cfb561742">Decision rule based on guarded rejection. An upper acceptance limit <stem block="false" type="MathML" id="_207e29b8-cbcc-7982-9608-01596cec6f19"><math xmlns="http://www.w3.org/1998/Math/MathML">
+</math><asciimath>w = T_{"U"} - A_{"U"} &#x3c; 0</asciimath></stem>.</name><fmt-name id="_fe6818b8-d597-b1ab-890e-80842f7f7e12"><span class="fmt-caption-label"><span class="fmt-element-name">Figure</span> <semx element="autonum" source="fig11">11</semx></span><span class="fmt-caption-delim"> — </span><semx element="name" source="_21fc72d6-0cc8-4d20-9d94-8942d908e154">Decision rule based on guarded rejection. An upper acceptance limit <stem block="false" type="MathML" id="_207e29b8-cbcc-7982-9608-01596cec6f19"><math xmlns="http://www.w3.org/1998/Math/MathML">
   <mstyle displaystyle="false">
     <msub>
       <mi mathvariant="normal">A</mi>
@@ -12912,7 +12912,7 @@ is dominated by reproducibility effects and the PDF for nandrolone concentration
 <p id="_a5012123-04ff-17b1-413c-a0d558f7b84a" semx-id="_a5012123-04ff-17b1-413c-a0d558f7b84a">The risks also depend on the nature of the production process. If the process rarely produces an item whose property of interest is near the tolerance limits, there is less opportunity for incorrect decisions to be made. Conversely, if a process produces items with properties likely to be close to tolerance limits, the uncertainties associated with the measurements are brought into play. The remainder of this clause shows how the contributions of both factors can be evaluated.</p>
 
 <figure id="fig12" anchor="fig12" semx-id="_6007a444-fa40-f2d8-e4d0-b219c5ebe6b9" autonum="12">
-<name id="_9066bf28-f193-40cf-8afd-e3d5191d79b5" semx-id="_fcaf3223-80b7-e5f7-5b07-ae3f2f026a71">Binary conformity assessment where decisions are based on measured quantity values. The true value of a measurable property (the measurand) of an item is specified to lie in a tolerance interval defined by limits <stem block="false" type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
+<name id="_dd5e8b53-e3a6-4f31-88d6-ff71c09f338e" semx-id="_fcaf3223-80b7-e5f7-5b07-ae3f2f026a71">Binary conformity assessment where decisions are based on measured quantity values. The true value of a measurable property (the measurand) of an item is specified to lie in a tolerance interval defined by limits <stem block="false" type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
   <mstyle displaystyle="false">
     <mrow>
       <mo>(</mo>
@@ -12944,7 +12944,7 @@ is dominated by reproducibility effects and the PDF for nandrolone concentration
       <mo>)</mo>
     </mrow>
   </mstyle>
-</math><asciimath>(A_{"L"}, A_{"U"})</asciimath></stem>, and rejected as non-conforming otherwise.</name><fmt-name id="_1cbe7648-0a06-61dd-bea1-a42563505d9c"><span class="fmt-caption-label"><span class="fmt-element-name">Figure</span> <semx element="autonum" source="fig12">12</semx></span><span class="fmt-caption-delim"> — </span><semx element="name" source="_9066bf28-f193-40cf-8afd-e3d5191d79b5">Binary conformity assessment where decisions are based on measured quantity values. The true value of a measurable property (the measurand) of an item is specified to lie in a tolerance interval defined by limits <stem block="false" type="MathML" id="_caa53270-0ae3-e2bc-043a-1401aeb42f42"><math xmlns="http://www.w3.org/1998/Math/MathML">
+</math><asciimath>(A_{"L"}, A_{"U"})</asciimath></stem>, and rejected as non-conforming otherwise.</name><fmt-name id="_1cbe7648-0a06-61dd-bea1-a42563505d9c"><span class="fmt-caption-label"><span class="fmt-element-name">Figure</span> <semx element="autonum" source="fig12">12</semx></span><span class="fmt-caption-delim"> — </span><semx element="name" source="_dd5e8b53-e3a6-4f31-88d6-ff71c09f338e">Binary conformity assessment where decisions are based on measured quantity values. The true value of a measurable property (the measurand) of an item is specified to lie in a tolerance interval defined by limits <stem block="false" type="MathML" id="_caa53270-0ae3-e2bc-043a-1401aeb42f42"><math xmlns="http://www.w3.org/1998/Math/MathML">
   <mstyle displaystyle="false">
     <mrow>
       <mo>(</mo>
@@ -17008,7 +17008,7 @@ of <stem block="false" type="MathML" id="_ba3c6c2b-59bf-257b-04d9-2e6fa14a56c9">
 <p id="_a0ca3580-3d9f-89f2-1661-e3c187296a40" semx-id="_a0ca3580-3d9f-89f2-1661-e3c187296a40">For economic reasons, the fraction of non-conforming bearings sold to customers as conforming (the global consumer’s risk) must be held to 0.1 % or less. How can an acceptance limit A be chosen to satisfy this requirement?</p>
 
 <figure id="fig13" anchor="fig13" semx-id="_bcff011f-dbfb-55d5-b6ec-933f2b49a247" autonum="13">
-<name id="_2252dfd2-e80f-445d-87ff-29e03d1f5ec7" semx-id="_baa7c074-0c81-0d5c-1a9b-b50009aa3b19">Tolerance and acceptance intervals for the conformity assessment of ball bearings. Permissible values of radial error motion <stem block="false" type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
+<name id="_448255b5-7013-44b1-ab44-ac0ca22554e9" semx-id="_baa7c074-0c81-0d5c-1a9b-b50009aa3b19">Tolerance and acceptance intervals for the conformity assessment of ball bearings. Permissible values of radial error motion <stem block="false" type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
   <mstyle displaystyle="false">
     <mi mathvariant="normal">Y</mi>
   </mstyle>
@@ -17048,7 +17048,7 @@ of <stem block="false" type="MathML" id="_ba3c6c2b-59bf-257b-04d9-2e6fa14a56c9">
     <mo>&#x3e;</mo>
     <mn>0</mn>
   </mstyle>
-</math><asciimath>w &#x3e; 0</asciimath></stem>.</name><fmt-name id="_e4bccade-5fe3-f538-db34-24272b3c19c2"><span class="fmt-caption-label"><span class="fmt-element-name">Figure</span> <semx element="autonum" source="fig13">13</semx></span><span class="fmt-caption-delim"> — </span><semx element="name" source="_2252dfd2-e80f-445d-87ff-29e03d1f5ec7">Tolerance and acceptance intervals for the conformity assessment of ball bearings. Permissible values of radial error motion <stem block="false" type="MathML" id="_4a8c2161-b4b1-66e8-2ed2-a06639ea746f"><math xmlns="http://www.w3.org/1998/Math/MathML">
+</math><asciimath>w &#x3e; 0</asciimath></stem>.</name><fmt-name id="_e4bccade-5fe3-f538-db34-24272b3c19c2"><span class="fmt-caption-label"><span class="fmt-element-name">Figure</span> <semx element="autonum" source="fig13">13</semx></span><span class="fmt-caption-delim"> — </span><semx element="name" source="_448255b5-7013-44b1-ab44-ac0ca22554e9">Tolerance and acceptance intervals for the conformity assessment of ball bearings. Permissible values of radial error motion <stem block="false" type="MathML" id="_4a8c2161-b4b1-66e8-2ed2-a06639ea746f"><math xmlns="http://www.w3.org/1998/Math/MathML">
   <mstyle displaystyle="false">
     <mi mathvariant="normal">Y</mi>
   </mstyle>
@@ -17455,7 +17455,7 @@ PDF for bearing radial error <stem block="false" type="MathML" id="_cf569614-29c
 </math><asciimath>g_0 (eta) = "gamma" (eta ; 4, 4) = 128/3 eta^3 e^{-4 eta} , " " eta &#x3e;= 0 .</asciimath></semx></fmt-stem></formula>
 
 <figure id="fig14" anchor="fig14" semx-id="_9f4c90ca-98f5-71e2-6671-9709caa8f8e1" autonum="14">
-<name id="_52e698ba-55b3-4ac8-8189-2cccfd3b7350" semx-id="_5a0aedaa-f087-97de-5f98-9986914af811">Gamma prior PDF given by <xref target="eq_22"/>, assigned based on the frequency distribution of measured radial error motions for a sample of ball bearings. The tolerance interval is the region <stem block="false" type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
+<name id="_56417ae4-49c9-42d2-bb2f-556c2622bd93" semx-id="_5a0aedaa-f087-97de-5f98-9986914af811">Gamma prior PDF given by <xref target="eq_22"/>, assigned based on the frequency distribution of measured radial error motions for a sample of ball bearings. The tolerance interval is the region <stem block="false" type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
   <mstyle displaystyle="false">
     <mn>0</mn>
     <mo>≤</mo>
@@ -17532,7 +17532,7 @@ PDF for bearing radial error <stem block="false" type="MathML" id="_cf569614-29c
       <mn>0</mn>
     </msub>
   </mstyle>
-</math><asciimath>y_0</asciimath></stem>.</name><fmt-name id="_7a8b804d-aa05-c806-51f8-225ebef26fd3"><span class="fmt-caption-label"><span class="fmt-element-name">Figure</span> <semx element="autonum" source="fig14">14</semx></span><span class="fmt-caption-delim"> — </span><semx element="name" source="_52e698ba-55b3-4ac8-8189-2cccfd3b7350">Gamma prior PDF given by <xref target="eq_22" id="_8db26ba6-c6b0-8f8e-16e6-2a369c1344a5"/><semx element="xref" source="_8db26ba6-c6b0-8f8e-16e6-2a369c1344a5"><fmt-xref target="eq_22"><span class="fmt-element-name">Equation</span> <span class="fmt-autonum-delim">(</span><semx element="autonum" source="eq_22">23</semx><span class="fmt-autonum-delim">)</span></fmt-xref></semx>, assigned based on the frequency distribution of measured radial error motions for a sample of ball bearings. The tolerance interval is the region <stem block="false" type="MathML" id="_6da491e8-fe8c-6781-cfc6-675e4ea928fe"><math xmlns="http://www.w3.org/1998/Math/MathML">
+</math><asciimath>y_0</asciimath></stem>.</name><fmt-name id="_7a8b804d-aa05-c806-51f8-225ebef26fd3"><span class="fmt-caption-label"><span class="fmt-element-name">Figure</span> <semx element="autonum" source="fig14">14</semx></span><span class="fmt-caption-delim"> — </span><semx element="name" source="_56417ae4-49c9-42d2-bb2f-556c2622bd93">Gamma prior PDF given by <xref target="eq_22" id="_8db26ba6-c6b0-8f8e-16e6-2a369c1344a5"/><semx element="xref" source="_8db26ba6-c6b0-8f8e-16e6-2a369c1344a5"><fmt-xref target="eq_22"><span class="fmt-element-name">Equation</span> <span class="fmt-autonum-delim">(</span><semx element="autonum" source="eq_22">23</semx><span class="fmt-autonum-delim">)</span></fmt-xref></semx>, assigned based on the frequency distribution of measured radial error motions for a sample of ball bearings. The tolerance interval is the region <stem block="false" type="MathML" id="_6da491e8-fe8c-6781-cfc6-675e4ea928fe"><math xmlns="http://www.w3.org/1998/Math/MathML">
   <mstyle displaystyle="false">
     <mn>0</mn>
     <mo>≤</mo>
@@ -18775,7 +18775,7 @@ and performing the integrations over <stem block="false" type="MathML" id="_bfae
 </math><asciimath>R_P(r) = 128/3 int_0^2 [1 - Phi(8 - 2r - 4eta)] eta^3 e^{-4eta} "d"eta .</asciimath></semx></fmt-stem></formula>
 
 <figure id="fig15" anchor="fig15" semx-id="_f44ba203-e871-53cb-4634-028ab3743682" autonum="15">
-<name id="_c1551f04-9365-4d65-973c-8d7db1695556" semx-id="_fbc3564d-778c-899f-6ef9-c7db5cdf4bcd">Global consumer’s risk <stem block="false" type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
+<name id="_c1a5749b-eaab-44a2-99fa-5e5f4e161d2d" semx-id="_fbc3564d-778c-899f-6ef9-c7db5cdf4bcd">Global consumer’s risk <stem block="false" type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
   <mstyle displaystyle="false">
     <msub>
       <mi mathvariant="normal">R</mi>
@@ -18830,7 +18830,7 @@ and performing the integrations over <stem block="false" type="MathML" id="_bfae
     <mn>0.1</mn>
     <mi>%</mi>
   </mstyle>
-</math><asciimath>R_C = 0.1 %</asciimath></stem> is achieved.</name><fmt-name id="_d3e8719d-bde1-121b-c866-e488f4218a80"><span class="fmt-caption-label"><span class="fmt-element-name">Figure</span> <semx element="autonum" source="fig15">15</semx></span><span class="fmt-caption-delim"> — </span><semx element="name" source="_c1551f04-9365-4d65-973c-8d7db1695556">Global consumer’s risk <stem block="false" type="MathML" id="_cc0f6c0d-6134-b776-909f-a5610108255d"><math xmlns="http://www.w3.org/1998/Math/MathML">
+</math><asciimath>R_C = 0.1 %</asciimath></stem> is achieved.</name><fmt-name id="_d3e8719d-bde1-121b-c866-e488f4218a80"><span class="fmt-caption-label"><span class="fmt-element-name">Figure</span> <semx element="autonum" source="fig15">15</semx></span><span class="fmt-caption-delim"> — </span><semx element="name" source="_c1a5749b-eaab-44a2-99fa-5e5f4e161d2d">Global consumer’s risk <stem block="false" type="MathML" id="_cc0f6c0d-6134-b776-909f-a5610108255d"><math xmlns="http://www.w3.org/1998/Math/MathML">
   <mstyle displaystyle="false">
     <msub>
       <mi mathvariant="normal">R</mi>
@@ -19245,7 +19245,7 @@ ball bearing example. For <stem block="false" type="MathML" id="_14faead2-c054-0
 <p id="_0e297182-f30f-1fd5-4579-8a6fcfa4daf4" semx-id="_0e297182-f30f-1fd5-4579-8a6fcfa4daf4">The generation of an increasing amount of conforming scrap is a cost of guarded acceptance, which seeks to reduce the acceptance and shipment of non-conforming products. In practice a supplier must choose an operating point along a curve such as that shown in  <xref target="fig16" id="_e2dc9c26-a25b-2405-5e66-f48ccea7f414"/><semx element="xref" source="_e2dc9c26-a25b-2405-5e66-f48ccea7f414"><fmt-xref target="fig16"><span class="fmt-element-name">Figure</span> <semx element="autonum" source="fig16">16</semx></fmt-xref></semx> that will balance the risks and yield an optimal outcome. The choice of such an operating point is a business or policy decision that requires an economic analysis of the decision problem.</p>
 
 <figure id="fig16" anchor="fig16" semx-id="_4b701fb1-183d-4f7d-6cd7-476e5cafe3ae" autonum="16">
-<name id="_c7bb2491-4fd2-4a12-9e71-79c81e4da8b5" semx-id="_2ee33b91-860d-5913-e35b-28b589204e66">Global risks <stem block="false" type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
+<name id="_915b540d-690d-47c2-8d66-393e55f82204" semx-id="_2ee33b91-860d-5913-e35b-28b589204e66">Global risks <stem block="false" type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
   <mstyle displaystyle="false">
     <msub>
       <mi mathvariant="normal">R</mi>
@@ -19267,7 +19267,7 @@ ball bearing example. For <stem block="false" type="MathML" id="_14faead2-c054-0
   <mstyle displaystyle="false">
     <mi>r</mi>
   </mstyle>
-</math><asciimath>r</asciimath></stem>) always increases the risk of falsely rejecting conforming bearings. An economic analysis is required to choose an optimal decision rule. The open circle marks the operating point in the worked example.</name><fmt-name id="_1b74ffba-e84c-5ed5-dd77-8fd4b9421baa"><span class="fmt-caption-label"><span class="fmt-element-name">Figure</span> <semx element="autonum" source="fig16">16</semx></span><span class="fmt-caption-delim"> — </span><semx element="name" source="_c7bb2491-4fd2-4a12-9e71-79c81e4da8b5">Global risks <stem block="false" type="MathML" id="_17cac656-6afd-1dff-af36-3af29f96cb30"><math xmlns="http://www.w3.org/1998/Math/MathML">
+</math><asciimath>r</asciimath></stem>) always increases the risk of falsely rejecting conforming bearings. An economic analysis is required to choose an optimal decision rule. The open circle marks the operating point in the worked example.</name><fmt-name id="_1b74ffba-e84c-5ed5-dd77-8fd4b9421baa"><span class="fmt-caption-label"><span class="fmt-element-name">Figure</span> <semx element="autonum" source="fig16">16</semx></span><span class="fmt-caption-delim"> — </span><semx element="name" source="_915b540d-690d-47c2-8d66-393e55f82204">Global risks <stem block="false" type="MathML" id="_17cac656-6afd-1dff-af36-3af29f96cb30"><math xmlns="http://www.w3.org/1998/Math/MathML">
   <mstyle displaystyle="false">
     <msub>
       <mi mathvariant="normal">R</mi>
@@ -19723,7 +19723,7 @@ equal to <stem block="false" type="MathML" id="_dd3b6fdf-bd7c-2c3f-4588-a21670da
 </ul>
 
 <figure id="fig17" anchor="fig17" semx-id="_903e2bc2-1aa8-5c61-5cbf-090b4bf2db68" autonum="17">
-<name id="_78837a1c-d4d6-4e5d-98a1-f7d53c9bf7a5" semx-id="_9204f25e-f296-ffe9-fb86-937290c7a637">Global risks <stem block="false" type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
+<name id="_0e9350f1-c555-4c0d-a2c2-f2a29a3f5dae" semx-id="_9204f25e-f296-ffe9-fb86-937290c7a637">Global risks <stem block="false" type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
   <mstyle displaystyle="false">
     <msub>
       <mi mathvariant="normal">R</mi>
@@ -19787,7 +19787,7 @@ equal to <stem block="false" type="MathML" id="_dd3b6fdf-bd7c-2c3f-4588-a21670da
     <mn>2</mn>
     <mi>u</mi>
   </mstyle>
-</math><asciimath>U = 2u</asciimath></stem>. Positive values of w correspond to guarded acceptance, with acceptance limits inside the tolerance limits as in <xref target="fig12"/>.</name><fmt-name id="_1ae9c3f6-494b-ccda-e008-88c4f8d985ca"><span class="fmt-caption-label"><span class="fmt-element-name">Figure</span> <semx element="autonum" source="fig17">17</semx></span><span class="fmt-caption-delim"> — </span><semx element="name" source="_78837a1c-d4d6-4e5d-98a1-f7d53c9bf7a5">Global risks <stem block="false" type="MathML" id="_2ba145a5-573c-2b69-10e5-6f7ccad093bb"><math xmlns="http://www.w3.org/1998/Math/MathML">
+</math><asciimath>U = 2u</asciimath></stem>. Positive values of w correspond to guarded acceptance, with acceptance limits inside the tolerance limits as in <xref target="fig12"/>.</name><fmt-name id="_1ae9c3f6-494b-ccda-e008-88c4f8d985ca"><span class="fmt-caption-label"><span class="fmt-element-name">Figure</span> <semx element="autonum" source="fig17">17</semx></span><span class="fmt-caption-delim"> — </span><semx element="name" source="_0e9350f1-c555-4c0d-a2c2-f2a29a3f5dae">Global risks <stem block="false" type="MathML" id="_2ba145a5-573c-2b69-10e5-6f7ccad093bb"><math xmlns="http://www.w3.org/1998/Math/MathML">
   <mstyle displaystyle="false">
     <msub>
       <mi mathvariant="normal">R</mi>
@@ -20128,11 +20128,11 @@ reduce these risks to <stem block="false" type="MathML" id="_7d238e89-3f85-a54c-
 
 
 
-<references id="_2c544c49-62fc-c567-058e-cca86be07212" normative="true" obligation="informative" semx-id="_2c544c49-62fc-c567-058e-cca86be07212" displayorder="6">
-<title id="_96fce99f-ce1f-b184-eb60-fb7c71327943" semx-id="_270c5ee6-077e-f285-ff95-287984a30140">Normative references</title><fmt-title depth="1" id="_0ce69191-069b-fbe3-5648-0b9812b4de47"><span class="fmt-caption-label"><semx element="autonum" source="_2c544c49-62fc-c567-058e-cca86be07212">2</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_96fce99f-ce1f-b184-eb60-fb7c71327943">Normative references</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_2c544c49-62fc-c567-058e-cca86be07212">2</semx></fmt-xref-label><p id="_5d68767b-3c2e-b2ee-db6d-6b8ca4c42620" semx-id="_5d68767b-3c2e-b2ee-db6d-6b8ca4c42620">The following referenced documents are indispensable for the application of this document. For dated references, only the edition cited applies. For undated references, the latest edition of the referenced document (including any amendments) applies.</p>
+<references id="_5d6341c9-dbe8-2199-bfc8-4125222cf5c2" normative="true" obligation="informative" semx-id="_5d6341c9-dbe8-2199-bfc8-4125222cf5c2" displayorder="6">
+<title id="_96fce99f-ce1f-b184-eb60-fb7c71327943" semx-id="_270c5ee6-077e-f285-ff95-287984a30140">Normative references</title><fmt-title depth="1" id="_0ce69191-069b-fbe3-5648-0b9812b4de47"><span class="fmt-caption-label"><semx element="autonum" source="_5d6341c9-dbe8-2199-bfc8-4125222cf5c2">2</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_96fce99f-ce1f-b184-eb60-fb7c71327943">Normative references</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_5d6341c9-dbe8-2199-bfc8-4125222cf5c2">2</semx></fmt-xref-label><p id="_5d68767b-3c2e-b2ee-db6d-6b8ca4c42620" semx-id="_5d68767b-3c2e-b2ee-db6d-6b8ca4c42620">The following referenced documents are indispensable for the application of this document. For dated references, only the edition cited applies. For undated references, the latest edition of the referenced document (including any amendments) applies.</p>
 
-<bibitem id="JCGM_100_2008" type="standard" schema-version="v1.2.9" anchor="JCGM_100_2008" semx-id="_8598a799-cc15-9d0f-34f4-e948c0bd15ff"><formattedref><em>Guide to the expression of uncertainty in measurement</em></formattedref>
-  <fetched>2025-07-22</fetched>
+<bibitem id="JCGM_100_2008" type="standard" schema-version="v1.2.9" anchor="JCGM_100_2008" semx-id="_288e0edf-76ae-16ee-d820-4791d837e1b9"><formattedref><em>Guide to the expression of uncertainty in measurement</em></formattedref>
+  <fetched>2025-08-11</fetched>
   
 <title format="text/plain" language="en" script="Latn">Guide to the expression of uncertainty in measurement</title>
 
@@ -20235,8 +20235,8 @@ reduce these risks to <stem block="false" type="MathML" id="_7d238e89-3f85-a54c-
     <city>Paris</city>
   </place>
 <biblio-tag> </biblio-tag></bibitem>
-<bibitem id="JCGM_101_2008" type="standard" schema-version="v1.2.9" anchor="JCGM_101_2008" semx-id="_ab7d305b-d261-0d70-4976-0a0dc000e2e9"><formattedref><em>Supplement 1 to the “Guide to the expression of uncertainty in measurement” — Propagation of distributions using a Monte Carlo method</em></formattedref>
-  <fetched>2025-07-22</fetched>
+<bibitem id="JCGM_101_2008" type="standard" schema-version="v1.2.9" anchor="JCGM_101_2008" semx-id="_977ab9ee-cb22-52eb-0987-e103571ac118"><formattedref><em>Supplement 1 to the “Guide to the expression of uncertainty in measurement” — Propagation of distributions using a Monte Carlo method</em></formattedref>
+  <fetched>2025-08-11</fetched>
   
 <title format="text/plain" language="en" script="Latn">Supplement 1 to the “Guide to the expression of uncertainty in measurement” — Propagation of distributions using a Monte Carlo method</title>
 
@@ -20338,8 +20338,8 @@ reduce these risks to <stem block="false" type="MathML" id="_7d238e89-3f85-a54c-
     <city>Paris</city>
   </place>
 <biblio-tag> </biblio-tag></bibitem>
-<bibitem id="JCGM_102_2011" type="standard" schema-version="v1.2.9" anchor="JCGM_102_2011" semx-id="_f8d93aec-7688-947f-b1bf-6682a0e644bd"><formattedref><em>Supplement 2 to the “Guide to the expression of uncertainty in measurement” – Extension to any number of output quantities</em></formattedref>
-  <fetched>2025-07-22</fetched>
+<bibitem id="JCGM_102_2011" type="standard" schema-version="v1.2.9" anchor="JCGM_102_2011" semx-id="_16a04000-2aa8-0554-78c3-141f4e2e0c26"><formattedref><em>Supplement 2 to the “Guide to the expression of uncertainty in measurement” – Extension to any number of output quantities</em></formattedref>
+  <fetched>2025-08-11</fetched>
   
 <title format="text/plain" language="en" script="Latn">Supplement 2 to the “Guide to the expression of uncertainty in measurement” – Extension to any number of output quantities</title>
 
@@ -20450,8 +20450,8 @@ reduce these risks to <stem block="false" type="MathML" id="_7d238e89-3f85-a54c-
     <city>Paris</city>
   </place>
 <biblio-tag> </biblio-tag></bibitem>
-<bibitem id="JCGM_200_2012" type="standard" schema-version="v1.2.9" anchor="JCGM_200_2012" semx-id="_a80ac4a1-3e56-467b-6e3e-2ebf74cec1cb"><formattedref><em>International vocabulary of metrology – Basic and general concepts and associated terms (VIM)</em></formattedref>
-  <fetched>2025-07-22</fetched>
+<bibitem id="JCGM_200_2012" type="standard" schema-version="v1.2.9" anchor="JCGM_200_2012" semx-id="_5287ada7-b498-cc92-af02-78952bcde4a8"><formattedref><em>International vocabulary of metrology – Basic and general concepts and associated terms (VIM)</em></formattedref>
+  <fetched>2025-08-11</fetched>
   
 <title format="text/plain" language="en" script="Latn">International vocabulary of metrology – Basic and general concepts and associated terms (VIM)</title>
 
@@ -20563,8 +20563,8 @@ reduce these risks to <stem block="false" type="MathML" id="_7d238e89-3f85-a54c-
     <city>Paris</city>
   </place>
 <biblio-tag> </biblio-tag></bibitem>
-<bibitem id="ISO_IEC_17000_2004" type="standard" schema-version="v1.2.9" anchor="ISO_IEC_17000_2004" semx-id="_9ad1bfab-24aa-d5ce-9b8f-218df6c50d7d"><formattedref><em>Conformity assessment — Vocabulary and general principles</em></formattedref>
-  <fetched>2025-07-22</fetched>
+<bibitem id="ISO_IEC_17000_2004" type="standard" schema-version="v1.2.9" anchor="ISO_IEC_17000_2004" semx-id="_0263f7b9-d52b-c8f2-62d9-495e6cbb81fd"><formattedref><em>Conformity assessment — Vocabulary and general principles</em></formattedref>
+  <fetched>2025-08-11</fetched>
   
 <title type="title-intro" format="text/plain" language="en" script="Latn">Conformity assessment</title>
 
@@ -20635,8 +20635,8 @@ ISO/IEC 17000:2004 does not set out to provide a vocabulary for all of the conce
   </relation>
   <place>Geneva</place>
 <biblio-tag> </biblio-tag></bibitem>
-<bibitem id="ISO_3534_1_2006" type="standard" schema-version="v1.2.9" anchor="ISO_3534_1_2006" semx-id="_4c441604-c3d1-d4fc-2790-9f06e27e11da"><formattedref><em>Statistics — Vocabulary and symbols — Part 1: General statistical terms and terms used in probability</em></formattedref>
-  <fetched>2025-07-22</fetched>
+<bibitem id="ISO_3534_1_2006" type="standard" schema-version="v1.2.9" anchor="ISO_3534_1_2006" semx-id="_065e0eb0-1dcc-dd24-7c4c-6e8f89400970"><formattedref><em>Statistics — Vocabulary and symbols — Part 1: General statistical terms and terms used in probability</em></formattedref>
+  <fetched>2025-08-11</fetched>
   
 <title type="title-intro" format="text/plain" language="en" script="Latn">Statistics</title>
 
@@ -20700,8 +20700,8 @@ ISO/IEC 17000:2004 does not set out to provide a vocabulary for all of the conce
   </relation>
   <place>Geneva</place>
 <biblio-tag> </biblio-tag></bibitem>
-<bibitem id="ISO_3534_2_2006" type="standard" schema-version="v1.2.9" anchor="ISO_3534_2_2006" semx-id="_b098a599-84ad-90b5-8b05-ddae7a318e44"><formattedref><em>Statistics — Vocabulary and symbols — Part 2: Applied statistics</em></formattedref>
-  <fetched>2025-07-22</fetched>
+<bibitem id="ISO_3534_2_2006" type="standard" schema-version="v1.2.9" anchor="ISO_3534_2_2006" semx-id="_67c96d7d-8941-499c-c66e-1bfd22b96e54"><formattedref><em>Statistics — Vocabulary and symbols — Part 2: Applied statistics</em></formattedref>
+  <fetched>2025-08-11</fetched>
   
 <title type="title-intro" format="text/plain" language="en" script="Latn">Statistics</title>
 
@@ -20763,8 +20763,8 @@ The two principal purposes of ISO 3534-2:2006 are, specifically, to establish a 
   </relation>
   <place>Geneva</place>
 <biblio-tag> </biblio-tag></bibitem>
-<bibitem id="ISO_10576_1_2003" type="standard" schema-version="v1.2.9" anchor="ISO_10576_1_2003" semx-id="_c362ae31-5224-c356-ddbe-75ce6a8a38ba"><formattedref><em>Statistical methods — Guidelines for the evaluation of conformity with specified requirements — Part 1: General principles</em></formattedref>
-  <fetched>2025-07-22</fetched>
+<bibitem id="ISO_10576_1_2003" type="standard" schema-version="v1.2.9" anchor="ISO_10576_1_2003" semx-id="_f6af1db8-a0c7-d7ea-17c5-6d4e3d29f59d"><formattedref><em>Statistical methods — Guidelines for the evaluation of conformity with specified requirements — Part 1: General principles</em></formattedref>
+  <fetched>2025-08-11</fetched>
   
 <title type="title-intro" format="text/plain" language="en" script="Latn">Statistical methods</title>
 
@@ -29535,7 +29535,7 @@ a prior PDF <stem block="false" type="MathML" id="_72409c60-7aad-af58-c12d-cad06
 
 
 <figure id="fig_B.1" anchor="fig_B.1" semx-id="_d9f972f8-c8fe-e74d-5ea4-4301fb164304" autonum="B.1">
-<name id="_b5ea10b1-9665-4de9-ac65-cbf681ef6b7f" semx-id="_c7d90921-466e-7f65-4493-641b512b9fe5">Several <stem block="false" type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
+<name id="_6ee6d5c2-c2bc-4407-8929-3286b0b3701f" semx-id="_c7d90921-466e-7f65-4493-641b512b9fe5">Several <stem block="false" type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
   <mstyle displaystyle="false">
     <mtext>gamma</mtext>
     <mrow>
@@ -29558,7 +29558,7 @@ a prior PDF <stem block="false" type="MathML" id="_72409c60-7aad-af58-c12d-cad06
       <mo>)</mo>
     </mrow>
   </mstyle>
-</math><asciimath>(alpha, lambda)</asciimath></stem>.</name><fmt-name id="_81d6ed28-f387-4010-11e8-3d02534ab982"><span class="fmt-caption-label"><span class="fmt-element-name">Figure</span> <semx element="autonum" source="annexB">B</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="fig_B.1">1</semx></span><span class="fmt-caption-delim"> — </span><semx element="name" source="_b5ea10b1-9665-4de9-ac65-cbf681ef6b7f">Several <stem block="false" type="MathML" id="_90dfdf87-7db1-12c6-e496-3e2c506c3ef5"><math xmlns="http://www.w3.org/1998/Math/MathML">
+</math><asciimath>(alpha, lambda)</asciimath></stem>.</name><fmt-name id="_81d6ed28-f387-4010-11e8-3d02534ab982"><span class="fmt-caption-label"><span class="fmt-element-name">Figure</span> <semx element="autonum" source="annexB">B</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="fig_B.1">1</semx></span><span class="fmt-caption-delim"> — </span><semx element="name" source="_6ee6d5c2-c2bc-4407-8929-3286b0b3701f">Several <stem block="false" type="MathML" id="_90dfdf87-7db1-12c6-e496-3e2c506c3ef5"><math xmlns="http://www.w3.org/1998/Math/MathML">
   <mstyle displaystyle="false">
     <mtext>gamma</mtext>
     <mrow>
@@ -31505,7 +31505,7 @@ expectation <stem block="false" type="MathML" id="_77df81fe-2966-aadd-554c-e2323
 </math><asciimath>u^2</asciimath></semx></fmt-stem></p>
 </dd>
 </dl>
-</annex><bibliography><references id="_6c595191-c22e-ce2c-31f2-19f742f14340" normative="false" obligation="informative" semx-id="_6c595191-c22e-ce2c-31f2-19f742f14340" displayorder="17">
+</annex><bibliography><references id="_f9ab2f01-4593-6905-46c7-0fd635ee55d6" normative="false" obligation="informative" semx-id="_f9ab2f01-4593-6905-46c7-0fd635ee55d6" displayorder="17">
 <title id="_8e1065aa-c024-9f64-1d01-24406ca61ca6" semx-id="_50ceb1e1-516f-2673-d73d-4f0c58b4d023">Bibliography</title><fmt-title depth="1" id="_fadc84f6-ca15-fcd1-f06f-4d5cf17f39e0"><semx element="title" source="_8e1065aa-c024-9f64-1d01-24406ca61ca6">Bibliography</semx></fmt-title><bibitem anchor="ref1" id="ref1" semx-id="_bea1aed2-b1cd-40b8-0961-79eea14b7f71">
   <formattedref format="application/x-isodoc+xml">Agilent Technologies. Metrology Forum. 2001.
 <link target="http://metrologyforum.tm.agilent.com/terminology.shtml" id="_49aa63d8-0141-7305-b3d9-7a171081fff4"/><semx element="link" source="_49aa63d8-0141-7305-b3d9-7a171081fff4"><fmt-link target="http://metrologyforum.tm.agilent.com/terminology.shtml"/></semx>.</formattedref><docidentifier type="metanorma-ordinal">[1]</docidentifier>
@@ -31594,8 +31594,8 @@ in the electrotechnical sector</em>. 2007. Edition 1.0.</formattedref><docidenti
 <em>Guidelines on assessment and reporting of compliance with specification</em>.
 Silverwater, Australia, 1996.</formattedref><docidentifier type="metanorma-ordinal">[20]</docidentifier>
   
-<biblio-tag>[20]<tab/></biblio-tag></bibitem><bibitem id="ref21" type="standard" schema-version="v1.2.9" anchor="ref21" semx-id="_1a149a28-7269-51ff-d268-0b07f12de547"><formattedref><em>Geometrical Product Specifications (GPS) — Inspection by measurement of workpieces and measuring equipment — Part 1: Decision rules for proving conformance or non-conformance with specifications</em></formattedref>
-  <fetched>2025-07-22</fetched>
+<biblio-tag>[20]<tab/></biblio-tag></bibitem><bibitem id="ref21" type="standard" schema-version="v1.2.9" anchor="ref21" semx-id="_990be9aa-35f0-2558-d279-3eeff59a9a32"><formattedref><em>Geometrical Product Specifications (GPS) — Inspection by measurement of workpieces and measuring equipment — Part 1: Decision rules for proving conformance or non-conformance with specifications</em></formattedref>
+  <fetched>2025-08-11</fetched>
   
 <title type="title-intro" format="text/plain" language="en" script="Latn">Geometrical Product Specifications (GPS)</title>
 
@@ -31656,8 +31656,8 @@ Silverwater, Australia, 1996.</formattedref><docidentifier type="metanorma-ordin
 
   </relation>
   <place>Geneva</place>
-<biblio-tag>[21]<tab/>ISO 14253-1:1998 </biblio-tag></bibitem><bibitem id="ref22" type="standard" schema-version="v1.2.9" anchor="ref22" semx-id="_0692e6f0-68fd-c1be-fe14-81a31124e3a2"><formattedref><em>Statistical methods — Guidelines for the evaluation of conformity with specified requirements — Part 1: General principles</em></formattedref>
-  <fetched>2025-07-22</fetched>
+<biblio-tag>[21]<tab/>ISO 14253-1:1998 </biblio-tag></bibitem><bibitem id="ref22" type="standard" schema-version="v1.2.9" anchor="ref22" semx-id="_bf10e06f-42ec-3b48-5f7f-ecd026ee651c"><formattedref><em>Statistical methods — Guidelines for the evaluation of conformity with specified requirements — Part 1: General principles</em></formattedref>
+  <fetched>2025-08-11</fetched>
   
 <title type="title-intro" format="text/plain" language="en" script="Latn">Statistical methods</title>
 
@@ -31721,8 +31721,8 @@ It is outside the scope of ISO 10576-1:2002 to give rules for how to act when an
 
   </relation>
   <place>Geneva</place>
-<biblio-tag>[22]<tab/>ISO 10576-1:2003 </biblio-tag></bibitem><bibitem id="ref23" type="standard" schema-version="v1.2.9" anchor="ref23" semx-id="_949d7bf5-a517-5c34-42b2-03bdc84d02cd"><formattedref><em>General requirements for the competence of testing and calibration laboratories</em></formattedref>
-  <fetched>2025-07-22</fetched>
+<biblio-tag>[22]<tab/>ISO 10576-1:2003 </biblio-tag></bibitem><bibitem id="ref23" type="standard" schema-version="v1.2.9" anchor="ref23" semx-id="_a8a3686c-2fe1-53f0-3e88-4e940ddd3e69"><formattedref><em>General requirements for the competence of testing and calibration laboratories</em></formattedref>
+  <fetched>2025-08-11</fetched>
   
 <title type="title-main" format="text/plain" language="en" script="Latn">General requirements for the competence of testing and calibration laboratories</title>
 
@@ -31812,8 +31812,8 @@ Compliance with regulatory and safety requirements on the operation of laborator
 
   </relation>
   <place>Geneva</place>
-<biblio-tag>[23]<tab/>ISO/IEC 17025:2005 </biblio-tag></bibitem><bibitem id="ref24" type="standard" schema-version="v1.2.9" anchor="ref24" semx-id="_a121b446-1707-2324-d64b-b25a48c31b4a"><formattedref><em>Geometrical Product Specifications (GPS) — Length standards — Gauge blocks</em></formattedref>
-  <fetched>2025-07-22</fetched>
+<biblio-tag>[23]<tab/>ISO/IEC 17025:2005 </biblio-tag></bibitem><bibitem id="ref24" type="standard" schema-version="v1.2.9" anchor="ref24" semx-id="_724fbdf5-7c7c-f622-5f11-7e463c5025d1"><formattedref><em>Geometrical Product Specifications (GPS) — Length standards — Gauge blocks</em></formattedref>
+  <fetched>2025-08-11</fetched>
   
 <title type="title-intro" format="text/plain" language="en" script="Latn">Geometrical Product Specifications (GPS)</title>
 

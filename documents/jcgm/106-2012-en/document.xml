@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<metanorma xmlns="https://www.metanorma.org/ns/standoc" type="semantic" version="2.7.0" schema-version="v2.0.8" flavor="bipm">
+<metanorma xmlns="https://www.metanorma.org/ns/standoc" type="semantic" version="2.7.2" schema-version="v2.1.0" flavor="bipm">
 <bibdata type="standard">
 <title language="en" format="text/plain" type="title-main">Evaluation of measurement data</title>
 
@@ -14,8 +14,8 @@
 <name>Bureau International des Poids et Mesures</name>
 <abbreviation>BIPM</abbreviation></organization></contributor><edition>1</edition><language>en</language><script>Latn</script><status><stage>in-force</stage></status><copyright><from>2012</from><owner><organization>
 <name>Bureau International des Poids et Mesures</name>
-<abbreviation>BIPM</abbreviation></organization></owner></copyright><ext><doctype>guide</doctype><flavor>bipm</flavor><editorialgroup><committee acronym="JCGM" language="en" script="Latn">Joint Committee for Guides in Metrology</committee><committee acronym="JCGM" language="fr" script="Latn">Comité commun pour les guides en métrologie</committee></editorialgroup><structuredidentifier><docnumber>106</docnumber></structuredidentifier></ext></bibdata><metanorma-extension><UnitsML xmlns="https://schema.unitsml.org/unitsml/1.0"><UnitSet><Unit dimensionURL="#NISTd2" id="U_NISTu27">
-        <UnitSystem name="SI" type="SI_derived" lang="en-US"/>
+<abbreviation>BIPM</abbreviation></organization></owner></copyright><ext><doctype>guide</doctype><flavor>bipm</flavor><editorialgroup><committee acronym="JCGM" language="en" script="Latn">Joint Committee for Guides in Metrology</committee><committee acronym="JCGM" language="fr" script="Latn">Comité commun pour les guides en métrologie</committee><workgroup acronym="WG 1"/></editorialgroup><structuredidentifier><docnumber>106</docnumber></structuredidentifier></ext></bibdata><metanorma-extension><UnitsML xmlns="https://schema.unitsml.org/unitsml/1.0"><UnitSet><Unit dimensionURL="#NISTd2" id="U_NISTu27">
+        <UnitSystem name="SI" type="SI_base" lang="en-US"/>
         <UnitName lang="en">gram</UnitName>
         <UnitSymbol type="HTML">g</UnitSymbol>
         <UnitSymbol type="MathMl">
@@ -57,7 +57,7 @@
           <EnumeratedRootUnit unit="gram" prefix="k"/>
         </RootUnits>
       </Unit><Unit dimensionURL="#NISTd2" id="U_ug">
-        <UnitSystem name="SI" type="SI_derived" lang="en-US"/>
+        <UnitSystem name="SI" type="SI_base" lang="en-US"/>
         <UnitName lang="en">ug</UnitName>
         <UnitSymbol type="HTML">g</UnitSymbol>
         <UnitSymbol type="MathMl">
@@ -92,7 +92,7 @@
         </UnitSymbol>
         <RootUnits>
           <EnumeratedRootUnit unit="gram" prefix="n"/>
-          <EnumeratedRootUnit unit="liter" powerNumerator="-1"/>
+          <EnumeratedRootUnit unit="litre" powerNumerator="-1"/>
         </RootUnits>
       </Unit><Unit dimensionURL="#NISTd56" id="U_mm2.s-1">
         <UnitSystem name="SI" type="SI_derived" lang="en-US"/>
@@ -124,7 +124,7 @@
           </math>
         </UnitSymbol>
         <RootUnits>
-          <EnumeratedRootUnit unit="meter" prefix="m" powerNumerator="2"/>
+          <EnumeratedRootUnit unit="metre" prefix="m" powerNumerator="2"/>
           <EnumeratedRootUnit unit="second" powerNumerator="-1"/>
         </RootUnits>
       </Unit><Unit id="U_km.h-1">
@@ -150,7 +150,7 @@
           </math>
         </UnitSymbol>
         <RootUnits>
-          <EnumeratedRootUnit unit="meter" prefix="k"/>
+          <EnumeratedRootUnit unit="metre" prefix="k"/>
           <EnumeratedRootUnit unit="hour" powerNumerator="-1"/>
         </RootUnits>
       </Unit><Unit id="U_ug.L-1">
@@ -177,7 +177,7 @@
         </UnitSymbol>
         <RootUnits>
           <EnumeratedRootUnit unit="gram" prefix="u"/>
-          <EnumeratedRootUnit unit="liter" powerNumerator="-1"/>
+          <EnumeratedRootUnit unit="litre" powerNumerator="-1"/>
         </RootUnits>
       </Unit><Unit dimensionURL="#D_L2MT4I2" id="U_kOhm">
         <UnitSystem name="SI" type="SI_derived" lang="en-US"/>
@@ -201,7 +201,7 @@
           </math>
         </UnitSymbol>
       </Unit><Unit dimensionURL="#NISTd1" id="U_um">
-        <UnitSystem name="SI" type="SI_derived" lang="en-US"/>
+        <UnitSystem name="SI" type="SI_base" lang="en-US"/>
         <UnitName lang="en">um</UnitName>
         <UnitSymbol type="HTML">m</UnitSymbol>
         <UnitSymbol type="MathMl">
@@ -210,7 +210,7 @@
           </math>
         </UnitSymbol>
         <RootUnits>
-          <EnumeratedRootUnit unit="meter" prefix="u"/>
+          <EnumeratedRootUnit unit="metre" prefix="u"/>
         </RootUnits>
       </Unit></UnitSet><QuantitySet><Quantity id="NISTq2" quantityType="base" dimensionURL="#NISTd2">
         <QuantityName lang="en-US">mass</QuantityName>
@@ -2370,7 +2370,7 @@ purity lies in the interval <stem block="false" type="MathML"><math xmlns="http:
 </clause>
 </clause>
 
-<clause id="_35af6a7a-9fcd-8ce7-34b0-b334183a63a3" anchor="sec_6" obligation="normative">
+<clause id="_57ffb9b2-98fa-b095-f14a-6438c18133c7" anchor="sec_6" obligation="normative">
 <title id="_713dabd2-e832-1796-bb6e-75a006d93e21">Knowledge of the measurand</title>
 <clause id="_f33f0682-78e8-2679-7608-043f11659820" anchor="sec_6.1" obligation="normative">
 <title id="_0bf8a0a9-bd22-5b43-b31a-8a0a36b30ab7">Probability and information</title>
@@ -2781,7 +2781,7 @@ response or output (measured value <stem block="false" type="MathML"><math xmlns
 </clause>
 </clause>
 
-<clause id="_84989920-e100-c239-70a5-9ca2ae5de927" anchor="sec_6.3" obligation="normative">
+<clause id="_e469ec70-e57e-0ee5-bce1-be53593d5546" anchor="sec_6.3" obligation="normative">
 <title id="_002df687-cb2f-d924-bf07-0b0c722d55de">Summary information</title>
 <clause id="_e010db0a-f67d-8356-d5a1-a04bb8ce936f" anchor="sec_6.3.1" obligation="normative">
 <title id="_5f946166-c609-f057-3126-314980e2a791">Best estimate and standard uncertainty</title>
@@ -3056,7 +3056,7 @@ PDF <stem block="false" type="MathML"><math xmlns="http://www.w3.org/1998/Math/M
 </clause>
 </clause>
 
-<clause id="_52571fef-366f-fea3-19b6-1163c295eb56" anchor="sec_6.3.2" obligation="normative">
+<clause id="_ec16b720-86bf-ef27-c3c6-91c60bdd3680" anchor="sec_6.3.2" obligation="normative">
 <title id="_7161f562-b425-650e-1cfd-207c8ae1b034">Coverage intervals</title>
 <clause id="_c1a1d125-d8a1-5e33-5062-62818b7b7c4f" anchor="sec_6.3.2.1" obligation="normative" inline-header="true">
 <p id="_546ef5c2-5362-2b64-365d-475700a50a0e">Following a measurement, the probability that <stem block="false" type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -3117,8 +3117,8 @@ PDF <stem block="false" type="MathML"><math xmlns="http://www.w3.org/1998/Math/M
 </math><asciimath>Pr (Y &lt;= a | eta_{"m"}) = G(a) = int_{-oo}^a g (eta | eta_{"m"}) " d"eta,</asciimath></stem></formula>
 </clause>
 
-<clause id="_7d6ec082-02ae-801c-f52d-e3e2f1493004" anchor="sec_6.3.2.2" obligation="normative" inline-header="true">
-<p id="_175d5efe-6f76-f4f0-7a55-aedd1b782ecb">It follows that the probability <stem block="false" type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
+<clause id="_ff2495f1-8d43-0eb3-5a70-898ea7bf4bd4" anchor="sec_6.3.2.2" obligation="normative" inline-header="true">
+<p id="_69df6b5f-5303-e740-0f19-47dd5d28b7d2">It follows that the probability <stem block="false" type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
   <mstyle displaystyle="false">
     <mi>p</mi>
   </mstyle>
@@ -3137,7 +3137,7 @@ PDF <stem block="false" type="MathML"><math xmlns="http://www.w3.org/1998/Math/M
       <mo>]</mo>
     </mrow>
   </mstyle>
-</math><asciimath>[a, b]</asciimath></stem>, with <stem block="false" type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
+</math><asciimath> [a, b]</asciimath></stem>, with <stem block="false" type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
   <mstyle displaystyle="false">
     <mi>a</mi>
     <mo>&lt;</mo>
@@ -3204,8 +3204,8 @@ PDF <stem block="false" type="MathML"><math xmlns="http://www.w3.org/1998/Math/M
 </math><asciimath>p = "Pr" (a &lt;= Y &lt;= b | eta_{"m"}) = int_a^b g (eta | eta_{"m"}) " d"eta = G(b) - G(a).</asciimath></stem></formula>
 </clause>
 
-<clause id="_29c4036d-ea63-ac72-a1ad-e13f595b1e8b" anchor="sec_6.3.2.3" obligation="normative" inline-header="true">
-<p id="_970c863e-5158-ce96-9c01-7926b71a361a">An interval such as <stem block="false" type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
+<clause id="_1b74c0c6-a2ee-56e5-019d-0e1ad289a0e9" anchor="sec_6.3.2.3" obligation="normative" inline-header="true">
+<p id="_09001a32-db8b-f024-9d67-e9a42cb7bebf">An interval such as <stem block="false" type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
   <mstyle displaystyle="false">
     <mrow>
       <mo>[</mo>
@@ -3215,7 +3215,7 @@ PDF <stem block="false" type="MathML"><math xmlns="http://www.w3.org/1998/Math/M
       <mo>]</mo>
     </mrow>
   </mstyle>
-</math><asciimath>[a, b]</asciimath></stem> is called a coverage interval for <stem block="false" type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
+</math><asciimath> [a, b]</asciimath></stem> is called a coverage interval for <stem block="false" type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
   <mstyle displaystyle="false">
     <mi mathvariant="normal">Y</mi>
   </mstyle>
@@ -3326,7 +3326,7 @@ PDF for <stem block="false" type="MathML"><math xmlns="http://www.w3.org/1998/Ma
 </clause>
 </clause>
 
-<clause id="_e488b693-d514-f56c-caaa-6f04547f04c1" anchor="sec_7" obligation="normative">
+<clause id="_9fa29605-839a-5451-daaa-b419874611ce" anchor="sec_7" obligation="normative">
 <title id="_94737f03-ba4e-879d-6ed1-8c04ad192509">Probability of conformity with specified requirements</title>
 <clause id="_1c23cc97-fc1e-212b-7371-72e017cecee0" anchor="sec_7.1" obligation="normative">
 <title id="_21ccd2cb-e07d-6ac2-857f-5e2f3ec0c99c">General rule for calculation of conformance probability</title>
@@ -3533,7 +3533,7 @@ property of the item. Given a two-sided tolerance interval for the measurand
 </clause>
 </clause>
 
-<clause id="_05e1eaa7-c87f-fa60-ea8e-c02508b9c19f" anchor="sec_7.2" obligation="normative">
+<clause id="_9ec7bf87-54a0-3e32-a1e9-9cd0b6b94cc5" anchor="sec_7.2" obligation="normative">
 <title id="_62666f2c-e29f-184c-a316-d5b81766c8bb">Conformance probabilities with normal PDFs</title>
 <clause id="_c0deaa3c-635b-cfe5-5cf0-6a2121e3e8ed" anchor="sec_7.2.1" obligation="normative" inline-header="true">
 <p id="_75f85283-3ad5-e74d-e39c-7c977c4b64b1">The conformance probability depends on a state of knowledge of a measurand
@@ -3782,8 +3782,8 @@ measurement, then typically <stem block="false" type="MathML"><math xmlns="http:
 </math><asciimath>y ~~ eta_{"m"}</asciimath></stem>; see clause <xref target="sec_A.4.4"/> for an example where this is not the case.</p>
 </clause>
 
-<clause id="_f437090c-3beb-c4b9-41f4-78bd7d3eb720" anchor="sec_7.2.6" obligation="normative" inline-header="true">
-<p id="_bf7393f6-6f71-e246-069e-81fdba3fad47">From the steps leading to <xref target="eq_2"/>, the probability that <stem block="false" type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
+<clause id="_0ddab48a-60be-4c76-9686-011659d75fac" anchor="sec_7.2.6" obligation="normative" inline-header="true">
+<p id="_3343b8ea-3978-0db1-4ada-542c06897fa5">From the steps leading to <xref target="eq_2"/>, the probability that <stem block="false" type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
   <mstyle displaystyle="false">
     <mi mathvariant="normal">Y</mi>
   </mstyle>
@@ -3798,7 +3798,7 @@ in the interval <stem block="false" type="MathML"><math xmlns="http://www.w3.org
       <mo>]</mo>
     </mrow>
   </mstyle>
-</math><asciimath>[a, b]</asciimath></stem>, given the PDF (5), is</p>
+</math><asciimath> [a, b]</asciimath></stem>, given the PDF (5), is</p>
 
 <formula id="_7dd9e399-38c4-e5d2-ae69-1702c89d617e" anchor="eq_6"><stem block="true" type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
   <mstyle displaystyle="true">
@@ -16350,11 +16350,11 @@ expectation <stem block="false" type="MathML"><math xmlns="http://www.w3.org/199
 </math><asciimath>u^2</asciimath></stem></p>
 </dd>
 </dl>
-</annex><bibliography><references id="_2c544c49-62fc-c567-058e-cca86be07212" normative="true" obligation="informative">
+</annex><bibliography><references id="_5d6341c9-dbe8-2199-bfc8-4125222cf5c2" normative="true" obligation="informative">
 <title id="_270c5ee6-077e-f285-ff95-287984a30140">Normative references</title><p id="_5d68767b-3c2e-b2ee-db6d-6b8ca4c42620">The following referenced documents are indispensable for the application of this document. For dated references, only the edition cited applies. For undated references, the latest edition of the referenced document (including any amendments) applies.</p>
 
-<bibitem id="_8598a799-cc15-9d0f-34f4-e948c0bd15ff" type="standard" schema-version="v1.2.9" anchor="JCGM_100_2008">
-  <fetched>2025-07-22</fetched>
+<bibitem id="_288e0edf-76ae-16ee-d820-4791d837e1b9" type="standard" schema-version="v1.2.9" anchor="JCGM_100_2008">
+  <fetched>2025-08-11</fetched>
   
 <title format="text/plain" language="en" script="Latn">Guide to the expression of uncertainty in measurement</title>
 
@@ -16457,8 +16457,8 @@ expectation <stem block="false" type="MathML"><math xmlns="http://www.w3.org/199
     <city>Paris</city>
   </place>
 </bibitem>
-<bibitem id="_ab7d305b-d261-0d70-4976-0a0dc000e2e9" type="standard" schema-version="v1.2.9" anchor="JCGM_101_2008">
-  <fetched>2025-07-22</fetched>
+<bibitem id="_977ab9ee-cb22-52eb-0987-e103571ac118" type="standard" schema-version="v1.2.9" anchor="JCGM_101_2008">
+  <fetched>2025-08-11</fetched>
   
 <title format="text/plain" language="en" script="Latn">Supplement 1 to the “Guide to the expression of uncertainty in measurement” — Propagation of distributions using a Monte Carlo method</title>
 
@@ -16560,8 +16560,8 @@ expectation <stem block="false" type="MathML"><math xmlns="http://www.w3.org/199
     <city>Paris</city>
   </place>
 </bibitem>
-<bibitem id="_f8d93aec-7688-947f-b1bf-6682a0e644bd" type="standard" schema-version="v1.2.9" anchor="JCGM_102_2011">
-  <fetched>2025-07-22</fetched>
+<bibitem id="_16a04000-2aa8-0554-78c3-141f4e2e0c26" type="standard" schema-version="v1.2.9" anchor="JCGM_102_2011">
+  <fetched>2025-08-11</fetched>
   
 <title format="text/plain" language="en" script="Latn">Supplement 2 to the “Guide to the expression of uncertainty in measurement” – Extension to any number of output quantities</title>
 
@@ -16672,8 +16672,8 @@ expectation <stem block="false" type="MathML"><math xmlns="http://www.w3.org/199
     <city>Paris</city>
   </place>
 </bibitem>
-<bibitem id="_a80ac4a1-3e56-467b-6e3e-2ebf74cec1cb" type="standard" schema-version="v1.2.9" anchor="JCGM_200_2012">
-  <fetched>2025-07-22</fetched>
+<bibitem id="_5287ada7-b498-cc92-af02-78952bcde4a8" type="standard" schema-version="v1.2.9" anchor="JCGM_200_2012">
+  <fetched>2025-08-11</fetched>
   
 <title format="text/plain" language="en" script="Latn">International vocabulary of metrology – Basic and general concepts and associated terms (VIM)</title>
 
@@ -16785,8 +16785,8 @@ expectation <stem block="false" type="MathML"><math xmlns="http://www.w3.org/199
     <city>Paris</city>
   </place>
 </bibitem>
-<bibitem id="_9ad1bfab-24aa-d5ce-9b8f-218df6c50d7d" type="standard" schema-version="v1.2.9" anchor="ISO_IEC_17000_2004">
-  <fetched>2025-07-22</fetched>
+<bibitem id="_0263f7b9-d52b-c8f2-62d9-495e6cbb81fd" type="standard" schema-version="v1.2.9" anchor="ISO_IEC_17000_2004">
+  <fetched>2025-08-11</fetched>
   
 <title type="title-intro" format="text/plain" language="en" script="Latn">Conformity assessment</title>
 
@@ -16857,8 +16857,8 @@ ISO/IEC 17000:2004 does not set out to provide a vocabulary for all of the conce
   </relation>
   <place>Geneva</place>
 </bibitem>
-<bibitem id="_4c441604-c3d1-d4fc-2790-9f06e27e11da" type="standard" schema-version="v1.2.9" anchor="ISO_3534_1_2006">
-  <fetched>2025-07-22</fetched>
+<bibitem id="_065e0eb0-1dcc-dd24-7c4c-6e8f89400970" type="standard" schema-version="v1.2.9" anchor="ISO_3534_1_2006">
+  <fetched>2025-08-11</fetched>
   
 <title type="title-intro" format="text/plain" language="en" script="Latn">Statistics</title>
 
@@ -16922,8 +16922,8 @@ ISO/IEC 17000:2004 does not set out to provide a vocabulary for all of the conce
   </relation>
   <place>Geneva</place>
 </bibitem>
-<bibitem id="_b098a599-84ad-90b5-8b05-ddae7a318e44" type="standard" schema-version="v1.2.9" anchor="ISO_3534_2_2006">
-  <fetched>2025-07-22</fetched>
+<bibitem id="_67c96d7d-8941-499c-c66e-1bfd22b96e54" type="standard" schema-version="v1.2.9" anchor="ISO_3534_2_2006">
+  <fetched>2025-08-11</fetched>
   
 <title type="title-intro" format="text/plain" language="en" script="Latn">Statistics</title>
 
@@ -16985,8 +16985,8 @@ The two principal purposes of ISO 3534-2:2006 are, specifically, to establish a 
   </relation>
   <place>Geneva</place>
 </bibitem>
-<bibitem id="_c362ae31-5224-c356-ddbe-75ce6a8a38ba" type="standard" schema-version="v1.2.9" anchor="ISO_10576_1_2003">
-  <fetched>2025-07-22</fetched>
+<bibitem id="_f6af1db8-a0c7-d7ea-17c5-6d4e3d29f59d" type="standard" schema-version="v1.2.9" anchor="ISO_10576_1_2003">
+  <fetched>2025-08-11</fetched>
   
 <title type="title-intro" format="text/plain" language="en" script="Latn">Statistical methods</title>
 
@@ -17052,7 +17052,7 @@ It is outside the scope of ISO 10576-1:2002 to give rules for how to act when an
   <place>Geneva</place>
 </bibitem>
 <bibitem anchor="JCGM_100_2010" id="_b921d358-658b-33ca-27af-6f72d9799df8"><formattedref format="application/x-isodoc+xml">[NO INFORMATION AVAILABLE]</formattedref><docidentifier type="BIPM">JCGM 100:2010</docidentifier><docnumber>100</docnumber><date type="published"><on>2010</on></date></bibitem>
-</references><references id="_6c595191-c22e-ce2c-31f2-19f742f14340" normative="false" obligation="informative">
+</references><references id="_f9ab2f01-4593-6905-46c7-0fd635ee55d6" normative="false" obligation="informative">
 <title id="_50ceb1e1-516f-2673-d73d-4f0c58b4d023">Bibliography</title><bibitem anchor="ref1" id="_bea1aed2-b1cd-40b8-0961-79eea14b7f71">
   <formattedref format="application/x-isodoc+xml">Agilent Technologies. Metrology Forum. 2001.
 <link target="http://metrologyforum.tm.agilent.com/terminology.shtml"/>.</formattedref>
@@ -17141,8 +17141,8 @@ in the electrotechnical sector</em>. 2007. Edition 1.0.</formattedref>
 <em>Guidelines on assessment and reporting of compliance with specification</em>.
 Silverwater, Australia, 1996.</formattedref>
   <docidentifier type="metanorma">[20]</docidentifier>
-</bibitem><bibitem id="_1a149a28-7269-51ff-d268-0b07f12de547" type="standard" schema-version="v1.2.9" anchor="ref21">
-  <fetched>2025-07-22</fetched>
+</bibitem><bibitem id="_990be9aa-35f0-2558-d279-3eeff59a9a32" type="standard" schema-version="v1.2.9" anchor="ref21">
+  <fetched>2025-08-11</fetched>
   
 <title type="title-intro" format="text/plain" language="en" script="Latn">Geometrical Product Specifications (GPS)</title>
 
@@ -17203,8 +17203,8 @@ Silverwater, Australia, 1996.</formattedref>
 
   </relation>
   <place>Geneva</place>
-</bibitem><bibitem id="_0692e6f0-68fd-c1be-fe14-81a31124e3a2" type="standard" schema-version="v1.2.9" anchor="ref22">
-  <fetched>2025-07-22</fetched>
+</bibitem><bibitem id="_bf10e06f-42ec-3b48-5f7f-ecd026ee651c" type="standard" schema-version="v1.2.9" anchor="ref22">
+  <fetched>2025-08-11</fetched>
   
 <title type="title-intro" format="text/plain" language="en" script="Latn">Statistical methods</title>
 
@@ -17268,8 +17268,8 @@ It is outside the scope of ISO 10576-1:2002 to give rules for how to act when an
 
   </relation>
   <place>Geneva</place>
-</bibitem><bibitem id="_949d7bf5-a517-5c34-42b2-03bdc84d02cd" type="standard" schema-version="v1.2.9" anchor="ref23">
-  <fetched>2025-07-22</fetched>
+</bibitem><bibitem id="_a8a3686c-2fe1-53f0-3e88-4e940ddd3e69" type="standard" schema-version="v1.2.9" anchor="ref23">
+  <fetched>2025-08-11</fetched>
   
 <title type="title-main" format="text/plain" language="en" script="Latn">General requirements for the competence of testing and calibration laboratories</title>
 
@@ -17359,8 +17359,8 @@ Compliance with regulatory and safety requirements on the operation of laborator
 
   </relation>
   <place>Geneva</place>
-</bibitem><bibitem id="_a121b446-1707-2324-d64b-b25a48c31b4a" type="standard" schema-version="v1.2.9" anchor="ref24">
-  <fetched>2025-07-22</fetched>
+</bibitem><bibitem id="_724fbdf5-7c7c-f622-5f11-7e463c5025d1" type="standard" schema-version="v1.2.9" anchor="ref24">
+  <fetched>2025-08-11</fetched>
   
 <title type="title-intro" format="text/plain" language="en" script="Latn">Geometrical Product Specifications (GPS)</title>
 

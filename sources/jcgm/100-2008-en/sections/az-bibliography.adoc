@@ -13,7 +13,7 @@ NOTE: The English translation of Recommendation INC-1 (1980) given in the <<cls_
 
 * [[[CIPM1987,4]]], CIPM (1986), _BIPM Proc.-Verb. Com. Int. Poids et Mesures_ *54*, 14, 35 (in French); Giacomo, P. (1987), _Metrologia_ *24*, 49-50 (in English)
 
-* [[[ISO1986,5]]], ISO 5725:1986, _Precision of test methods -- Determination of repeatability and reproducibility for a standard test method by inter-laboratory tests_, International Organization for Standardization (Geneva,Switzerland)
+* [[[ISO1986,5]]], ISO 5725:1986, _Precision of test methods -- Determination of repeatability and reproducibility for a standard test method by inter-laboratory tests_, International Organization for Standardization (Geneva, Switzerland)
 
 NOTE: This standard is currently footnoteblock:[fb1] being revised. The revision has a new title, "Accuracy (trueness and precision) of measurement methods and results", and it is composed of six parts.
 

@@ -100,12 +100,12 @@ NOTE: These illustrations of the PDFs are not drawn to scale. The multivariate G
 [[scls_6-4-2-1]]
 ===== {blank} (((rectangular distribution,assignment to a quantity)))
 
-If the only available information regarding a quantity stem:[ii(X)] is a lower limit a and an upper limit stem:[b] with stem:[a < b], then, according to the ((principle of maximum entropy)), a rectangular distribution stem:[R(a, b)] over the interval stem:[[a,b\]] would be assigned to stem:[ii(X)].
+If the only available information regarding a quantity stem:[ii(X)] is a lower limit a and an upper limit stem:[b] with stem:[a < b], then, according to the ((principle of maximum entropy)), a rectangular distribution stem:[R(a, b)] over the interval stem:[ [a,b\]] would be assigned to stem:[ii(X)].
 
 
 ===== {blank} (((rectangular distribution,probability density function)))
 
-The PDF for stem:[ii(X)] is 
+The PDF for stem:[ii(X)] is
 
 [stem%unnumbered]
 ++++
@@ -158,7 +158,7 @@ g_X (xi) = 1/{4d} { ({:ln[(w + d)//(x - xi)],:},{:a - d <= xi <= a + d,:}),
 ++++
 
 
-where stem:[x = (a + b)//2] and stem:[w = (b - a)//2] are, respectively, the midpoint and semi-width of the interval stem:[[a,b\]] <<JCGM-100,clause=4.3.9 note 2>>. This PDF is trapezoidal-like, but has flanks that are not straight lines.
+where stem:[x = (a + b)//2] and stem:[w = (b - a)//2] are, respectively, the midpoint and semi-width of the interval stem:[ [a,b\]] <<JCGM-100,clause=4.3.9 note 2>>. This PDF is trapezoidal-like, but has flanks that are not straight lines.
 
 
 [[table1]]
@@ -398,7 +398,7 @@ xi = a + {b - a}/2 [(1 + ii(beta))r_1 + (1 + ii(beta))r_2].
 
 ===== {blank} (((triangular distribution,assignment to a quantity)))
 
-Suppose a quantity stem:[ii(X)] is defined as the sum of two independent quantities, each assigned a ((rectangular distribution)) (see <<scls_6-4-4>>), but with equal semi-widths, i.e. stem:[b_1 - a_1 = b_2 - a_2]. It follows from <<eq5>> and <<eq6>> that stem:[lambda_1 = 0] and stem:[ii(beta) = 0]. The distribution for stem:[ii(X)] is the trapezoidal distribution stem:["Trap"(a, b, 0)], which reduces to the (symmetric) triangular distribution stem:[T(a, b)] over the interval stem:[[a,b\]].
+Suppose a quantity stem:[ii(X)] is defined as the sum of two independent quantities, each assigned a ((rectangular distribution)) (see <<scls_6-4-4>>), but with equal semi-widths, i.e. stem:[b_1 - a_1 = b_2 - a_2]. It follows from <<eq5>> and <<eq6>> that stem:[lambda_1 = 0] and stem:[ii(beta) = 0]. The distribution for stem:[ii(X)] is the trapezoidal distribution stem:["Trap"(a, b, 0)], which reduces to the (symmetric) triangular distribution stem:[T(a, b)] over the interval stem:[ [a,b\]].
 
 
 ===== {blank} (((triangular distribution,probability density function)))

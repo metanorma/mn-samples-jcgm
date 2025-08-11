@@ -212,7 +212,7 @@ Pr (Y <= a | eta_{"m"}) = G(a) = int_{-oo}^a g (eta | eta_{"m"}) " d"eta,
 ===== {blank}
 
 It follows that the probability stem:[p] that stem:[Y] lies in the interval
-stem:[[a, b\]], with stem:[a < b], is
+stem:[ [a, b\]], with stem:[a < b], is
 
 [[eq_2]]
 [stem]
@@ -223,7 +223,7 @@ p = "Pr" (a <= Y <= b | eta_{"m"}) = int_a^b g (eta | eta_{"m"}) " d"eta = G(b) 
 [[sec_6.3.2.3]]
 ===== {blank}
 
-An interval such as stem:[[a, b\]] is called a coverage interval for stem:[Y],
+An interval such as stem:[ [a, b\]] is called a coverage interval for stem:[Y],
 and stem:[p] is the associated coverage probability. Guidance on constructing
 a coverage interval with a desired coverage probability, including the
 case of a discrete approximation to the distribution function obtained

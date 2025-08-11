@@ -357,14 +357,14 @@ where stem:[x = (a + b)//2].
 
 [NOTE]
 ====
-<<eq7>> can be expressed as 
+<<eq7>> can be expressed as
 
 [stem%unnumbered]
 ++++
 g_X (xi) = 1/{lambda_1 + lambda_2} min(1/{lambda_2 - lambda_1} max(lambda_2 - |: xi - x :|, 0), 1)
 ++++
 
-for computer implementation. 
+for computer implementation.
 ====
 
 
@@ -375,7 +375,7 @@ image::figure5.png[]
 
 ===== {blank} (((trapezoidal distribution,expectation and variance)))
 
-stem:[ii(X)] has expectation and variance 
+stem:[ii(X)] has expectation and variance
 
 [stem%unnumbered]
 ++++

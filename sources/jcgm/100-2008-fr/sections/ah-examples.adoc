@@ -1305,7 +1305,7 @@ L'écart-type expérimental de la moyenne stem:[s(ii(V))] obtenu à partir de l'
 ==== Un exemple numérique
 
 [[scls_H-5-2-1]]
-====== {blank}
+===== {blank}
 
 Les données qui permettent d'aborder les questions ci-dessus sont présentées au <<table_H-9>>, où
 
@@ -1374,7 +1374,7 @@ s_{"a"}^2 = ii(K)s^2 (bar(ii(V))_j) = 5(57 "unitsml(uV)")^2 = (128 "unitsml(uV)"
 <<<
 
 [[scls_H-5-2-2]]
-====== {blank}
+===== {blank}
 
 L'uniformité de la variabilité intra-jour et de la variabilité inter-jours des observations peut être examinée en comparant deux estimations indépendantes de stem:[ii(sigma)_W^2], composante de variance intra-jour (c'est-à-dire la variance des observations faites le même jour).
 
@@ -1402,14 +1402,14 @@ Les estimations de stem:[ii(sigma)_W^2] données par les <<eq_H-26a>> et <<eq_H-
 
 
 [[scls_H-5-2-3]]
-====== {blank}
+===== {blank}
 
 La ((loi de stem:[ii(F)])) est la loi de probabilité du rapport stem:[ii(F)(ii(nu)_{"a"},ii(nu)_{"b"}) = s_{"a"}^2(ii(nu)_{"a"})//s_{"b"}^2(ii(nu)_{"b"})] de deux estimations indépendantes, stem:[s_{"a"}^2 (ii(nu)_{"a"})] et stem:[s_{"b"}^2 (ii(nu)_{"b"})], de la variance stem:[ii(sigma)^2] d'une variable ((aléatoire)) normalement distribuée <<BOX1978>>. Les paramètres stem:[ii(nu)_{"a"}] et stem:[ii(nu)_{"b"}] sont respectivement les nombres de degrés de liberté des deux estimations et stem:[0 <= F(ii(nu)_{"a"},ii(nu)_{"b"}) < oo]. Les valeurs de stem:[ii(F)] sont tabulées pour différentes valeurs de stem:[ii(nu)_{"a"}] et stem:[ii(nu)_{"b"}] et pour différents fractiles de la loi de stem:[ii(F)]. Une valeur de stem:[ii(F)(ii(nu)_{"a"}, ii(nu)_{"b"}) > F_{0.95}] ou stem:[ii(F)(ii(nu)_{"a"}, ii(nu)_{"b"}) > F_{0.975}] (la valeur critique) est habituellement interprétée comme indiquant que stem:[s_{"a"}^2 (ii(nu)_{"a"})] est plus grand que stem:[s_{"b"}^2 (ii(nu)_{"b"})] d'une quantité statistiquement significative et que la probabilité d'une valeur de stem:[ii(F)] aussi grande que celle qui est observée, si les deux estimations sont des estimations de la même variance, est inférieure respectivement à stem:[0.05] ou stem:[0.025]. (D'autres valeurs critiques peuvent aussi être choisies, par exemple stem:[ii(F)_{0.99}].)
 
 
 
 [[scls_H-5-2-4]]
-====== {blank}
+===== {blank}
 
 L'application du ((test stem:[ii(F)])) au présent exemple numérique donne
 
@@ -1422,7 +1422,7 @@ avec stem:[ii(nu)_a = ii(J) - 1 = 9] degrés de liberté au numérateur et stem:
 
 
 [[scls_H-5-2-5]]
-====== {blank}
+===== {blank}
 
 Si l'existence d'un effet inter-jours est rejetée parce que la différence entre stem:[s_{"a"}^2] et stem:[s_{"b"}^2] n'est pas considérée comme statistiquement significative (décision imprudente parce qu'elle pourrait conduire à une sous-estimation de l'incertitude), la variance estimée stem:[s^2(bar(ii(V)))] de stem:[bar(ii(V))] doit être calculée à partir de l'<<eq_H-24b>>. Cette relation est équivalente à la mise en commun des estimations stem:[s_{"a"}^2] et stem:[s_{"b"}^2] (c'est-à-dire en prenant une valeur pondérée de stem:[s_{"a"}^2] et stem:[s_{"b"}^2], chaque valeur étant pondérée par son nombre respectif de degrés de liberté stem:[ii(nu)_{"a"}] et stem:[ii(nu)_{"b"}] -- voir <<note_H-3-6>>) pour obtenir la meilleure estimation de la variance des observations; puis en divisant cette estimation par stem:[ii(JK)], nombre des observations, on obtient la meilleure estimation stem:[s^2(bar(ii(V)))] de la variance de la moyenne des observations. En suivant cette procédure, on obtient(((variance provenant d'un ensemble de données, estimation de la (ou estimation de l'écart-type expérimental provenant d'un ensemble de données))))
 
@@ -1456,7 +1456,7 @@ ii(S) = sum_{j=1}^ii(J) sum_{k=1}^ii(K) [(ii(V)_{jk} - bar(ii(V))_j) + (bar(ii(V
 
 
 [[scls_H-5-2-6]]
-====== {blank}
+===== {blank}
 
 Si l'on accepte l'existence d'un effet inter-jours (décision prudente parce qu'elle évite une sous-estimation possible de l'incertitude) et si on le suppose ((aléatoire)), alors la variance stem:[s^2(ii(V)_"S" = bar(ii(V))_j)] calculée à partir des stem:[ii(J) = 10] moyennes journalières selon l'<<eq_H-25d>> n'estime plus stem:[ii(sigma)_{"W"}^2//ii(K)] comme on le postulait en <<scls_H-5-2-2>>, mais stem:[ii(sigma)_{"W"}^2//ii(K) + ii(sigma)_{"B"}^2], où stem:[ii(sigma)_{"B"}^2] est la composante ((aléatoire)) inter-jours de la variance. Cela implique que
 
@@ -1511,7 +1511,7 @@ Le nombre de degrés de liberté de stem:[s_{"w"}^2] (et donc de stem:[s_{"w"}])
 
 
 [[scls_H-5-2-7]]
-====== {blank}
+===== {blank}
 
 La meilleure estimation de la différence de potentiel de l'étalon de tension est alors stem:[ii(V)_{"S"} = bar(ii(V)) = 10.000097 "unitsml(V)"], avec stem:[s(bar(ii(V))) = u_{"c"} = 18 "unitsml(uV)"] comme donné dans l'<<eq_H-32>>. Cette valeur de stem:[u_{"c"}] et ses 9 degrés de liberté peuvent être comparés à stem:[u_{"c"} = 13 "unitsml(uV)"] et ses 49 degrés de liberté, résultat obtenu en <<scls_H-5-2-5>> [<<eq_H-28b>>] lorsqu'on avait rejeté l'existence d'un effet inter-jours.
 
@@ -1522,20 +1522,20 @@ Dans un mesurage réel, un effet inter-jours apparent doit être, si possible, �
 ==== Le rôle de l'((analyse de variance)) dans la mesure(((mesure, rôle de l'analyse de variance dans la)))
 
 [[scls_H-5-3-1]]
-====== {blank}
+===== {blank}
 
 Cet exemple d'étalon de tension illustre ce qui est généralement appelé un ((plan emboîté équilibré)) à un niveau. C'est un plan à un niveau parce qu'il y a un seul niveau d'«emboîtement» des observations, avec un seul facteur, le jour pendant lequel sont faites les observations, que l'on fait varier pendant le mesurage. Il est équilibré parce que l'on effectue le même nombre d'observations chaque jour. Une analyse semblable à celle qui est présentée dans cet exemple peut être utilisée pour déterminer s'il existe un «effet opérateur», un «effet instrument», un «effet laboratoire», un «effet échantillon» ou même un «effet méthode» dans un mesurage particulier. Ainsi, dans l'exemple, on pourrait imaginer de remplacer les observations faites durant différents jours stem:[ii(J)] par des observations faites le même jour mais avec différents opérateurs stem:[ii(J)]; la composante inter-jours de la variance devient alors une composante de variance associée aux différents opérateurs.
 
 
 [[scls_H-5-3-2]]
-====== {blank}
+===== {blank}
 
 Comme noté en <<scls_H-5>>, les méthodes d'((analyse de variance)) sont largement utilisées pour la certification des matériaux de référence(((matériaux de référence, certification des))) (MR) par essais interlaboratoires. Une telle certification implique habituellement d'avoir un nombre de laboratoires indépendants, également compétents, qui mesurent les échantillons d'un matériau dont on veut certifier une propriété. On suppose généralement que les différences entre les résultats individuels, à la fois inter- et intra-laboratoires, sont de nature statistique sans se soucier des causes. Chaque moyenne de laboratoire est considérée comme une estimation non biaisée de la propriété du matériau et la moyenne non pondérée des moyennes des laboratoires est habituellement supposée être la meilleure estimation de cette propriété.
 
 Une certification de matériau de référence pourrait impliquer stem:[ii(I)] différents laboratoires; chacun mesurant la propriété recherchée de stem:[ii(J)] différents échantillons du matériau, avec chaque mesurage d'un échantillon consistant en stem:[ii(K)] observations répétées indépendantes. Le nombre total d'observations est alors stem:[ii(IJK)] et le nombre total d'échantillons est stem:[ii(IJ)]. C'est un exemple de ((plan emboîté équilibré)) à deux niveaux, analogue à l'exemple de l'étalon de tension à un niveau ci-dessus. Dans le cas présent, il y a deux niveaux d'«emboîtement» des observations avec deux facteurs différents, échantillon et laboratoire, que l'on fait varier pendant le mesurage. Le modèle est équilibré parce que chaque échantillon est observé le même nombre (stem:[ii(K)]) de fois dans chaque laboratoire et chaque laboratoire mesure le même nombre (stem:[ii(J)]) d'échantillons. Par analogie supplémentaire avec l'exemple de l'étalon de tension, dans le cas du matériau de référence, l'analyse des données a pour objectif de rechercher l'existence possible d'un effet inter-échantillons et d'un effet inter-laboratoires et de déterminer l'incertitude convenable à attribuer à la meilleure estimation de la valeur de la propriété à certifier. En accord avec le paragraphe précédent, cette estimation est supposée être la moyenne des stem:[ii(I)] moyennes des laboratoires, qui est aussi la moyenne des stem:[ii(IJK)] observations.
 
 [[scls_H-5-3-3]]
-====== {blank}
+===== {blank}
 
 Le paragraphe <<scls_3-4-2>> a mis en évidence l'importance de la variation des grandeurs d'entrée dont dépend un résultat de mesure, de sorte que son incertitude(((incertitude, évaluation stastitique de l', par variation des grandeurs d'entrée))) soit fondée sur des données observées évaluées statistiquement. Les plans emboîtés et l'analyse des données résultantes par les méthodes d'((analyse de variance)) peuvent être utilisés avec succès dans de nombreuses situations de mesure rencontrées dans la pratique.
 

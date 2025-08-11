@@ -12,13 +12,13 @@ Cette annexe donne des conseils complémentaires pour l'évaluation des composan
 ==== Hasard et ((observations répétées))(((hasard)))
 
 [[scls_F-1-1-1]]
-====== {blank}
+===== {blank}
 
 Les incertitudes déterminées à partir d'((observations répétées)) sont souvent opposées à celles qui sont évaluées par d'autres moyens comme étant «objectives», «statistiquement rigoureuses», etc. Cela implique à tort qu'elles peuvent être évaluées simplement en appliquant des formules statistiques aux observations et que leur évaluation(((évaluation de Type A de l'incertitude))) ne nécessite pas l'application de jugement.
 
 
 [[scls_F-1-1-2]]
-====== {blank}
+===== {blank}
 
 On doit d'abord se demander, «dans quelle mesure les ((observations répétées)) sont-elles bien des répétitions du mode opératoire totalement indépendantes?»(((répétitions indépendantes))) Si la totalité des observations porte sur un échantillon unique et si l'échantillonnage fait partie du mode opératoire parce que le mesurande est la propriété d'un matériau (par opposition à la propriété d'une éprouvette donnée du matériau), les observations ne sont alors pas répétées de manière indépendante; à la variance observée des ((observations répétées)) faites sur l'échantillon unique, on doit ajouter une évaluation d'une composante de variance provenant de différences possibles entre échantillons.
 
@@ -28,19 +28,19 @@ De manière analogue, si l'on doit lire un baromètre, il faut le faire en princ
 
 
 [[scls_F-1-1-3]]
-====== {blank}
+===== {blank}
 
 On doit se demander ensuite si la totalité des influences supposées être aléatoires(((aléatoire))) est bien réellement ((aléatoire)). Les moyennes et variances des lois sont-elles bien constantes? Ou peut-être y a-t-il une dérive dans la valeur d'une grandeur d'influence non mesurée pendant la période des ((observations répétées))? Si l'on dispose d'un nombre suffisant d'observations, on peut calculer les moyennes arithmétiques des résultats des première et deuxième moitiés de la période, ainsi que leurs écarts-types expérimentaux puis comparer les deux moyennes entre elles pour juger si leur différence est statistiquement significative et en déduire s'il y a un effet fonction du temps.(((grandeurs d'influence aléatoires)))(((hasard)))
 
 
 [[scls_F-1-1-4]]
-====== {blank}
+===== {blank}
 
 Si les valeurs liées aux alimentations du laboratoire (tension et fréquence de l'alimentation électrique, pression et température de l'eau, pression d'azote, etc.) sont des grandeurs d'influence(((grandeurs d'influence aléatoires))), il y a normalement dans leurs variations une composante fortement ((aléatoire)) sur laquelle il n'est pas possible de passer.(((évaluation de Type A de l'incertitude)))
 
 
 [[scls_F-1-1-5]]
-====== {blank}
+===== {blank}
 
 Si le dernier chiffre significatif d'une indication numérique varie continuellement durant une observation en raison du «bruit», il est parfois difficile de ne pas choisir involontairement des valeurs personnellement privilégiées de ce chiffre. Il est préférable de mettre en place un moyen pour geler l'indication à un instant arbitraire et d'enregistrer ce résultat.(((hasard)))
 
@@ -52,7 +52,7 @@ La plupart des éléments de ce paragraphe sont aussi applicables aux évaluatio
 
 
 [[scls_F-1-2-1]]
-====== {blank}
+===== {blank}
 
 La ((covariance)) associée aux estimations des deux grandeurs d'entrée stem:[ii(X)_i] et stem:[ii(X)_j] peut être prise égale à zéro ou traitée comme non significative si
 
@@ -66,13 +66,13 @@ NOTE: Des essais différents peuvent ne pas être indépendants si, par exemple,
 
 
 [[scls_F-1-2-2]]
-====== {blank}
+===== {blank}
 
 Le fait que deux grandeurs d'entrée observées de manière répétée et simultanée soient corrélées peut être déterminé à l'aide de l'<<eq_17>> de <<scls_5-2-3>>. Par exemple, si la fréquence d'un oscillateur avec une compensation nulle ou faible de la température est une grandeur d'entrée, si la température ambiante est aussi une grandeur d'entrée et si elles sont observées simultanément, il peut y avoir une ((corrélation)) significative mise en évidence par la ((covariance)) calculée de la fréquence de l'oscillateur et de la température ambiante.(((observations indépendantes simultanées, paires d')))(((procédure de mesure)))
 
 
 [[scls_F-1-2-3]]
-====== {blank}
+===== {blank}
 
 En pratique, les grandeurs d'entrée sont souvent corrélées parce qu'on utilise dans l'estimation de leurs valeurs le même étalon physique, le même instrument de mesure, la même donnée de référence ou encore la même méthode de mesure, avec une incertitude significative. Sans perte de généralité, supposons que deux grandeurs d'entrée stem:[ii(X)_1] et stem:[ii(X)_2] estimées par stem:[x_1] et stem:[x_2] dépendent d'un ensemble de variables non corrélées stem:[ii(Q)_1, ii(Q)_2,..., ii(Q)_L]. On a alors stem:[ii(X)_1 = F(ii(Q)_1, ii(Q)_2,..., ii(Q)_L)] et stem:[ii(X)_2 = G(ii(Q)_1, ii(Q)_2,..., ii(Q)_L)], avec certaines variables pouvant apparaître seulement dans l'une ou l'autre des fonctions. Si stem:[u^2(q_l)] est la variance associée à l'estimation stem:[q_l] de stem:[ii(Q)_l], alors la variance estimée associée à stem:[x_1] est, à partir de l'<<eq_10>>,
 
@@ -152,7 +152,7 @@ NOTE: En général, dans les étalonnages par comparaison analogues à cet exemp
 
 
 [[scls_F-1-2-4]]
-====== {blank}
+===== {blank}
 
 On peut se passer d'introduire la ((covariance)) stem:[u(x_i,x_j)] si l'ensemble de départ des grandeurs d'entrée stem:[ii(X)_1, ii(X)_2,...,ii(X)_N] dont dépend le mesurande stem:[ii(Y)] [voir <<eq_1>>] est redéfini de façon à introduire comme grandeurs d'entrée indépendantes additionnelles les grandeurs stem:[ii(Q)_l] qui sont communes à deux ou plus des stem:[ii(X)_i] de départ (il peut être nécessaire d'effectuer des mesurages complémentaires pour établir complètement la relation entre stem:[ii(Q)_l] et les stem:[ii(X)_i] concernés). Néanmoins, il peut être plus commode, dans certaines situations, de retenir les covariances plutôt que d'accroître le nombre de grandeurs d'entrée. Un traitement analogue peut être appliqué sur les covariances observées résultant d'observations simultanées répétées [voir <<eq_17>>], mais la mise en évidence des grandeurs d'entrée complémentaires appropriées est souvent artificielle, sans raisons physiques.
 
@@ -205,7 +205,7 @@ NOTE: On peut vérifier l'évaluation de l'incertitude en comparant le résultat
 ==== Valeurs d'entrée d'origine extérieure(((valeur d'entrée ou grandeur d'entrée d'origine extérieure)))
 
 [[scls_F-2-3-1]]
-====== {blank}
+===== {blank}
 
 Une valeur _d'origine extérieure_ pour une grandeur(((valeur d'entrée ou grandeur d'entrée d'origine extérieure))) d'entrée est une valeur qui n'a pas été estimée au cours d'un mesurage donné mais qui a été obtenue par ailleurs comme le résultat d'une évaluation indépendante. Une telle valeur d'origine extérieure est fréquemment accompagnée par des indications sur son incertitude. Par exemple, l'incertitude peut être donnée sous forme d'un écart-type, d'un multiple d'écart-type, par la demi-largeur d'un intervalle d'un niveau de confiance donné, ou par des limites maximales. On peut aussi donner des limites supérieure et inférieure, ou bien il peut aussi arriver qu'aucune information ne soit fournie sur l'incertitude. Dans ce dernier cas, les utilisateurs de la valeur doivent employer leur propre connaissance sur l'ordre de grandeur probable de l'incertitude, selon la nature de la grandeur, la fiabilité de l'origine, les incertitudes obtenues en pratique pour de telles grandeurs, etc.
 
@@ -213,12 +213,12 @@ NOTE: C'est par commodité que la présentation sur l'incertitude des grandeurs 
 
 
 [[scls_F-2-3-2]]
-====== {blank}
+===== {blank}
 
 Certains laboratoires d'étalonnage ont adopté en pratique l'expression de «l'incertitude» sous la forme de limites supérieure et inférieure qui définissent un intervalle ayant un niveau de confiance «minimal»(((niveau de confiance minimal))), par exemple «au moins» 95 pour-cent. Cela peut être considéré comme un exemple de ce que l'on a appelé une incertitude «sûre»(((incertitude sûre))) (voir <<scls_E-1-2>>), laquelle ne peut pas être transformée en une incertitude-type sans savoir comment l'intervalle a été calculé. Si l'information fournie est suffisante, l'incertitude-type peut être recalculée en accord avec les règles de ce _Guide_; sinon, une évaluation indépendante de l'incertitude doit être faite par tous les moyens disponibles.
 
 [[scls_F-2-3-3]]
-====== {blank}
+===== {blank}
 
 Certaines incertitudes sont simplement données comme limites(((limites d'une grandeurd'entrée))) extrêmes entre lesquelles _toutes_ les valeurs de la grandeur sont soi-disant situées. La pratique courante est de supposer que toutes les valeurs entre ces limites sont également probables (loi de ((probabilité)) rectangulaire), mais il ne faudrait pas adopter une telle hypothèse s'il y avait des raisons de s'attendre à ce que les valeurs situées à l'intérieur et au voisinage des limites soient moins probables que celles situées au voisinage du centre de l'intervalle compris entre ces limites. Une ((loi rectangulaire)) de demi-largeur stem:[a] a une variance égale à stem:[a^2//3]; une ((loi normale)) pour laquelle stem:[a] est la demi-largeur de l'intervalle ayant un niveau de confiance de stem:[99.73] pour-cent a une variance égale à stem:[a^2//9]. Il peut être prudent d'adopter un compromis entre ces valeurs, par exemple en supposant que la loi soit triangulaire(((loi triangulaire))), avec une variance égale à stem:[a^2//6] (voir <<scls_4-3-9>> et <<scls_4-4-6>>).
 
@@ -388,7 +388,7 @@ On peut obtenir une incertitude élargie stem:[ii(U)] en multipliant stem:[u_{"c
 ==== Incertitude due à la méthode de mesure(((incertitude de la méthode de mesure)))
 
 [[scls_F-2-5-1]]
-====== {blank}
+===== {blank}
 
 La composante d'incertitude la plus difficile à évaluer est peut-être celle qui est associée à la méthode de mesure, en particulier s'il a été montré que l'on obtient des résultats de variabilité plus faible par application de cette méthode que par toute autre méthode connue. Mais il est probable qu'il existe d'autres méthodes, certaines encore inconnues ou impraticables pour une raison ou une autre, qui donneraient systématiquement des résultats différents de validité apparemment égale. Cela entraîne une loi de probabilité _a priori_ et non pas une loi dont on puisse aisément extraire des échantillons à traiter statistiquement. Alors, même si l'incertitude de la méthode peut être l'incertitude dominante(((incertitude de la méthode de mesure))), la seule information souvent disponible pour évaluer son incertitude-type provient de ce que l'on connaît du monde physique. (Voir aussi <<scls_E-4-4>>.)
 
@@ -399,18 +399,18 @@ NOTE: La détermination du même mesurande par différentes méthodes, soit dans
 ==== Incertitude due à l'échantillon(((incertitude due à l'échantillon)))
 
 [[scls_F-2-6-1]]
-====== {blank}
+===== {blank}
 
 De nombreux mesurages comportent la comparaison d'un objet inconnu à un étalon connu, de ((caractéristique))s analogues, pour étalonner l'objet inconnu. On peut donner en exemple des calibres à bouts, certains thermomètres, des jeux de masses marquées, des résistances et des matériaux de haute pureté. Le plus souvent dans de tels cas, la méthode de mesure n'est pas spécialement influencée ou perturbée par le traitement de l'échantillon ou par sa sélection (c'est-à-dire par l'échantillon particulier à étalonner), ou par les effets de diverses grandeurs d'influence liées à l'environnement, parce que l'échantillon inconnu et l'étalon répondent en général à ces variables d'une façon identique et souvent prévisible.
 
 
 [[scls_F-2-6-2]]
-====== {blank}
+===== {blank}
 
 Dans certaines situations pratiques de mesure, l'échantillonnage et le traitement de l'éprouvette jouent un rôle bien plus important. Cela est souvent le cas pour l'analyse chimique des matériaux naturels. Contrairement aux matériaux fabriqués par l'homme, pour lesquels l'homogénéité peut avoir été prouvée au-delà du niveau inférieur à celui qui est exigé pour le mesurage, les matériaux naturels manquent souvent beaucoup d'homogénéité. Cette hétérogénéité conduit à deux composantes complémentaires de l'incertitude. L'évaluation de la première composante nécessite de déterminer jusqu'à quel point l'échantillon sélectionné représente correctement le matériau de base à analyser. L'évaluation de la deuxième composante nécessite de déterminer dans quelle mesure les constituants secondaires (non analysés) influencent le mesurage et sont correctement traités par la méthode de mesure.
 
 
 [[scls_F-2-6-3]]
-====== {blank}
+===== {blank}
 
 Dans certains cas, une conception soignée de l'essai rend possible d'évaluer statistiquement l'incertitude due à l'échantillon (voir <<scls_H-5>> et <<scls_H-5-3-2>>). D'une manière habituelle, cependant, et spécialement lorsque les grandeurs d'influence liées à l'environnement ont des effets significatifs sur l'échantillon, il faut faire appel pour évaluer l'incertitude aux compétences et aux connaissances de l'analyste, dérivées de son expérience, et de la totalité de l'information pratiquement disponible.

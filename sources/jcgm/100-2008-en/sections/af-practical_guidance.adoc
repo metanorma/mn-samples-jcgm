@@ -13,13 +13,13 @@ This annex gives additional suggestions for evaluating uncertainty components, m
 ==== Randomness and repeated observations(((observations, repeated)))(((randomness)))
 
 [[scls_F-1-1-1]]
-====== {blank}
+===== {blank}
 
 Uncertainties determined from repeated observations are often contrasted with those evaluated by other means as being "objective", "statistically rigorous", etc. That incorrectly implies that they can be evaluated merely by the application of statistical formulae to the observations and that their evaluation does not require the application of some judgement.(((observations, repeated)))(((Type A evaluation of uncertainty)))
 
 
 [[scls_F-1-1-2]]
-====== {blank}
+===== {blank}
 
 It must first be asked, "To what extent are the repeated observations completely ((independent repetitions)) of the ((measurement procedure))?" If all of the observations are on a single sample, and if sampling is part of the measurement procedure because the measurand is the property of a material (as opposed to the property of a given specimen of the material), then the observations have not been independently repeated; an evaluation of a component of variance arising from possible differences among samples must be added to the observed variance of the repeated observations made on the single sample.(((observations, repeated)))(((Type A evaluation of uncertainty)))
 
@@ -29,19 +29,19 @@ Similarly, if a barometer has to be read, it should in principle be read for eac
 
 
 [[scls_F-1-1-3]]
-====== {blank}
+===== {blank}
 
 Second, it must be asked whether all of the influences(((influence quantities, random))) that are assumed to be random really are random(((randomness))). Are the means and variances of their distributions constant, or is there perhaps a drift in the value of an unmeasured influence quantity during the period of repeated observations? If there is a sufficient number of observations, the arithmetic means of the results of the first and second halves of the period and their experimental standard deviations may be calculated and the two means compared with each other in order to judge whether the difference between them is statistically significant and thus if there is an effect varying with time.(((Type A evaluation of uncertainty)))
 
 
 [[scls_F-1-1-4]]
-====== {blank}
+===== {blank}
 
 If the values of "common services" in the laboratory (electric-supply voltage and frequency, water pressure and temperature, nitrogen pressure, etc.) are influence quantities, there is normally a strongly nonrandom element in their variations that cannot be overlooked.(((influence quantities, random)))(((randomness)))(((Type A evaluation of uncertainty)))
 
 
 [[scls_F-1-1-5]]
-====== {blank}
+===== {blank}
 
 If the least significant figure of a digital indication varies continually during an observation due to "noise", it is sometimes difficult not to select unknowingly personally preferred values of that digit. It is better to arrange some means of freezing the indication at an arbitrary instant and recording the frozen result.(((randomness)))
 
@@ -53,7 +53,7 @@ Much of the discussion in this subclause is also applicable to Type B evaluation
 
 
 [[scls_F-1-2-1]]
-====== {blank}
+===== {blank}
 
 The ((covariance)) associated with the estimates of two input quantities stem:[ii(X)_i] and stem:[ii(X)_j] may be taken to bezero or treated as insignificant if
 
@@ -67,13 +67,13 @@ NOTE: Different experiments may not be independent if, for example, the same ins
 
 
 [[scls_F-1-2-2]]
-====== {blank}
+===== {blank}
 
 Whether or not two repeatedly and simultaneously(((observations, independent pairs of simultaneous))) observed input quantities are correlated maybe determined by means of <<eq_17>> in <<scls_5-2-3>>. For example, if the frequency of an oscillator uncompensated or poorly compensated for temperature is an input quantity, if ambient temperature is also an input quantity, and if they are observed simultaneously, there may be a significant ((correlation)) revealed by the calculated ((covariance)) of the frequency of the oscillator and the ambient temperature.
 
 
 [[scls_F-1-2-3]]
-====== {blank}
+===== {blank}
 
 In practice, input quantities are often correlated because the same physical measurement standard, measuring instrument, reference datum, or even measurement method having a significant uncertainty is used in the estimation of their values. Without loss of generality, suppose two input quantities stem:[ii(X)_1] and stem:[ii(X)_2] estimated by stem:[x_1] and stem:[x_2] depend on a set of uncorrelated variables stem:[ii(Q)_1, ii(Q)_2,..., ii(Q)_L]. Thus stem:[ii(X)_1 = F(ii(Q)_1, ii(Q)_2,..., ii(Q)_L)] and stem:[ii(X)_2 = G(ii(Q)_1, ii(Q)_2,..., ii(Q)_L)], although some of these variables may actually appear onlyin one function and not in the other. If stem:[u^2(q_l)] is the estimated variance associated with the estimate stem:[q_l] of stem:[ii(Q)_l], then the estimated variance associated with stem:[x_1] is, from <<eq_10>> in <<scls_5-1-2>>,
 
@@ -154,7 +154,7 @@ NOTE: In general, in comparison calibrations such as this example, the estimated
 
 
 [[scls_F-1-2-4]]
-====== {blank}
+===== {blank}
 
 The need to introduce the ((covariance)) stem:[u(x_i,x_j)] can be bypassed if the original set of input quantities stem:[ii(X)_1, ii(X)_2,...,ii(X)_N] upon which the measurand stem:[ii(Y)] depends [see <<eq_1>> in <<scls_4-1>>] is redefined in such a way as to include as additional independent input quantities those quantities stem:[ii(Q)_l] that are common to two or more of the original stem:[ii(X)_i]. (It may be necessary to perform additional measurements to establish fully the relationship between stem:[ii(Q)_l] and the affected stem:[ii(X)_i].) Nonetheless, in some situations it may be more convenient to retain covariances rather than to increase the number of input quantities. A similar process can be carried out on the observed covariances of simultaneous repeated observations [see <<eq_17>> in <<scls_5-2-3>>], but the identification of the appropriate additional input quantities is often _ad hoc_ and nonphysical.(((correlation, elimination of)))
 
@@ -209,7 +209,7 @@ NOTE: One may check the uncertainty evaluation by comparing the result of the co
 ==== Imported input values(((imported input value or quantity)))
 
 [[scls_F-2-3-1]]
-====== {blank}
+===== {blank}
 
 An _imported_ value for an input quantity(((imported input value or quantity))) is one that has not been estimated in the course of a given measurement but has been obtained elsewhere as the result of an independent evaluation. Frequently such an imported value is accompanied by some kind of statement about its uncertainty. For example, the uncertainty may be given as a standard deviation, a multiple of a standard deviation, or the half-width of an interval having a stated level of confidence. Alternatively, upper and lower bounds may be given, or no information may be provided about the uncertainty. In the latter case, those who use the value must employ their own knowledge about the likely magnitude of the uncertainty, given the nature of the quantity, the reliability of the source, the uncertainties obtained in practice for such quantities, etc.
 
@@ -217,13 +217,13 @@ NOTE: The discussion of the uncertainty of imported input quantities is included
 
 
 [[scls_F-2-3-2]]
-====== {blank}
+===== {blank}
 
 Some calibration laboratories have adopted the practice of expressing "uncertainty" in the form of upper and lower limits that define an interval having a "minimum" level of confidence(((level of confidence, minimum))), for example, "at least" 95 percent. This may be viewed as an example of a so-called "safe" uncertainty (see <<scls_E-1-2>>), and it cannot be converted to a standard uncertainty without a knowledge of how it was calculated. If sufficient information is given, it may be recalculated in accordance with the rules of this _Guide_; otherwise an independent assessment of the uncertainty must be made by whatever means are available.(((uncertainty, safe)))
 
 
 [[scls_F-2-3-3]]
-====== {blank}
+===== {blank}
 
 Some uncertainties are given simply as maximum bounds(((bounds on an input quantity))) within which _all_ values of the quantity are said to lie. It is a common practice to assume that all values within those bounds are equally probable (a rectangular probability distribution)(((distribution, rectangular))), but such a distribution should not be assumed if there is reason to expect that values within but close to the bounds are less likely than those nearer the centre of the bounds. A rectangular distribution of half-width stem:[a] has a variance of stem:[a^2//3]; a ((normal distribution)) for which stem:[a] is the half -width of an interval having a level of confidence of stem:[99.73] percent has a variance of stem:[a^2//9]. It may be prudent to adopt a compromise between those values, for example, by assuming a triangular distribution(((distribution, triangular))) for which the variance is stem:[a^2//6] (see <<scls_4-3-9>> and <<scls_4-4-6>>).
 
@@ -397,7 +397,7 @@ An expanded uncertainty stem:[ii(U)] may be obtained by multiplying stem:[u_{"c"
 ==== Uncertainty of the method of measurement(((uncertainty of the method of measurement)))
 
 [[scls_F-2-5-1]]
-====== {blank}
+===== {blank}
 
 Perhaps the most difficult uncertainty component to evaluate is that associated with the method of measurement, especially if the application of that method has been shown to give results with less variability than those of any other that is known. But it is likely that there are other methods, some of them as yet unknown or in some way impractical, that would give systematically different results of apparently equal validity. This implies an _a priori_ probability distribution, not a distribution from which samples can be readily drawn and treated statistically. Thus, even though the uncertainty of the method may be the dominant one, the only information often available for evaluating its standard uncertainty is one's existing knowledge of the physical world. (See also <<scls_E-4-4>>.)(((uncertainty of the method of measurement)))
 
@@ -408,18 +408,18 @@ NOTE: Determining the same measurand by different methods, either in the same la
 ==== Uncertainty of the sample(((uncertainty of the sample)))
 
 [[scls_F-2-6-1]]
-====== {blank}
+===== {blank}
 
 Many measurements involve comparing an unknown object with a known standard having similar characteristics in order to calibrate the unknown. Examples include end gauges, certain thermometers, sets of masses, resistors, and high purity materials. In most such cases, the measurement methods are not especially sensitive to, or adversely affected by, sample selection (that is, the particular unknown being calibrated), sample treatment, or the effects of various environmental influence quantities because the unknown and standard respond in generally the same (and often predictable) way to such variables.
 
 
 [[scls_F-2-6-2]]
-====== {blank}
+===== {blank}
 
 In some practical measurement situations, sampling and specimen treatment play a much larger role. This is often the case for the chemical analysis of natural materials. Unlike man-made materials, which may have proven homogeneity to a level beyond that required for the measurement, natural materials are often very inhomogeneous. This inhomogeneity leads to two additional uncertainty components. Evaluation of the first requires determining how adequately the sample selected represents the parent material being analysed. Evaluation of the second requires determining the extent to which the secondary (unanalysed) constituents influence the measurement and how adequately they are treated by the measurement method.
 
 
 [[scls_F-2-6-3]]
-====== {blank}
+===== {blank}
 
 In some cases, careful design of the experiment may make it possible to evaluate statistically the uncertainty due to the sample (see <<scls_H-5>> and <<scls_H-5-3-2>>). Usually, however, especially when the effects of environmental influence quantities on the sample are significant, the skill and knowledge of the analyst derived from experience and all of the currently available information are required for evaluating the uncertainty.

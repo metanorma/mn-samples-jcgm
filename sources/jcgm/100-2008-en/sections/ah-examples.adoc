@@ -1321,7 +1321,7 @@ The experimental standard deviation of the mean stem:[s(bar(ii(V)))] as obtained
 ==== A numerical example
 
 [[scls_H-5-2-1]]
-====== {blank}
+===== {blank}
 
 Data which allow the above questions to be addressed are given in <<table_H-9>>, where
 
@@ -1363,7 +1363,7 @@ is the experimental variance of the stem:[ii(J) = 10] daily means (there is only
 
 
 [[scls_H-5-2-2]]
-====== {blank}
+===== {blank}
 
 The consistency of the within-day variability and between-day variability of the observations canbe investigated by comparing two independent estimates of stem:[ii(sigma)_W^2], the within-day component of variance (that is, the variance of observations made on the same day).(((variance, pooled estimate of (or pooled experimental standard deviation))))
 
@@ -1391,7 +1391,7 @@ The estimates of stem:[ii(sigma)_W^2] given by <<eq_H-26a>> and <<eq_H-26b>> are
 
 
 [[scls_H-5-2-3]]
-====== {blank}
+===== {blank}
 
 The ((stem:[ii(F)]-distribution)) is the probability distribution of the ratio stem:[ii(F)(ii(nu)_{"a"},ii(nu)_{"b"}) = s_{"a"}^2(ii(nu)_{"a"})//s_{"b"}^2(ii(nu)_{"b"})] of two independent estimates, stem:[s_{"a"}^2 (ii(nu)_{"a"})] and stem:[s_{"b"}^2 (ii(nu)_{"b"})], of the variance stem:[ii(sigma)^2] of a normally distributed random variable <<BOX1978>>. The parameters stem:[ii(nu)_{"a"}] and stem:[ii(nu)_{"b"}] are the respective degrees of freedom of the two estimates and stem:[0 <= ii(F)(ii(nu)_{"a"},ii(nu)_{"b"}) < oo]. Values of stem:[ii(F)] are tabulated for different values of stem:[ii(nu)_{"a"}] and stem:[ii(nu)_{"b"}] and various quantiles of the stem:[ii(F)]-distribution. A value of stem:[F(ii(nu)_{"a"}, ii(nu)_{"b"}) > ii(F)_{0.95}] or stem:[F(ii(nu)_{"a"}, ii(nu)_{"b"}) > ii(F)_{0.975}] (the critical value) is usually interpreted as indicating that stem:[s_{"a"}^2 (ii(nu)_{"a"})] is larger than stem:[s_{"b"}^2 (ii(nu)_{"b"})] by a statistically significant amount; and that the probability of a value of stem:[ii(F)] as large as that observed, if the two estimates were estimates of the same variance, is less than stem:[0.05] or stem:[0.025], respectively. (Other critical values may also be chosen, such as stem:[ii(F)_{0.99}].)
 
@@ -1425,7 +1425,7 @@ s_{"a"}^2 = ii(K)s^2 (bar(ii(V))_j) = 5(57 "unitsml(uV)")^2 = (128 "unitsml(uV)"
 <<<
 
 [[scls_H-5-2-4]]
-====== {blank}
+===== {blank}
 
 The application of the ((stem:[ii(F)]-test)) to the present numerical example yields
 
@@ -1438,7 +1438,7 @@ with stem:[ii(nu)_a = ii(J) - 1 = 9] degrees of freedom in the numerator and ste
 
 
 [[scls_H-5-2-5]]
-====== {blank}
+===== {blank}
 
 If the existence of a between-day effect is rejected because the difference between stem:[s_{"a"}^2] and stem:[s_{"b"}^2] is not viewed as statistically significant (an imprudent decision because it could lead to an underestimate of the uncertainty), the estimated variance stem:[s^2(bar(ii(V)))] of stem:[bar(ii(V))] should be calculated from <<eq_H-24b>>. That relation is equivalent to pooling the estimates stem:[s_{"a"}^2] and stem:[s_{"b"}^2] (that is, taking a weighted average of stem:[s_{"a"}^2] and stem:[s_{"b"}^2], each weighted by its respective degrees of freedom stem:[ii(nu)_{"a"}] and stem:[ii(nu)_{"b"}] -- see <<note_H-3-6>>) to obtain the best estimate of the variance of the observations; and dividing that estimate by stem:[ii(JK)], the number of observations, to obtain the best estimate stem:[s^2(bar(ii(V)))] of the variance of the mean of the observations. Following this procedure one obtains(((variance, pooled estimate of (or pooled experimental standard deviation))))
 
@@ -1473,7 +1473,7 @@ ii(S) = sum_{j=1}^ii(J) sum_{k=1}^ii(K) [(ii(V)_{jk} - bar(ii(V))_j) + (bar(ii(V
 
 
 [[scls_H-5-2-6]]
-====== {blank}
+===== {blank}
 
 If the existence of a between-day effect is accepted (a prudent decision because it avoids a possible underestimate of the uncertainty) and it is assumed to be random, then the variance stem:[s^2(bar(ii(V))_j)] calculated from the stem:[ii(J) = 10] daily means according to <<eq_H-25d>> estimates not stem:[ii(sigma)_{"W"}^2//ii(K)] as postulated in <<scls_H-5-2-2>>, but stem:[ii(sigma)_{"W"}^2//ii(K) + ii(sigma)_{"B"}^2], where stem:[ii(sigma)_{"B"}^2] is the between-day random component of variance. This implies that
 
@@ -1523,7 +1523,7 @@ The degrees of freedom of stem:[s_{"w"}^2] (and thus stem:[s_{"w"}]) is stem:[ii
 
 
 [[scls_H-5-2-7]]
-====== {blank}
+===== {blank}
 
 The best estimate of the potential difference of the voltage standard is then stem:[ii(V)_{"S"} = bar(ii(V)) = 10.000097 "unitsml(V)"], with stem:[s(bar(ii(V))) = u_{"c"} = 18 "unitsml(uV)"] as given in <<eq_H-32>>. This value of stem:[u_{"c"}] and its 9 degreesof freedom are to be compared with stem:[u_{"c"} = 13 "unitsml(uV)"] and its 49 degrees of freedom, the result obtained in <<scls_H-5-2-5>> [<<eq_H-28b>>] when the existence of a between-day effect was rejected.
 
@@ -1534,13 +1534,13 @@ In a real measurement an apparent between-day effect should be further investiga
 ==== The role of ANOVA in measurement(((measurement, role of ANOVA in)))
 
 [[scls_H-5-3-1]]
-====== {blank}
+===== {blank}
 
 This voltage standard example illustrates what is generally termed a balanced, one-stage nested design(((design, balanced nested))). It is a one-stage nested design because there is one level of "nesting" of the observations with one factor, the day on which observations are made, being varied in the measurement. It is balanced because the same number of observations is made on each day. The analysis presented in the example can be used to determine if there is an "operator effect", an "instrument effect", a "laboratory effect", a "sample effect", or even a "method effect" in a particular measurement. Thus in the example, one might imagine replacing the observations made on the stem:[ii(J)] different days by observations made on the same day but by stem:[ii(J)] different operators; the between-day component of variance becomes then a component of variance associated with different operators.
 
 
 [[scls_H-5-3-2]]
-====== {blank}
+===== {blank}
 
 As noted in <<scls_H-5>>, ANOVA methods are widely used in the certification of reference materials(((reference materials, certification of))) (RMs) by interlaboratory testing. Such certification usually involves having a number of independent, equally competent laboratories measure samples of a material for the property for which the material is to be certified. It is generally assumed that the differences between individual results, both within and between laboratories, are statistical in nature regardless of the causes. Each laboratory mean is considered an unbiased estimate of the property of the material, and usually the unweighted mean of the laboratory means is assumed to be the best estimate of that property.
 
@@ -1548,7 +1548,7 @@ An RM certification might involve stem:[ii(I)] different laboratories, each of w
 
 
 [[scls_H-5-3-3]]
-====== {blank}
+===== {blank}
 
 The importance of varying the input quantities upon which a measurement result depends so that its uncertainty is based on observed data evaluated statistically is pointed out in <<scls_3-4-2>>. Nested designs and the analysis of the resulting data by ANOVA methods can be successfully used in many measurement situations encountered in practice.
 

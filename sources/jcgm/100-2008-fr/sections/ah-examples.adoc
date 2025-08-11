@@ -831,7 +831,7 @@ tandis que l'<<eq_H-15>> devient
 
 [stem%unnumbered]
 ++++
-u_{"c"}^2 [b(30 "unitsml(degC)")] = (0.0029 "unitsml(degC)")^2 + (10 "unitsml(degC)")^2 (0.00067)^2 + 
+u_{"c"}^2 [b(30 "unitsml(degC)")] = (0.0029 "unitsml(degC)")^2 + (10 "unitsml(degC)")^2 (0.00067)^2 +
 ++++
 
 [stem%unnumbered]
@@ -1355,7 +1355,7 @@ est la variance expérimentale des stem:[ii(J) = 10] moyennes journalières (il 
 .2+| Grandeur 10+| Jour, stem:[j]
 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10
 
-| stem:[bar(ii(V))_j//"unitsml(V)"] | stem:[10.000172] | stem:[10.000116] | stem:[10.000013] | stem:[10.000144] | stem:[10.000106] | stem:[10.000031] | stem:[10.000060] | stem:[10.000125] | stem:[10.000163] | stem:[10.000041] 
+| stem:[bar(ii(V))_j//"unitsml(V)"] | stem:[10.000172] | stem:[10.000116] | stem:[10.000013] | stem:[10.000144] | stem:[10.000106] | stem:[10.000031] | stem:[10.000060] | stem:[10.000125] | stem:[10.000163] | stem:[10.000041]
 | stem:[s(ii(V)_{jk})// "unitsml(uV)"] | 60 | 77 | 111 | 101 | 67 | 93 | 80 | 73 | 88 | 86
 
 11+a|

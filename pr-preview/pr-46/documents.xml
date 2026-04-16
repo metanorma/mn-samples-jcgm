@@ -1,0 +1,121 @@
+<relaton-collection xmlns="https://open.ribose.com/relaton-xml"><title>JCGM Publications in Metanorma</title><contributor><role type='author'/><organization><name>JCGM</name></organization></contributor><relation type='partOf'><bibdata type="standard" schema-version="v1.2.9">
+  <title type="title-main" language="en">Evaluation of measurement data</title>
+  <title type="title-part" language="en">The role of measurement uncertainty in conformity assessment</title>
+  <title type="title-main" language="fr">Évaluation des données de mesure</title>
+  <title type="title-part" language="fr">Le rôle de l’incertitude de mesure dans l’évaluation de la conformité</title>
+  <uri type="xml">./documents/jcgm/106-2012-en/document.xml</uri>
+  <uri type="pdf">./documents/jcgm/106-2012-en/document.pdf</uri>
+  <uri type="html">./documents/jcgm/106-2012-en/document.html</uri>
+  <uri type="rxl">./documents/jcgm/106-2012-en/document.rxl</uri>
+  <docidentifier type="BIPM" primary="true">JCGM 106</docidentifier>
+  <docnumber>106</docnumber>
+  <contributor>
+    <role type="author"/>
+    <organization>
+      <name>Bureau International des Poids et Mesures</name>
+      <abbreviation>BIPM</abbreviation>
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="author">
+      <description>committee</description>
+    </role>
+    <organization>
+      <name>Bureau International des Poids et Mesures</name>
+      <subdivision>
+Joint Committee for Guides in Metrology
+
+Comité commun pour les guides en métrologie
+JCGMJCGM/WG 1</subdivision>
+      <subdivision>WG 1</subdivision>
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      <name>Bureau International des Poids et Mesures</name>
+      <abbreviation>BIPM</abbreviation>
+    </organization>
+  </contributor>
+  <edition>1</edition>
+  <language>en</language>
+  <script>Latn</script>
+  <status>
+    <stage>in-force</stage>
+  </status>
+  <copyright>
+    <from>2012</from>
+    <owner>
+      <organization>
+        <name>Bureau International des Poids et Mesures</name>
+        <abbreviation>BIPM</abbreviation>
+      </organization>
+    </owner>
+  </copyright>
+  <ext schema-version="v1.0.0">
+    <doctype>guide</doctype>
+    <structuredidentifier>
+      <docnumber>106</docnumber>
+    </structuredidentifier>
+  </ext>
+</bibdata></relation>
+<relation type='partOf'><bibdata type="standard" schema-version="v1.2.9">
+  <title type="title-main" language="fr">Vocabulaire international de métrologie</title>
+  <title type="title-part" language="fr">Concepts fondamentaux et généraux et termes associés (VIM)</title>
+  <uri type="xml">./documents/jcgm/200-2012-fr/document.xml</uri>
+  <uri type="pdf">./documents/jcgm/200-2012-fr/document.pdf</uri>
+  <uri type="html">./documents/jcgm/200-2012-fr/document.html</uri>
+  <uri type="rxl">./documents/jcgm/200-2012-fr/document.rxl</uri>
+  <docidentifier type="BIPM" primary="true">JCGM 200</docidentifier>
+  <docnumber>200</docnumber>
+  <contributor>
+    <role type="author"/>
+    <organization>
+      <name>Bureau international des poids et mesures</name>
+      <abbreviation>BIPM</abbreviation>
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="author">
+      <description>committee</description>
+    </role>
+    <organization>
+      <name>Bureau international des poids et mesures</name>
+      <subdivision>
+Joint Committee for Guides in Metrology
+JCGMJCGM/WG 1</subdivision>
+      <subdivision>
+Working Group on the Expression of Uncertainty in Measurement
+WG 1</subdivision>
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      <name>Bureau international des poids et mesures</name>
+      <abbreviation>BIPM</abbreviation>
+    </organization>
+  </contributor>
+  <edition>3</edition>
+  <language>fr</language>
+  <script>Latn</script>
+  <status>
+    <stage>in-force</stage>
+  </status>
+  <copyright>
+    <from>2012</from>
+    <owner>
+      <organization>
+        <name>Bureau international des poids et mesures</name>
+        <abbreviation>BIPM</abbreviation>
+      </organization>
+    </owner>
+  </copyright>
+  <ext schema-version="v1.0.0">
+    <doctype>guide</doctype>
+    <structuredidentifier>
+      <docnumber>200</docnumber>
+    </structuredidentifier>
+  </ext>
+</bibdata></relation>
+</relaton-collection>

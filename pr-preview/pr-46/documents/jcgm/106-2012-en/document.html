@@ -615,7 +615,9 @@ main {
     background-color: #6C734A;
     color: white !important;
     cursor: pointer;
-    z-index: 100;
+    left: 0;
+    top: 0;
+    z-index: 103;
   }
   #toggle span {
     text-align: center;
@@ -1663,7 +1665,7 @@ pre.sourcecode .nt {
   
   1.  Scope
 </a></li>
-<li class="h1"><a href="#_5832b8a1-b7ec-4eec-bbc8-fb91738f3f91">      2.  Normative references</a></li>
+<li class="h1"><a href="#_c9888ffb-9108-402b-b265-35bc36c2fa07">      2.  Normative references</a></li>
 <li class="h1"><a href="#_9ea01b51-58a1-0ad6-17aa-fe792967c498">      
   
   3.  Terms and definitions
@@ -1887,7 +1889,7 @@ pre.sourcecode .nt {
   B.3.  A positive property near a physical limit
 </a></li>
 <li class="h1"><a href="#annexC">      Annex C  Glossary of principal symbols</a></li>
-<li class="h1"><a href="#_f263936c-634f-4d97-924b-4970dcbb4f0d">      Bibliography</a></li></ul></div>
+<li class="h1"><a href="#_a9d6b05e-30c0-46a6-88bb-c8ab24a8c7a3">      Bibliography</a></li></ul></div>
 
 </nav>
 
@@ -1898,7 +1900,7 @@ pre.sourcecode .nt {
 
 
 
-</div><br /><br /><div id="_df59bdab-8cf3-a209-3604-bf98a050a626"><h1 class="ForewordTitle" id="_b8427a41-5e04-470b-b929-4da7919d9820"><a class="anchor" href="#_df59bdab-8cf3-a209-3604-bf98a050a626"></a><a class="header" href="#_df59bdab-8cf3-a209-3604-bf98a050a626">Foreword</a></h1><p id="_f113e1d0-1f07-b3f1-ffa6-fe74497b10e6">In 1997 a Joint Committee for Guides in Metrology (<a href="http://www.bipm.org/en/committees/jc/jcgm/">JCGM</a>), chaired by the Director of the Bureau International des Poids et Mesures (<a href="http://www.bipm.org/">BIPM</a>), was created by the seven international organizations that had originally in 1993 prepared the  <i>Guide to the expression of uncertainty in measurement</i> (GUM) and the <i>International vocabulary of basic and general terms in metrology</i> (VIM). The JCGM assumed responsibility for these two documents from the ISO Technical Advisory Group 4 (TAG4).</p><p id="_3c37daf8-b1a0-3689-7dec-7b79ba378682">The Joint Committee is formed by the BIPM with the International Electrotechnical Commission (<a href="http://www.iec.ch/">IEC</a>), the International Federation of Clinical Chemistry and Laboratory Medicine (<a href="http://www.ifcc.org/">IFCC</a>), the International Organization for Standardization (<a href="http://www.iso.org/">ISO</a>), the International Union of Pure and Applied Chemistry (IUPAC), the International Union of Pure and Applied Physics (<a href="http://www.iupac.org/">IUPAP</a>), and the International Organization of Legal Metrology (<a href="http://www.oiml.org/">OIML</a>). A further organization joined these seven international organizations, namely, the International Laboratory Accreditation Cooperation (<a href="http://www.ilac.org/">ILAC</a>).</p><p id="_fc76739b-515b-1863-97a4-6a37f28d7bff">JCGM has two Working Groups. Working Group 1, “Expression of uncertainty in measurement”, has the task to promote the use of the GUM and to prepare Supplements and other documents for its broad application. Working Group 2, “Working Group on International vocabulary of basic and general terms in metrology (VIM)”, has the task to revise and promote the use of the VIM. For further information on the activity of the JCGM, see  <a href="http://www.bipm.org/">www.bipm.org</a></p><p id="_faf6beae-6370-f765-da40-78d6eb0e63c6">Documents such as this one are intended to give added value to the GUM by providing guidance on aspects of the evaluation and use of measurement uncertainty that are not explicitly treated in the GUM. Such guidance will be as consistent as possible with the general probabilistic basis of the GUM.</p><p id="_146d86ed-db55-4fcb-8416-39e1f00aa74c">This document has been prepared by Working Group 1 of the JCGM, and has benefited from detailed reviews undertaken by member organizations of the JCGM and National Metrology Institutes.</p></div><br /><div class="Section3" id="_7bda8ac3-43d4-6ee1-99af-a1c226aa3c79"><h1 class="IntroTitle" id="_7c051c0b-b769-4685-8a38-3fc0696545c9"><a class="anchor" href="#_7bda8ac3-43d4-6ee1-99af-a1c226aa3c79"></a><a class="header" href="#_7bda8ac3-43d4-6ee1-99af-a1c226aa3c79">Introduction</a></h1><p id="_b7a47667-1060-b901-9865-989f1df62f2a"><i>Conformity assessment</i> (<a href="#sec_3.3.1">3.3.1</a>), as broadly defined, is any activity undertaken to determine, directly or indirectly, whether a product, process, system, person or body meets relevant standards and fulfills <i>specified requirements</i> (<a href="#sec_3.3.3">3.3.3</a>). [<a href="#ISO_IEC_17000_2004">ISO/IEC 17000:2004</a>] gives general terms and definitions relating to conformity assessment, including the accreditation of conformity assessment bodies and the use of conformity assessment in facilitating trade.</p><p id="_2cdf7dec-ddac-8716-df7d-5872d43a4904">In a particular kind of conformity assessment, sometimes called <i>inspection</i> (<a href="#sec_3.3.2">3.3.2</a>), the determination that a product fulfils a specified requirement relies on measurement as a principal source of information.  [<a href="#ref22">ISO 10576-1:2003</a>] sets out guidelines for checking conformity with specified limits in the case where a  <i>quantity</i> (<a href="#sec_3.2.1">3.2.1</a>) is measured and a resulting <i>coverage interval</i> (<a href="#sec_3.2.7">3.2.7</a>) (termed ‘uncertainty interval’ in ISO 10576-1:2003) is compared with a  <i>tolerance interval</i> (<a href="#sec_3.3.5">3.3.5</a>). The present document extends this approach to include explicit consideration of risks, and develops general procedures for deciding conformity based on  <i>measurement results</i> (<a href="#sec_3.2.5">3.2.5</a>), recognizing the central role of  <i>probability distributions</i> (<a href="#sec_3.1.1">3.1.1</a>) as expressions of uncertainty and incomplete information.</p><p id="_475aef6c-6200-3f6b-3ad0-4646b44a53e8">The evaluation of measurement uncertainty is a technical problem whose solution is addressed by  [<a href="https://www.bipm.org/documents/20126/2071204/JCGM_100_2008_E.pdf/cb0ef43f-baa5-11cf-3f85-4dcd86f77bd6">JCGM 100:2008</a>], the <i>Guide to the expression of uncertainty in measurement</i> (GUM), and by and its Supplements, [<a href="https://www.bipm.org/documents/20126/2071204/JCGM_101_2008_E.pdf/325dcaad-c15a-407c-1105-8b7f322d651c">JCGM 101:2008</a>], [<a href="https://www.bipm.org/documents/20126/2071204/JCGM_102_2011_E.pdf/6a3281aa-1397-d703-d7a1-a8d58c9bf2a5">JCGM 102:2011</a>] and JCGM 103 [<a href="#ref3">[3]</a>]. The present document assumes that a quantity of interest, the  <i>measurand</i> (<a href="#sec_3.2.4">3.2.4</a>), has been measured, with the result of the measurement expressed in a manner compatible with the principles described in the GUM. In particular, it is assumed that corrections have been applied to account for all recognized significant systematic effects.</p><p id="_a48951fc-d8ea-2f46-d628-db07e1e9cdef">In conformity assessment, a measurement result is used to decide if an
+</div><br /><br /><div id="_df59bdab-8cf3-a209-3604-bf98a050a626"><h1 class="ForewordTitle" id="_1a5a987e-ac96-4e1d-babf-dd1a1dabf8a3"><a class="anchor" href="#_df59bdab-8cf3-a209-3604-bf98a050a626"></a><a class="header" href="#_df59bdab-8cf3-a209-3604-bf98a050a626">Foreword</a></h1><p id="_f113e1d0-1f07-b3f1-ffa6-fe74497b10e6">In 1997 a Joint Committee for Guides in Metrology (<a href="http://www.bipm.org/en/committees/jc/jcgm/">JCGM</a>), chaired by the Director of the Bureau International des Poids et Mesures (<a href="http://www.bipm.org/">BIPM</a>), was created by the seven international organizations that had originally in 1993 prepared the  <i>Guide to the expression of uncertainty in measurement</i> (GUM) and the <i>International vocabulary of basic and general terms in metrology</i> (VIM). The JCGM assumed responsibility for these two documents from the ISO Technical Advisory Group 4 (TAG4).</p><p id="_3c37daf8-b1a0-3689-7dec-7b79ba378682">The Joint Committee is formed by the BIPM with the International Electrotechnical Commission (<a href="http://www.iec.ch/">IEC</a>), the International Federation of Clinical Chemistry and Laboratory Medicine (<a href="http://www.ifcc.org/">IFCC</a>), the International Organization for Standardization (<a href="http://www.iso.org/">ISO</a>), the International Union of Pure and Applied Chemistry (IUPAC), the International Union of Pure and Applied Physics (<a href="http://www.iupac.org/">IUPAP</a>), and the International Organization of Legal Metrology (<a href="http://www.oiml.org/">OIML</a>). A further organization joined these seven international organizations, namely, the International Laboratory Accreditation Cooperation (<a href="http://www.ilac.org/">ILAC</a>).</p><p id="_fc76739b-515b-1863-97a4-6a37f28d7bff">JCGM has two Working Groups. Working Group 1, “Expression of uncertainty in measurement”, has the task to promote the use of the GUM and to prepare Supplements and other documents for its broad application. Working Group 2, “Working Group on International vocabulary of basic and general terms in metrology (VIM)”, has the task to revise and promote the use of the VIM. For further information on the activity of the JCGM, see  <a href="http://www.bipm.org/">www.bipm.org</a></p><p id="_faf6beae-6370-f765-da40-78d6eb0e63c6">Documents such as this one are intended to give added value to the GUM by providing guidance on aspects of the evaluation and use of measurement uncertainty that are not explicitly treated in the GUM. Such guidance will be as consistent as possible with the general probabilistic basis of the GUM.</p><p id="_146d86ed-db55-4fcb-8416-39e1f00aa74c">This document has been prepared by Working Group 1 of the JCGM, and has benefited from detailed reviews undertaken by member organizations of the JCGM and National Metrology Institutes.</p></div><br /><div class="Section3" id="_7bda8ac3-43d4-6ee1-99af-a1c226aa3c79"><h1 class="IntroTitle" id="_9ce5e556-c2c2-4f42-8c4f-99c2e25c55b5"><a class="anchor" href="#_7bda8ac3-43d4-6ee1-99af-a1c226aa3c79"></a><a class="header" href="#_7bda8ac3-43d4-6ee1-99af-a1c226aa3c79">Introduction</a></h1><p id="_b7a47667-1060-b901-9865-989f1df62f2a"><i>Conformity assessment</i> (<a href="#sec_3.3.1">3.3.1</a>), as broadly defined, is any activity undertaken to determine, directly or indirectly, whether a product, process, system, person or body meets relevant standards and fulfills <i>specified requirements</i> (<a href="#sec_3.3.3">3.3.3</a>). [<a href="#ISO_IEC_17000_2004">ISO/IEC 17000:2004</a>] gives general terms and definitions relating to conformity assessment, including the accreditation of conformity assessment bodies and the use of conformity assessment in facilitating trade.</p><p id="_2cdf7dec-ddac-8716-df7d-5872d43a4904">In a particular kind of conformity assessment, sometimes called <i>inspection</i> (<a href="#sec_3.3.2">3.3.2</a>), the determination that a product fulfils a specified requirement relies on measurement as a principal source of information.  [<a href="#ref22">ISO 10576-1:2003</a>] sets out guidelines for checking conformity with specified limits in the case where a  <i>quantity</i> (<a href="#sec_3.2.1">3.2.1</a>) is measured and a resulting <i>coverage interval</i> (<a href="#sec_3.2.7">3.2.7</a>) (termed ‘uncertainty interval’ in ISO 10576-1:2003) is compared with a  <i>tolerance interval</i> (<a href="#sec_3.3.5">3.3.5</a>). The present document extends this approach to include explicit consideration of risks, and develops general procedures for deciding conformity based on  <i>measurement results</i> (<a href="#sec_3.2.5">3.2.5</a>), recognizing the central role of  <i>probability distributions</i> (<a href="#sec_3.1.1">3.1.1</a>) as expressions of uncertainty and incomplete information.</p><p id="_475aef6c-6200-3f6b-3ad0-4646b44a53e8">The evaluation of measurement uncertainty is a technical problem whose solution is addressed by  [<a href="https://www.bipm.org/documents/20126/2071204/JCGM_100_2008_E.pdf/cb0ef43f-baa5-11cf-3f85-4dcd86f77bd6">JCGM 100:2008</a>], the <i>Guide to the expression of uncertainty in measurement</i> (GUM), and by and its Supplements, [<a href="https://www.bipm.org/documents/20126/2071204/JCGM_101_2008_E.pdf/325dcaad-c15a-407c-1105-8b7f322d651c">JCGM 101:2008</a>], [<a href="https://www.bipm.org/documents/20126/2071204/JCGM_102_2011_E.pdf/6a3281aa-1397-d703-d7a1-a8d58c9bf2a5">JCGM 102:2011</a>] and JCGM 103 [<a href="#ref3">[3]</a>]. The present document assumes that a quantity of interest, the  <i>measurand</i> (<a href="#sec_3.2.4">3.2.4</a>), has been measured, with the result of the measurement expressed in a manner compatible with the principles described in the GUM. In particular, it is assumed that corrections have been applied to account for all recognized significant systematic effects.</p><p id="_a48951fc-d8ea-2f46-d628-db07e1e9cdef">In conformity assessment, a measurement result is used to decide if an
 item of interest conforms to a specified requirement. The item might be,
 for example, a gauge block or digital voltmeter to be calibrated in compliance
 with [<a href="#ref23">ISO/IEC 17025:2005</a>] or verified according to [<a href="#ref24">ISO 3650:1998</a>], or a sample of industrial
@@ -1934,7 +1936,7 @@ otherwise.</p><div id="_4548ce18-39bd-1d12-e345-38aca5a0dc66" class="Note"><p><s
       <mtext>U</mtext>
     </msub>
   </mstyle>
-</math></span>), and rejected as non-conforming otherwise.</figcaption></figure><p id="_9759a962-f37f-f5bf-9be1-ae36ff0ae135">Choosing the tolerance limits and acceptance limits are business or policy decisions that depend upon the consequences associated with deviations from intended product quality. A general treatment of the nature of such decisions is beyond the scope of this document; see, for example, references [<a href="#ref14">[14]</a>], [<a href="#ref15">[15]</a>], [<a href="#ref34">[34]</a>], [<a href="#ref35">[35]</a>], [<a href="#ref36">[36]</a>], [<a href="#ref44">[44]</a>].</p></div><p class="zzSTDTitle1"><span class="boldtitle">Evaluation of measurement data — </span><span class="boldtitle">The role of measurement uncertainty in conformity assessment</span></p><div id="_62687977-61ff-ee20-b163-5eeff92a405b"><h1 id="_9f8e2467-36fa-49ff-9646-faab7cd4d1b0"><a class="anchor" href="#_62687977-61ff-ee20-b163-5eeff92a405b"></a><a class="header" href="#_62687977-61ff-ee20-b163-5eeff92a405b">1.  Scope</a></h1><p id="_e15d982e-8d56-97a8-9794-857369c19691">This document provides guidance and procedures for assessing the conformity of an item (entity, object or system) with specified requirements. The item might be, for example, a gauge block, a grocery scale or a blood sample. The procedures can be applied where the following conditions exist:</p><div class="ul_wrap"><ul id="_500bd6a6-e233-a5ee-e23b-ac217aca188f"><li id="_34a4ecd8-a88c-254c-561d-1b5faa95e32c"><p id="_2e6815b9-cfcd-5dbb-e7c1-0f5283d24018">the item is distinguished by a single scalar <i>quantity</i> (<a href="#sec_3.2.1">3.2.1</a>) (a measurable
+</math></span>), and rejected as non-conforming otherwise.</figcaption></figure><p id="_9759a962-f37f-f5bf-9be1-ae36ff0ae135">Choosing the tolerance limits and acceptance limits are business or policy decisions that depend upon the consequences associated with deviations from intended product quality. A general treatment of the nature of such decisions is beyond the scope of this document; see, for example, references [<a href="#ref14">[14]</a>], [<a href="#ref15">[15]</a>], [<a href="#ref34">[34]</a>], [<a href="#ref35">[35]</a>], [<a href="#ref36">[36]</a>], [<a href="#ref44">[44]</a>].</p></div><p class="zzSTDTitle1"><span class="boldtitle">Evaluation of measurement data — </span><span class="boldtitle">The role of measurement uncertainty in conformity assessment</span></p><div id="_62687977-61ff-ee20-b163-5eeff92a405b"><h1 id="_f36807d9-823d-427e-a6da-4991cda1b511"><a class="anchor" href="#_62687977-61ff-ee20-b163-5eeff92a405b"></a><a class="header" href="#_62687977-61ff-ee20-b163-5eeff92a405b">1.  Scope</a></h1><p id="_e15d982e-8d56-97a8-9794-857369c19691">This document provides guidance and procedures for assessing the conformity of an item (entity, object or system) with specified requirements. The item might be, for example, a gauge block, a grocery scale or a blood sample. The procedures can be applied where the following conditions exist:</p><div class="ul_wrap"><ul id="_500bd6a6-e233-a5ee-e23b-ac217aca188f"><li id="_34a4ecd8-a88c-254c-561d-1b5faa95e32c"><p id="_2e6815b9-cfcd-5dbb-e7c1-0f5283d24018">the item is distinguished by a single scalar <i>quantity</i> (<a href="#sec_3.2.1">3.2.1</a>) (a measurable
 property) defined to a level of detail sufficient to be reasonably represented
 by an essentially unique true value;</p><div id="_464f6358-da5d-74d9-0684-cc6b1b8cdfa7" class="Note"><p><span class="note_label">Note:  </span>The GUM provides a rationale for not using the term ‘true’, but it will be used in this document when there is otherwise a possibility of ambiguity or confusion.</p></div>
 
@@ -1943,7 +1945,7 @@ by an essentially unique true value;</p><div id="_464f6358-da5d-74d9-0684-cc6b1b
 </li>
 <li id="_244aab5e-7e1f-9642-f8db-64359e7eac21"><p id="_7262caf8-d41e-d6ec-261e-5a63675bb6a2">the property can be measured and the <i>measurement result</i> (<a href="#sec_3.2.5">3.2.5</a>) expressed in a manner consistent with the principles of the GUM, so that knowledge of the value of the property can be reasonably described by (a) a  <i>probability density function</i> (<a href="#sec_3.1.3">3.1.3</a>) (PDF), (b) a <i>distribution function</i> (<a href="#sec_3.1.2">3.1.2</a>), © numerical approximations to such functions, or (d) a best estimate, together with a coverage interval and an associated coverage probability.</p>
 </li>
-</ul></div><p id="_75b79bf0-0678-edb3-a9f9-a8e2a828b4d7">The procedures developed in this document can be used to realize an interval, called an acceptance interval, of permissible measured values of the property of interest. Acceptance limits can be chosen so as to balance the risks associated with accepting non-conforming items (consumer’s risk) or rejecting conforming items (producer’s risk).</p><p id="_f3f6a750-dcf7-54fa-cf50-bd0aedcfa078">Two types of conformity assessment problems are addressed. The first is the setting of acceptance limits that will assure that a desired conformance probability for a single measured item is achieved. The second is the setting of acceptance limits to assure an acceptable level of confidence on average as a number of (nominally identical) items are measured. Guidance is given for their solution.</p><p id="_5bb46439-4f8d-55ee-f971-3ade8cbbeeb5">This document contains examples to illustrate the guidance provided. The concepts presented can be extended to more general conformity assessment problems based on measurements of a set of scalar measurands. Documents such as references  [<a href="#ref19">[19]</a>], [<a href="#ref13">[13]</a>] cover sector-specific aspects of conformity assessment.</p><p id="_bcc79935-095c-56d7-030d-ecbaa636f17a">The audience of this document includes quality managers, members of standards development organizations, accreditation authorities and the staffs of testing and measuring laboratories, inspection bodies, certification bodies, regulatory agencies, academics and researchers.</p></div><div><h1 id="_5832b8a1-b7ec-4eec-bbc8-fb91738f3f91">2.  Normative references</h1>
+</ul></div><p id="_75b79bf0-0678-edb3-a9f9-a8e2a828b4d7">The procedures developed in this document can be used to realize an interval, called an acceptance interval, of permissible measured values of the property of interest. Acceptance limits can be chosen so as to balance the risks associated with accepting non-conforming items (consumer’s risk) or rejecting conforming items (producer’s risk).</p><p id="_f3f6a750-dcf7-54fa-cf50-bd0aedcfa078">Two types of conformity assessment problems are addressed. The first is the setting of acceptance limits that will assure that a desired conformance probability for a single measured item is achieved. The second is the setting of acceptance limits to assure an acceptable level of confidence on average as a number of (nominally identical) items are measured. Guidance is given for their solution.</p><p id="_5bb46439-4f8d-55ee-f971-3ade8cbbeeb5">This document contains examples to illustrate the guidance provided. The concepts presented can be extended to more general conformity assessment problems based on measurements of a set of scalar measurands. Documents such as references  [<a href="#ref19">[19]</a>], [<a href="#ref13">[13]</a>] cover sector-specific aspects of conformity assessment.</p><p id="_bcc79935-095c-56d7-030d-ecbaa636f17a">The audience of this document includes quality managers, members of standards development organizations, accreditation authorities and the staffs of testing and measuring laboratories, inspection bodies, certification bodies, regulatory agencies, academics and researchers.</p></div><div><h1 id="_c9888ffb-9108-402b-b265-35bc36c2fa07">2.  Normative references</h1>
 <p id="_5d68767b-3c2e-b2ee-db6d-6b8ca4c42620">The following referenced documents are indispensable for the application of this document. For dated references, only the edition cited applies. For undated references, the latest edition of the referenced document (including any amendments) applies.</p>
 <p id="JCGM_100_2008" class="NormRef">JCGM 100:2008 <i>Guide to the expression of uncertainty in measurement</i></p>
 <p id="JCGM_101_2008" class="NormRef">JCGM 101:2008 <i>Supplement 1 to the “Guide to the expression of uncertainty in measurement” — Propagation of distributions using a Monte Carlo method</i></p>
@@ -1954,11 +1956,11 @@ by an essentially unique true value;</p><div id="_464f6358-da5d-74d9-0684-cc6b1b
 <p id="ISO_3534_2_2006" class="NormRef">ISO 3534-2:2006 <i>Statistics — Vocabulary and symbols — Part 2: Applied statistics</i></p>
 <p id="ISO_10576_1_2003" class="NormRef">ISO 10576-1:2003 <i>Statistical methods — Guidelines for the evaluation of conformity with specified requirements — Part 1: General principles</i></p>
 <p id="JCGM_100_2010" class="NormRef">JCGM 100:2010 [NO INFORMATION AVAILABLE]</p>
-</div><div id="_9ea01b51-58a1-0ad6-17aa-fe792967c498"><h1 id="_17b6bfb7-adca-4826-ae09-ab1de23255d3"><a class="anchor" href="#_9ea01b51-58a1-0ad6-17aa-fe792967c498"></a><a class="header" href="#_9ea01b51-58a1-0ad6-17aa-fe792967c498">3.  Terms and definitions</a></h1><p id="_1d1787b6-52db-cf02-9c27-c846961d132c">For the purposes of this document the definitions of [<a href="#JCGM_100_2010">JCGM 100:2010</a>], [<a href="https://www.bipm.org/documents/20126/2071204/JCGM_101_2008_E.pdf/325dcaad-c15a-407c-1105-8b7f322d651c">JCGM 101:2008</a>] and [<a href="https://www.bipm.org/documents/20126/2071204/JCGM_200_2012.pdf/f0e1ad45-d337-bbeb-53a6-15fe649d0ff1">JCGM 200:2012</a>] apply, unless otherwise indicated. Some of the most relevant definitions from these documents are given succinctly below. Supplementary information, including notes and examples, can be found in the normative references.</p><p id="_22c1105c-72f2-9562-bf5b-0c0875fddc2e">Further definitions are also given, including definitions taken, or adapted, from other sources, which are especially important in conformity assessment.</p><p id="_6194fdc2-6d8f-9f70-be05-c13118378ec4">For definitions that cite other documents, a NOTE that occurs prior to such citation is a part of the cited entry; other NOTES are particular to the present document.</p><p id="_01e5b679-7aca-f2ce-fe98-b9ca04bf90e0">In this document, the terms “indication” and “maximum permissible error
+</div><div id="_9ea01b51-58a1-0ad6-17aa-fe792967c498"><h1 id="_617b8b88-0a80-4055-b091-788774d2c385"><a class="anchor" href="#_9ea01b51-58a1-0ad6-17aa-fe792967c498"></a><a class="header" href="#_9ea01b51-58a1-0ad6-17aa-fe792967c498">3.  Terms and definitions</a></h1><p id="_1d1787b6-52db-cf02-9c27-c846961d132c">For the purposes of this document the definitions of [<a href="#JCGM_100_2010">JCGM 100:2010</a>], [<a href="https://www.bipm.org/documents/20126/2071204/JCGM_101_2008_E.pdf/325dcaad-c15a-407c-1105-8b7f322d651c">JCGM 101:2008</a>] and [<a href="https://www.bipm.org/documents/20126/2071204/JCGM_200_2012.pdf/f0e1ad45-d337-bbeb-53a6-15fe649d0ff1">JCGM 200:2012</a>] apply, unless otherwise indicated. Some of the most relevant definitions from these documents are given succinctly below. Supplementary information, including notes and examples, can be found in the normative references.</p><p id="_22c1105c-72f2-9562-bf5b-0c0875fddc2e">Further definitions are also given, including definitions taken, or adapted, from other sources, which are especially important in conformity assessment.</p><p id="_6194fdc2-6d8f-9f70-be05-c13118378ec4">For definitions that cite other documents, a NOTE that occurs prior to such citation is a part of the cited entry; other NOTES are particular to the present document.</p><p id="_01e5b679-7aca-f2ce-fe98-b9ca04bf90e0">In this document, the terms “indication” and “maximum permissible error
 (of indication)” are taken to be quantities rather than values, in contrast
-with [<a href="https://www.bipm.org/documents/20126/2071204/JCGM_200_2012.pdf/f0e1ad45-d337-bbeb-53a6-15fe649d0ff1">JCGM 200:2012</a>].</p><div id="_cfff7476-322d-979b-7d17-9794bfa982d4" class="Note"><p><span class="note_label">Note:  </span>Citations of the form [<a href="https://www.bipm.org/documents/20126/2071204/JCGM_101_2008_E.pdf/325dcaad-c15a-407c-1105-8b7f322d651c">[JCGM 101:2008],  <span class="citesec">3.4</span></a>] are to the indicated (sub)clauses of the cited reference.</p></div><div id="sec_3.1"><h2 id="_a2f24705-c50d-4878-a239-19262db34ac2"><a class="anchor" href="#sec_3.1"></a><a class="header" href="#sec_3.1">3.1.  Terms related to probability</a></h2>
+with [<a href="https://www.bipm.org/documents/20126/2071204/JCGM_200_2012.pdf/f0e1ad45-d337-bbeb-53a6-15fe649d0ff1">JCGM 200:2012</a>].</p><div id="_cfff7476-322d-979b-7d17-9794bfa982d4" class="Note"><p><span class="note_label">Note:  </span>Citations of the form [<a href="https://www.bipm.org/documents/20126/2071204/JCGM_101_2008_E.pdf/325dcaad-c15a-407c-1105-8b7f322d651c">[JCGM 101:2008],  <span class="citesec">3.4</span></a>] are to the indicated (sub)clauses of the cited reference.</p></div><div id="sec_3.1"><h2 id="_ccf75c7e-5d77-4cf9-b287-bafb4efcf594"><a class="anchor" href="#sec_3.1"></a><a class="header" href="#sec_3.1">3.1.  Terms related to probability</a></h2>
 
-<div id="sec_3.1.1"><h3 class="TermNum" id="_1badfc90-7929-4939-bb47-572fc0382d9c"><a class="anchor" href="#sec_3.1.1"></a><a class="header" href="#sec_3.1.1">3.1.1.</a></h3></div><p class="Terms" style="text-align:left;"><b><dfn>probability distribution</dfn></b></p><p class="AltTerms" style="text-align:left;"><dfn>distribution</dfn></p>
+<div id="sec_3.1.1"><h3 class="TermNum" id="_7a7d1abd-2189-41de-92fa-ebf6baedd8b1"><a class="anchor" href="#sec_3.1.1"></a><a class="header" href="#sec_3.1.1">3.1.1.</a></h3></div><p class="Terms" style="text-align:left;"><b><dfn>probability distribution</dfn></b></p><p class="AltTerms" style="text-align:left;"><dfn>distribution</dfn></p>
 
 
 
@@ -1970,7 +1972,7 @@ with [<a href="https://www.bipm.org/documents/20126/2071204/JCGM_200_2012.pdf/f0
  <div id="_3cef34ac-8e59-1b02-1331-b6cd7ea78e37" class="Note"><p><span class="termnote_label">Note 1 to entry: </span>There are numerous, equivalent mathematical representations of a distribution, including  <i>distribution function</i> (<a href="#sec_3.1.2">3.1.2</a>), <i>probability density function</i> (<a href="#sec_3.1.3">3.1.3</a>), if it exists, and characteristic function.</p></div><p>[ <a href="#ISO_3534_1_2006">[ISO 3534-1:2006],  <span class="citesec">2.11</span></a>
 ]</p>
 
-<div id="sec_3.1.2"><h3 class="TermNum" id="_32dc5903-62fd-43f0-b1b0-67f9c9955386"><a class="anchor" href="#sec_3.1.2"></a><a class="header" href="#sec_3.1.2">3.1.2.</a></h3></div><p class="Terms" style="text-align:left;"><b><dfn>distribution function</dfn></b></p>
+<div id="sec_3.1.2"><h3 class="TermNum" id="_2c2da511-b384-47b7-bc5c-49f46ab6cd43"><a class="anchor" href="#sec_3.1.2"></a><a class="header" href="#sec_3.1.2">3.1.2.</a></h3></div><p class="Terms" style="text-align:left;"><b><dfn>distribution function</dfn></b></p>
 <p id="_df175c2b-dfa4-fa8e-d443-68306c6dc60e">function giving, for every value <span class="stem"><math xmlns="http://www.w3.org/1998/Math/MathML">
   <mstyle displaystyle="false">
     <mi mathvariant="normal">ξ</mi>
@@ -2018,7 +2020,7 @@ variable <span class="stem"><math xmlns="http://www.w3.org/1998/Math/MathML">
  <p>[ <a href="https://www.bipm.org/documents/20126/2071204/JCGM_101_2008_E.pdf/325dcaad-c15a-407c-1105-8b7f322d651c">[JCGM 101:2008],  <span class="citesec">3.2</span></a>
 ]</p>
 
-<div id="sec_3.1.3"><h3 class="TermNum" id="_52771390-2b07-47c1-b37c-4cfc650bc8ce"><a class="anchor" href="#sec_3.1.3"></a><a class="header" href="#sec_3.1.3">3.1.3.</a></h3></div><p class="Terms" style="text-align:left;"><b><dfn>probability density function</dfn></b></p><p class="AltTerms" style="text-align:left;"><dfn>PDF</dfn></p>
+<div id="sec_3.1.3"><h3 class="TermNum" id="_3be35ffd-ac2d-471f-8885-3f273c27a07d"><a class="anchor" href="#sec_3.1.3"></a><a class="header" href="#sec_3.1.3">3.1.3.</a></h3></div><p class="Terms" style="text-align:left;"><b><dfn>probability density function</dfn></b></p><p class="AltTerms" style="text-align:left;"><dfn>PDF</dfn></p>
 
 
 
@@ -2113,7 +2115,7 @@ variable <span class="stem"><math xmlns="http://www.w3.org/1998/Math/MathML">
 </math></span> is the ‘probability element’</p></div><p>[ <a href="https://www.bipm.org/documents/20126/2071204/JCGM_101_2008_E.pdf/325dcaad-c15a-407c-1105-8b7f322d651c">[JCGM 101:2008],  <span class="citesec">3.3</span></a>
 ]</p>
 
-<div id="sec_3.1.4"><h3 class="TermNum" id="_56458842-ecd9-4079-b1a9-f4b0bf49d2b6"><a class="anchor" href="#sec_3.1.4"></a><a class="header" href="#sec_3.1.4">3.1.4.</a></h3></div><p class="Terms" style="text-align:left;"><b><dfn>normal distribution</dfn></b></p>
+<div id="sec_3.1.4"><h3 class="TermNum" id="_638d4a3f-a50b-40c4-939a-177ce9e4ac98"><a class="anchor" href="#sec_3.1.4"></a><a class="header" href="#sec_3.1.4">3.1.4.</a></h3></div><p class="Terms" style="text-align:left;"><b><dfn>normal distribution</dfn></b></p>
 <p id="_1623ea47-5ed7-4750-b928-51b95fe427c2">probability distribution of a continuous random variable X having the probability density function</p><div id="_3a6268ac-a7de-d204-5c63-b60db821124b"><div class="formula"><p><span class="stem">
     <math xmlns="http://www.w3.org/1998/Math/MathML">
   <mstyle displaystyle="true">
@@ -2209,7 +2211,7 @@ variable <span class="stem"><math xmlns="http://www.w3.org/1998/Math/MathML">
 </math></span>.</p></div><div id="_82aa9add-ee53-f111-6a1a-5cd60bd05370" class="Note"><p><span class="termnote_label">Note 2 to entry: </span>The normal distribution is also known as a Gaussian distribution.</p></div><p>[ <a href="https://www.bipm.org/documents/20126/2071204/JCGM_101_2008_E.pdf/325dcaad-c15a-407c-1105-8b7f322d651c">[JCGM 101:2008],  <span class="citesec">3.4</span></a>
 ]</p>
 
-<div id="sec_3.1.5"><h3 class="TermNum" id="_b69efe74-e322-42ad-b06f-481aa4e89378"><a class="anchor" href="#sec_3.1.5"></a><a class="header" href="#sec_3.1.5">3.1.5.</a></h3></div><p class="Terms" style="text-align:left;"><b><dfn>expectation</dfn></b></p>
+<div id="sec_3.1.5"><h3 class="TermNum" id="_79fe6910-3c45-4bfb-9cce-b2b9380c6fa3"><a class="anchor" href="#sec_3.1.5"></a><a class="header" href="#sec_3.1.5">3.1.5.</a></h3></div><p class="Terms" style="text-align:left;"><b><dfn>expectation</dfn></b></p>
 <p id="_2b4b3617-0c0f-0bfe-d7e0-74d687436af0">for a continuous random variable <span class="stem"><math xmlns="http://www.w3.org/1998/Math/MathML">
   <mstyle displaystyle="false">
     <mi mathvariant="normal">X</mi>
@@ -2354,7 +2356,7 @@ function <span class="stem"><math xmlns="http://www.w3.org/1998/Math/MathML">
 </math></span>, is</p></div><p>[ <a href="https://www.bipm.org/documents/20126/2071204/JCGM_101_2008_E.pdf/325dcaad-c15a-407c-1105-8b7f322d651c">[JCGM 101:2008],  <span class="citesec">3.6</span></a>
 ]</p>
 
-<div id="sec_3.1.6"><h3 class="TermNum" id="_18610f01-6c52-403c-97c0-e45e58dfdac2"><a class="anchor" href="#sec_3.1.6"></a><a class="header" href="#sec_3.1.6">3.1.6.</a></h3></div><p class="Terms" style="text-align:left;"><b><dfn>variance</dfn></b></p>
+<div id="sec_3.1.6"><h3 class="TermNum" id="_f0550c1d-d6b0-44be-8d92-8b0c2462f21f"><a class="anchor" href="#sec_3.1.6"></a><a class="header" href="#sec_3.1.6">3.1.6.</a></h3></div><p class="Terms" style="text-align:left;"><b><dfn>variance</dfn></b></p>
 <p id="_bb0acfbf-bd57-0365-6e54-eac12178fbdc">for a continuous random variable <span class="stem"><math xmlns="http://www.w3.org/1998/Math/MathML">
   <mstyle displaystyle="false">
     <mi mathvariant="normal">X</mi>
@@ -2433,22 +2435,22 @@ function <span class="stem"><math xmlns="http://www.w3.org/1998/Math/MathML">
  <div id="_85d7e539-0c84-1e8f-762c-c5a61d4bb347" class="Note"><p><span class="termnote_label">Note 1 to entry: </span>Not all random variables have a variance.</p></div><p>[ <a href="https://www.bipm.org/documents/20126/2071204/JCGM_101_2008_E.pdf/325dcaad-c15a-407c-1105-8b7f322d651c">[JCGM 101:2008],  <span class="citesec">3.7</span></a>
 ]</p>
 
-<div id="sec_3.1.7"><h3 class="TermNum" id="_134009f1-2207-4498-8c47-a27d0c7b4d80"><a class="anchor" href="#sec_3.1.7"></a><a class="header" href="#sec_3.1.7">3.1.7.</a></h3></div><p class="Terms" style="text-align:left;"><b><dfn>standard deviation</dfn></b></p>
+<div id="sec_3.1.7"><h3 class="TermNum" id="_3f2db084-2c29-4f7a-93a8-956906ba2c1e"><a class="anchor" href="#sec_3.1.7"></a><a class="header" href="#sec_3.1.7">3.1.7.</a></h3></div><p class="Terms" style="text-align:left;"><b><dfn>standard deviation</dfn></b></p>
 <p id="_4a233d79-294a-ea39-f44c-1a7f60755d83">positive square root of the variance</p>
 
 
  <p>[ <a href="https://www.bipm.org/documents/20126/2071204/JCGM_101_2008_E.pdf/325dcaad-c15a-407c-1105-8b7f322d651c">[JCGM 101:2008],  <span class="citesec">3.8</span></a>
 ]</p>
-</div><div id="_b8c13d72-2a6b-eff9-d1b8-dbe677112da0"><h2 id="_fbce2f32-18c4-4780-8e9e-04ba6e0d0a5f"><a class="anchor" href="#_b8c13d72-2a6b-eff9-d1b8-dbe677112da0"></a><a class="header" href="#_b8c13d72-2a6b-eff9-d1b8-dbe677112da0">3.2.  Terms related to metrology</a></h2>
+</div><div id="_b8c13d72-2a6b-eff9-d1b8-dbe677112da0"><h2 id="_15908694-83a9-4594-a45a-eee002b41480"><a class="anchor" href="#_b8c13d72-2a6b-eff9-d1b8-dbe677112da0"></a><a class="header" href="#_b8c13d72-2a6b-eff9-d1b8-dbe677112da0">3.2.  Terms related to metrology</a></h2>
 
-<div id="sec_3.2.1"><h3 class="TermNum" id="_f6d73c7f-b68c-4f54-9e2c-810eebf71ab1"><a class="anchor" href="#sec_3.2.1"></a><a class="header" href="#sec_3.2.1">3.2.1.</a></h3></div><p class="Terms" style="text-align:left;"><b><dfn>quantity</dfn></b></p>
+<div id="sec_3.2.1"><h3 class="TermNum" id="_a1ce7408-bc68-4278-83d6-160f49de0cb8"><a class="anchor" href="#sec_3.2.1"></a><a class="header" href="#sec_3.2.1">3.2.1.</a></h3></div><p class="Terms" style="text-align:left;"><b><dfn>quantity</dfn></b></p>
 <p id="_1c970707-345e-232b-273b-4b261dc4ff50">property of a phenomenon, body, or substance, where the property has a magnitude that can be expressed as a number and a reference</p>
 
 
  <p>[ <a href="https://www.bipm.org/documents/20126/2071204/JCGM_200_2012.pdf/f0e1ad45-d337-bbeb-53a6-15fe649d0ff1">[JCGM 200:2012],  <span class="citesec">1.1</span></a>
 ]</p>
 
-<div id="sec_3.2.2"><h3 class="TermNum" id="_825c3a78-9e40-466a-ba38-82ebfba841cb"><a class="anchor" href="#sec_3.2.2"></a><a class="header" href="#sec_3.2.2">3.2.2.</a></h3></div><p class="Terms" style="text-align:left;"><b><dfn>quantity value</dfn></b></p><p class="AltTerms" style="text-align:left;"><dfn>value of a quantity</dfn></p><p class="AltTerms" style="text-align:left;"><dfn>value</dfn></p>
+<div id="sec_3.2.2"><h3 class="TermNum" id="_b1b29a78-a753-4fa2-8b87-313e8102b4bd"><a class="anchor" href="#sec_3.2.2"></a><a class="header" href="#sec_3.2.2">3.2.2.</a></h3></div><p class="Terms" style="text-align:left;"><b><dfn>quantity value</dfn></b></p><p class="AltTerms" style="text-align:left;"><dfn>value of a quantity</dfn></p><p class="AltTerms" style="text-align:left;"><dfn>value</dfn></p>
 
 
 
@@ -2460,7 +2462,7 @@ function <span class="stem"><math xmlns="http://www.w3.org/1998/Math/MathML">
  <p>[ <a href="https://www.bipm.org/documents/20126/2071204/JCGM_200_2012.pdf/f0e1ad45-d337-bbeb-53a6-15fe649d0ff1">[JCGM 200:2012],  <span class="citesec">1.19</span></a>
 ]</p>
 
-<div id="sec_3.2.3"><h3 class="TermNum" id="_b94f2f42-00ee-483f-b76d-bcdff2810880"><a class="anchor" href="#sec_3.2.3"></a><a class="header" href="#sec_3.2.3">3.2.3.</a></h3></div><p class="Terms" style="text-align:left;"><b><dfn>true quantity value</dfn></b></p><p class="AltTerms" style="text-align:left;"><dfn>true value of a quantity</dfn></p><p class="AltTerms" style="text-align:left;"><dfn>true value</dfn></p>
+<div id="sec_3.2.3"><h3 class="TermNum" id="_ccbc9492-cb30-4e1e-a3d4-41784041a14d"><a class="anchor" href="#sec_3.2.3"></a><a class="header" href="#sec_3.2.3">3.2.3.</a></h3></div><p class="Terms" style="text-align:left;"><b><dfn>true quantity value</dfn></b></p><p class="AltTerms" style="text-align:left;"><dfn>true value of a quantity</dfn></p><p class="AltTerms" style="text-align:left;"><dfn>true value</dfn></p>
 
 
 
@@ -2472,7 +2474,7 @@ function <span class="stem"><math xmlns="http://www.w3.org/1998/Math/MathML">
  <p>[ <a href="https://www.bipm.org/documents/20126/2071204/JCGM_200_2012.pdf/f0e1ad45-d337-bbeb-53a6-15fe649d0ff1">[JCGM 200:2012],  <span class="citesec">2.11</span></a>
 ]</p>
 
-<div id="sec_3.2.4"><h3 class="TermNum" id="_a3411994-b158-402d-b580-ad277345382a"><a class="anchor" href="#sec_3.2.4"></a><a class="header" href="#sec_3.2.4">3.2.4.</a></h3></div><p class="Terms" style="text-align:left;"><b><dfn>measurand</dfn></b></p>
+<div id="sec_3.2.4"><h3 class="TermNum" id="_9769ba05-0279-44cd-984d-05a2a54cc43a"><a class="anchor" href="#sec_3.2.4"></a><a class="header" href="#sec_3.2.4">3.2.4.</a></h3></div><p class="Terms" style="text-align:left;"><b><dfn>measurand</dfn></b></p>
 <p id="_86e12328-7672-0c08-1314-4f74ebc7b03a">quantity intended to be measured</p>
 
 
@@ -2481,7 +2483,7 @@ function <span class="stem"><math xmlns="http://www.w3.org/1998/Math/MathML">
  <div id="_f5300178-121c-0d25-fc13-b50cb6284ac3" class="Note"><p><span class="termnote_label">Note 1 to entry: </span>In this document, the measurand is a measurable property of an item of interest.</p></div><p>[ <a href="https://www.bipm.org/documents/20126/2071204/JCGM_200_2012.pdf/f0e1ad45-d337-bbeb-53a6-15fe649d0ff1">[JCGM 200:2012],  <span class="citesec">2.3</span></a>
 ]</p>
 
-<div id="sec_3.2.5"><h3 class="TermNum" id="_7152183e-28e3-490d-9ea4-9677c555d731"><a class="anchor" href="#sec_3.2.5"></a><a class="header" href="#sec_3.2.5">3.2.5.</a></h3></div><p class="Terms" style="text-align:left;"><b><dfn>measurement result</dfn></b></p><p class="AltTerms" style="text-align:left;"><dfn>result of measurement</dfn></p>
+<div id="sec_3.2.5"><h3 class="TermNum" id="_a0cdb387-75f8-4dc5-9dd9-357ae7a744f1"><a class="anchor" href="#sec_3.2.5"></a><a class="header" href="#sec_3.2.5">3.2.5.</a></h3></div><p class="Terms" style="text-align:left;"><b><dfn>measurement result</dfn></b></p><p class="AltTerms" style="text-align:left;"><dfn>result of measurement</dfn></p>
 
 
 
@@ -2493,7 +2495,7 @@ function <span class="stem"><math xmlns="http://www.w3.org/1998/Math/MathML">
  <div id="_3d56127a-2a65-20fc-ce9b-886ebd45b1bf" class="Note"><p><span class="termnote_label">Note 1 to entry: </span>A measurement result may be expressed in a number of ways, by giving, for example, (a) a measured quantity value with an associated measurement uncertainty; (b) a coverage interval for the measurand with an associated coverage probability; © a PDF; or (d) a numerical approximation to a PDF.</p></div><p>[ <a href="https://www.bipm.org/documents/20126/2071204/JCGM_200_2012.pdf/f0e1ad45-d337-bbeb-53a6-15fe649d0ff1">[JCGM 200:2012],  <span class="citesec">2.9</span></a>
 ]</p>
 
-<div id="sec_3.2.6"><h3 class="TermNum" id="_56bff584-cc0c-4492-b45a-5e61447fa264"><a class="anchor" href="#sec_3.2.6"></a><a class="header" href="#sec_3.2.6">3.2.6.</a></h3></div><p class="Terms" style="text-align:left;"><b><dfn>measured quantity value</dfn></b></p><p class="AltTerms" style="text-align:left;"><dfn>value of a measured quantity</dfn></p><p class="AltTerms" style="text-align:left;"><dfn>measured value</dfn></p>
+<div id="sec_3.2.6"><h3 class="TermNum" id="_ae42daba-445c-4268-bf0c-36ca61988ed7"><a class="anchor" href="#sec_3.2.6"></a><a class="header" href="#sec_3.2.6">3.2.6.</a></h3></div><p class="Terms" style="text-align:left;"><b><dfn>measured quantity value</dfn></b></p><p class="AltTerms" style="text-align:left;"><dfn>value of a measured quantity</dfn></p><p class="AltTerms" style="text-align:left;"><dfn>measured value</dfn></p>
 
 
 
@@ -2507,21 +2509,21 @@ function <span class="stem"><math xmlns="http://www.w3.org/1998/Math/MathML">
  <div id="_c62a1c48-0265-600c-f5fe-1723b3341a6a" class="Note"><p><span class="termnote_label">Note 1 to entry: </span>A measured quantity value is also known as an estimate, or best estimate, of a quantity.</p></div><p>[ <a href="https://www.bipm.org/documents/20126/2071204/JCGM_200_2012.pdf/f0e1ad45-d337-bbeb-53a6-15fe649d0ff1">[JCGM 200:2012],  <span class="citesec">2.10</span></a>
 ]</p>
 
-<div id="sec_3.2.7"><h3 class="TermNum" id="_41dbd2e4-ff61-47a9-ba28-29ef96e6f74d"><a class="anchor" href="#sec_3.2.7"></a><a class="header" href="#sec_3.2.7">3.2.7.</a></h3></div><p class="Terms" style="text-align:left;"><b><dfn>coverage interval</dfn></b></p>
+<div id="sec_3.2.7"><h3 class="TermNum" id="_49dadc30-60f8-4fb6-800e-3c7adf9e7ecf"><a class="anchor" href="#sec_3.2.7"></a><a class="header" href="#sec_3.2.7">3.2.7.</a></h3></div><p class="Terms" style="text-align:left;"><b><dfn>coverage interval</dfn></b></p>
 <p id="_814192b9-bcd1-bee7-6d87-2960528c6486">interval containing the set of true quantity values of a measurand with a stated probability, based on the information available</p>
 
 
  <p>[ <a href="https://www.bipm.org/documents/20126/2071204/JCGM_200_2012.pdf/f0e1ad45-d337-bbeb-53a6-15fe649d0ff1">[JCGM 200:2012],  <span class="citesec">2.36</span></a>
 ]</p>
 
-<div id="sec_3.2.8"><h3 class="TermNum" id="_3dc19e96-4269-430b-b8a1-326c8d56dc58"><a class="anchor" href="#sec_3.2.8"></a><a class="header" href="#sec_3.2.8">3.2.8.</a></h3></div><p class="Terms" style="text-align:left;"><b><dfn>coverage probability</dfn></b></p>
+<div id="sec_3.2.8"><h3 class="TermNum" id="_966ad19a-42f3-4704-97bb-6e96934d7e6c"><a class="anchor" href="#sec_3.2.8"></a><a class="header" href="#sec_3.2.8">3.2.8.</a></h3></div><p class="Terms" style="text-align:left;"><b><dfn>coverage probability</dfn></b></p>
 <p id="_844d6272-7ac8-1ccd-5a78-1057dfb4419b">probability that the set of true quantity values of a measurand is contained within a specified coverage interval</p>
 
 
  <p>[ <a href="https://www.bipm.org/documents/20126/2071204/JCGM_200_2012.pdf/f0e1ad45-d337-bbeb-53a6-15fe649d0ff1">[JCGM 200:2012],  <span class="citesec">2.37</span></a>
 ]</p>
 
-<div id="sec_3.2.9"><h3 class="TermNum" id="_46321fa8-972a-4692-8ab0-e3dfd38eb61d"><a class="anchor" href="#sec_3.2.9"></a><a class="header" href="#sec_3.2.9">3.2.9.</a></h3></div><p class="Terms" style="text-align:left;"><b><dfn>indication</dfn></b></p>
+<div id="sec_3.2.9"><h3 class="TermNum" id="_131d6bb5-0552-4e2f-af37-1569b1f84f6c"><a class="anchor" href="#sec_3.2.9"></a><a class="header" href="#sec_3.2.9">3.2.9.</a></h3></div><p class="Terms" style="text-align:left;"><b><dfn>indication</dfn></b></p>
 <p id="_20a7c5ac-bc25-6ba1-b118-0fb932e610ce">quantity provided by a measuring instrument or measuring system</p>
 
 
@@ -2531,16 +2533,16 @@ function <span class="stem"><math xmlns="http://www.w3.org/1998/Math/MathML">
 
  <div id="_15963040-f9b8-8970-3725-013de19041ac" class="Note"><p><span class="termnote_label">Note 1 to entry: </span>An indication is often given as the position of a pointer for an analogue output or the displayed or printed number for a digital output.</p></div><div id="_3d9209cb-6332-b414-905f-a9047e8a40e6" class="Note"><p><span class="termnote_label">Note 2 to entry: </span>An indication is also known as a reading.</p></div><p>[ <a href="https://www.bipm.org/documents/20126/2071204/JCGM_200_2012.pdf/f0e1ad45-d337-bbeb-53a6-15fe649d0ff1">[JCGM 200:2012],  <span class="citesec">4.1</span></a>
 ]</p>
-</div><div id="_5e3763bd-6570-d292-7ee7-f8fada71a3d7"><h2 id="_f0a38de3-935c-4898-84ea-52514712a95c"><a class="anchor" href="#_5e3763bd-6570-d292-7ee7-f8fada71a3d7"></a><a class="header" href="#_5e3763bd-6570-d292-7ee7-f8fada71a3d7">3.3.  Terms related to conformity assessment</a></h2>
+</div><div id="_5e3763bd-6570-d292-7ee7-f8fada71a3d7"><h2 id="_cefcde38-21bf-4ca5-8bf9-1a94e9a949b0"><a class="anchor" href="#_5e3763bd-6570-d292-7ee7-f8fada71a3d7"></a><a class="header" href="#_5e3763bd-6570-d292-7ee7-f8fada71a3d7">3.3.  Terms related to conformity assessment</a></h2>
 
-<div id="sec_3.3.1"><h3 class="TermNum" id="_9269df48-67e1-465a-b8db-2239751fefb7"><a class="anchor" href="#sec_3.3.1"></a><a class="header" href="#sec_3.3.1">3.3.1.</a></h3></div><p class="Terms" style="text-align:left;"><b><dfn>conformity assessment</dfn></b></p>
+<div id="sec_3.3.1"><h3 class="TermNum" id="_f031beb4-31a4-4075-ad89-c99be7c7024d"><a class="anchor" href="#sec_3.3.1"></a><a class="header" href="#sec_3.3.1">3.3.1.</a></h3></div><p class="Terms" style="text-align:left;"><b><dfn>conformity assessment</dfn></b></p>
 <p id="_6829a968-0bbb-de39-acc7-0203cf3cb05f">activity to determine whether specified requirements relating to a product, process, system, person or body are fulfilled</p>
 
 
  <p>[ <a href="#ISO_IEC_17000_2004">[ISO/IEC 17000:2004],  <span class="citesec">2.1</span></a>
 ]</p>
 
-<div id="sec_3.3.2"><h3 class="TermNum" id="_7118a544-d61b-466a-8db0-638ec306d88f"><a class="anchor" href="#sec_3.3.2"></a><a class="header" href="#sec_3.3.2">3.3.2.</a></h3></div><p class="Terms" style="text-align:left;"><b><dfn>inspection</dfn></b></p>
+<div id="sec_3.3.2"><h3 class="TermNum" id="_8afa3426-75c0-449a-b823-2618ab85ab29"><a class="anchor" href="#sec_3.3.2"></a><a class="header" href="#sec_3.3.2">3.3.2.</a></h3></div><p class="Terms" style="text-align:left;"><b><dfn>inspection</dfn></b></p>
 <p id="_7d3887c9-9870-04ab-dd4a-fe0b56f16732">conformity assessment by observation and judgement accompanied, as appropriate, by measurement, testing or gauging</p>
 
 
@@ -2549,7 +2551,7 @@ function <span class="stem"><math xmlns="http://www.w3.org/1998/Math/MathML">
  <div id="_8593af2c-3df4-badd-262c-a1d159a4699b" class="Note"><p><span class="termnote_label">Note 1 to entry: </span>A measurement performed as part of conformity assessment is sometimes called an inspection measurement.</p></div><p>[ <a href="#ISO_3534_2_2006">[ISO 3534-2:2006],  <span class="citesec">4.1.2</span></a>
 ]</p>
 
-<div id="sec_3.3.3"><h3 class="TermNum" id="_68536ed8-6a6e-4de5-9166-d8b63bdf40ef"><a class="anchor" href="#sec_3.3.3"></a><a class="header" href="#sec_3.3.3">3.3.3.</a></h3></div><p class="Terms" style="text-align:left;"><b><dfn>specified requirement</dfn></b></p>
+<div id="sec_3.3.3"><h3 class="TermNum" id="_5e84b920-1031-4e85-af9d-c6eb4bee7abe"><a class="anchor" href="#sec_3.3.3"></a><a class="header" href="#sec_3.3.3">3.3.3.</a></h3></div><p class="Terms" style="text-align:left;"><b><dfn>specified requirement</dfn></b></p>
 <p id="_1e646459-1e22-3a2c-7dbe-bfbdc7827ff1">need or expectation that is stated</p>
 
 
@@ -2608,7 +2610,7 @@ concentration of dissolved mercury (the property) of no greater than
 </div><p>[ <a href="#ISO_IEC_17000_2004">[ISO/IEC 17000:2004],  <span class="citesec">3.1</span></a>
 ]</p>
 
-<div id="sec_3.3.4"><h3 class="TermNum" id="_991d8925-22e4-45c6-becc-bf9f2dbf9aaf"><a class="anchor" href="#sec_3.3.4"></a><a class="header" href="#sec_3.3.4">3.3.4.</a></h3></div><p class="Terms" style="text-align:left;"><b><dfn>tolerance limit</dfn></b></p><p class="AltTerms" style="text-align:left;"><dfn>specification limit</dfn></p>
+<div id="sec_3.3.4"><h3 class="TermNum" id="_3c483dd4-7b5b-4ab7-9d9d-e087ae3959d9"><a class="anchor" href="#sec_3.3.4"></a><a class="header" href="#sec_3.3.4">3.3.4.</a></h3></div><p class="Terms" style="text-align:left;"><b><dfn>tolerance limit</dfn></b></p><p class="AltTerms" style="text-align:left;"><dfn>specification limit</dfn></p>
 
 
 
@@ -2618,7 +2620,7 @@ concentration of dissolved mercury (the property) of no greater than
  <p>[ <a href="#ISO_3534_2_2006">[ISO 3534-2:2006],  <span class="citesec">3.1.3</span></a>
 ]</p>
 
-<div id="sec_3.3.5"><h3 class="TermNum" id="_a2fb9308-cde4-473c-92e1-7a30e3e262a8"><a class="anchor" href="#sec_3.3.5"></a><a class="header" href="#sec_3.3.5">3.3.5.</a></h3></div><p class="Terms" style="text-align:left;"><b><dfn>tolerance interval</dfn></b></p>
+<div id="sec_3.3.5"><h3 class="TermNum" id="_dcff7974-b606-4d46-aa9c-24739677b24f"><a class="anchor" href="#sec_3.3.5"></a><a class="header" href="#sec_3.3.5">3.3.5.</a></h3></div><p class="Terms" style="text-align:left;"><b><dfn>tolerance interval</dfn></b></p>
 <p id="_038766b0-6679-cd4b-9348-2b3bfd3c2e80">interval of permissible values of a property</p>
 
 
@@ -2631,25 +2633,25 @@ concentration of dissolved mercury (the property) of no greater than
  <div id="_124314cb-eb32-7162-855a-6d3f80794de2" class="Note"><p><span class="termnote_label">Note 1 to entry: </span>Unless otherwise stated in a specification, the tolerance limits belong to the tolerance interval.</p></div><div id="_3fd4e7d9-dafa-986c-3ce7-be98e27d6d9f" class="Note"><p><span class="termnote_label">Note 2 to entry: </span>The term ‘tolerance interval’ as used in conformity assessment has a different meaning from the same term as it is used in statistics.</p></div><div id="_78546496-919d-dd1e-fa75-495af7e8c580" class="Note"><p><span class="termnote_label">Note 3 to entry: </span>A tolerance interval is called a ‘specification zone’ in ASME B89.7.3.1:2001 [<a href="#ref2">[2]</a>].</p></div><p>[ <a href="#ISO_10576_1_2003">[ISO 10576-1:2003],  <span class="citesec">3.5</span></a>
 ]</p>
 
-<div id="sec_3.3.6"><h3 class="TermNum" id="_53d0eea5-abaf-4967-bed0-4552c6405445"><a class="anchor" href="#sec_3.3.6"></a><a class="header" href="#sec_3.3.6">3.3.6.</a></h3></div><p class="Terms" style="text-align:left;"><b><dfn>tolerance</dfn></b></p><p class="AltTerms" style="text-align:left;"><dfn>specified tolerance</dfn></p>
+<div id="sec_3.3.6"><h3 class="TermNum" id="_f35a36b7-02bc-49f0-968f-af5105f4b07d"><a class="anchor" href="#sec_3.3.6"></a><a class="header" href="#sec_3.3.6">3.3.6.</a></h3></div><p class="Terms" style="text-align:left;"><b><dfn>tolerance</dfn></b></p><p class="AltTerms" style="text-align:left;"><dfn>specified tolerance</dfn></p>
 
 
 
 <p id="_25945bd3-7140-66f7-e293-64a8a207d76c">difference between upper and lower tolerance limits</p>
 
 
-<div id="sec_3.3.7"><h3 class="TermNum" id="_f101a87d-82ab-414f-babe-657562a87d89"><a class="anchor" href="#sec_3.3.7"></a><a class="header" href="#sec_3.3.7">3.3.7.</a></h3></div><p class="Terms" style="text-align:left;"><b><dfn>conformance probability</dfn></b></p>
+<div id="sec_3.3.7"><h3 class="TermNum" id="_e8958557-2d99-4dad-96aa-bb3ba28a67f9"><a class="anchor" href="#sec_3.3.7"></a><a class="header" href="#sec_3.3.7">3.3.7.</a></h3></div><p class="Terms" style="text-align:left;"><b><dfn>conformance probability</dfn></b></p>
 <p id="_48111d63-afa4-963a-949d-76973e8fe140">probability that an item fulfills a specified requirement</p>
 
 
-<div id="sec_3.3.8"><h3 class="TermNum" id="_074a24a0-3618-45aa-bb97-b5216673ff30"><a class="anchor" href="#sec_3.3.8"></a><a class="header" href="#sec_3.3.8">3.3.8.</a></h3></div><p class="Terms" style="text-align:left;"><b><dfn>acceptance limit</dfn></b></p>
+<div id="sec_3.3.8"><h3 class="TermNum" id="_197c1ba0-cb98-4e09-b11e-1a4d1705afe7"><a class="anchor" href="#sec_3.3.8"></a><a class="header" href="#sec_3.3.8">3.3.8.</a></h3></div><p class="Terms" style="text-align:left;"><b><dfn>acceptance limit</dfn></b></p>
 <p id="_6b54986f-5f3b-7199-54b7-a3faed1c46a9">specified upper or lower bound of permissible measured quantity values</p>
 
 
  <p>[ <a href="#ISO_3534_2_2006">[ISO 3534-2:2006],  <span class="citesec">3.1.6</span></a>
 ]</p>
 
-<div id="sec_3.3.9"><h3 class="TermNum" id="_57cdc8ee-9353-42d3-bd64-e5c71f86f458"><a class="anchor" href="#sec_3.3.9"></a><a class="header" href="#sec_3.3.9">3.3.9.</a></h3></div><p class="Terms" style="text-align:left;"><b><dfn>acceptance interval</dfn></b></p>
+<div id="sec_3.3.9"><h3 class="TermNum" id="_460a72f7-0167-4dc1-a292-1f18fd722b66"><a class="anchor" href="#sec_3.3.9"></a><a class="header" href="#sec_3.3.9">3.3.9.</a></h3></div><p class="Terms" style="text-align:left;"><b><dfn>acceptance interval</dfn></b></p>
 <p id="_e81867b6-ee12-a71b-fad9-af51a64816f5">interval of permissible measured quantity values</p>
 
 
@@ -2657,54 +2659,54 @@ concentration of dissolved mercury (the property) of no greater than
 
  <div id="_6d259040-7b63-fd04-e982-ef463cc7e9fa" class="Note"><p><span class="termnote_label">Note 1 to entry: </span>Unless otherwise stated in the specification, the acceptance limits belong to the acceptance interval.</p></div><div id="_2a64b595-7eab-ac69-6479-83aa3709953b" class="Note"><p><span class="termnote_label">Note 2 to entry: </span>An acceptance interval is called an ‘acceptance zone’ in ASME B89.7.3.1 [<a href="#ref2">[2]</a>].</p></div>
 
-<div id="sec_3.3.10"><h3 class="TermNum" id="_7783907e-62c4-4715-bddb-b32518190789"><a class="anchor" href="#sec_3.3.10"></a><a class="header" href="#sec_3.3.10">3.3.10.</a></h3></div><p class="Terms" style="text-align:left;"><b><dfn>rejection interval</dfn></b></p>
+<div id="sec_3.3.10"><h3 class="TermNum" id="_7ec42e8c-aef2-4600-adec-bd04e04f0d65"><a class="anchor" href="#sec_3.3.10"></a><a class="header" href="#sec_3.3.10">3.3.10.</a></h3></div><p class="Terms" style="text-align:left;"><b><dfn>rejection interval</dfn></b></p>
 <p id="_b48d8065-c410-7aaa-3ea1-5d1378dd4c4b">interval of non-permissible measured quantity values</p>
 
 
  <div id="_e77a5970-6708-890d-9a4c-67a749199abf" class="Note"><p><span class="termnote_label">Note 1 to entry: </span>A rejection interval is called an ‘rejection zone’ in ASME B89.7.3.1 [<a href="#ref2">[2]</a>].</p></div>
 
-<div id="sec_3.3.11"><h3 class="TermNum" id="_ed062391-91b8-41f9-b459-691ada1fff8c"><a class="anchor" href="#sec_3.3.11"></a><a class="header" href="#sec_3.3.11">3.3.11.</a></h3></div><p class="Terms" style="text-align:left;"><b><dfn>guard band</dfn></b></p>
+<div id="sec_3.3.11"><h3 class="TermNum" id="_a2aec241-18b8-46e1-a71a-0760d18dc822"><a class="anchor" href="#sec_3.3.11"></a><a class="header" href="#sec_3.3.11">3.3.11.</a></h3></div><p class="Terms" style="text-align:left;"><b><dfn>guard band</dfn></b></p>
 <p id="_284407a8-f141-8657-c69c-4eca5fd48782">interval between a tolerance limit and a corresponding acceptance limit</p>
 
 
  <div id="_28d7a48a-0fb2-c970-bf3f-d09861946819" class="Note"><p><span class="termnote_label">Note 1 to entry: </span>The guard band includes the limits.</p></div>
 
-<div id="sec_3.3.12"><h3 class="TermNum" id="_2fe97028-61a4-47c3-b42e-f3d0577a1cee"><a class="anchor" href="#sec_3.3.12"></a><a class="header" href="#sec_3.3.12">3.3.12.</a></h3></div><p class="Terms" style="text-align:left;"><b><dfn>decision rule</dfn></b></p>
+<div id="sec_3.3.12"><h3 class="TermNum" id="_8357d7e4-adc2-47a6-8d11-f5d69adb3cee"><a class="anchor" href="#sec_3.3.12"></a><a class="header" href="#sec_3.3.12">3.3.12.</a></h3></div><p class="Terms" style="text-align:left;"><b><dfn>decision rule</dfn></b></p>
 <p id="_438151b1-715a-2130-f441-959e2952993a">documented rule that describes how measurement uncertainty will be accounted for with regard to accepting or rejecting an item, given a specified requirement and the result of a measurement</p>
 
 
  <p>[ <a href="#ref2">ASME B89.7.3.1 2001</a>
 ]</p>
 
-<div id="sec_3.3.13"><h3 class="TermNum" id="_26752589-e453-498a-a38e-3fb626feefda"><a class="anchor" href="#sec_3.3.13"></a><a class="header" href="#sec_3.3.13">3.3.13.</a></h3></div><p class="Terms" style="text-align:left;"><b><dfn>specific consumer’s risk</dfn></b></p>
+<div id="sec_3.3.13"><h3 class="TermNum" id="_35e8fd96-a144-4d69-a86b-8a93ce572381"><a class="anchor" href="#sec_3.3.13"></a><a class="header" href="#sec_3.3.13">3.3.13.</a></h3></div><p class="Terms" style="text-align:left;"><b><dfn>specific consumer’s risk</dfn></b></p>
 <p id="_c1cc8d8f-81cc-c1ec-9b12-d88a67bae83d">probability that a particular accepted item is non-conforming</p>
 
 
-<div id="sec_3.3.14"><h3 class="TermNum" id="_c3f2193a-6b0e-41f9-8441-3338dbfb9496"><a class="anchor" href="#sec_3.3.14"></a><a class="header" href="#sec_3.3.14">3.3.14.</a></h3></div><p class="Terms" style="text-align:left;"><b><dfn>specific producer’s risk</dfn></b></p>
+<div id="sec_3.3.14"><h3 class="TermNum" id="_f04d72ab-ff1b-402d-b869-4e3b2cdc275c"><a class="anchor" href="#sec_3.3.14"></a><a class="header" href="#sec_3.3.14">3.3.14.</a></h3></div><p class="Terms" style="text-align:left;"><b><dfn>specific producer’s risk</dfn></b></p>
 <p id="_60906295-dc21-7d0f-71e8-33ba21da9ae6">probability that a particular rejected item is conforming</p>
 
 
-<div id="sec_3.3.15"><h3 class="TermNum" id="_8d898ae8-f77d-4ae4-83d8-c1cdea98ac28"><a class="anchor" href="#sec_3.3.15"></a><a class="header" href="#sec_3.3.15">3.3.15.</a></h3></div><p class="Terms" style="text-align:left;"><b><dfn>global consumer’s risk</dfn></b></p><p class="AltTerms" style="text-align:left;"><dfn>consumer’s risk</dfn></p>
+<div id="sec_3.3.15"><h3 class="TermNum" id="_a80906d2-24ac-4c20-ab61-ecb99dcb0a71"><a class="anchor" href="#sec_3.3.15"></a><a class="header" href="#sec_3.3.15">3.3.15.</a></h3></div><p class="Terms" style="text-align:left;"><b><dfn>global consumer’s risk</dfn></b></p><p class="AltTerms" style="text-align:left;"><dfn>consumer’s risk</dfn></p>
 
 
 
 <p id="_ff02b25c-12f5-b52a-ea8e-681aa769bab5">probability that a non-conforming item will be accepted based on a future measurement result</p>
 
 
-<div id="sec_3.3.16"><h3 class="TermNum" id="_a8148d87-864b-4c00-9b1f-cc9c82e6b6f0"><a class="anchor" href="#sec_3.3.16"></a><a class="header" href="#sec_3.3.16">3.3.16.</a></h3></div><p class="Terms" style="text-align:left;"><b><dfn>global producer’s risk</dfn></b></p><p class="AltTerms" style="text-align:left;"><dfn>producer’s risk</dfn></p>
+<div id="sec_3.3.16"><h3 class="TermNum" id="_92755bc6-9bee-46d1-b857-36f0c6b939eb"><a class="anchor" href="#sec_3.3.16"></a><a class="header" href="#sec_3.3.16">3.3.16.</a></h3></div><p class="Terms" style="text-align:left;"><b><dfn>global producer’s risk</dfn></b></p><p class="AltTerms" style="text-align:left;"><dfn>producer’s risk</dfn></p>
 
 
 
 <p id="_dc523da2-e960-91de-7502-d5ac0548d24d">probability that a conforming item will be rejected based on a future measurement result</p>
 
 
-<div id="sec_3.3.17"><h3 class="TermNum" id="_67bb974a-50dc-4582-9ec6-03591b153711"><a class="anchor" href="#sec_3.3.17"></a><a class="header" href="#sec_3.3.17">3.3.17.</a></h3></div><p class="Terms" style="text-align:left;"><b><dfn>measurement capability index</dfn></b></p>
+<div id="sec_3.3.17"><h3 class="TermNum" id="_a6d24699-35dd-433b-b751-76a10996b960"><a class="anchor" href="#sec_3.3.17"></a><a class="header" href="#sec_3.3.17">3.3.17.</a></h3></div><p class="Terms" style="text-align:left;"><b><dfn>measurement capability index</dfn></b></p>
 <p id="_62d897cf-a659-bc73-47be-48c94f227dde">tolerance divided by a multiple of the standard measurement uncertainty associated with the measured value of a property of an item</p>
 
 
  <div id="_53acce25-cfed-bc6c-76b1-1a5370acce02" class="Note"><p><span class="termnote_label">Note 1 to entry: </span>In this document the multiple is taken to be 4; see clause <a href="#sec_7.6.3">7.6.3</a></p></div>
 
-<div id="sec_3.3.18"><h3 class="TermNum" id="_998ae7a6-02a4-4b07-8c3a-981fd6f8d5b3"><a class="anchor" href="#sec_3.3.18"></a><a class="header" href="#sec_3.3.18">3.3.18.</a></h3></div><p class="Terms" style="text-align:left;"><b><dfn>maximum permissible error (of indication)</dfn></b></p><p class="AltTerms" style="text-align:left;"><dfn>MPE</dfn></p>
+<div id="sec_3.3.18"><h3 class="TermNum" id="_4130e9a5-d35a-49b7-ac82-353a83273a98"><a class="anchor" href="#sec_3.3.18"></a><a class="header" href="#sec_3.3.18">3.3.18.</a></h3></div><p class="Terms" style="text-align:left;"><b><dfn>maximum permissible error (of indication)</dfn></b></p><p class="AltTerms" style="text-align:left;"><dfn>MPE</dfn></p>
 
 
 
@@ -2742,7 +2744,7 @@ ideal measuring instrument measuring the same measurand <span class="stem"><math
     <mi mathvariant="normal">Y</mi>
   </mstyle>
 </math></span>. In the testing and verification of a measuring instrument, the error of indication is typically evaluated by measuring a calibrated reference standard.</p></div>
-</div></div><div id="sec_4"><h1 id="_f681a553-ddaa-4ed8-a119-f222db8ff6e6"><a class="anchor" href="#sec_4"></a><a class="header" href="#sec_4">4.  Conventions and notation</a></h1><p id="_00a28715-ccd8-e01e-88b9-412aa09896e6">For the purposes of this document the following conventions, notation and terminology are adopted.</p><div id="sec_4.1"><h2 id="_b97e80bb-2c06-4130-b83a-efffd04e049f"><a class="anchor" href="#sec_4.1"></a><a class="header" href="#sec_4.1">4.1.</a></h2><p id="_5c42ea31-9b9a-9928-ffdc-743d5ea74b52">In the GUM, the standard uncertainty associated with an estimate <span class="stem"><math xmlns="http://www.w3.org/1998/Math/MathML">
+</div></div><div id="sec_4"><h1 id="_cfd1f6ef-6c71-4b45-bf67-7ea72a4cb061"><a class="anchor" href="#sec_4"></a><a class="header" href="#sec_4">4.  Conventions and notation</a></h1><p id="_00a28715-ccd8-e01e-88b9-412aa09896e6">For the purposes of this document the following conventions, notation and terminology are adopted.</p><div id="sec_4.1"><h2 id="_4f5f6ea4-64b6-4c12-9d12-e14126af9784"><a class="anchor" href="#sec_4.1"></a><a class="header" href="#sec_4.1">4.1.</a></h2><p id="_5c42ea31-9b9a-9928-ffdc-743d5ea74b52">In the GUM, the standard uncertainty associated with an estimate <span class="stem"><math xmlns="http://www.w3.org/1998/Math/MathML">
   <mstyle displaystyle="false">
     <mi>y</mi>
   </mstyle>
@@ -2764,7 +2766,7 @@ of a measurand <span class="stem"><math xmlns="http://www.w3.org/1998/Math/MathM
     </mrow>
   </mstyle>
 </math></span>. The subscript “c”, denoting “combined” standard uncertainty, is viewed as redundant and is not used in this document. (See  <a href="https://www.bipm.org/documents/20126/2071204/JCGM_101_2008_E.pdf/325dcaad-c15a-407c-1105-8b7f322d651c">[JCGM 101:2008],  <span class="citesec">4.10</span></a>).</p>
-</div><div id="sec_4.2"><h2 id="_57392219-f0e9-4358-ac7a-0713f8efe6bd"><a class="anchor" href="#sec_4.2"></a><a class="header" href="#sec_4.2">4.2.</a></h2><p id="_5b3454b1-7653-57c7-eeea-560fe8d7b456">An expression written <span class="stem"><math xmlns="http://www.w3.org/1998/Math/MathML">
+</div><div id="sec_4.2"><h2 id="_a98a645b-0a1b-49d9-a992-53b54296b18a"><a class="anchor" href="#sec_4.2"></a><a class="header" href="#sec_4.2">4.2.</a></h2><p id="_5b3454b1-7653-57c7-eeea-560fe8d7b456">An expression written <span class="stem"><math xmlns="http://www.w3.org/1998/Math/MathML">
   <mstyle displaystyle="false">
     <mi mathvariant="normal">A</mi>
     <mtext> =: </mtext>
@@ -2780,7 +2782,7 @@ of a measurand <span class="stem"><math xmlns="http://www.w3.org/1998/Math/MathM
     <mi mathvariant="normal">A</mi>
   </mstyle>
 </math></span>.</p>
-</div><div id="sec_4.3"><h2 id="_8bbadcde-d966-4c53-9e83-29e556500e85"><a class="anchor" href="#sec_4.3"></a><a class="header" href="#sec_4.3">4.3.</a></h2><p id="_efa70a29-b38e-b2d1-a2cc-3db9d20cf131">When there is no potential for confusion, the symbol <span class="stem"><math xmlns="http://www.w3.org/1998/Math/MathML">
+</div><div id="sec_4.3"><h2 id="_cbbf68bb-be3c-48cf-b19c-77a80f1c1517"><a class="anchor" href="#sec_4.3"></a><a class="header" href="#sec_4.3">4.3.</a></h2><p id="_efa70a29-b38e-b2d1-a2cc-3db9d20cf131">When there is no potential for confusion, the symbol <span class="stem"><math xmlns="http://www.w3.org/1998/Math/MathML">
   <mstyle displaystyle="false">
     <mi>u</mi>
   </mstyle>
@@ -2814,7 +2816,7 @@ of <span class="stem"><math xmlns="http://www.w3.org/1998/Math/MathML">
     <mn>2</mn>
   </mstyle>
 </math></span>; the value of k is given explicitly when there is potential for ambiguity.</p>
-</div><div id="sec_4.4"><h2 id="_1630ff41-9e72-4824-8c38-e9b3e5b7fd4a"><a class="anchor" href="#sec_4.4"></a><a class="header" href="#sec_4.4">4.4.</a></h2><p id="_ba53cf9c-cea8-ec39-5b11-99e80d65e670">A property of interest (the measurand) is regarded as a random variable
+</div><div id="sec_4.4"><h2 id="_99d307dd-6e85-4e4d-8f56-ba5e0cce5130"><a class="anchor" href="#sec_4.4"></a><a class="header" href="#sec_4.4">4.4.</a></h2><p id="_ba53cf9c-cea8-ec39-5b11-99e80d65e670">A property of interest (the measurand) is regarded as a random variable
 <span class="stem"><math xmlns="http://www.w3.org/1998/Math/MathML">
   <mstyle displaystyle="false">
     <mi mathvariant="normal">Y</mi>
@@ -2861,7 +2863,7 @@ by an unknown error <span class="stem"><math xmlns="http://www.w3.org/1998/Math/
     <mi mathvariant="normal">E</mi>
   </mstyle>
 </math></span>, say, which depends on random and systematic effects.</p>
-</div><div id="sec_4.5"><h2 id="_154be531-bdaf-4b63-b191-2af98acca6e8"><a class="anchor" href="#sec_4.5"></a><a class="header" href="#sec_4.5">4.5.</a></h2><p id="_ab5e57ce-bdda-a31f-f969-02c7d6a5e53b">A tolerance interval specifies permissible values of the measurand <span class="stem"><math xmlns="http://www.w3.org/1998/Math/MathML">
+</div><div id="sec_4.5"><h2 id="_30fce92e-18a4-416d-85c5-f08064060af7"><a class="anchor" href="#sec_4.5"></a><a class="header" href="#sec_4.5">4.5.</a></h2><p id="_ab5e57ce-bdda-a31f-f969-02c7d6a5e53b">A tolerance interval specifies permissible values of the measurand <span class="stem"><math xmlns="http://www.w3.org/1998/Math/MathML">
   <mstyle displaystyle="false">
     <mi mathvariant="normal">Y</mi>
   </mstyle>
@@ -2882,7 +2884,7 @@ and the relation of <span class="stem"><math xmlns="http://www.w3.org/1998/Math/
     </msub>
   </mstyle>
 </math></span> to a defined acceptance interval.</p>
-</div><div id="sec_4.6"><h2 id="_3233961a-c85d-40d2-aef8-e3b58dabd8f1"><a class="anchor" href="#sec_4.6"></a><a class="header" href="#sec_4.6">4.6.</a></h2><p id="_1df0a238-5f80-c9c7-4eed-611c9d55c843">Knowledge of the quantities <span class="stem"><math xmlns="http://www.w3.org/1998/Math/MathML">
+</div><div id="sec_4.6"><h2 id="_c8cdc417-f726-4db5-a756-b2fa03afa0e4"><a class="anchor" href="#sec_4.6"></a><a class="header" href="#sec_4.6">4.6.</a></h2><p id="_1df0a238-5f80-c9c7-4eed-611c9d55c843">Knowledge of the quantities <span class="stem"><math xmlns="http://www.w3.org/1998/Math/MathML">
   <mstyle displaystyle="false">
     <mi mathvariant="normal">Y</mi>
   </mstyle>
@@ -2924,7 +2926,7 @@ measurement is <span class="stem"><math xmlns="http://www.w3.org/1998/Math/MathM
     <mi mathvariant="normal">I</mi>
   </mstyle>
 </math></span> denotes prior information.</p>
-</div><div id="sec_4.7"><h2 id="_fabd6f32-2f88-46a6-a00f-23e43a9b1ac8"><a class="anchor" href="#sec_4.7"></a><a class="header" href="#sec_4.7">4.7.</a></h2><p id="_b9643e51-a607-d9ba-f0d2-2e5914057944">Following a measurement of a property of interest, yielding an observed
+</div><div id="sec_4.7"><h2 id="_f844ebd5-657b-4865-82a5-0929fda205b2"><a class="anchor" href="#sec_4.7"></a><a class="header" href="#sec_4.7">4.7.</a></h2><p id="_b9643e51-a607-d9ba-f0d2-2e5914057944">Following a measurement of a property of interest, yielding an observed
 measured value <span class="stem"><math xmlns="http://www.w3.org/1998/Math/MathML">
   <mstyle displaystyle="false">
     <msub>
@@ -2966,7 +2968,7 @@ measured value <span class="stem"><math xmlns="http://www.w3.org/1998/Math/MathM
     </mrow>
   </mstyle>
 </math></span>.</p>
-</div><div id="sec_4.8"><h2 id="_fd602b02-ef07-4217-9060-50576e15f480"><a class="anchor" href="#sec_4.8"></a><a class="header" href="#sec_4.8">4.8.</a></h2><p id="_735c44a6-e1ca-7ba0-51ab-a3d575839946">The analogous PDFs for the possible values <span class="stem"><math xmlns="http://www.w3.org/1998/Math/MathML">
+</div><div id="sec_4.8"><h2 id="_b564a9a5-41cc-43f8-a2e9-9496e9299cd2"><a class="anchor" href="#sec_4.8"></a><a class="header" href="#sec_4.8">4.8.</a></h2><p id="_735c44a6-e1ca-7ba0-51ab-a3d575839946">The analogous PDFs for the possible values <span class="stem"><math xmlns="http://www.w3.org/1998/Math/MathML">
   <mstyle displaystyle="false">
     <msub>
       <mi mathvariant="normal">η</mi>
@@ -3053,7 +3055,7 @@ to have a given true value <span class="stem"><math xmlns="http://www.w3.org/199
     <mi mathvariant="normal">η</mi>
   </mstyle>
 </math></span>.</p>
-</div><div id="sec_4.9"><h2 id="_e18ee03f-6c48-4ce2-95b9-160f7c033ea4"><a class="anchor" href="#sec_4.9"></a><a class="header" href="#sec_4.9">4.9.</a></h2><p id="_da0f2ab6-f59d-8712-16f6-3a64b083dbd5">In the interests of brevity, in this document explicit display of the fixed
+</div><div id="sec_4.9"><h2 id="_aa68bae7-810d-41e2-9cdd-4a8b37a34d20"><a class="anchor" href="#sec_4.9"></a><a class="header" href="#sec_4.9">4.9.</a></h2><p id="_da0f2ab6-f59d-8712-16f6-3a64b083dbd5">In the interests of brevity, in this document explicit display of the fixed
 prior information I is largely omitted. Also, PDFs for <span class="stem"><math xmlns="http://www.w3.org/1998/Math/MathML">
   <mstyle displaystyle="false">
     <mi mathvariant="normal">Y</mi>
@@ -3262,8 +3264,8 @@ a given value <span class="stem"><math xmlns="http://www.w3.org/1998/Math/MathML
 </ul></div>
 
 <p id="_b87ab112-b093-4abc-85b3-aea740e4d419">These PDFs are not independent but are related by Bayes’ theorem (see clause  <a href="#sec_6.2">6.2</a>.)</p>
-</div><div id="sec_4.10"><h2 id="_b9bb62c6-0982-48c2-b779-330f4391b8df"><a class="anchor" href="#sec_4.10"></a><a class="header" href="#sec_4.10">4.10.</a></h2><p id="_7024ffa8-6c1c-4c62-7981-0d44b1371d2b">According to Resolution 10 of the 22nd CGPM (2003) “. . . the symbol for the decimal marker shall be either the point on the line or the comma on the line . . . “. The JCGM has decided to adopt, in its documents in English, the point on the line.</p>
-</div></div><div id="sec_5"><h1 id="_4c869504-9710-4618-94e2-b2ae119f8103"><a class="anchor" href="#sec_5"></a><a class="header" href="#sec_5">5.  Tolerance limits and tolerance intervals</a></h1><div id="sec_5.1"><h2 id="_1cb85b44-ed53-4045-9339-4877ebd28a67"><a class="anchor" href="#sec_5.1"></a><a class="header" href="#sec_5.1">5.1.  Conformity assessment measurements</a></h2>
+</div><div id="sec_4.10"><h2 id="_8366b527-0173-48d8-b09e-1f958e41f392"><a class="anchor" href="#sec_4.10"></a><a class="header" href="#sec_4.10">4.10.</a></h2><p id="_7024ffa8-6c1c-4c62-7981-0d44b1371d2b">According to Resolution 10 of the 22nd CGPM (2003) “. . . the symbol for the decimal marker shall be either the point on the line or the comma on the line . . . “. The JCGM has decided to adopt, in its documents in English, the point on the line.</p>
+</div></div><div id="sec_5"><h1 id="_1e5bf322-fb6c-43f9-8f49-e8655958ff4b"><a class="anchor" href="#sec_5"></a><a class="header" href="#sec_5">5.  Tolerance limits and tolerance intervals</a></h1><div id="sec_5.1"><h2 id="_4663881c-6ed2-4bdf-9a92-12b704211a03"><a class="anchor" href="#sec_5.1"></a><a class="header" href="#sec_5.1">5.1.  Conformity assessment measurements</a></h2>
 
 <div id="sec_5.1.1"><h3><a class="anchor" href="#sec_5.1.1"></a><a class="header" href="#sec_5.1.1">5.1.1.</a></h3><p id="_b5cadbfd-ef8c-c5c3-bb15-abbdc45b1816">Consider a situation where a property of an item of interest, such as the error of indication of a voltmeter, is measured in order to decide whether or not the item conforms to a specified requirement. Such a test of conformity comprises a sequence of three operations:</p>
 
@@ -3287,7 +3289,7 @@ a given value <span class="stem"><math xmlns="http://www.w3.org/1998/Math/MathML
 
 <div id="sec_5.1.5"><h3><a class="anchor" href="#sec_5.1.5"></a><a class="header" href="#sec_5.1.5">5.1.5.</a></h3><p id="_01fd707c-b22d-fbbe-0937-cb632d07f0ec">An inspection measurement together with an associated decision rule is thus closely related to matters such as costs and risks. As such, the design of a satisfactory conformity assessment is often not a purely technical exercise. If the goal is to minimize cost, then given a suitable economic model the problem can be reduced to direct calculation.</p>
 </div>
-</div><div id="sec_5.2"><h2 id="_c64fe585-a805-4ef7-9bad-d71a0f8b4524"><a class="anchor" href="#sec_5.2"></a><a class="header" href="#sec_5.2">5.2.  Permissible and non-permissible values: tolerance intervals</a></h2>
+</div><div id="sec_5.2"><h2 id="_7c9a0903-13a3-4892-a9bd-5e5b9e219438"><a class="anchor" href="#sec_5.2"></a><a class="header" href="#sec_5.2">5.2.  Permissible and non-permissible values: tolerance intervals</a></h2>
 
 <div id="sec_5.2.1"><h3><a class="anchor" href="#sec_5.2.1"></a><a class="header" href="#sec_5.2.1">5.2.1.</a></h3><p id="_3fa4684a-5c03-4648-608f-b7b29c06058a">In this document, specified requirements for a measurand of interest consist of limiting values, called tolerance limits, that separate intervals of permissible values of the measurand from intervals of non-permissible values [<a href="#ref22">ISO 10576-1:2003</a>]. Intervals of permissible values, called tolerance intervals, are of two kinds:</p>
 
@@ -3336,7 +3338,7 @@ a given value <span class="stem"><math xmlns="http://www.w3.org/1998/Math/MathML
 
 
 </div>
-</div><div id="sec_5.3"><h2 id="_250f1928-9379-4cb7-9220-c537a0c52a79"><a class="anchor" href="#sec_5.3"></a><a class="header" href="#sec_5.3">5.3.  Examples of tolerance limits</a></h2>
+</div><div id="sec_5.3"><h2 id="_de9a846d-5331-4270-9926-0913f8148d6d"><a class="anchor" href="#sec_5.3"></a><a class="header" href="#sec_5.3">5.3.  Examples of tolerance limits</a></h2>
 
 <div id="_88becb68-4ac3-66b7-3e6e-9a988e36ea31" class="example"><p class="example-title">EXAMPLE 1 — Single upper tolerance limit</p>
 
@@ -3662,7 +3664,7 @@ purity lies in the interval <span class="stem"><math xmlns="http://www.w3.org/19
   </mstyle>
 </math></span>.</p>
 </div>
-</div></div><div id="sec_6"><h1 id="_aaca81ea-b5fe-4341-8f5d-2e9b7cb88377"><a class="anchor" href="#sec_6"></a><a class="header" href="#sec_6">6.  Knowledge of the measurand</a></h1><div id="sec_6.1"><h2 id="_30639400-9fee-4c8d-a7b4-d1c8862fd52b"><a class="anchor" href="#sec_6.1"></a><a class="header" href="#sec_6.1">6.1.  Probability and information</a></h2>
+</div></div><div id="sec_6"><h1 id="_6c820d3a-e087-41e9-85f6-48b8bcb78a61"><a class="anchor" href="#sec_6"></a><a class="header" href="#sec_6">6.  Knowledge of the measurand</a></h1><div id="sec_6.1"><h2 id="_82bc6ad8-a95c-43ec-ae5b-936d9e434c6b"><a class="anchor" href="#sec_6.1"></a><a class="header" href="#sec_6.1">6.1.  Probability and information</a></h2>
 
 <div id="sec_6.1.1"><h3><a class="anchor" href="#sec_6.1.1"></a><a class="header" href="#sec_6.1.1">6.1.1.</a></h3><p id="_744227c0-b7d4-e4dc-ba8b-85f9ed0238ad">In measurements performed as part of a conformity assessment, knowledge of a property of interest (the measurand) is modelled by a conditional probability density function (PDF) whose form depends on available information. Such information always has two components: that which is available before performing the measurement (called prior information) and the additional information supplied by the measurement  [<a href="#ref38">[38]</a>].</p>
 </div>
@@ -3672,7 +3674,7 @@ purity lies in the interval <span class="stem"><math xmlns="http://www.w3.org/19
 
 <div id="sec_6.1.3"><h3><a class="anchor" href="#sec_6.1.3"></a><a class="header" href="#sec_6.1.3">6.1.3.</a></h3><p id="_9a591805-ed59-3250-198b-3d6492cc4225">The effect of a measurement is thus to update a pre-measurement (or prior) state of knowledge, yielding a postmeasurement (or posterior) state of knowledge that includes the measurement data. The rule for this transformation is called Bayes’ theorem and the underlying mathematical framework is known as Bayesian probability theory. In this document the results of this framework are used without detailed development or proof. A considerable literature is available; see, for example, references  [<a href="#ref4">[4]</a>], [<a href="#ref5">[5]</a>], [<a href="#ref16">[16]</a>], [<a href="#ref26">[26]</a>], [<a href="#ref27">[27]</a>], [<a href="#ref39">[39]</a>].</p>
 </div>
-</div><div id="sec_6.2"><h2 id="_f4b9d6ed-221b-4dfe-b261-44208e7503bb"><a class="anchor" href="#sec_6.2"></a><a class="header" href="#sec_6.2">6.2.  Bayes’ theorem</a></h2>
+</div><div id="sec_6.2"><h2 id="_c0cb4039-9283-47f1-b6df-5a639e0a2473"><a class="anchor" href="#sec_6.2"></a><a class="header" href="#sec_6.2">6.2.  Bayes’ theorem</a></h2>
 
 <div id="sec_6.2.1"><h3><a class="anchor" href="#sec_6.2.1"></a><a class="header" href="#sec_6.2.1">6.2.1.</a></h3><p id="_a2879bed-819c-966d-2b69-16565e55ddf3">In conformity assessment, a measurable property <span class="stem"><math xmlns="http://www.w3.org/1998/Math/MathML">
   <mstyle displaystyle="false">
@@ -4053,7 +4055,7 @@ response or output (measured value <span class="stem"><math xmlns="http://www.w3
   </mstyle>
 </math></span> is a constant.</p>
 </div>
-</div><div id="sec_6.3"><h2 id="_4a130313-51f7-4f82-a83a-0d5e6db7ebdf"><a class="anchor" href="#sec_6.3"></a><a class="header" href="#sec_6.3">6.3.  Summary information</a></h2>
+</div><div id="sec_6.3"><h2 id="_3317408c-4b78-44a0-975f-e79c6caa5248"><a class="anchor" href="#sec_6.3"></a><a class="header" href="#sec_6.3">6.3.  Summary information</a></h2>
 
 <div id="sec_6.3.1"><h3><a class="anchor" href="#sec_6.3.1"></a><a class="header" href="#sec_6.3.1">6.3.1.  Best estimate and standard uncertainty</a></h3>
 
@@ -4586,7 +4588,7 @@ PDF for <span class="stem"><math xmlns="http://www.w3.org/1998/Math/MathML">
 
 </div>
 </div>
-</div></div><div id="sec_7"><h1 id="_841f70b6-62bb-4dce-9b25-69ac4f53dc46"><a class="anchor" href="#sec_7"></a><a class="header" href="#sec_7">7.  Probability of conformity with specified requirements</a></h1><div id="sec_7.1"><h2 id="_6dc4d80f-021f-4086-9cd9-e29093369fb9"><a class="anchor" href="#sec_7.1"></a><a class="header" href="#sec_7.1">7.1.  General rule for calculation of conformance probability</a></h2>
+</div></div><div id="sec_7"><h1 id="_a44cefa6-a3d4-4af1-96b9-1c02cc98febf"><a class="anchor" href="#sec_7"></a><a class="header" href="#sec_7">7.  Probability of conformity with specified requirements</a></h1><div id="sec_7.1"><h2 id="_8f2183e6-66f0-48b6-9187-414df1594a73"><a class="anchor" href="#sec_7.1"></a><a class="header" href="#sec_7.1">7.1.  General rule for calculation of conformance probability</a></h2>
 
 <div id="sec_7.1.1"><h3><a class="anchor" href="#sec_7.1.1"></a><a class="header" href="#sec_7.1.1">7.1.1.</a></h3><p id="_3ce45e80-626f-5326-de82-c0e4cddf5d48">An item conforms to a specified requirement if the true value of its associated
 property <span class="stem"><math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -4786,7 +4788,7 @@ property of the item. Given a two-sided tolerance interval for the measurand
   </mstyle>
 </math></span></p></div></div>
 </div>
-</div><div id="sec_7.2"><h2 id="_5da63924-7d2c-4c4c-a90d-5424a5529bcf"><a class="anchor" href="#sec_7.2"></a><a class="header" href="#sec_7.2">7.2.  Conformance probabilities with normal PDFs</a></h2>
+</div><div id="sec_7.2"><h2 id="_49dd48fb-306a-4610-9f55-641ac37cba9d"><a class="anchor" href="#sec_7.2"></a><a class="header" href="#sec_7.2">7.2.  Conformance probabilities with normal PDFs</a></h2>
 
 <div id="sec_7.2.1"><h3><a class="anchor" href="#sec_7.2.1"></a><a class="header" href="#sec_7.2.1">7.2.1.</a></h3><p id="_75f85283-3ad5-e74d-e39c-7c977c4b64b1">The conformance probability depends on a state of knowledge of a measurand
 <span class="stem"><math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -5162,7 +5164,7 @@ in the interval <span class="stem"><math xmlns="http://www.w3.org/1998/Math/Math
 
 <p id="_345ca868-78f1-fb25-d020-d49a80a511b0">is the standard normal distribution function (see <a href="#annexA">Annex A</a>).</p>
 </div>
-</div><div id="sec_7.3"><h2 id="_c359cf00-5fd6-4885-b57f-14a5221fa05c"><a class="anchor" href="#sec_7.3"></a><a class="header" href="#sec_7.3">7.3.  One-sided tolerance intervals with normal PDFs</a></h2>
+</div><div id="sec_7.3"><h2 id="_945ee9b8-185a-413f-a55c-ddf420e5d871"><a class="anchor" href="#sec_7.3"></a><a class="header" href="#sec_7.3">7.3.  One-sided tolerance intervals with normal PDFs</a></h2>
 
 <div id="sec_7.3.1"><h3><a class="anchor" href="#sec_7.3.1"></a><a class="header" href="#sec_7.3.1">7.3.1.  Single lower tolerance limit</a></h3>
 
@@ -5837,7 +5839,7 @@ is a lower limit on the bursting strength. Then <span class="stem"><math xmlns="
 </math></span>. There is a 99 % probability that the container conformed to specification prior to the destructive test.</p>
 </div>
 </div>
-</div><div id="sec_7.4"><h2 id="_4938fd78-fc5c-48dd-8cce-56bd542b8295"><a class="anchor" href="#sec_7.4"></a><a class="header" href="#sec_7.4">7.4.  Two-sided tolerance intervals with normal PDFs</a></h2>
+</div><div id="sec_7.4"><h2 id="_46e24426-017b-4b56-874a-32246ae757f2"><a class="anchor" href="#sec_7.4"></a><a class="header" href="#sec_7.4">7.4.  Two-sided tolerance intervals with normal PDFs</a></h2>
 
 <p id="_0b80ec2c-6c0c-5cac-99cc-187ce4581ad6"><a href="#fig5">Figure 5</a> shows a two-sided tolerance interval with tolerance limits <span class="stem"><math xmlns="http://www.w3.org/1998/Math/MathML">
   <mstyle displaystyle="false">
@@ -6209,7 +6211,7 @@ the sample is measured at 100 °C, yielding a best estimate
 </math></span></p></div></div>
 
 <p id="_e7ef12e7-c2f3-bc72-dd7f-3ef4c63f328c">There is a 66 % probability that the sample of motor oil conforms to specification.</p>
-</div><div id="sec_7.5"><h2 id="_d333c714-d54c-4187-9c59-03ee59c8d82b"><a class="anchor" href="#sec_7.5"></a><a class="header" href="#sec_7.5">7.5.  Conformance probability and coverage intervals</a></h2>
+</div><div id="sec_7.5"><h2 id="_ea613826-6920-4036-a94a-caaf92409279"><a class="anchor" href="#sec_7.5"></a><a class="header" href="#sec_7.5">7.5.  Conformance probability and coverage intervals</a></h2>
 
 <div id="sec_7.5.1"><h3><a class="anchor" href="#sec_7.5.1"></a><a class="header" href="#sec_7.5.1">7.5.1.</a></h3><p id="_5eceac4f-9bed-73a3-8f26-def4e7ea8930">A measurement result can be summarized by giving a coverage interval with an associated coverage probability (see clause  <a href="#sec_6.3.2">6.3.2</a>) rather than
 an explicit PDF for a measurand <span class="stem"><math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -6448,7 +6450,7 @@ and <span class="stem"><math xmlns="http://www.w3.org/1998/Math/MathML">
 
 
 </div>
-</div><div id="sec_7.6"><h2 id="_e43722f8-ffd8-4623-8803-f811d249b758"><a class="anchor" href="#sec_7.6"></a><a class="header" href="#sec_7.6">7.6.  Measurement capability index <span class="stem">
+</div><div id="sec_7.6"><h2 id="_15316e53-a38a-4b4c-9cd9-77c54eacdbc2"><a class="anchor" href="#sec_7.6"></a><a class="header" href="#sec_7.6">7.6.  Measurement capability index <span class="stem">
   <math xmlns="http://www.w3.org/1998/Math/MathML">
   <mstyle displaystyle="false">
     <msub>
@@ -6776,7 +6778,7 @@ factor <span class="stem"><math xmlns="http://www.w3.org/1998/Math/MathML">
   </mstyle>
 </math></span>, associated with a measurement of the error of indication of the instrument.</p>
 </div>
-</div><div id="sec_7.7"><h2 id="_a580f081-1a25-4ccf-9759-70e8fe0725c5"><a class="anchor" href="#sec_7.7"></a><a class="header" href="#sec_7.7">7.7.  Measurement capability index and conformance probability</a></h2>
+</div><div id="sec_7.7"><h2 id="_1579306c-9c3e-45dd-aa2a-7d3927417fec"><a class="anchor" href="#sec_7.7"></a><a class="header" href="#sec_7.7">7.7.  Measurement capability index and conformance probability</a></h2>
 
 <div id="sec_7.7.1"><h3><a class="anchor" href="#sec_7.7.1"></a><a class="header" href="#sec_7.7.1">7.7.1.</a></h3><p id="_a94575c3-2790-3a38-50ae-952487f9834e">For a normal PDF, <a href="#eq_11">Equation (11)</a> gives the conformance probability <span class="stem"><math xmlns="http://www.w3.org/1998/Math/MathML">
   <mstyle displaystyle="false">
@@ -7282,7 +7284,7 @@ acceptable estimate <span class="stem"><math xmlns="http://www.w3.org/1998/Math/
   </mstyle>
 </math></span> would thus have to lie in the central approximately 10 % of the tolerance interval.</p>
 </div>
-</div></div><div id="sec_8"><h1 id="_a2513920-3876-47d5-bd4c-46da5ddaf8f9"><a class="anchor" href="#sec_8"></a><a class="header" href="#sec_8">8.  Acceptance intervals</a></h1><div id="sec_8.1"><h2 id="_9c865dcd-834a-449d-b8a0-0c9ff577da2c"><a class="anchor" href="#sec_8.1"></a><a class="header" href="#sec_8.1">8.1.  Acceptance limits</a></h2>
+</div></div><div id="sec_8"><h1 id="_aab89ac9-1791-4a36-bea3-5329daa73f99"><a class="anchor" href="#sec_8"></a><a class="header" href="#sec_8">8.  Acceptance intervals</a></h1><div id="sec_8.1"><h2 id="_06cb88b6-a30b-4071-8668-ceb5b88848a0"><a class="anchor" href="#sec_8.1"></a><a class="header" href="#sec_8.1">8.1.  Acceptance limits</a></h2>
 
 <div id="sec_8.1.1"><h3><a class="anchor" href="#sec_8.1.1"></a><a class="header" href="#sec_8.1.1">8.1.1.</a></h3><p id="_4f012e00-e6d6-0324-bf01-4a25a860f40c">A decision to accept an item as conforming, or reject it as non-conforming,
 to specification is based on a measured value <span class="stem"><math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -7297,7 +7299,7 @@ to specification is based on a measured value <span class="stem"><math xmlns="ht
 
 <div id="sec_8.1.2"><h3><a class="anchor" href="#sec_8.1.2"></a><a class="header" href="#sec_8.1.2">8.1.2.</a></h3><p id="_b701114d-a6a3-42ab-eb41-bd75dc4ac2e9">As suggested in the Introduction, acceptance limits and corresponding decision rules are chosen in such a way as to manage the undesired consequences of incorrect decisions. There are a number of widely used decision rules that are simple to implement. They can be applied when knowledge of a property of interest is summarised in terms of a best estimate and corresponding coverage interval. Two such decision rules are described in the following subclauses.</p>
 </div>
-</div><div id="sec_8.2"><h2 id="_5e4130ac-8ccd-406d-bbd9-aad960e1ef3a"><a class="anchor" href="#sec_8.2"></a><a class="header" href="#sec_8.2">8.2.  Decision rule based on simple acceptance</a></h2>
+</div><div id="sec_8.2"><h2 id="_034163a8-8cf7-407b-8060-30d489e051b3"><a class="anchor" href="#sec_8.2"></a><a class="header" href="#sec_8.2">8.2.  Decision rule based on simple acceptance</a></h2>
 
 <div id="sec_8.2.1"><h3><a class="anchor" href="#sec_8.2.1"></a><a class="header" href="#sec_8.2.1">8.2.1.</a></h3><p id="_a612d489-0868-2819-3fae-1562ef71a135">An important and widely used decision rule is known as simple acceptance [<a href="#ref2">[2]</a>] or shared risk [<a href="#ref20">[20]</a>]. Under such a rule, the producer and user (consumer) of the measurement result agree, implicitly or explicitly, to accept as conforming (and reject otherwise) an item whose property has a measured value in the tolerance interval. As the alternative name ‘shared risk’ implies, with a simple acceptance decision rule the producer and user share the consequences of incorrect decisions.</p>
 </div>
@@ -7425,7 +7427,7 @@ equivalent to the requirement that <span class="stem"><math xmlns="http://www.w3
 
 <div id="sec_8.2.6"><h3><a class="anchor" href="#sec_8.2.6"></a><a class="header" href="#sec_8.2.6">8.2.6.</a></h3><p id="_97444080-ccdb-e5f1-58e9-dd1038a4a419">Depending upon the relative width of the tolerance interval and the coverage interval, a simple acceptance decision rule, or similar decision rule, can often support the quality objectives of measurements and calibrations carried out in support of conformity assessments.</p>
 </div>
-</div><div id="sec_8.3"><h2 id="_df8aa679-6c81-4bd4-b069-8f737fa94654"><a class="anchor" href="#sec_8.3"></a><a class="header" href="#sec_8.3">8.3.  Decision rules based on guard bands</a></h2>
+</div><div id="sec_8.3"><h2 id="_c6bef7af-4e9c-459a-8b7c-ce0a97fe4559"><a class="anchor" href="#sec_8.3"></a><a class="header" href="#sec_8.3">8.3.  Decision rules based on guard bands</a></h2>
 
 <div id="sec_8.3.1"><h3><a class="anchor" href="#sec_8.3.1"></a><a class="header" href="#sec_8.3.1">8.3.1.  General considerations</a></h3>
 
@@ -8161,7 +8163,7 @@ is dominated by reproducibility effects and the PDF for nandrolone concentration
 </div>
 </div>
 </div>
-</div></div><div id="sec_9"><h1 id="_cd4c5c7b-511e-4e7d-91c6-319156006ddc"><a class="anchor" href="#sec_9"></a><a class="header" href="#sec_9">9.  Consumer’s and producer’s risks</a></h1><div id="sec_9.1"><h2 id="_b1796e9e-e12f-4b4b-96a2-85db0a561b65"><a class="anchor" href="#sec_9.1"></a><a class="header" href="#sec_9.1">9.1.  General</a></h2>
+</div></div><div id="sec_9"><h1 id="_b0f15564-d02e-4d3c-a877-e0a30101f7cc"><a class="anchor" href="#sec_9"></a><a class="header" href="#sec_9">9.  Consumer’s and producer’s risks</a></h1><div id="sec_9.1"><h2 id="_f44982d8-0a6b-4a64-838e-f7daed283130"><a class="anchor" href="#sec_9.1"></a><a class="header" href="#sec_9.1">9.1.  General</a></h2>
 
 <div id="sec_9.1.1"><h3><a class="anchor" href="#sec_9.1.1"></a><a class="header" href="#sec_9.1.1">9.1.1.</a></h3><p id="_17904682-7cfe-5bd4-f4aa-3df1c71c56ca">In conformity assessment using a binary decision rule, a property of an item is measured and the item is accepted as conforming if the measured value of the property lies in a defined acceptance interval. A measured value outside the acceptance interval leads to rejection of the item as non-conforming.  <a href="#fig12">Figure 12</a>, which reproduces <a href="#fig1">Figure 1</a>, illustrates the intervals of interest, showing a tolerance interval (of conforming values) and an acceptance interval (of permissible measured values).</p>
 </div>
@@ -8210,7 +8212,7 @@ is dominated by reproducibility effects and the PDF for nandrolone concentration
   </mstyle>
 </math></span>, and rejected as non-conforming otherwise.</figcaption></figure>
 </div>
-</div><div id="sec_9.2"><h2 id="_1cfcced4-356c-4023-ad18-5d6916104aba"><a class="anchor" href="#sec_9.2"></a><a class="header" href="#sec_9.2">9.2.  PDFs for production process and measuring system</a></h2>
+</div><div id="sec_9.2"><h2 id="_36cdc96a-f9b7-4fef-9725-70bed44db277"><a class="anchor" href="#sec_9.2"></a><a class="header" href="#sec_9.2">9.2.  PDFs for production process and measuring system</a></h2>
 
 <div id="sec_9.2.1"><h3><a class="anchor" href="#sec_9.2.1"></a><a class="header" href="#sec_9.2.1">9.2.1.</a></h3><p id="_d6bc1851-39c1-43f1-f5b0-40a6bd2e97e9">Consider a process that produces a sequence of items, each having a measurable
 property <span class="stem"><math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -8342,7 +8344,7 @@ encoded and conveyed by a PDF <span class="stem"><math xmlns="http://www.w3.org/
   </mstyle>
 </math></span> is assigned based on the design of the measuring system, information supplied by calibrations and knowledge of relevant influence quantities such as environmental parameters and material properties.</p>
 </div>
-</div><div id="sec_9.3"><h2 id="_5e650bb1-5adb-410b-b4b8-0630d4598e4a"><a class="anchor" href="#sec_9.3"></a><a class="header" href="#sec_9.3">9.3.  Possible outcomes of an inspection measurement with a binary decision rule</a></h2>
+</div><div id="sec_9.3"><h2 id="_6c31355d-25ac-4ab2-88d2-b6efd0d3f443"><a class="anchor" href="#sec_9.3"></a><a class="header" href="#sec_9.3">9.3.  Possible outcomes of an inspection measurement with a binary decision rule</a></h2>
 
 <div id="sec_9.3.1"><h3><a class="anchor" href="#sec_9.3.1"></a><a class="header" href="#sec_9.3.1">9.3.1.</a></h3><p id="_3b89bfd3-d87b-cab8-3c21-df6997fdda14">Let <span class="stem"><math xmlns="http://www.w3.org/1998/Math/MathML">
   <mstyle displaystyle="false">
@@ -8779,7 +8781,7 @@ it can be seen that <span class="stem"><math xmlns="http://www.w3.org/1998/Math/
   </mstyle>
 </math></span> is considered in clause <a href="#sec_9.5">9.5</a>.</p>
 </div>
-</div><div id="sec_9.4"><h2 id="_2cdf6d86-b668-4417-92bc-82e3cfcaa1fd"><a class="anchor" href="#sec_9.4"></a><a class="header" href="#sec_9.4">9.4.  The joint PDF for <span class="stem">
+</div><div id="sec_9.4"><h2 id="_ded58179-389c-4231-b5b0-9d1d39d181ae"><a class="anchor" href="#sec_9.4"></a><a class="header" href="#sec_9.4">9.4.  The joint PDF for <span class="stem">
   <math xmlns="http://www.w3.org/1998/Math/MathML">
   <mstyle displaystyle="false">
     <mi mathvariant="normal">Y</mi>
@@ -9116,7 +9118,7 @@ density <span class="stem"><math xmlns="http://www.w3.org/1998/Math/MathML">
 
 <div id="sec_9.4.7"><h3><a class="anchor" href="#sec_9.4.7"></a><a class="header" href="#sec_9.4.7">9.4.7.</a></h3><p id="_8f3d6bfb-9ab3-bb34-af53-84a5d9c8b4e3">The two PDFs on the right in <a href="#eq_16a">Equation (16)</a> are the two probability densities described in clause  <a href="#sec_9.2">9.2</a>. Given the forms of these PDFs, the two probability densities on the right-hand side of  <a href="#eq_16b">Equation (17)</a> can be calculated, if desired. Such a calculation is illustrated in  <a href="#annexA">Annex A</a> (see clauses <a href="#sec_A.4.3">A.4.3</a> and <a href="#sec_A.4.4">A.4.4</a>).</p>
 </div>
-</div><div id="sec_9.5"><h2 id="_772be445-2677-4596-a59e-36c52b184ee9"><a class="anchor" href="#sec_9.5"></a><a class="header" href="#sec_9.5">9.5.  Calculation of global risks</a></h2>
+</div><div id="sec_9.5"><h2 id="_10b4f711-cba6-4193-9ca9-1312768db30f"><a class="anchor" href="#sec_9.5"></a><a class="header" href="#sec_9.5">9.5.  Calculation of global risks</a></h2>
 
 <div id="sec_9.5.1"><h3><a class="anchor" href="#sec_9.5.1"></a><a class="header" href="#sec_9.5.1">9.5.1.  Historical context</a></h3>
 
@@ -11827,7 +11829,7 @@ reduce these risks to <span class="stem"><math xmlns="http://www.w3.org/1998/Mat
 </math></span>) will have a similar effect in reducing both consumer’s and producer’s risks, and will involve a similar kind of cost/benefit analysis.</p>
 </div>
 </div>
-</div></div><br /><div id="annexA" class="Section3"><h1 class="Annex" id="_3cc7bded-27ec-4cee-ac84-18a624cdba87"><a class="anchor" href="#annexA"></a><a class="header" href="#annexA"><b>Annex A</b><br /><b>Normal distributions</b></a></h1><p style="display:none;" class="variant-title-toc">Annex A  Normal distributions</p><div id="sec_A.1"><h2 id="_80328363-5bb2-4541-85ae-c5f30dcf93f5"><a class="anchor" href="#sec_A.1"></a><a class="header" href="#sec_A.1">A.1.  Normal probability density function</a></h2>
+</div></div><br /><div id="annexA" class="Section3"><h1 class="Annex" id="_0a4332ba-b224-4e5e-bbff-c88b5e72e557"><a class="anchor" href="#annexA"></a><a class="header" href="#annexA"><b>Annex A</b><br /><b>Normal distributions</b></a></h1><p style="display:none;" class="variant-title-toc">Annex A  Normal distributions</p><div id="sec_A.1"><h2 id="_63df24d8-9416-4a33-8a50-50a0dbd01f29"><a class="anchor" href="#sec_A.1"></a><a class="header" href="#sec_A.1">A.1.  Normal probability density function</a></h2>
 
 <div id="sec_A.1.1"><h3><a class="anchor" href="#sec_A.1.1"></a><a class="header" href="#sec_A.1.1">A.1.1.</a></h3><p id="_34e3b1f0-3e76-a110-f70d-20ddb1051db8">Assume that a quantity of interest <span class="stem"><math xmlns="http://www.w3.org/1998/Math/MathML">
   <mstyle displaystyle="false">
@@ -11965,7 +11967,7 @@ estimate <span class="stem"><math xmlns="http://www.w3.org/1998/Math/MathML">
   </mstyle>
 </math></span>, but this is not always the case; see clause <a href="#sec_A.4.4">A.4.4</a>.</p>
 </div>
-</div><div id="sec_A.2"><h2 id="_f4c0a9c1-ad19-4c34-803d-51391a9edf77"><a class="anchor" href="#sec_A.2"></a><a class="header" href="#sec_A.2">A.2.  Integrals of normal PDFs</a></h2>
+</div><div id="sec_A.2"><h2 id="_199a4d2f-7cc5-4629-89d5-f3efe25df122"><a class="anchor" href="#sec_A.2"></a><a class="header" href="#sec_A.2">A.2.  Integrals of normal PDFs</a></h2>
 
 <div id="sec_A.2.1"><h3><a class="anchor" href="#sec_A.2.1"></a><a class="header" href="#sec_A.2.1">A.2.1.</a></h3><p id="_88965360-9759-1199-2f53-9a73cefb36cd">In computing coverage probabilities, conformance probabilities and/or consumer’s
 and producer’s risks, one often has to evaluate integrals of normal PDFs
@@ -12425,7 +12427,7 @@ normal PDF, <span class="stem"><math xmlns="http://www.w3.org/1998/Math/MathML">
 
 <p id="_794ed491-b26e-9ccd-b518-262224d4b2e3">using <a href="#eq_A.2">Equation (A.2)</a> and <a href="#eq_A.3">Equation (A.3)</a>.</p>
 </div>
-</div><div id="sec_A.3"><h2 id="_f71a6263-347b-43d3-9530-50f4e369dfca"><a class="anchor" href="#sec_A.3"></a><a class="header" href="#sec_A.3">A.3.  Coverage probabilities for normal PDFs</a></h2>
+</div><div id="sec_A.3"><h2 id="_9a67be97-cd68-4cba-9795-8bc9236033c0"><a class="anchor" href="#sec_A.3"></a><a class="header" href="#sec_A.3">A.3.  Coverage probabilities for normal PDFs</a></h2>
 
 <div id="sec_A.3.1"><h3><a class="anchor" href="#sec_A.3.1"></a><a class="header" href="#sec_A.3.1">A.3.1.</a></h3><p id="_7a09ffa8-1c45-1c92-431e-3c7921ea3c11">In a common special case, points a and b define a coverage interval (or
 uncertainty interval) of width <span class="stem"><math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -12668,7 +12670,7 @@ and <span>3</span> are then:</p>
   </mstyle>
 </math></span></p></div></div>
 </div>
-</div><div id="sec_A.4"><h2 id="_8835e400-3bab-47de-9ef4-c1eea3bbf35e"><a class="anchor" href="#sec_A.4"></a><a class="header" href="#sec_A.4">A.4.  Normal process and measurement probability densities</a></h2>
+</div><div id="sec_A.4"><h2 id="_d625f8a7-8508-47eb-813d-49ecfd7fb9df"><a class="anchor" href="#sec_A.4"></a><a class="header" href="#sec_A.4">A.4.  Normal process and measurement probability densities</a></h2>
 
 <div id="sec_A.4.1"><h3><a class="anchor" href="#sec_A.4.1"></a><a class="header" href="#sec_A.4.1">A.4.1.  Prior PDF <span class="stem">
   <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -14225,7 +14227,7 @@ posterior PDF for <span class="stem"><math xmlns="http://www.w3.org/1998/Math/Ma
 </ul></div>
 </div>
 </div>
-</div><div id="sec_A.5"><h2 id="_c4270ec1-c57a-4264-bc12-99d7a02b760b"><a class="anchor" href="#sec_A.5"></a><a class="header" href="#sec_A.5">A.5.  Risk calculations with normal PDFs and a binary decision rule</a></h2>
+</div><div id="sec_A.5"><h2 id="_558c3f16-3947-4c33-9e6b-acc2ea4faf06"><a class="anchor" href="#sec_A.5"></a><a class="header" href="#sec_A.5">A.5.  Risk calculations with normal PDFs and a binary decision rule</a></h2>
 
 <div id="sec_A.5.1"><h3><a class="anchor" href="#sec_A.5.1"></a><a class="header" href="#sec_A.5.1">A.5.1.</a></h3><p id="_c030c4eb-25f5-82b2-6d56-7f16343a025e">General formulae for the calculation of global consumer’s and producer’s risks were derived in clause  <a href="#sec_9.5">9.5</a>, and the special case of a conformity assessment with a binary decision rule was treated in clause  <a href="#sec_9.5.3">9.5.3</a>. It is of interest to derive expressions for the global risks in the common case of a binary decision rule where prior knowledge of a measurand and the possible outputs of a measuring system are both described by normal distributions.</p>
 </div>
@@ -14730,7 +14732,7 @@ and <span class="stem"><math xmlns="http://www.w3.org/1998/Math/MathML">
   </mstyle>
 </math></span> is the standard normal distribution function.</p>
 </div>
-</div></div><br /><div id="annexB" class="Section3"><h1 class="Annex" id="_a3714511-acdc-47a7-9a30-d4a2ea4ee247"><a class="anchor" href="#annexB"></a><a class="header" href="#annexB"><b>Annex B</b><br /><b>Prior knowledge of the measurand</b></a></h1><p style="display:none;" class="variant-title-toc">Annex B  Prior knowledge of the measurand</p><div id="sec_B.1"><h2 id="_8735c9e8-53d2-4f11-885d-d5b27625fb03"><a class="anchor" href="#sec_B.1"></a><a class="header" href="#sec_B.1">B.1.  Statistical process control</a></h2>
+</div></div><br /><div id="annexB" class="Section3"><h1 class="Annex" id="_6e56ad87-4568-4a56-b41c-4a38f8f907fc"><a class="anchor" href="#annexB"></a><a class="header" href="#annexB"><b>Annex B</b><br /><b>Prior knowledge of the measurand</b></a></h1><p style="display:none;" class="variant-title-toc">Annex B  Prior knowledge of the measurand</p><div id="sec_B.1"><h2 id="_07fd196e-055b-42ed-bc84-107a1006b4d3"><a class="anchor" href="#sec_B.1"></a><a class="header" href="#sec_B.1">B.1.  Statistical process control</a></h2>
 
 <div id="sec_B.1.1"><h3><a class="anchor" href="#sec_B.1.1"></a><a class="header" href="#sec_B.1.1">B.1.1.</a></h3><p id="_9159071b-dcae-559f-7697-340afa6d9360">In many conformity assessments, knowledge of a measurand <span class="stem"><math xmlns="http://www.w3.org/1998/Math/MathML">
   <mstyle displaystyle="false">
@@ -14826,7 +14828,7 @@ sample measurements is ignored and plays no role in assigning the PDF
   </mstyle>
 </math></span>. The following approach addresses both of these problems and reduces to the SPC result in the appropriate limits.</p>
 </div>
-</div><div id="sec_B.2"><h2 id="_36d0f41e-4f36-42c6-b5c1-c7d6bc0cc1a5"><a class="anchor" href="#sec_B.2"></a><a class="header" href="#sec_B.2">B.2.  An item chosen at random from a measured sample of items</a></h2>
+</div><div id="sec_B.2"><h2 id="_9e3cdd01-09f3-4982-a943-9b5e48994fb8"><a class="anchor" href="#sec_B.2"></a><a class="header" href="#sec_B.2">B.2.  An item chosen at random from a measured sample of items</a></h2>
 
 <div id="sec_B.2.1"><h3><a class="anchor" href="#sec_B.2.1"></a><a class="header" href="#sec_B.2.1">B.2.1.</a></h3><p id="_e8f9af2e-4e9b-5c54-0c9d-689db758a997">Consider a sample of <span class="stem"><math xmlns="http://www.w3.org/1998/Math/MathML">
   <mstyle displaystyle="false">
@@ -16135,7 +16137,7 @@ the process is modelled by a frequency distribution with a standard deviation
   </mstyle>
 </math></span>.</p>
 </div>
-</div><div id="sec_B.3"><h2 id="_8f626186-daa9-40df-bbdc-2678130111fb"><a class="anchor" href="#sec_B.3"></a><a class="header" href="#sec_B.3">B.3.  A positive property near a physical limit</a></h2>
+</div><div id="sec_B.3"><h2 id="_fe2d7446-6f99-400e-9021-8e70773218bb"><a class="anchor" href="#sec_B.3"></a><a class="header" href="#sec_B.3">B.3.  A positive property near a physical limit</a></h2>
 
 <div id="sec_B.3.1"><h3><a class="anchor" href="#sec_B.3.1"></a><a class="header" href="#sec_B.3.1">B.3.1.</a></h3><p id="_7ceabc9b-1882-658d-d83c-bc302c3ab0cf">The normal PDF has an infinite range. In the case of a property (measurand) that is strictly positive, an assigned normal PDF will distribute a fraction of its probability over negative (and thus impossible) values of the property. For a property whose best estimate is within a few times its associated standard uncertainty of zero, this fraction of the probability can be significant. In such a case, assigning a normal PDF would be an unreasonable way to encode knowledge of the measurand.</p>
 </div>
@@ -16532,7 +16534,7 @@ are estimated by the sample statistics: <span class="stem"><math xmlns="http://w
 
 <div id="sec_B.3.7"><h3><a class="anchor" href="#sec_B.3.7"></a><a class="header" href="#sec_B.3.7">B.3.7.</a></h3><p id="_16a92ccf-ab77-0f7d-6255-c7329ee1106e">Useful information on properties and uses of probability distributions can be found in the books of Evans, Hastings and Peacock  [<a href="#ref30">[30]</a>] and Johnson, Kotz and Balakrishnan  [<a href="#ref28">[28]</a>].</p>
 </div>
-</div></div><br /><div id="annexC" class="Section3"><h1 class="Annex" id="_8e191140-3573-4d5b-a46c-c3c8141b4673"><a class="anchor" href="#annexC"></a><a class="header" href="#annexC"><b>Annex C</b><br /><b>Glossary of principal symbols</b></a></h1><p style="display:none;" class="variant-title-toc">Annex C  Glossary of principal symbols</p><div id="_70b2aebb-4573-5cdd-6551-7aade5009aae" class="Note"><p><span class="note_label">Note:  </span>The term <i>probability density function</i> is abbreviated as PDF.</p></div><div class="figdl"><dl id="_8b9e8af5-9d60-18f1-955e-36f7da4a9787"><dt><span class="stem"><math xmlns="http://www.w3.org/1998/Math/MathML">
+</div></div><br /><div id="annexC" class="Section3"><h1 class="Annex" id="_9522aad4-299a-46fb-b48f-0a19b7bd52bf"><a class="anchor" href="#annexC"></a><a class="header" href="#annexC"><b>Annex C</b><br /><b>Glossary of principal symbols</b></a></h1><p style="display:none;" class="variant-title-toc">Annex C  Glossary of principal symbols</p><div id="_70b2aebb-4573-5cdd-6551-7aade5009aae" class="Note"><p><span class="note_label">Note:  </span>The term <i>probability density function</i> is abbreviated as PDF.</p></div><div class="figdl"><dl id="_8b9e8af5-9d60-18f1-955e-36f7da4a9787"><dt><span class="stem"><math xmlns="http://www.w3.org/1998/Math/MathML">
   <mstyle displaystyle="false">
     <mstyle mathvariant="sans-serif">
       <mi>A</mi>
@@ -17309,7 +17311,7 @@ expectation <span class="stem"><math xmlns="http://www.w3.org/1998/Math/MathML">
     </msup>
   </mstyle>
 </math></span></p>
-</dd></dl></div></div><br /><div><h1 class="Section3" id="_f263936c-634f-4d97-924b-4970dcbb4f0d">Bibliography</h1>
+</dd></dl></div></div><br /><div><h1 class="Section3" id="_a9d6b05e-30c0-46a6-88bb-c8ab24a8c7a3">Bibliography</h1>
 <p id="ref1" class="Biblio">[1]  Agilent Technologies. Metrology Forum. 2001.
 <a href="http://metrologyforum.tm.agilent.com/terminology.shtml">http://metrologyforum.tm.agilent.com/terminology.shtml</a>.</p><p id="ref2" class="Biblio">[2]  American Society of Mechanical Engineers. ASME B89.7.3.1:2001
 <i>Guidelines for decision rules: Considering measurement uncertainty in
@@ -17448,24 +17450,51 @@ by the principle of maximum entropy. <i>IEEE Trans. Inst. Meas. IM-20</i>, 2
       const jqToggle = $('#toggle');
       const animationSpeed = 'slow';
 
+      if(!jqNav.length || !jqToggle.length) {
+        return;
+      }
+
+      const navWidthExpanded = jqNav.outerWidth();
+      const bodyPaddingLeftExpanded =
+        parseFloat(jqBody.css('paddingLeft')) > 0 ?
+          jqBody.css('paddingLeft') : navWidthExpanded + 'px';
+      const expandedToggleLeft = navWidthExpanded + 'px';
+      let bandWidth = 0;
+
+      $('.document-stage-band:visible, .document-type-band:visible')
+        .each(function() {
+          const bounds = this.getBoundingClientRect();
+          bandWidth = Math.max(bandWidth, bounds.right);
+        });
+
+      const toggleWidth = jqToggle.outerWidth();
+      const collapsedToggleLeft = bandWidth + 'px';
+      const collapsedBodyPaddingLeft = bandWidth + toggleWidth + 'px';
+      jqToggle.css({
+        'left': jqNav.is(':visible') ? expandedToggleLeft : collapsedToggleLeft,
+        'top': '0px'
+      });
+
       jqToggle.on('click', function() {
         const isNavVisible = jqNav.is(':visible');
-        const fullNavWidth = jqNav.outerWidth();
-        const navLeft = isNavVisible ? '-' + fullNavWidth + 'px' : '0px';
-        const bodyMarginLeft = isNavVisible ? '0px' : fullNavWidth + 'px';
+        const navLeft = isNavVisible ? '-' + navWidthExpanded + 'px' : '0px';
+        const bodyPaddingLeft =
+          isNavVisible ? collapsedBodyPaddingLeft : bodyPaddingLeftExpanded;
+        const toggleLeft =
+          isNavVisible ? collapsedToggleLeft : expandedToggleLeft;
 
-        // Stop current animations
         jqNav.stop(true, true);
         jqBody.stop(true, true);
+        jqToggle.stop(true, true);
 
         if(!isNavVisible) {
-            jqNav.show();
+          jqNav.show();
         }
         jqNav.animate({'left': navLeft}, animationSpeed, function() {
           if(isNavVisible) {jqNav.hide()}
         });
-        jqBody.animate({'marginLeft': bodyMarginLeft}, animationSpeed);
-
+        jqBody.animate({'paddingLeft': bodyPaddingLeft}, animationSpeed);
+        jqToggle.animate({'left': toggleLeft}, animationSpeed);
       });
     })();
   </script>
@@ -17538,7 +17567,7 @@ by the principle of maximum entropy. <i>IEEE Trans. Inst. Meas. IM-20</i>, 2
         if (!_this.box) {
           footnoteContent = $("[id='" + _this.footnoteId + "']").children().filter(":not('" + _this.options.hideFromContent + "')");
           linkOffset = _this.el.offset();
-          _this.box = $("<div />", {
+          _this.box = $("<div ></div>", {
             id: _this.options.boxId,
             html: footnoteContent.clone().find(_this.options.hideFromContent).remove().end(),
             css: {
@@ -17650,5 +17679,4 @@ for (i = 0; i < coll.length; i++) {
   });
 }
 </script>
-
 </body></html>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<metanorma xmlns="https://www.metanorma.org/ns/standoc" type="presentation" version="2.8.3" schema-version="v2.1.5" flavor="bipm">
+<metanorma xmlns="https://www.metanorma.org/ns/standoc" type="presentation" version="2.8.7" schema-version="v2.1.6" flavor="bipm">
 <bibdata type="standard">
 <title language="en" type="title-main">Evaluation of measurement data</title>
 
@@ -33,7 +33,7 @@
 </localized-string><localized-string key="internal_external_terms_boilerplate" language="fr">Pour les besoins du présent document, les termes et définitions de % ainsi que les suivants, s’appliquent.
 </localized-string><localized-string key="no_information_available" language="fr">[PAS D’INFORMATION DISPONIBLE]</localized-string><localized-string key="term_defined_in" language="fr">(%)</localized-string><localized-string key="binary_and" language="fr">%1 <conn>et</conn> %2</localized-string><localized-string key="multiple_and" language="fr">%1<enum-comma>,</enum-comma> <conn>et</conn> %2</localized-string><localized-string key="binary_or" language="fr">%1 <conn>ou</conn> %2</localized-string><localized-string key="multiple_or" language="fr">%1<enum-comma>,</enum-comma> <conn>ou</conn> %2</localized-string><localized-string key="chain_and" language="fr">%1 <conn>et</conn> %2</localized-string><localized-string key="chain_or" language="fr">%1 <conn>ou</conn> %2</localized-string><localized-string key="chain_from" language="fr">%1 <conn>de</conn> %2</localized-string><localized-string key="chain_to" language="fr">%1 <conn>à</conn> %2</localized-string><localized-string key="nested_xref" language="fr">%1<comma>,</comma> %2</localized-string><localized-string key="list_nested_xref" language="fr">%1 %2</localized-string><localized-string key="ordinal_keys.0" language="fr">gender</localized-string><localized-string key="ordinal_keys.1" language="fr">number</localized-string><localized-string key="SpelloutRules.m_sg" language="fr">spellout-ordinal-masculine</localized-string><localized-string key="SpelloutRules.f_sg" language="fr">spellout-ordinal-feminine</localized-string><localized-string key="SpelloutRules.m_pl" language="fr">spellout-ordinal-masculine-plural</localized-string><localized-string key="SpelloutRules.f_pl" language="fr">spellout-ordinal-feminine-plural</localized-string><localized-string key="OrdinalRules.m_sg" language="fr">digits-ordinal-masculine</localized-string><localized-string key="OrdinalRules.f_sg" language="fr">digits-ordinal-feminine</localized-string><localized-string key="OrdinalRules.m_pl" language="fr">digits-ordinal-masculine-plural</localized-string><localized-string key="OrdinalRules.f_pl" language="fr">digits-ordinal-feminine-plural</localized-string><localized-string key="note" language="fr">Note</localized-string><localized-string key="note_xref" language="fr">note</localized-string><localized-string key="termnote" language="fr">Note % à l’article</localized-string><localized-string key="para_xref" language="fr">Alinéa</localized-string><localized-string key="figure" language="fr">figure</localized-string><localized-string key="diagram" language="fr">Diagramme</localized-string><localized-string key="formula" language="fr">équation</localized-string><localized-string key="inequality" language="fr">inégalité</localized-string><localized-string key="list" language="fr">liste</localized-string><localized-string key="deflist" language="fr">Liste de définitions</localized-string><localized-string key="table" language="fr">tableau</localized-string><localized-string key="requirement" language="fr">exigence</localized-string><localized-string key="recommendation" language="fr">recommandation</localized-string><localized-string key="permission" language="fr">autorisation</localized-string><localized-string key="box" language="fr">Encadré</localized-string><localized-string key="key" language="fr">Légende</localized-string><localized-string key="example" language="fr">EXEMPLE</localized-string><localized-string key="example_xref" language="fr">exemple</localized-string><localized-string key="where" language="fr">où</localized-string><localized-string key="where_one" language="fr">où</localized-string><localized-string key="wholeoftext" language="fr">Ensemble du texte</localized-string><localized-string key="draft_label" language="fr">brouillon</localized-string><localized-string key="inform_annex" language="fr">informative</localized-string><localized-string key="norm_annex" language="fr">normative</localized-string><localized-string key="modified" language="fr">modifié</localized-string><localized-string key="adapted" language="fr">adapté</localized-string><localized-string key="deprecated" language="fr">DÉCONSEILLÉ</localized-string><localized-string key="edition" language="fr">édition</localized-string><localized-string key="version" language="fr">version</localized-string><localized-string key="and" language="fr">et</localized-string><localized-string key="no_identifier" language="fr">(PAS D'IDENTIFIANT)</localized-string><localized-string key="all_parts" language="fr">toutes les parties</localized-string><localized-string key="edition_ordinal" language="fr">{{ var1 | ordinal_word: 'edition', '' }} édition</localized-string><localized-string key="edition_cardinal" language="fr">édition {{ var1 }}</localized-string><localized-string key="toc_figures" language="fr">Table des figures</localized-string><localized-string key="toc_tables" language="fr">Table des tableaux</localized-string><localized-string key="toc_recommendations" language="fr">Table de recommandations</localized-string><localized-string key="month_january" language="fr">Janvier</localized-string><localized-string key="month_february" language="fr">Février</localized-string><localized-string key="month_march" language="fr">Mars</localized-string><localized-string key="month_april" language="fr">Avril</localized-string><localized-string key="month_may" language="fr">Mai</localized-string><localized-string key="month_june" language="fr">Juin</localized-string><localized-string key="month_july" language="fr">Juillet</localized-string><localized-string key="month_august" language="fr">Août</localized-string><localized-string key="month_september" language="fr">Septembre</localized-string><localized-string key="month_october" language="fr">Octobre</localized-string><localized-string key="month_november" language="fr">Novembre</localized-string><localized-string key="month_december" language="fr">Décembre</localized-string><localized-string key="obligation" language="fr">Obligation</localized-string><localized-string key="admonition.danger" language="fr">Danger</localized-string><localized-string key="admonition.warning" language="fr">Avertissement</localized-string><localized-string key="admonition.caution" language="fr">Attention</localized-string><localized-string key="admonition.important" language="fr">Important</localized-string><localized-string key="admonition.safety_precautions" language="fr">Précautions de Sécurité</localized-string><localized-string key="admonition.editorial" language="fr">Note éditoriale</localized-string><localized-string key="title_prefixes.part" language="fr">Partie</localized-string><localized-string key="title_prefixes.amendment" language="fr">Amendement</localized-string><localized-string key="title_prefixes.corrigendum" language="fr">Rectificatif</localized-string><localized-string key="title_prefixes.addendum" language="fr">Additif</localized-string><localized-string key="title_prefixes.supplement" language="fr">Supplément</localized-string><localized-string key="title_prefixes.annex" language="fr">Annexe</localized-string><localized-string key="title_prefixes.appendix" language="fr">Appendice</localized-string><localized-string key="locality.section" language="fr">Section</localized-string><localized-string key="locality.clause" language="fr">Article</localized-string><localized-string key="locality.part" language="fr">Partie</localized-string><localized-string key="locality.paragraph" language="fr">Alinéa</localized-string><localized-string key="locality.chapter" language="fr">Chapitre</localized-string><localized-string key="locality.page" language="fr">Page</localized-string><localized-string key="locality.table" language="fr">Tableau</localized-string><localized-string key="locality.annex" language="fr">Annexe</localized-string><localized-string key="locality.figure" language="fr">Figure</localized-string><localized-string key="locality.example" language="fr">Exemple</localized-string><localized-string key="locality.note" language="fr">Note</localized-string><localized-string key="locality.formula" language="fr">Formule</localized-string><localized-string key="grammar_abbrevs.masculine" language="fr">masc</localized-string><localized-string key="grammar_abbrevs.feminine" language="fr">fem</localized-string><localized-string key="grammar_abbrevs.neuter" language="fr">neut</localized-string><localized-string key="grammar_abbrevs.common" language="fr">épicène</localized-string><localized-string key="grammar_abbrevs.singular" language="fr">sg</localized-string><localized-string key="grammar_abbrevs.dual" language="fr">duel</localized-string><localized-string key="grammar_abbrevs.plural" language="fr">pl</localized-string><localized-string key="grammar_abbrevs.isPreposition" language="fr">prép</localized-string><localized-string key="grammar_abbrevs.isParticiple" language="fr">part</localized-string><localized-string key="grammar_abbrevs.isAdjective" language="fr">adj</localized-string><localized-string key="grammar_abbrevs.isAdverb" language="fr">adv</localized-string><localized-string key="grammar_abbrevs.isNoun" language="fr">subst</localized-string><localized-string key="grammar_abbrevs.isVerb" language="fr">vb</localized-string><localized-string key="relatedterms.deprecates" language="fr">déprécie</localized-string><localized-string key="relatedterms.supersedes" language="fr">remplace</localized-string><localized-string key="relatedterms.narrower" language="fr">plus étroit</localized-string><localized-string key="relatedterms.broader" language="fr">plus large</localized-string><localized-string key="relatedterms.equivalent" language="fr">équivalent</localized-string><localized-string key="relatedterms.compare" language="fr">comparez</localized-string><localized-string key="relatedterms.contrast" language="fr">contrastez</localized-string><localized-string key="relatedterms.see" language="fr">voir</localized-string><localized-string key="relatedterms.seealso" language="fr">voir aussi</localized-string><localized-string key="Clause.sg" language="fr">Article</localized-string><localized-string key="Clause.pl" language="fr">Articles</localized-string><localized-string key="Annex.sg" language="fr">Annexe</localized-string><localized-string key="Annex.pl" language="fr">Annexes</localized-string><localized-string key="Appendix.sg" language="fr">Appendice</localized-string><localized-string key="Appendix.pl" language="fr">Appendices</localized-string><localized-string key="Note.sg" language="fr">Note</localized-string><localized-string key="Note.pl" language="fr">Notes</localized-string><localized-string key="Note_%_à_l’article.sg" language="fr">Note % à l’article</localized-string><localized-string key="Note_%_à_l’article.pl" language="fr">Notes % à l’article</localized-string><localized-string key="List.sg" language="fr">Liste</localized-string><localized-string key="List.pl" language="fr">Listes</localized-string><localized-string key="Figure.sg" language="fr">Figure</localized-string><localized-string key="Figure.pl" language="fr">Figures</localized-string><localized-string key="Formula.sg" language="fr">Formule</localized-string><localized-string key="Formula.pl" language="fr">Formules</localized-string><localized-string key="Table.sg" language="fr">Tableau</localized-string><localized-string key="Table.pl" language="fr">Tableaux</localized-string><localized-string key="Requirement.sg" language="fr">Exigence</localized-string><localized-string key="Requirement.pl" language="fr">Exigences</localized-string><localized-string key="Recommendation.sg" language="fr">Recommandation</localized-string><localized-string key="Recommendation.pl" language="fr">Recommandations</localized-string><localized-string key="Permission.sg" language="fr">Autorisation</localized-string><localized-string key="Permission.pl" language="fr">Autorisations</localized-string><localized-string key="Example.sg" language="fr">Exemple</localized-string><localized-string key="Example.pl" language="fr">Exemples</localized-string><localized-string key="Part.sg" language="fr">Partie</localized-string><localized-string key="Part.pl" language="fr">Parties</localized-string><localized-string key="Section.sg" language="fr">Section</localized-string><localized-string key="Section.pl" language="fr">Sections</localized-string><localized-string key="Paragraph.sg" language="fr">Alinéa</localized-string><localized-string key="Paragraph.pl" language="fr">Alinéas</localized-string><localized-string key="Chapter.sg" language="fr">Chapitre</localized-string><localized-string key="Chapter.pl" language="fr">Chapitres</localized-string><localized-string key="Page.sg" language="fr">Page</localized-string><localized-string key="Page.pl" language="fr">Pages</localized-string><localized-string key="grammar.gender" language="fr">f</localized-string><localized-string key="punct.colon" language="fr">:</localized-string><localized-string key="punct.comma" language="fr">,</localized-string><localized-string key="punct.enum-comma" language="fr">,</localized-string><localized-string key="punct.semicolon" language="fr">;</localized-string><localized-string key="punct.period" language="fr">.</localized-string><localized-string key="punct.close-paren" language="fr">)</localized-string><localized-string key="punct.open-paren" language="fr">(</localized-string><localized-string key="punct.close-bracket" language="fr">]</localized-string><localized-string key="punct.open-bracket" language="fr">[</localized-string><localized-string key="punct.question-mark" language="fr">?</localized-string><localized-string key="punct.exclamation-mark" language="fr">!</localized-string><localized-string key="punct.em-dash" language="fr">—</localized-string><localized-string key="punct.en-dash" language="fr">–</localized-string><localized-string key="punct.number-en-dash" language="fr">–</localized-string><localized-string key="punct.open-quote" language="fr">«</localized-string><localized-string key="punct.close-quote" language="fr">»</localized-string><localized-string key="punct.open-nested-quote" language="fr">“</localized-string><localized-string key="punct.close-nested-quote" language="fr">”</localized-string><localized-string key="punct.ellipse" language="fr">…</localized-string><localized-string key="level2_ancillary" language="fr">Annexe</localized-string><localized-string key="level3_ancillary" language="fr">Appendice</localized-string><localized-string key="level2_ancillary_2019" language="fr">Annexe</localized-string><localized-string key="level3_ancillary_2019" language="fr">Annexe</localized-string><localized-string key="level2_ancillary_alt" language="fr">Annex</localized-string><localized-string key="level3_ancillary_alt" language="fr">Appendix</localized-string><localized-string key="level2_ancillary_alt_2019" language="fr">Appendix</localized-string><localized-string key="level3_ancillary_alt_2019" language="fr">Annex</localized-string><localized-string key="level4_ancillary" language="fr">Partie</localized-string><localized-string key="level4_ancillary_alt" language="fr">Part</localized-string><localized-string key="level5_ancillary" language="fr">Partie de sub</localized-string><localized-string key="level5_ancillary_alt" language="fr">Sub-part</localized-string><localized-string key="iso_annex" language="fr">Annexe</localized-string><localized-string key="subclause" language="fr">section</localized-string><localized-string key="clause_jcgm" language="fr">Article</localized-string><localized-string key="subclause_jcgm" language="fr">Article</localized-string><localized-string key="doctype_dict.brochure" language="fr">brochure</localized-string><localized-string key="doctype_dict.mise-en-pratique" language="fr">mise-en-pratique</localized-string><localized-string key="doctype_dict.rapport" language="fr">rapport</localized-string><localized-string key="doctype_dict.monographie" language="fr">monographie</localized-string><localized-string key="doctype_dict.guide" language="fr">guide</localized-string><localized-string key="doctype_dict.meeting-report" language="fr">procès-verbal</localized-string><localized-string key="doctype_dict.technical-report" language="fr">rapport-technique</localized-string><localized-string key="doctype_dict.working-party-note" language="fr">note-du-groupe-de-travail</localized-string><localized-string key="doctype_dict.strategy" language="fr">stratégie</localized-string><localized-string key="doctype_dict.cipm-mra" language="fr">cipm-mra</localized-string><localized-string key="doctype_dict.resolution" language="fr">résolution</localized-string><localized-string key="stage_dict.draft-proposal" language="fr">projet-de-proposition</localized-string><localized-string key="stage_dict.draft-development" language="fr">projet-de-développement</localized-string><localized-string key="stage_dict.in-force" language="fr">en-vigeur</localized-string><localized-string key="stage_dict.retired" language="fr">retiré</localized-string><localized-string key="all_rights_reserved" language="fr">Tous droits réservés</localized-string><localized-string key="adapted_from" language="fr">Adapté de: </localized-string><localized-string key="modified_from" language="fr">Modifié de: </localized-string><localized-string key="prefacenote" language="fr">NOTE</localized-string><localized-string key="listnote" language="fr">Remarque</localized-string><localized-string key="date" language="fr">Date</localized-string><localized-string key="authorized" language="fr">Autorisé</localized-string><localized-string key="language" language="fr">fr</localized-string><localized-string key="script" language="fr">Latn</localized-string></localized-strings><metanorma-extension><semantic-metadata><stage-published>true</stage-published></semantic-metadata>
 <UnitsML xmlns="https://schema.unitsml.org/unitsml/1.0"><UnitSet><Unit dimensionURL="#NISTd2" id="U_NISTu27" semx-id="U_NISTu27">
-        <UnitSystem name="SI" type="SI_base" lang="en-US"/>
+        <UnitSystem name="SI" type="SI_base" lang="en"/>
         <UnitName lang="en">gram</UnitName>
         <UnitSymbol type="HTML">g</UnitSymbol>
         <UnitSymbol type="MathMl">
@@ -42,7 +42,7 @@
           </math>
         </UnitSymbol>
       </Unit><Unit dimensionURL="#NISTd18" id="U_NISTu16" semx-id="U_NISTu16">
-        <UnitSystem name="SI" type="SI_derived" lang="en-US"/>
+        <UnitSystem name="SI" type="SI_derived" lang="en"/>
         <UnitName lang="en">volt</UnitName>
         <UnitSymbol type="HTML">V</UnitSymbol>
         <UnitSymbol type="MathMl">
@@ -51,7 +51,7 @@
           </math>
         </UnitSymbol>
       </Unit><Unit dimensionURL="#NISTd14" id="U_kPa" semx-id="U_kPa">
-        <UnitSystem name="SI" type="SI_derived" lang="en-US"/>
+        <UnitSystem name="SI" type="SI_derived" lang="en"/>
         <UnitName lang="en">kPa</UnitName>
         <UnitSymbol type="HTML">kPa</UnitSymbol>
         <UnitSymbol type="MathMl">
@@ -63,7 +63,7 @@
           <EnumeratedRootUnit unit="pascal" prefix="k"/>
         </RootUnits>
       </Unit><Unit dimensionURL="#NISTd2" id="U_NISTu2" semx-id="U_NISTu2">
-        <UnitSystem name="SI" type="SI_base" lang="en-US"/>
+        <UnitSystem name="SI" type="SI_base" lang="en"/>
         <UnitName lang="en">kilogram</UnitName>
         <UnitSymbol type="HTML">kg</UnitSymbol>
         <UnitSymbol type="MathMl">
@@ -75,9 +75,9 @@
           <EnumeratedRootUnit unit="gram" prefix="k"/>
         </RootUnits>
       </Unit><Unit dimensionURL="#NISTd2" id="U_ug" semx-id="U_ug">
-        <UnitSystem name="SI" type="SI_base" lang="en-US"/>
+        <UnitSystem name="SI" type="SI_base" lang="en"/>
         <UnitName lang="en">ug</UnitName>
-        <UnitSymbol type="HTML">g</UnitSymbol>
+        <UnitSymbol type="HTML">µg</UnitSymbol>
         <UnitSymbol type="MathMl">
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <mi mathvariant="normal">µg</mi>
@@ -87,8 +87,8 @@
           <EnumeratedRootUnit unit="gram" prefix="u"/>
         </RootUnits>
       </Unit><Unit id="U_ng.L-1" semx-id="U_ng.L-1">
-        <UnitSystem name="not_SI" type="not_SI" lang="en-US"/>
-        <UnitSystem name="SI" type="SI_derived" lang="en-US"/>
+        <UnitSystem name="not_SI" type="not_SI" lang="en"/>
+        <UnitSystem name="SI" type="SI_derived" lang="en"/>
         <UnitName lang="en">ng*L^-1</UnitName>
         <UnitSymbol type="HTML">ng L
           <sup>−1</sup>
@@ -98,9 +98,7 @@
             <mi mathvariant="normal">ng</mi>
             <mo rspace="thickmathspace">⁢</mo>
             <msup>
-              <mrow>
-                <mi mathvariant="normal">L</mi>
-              </mrow>
+              <mi mathvariant="normal">L</mi>
               <mrow>
                 <mo>−</mo>
                 <mn>1</mn>
@@ -112,8 +110,8 @@
           <EnumeratedRootUnit unit="gram" prefix="n"/>
           <EnumeratedRootUnit unit="litre" powerNumerator="-1"/>
         </RootUnits>
-      </Unit><Unit dimensionURL="#NISTd56" id="U_mm2.s-1" semx-id="U_mm2.s-1">
-        <UnitSystem name="SI" type="SI_derived" lang="en-US"/>
+      </Unit><Unit dimensionURL="#D_L2T-1" id="U_mm2.s-1" semx-id="U_mm2.s-1">
+        <UnitSystem name="SI" type="SI_derived" lang="en"/>
         <UnitName lang="en">mm^2*s^-1</UnitName>
         <UnitSymbol type="HTML">mm
           <sup>2</sup> s
@@ -122,18 +120,12 @@
         <UnitSymbol type="MathMl">
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <msup>
-              <mrow>
-                <mi mathvariant="normal">mm</mi>
-              </mrow>
-              <mrow>
-                <mn>2</mn>
-              </mrow>
+              <mi mathvariant="normal">mm</mi>
+              <mn>2</mn>
             </msup>
             <mo rspace="thickmathspace">⁢</mo>
             <msup>
-              <mrow>
-                <mi mathvariant="normal">s</mi>
-              </mrow>
+              <mi mathvariant="normal">s</mi>
               <mrow>
                 <mo>−</mo>
                 <mn>1</mn>
@@ -146,8 +138,8 @@
           <EnumeratedRootUnit unit="second" powerNumerator="-1"/>
         </RootUnits>
       </Unit><Unit id="U_km.h-1" semx-id="U_km.h-1">
-        <UnitSystem name="not_SI" type="not_SI" lang="en-US"/>
-        <UnitSystem name="SI" type="SI_derived" lang="en-US"/>
+        <UnitSystem name="not_SI" type="not_SI" lang="en"/>
+        <UnitSystem name="SI" type="SI_derived" lang="en"/>
         <UnitName lang="en">km*h^-1</UnitName>
         <UnitSymbol type="HTML">km h
           <sup>−1</sup>
@@ -157,9 +149,7 @@
             <mi mathvariant="normal">km</mi>
             <mo rspace="thickmathspace">⁢</mo>
             <msup>
-              <mrow>
-                <mi mathvariant="normal">h</mi>
-              </mrow>
+              <mi mathvariant="normal">h</mi>
               <mrow>
                 <mo>−</mo>
                 <mn>1</mn>
@@ -172,10 +162,10 @@
           <EnumeratedRootUnit unit="hour" powerNumerator="-1"/>
         </RootUnits>
       </Unit><Unit id="U_ug.L-1" semx-id="U_ug.L-1">
-        <UnitSystem name="not_SI" type="not_SI" lang="en-US"/>
-        <UnitSystem name="SI" type="SI_derived" lang="en-US"/>
+        <UnitSystem name="not_SI" type="not_SI" lang="en"/>
+        <UnitSystem name="SI" type="SI_derived" lang="en"/>
         <UnitName lang="en">ug*L^-1</UnitName>
-        <UnitSymbol type="HTML">g L
+        <UnitSymbol type="HTML">µg L
           <sup>−1</sup>
         </UnitSymbol>
         <UnitSymbol type="MathMl">
@@ -183,9 +173,7 @@
             <mi mathvariant="normal">µg</mi>
             <mo rspace="thickmathspace">⁢</mo>
             <msup>
-              <mrow>
-                <mi mathvariant="normal">L</mi>
-              </mrow>
+              <mi mathvariant="normal">L</mi>
               <mrow>
                 <mo>−</mo>
                 <mn>1</mn>
@@ -198,7 +186,7 @@
           <EnumeratedRootUnit unit="litre" powerNumerator="-1"/>
         </RootUnits>
       </Unit><Unit dimensionURL="#D_L2MT4I2" id="U_kOhm" semx-id="U_kOhm">
-        <UnitSystem name="SI" type="SI_derived" lang="en-US"/>
+        <UnitSystem name="SI" type="SI_derived" lang="en"/>
         <UnitName lang="en">kOhm</UnitName>
         <UnitSymbol type="HTML">kΩ</UnitSymbol>
         <UnitSymbol type="MathMl">
@@ -210,7 +198,7 @@
           <EnumeratedRootUnit unit="ohm" prefix="k"/>
         </RootUnits>
       </Unit><Unit dimensionURL="#D_L2MT4I2" id="U_NISTu18" semx-id="U_NISTu18">
-        <UnitSystem name="SI" type="SI_derived" lang="en-US"/>
+        <UnitSystem name="SI" type="SI_derived" lang="en"/>
         <UnitName lang="en">ohm</UnitName>
         <UnitSymbol type="HTML">Ω</UnitSymbol>
         <UnitSymbol type="MathMl">
@@ -219,9 +207,9 @@
           </math>
         </UnitSymbol>
       </Unit><Unit dimensionURL="#NISTd1" id="U_um" semx-id="U_um">
-        <UnitSystem name="SI" type="SI_base" lang="en-US"/>
+        <UnitSystem name="SI" type="SI_base" lang="en"/>
         <UnitName lang="en">um</UnitName>
-        <UnitSymbol type="HTML">m</UnitSymbol>
+        <UnitSymbol type="HTML">µm</UnitSymbol>
         <UnitSymbol type="MathMl">
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <mi mathvariant="normal">µm</mi>
@@ -231,9 +219,9 @@
           <EnumeratedRootUnit unit="metre" prefix="u"/>
         </RootUnits>
       </Unit></UnitSet><QuantitySet><Quantity id="NISTq2" quantityType="base" dimensionURL="#NISTd2" semx-id="NISTq2">
-        <QuantityName lang="en-US">mass</QuantityName>
+        <QuantityName lang="en">mass</QuantityName>
       </Quantity><Quantity id="NISTq28" quantityType="base" dimensionURL="#NISTd20" semx-id="NISTq28">
-        <QuantityName lang="en-US">electric resistance</QuantityName>
+        <QuantityName lang="en">electric resistance</QuantityName>
       </Quantity></QuantitySet><DimensionSet><Dimension id="NISTd2" semx-id="NISTd2">
         <Mass symbol="M" powerNumerator="1"/>
       </Dimension><Dimension id="NISTd18" semx-id="NISTd18">
@@ -245,7 +233,7 @@
         <Length symbol="L" powerNumerator="-1"/>
         <Mass symbol="M" powerNumerator="1"/>
         <Time symbol="T" powerNumerator="-2"/>
-      </Dimension><Dimension id="NISTd56" semx-id="NISTd56">
+      </Dimension><Dimension id="D_L2T-1" semx-id="D_L2T-1">
         <Length symbol="L" powerNumerator="2"/>
         <Time symbol="T" powerNumerator="-1"/>
       </Dimension><Dimension id="D_L2MT4I2" semx-id="D_L2MT4I2">
@@ -415,7 +403,7 @@ otherwise.<note id="_4548ce18-39bd-1d12-e345-38aca5a0dc66" semx-id="_4548ce18-39
 <p id="_e2e67f15-981e-cd6b-2d8e-bdde5af04e40" semx-id="_e2e67f15-981e-cd6b-2d8e-bdde5af04e40">A particular acceptance interval, and its relation to a corresponding tolerance interval is shown in  <xref target="fig1" id="_f6c43224-f2be-807f-dd40-00f0d1263512"/><semx element="xref" source="_f6c43224-f2be-807f-dd40-00f0d1263512"><fmt-xref target="fig1"><span class="fmt-element-name">Figure</span> <semx element="autonum" source="fig1">1</semx></fmt-xref></semx>.</p>
 
 <figure id="fig1" anchor="fig1" semx-id="_a71c1260-2b6c-5e86-1891-1fed46421c70" autonum="1">
-<name id="_4a13965f-2895-4b62-8de3-a885befba2b1" semx-id="_7e6014b5-48d5-292e-6ade-81bbd188d5c3">Binary conformity assessment where decisions are based on measured quantity values. The true value of a measurable property (the measurand) of an item is specified to lie in a tolerance interval defined by limits (<stem block="false" type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
+<name id="_65b11276-1de5-424c-9223-e2c239f93f31" semx-id="_7e6014b5-48d5-292e-6ade-81bbd188d5c3">Binary conformity assessment where decisions are based on measured quantity values. The true value of a measurable property (the measurand) of an item is specified to lie in a tolerance interval defined by limits (<stem block="false" type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
   <mstyle displaystyle="false">
     <msub>
       <mi mathvariant="normal">T</mi>
@@ -439,7 +427,7 @@ otherwise.<note id="_4548ce18-39bd-1d12-e345-38aca5a0dc66" semx-id="_4548ce18-39
       <mtext>U</mtext>
     </msub>
   </mstyle>
-</math><asciimath>A_{"L"}, A_{"U"}</asciimath></stem>), and rejected as non-conforming otherwise.</name><fmt-name id="_69cbd449-b647-d479-1e67-b47eb0b339c2"><span class="fmt-caption-label"><span class="fmt-element-name">Figure</span> <semx element="autonum" source="fig1">1</semx></span><span class="fmt-caption-delim"> — </span><semx element="name" source="_4a13965f-2895-4b62-8de3-a885befba2b1">Binary conformity assessment where decisions are based on measured quantity values. The true value of a measurable property (the measurand) of an item is specified to lie in a tolerance interval defined by limits (<stem block="false" type="MathML" id="_1a6db102-9640-2820-15c2-67840a94bf58"><math xmlns="http://www.w3.org/1998/Math/MathML">
+</math><asciimath>A_{"L"}, A_{"U"}</asciimath></stem>), and rejected as non-conforming otherwise.</name><fmt-name id="_69cbd449-b647-d479-1e67-b47eb0b339c2"><span class="fmt-caption-label"><span class="fmt-element-name">Figure</span> <semx element="autonum" source="fig1">1</semx></span><span class="fmt-caption-delim"> — </span><semx element="name" source="_65b11276-1de5-424c-9223-e2c239f93f31">Binary conformity assessment where decisions are based on measured quantity values. The true value of a measurable property (the measurand) of an item is specified to lie in a tolerance interval defined by limits (<stem block="false" type="MathML" id="_1a6db102-9640-2820-15c2-67840a94bf58"><math xmlns="http://www.w3.org/1998/Math/MathML">
   <mstyle displaystyle="false">
     <msub>
       <mi mathvariant="normal">T</mi>
@@ -3374,7 +3362,7 @@ a given value <stem block="false" type="MathML" id="_72610ea3-3c61-80b2-ceeb-738
 <clause id="sec_5.2.2" anchor="sec_5.2.2" obligation="normative" semx-id="_da95cb55-e075-e797-06e4-20d91589e463"><fmt-title depth="3" id="_659cb9ab-d33b-7f8b-bb38-4dc15def2533"><span class="fmt-caption-label"><semx element="autonum" source="sec_5">5</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="sec_5.2">2</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="sec_5.2.2">2</semx><span class="fmt-autonum-delim">.</span></span></fmt-title><fmt-xref-label><semx element="autonum" source="sec_5">5</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="sec_5.2">2</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="sec_5.2.2">2</semx></fmt-xref-label><p id="_232808b7-e4fe-3e08-7c6c-9714b15ae5e3" semx-id="_232808b7-e4fe-3e08-7c6c-9714b15ae5e3">Seemingly one-sided tolerance intervals often have implied additional limits, for physical or theoretical reasons, that are not explicitly stated  <eref type="inline" bibitemid="ref22" citeas="ISO 10576-1:2003" id="_8c2e919d-4e19-f088-8a05-a0f91a6c9834"/><semx element="eref" source="_8c2e919d-4e19-f088-8a05-a0f91a6c9834">[<fmt-xref type="inline" target="ref22">ISO 10576-1:2003</fmt-xref>]</semx>. Such tolerance intervals are effectively two-sided, having one specified limit and one implied limit; see examples 4 and 5 below.</p>
 
 <figure id="fig2" anchor="fig2" semx-id="_df3176db-e624-e8d9-7bca-a3d35bc0003d" autonum="2">
-<name id="_89622918-5ac5-4c55-8081-a34b5c05df7f" semx-id="_c966b6aa-85f5-786b-134f-292dfa126158">Tolerance intervals. (a) A one-sided interval having a single lower tolerance limit <stem block="false" type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
+<name id="_f416dde5-288a-497e-821b-360c1f8cae1c" semx-id="_c966b6aa-85f5-786b-134f-292dfa126158">Tolerance intervals. (a) A one-sided interval having a single lower tolerance limit <stem block="false" type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
   <mstyle displaystyle="false">
     <msub>
       <mi mathvariant="normal">T</mi>
@@ -3400,7 +3388,7 @@ a given value <stem block="false" type="MathML" id="_72610ea3-3c61-80b2-ceeb-738
       <mtext>L</mtext>
     </msub>
   </mstyle>
-</math><asciimath>T_{"U"} - T_{"L"}</asciimath></stem> is called the tolerance.</name><fmt-name id="_2d5ec2a0-761f-d664-91a8-9ffe2f45d149"><span class="fmt-caption-label"><span class="fmt-element-name">Figure</span> <semx element="autonum" source="fig2">2</semx></span><span class="fmt-caption-delim"> — </span><semx element="name" source="_89622918-5ac5-4c55-8081-a34b5c05df7f">Tolerance intervals. (a) A one-sided interval having a single lower tolerance limit <stem block="false" type="MathML" id="_1c4fe8a4-fdc0-8f62-e97d-d5f980e47e0d"><math xmlns="http://www.w3.org/1998/Math/MathML">
+</math><asciimath>T_{"U"} - T_{"L"}</asciimath></stem> is called the tolerance.</name><fmt-name id="_2d5ec2a0-761f-d664-91a8-9ffe2f45d149"><span class="fmt-caption-label"><span class="fmt-element-name">Figure</span> <semx element="autonum" source="fig2">2</semx></span><span class="fmt-caption-delim"> — </span><semx element="name" source="_f416dde5-288a-497e-821b-360c1f8cae1c">Tolerance intervals. (a) A one-sided interval having a single lower tolerance limit <stem block="false" type="MathML" id="_1c4fe8a4-fdc0-8f62-e97d-d5f980e47e0d"><math xmlns="http://www.w3.org/1998/Math/MathML">
   <mstyle displaystyle="false">
     <msub>
       <mi mathvariant="normal">T</mi>
@@ -7163,7 +7151,7 @@ with <stem block="false" type="MathML" id="_ce9ec73a-e5e0-166d-81e2-e827919cd918
 </math><asciimath>p_{"c"} = Phi ({y - T_{"L"}}/u).</asciimath></semx></fmt-stem></formula>
 
 <figure id="fig3" anchor="fig3" semx-id="_d294368c-fb4c-f684-3645-a98b930a3be5" autonum="3">
-<name id="_c8f337c3-5fc0-48ed-863a-095cd0fadde3" semx-id="_cf6f9f2b-8f48-a5e2-22b3-6e4955a65e31">Tolerance interval with a single lower tolerance limit <stem block="false" type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
+<name id="_85e345a5-4f98-45bd-ab49-99ceccd5dca7" semx-id="_cf6f9f2b-8f48-a5e2-22b3-6e4955a65e31">Tolerance interval with a single lower tolerance limit <stem block="false" type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
   <mstyle displaystyle="false">
     <msub>
       <mi mathvariant="normal">T</mi>
@@ -7195,7 +7183,7 @@ with <stem block="false" type="MathML" id="_ce9ec73a-e5e0-166d-81e2-e827919cd918
       <mtext>L</mtext>
     </msub>
   </mstyle>
-</math><asciimath>eta &#x3e;= T_{"L"}</asciimath></stem>.</name><fmt-name id="_62f7d3dd-96f7-3a6b-2476-634adb5f9d79"><span class="fmt-caption-label"><span class="fmt-element-name">Figure</span> <semx element="autonum" source="fig3">3</semx></span><span class="fmt-caption-delim"> — </span><semx element="name" source="_c8f337c3-5fc0-48ed-863a-095cd0fadde3">Tolerance interval with a single lower tolerance limit <stem block="false" type="MathML" id="_fc02ae46-bd50-d182-2398-7ecbdc421864"><math xmlns="http://www.w3.org/1998/Math/MathML">
+</math><asciimath>eta &#x3e;= T_{"L"}</asciimath></stem>.</name><fmt-name id="_62f7d3dd-96f7-3a6b-2476-634adb5f9d79"><span class="fmt-caption-label"><span class="fmt-element-name">Figure</span> <semx element="autonum" source="fig3">3</semx></span><span class="fmt-caption-delim"> — </span><semx element="name" source="_85e345a5-4f98-45bd-ab49-99ceccd5dca7">Tolerance interval with a single lower tolerance limit <stem block="false" type="MathML" id="_fc02ae46-bd50-d182-2398-7ecbdc421864"><math xmlns="http://www.w3.org/1998/Math/MathML">
   <mstyle displaystyle="false">
     <msub>
       <mi mathvariant="normal">T</mi>
@@ -7434,7 +7422,7 @@ In this case, the shaded region to the right of <stem block="false" type="MathML
 </math><asciimath>p_{"c"} = Phi ({T_{"U"} - y}/u).</asciimath></semx></fmt-stem></formula>
 
 <figure id="fig4" anchor="fig4" semx-id="_f1218924-8902-be40-8f66-afca8c27c1ee" autonum="4">
-<name id="_55294ee1-be0e-47f6-b10c-dc553a5a70e8" semx-id="_1ad04424-b9c2-3e8e-9aaf-836b83eefaf9">As <xref target="fig3"/> except with a single upper tolerance limit <stem block="false" type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
+<name id="_a7fa2a14-def1-4f89-94d7-a155bd7398bd" semx-id="_1ad04424-b9c2-3e8e-9aaf-836b83eefaf9">As <xref target="fig3"/> except with a single upper tolerance limit <stem block="false" type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
   <mstyle displaystyle="false">
     <msub>
       <mi mathvariant="normal">T</mi>
@@ -7454,7 +7442,7 @@ In this case, the shaded region to the right of <stem block="false" type="MathML
       <mtext>U</mtext>
     </msub>
   </mstyle>
-</math><asciimath>eta &#x3c;= T_{"U"}</asciimath></stem>.</name><fmt-name id="_969956d3-ac21-716e-85f4-8a95a3b7eeab"><span class="fmt-caption-label"><span class="fmt-element-name">Figure</span> <semx element="autonum" source="fig4">4</semx></span><span class="fmt-caption-delim"> — </span><semx element="name" source="_55294ee1-be0e-47f6-b10c-dc553a5a70e8">As <xref target="fig3" id="_f69fff3f-72f3-1740-27e8-6060715b014d"/><semx element="xref" source="_f69fff3f-72f3-1740-27e8-6060715b014d"><fmt-xref target="fig3"><span class="fmt-element-name">Figure</span> <semx element="autonum" source="fig3">3</semx></fmt-xref></semx> except with a single upper tolerance limit <stem block="false" type="MathML" id="_c816beae-4613-b4b1-d1b0-1bf3a81af948"><math xmlns="http://www.w3.org/1998/Math/MathML">
+</math><asciimath>eta &#x3c;= T_{"U"}</asciimath></stem>.</name><fmt-name id="_969956d3-ac21-716e-85f4-8a95a3b7eeab"><span class="fmt-caption-label"><span class="fmt-element-name">Figure</span> <semx element="autonum" source="fig4">4</semx></span><span class="fmt-caption-delim"> — </span><semx element="name" source="_a7fa2a14-def1-4f89-94d7-a155bd7398bd">As <xref target="fig3" id="_f69fff3f-72f3-1740-27e8-6060715b014d"/><semx element="xref" source="_f69fff3f-72f3-1740-27e8-6060715b014d"><fmt-xref target="fig3"><span class="fmt-element-name">Figure</span> <semx element="autonum" source="fig3">3</semx></fmt-xref></semx> except with a single upper tolerance limit <stem block="false" type="MathML" id="_c816beae-4613-b4b1-d1b0-1bf3a81af948"><math xmlns="http://www.w3.org/1998/Math/MathML">
   <mstyle displaystyle="false">
     <msub>
       <mi mathvariant="normal">T</mi>
@@ -8411,7 +8399,7 @@ the region <stem block="false" type="MathML" id="_6e55c8b3-b4f0-579f-5b65-fb2186
 </math><asciimath>eta &#x3e; T_{"U"}</asciimath></semx></fmt-stem> beyond the upper tolerance limit.</p>
 
 <figure id="fig5" anchor="fig5" semx-id="_5379081b-56ba-1435-8b5a-047042cc96db" autonum="5">
-<name id="_4fe0f83d-e89d-4576-9cd5-0d6c3fecd0e7" semx-id="_6d6b26db-115f-95d9-ad91-caa0f7b242db">As <xref target="fig3"/> except with a two-sided tolerance interval. The length, <stem block="false" type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
+<name id="_1cbd6912-fc26-4a70-bb1e-921a06e97447" semx-id="_6d6b26db-115f-95d9-ad91-caa0f7b242db">As <xref target="fig3"/> except with a two-sided tolerance interval. The length, <stem block="false" type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
   <mstyle displaystyle="false">
     <msub>
       <mi mathvariant="normal">T</mi>
@@ -8445,7 +8433,7 @@ the region <stem block="false" type="MathML" id="_6e55c8b3-b4f0-579f-5b65-fb2186
       <mtext>U</mtext>
     </msub>
   </mstyle>
-</math><asciimath>T_{"L"} &#x3c;= eta &#x3c;= T_{"U"}</asciimath></stem>.</name><fmt-name id="_60ad2707-51c4-8bfb-a805-4c8434f05be6"><span class="fmt-caption-label"><span class="fmt-element-name">Figure</span> <semx element="autonum" source="fig5">5</semx></span><span class="fmt-caption-delim"> — </span><semx element="name" source="_4fe0f83d-e89d-4576-9cd5-0d6c3fecd0e7">As <xref target="fig3" id="_664e8ff2-296d-2ead-ef42-8e650ba73312"/><semx element="xref" source="_664e8ff2-296d-2ead-ef42-8e650ba73312"><fmt-xref target="fig3"><span class="fmt-element-name">Figure</span> <semx element="autonum" source="fig3">3</semx></fmt-xref></semx> except with a two-sided tolerance interval. The length, <stem block="false" type="MathML" id="_cd1bbc2a-09bd-95bd-0310-80844731dee0"><math xmlns="http://www.w3.org/1998/Math/MathML">
+</math><asciimath>T_{"L"} &#x3c;= eta &#x3c;= T_{"U"}</asciimath></stem>.</name><fmt-name id="_60ad2707-51c4-8bfb-a805-4c8434f05be6"><span class="fmt-caption-label"><span class="fmt-element-name">Figure</span> <semx element="autonum" source="fig5">5</semx></span><span class="fmt-caption-delim"> — </span><semx element="name" source="_1cbd6912-fc26-4a70-bb1e-921a06e97447">As <xref target="fig3" id="_664e8ff2-296d-2ead-ef42-8e650ba73312"/><semx element="xref" source="_664e8ff2-296d-2ead-ef42-8e650ba73312"><fmt-xref target="fig3"><span class="fmt-element-name">Figure</span> <semx element="autonum" source="fig3">3</semx></fmt-xref></semx> except with a two-sided tolerance interval. The length, <stem block="false" type="MathML" id="_cd1bbc2a-09bd-95bd-0310-80844731dee0"><math xmlns="http://www.w3.org/1998/Math/MathML">
   <mstyle displaystyle="false">
     <msub>
       <mi mathvariant="normal">T</mi>
@@ -9111,7 +9099,7 @@ form of the PDF for <stem block="false" type="MathML" id="_0175cad3-bc53-169f-fc
 </math><asciimath>Y</asciimath></semx></fmt-stem>, no definite statement can be made about the conformance probability.</p>
 
 <figure id="fig6" anchor="fig6" semx-id="_e936c24b-ac61-4e85-472b-1370706aba2f" autonum="6">
-<name id="_c2c8e611-673a-4bb1-84ef-cd06d43a3f3d" semx-id="_259a8553-56ae-82c6-8ca0-d9bb4d7fa8fd">Two 95 % coverage intervals for a measurand <stem block="false" type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
+<name id="_37866e01-9f92-4ce4-9b51-b0d3a324b727" semx-id="_259a8553-56ae-82c6-8ca0-d9bb4d7fa8fd">Two 95 % coverage intervals for a measurand <stem block="false" type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
   <mstyle displaystyle="false">
     <mi mathvariant="normal">Y</mi>
   </mstyle>
@@ -9137,7 +9125,7 @@ form of the PDF for <stem block="false" type="MathML" id="_0175cad3-bc53-169f-fc
     <mtext> </mtext>
     <mi>%</mi>
   </mstyle>
-</math><asciimath>p_{"c"} &#x3e;= 95" "%</asciimath></stem>.</name><fmt-name id="_70ee1030-05eb-325c-b528-ac6d365c6109"><span class="fmt-caption-label"><span class="fmt-element-name">Figure</span> <semx element="autonum" source="fig6">6</semx></span><span class="fmt-caption-delim"> — </span><semx element="name" source="_c2c8e611-673a-4bb1-84ef-cd06d43a3f3d">Two 95 % coverage intervals for a measurand <stem block="false" type="MathML" id="_6a97f3ef-55c1-38c3-2b6d-20deada86a32"><math xmlns="http://www.w3.org/1998/Math/MathML">
+</math><asciimath>p_{"c"} &#x3e;= 95" "%</asciimath></stem>.</name><fmt-name id="_70ee1030-05eb-325c-b528-ac6d365c6109"><span class="fmt-caption-label"><span class="fmt-element-name">Figure</span> <semx element="autonum" source="fig6">6</semx></span><span class="fmt-caption-delim"> — </span><semx element="name" source="_37866e01-9f92-4ce4-9b51-b0d3a324b727">Two 95 % coverage intervals for a measurand <stem block="false" type="MathML" id="_6a97f3ef-55c1-38c3-2b6d-20deada86a32"><math xmlns="http://www.w3.org/1998/Math/MathML">
   <mstyle displaystyle="false">
     <mi mathvariant="normal">Y</mi>
   </mstyle>
@@ -10718,7 +10706,7 @@ to the estimate <stem block="false" type="MathML" id="_7dfe5b36-139b-4a25-29fd-5
 
 
 <figure id="fig7" anchor="fig7" semx-id="_4049ec28-ae53-9c87-7465-d6b4be2ec610" autonum="7">
-<name id="_42e6f4a4-78f0-4ad0-a7a3-2b4719be4622" semx-id="_e3750b22-cad8-005e-aad2-87112867aa36">Measurement capability index <stem block="false" type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
+<name id="_edad3c48-791a-4ec2-8b1d-dee117b86690" semx-id="_e3750b22-cad8-005e-aad2-87112867aa36">Measurement capability index <stem block="false" type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
   <mstyle displaystyle="false">
     <msub>
       <mi mathvariant="normal">C</mi>
@@ -10791,7 +10779,7 @@ to the estimate <stem block="false" type="MathML" id="_7dfe5b36-139b-4a25-29fd-5
       <mo>)</mo>
     </mrow>
   </mstyle>
-</math><asciimath>varphi(eta; eta_{"m"}, u_{"m"}^2)</asciimath></stem>.</name><fmt-name id="_30be2bae-5825-8e7f-fa00-323668a4a011"><span class="fmt-caption-label"><span class="fmt-element-name">Figure</span> <semx element="autonum" source="fig7">7</semx></span><span class="fmt-caption-delim"> — </span><semx element="name" source="_42e6f4a4-78f0-4ad0-a7a3-2b4719be4622">Measurement capability index <stem block="false" type="MathML" id="_b784ad88-b05c-6d2c-66dc-355c75777855"><math xmlns="http://www.w3.org/1998/Math/MathML">
+</math><asciimath>varphi(eta; eta_{"m"}, u_{"m"}^2)</asciimath></stem>.</name><fmt-name id="_30be2bae-5825-8e7f-fa00-323668a4a011"><span class="fmt-caption-label"><span class="fmt-element-name">Figure</span> <semx element="autonum" source="fig7">7</semx></span><span class="fmt-caption-delim"> — </span><semx element="name" source="_edad3c48-791a-4ec2-8b1d-dee117b86690">Measurement capability index <stem block="false" type="MathML" id="_b784ad88-b05c-6d2c-66dc-355c75777855"><math xmlns="http://www.w3.org/1998/Math/MathML">
   <mstyle displaystyle="false">
     <msub>
       <mi mathvariant="normal">C</mi>
@@ -11423,7 +11411,7 @@ equivalent to the requirement that <stem block="false" type="MathML" id="_71ed73
 <clause id="sec_8.3.1.3" anchor="sec_8.3.1.3" obligation="normative" semx-id="_8184bea7-8cd8-cd94-643a-ef0a5a3776f7"><fmt-title depth="4" id="_104f9144-082b-6537-c713-537c9cdd732d"><span class="fmt-caption-label"><semx element="autonum" source="sec_8">8</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="sec_8.3">3</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="sec_8.3.1">1</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="sec_8.3.1.3">3</semx><span class="fmt-autonum-delim">.</span></span></fmt-title><fmt-xref-label><semx element="autonum" source="sec_8">8</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="sec_8.3">3</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="sec_8.3.1">1</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="sec_8.3.1.3">3</semx></fmt-xref-label><p id="_5b963974-891f-09fd-ceaf-3e3574fc6882" semx-id="_5b963974-891f-09fd-ceaf-3e3574fc6882">Either of these probabilities can be reduced, at the cost of increasing the other, by choosing acceptance limits offset from the tolerance limits, a conformity decision strategy called guardbanding; see references  <eref type="inline" bibitemid="ref6" citeas="[6]" id="_e94ca825-b671-f888-5f40-8d549fb4d4d2"/><semx element="eref" source="_e94ca825-b671-f888-5f40-8d549fb4d4d2">[<fmt-xref type="inline" target="ref6">[6]</fmt-xref>]</semx>, <eref type="inline" bibitemid="ref7" citeas="[7]" id="_da8763a4-0a45-c7d6-eabf-67dafe8282fd"/><semx element="eref" source="_da8763a4-0a45-c7d6-eabf-67dafe8282fd">[<fmt-xref type="inline" target="ref7">[7]</fmt-xref>]</semx>, <eref type="inline" bibitemid="ref8" citeas="[8]" id="_098c1e17-6db2-f424-90cd-bb8eaf8a4912"/><semx element="eref" source="_098c1e17-6db2-f424-90cd-bb8eaf8a4912">[<fmt-xref type="inline" target="ref8">[8]</fmt-xref>]</semx>, <eref type="inline" bibitemid="ref9" citeas="[9]" id="_2c32a7f0-c8a2-5813-3733-0a5c70180e21"/><semx element="eref" source="_2c32a7f0-c8a2-5813-3733-0a5c70180e21">[<fmt-xref type="inline" target="ref9">[9]</fmt-xref>]</semx>, <eref type="inline" bibitemid="ref12" citeas="[12]" id="_a4cd84f1-76ce-5270-b137-91b27eda6153"/><semx element="eref" source="_a4cd84f1-76ce-5270-b137-91b27eda6153">[<fmt-xref type="inline" target="ref12">[12]</fmt-xref>]</semx>, <eref type="inline" bibitemid="ref17" citeas="[17]" id="_bcd6123e-86bf-f1ac-86c4-cf80b0c75994"/><semx element="eref" source="_bcd6123e-86bf-f1ac-86c4-cf80b0c75994">[<fmt-xref type="inline" target="ref17">[17]</fmt-xref>]</semx>, <eref type="inline" bibitemid="ref44" citeas="[44]" id="_687b0349-650e-f1a1-0bc3-a7cd950b8116"/><semx element="eref" source="_687b0349-650e-f1a1-0bc3-a7cd950b8116">[<fmt-xref type="inline" target="ref44">[44]</fmt-xref>]</semx>.</p>
 
 <figure id="fig8" anchor="fig8" semx-id="_3e969f0b-8a3a-17f4-8149-c401c0dbffd9" autonum="8">
-<name id="_cfd48e04-11a9-469a-8801-68fd49a7f5b8" semx-id="_130cef36-73a5-7176-7e7a-a195669bf5e2">Simple acceptance decision rule near an upper tolerance limit <stem block="false" type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
+<name id="_58a79b02-dd50-422d-bce0-d169020d605e" semx-id="_130cef36-73a5-7176-7e7a-a195669bf5e2">Simple acceptance decision rule near an upper tolerance limit <stem block="false" type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
   <mstyle displaystyle="false">
     <msub>
       <mi mathvariant="normal">T</mi>
@@ -11437,7 +11425,7 @@ equivalent to the requirement that <stem block="false" type="MathML" id="_71ed73
       <mtext>U</mtext>
     </msub>
   </mstyle>
-</math><asciimath>A_{"U"}</asciimath></stem> coincides with the tolerance limit. Decisions to accept or reject inspected items are based on measured values (triangles); the true values (circles) cannot be known. Cases (b) and (c) lead to incorrect decisions called false acceptance and false rejection, respectively (see clause <xref target="sec_9.3.2"/>). In case (c) the true value of the measurand lies (unknowingly) outside the 95 % coverage interval.</name><fmt-name id="_ca2464e3-01f5-eec7-1946-af58f58a5f3a"><span class="fmt-caption-label"><span class="fmt-element-name">Figure</span> <semx element="autonum" source="fig8">8</semx></span><span class="fmt-caption-delim"> — </span><semx element="name" source="_cfd48e04-11a9-469a-8801-68fd49a7f5b8">Simple acceptance decision rule near an upper tolerance limit <stem block="false" type="MathML" id="_308213a5-7dbb-069a-8d35-5a7ee2fa71b1"><math xmlns="http://www.w3.org/1998/Math/MathML">
+</math><asciimath>A_{"U"}</asciimath></stem> coincides with the tolerance limit. Decisions to accept or reject inspected items are based on measured values (triangles); the true values (circles) cannot be known. Cases (b) and (c) lead to incorrect decisions called false acceptance and false rejection, respectively (see clause <xref target="sec_9.3.2"/>). In case (c) the true value of the measurand lies (unknowingly) outside the 95 % coverage interval.</name><fmt-name id="_ca2464e3-01f5-eec7-1946-af58f58a5f3a"><span class="fmt-caption-label"><span class="fmt-element-name">Figure</span> <semx element="autonum" source="fig8">8</semx></span><span class="fmt-caption-delim"> — </span><semx element="name" source="_58a79b02-dd50-422d-bce0-d169020d605e">Simple acceptance decision rule near an upper tolerance limit <stem block="false" type="MathML" id="_308213a5-7dbb-069a-8d35-5a7ee2fa71b1"><math xmlns="http://www.w3.org/1998/Math/MathML">
   <mstyle displaystyle="false">
     <msub>
       <mi mathvariant="normal">T</mi>
@@ -11524,7 +11512,7 @@ rule is called guarded acceptance.<note id="_62e5bb74-bbe5-6b38-94a2-0a0e6b22478
 
 
 <figure id="fig9" anchor="fig9" semx-id="_d90fe1d1-7b6b-38e6-eeaf-527e20dd27aa" autonum="9">
-<name id="_c9d221aa-972c-417e-9f28-f2c3b228590a" semx-id="_02795a3b-7a76-d1b2-6488-3e082e7ddb9a">Decision rule based on guarded acceptance. An upper acceptance limit <stem block="false" type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
+<name id="_8bb3986f-6f30-463c-b499-aff3e9e09b35" semx-id="_02795a3b-7a76-d1b2-6488-3e082e7ddb9a">Decision rule based on guarded acceptance. An upper acceptance limit <stem block="false" type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
   <mstyle displaystyle="false">
     <msub>
       <mi mathvariant="normal">A</mi>
@@ -11558,7 +11546,7 @@ rule is called guarded acceptance.<note id="_62e5bb74-bbe5-6b38-94a2-0a0e6b22478
     <mo>&#x3e;</mo>
     <mn>0</mn>
   </mstyle>
-</math><asciimath>w = T_{"U"} - A_{"U"} &#x3e; 0</asciimath></stem>.</name><fmt-name id="_a619d50a-1b70-b1de-67ad-397a799e9f70"><span class="fmt-caption-label"><span class="fmt-element-name">Figure</span> <semx element="autonum" source="fig9">9</semx></span><span class="fmt-caption-delim"> — </span><semx element="name" source="_c9d221aa-972c-417e-9f28-f2c3b228590a">Decision rule based on guarded acceptance. An upper acceptance limit <stem block="false" type="MathML" id="_54fa707b-522d-cc31-9259-b5e7e9be7b03"><math xmlns="http://www.w3.org/1998/Math/MathML">
+</math><asciimath>w = T_{"U"} - A_{"U"} &#x3e; 0</asciimath></stem>.</name><fmt-name id="_a619d50a-1b70-b1de-67ad-397a799e9f70"><span class="fmt-caption-label"><span class="fmt-element-name">Figure</span> <semx element="autonum" source="fig9">9</semx></span><span class="fmt-caption-delim"> — </span><semx element="name" source="_8bb3986f-6f30-463c-b499-aff3e9e09b35">Decision rule based on guarded acceptance. An upper acceptance limit <stem block="false" type="MathML" id="_54fa707b-522d-cc31-9259-b5e7e9be7b03"><math xmlns="http://www.w3.org/1998/Math/MathML">
   <mstyle displaystyle="false">
     <msub>
       <mi mathvariant="normal">A</mi>
@@ -11813,7 +11801,7 @@ with length parameter <stem block="false" type="MathML" id="_db02d0a7-1dbd-d288-
 </math><asciimath>w = 2u</asciimath></semx></fmt-stem>, is to ensure that for any measured value lying within the acceptance interval, the probability of accepting a nonconforming item is at most 2.3 %, assuming a normal PDF for the measured quantity. This maximum probability occurs if the measured value of the property coincides with an acceptance limit. For measured values away from the acceptance limits, the probability of a false acceptance will be less than the maximum.</p>
 
 <figure id="fig10" anchor="fig10" semx-id="_8174179d-cfb6-7864-8bff-243f19c7318e" autonum="10">
-<name id="_51065569-33a1-4800-ade3-8538a28e728b" semx-id="_0c5a44a5-6d22-d0a1-1d46-daaccdbbafc8">Two-sided acceptance interval created by reducing the tolerance interval on either side by the <stem block="false" type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
+<name id="_e10eb999-26e8-49f5-9517-df12ccbbcb4e" semx-id="_0c5a44a5-6d22-d0a1-1d46-daaccdbbafc8">Two-sided acceptance interval created by reducing the tolerance interval on either side by the <stem block="false" type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
   <mstyle displaystyle="false">
     <mi>k</mi>
     <mo>=</mo>
@@ -11826,7 +11814,7 @@ with length parameter <stem block="false" type="MathML" id="_db02d0a7-1dbd-d288-
     <mn>2</mn>
     <mi>u</mi>
   </mstyle>
-</math><asciimath>U = 2u</asciimath></stem>. This is the default decision rule established in <eref type="inline" bibitemid="ref21" citeas="ISO 14253-1:1998"/>.</name><fmt-name id="_32292f53-597c-39b3-4337-dfdbfeeea56d"><span class="fmt-caption-label"><span class="fmt-element-name">Figure</span> <semx element="autonum" source="fig10">10</semx></span><span class="fmt-caption-delim"> — </span><semx element="name" source="_51065569-33a1-4800-ade3-8538a28e728b">Two-sided acceptance interval created by reducing the tolerance interval on either side by the <stem block="false" type="MathML" id="_85a2c9c7-3e59-a1f9-1b62-2f6da0c93aa1"><math xmlns="http://www.w3.org/1998/Math/MathML">
+</math><asciimath>U = 2u</asciimath></stem>. This is the default decision rule established in <eref type="inline" bibitemid="ref21" citeas="ISO 14253-1:1998"/>.</name><fmt-name id="_32292f53-597c-39b3-4337-dfdbfeeea56d"><span class="fmt-caption-label"><span class="fmt-element-name">Figure</span> <semx element="autonum" source="fig10">10</semx></span><span class="fmt-caption-delim"> — </span><semx element="name" source="_e10eb999-26e8-49f5-9517-df12ccbbcb4e">Two-sided acceptance interval created by reducing the tolerance interval on either side by the <stem block="false" type="MathML" id="_85a2c9c7-3e59-a1f9-1b62-2f6da0c93aa1"><math xmlns="http://www.w3.org/1998/Math/MathML">
   <mstyle displaystyle="false">
     <mi>k</mi>
     <mo>=</mo>
@@ -11915,7 +11903,7 @@ a negative action.<note id="_366ff03c-dd84-507c-9e5f-7da87ecb91e0" semx-id="_366
 </math><asciimath>w = T_{"U"} - A_{"U"} &#x3c; 0</asciimath></semx></fmt-stem>.</p>
 
 <figure id="fig11" anchor="fig11" semx-id="_09d6b29c-9807-7164-f79e-71ae05dd6ec0" autonum="11">
-<name id="_8bc19cb3-c8be-498c-b913-0fec7196d6eb" semx-id="_a92edf06-3821-e386-fc1f-1d977189f57b">Decision rule based on guarded rejection. An upper acceptance limit <stem block="false" type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
+<name id="_7f7d8098-a8fd-49ef-8bb9-9668ba8f60e2" semx-id="_a92edf06-3821-e386-fc1f-1d977189f57b">Decision rule based on guarded rejection. An upper acceptance limit <stem block="false" type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
   <mstyle displaystyle="false">
     <msub>
       <mi mathvariant="normal">A</mi>
@@ -11949,7 +11937,7 @@ a negative action.<note id="_366ff03c-dd84-507c-9e5f-7da87ecb91e0" semx-id="_366
     <mo>&#x3c;</mo>
     <mn>0</mn>
   </mstyle>
-</math><asciimath>w = T_{"U"} - A_{"U"} &#x3c; 0</asciimath></stem>.</name><fmt-name id="_fe6818b8-d597-b1ab-890e-80842f7f7e12"><span class="fmt-caption-label"><span class="fmt-element-name">Figure</span> <semx element="autonum" source="fig11">11</semx></span><span class="fmt-caption-delim"> — </span><semx element="name" source="_8bc19cb3-c8be-498c-b913-0fec7196d6eb">Decision rule based on guarded rejection. An upper acceptance limit <stem block="false" type="MathML" id="_207e29b8-cbcc-7982-9608-01596cec6f19"><math xmlns="http://www.w3.org/1998/Math/MathML">
+</math><asciimath>w = T_{"U"} - A_{"U"} &#x3c; 0</asciimath></stem>.</name><fmt-name id="_fe6818b8-d597-b1ab-890e-80842f7f7e12"><span class="fmt-caption-label"><span class="fmt-element-name">Figure</span> <semx element="autonum" source="fig11">11</semx></span><span class="fmt-caption-delim"> — </span><semx element="name" source="_7f7d8098-a8fd-49ef-8bb9-9668ba8f60e2">Decision rule based on guarded rejection. An upper acceptance limit <stem block="false" type="MathML" id="_207e29b8-cbcc-7982-9608-01596cec6f19"><math xmlns="http://www.w3.org/1998/Math/MathML">
   <mstyle displaystyle="false">
     <msub>
       <mi mathvariant="normal">A</mi>
@@ -12849,7 +12837,7 @@ is dominated by reproducibility effects and the PDF for nandrolone concentration
 <clause id="sec_9.1.4" anchor="sec_9.1.4" obligation="normative" semx-id="_c63dc30e-a0cf-86c5-c7ac-0dedaa2e6b82"><fmt-title depth="3" id="_538a3d95-e630-12c9-e9b3-5f87310f9a18"><span class="fmt-caption-label"><semx element="autonum" source="sec_9">9</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="sec_9.1">1</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="sec_9.1.4">4</semx><span class="fmt-autonum-delim">.</span></span></fmt-title><fmt-xref-label><semx element="autonum" source="sec_9">9</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="sec_9.1">1</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="sec_9.1.4">4</semx></fmt-xref-label><p id="_a5012123-04ff-17b1-413c-a0d558f7b84a" semx-id="_a5012123-04ff-17b1-413c-a0d558f7b84a">The risks also depend on the nature of the production process. If the process rarely produces an item whose property of interest is near the tolerance limits, there is less opportunity for incorrect decisions to be made. Conversely, if a process produces items with properties likely to be close to tolerance limits, the uncertainties associated with the measurements are brought into play. The remainder of this clause shows how the contributions of both factors can be evaluated.</p>
 
 <figure id="fig12" anchor="fig12" semx-id="_6007a444-fa40-f2d8-e4d0-b219c5ebe6b9" autonum="12">
-<name id="_2c82b62b-9acd-4dae-83de-64a7eb6521cd" semx-id="_fcaf3223-80b7-e5f7-5b07-ae3f2f026a71">Binary conformity assessment where decisions are based on measured quantity values. The true value of a measurable property (the measurand) of an item is specified to lie in a tolerance interval defined by limits <stem block="false" type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
+<name id="_bb600e24-6f87-4175-8e2f-f1b479a41b4f" semx-id="_fcaf3223-80b7-e5f7-5b07-ae3f2f026a71">Binary conformity assessment where decisions are based on measured quantity values. The true value of a measurable property (the measurand) of an item is specified to lie in a tolerance interval defined by limits <stem block="false" type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
   <mstyle displaystyle="false">
     <mrow>
       <mo>(</mo>
@@ -12881,7 +12869,7 @@ is dominated by reproducibility effects and the PDF for nandrolone concentration
       <mo>)</mo>
     </mrow>
   </mstyle>
-</math><asciimath>(A_{"L"}, A_{"U"})</asciimath></stem>, and rejected as non-conforming otherwise.</name><fmt-name id="_1cbe7648-0a06-61dd-bea1-a42563505d9c"><span class="fmt-caption-label"><span class="fmt-element-name">Figure</span> <semx element="autonum" source="fig12">12</semx></span><span class="fmt-caption-delim"> — </span><semx element="name" source="_2c82b62b-9acd-4dae-83de-64a7eb6521cd">Binary conformity assessment where decisions are based on measured quantity values. The true value of a measurable property (the measurand) of an item is specified to lie in a tolerance interval defined by limits <stem block="false" type="MathML" id="_caa53270-0ae3-e2bc-043a-1401aeb42f42"><math xmlns="http://www.w3.org/1998/Math/MathML">
+</math><asciimath>(A_{"L"}, A_{"U"})</asciimath></stem>, and rejected as non-conforming otherwise.</name><fmt-name id="_1cbe7648-0a06-61dd-bea1-a42563505d9c"><span class="fmt-caption-label"><span class="fmt-element-name">Figure</span> <semx element="autonum" source="fig12">12</semx></span><span class="fmt-caption-delim"> — </span><semx element="name" source="_bb600e24-6f87-4175-8e2f-f1b479a41b4f">Binary conformity assessment where decisions are based on measured quantity values. The true value of a measurable property (the measurand) of an item is specified to lie in a tolerance interval defined by limits <stem block="false" type="MathML" id="_caa53270-0ae3-e2bc-043a-1401aeb42f42"><math xmlns="http://www.w3.org/1998/Math/MathML">
   <mstyle displaystyle="false">
     <mrow>
       <mo>(</mo>
@@ -16928,7 +16916,7 @@ of <stem block="false" type="MathML" id="_ba3c6c2b-59bf-257b-04d9-2e6fa14a56c9">
 <p id="_a0ca3580-3d9f-89f2-1661-e3c187296a40" semx-id="_a0ca3580-3d9f-89f2-1661-e3c187296a40">For economic reasons, the fraction of non-conforming bearings sold to customers as conforming (the global consumer’s risk) must be held to 0.1 % or less. How can an acceptance limit A be chosen to satisfy this requirement?</p>
 
 <figure id="fig13" anchor="fig13" semx-id="_bcff011f-dbfb-55d5-b6ec-933f2b49a247" autonum="13">
-<name id="_0ef14156-69ba-4257-b603-c72fd62948ac" semx-id="_baa7c074-0c81-0d5c-1a9b-b50009aa3b19">Tolerance and acceptance intervals for the conformity assessment of ball bearings. Permissible values of radial error motion <stem block="false" type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
+<name id="_06f260d5-a3fa-4814-9d4f-e0010a036168" semx-id="_baa7c074-0c81-0d5c-1a9b-b50009aa3b19">Tolerance and acceptance intervals for the conformity assessment of ball bearings. Permissible values of radial error motion <stem block="false" type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
   <mstyle displaystyle="false">
     <mi mathvariant="normal">Y</mi>
   </mstyle>
@@ -16968,7 +16956,7 @@ of <stem block="false" type="MathML" id="_ba3c6c2b-59bf-257b-04d9-2e6fa14a56c9">
     <mo>&#x3e;</mo>
     <mn>0</mn>
   </mstyle>
-</math><asciimath>w &#x3e; 0</asciimath></stem>.</name><fmt-name id="_e4bccade-5fe3-f538-db34-24272b3c19c2"><span class="fmt-caption-label"><span class="fmt-element-name">Figure</span> <semx element="autonum" source="fig13">13</semx></span><span class="fmt-caption-delim"> — </span><semx element="name" source="_0ef14156-69ba-4257-b603-c72fd62948ac">Tolerance and acceptance intervals for the conformity assessment of ball bearings. Permissible values of radial error motion <stem block="false" type="MathML" id="_4a8c2161-b4b1-66e8-2ed2-a06639ea746f"><math xmlns="http://www.w3.org/1998/Math/MathML">
+</math><asciimath>w &#x3e; 0</asciimath></stem>.</name><fmt-name id="_e4bccade-5fe3-f538-db34-24272b3c19c2"><span class="fmt-caption-label"><span class="fmt-element-name">Figure</span> <semx element="autonum" source="fig13">13</semx></span><span class="fmt-caption-delim"> — </span><semx element="name" source="_06f260d5-a3fa-4814-9d4f-e0010a036168">Tolerance and acceptance intervals for the conformity assessment of ball bearings. Permissible values of radial error motion <stem block="false" type="MathML" id="_4a8c2161-b4b1-66e8-2ed2-a06639ea746f"><math xmlns="http://www.w3.org/1998/Math/MathML">
   <mstyle displaystyle="false">
     <mi mathvariant="normal">Y</mi>
   </mstyle>
@@ -17375,7 +17363,7 @@ PDF for bearing radial error <stem block="false" type="MathML" id="_cf569614-29c
 </math><asciimath>g_0 (eta) = "gamma" (eta ; 4, 4) = 128/3 eta^3 e^{-4 eta} , " " eta &#x3e;= 0 .</asciimath></semx></fmt-stem></formula>
 
 <figure id="fig14" anchor="fig14" semx-id="_9f4c90ca-98f5-71e2-6671-9709caa8f8e1" autonum="14">
-<name id="_468cdae8-28f4-43a4-86e7-938ed19e5e49" semx-id="_5a0aedaa-f087-97de-5f98-9986914af811">Gamma prior PDF given by <xref target="eq_22"/>, assigned based on the frequency distribution of measured radial error motions for a sample of ball bearings. The tolerance interval is the region <stem block="false" type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
+<name id="_fbd9f00f-5dbb-4567-b94c-0900621d82d5" semx-id="_5a0aedaa-f087-97de-5f98-9986914af811">Gamma prior PDF given by <xref target="eq_22"/>, assigned based on the frequency distribution of measured radial error motions for a sample of ball bearings. The tolerance interval is the region <stem block="false" type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
   <mstyle displaystyle="false">
     <mn>0</mn>
     <mo>≤</mo>
@@ -17452,7 +17440,7 @@ PDF for bearing radial error <stem block="false" type="MathML" id="_cf569614-29c
       <mn>0</mn>
     </msub>
   </mstyle>
-</math><asciimath>y_0</asciimath></stem>.</name><fmt-name id="_7a8b804d-aa05-c806-51f8-225ebef26fd3"><span class="fmt-caption-label"><span class="fmt-element-name">Figure</span> <semx element="autonum" source="fig14">14</semx></span><span class="fmt-caption-delim"> — </span><semx element="name" source="_468cdae8-28f4-43a4-86e7-938ed19e5e49">Gamma prior PDF given by <xref target="eq_22" id="_8db26ba6-c6b0-8f8e-16e6-2a369c1344a5"/><semx element="xref" source="_8db26ba6-c6b0-8f8e-16e6-2a369c1344a5"><fmt-xref target="eq_22"><span class="fmt-element-name">Equation</span> <span class="fmt-autonum-delim">(</span><semx element="autonum" source="eq_22">23</semx><span class="fmt-autonum-delim">)</span></fmt-xref></semx>, assigned based on the frequency distribution of measured radial error motions for a sample of ball bearings. The tolerance interval is the region <stem block="false" type="MathML" id="_6da491e8-fe8c-6781-cfc6-675e4ea928fe"><math xmlns="http://www.w3.org/1998/Math/MathML">
+</math><asciimath>y_0</asciimath></stem>.</name><fmt-name id="_7a8b804d-aa05-c806-51f8-225ebef26fd3"><span class="fmt-caption-label"><span class="fmt-element-name">Figure</span> <semx element="autonum" source="fig14">14</semx></span><span class="fmt-caption-delim"> — </span><semx element="name" source="_fbd9f00f-5dbb-4567-b94c-0900621d82d5">Gamma prior PDF given by <xref target="eq_22" id="_8db26ba6-c6b0-8f8e-16e6-2a369c1344a5"/><semx element="xref" source="_8db26ba6-c6b0-8f8e-16e6-2a369c1344a5"><fmt-xref target="eq_22"><span class="fmt-element-name">Equation</span> <span class="fmt-autonum-delim">(</span><semx element="autonum" source="eq_22">23</semx><span class="fmt-autonum-delim">)</span></fmt-xref></semx>, assigned based on the frequency distribution of measured radial error motions for a sample of ball bearings. The tolerance interval is the region <stem block="false" type="MathML" id="_6da491e8-fe8c-6781-cfc6-675e4ea928fe"><math xmlns="http://www.w3.org/1998/Math/MathML">
   <mstyle displaystyle="false">
     <mn>0</mn>
     <mo>≤</mo>
@@ -18695,7 +18683,7 @@ and performing the integrations over <stem block="false" type="MathML" id="_bfae
 </math><asciimath>R_P(r) = 128/3 int_0^2 [1 - Phi(8 - 2r - 4eta)] eta^3 e^{-4eta} "d"eta .</asciimath></semx></fmt-stem></formula>
 
 <figure id="fig15" anchor="fig15" semx-id="_f44ba203-e871-53cb-4634-028ab3743682" autonum="15">
-<name id="_41bb1eac-ca2e-4c51-ba37-ae5112d452ce" semx-id="_fbc3564d-778c-899f-6ef9-c7db5cdf4bcd">Global consumer’s risk <stem block="false" type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
+<name id="_f20c9776-ad4a-4c58-aa4b-ea34371103fa" semx-id="_fbc3564d-778c-899f-6ef9-c7db5cdf4bcd">Global consumer’s risk <stem block="false" type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
   <mstyle displaystyle="false">
     <msub>
       <mi mathvariant="normal">R</mi>
@@ -18750,7 +18738,7 @@ and performing the integrations over <stem block="false" type="MathML" id="_bfae
     <mn>0.1</mn>
     <mi>%</mi>
   </mstyle>
-</math><asciimath>R_C = 0.1 %</asciimath></stem> is achieved.</name><fmt-name id="_d3e8719d-bde1-121b-c866-e488f4218a80"><span class="fmt-caption-label"><span class="fmt-element-name">Figure</span> <semx element="autonum" source="fig15">15</semx></span><span class="fmt-caption-delim"> — </span><semx element="name" source="_41bb1eac-ca2e-4c51-ba37-ae5112d452ce">Global consumer’s risk <stem block="false" type="MathML" id="_cc0f6c0d-6134-b776-909f-a5610108255d"><math xmlns="http://www.w3.org/1998/Math/MathML">
+</math><asciimath>R_C = 0.1 %</asciimath></stem> is achieved.</name><fmt-name id="_d3e8719d-bde1-121b-c866-e488f4218a80"><span class="fmt-caption-label"><span class="fmt-element-name">Figure</span> <semx element="autonum" source="fig15">15</semx></span><span class="fmt-caption-delim"> — </span><semx element="name" source="_f20c9776-ad4a-4c58-aa4b-ea34371103fa">Global consumer’s risk <stem block="false" type="MathML" id="_cc0f6c0d-6134-b776-909f-a5610108255d"><math xmlns="http://www.w3.org/1998/Math/MathML">
   <mstyle displaystyle="false">
     <msub>
       <mi mathvariant="normal">R</mi>
@@ -19165,7 +19153,7 @@ ball bearing example. For <stem block="false" type="MathML" id="_14faead2-c054-0
 <p id="_0e297182-f30f-1fd5-4579-8a6fcfa4daf4" semx-id="_0e297182-f30f-1fd5-4579-8a6fcfa4daf4">The generation of an increasing amount of conforming scrap is a cost of guarded acceptance, which seeks to reduce the acceptance and shipment of non-conforming products. In practice a supplier must choose an operating point along a curve such as that shown in  <xref target="fig16" id="_e2dc9c26-a25b-2405-5e66-f48ccea7f414"/><semx element="xref" source="_e2dc9c26-a25b-2405-5e66-f48ccea7f414"><fmt-xref target="fig16"><span class="fmt-element-name">Figure</span> <semx element="autonum" source="fig16">16</semx></fmt-xref></semx> that will balance the risks and yield an optimal outcome. The choice of such an operating point is a business or policy decision that requires an economic analysis of the decision problem.</p>
 
 <figure id="fig16" anchor="fig16" semx-id="_4b701fb1-183d-4f7d-6cd7-476e5cafe3ae" autonum="16">
-<name id="_6abc49ab-2156-4298-bde6-3e5b52727c15" semx-id="_2ee33b91-860d-5913-e35b-28b589204e66">Global risks <stem block="false" type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
+<name id="_fda458fd-c344-46a0-a65b-b626168839b4" semx-id="_2ee33b91-860d-5913-e35b-28b589204e66">Global risks <stem block="false" type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
   <mstyle displaystyle="false">
     <msub>
       <mi mathvariant="normal">R</mi>
@@ -19187,7 +19175,7 @@ ball bearing example. For <stem block="false" type="MathML" id="_14faead2-c054-0
   <mstyle displaystyle="false">
     <mi>r</mi>
   </mstyle>
-</math><asciimath>r</asciimath></stem>) always increases the risk of falsely rejecting conforming bearings. An economic analysis is required to choose an optimal decision rule. The open circle marks the operating point in the worked example.</name><fmt-name id="_1b74ffba-e84c-5ed5-dd77-8fd4b9421baa"><span class="fmt-caption-label"><span class="fmt-element-name">Figure</span> <semx element="autonum" source="fig16">16</semx></span><span class="fmt-caption-delim"> — </span><semx element="name" source="_6abc49ab-2156-4298-bde6-3e5b52727c15">Global risks <stem block="false" type="MathML" id="_17cac656-6afd-1dff-af36-3af29f96cb30"><math xmlns="http://www.w3.org/1998/Math/MathML">
+</math><asciimath>r</asciimath></stem>) always increases the risk of falsely rejecting conforming bearings. An economic analysis is required to choose an optimal decision rule. The open circle marks the operating point in the worked example.</name><fmt-name id="_1b74ffba-e84c-5ed5-dd77-8fd4b9421baa"><span class="fmt-caption-label"><span class="fmt-element-name">Figure</span> <semx element="autonum" source="fig16">16</semx></span><span class="fmt-caption-delim"> — </span><semx element="name" source="_fda458fd-c344-46a0-a65b-b626168839b4">Global risks <stem block="false" type="MathML" id="_17cac656-6afd-1dff-af36-3af29f96cb30"><math xmlns="http://www.w3.org/1998/Math/MathML">
   <mstyle displaystyle="false">
     <msub>
       <mi mathvariant="normal">R</mi>
@@ -19638,7 +19626,7 @@ equal to <stem block="false" type="MathML" id="_dd3b6fdf-bd7c-2c3f-4588-a21670da
 </ul>
 
 <figure id="fig17" anchor="fig17" semx-id="_903e2bc2-1aa8-5c61-5cbf-090b4bf2db68" autonum="17">
-<name id="_371930a5-fe20-4395-8e44-bf59db787946" semx-id="_9204f25e-f296-ffe9-fb86-937290c7a637">Global risks <stem block="false" type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
+<name id="_01cad479-bb3e-430c-bff9-f119c2b69b24" semx-id="_9204f25e-f296-ffe9-fb86-937290c7a637">Global risks <stem block="false" type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
   <mstyle displaystyle="false">
     <msub>
       <mi mathvariant="normal">R</mi>
@@ -19702,7 +19690,7 @@ equal to <stem block="false" type="MathML" id="_dd3b6fdf-bd7c-2c3f-4588-a21670da
     <mn>2</mn>
     <mi>u</mi>
   </mstyle>
-</math><asciimath>U = 2u</asciimath></stem>. Positive values of w correspond to guarded acceptance, with acceptance limits inside the tolerance limits as in <xref target="fig12"/>.</name><fmt-name id="_1ae9c3f6-494b-ccda-e008-88c4f8d985ca"><span class="fmt-caption-label"><span class="fmt-element-name">Figure</span> <semx element="autonum" source="fig17">17</semx></span><span class="fmt-caption-delim"> — </span><semx element="name" source="_371930a5-fe20-4395-8e44-bf59db787946">Global risks <stem block="false" type="MathML" id="_2ba145a5-573c-2b69-10e5-6f7ccad093bb"><math xmlns="http://www.w3.org/1998/Math/MathML">
+</math><asciimath>U = 2u</asciimath></stem>. Positive values of w correspond to guarded acceptance, with acceptance limits inside the tolerance limits as in <xref target="fig12"/>.</name><fmt-name id="_1ae9c3f6-494b-ccda-e008-88c4f8d985ca"><span class="fmt-caption-label"><span class="fmt-element-name">Figure</span> <semx element="autonum" source="fig17">17</semx></span><span class="fmt-caption-delim"> — </span><semx element="name" source="_01cad479-bb3e-430c-bff9-f119c2b69b24">Global risks <stem block="false" type="MathML" id="_2ba145a5-573c-2b69-10e5-6f7ccad093bb"><math xmlns="http://www.w3.org/1998/Math/MathML">
   <mstyle displaystyle="false">
     <msub>
       <mi mathvariant="normal">R</mi>
@@ -20039,17 +20027,20 @@ reduce these risks to <stem block="false" type="MathML" id="_7d238e89-3f85-a54c-
 
 
 
-<references id="_b8ceca62-59f9-0437-b01e-1a303c57e93f" normative="true" obligation="informative" semx-id="_b8ceca62-59f9-0437-b01e-1a303c57e93f" displayorder="6">
-<title id="_96fce99f-ce1f-b184-eb60-fb7c71327943" semx-id="_270c5ee6-077e-f285-ff95-287984a30140">Normative references</title><fmt-title depth="1" id="_0ce69191-069b-fbe3-5648-0b9812b4de47"><span class="fmt-caption-label"><semx element="autonum" source="_b8ceca62-59f9-0437-b01e-1a303c57e93f">2</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_96fce99f-ce1f-b184-eb60-fb7c71327943">Normative references</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_b8ceca62-59f9-0437-b01e-1a303c57e93f">2</semx></fmt-xref-label><p id="_5d68767b-3c2e-b2ee-db6d-6b8ca4c42620" semx-id="_5d68767b-3c2e-b2ee-db6d-6b8ca4c42620">The following referenced documents are indispensable for the application of this document. For dated references, only the edition cited applies. For undated references, the latest edition of the referenced document (including any amendments) applies.</p>
-<bibitem id="JCGM_100_2008" type="standard" schema-version="v1.2.9" anchor="JCGM_100_2008" semx-id="_b3c4f206-3e13-b015-cd17-9870f305183c"><biblio-tag>JCGM 100:2008 </biblio-tag><formattedref><em>Guide to the expression of uncertainty in measurement</em></formattedref>
-  <fetched>2026-04-16</fetched>
+<references id="_21d0ad19-3334-9c69-ec54-7cf682678699" normative="true" obligation="informative" semx-id="_21d0ad19-3334-9c69-ec54-7cf682678699" displayorder="6">
+<title id="_96fce99f-ce1f-b184-eb60-fb7c71327943" semx-id="_270c5ee6-077e-f285-ff95-287984a30140">Normative references</title><fmt-title depth="1" id="_0ce69191-069b-fbe3-5648-0b9812b4de47"><span class="fmt-caption-label"><semx element="autonum" source="_21d0ad19-3334-9c69-ec54-7cf682678699">2</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_96fce99f-ce1f-b184-eb60-fb7c71327943">Normative references</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_21d0ad19-3334-9c69-ec54-7cf682678699">2</semx></fmt-xref-label><p id="_5d68767b-3c2e-b2ee-db6d-6b8ca4c42620" semx-id="_5d68767b-3c2e-b2ee-db6d-6b8ca4c42620">The following referenced documents are indispensable for the application of this document. For dated references, only the edition cited applies. For undated references, the latest edition of the referenced document (including any amendments) applies.</p>
+<bibitem id="JCGM_100_2008" type="standard" schema-version="v1.5.6" anchor="JCGM_100_2008" semx-id="_8ef28a86-90c7-a650-06f6-8e7c688e5ab3"><biblio-tag>JCGM 100:2008 </biblio-tag><formattedref><em>Guide to the expression of uncertainty in measurement</em></formattedref>
+  <fetched>2026-06-16</fetched>
   
-<title format="text/plain" language="en" script="Latn">Guide to the expression of uncertainty in measurement</title>
+<title language="en" script="Latn">Guide to the expression of uncertainty in measurement</title>
 
-  <uri type="citation" language="en" script="Latn">https://www.bipm.org/documents/20126/2071204/JCGM_100_2008_E.pdf/cb0ef43f-baa5-11cf-3f85-4dcd86f77bd6</uri>
-  <uri type="citation" language="fr" script="Latn">https://www.bipm.org/documents/20126/2071204/JCGM_100_2008_F.pdf/53384399-1e6d-b598-dd17-2831a6b5b812</uri>
-  <docidentifier type="BIPM" primary="true" language="en" script="Latn">JCGM 100:2008</docidentifier>
-  <docidentifier type="BIPM" primary="true" language="fr" script="Latn">JCGM 100:2008</docidentifier>
+  
+<title language="fr" script="Latn">Guide pour l’expression de l’incertitude de mesure</title>
+
+  <uri language="en" script="Latn" type="citation">https://www.bipm.org/documents/20126/2071204/JCGM_100_2008_E.pdf/cb0ef43f-baa5-11cf-3f85-4dcd86f77bd6</uri>
+  <uri language="fr" script="Latn" type="citation">https://www.bipm.org/documents/20126/2071204/JCGM_100_2008_F.pdf/53384399-1e6d-b598-dd17-2831a6b5b812</uri>
+  <docidentifier language="en" script="Latn" type="BIPM" primary="true">JCGM 100:2008</docidentifier>
+  <docidentifier language="fr" script="Latn" type="BIPM" primary="true">JCGM 100:2008</docidentifier>
   <docidentifier type="BIPM" primary="true">JCGM 100:2008</docidentifier><docidentifier scope="biblio-tag">JCGM 100:2008</docidentifier>
   <docnumber>JCGM 100:2008</docnumber>
   <date type="published">
@@ -20061,7 +20052,10 @@ reduce these risks to <stem block="false" type="MathML" id="_7d238e89-3f85-a54c-
       
 <name language="en" script="Latn">International Bureau of Weights and Measures</name>
 
-      <abbreviation>BIPM</abbreviation>
+      
+<name language="fr" script="Latn">Bureau international des poids et mesures</name>
+
+      <abbreviation language="fr" script="Latn">BIPM</abbreviation>
       <uri>www.bipm.org</uri>
     </organization>
   </contributor>
@@ -20072,7 +20066,10 @@ reduce these risks to <stem block="false" type="MathML" id="_7d238e89-3f85-a54c-
       
 <name language="en" script="Latn">International Organization for Standardization</name>
 
-      <abbreviation>ISO</abbreviation>
+      
+<name language="fr" script="Latn">Organisation internationale de normalisation</name>
+
+      <abbreviation language="en" script="Latn">ISO</abbreviation>
       <uri>www.iso.org</uri>
     </organization>
   </contributor>
@@ -20083,7 +20080,10 @@ reduce these risks to <stem block="false" type="MathML" id="_7d238e89-3f85-a54c-
       
 <name language="en" script="Latn">International Electrotechnical Commission</name>
 
-      <abbreviation>IEC</abbreviation>
+      
+<name language="fr" script="Latn">Commission électrotechnique internationale</name>
+
+      <abbreviation language="en" script="Latn">IEC</abbreviation>
       <uri>www.iec.ch</uri>
     </organization>
   </contributor>
@@ -20093,7 +20093,10 @@ reduce these risks to <stem block="false" type="MathML" id="_7d238e89-3f85-a54c-
       
 <name language="en" script="Latn">International Organization of Legal Metrology</name>
 
-      <abbreviation>OIML</abbreviation>
+      
+<name language="fr" script="Latn">Organisation Internationale de Métrologie Légale</name>
+
+      <abbreviation language="fr" script="Latn">OIML</abbreviation>
       <uri>www.oiml.org</uri>
     </organization>
   </contributor>
@@ -20103,7 +20106,10 @@ reduce these risks to <stem block="false" type="MathML" id="_7d238e89-3f85-a54c-
       
 <name language="en" script="Latn">International Union of Pure and Applied Chemistry</name>
 
-      <abbreviation>IUPAC</abbreviation>
+      
+<name language="fr" script="Latn">Union internationale de chimie pure et appliquée</name>
+
+      <abbreviation language="en" script="Latn">IUPAC</abbreviation>
       <uri>www.iupac.org</uri>
     </organization>
   </contributor>
@@ -20113,7 +20119,10 @@ reduce these risks to <stem block="false" type="MathML" id="_7d238e89-3f85-a54c-
       
 <name language="en" script="Latn">International Union of Pure and Applied Physics</name>
 
-      <abbreviation>IUPAP</abbreviation>
+      
+<name language="fr" script="Latn">Union internationale de physique pure et appliquée</name>
+
+      <abbreviation language="en" script="Latn">IUPAP</abbreviation>
       <uri>www.iupap.org</uri>
     </organization>
   </contributor>
@@ -20123,7 +20132,10 @@ reduce these risks to <stem block="false" type="MathML" id="_7d238e89-3f85-a54c-
       
 <name language="en" script="Latn">International Federation of Clinical Chemistry and Laboratory Medicine</name>
 
-      <abbreviation>IFCC</abbreviation>
+      
+<name language="fr" script="Latn">Fédération internationale de chimie clinique et de biologie moléculaire</name>
+
+      <abbreviation language="en" script="Latn">IFCC</abbreviation>
       <uri>www.ifcc.org</uri>
     </organization>
   </contributor>
@@ -20133,8 +20145,31 @@ reduce these risks to <stem block="false" type="MathML" id="_7d238e89-3f85-a54c-
       
 <name language="en" script="Latn">International Laboratory Accreditation Cooperation</name>
 
-      <abbreviation>ILAC</abbreviation>
+      
+<name language="fr" script="Latn">Coopération internationale d’accréditation des laboratoires</name>
+
+      <abbreviation language="en" script="Latn">ILAC</abbreviation>
       <uri>www.ilac.org</uri>
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="author">
+      <description>committee</description>
+    </role>
+    <organization>
+      
+<name language="fr" script="Latn">Bureau international des poids et mesures</name>
+
+      <subdivision>
+        
+<name language="en" script="Latn">Joint Committee for Guides in Metrology</name>
+
+        
+<name language="fr" script="Latn">Comité commun pour les guides en métrologie</name>
+
+        <abbreviation>JCGM</abbreviation>
+      </subdivision>
+      <abbreviation language="fr" script="Latn">BIPM</abbreviation>
     </organization>
   </contributor>
   <edition>1</edition>
@@ -20145,14 +20180,17 @@ reduce these risks to <stem block="false" type="MathML" id="_7d238e89-3f85-a54c-
     <city>Paris</city>
   </place>
 </bibitem>
-<bibitem id="JCGM_101_2008" type="standard" schema-version="v1.2.9" anchor="JCGM_101_2008" semx-id="_3ba43693-ee13-21b4-d728-aa2fbe50c594"><biblio-tag>JCGM 101:2008 </biblio-tag><formattedref><em>Supplement 1 to the “Guide to the expression of uncertainty in measurement” — Propagation of distributions using a Monte Carlo method</em></formattedref>
-  <fetched>2026-04-16</fetched>
+<bibitem id="JCGM_101_2008" type="standard" schema-version="v1.5.6" anchor="JCGM_101_2008" semx-id="_6d11700b-7f6e-11af-fd88-e6d49340e5ea"><biblio-tag>JCGM 101:2008 </biblio-tag><formattedref><em>Supplement 1 to the “Guide to the expression of uncertainty in measurement” — Propagation of distributions using a Monte Carlo method</em></formattedref>
+  <fetched>2026-06-16</fetched>
   
-<title format="text/plain" language="en" script="Latn">Supplement 1 to the “Guide to the expression of uncertainty in measurement” — Propagation of distributions using a Monte Carlo method</title>
+<title language="en" script="Latn">Supplement 1 to the “Guide to the expression of uncertainty in measurement” — Propagation of distributions using a Monte Carlo method</title>
 
-  <uri type="citation" language="en" script="Latn">https://www.bipm.org/documents/20126/2071204/JCGM_101_2008_E.pdf/325dcaad-c15a-407c-1105-8b7f322d651c</uri>
-  <docidentifier type="BIPM" primary="true" language="en" script="Latn">JCGM 101:2008</docidentifier>
-  <docidentifier type="BIPM" primary="true" language="fr" script="Latn">JCGM 101:2008</docidentifier>
+  
+<title language="fr" script="Latn">Supplément 1 du “Guide pour l’expression de l’incertitude de mesure” — Propagation de distributions par une méthode de Monte Carlo</title>
+
+  <uri language="en" script="Latn" type="citation">https://www.bipm.org/documents/20126/2071204/JCGM_101_2008_E.pdf/325dcaad-c15a-407c-1105-8b7f322d651c</uri>
+  <docidentifier language="en" script="Latn" type="BIPM" primary="true">JCGM 101:2008</docidentifier>
+  <docidentifier language="fr" script="Latn" type="BIPM" primary="true">JCGM 101:2008</docidentifier>
   <docidentifier type="BIPM" primary="true">JCGM 101:2008</docidentifier><docidentifier scope="biblio-tag">JCGM 101:2008</docidentifier>
   <docnumber>JCGM 101:2008</docnumber>
   <date type="published">
@@ -20164,7 +20202,10 @@ reduce these risks to <stem block="false" type="MathML" id="_7d238e89-3f85-a54c-
       
 <name language="en" script="Latn">International Bureau of Weights and Measures</name>
 
-      <abbreviation>BIPM</abbreviation>
+      
+<name language="fr" script="Latn">Bureau international des poids et mesures</name>
+
+      <abbreviation language="fr" script="Latn">BIPM</abbreviation>
       <uri>www.bipm.org</uri>
     </organization>
   </contributor>
@@ -20175,7 +20216,10 @@ reduce these risks to <stem block="false" type="MathML" id="_7d238e89-3f85-a54c-
       
 <name language="en" script="Latn">International Organization for Standardization</name>
 
-      <abbreviation>ISO</abbreviation>
+      
+<name language="fr" script="Latn">Organisation internationale de normalisation</name>
+
+      <abbreviation language="en" script="Latn">ISO</abbreviation>
       <uri>www.iso.org</uri>
     </organization>
   </contributor>
@@ -20186,7 +20230,10 @@ reduce these risks to <stem block="false" type="MathML" id="_7d238e89-3f85-a54c-
       
 <name language="en" script="Latn">International Electrotechnical Commission</name>
 
-      <abbreviation>IEC</abbreviation>
+      
+<name language="fr" script="Latn">Commission électrotechnique internationale</name>
+
+      <abbreviation language="en">IEC</abbreviation>
       <uri>www.iec.ch</uri>
     </organization>
   </contributor>
@@ -20196,7 +20243,10 @@ reduce these risks to <stem block="false" type="MathML" id="_7d238e89-3f85-a54c-
       
 <name language="en" script="Latn">International Organization of Legal Metrology</name>
 
-      <abbreviation>OIML</abbreviation>
+      
+<name language="fr" script="Latn">Organisation internationale de métrologie légale</name>
+
+      <abbreviation language="fr" script="Latn">OIML</abbreviation>
       <uri>www.oiml.org</uri>
     </organization>
   </contributor>
@@ -20206,7 +20256,10 @@ reduce these risks to <stem block="false" type="MathML" id="_7d238e89-3f85-a54c-
       
 <name language="en" script="Latn">International Union of Pure and Applied Chemistry</name>
 
-      <abbreviation>IUPAC</abbreviation>
+      
+<name language="fr" script="Latn">Union internationale de chimie pure et appliquée</name>
+
+      <abbreviation language="en" script="Latn">IUPAC</abbreviation>
       <uri>www.iupac.org</uri>
     </organization>
   </contributor>
@@ -20216,7 +20269,10 @@ reduce these risks to <stem block="false" type="MathML" id="_7d238e89-3f85-a54c-
       
 <name language="en" script="Latn">International Union of Pure and Applied Physics</name>
 
-      <abbreviation>IUPAP</abbreviation>
+      
+<name language="fr" script="Latn">Union internationale de physique pure et appliquée</name>
+
+      <abbreviation language="en" script="Latn">IUPAP</abbreviation>
       <uri>www.iupap.org</uri>
     </organization>
   </contributor>
@@ -20226,7 +20282,10 @@ reduce these risks to <stem block="false" type="MathML" id="_7d238e89-3f85-a54c-
       
 <name language="en" script="Latn">International Federation of Clinical Chemistry and Laboratory Medicine</name>
 
-      <abbreviation>IFCC</abbreviation>
+      
+<name language="fr" script="Latn">Fédération internationale de chimie clinique et de biologie moléculaire</name>
+
+      <abbreviation language="en" script="Latn">IFCC</abbreviation>
       <uri>www.ifcc.org</uri>
     </organization>
   </contributor>
@@ -20236,8 +20295,31 @@ reduce these risks to <stem block="false" type="MathML" id="_7d238e89-3f85-a54c-
       
 <name language="en" script="Latn">International Laboratory Accreditation Cooperation</name>
 
-      <abbreviation>ILAC</abbreviation>
+      
+<name language="fr" script="Latn">Coopération internationale d’accréditation des laboratoires</name>
+
+      <abbreviation language="en" script="Latn">ILAC</abbreviation>
       <uri>www.ilac.org</uri>
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="author">
+      <description>committee</description>
+    </role>
+    <organization>
+      
+<name language="fr" script="Latn">Bureau international des poids et mesures</name>
+
+      <subdivision>
+        
+<name language="en" script="Latn">Joint Committee for Guides in Metrology</name>
+
+        
+<name language="fr" script="Latn">Comité commun pour les Guides en métrologie</name>
+
+        <abbreviation>JCGM</abbreviation>
+      </subdivision>
+      <abbreviation language="fr" script="Latn">BIPM</abbreviation>
     </organization>
   </contributor>
   <edition>1</edition>
@@ -20248,14 +20330,17 @@ reduce these risks to <stem block="false" type="MathML" id="_7d238e89-3f85-a54c-
     <city>Paris</city>
   </place>
 </bibitem>
-<bibitem id="JCGM_102_2011" type="standard" schema-version="v1.2.9" anchor="JCGM_102_2011" semx-id="_d031f9db-2d06-3207-d4a6-5541826a6b25"><biblio-tag>JCGM 102:2011 </biblio-tag><formattedref><em>Supplement 2 to the “Guide to the expression of uncertainty in measurement” – Extension to any number of output quantities</em></formattedref>
-  <fetched>2026-04-16</fetched>
+<bibitem id="JCGM_102_2011" type="standard" schema-version="v1.5.6" anchor="JCGM_102_2011" semx-id="_9d8a27d1-ec32-62c4-8503-d5388546242e"><biblio-tag>JCGM 102:2011 </biblio-tag><formattedref><em>Supplement 2 to the “Guide to the expression of uncertainty in measurement” – Extension to any number of output quantities</em></formattedref>
+  <fetched>2026-06-16</fetched>
   
-<title format="text/plain" language="en" script="Latn">Supplement 2 to the “Guide to the expression of uncertainty in measurement” – Extension to any number of output quantities</title>
+<title language="en" script="Latn">Supplement 2 to the “Guide to the expression of uncertainty in measurement” – Extension to any number of output quantities</title>
 
-  <uri type="citation" language="en" script="Latn">https://www.bipm.org/documents/20126/2071204/JCGM_102_2011_E.pdf/6a3281aa-1397-d703-d7a1-a8d58c9bf2a5</uri>
-  <docidentifier type="BIPM" primary="true" language="en" script="Latn">JCGM 102:2011</docidentifier>
-  <docidentifier type="BIPM" primary="true" language="fr" script="Latn">JCGM 102:2011</docidentifier>
+  
+<title language="fr" script="Latn">Supplément 2 du “Guide pour l’expression de l’incertitude de mesure” — Extension à un nombre quelconque de grandeurs de sortie</title>
+
+  <uri language="en" script="Latn" type="citation">https://www.bipm.org/documents/20126/2071204/JCGM_102_2011_E.pdf/6a3281aa-1397-d703-d7a1-a8d58c9bf2a5</uri>
+  <docidentifier language="en" script="Latn" type="BIPM" primary="true">JCGM 102:2011</docidentifier>
+  <docidentifier language="fr" script="Latn" type="BIPM" primary="true">JCGM 102:2011</docidentifier>
   <docidentifier type="BIPM" primary="true">JCGM 102:2011</docidentifier><docidentifier scope="biblio-tag">JCGM 102:2011</docidentifier>
   <docnumber>JCGM 102:2011</docnumber>
   <date type="published">
@@ -20267,7 +20352,10 @@ reduce these risks to <stem block="false" type="MathML" id="_7d238e89-3f85-a54c-
       
 <name language="en" script="Latn">International Bureau of Weights and Measures</name>
 
-      <abbreviation>BIPM</abbreviation>
+      
+<name language="fr" script="Latn">Bureau international des poids et mesures</name>
+
+      <abbreviation language="fr" script="Latn">BIPM</abbreviation>
       <uri>www.bipm.org</uri>
     </organization>
   </contributor>
@@ -20277,7 +20365,10 @@ reduce these risks to <stem block="false" type="MathML" id="_7d238e89-3f85-a54c-
       
 <name language="en" script="Latn">International Organization for Standardization</name>
 
-      <abbreviation>ISO</abbreviation>
+      
+<name language="fr" script="Latn">Organisation internationale de normalisation</name>
+
+      <abbreviation language="en" script="Latn">ISO</abbreviation>
       <uri>www.iso.org</uri>
     </organization>
   </contributor>
@@ -20288,7 +20379,10 @@ reduce these risks to <stem block="false" type="MathML" id="_7d238e89-3f85-a54c-
       
 <name language="en" script="Latn">International Organization for Standardization</name>
 
-      <abbreviation>ISO</abbreviation>
+      
+<name language="fr" script="Latn">Organisation internationale de normalisation</name>
+
+      <abbreviation language="en" script="Latn">ISO</abbreviation>
       <uri>www.iso.org</uri>
     </organization>
   </contributor>
@@ -20299,7 +20393,10 @@ reduce these risks to <stem block="false" type="MathML" id="_7d238e89-3f85-a54c-
       
 <name language="en" script="Latn">International Electrotechnical Commission</name>
 
-      <abbreviation>IEC</abbreviation>
+      
+<name language="fr" script="Latn">Commission électrotechnique internationale</name>
+
+      <abbreviation language="en" script="Latn">IEC</abbreviation>
       <uri>www.iec.ch</uri>
     </organization>
   </contributor>
@@ -20309,7 +20406,10 @@ reduce these risks to <stem block="false" type="MathML" id="_7d238e89-3f85-a54c-
       
 <name language="en" script="Latn">International Organization of Legal Metrology</name>
 
-      <abbreviation>OIML</abbreviation>
+      
+<name language="fr" script="Latn">Organisation Internationale de Métrologie Légale</name>
+
+      <abbreviation language="fr" script="Latn">OIML</abbreviation>
       <uri>www.oiml.org</uri>
     </organization>
   </contributor>
@@ -20319,7 +20419,10 @@ reduce these risks to <stem block="false" type="MathML" id="_7d238e89-3f85-a54c-
       
 <name language="en" script="Latn">International Union of Pure and Applied Chemistry</name>
 
-      <abbreviation>IUPAC</abbreviation>
+      
+<name language="fr" script="Latn">Union internationale de chimie pure et appliquée</name>
+
+      <abbreviation language="en" script="Latn">IUPAC</abbreviation>
       <uri>www.iupac.org</uri>
     </organization>
   </contributor>
@@ -20329,7 +20432,10 @@ reduce these risks to <stem block="false" type="MathML" id="_7d238e89-3f85-a54c-
       
 <name language="en" script="Latn">International Union of Pure and Applied Physics</name>
 
-      <abbreviation>IUPAP</abbreviation>
+      
+<name language="fr" script="Latn">Union internationale de physique pure et appliquée</name>
+
+      <abbreviation language="en" script="Latn">IUPAP</abbreviation>
       <uri>www.iupap.org</uri>
     </organization>
   </contributor>
@@ -20339,7 +20445,10 @@ reduce these risks to <stem block="false" type="MathML" id="_7d238e89-3f85-a54c-
       
 <name language="en" script="Latn">International Federation of Clinical Chemistry and Laboratory Medicine</name>
 
-      <abbreviation>IFCC</abbreviation>
+      
+<name language="fr" script="Latn">Fédération internationale de chimie clinique et de biologie moléculaire</name>
+
+      <abbreviation language="en" script="Latn">IFCC</abbreviation>
       <uri>www.ifcc.org</uri>
     </organization>
   </contributor>
@@ -20349,8 +20458,31 @@ reduce these risks to <stem block="false" type="MathML" id="_7d238e89-3f85-a54c-
       
 <name language="en" script="Latn">International Laboratory Accreditation Cooperation</name>
 
-      <abbreviation>ILAC</abbreviation>
+      
+<name language="fr" script="Latn">Coopération internationale d’accréditation des laboratoires</name>
+
+      <abbreviation language="en" script="Latn">ILAC</abbreviation>
       <uri>www.ilac.org</uri>
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="author">
+      <description>committee</description>
+    </role>
+    <organization>
+      
+<name language="fr" script="Latn">Bureau international des poids et mesures</name>
+
+      <subdivision>
+        
+<name language="en" script="Latn">Joint Committee for Guides in Metrology</name>
+
+        
+<name language="fr" script="Latn">Comité commun pour les guides en métrologie</name>
+
+        <abbreviation>JCGM</abbreviation>
+      </subdivision>
+      <abbreviation language="fr" script="Latn">BIPM</abbreviation>
     </organization>
   </contributor>
   <language>en</language>
@@ -20360,14 +20492,17 @@ reduce these risks to <stem block="false" type="MathML" id="_7d238e89-3f85-a54c-
     <city>Paris</city>
   </place>
 </bibitem>
-<bibitem id="JCGM_200_2012" type="standard" schema-version="v1.2.9" anchor="JCGM_200_2012" semx-id="_dcdecba9-81ff-bde3-23a6-90ff746634a1"><biblio-tag>JCGM 200:2012 </biblio-tag><formattedref><em>International vocabulary of metrology – Basic and general concepts and associated terms (VIM)</em></formattedref>
-  <fetched>2026-04-16</fetched>
+<bibitem id="JCGM_200_2012" type="standard" schema-version="v1.5.6" anchor="JCGM_200_2012" semx-id="_04b7ab59-dcd2-e9c5-7e48-83f25ae9d988"><biblio-tag>JCGM 200:2012 </biblio-tag><formattedref><em>International vocabulary of metrology – Basic and general concepts and associated terms (VIM)</em></formattedref>
+  <fetched>2026-06-16</fetched>
   
-<title format="text/plain" language="en" script="Latn">International vocabulary of metrology – Basic and general concepts and associated terms (VIM)</title>
+<title language="en" script="Latn">International vocabulary of metrology – Basic and general concepts and associated terms (VIM)</title>
 
-  <uri type="citation" language="en" script="Latn">https://www.bipm.org/documents/20126/2071204/JCGM_200_2012.pdf/f0e1ad45-d337-bbeb-53a6-15fe649d0ff1</uri>
-  <docidentifier type="BIPM" primary="true" language="en" script="Latn">JCGM 200:2012</docidentifier>
-  <docidentifier type="BIPM" primary="true" language="fr" script="Latn">JCGM 200:2012</docidentifier>
+  
+<title language="fr" script="Latn">Vocabulaire international de métrologie – Concepts fondamentaux et généraux et termes associés (VIM)</title>
+
+  <uri language="en" script="Latn" type="citation">https://www.bipm.org/documents/20126/2071204/JCGM_200_2012.pdf/f0e1ad45-d337-bbeb-53a6-15fe649d0ff1</uri>
+  <docidentifier language="en" script="Latn" type="BIPM" primary="true">JCGM 200:2012</docidentifier>
+  <docidentifier language="fr" script="Latn" type="BIPM" primary="true">JCGM 200:2012</docidentifier>
   <docidentifier type="BIPM" primary="true">JCGM 200:2012</docidentifier><docidentifier scope="biblio-tag">JCGM 200:2012</docidentifier>
   <docnumber>JCGM 200:2012</docnumber>
   <date type="published">
@@ -20379,7 +20514,10 @@ reduce these risks to <stem block="false" type="MathML" id="_7d238e89-3f85-a54c-
       
 <name language="en" script="Latn">International Bureau of Weights and Measures</name>
 
-      <abbreviation>BIPM</abbreviation>
+      
+<name language="fr" script="Latn">Bureau international des poids et mesures</name>
+
+      <abbreviation language="fr" script="Latn">BIPM</abbreviation>
       <uri>www.bipm.org</uri>
     </organization>
   </contributor>
@@ -20389,7 +20527,10 @@ reduce these risks to <stem block="false" type="MathML" id="_7d238e89-3f85-a54c-
       
 <name language="en" script="Latn">International Organization for Standardization</name>
 
-      <abbreviation>ISO</abbreviation>
+      
+<name language="fr" script="Latn">Organisation internationale de normalisation</name>
+
+      <abbreviation language="en" script="Latn">ISO</abbreviation>
       <uri>www.iso.org</uri>
     </organization>
   </contributor>
@@ -20400,7 +20541,10 @@ reduce these risks to <stem block="false" type="MathML" id="_7d238e89-3f85-a54c-
       
 <name language="en" script="Latn">International Organization for Standardization</name>
 
-      <abbreviation>ISO</abbreviation>
+      
+<name language="fr" script="Latn">Organisation internationale de normalisation</name>
+
+      <abbreviation language="en" script="Latn">ISO</abbreviation>
       <uri>www.iso.org</uri>
     </organization>
   </contributor>
@@ -20411,7 +20555,10 @@ reduce these risks to <stem block="false" type="MathML" id="_7d238e89-3f85-a54c-
       
 <name language="en" script="Latn">International Electrotechnical Commission</name>
 
-      <abbreviation>IEC</abbreviation>
+      
+<name language="fr" script="Latn">Commission électrotechnique internationale</name>
+
+      <abbreviation language="en" script="Latn">IEC</abbreviation>
       <uri>www.iec.ch</uri>
     </organization>
   </contributor>
@@ -20421,7 +20568,10 @@ reduce these risks to <stem block="false" type="MathML" id="_7d238e89-3f85-a54c-
       
 <name language="en" script="Latn">International Organization of Legal Metrology</name>
 
-      <abbreviation>OIML</abbreviation>
+      
+<name language="fr" script="Latn">Organisation Internationale de Métrologie Légale</name>
+
+      <abbreviation language="fr" script="Latn">OIML</abbreviation>
       <uri>www.oiml.org</uri>
     </organization>
   </contributor>
@@ -20431,7 +20581,10 @@ reduce these risks to <stem block="false" type="MathML" id="_7d238e89-3f85-a54c-
       
 <name language="en" script="Latn">International Union of Pure and Applied Chemistry</name>
 
-      <abbreviation>IUPAC</abbreviation>
+      
+<name language="fr" script="Latn">Union internationale de chimie pure et appliquée</name>
+
+      <abbreviation language="en" script="Latn">IUPAC</abbreviation>
       <uri>www.iupac.org</uri>
     </organization>
   </contributor>
@@ -20441,7 +20594,10 @@ reduce these risks to <stem block="false" type="MathML" id="_7d238e89-3f85-a54c-
       
 <name language="en" script="Latn">International Union of Pure and Applied Physics</name>
 
-      <abbreviation>IUPAP</abbreviation>
+      
+<name language="fr" script="Latn">Union internationale de physique pure et appliquée</name>
+
+      <abbreviation language="en" script="Latn">IUPAP</abbreviation>
       <uri>www.iupap.org</uri>
     </organization>
   </contributor>
@@ -20451,7 +20607,10 @@ reduce these risks to <stem block="false" type="MathML" id="_7d238e89-3f85-a54c-
       
 <name language="en" script="Latn">International Federation of Clinical Chemistry and Laboratory Medicine</name>
 
-      <abbreviation>IFCC</abbreviation>
+      
+<name language="fr" script="Latn">Fédération internationale de chimie clinique et de biologie moléculaire</name>
+
+      <abbreviation language="en" script="Latn">IFCC</abbreviation>
       <uri>www.ifcc.org</uri>
     </organization>
   </contributor>
@@ -20461,8 +20620,31 @@ reduce these risks to <stem block="false" type="MathML" id="_7d238e89-3f85-a54c-
       
 <name language="en" script="Latn">International Laboratory Accreditation Cooperation</name>
 
-      <abbreviation>ILAC</abbreviation>
+      
+<name language="fr" script="Latn">Coopération internationale d’accréditation des laboratoires</name>
+
+      <abbreviation language="en" script="Latn">ILAC</abbreviation>
       <uri>www.ilac.org</uri>
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="author">
+      <description>committee</description>
+    </role>
+    <organization>
+      
+<name language="fr" script="Latn">Bureau international des poids et mesures</name>
+
+      <subdivision>
+        
+<name language="en" script="Latn">Joint Committee for Guides in Metrology</name>
+
+        
+<name language="fr" script="Latn">Comité commun pour les guides en métrologie</name>
+
+        <abbreviation>JCGM</abbreviation>
+      </subdivision>
+      <abbreviation language="fr" script="Latn">BIPM</abbreviation>
     </organization>
   </contributor>
   <edition>3</edition>
@@ -20473,25 +20655,35 @@ reduce these risks to <stem block="false" type="MathML" id="_7d238e89-3f85-a54c-
     <city>Paris</city>
   </place>
 </bibitem>
-<bibitem id="ISO_IEC_17000_2004" type="standard" schema-version="v1.2.9" anchor="ISO_IEC_17000_2004" semx-id="_26e0a855-ed99-d4e3-e763-2a7742571a48"><biblio-tag>ISO/IEC 17000:2004 </biblio-tag><formattedref><em>Conformity assessment — Vocabulary and general principles</em></formattedref>
-  <fetched>2026-04-16</fetched>
+<bibitem id="ISO_IEC_17000_2004" type="standard" schema-version="v1.5.6" anchor="ISO_IEC_17000_2004" semx-id="_0b2137b4-2cf4-7807-fbd6-209591ecdf0f"><biblio-tag>ISO/IEC 17000:2004 </biblio-tag><formattedref><em>Conformity assessment — Vocabulary and general principles</em></formattedref>
+  <fetched>2026-06-16</fetched>
   
-<title type="title-intro" format="text/plain" language="en" script="Latn">Conformity assessment</title>
+<title language="en" script="Latn" type="title-intro">Conformity assessment</title>
 
   
-<title type="title-main" format="text/plain" language="en" script="Latn">Vocabulary and general principles</title>
+<title language="en" script="Latn" type="title-main">Vocabulary and general principles</title>
 
   
-<title type="main" format="text/plain" language="en" script="Latn">Conformity assessment — Vocabulary and general principles</title>
+<title language="en" script="Latn" type="main">Conformity assessment — Vocabulary and general principles</title>
+
+  
+<title language="fr" script="Latn" type="title-intro">Évaluation de la conformité</title>
+
+  
+<title language="fr" script="Latn" type="title-main">Vocabulaire et principes généraux</title>
+
+  
+<title language="fr" script="Latn" type="main">Évaluation de la conformité — Vocabulaire et principes généraux</title>
 
   <uri type="src">https://www.iso.org/standard/29316.html</uri>
+  <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:29316:en</uri>
   <uri type="rss">https://www.iso.org/contents/data/standard/02/93/29316.detail.rss</uri>
   <docidentifier type="ISO" primary="true">ISO/IEC 17000:2004</docidentifier>
   <docidentifier type="iso-reference">iso-reference ISO/IEC 17000:2004(E)</docidentifier>
   <docidentifier type="URN">URN urn:iso:std:iso-iec:17000:stage-95.99</docidentifier><docidentifier scope="biblio-tag">ISO/IEC 17000:2004</docidentifier>
   <docnumber>17000</docnumber>
   <date type="published">
-    <on>2004-11</on>
+    <on>2004-11-03</on>
   </date>
   <contributor>
     <role type="publisher"/>
@@ -20513,12 +20705,32 @@ reduce these risks to <stem block="false" type="MathML" id="_7d238e89-3f85-a54c-
       <uri>www.iec.ch</uri>
     </organization>
   </contributor>
+  <contributor>
+    <role type="author">
+      <description>committee</description>
+    </role>
+    <organization>
+      
+<name>International Organization for Standardization</name>
+
+      <subdivision type="technical-committee" subtype="CASCO">
+        
+<name>ISO/CASCO</name>
+
+        <identifier id="_5b992df9-cb16-b4b0-c5ce-3aa527816c84">ISO/CASCO</identifier><fmt-identifier><tt><semx element="identifier" source="_5b992df9-cb16-b4b0-c5ce-3aa527816c84">ISO/CASCO</semx></tt></fmt-identifier>
+      </subdivision>
+      <abbreviation>ISO</abbreviation>
+    </organization>
+  </contributor>
   <edition>1</edition>
+  <language>ar</language>
   <language>en</language>
+  <language>es</language>
   <language>fr</language>
+  <language>ru</language>
   <script>Latn</script>
-  <abstract format="text/plain" language="en" script="Latn">ISO/IEC 17000:2004 specifies general terms and definitions relating to conformity assessment, including the accreditation of conformity assessment bodies, and to the use of conformity assessment to facilitate trade. A description of the functional approach to conformity assessment is included as a further aid to understanding among users of conformity assessment, conformity assessment bodies and their accreditation bodies, in both voluntary and regulatory environments.
-ISO/IEC 17000:2004 does not set out to provide a vocabulary for all of the concepts that may need to be used in describing particular conformity assessment activities. Terms and definitions are given only where the concept defined would not be understandable from the general language use of the term or where an existing standard definition is not applicable.</abstract>
+  <script>Cyrl</script>
+  <abstract language="en" script="Latn">ISO/IEC 17000:2004 specifies general terms and definitions relating to conformity assessment, including the accreditation of conformity assessment bodies, and to the use of conformity assessment to facilitate trade. A description of the functional approach to conformity assessment is included as a further aid to understanding among users of conformity assessment, conformity assessment bodies and their accreditation bodies, in both voluntary and regulatory environments. ISO/IEC 17000:2004 does not set out to provide a vocabulary for all of the concepts that may need to be used in describing particular conformity assessment activities. Terms and definitions are given only where the concept defined would not be understandable from the general language use of the term or where an existing standard definition is not applicable.</abstract>
   <status>
     <stage>95</stage>
     <substage>99</substage>
@@ -20533,13 +20745,10 @@ ISO/IEC 17000:2004 does not set out to provide a vocabulary for all of the conce
       </organization>
     </owner>
   </copyright>
-  <relation type="updates">
-    <bibitem type="standard">
-      <formattedref format="text/plain">ISO/IEC 17000:2020</formattedref>
-      <docidentifier type="ISO" primary="true">ISO/IEC 17000:2020</docidentifier>
-      <date type="circulated">
-        <on>2020-05-26</on>
-      </date>
+  <relation type="obsoletedBy">
+    <bibitem>
+      <formattedref>ISO/IEC NP 17000-1</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/IEC NP 17000-1</docidentifier>
     </bibitem>
 
   </relation>
@@ -20547,32 +20756,41 @@ ISO/IEC 17000:2004 does not set out to provide a vocabulary for all of the conce
     <city>Geneva</city>
   </place>
 </bibitem>
-<bibitem id="ISO_3534_1_2006" type="standard" schema-version="v1.2.9" anchor="ISO_3534_1_2006" semx-id="_82cc4d51-3caa-c61f-1cfd-a37bca528385"><biblio-tag>ISO 3534-1:2006 </biblio-tag><formattedref><em>Statistics — Vocabulary and symbols — Part 1: General statistical terms and terms used in probability</em></formattedref>
-  <fetched>2026-04-16</fetched>
+<bibitem id="ISO_3534_1_2006" type="standard" schema-version="v1.5.6" anchor="ISO_3534_1_2006" semx-id="_20b43196-e24c-8ad1-2bb3-a3a9aa8014cd"><biblio-tag>ISO 3534-1:2006 </biblio-tag><formattedref><em>Statistics — Vocabulary and symbols — Part 1: General statistical terms and terms used in probability</em></formattedref>
+  <fetched>2026-06-16</fetched>
   
-<title type="title-intro" format="text/plain" language="en" script="Latn">Statistics</title>
+<title language="en" script="Latn" type="title-intro">Statistics</title>
 
   
-<title type="title-main" format="text/plain" language="en" script="Latn">Vocabulary and symbols</title>
+<title language="en" script="Latn" type="title-main">Vocabulary and symbols</title>
 
   
-<title type="title-part" format="text/plain" language="en" script="Latn">Part 1: General statistical terms and terms used in probability</title>
+<title language="en" script="Latn" type="title-part">Part 1: General statistical terms and terms used in probability</title>
 
   
-<title type="main" format="text/plain" language="en" script="Latn">Statistics — Vocabulary and symbols — Part 1: General statistical terms and terms used in probability</title>
+<title language="en" script="Latn" type="main">Statistics — Vocabulary and symbols — Part 1: General statistical terms and terms used in probability</title>
+
+  
+<title language="fr" script="Latn" type="title-intro">Statistique</title>
+
+  
+<title language="fr" script="Latn" type="title-main">Vocabulaire et symboles</title>
+
+  
+<title language="fr" script="Latn" type="title-part">Partie 1: Termes statistiques généraux et termes utilisés en calcul des probabilités</title>
+
+  
+<title language="fr" script="Latn" type="main">Statistique — Vocabulaire et symboles — Partie 1: Termes statistiques généraux et termes utilisés en calcul des probabilités</title>
 
   <uri type="src">https://www.iso.org/standard/40145.html</uri>
   <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:40145:en</uri>
   <uri type="rss">https://www.iso.org/contents/data/standard/04/01/40145.detail.rss</uri>
   <docidentifier type="ISO" primary="true">ISO 3534-1:2006</docidentifier>
   <docidentifier type="iso-reference">iso-reference ISO 3534-1:2006(E)</docidentifier>
-  <docidentifier type="URN">URN urn:iso:std:iso:3534:-1:stage-90.60</docidentifier><docidentifier scope="biblio-tag">ISO 3534-1:2006</docidentifier>
+  <docidentifier type="URN">URN urn:iso:std:iso:3534:-1</docidentifier><docidentifier scope="biblio-tag">ISO 3534-1:2006</docidentifier>
   <docnumber>3534</docnumber>
   <date type="published">
-    <on>2006-10</on>
-  </date>
-  <date type="corrected">
-    <on>2007-09</on>
+    <on>2006-10-20</on>
   </date>
   <contributor>
     <role type="publisher"/>
@@ -20584,11 +20802,28 @@ ISO/IEC 17000:2004 does not set out to provide a vocabulary for all of the conce
       <uri>www.iso.org</uri>
     </organization>
   </contributor>
+  <contributor>
+    <role type="author">
+      <description>committee</description>
+    </role>
+    <organization>
+      
+<name>International Organization for Standardization</name>
+
+      <subdivision type="technical-committee" subtype="TC">
+        
+<name>Applications of statistical methods</name>
+
+        <identifier id="_30e0cf12-16b3-a8be-bf01-696f6b71fa72">ISO/TC 69</identifier><fmt-identifier><tt><semx element="identifier" source="_30e0cf12-16b3-a8be-bf01-696f6b71fa72">ISO/TC 69</semx></tt></fmt-identifier>
+      </subdivision>
+      <abbreviation>ISO</abbreviation>
+    </organization>
+  </contributor>
   <edition>2</edition>
   <language>en</language>
   <language>fr</language>
   <script>Latn</script>
-  <abstract format="text/plain" language="en" script="Latn">ISO 3534-1:2006 defines general statistical terms and terms used in probability which may be used in the drafting of other International Standards. In addition, it defines symbols for a limited number of these terms.</abstract>
+  <abstract language="en" script="Latn">ISO 3534-1:2006 defines general statistical terms and terms used in probability which may be used in the drafting of other International Standards. In addition, it defines symbols for a limited number of these terms.</abstract>
   <status>
     <stage>90</stage>
     <substage>60</substage>
@@ -20604,9 +20839,26 @@ ISO/IEC 17000:2004 does not set out to provide a vocabulary for all of the conce
     </owner>
   </copyright>
   <relation type="obsoletes">
-    <bibitem type="standard">
-      <formattedref format="text/plain">ISO 3534-1:1993</formattedref>
+    <bibitem>
+      <formattedref>ISO 3534-1:1993</formattedref>
       <docidentifier type="ISO" primary="true">ISO 3534-1:1993</docidentifier>
+      <date type="published">
+        <on>1993-06-03</on>
+      </date>
+    </bibitem>
+
+  </relation>
+  <relation type="obsoletedBy">
+    <bibitem>
+      <formattedref>ISO/NP 3534-1</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/NP 3534-1</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="obsoletedBy">
+    <bibitem>
+      <formattedref>ISO/PWI 3534-1</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/PWI 3534-1</docidentifier>
     </bibitem>
 
   </relation>
@@ -20614,29 +20866,41 @@ ISO/IEC 17000:2004 does not set out to provide a vocabulary for all of the conce
     <city>Geneva</city>
   </place>
 </bibitem>
-<bibitem id="ISO_3534_2_2006" type="standard" schema-version="v1.2.9" anchor="ISO_3534_2_2006" semx-id="_24038b93-0d5b-affd-4842-e0356ea93ff4"><biblio-tag>ISO 3534-2:2006 </biblio-tag><formattedref><em>Statistics — Vocabulary and symbols — Part 2: Applied statistics</em></formattedref>
-  <fetched>2026-04-16</fetched>
+<bibitem id="ISO_3534_2_2006" type="standard" schema-version="v1.5.6" anchor="ISO_3534_2_2006" semx-id="_5d8ea079-f225-37d2-f94f-fdeb0da0ad14"><biblio-tag>ISO 3534-2:2006 </biblio-tag><formattedref><em>Statistics — Vocabulary and symbols — Part 2: Applied statistics</em></formattedref>
+  <fetched>2026-06-16</fetched>
   
-<title type="title-intro" format="text/plain" language="en" script="Latn">Statistics</title>
+<title language="en" script="Latn" type="title-intro">Statistics</title>
 
   
-<title type="title-main" format="text/plain" language="en" script="Latn">Vocabulary and symbols</title>
+<title language="en" script="Latn" type="title-main">Vocabulary and symbols</title>
 
   
-<title type="title-part" format="text/plain" language="en" script="Latn">Part 2: Applied statistics</title>
+<title language="en" script="Latn" type="title-part">Part 2: Applied statistics</title>
 
   
-<title type="main" format="text/plain" language="en" script="Latn">Statistics — Vocabulary and symbols — Part 2: Applied statistics</title>
+<title language="en" script="Latn" type="main">Statistics — Vocabulary and symbols — Part 2: Applied statistics</title>
+
+  
+<title language="fr" script="Latn" type="title-intro">Statistique</title>
+
+  
+<title language="fr" script="Latn" type="title-main">Vocabulaire et symboles</title>
+
+  
+<title language="fr" script="Latn" type="title-part">Partie 2: Statistique appliquée</title>
+
+  
+<title language="fr" script="Latn" type="main">Statistique — Vocabulaire et symboles — Partie 2: Statistique appliquée</title>
 
   <uri type="src">https://www.iso.org/standard/40147.html</uri>
   <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:40147:en</uri>
   <uri type="rss">https://www.iso.org/contents/data/standard/04/01/40147.detail.rss</uri>
   <docidentifier type="ISO" primary="true">ISO 3534-2:2006</docidentifier>
   <docidentifier type="iso-reference">iso-reference ISO 3534-2:2006(E)</docidentifier>
-  <docidentifier type="URN">URN urn:iso:std:iso:3534:-2:stage-90.60</docidentifier><docidentifier scope="biblio-tag">ISO 3534-2:2006</docidentifier>
+  <docidentifier type="URN">URN urn:iso:std:iso:3534:-2</docidentifier><docidentifier scope="biblio-tag">ISO 3534-2:2006</docidentifier>
   <docnumber>3534</docnumber>
   <date type="published">
-    <on>2006-09</on>
+    <on>2006-09-29</on>
   </date>
   <contributor>
     <role type="publisher"/>
@@ -20648,12 +20912,28 @@ ISO/IEC 17000:2004 does not set out to provide a vocabulary for all of the conce
       <uri>www.iso.org</uri>
     </organization>
   </contributor>
+  <contributor>
+    <role type="author">
+      <description>committee</description>
+    </role>
+    <organization>
+      
+<name>International Organization for Standardization</name>
+
+      <subdivision type="technical-committee" subtype="TC">
+        
+<name>Applications of statistical methods</name>
+
+        <identifier id="_8a748252-b3f8-49cc-61ff-eb3c12a2af5d">ISO/TC 69</identifier><fmt-identifier><tt><semx element="identifier" source="_8a748252-b3f8-49cc-61ff-eb3c12a2af5d">ISO/TC 69</semx></tt></fmt-identifier>
+      </subdivision>
+      <abbreviation>ISO</abbreviation>
+    </organization>
+  </contributor>
   <edition>2</edition>
   <language>en</language>
   <language>fr</language>
   <script>Latn</script>
-  <abstract format="text/plain" language="en" script="Latn">ISO 3534-2:2006 defines applied statistics terms, and expresses them in a conceptual framework in accordance with ISO normative terminology practice. Term entries are arranged thematically. An alphabetical index is provided. Standardized symbols and abbreviations are defined.
-The two principal purposes of ISO 3534-2:2006 are, specifically, to establish a common vocabulary for use throughout ISO/TC 69 standards, together with the broader intent to enhance the preciseness, clarity and cohesiveness in the usage/application of applied statistics generally. The mathematical level has deliberately been kept to a low level in order for the content to be made readily comprehensible to the widest possible readership.</abstract>
+  <abstract language="en" script="Latn">ISO 3534-2:2006 defines applied statistics terms, and expresses them in a conceptual framework in accordance with ISO normative terminology practice. Term entries are arranged thematically. An alphabetical index is provided. Standardized symbols and abbreviations are defined. The two principal purposes of ISO 3534-2:2006 are, specifically, to establish a common vocabulary for use throughout ISO/TC 69 standards, together with the broader intent to enhance the preciseness, clarity and cohesiveness in the usage/application of applied statistics generally. The mathematical level has deliberately been kept to a low level in order for the content to be made readily comprehensible to the widest possible readership.</abstract>
   <status>
     <stage>90</stage>
     <substage>60</substage>
@@ -20669,9 +20949,19 @@ The two principal purposes of ISO 3534-2:2006 are, specifically, to establish a 
     </owner>
   </copyright>
   <relation type="obsoletes">
-    <bibitem type="standard">
-      <formattedref format="text/plain">ISO 3534-2:1993</formattedref>
+    <bibitem>
+      <formattedref>ISO 3534-2:1993</formattedref>
       <docidentifier type="ISO" primary="true">ISO 3534-2:1993</docidentifier>
+      <date type="published">
+        <on>1993-06-03</on>
+      </date>
+    </bibitem>
+
+  </relation>
+  <relation type="obsoletedBy">
+    <bibitem>
+      <formattedref>ISO/PWI 3534-2</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/PWI 3534-2</docidentifier>
     </bibitem>
 
   </relation>
@@ -20679,28 +20969,41 @@ The two principal purposes of ISO 3534-2:2006 are, specifically, to establish a 
     <city>Geneva</city>
   </place>
 </bibitem>
-<bibitem id="ISO_10576_1_2003" type="standard" schema-version="v1.2.9" anchor="ISO_10576_1_2003" semx-id="_e7c0bb83-d0d9-1226-6ebe-a5ac6997a8d0"><biblio-tag>ISO 10576-1:2003 </biblio-tag><formattedref><em>Statistical methods — Guidelines for the evaluation of conformity with specified requirements — Part 1: General principles</em></formattedref>
-  <fetched>2026-04-16</fetched>
+<bibitem id="ISO_10576_1_2003" type="standard" schema-version="v1.5.6" anchor="ISO_10576_1_2003" semx-id="_cda3fc9a-07c7-bf98-66ed-768d5b426889"><biblio-tag>ISO 10576-1:2003 </biblio-tag><formattedref><em>Statistical methods — Guidelines for the evaluation of conformity with specified requirements — Part 1: General principles</em></formattedref>
+  <fetched>2026-06-16</fetched>
   
-<title type="title-intro" format="text/plain" language="en" script="Latn">Statistical methods</title>
+<title language="en" script="Latn" type="title-intro">Statistical methods</title>
 
   
-<title type="title-main" format="text/plain" language="en" script="Latn">Guidelines for the evaluation of conformity with specified requirements</title>
+<title language="en" script="Latn" type="title-main">Guidelines for the evaluation of conformity with specified requirements</title>
 
   
-<title type="title-part" format="text/plain" language="en" script="Latn">Part 1: General principles</title>
+<title language="en" script="Latn" type="title-part">Part 1: General principles</title>
 
   
-<title type="main" format="text/plain" language="en" script="Latn">Statistical methods — Guidelines for the evaluation of conformity with specified requirements — Part 1: General principles</title>
+<title language="en" script="Latn" type="main">Statistical methods — Guidelines for the evaluation of conformity with specified requirements — Part 1: General principles</title>
+
+  
+<title language="fr" script="Latn" type="title-intro">Méthodes statistiques</title>
+
+  
+<title language="fr" script="Latn" type="title-main">Lignes directrices pour l’évaluation de la conformité à des exigences spécifiques</title>
+
+  
+<title language="fr" script="Latn" type="title-part">Partie 1: Principes généraux</title>
+
+  
+<title language="fr" script="Latn" type="main">Méthodes statistiques — Lignes directrices pour l’évaluation de la conformité à des exigences spécifiques — Partie 1: Principes généraux</title>
 
   <uri type="src">https://www.iso.org/standard/32373.html</uri>
+  <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:32373:en</uri>
   <uri type="rss">https://www.iso.org/contents/data/standard/03/23/32373.detail.rss</uri>
   <docidentifier type="ISO" primary="true">ISO 10576-1:2003</docidentifier>
   <docidentifier type="iso-reference">iso-reference ISO 10576-1:2003(E)</docidentifier>
   <docidentifier type="URN">URN urn:iso:std:iso:10576:-1:stage-95.99</docidentifier><docidentifier scope="biblio-tag">ISO 10576-1:2003</docidentifier>
   <docnumber>10576</docnumber>
   <date type="published">
-    <on>2003-03</on>
+    <on>2003-03-10</on>
   </date>
   <contributor>
     <role type="publisher"/>
@@ -20712,13 +21015,28 @@ The two principal purposes of ISO 3534-2:2006 are, specifically, to establish a 
       <uri>www.iso.org</uri>
     </organization>
   </contributor>
+  <contributor>
+    <role type="author">
+      <description>committee</description>
+    </role>
+    <organization>
+      
+<name>International Organization for Standardization</name>
+
+      <subdivision type="technical-committee" subtype="TC">
+        
+<name>Measurement methods and results</name>
+
+        <identifier id="_694b01ca-606d-d461-cf9f-1e1c46599db9">ISO/TC 69/SC 6</identifier><fmt-identifier><tt><semx element="identifier" source="_694b01ca-606d-d461-cf9f-1e1c46599db9">ISO/TC 69/SC 6</semx></tt></fmt-identifier>
+      </subdivision>
+      <abbreviation>ISO</abbreviation>
+    </organization>
+  </contributor>
   <edition>1</edition>
   <language>en</language>
   <language>fr</language>
   <script>Latn</script>
-  <abstract format="text/plain" language="en" script="Latn">ISO 10576-1:2002 sets out guidelines for drafting requirements that may be formulated as limiting values for a quantifiable characteristic and for checking conformity to such requirements when the test or measurement result is subject to uncertainty.
-It is applicable whenever the uncertainty may be quantified according to the principles laid down in the Guide to the expression of uncertainty in measurement. The term uncertainty is thus a descriptor for all elements of variation in the measurement result, including uncertainty due to sampling.
-It is outside the scope of ISO 10576-1:2002 to give rules for how to act when an inconclusive result of a conformity test has been obtained.</abstract>
+  <abstract language="en" script="Latn">ISO 10576-1:2002 sets out guidelines for drafting requirements that may be formulated as limiting values for a quantifiable characteristic and for checking conformity to such requirements when the test or measurement result is subject to uncertainty. It is applicable whenever the uncertainty may be quantified according to the principles laid down in the Guide to the expression of uncertainty in measurement. The term uncertainty is thus a descriptor for all elements of variation in the measurement result, including uncertainty due to sampling. It is outside the scope of ISO 10576-1:2002 to give rules for how to act when an inconclusive result of a conformity test has been obtained.</abstract>
   <status>
     <stage>95</stage>
     <substage>99</substage>
@@ -20733,16 +21051,6 @@ It is outside the scope of ISO 10576-1:2002 to give rules for how to act when an
       </organization>
     </owner>
   </copyright>
-  <relation type="updates">
-    <bibitem type="standard">
-      <formattedref format="text/plain">ISO 10576:2022</formattedref>
-      <docidentifier type="ISO" primary="true">ISO 10576:2022</docidentifier>
-      <date type="circulated">
-        <on>2022-08-05</on>
-      </date>
-    </bibitem>
-
-  </relation>
   <place>
     <city>Geneva</city>
   </place>
@@ -29416,7 +29724,7 @@ a prior PDF <stem block="false" type="MathML" id="_420fc179-8e1c-0751-e77e-740ea
 
 
 <figure id="fig_B.1" anchor="fig_B.1" semx-id="_d9f972f8-c8fe-e74d-5ea4-4301fb164304" autonum="B.1">
-<name id="_9ff808dd-ba41-41b9-90ca-c16b56d12d83" semx-id="_c7d90921-466e-7f65-4493-641b512b9fe5">Several <stem block="false" type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
+<name id="_edeb223e-1d22-484e-8088-c987d0070b76" semx-id="_c7d90921-466e-7f65-4493-641b512b9fe5">Several <stem block="false" type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
   <mstyle displaystyle="false">
     <mtext>gamma</mtext>
     <mrow>
@@ -29439,7 +29747,7 @@ a prior PDF <stem block="false" type="MathML" id="_420fc179-8e1c-0751-e77e-740ea
       <mo>)</mo>
     </mrow>
   </mstyle>
-</math><asciimath>(alpha, lambda)</asciimath></stem>.</name><fmt-name id="_8d6618c9-84f0-63eb-4bfe-564b8cdca065"><span class="fmt-caption-label"><span class="fmt-element-name">Figure</span> <semx element="autonum" source="annexB">B</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="fig_B.1">1</semx></span><span class="fmt-caption-delim"> — </span><semx element="name" source="_9ff808dd-ba41-41b9-90ca-c16b56d12d83">Several <stem block="false" type="MathML" id="_2dd7c5b8-9d77-3cca-e59b-8f6fed7fa07f"><math xmlns="http://www.w3.org/1998/Math/MathML">
+</math><asciimath>(alpha, lambda)</asciimath></stem>.</name><fmt-name id="_8d6618c9-84f0-63eb-4bfe-564b8cdca065"><span class="fmt-caption-label"><span class="fmt-element-name">Figure</span> <semx element="autonum" source="annexB">B</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="fig_B.1">1</semx></span><span class="fmt-caption-delim"> — </span><semx element="name" source="_edeb223e-1d22-484e-8088-c987d0070b76">Several <stem block="false" type="MathML" id="_2dd7c5b8-9d77-3cca-e59b-8f6fed7fa07f"><math xmlns="http://www.w3.org/1998/Math/MathML">
   <mstyle displaystyle="false">
     <mtext>gamma</mtext>
     <mrow>
@@ -31382,7 +31690,7 @@ expectation <stem block="false" type="MathML" id="_d50044ad-4ce3-3f4e-714e-78c1d
 </math><asciimath>u^2</asciimath></semx></fmt-stem></p>
 </dd>
 </dl>
-</annex><bibliography><references id="_5746b021-322d-53b7-b77b-70d1f74163df" normative="false" obligation="informative" semx-id="_5746b021-322d-53b7-b77b-70d1f74163df" displayorder="17">
+</annex><bibliography><references id="_b428a6e1-39e8-b7d4-6aac-41de394a1941" normative="false" obligation="informative" semx-id="_b428a6e1-39e8-b7d4-6aac-41de394a1941" displayorder="17">
 <title id="_8e1065aa-c024-9f64-1d01-24406ca61ca6" semx-id="_50ceb1e1-516f-2673-d73d-4f0c58b4d023">Bibliography</title><fmt-title depth="1" id="_fadc84f6-ca15-fcd1-f06f-4d5cf17f39e0"><semx element="title" source="_8e1065aa-c024-9f64-1d01-24406ca61ca6">Bibliography</semx></fmt-title><bibitem anchor="ref1" id="ref1" semx-id="_5be0fee8-0f0a-014c-3164-68bbf1347715"><biblio-tag>[1]<tab/></biblio-tag>
   <formattedref format="application/x-isodoc+xml">Agilent Technologies. Metrology Forum. 2001.
 <link target="http://metrologyforum.tm.agilent.com/terminology.shtml" id="_bfe33dbf-6b07-2a00-2c44-2bba54377800"/><semx element="link" source="_bfe33dbf-6b07-2a00-2c44-2bba54377800"><fmt-link target="http://metrologyforum.tm.agilent.com/terminology.shtml"/></semx>.</formattedref><docidentifier type="metanorma-ordinal">[1]</docidentifier>
@@ -31511,28 +31819,41 @@ Silverwater, Australia, 1996.</formattedref><docidentifier type="metanorma-ordin
   
   <language>en</language>
   <script>Latn</script>
-</bibitem><bibitem id="ref21" type="standard" schema-version="v1.2.9" anchor="ref21" semx-id="_707a8a96-b4c5-a65f-a5c7-c45010e7cb07"><biblio-tag>[21]<tab/>ISO 14253-1:1998 </biblio-tag><formattedref><em>Geometrical Product Specifications (GPS) — Inspection by measurement of workpieces and measuring equipment — Part 1: Decision rules for proving conformance or non-conformance with specifications</em></formattedref>
-  <fetched>2026-04-16</fetched>
+</bibitem><bibitem id="ref21" type="standard" schema-version="v1.5.6" anchor="ref21" semx-id="_4ae25a7c-2a8f-1cf8-36b8-206f9c482b1c"><biblio-tag>[21]<tab/>ISO 14253-1:1998 </biblio-tag><formattedref><em>Geometrical Product Specifications (GPS) — Inspection by measurement of workpieces and measuring equipment — Part 1: Decision rules for proving conformance or non-conformance with specifications</em></formattedref>
+  <fetched>2026-06-16</fetched>
   
-<title type="title-intro" format="text/plain" language="en" script="Latn">Geometrical Product Specifications (GPS)</title>
+<title language="en" script="Latn" type="title-intro">Geometrical Product Specifications (GPS)</title>
 
   
-<title type="title-main" format="text/plain" language="en" script="Latn">Inspection by measurement of workpieces and measuring equipment</title>
+<title language="en" script="Latn" type="title-main">Inspection by measurement of workpieces and measuring equipment</title>
 
   
-<title type="title-part" format="text/plain" language="en" script="Latn">Part 1: Decision rules for proving conformance or non-conformance with specifications</title>
+<title language="en" script="Latn" type="title-part">Part 1: Decision rules for proving conformance or non-conformance with specifications</title>
 
   
-<title type="main" format="text/plain" language="en" script="Latn">Geometrical Product Specifications (GPS) — Inspection by measurement of workpieces and measuring equipment — Part 1: Decision rules for proving conformance or non-conformance with specifications</title>
+<title language="en" script="Latn" type="main">Geometrical Product Specifications (GPS) — Inspection by measurement of workpieces and measuring equipment — Part 1: Decision rules for proving conformance or non-conformance with specifications</title>
+
+  
+<title language="fr" script="Latn" type="title-intro">Spécification géométrique des produits (GPS)</title>
+
+  
+<title language="fr" script="Latn" type="title-main">Vérification par la mesure des pièces et des équipements de mesure</title>
+
+  
+<title language="fr" script="Latn" type="title-part">Partie 1: Règles de décision pour prouver la conformité ou la non-conformité à la spécification</title>
+
+  
+<title language="fr" script="Latn" type="main">Spécification géométrique des produits (GPS) — Vérification par la mesure des pièces et des équipements de mesure — Partie 1: Règles de décision pour prouver la conformité ou la non-conformité à la spécification</title>
 
   <uri type="src">https://www.iso.org/standard/23021.html</uri>
+  <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:23021:en</uri>
   <uri type="rss">https://www.iso.org/contents/data/standard/02/30/23021.detail.rss</uri><docidentifier type="metanorma-ordinal">[21]</docidentifier>
   <docidentifier type="ISO" primary="true">ISO 14253-1:1998</docidentifier>
   <docidentifier type="iso-reference">iso-reference ISO 14253-1:1998(E)</docidentifier>
   <docidentifier type="URN">URN urn:iso:std:iso:14253:-1:stage-95.99</docidentifier><docidentifier scope="biblio-tag">ISO 14253-1:1998</docidentifier>
   <docnumber>14253</docnumber>
   <date type="published">
-    <on>1998-11</on>
+    <on>1998-11-12</on>
   </date>
   <contributor>
     <role type="publisher"/>
@@ -31542,6 +31863,23 @@ Silverwater, Australia, 1996.</formattedref><docidentifier type="metanorma-ordin
 
       <abbreviation>ISO</abbreviation>
       <uri>www.iso.org</uri>
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="author">
+      <description>committee</description>
+    </role>
+    <organization>
+      
+<name>International Organization for Standardization</name>
+
+      <subdivision type="technical-committee" subtype="TC">
+        
+<name>Dimensional and geometrical product specifications and verification</name>
+
+        <identifier id="_1993ea7d-e81f-2f94-db74-39a006ed903c">ISO/TC 213</identifier><fmt-identifier><tt><semx element="identifier" source="_1993ea7d-e81f-2f94-db74-39a006ed903c">ISO/TC 213</semx></tt></fmt-identifier>
+      </subdivision>
+      <abbreviation>ISO</abbreviation>
     </organization>
   </contributor>
   <edition>1</edition>
@@ -31562,41 +31900,51 @@ Silverwater, Australia, 1996.</formattedref><docidentifier type="metanorma-ordin
       </organization>
     </owner>
   </copyright>
-  <relation type="updates">
-    <bibitem type="standard">
-      <formattedref format="text/plain">ISO 14253-1:2013</formattedref>
-      <docidentifier type="ISO" primary="true">ISO 14253-1:2013</docidentifier>
-      <date type="circulated">
-        <on>2013-08-22</on>
-      </date>
+  <relation type="updatedBy">
+    <bibitem>
+      <formattedref>ISO 14253-1:1998/DAmd 1</formattedref>
+      <docidentifier type="ISO" primary="true">ISO 14253-1:1998/DAM 1</docidentifier>
     </bibitem>
 
   </relation>
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="ref22" type="standard" schema-version="v1.2.9" anchor="ref22" semx-id="_5e68e2d4-0a09-33c6-61c7-227ce3ff2168"><biblio-tag>[22]<tab/>ISO 10576-1:2003 </biblio-tag><formattedref><em>Statistical methods — Guidelines for the evaluation of conformity with specified requirements — Part 1: General principles</em></formattedref>
-  <fetched>2026-04-16</fetched>
+</bibitem><bibitem id="ref22" type="standard" schema-version="v1.5.6" anchor="ref22" semx-id="_6146f5ac-bd3e-a11e-2efe-33d7751b80f6"><biblio-tag>[22]<tab/>ISO 10576-1:2003 </biblio-tag><formattedref><em>Statistical methods — Guidelines for the evaluation of conformity with specified requirements — Part 1: General principles</em></formattedref>
+  <fetched>2026-06-16</fetched>
   
-<title type="title-intro" format="text/plain" language="en" script="Latn">Statistical methods</title>
+<title language="en" script="Latn" type="title-intro">Statistical methods</title>
 
   
-<title type="title-main" format="text/plain" language="en" script="Latn">Guidelines for the evaluation of conformity with specified requirements</title>
+<title language="en" script="Latn" type="title-main">Guidelines for the evaluation of conformity with specified requirements</title>
 
   
-<title type="title-part" format="text/plain" language="en" script="Latn">Part 1: General principles</title>
+<title language="en" script="Latn" type="title-part">Part 1: General principles</title>
 
   
-<title type="main" format="text/plain" language="en" script="Latn">Statistical methods — Guidelines for the evaluation of conformity with specified requirements — Part 1: General principles</title>
+<title language="en" script="Latn" type="main">Statistical methods — Guidelines for the evaluation of conformity with specified requirements — Part 1: General principles</title>
+
+  
+<title language="fr" script="Latn" type="title-intro">Méthodes statistiques</title>
+
+  
+<title language="fr" script="Latn" type="title-main">Lignes directrices pour l’évaluation de la conformité à des exigences spécifiques</title>
+
+  
+<title language="fr" script="Latn" type="title-part">Partie 1: Principes généraux</title>
+
+  
+<title language="fr" script="Latn" type="main">Méthodes statistiques — Lignes directrices pour l’évaluation de la conformité à des exigences spécifiques — Partie 1: Principes généraux</title>
 
   <uri type="src">https://www.iso.org/standard/32373.html</uri>
+  <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:32373:en</uri>
   <uri type="rss">https://www.iso.org/contents/data/standard/03/23/32373.detail.rss</uri><docidentifier type="metanorma-ordinal">[22]</docidentifier>
   <docidentifier type="ISO" primary="true">ISO 10576-1:2003</docidentifier>
   <docidentifier type="iso-reference">iso-reference ISO 10576-1:2003(E)</docidentifier>
   <docidentifier type="URN">URN urn:iso:std:iso:10576:-1:stage-95.99</docidentifier><docidentifier scope="biblio-tag">ISO 10576-1:2003</docidentifier>
   <docnumber>10576</docnumber>
   <date type="published">
-    <on>2003-03</on>
+    <on>2003-03-10</on>
   </date>
   <contributor>
     <role type="publisher"/>
@@ -31608,13 +31956,28 @@ Silverwater, Australia, 1996.</formattedref><docidentifier type="metanorma-ordin
       <uri>www.iso.org</uri>
     </organization>
   </contributor>
+  <contributor>
+    <role type="author">
+      <description>committee</description>
+    </role>
+    <organization>
+      
+<name>International Organization for Standardization</name>
+
+      <subdivision type="technical-committee" subtype="TC">
+        
+<name>Measurement methods and results</name>
+
+        <identifier id="_7d94ff76-a65d-bebe-5771-d9d4b5d9a96e">ISO/TC 69/SC 6</identifier><fmt-identifier><tt><semx element="identifier" source="_7d94ff76-a65d-bebe-5771-d9d4b5d9a96e">ISO/TC 69/SC 6</semx></tt></fmt-identifier>
+      </subdivision>
+      <abbreviation>ISO</abbreviation>
+    </organization>
+  </contributor>
   <edition>1</edition>
   <language>en</language>
   <language>fr</language>
   <script>Latn</script>
-  <abstract format="text/plain" language="en" script="Latn">ISO 10576-1:2002 sets out guidelines for drafting requirements that may be formulated as limiting values for a quantifiable characteristic and for checking conformity to such requirements when the test or measurement result is subject to uncertainty.
-It is applicable whenever the uncertainty may be quantified according to the principles laid down in the Guide to the expression of uncertainty in measurement. The term uncertainty is thus a descriptor for all elements of variation in the measurement result, including uncertainty due to sampling.
-It is outside the scope of ISO 10576-1:2002 to give rules for how to act when an inconclusive result of a conformity test has been obtained.</abstract>
+  <abstract language="en" script="Latn">ISO 10576-1:2002 sets out guidelines for drafting requirements that may be formulated as limiting values for a quantifiable characteristic and for checking conformity to such requirements when the test or measurement result is subject to uncertainty. It is applicable whenever the uncertainty may be quantified according to the principles laid down in the Guide to the expression of uncertainty in measurement. The term uncertainty is thus a descriptor for all elements of variation in the measurement result, including uncertainty due to sampling. It is outside the scope of ISO 10576-1:2002 to give rules for how to act when an inconclusive result of a conformity test has been obtained.</abstract>
   <status>
     <stage>95</stage>
     <substage>99</substage>
@@ -31629,38 +31992,32 @@ It is outside the scope of ISO 10576-1:2002 to give rules for how to act when an
       </organization>
     </owner>
   </copyright>
-  <relation type="updates">
-    <bibitem type="standard">
-      <formattedref format="text/plain">ISO 10576:2022</formattedref>
-      <docidentifier type="ISO" primary="true">ISO 10576:2022</docidentifier>
-      <date type="circulated">
-        <on>2022-08-05</on>
-      </date>
-    </bibitem>
-
-  </relation>
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="ref23" type="standard" schema-version="v1.2.9" anchor="ref23" semx-id="_65bc3637-b8bf-3b7b-b530-1ba6a0032f12"><biblio-tag>[23]<tab/>ISO/IEC 17025:2005 </biblio-tag><formattedref><em>General requirements for the competence of testing and calibration laboratories</em></formattedref>
-  <fetched>2026-04-16</fetched>
+</bibitem><bibitem id="ref23" type="standard" schema-version="v1.5.6" anchor="ref23" semx-id="_aedcaff9-d354-c34f-2daf-368c236c292b"><biblio-tag>[23]<tab/>ISO/IEC 17025:2005 </biblio-tag><formattedref><em>General requirements for the competence of testing and calibration laboratories</em></formattedref>
+  <fetched>2026-06-16</fetched>
   
-<title type="title-main" format="text/plain" language="en" script="Latn">General requirements for the competence of testing and calibration laboratories</title>
+<title language="en" script="Latn" type="title-main">General requirements for the competence of testing and calibration laboratories</title>
 
   
-<title type="main" format="text/plain" language="en" script="Latn">General requirements for the competence of testing and calibration laboratories</title>
+<title language="en" script="Latn" type="main">General requirements for the competence of testing and calibration laboratories</title>
+
+  
+<title language="fr" script="Latn" type="title-main">Exigences générales concernant la compétence des laboratoires d’étalonnages et d’essais</title>
+
+  
+<title language="fr" script="Latn" type="main">Exigences générales concernant la compétence des laboratoires d’étalonnages et d’essais</title>
 
   <uri type="src">https://www.iso.org/standard/39883.html</uri>
+  <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:39883:en</uri>
   <uri type="rss">https://www.iso.org/contents/data/standard/03/98/39883.detail.rss</uri><docidentifier type="metanorma-ordinal">[23]</docidentifier>
   <docidentifier type="ISO" primary="true">ISO/IEC 17025:2005</docidentifier>
   <docidentifier type="iso-reference">iso-reference ISO/IEC 17025:2005(E)</docidentifier>
   <docidentifier type="URN">URN urn:iso:std:iso-iec:17025:stage-95.99</docidentifier><docidentifier scope="biblio-tag">ISO/IEC 17025:2005</docidentifier>
   <docnumber>17025</docnumber>
   <date type="published">
-    <on>2005-05</on>
-  </date>
-  <date type="corrected">
-    <on>2005-10</on>
+    <on>2005-05-12</on>
   </date>
   <contributor>
     <role type="publisher"/>
@@ -31682,15 +32039,32 @@ It is outside the scope of ISO 10576-1:2002 to give rules for how to act when an
       <uri>www.iec.ch</uri>
     </organization>
   </contributor>
+  <contributor>
+    <role type="author">
+      <description>committee</description>
+    </role>
+    <organization>
+      
+<name>International Organization for Standardization</name>
+
+      <subdivision type="technical-committee" subtype="CASCO">
+        
+<name>ISO/CASCO</name>
+
+        <identifier id="_72e49c44-5cc4-9dbd-8373-2d03eab20b6f">ISO/CASCO</identifier><fmt-identifier><tt><semx element="identifier" source="_72e49c44-5cc4-9dbd-8373-2d03eab20b6f">ISO/CASCO</semx></tt></fmt-identifier>
+      </subdivision>
+      <abbreviation>ISO</abbreviation>
+    </organization>
+  </contributor>
   <edition>2</edition>
+  <language>ar</language>
   <language>en</language>
+  <language>es</language>
   <language>fr</language>
+  <language>ru</language>
   <script>Latn</script>
-  <abstract format="text/plain" language="en" script="Latn">ISO/IEC 17025:2005 specifies the general requirements for the competence to carry out tests and/or calibrations, including sampling. It covers testing and calibration performed using standard methods, non-standard methods, and laboratory-developed methods.
-It is applicable to all organizations performing tests and/or calibrations. These include, for example, first-, second- and third-party laboratories, and laboratories where testing and/or calibration forms part of inspection and product certification.
-ISO/IEC 17025:2005 is applicable to all laboratories regardless of the number of personnel or the extent of the scope of testing and/or calibration activities. When a laboratory does not undertake one or more of the activities covered by ISO/IEC 17025:2005, such as sampling and the design/development of new methods, the requirements of those clauses do not apply.
-ISO/IEC 17025:2005 is for use by laboratories in developing their management system for quality, administrative and technical operations. Laboratory customers, regulatory authorities and accreditation bodies may also use it in confirming or recognizing the competence of laboratories. ISO/IEC 17025:2005 is not intended to be used as the basis for certification of laboratories.
-Compliance with regulatory and safety requirements on the operation of laboratories is not covered by ISO/IEC 17025:2005.</abstract>
+  <script>Cyrl</script>
+  <abstract language="en" script="Latn">ISO/IEC 17025:2005 specifies the general requirements for the competence to carry out tests and/or calibrations, including sampling. It covers testing and calibration performed using standard methods, non-standard methods, and laboratory-developed methods. It is applicable to all organizations performing tests and/or calibrations. These include, for example, first-, second- and third-party laboratories, and laboratories where testing and/or calibration forms part of inspection and product certification. ISO/IEC 17025:2005 is applicable to all laboratories regardless of the number of personnel or the extent of the scope of testing and/or calibration activities. When a laboratory does not undertake one or more of the activities covered by ISO/IEC 17025:2005, such as sampling and the design/development of new methods, the requirements of those clauses do not apply. ISO/IEC 17025:2005 is for use by laboratories in developing their management system for quality, administrative and technical operations. Laboratory customers, regulatory authorities and accreditation bodies may also use it in confirming or recognizing the competence of laboratories. ISO/IEC 17025:2005 is not intended to be used as the basis for certification of laboratories. Compliance with regulatory and safety requirements on the operation of laboratories is not covered by ISO/IEC 17025:2005.</abstract>
   <status>
     <stage>95</stage>
     <substage>99</substage>
@@ -31706,28 +32080,28 @@ Compliance with regulatory and safety requirements on the operation of laborator
     </owner>
   </copyright>
   <relation type="obsoletes">
-    <bibitem type="standard">
-      <formattedref format="text/plain">ISO/IEC 17025:1999</formattedref>
+    <bibitem>
+      <formattedref>ISO/IEC 17025:1999</formattedref>
       <docidentifier type="ISO" primary="true">ISO/IEC 17025:1999</docidentifier>
-    </bibitem>
-
-  </relation>
-  <relation type="updates">
-    <bibitem type="standard">
-      <formattedref format="text/plain">ISO/IEC 17025:2017</formattedref>
-      <docidentifier type="ISO" primary="true">ISO/IEC 17025:2017</docidentifier>
-      <date type="circulated">
-        <on>2017-11-29</on>
+      <date type="published">
+        <on>1999-12-16</on>
       </date>
     </bibitem>
 
   </relation>
-  <relation type="updates">
-    <bibitem type="standard">
-      <formattedref format="text/plain">ISO/IEC 17025:2005/Cor 1:2006</formattedref>
+  <relation type="obsoletes">
+    <bibitem>
+      <formattedref>ISO/IEC 17025:1999/FDAmd 1</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/IEC 17025:1999/FDAM 1</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="updatedBy">
+    <bibitem>
+      <formattedref>ISO/IEC 17025:2005/Cor 1:2006</formattedref>
       <docidentifier type="ISO" primary="true">ISO/IEC 17025:2005/Cor 1:2006</docidentifier>
-      <date type="circulated">
-        <on>2017-11-29</on>
+      <date type="published">
+        <on>2006-08-15</on>
       </date>
     </bibitem>
 
@@ -31735,29 +32109,41 @@ Compliance with regulatory and safety requirements on the operation of laborator
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="ref24" type="standard" schema-version="v1.2.9" anchor="ref24" semx-id="_b763fb3a-59c1-faf7-7133-dc5b9cf7a58d"><biblio-tag>[24]<tab/>ISO 3650:1998 </biblio-tag><formattedref><em>Geometrical Product Specifications (GPS) — Length standards — Gauge blocks</em></formattedref>
-  <fetched>2026-04-16</fetched>
+</bibitem><bibitem id="ref24" type="standard" schema-version="v1.5.6" anchor="ref24" semx-id="_7300a457-f1b8-cdbb-3cd9-4e66e6710853"><biblio-tag>[24]<tab/>ISO 3650:1998 </biblio-tag><formattedref><em>Geometrical Product Specifications (GPS) — Length standards — Gauge blocks</em></formattedref>
+  <fetched>2026-06-16</fetched>
   
-<title type="title-intro" format="text/plain" language="en" script="Latn">Geometrical Product Specifications (GPS)</title>
+<title language="en" script="Latn" type="title-intro">Geometrical Product Specifications (GPS)</title>
 
   
-<title type="title-main" format="text/plain" language="en" script="Latn">Length standards</title>
+<title language="en" script="Latn" type="title-main">Length standards</title>
 
   
-<title type="title-part" format="text/plain" language="en" script="Latn">Gauge blocks</title>
+<title language="en" script="Latn" type="title-part">Gauge blocks</title>
 
   
-<title type="main" format="text/plain" language="en" script="Latn">Geometrical Product Specifications (GPS) — Length standards — Gauge blocks</title>
+<title language="en" script="Latn" type="main">Geometrical Product Specifications (GPS) — Length standards — Gauge blocks</title>
+
+  
+<title language="fr" script="Latn" type="title-intro">Spécification géométrique des produits (GPS)</title>
+
+  
+<title language="fr" script="Latn" type="title-main">Étalons de longueur</title>
+
+  
+<title language="fr" script="Latn" type="title-part">Cales-étalons</title>
+
+  
+<title language="fr" script="Latn" type="main">Spécification géométrique des produits (GPS) — Étalons de longueur — Cales-étalons</title>
 
   <uri type="src">https://www.iso.org/standard/1241.html</uri>
   <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:1241:en</uri>
   <uri type="rss">https://www.iso.org/contents/data/standard/00/12/1241.detail.rss</uri><docidentifier type="metanorma-ordinal">[24]</docidentifier>
   <docidentifier type="ISO" primary="true">ISO 3650:1998</docidentifier>
   <docidentifier type="iso-reference">iso-reference ISO 3650:1998(E)</docidentifier>
-  <docidentifier type="URN">URN urn:iso:std:iso:3650:stage-90.20</docidentifier><docidentifier scope="biblio-tag">ISO 3650:1998</docidentifier>
+  <docidentifier type="URN">URN urn:iso:std:iso:3650:stage-90.93</docidentifier><docidentifier scope="biblio-tag">ISO 3650:1998</docidentifier>
   <docnumber>3650</docnumber>
   <date type="published">
-    <on>1998-12</on>
+    <on>1998-12-20</on>
   </date>
   <contributor>
     <role type="publisher"/>
@@ -31769,15 +32155,31 @@ Compliance with regulatory and safety requirements on the operation of laborator
       <uri>www.iso.org</uri>
     </organization>
   </contributor>
+  <contributor>
+    <role type="author">
+      <description>committee</description>
+    </role>
+    <organization>
+      
+<name>International Organization for Standardization</name>
+
+      <subdivision type="technical-committee" subtype="TC">
+        
+<name>Dimensional and geometrical product specifications and verification</name>
+
+        <identifier id="_8013b8cf-2e45-b917-2953-daef62cdbb2c">ISO/TC 213</identifier><fmt-identifier><tt><semx element="identifier" source="_8013b8cf-2e45-b917-2953-daef62cdbb2c">ISO/TC 213</semx></tt></fmt-identifier>
+      </subdivision>
+      <abbreviation>ISO</abbreviation>
+    </organization>
+  </contributor>
   <edition>2</edition>
   <language>en</language>
   <language>fr</language>
   <script>Latn</script>
-  <abstract format="text/plain" language="en" script="Latn">This International Standard specifies the most important design and metrological characteristics of gauge blocks with a rectangular cross section and a nominal length ln ranging from 0,5 mm to 1000 mm.
-Limit deviations and tolerances are stated for the calibration grade K and for the grades 0, 1 and 2 for various measuring purposes.</abstract>
+  <abstract language="en" script="Latn">This International Standard specifies the most important design and metrological characteristics of gauge blocks with a rectangular cross section and a nominal length ln ranging from 0,5 mm to 1000 mm. Limit deviations and tolerances are stated for the calibration grade K and for the grades 0, 1 and 2 for various measuring purposes.</abstract>
   <status>
     <stage>90</stage>
-    <substage>20</substage>
+    <substage>93</substage>
   </status>
   <copyright>
     <from>1998</from>
@@ -31790,18 +32192,21 @@ Limit deviations and tolerances are stated for the calibration grade K and for t
     </owner>
   </copyright>
   <relation type="obsoletes">
-    <bibitem type="standard">
-      <formattedref format="text/plain">ISO 3650:1978</formattedref>
+    <bibitem>
+      <formattedref>ISO 3650:1978</formattedref>
       <docidentifier type="ISO" primary="true">ISO 3650:1978</docidentifier>
+      <date type="published">
+        <on>1978-07-01</on>
+      </date>
     </bibitem>
 
   </relation>
-  <relation type="updates">
-    <bibitem type="standard">
-      <formattedref format="text/plain">ISO 3650:1998/Cor 1:2008</formattedref>
+  <relation type="updatedBy">
+    <bibitem>
+      <formattedref>ISO 3650:1998/Cor 1:2008</formattedref>
       <docidentifier type="ISO" primary="true">ISO 3650:1998/Cor 1:2008</docidentifier>
-      <date type="circulated">
-        <on>2025-01-15</on>
+      <date type="published">
+        <on>2008-10-30</on>
       </date>
     </bibitem>
 

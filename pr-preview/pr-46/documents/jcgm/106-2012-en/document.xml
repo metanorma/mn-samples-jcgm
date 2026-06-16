@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<metanorma xmlns="https://www.metanorma.org/ns/standoc" type="semantic" version="2.8.3" schema-version="v2.1.5" flavor="bipm">
+<metanorma xmlns="https://www.metanorma.org/ns/standoc" type="semantic" version="2.8.7" schema-version="v2.1.6" flavor="bipm">
 <bibdata type="standard">
 <title language="en" type="title-main">Evaluation of measurement data</title>
 
@@ -22,7 +22,7 @@
 <name>Bureau International des Poids et Mesures</name>
 <abbreviation>BIPM</abbreviation></organization></owner></copyright><ext><doctype>guide</doctype><flavor>bipm</flavor><structuredidentifier><docnumber>106</docnumber></structuredidentifier></ext></bibdata><metanorma-extension><semantic-metadata><stage-published>true</stage-published></semantic-metadata>
 <UnitsML xmlns="https://schema.unitsml.org/unitsml/1.0"><UnitSet><Unit dimensionURL="#NISTd2" id="U_NISTu27">
-        <UnitSystem name="SI" type="SI_base" lang="en-US"/>
+        <UnitSystem name="SI" type="SI_base" lang="en"/>
         <UnitName lang="en">gram</UnitName>
         <UnitSymbol type="HTML">g</UnitSymbol>
         <UnitSymbol type="MathMl">
@@ -31,7 +31,7 @@
           </math>
         </UnitSymbol>
       </Unit><Unit dimensionURL="#NISTd18" id="U_NISTu16">
-        <UnitSystem name="SI" type="SI_derived" lang="en-US"/>
+        <UnitSystem name="SI" type="SI_derived" lang="en"/>
         <UnitName lang="en">volt</UnitName>
         <UnitSymbol type="HTML">V</UnitSymbol>
         <UnitSymbol type="MathMl">
@@ -40,7 +40,7 @@
           </math>
         </UnitSymbol>
       </Unit><Unit dimensionURL="#NISTd14" id="U_kPa">
-        <UnitSystem name="SI" type="SI_derived" lang="en-US"/>
+        <UnitSystem name="SI" type="SI_derived" lang="en"/>
         <UnitName lang="en">kPa</UnitName>
         <UnitSymbol type="HTML">kPa</UnitSymbol>
         <UnitSymbol type="MathMl">
@@ -52,7 +52,7 @@
           <EnumeratedRootUnit unit="pascal" prefix="k"/>
         </RootUnits>
       </Unit><Unit dimensionURL="#NISTd2" id="U_NISTu2">
-        <UnitSystem name="SI" type="SI_base" lang="en-US"/>
+        <UnitSystem name="SI" type="SI_base" lang="en"/>
         <UnitName lang="en">kilogram</UnitName>
         <UnitSymbol type="HTML">kg</UnitSymbol>
         <UnitSymbol type="MathMl">
@@ -64,9 +64,9 @@
           <EnumeratedRootUnit unit="gram" prefix="k"/>
         </RootUnits>
       </Unit><Unit dimensionURL="#NISTd2" id="U_ug">
-        <UnitSystem name="SI" type="SI_base" lang="en-US"/>
+        <UnitSystem name="SI" type="SI_base" lang="en"/>
         <UnitName lang="en">ug</UnitName>
-        <UnitSymbol type="HTML">g</UnitSymbol>
+        <UnitSymbol type="HTML">µg</UnitSymbol>
         <UnitSymbol type="MathMl">
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <mi mathvariant="normal">µg</mi>
@@ -76,8 +76,8 @@
           <EnumeratedRootUnit unit="gram" prefix="u"/>
         </RootUnits>
       </Unit><Unit id="U_ng.L-1">
-        <UnitSystem name="not_SI" type="not_SI" lang="en-US"/>
-        <UnitSystem name="SI" type="SI_derived" lang="en-US"/>
+        <UnitSystem name="not_SI" type="not_SI" lang="en"/>
+        <UnitSystem name="SI" type="SI_derived" lang="en"/>
         <UnitName lang="en">ng*L^-1</UnitName>
         <UnitSymbol type="HTML">ng L
           <sup>−1</sup>
@@ -87,9 +87,7 @@
             <mi mathvariant="normal">ng</mi>
             <mo rspace="thickmathspace">⁢</mo>
             <msup>
-              <mrow>
-                <mi mathvariant="normal">L</mi>
-              </mrow>
+              <mi mathvariant="normal">L</mi>
               <mrow>
                 <mo>−</mo>
                 <mn>1</mn>
@@ -101,8 +99,8 @@
           <EnumeratedRootUnit unit="gram" prefix="n"/>
           <EnumeratedRootUnit unit="litre" powerNumerator="-1"/>
         </RootUnits>
-      </Unit><Unit dimensionURL="#NISTd56" id="U_mm2.s-1">
-        <UnitSystem name="SI" type="SI_derived" lang="en-US"/>
+      </Unit><Unit dimensionURL="#D_L2T-1" id="U_mm2.s-1">
+        <UnitSystem name="SI" type="SI_derived" lang="en"/>
         <UnitName lang="en">mm^2*s^-1</UnitName>
         <UnitSymbol type="HTML">mm
           <sup>2</sup> s
@@ -111,18 +109,12 @@
         <UnitSymbol type="MathMl">
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <msup>
-              <mrow>
-                <mi mathvariant="normal">mm</mi>
-              </mrow>
-              <mrow>
-                <mn>2</mn>
-              </mrow>
+              <mi mathvariant="normal">mm</mi>
+              <mn>2</mn>
             </msup>
             <mo rspace="thickmathspace">⁢</mo>
             <msup>
-              <mrow>
-                <mi mathvariant="normal">s</mi>
-              </mrow>
+              <mi mathvariant="normal">s</mi>
               <mrow>
                 <mo>−</mo>
                 <mn>1</mn>
@@ -135,8 +127,8 @@
           <EnumeratedRootUnit unit="second" powerNumerator="-1"/>
         </RootUnits>
       </Unit><Unit id="U_km.h-1">
-        <UnitSystem name="not_SI" type="not_SI" lang="en-US"/>
-        <UnitSystem name="SI" type="SI_derived" lang="en-US"/>
+        <UnitSystem name="not_SI" type="not_SI" lang="en"/>
+        <UnitSystem name="SI" type="SI_derived" lang="en"/>
         <UnitName lang="en">km*h^-1</UnitName>
         <UnitSymbol type="HTML">km h
           <sup>−1</sup>
@@ -146,9 +138,7 @@
             <mi mathvariant="normal">km</mi>
             <mo rspace="thickmathspace">⁢</mo>
             <msup>
-              <mrow>
-                <mi mathvariant="normal">h</mi>
-              </mrow>
+              <mi mathvariant="normal">h</mi>
               <mrow>
                 <mo>−</mo>
                 <mn>1</mn>
@@ -161,10 +151,10 @@
           <EnumeratedRootUnit unit="hour" powerNumerator="-1"/>
         </RootUnits>
       </Unit><Unit id="U_ug.L-1">
-        <UnitSystem name="not_SI" type="not_SI" lang="en-US"/>
-        <UnitSystem name="SI" type="SI_derived" lang="en-US"/>
+        <UnitSystem name="not_SI" type="not_SI" lang="en"/>
+        <UnitSystem name="SI" type="SI_derived" lang="en"/>
         <UnitName lang="en">ug*L^-1</UnitName>
-        <UnitSymbol type="HTML">g L
+        <UnitSymbol type="HTML">µg L
           <sup>−1</sup>
         </UnitSymbol>
         <UnitSymbol type="MathMl">
@@ -172,9 +162,7 @@
             <mi mathvariant="normal">µg</mi>
             <mo rspace="thickmathspace">⁢</mo>
             <msup>
-              <mrow>
-                <mi mathvariant="normal">L</mi>
-              </mrow>
+              <mi mathvariant="normal">L</mi>
               <mrow>
                 <mo>−</mo>
                 <mn>1</mn>
@@ -187,7 +175,7 @@
           <EnumeratedRootUnit unit="litre" powerNumerator="-1"/>
         </RootUnits>
       </Unit><Unit dimensionURL="#D_L2MT4I2" id="U_kOhm">
-        <UnitSystem name="SI" type="SI_derived" lang="en-US"/>
+        <UnitSystem name="SI" type="SI_derived" lang="en"/>
         <UnitName lang="en">kOhm</UnitName>
         <UnitSymbol type="HTML">kΩ</UnitSymbol>
         <UnitSymbol type="MathMl">
@@ -199,7 +187,7 @@
           <EnumeratedRootUnit unit="ohm" prefix="k"/>
         </RootUnits>
       </Unit><Unit dimensionURL="#D_L2MT4I2" id="U_NISTu18">
-        <UnitSystem name="SI" type="SI_derived" lang="en-US"/>
+        <UnitSystem name="SI" type="SI_derived" lang="en"/>
         <UnitName lang="en">ohm</UnitName>
         <UnitSymbol type="HTML">Ω</UnitSymbol>
         <UnitSymbol type="MathMl">
@@ -208,9 +196,9 @@
           </math>
         </UnitSymbol>
       </Unit><Unit dimensionURL="#NISTd1" id="U_um">
-        <UnitSystem name="SI" type="SI_base" lang="en-US"/>
+        <UnitSystem name="SI" type="SI_base" lang="en"/>
         <UnitName lang="en">um</UnitName>
-        <UnitSymbol type="HTML">m</UnitSymbol>
+        <UnitSymbol type="HTML">µm</UnitSymbol>
         <UnitSymbol type="MathMl">
           <math xmlns="http://www.w3.org/1998/Math/MathML">
             <mi mathvariant="normal">µm</mi>
@@ -220,9 +208,9 @@
           <EnumeratedRootUnit unit="metre" prefix="u"/>
         </RootUnits>
       </Unit></UnitSet><QuantitySet><Quantity id="NISTq2" quantityType="base" dimensionURL="#NISTd2">
-        <QuantityName lang="en-US">mass</QuantityName>
+        <QuantityName lang="en">mass</QuantityName>
       </Quantity><Quantity id="NISTq28" quantityType="base" dimensionURL="#NISTd20">
-        <QuantityName lang="en-US">electric resistance</QuantityName>
+        <QuantityName lang="en">electric resistance</QuantityName>
       </Quantity></QuantitySet><DimensionSet><Dimension id="NISTd2">
         <Mass symbol="M" powerNumerator="1"/>
       </Dimension><Dimension id="NISTd18">
@@ -234,7 +222,7 @@
         <Length symbol="L" powerNumerator="-1"/>
         <Mass symbol="M" powerNumerator="1"/>
         <Time symbol="T" powerNumerator="-2"/>
-      </Dimension><Dimension id="NISTd56">
+      </Dimension><Dimension id="D_L2T-1">
         <Length symbol="L" powerNumerator="2"/>
         <Time symbol="T" powerNumerator="-1"/>
       </Dimension><Dimension id="D_L2MT4I2">
@@ -16208,17 +16196,20 @@ expectation <stem block="false" type="MathML"><math xmlns="http://www.w3.org/199
 </math><asciimath>u^2</asciimath></stem></p>
 </dd>
 </dl>
-</annex><bibliography><references id="_b8ceca62-59f9-0437-b01e-1a303c57e93f" normative="true" obligation="informative">
+</annex><bibliography><references id="_21d0ad19-3334-9c69-ec54-7cf682678699" normative="true" obligation="informative">
 <title id="_270c5ee6-077e-f285-ff95-287984a30140">Normative references</title><p id="_5d68767b-3c2e-b2ee-db6d-6b8ca4c42620">The following referenced documents are indispensable for the application of this document. For dated references, only the edition cited applies. For undated references, the latest edition of the referenced document (including any amendments) applies.</p>
-<bibitem id="_b3c4f206-3e13-b015-cd17-9870f305183c" type="standard" schema-version="v1.2.9" anchor="JCGM_100_2008">
-  <fetched>2026-04-16</fetched>
+<bibitem id="_8ef28a86-90c7-a650-06f6-8e7c688e5ab3" type="standard" schema-version="v1.5.6" anchor="JCGM_100_2008">
+  <fetched>2026-06-16</fetched>
   
-<title format="text/plain" language="en" script="Latn">Guide to the expression of uncertainty in measurement</title>
+<title language="en" script="Latn">Guide to the expression of uncertainty in measurement</title>
 
-  <uri type="citation" language="en" script="Latn">https://www.bipm.org/documents/20126/2071204/JCGM_100_2008_E.pdf/cb0ef43f-baa5-11cf-3f85-4dcd86f77bd6</uri>
-  <uri type="citation" language="fr" script="Latn">https://www.bipm.org/documents/20126/2071204/JCGM_100_2008_F.pdf/53384399-1e6d-b598-dd17-2831a6b5b812</uri>
-  <docidentifier type="BIPM" primary="true" language="en" script="Latn">JCGM 100:2008</docidentifier>
-  <docidentifier type="BIPM" primary="true" language="fr" script="Latn">JCGM 100:2008</docidentifier>
+  
+<title language="fr" script="Latn">Guide pour l’expression de l’incertitude de mesure</title>
+
+  <uri language="en" script="Latn" type="citation">https://www.bipm.org/documents/20126/2071204/JCGM_100_2008_E.pdf/cb0ef43f-baa5-11cf-3f85-4dcd86f77bd6</uri>
+  <uri language="fr" script="Latn" type="citation">https://www.bipm.org/documents/20126/2071204/JCGM_100_2008_F.pdf/53384399-1e6d-b598-dd17-2831a6b5b812</uri>
+  <docidentifier language="en" script="Latn" type="BIPM" primary="true">JCGM 100:2008</docidentifier>
+  <docidentifier language="fr" script="Latn" type="BIPM" primary="true">JCGM 100:2008</docidentifier>
   <docidentifier type="BIPM" primary="true">JCGM 100:2008</docidentifier>
   <docnumber>JCGM 100:2008</docnumber>
   <date type="published">
@@ -16230,7 +16221,10 @@ expectation <stem block="false" type="MathML"><math xmlns="http://www.w3.org/199
       
 <name language="en" script="Latn">International Bureau of Weights and Measures</name>
 
-      <abbreviation>BIPM</abbreviation>
+      
+<name language="fr" script="Latn">Bureau international des poids et mesures</name>
+
+      <abbreviation language="fr" script="Latn">BIPM</abbreviation>
       <uri>www.bipm.org</uri>
     </organization>
   </contributor>
@@ -16241,7 +16235,10 @@ expectation <stem block="false" type="MathML"><math xmlns="http://www.w3.org/199
       
 <name language="en" script="Latn">International Organization for Standardization</name>
 
-      <abbreviation>ISO</abbreviation>
+      
+<name language="fr" script="Latn">Organisation internationale de normalisation</name>
+
+      <abbreviation language="en" script="Latn">ISO</abbreviation>
       <uri>www.iso.org</uri>
     </organization>
   </contributor>
@@ -16252,7 +16249,10 @@ expectation <stem block="false" type="MathML"><math xmlns="http://www.w3.org/199
       
 <name language="en" script="Latn">International Electrotechnical Commission</name>
 
-      <abbreviation>IEC</abbreviation>
+      
+<name language="fr" script="Latn">Commission électrotechnique internationale</name>
+
+      <abbreviation language="en" script="Latn">IEC</abbreviation>
       <uri>www.iec.ch</uri>
     </organization>
   </contributor>
@@ -16262,7 +16262,10 @@ expectation <stem block="false" type="MathML"><math xmlns="http://www.w3.org/199
       
 <name language="en" script="Latn">International Organization of Legal Metrology</name>
 
-      <abbreviation>OIML</abbreviation>
+      
+<name language="fr" script="Latn">Organisation Internationale de Métrologie Légale</name>
+
+      <abbreviation language="fr" script="Latn">OIML</abbreviation>
       <uri>www.oiml.org</uri>
     </organization>
   </contributor>
@@ -16272,7 +16275,10 @@ expectation <stem block="false" type="MathML"><math xmlns="http://www.w3.org/199
       
 <name language="en" script="Latn">International Union of Pure and Applied Chemistry</name>
 
-      <abbreviation>IUPAC</abbreviation>
+      
+<name language="fr" script="Latn">Union internationale de chimie pure et appliquée</name>
+
+      <abbreviation language="en" script="Latn">IUPAC</abbreviation>
       <uri>www.iupac.org</uri>
     </organization>
   </contributor>
@@ -16282,7 +16288,10 @@ expectation <stem block="false" type="MathML"><math xmlns="http://www.w3.org/199
       
 <name language="en" script="Latn">International Union of Pure and Applied Physics</name>
 
-      <abbreviation>IUPAP</abbreviation>
+      
+<name language="fr" script="Latn">Union internationale de physique pure et appliquée</name>
+
+      <abbreviation language="en" script="Latn">IUPAP</abbreviation>
       <uri>www.iupap.org</uri>
     </organization>
   </contributor>
@@ -16292,7 +16301,10 @@ expectation <stem block="false" type="MathML"><math xmlns="http://www.w3.org/199
       
 <name language="en" script="Latn">International Federation of Clinical Chemistry and Laboratory Medicine</name>
 
-      <abbreviation>IFCC</abbreviation>
+      
+<name language="fr" script="Latn">Fédération internationale de chimie clinique et de biologie moléculaire</name>
+
+      <abbreviation language="en" script="Latn">IFCC</abbreviation>
       <uri>www.ifcc.org</uri>
     </organization>
   </contributor>
@@ -16302,8 +16314,31 @@ expectation <stem block="false" type="MathML"><math xmlns="http://www.w3.org/199
       
 <name language="en" script="Latn">International Laboratory Accreditation Cooperation</name>
 
-      <abbreviation>ILAC</abbreviation>
+      
+<name language="fr" script="Latn">Coopération internationale d’accréditation des laboratoires</name>
+
+      <abbreviation language="en" script="Latn">ILAC</abbreviation>
       <uri>www.ilac.org</uri>
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="author">
+      <description>committee</description>
+    </role>
+    <organization>
+      
+<name language="fr" script="Latn">Bureau international des poids et mesures</name>
+
+      <subdivision>
+        
+<name language="en" script="Latn">Joint Committee for Guides in Metrology</name>
+
+        
+<name language="fr" script="Latn">Comité commun pour les guides en métrologie</name>
+
+        <abbreviation>JCGM</abbreviation>
+      </subdivision>
+      <abbreviation language="fr" script="Latn">BIPM</abbreviation>
     </organization>
   </contributor>
   <edition>1</edition>
@@ -16314,14 +16349,17 @@ expectation <stem block="false" type="MathML"><math xmlns="http://www.w3.org/199
     <city>Paris</city>
   </place>
 </bibitem>
-<bibitem id="_3ba43693-ee13-21b4-d728-aa2fbe50c594" type="standard" schema-version="v1.2.9" anchor="JCGM_101_2008">
-  <fetched>2026-04-16</fetched>
+<bibitem id="_6d11700b-7f6e-11af-fd88-e6d49340e5ea" type="standard" schema-version="v1.5.6" anchor="JCGM_101_2008">
+  <fetched>2026-06-16</fetched>
   
-<title format="text/plain" language="en" script="Latn">Supplement 1 to the “Guide to the expression of uncertainty in measurement” — Propagation of distributions using a Monte Carlo method</title>
+<title language="en" script="Latn">Supplement 1 to the “Guide to the expression of uncertainty in measurement” — Propagation of distributions using a Monte Carlo method</title>
 
-  <uri type="citation" language="en" script="Latn">https://www.bipm.org/documents/20126/2071204/JCGM_101_2008_E.pdf/325dcaad-c15a-407c-1105-8b7f322d651c</uri>
-  <docidentifier type="BIPM" primary="true" language="en" script="Latn">JCGM 101:2008</docidentifier>
-  <docidentifier type="BIPM" primary="true" language="fr" script="Latn">JCGM 101:2008</docidentifier>
+  
+<title language="fr" script="Latn">Supplément 1 du “Guide pour l’expression de l’incertitude de mesure” — Propagation de distributions par une méthode de Monte Carlo</title>
+
+  <uri language="en" script="Latn" type="citation">https://www.bipm.org/documents/20126/2071204/JCGM_101_2008_E.pdf/325dcaad-c15a-407c-1105-8b7f322d651c</uri>
+  <docidentifier language="en" script="Latn" type="BIPM" primary="true">JCGM 101:2008</docidentifier>
+  <docidentifier language="fr" script="Latn" type="BIPM" primary="true">JCGM 101:2008</docidentifier>
   <docidentifier type="BIPM" primary="true">JCGM 101:2008</docidentifier>
   <docnumber>JCGM 101:2008</docnumber>
   <date type="published">
@@ -16333,7 +16371,10 @@ expectation <stem block="false" type="MathML"><math xmlns="http://www.w3.org/199
       
 <name language="en" script="Latn">International Bureau of Weights and Measures</name>
 
-      <abbreviation>BIPM</abbreviation>
+      
+<name language="fr" script="Latn">Bureau international des poids et mesures</name>
+
+      <abbreviation language="fr" script="Latn">BIPM</abbreviation>
       <uri>www.bipm.org</uri>
     </organization>
   </contributor>
@@ -16344,7 +16385,10 @@ expectation <stem block="false" type="MathML"><math xmlns="http://www.w3.org/199
       
 <name language="en" script="Latn">International Organization for Standardization</name>
 
-      <abbreviation>ISO</abbreviation>
+      
+<name language="fr" script="Latn">Organisation internationale de normalisation</name>
+
+      <abbreviation language="en" script="Latn">ISO</abbreviation>
       <uri>www.iso.org</uri>
     </organization>
   </contributor>
@@ -16355,7 +16399,10 @@ expectation <stem block="false" type="MathML"><math xmlns="http://www.w3.org/199
       
 <name language="en" script="Latn">International Electrotechnical Commission</name>
 
-      <abbreviation>IEC</abbreviation>
+      
+<name language="fr" script="Latn">Commission électrotechnique internationale</name>
+
+      <abbreviation language="en">IEC</abbreviation>
       <uri>www.iec.ch</uri>
     </organization>
   </contributor>
@@ -16365,7 +16412,10 @@ expectation <stem block="false" type="MathML"><math xmlns="http://www.w3.org/199
       
 <name language="en" script="Latn">International Organization of Legal Metrology</name>
 
-      <abbreviation>OIML</abbreviation>
+      
+<name language="fr" script="Latn">Organisation internationale de métrologie légale</name>
+
+      <abbreviation language="fr" script="Latn">OIML</abbreviation>
       <uri>www.oiml.org</uri>
     </organization>
   </contributor>
@@ -16375,7 +16425,10 @@ expectation <stem block="false" type="MathML"><math xmlns="http://www.w3.org/199
       
 <name language="en" script="Latn">International Union of Pure and Applied Chemistry</name>
 
-      <abbreviation>IUPAC</abbreviation>
+      
+<name language="fr" script="Latn">Union internationale de chimie pure et appliquée</name>
+
+      <abbreviation language="en" script="Latn">IUPAC</abbreviation>
       <uri>www.iupac.org</uri>
     </organization>
   </contributor>
@@ -16385,7 +16438,10 @@ expectation <stem block="false" type="MathML"><math xmlns="http://www.w3.org/199
       
 <name language="en" script="Latn">International Union of Pure and Applied Physics</name>
 
-      <abbreviation>IUPAP</abbreviation>
+      
+<name language="fr" script="Latn">Union internationale de physique pure et appliquée</name>
+
+      <abbreviation language="en" script="Latn">IUPAP</abbreviation>
       <uri>www.iupap.org</uri>
     </organization>
   </contributor>
@@ -16395,7 +16451,10 @@ expectation <stem block="false" type="MathML"><math xmlns="http://www.w3.org/199
       
 <name language="en" script="Latn">International Federation of Clinical Chemistry and Laboratory Medicine</name>
 
-      <abbreviation>IFCC</abbreviation>
+      
+<name language="fr" script="Latn">Fédération internationale de chimie clinique et de biologie moléculaire</name>
+
+      <abbreviation language="en" script="Latn">IFCC</abbreviation>
       <uri>www.ifcc.org</uri>
     </organization>
   </contributor>
@@ -16405,8 +16464,31 @@ expectation <stem block="false" type="MathML"><math xmlns="http://www.w3.org/199
       
 <name language="en" script="Latn">International Laboratory Accreditation Cooperation</name>
 
-      <abbreviation>ILAC</abbreviation>
+      
+<name language="fr" script="Latn">Coopération internationale d’accréditation des laboratoires</name>
+
+      <abbreviation language="en" script="Latn">ILAC</abbreviation>
       <uri>www.ilac.org</uri>
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="author">
+      <description>committee</description>
+    </role>
+    <organization>
+      
+<name language="fr" script="Latn">Bureau international des poids et mesures</name>
+
+      <subdivision>
+        
+<name language="en" script="Latn">Joint Committee for Guides in Metrology</name>
+
+        
+<name language="fr" script="Latn">Comité commun pour les Guides en métrologie</name>
+
+        <abbreviation>JCGM</abbreviation>
+      </subdivision>
+      <abbreviation language="fr" script="Latn">BIPM</abbreviation>
     </organization>
   </contributor>
   <edition>1</edition>
@@ -16417,14 +16499,17 @@ expectation <stem block="false" type="MathML"><math xmlns="http://www.w3.org/199
     <city>Paris</city>
   </place>
 </bibitem>
-<bibitem id="_d031f9db-2d06-3207-d4a6-5541826a6b25" type="standard" schema-version="v1.2.9" anchor="JCGM_102_2011">
-  <fetched>2026-04-16</fetched>
+<bibitem id="_9d8a27d1-ec32-62c4-8503-d5388546242e" type="standard" schema-version="v1.5.6" anchor="JCGM_102_2011">
+  <fetched>2026-06-16</fetched>
   
-<title format="text/plain" language="en" script="Latn">Supplement 2 to the “Guide to the expression of uncertainty in measurement” – Extension to any number of output quantities</title>
+<title language="en" script="Latn">Supplement 2 to the “Guide to the expression of uncertainty in measurement” – Extension to any number of output quantities</title>
 
-  <uri type="citation" language="en" script="Latn">https://www.bipm.org/documents/20126/2071204/JCGM_102_2011_E.pdf/6a3281aa-1397-d703-d7a1-a8d58c9bf2a5</uri>
-  <docidentifier type="BIPM" primary="true" language="en" script="Latn">JCGM 102:2011</docidentifier>
-  <docidentifier type="BIPM" primary="true" language="fr" script="Latn">JCGM 102:2011</docidentifier>
+  
+<title language="fr" script="Latn">Supplément 2 du “Guide pour l’expression de l’incertitude de mesure” — Extension à un nombre quelconque de grandeurs de sortie</title>
+
+  <uri language="en" script="Latn" type="citation">https://www.bipm.org/documents/20126/2071204/JCGM_102_2011_E.pdf/6a3281aa-1397-d703-d7a1-a8d58c9bf2a5</uri>
+  <docidentifier language="en" script="Latn" type="BIPM" primary="true">JCGM 102:2011</docidentifier>
+  <docidentifier language="fr" script="Latn" type="BIPM" primary="true">JCGM 102:2011</docidentifier>
   <docidentifier type="BIPM" primary="true">JCGM 102:2011</docidentifier>
   <docnumber>JCGM 102:2011</docnumber>
   <date type="published">
@@ -16436,7 +16521,10 @@ expectation <stem block="false" type="MathML"><math xmlns="http://www.w3.org/199
       
 <name language="en" script="Latn">International Bureau of Weights and Measures</name>
 
-      <abbreviation>BIPM</abbreviation>
+      
+<name language="fr" script="Latn">Bureau international des poids et mesures</name>
+
+      <abbreviation language="fr" script="Latn">BIPM</abbreviation>
       <uri>www.bipm.org</uri>
     </organization>
   </contributor>
@@ -16446,7 +16534,10 @@ expectation <stem block="false" type="MathML"><math xmlns="http://www.w3.org/199
       
 <name language="en" script="Latn">International Organization for Standardization</name>
 
-      <abbreviation>ISO</abbreviation>
+      
+<name language="fr" script="Latn">Organisation internationale de normalisation</name>
+
+      <abbreviation language="en" script="Latn">ISO</abbreviation>
       <uri>www.iso.org</uri>
     </organization>
   </contributor>
@@ -16457,7 +16548,10 @@ expectation <stem block="false" type="MathML"><math xmlns="http://www.w3.org/199
       
 <name language="en" script="Latn">International Organization for Standardization</name>
 
-      <abbreviation>ISO</abbreviation>
+      
+<name language="fr" script="Latn">Organisation internationale de normalisation</name>
+
+      <abbreviation language="en" script="Latn">ISO</abbreviation>
       <uri>www.iso.org</uri>
     </organization>
   </contributor>
@@ -16468,7 +16562,10 @@ expectation <stem block="false" type="MathML"><math xmlns="http://www.w3.org/199
       
 <name language="en" script="Latn">International Electrotechnical Commission</name>
 
-      <abbreviation>IEC</abbreviation>
+      
+<name language="fr" script="Latn">Commission électrotechnique internationale</name>
+
+      <abbreviation language="en" script="Latn">IEC</abbreviation>
       <uri>www.iec.ch</uri>
     </organization>
   </contributor>
@@ -16478,7 +16575,10 @@ expectation <stem block="false" type="MathML"><math xmlns="http://www.w3.org/199
       
 <name language="en" script="Latn">International Organization of Legal Metrology</name>
 
-      <abbreviation>OIML</abbreviation>
+      
+<name language="fr" script="Latn">Organisation Internationale de Métrologie Légale</name>
+
+      <abbreviation language="fr" script="Latn">OIML</abbreviation>
       <uri>www.oiml.org</uri>
     </organization>
   </contributor>
@@ -16488,7 +16588,10 @@ expectation <stem block="false" type="MathML"><math xmlns="http://www.w3.org/199
       
 <name language="en" script="Latn">International Union of Pure and Applied Chemistry</name>
 
-      <abbreviation>IUPAC</abbreviation>
+      
+<name language="fr" script="Latn">Union internationale de chimie pure et appliquée</name>
+
+      <abbreviation language="en" script="Latn">IUPAC</abbreviation>
       <uri>www.iupac.org</uri>
     </organization>
   </contributor>
@@ -16498,7 +16601,10 @@ expectation <stem block="false" type="MathML"><math xmlns="http://www.w3.org/199
       
 <name language="en" script="Latn">International Union of Pure and Applied Physics</name>
 
-      <abbreviation>IUPAP</abbreviation>
+      
+<name language="fr" script="Latn">Union internationale de physique pure et appliquée</name>
+
+      <abbreviation language="en" script="Latn">IUPAP</abbreviation>
       <uri>www.iupap.org</uri>
     </organization>
   </contributor>
@@ -16508,7 +16614,10 @@ expectation <stem block="false" type="MathML"><math xmlns="http://www.w3.org/199
       
 <name language="en" script="Latn">International Federation of Clinical Chemistry and Laboratory Medicine</name>
 
-      <abbreviation>IFCC</abbreviation>
+      
+<name language="fr" script="Latn">Fédération internationale de chimie clinique et de biologie moléculaire</name>
+
+      <abbreviation language="en" script="Latn">IFCC</abbreviation>
       <uri>www.ifcc.org</uri>
     </organization>
   </contributor>
@@ -16518,8 +16627,31 @@ expectation <stem block="false" type="MathML"><math xmlns="http://www.w3.org/199
       
 <name language="en" script="Latn">International Laboratory Accreditation Cooperation</name>
 
-      <abbreviation>ILAC</abbreviation>
+      
+<name language="fr" script="Latn">Coopération internationale d’accréditation des laboratoires</name>
+
+      <abbreviation language="en" script="Latn">ILAC</abbreviation>
       <uri>www.ilac.org</uri>
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="author">
+      <description>committee</description>
+    </role>
+    <organization>
+      
+<name language="fr" script="Latn">Bureau international des poids et mesures</name>
+
+      <subdivision>
+        
+<name language="en" script="Latn">Joint Committee for Guides in Metrology</name>
+
+        
+<name language="fr" script="Latn">Comité commun pour les guides en métrologie</name>
+
+        <abbreviation>JCGM</abbreviation>
+      </subdivision>
+      <abbreviation language="fr" script="Latn">BIPM</abbreviation>
     </organization>
   </contributor>
   <language>en</language>
@@ -16529,14 +16661,17 @@ expectation <stem block="false" type="MathML"><math xmlns="http://www.w3.org/199
     <city>Paris</city>
   </place>
 </bibitem>
-<bibitem id="_dcdecba9-81ff-bde3-23a6-90ff746634a1" type="standard" schema-version="v1.2.9" anchor="JCGM_200_2012">
-  <fetched>2026-04-16</fetched>
+<bibitem id="_04b7ab59-dcd2-e9c5-7e48-83f25ae9d988" type="standard" schema-version="v1.5.6" anchor="JCGM_200_2012">
+  <fetched>2026-06-16</fetched>
   
-<title format="text/plain" language="en" script="Latn">International vocabulary of metrology – Basic and general concepts and associated terms (VIM)</title>
+<title language="en" script="Latn">International vocabulary of metrology – Basic and general concepts and associated terms (VIM)</title>
 
-  <uri type="citation" language="en" script="Latn">https://www.bipm.org/documents/20126/2071204/JCGM_200_2012.pdf/f0e1ad45-d337-bbeb-53a6-15fe649d0ff1</uri>
-  <docidentifier type="BIPM" primary="true" language="en" script="Latn">JCGM 200:2012</docidentifier>
-  <docidentifier type="BIPM" primary="true" language="fr" script="Latn">JCGM 200:2012</docidentifier>
+  
+<title language="fr" script="Latn">Vocabulaire international de métrologie – Concepts fondamentaux et généraux et termes associés (VIM)</title>
+
+  <uri language="en" script="Latn" type="citation">https://www.bipm.org/documents/20126/2071204/JCGM_200_2012.pdf/f0e1ad45-d337-bbeb-53a6-15fe649d0ff1</uri>
+  <docidentifier language="en" script="Latn" type="BIPM" primary="true">JCGM 200:2012</docidentifier>
+  <docidentifier language="fr" script="Latn" type="BIPM" primary="true">JCGM 200:2012</docidentifier>
   <docidentifier type="BIPM" primary="true">JCGM 200:2012</docidentifier>
   <docnumber>JCGM 200:2012</docnumber>
   <date type="published">
@@ -16548,7 +16683,10 @@ expectation <stem block="false" type="MathML"><math xmlns="http://www.w3.org/199
       
 <name language="en" script="Latn">International Bureau of Weights and Measures</name>
 
-      <abbreviation>BIPM</abbreviation>
+      
+<name language="fr" script="Latn">Bureau international des poids et mesures</name>
+
+      <abbreviation language="fr" script="Latn">BIPM</abbreviation>
       <uri>www.bipm.org</uri>
     </organization>
   </contributor>
@@ -16558,7 +16696,10 @@ expectation <stem block="false" type="MathML"><math xmlns="http://www.w3.org/199
       
 <name language="en" script="Latn">International Organization for Standardization</name>
 
-      <abbreviation>ISO</abbreviation>
+      
+<name language="fr" script="Latn">Organisation internationale de normalisation</name>
+
+      <abbreviation language="en" script="Latn">ISO</abbreviation>
       <uri>www.iso.org</uri>
     </organization>
   </contributor>
@@ -16569,7 +16710,10 @@ expectation <stem block="false" type="MathML"><math xmlns="http://www.w3.org/199
       
 <name language="en" script="Latn">International Organization for Standardization</name>
 
-      <abbreviation>ISO</abbreviation>
+      
+<name language="fr" script="Latn">Organisation internationale de normalisation</name>
+
+      <abbreviation language="en" script="Latn">ISO</abbreviation>
       <uri>www.iso.org</uri>
     </organization>
   </contributor>
@@ -16580,7 +16724,10 @@ expectation <stem block="false" type="MathML"><math xmlns="http://www.w3.org/199
       
 <name language="en" script="Latn">International Electrotechnical Commission</name>
 
-      <abbreviation>IEC</abbreviation>
+      
+<name language="fr" script="Latn">Commission électrotechnique internationale</name>
+
+      <abbreviation language="en" script="Latn">IEC</abbreviation>
       <uri>www.iec.ch</uri>
     </organization>
   </contributor>
@@ -16590,7 +16737,10 @@ expectation <stem block="false" type="MathML"><math xmlns="http://www.w3.org/199
       
 <name language="en" script="Latn">International Organization of Legal Metrology</name>
 
-      <abbreviation>OIML</abbreviation>
+      
+<name language="fr" script="Latn">Organisation Internationale de Métrologie Légale</name>
+
+      <abbreviation language="fr" script="Latn">OIML</abbreviation>
       <uri>www.oiml.org</uri>
     </organization>
   </contributor>
@@ -16600,7 +16750,10 @@ expectation <stem block="false" type="MathML"><math xmlns="http://www.w3.org/199
       
 <name language="en" script="Latn">International Union of Pure and Applied Chemistry</name>
 
-      <abbreviation>IUPAC</abbreviation>
+      
+<name language="fr" script="Latn">Union internationale de chimie pure et appliquée</name>
+
+      <abbreviation language="en" script="Latn">IUPAC</abbreviation>
       <uri>www.iupac.org</uri>
     </organization>
   </contributor>
@@ -16610,7 +16763,10 @@ expectation <stem block="false" type="MathML"><math xmlns="http://www.w3.org/199
       
 <name language="en" script="Latn">International Union of Pure and Applied Physics</name>
 
-      <abbreviation>IUPAP</abbreviation>
+      
+<name language="fr" script="Latn">Union internationale de physique pure et appliquée</name>
+
+      <abbreviation language="en" script="Latn">IUPAP</abbreviation>
       <uri>www.iupap.org</uri>
     </organization>
   </contributor>
@@ -16620,7 +16776,10 @@ expectation <stem block="false" type="MathML"><math xmlns="http://www.w3.org/199
       
 <name language="en" script="Latn">International Federation of Clinical Chemistry and Laboratory Medicine</name>
 
-      <abbreviation>IFCC</abbreviation>
+      
+<name language="fr" script="Latn">Fédération internationale de chimie clinique et de biologie moléculaire</name>
+
+      <abbreviation language="en" script="Latn">IFCC</abbreviation>
       <uri>www.ifcc.org</uri>
     </organization>
   </contributor>
@@ -16630,8 +16789,31 @@ expectation <stem block="false" type="MathML"><math xmlns="http://www.w3.org/199
       
 <name language="en" script="Latn">International Laboratory Accreditation Cooperation</name>
 
-      <abbreviation>ILAC</abbreviation>
+      
+<name language="fr" script="Latn">Coopération internationale d’accréditation des laboratoires</name>
+
+      <abbreviation language="en" script="Latn">ILAC</abbreviation>
       <uri>www.ilac.org</uri>
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="author">
+      <description>committee</description>
+    </role>
+    <organization>
+      
+<name language="fr" script="Latn">Bureau international des poids et mesures</name>
+
+      <subdivision>
+        
+<name language="en" script="Latn">Joint Committee for Guides in Metrology</name>
+
+        
+<name language="fr" script="Latn">Comité commun pour les guides en métrologie</name>
+
+        <abbreviation>JCGM</abbreviation>
+      </subdivision>
+      <abbreviation language="fr" script="Latn">BIPM</abbreviation>
     </organization>
   </contributor>
   <edition>3</edition>
@@ -16642,25 +16824,35 @@ expectation <stem block="false" type="MathML"><math xmlns="http://www.w3.org/199
     <city>Paris</city>
   </place>
 </bibitem>
-<bibitem id="_26e0a855-ed99-d4e3-e763-2a7742571a48" type="standard" schema-version="v1.2.9" anchor="ISO_IEC_17000_2004">
-  <fetched>2026-04-16</fetched>
+<bibitem id="_0b2137b4-2cf4-7807-fbd6-209591ecdf0f" type="standard" schema-version="v1.5.6" anchor="ISO_IEC_17000_2004">
+  <fetched>2026-06-16</fetched>
   
-<title type="title-intro" format="text/plain" language="en" script="Latn">Conformity assessment</title>
+<title language="en" script="Latn" type="title-intro">Conformity assessment</title>
 
   
-<title type="title-main" format="text/plain" language="en" script="Latn">Vocabulary and general principles</title>
+<title language="en" script="Latn" type="title-main">Vocabulary and general principles</title>
 
   
-<title type="main" format="text/plain" language="en" script="Latn">Conformity assessment — Vocabulary and general principles</title>
+<title language="en" script="Latn" type="main">Conformity assessment — Vocabulary and general principles</title>
+
+  
+<title language="fr" script="Latn" type="title-intro">Évaluation de la conformité</title>
+
+  
+<title language="fr" script="Latn" type="title-main">Vocabulaire et principes généraux</title>
+
+  
+<title language="fr" script="Latn" type="main">Évaluation de la conformité — Vocabulaire et principes généraux</title>
 
   <uri type="src">https://www.iso.org/standard/29316.html</uri>
+  <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:29316:en</uri>
   <uri type="rss">https://www.iso.org/contents/data/standard/02/93/29316.detail.rss</uri>
   <docidentifier type="ISO" primary="true">ISO/IEC 17000:2004</docidentifier>
   <docidentifier type="iso-reference">ISO/IEC 17000:2004(E)</docidentifier>
   <docidentifier type="URN">urn:iso:std:iso-iec:17000:stage-95.99</docidentifier>
   <docnumber>17000</docnumber>
   <date type="published">
-    <on>2004-11</on>
+    <on>2004-11-03</on>
   </date>
   <contributor>
     <role type="publisher"/>
@@ -16682,12 +16874,32 @@ expectation <stem block="false" type="MathML"><math xmlns="http://www.w3.org/199
       <uri>www.iec.ch</uri>
     </organization>
   </contributor>
+  <contributor>
+    <role type="author">
+      <description>committee</description>
+    </role>
+    <organization>
+      
+<name>International Organization for Standardization</name>
+
+      <subdivision type="technical-committee" subtype="CASCO">
+        
+<name>ISO/CASCO</name>
+
+        <identifier>ISO/CASCO</identifier>
+      </subdivision>
+      <abbreviation>ISO</abbreviation>
+    </organization>
+  </contributor>
   <edition>1</edition>
+  <language>ar</language>
   <language>en</language>
+  <language>es</language>
   <language>fr</language>
+  <language>ru</language>
   <script>Latn</script>
-  <abstract format="text/plain" language="en" script="Latn">ISO/IEC 17000:2004 specifies general terms and definitions relating to conformity assessment, including the accreditation of conformity assessment bodies, and to the use of conformity assessment to facilitate trade. A description of the functional approach to conformity assessment is included as a further aid to understanding among users of conformity assessment, conformity assessment bodies and their accreditation bodies, in both voluntary and regulatory environments.
-ISO/IEC 17000:2004 does not set out to provide a vocabulary for all of the concepts that may need to be used in describing particular conformity assessment activities. Terms and definitions are given only where the concept defined would not be understandable from the general language use of the term or where an existing standard definition is not applicable.</abstract>
+  <script>Cyrl</script>
+  <abstract language="en" script="Latn">ISO/IEC 17000:2004 specifies general terms and definitions relating to conformity assessment, including the accreditation of conformity assessment bodies, and to the use of conformity assessment to facilitate trade. A description of the functional approach to conformity assessment is included as a further aid to understanding among users of conformity assessment, conformity assessment bodies and their accreditation bodies, in both voluntary and regulatory environments. ISO/IEC 17000:2004 does not set out to provide a vocabulary for all of the concepts that may need to be used in describing particular conformity assessment activities. Terms and definitions are given only where the concept defined would not be understandable from the general language use of the term or where an existing standard definition is not applicable.</abstract>
   <status>
     <stage>95</stage>
     <substage>99</substage>
@@ -16702,13 +16914,10 @@ ISO/IEC 17000:2004 does not set out to provide a vocabulary for all of the conce
       </organization>
     </owner>
   </copyright>
-  <relation type="updates">
-    <bibitem type="standard">
-      <formattedref format="text/plain">ISO/IEC 17000:2020</formattedref>
-      <docidentifier type="ISO" primary="true">ISO/IEC 17000:2020</docidentifier>
-      <date type="circulated">
-        <on>2020-05-26</on>
-      </date>
+  <relation type="obsoletedBy">
+    <bibitem>
+      <formattedref>ISO/IEC NP 17000-1</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/IEC NP 17000-1</docidentifier>
     </bibitem>
 
   </relation>
@@ -16716,32 +16925,41 @@ ISO/IEC 17000:2004 does not set out to provide a vocabulary for all of the conce
     <city>Geneva</city>
   </place>
 </bibitem>
-<bibitem id="_82cc4d51-3caa-c61f-1cfd-a37bca528385" type="standard" schema-version="v1.2.9" anchor="ISO_3534_1_2006">
-  <fetched>2026-04-16</fetched>
+<bibitem id="_20b43196-e24c-8ad1-2bb3-a3a9aa8014cd" type="standard" schema-version="v1.5.6" anchor="ISO_3534_1_2006">
+  <fetched>2026-06-16</fetched>
   
-<title type="title-intro" format="text/plain" language="en" script="Latn">Statistics</title>
+<title language="en" script="Latn" type="title-intro">Statistics</title>
 
   
-<title type="title-main" format="text/plain" language="en" script="Latn">Vocabulary and symbols</title>
+<title language="en" script="Latn" type="title-main">Vocabulary and symbols</title>
 
   
-<title type="title-part" format="text/plain" language="en" script="Latn">Part 1: General statistical terms and terms used in probability</title>
+<title language="en" script="Latn" type="title-part">Part 1: General statistical terms and terms used in probability</title>
 
   
-<title type="main" format="text/plain" language="en" script="Latn">Statistics — Vocabulary and symbols — Part 1: General statistical terms and terms used in probability</title>
+<title language="en" script="Latn" type="main">Statistics — Vocabulary and symbols — Part 1: General statistical terms and terms used in probability</title>
+
+  
+<title language="fr" script="Latn" type="title-intro">Statistique</title>
+
+  
+<title language="fr" script="Latn" type="title-main">Vocabulaire et symboles</title>
+
+  
+<title language="fr" script="Latn" type="title-part">Partie 1: Termes statistiques généraux et termes utilisés en calcul des probabilités</title>
+
+  
+<title language="fr" script="Latn" type="main">Statistique — Vocabulaire et symboles — Partie 1: Termes statistiques généraux et termes utilisés en calcul des probabilités</title>
 
   <uri type="src">https://www.iso.org/standard/40145.html</uri>
   <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:40145:en</uri>
   <uri type="rss">https://www.iso.org/contents/data/standard/04/01/40145.detail.rss</uri>
   <docidentifier type="ISO" primary="true">ISO 3534-1:2006</docidentifier>
   <docidentifier type="iso-reference">ISO 3534-1:2006(E)</docidentifier>
-  <docidentifier type="URN">urn:iso:std:iso:3534:-1:stage-90.60</docidentifier>
+  <docidentifier type="URN">urn:iso:std:iso:3534:-1</docidentifier>
   <docnumber>3534</docnumber>
   <date type="published">
-    <on>2006-10</on>
-  </date>
-  <date type="corrected">
-    <on>2007-09</on>
+    <on>2006-10-20</on>
   </date>
   <contributor>
     <role type="publisher"/>
@@ -16753,11 +16971,28 @@ ISO/IEC 17000:2004 does not set out to provide a vocabulary for all of the conce
       <uri>www.iso.org</uri>
     </organization>
   </contributor>
+  <contributor>
+    <role type="author">
+      <description>committee</description>
+    </role>
+    <organization>
+      
+<name>International Organization for Standardization</name>
+
+      <subdivision type="technical-committee" subtype="TC">
+        
+<name>Applications of statistical methods</name>
+
+        <identifier>ISO/TC 69</identifier>
+      </subdivision>
+      <abbreviation>ISO</abbreviation>
+    </organization>
+  </contributor>
   <edition>2</edition>
   <language>en</language>
   <language>fr</language>
   <script>Latn</script>
-  <abstract format="text/plain" language="en" script="Latn">ISO 3534-1:2006 defines general statistical terms and terms used in probability which may be used in the drafting of other International Standards. In addition, it defines symbols for a limited number of these terms.</abstract>
+  <abstract language="en" script="Latn">ISO 3534-1:2006 defines general statistical terms and terms used in probability which may be used in the drafting of other International Standards. In addition, it defines symbols for a limited number of these terms.</abstract>
   <status>
     <stage>90</stage>
     <substage>60</substage>
@@ -16773,9 +17008,26 @@ ISO/IEC 17000:2004 does not set out to provide a vocabulary for all of the conce
     </owner>
   </copyright>
   <relation type="obsoletes">
-    <bibitem type="standard">
-      <formattedref format="text/plain">ISO 3534-1:1993</formattedref>
+    <bibitem>
+      <formattedref>ISO 3534-1:1993</formattedref>
       <docidentifier type="ISO" primary="true">ISO 3534-1:1993</docidentifier>
+      <date type="published">
+        <on>1993-06-03</on>
+      </date>
+    </bibitem>
+
+  </relation>
+  <relation type="obsoletedBy">
+    <bibitem>
+      <formattedref>ISO/NP 3534-1</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/NP 3534-1</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="obsoletedBy">
+    <bibitem>
+      <formattedref>ISO/PWI 3534-1</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/PWI 3534-1</docidentifier>
     </bibitem>
 
   </relation>
@@ -16783,29 +17035,41 @@ ISO/IEC 17000:2004 does not set out to provide a vocabulary for all of the conce
     <city>Geneva</city>
   </place>
 </bibitem>
-<bibitem id="_24038b93-0d5b-affd-4842-e0356ea93ff4" type="standard" schema-version="v1.2.9" anchor="ISO_3534_2_2006">
-  <fetched>2026-04-16</fetched>
+<bibitem id="_5d8ea079-f225-37d2-f94f-fdeb0da0ad14" type="standard" schema-version="v1.5.6" anchor="ISO_3534_2_2006">
+  <fetched>2026-06-16</fetched>
   
-<title type="title-intro" format="text/plain" language="en" script="Latn">Statistics</title>
+<title language="en" script="Latn" type="title-intro">Statistics</title>
 
   
-<title type="title-main" format="text/plain" language="en" script="Latn">Vocabulary and symbols</title>
+<title language="en" script="Latn" type="title-main">Vocabulary and symbols</title>
 
   
-<title type="title-part" format="text/plain" language="en" script="Latn">Part 2: Applied statistics</title>
+<title language="en" script="Latn" type="title-part">Part 2: Applied statistics</title>
 
   
-<title type="main" format="text/plain" language="en" script="Latn">Statistics — Vocabulary and symbols — Part 2: Applied statistics</title>
+<title language="en" script="Latn" type="main">Statistics — Vocabulary and symbols — Part 2: Applied statistics</title>
+
+  
+<title language="fr" script="Latn" type="title-intro">Statistique</title>
+
+  
+<title language="fr" script="Latn" type="title-main">Vocabulaire et symboles</title>
+
+  
+<title language="fr" script="Latn" type="title-part">Partie 2: Statistique appliquée</title>
+
+  
+<title language="fr" script="Latn" type="main">Statistique — Vocabulaire et symboles — Partie 2: Statistique appliquée</title>
 
   <uri type="src">https://www.iso.org/standard/40147.html</uri>
   <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:40147:en</uri>
   <uri type="rss">https://www.iso.org/contents/data/standard/04/01/40147.detail.rss</uri>
   <docidentifier type="ISO" primary="true">ISO 3534-2:2006</docidentifier>
   <docidentifier type="iso-reference">ISO 3534-2:2006(E)</docidentifier>
-  <docidentifier type="URN">urn:iso:std:iso:3534:-2:stage-90.60</docidentifier>
+  <docidentifier type="URN">urn:iso:std:iso:3534:-2</docidentifier>
   <docnumber>3534</docnumber>
   <date type="published">
-    <on>2006-09</on>
+    <on>2006-09-29</on>
   </date>
   <contributor>
     <role type="publisher"/>
@@ -16817,12 +17081,28 @@ ISO/IEC 17000:2004 does not set out to provide a vocabulary for all of the conce
       <uri>www.iso.org</uri>
     </organization>
   </contributor>
+  <contributor>
+    <role type="author">
+      <description>committee</description>
+    </role>
+    <organization>
+      
+<name>International Organization for Standardization</name>
+
+      <subdivision type="technical-committee" subtype="TC">
+        
+<name>Applications of statistical methods</name>
+
+        <identifier>ISO/TC 69</identifier>
+      </subdivision>
+      <abbreviation>ISO</abbreviation>
+    </organization>
+  </contributor>
   <edition>2</edition>
   <language>en</language>
   <language>fr</language>
   <script>Latn</script>
-  <abstract format="text/plain" language="en" script="Latn">ISO 3534-2:2006 defines applied statistics terms, and expresses them in a conceptual framework in accordance with ISO normative terminology practice. Term entries are arranged thematically. An alphabetical index is provided. Standardized symbols and abbreviations are defined.
-The two principal purposes of ISO 3534-2:2006 are, specifically, to establish a common vocabulary for use throughout ISO/TC 69 standards, together with the broader intent to enhance the preciseness, clarity and cohesiveness in the usage/application of applied statistics generally. The mathematical level has deliberately been kept to a low level in order for the content to be made readily comprehensible to the widest possible readership.</abstract>
+  <abstract language="en" script="Latn">ISO 3534-2:2006 defines applied statistics terms, and expresses them in a conceptual framework in accordance with ISO normative terminology practice. Term entries are arranged thematically. An alphabetical index is provided. Standardized symbols and abbreviations are defined. The two principal purposes of ISO 3534-2:2006 are, specifically, to establish a common vocabulary for use throughout ISO/TC 69 standards, together with the broader intent to enhance the preciseness, clarity and cohesiveness in the usage/application of applied statistics generally. The mathematical level has deliberately been kept to a low level in order for the content to be made readily comprehensible to the widest possible readership.</abstract>
   <status>
     <stage>90</stage>
     <substage>60</substage>
@@ -16838,9 +17118,19 @@ The two principal purposes of ISO 3534-2:2006 are, specifically, to establish a 
     </owner>
   </copyright>
   <relation type="obsoletes">
-    <bibitem type="standard">
-      <formattedref format="text/plain">ISO 3534-2:1993</formattedref>
+    <bibitem>
+      <formattedref>ISO 3534-2:1993</formattedref>
       <docidentifier type="ISO" primary="true">ISO 3534-2:1993</docidentifier>
+      <date type="published">
+        <on>1993-06-03</on>
+      </date>
+    </bibitem>
+
+  </relation>
+  <relation type="obsoletedBy">
+    <bibitem>
+      <formattedref>ISO/PWI 3534-2</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/PWI 3534-2</docidentifier>
     </bibitem>
 
   </relation>
@@ -16848,28 +17138,41 @@ The two principal purposes of ISO 3534-2:2006 are, specifically, to establish a 
     <city>Geneva</city>
   </place>
 </bibitem>
-<bibitem id="_e7c0bb83-d0d9-1226-6ebe-a5ac6997a8d0" type="standard" schema-version="v1.2.9" anchor="ISO_10576_1_2003">
-  <fetched>2026-04-16</fetched>
+<bibitem id="_cda3fc9a-07c7-bf98-66ed-768d5b426889" type="standard" schema-version="v1.5.6" anchor="ISO_10576_1_2003">
+  <fetched>2026-06-16</fetched>
   
-<title type="title-intro" format="text/plain" language="en" script="Latn">Statistical methods</title>
+<title language="en" script="Latn" type="title-intro">Statistical methods</title>
 
   
-<title type="title-main" format="text/plain" language="en" script="Latn">Guidelines for the evaluation of conformity with specified requirements</title>
+<title language="en" script="Latn" type="title-main">Guidelines for the evaluation of conformity with specified requirements</title>
 
   
-<title type="title-part" format="text/plain" language="en" script="Latn">Part 1: General principles</title>
+<title language="en" script="Latn" type="title-part">Part 1: General principles</title>
 
   
-<title type="main" format="text/plain" language="en" script="Latn">Statistical methods — Guidelines for the evaluation of conformity with specified requirements — Part 1: General principles</title>
+<title language="en" script="Latn" type="main">Statistical methods — Guidelines for the evaluation of conformity with specified requirements — Part 1: General principles</title>
+
+  
+<title language="fr" script="Latn" type="title-intro">Méthodes statistiques</title>
+
+  
+<title language="fr" script="Latn" type="title-main">Lignes directrices pour l’évaluation de la conformité à des exigences spécifiques</title>
+
+  
+<title language="fr" script="Latn" type="title-part">Partie 1: Principes généraux</title>
+
+  
+<title language="fr" script="Latn" type="main">Méthodes statistiques — Lignes directrices pour l’évaluation de la conformité à des exigences spécifiques — Partie 1: Principes généraux</title>
 
   <uri type="src">https://www.iso.org/standard/32373.html</uri>
+  <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:32373:en</uri>
   <uri type="rss">https://www.iso.org/contents/data/standard/03/23/32373.detail.rss</uri>
   <docidentifier type="ISO" primary="true">ISO 10576-1:2003</docidentifier>
   <docidentifier type="iso-reference">ISO 10576-1:2003(E)</docidentifier>
   <docidentifier type="URN">urn:iso:std:iso:10576:-1:stage-95.99</docidentifier>
   <docnumber>10576</docnumber>
   <date type="published">
-    <on>2003-03</on>
+    <on>2003-03-10</on>
   </date>
   <contributor>
     <role type="publisher"/>
@@ -16881,13 +17184,28 @@ The two principal purposes of ISO 3534-2:2006 are, specifically, to establish a 
       <uri>www.iso.org</uri>
     </organization>
   </contributor>
+  <contributor>
+    <role type="author">
+      <description>committee</description>
+    </role>
+    <organization>
+      
+<name>International Organization for Standardization</name>
+
+      <subdivision type="technical-committee" subtype="TC">
+        
+<name>Measurement methods and results</name>
+
+        <identifier>ISO/TC 69/SC 6</identifier>
+      </subdivision>
+      <abbreviation>ISO</abbreviation>
+    </organization>
+  </contributor>
   <edition>1</edition>
   <language>en</language>
   <language>fr</language>
   <script>Latn</script>
-  <abstract format="text/plain" language="en" script="Latn">ISO 10576-1:2002 sets out guidelines for drafting requirements that may be formulated as limiting values for a quantifiable characteristic and for checking conformity to such requirements when the test or measurement result is subject to uncertainty.
-It is applicable whenever the uncertainty may be quantified according to the principles laid down in the Guide to the expression of uncertainty in measurement. The term uncertainty is thus a descriptor for all elements of variation in the measurement result, including uncertainty due to sampling.
-It is outside the scope of ISO 10576-1:2002 to give rules for how to act when an inconclusive result of a conformity test has been obtained.</abstract>
+  <abstract language="en" script="Latn">ISO 10576-1:2002 sets out guidelines for drafting requirements that may be formulated as limiting values for a quantifiable characteristic and for checking conformity to such requirements when the test or measurement result is subject to uncertainty. It is applicable whenever the uncertainty may be quantified according to the principles laid down in the Guide to the expression of uncertainty in measurement. The term uncertainty is thus a descriptor for all elements of variation in the measurement result, including uncertainty due to sampling. It is outside the scope of ISO 10576-1:2002 to give rules for how to act when an inconclusive result of a conformity test has been obtained.</abstract>
   <status>
     <stage>95</stage>
     <substage>99</substage>
@@ -16902,22 +17220,12 @@ It is outside the scope of ISO 10576-1:2002 to give rules for how to act when an
       </organization>
     </owner>
   </copyright>
-  <relation type="updates">
-    <bibitem type="standard">
-      <formattedref format="text/plain">ISO 10576:2022</formattedref>
-      <docidentifier type="ISO" primary="true">ISO 10576:2022</docidentifier>
-      <date type="circulated">
-        <on>2022-08-05</on>
-      </date>
-    </bibitem>
-
-  </relation>
   <place>
     <city>Geneva</city>
   </place>
 </bibitem>
 <bibitem anchor="JCGM_100_2010" id="_6e1cf7f9-b95f-c921-d1cd-dd2eb7bf2d09"><formattedref format="application/x-isodoc+xml">[NO INFORMATION AVAILABLE]</formattedref><docidentifier type="BIPM">JCGM 100:2010</docidentifier><docnumber>100</docnumber><date type="published"><on>2010</on></date><language>en</language><script>Latn</script></bibitem>
-</references><references id="_5746b021-322d-53b7-b77b-70d1f74163df" normative="false" obligation="informative">
+</references><references id="_b428a6e1-39e8-b7d4-6aac-41de394a1941" normative="false" obligation="informative">
 <title id="_50ceb1e1-516f-2673-d73d-4f0c58b4d023">Bibliography</title><bibitem anchor="ref1" id="_5be0fee8-0f0a-014c-3164-68bbf1347715">
   <formattedref format="application/x-isodoc+xml">Agilent Technologies. Metrology Forum. 2001.
 <link target="http://metrologyforum.tm.agilent.com/terminology.shtml"/>.</formattedref>
@@ -17046,28 +17354,41 @@ Silverwater, Australia, 1996.</formattedref>
   <docidentifier type="metanorma">[20]</docidentifier>
   <language>en</language>
   <script>Latn</script>
-</bibitem><bibitem id="_707a8a96-b4c5-a65f-a5c7-c45010e7cb07" type="standard" schema-version="v1.2.9" anchor="ref21">
-  <fetched>2026-04-16</fetched>
+</bibitem><bibitem id="_4ae25a7c-2a8f-1cf8-36b8-206f9c482b1c" type="standard" schema-version="v1.5.6" anchor="ref21">
+  <fetched>2026-06-16</fetched>
   
-<title type="title-intro" format="text/plain" language="en" script="Latn">Geometrical Product Specifications (GPS)</title>
+<title language="en" script="Latn" type="title-intro">Geometrical Product Specifications (GPS)</title>
 
   
-<title type="title-main" format="text/plain" language="en" script="Latn">Inspection by measurement of workpieces and measuring equipment</title>
+<title language="en" script="Latn" type="title-main">Inspection by measurement of workpieces and measuring equipment</title>
 
   
-<title type="title-part" format="text/plain" language="en" script="Latn">Part 1: Decision rules for proving conformance or non-conformance with specifications</title>
+<title language="en" script="Latn" type="title-part">Part 1: Decision rules for proving conformance or non-conformance with specifications</title>
 
   
-<title type="main" format="text/plain" language="en" script="Latn">Geometrical Product Specifications (GPS) — Inspection by measurement of workpieces and measuring equipment — Part 1: Decision rules for proving conformance or non-conformance with specifications</title>
+<title language="en" script="Latn" type="main">Geometrical Product Specifications (GPS) — Inspection by measurement of workpieces and measuring equipment — Part 1: Decision rules for proving conformance or non-conformance with specifications</title>
+
+  
+<title language="fr" script="Latn" type="title-intro">Spécification géométrique des produits (GPS)</title>
+
+  
+<title language="fr" script="Latn" type="title-main">Vérification par la mesure des pièces et des équipements de mesure</title>
+
+  
+<title language="fr" script="Latn" type="title-part">Partie 1: Règles de décision pour prouver la conformité ou la non-conformité à la spécification</title>
+
+  
+<title language="fr" script="Latn" type="main">Spécification géométrique des produits (GPS) — Vérification par la mesure des pièces et des équipements de mesure — Partie 1: Règles de décision pour prouver la conformité ou la non-conformité à la spécification</title>
 
   <uri type="src">https://www.iso.org/standard/23021.html</uri>
+  <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:23021:en</uri>
   <uri type="rss">https://www.iso.org/contents/data/standard/02/30/23021.detail.rss</uri>
   <docidentifier type="ISO" primary="true">ISO 14253-1:1998</docidentifier>
   <docidentifier type="iso-reference">ISO 14253-1:1998(E)</docidentifier>
   <docidentifier type="URN">urn:iso:std:iso:14253:-1:stage-95.99</docidentifier>
   <docnumber>14253</docnumber>
   <date type="published">
-    <on>1998-11</on>
+    <on>1998-11-12</on>
   </date>
   <contributor>
     <role type="publisher"/>
@@ -17077,6 +17398,23 @@ Silverwater, Australia, 1996.</formattedref>
 
       <abbreviation>ISO</abbreviation>
       <uri>www.iso.org</uri>
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="author">
+      <description>committee</description>
+    </role>
+    <organization>
+      
+<name>International Organization for Standardization</name>
+
+      <subdivision type="technical-committee" subtype="TC">
+        
+<name>Dimensional and geometrical product specifications and verification</name>
+
+        <identifier>ISO/TC 213</identifier>
+      </subdivision>
+      <abbreviation>ISO</abbreviation>
     </organization>
   </contributor>
   <edition>1</edition>
@@ -17097,41 +17435,51 @@ Silverwater, Australia, 1996.</formattedref>
       </organization>
     </owner>
   </copyright>
-  <relation type="updates">
-    <bibitem type="standard">
-      <formattedref format="text/plain">ISO 14253-1:2013</formattedref>
-      <docidentifier type="ISO" primary="true">ISO 14253-1:2013</docidentifier>
-      <date type="circulated">
-        <on>2013-08-22</on>
-      </date>
+  <relation type="updatedBy">
+    <bibitem>
+      <formattedref>ISO 14253-1:1998/DAmd 1</formattedref>
+      <docidentifier type="ISO" primary="true">ISO 14253-1:1998/DAM 1</docidentifier>
     </bibitem>
 
   </relation>
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_5e68e2d4-0a09-33c6-61c7-227ce3ff2168" type="standard" schema-version="v1.2.9" anchor="ref22">
-  <fetched>2026-04-16</fetched>
+</bibitem><bibitem id="_6146f5ac-bd3e-a11e-2efe-33d7751b80f6" type="standard" schema-version="v1.5.6" anchor="ref22">
+  <fetched>2026-06-16</fetched>
   
-<title type="title-intro" format="text/plain" language="en" script="Latn">Statistical methods</title>
+<title language="en" script="Latn" type="title-intro">Statistical methods</title>
 
   
-<title type="title-main" format="text/plain" language="en" script="Latn">Guidelines for the evaluation of conformity with specified requirements</title>
+<title language="en" script="Latn" type="title-main">Guidelines for the evaluation of conformity with specified requirements</title>
 
   
-<title type="title-part" format="text/plain" language="en" script="Latn">Part 1: General principles</title>
+<title language="en" script="Latn" type="title-part">Part 1: General principles</title>
 
   
-<title type="main" format="text/plain" language="en" script="Latn">Statistical methods — Guidelines for the evaluation of conformity with specified requirements — Part 1: General principles</title>
+<title language="en" script="Latn" type="main">Statistical methods — Guidelines for the evaluation of conformity with specified requirements — Part 1: General principles</title>
+
+  
+<title language="fr" script="Latn" type="title-intro">Méthodes statistiques</title>
+
+  
+<title language="fr" script="Latn" type="title-main">Lignes directrices pour l’évaluation de la conformité à des exigences spécifiques</title>
+
+  
+<title language="fr" script="Latn" type="title-part">Partie 1: Principes généraux</title>
+
+  
+<title language="fr" script="Latn" type="main">Méthodes statistiques — Lignes directrices pour l’évaluation de la conformité à des exigences spécifiques — Partie 1: Principes généraux</title>
 
   <uri type="src">https://www.iso.org/standard/32373.html</uri>
+  <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:32373:en</uri>
   <uri type="rss">https://www.iso.org/contents/data/standard/03/23/32373.detail.rss</uri>
   <docidentifier type="ISO" primary="true">ISO 10576-1:2003</docidentifier>
   <docidentifier type="iso-reference">ISO 10576-1:2003(E)</docidentifier>
   <docidentifier type="URN">urn:iso:std:iso:10576:-1:stage-95.99</docidentifier>
   <docnumber>10576</docnumber>
   <date type="published">
-    <on>2003-03</on>
+    <on>2003-03-10</on>
   </date>
   <contributor>
     <role type="publisher"/>
@@ -17143,13 +17491,28 @@ Silverwater, Australia, 1996.</formattedref>
       <uri>www.iso.org</uri>
     </organization>
   </contributor>
+  <contributor>
+    <role type="author">
+      <description>committee</description>
+    </role>
+    <organization>
+      
+<name>International Organization for Standardization</name>
+
+      <subdivision type="technical-committee" subtype="TC">
+        
+<name>Measurement methods and results</name>
+
+        <identifier>ISO/TC 69/SC 6</identifier>
+      </subdivision>
+      <abbreviation>ISO</abbreviation>
+    </organization>
+  </contributor>
   <edition>1</edition>
   <language>en</language>
   <language>fr</language>
   <script>Latn</script>
-  <abstract format="text/plain" language="en" script="Latn">ISO 10576-1:2002 sets out guidelines for drafting requirements that may be formulated as limiting values for a quantifiable characteristic and for checking conformity to such requirements when the test or measurement result is subject to uncertainty.
-It is applicable whenever the uncertainty may be quantified according to the principles laid down in the Guide to the expression of uncertainty in measurement. The term uncertainty is thus a descriptor for all elements of variation in the measurement result, including uncertainty due to sampling.
-It is outside the scope of ISO 10576-1:2002 to give rules for how to act when an inconclusive result of a conformity test has been obtained.</abstract>
+  <abstract language="en" script="Latn">ISO 10576-1:2002 sets out guidelines for drafting requirements that may be formulated as limiting values for a quantifiable characteristic and for checking conformity to such requirements when the test or measurement result is subject to uncertainty. It is applicable whenever the uncertainty may be quantified according to the principles laid down in the Guide to the expression of uncertainty in measurement. The term uncertainty is thus a descriptor for all elements of variation in the measurement result, including uncertainty due to sampling. It is outside the scope of ISO 10576-1:2002 to give rules for how to act when an inconclusive result of a conformity test has been obtained.</abstract>
   <status>
     <stage>95</stage>
     <substage>99</substage>
@@ -17164,38 +17527,32 @@ It is outside the scope of ISO 10576-1:2002 to give rules for how to act when an
       </organization>
     </owner>
   </copyright>
-  <relation type="updates">
-    <bibitem type="standard">
-      <formattedref format="text/plain">ISO 10576:2022</formattedref>
-      <docidentifier type="ISO" primary="true">ISO 10576:2022</docidentifier>
-      <date type="circulated">
-        <on>2022-08-05</on>
-      </date>
-    </bibitem>
-
-  </relation>
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_65bc3637-b8bf-3b7b-b530-1ba6a0032f12" type="standard" schema-version="v1.2.9" anchor="ref23">
-  <fetched>2026-04-16</fetched>
+</bibitem><bibitem id="_aedcaff9-d354-c34f-2daf-368c236c292b" type="standard" schema-version="v1.5.6" anchor="ref23">
+  <fetched>2026-06-16</fetched>
   
-<title type="title-main" format="text/plain" language="en" script="Latn">General requirements for the competence of testing and calibration laboratories</title>
+<title language="en" script="Latn" type="title-main">General requirements for the competence of testing and calibration laboratories</title>
 
   
-<title type="main" format="text/plain" language="en" script="Latn">General requirements for the competence of testing and calibration laboratories</title>
+<title language="en" script="Latn" type="main">General requirements for the competence of testing and calibration laboratories</title>
+
+  
+<title language="fr" script="Latn" type="title-main">Exigences générales concernant la compétence des laboratoires d’étalonnages et d’essais</title>
+
+  
+<title language="fr" script="Latn" type="main">Exigences générales concernant la compétence des laboratoires d’étalonnages et d’essais</title>
 
   <uri type="src">https://www.iso.org/standard/39883.html</uri>
+  <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:39883:en</uri>
   <uri type="rss">https://www.iso.org/contents/data/standard/03/98/39883.detail.rss</uri>
   <docidentifier type="ISO" primary="true">ISO/IEC 17025:2005</docidentifier>
   <docidentifier type="iso-reference">ISO/IEC 17025:2005(E)</docidentifier>
   <docidentifier type="URN">urn:iso:std:iso-iec:17025:stage-95.99</docidentifier>
   <docnumber>17025</docnumber>
   <date type="published">
-    <on>2005-05</on>
-  </date>
-  <date type="corrected">
-    <on>2005-10</on>
+    <on>2005-05-12</on>
   </date>
   <contributor>
     <role type="publisher"/>
@@ -17217,15 +17574,32 @@ It is outside the scope of ISO 10576-1:2002 to give rules for how to act when an
       <uri>www.iec.ch</uri>
     </organization>
   </contributor>
+  <contributor>
+    <role type="author">
+      <description>committee</description>
+    </role>
+    <organization>
+      
+<name>International Organization for Standardization</name>
+
+      <subdivision type="technical-committee" subtype="CASCO">
+        
+<name>ISO/CASCO</name>
+
+        <identifier>ISO/CASCO</identifier>
+      </subdivision>
+      <abbreviation>ISO</abbreviation>
+    </organization>
+  </contributor>
   <edition>2</edition>
+  <language>ar</language>
   <language>en</language>
+  <language>es</language>
   <language>fr</language>
+  <language>ru</language>
   <script>Latn</script>
-  <abstract format="text/plain" language="en" script="Latn">ISO/IEC 17025:2005 specifies the general requirements for the competence to carry out tests and/or calibrations, including sampling. It covers testing and calibration performed using standard methods, non-standard methods, and laboratory-developed methods.
-It is applicable to all organizations performing tests and/or calibrations. These include, for example, first-, second- and third-party laboratories, and laboratories where testing and/or calibration forms part of inspection and product certification.
-ISO/IEC 17025:2005 is applicable to all laboratories regardless of the number of personnel or the extent of the scope of testing and/or calibration activities. When a laboratory does not undertake one or more of the activities covered by ISO/IEC 17025:2005, such as sampling and the design/development of new methods, the requirements of those clauses do not apply.
-ISO/IEC 17025:2005 is for use by laboratories in developing their management system for quality, administrative and technical operations. Laboratory customers, regulatory authorities and accreditation bodies may also use it in confirming or recognizing the competence of laboratories. ISO/IEC 17025:2005 is not intended to be used as the basis for certification of laboratories.
-Compliance with regulatory and safety requirements on the operation of laboratories is not covered by ISO/IEC 17025:2005.</abstract>
+  <script>Cyrl</script>
+  <abstract language="en" script="Latn">ISO/IEC 17025:2005 specifies the general requirements for the competence to carry out tests and/or calibrations, including sampling. It covers testing and calibration performed using standard methods, non-standard methods, and laboratory-developed methods. It is applicable to all organizations performing tests and/or calibrations. These include, for example, first-, second- and third-party laboratories, and laboratories where testing and/or calibration forms part of inspection and product certification. ISO/IEC 17025:2005 is applicable to all laboratories regardless of the number of personnel or the extent of the scope of testing and/or calibration activities. When a laboratory does not undertake one or more of the activities covered by ISO/IEC 17025:2005, such as sampling and the design/development of new methods, the requirements of those clauses do not apply. ISO/IEC 17025:2005 is for use by laboratories in developing their management system for quality, administrative and technical operations. Laboratory customers, regulatory authorities and accreditation bodies may also use it in confirming or recognizing the competence of laboratories. ISO/IEC 17025:2005 is not intended to be used as the basis for certification of laboratories. Compliance with regulatory and safety requirements on the operation of laboratories is not covered by ISO/IEC 17025:2005.</abstract>
   <status>
     <stage>95</stage>
     <substage>99</substage>
@@ -17241,28 +17615,28 @@ Compliance with regulatory and safety requirements on the operation of laborator
     </owner>
   </copyright>
   <relation type="obsoletes">
-    <bibitem type="standard">
-      <formattedref format="text/plain">ISO/IEC 17025:1999</formattedref>
+    <bibitem>
+      <formattedref>ISO/IEC 17025:1999</formattedref>
       <docidentifier type="ISO" primary="true">ISO/IEC 17025:1999</docidentifier>
-    </bibitem>
-
-  </relation>
-  <relation type="updates">
-    <bibitem type="standard">
-      <formattedref format="text/plain">ISO/IEC 17025:2017</formattedref>
-      <docidentifier type="ISO" primary="true">ISO/IEC 17025:2017</docidentifier>
-      <date type="circulated">
-        <on>2017-11-29</on>
+      <date type="published">
+        <on>1999-12-16</on>
       </date>
     </bibitem>
 
   </relation>
-  <relation type="updates">
-    <bibitem type="standard">
-      <formattedref format="text/plain">ISO/IEC 17025:2005/Cor 1:2006</formattedref>
+  <relation type="obsoletes">
+    <bibitem>
+      <formattedref>ISO/IEC 17025:1999/FDAmd 1</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/IEC 17025:1999/FDAM 1</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="updatedBy">
+    <bibitem>
+      <formattedref>ISO/IEC 17025:2005/Cor 1:2006</formattedref>
       <docidentifier type="ISO" primary="true">ISO/IEC 17025:2005/Cor 1:2006</docidentifier>
-      <date type="circulated">
-        <on>2017-11-29</on>
+      <date type="published">
+        <on>2006-08-15</on>
       </date>
     </bibitem>
 
@@ -17270,29 +17644,41 @@ Compliance with regulatory and safety requirements on the operation of laborator
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_b763fb3a-59c1-faf7-7133-dc5b9cf7a58d" type="standard" schema-version="v1.2.9" anchor="ref24">
-  <fetched>2026-04-16</fetched>
+</bibitem><bibitem id="_7300a457-f1b8-cdbb-3cd9-4e66e6710853" type="standard" schema-version="v1.5.6" anchor="ref24">
+  <fetched>2026-06-16</fetched>
   
-<title type="title-intro" format="text/plain" language="en" script="Latn">Geometrical Product Specifications (GPS)</title>
+<title language="en" script="Latn" type="title-intro">Geometrical Product Specifications (GPS)</title>
 
   
-<title type="title-main" format="text/plain" language="en" script="Latn">Length standards</title>
+<title language="en" script="Latn" type="title-main">Length standards</title>
 
   
-<title type="title-part" format="text/plain" language="en" script="Latn">Gauge blocks</title>
+<title language="en" script="Latn" type="title-part">Gauge blocks</title>
 
   
-<title type="main" format="text/plain" language="en" script="Latn">Geometrical Product Specifications (GPS) — Length standards — Gauge blocks</title>
+<title language="en" script="Latn" type="main">Geometrical Product Specifications (GPS) — Length standards — Gauge blocks</title>
+
+  
+<title language="fr" script="Latn" type="title-intro">Spécification géométrique des produits (GPS)</title>
+
+  
+<title language="fr" script="Latn" type="title-main">Étalons de longueur</title>
+
+  
+<title language="fr" script="Latn" type="title-part">Cales-étalons</title>
+
+  
+<title language="fr" script="Latn" type="main">Spécification géométrique des produits (GPS) — Étalons de longueur — Cales-étalons</title>
 
   <uri type="src">https://www.iso.org/standard/1241.html</uri>
   <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:1241:en</uri>
   <uri type="rss">https://www.iso.org/contents/data/standard/00/12/1241.detail.rss</uri>
   <docidentifier type="ISO" primary="true">ISO 3650:1998</docidentifier>
   <docidentifier type="iso-reference">ISO 3650:1998(E)</docidentifier>
-  <docidentifier type="URN">urn:iso:std:iso:3650:stage-90.20</docidentifier>
+  <docidentifier type="URN">urn:iso:std:iso:3650:stage-90.93</docidentifier>
   <docnumber>3650</docnumber>
   <date type="published">
-    <on>1998-12</on>
+    <on>1998-12-20</on>
   </date>
   <contributor>
     <role type="publisher"/>
@@ -17304,15 +17690,31 @@ Compliance with regulatory and safety requirements on the operation of laborator
       <uri>www.iso.org</uri>
     </organization>
   </contributor>
+  <contributor>
+    <role type="author">
+      <description>committee</description>
+    </role>
+    <organization>
+      
+<name>International Organization for Standardization</name>
+
+      <subdivision type="technical-committee" subtype="TC">
+        
+<name>Dimensional and geometrical product specifications and verification</name>
+
+        <identifier>ISO/TC 213</identifier>
+      </subdivision>
+      <abbreviation>ISO</abbreviation>
+    </organization>
+  </contributor>
   <edition>2</edition>
   <language>en</language>
   <language>fr</language>
   <script>Latn</script>
-  <abstract format="text/plain" language="en" script="Latn">This International Standard specifies the most important design and metrological characteristics of gauge blocks with a rectangular cross section and a nominal length ln ranging from 0,5 mm to 1000 mm.
-Limit deviations and tolerances are stated for the calibration grade K and for the grades 0, 1 and 2 for various measuring purposes.</abstract>
+  <abstract language="en" script="Latn">This International Standard specifies the most important design and metrological characteristics of gauge blocks with a rectangular cross section and a nominal length ln ranging from 0,5 mm to 1000 mm. Limit deviations and tolerances are stated for the calibration grade K and for the grades 0, 1 and 2 for various measuring purposes.</abstract>
   <status>
     <stage>90</stage>
-    <substage>20</substage>
+    <substage>93</substage>
   </status>
   <copyright>
     <from>1998</from>
@@ -17325,18 +17727,21 @@ Limit deviations and tolerances are stated for the calibration grade K and for t
     </owner>
   </copyright>
   <relation type="obsoletes">
-    <bibitem type="standard">
-      <formattedref format="text/plain">ISO 3650:1978</formattedref>
+    <bibitem>
+      <formattedref>ISO 3650:1978</formattedref>
       <docidentifier type="ISO" primary="true">ISO 3650:1978</docidentifier>
+      <date type="published">
+        <on>1978-07-01</on>
+      </date>
     </bibitem>
 
   </relation>
-  <relation type="updates">
-    <bibitem type="standard">
-      <formattedref format="text/plain">ISO 3650:1998/Cor 1:2008</formattedref>
+  <relation type="updatedBy">
+    <bibitem>
+      <formattedref>ISO 3650:1998/Cor 1:2008</formattedref>
       <docidentifier type="ISO" primary="true">ISO 3650:1998/Cor 1:2008</docidentifier>
-      <date type="circulated">
-        <on>2025-01-15</on>
+      <date type="published">
+        <on>2008-10-30</on>
       </date>
     </bibitem>
 

@@ -1,0 +1,48 @@
+
+
+[appendix]
+[[annex_a]]
+== Overview of the parts of the GUM
+
+[[table_a-1]]
+.Overview of the parts (published and planned) of the Guide to the expression of uncertainty in measurement
+[cols="1,1,3", options="header"]
+|===
+| GUM part | Old reference | Title
+
+| JCGM GUM-1 footnote:[JCGM 104:2009 was replaced by this document] | JCGM 104
+| Guide to the expression of uncertainty in measurement -- Part 1: Introduction
+
+| JCGM GUM-2 footnote:b[Planned] |
+| Guide to the expression of uncertainty in measurement -- Part 2: Concepts
+
+| JCGM GUM-3 footnote:[Available as <<jcgm100>>] | JCGM 100
+| Guide to the expression of uncertainty in measurement -- Part 3: GUM:1995 with minor corrections
+
+| JCGM GUM-4 footnote:[Available as <<jcgm106>>] | JCGM 106
+| Guide to the expression of uncertainty in measurement -- Part 4: The role of measurement uncertainty in conformity assessment
+
+| JCGM GUM-5 footnote:b[Planned] | JCGM 110 footnote:h[Reference of the committee draft]
+| Guide to the expression of uncertainty in measurement -- Part 5: Examples
+
+| JCGM GUM-6 footnote:[Available as <<gum6>>] | JCGM 103 footnote:h[]
+| Guide to the expression of uncertainty in measurement -- Part 6: Developing and using measurement models
+
+| JCGM GUM-7 footnote:f[Available as <<jcgm101>>] | JCGM 101
+| Guide to the expression of uncertainty in measurement -- Part 7: Propagation of distributions using a Monte Carlo method
+
+| JCGM GUM-8 footnote:[Available as <<jcgm102>>] | JCGM 102
+| Guide to the expression of uncertainty in measurement -- Part 8: Extension to any number of output quantities
+
+| JCGM GUM-9 footnote:b[] |
+| Guide to the expression of uncertainty in measurement -- Part 9: Statistical models and data analysis for interlaboratory studies
+
+| JCGM GUM-10 footnote:b[] |
+| Guide to the expression of uncertainty in measurement -- Part 10: Applications of the least squares method
+
+| JCGM GUM-11 footnote:b[] |
+| Guide to the expression of uncertainty in measurement -- Part 11: Bayesian methods
+
+| JCGM GUM-12 footnote:b[] |
+| Guide to the expression of uncertainty in measurement -- Part 12: Basic methods for uncertainty propagation
+|===

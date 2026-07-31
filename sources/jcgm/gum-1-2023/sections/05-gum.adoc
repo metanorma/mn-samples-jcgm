@@ -1,0 +1,207 @@
+
+[[cls_5]]
+== Parts of the GUM
+
+[[cls_5.1]]
+=== Using the law of propagation of uncertainty (JCGM 100:2008)
+
+[[cls_5.1.1]]
+==== {blank}
+
+<<jcgm100>> describes the evaluation of measurement uncertainty using a simplified
+approach. This method takes the estimates and associated standard uncertainties
+of the input quantities and a linearised form of the measurement model to obtain
+the estimate and standard uncertainty for the output quantity, the measurand
+<<jcgm100,clause=5>>. Based on the assumption that the probability density function
+for the measurand can be described by a normal distribution or a scaled and
+shifted _t_-distribution, a coverage interval corresponding to a specified coverage
+probability is obtained <<jcgm100,clause=6>>.
+
+[[cls_5.1.2]]
+==== {blank}
+
+<<jcgm100>> provides general rules for the evaluation and expression of measurement
+uncertainty <<jcgm100,clause=3>>, intended to be applicable to a broad spectrum
+of measurements. The guidance in JCGM 100:2008 is mainly concerned with measurands
+in the form of a well-characterised physical quantity. The method can also be
+applied in conceptual design and theoretical analysis of experiments, methods
+of measurement, and complex components and systems <<jcgm100,clause=1>>.
+
+[[cls_5.1.3]]
+==== {blank}
+
+<<jcgm100>> offers methods for the evaluation of uncertainty about the values
+of the input quantities in a measurement model. Guidance is provided for using
+the statistical analysis of series of data <<jcgm100,clause="4.2,5.2,F.1,H.1,H.2,H.3,H.5">> or other information <<jcgm100,clause="4.3,5.2,F.2">>.
+
+[[cls_5.1.4]]
+==== {blank}
+
+To support the use of <<jcgm100>>, <<jcgm101>> (see also <<cls_5.4>>) provides
+a procedure for validating it in any particular case. The procedure is based
+on a numerical comparison of the results provided by the two approaches, that
+of JCGM 101:2008 being regarded as a gold standard for the purpose. If these
+results agree to within the desired numerical accuracy, the application of <<jcgm100>>
+can be regarded as acceptable. Otherwise, an alternative approach, such as the
+propagation of distributions (JCGM 101:2008) itself, should be considered for
+the uncertainty evaluation <<jcgm101,clause="5.7,5.8,5.9,5.10,5.11">>.
+
+[[cls_5.2]]
+=== Conformity assessment (JCGM 106:2012)
+
+[[cls_5.2.1]]
+==== {blank}
+
+<<jcgm106>> provides guidance and procedures for assessing the conformity of
+an item (entity, object or system) to specified requirements. The item might
+be, for example, a gauge block, a grocery scale, or a blood sample. The procedures
+can be applied in the following conditions:
+
+* the item is distinguished by a single scalar measurand <<jcgm106,clause=1>>
+defined to a sufficient level of detail,
+* an interval of permissible values of the property is specified by one or two
+tolerance limits <<jcgm106,clause=3.3.4>>, and
+* the property can be measured and the measurement result <<jcgm106,clause=3.2.5>>
+expressed in a manner consistent with the principles of the GUM.
+
+[[cls_5.2.2]]
+==== {blank}
+
+The procedures provided in <<jcgm106>> can be used to realize an interval, called
+an acceptance interval <<jcgm106,clause=3.3.9>> <<jcgm106,clause=8>>, of permissible
+measured values of the property of interest. Acceptance limits can be chosen
+so as to balance the risks associated with accepting non-conforming items
+(consumer's risk <<jcgm106,clause="3.3.13,3.3.15">>) and rejecting conforming
+items (producer's risk <<jcgm106,clause=3.3.14,3.3.16>>) <<jcgm106,clause=9>>.
+Such a choice for the acceptance limits is often part of an agreement between
+producer and consumer.
+
+[[cls_5.2.3]]
+==== {blank}
+
+Two types of conformity assessment problems are addressed in <<jcgm106>>.
+The first is the setting of acceptance limits <<jcgm106,clause=8.1>> that will
+assure a desired conformance probability for a single measured item (related
+to the specific risk). The second is the setting of acceptance limits to assure
+an acceptable level of confidence on average as a number of (nominally identical)
+items are measured (related to the global risk). Guidance is given for the solution
+of both problems.
+
+[[cls_5.3]]
+=== Measurement models (<<gum6>>)
+
+[[cls_5.3.1]]
+==== {blank}
+
+The measurement model describes the relationship between the input quantities
+and the measurand <<jcgm100,clause=4.1>>. It is used for determining the measurement
+result given the knowledge used. The model should contain every quantity, including
+all corrections, that contributes to the estimate of the measurand or contributes
+meaningfully to the uncertainty about the measured value <<jcgm100,clause=8>>
+<<gum6,clause=5.6>>.
+
+[[cls_5.3.2]]
+==== {blank}
+
+Comprehensive guidance on developing measurement models is given in <<gum6>>.
+This part of the GUM subdivides the development process leading to a measurement
+model as follows:
+
+. specifying the measurand <<gum6,clause=6>>,
+. modelling the measurement principle <<gum6,clause=7>>,
+. choosing the form of the measurement model <<gum6,clause=8>>,
+. identifying effects arising from the measurement <<gum6,clause=9>>,
+. adding effects arising from the measurement <<gum6,clause=10>>.
+
+[[cls_5.3.3]]
+==== {blank}
+
+One of the challenges in developing measurement models is to identify all quantities
+to be included. <<jcgm100>> contains a list of common sources of uncertainty
+to be considered <<jcgm100,clause=3.3.2>>. The Eurachem/CITAC guide on quantifying
+measurement uncertainty <<ellison2012,annex=C>> contains a customised list for
+applications in analytical chemistry. Guidance on how to include the quantities
+in the model is provided in <<gum6,clause="9,10">> and in the Eurachem/CITAC
+guide <<ellison2012>>.
+
+[[cls_5.4]]
+=== Propagation of distributions (<<jcgm101>>)
+
+[[cls_5.4.1]]
+==== {blank}
+
+An evaluation method that can be more widely applied than the law of propagation
+of uncertainty is the propagation of distributions, often implemented by a Monte
+Carlo method, as described in <<jcgm101>>. Rather than taking the estimates
+and standard uncertainties of the input quantities, this method takes the probability
+density functions assigned to the input quantities (see <<cls_5.1>>) as input
+<<jcgm101,clause=6>>. If some input quantities are correlated, a joint probability
+density function <<iso3534-1,clause=2.11>> is required for these quantities.
+Using a measurement model, an approximation to the probability density function
+for the measurand is obtained <<jcgm101,clause=7>>, from which an estimate,
+standard uncertainty and a coverage interval with the desired coverage probability
+<<jcgm101,clause="5.3,5.5">> for the measurand can be calculated. The probability
+density function thus obtained can also be used in a subsequent uncertainty
+evaluation.
+
+[[cls_5.4.2]]
+==== {blank}
+
+A general numerical implementation of the propagation of distributions by means
+of a Monte Carlo method is described in <<jcgm101>>. With this method, a sample
+<<iso3534-1,clause=1.3>> of the output probability density function is obtained.
+The number of trials, i.e., the size of the sample, selected for the Monte Carlo
+method controls the numerical accuracy of the sample as an approximation to
+the output probability density function. A procedure by which an appropriate
+number of trials can be determined is provided <<jcgm101,clause=7.9>>.
+
+[[cls_5.4.3]]
+==== {blank}
+
+For a prescribed coverage probability, <<jcgm101>> can be used to provide coverage
+intervals for the output quantity including a probabilistically symmetric and
+a shortest coverage interval.
+
+[[cls_5.5]]
+=== Extension to any number of output quantities (<<jcgm102>>)
+
+[[cls_5.5.1]]
+==== {blank}
+
+<<jcgm100>> and <<jcgm101>> focus on measurement models having a single output
+quantity, i.e., univariate (scalar) models. Many measurement problems arise,
+however, for which there is more than one output quantity, depending on a common
+set of input quantities. The models of measurement that apply in such circumstances
+are referred to as multivariate models <<jcgm102,clause=3.8>>.
+
+[[cls_5.5.2]]
+==== {blank}
+
+To evaluate the uncertainties associated with estimates of the output quantities
+for multivariate models, the law of propagation of uncertainty and the Monte
+Carlo method for undertaking the propagation of distributions are generalized.
+The use of the law of propagation of uncertainty is also generalized to measurement
+models that are implicit, i.e., in which the input and output quantities are
+related such that the output quantities cannot be expressed explicitly in terms
+of the input quantities in a convenient or numerically stable fashion.
+
+[[cls_5.5.3]]
+==== {blank}
+
+<<jcgm102>> applies the propagation of distributions using the Monte Carlo method
+from JCGM 101:2008 to multivariate measurement models <<jcgm102,clause=7>>.
+Expressions are given for the estimates of the output quantities, and the variances
+and covariances associated with the estimates, in terms of the numerical output
+of the Monte Carlo method <<jcgm102,clause="7.4,7.6">>. Consideration is given,
+as in JCGM 101:2008, to validating results provided by the (generalized) law
+of propagation of uncertainty <<jcgm102,clause=8>>, and to the number of trials
+required by the Monte Carlo method <<jcgm102,clause=7.8>>.
+
+[[cls_5.5.4]]
+==== {blank}
+
+For a prescribed coverage probability, <<jcgm102>> can be used to provide a
+coverage region for the output quantities of a multivariate model, the counterpart
+of a coverage interval for a single scalar output quantity. A procedure for
+providing an approximation to the smallest coverage region, obtained from results
+provided by the Monte Carlo method, is also given <<jcgm102,clause=7.7>>.

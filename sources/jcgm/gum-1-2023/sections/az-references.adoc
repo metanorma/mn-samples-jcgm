@@ -1,0 +1,42 @@
+[bibliography]
+== References
+
+* [[[iso3534-1,ISO 3534-1:2006]]], Statistics -- Vocabulary and symbols -- Part 1: General statistical terms and terms used in probability. International Organization for Standardization, Geneva, Switzerland, 2006. Second edition.
+
+* [[[iso15189,ISO 15189:2022]]], Medical laboratories -- Requirements for quality and competence. International Organization for Standardization, Geneva, Switzerland, 2022. Fourth edition.
+
+* [[[iso17000,ISO/IEC 17000:2020]]], Conformity assessment -- Vocabulary and general principles. International Organization for Standardization, Geneva, Switzerland, 2020. Second edition.
+
+* [[[iso17025,ISO/IEC 17025:2017]]], General requirements for the competence of testing and calibration laboratories. International Organization for Standardization, Geneva, Switzerland, 2017. Third edition.
+
+* [[[iso17034,ISO 17034:2016]]], General requirements for the competence of reference material producers. International Organization for Standardization, Geneva, Switzerland, 2016. First edition.
+
+* [[[iso17043,ISO/IEC 17043:2023]]], Conformity assessment -- General requirements for the competence of proficiency testing providers. International Organization for Standardization, Geneva, Switzerland, 2023. Second edition.
+
+* [[[jcgm100,BIPM JCGM 100:2008]]], Evaluation of measurement data -- Guide to the expression of uncertainty in measurement. Joint Committee for Guides in Metrology, JCGM 100:2008. URL: https://www.bipm.org/documents/20126/2071204/JCGM_100_2008_E.pdf.
+
+* [[[jcgm101,BIPM JCGM 101:2008]]], Evaluation of measurement data -- Supplement 1 to the "Guide to the expression of uncertainty in measurement" -- Propagation of distributions using a Monte Carlo method. Joint Committee for Guides in Metrology, JCGM 101:2008. URL: https://www.bipm.org/documents/20126/2071204/JCGM_101_2008_E.pdf.
+
+* [[[jcgm102,BIPM JCGM 102:2011]]], Evaluation of measurement data -- Supplement 2 to the "Guide to the expression of uncertainty in measurement" -- Extension to any number of output quantities. Joint Committee for Guides in Metrology, JCGM 102:2011. URL: https://www.bipm.org/documents/20126/2071204/JCGM_102_2011_E.pdf.
+
+* [[[jcgm106,BIPM JCGM 106:2012]]], Evaluation of measurement data -- The role of measurement uncertainty in conformity assessment. Joint Committee for Guides in Metrology, JCGM 106:2012. URL: https://www.bipm.org/documents/20126/2071204/JCGM_106_2012_E.pdf.
+
+* [[[gum6,BIPM JCGM GUM-6:2020]]], Guide to the expression of uncertainty in measurement -- Part 6: Developing and using measurement models. Joint Committee for Guides in Metrology, JCGM GUM-6:2020. URL: https://www.bipm.org/documents/20126/2071204/JCGM_GUM_6_2020.pdf.
+
+* [[[jcgm200,BIPM JCGM 200:2012]]], International vocabulary of metrology -- Basic and general concepts and associated terms (VIM). Joint Committee for Guides in Metrology, JCGM 200:2012. (3rd edition). URL: https://www.bipm.org/documents/20126/2071204/JCGM_200_2012.pdf.
+
+* [[[ellison2012,1]]], S. L. R. Ellison and A. Williams, editors. _Eurachem/CITAC guide: Quantifying Uncertainty in Analytical Measurement_ (3rd edition). Eurachem/CITAC, third edition, 2012. ISBN 978-0-948926-30-3. URL: https://www.eurachem.org.
+
+* [[[gauss1995,1]]], C. Gauss and G. Stewart. _Theory of the Combination of Observations Least Subject to Errors, Part One, Part Two, Supplement_. Society for Industrial and Applied Mathematics, 1995. URL: https://epubs.siam.org/doi/book/10.1137/1.9781611971248, doi:10.1137/1.9781611971248.
+
+* [[[gauss1823,1]]], C. F. Gauss. Theoria combinationis observationum erroribus minimis obnoxiae. In _Werke, Band IV, Wahrscheinlichkeitsrechnung und Geometrie_. Konigliche Gesellschaft der Wissenschaften, Gottingen, 1823. URL: https://gdz.sub.uni-goettingen.de/id/PPN236005081.
+
+* [[[kline1953,1]]], S. J. Kline and F. A. McClintock. Describing uncertainties in single-sample experiments. _Mechanical Engineering_, 75(1):3-8, 1953.
+
+* [[[ku1966,1]]], H. H. Ku. Notes on the use of propagation of error formulas. _Journal of Research of the National Bureau of Standards -- C. Engineering and Instrumentation_, 70C:263-273, October 1966. doi:10.6028/jres.070C.025.
+
+* [[[morgan1992,1]]], M. G. Morgan and M. Henrion. _Uncertainty -- A Guide to Dealing with Uncertainty in Quantitative Risk and Policy Analysis_. Cambridge University Press, New York, NY, first paperback edition, 1992. 10th printing, 2007.
+
+* [[[possolo2015,1]]], A. Possolo. Simple guide for evaluating and expressing the uncertainty of NIST measurement results. NIST Technical Note 1900, Oct 2015. URL: http://dx.doi.org/10.6028/NIST.TN.1900, doi:10.6028/nist.tn.1900.
+
+* [[[jcgm104,hidden(JCGM 104:2009)]]]

@@ -1,0 +1,76 @@
+
+[[cls_2]]
+== Rationale
+
+[[cls_2.1]]
+=== {blank}
+
+Measurement <<jcgm200,clause=2.1>> is one of the most common processes in human
+activity. Measured values of quantities <<jcgm200,clause=2.10>> are required
+for a diverse range of applications and, for each of these values, a statement
+is needed about its credibility. Such a statement is usually expressed in terms
+of measurement uncertainty <<jcgm200,clause=2.26>>. The two components, the
+measured value and the associated uncertainty, together constitute the most
+common way of reporting a measurement result <<jcgm200,clause=2.9>>. In cases
+where values for more than one quantity are provided by the measurement, a more
+elaborate statement of the uncertainty is often required (<<cls_5.5>>; see also
+<<cls_3.1>>).
+
+[[cls_2.2]]
+=== {blank}
+
+Measurements are performed in many branches of society for widely different
+purposes. Many measurements performed on a daily basis, often in automated processes,
+concern trade and commerce. Reliable measurement results are also needed for
+making informed decisions in for example health, safety, weather forecasts,
+law enforcement and science. Measurements are performed by for example greengrocers,
+technicians, engineers, laboratory staff, health care professionals, scientists
+and individuals at home, in very different contexts.
+
+[[cls_2.3]]
+=== {blank}
+
+Many measurements are made for the purpose of comparison of results with specifications.
+Such a comparison can be made for widely different purposes. This activity is
+generally known as conformity assessment <<iso17000,clause=4.1>> <<jcgm106,clause=3.3.1>>;
+see also <<cls_5.2>>.
+
+[[cls_2.4]]
+=== {blank}
+
+Comparison of measurement results is an essential activity in science, calibration
+and testing. Compatibility of measurement results <<jcgm200,clause=2.47>> is
+the basis for being able to reproduce scientific findings, performing quality
+assurance and quality control, and providing the interpretation of measurement
+results and informed decision making. Many standards that set requirements for
+demonstrating competence in measurement require evaluating measurement uncertainty
+and identifying the major sources of uncertainty, for example <<iso17025>> (calibration
+and testing laboratories), <<iso17034>> (reference material producers), <<iso17043>>
+(proficiency testing) and <<iso15189>> (medical laboratories).
+
+[[cls_2.5]]
+=== {blank}
+
+Measurement uncertainty is of importance in various situations, including but
+not limited to:
+
+* comparison of measurement results,
+* comparison of a measured value with specification limits (conformity assessment),
+* establishing metrological traceability <<jcgm200,clause=2.41>>,
+* applying a decision rule <<jcgm106,clause=3.3.12>>,
+* calculating risks and risk assessment,
+* comparison of model outputs and experiments,
+* evaluating the validity of models,
+* setting limits for the values of physical quantities,
+* validating or developing scientific theories, and
+* propagation of uncertainty from one measurement to another.
+
+[[cls_2.6]]
+=== {blank}
+
+The GUM substantially contributes to the harmonization of methods for the evaluation,
+expression and use of measurement uncertainty. It supports the mutual recognition
+of calibration certificates and laboratory accreditations. The principles and
+methods of the GUM have been adopted in many documentary standards of ISO, IEC
+and other standards development organizations. Much software used by laboratories
+worldwide is based on the provisions of the GUM.

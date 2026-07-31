@@ -1,0 +1,42 @@
+= JCGM GUM-1:2023
+:docnumber: GUM
+:partnumber: 1
+:copyright-year: 2023
+:edition: 1
+:revdate:
+:language: en
+:doctype: guide
+:docstage: in-force
+:docsubstage: 60
+:title-en: Guide to the expression of uncertainty in measurement
+:title-part-en: Introduction
+:title-fr: Guide pour l'expression de l'incertitude de mesure
+:title-part-fr: Introduction
+:committee-acronym: JCGM
+:committee-en: Joint Committee for Guides in Metrology
+:committee-fr: Comité commun pour les guides en métrologie
+:workgroup-acronym: WG 1
+:workgroup-en: Expression of Uncertainty in Measurement
+:workgroup-fr: L'expression des incertitudes
+:published-date: 2023
+:mn-document-class: bipm
+:mn-output-extensions: xml,html,pdf,rxl
+:imagesdir: images
+:local-cache-only:
+:data-uri-image:
+
+include::sections/00-foreword.adoc[]
+
+include::sections/01-scope.adoc[]
+
+include::sections/02-rationale.adoc[]
+
+include::sections/03-measurement.adoc[]
+
+include::sections/04-guidance.adoc[]
+
+include::sections/05-gum.adoc[]
+
+include::sections/aa-overview.adoc[]
+
+include::sections/az-references.adoc[]

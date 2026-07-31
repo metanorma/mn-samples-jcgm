@@ -1,0 +1,147 @@
+
+[[cls_4]]
+== Guidance on evaluating measurement uncertainty
+
+[[cls_4.1]]
+=== {blank}
+
+The evaluation of measurement uncertainty is neither a routine task nor a purely
+mathematical one. It depends on detailed knowledge of the nature of the measurand
+and the measurement. The quality and utility of the measurement result therefore
+ultimately depend on the understanding, critical analysis, and diligence of
+those who contribute to that result <<jcgm100,clause=3.4.8>>.
+
+[[cls_4.2]]
+=== {blank}
+
+In selecting a method of uncertainty evaluation that suits the current needs,
+the user should consider the following:
+
+. the information available,
+. the assumptions to be made,
+. the nature of the results required (see <<cls_4.3>>),
+. the extent to which use is to be made of the information available.
+
+[[cls_4.3]]
+=== {blank}
+
+Alongside the estimate of the measurand, results required from the uncertainty
+propagation comprise some or all of:
+
+. [[item_4.3_1]]standard uncertainty associated with the estimate,
+. [[item_4.3_2]]coverage interval for the measurand for a stated coverage probability,
+. [[item_4.3_3]]probability distribution for the measurand.
+
+NOTE: The probability distribution for the measurand in <<item_4.3_3>>
+is the most complete description of the output quantity in terms of the information
+used. The estimate and the items 1 and 2 can be obtained from it.
+
+NOTE: The propagation of distributions (see <<cls_5.5>>) provides the probability
+distribution for the measurand <<jcgm101>> <<jcgm102>>.
+
+NOTE: In the case of a multivariate measurand, <<item_4.3_1>> and <<item_4.3_2>>
+are generalized: see also <<cls_5.5>>.
+
+[[cls_4.4]]
+=== {blank}
+
+The following information is required for uncertainty propagation:
+
+* A measurement model (mathematical or algorithmic) suitable for the current
+application, containing input quantities <<jcgm200,clause=2.50>> of which the
+user has knowledge and an output quantity (measurand) for which results are
+required <<gum6>>,
+
+* Either
+** an estimate of each input quantity -- from statistical analysis of observations
+or provided by other means, and
+** the standard uncertainty associated with each estimate and, when appropriate,
+the degrees of freedom <<iso3534-1,clause=2.54>> and correlations <<iso3534-1,clause=2.44>> between estimates, or
+
+* a joint probability distribution for the input quantities.
+
+NOTE: Guidance on quantifying correlation is given in <<jcgm100,clause=5.2>>
+and <<gum6,clause=10.5>>.
+
+NOTE: Probability distributions for the input quantities are often specified
+in uncertainty budgets <<jcgm200,clause=2.33>>.
+
+NOTE: Guidance on obtaining probability distributions for the input quantities
+is given in <<jcgm101,clause=6>>.
+
+NOTE: Guidance on degrees of freedom in the simplest case of uncorrelated repeated
+observations of an input quantity is given in <<jcgm100,annex=G>> and <<jcgm102,clause=6.5.3>>
+for a set of quantities.
+
+[[cls_4.5]]
+=== {blank}
+
+To propagate measurement uncertainty using a measurement model (see also <<cls_5.3>>),
+it is important to consider what information is available and what is required
+<<gum6,clause="5.1,5.3,5.8,5.9">>. Also the resources necessary to take account
+of the information are important. Such resources include, for example, human
+effort, mathematical or similar skills and computational capabilities. Finally,
+consideration should be given to how the evaluated uncertainty will be used
+<<gum6,clause="12,13">>.
+
+[[cls_4.6]]
+=== {blank}
+
+Taking account of all available knowledge might require the services of a professional
+statistician, a data scientist or the use of sophisticated software. By contrast,
+an adequate account of information might only require a spreadsheet and relatively
+simple calculations. The uncertainty evaluation should be rigorous enough to
+ensure that measurement results are delivered to the satisfaction of the recipient.
+Some guidance is given in this document, further elaborated in the other parts
+of the GUM <<jcgm100,clause=3.4>> <<gum6,clause="6,7,8,9,10">>, to reach an
+appropriate balance between effort and outcome.
+
+[[cls_4.7]]
+=== {blank}
+
+Omitting sources that meaningfully contribute to the measurement uncertainty
+in an uncertainty evaluation should be avoided <<gum6,clause="5.6,7,9,10">>
+<<jcgm100,clause=3.4>>, as it can be detrimental to the compatibility of measurement
+results, break a metrological traceability chain, or lead to wrong decisions
+in conformity assessment. Similar considerations apply to using simplifying
+assumptions that are not justified, such as omitting the evaluation of dependencies
+between input quantities in a measurement model. Hence, the measurement model
+should include all sources that meaningfully contribute to the measurement uncertainty
+and, as appropriate, be supplemented by any dependencies between them.
+
+[[cls_4.8]]
+=== {blank}
+
+The GUM offers two kinds of methods for the evaluation of uncertainty about
+the values of the input quantities in a measurement model. The choice of method
+for obtaining an estimate and the associated uncertainty should be based on
+the information available <<jcgm100,clause=4.1>>. Guidance is provided for using
+the statistical analysis of series of data <<jcgm100,clause="4.2,5,F.1,H.1,H.2,H.3,H.5">>
+<<jcgm101,clause=6.4>> <<gum6,clause=11>> or using other information
+<<jcgm100,clause="4.3,5.2,F.2">> <<jcgm101,clause=6>>. These statistical methods
+are known as Type A methods of evaluating standard uncertainty <<jcgm100,clause=2.3.2>>
+and the other methods as Type B methods <<jcgm100,clause=2.3.3>>, respectively.
+
+[[cls_4.9]]
+=== {blank}
+
+The GUM offers methods for propagating measurement uncertainty. This propagation
+involves a measurement model <<jcgm200,clause=2.48>> (see also <<jcgm100,clause=4.1.1>>)
+relating input quantities of which knowledge is available and output quantities
+about which one wishes to learn. The propagation of the uncertainty associated
+with the values of the input quantities to the output quantity or quantities
+depends on their relationships, expressed in the form of the measurement model
+<<jcgm100>> <<jcgm101>> <<jcgm102>> <<gum6>>. Even if the measurement considered
+only consists of taking a reading from an instrument, other factors influencing
+the measurement result should be taken into account.
+
+[[cls_4.10]]
+=== {blank}
+
+The two principal methods for propagating measurement uncertainty provided in
+the GUM are the law of propagation of uncertainty (see <<cls_5.1>>) <<jcgm100>>
+<<jcgm102>> <<kline1953>> <<ku1966>> and the propagation of distributions by
+means of the Monte Carlo method of JCGM 101:2008 and <<jcgm102>> (see <<cls_5.4>>)
+<<jcgm101>> <<jcgm102>> <<morgan1992>>. The choice of method depends, among
+other, on the measurement model and the uncertainties about the input quantities
+<<jcgm100,annex=G.1>> <<jcgm101,clause=8.1>> <<jcgm102,clause=8>>.

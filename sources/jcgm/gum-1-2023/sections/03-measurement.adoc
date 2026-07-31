@@ -1,0 +1,61 @@
+
+[[cls_3]]
+== Measurement
+
+[[cls_3.1]]
+=== {blank}
+
+The quantity intended to be measured is called the measurand <<jcgm200,clause=2.3>>.
+A measurement can have the objective of determining values and associated uncertainties
+for a set of output quantities, rather than a single quantity. Then the measurand
+is said to be multivariate. The measurement result is represented by the measured
+values and the measurement uncertainty.
+
+[[cls_3.2]]
+=== {blank}
+
+Measurement <<jcgm200,clause=2.1>> can be described as an experimental or computational
+process that, by comparison with a measurement standard <<jcgm200,clause=5.1>>,
+produces an estimate of the true value <<jcgm200,clause=2.11>> of a property,
+together with a statement of the uncertainty associated with that estimate,
+and intended for use in support of decision making. This property can be of
+a material or virtual object or collection of objects, or of a process, event
+or series of events <<possolo2015>>.
+
+NOTE: The GUM takes a broad view of 'measurement' in that it recognises that
+there are instances where the process concerned is essentially computational
+or where the measurement result is of a conceptual or theoretical nature <<jcgm100,clause=1.3>>.
+
+[[cls_3.3]]
+=== {blank}
+
+In the description of 'measurement' (see <<cls_3.2>>), an estimate <<iso3534-1,clause=1.31>> is an approximation of the true value <<jcgm200,clause=2.11>> of the property of interest. Another term sometimes used for estimate is measured value <<jcgm200,clause=2.10>>. By 'comparison with a measurement standard' (see <<cls_3.2>>), it is meant that somewhere in the process a measurement standard is used to obtain an estimate that is metrologically traceable to the relevant measurement unit <<jcgm200,clause=1.9>>.
+
+[[cls_3.4]]
+=== {blank}
+
+Measurement uncertainty is the doubt about the true value of the measurand that
+remains after making a measurement. Measurement uncertainty can be expressed
+in various ways. Commonly used ways include:
+
+* a standard uncertainty <<jcgm200,clause=2.30>>,
+
+* an expanded uncertainty <<jcgm100,clause=2.3.5>> with a coverage factor
+<<jcgm100,clause=2.3.6>>,
+
+* a coverage interval <<jcgm200,clause=2.36>> with a stated coverage probability
+<<jcgm102,clause=3.25>>, or
+
+* a probability distribution describing the knowledge about the measurand
+<<jcgm101,clause=3.1>>, often expressed as a probability density function
+<<jcgm101,clause=3.3>>.
+
+[[cls_3.5]]
+=== {blank}
+
+A measurement result should be presented in a way that is understandable and
+usable by its recipient. The measurement result should therefore include all
+information needed for its intended use <<jcgm100,clause=7>>. The information
+available depends on whether the law of propagation of uncertainty (<<cls_5.1>>),
+the propagation of distributions (<<cls_5.4>>), or another method <<gum6,clause=11>>
+has been used for the evaluation of measurement uncertainty.

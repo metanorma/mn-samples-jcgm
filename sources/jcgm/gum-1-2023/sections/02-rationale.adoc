@@ -5,13 +5,13 @@
 [[cls_2.1]]
 === {blank}
 
-Measurement <<jcgm200,clause=2.1>> is one of the most common processes in human
-activity. Measured values of quantities <<jcgm200,clause=2.10>> are required
+Measurement <<jcgm200,locality:definition=2.1>> is one of the most common processes in human
+activity. Measured values of quantities <<jcgm200,locality:definition=2.10>> are required
 for a diverse range of applications and, for each of these values, a statement
 is needed about its credibility. Such a statement is usually expressed in terms
-of measurement uncertainty <<jcgm200,clause=2.26>>. The two components, the
+of measurement uncertainty <<jcgm200,locality:definition=2.26>>. The two components, the
 measured value and the associated uncertainty, together constitute the most
-common way of reporting a measurement result <<jcgm200,clause=2.9>>. In cases
+common way of reporting a measurement result <<jcgm200,locality:definition=2.9>>. In cases
 where values for more than one quantity are provided by the measurement, a more
 elaborate statement of the uncertainty is often required (<<cls_5.5>>; see also
 <<cls_3.1>>).
@@ -32,14 +32,14 @@ and individuals at home, in very different contexts.
 
 Many measurements are made for the purpose of comparison of results with specifications.
 Such a comparison can be made for widely different purposes. This activity is
-generally known as conformity assessment <<iso17000,clause=4.1>> <<jcgm106,clause=3.3.1>>;
+generally known as conformity assessment <<iso17000,locality:definition=4.1>> <<jcgm106,locality:definition=3.3.1>>;
 see also <<cls_5.2>>.
 
 [[cls_2.4]]
 === {blank}
 
 Comparison of measurement results is an essential activity in science, calibration
-and testing. Compatibility of measurement results <<jcgm200,clause=2.47>> is
+and testing. Compatibility of measurement results <<jcgm200,locality:definition=2.47>> is
 the basis for being able to reproduce scientific findings, performing quality
 assurance and quality control, and providing the interpretation of measurement
 results and informed decision making. Many standards that set requirements for
@@ -56,8 +56,8 @@ not limited to:
 
 * comparison of measurement results,
 * comparison of a measured value with specification limits (conformity assessment),
-* establishing metrological traceability <<jcgm200,clause=2.41>>,
-* applying a decision rule <<jcgm106,clause=3.3.12>>,
+* establishing metrological traceability <<jcgm200,locality:definition=2.41>>,
+* applying a decision rule <<jcgm106,locality:definition=3.3.12>>,
 * calculating risks and risk assessment,
 * comparison of model outputs and experiments,
 * evaluating the validity of models,

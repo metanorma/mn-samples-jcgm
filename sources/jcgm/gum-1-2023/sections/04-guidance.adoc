@@ -48,7 +48,7 @@ are generalized: see also <<cls_5.5>>.
 The following information is required for uncertainty propagation:
 
 * A measurement model (mathematical or algorithmic) suitable for the current
-application, containing input quantities <<jcgm200,clause=2.50>> of which the
+application, containing input quantities <<jcgm200,locality:definition=2.50>> of which the
 user has knowledge and an output quantity (measurand) for which results are
 required <<gum6>>,
 
@@ -56,7 +56,8 @@ required <<gum6>>,
 ** an estimate of each input quantity -- from statistical analysis of observations
 or provided by other means, and
 ** the standard uncertainty associated with each estimate and, when appropriate,
-the degrees of freedom <<iso3534-1,clause=2.54>> and correlations <<iso3534-1,clause=2.44>> between estimates, or
+the degrees of freedom <<iso3534-1,locality:definition=2.54>> and correlations
+<<iso3534-1,locality:definition=2.44>> between estimates, or
 
 * a joint probability distribution for the input quantities.
 
@@ -78,11 +79,11 @@ for a set of quantities.
 
 To propagate measurement uncertainty using a measurement model (see also <<cls_5.3>>),
 it is important to consider what information is available and what is required
-<<gum6,clause="5.1,5.3,5.8,5.9">>. Also the resources necessary to take account
+<<gum6,locality:clauses="5.1, 5.3, 5.8 and 5.9">>. Also the resources necessary to take account
 of the information are important. Such resources include, for example, human
 effort, mathematical or similar skills and computational capabilities. Finally,
 consideration should be given to how the evaluated uncertainty will be used
-<<gum6,clause="12,13">>.
+<<gum6,locality:clauses="12 and 13">>.
 
 [[cls_4.6]]
 === {blank}
@@ -93,14 +94,14 @@ an adequate account of information might only require a spreadsheet and relative
 simple calculations. The uncertainty evaluation should be rigorous enough to
 ensure that measurement results are delivered to the satisfaction of the recipient.
 Some guidance is given in this document, further elaborated in the other parts
-of the GUM <<jcgm100,clause=3.4>> <<gum6,clause="6,7,8,9,10">>, to reach an
+of the GUM <<jcgm100,clause=3.4>> <<gum6,locality:clauses="6-10">>, to reach an
 appropriate balance between effort and outcome.
 
 [[cls_4.7]]
 === {blank}
 
 Omitting sources that meaningfully contribute to the measurement uncertainty
-in an uncertainty evaluation should be avoided <<gum6,clause="5.6,7,9,10">>
+in an uncertainty evaluation should be avoided <<gum6,locality:clauses="5.6, 7, 9 and 10">>
 <<jcgm100,clause=3.4>>, as it can be detrimental to the compatibility of measurement
 results, break a metrological traceability chain, or lead to wrong decisions
 in conformity assessment. Similar considerations apply to using simplifying
@@ -116,17 +117,19 @@ The GUM offers two kinds of methods for the evaluation of uncertainty about
 the values of the input quantities in a measurement model. The choice of method
 for obtaining an estimate and the associated uncertainty should be based on
 the information available <<jcgm100,clause=4.1>>. Guidance is provided for using
-the statistical analysis of series of data <<jcgm100,clause="4.2,5,F.1,H.1,H.2,H.3,H.5">>
+the statistical analysis of series of data
+<<jcgm100,locality:clauses="4.2, 5, F.1, H.1, H.2, H.3 and H.5">>
 <<jcgm101,clause=6.4>> <<gum6,clause=11>> or using other information
-<<jcgm100,clause="4.3,5.2,F.2">> <<jcgm101,clause=6>>. These statistical methods
-are known as Type A methods of evaluating standard uncertainty <<jcgm100,clause=2.3.2>>
-and the other methods as Type B methods <<jcgm100,clause=2.3.3>>, respectively.
+<<jcgm100,locality:clauses="4.3, 5.2 and F.2">> <<jcgm101,clause=6>>. These statistical methods
+are known as Type A methods of evaluating standard uncertainty <<jcgm100,locality:definition=2.3.2>>
+and the other methods as Type B methods <<jcgm100,locality:definition=2.3.3>>, respectively.
 
 [[cls_4.9]]
 === {blank}
 
 The GUM offers methods for propagating measurement uncertainty. This propagation
-involves a measurement model <<jcgm200,clause=2.48>> (see also <<jcgm100,clause=4.1.1>>)
+involves a measurement model <<jcgm200,locality:definition=2.48>>
+(see also <<jcgm100,locality:definition=4.1.1>>)
 relating input quantities of which knowledge is available and output quantities
 about which one wishes to learn. The propagation of the uncertainty associated
 with the values of the input quantities to the output quantity or quantities

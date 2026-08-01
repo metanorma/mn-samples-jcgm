@@ -16196,10 +16196,10 @@ expectation <stem block="false" type="MathML"><math xmlns="http://www.w3.org/199
 </math><asciimath>u^2</asciimath></stem></p>
 </dd>
 </dl>
-</annex><bibliography><references id="_353adeb5-82b4-df52-fe1f-42adaa5d8d88" normative="true" obligation="informative">
+</annex><bibliography><references id="_54424fae-8116-5b3d-f1d3-d4ad03775691" normative="true" obligation="informative">
 <title id="_270c5ee6-077e-f285-ff95-287984a30140">Normative references</title><p id="_5d68767b-3c2e-b2ee-db6d-6b8ca4c42620">The following referenced documents are indispensable for the application of this document. For dated references, only the edition cited applies. For undated references, the latest edition of the referenced document (including any amendments) applies.</p>
-<bibitem id="_d0dc6f27-27bf-8f2f-98a4-c676f9b9dc4f" type="standard" schema-version="v1.5.6" anchor="JCGM_100_2008">
-  <fetched>2026-07-31</fetched>
+<bibitem id="_2afddddb-8aa2-9504-dd5c-23c9ec0a34c8" type="standard" schema-version="v1.5.6" anchor="JCGM_100_2008">
+  <fetched>2026-08-01</fetched>
   
 <title language="en" script="Latn">Guide to the expression of uncertainty in measurement</title>
 
@@ -16349,8 +16349,8 @@ expectation <stem block="false" type="MathML"><math xmlns="http://www.w3.org/199
     <city>Paris</city>
   </place>
 </bibitem>
-<bibitem id="_b31ac921-b334-2e18-79dd-55cce6d9e01d" type="standard" schema-version="v1.5.6" anchor="JCGM_101_2008">
-  <fetched>2026-07-31</fetched>
+<bibitem id="_e3ceaa32-c696-fdac-7bbf-8acde8cc414b" type="standard" schema-version="v1.5.6" anchor="JCGM_101_2008">
+  <fetched>2026-08-01</fetched>
   
 <title language="en" script="Latn">Supplement 1 to the “Guide to the expression of uncertainty in measurement” — Propagation of distributions using a Monte Carlo method</title>
 
@@ -16499,8 +16499,8 @@ expectation <stem block="false" type="MathML"><math xmlns="http://www.w3.org/199
     <city>Paris</city>
   </place>
 </bibitem>
-<bibitem id="_207fa41e-2337-4cdf-91b4-5580647da596" type="standard" schema-version="v1.5.6" anchor="JCGM_102_2011">
-  <fetched>2026-07-31</fetched>
+<bibitem id="_2db2dfe7-d5e5-4186-a471-1d9b180eeda7" type="standard" schema-version="v1.5.6" anchor="JCGM_102_2011">
+  <fetched>2026-08-01</fetched>
   
 <title language="en" script="Latn">Supplement 2 to the “Guide to the expression of uncertainty in measurement” – Extension to any number of output quantities</title>
 
@@ -16661,8 +16661,8 @@ expectation <stem block="false" type="MathML"><math xmlns="http://www.w3.org/199
     <city>Paris</city>
   </place>
 </bibitem>
-<bibitem id="_5ecb1465-704f-7389-a64c-490fb4525817" type="standard" schema-version="v1.5.6" anchor="JCGM_200_2012">
-  <fetched>2026-07-31</fetched>
+<bibitem id="_2e066cd1-973c-f05f-6a81-68a54285c812" type="standard" schema-version="v1.5.6" anchor="JCGM_200_2012">
+  <fetched>2026-08-01</fetched>
   
 <title language="en" script="Latn">International vocabulary of metrology – Basic and general concepts and associated terms (VIM)</title>
 
@@ -16824,8 +16824,8 @@ expectation <stem block="false" type="MathML"><math xmlns="http://www.w3.org/199
     <city>Paris</city>
   </place>
 </bibitem>
-<bibitem id="_0933cd6e-cc87-3b3e-9a41-92fd23e24ffc" type="standard" schema-version="v1.5.6" anchor="ISO_IEC_17000_2004">
-  <fetched>2026-07-31</fetched>
+<bibitem id="_a353909a-e51e-95b1-32cb-0a4654b5e8d0" type="standard" schema-version="v1.5.6" anchor="ISO_IEC_17000_2004">
+  <fetched>2026-08-01</fetched>
   
 <title language="en" script="Latn" type="title-intro">Conformity assessment</title>
 
@@ -16925,8 +16925,8 @@ expectation <stem block="false" type="MathML"><math xmlns="http://www.w3.org/199
     <city>Geneva</city>
   </place>
 </bibitem>
-<bibitem id="_2b9bb0d0-9f43-2c76-03ae-b130aaa514a7" type="standard" schema-version="v1.5.6" anchor="ISO_3534_1_2006">
-  <fetched>2026-07-31</fetched>
+<bibitem id="_3865a6f8-c0f4-c9e4-a414-fd3727758eb2" type="standard" schema-version="v1.5.6" anchor="ISO_3534_1_2006">
+  <fetched>2026-08-01</fetched>
   
 <title language="en" script="Latn" type="title-intro">Statistics</title>
 
@@ -17042,8 +17042,8 @@ expectation <stem block="false" type="MathML"><math xmlns="http://www.w3.org/199
     <city>Geneva</city>
   </place>
 </bibitem>
-<bibitem id="_6c72f64b-13e6-d270-8645-989f5588ea19" type="standard" schema-version="v1.5.6" anchor="ISO_3534_2_2006">
-  <fetched>2026-07-31</fetched>
+<bibitem id="_51bf32de-109e-a384-1e16-70c54eae5c2f" type="standard" schema-version="v1.5.6" anchor="ISO_3534_2_2006">
+  <fetched>2026-08-01</fetched>
   
 <title language="en" script="Latn" type="title-intro">Statistics</title>
 
@@ -17145,8 +17145,8 @@ expectation <stem block="false" type="MathML"><math xmlns="http://www.w3.org/199
     <city>Geneva</city>
   </place>
 </bibitem>
-<bibitem id="_d7f0387e-8285-19e2-e7f5-dab956e1ef06" type="standard" schema-version="v1.5.6" anchor="ISO_10576_1_2003">
-  <fetched>2026-07-31</fetched>
+<bibitem id="_1ba58efb-4e09-a178-7641-8bdec5ff2ba9" type="standard" schema-version="v1.5.6" anchor="ISO_10576_1_2003">
+  <fetched>2026-08-01</fetched>
   
 <title language="en" script="Latn" type="title-intro">Statistical methods</title>
 
@@ -17232,7 +17232,7 @@ expectation <stem block="false" type="MathML"><math xmlns="http://www.w3.org/199
   </place>
 </bibitem>
 <bibitem anchor="JCGM_100_2010" id="_6e1cf7f9-b95f-c921-d1cd-dd2eb7bf2d09"><formattedref format="application/x-isodoc+xml">[NO INFORMATION AVAILABLE]</formattedref><docidentifier type="BIPM">JCGM 100:2010</docidentifier><docnumber>100</docnumber><date type="published"><on>2010</on></date><language>en</language><script>Latn</script></bibitem>
-</references><references id="_0510a596-9607-0c25-de69-5208f515cc34" normative="false" obligation="informative">
+</references><references id="_bd7f853b-a161-8b1f-52a9-9a7f683c9d5f" normative="false" obligation="informative">
 <title id="_50ceb1e1-516f-2673-d73d-4f0c58b4d023">Bibliography</title><bibitem anchor="ref1" id="_5be0fee8-0f0a-014c-3164-68bbf1347715">
   <formattedref format="application/x-isodoc+xml">Agilent Technologies. Metrology Forum. 2001.
 <link target="http://metrologyforum.tm.agilent.com/terminology.shtml"/>.</formattedref>
@@ -17361,8 +17361,8 @@ Silverwater, Australia, 1996.</formattedref>
   <docidentifier type="metanorma">[20]</docidentifier>
   <language>en</language>
   <script>Latn</script>
-</bibitem><bibitem id="_189f308a-6226-35db-1033-ea659c3a7e6a" type="standard" schema-version="v1.5.6" anchor="ref21">
-  <fetched>2026-07-31</fetched>
+</bibitem><bibitem id="_96af4027-57d3-0266-7ab7-d09a179fa861" type="standard" schema-version="v1.5.6" anchor="ref21">
+  <fetched>2026-08-01</fetched>
   
 <title language="en" script="Latn" type="title-intro">Geometrical Product Specifications (GPS)</title>
 
@@ -17452,8 +17452,8 @@ Silverwater, Australia, 1996.</formattedref>
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_0ac8101b-2d30-d676-a5c3-f04a8e1d7767" type="standard" schema-version="v1.5.6" anchor="ref22">
-  <fetched>2026-07-31</fetched>
+</bibitem><bibitem id="_ab06e7a6-69b8-fdc0-bf83-06baf06ee007" type="standard" schema-version="v1.5.6" anchor="ref22">
+  <fetched>2026-08-01</fetched>
   
 <title language="en" script="Latn" type="title-intro">Statistical methods</title>
 
@@ -17537,8 +17537,8 @@ Silverwater, Australia, 1996.</formattedref>
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_5b4f1d8d-be9a-f555-a944-fbaa024c4ab9" type="standard" schema-version="v1.5.6" anchor="ref23">
-  <fetched>2026-07-31</fetched>
+</bibitem><bibitem id="_12cbb6fe-d415-3402-e332-e573d8863493" type="standard" schema-version="v1.5.6" anchor="ref23">
+  <fetched>2026-08-01</fetched>
   
 <title language="en" script="Latn" type="title-main">General requirements for the competence of testing and calibration laboratories</title>
 
@@ -17651,8 +17651,8 @@ Silverwater, Australia, 1996.</formattedref>
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_fa2b1f8e-dce7-ce3b-3be1-b8ed288a89f4" type="standard" schema-version="v1.5.6" anchor="ref24">
-  <fetched>2026-07-31</fetched>
+</bibitem><bibitem id="_fb3631f1-4fe0-3b11-c5d9-364003487ad1" type="standard" schema-version="v1.5.6" anchor="ref24">
+  <fetched>2026-08-01</fetched>
   
 <title language="en" script="Latn" type="title-intro">Geometrical Product Specifications (GPS)</title>
 

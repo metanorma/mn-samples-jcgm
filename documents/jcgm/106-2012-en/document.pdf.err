@@ -1,7 +1,34 @@
-WARNING: Font file '/github/home/.metanorma/fonts/cambria.ttc' (font name 'Cambria Math', font style 'normal', font weight 'normal') doesn't exist. Replaced by '/github/home/.metanorma/fonts/NotoSans-Regular.ttf'.
-WARNING: Font file '/github/home/.metanorma/fonts/cambria.ttc' (font name 'Cambria Math', font style 'normal', font weight 'bold') doesn't exist. Replaced by '/github/home/.metanorma/fonts/NotoSans-Bold.ttf'.
-
-Font "Cambria Math,italic,400" not found. Substituting with "Cambria Math,normal,400".
-WARNING: Font file '/github/home/.metanorma/fonts/cambria.ttc' (font name 'Cambria Math', font style 'normal', font weight 'normal') doesn't exist. Replaced by '/github/home/.metanorma/fonts/NotoSans-Regular.ttf'.
-WARNING: Font file '/github/home/.metanorma/fonts/cambria.ttc' (font name 'Cambria Math', font style 'normal', font weight 'bold') doesn't exist. Replaced by '/github/home/.metanorma/fonts/NotoSans-Bold.ttf'.
-
+Destination: Unresolved ID reference "3.1.1." found.
+Destination: Unresolved ID reference "3.1.2." found.
+Destination: Unresolved ID reference "3.1.3." found.
+Destination: Unresolved ID reference "3.1.4." found.
+Destination: Unresolved ID reference "3.1.5." found.
+Destination: Unresolved ID reference "3.1.6." found.
+Destination: Unresolved ID reference "3.1.7." found.
+Destination: Unresolved ID reference "3.2.1." found.
+Destination: Unresolved ID reference "3.2.2." found.
+Destination: Unresolved ID reference "3.2.3." found.
+Destination: Unresolved ID reference "3.2.4." found.
+Destination: Unresolved ID reference "3.2.5." found.
+Destination: Unresolved ID reference "3.2.6." found.
+Destination: Unresolved ID reference "3.2.7." found.
+Destination: Unresolved ID reference "3.2.8." found.
+Destination: Unresolved ID reference "3.2.9." found.
+Destination: Unresolved ID reference "3.3.1." found.
+Destination: Unresolved ID reference "3.3.2." found.
+Destination: Unresolved ID reference "3.3.3." found.
+Destination: Unresolved ID reference "3.3.4." found.
+Destination: Unresolved ID reference "3.3.5." found.
+Destination: Unresolved ID reference "3.3.6." found.
+Destination: Unresolved ID reference "3.3.7." found.
+Destination: Unresolved ID reference "3.3.8." found.
+Destination: Unresolved ID reference "3.3.9." found.
+Destination: Unresolved ID reference "3.3.10." found.
+Destination: Unresolved ID reference "3.3.11." found.
+Destination: Unresolved ID reference "3.3.12." found.
+Destination: Unresolved ID reference "3.3.13." found.
+Destination: Unresolved ID reference "3.3.14." found.
+Destination: Unresolved ID reference "3.3.15." found.
+Destination: Unresolved ID reference "3.3.16." found.
+Destination: Unresolved ID reference "3.3.17." found.
+Destination: Unresolved ID reference "3.3.18." found.

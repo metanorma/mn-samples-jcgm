@@ -79,11 +79,11 @@ for a set of quantities.
 
 To propagate measurement uncertainty using a measurement model (see also <<cls_5.3>>),
 it is important to consider what information is available and what is required
-<<gum6,locality:clauses="5.1, 5.3, 5.8 and 5.9">>. Also the resources necessary to take account
+<<gum6,clause=5.1;and!clause=5.3;and!clause=5.8;and!clause=5.9>>. Also the resources necessary to take account
 of the information are important. Such resources include, for example, human
 effort, mathematical or similar skills and computational capabilities. Finally,
 consideration should be given to how the evaluated uncertainty will be used
-<<gum6,locality:clauses="12 and 13">>.
+<<gum6,clause=12;and!clause=13>>.
 
 [[cls_4.6]]
 === {blank}
@@ -94,14 +94,14 @@ an adequate account of information might only require a spreadsheet and relative
 simple calculations. The uncertainty evaluation should be rigorous enough to
 ensure that measurement results are delivered to the satisfaction of the recipient.
 Some guidance is given in this document, further elaborated in the other parts
-of the GUM <<jcgm100,clause=3.4>> <<gum6,locality:clauses="6-10">>, to reach an
+of the GUM <<jcgm100,clause=3.4>> <<gum6,clause=6;to!clause=10>> , to reach an
 appropriate balance between effort and outcome.
 
 [[cls_4.7]]
 === {blank}
 
 Omitting sources that meaningfully contribute to the measurement uncertainty
-in an uncertainty evaluation should be avoided <<gum6,locality:clauses="5.6, 7, 9 and 10">>
+in an uncertainty evaluation should be avoided <<gum6,clause=5.6;and!clause=7;and!clause=9;and!clause=10">>
 <<jcgm100,clause=3.4>>, as it can be detrimental to the compatibility of measurement
 results, break a metrological traceability chain, or lead to wrong decisions
 in conformity assessment. Similar considerations apply to using simplifying
@@ -118,9 +118,9 @@ the values of the input quantities in a measurement model. The choice of method
 for obtaining an estimate and the associated uncertainty should be based on
 the information available <<jcgm100,clause=4.1>>. Guidance is provided for using
 the statistical analysis of series of data
-<<jcgm100,locality:clauses="4.2, 5, F.1, H.1, H.2, H.3 and H.5">>
+<<jcgm100,clause=4.2;and!clause=5;and!clause=F.1;and!clause=H.1;and!clause=H.2;and!clause=H.3;and!clause=H.5>>
 <<jcgm101,clause=6.4>> <<gum6,clause=11>> or using other information
-<<jcgm100,locality:clauses="4.3, 5.2 and F.2">> <<jcgm101,clause=6>>. These statistical methods
+<<jcgm100,clause=4.3;and!clause=5.2;and!clause=F.2>> <<jcgm101,clause=6>>. These statistical methods
 are known as Type A methods of evaluating standard uncertainty <<jcgm100,locality:definition=2.3.2>>
 and the other methods as Type B methods <<jcgm100,locality:definition=2.3.3>>, respectively.
 

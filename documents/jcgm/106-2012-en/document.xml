@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<metanorma xmlns="https://www.metanorma.org/ns/standoc" type="semantic" version="2.8.11" schema-version="v2.1.6" flavor="bipm">
+<metanorma xmlns="https://www.metanorma.org/ns/standoc" type="semantic" version="2.8.12" schema-version="v2.2.0" flavor="bipm">
 <bibdata type="standard">
 <title language="en" type="title-main">Evaluation of measurement data</title>
 
@@ -16196,636 +16196,14 @@ expectation <stem block="false" type="MathML"><math xmlns="http://www.w3.org/199
 </math><asciimath>u^2</asciimath></stem></p>
 </dd>
 </dl>
-</annex><bibliography><references id="_6023197e-3a67-066d-b7c8-98cf5a37bb83" normative="true" obligation="informative">
+</annex><bibliography><references id="_78d16b86-c652-2e42-cc21-4da79990c86a" normative="true" obligation="informative">
 <title id="_270c5ee6-077e-f285-ff95-287984a30140">Normative references</title><p id="_5d68767b-3c2e-b2ee-db6d-6b8ca4c42620">The following referenced documents are indispensable for the application of this document. For dated references, only the edition cited applies. For undated references, the latest edition of the referenced document (including any amendments) applies.</p>
-<bibitem id="_72fd8664-970d-1fa2-fae8-a87501827a6f" type="standard" schema-version="v1.5.6" anchor="JCGM_100_2008">
-  <fetched>2026-08-02</fetched>
-  
-<title language="en" script="Latn">Guide to the expression of uncertainty in measurement</title>
-
-  
-<title language="fr" script="Latn">Guide pour l’expression de l’incertitude de mesure</title>
-
-  <uri language="en" script="Latn" type="citation">https://www.bipm.org/documents/20126/2071204/JCGM_100_2008_E.pdf/cb0ef43f-baa5-11cf-3f85-4dcd86f77bd6</uri>
-  <uri language="fr" script="Latn" type="citation">https://www.bipm.org/documents/20126/2071204/JCGM_100_2008_F.pdf/53384399-1e6d-b598-dd17-2831a6b5b812</uri>
-  <docidentifier language="en" script="Latn" type="BIPM" primary="true">JCGM 100:2008</docidentifier>
-  <docidentifier language="fr" script="Latn" type="BIPM" primary="true">JCGM 100:2008</docidentifier>
-  <docidentifier type="BIPM" primary="true">JCGM 100:2008</docidentifier>
-  <docnumber>JCGM 100:2008</docnumber>
-  <date type="published">
-    <on>2008-09</on>
-  </date>
-  <contributor>
-    <role type="publisher"/>
-    <organization>
-      
-<name language="en" script="Latn">International Bureau of Weights and Measures</name>
-
-      
-<name language="fr" script="Latn">Bureau international des poids et mesures</name>
-
-      <abbreviation language="fr" script="Latn">BIPM</abbreviation>
-      <uri>www.bipm.org</uri>
-    </organization>
-  </contributor>
-  <contributor>
-    <role type="publisher"/>
-    <role type="author"/>
-    <organization>
-      
-<name language="en" script="Latn">International Organization for Standardization</name>
-
-      
-<name language="fr" script="Latn">Organisation internationale de normalisation</name>
-
-      <abbreviation language="en" script="Latn">ISO</abbreviation>
-      <uri>www.iso.org</uri>
-    </organization>
-  </contributor>
-  <contributor>
-    <role type="publisher"/>
-    <role type="author"/>
-    <organization>
-      
-<name language="en" script="Latn">International Electrotechnical Commission</name>
-
-      
-<name language="fr" script="Latn">Commission électrotechnique internationale</name>
-
-      <abbreviation language="en" script="Latn">IEC</abbreviation>
-      <uri>www.iec.ch</uri>
-    </organization>
-  </contributor>
-  <contributor>
-    <role type="author"/>
-    <organization>
-      
-<name language="en" script="Latn">International Organization of Legal Metrology</name>
-
-      
-<name language="fr" script="Latn">Organisation Internationale de Métrologie Légale</name>
-
-      <abbreviation language="fr" script="Latn">OIML</abbreviation>
-      <uri>www.oiml.org</uri>
-    </organization>
-  </contributor>
-  <contributor>
-    <role type="author"/>
-    <organization>
-      
-<name language="en" script="Latn">International Union of Pure and Applied Chemistry</name>
-
-      
-<name language="fr" script="Latn">Union internationale de chimie pure et appliquée</name>
-
-      <abbreviation language="en" script="Latn">IUPAC</abbreviation>
-      <uri>www.iupac.org</uri>
-    </organization>
-  </contributor>
-  <contributor>
-    <role type="author"/>
-    <organization>
-      
-<name language="en" script="Latn">International Union of Pure and Applied Physics</name>
-
-      
-<name language="fr" script="Latn">Union internationale de physique pure et appliquée</name>
-
-      <abbreviation language="en" script="Latn">IUPAP</abbreviation>
-      <uri>www.iupap.org</uri>
-    </organization>
-  </contributor>
-  <contributor>
-    <role type="author"/>
-    <organization>
-      
-<name language="en" script="Latn">International Federation of Clinical Chemistry and Laboratory Medicine</name>
-
-      
-<name language="fr" script="Latn">Fédération internationale de chimie clinique et de biologie moléculaire</name>
-
-      <abbreviation language="en" script="Latn">IFCC</abbreviation>
-      <uri>www.ifcc.org</uri>
-    </organization>
-  </contributor>
-  <contributor>
-    <role type="author"/>
-    <organization>
-      
-<name language="en" script="Latn">International Laboratory Accreditation Cooperation</name>
-
-      
-<name language="fr" script="Latn">Coopération internationale d’accréditation des laboratoires</name>
-
-      <abbreviation language="en" script="Latn">ILAC</abbreviation>
-      <uri>www.ilac.org</uri>
-    </organization>
-  </contributor>
-  <contributor>
-    <role type="author">
-      <description>committee</description>
-    </role>
-    <organization>
-      
-<name language="fr" script="Latn">Bureau international des poids et mesures</name>
-
-      <subdivision>
-        
-<name language="en" script="Latn">Joint Committee for Guides in Metrology</name>
-
-        
-<name language="fr" script="Latn">Comité commun pour les guides en métrologie</name>
-
-        <abbreviation>JCGM</abbreviation>
-      </subdivision>
-      <abbreviation language="fr" script="Latn">BIPM</abbreviation>
-    </organization>
-  </contributor>
-  <edition>1</edition>
-  <language>en</language>
-  <language>fr</language>
-  <script>Latn</script>
-  <place>
-    <city>Paris</city>
-  </place>
-</bibitem>
-<bibitem id="_a550a58a-56a6-0bb1-7e9c-98f83689e7d8" type="standard" schema-version="v1.5.6" anchor="JCGM_101_2008">
-  <fetched>2026-08-02</fetched>
-  
-<title language="en" script="Latn">Supplement 1 to the “Guide to the expression of uncertainty in measurement” — Propagation of distributions using a Monte Carlo method</title>
-
-  
-<title language="fr" script="Latn">Supplément 1 du “Guide pour l’expression de l’incertitude de mesure” — Propagation de distributions par une méthode de Monte Carlo</title>
-
-  <uri language="en" script="Latn" type="citation">https://www.bipm.org/documents/20126/2071204/JCGM_101_2008_E.pdf/325dcaad-c15a-407c-1105-8b7f322d651c</uri>
-  <docidentifier language="en" script="Latn" type="BIPM" primary="true">JCGM 101:2008</docidentifier>
-  <docidentifier language="fr" script="Latn" type="BIPM" primary="true">JCGM 101:2008</docidentifier>
-  <docidentifier type="BIPM" primary="true">JCGM 101:2008</docidentifier>
-  <docnumber>JCGM 101:2008</docnumber>
-  <date type="published">
-    <on>2008</on>
-  </date>
-  <contributor>
-    <role type="publisher"/>
-    <organization>
-      
-<name language="en" script="Latn">International Bureau of Weights and Measures</name>
-
-      
-<name language="fr" script="Latn">Bureau international des poids et mesures</name>
-
-      <abbreviation language="fr" script="Latn">BIPM</abbreviation>
-      <uri>www.bipm.org</uri>
-    </organization>
-  </contributor>
-  <contributor>
-    <role type="author"/>
-    <role type="publisher"/>
-    <organization>
-      
-<name language="en" script="Latn">International Organization for Standardization</name>
-
-      
-<name language="fr" script="Latn">Organisation internationale de normalisation</name>
-
-      <abbreviation language="en" script="Latn">ISO</abbreviation>
-      <uri>www.iso.org</uri>
-    </organization>
-  </contributor>
-  <contributor>
-    <role type="author"/>
-    <role type="publisher"/>
-    <organization>
-      
-<name language="en" script="Latn">International Electrotechnical Commission</name>
-
-      
-<name language="fr" script="Latn">Commission électrotechnique internationale</name>
-
-      <abbreviation language="en">IEC</abbreviation>
-      <uri>www.iec.ch</uri>
-    </organization>
-  </contributor>
-  <contributor>
-    <role type="author"/>
-    <organization>
-      
-<name language="en" script="Latn">International Organization of Legal Metrology</name>
-
-      
-<name language="fr" script="Latn">Organisation internationale de métrologie légale</name>
-
-      <abbreviation language="fr" script="Latn">OIML</abbreviation>
-      <uri>www.oiml.org</uri>
-    </organization>
-  </contributor>
-  <contributor>
-    <role type="author"/>
-    <organization>
-      
-<name language="en" script="Latn">International Union of Pure and Applied Chemistry</name>
-
-      
-<name language="fr" script="Latn">Union internationale de chimie pure et appliquée</name>
-
-      <abbreviation language="en" script="Latn">IUPAC</abbreviation>
-      <uri>www.iupac.org</uri>
-    </organization>
-  </contributor>
-  <contributor>
-    <role type="author"/>
-    <organization>
-      
-<name language="en" script="Latn">International Union of Pure and Applied Physics</name>
-
-      
-<name language="fr" script="Latn">Union internationale de physique pure et appliquée</name>
-
-      <abbreviation language="en" script="Latn">IUPAP</abbreviation>
-      <uri>www.iupap.org</uri>
-    </organization>
-  </contributor>
-  <contributor>
-    <role type="author"/>
-    <organization>
-      
-<name language="en" script="Latn">International Federation of Clinical Chemistry and Laboratory Medicine</name>
-
-      
-<name language="fr" script="Latn">Fédération internationale de chimie clinique et de biologie moléculaire</name>
-
-      <abbreviation language="en" script="Latn">IFCC</abbreviation>
-      <uri>www.ifcc.org</uri>
-    </organization>
-  </contributor>
-  <contributor>
-    <role type="author"/>
-    <organization>
-      
-<name language="en" script="Latn">International Laboratory Accreditation Cooperation</name>
-
-      
-<name language="fr" script="Latn">Coopération internationale d’accréditation des laboratoires</name>
-
-      <abbreviation language="en" script="Latn">ILAC</abbreviation>
-      <uri>www.ilac.org</uri>
-    </organization>
-  </contributor>
-  <contributor>
-    <role type="author">
-      <description>committee</description>
-    </role>
-    <organization>
-      
-<name language="fr" script="Latn">Bureau international des poids et mesures</name>
-
-      <subdivision>
-        
-<name language="en" script="Latn">Joint Committee for Guides in Metrology</name>
-
-        
-<name language="fr" script="Latn">Comité commun pour les Guides en métrologie</name>
-
-        <abbreviation>JCGM</abbreviation>
-      </subdivision>
-      <abbreviation language="fr" script="Latn">BIPM</abbreviation>
-    </organization>
-  </contributor>
-  <edition>1</edition>
-  <language>en</language>
-  <language>fr</language>
-  <script>Latn</script>
-  <place>
-    <city>Paris</city>
-  </place>
-</bibitem>
-<bibitem id="_76ffaab5-3f51-d6bc-ee7b-a28e159d8cc4" type="standard" schema-version="v1.5.6" anchor="JCGM_102_2011">
-  <fetched>2026-08-02</fetched>
-  
-<title language="en" script="Latn">Supplement 2 to the “Guide to the expression of uncertainty in measurement” – Extension to any number of output quantities</title>
-
-  
-<title language="fr" script="Latn">Supplément 2 du “Guide pour l’expression de l’incertitude de mesure” — Extension à un nombre quelconque de grandeurs de sortie</title>
-
-  <uri language="en" script="Latn" type="citation">https://www.bipm.org/documents/20126/2071204/JCGM_102_2011_E.pdf/6a3281aa-1397-d703-d7a1-a8d58c9bf2a5</uri>
-  <docidentifier language="en" script="Latn" type="BIPM" primary="true">JCGM 102:2011</docidentifier>
-  <docidentifier language="fr" script="Latn" type="BIPM" primary="true">JCGM 102:2011</docidentifier>
-  <docidentifier type="BIPM" primary="true">JCGM 102:2011</docidentifier>
-  <docnumber>JCGM 102:2011</docnumber>
-  <date type="published">
-    <on>2011</on>
-  </date>
-  <contributor>
-    <role type="publisher"/>
-    <organization>
-      
-<name language="en" script="Latn">International Bureau of Weights and Measures</name>
-
-      
-<name language="fr" script="Latn">Bureau international des poids et mesures</name>
-
-      <abbreviation language="fr" script="Latn">BIPM</abbreviation>
-      <uri>www.bipm.org</uri>
-    </organization>
-  </contributor>
-  <contributor>
-    <role type="publisher"/>
-    <organization>
-      
-<name language="en" script="Latn">International Organization for Standardization</name>
-
-      
-<name language="fr" script="Latn">Organisation internationale de normalisation</name>
-
-      <abbreviation language="en" script="Latn">ISO</abbreviation>
-      <uri>www.iso.org</uri>
-    </organization>
-  </contributor>
-  <contributor>
-    <role type="author"/>
-    <role type="publisher"/>
-    <organization>
-      
-<name language="en" script="Latn">International Organization for Standardization</name>
-
-      
-<name language="fr" script="Latn">Organisation internationale de normalisation</name>
-
-      <abbreviation language="en" script="Latn">ISO</abbreviation>
-      <uri>www.iso.org</uri>
-    </organization>
-  </contributor>
-  <contributor>
-    <role type="publisher"/>
-    <role type="author"/>
-    <organization>
-      
-<name language="en" script="Latn">International Electrotechnical Commission</name>
-
-      
-<name language="fr" script="Latn">Commission électrotechnique internationale</name>
-
-      <abbreviation language="en" script="Latn">IEC</abbreviation>
-      <uri>www.iec.ch</uri>
-    </organization>
-  </contributor>
-  <contributor>
-    <role type="author"/>
-    <organization>
-      
-<name language="en" script="Latn">International Organization of Legal Metrology</name>
-
-      
-<name language="fr" script="Latn">Organisation Internationale de Métrologie Légale</name>
-
-      <abbreviation language="fr" script="Latn">OIML</abbreviation>
-      <uri>www.oiml.org</uri>
-    </organization>
-  </contributor>
-  <contributor>
-    <role type="author"/>
-    <organization>
-      
-<name language="en" script="Latn">International Union of Pure and Applied Chemistry</name>
-
-      
-<name language="fr" script="Latn">Union internationale de chimie pure et appliquée</name>
-
-      <abbreviation language="en" script="Latn">IUPAC</abbreviation>
-      <uri>www.iupac.org</uri>
-    </organization>
-  </contributor>
-  <contributor>
-    <role type="author"/>
-    <organization>
-      
-<name language="en" script="Latn">International Union of Pure and Applied Physics</name>
-
-      
-<name language="fr" script="Latn">Union internationale de physique pure et appliquée</name>
-
-      <abbreviation language="en" script="Latn">IUPAP</abbreviation>
-      <uri>www.iupap.org</uri>
-    </organization>
-  </contributor>
-  <contributor>
-    <role type="author"/>
-    <organization>
-      
-<name language="en" script="Latn">International Federation of Clinical Chemistry and Laboratory Medicine</name>
-
-      
-<name language="fr" script="Latn">Fédération internationale de chimie clinique et de biologie moléculaire</name>
-
-      <abbreviation language="en" script="Latn">IFCC</abbreviation>
-      <uri>www.ifcc.org</uri>
-    </organization>
-  </contributor>
-  <contributor>
-    <role type="author"/>
-    <organization>
-      
-<name language="en" script="Latn">International Laboratory Accreditation Cooperation</name>
-
-      
-<name language="fr" script="Latn">Coopération internationale d’accréditation des laboratoires</name>
-
-      <abbreviation language="en" script="Latn">ILAC</abbreviation>
-      <uri>www.ilac.org</uri>
-    </organization>
-  </contributor>
-  <contributor>
-    <role type="author">
-      <description>committee</description>
-    </role>
-    <organization>
-      
-<name language="fr" script="Latn">Bureau international des poids et mesures</name>
-
-      <subdivision>
-        
-<name language="en" script="Latn">Joint Committee for Guides in Metrology</name>
-
-        
-<name language="fr" script="Latn">Comité commun pour les guides en métrologie</name>
-
-        <abbreviation>JCGM</abbreviation>
-      </subdivision>
-      <abbreviation language="fr" script="Latn">BIPM</abbreviation>
-    </organization>
-  </contributor>
-  <language>en</language>
-  <language>fr</language>
-  <script>Latn</script>
-  <place>
-    <city>Paris</city>
-  </place>
-</bibitem>
-<bibitem id="_84e2340f-e584-ebc5-a006-18a4b877514c" type="standard" schema-version="v1.5.6" anchor="JCGM_200_2012">
-  <fetched>2026-08-02</fetched>
-  
-<title language="en" script="Latn">International vocabulary of metrology – Basic and general concepts and associated terms (VIM)</title>
-
-  
-<title language="fr" script="Latn">Vocabulaire international de métrologie – Concepts fondamentaux et généraux et termes associés (VIM)</title>
-
-  <uri language="en" script="Latn" type="citation">https://www.bipm.org/documents/20126/2071204/JCGM_200_2012.pdf/f0e1ad45-d337-bbeb-53a6-15fe649d0ff1</uri>
-  <docidentifier language="en" script="Latn" type="BIPM" primary="true">JCGM 200:2012</docidentifier>
-  <docidentifier language="fr" script="Latn" type="BIPM" primary="true">JCGM 200:2012</docidentifier>
-  <docidentifier type="BIPM" primary="true">JCGM 200:2012</docidentifier>
-  <docnumber>JCGM 200:2012</docnumber>
-  <date type="published">
-    <on>2012</on>
-  </date>
-  <contributor>
-    <role type="publisher"/>
-    <organization>
-      
-<name language="en" script="Latn">International Bureau of Weights and Measures</name>
-
-      
-<name language="fr" script="Latn">Bureau international des poids et mesures</name>
-
-      <abbreviation language="fr" script="Latn">BIPM</abbreviation>
-      <uri>www.bipm.org</uri>
-    </organization>
-  </contributor>
-  <contributor>
-    <role type="publisher"/>
-    <organization>
-      
-<name language="en" script="Latn">International Organization for Standardization</name>
-
-      
-<name language="fr" script="Latn">Organisation internationale de normalisation</name>
-
-      <abbreviation language="en" script="Latn">ISO</abbreviation>
-      <uri>www.iso.org</uri>
-    </organization>
-  </contributor>
-  <contributor>
-    <role type="author"/>
-    <role type="publisher"/>
-    <organization>
-      
-<name language="en" script="Latn">International Organization for Standardization</name>
-
-      
-<name language="fr" script="Latn">Organisation internationale de normalisation</name>
-
-      <abbreviation language="en" script="Latn">ISO</abbreviation>
-      <uri>www.iso.org</uri>
-    </organization>
-  </contributor>
-  <contributor>
-    <role type="publisher"/>
-    <role type="author"/>
-    <organization>
-      
-<name language="en" script="Latn">International Electrotechnical Commission</name>
-
-      
-<name language="fr" script="Latn">Commission électrotechnique internationale</name>
-
-      <abbreviation language="en" script="Latn">IEC</abbreviation>
-      <uri>www.iec.ch</uri>
-    </organization>
-  </contributor>
-  <contributor>
-    <role type="author"/>
-    <organization>
-      
-<name language="en" script="Latn">International Organization of Legal Metrology</name>
-
-      
-<name language="fr" script="Latn">Organisation Internationale de Métrologie Légale</name>
-
-      <abbreviation language="fr" script="Latn">OIML</abbreviation>
-      <uri>www.oiml.org</uri>
-    </organization>
-  </contributor>
-  <contributor>
-    <role type="author"/>
-    <organization>
-      
-<name language="en" script="Latn">International Union of Pure and Applied Chemistry</name>
-
-      
-<name language="fr" script="Latn">Union internationale de chimie pure et appliquée</name>
-
-      <abbreviation language="en" script="Latn">IUPAC</abbreviation>
-      <uri>www.iupac.org</uri>
-    </organization>
-  </contributor>
-  <contributor>
-    <role type="author"/>
-    <organization>
-      
-<name language="en" script="Latn">International Union of Pure and Applied Physics</name>
-
-      
-<name language="fr" script="Latn">Union internationale de physique pure et appliquée</name>
-
-      <abbreviation language="en" script="Latn">IUPAP</abbreviation>
-      <uri>www.iupap.org</uri>
-    </organization>
-  </contributor>
-  <contributor>
-    <role type="author"/>
-    <organization>
-      
-<name language="en" script="Latn">International Federation of Clinical Chemistry and Laboratory Medicine</name>
-
-      
-<name language="fr" script="Latn">Fédération internationale de chimie clinique et de biologie moléculaire</name>
-
-      <abbreviation language="en" script="Latn">IFCC</abbreviation>
-      <uri>www.ifcc.org</uri>
-    </organization>
-  </contributor>
-  <contributor>
-    <role type="author"/>
-    <organization>
-      
-<name language="en" script="Latn">International Laboratory Accreditation Cooperation</name>
-
-      
-<name language="fr" script="Latn">Coopération internationale d’accréditation des laboratoires</name>
-
-      <abbreviation language="en" script="Latn">ILAC</abbreviation>
-      <uri>www.ilac.org</uri>
-    </organization>
-  </contributor>
-  <contributor>
-    <role type="author">
-      <description>committee</description>
-    </role>
-    <organization>
-      
-<name language="fr" script="Latn">Bureau international des poids et mesures</name>
-
-      <subdivision>
-        
-<name language="en" script="Latn">Joint Committee for Guides in Metrology</name>
-
-        
-<name language="fr" script="Latn">Comité commun pour les guides en métrologie</name>
-
-        <abbreviation>JCGM</abbreviation>
-      </subdivision>
-      <abbreviation language="fr" script="Latn">BIPM</abbreviation>
-    </organization>
-  </contributor>
-  <edition>3</edition>
-  <language>en</language>
-  <language>fr</language>
-  <script>Latn</script>
-  <place>
-    <city>Paris</city>
-  </place>
-</bibitem>
-<bibitem id="_13d3ec30-1e31-0ca7-a0fc-c8c42bffbd30" type="standard" schema-version="v1.5.6" anchor="ISO_IEC_17000_2004">
-  <fetched>2026-08-02</fetched>
+<bibitem anchor="JCGM_100_2008" id="_364148f6-e8c8-47a8-becf-6e424d1b46db"><formattedref format="application/x-isodoc+xml">JCGM 100:2008. Evaluation of measurement data — Guide to the expression of uncertainty in measurement (GUM).</formattedref><docidentifier type="BIPM">JCGM 100:2008</docidentifier><docnumber>100</docnumber><date type="published"><on>2008</on></date><language>en</language><script>Latn</script></bibitem>
+<bibitem anchor="JCGM_101_2008" id="_fa0acb67-89f1-4e90-7f06-11bac69337c6"><formattedref format="application/x-isodoc+xml">JCGM 101:2008. Evaluation of measurement data — Supplement 1 to the “Guide to the expression of uncertainty in measurement” — Propagation of distributions using a Monte Carlo method.</formattedref><docidentifier type="BIPM">JCGM 101:2008</docidentifier><docnumber>101</docnumber><date type="published"><on>2008</on></date><language>en</language><script>Latn</script></bibitem>
+<bibitem anchor="JCGM_102_2011" id="_63a9f23d-9625-e67e-8a29-0012a04e13d4"><formattedref format="application/x-isodoc+xml">JCGM 102:2011. Evaluation of measurement data — Supplement 2 to the “Guide to the expression of uncertainty in measurement” — Extension to any number of output quantities.</formattedref><docidentifier type="BIPM">JCGM 102:2011</docidentifier><docnumber>102</docnumber><date type="published"><on>2011</on></date><language>en</language><script>Latn</script></bibitem>
+<bibitem anchor="JCGM_200_2012" id="_7f38de3d-807a-e6f1-5e0c-ba5ab93ff510"><formattedref format="application/x-isodoc+xml">JCGM 200:2012. International vocabulary of metrology — Basic and general concepts and associated terms (VIM3).</formattedref><docidentifier type="BIPM">JCGM 200:2012</docidentifier><docnumber>200</docnumber><date type="published"><on>2012</on></date><language>en</language><script>Latn</script></bibitem>
+<bibitem id="_f54bdab1-f1d7-e869-123d-97eba5cbfc30" type="standard" schema-version="v1.5.6" anchor="ISO_IEC_17000_2004">
+  <fetched>2026-08-14</fetched>
   
 <title language="en" script="Latn" type="title-intro">Conformity assessment</title>
 
@@ -16925,8 +16303,8 @@ expectation <stem block="false" type="MathML"><math xmlns="http://www.w3.org/199
     <city>Geneva</city>
   </place>
 </bibitem>
-<bibitem id="_da971231-0cec-4f4b-b96c-337cba9caae3" type="standard" schema-version="v1.5.6" anchor="ISO_3534_1_2006">
-  <fetched>2026-08-02</fetched>
+<bibitem id="_cc4c4a5c-c67d-3d64-a19b-5927c9196250" type="standard" schema-version="v1.5.6" anchor="ISO_3534_1_2006">
+  <fetched>2026-08-14</fetched>
   
 <title language="en" script="Latn" type="title-intro">Statistics</title>
 
@@ -17042,8 +16420,8 @@ expectation <stem block="false" type="MathML"><math xmlns="http://www.w3.org/199
     <city>Geneva</city>
   </place>
 </bibitem>
-<bibitem id="_0bded3c9-9cf7-466c-86c4-caa9372d3e95" type="standard" schema-version="v1.5.6" anchor="ISO_3534_2_2006">
-  <fetched>2026-08-02</fetched>
+<bibitem id="_1ed82d19-59e7-be8c-3566-41949589a993" type="standard" schema-version="v1.5.6" anchor="ISO_3534_2_2006">
+  <fetched>2026-08-14</fetched>
   
 <title language="en" script="Latn" type="title-intro">Statistics</title>
 
@@ -17145,8 +16523,8 @@ expectation <stem block="false" type="MathML"><math xmlns="http://www.w3.org/199
     <city>Geneva</city>
   </place>
 </bibitem>
-<bibitem id="_85d0b836-5a0a-b0fe-81f0-f030c9bb90ff" type="standard" schema-version="v1.5.6" anchor="ISO_10576_1_2003">
-  <fetched>2026-08-02</fetched>
+<bibitem id="_77fb6abd-c38a-444a-03b4-79d3b0bb6f6e" type="standard" schema-version="v1.5.6" anchor="ISO_10576_1_2003">
+  <fetched>2026-08-14</fetched>
   
 <title language="en" script="Latn" type="title-intro">Statistical methods</title>
 
@@ -17232,7 +16610,7 @@ expectation <stem block="false" type="MathML"><math xmlns="http://www.w3.org/199
   </place>
 </bibitem>
 <bibitem anchor="JCGM_100_2010" id="_6e1cf7f9-b95f-c921-d1cd-dd2eb7bf2d09"><formattedref format="application/x-isodoc+xml">[NO INFORMATION AVAILABLE]</formattedref><docidentifier type="BIPM">JCGM 100:2010</docidentifier><docnumber>100</docnumber><date type="published"><on>2010</on></date><language>en</language><script>Latn</script></bibitem>
-</references><references id="_d0735994-eb0f-5253-9d40-470a56982957" normative="false" obligation="informative">
+</references><references id="_03a6afb5-bdc7-3c50-2d12-7a67b1c95706" normative="false" obligation="informative">
 <title id="_50ceb1e1-516f-2673-d73d-4f0c58b4d023">Bibliography</title><bibitem anchor="ref1" id="_5be0fee8-0f0a-014c-3164-68bbf1347715">
   <formattedref format="application/x-isodoc+xml">Agilent Technologies. Metrology Forum. 2001.
 <link target="http://metrologyforum.tm.agilent.com/terminology.shtml"/>.</formattedref>
@@ -17361,8 +16739,8 @@ Silverwater, Australia, 1996.</formattedref>
   <docidentifier type="metanorma">[20]</docidentifier>
   <language>en</language>
   <script>Latn</script>
-</bibitem><bibitem id="_904dbb51-e15c-92ad-3ff9-6a269835a8ee" type="standard" schema-version="v1.5.6" anchor="ref21">
-  <fetched>2026-08-02</fetched>
+</bibitem><bibitem id="_2c82f1ac-5617-d8b5-9204-344fc6a0d775" type="standard" schema-version="v1.5.6" anchor="ref21">
+  <fetched>2026-08-14</fetched>
   
 <title language="en" script="Latn" type="title-intro">Geometrical Product Specifications (GPS)</title>
 
@@ -17452,8 +16830,8 @@ Silverwater, Australia, 1996.</formattedref>
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_7013cc9d-fde0-72aa-b0aa-33c8053520bc" type="standard" schema-version="v1.5.6" anchor="ref22">
-  <fetched>2026-08-02</fetched>
+</bibitem><bibitem id="_39addc38-9170-936d-511c-a585fa131d70" type="standard" schema-version="v1.5.6" anchor="ref22">
+  <fetched>2026-08-14</fetched>
   
 <title language="en" script="Latn" type="title-intro">Statistical methods</title>
 
@@ -17537,8 +16915,8 @@ Silverwater, Australia, 1996.</formattedref>
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_882942a6-a67a-54cb-798a-35e6ef268bc3" type="standard" schema-version="v1.5.6" anchor="ref23">
-  <fetched>2026-08-02</fetched>
+</bibitem><bibitem id="_ab017a77-e833-c29f-5530-73f6125991bf" type="standard" schema-version="v1.5.6" anchor="ref23">
+  <fetched>2026-08-14</fetched>
   
 <title language="en" script="Latn" type="title-main">General requirements for the competence of testing and calibration laboratories</title>
 
@@ -17651,8 +17029,8 @@ Silverwater, Australia, 1996.</formattedref>
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_6ec2b9c1-9e6e-72f2-b3c3-2a740f9a3d21" type="standard" schema-version="v1.5.6" anchor="ref24">
-  <fetched>2026-08-02</fetched>
+</bibitem><bibitem id="_56cdef36-3a73-fc8b-dd63-b0daa58f3c2b" type="standard" schema-version="v1.5.6" anchor="ref24">
+  <fetched>2026-08-14</fetched>
   
 <title language="en" script="Latn" type="title-intro">Geometrical Product Specifications (GPS)</title>
 

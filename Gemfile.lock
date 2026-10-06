@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/metanorma/metanorma-taste
-  revision: 6f9f253761180dc074b9842acba5b0e31be42461
+  revision: b60193db4aa6e77b4fef57acc85463a098755857
   branch: add-jcgm-taste
   specs:
     metanorma-taste (1.1.2)

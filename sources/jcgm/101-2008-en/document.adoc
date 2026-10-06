@@ -19,7 +19,7 @@
 :workgroup-acronym: WG 1
 :workgroup-en: Working Group on the Expression of Uncertainty in Measurement
 :workgroup-fr: Groupe de travail sur l'expression des incertitudes
-:mn-document-class: bipm
+:mn-document-class: jcgm
 :mn-output-extensions: xml,html,pdf,rxl
 :imagesdir: images/
 :local-cache-only:

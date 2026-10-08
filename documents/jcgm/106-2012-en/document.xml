@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<metanorma xmlns="https://www.metanorma.org/ns/standoc" type="semantic" version="2.8.12" schema-version="v2.2.0" flavor="bipm">
+<metanorma xmlns="https://www.metanorma.org/ns/standoc" type="semantic" version="2.9.0" schema-version="v2.2.0" flavor="bipm">
 <bibdata type="standard">
 <title language="en" type="title-main">Evaluation of measurement data</title>
 
@@ -16196,14 +16196,14 @@ expectation <stem block="false" type="MathML"><math xmlns="http://www.w3.org/199
 </math><asciimath>u^2</asciimath></stem></p>
 </dd>
 </dl>
-</annex><bibliography><references id="_78d16b86-c652-2e42-cc21-4da79990c86a" normative="true" obligation="informative">
+</annex><bibliography><references id="_64bd2140-c2de-2884-7f7d-fcab5461c684" normative="true" obligation="informative">
 <title id="_270c5ee6-077e-f285-ff95-287984a30140">Normative references</title><p id="_5d68767b-3c2e-b2ee-db6d-6b8ca4c42620">The following referenced documents are indispensable for the application of this document. For dated references, only the edition cited applies. For undated references, the latest edition of the referenced document (including any amendments) applies.</p>
 <bibitem anchor="JCGM_100_2008" id="_364148f6-e8c8-47a8-becf-6e424d1b46db"><formattedref format="application/x-isodoc+xml">JCGM 100:2008. Evaluation of measurement data — Guide to the expression of uncertainty in measurement (GUM).</formattedref><docidentifier type="BIPM">JCGM 100:2008</docidentifier><docnumber>100</docnumber><date type="published"><on>2008</on></date><language>en</language><script>Latn</script></bibitem>
 <bibitem anchor="JCGM_101_2008" id="_fa0acb67-89f1-4e90-7f06-11bac69337c6"><formattedref format="application/x-isodoc+xml">JCGM 101:2008. Evaluation of measurement data — Supplement 1 to the “Guide to the expression of uncertainty in measurement” — Propagation of distributions using a Monte Carlo method.</formattedref><docidentifier type="BIPM">JCGM 101:2008</docidentifier><docnumber>101</docnumber><date type="published"><on>2008</on></date><language>en</language><script>Latn</script></bibitem>
 <bibitem anchor="JCGM_102_2011" id="_63a9f23d-9625-e67e-8a29-0012a04e13d4"><formattedref format="application/x-isodoc+xml">JCGM 102:2011. Evaluation of measurement data — Supplement 2 to the “Guide to the expression of uncertainty in measurement” — Extension to any number of output quantities.</formattedref><docidentifier type="BIPM">JCGM 102:2011</docidentifier><docnumber>102</docnumber><date type="published"><on>2011</on></date><language>en</language><script>Latn</script></bibitem>
 <bibitem anchor="JCGM_200_2012" id="_7f38de3d-807a-e6f1-5e0c-ba5ab93ff510"><formattedref format="application/x-isodoc+xml">JCGM 200:2012. International vocabulary of metrology — Basic and general concepts and associated terms (VIM3).</formattedref><docidentifier type="BIPM">JCGM 200:2012</docidentifier><docnumber>200</docnumber><date type="published"><on>2012</on></date><language>en</language><script>Latn</script></bibitem>
-<bibitem id="_f54bdab1-f1d7-e869-123d-97eba5cbfc30" type="standard" schema-version="v1.5.6" anchor="ISO_IEC_17000_2004">
-  <fetched>2026-08-14</fetched>
+<bibitem id="_3db2de3a-11fc-8631-0774-e884f9e43d84" type="standard" schema-version="v1.5.6" anchor="ISO_IEC_17000_2004">
+  <fetched>2026-10-08</fetched>
   
 <title language="en" script="Latn" type="title-intro">Conformity assessment</title>
 
@@ -16226,6 +16226,7 @@ expectation <stem block="false" type="MathML"><math xmlns="http://www.w3.org/199
   <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:29316:en</uri>
   <uri type="rss">https://www.iso.org/contents/data/standard/02/93/29316.detail.rss</uri>
   <docidentifier type="ISO" primary="true">ISO/IEC 17000:2004</docidentifier>
+  <docidentifier type="iso-undated">ISO/IEC 17000</docidentifier>
   <docidentifier type="iso-reference">ISO/IEC 17000:2004(E)</docidentifier>
   <docidentifier type="URN">urn:iso:std:iso-iec:17000:stage-95.99</docidentifier>
   <docnumber>17000</docnumber>
@@ -16303,8 +16304,8 @@ expectation <stem block="false" type="MathML"><math xmlns="http://www.w3.org/199
     <city>Geneva</city>
   </place>
 </bibitem>
-<bibitem id="_cc4c4a5c-c67d-3d64-a19b-5927c9196250" type="standard" schema-version="v1.5.6" anchor="ISO_3534_1_2006">
-  <fetched>2026-08-14</fetched>
+<bibitem id="_54d7a817-ef84-e0da-614b-20fb9f71b0c0" type="standard" schema-version="v1.5.6" anchor="ISO_3534_1_2006">
+  <fetched>2026-10-08</fetched>
   
 <title language="en" script="Latn" type="title-intro">Statistics</title>
 
@@ -16333,6 +16334,7 @@ expectation <stem block="false" type="MathML"><math xmlns="http://www.w3.org/199
   <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:40145:en</uri>
   <uri type="rss">https://www.iso.org/contents/data/standard/04/01/40145.detail.rss</uri>
   <docidentifier type="ISO" primary="true">ISO 3534-1:2006</docidentifier>
+  <docidentifier type="iso-undated">ISO 3534-1</docidentifier>
   <docidentifier type="iso-reference">ISO 3534-1:2006(E)</docidentifier>
   <docidentifier type="URN">urn:iso:std:iso:3534:-1:stage-90.92</docidentifier>
   <docnumber>3534</docnumber>
@@ -16420,8 +16422,8 @@ expectation <stem block="false" type="MathML"><math xmlns="http://www.w3.org/199
     <city>Geneva</city>
   </place>
 </bibitem>
-<bibitem id="_1ed82d19-59e7-be8c-3566-41949589a993" type="standard" schema-version="v1.5.6" anchor="ISO_3534_2_2006">
-  <fetched>2026-08-14</fetched>
+<bibitem id="_d20aa392-69f2-53f7-c77d-1e7570d69616" type="standard" schema-version="v1.5.6" anchor="ISO_3534_2_2006">
+  <fetched>2026-10-08</fetched>
   
 <title language="en" script="Latn" type="title-intro">Statistics</title>
 
@@ -16450,6 +16452,7 @@ expectation <stem block="false" type="MathML"><math xmlns="http://www.w3.org/199
   <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:40147:en</uri>
   <uri type="rss">https://www.iso.org/contents/data/standard/04/01/40147.detail.rss</uri>
   <docidentifier type="ISO" primary="true">ISO 3534-2:2006</docidentifier>
+  <docidentifier type="iso-undated">ISO 3534-2</docidentifier>
   <docidentifier type="iso-reference">ISO 3534-2:2006(E)</docidentifier>
   <docidentifier type="URN">urn:iso:std:iso:3534:-2</docidentifier>
   <docnumber>3534</docnumber>
@@ -16523,8 +16526,8 @@ expectation <stem block="false" type="MathML"><math xmlns="http://www.w3.org/199
     <city>Geneva</city>
   </place>
 </bibitem>
-<bibitem id="_77fb6abd-c38a-444a-03b4-79d3b0bb6f6e" type="standard" schema-version="v1.5.6" anchor="ISO_10576_1_2003">
-  <fetched>2026-08-14</fetched>
+<bibitem id="_25963694-4513-30ad-2586-2e61a88b3762" type="standard" schema-version="v1.5.6" anchor="ISO_10576_1_2003">
+  <fetched>2026-10-08</fetched>
   
 <title language="en" script="Latn" type="title-intro">Statistical methods</title>
 
@@ -16553,6 +16556,7 @@ expectation <stem block="false" type="MathML"><math xmlns="http://www.w3.org/199
   <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:32373:en</uri>
   <uri type="rss">https://www.iso.org/contents/data/standard/03/23/32373.detail.rss</uri>
   <docidentifier type="ISO" primary="true">ISO 10576-1:2003</docidentifier>
+  <docidentifier type="iso-undated">ISO 10576-1</docidentifier>
   <docidentifier type="iso-reference">ISO 10576-1:2003(E)</docidentifier>
   <docidentifier type="URN">urn:iso:std:iso:10576:-1:stage-95.99</docidentifier>
   <docnumber>10576</docnumber>
@@ -16610,7 +16614,7 @@ expectation <stem block="false" type="MathML"><math xmlns="http://www.w3.org/199
   </place>
 </bibitem>
 <bibitem anchor="JCGM_100_2010" id="_6e1cf7f9-b95f-c921-d1cd-dd2eb7bf2d09"><formattedref format="application/x-isodoc+xml">[NO INFORMATION AVAILABLE]</formattedref><docidentifier type="BIPM">JCGM 100:2010</docidentifier><docnumber>100</docnumber><date type="published"><on>2010</on></date><language>en</language><script>Latn</script></bibitem>
-</references><references id="_03a6afb5-bdc7-3c50-2d12-7a67b1c95706" normative="false" obligation="informative">
+</references><references id="_41d078cd-174f-2450-fd04-2d3f6b933c6e" normative="false" obligation="informative">
 <title id="_50ceb1e1-516f-2673-d73d-4f0c58b4d023">Bibliography</title><bibitem anchor="ref1" id="_5be0fee8-0f0a-014c-3164-68bbf1347715">
   <formattedref format="application/x-isodoc+xml">Agilent Technologies. Metrology Forum. 2001.
 <link target="http://metrologyforum.tm.agilent.com/terminology.shtml"/>.</formattedref>
@@ -16739,8 +16743,8 @@ Silverwater, Australia, 1996.</formattedref>
   <docidentifier type="metanorma">[20]</docidentifier>
   <language>en</language>
   <script>Latn</script>
-</bibitem><bibitem id="_2c82f1ac-5617-d8b5-9204-344fc6a0d775" type="standard" schema-version="v1.5.6" anchor="ref21">
-  <fetched>2026-08-14</fetched>
+</bibitem><bibitem id="_70ff6ade-4f56-b2cd-efb9-0d95e9990225" type="standard" schema-version="v1.5.6" anchor="ref21">
+  <fetched>2026-10-08</fetched>
   
 <title language="en" script="Latn" type="title-intro">Geometrical Product Specifications (GPS)</title>
 
@@ -16769,6 +16773,7 @@ Silverwater, Australia, 1996.</formattedref>
   <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:23021:en</uri>
   <uri type="rss">https://www.iso.org/contents/data/standard/02/30/23021.detail.rss</uri>
   <docidentifier type="ISO" primary="true">ISO 14253-1:1998</docidentifier>
+  <docidentifier type="iso-undated">ISO 14253-1</docidentifier>
   <docidentifier type="iso-reference">ISO 14253-1:1998(E)</docidentifier>
   <docidentifier type="URN">urn:iso:std:iso:14253:-1:stage-95.99</docidentifier>
   <docnumber>14253</docnumber>
@@ -16830,8 +16835,8 @@ Silverwater, Australia, 1996.</formattedref>
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_39addc38-9170-936d-511c-a585fa131d70" type="standard" schema-version="v1.5.6" anchor="ref22">
-  <fetched>2026-08-14</fetched>
+</bibitem><bibitem id="_60da8317-8f5e-f907-2ec7-ffb5aeeb5faa" type="standard" schema-version="v1.5.6" anchor="ref22">
+  <fetched>2026-10-08</fetched>
   
 <title language="en" script="Latn" type="title-intro">Statistical methods</title>
 
@@ -16860,6 +16865,7 @@ Silverwater, Australia, 1996.</formattedref>
   <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:32373:en</uri>
   <uri type="rss">https://www.iso.org/contents/data/standard/03/23/32373.detail.rss</uri>
   <docidentifier type="ISO" primary="true">ISO 10576-1:2003</docidentifier>
+  <docidentifier type="iso-undated">ISO 10576-1</docidentifier>
   <docidentifier type="iso-reference">ISO 10576-1:2003(E)</docidentifier>
   <docidentifier type="URN">urn:iso:std:iso:10576:-1:stage-95.99</docidentifier>
   <docnumber>10576</docnumber>
@@ -16915,8 +16921,8 @@ Silverwater, Australia, 1996.</formattedref>
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_ab017a77-e833-c29f-5530-73f6125991bf" type="standard" schema-version="v1.5.6" anchor="ref23">
-  <fetched>2026-08-14</fetched>
+</bibitem><bibitem id="_bdeecf7f-92d3-bbdf-5042-ff5813e3adbf" type="standard" schema-version="v1.5.6" anchor="ref23">
+  <fetched>2026-10-08</fetched>
   
 <title language="en" script="Latn" type="title-main">General requirements for the competence of testing and calibration laboratories</title>
 
@@ -16933,6 +16939,7 @@ Silverwater, Australia, 1996.</formattedref>
   <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:39883:en</uri>
   <uri type="rss">https://www.iso.org/contents/data/standard/03/98/39883.detail.rss</uri>
   <docidentifier type="ISO" primary="true">ISO/IEC 17025:2005</docidentifier>
+  <docidentifier type="iso-undated">ISO/IEC 17025</docidentifier>
   <docidentifier type="iso-reference">ISO/IEC 17025:2005(E)</docidentifier>
   <docidentifier type="URN">urn:iso:std:iso-iec:17025:stage-95.99</docidentifier>
   <docnumber>17025</docnumber>
@@ -17029,8 +17036,8 @@ Silverwater, Australia, 1996.</formattedref>
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_56cdef36-3a73-fc8b-dd63-b0daa58f3c2b" type="standard" schema-version="v1.5.6" anchor="ref24">
-  <fetched>2026-08-14</fetched>
+</bibitem><bibitem id="_f6a9e563-d5d3-1acf-2e16-636e3793bd9a" type="standard" schema-version="v1.5.6" anchor="ref24">
+  <fetched>2026-10-08</fetched>
   
 <title language="en" script="Latn" type="title-intro">Geometrical Product Specifications (GPS)</title>
 
@@ -17059,6 +17066,7 @@ Silverwater, Australia, 1996.</formattedref>
   <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:1241:en</uri>
   <uri type="rss">https://www.iso.org/contents/data/standard/00/12/1241.detail.rss</uri>
   <docidentifier type="ISO" primary="true">ISO 3650:1998</docidentifier>
+  <docidentifier type="iso-undated">ISO 3650</docidentifier>
   <docidentifier type="iso-reference">ISO 3650:1998(E)</docidentifier>
   <docidentifier type="URN">urn:iso:std:iso:3650:stage-90.93</docidentifier>
   <docnumber>3650</docnumber>

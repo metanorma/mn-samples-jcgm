@@ -1,9 +1,9 @@
 GIT
   remote: https://github.com/lutaml/moxml
-  revision: 0fbbf58bec3dd4068e102448afc8a01b813d5034
+  revision: 00856501ada6598aa8c9527f76ad616c956070ba
   branch: main
   specs:
-    moxml (0.5.132)
+    moxml (0.5.134)
 
 GIT
   remote: https://github.com/metanorma/isodoc
@@ -40,7 +40,7 @@ GIT
 
 GIT
   remote: https://github.com/metanorma/metanorma-cli
-  revision: 1f2db0de62c6bd9d75cf1761a2cc3b6ee003ec77
+  revision: bf5edf6fcbfb74085656ec59a122a4073de07876
   branch: main
   specs:
     metanorma-cli (1.17.0)
@@ -61,10 +61,11 @@ GIT
       metanorma-jis (>= 1.2.0)
       metanorma-ogc (>= 2.10.0)
       metanorma-plateau (>= 1.3.0)
+      metanorma-release
       metanorma-ribose (>= 2.9.0)
       metanorma-standoc (>= 3.5.0)
       mnconvert
-      relaton-cli (>= 0.8.2)
+      relaton-cli (>= 3.0.0.pre.alpha)
       socksify
       suma (~> 0.5.0)
 
@@ -111,7 +112,7 @@ GIT
 
 GIT
   remote: https://github.com/metanorma/metanorma-taste
-  revision: 865b37a94d503c0b6fb4c46cc03edb7ecbc000b3
+  revision: 55907e0d0a6036c096ce3027089d706afd419b0b
   branch: main
   specs:
     metanorma-taste (1.1.2)
@@ -119,7 +120,7 @@ GIT
 
 GIT
   remote: https://github.com/pubid/pubid
-  revision: e106a3454995fb36d1f4c92c86fb60ad587f827c
+  revision: a1b2eb03cab22d519dd028bfcfd96b77487c6d3b
   branch: main
   specs:
     pubid (2.0.0.pre.alpha.29)
@@ -221,7 +222,7 @@ GEM
       addressable (~> 2.8)
       base64 (~> 0.3)
     drb (2.2.3)
-    ea (0.6.85)
+    ea (0.6.87)
       benchmark
       liquid (~> 5)
       lutaml-model (~> 0.8)
@@ -669,6 +670,9 @@ GEM
       relaton-cli
     metanorma-plugin-plantuml (1.0.16)
       asciidoctor
+    metanorma-release (0.2.25)
+      relaton-bib (~> 2.1)
+      thor (~> 1.0)
     metanorma-ribose (2.9.0)
       metanorma-generic (~> 3.5.0)
     metanorma-utils (2.0.8)

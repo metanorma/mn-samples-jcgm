@@ -35,6 +35,7 @@ jobs:
 
       - name: Bundle the canonical stack
         env:
+          BUNDLE_GEMFILE: "${{ github.workspace }}/Gemfile"
           BUNDLE_FROZEN: "false"
           BUNDLE_DEPLOYMENT: "false"
         run: |
@@ -44,6 +45,8 @@ jobs:
           bundle install --jobs 4
 
       - name: Metanorma generate site
+        env:
+          BUNDLE_GEMFILE: "${{ github.workspace }}/Gemfile"
         run: bundle exec metanorma site generate --config metanorma.yml -o _site
 
       - name: Upload site artifact

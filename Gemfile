@@ -7,7 +7,6 @@ gem "relaton-render", "= 3.0.0.pre.alpha.43"
 gem "relaton-bib", "2.2.0.pre.alpha.1"
 gem "pubid", github: "pubid/pubid", branch: "main"
 gem "moxml", github: "lutaml/moxml", branch: "main"
-gem "leptris", "1.9.331.0"
 
 # JCGM taste (merged in metanorma-taste main; add-jcgm-taste branch retired)
 gem "metanorma-taste", github: "metanorma/metanorma-taste", branch: "main"

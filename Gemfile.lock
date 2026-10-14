@@ -503,21 +503,21 @@ GEM
       rdf (~> 3.3)
       rexml (~> 3.2)
     latex-decode (0.4.2)
-    leptris (1.9.331.0-aarch64-linux)
+    leptris (1.9.354.0-aarch64-linux)
       ffi (~> 1.15)
-    leptris (1.9.331.0-aarch64-linux-musl)
+    leptris (1.9.354.0-aarch64-linux-musl)
       ffi (~> 1.15)
-    leptris (1.9.331.0-arm-linux)
+    leptris (1.9.354.0-arm-linux)
       ffi (~> 1.15)
-    leptris (1.9.331.0-arm-linux-musl)
+    leptris (1.9.354.0-arm-linux-musl)
       ffi (~> 1.15)
-    leptris (1.9.331.0-arm64-darwin)
+    leptris (1.9.354.0-arm64-darwin)
       ffi (~> 1.15)
-    leptris (1.9.331.0-x86_64-darwin)
+    leptris (1.9.354.0-x86_64-darwin)
       ffi (~> 1.15)
-    leptris (1.9.331.0-x86_64-linux)
+    leptris (1.9.354.0-x86_64-linux)
       ffi (~> 1.15)
-    leptris (1.9.331.0-x86_64-linux-musl)
+    leptris (1.9.354.0-x86_64-linux-musl)
       ffi (~> 1.15)
     libpng (1.6.58.6)
       ffi (~> 1.0)
@@ -1100,7 +1100,6 @@ PLATFORMS
 DEPENDENCIES
   isodoc!
   isodoc-i18n!
-  leptris (= 1.9.331.0)
   metanorma-cli!
   metanorma-iso!
   metanorma-standoc!

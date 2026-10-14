@@ -19,7 +19,7 @@
 :workgroup-en: Expression of Uncertainty in Measurement
 :workgroup-fr: L'expression des incertitudes
 :published-date: 2020
-:mn-document-class: bipm
+:mn-document-class: jcgm
 :mn-output-extensions: xml,html,pdf,rxl
 :imagesdir: images
 :local-cache-only:

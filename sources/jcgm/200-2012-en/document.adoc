@@ -13,7 +13,7 @@
 :workgroup-acronym: WG 1
 :workgroup-en: Working Group on the Expression of Uncertainty in Measurement
 :imagesdir: images
-:mn-document-class: bipm
+:mn-document-class: jcgm
 :mn-output-extensions: xml,html,pdf,rxl
 :local-cache-only:
 

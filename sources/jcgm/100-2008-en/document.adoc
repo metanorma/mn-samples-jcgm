@@ -19,7 +19,7 @@
 :workgroup-fr: Groupe de travail sur l'expression des incertitudes
 :title-provenance-en: GUM 1995 with minor corrections
 :published-date: 2008-09
-:mn-document-class: bipm
+:mn-document-class: jcgm
 :mn-output-extensions: xml,html,pdf,rxl
 :imagesdir: images
 :local-cache-only:

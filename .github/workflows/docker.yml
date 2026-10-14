@@ -34,9 +34,12 @@ jobs:
           submodules: true
 
       - name: Bundle the canonical stack
+        env:
+          BUNDLE_FROZEN: "false"
+          BUNDLE_DEPLOYMENT: "false"
         run: |
           bundle config set --local path vendor/bundle
-          bundle config set --local frozen false
+          bundle config set frozen false
           bundle config unset deployment
           bundle install --jobs 4
 

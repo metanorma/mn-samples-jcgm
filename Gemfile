@@ -2,8 +2,8 @@ source "https://rubygems.org"
 git_source(:github) { |repo| "https://github.com/#{repo}" }
 
 gem "metanorma-cli", github: "metanorma/metanorma-cli", branch: "main"
-gem "relaton", "= 3.0.0.pre.alpha.14"
-gem "relaton-render", "= 3.0.0.pre.alpha.43"
+gem "relaton", "= 3.0.0"
+gem "relaton-render", "= 3.0.0"
 gem "relaton-bib", "2.2.0.pre.alpha.1"
 gem "pubid", github: "pubid/pubid", branch: "main"
 gem "moxml", github: "lutaml/moxml", branch: "main"

@@ -6,7 +6,6 @@ gem "relaton", "~> 3.0" # 3.0.1 carries the COW prune fix (relaton#392)
 gem "relaton-render", "= 3.0.0"
 gem "relaton-bib", "2.2.0.pre.alpha.1"
 gem "pubid", "~> 2.0" # 2.0.0 released; the git source now carries the 2.1 pre line
-gem "moxml", github: "lutaml/moxml", branch: "main"
 
 # JCGM taste (merged in metanorma-taste main; add-jcgm-taste branch retired)
 gem "metanorma-taste", github: "metanorma/metanorma-taste", branch: "main"

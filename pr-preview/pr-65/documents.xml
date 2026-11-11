@@ -1,0 +1,135 @@
+<relaton-collection xmlns="https://open.ribose.com/relaton-xml"><title>JCGM Publications in Metanorma</title><contributor><role type='author'/><organization><name>JCGM</name></organization></contributor><relation type='partOf'><bibdata type="standard" schema-version="v1.5.6">
+  <uri type="xml">./documents/jcgm/106-2012-en/document.xml</uri>
+  <uri type="pdf">./documents/jcgm/106-2012-en/document.pdf</uri>
+  <uri type="html">./documents/jcgm/106-2012-en/document.html</uri>
+  <uri type="rxl">./documents/jcgm/106-2012-en/document.rxl</uri>
+  <docidentifier type="ISO" primary="true">JCGM Guide 106:2012</docidentifier>
+  <docidentifier type="iso-reference">JCGM Guide 106:2012(E)</docidentifier>
+  <docidentifier type="URN">urn:iso:std:jcgm:guide:106:en</docidentifier>
+  <docidentifier type="iso-undated">JCGM Guide 106</docidentifier>
+  <docidentifier type="iso-with-lang">JCGM Guide 106:2012(en)</docidentifier>
+  <docnumber>106</docnumber>
+  <contributor>
+    <role type="author"/>
+    <organization>
+      <name>Joint Committee for Guides in Metrology</name>
+      <abbreviation>JCGM</abbreviation>
+      <logo>
+        <image src="/usr/local/bundle/gems/metanorma-taste-1.1.5/data/jcgm/logo-jcgm.svg" mimetype="image/svg+xml"/>
+      </logo>
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="authorizer">
+      <description>Agency</description>
+    </role>
+    <organization>
+      <name>Joint Committee for Guides in Metrology</name>
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      <name>Joint Committee for Guides in Metrology</name>
+      <abbreviation>JCGM</abbreviation>
+      <logo>
+        <image src="/usr/local/bundle/gems/metanorma-taste-1.1.5/data/jcgm/logo-jcgm.svg" mimetype="image/svg+xml"/>
+      </logo>
+    </organization>
+  </contributor>
+  <edition>1</edition>
+  <language>en</language>
+  <script>Latn</script>
+  <status>
+    <stage abbreviation="GUIDE">60</stage>
+    <substage>60</substage>
+  </status>
+  <copyright>
+    <from>2012</from>
+    <owner>
+      <organization>
+        <name>Joint Committee for Guides in Metrology</name>
+        <abbreviation>JCGM</abbreviation>
+        <logo>
+          <image src="/usr/local/bundle/gems/metanorma-taste-1.1.5/data/jcgm/logo-jcgm.svg" mimetype="image/svg+xml"/>
+        </logo>
+      </organization>
+    </owner>
+  </copyright>
+  <ext schema-version="v1.1.2">
+    <doctype>guide</doctype>
+    <flavor>iso</flavor>
+    <structuredidentifier>
+      <project-number>JCGM 106</project-number>
+    </structuredidentifier>
+    <stagename abbreviation="GUIDE">Published Guide</stagename>
+  </ext>
+</bibdata></relation>
+<relation type='partOf'><bibdata type="standard" schema-version="v1.5.6">
+  <uri type="xml">./documents/jcgm/200-2012-fr/document.xml</uri>
+  <uri type="pdf">./documents/jcgm/200-2012-fr/document.pdf</uri>
+  <uri type="html">./documents/jcgm/200-2012-fr/document.html</uri>
+  <uri type="rxl">./documents/jcgm/200-2012-fr/document.rxl</uri>
+  <docidentifier type="ISO" primary="true">JCGM Guide 200:2012</docidentifier>
+  <docidentifier type="iso-reference">JCGM Guide 200:2012(F)</docidentifier>
+  <docidentifier type="URN">urn:iso:std:jcgm:guide:200:fr</docidentifier>
+  <docidentifier type="iso-undated">JCGM Guide 200</docidentifier>
+  <docidentifier type="iso-with-lang">JCGM Guide 200:2012(fr)</docidentifier>
+  <docnumber>200</docnumber>
+  <contributor>
+    <role type="author"/>
+    <organization>
+      <name>Joint Committee for Guides in Metrology</name>
+      <abbreviation>JCGM</abbreviation>
+      <logo>
+        <image src="/usr/local/bundle/gems/metanorma-taste-1.1.5/data/jcgm/logo-jcgm.svg" mimetype="image/svg+xml"/>
+      </logo>
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="authorizer">
+      <description>Agency</description>
+    </role>
+    <organization>
+      <name>Joint Committee for Guides in Metrology</name>
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      <name>Joint Committee for Guides in Metrology</name>
+      <abbreviation>JCGM</abbreviation>
+      <logo>
+        <image src="/usr/local/bundle/gems/metanorma-taste-1.1.5/data/jcgm/logo-jcgm.svg" mimetype="image/svg+xml"/>
+      </logo>
+    </organization>
+  </contributor>
+  <edition>3</edition>
+  <language>fr</language>
+  <script>Latn</script>
+  <status>
+    <stage abbreviation="GUIDE">60</stage>
+    <substage>60</substage>
+  </status>
+  <copyright>
+    <from>2012</from>
+    <owner>
+      <organization>
+        <name>Joint Committee for Guides in Metrology</name>
+        <abbreviation>JCGM</abbreviation>
+        <logo>
+          <image src="/usr/local/bundle/gems/metanorma-taste-1.1.5/data/jcgm/logo-jcgm.svg" mimetype="image/svg+xml"/>
+        </logo>
+      </organization>
+    </owner>
+  </copyright>
+  <ext schema-version="v1.1.2">
+    <doctype>guide</doctype>
+    <flavor>iso</flavor>
+    <structuredidentifier>
+      <project-number>JCGM 200</project-number>
+    </structuredidentifier>
+    <stagename abbreviation="GUIDE">Published Guide</stagename>
+  </ext>
+</bibdata></relation>
+</relaton-collection>
